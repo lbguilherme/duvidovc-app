@@ -276,7 +276,7 @@ private
 end
 
 class JavaClass
-    attr_accessor :fullname, :name, :mods, :methods, :library
+    attr_accessor :fullname, :name, :mods, :methods, :library, :parent
     def initialize(java, library, fullname)
         @java = java
         raise unless library
@@ -342,6 +342,14 @@ class JavaClass
         @fullname.gsub(".", "::").gsub("$", "::")
     end
 
+    def parent_tree
+        if @parent
+            @parent.parent_tree + [@parent]
+        else
+            []
+        end
+    end
+
     def includes
         [self]
     end
@@ -351,7 +359,7 @@ class JavaClass
     end
 
     def header_includes
-        (inherit + @children.map(&:inherit).flatten + [@java.find_class("java.lang.Object")]).uniq.sort
+        (inherit + @children.map(&:inherit).flatten + [@java.find_class("java.lang.Object")]).uniq.sort - [self]
     end
 
     def source_includes
@@ -359,7 +367,9 @@ class JavaClass
     end
 
     def header_forwards
-        (@methods.map(&:depends) + @children.map(&:depends)).flatten.uniq.sort
+        list = (@methods.map(&:depends) + @children.map(&:depends)).flatten.uniq.sort
+        list.delete_if {|c| c.parent_tree.include? self }
+        list
     end
 
     def gen_include(f)
@@ -374,9 +384,9 @@ class JavaClass
         if @parent
             @parent.gen_include(f)
         else
-            @package.gen_namespace_begin(f)
-            f << "class #{@name};\n"
-            @package.gen_namespace_end(f)
+            @package.gen_namespace_begin_inline(f)
+            f << "class #{@name};"
+            @package.gen_namespace_end_inline(f)
             f << "\n"
         end
     end
@@ -410,6 +420,10 @@ class JavaClass
         f << "public:\n\n"
         f.ident 1
         @children.each do |child|
+            f << "class #{child.name};\n"
+        end
+        f << "\n"
+        @children.each do |child|
             child.gen_class(f)
             f << "\n"
         end
@@ -427,14 +441,18 @@ class JavaClass
         header_includes.each do |javaclass|
             javaclass.gen_include(hpp)
         end
+        header_forwards.each do |javaclass|
+            javaclass.gen_include(hpp) if javaclass.parent
+        end
         hpp << "\n"
         header_forwards.each do |javaclass|
-            javaclass.gen_forward(hpp)
+            javaclass.gen_forward(hpp) unless javaclass.parent
         end
         hpp << "\n"
         @package.gen_namespace_begin(hpp)
         gen_class(hpp)
         @package.gen_namespace_end(hpp)
+        hpp << "\n"
         hpp.done
     end
 
@@ -529,6 +547,18 @@ class Package
     def gen_namespace_end(f)
         @name.split(".").size.times do
             f << "}\n"
+        end
+    end
+
+    def gen_namespace_begin_inline(f)
+        @name.split(".").each do |name|
+            f << "namespace #{name} { "
+        end
+    end
+
+    def gen_namespace_end_inline(f)
+        @name.split(".").size.times do
+            f << " }"
         end
     end
 end
