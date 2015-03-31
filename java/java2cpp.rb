@@ -165,6 +165,11 @@ $JavaParser = JavaParser.new
 $JavaTransformer = JavaTransformer.new
 $JavaGenericsTransformer = JavaGenericsTransformer.new
 
+def protect_name(name)
+    kws = %w[delete]
+    kws.include?(name) ? name+"_" : name
+end
+
 class JavaSpace
     attr_accessor :libraries, :packages, :classes
 
@@ -481,7 +486,7 @@ class JavaMethod
         @javaclass = javaclass
         @mods = hash[:mods]
         @return = hash[:returntype]
-        @name = hash[:name]
+        @name = protect_name(hash[:name])
         @args = hash[:args]
     end
 
@@ -515,7 +520,7 @@ class JavaMethod
     def define(f)
         f << @return.cppname << " " << @javaclass.cppname << "::" << @name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
         f.ident(1)
-        f << "return {};\n"
+        f << "return *(#{@return.cppname}*)0;\n" unless @return == VoidType # FIXME
         f.ident(-1)
         f << "}\n\n"
     end
