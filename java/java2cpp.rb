@@ -232,7 +232,7 @@ class JavaSpace
     end
 
     def generate_core
-        hpp = GeneratedFile.new("include/core.hpp")
+        hpp = GeneratedFile.new("src/java-core.hpp")
         hpp << "#include <jni.h>\n"
         hpp << "namespace java {\n"
         hpp << "\n"
@@ -242,8 +242,8 @@ class JavaSpace
         hpp << "\n}\n"
         hpp.done
 
-        cpp = GeneratedFile.new("src/core.cpp")
-        cpp << "#include <core.hpp>\n"
+        cpp = GeneratedFile.new("src/java-core.cpp")
+        cpp << "#include \"java-core.hpp\"\n"
         cpp << "#include <java.lang.Thread.hpp>\n"
         cpp << "#include <java.lang.ClassLoader.hpp>\n"
         cpp << "#include <java.lang.String.hpp>\n"
@@ -411,6 +411,10 @@ class JavaClass
         end
     end
 
+    def signature
+        "L#{@fullname.gsub(".", "/")};"
+    end
+
     def includes
         [self]
     end
@@ -518,6 +522,7 @@ class JavaClass
         return if @parent
         hpp = GeneratedFile.new("include/#{@fullname}.hpp")
         hpp << "#pragma once\n\n"
+        hpp << "#include \"../src/java-core.hpp\"\n"
         hpp << "#include <jni.h>\n"
         hpp << "#include <cstdint>\n"
         hpp << "#include <vector>\n\n"
@@ -579,14 +584,23 @@ class JavaMethod
         f << @return.cppname << " " << @name << "(" << @args.map(&:cppname).join(", ") << ");\n"
     end
 
+    def signature
+        "(#{@args.map(&:signature).join})#{@return ? @return.signature : "V"}"
+    end
+
     def gen_fetch_class(f)
         f << "if (!_class) _class = java::fetch_class(\"#{@javaclass.fullname.gsub(".", "/")}\");\n"
+    end
+
+    def gen_fetch_method(f)
+        f << "static jmethodID mid = java::jni->GetMethodID(_class, \"#{@name ? @name : "<init>"}\", \"#{signature}\");\n"
     end
 
     def define(f)
         f << @return.cppname << " " << @javaclass.cppname << "::" << @name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
         f.ident(1)
         gen_fetch_class(f)
+        gen_fetch_method(f)
         f << "return *(#{@return.cppname}*)0;\n" unless @return == VoidType # FIXME
         f.ident(-1)
         f << "}\n\n"
@@ -623,6 +637,7 @@ class JavaConstructor < JavaMethod
         f << ") : #{@javaclass.inherit.map{|c|c.cppname+"(0)"}.join(", ")} {\n"
         f.ident(1)
         gen_fetch_class(f)
+        gen_fetch_method(f)
         f.ident(-1)
         f << "}\n\n"
     end
@@ -672,7 +687,7 @@ class Package
             includes += incl.source_includes
         end
         includes.map!(&:parent_root)
-        cpp << "#include \"core.hpp\"\n"
+        cpp << "#include \"java-core.hpp\"\n"
         includes.sort.uniq.each do |javaclass|
             javaclass.gen_include(cpp)
         end
@@ -696,42 +711,40 @@ class Package
 end
 
 class PrimitiveTypeClass
-    def initialize(javaname, cppname)
+    attr_reader :javaname, :cppname, :signature
+    def initialize(javaname, cppname, signature)
         @javaname = javaname
         @cppname = cppname
-    end
-    def javaname
-        @javaname
-    end
-    def cppname
-        @cppname
+        @signature = signature
     end
 
     def argtype
-        cppname
+        @cppname
     end
 
     def inspect
         @javaname
     end
+
     def includes
         []
     end
+
     def depends
         []
     end
 end
 
 PrimitiveTypes = [
-    VoidType = PrimitiveTypeClass.new("void", "void"),
-    ShortType = PrimitiveTypeClass.new("short", "int16_t"),
-    IntType = PrimitiveTypeClass.new("int", "int32_t"),
-    LongType = PrimitiveTypeClass.new("long", "int64_t"),
-    FloatType = PrimitiveTypeClass.new("float", "float"),
-    DoubleType = PrimitiveTypeClass.new("double", "double"),
-    CharType = PrimitiveTypeClass.new("char", "uint16_t"),
-    ByteType = PrimitiveTypeClass.new("byte", "uint8_t"),
-    BooleanType = PrimitiveTypeClass.new("boolean", "bool")
+    VoidType = PrimitiveTypeClass.new("void", "void", "V"),
+    ShortType = PrimitiveTypeClass.new("short", "int16_t", "S"),
+    IntType = PrimitiveTypeClass.new("int", "int32_t", "I"),
+    LongType = PrimitiveTypeClass.new("long", "int64_t", "J"),
+    FloatType = PrimitiveTypeClass.new("float", "float", "F"),
+    DoubleType = PrimitiveTypeClass.new("double", "double", "D"),
+    CharType = PrimitiveTypeClass.new("char", "uint16_t", "C"),
+    ByteType = PrimitiveTypeClass.new("byte", "uint8_t", "B"),
+    BooleanType = PrimitiveTypeClass.new("boolean", "bool", "Z")
 ]
 
 class ArrayType
@@ -753,26 +766,14 @@ class ArrayType
     def argtype
         "const #{cppname}&"
     end
+    def signature
+        "["+@base.signature
+    end
 end
 
-class VariadicType
-    def initialize(base)
-        @base = base
-    end
+class VariadicType < ArrayType
     def inspect
         @base.inspect + "..."
-    end
-    def includes
-        @base.includes
-    end
-    def depends
-        @base.depends
-    end
-    def cppname
-        "std::vector<#{@base.cppname}>"
-    end
-    def argtype
-        "const #{cppname}&"
     end
 end
 
