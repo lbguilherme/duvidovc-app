@@ -18,13 +18,13 @@ END {
     #Library.new(java, "facebook-sdk-3.23.1.jar")
     #Library.new(java, "support-v4-22.0.0.jar")
     java.cheat
-    puts "Found #{java.classes.size} classes."
+    puts "Requested #{java.classes.size} classes."
 
-    puts "Extracting complete information..."
+    puts "Extracting information from java..."
     java.process_classes(&:extract!)
 
-    puts "Generating code..."
-    java.process_classes(&:codegen!)
+    puts "Generating headers..."
+    java.classes.each_value(&:generate_header)
 }
 
 class JavaParser < Parslet::Parser
@@ -454,10 +454,6 @@ class JavaClass
         @package.gen_namespace_end(hpp)
         hpp << "\n"
         hpp.done
-    end
-
-    def codegen!
-        generate_header
     end
 
 end
