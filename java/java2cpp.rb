@@ -28,6 +28,9 @@ END {
 
     puts "Generating sources..."
     java.packages.each_value(&:generate_source)
+
+    puts "Generating core..."
+    java.generate_core
 }
 
 class JavaParser < Parslet::Parser
@@ -184,6 +187,7 @@ class JavaSpace
         @classes = {}
         @packages = {}
         find_class("java.lang.Object")
+        find_class("java.lang.Thread")
     end
 
     def process_classes(&block)
@@ -225,6 +229,38 @@ class JavaSpace
         end
 
         raise "Could not find '#{fullname}'."
+    end
+
+    def generate_core
+        hpp = GeneratedFile.new("include/core.hpp")
+        hpp << "#include <jni.h>\n"
+        hpp << "namespace java {\n\n"
+        hpp << "jclass fetch_class(const char* classname);\n"
+        hpp << "\n}\n"
+        hpp.done
+
+        cpp = GeneratedFile.new("src/core.cpp")
+        cpp << "#include <core.hpp>\n"
+        cpp << "#include <java.lang.Thread.hpp>\n"
+        cpp << "#include <java.lang.ClassLoader.hpp>\n"
+        cpp << "namespace java {\n"
+        cpp << "\n"
+        cpp << "static thread_local java::lang::ClassLoader class_loader(nullptr);\n"
+        cpp << "static thread_local JNIEnv* jni;\n"
+        cpp << "\n"
+        cpp << "static void fetch_class_loader() {\n"
+        cpp << "    if (class_loader.obj) return;\n"
+        cpp << "    java::lang::Thread::_class = jni->FindClass(\"java/lang/Thread\");\n"
+        cpp << "    java::lang::ClassLoader::_class = jni->FindClass(\"java/lang/ClassLoader\");\n"
+        cpp << "    class_loader = java::lang::Thread::currentThread().getContextClassLoader();\n"
+        cpp << "}\n"
+        cpp << "\n"
+        cpp << "jclass fetch_class(const char* classname) {\n"
+        cpp << "    fetch_class_loader();\n"
+        cpp << "}\n"
+        cpp << "\n"
+        cpp << "}\n"
+        cpp.done
     end
 
 end
@@ -410,9 +446,15 @@ class JavaClass
         end
     end
 
+    def all_inherits
+        list = [@extends + @implements].flatten - [self]
+        list += list.map(&:all_inherits)
+        list
+    end
+
     def inherit
         list = [@extends + @implements].flatten - [self]
-        list = (list - list.map(&:inherit).flatten).sort + [@java.find_class("java.lang.Object")]
+        list = [@java.find_class("java.lang.Object")] + (list - list.map(&:all_inherits).flatten).sort
         list.uniq
     end
 
@@ -438,14 +480,24 @@ class JavaClass
         end
         f << "public:\n\n"
         f.ident 1
+        f << "static jclass _class;\n"
+        f << "jobject obj;\n" if self == @java.find_class("java.lang.Object")
+        f << "\n"
         @children.each do |child|
             f << "class #{child.name};\n"
         end
-        f << "\n"
+        f << "\n" if @children.size > 0
         @children.each do |child|
             child.gen_class(f)
             f << "\n"
         end
+        if self == @java.find_class("java.lang.Object")
+            f << "Object(jobject _obj) {obj = _obj;}\n"
+            f << "bool isNull() {return obj == nullptr;}\n"
+        else
+            f << "#{@name}(jobject _obj) : #{inherit.map{|c|c.cppname+"(_obj)"}.join(", ")} {}\n"
+        end
+        f << "\n"
         @methods.each do |m|
             m.declare(f)
         end
@@ -457,6 +509,7 @@ class JavaClass
         return if @parent
         hpp = GeneratedFile.new("include/#{@fullname}.hpp")
         hpp << "#pragma once\n\n"
+        hpp << "#include <jni.h>\n"
         hpp << "#include <cstdint>\n"
         hpp << "#include <vector>\n\n"
         header_includes.each do |javaclass|
@@ -517,26 +570,27 @@ class JavaMethod
         f << @return.cppname << " " << @name << "(" << @args.map(&:cppname).join(", ") << ");\n"
     end
 
+    def gen_fetch_class(f)
+        f << "if (!_class) _class = java::fetch_class(\"#{@javaclass.fullname.gsub(".", "/")}\");\n"
+    end
+
     def define(f)
         f << @return.cppname << " " << @javaclass.cppname << "::" << @name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
         f.ident(1)
+        gen_fetch_class(f)
         f << "return *(#{@return.cppname}*)0;\n" unless @return == VoidType # FIXME
         f.ident(-1)
         f << "}\n\n"
     end
 end
 
-class JavaConstructor
+class JavaConstructor < JavaMethod
     attr_accessor :name, :args, :javaclass
     def initialize(java, javaclass, hash)
         @java = java
         @javaclass = javaclass
         @mods = hash[:mods]
         @args = hash[:args]
-    end
-
-    def ==(other)
-        [@mame, @args, @javaclass] == [other.name, other.args, other.javaclass]
     end
 
     def includes
@@ -551,17 +605,15 @@ class JavaConstructor
         (@mods.map(&:to_s) + [@javaclass.inspect]).join(" ") + "(#{@args.map(&:inspect).join(", ")})"
     end
 
-    def public?
-        @mods.include? :public
-    end
-
     def declare(f)
         f << @javaclass.name << "(" << @args.map(&:argtype).join(", ") << ");\n"
     end
 
     def define(f)
-        f << @javaclass.cppname << "::" << @javaclass.name << "(" << @args.map(&:argtype).join(", ") << ") {\n"
+        f << @javaclass.cppname << "::" << @javaclass.name << "(" << @args.map(&:argtype).join(", ")
+        f << ") : #{@javaclass.inherit.map{|c|c.cppname+"(0)"}.join(", ")} {\n"
         f.ident(1)
+        gen_fetch_class(f)
         f.ident(-1)
         f << "}\n\n"
     end
@@ -611,8 +663,15 @@ class Package
             includes += incl.source_includes
         end
         includes.map!(&:parent_root)
+        cpp << "#include \"core.hpp\"\n"
         includes.sort.uniq.each do |javaclass|
             javaclass.gen_include(cpp)
+        end
+
+        cpp << "\n"
+
+        @classes.each do |javaclass|
+            cpp << "jclass #{javaclass.cppname}::_class = nullptr;\n"
         end
 
         cpp << "\n"

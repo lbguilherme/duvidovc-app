@@ -4,7 +4,7 @@ CONFIG += c++11
 QT += qml quick
 android: QT += androidextras
 
-INCLUDEPATH += java-include
+INCLUDEPATH += java/include
 
 QML_IMPORT_PATH =
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
@@ -35,3 +35,10 @@ RESOURCES += \
 
 OTHER_FILES += \
     java/java2cpp.rb
+
+android: {
+    SOURCES += \
+        java/src/core.cpp \
+        java/src/java.lang.cpp \
+        java/src/java.net.cpp
+}
