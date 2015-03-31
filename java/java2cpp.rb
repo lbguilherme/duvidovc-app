@@ -344,6 +344,10 @@ class JavaClass
         @fullname.gsub(".", "::").gsub("$", "::")
     end
 
+    def argtype
+        "const #{cppname}&"
+    end
+
     def parent_tree
         if @parent
             @parent.parent_tree + [@parent]
@@ -511,6 +515,7 @@ class JavaMethod
     def define(f)
         f << @return.cppname << " " << @javaclass.cppname << "::" << @name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
         f.ident(1)
+        f << "return {};\n"
         f.ident(-1)
         f << "}\n\n"
     end
@@ -546,11 +551,11 @@ class JavaConstructor
     end
 
     def declare(f)
-        f << @javaclass.name << "(" << @args.map(&:cppname).join(", ") << ");\n"
+        f << @javaclass.name << "(" << @args.map(&:argtype).join(", ") << ");\n"
     end
 
     def define(f)
-        f << @javaclass.cppname << "::" << @javaclass.name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
+        f << @javaclass.cppname << "::" << @javaclass.name << "(" << @args.map(&:argtype).join(", ") << ") {\n"
         f.ident(1)
         f.ident(-1)
         f << "}\n\n"
@@ -628,6 +633,11 @@ class PrimitiveTypeClass
     def cppname
         @cppname
     end
+
+    def argtype
+        cppname
+    end
+
     def inspect
         @javaname
     end
@@ -667,6 +677,9 @@ class ArrayType
     def cppname
         "std::vector<#{@base.cppname}>"
     end
+    def argtype
+        "const #{cppname}&"
+    end
 end
 
 class VariadicType
@@ -684,6 +697,9 @@ class VariadicType
     end
     def cppname
         "std::vector<#{@base.cppname}>"
+    end
+    def argtype
+        "const #{cppname}&"
     end
 end
 
