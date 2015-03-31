@@ -25,6 +25,9 @@ END {
 
     puts "Generating headers..."
     java.classes.each_value(&:generate_header)
+
+    puts "Generating sources..."
+    java.packages.each_value(&:generate_source)
 }
 
 class JavaParser < Parslet::Parser
@@ -167,13 +170,15 @@ class JavaSpace
 
     def initialize
         @libraries = []
-        @packages = []
+        @packages = {}
         @classes = {}
         @processing = []
         @processing_current = nil
     end
     def cheat
-        @classes = {"java.lang.Object" => @classes["java.lang.Object"]}
+        @classes = {}
+        @packages = {}
+        find_class("java.lang.Object")
     end
 
     def process_classes(&block)
@@ -203,16 +208,11 @@ class JavaSpace
     end
 
     def find_package(name)
-        @packages.each do |package|
-            return package if package.name == name
-        end
-        @packages << Package.new(self, name)
-        @packages.last
+        @packages[name] ||= Package.new(self, name)
     end
 
     def find_class(fullname)
         return @classes[fullname] if @classes[fullname]
-
         @libraries.each do |lib|
             if (lib.javap(fullname) rescue nil)
                 return @classes[fullname] = JavaClass.new(self, lib, fullname)
@@ -328,12 +328,14 @@ class JavaClass
         @implements = tree[:implements]
         @methods = []
         tree[:contents].each do |hash|
+            m = nil
             case hash.keys.first
             when :method
-                @methods << JavaMethod.new(@java, self, hash[:method])
+                m = JavaMethod.new(@java, self, hash[:method])
             when :ctor
-                @methods << JavaConstructor.new(@java, self, hash[:ctor])
+                m = JavaConstructor.new(@java, self, hash[:ctor])
             end
+            @methods << m if m && !@methods.include?(m)
         end
         @methods.delete_if {|m| !m.public? }
     end
@@ -350,6 +352,14 @@ class JavaClass
         end
     end
 
+    def parent_root
+        if @parent
+            @parent.parent_root
+        else
+            self
+        end
+    end
+
     def includes
         [self]
     end
@@ -363,7 +373,7 @@ class JavaClass
     end
 
     def source_includes
-        @methods.map(&:includes).flatten.uniq.sort
+        (@methods.map(&:includes) + @children.map(&:source_includes)).flatten.uniq.sort
     end
 
     def header_forwards
@@ -438,6 +448,8 @@ class JavaClass
         return if @parent
         hpp = GeneratedFile.new("include/#{@fullname}.hpp")
         hpp << "#pragma once\n\n"
+        hpp << "#include <cstdint>\n"
+        hpp << "#include <vector>\n\n"
         header_includes.each do |javaclass|
             javaclass.gen_include(hpp)
         end
@@ -459,6 +471,7 @@ class JavaClass
 end
 
 class JavaMethod
+    attr_accessor :name, :args, :javaclass
     def initialize(java, javaclass, hash)
         @java = java
         @javaclass = javaclass
@@ -466,6 +479,10 @@ class JavaMethod
         @return = hash[:returntype]
         @name = hash[:name]
         @args = hash[:args]
+    end
+
+    def ==(other)
+        [@name, @args, @javaclass] == [other.name, other.args, other.javaclass]
     end
 
     def includes
@@ -490,14 +507,26 @@ class JavaMethod
         end
         f << @return.cppname << " " << @name << "(" << @args.map(&:cppname).join(", ") << ");\n"
     end
+
+    def define(f)
+        f << @return.cppname << " " << @javaclass.cppname << "::" << @name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
+        f.ident(1)
+        f.ident(-1)
+        f << "}\n\n"
+    end
 end
 
 class JavaConstructor
+    attr_accessor :name, :args, :javaclass
     def initialize(java, javaclass, hash)
         @java = java
         @javaclass = javaclass
         @mods = hash[:mods]
         @args = hash[:args]
+    end
+
+    def ==(other)
+        [@mame, @args, @javaclass] == [other.name, other.args, other.javaclass]
     end
 
     def includes
@@ -518,6 +547,13 @@ class JavaConstructor
 
     def declare(f)
         f << @javaclass.name << "(" << @args.map(&:cppname).join(", ") << ");\n"
+    end
+
+    def define(f)
+        f << @javaclass.cppname << "::" << @javaclass.name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
+        f.ident(1)
+        f.ident(-1)
+        f << "}\n\n"
     end
 end
 
@@ -556,6 +592,28 @@ class Package
         @name.split(".").size.times do
             f << " }"
         end
+    end
+
+    def generate_source
+        cpp = GeneratedFile.new("src/#{@name}.cpp")
+        includes = @classes
+        includes.each do |incl|
+            includes += incl.source_includes
+        end
+        includes.map!(&:parent_root)
+        includes.sort.uniq.each do |javaclass|
+            javaclass.gen_include(cpp)
+        end
+
+        cpp << "\n"
+
+        @classes.each do |javaclass|
+            javaclass.methods.each do |method|
+                method.define(cpp)
+            end
+        end
+
+        cpp.done
     end
 end
 
