@@ -234,7 +234,10 @@ class JavaSpace
     def generate_core
         hpp = GeneratedFile.new("include/core.hpp")
         hpp << "#include <jni.h>\n"
-        hpp << "namespace java {\n\n"
+        hpp << "namespace java {\n"
+        hpp << "\n"
+        hpp << "extern thread_local JNIEnv* jni;\n"
+        hpp << "\n"
         hpp << "jclass fetch_class(const char* classname);\n"
         hpp << "\n}\n"
         hpp.done
@@ -243,10 +246,12 @@ class JavaSpace
         cpp << "#include <core.hpp>\n"
         cpp << "#include <java.lang.Thread.hpp>\n"
         cpp << "#include <java.lang.ClassLoader.hpp>\n"
+        cpp << "#include <java.lang.String.hpp>\n"
+        cpp << "#include <java.lang.Class.hpp>\n"
         cpp << "namespace java {\n"
         cpp << "\n"
         cpp << "static thread_local java::lang::ClassLoader class_loader(nullptr);\n"
-        cpp << "static thread_local JNIEnv* jni;\n"
+        cpp << "thread_local JNIEnv* jni;\n"
         cpp << "\n"
         cpp << "static void fetch_class_loader() {\n"
         cpp << "    if (class_loader.obj) return;\n"
@@ -257,6 +262,7 @@ class JavaSpace
         cpp << "\n"
         cpp << "jclass fetch_class(const char* classname) {\n"
         cpp << "    fetch_class_loader();\n"
+        cpp << "    return (jclass)class_loader.loadClass(classname).obj;\n"
         cpp << "}\n"
         cpp << "\n"
         cpp << "}\n"
@@ -496,6 +502,9 @@ class JavaClass
             f << "bool isNull() {return obj == nullptr;}\n"
         else
             f << "#{@name}(jobject _obj) : #{inherit.map{|c|c.cppname+"(_obj)"}.join(", ")} {}\n"
+        end
+        if self == @java.find_class("java.lang.String")
+            f << "String(const char* utf) : #{inherit.map{|c|c.cppname+"(0)"}.join(", ")} {obj = java::jni->NewStringUTF(utf);}\n"
         end
         f << "\n"
         @methods.each do |m|
