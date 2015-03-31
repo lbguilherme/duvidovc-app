@@ -17,7 +17,7 @@ END {
     Library.new(java, "android-api15.jar")
     #Library.new(java, "facebook-sdk-3.23.1.jar")
     #Library.new(java, "support-v4-22.0.0.jar")
-    #java.cheat
+    java.cheat
     puts "Found #{java.classes.size} classes."
 
     puts "Extracting complete information..."
@@ -276,7 +276,7 @@ private
 end
 
 class JavaClass
-    attr_accessor :fullname, :mods, :methods, :library
+    attr_accessor :fullname, :name, :mods, :methods, :library
     def initialize(java, library, fullname)
         @java = java
         raise unless library
@@ -335,6 +335,11 @@ class JavaClass
                 @methods << JavaConstructor.new(@java, self, hash[:ctor])
             end
         end
+        @methods.delete_if {|m| !m.public? }
+    end
+
+    def cppname
+        @fullname.gsub(".", "::").gsub("$", "::")
     end
 
     def includes
@@ -346,11 +351,11 @@ class JavaClass
     end
 
     def header_includes
-        (@extends + @implements + @children.map(&:includes).flatten).uniq.sort
+        (inherit + @children.map(&:inherit).flatten + [@java.find_class("java.lang.Object")]).uniq.sort
     end
 
     def source_includes
-        (@methods.map(&:includes) + @children.map(&:includes)).flatten.uniq.sort
+        @methods.map(&:includes).flatten.uniq.sort
     end
 
     def header_forwards
@@ -370,18 +375,53 @@ class JavaClass
             @parent.gen_include(f)
         else
             @package.gen_namespace_begin(f)
-            f << "class #{@name}";
+            f << "class #{@name};\n"
             @package.gen_namespace_end(f)
             f << "\n"
         end
     end
 
-    def gen_class
-        f << "class #{@name} {\n";
-        f << "};\n"
+    def inherit
+        list = [@extends + @implements].flatten - [self]
+        list = (list - list.map(&:inherit).flatten).sort + [@java.find_class("java.lang.Object")]
+        list.uniq
+    end
+
+    def inherit_sheme
+        if self == @java.find_class("java.lang.Object")
+            "public virtual #{cppname}"
+        else
+            "public #{cppname}"
+        end
+    end
+
+    def gen_class(f)
+        if self == @java.find_class("java.lang.Object")
+            f << "class #{@name} {\n"
+        else
+            wid = "class #{@name} :"
+            f << wid
+            f << " " << inherit[0].inherit_sheme
+            inherit[1..-1].each do |javaclass|
+                f << ",\n#{" " * wid.size} #{javaclass.inherit_sheme}"
+            end
+            f << " {\n";
+        end
+        f << "public:\n\n"
+        f.ident 1
+        @children.each do |child|
+            child.gen_class(f)
+            f << "\n"
+        end
+        @methods.each do |m|
+            m.declare(f)
+        end
+        f.ident -1
+        f << "\n};\n"
     end
 
     def generate_header
+        return if @parent
         hpp = GeneratedFile.new("include/#{@fullname}.hpp")
         hpp << "#pragma once\n\n"
         header_includes.each do |javaclass|
@@ -393,9 +433,7 @@ class JavaClass
         end
         hpp << "\n"
         @package.gen_namespace_begin(hpp)
-
-
-
+        gen_class(hpp)
         @package.gen_namespace_end(hpp)
         hpp.done
     end
@@ -414,7 +452,6 @@ class JavaMethod
         @return = hash[:returntype]
         @name = hash[:name]
         @args = hash[:args]
-        #p self
     end
 
     def includes
@@ -428,6 +465,17 @@ class JavaMethod
     def inspect
         (@mods.map(&:to_s) + [@return.inspect, @name]).join(" ") + "(#{@args.map(&:inspect).join(", ")})"
     end
+
+    def public?
+        @mods.include? :public
+    end
+
+    def declare(f)
+        if @mods.include? :static
+            f << "static "
+        end
+        f << @return.cppname << " " << @name << "(" << @args.map(&:cppname).join(", ") << ");\n"
+    end
 end
 
 class JavaConstructor
@@ -436,7 +484,6 @@ class JavaConstructor
         @javaclass = javaclass
         @mods = hash[:mods]
         @args = hash[:args]
-        #p self
     end
 
     def includes
@@ -449,6 +496,14 @@ class JavaConstructor
 
     def inspect
         (@mods.map(&:to_s) + [@javaclass.inspect]).join(" ") + "(#{@args.map(&:inspect).join(", ")})"
+    end
+
+    def public?
+        @mods.include? :public
+    end
+
+    def declare(f)
+        f << @javaclass.name << "(" << @args.map(&:cppname).join(", ") << ");\n"
     end
 end
 
@@ -481,9 +536,13 @@ end
 class PrimitiveTypeClass
     def initialize(javaname, cppname)
         @javaname = javaname
+        @cppname = cppname
     end
     def javaname
         @javaname
+    end
+    def cppname
+        @cppname
     end
     def inspect
         @javaname
@@ -521,6 +580,9 @@ class ArrayType
     def depends
         @base.depends
     end
+    def cppname
+        "std::vector<#{@base.cppname}>"
+    end
 end
 
 class VariadicType
@@ -535,6 +597,9 @@ class VariadicType
     end
     def depends
         @base.depends
+    end
+    def cppname
+        "std::vector<#{@base.cppname}>"
     end
 end
 
@@ -557,6 +622,8 @@ class GeneratedFile < String
     end
     def ident(ident)
         @ident += ident
+        self << "  "*ident if ident > 0
+        self[(ident*2)..-1] = "" if ident < 0 && self[(ident*2)..-1] == "  "*(-ident)
     end
     def <<(str)
         super(str.gsub("\n", "\n" + "  "*@ident))
