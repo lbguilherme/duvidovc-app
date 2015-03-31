@@ -1,0 +1,5 @@
+*~
+*.pro.user*
+java/tmp/
+java/include/
+java/src/

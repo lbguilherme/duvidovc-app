@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>artwork/login-background.png</file>
+        <file>artwork/facebook.png</file>
+        <file>artwork/facebook-white.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/components">
+        <file>Button.qml</file>
+        <file>FacebookLoginButton.qml</file>
+    </qresource>
+    <qresource prefix="/scenes">
+        <file>LoginScene.qml</file>
+    </qresource>
+</RCC>
