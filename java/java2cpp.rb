@@ -23,6 +23,8 @@ END {
     puts "Extracting classes..."
     java.process_classes(&:extract!)
 
+    puts "Extracted #{java.classes.size} classes."
+
     puts "Generating headers..."
     java.classes.each_value(&:generate_header)
 
@@ -169,7 +171,7 @@ $JavaTransformer = JavaTransformer.new
 $JavaGenericsTransformer = JavaGenericsTransformer.new
 
 def protect_name(name)
-    kws = %w[delete]
+    kws = %w[delete bool union register or xor not and namespace]
     kws.include?(name) ? name+"_" : name
 end
 
@@ -302,7 +304,9 @@ class Library
             result = javap
         end
         raise if result =~ /Error: class not found/
-        result.gsub(/ = \".+;\n/, ";\n")
+        result.gsub!(/ = \".+;\n/, ";\n")
+        result.gsub!(/^(.+)=(.+)\n/, "")
+        result
     end
 
     def inspect
@@ -339,10 +343,11 @@ class JavaClass
         raise unless library
         @library = library
         @fullname = fullname
-        @name = fullname[/[^\.\$]+$/]
+        @name = fullname[/[^\.]+$/].gsub("$", "_")
         @methods = []
         @package = java.find_package(fullname[/(.+)(?=\.)/])
         @package.add_class self
+        @cppname = @package.name.split(".").map{|n| protect_name(n)}.join(".").gsub(".", "::") + "::" + @name.gsub("$", "_")
         @children = []
     end
 
@@ -398,7 +403,7 @@ class JavaClass
     end
 
     def cppname
-        @fullname.gsub(".", "::").gsub("$", "::")
+        @cppname
     end
 
     def argtype
@@ -433,37 +438,23 @@ class JavaClass
         [self]
     end
 
-    def header_includes
-        (inherit + @children.map(&:header_includes).flatten + [@java.find_class("java.lang.Object")]).uniq.sort - [self]
-    end
-
     def source_includes
-        (@methods.map(&:includes) + @children.map(&:source_includes)).flatten.uniq.sort
+        @methods.map(&:includes).flatten
     end
 
     def header_forwards
-        list = (@methods.map(&:depends) + @children.map(&:header_forwards)).flatten.uniq.sort
-        list.delete_if {|c| c.parent_tree.include? self }
-        list
+        @methods.map(&:depends).flatten.uniq.sort
     end
 
     def gen_include(f)
-        if @parent
-            @parent.gen_include(f)
-        else
-            f << "#include \"#{@fullname}.hpp\"\n"
-        end
+        f << "#include \"#{@fullname.gsub("$", "_")}.hpp\"\n"
     end
 
     def gen_forward(f)
-        if @parent
-            @parent.gen_include(f)
-        else
-            @package.gen_namespace_begin_inline(f)
-            f << "class #{@name};"
-            @package.gen_namespace_end_inline(f)
-            f << "\n"
-        end
+        @package.gen_namespace_begin_inline(f)
+        f << "class #{@name};"
+        @package.gen_namespace_end_inline(f)
+        f << "\n"
     end
 
     def all_inherits
@@ -486,7 +477,21 @@ class JavaClass
         end
     end
 
+    def all_children
+        @children + @children.map(&:all_children).flatten
+    end
+
     def gen_class(f)
+        inherit.each do |javaclass|
+            javaclass.gen_include(f)
+        end
+        f << "\n"
+        header_forwards.each do |javaclass|
+            javaclass.gen_forward(f)
+        end
+        f << "\n"
+        @package.gen_namespace_begin(f)
+
         if self == @java.find_class("java.lang.Object")
             f << "class #{@name} {\n"
         else
@@ -503,19 +508,6 @@ class JavaClass
         f << "static jclass _class;\n"
         f << "jobject obj;\n" if self == @java.find_class("java.lang.Object")
         f << "\n"
-        @children.sort! do |a, b|
-            next 1 if a.inherit.include? b
-            next -11 if b.inherit.include? a
-            0
-        end
-        @children.each do |child|
-            f << "class #{child.name};\n"
-        end
-        f << "\n" if @children.size > 0
-        @children.each do |child|
-            child.gen_class(f)
-            f << "\n"
-        end
         if self == @java.find_class("java.lang.Object")
             f << "Object(jobject _obj) {obj = _obj;}\n"
             f << "bool isNull() {return obj == nullptr;}\n"
@@ -531,30 +523,22 @@ class JavaClass
         end
         f.ident -1
         f << "\n};\n"
+
+        @package.gen_namespace_end(f)
     end
 
     def generate_header
-        return if @parent
-        hpp = GeneratedFile.new("include/#{@fullname}.hpp")
+        hpp = GeneratedFile.new("include/#{@fullname.gsub("$", "_")}.hpp")
         hpp << "#pragma once\n\n"
         hpp << "#include \"../src/java-core.hpp\"\n"
         hpp << "#include <jni.h>\n"
         hpp << "#include <cstdint>\n"
         hpp << "#include <vector>\n\n"
-        header_includes.each do |javaclass|
-            javaclass.gen_include(hpp)
-        end
-        header_forwards.each do |javaclass|
-            javaclass.gen_include(hpp) if javaclass.parent
-        end
-        hpp << "\n"
-        header_forwards.each do |javaclass|
-            javaclass.gen_forward(hpp) unless javaclass.parent
-        end
-        hpp << "\n"
-        @package.gen_namespace_begin(hpp)
         gen_class(hpp)
-        @package.gen_namespace_end(hpp)
+        hpp << "\n"
+        all_children.each do |child|
+            child.gen_include(hpp)
+        end
         hpp << "\n"
         hpp.done
     end
@@ -710,7 +694,7 @@ class Package
 
     def gen_namespace_begin(f)
         @name.split(".").each do |name|
-            f << "namespace #{name} {\n"
+            f << "namespace #{protect_name name} {\n"
         end
     end
 
@@ -722,7 +706,7 @@ class Package
 
     def gen_namespace_begin_inline(f)
         @name.split(".").each do |name|
-            f << "namespace #{name} { "
+            f << "namespace #{protect_name name} { "
         end
     end
 
@@ -740,6 +724,7 @@ class Package
         end
         includes.map!(&:parent_root)
         cpp << "#include \"java-core.hpp\"\n"
+        cpp << "#include <memory>\n"
         includes.sort.uniq.each do |javaclass|
             javaclass.gen_include(cpp)
         end
@@ -829,7 +814,16 @@ class ArrayType
     def prepare_argument(f, src, dst)
         if @base.is_a? PrimitiveType
             f << "j#{@base.javaname}Array #{dst} = java::jni->New#{@base.javaname.capitalize}Array(#{src}.size());\n"
-            f << "java::jni->Set#{@base.javaname.capitalize}ArrayRegion(#{dst}, 0, #{src}.size(), #{src}.data());\n"
+            if @base == BooleanType
+                f << "unsigned #{src}s = #{src}.size();\n"
+                f << "std::unique_ptr<#{@base.cppname}[]> #{src}t(new #{@base.cppname}[#{src}s]);\n"
+                f << "for (unsigned #{src}i = 0; #{src}i < #{src}s; ++#{src}i) {\n"
+                f << "  #{src}t[#{src}i] = #{src}[#{src}i];\n"
+                f << "}\n"
+                f << "java::jni->Set#{@base.javaname.capitalize}ArrayRegion(#{dst}, 0, #{src}s, (const j#{@base.javaname}*)#{src}t.get());\n"
+            else
+                f << "java::jni->Set#{@base.javaname.capitalize}ArrayRegion(#{dst}, 0, #{src}.size(), #{src}.data());\n"
+            end
         elsif @base.is_a? JavaClass
             f << "unsigned #{src}s = #{src}.size();\n"
             @base.gen_fetch_class(f)
