@@ -508,7 +508,7 @@ class JavaClass
             f << "#{@name}(jobject _obj) : #{inherit.map{|c|c.cppname+"(_obj)"}.join(", ")} {}\n"
         end
         if self == @java.find_class("java.lang.String")
-            f << "String(const char* utf) : #{inherit.map{|c|c.cppname+"(0)"}.join(", ")} {obj = java::jni->NewStringUTF(utf);}\n"
+            f << "String(const char* utf) : #{inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = java::jni->NewStringUTF(utf);}\n"
         end
         f << "\n"
         @methods.each do |m|
@@ -542,6 +542,18 @@ class JavaClass
         @package.gen_namespace_end(hpp)
         hpp << "\n"
         hpp.done
+    end
+
+    def gen_fetch_class(f)
+        f << "if (!#{cppname}::_class) #{cppname}::_class = java::fetch_class(\"#{@fullname.gsub(".", "/")}\");\n"
+    end
+
+    def prepare_argument(f, src, dst)
+        f << "jobject #{dst} = #{src}.obj;\n"
+    end
+
+    def prepare_return(f, src, dst)
+        f << "jobject #{dst} = #{src};\n"
     end
 
 end
@@ -581,15 +593,11 @@ class JavaMethod
         if @mods.include? :static
             f << "static "
         end
-        f << @return.cppname << " " << @name << "(" << @args.map(&:cppname).join(", ") << ");\n"
+        f << @return.cppname << " " << @name << "(" << @args.map(&:argtype).join(", ") << ");\n"
     end
 
     def signature
         "(#{@args.map(&:signature).join})#{@return ? @return.signature : "V"}"
-    end
-
-    def gen_fetch_class(f)
-        f << "if (!_class) _class = java::fetch_class(\"#{@javaclass.fullname.gsub(".", "/")}\");\n"
     end
 
     def gen_fetch_method(f)
@@ -597,11 +605,36 @@ class JavaMethod
     end
 
     def define(f)
-        f << @return.cppname << " " << @javaclass.cppname << "::" << @name << "(" << @args.map(&:cppname).join(", ") << ") {\n"
+        argparams = @args.map(&:argtype).map.with_index {|t, n| "#{t} arg#{n}" }.join(", ")
+        arglist = @args.map(&:argtype).map.with_index {|t, n| ", _arg#{n}" }.join
+        f << "#{@return.cppname} #{@javaclass.cppname}::#{@name}(#{argparams}) {\n"
         f.ident(1)
-        gen_fetch_class(f)
+        @javaclass.gen_fetch_class(f)
         gen_fetch_method(f)
-        f << "return *(#{@return.cppname}*)0;\n" unless @return == VoidType # FIXME
+        @args.each.with_index {|a, n| a.prepare_argument(f, "arg#{n}", "_arg#{n}") }
+
+        if @return == VoidType
+            if @mods.include? :static
+                f << "java::jni->CallStaticVoidMethod(_class, mid" << arglist << ");\n"
+            else
+                f << "java::jni->CallVoidMethod(obj, mid" << arglist << ");\n"
+            end
+        elsif @return.is_a? PrimitiveType
+            if @mods.include? :static
+                f << "return java::jni->CallStatic#{@return.javaname.capitalize}Method(_class, mid" << arglist << ");\n"
+            else
+                f << "return java::jni->Call#{@return.javaname.capitalize}Method(obj, mid" << arglist << ");\n"
+            end
+        else
+            if @mods.include? :static
+                f << "jobject ret = java::jni->CallStaticObjectMethod(_class, mid" << arglist << ");\n"
+            else
+                f << "jobject ret = java::jni->CallObjectMethod(obj, mid" << arglist << ");\n"
+            end
+            @return.prepare_return(f, "ret", "_ret")
+            f << "return _ret;\n"
+        end
+
         f.ident(-1)
         f << "}\n\n"
     end
@@ -633,11 +666,14 @@ class JavaConstructor < JavaMethod
     end
 
     def define(f)
-        f << @javaclass.cppname << "::" << @javaclass.name << "(" << @args.map(&:argtype).join(", ")
-        f << ") : #{@javaclass.inherit.map{|c|c.cppname+"(0)"}.join(", ")} {\n"
+        argparams = @args.map(&:argtype).map.with_index {|t, n| "#{t} arg#{n}" }.join(", ")
+        arglist = @args.map(&:argtype).map.with_index {|t, n| ", _arg#{n}" }.join
+        f << "#{@javaclass.cppname}::#{@javaclass.name}(#{argparams}) : #{@javaclass.inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {\n"
         f.ident(1)
-        gen_fetch_class(f)
+        @javaclass.gen_fetch_class(f)
         gen_fetch_method(f)
+        @args.each.with_index {|a, n| a.prepare_argument(f, "arg#{n}", "_arg#{n}") }
+        f << "obj = java::jni->NewObject(_class, mid" << arglist << ");\n"
         f.ident(-1)
         f << "}\n\n"
     end
@@ -710,7 +746,7 @@ class Package
     end
 end
 
-class PrimitiveTypeClass
+class PrimitiveType
     attr_reader :javaname, :cppname, :signature
     def initialize(javaname, cppname, signature)
         @javaname = javaname
@@ -733,18 +769,22 @@ class PrimitiveTypeClass
     def depends
         []
     end
+
+    def prepare_argument(f, src, dst)
+        f << "#{@cppname} #{dst} = #{src};\n"
+    end
 end
 
 PrimitiveTypes = [
-    VoidType = PrimitiveTypeClass.new("void", "void", "V"),
-    ShortType = PrimitiveTypeClass.new("short", "int16_t", "S"),
-    IntType = PrimitiveTypeClass.new("int", "int32_t", "I"),
-    LongType = PrimitiveTypeClass.new("long", "int64_t", "J"),
-    FloatType = PrimitiveTypeClass.new("float", "float", "F"),
-    DoubleType = PrimitiveTypeClass.new("double", "double", "D"),
-    CharType = PrimitiveTypeClass.new("char", "uint16_t", "C"),
-    ByteType = PrimitiveTypeClass.new("byte", "uint8_t", "B"),
-    BooleanType = PrimitiveTypeClass.new("boolean", "bool", "Z")
+    VoidType = PrimitiveType.new("void", "void", "V"),
+    ShortType = PrimitiveType.new("short", "int16_t", "S"),
+    IntType = PrimitiveType.new("int", "int32_t", "I"),
+    LongType = PrimitiveType.new("long", "int64_t", "J"),
+    FloatType = PrimitiveType.new("float", "float", "F"),
+    DoubleType = PrimitiveType.new("double", "double", "D"),
+    CharType = PrimitiveType.new("char", "uint16_t", "C"),
+    ByteType = PrimitiveType.new("byte", "int8_t", "B"),
+    BooleanType = PrimitiveType.new("boolean", "bool", "Z")
 ]
 
 class ArrayType
@@ -768,6 +808,47 @@ class ArrayType
     end
     def signature
         "["+@base.signature
+    end
+
+    def prepare_argument(f, src, dst)
+        if @base.is_a? PrimitiveType
+            f << "j#{@base.javaname}Array #{dst} = java::jni->New#{@base.javaname.capitalize}Array(#{src}.size());\n"
+            f << "java::jni->Set#{@base.javaname.capitalize}ArrayRegion(#{dst}, 0, #{src}.size(), #{src}.data());\n"
+        elsif @base.is_a? JavaClass
+            f << "unsigned #{src}s = #{src}.size();\n"
+            @base.gen_fetch_class(f)
+            f << "jobjectArray #{dst} = java::jni->NewObjectArray(#{src}s, #{@base.cppname}::_class, nullptr);\n"
+            f << "for (unsigned #{src}i = 0; #{src}i < #{src}s; ++#{src}i) {\n"
+            f << "  #{@base.argtype} #{src}e = #{src}[#{src}i];\n"
+            f.ident(1)
+            @base.prepare_argument(f, "#{src}e", "#{src}d")
+            f.ident(-1)
+            f << "  java::jni->SetObjectArrayElement(#{dst}, #{src}i, #{src}d);\n"
+            f << "}\n"
+        else
+            f << "// TODO: argument 2d array\n"
+        end
+    end
+
+    def prepare_return(f, src, dst)
+        if @base.is_a? PrimitiveType
+            f << "unsigned #{src}s = java::jni->GetArrayLength((jarray)#{src});\n"
+            f << "j#{@base.javaname}* #{src}a = java::jni->Get#{@base.javaname.capitalize}ArrayElements((j#{@base.javaname}Array)#{src}, nullptr);\n"
+            f << "#{cppname} #{dst}(#{src}a, #{src}a+#{src}s);\n"
+            f << "java::jni->Release#{@base.javaname.capitalize}ArrayElements((j#{@base.javaname}Array)#{src}, #{src}a, JNI_ABORT);\n"
+        elsif @base.is_a? JavaClass
+            f << "unsigned #{src}s = java::jni->GetArrayLength((jarray)#{src});\n"
+            f << "#{cppname} #{dst}(#{src}s, #{@base.cppname}((jobject)nullptr));\n"
+            f << "for (unsigned #{src}i = 0; #{src}i < #{src}s; ++#{src}i) {\n"
+            f << "  jobject #{src}e = java::jni->GetObjectArrayElement((jobjectArray)#{src}, #{src}i);\n"
+            f.ident(1)
+            @base.prepare_return(f, "#{src}e", "#{src}d")
+            f.ident(-1)
+            f << "  #{dst}[#{src}i] = #{src}d;\n"
+            f << "}\n"
+        else
+            f << "// TODO: return 2d array\n"
+        end
     end
 end
 
