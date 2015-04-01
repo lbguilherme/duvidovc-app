@@ -20,7 +20,7 @@ END {
     #java.cheat
     puts "Requested #{java.classes.size} classes."
 
-    puts "Extracting information from java..."
+    puts "Extracting classes..."
     java.process_classes(&:extract!)
 
     puts "Generating headers..."
@@ -248,12 +248,12 @@ END
 
         cpp = GeneratedFile.new("src/java-core.cpp")
         cpp << <<END
-#include <core.hpp>
+#include "java-core.hpp"
 #include <java.lang.Thread.hpp>
 #include <java.lang.ClassLoader.hpp>
 #include <java.lang.String.hpp>
 #include <java.lang.Class.hpp>
-#include <QAndroidJniObject>
+
 namespace java {
 
 thread_local jobject ref(nullptr);
@@ -434,7 +434,7 @@ class JavaClass
     end
 
     def header_includes
-        (inherit + @children.map(&:inherit).flatten + [@java.find_class("java.lang.Object")]).uniq.sort - [self]
+        (inherit + @children.map(&:header_includes).flatten + [@java.find_class("java.lang.Object")]).uniq.sort - [self]
     end
 
     def source_includes
@@ -442,7 +442,7 @@ class JavaClass
     end
 
     def header_forwards
-        list = (@methods.map(&:depends) + @children.map(&:depends)).flatten.uniq.sort
+        list = (@methods.map(&:depends) + @children.map(&:header_forwards)).flatten.uniq.sort
         list.delete_if {|c| c.parent_tree.include? self }
         list
     end
@@ -503,6 +503,11 @@ class JavaClass
         f << "static jclass _class;\n"
         f << "jobject obj;\n" if self == @java.find_class("java.lang.Object")
         f << "\n"
+        @children.sort! do |a, b|
+            next 1 if a.inherit.include? b
+            next -11 if b.inherit.include? a
+            0
+        end
         @children.each do |child|
             f << "class #{child.name};\n"
         end
