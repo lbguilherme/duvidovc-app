@@ -17,7 +17,7 @@ END {
     Library.new(java, "android-api15.jar")
     #Library.new(java, "facebook-sdk-3.23.1.jar")
     #Library.new(java, "support-v4-22.0.0.jar")
-    java.cheat
+    #java.cheat
     puts "Requested #{java.classes.size} classes."
 
     puts "Extracting information from java..."
@@ -233,39 +233,49 @@ class JavaSpace
 
     def generate_core
         hpp = GeneratedFile.new("src/java-core.hpp")
-        hpp << "#include <jni.h>\n"
-        hpp << "namespace java {\n"
-        hpp << "\n"
-        hpp << "extern thread_local JNIEnv* jni;\n"
-        hpp << "\n"
-        hpp << "jclass fetch_class(const char* classname);\n"
-        hpp << "\n}\n"
+        hpp << <<END
+#include <jni.h>
+namespace java {
+
+extern thread_local jobject ref;
+extern thread_local JNIEnv* jni;
+
+jclass fetch_class(const char* classname);
+
+}
+END
         hpp.done
 
         cpp = GeneratedFile.new("src/java-core.cpp")
-        cpp << "#include \"java-core.hpp\"\n"
-        cpp << "#include <java.lang.Thread.hpp>\n"
-        cpp << "#include <java.lang.ClassLoader.hpp>\n"
-        cpp << "#include <java.lang.String.hpp>\n"
-        cpp << "#include <java.lang.Class.hpp>\n"
-        cpp << "namespace java {\n"
-        cpp << "\n"
-        cpp << "static thread_local java::lang::ClassLoader class_loader(nullptr);\n"
-        cpp << "thread_local JNIEnv* jni;\n"
-        cpp << "\n"
-        cpp << "static void fetch_class_loader() {\n"
-        cpp << "    if (class_loader.obj) return;\n"
-        cpp << "    java::lang::Thread::_class = jni->FindClass(\"java/lang/Thread\");\n"
-        cpp << "    java::lang::ClassLoader::_class = jni->FindClass(\"java/lang/ClassLoader\");\n"
-        cpp << "    class_loader = java::lang::Thread::currentThread().getContextClassLoader();\n"
-        cpp << "}\n"
-        cpp << "\n"
-        cpp << "jclass fetch_class(const char* classname) {\n"
-        cpp << "    fetch_class_loader();\n"
-        cpp << "    return (jclass)class_loader.loadClass(classname).obj;\n"
-        cpp << "}\n"
-        cpp << "\n"
-        cpp << "}\n"
+        cpp << <<END
+#include <core.hpp>
+#include <java.lang.Thread.hpp>
+#include <java.lang.ClassLoader.hpp>
+#include <java.lang.String.hpp>
+#include <java.lang.Class.hpp>
+#include <QAndroidJniObject>
+namespace java {
+
+thread_local jobject ref(nullptr);
+static thread_local java::lang::ClassLoader class_loader(nullptr);
+thread_local JNIEnv* jni;
+
+static void fetch_class_loader() {
+    if (class_loader.obj) return;
+    java::lang::Object::_class = (jclass)jni->NewGlobalRef((jobject)jni->FindClass("java/lang/Object"));
+    java::lang::Class::_class = (jclass)jni->NewGlobalRef((jobject)jni->FindClass("java/lang/Class"));
+    java::lang::ClassLoader::_class = (jclass)jni->NewGlobalRef((jobject)jni->FindClass("java/lang/ClassLoader"));
+    class_loader = java::lang::Object(ref).getClass().getClassLoader();
+    class_loader.obj = jni->NewGlobalRef(class_loader.obj);
+}
+
+jclass fetch_class(const char* classname) {
+    fetch_class_loader();
+    return (jclass)jni->NewGlobalRef(class_loader.loadClass(classname).obj);
+}
+
+}
+END
         cpp.done
     end
 
@@ -601,7 +611,8 @@ class JavaMethod
     end
 
     def gen_fetch_method(f)
-        f << "static jmethodID mid = java::jni->GetMethodID(_class, \"#{@name ? @name : "<init>"}\", \"#{signature}\");\n"
+        f << "static jmethodID mid = java::jni->Get#{@mods.include?(:static) ? "Static" : ""}MethodID"
+        f << "(_class, \"#{@name ? @name : "<init>"}\", \"#{signature}\");\n"
     end
 
     def define(f)
