@@ -13,10 +13,10 @@ END {
     `mkdir -p src`
 
     java = JavaSpace.new
-    #Library.new(java, "bolts-android-1.2.0.jar")
+    Library.new(java, "bolts-android-1.2.0.jar")
     Library.new(java, "android-api15.jar")
-    #Library.new(java, "facebook-sdk-3.23.1.jar")
-    #Library.new(java, "support-v4-22.0.0.jar")
+    Library.new(java, "facebook-sdk-3.23.1.jar")
+    Library.new(java, "support-v4-22.0.0.jar")
     #java.cheat
     puts "Requested #{java.classes.size} classes."
 
@@ -111,6 +111,7 @@ class JavaTransformer < Parslet::Transform
 
     rule(:javaclass => simple(:fullname), :complement => sequence(:compl)) { java.find_class(fullname.to_s + compl.join.to_s.gsub(".", "$")) }
     rule(:javaclass => simple(:base), :template => subtree(:a), :complement => sequence(:compl)) { java.find_class(base.to_s + compl.join.to_s.gsub(".", "$")) }
+    rule(:javaclass => simple(:base), :template => subtree(:a), :complement => simple(:compl)) { java.find_class(base.to_s + compl.to_s.gsub(".", "$")) }
     rule(:type => simple(:base)) { base }
     rule(:arg => simple(:base)) { base }
     rule(:arg => simple(:base), :variadic => "...") { VariadicType.new(base) }
@@ -230,7 +231,8 @@ class JavaSpace
             end
         end
 
-        raise "Could not find '#{fullname}'."
+        puts "\rCould not find '#{fullname}'"
+        InvalidType.new
     end
 
     def generate_core
@@ -347,7 +349,7 @@ class JavaClass
         @methods = []
         @package = java.find_package(fullname[/(.+)(?=\.)/])
         @package.add_class self
-        @cppname = @package.name.split(".").map{|n| protect_name(n)}.join(".").gsub(".", "::") + "::" + @name.gsub("$", "_")
+        @cppname = "::" + @package.name.split(".").map{|n| protect_name(n)}.join(".").gsub(".", "::") + "::" + @name.gsub("$", "_")
         @children = []
     end
 
@@ -397,7 +399,7 @@ class JavaClass
             when :ctor
                 m = JavaConstructor.new(@java, self, hash[:ctor])
             end
-            @methods << m if m && !@methods.include?(m)
+            @methods << m if m && m.valid? && !@methods.include?(m)
         end
         @methods.delete_if {|m| !m.public? }
     end
@@ -408,6 +410,10 @@ class JavaClass
 
     def argtype
         "const #{cppname}&"
+    end
+
+    def valid?
+        true
     end
 
     def parent_tree
@@ -465,6 +471,7 @@ class JavaClass
 
     def inherit
         list = [@extends + @implements].flatten - [self]
+        list.delete_if {|c| !c.valid?}
         list = [@java.find_class("java.lang.Object")] + (list - list.map(&:all_inherits).flatten).sort
         list.uniq
     end
@@ -568,8 +575,12 @@ class JavaMethod
         @args = hash[:args]
     end
 
+    def valid?
+        (@args.all?(&:valid?) && @return.valid?) rescue false
+    end
+
     def ==(other)
-        [@name, @args, @javaclass] == [other.name, other.args, other.javaclass]
+        [@name, @args.map(&:signature).join] == [other.name, other.args.map(&:signature).join]
     end
 
     def includes
@@ -607,7 +618,7 @@ class JavaMethod
     def define(f)
         argparams = @args.map(&:argtype).map.with_index {|t, n| "#{t} arg#{n}" }.join(", ")
         arglist = @args.map(&:argtype).map.with_index {|t, n| ", _arg#{n}" }.join
-        f << "#{@return.cppname} #{@javaclass.cppname}::#{@name}(#{argparams}) {\n"
+        f << "#{@return.cppname} #{@javaclass.cppname[2..-1]}::#{@name}(#{argparams}) {\n"
         f.ident(1)
         @javaclass.gen_fetch_class(f)
         gen_fetch_method(f)
@@ -647,6 +658,10 @@ class JavaConstructor < JavaMethod
         @javaclass = javaclass
         @mods = hash[:mods]
         @args = hash[:args]
+    end
+
+    def valid?
+        @args.all?(&:valid?) rescue false
     end
 
     def includes
@@ -755,6 +770,10 @@ class PrimitiveType
         @signature = signature
     end
 
+    def valid?
+        true
+    end
+
     def argtype
         @cppname
     end
@@ -791,6 +810,9 @@ PrimitiveTypes = [
 class ArrayType
     def initialize(base)
         @base = base
+    end
+    def valid?
+        @base.valid?
     end
     def inspect
         @base.inspect + "[]"
@@ -877,6 +899,12 @@ class Type
             end
         end
         java.find_class(type)
+    end
+end
+
+class InvalidType
+    def valid?
+        false
     end
 end
 
