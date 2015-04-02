@@ -5,8 +5,10 @@
     <qresource prefix="/components">
         <file>Button.qml</file>
         <file>FacebookLoginButton.qml</file>
+        <file>RingMenu.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
+        <file>MainScene.qml</file>
     </qresource>
 </RCC>

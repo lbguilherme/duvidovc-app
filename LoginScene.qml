@@ -2,8 +2,8 @@ import QtQuick 2.4
 import "qrc:/components"
 
 Item {
-    property Item window
     id: scene
+    signal login()
 
     Image {
         anchors.fill: parent
@@ -11,13 +11,15 @@ Item {
     }
 
     FacebookLoginButton {
-        height: window.height/10
-        anchors.leftMargin: window.width/8
-        anchors.rightMargin: window.width/8
-        anchors.bottomMargin: window.height/8 - height/2
+        height: scene.height/10
+        anchors.leftMargin: scene.width/8
+        anchors.rightMargin: scene.width/8
+        anchors.bottomMargin: scene.height/8 - height/2
         anchors.bottom: scene.bottom
         anchors.left: scene.left
         anchors.right: scene.right
+
+        onClicked: scene.login()
     }
 }
 
