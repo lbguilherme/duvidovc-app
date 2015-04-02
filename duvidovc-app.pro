@@ -1,10 +1,6 @@
 TEMPLATE = app
 CONFIG += c++11
-
 QT += qml quick
-android: QT += androidextras
-
-INCLUDEPATH += java/include
 
 QML_IMPORT_PATH =
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
@@ -37,8 +33,19 @@ OTHER_FILES += \
     java/java2cpp.rb
 
 android: {
-    SOURCES += \
-        java/src/core.cpp \
-        java/src/java.lang.cpp \
-        java/src/java.net.cpp
+
+QT += androidextras
+INCLUDEPATH += java/include
+
+HEADERS += \
+    java/src/java-core.hpp
+
+SOURCES += \
+    java/src/android.app.cpp \
+    java/src/android.content.cpp \
+    java/src/android.os.cpp \
+    java/src/java-core.cpp \
+    java/src/java.lang.cpp \
+    java/src/com.facebook.cpp
+
 }
