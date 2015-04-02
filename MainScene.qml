@@ -6,7 +6,11 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: "#ff0f6464"
+        color: "#0f6464"
+    }
+
+    RingMenu {
+
     }
 
 }

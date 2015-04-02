@@ -4,12 +4,17 @@ import "qrc:/scenes"
 
 Window {
     visible: true
-    width: 400
-    height: 650
+    width: 400/2
+    height: 650/2
 
     Item {
         id: root
         anchors.fill: parent
+
+        Rectangle {
+            anchors.fill: parent
+            color: "#ff0f6464"
+        }
 
         Loader {
             id: loader
@@ -22,7 +27,7 @@ Window {
             onLogin: root.state = "main"
         }
 
-        state: "login"
+        state: "main"
         states: [
             State {
                 name: "login"

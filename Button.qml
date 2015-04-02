@@ -14,8 +14,8 @@ Item {
     height: 30
 
     Item {
+        id: container
         anchors.fill: parent
-        id: rect_container
 
         Rectangle {
             id: rect
@@ -47,6 +47,7 @@ Item {
                 style: Text.Raised
                 text: root.text
                 color: root.textColor
+                font.pixelSize: root.height/4
             }
         }
 
@@ -61,7 +62,7 @@ Item {
 
     DropShadow {
         id: shadow
-        source: rect_container
+        source: container
         anchors.fill: source
         radius: 5
         samples: 16
