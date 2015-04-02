@@ -3,5 +3,6 @@
         <file>artwork/login-background.png</file>
         <file>artwork/facebook.png</file>
         <file>artwork/facebook-white.png</file>
+        <file>artwork/face.jpg</file>
     </qresource>
 </RCC>

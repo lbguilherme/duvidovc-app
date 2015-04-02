@@ -4,8 +4,8 @@ import "qrc:/scenes"
 
 Window {
     visible: true
-    width: 400/2
-    height: 650/2
+    width: 400
+    height: 650
 
     Item {
         id: root

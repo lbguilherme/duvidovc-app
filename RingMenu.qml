@@ -14,7 +14,7 @@ Item {
 
         Circle {
             id: menu
-            radius: 0
+            radius: button.expansionValue
             centerX: root.width/18
             centerY: root.width/18
             color: Qt.lighter("#0f6464", 2)
@@ -34,6 +34,5 @@ Item {
     RingMenuButton {
         id: button
         maximumExpansionValue: root.menuRadius
-        onExpansionChanged: menu.radius = value
     }
 }
