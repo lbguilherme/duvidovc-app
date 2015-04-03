@@ -5,9 +5,11 @@ import "qrc:/basic-components"
 
 Item {
     id: root
-    anchors.fill: parent
+
     property real maximumExpansionValue: 100
     property real expansionValue: mouseArea.dist > button.radius ? mouseArea.dist : 0
+
+    anchors.fill: parent
 
     Item {
         id: container
@@ -40,6 +42,7 @@ Item {
 
     MouseArea {
         id: mouseArea
+
         property bool gestureStarted: false
         property real dist: 0
 
@@ -76,5 +79,4 @@ Item {
             dist = newDist < button.radius ? 0 : newDist;
         }
     }
-
 }

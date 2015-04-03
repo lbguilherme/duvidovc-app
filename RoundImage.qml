@@ -3,6 +3,7 @@ import QtGraphicalEffects 1.0
 
 Item {
     id: root
+
     property string source
     property real radius: 1
     property real centerX: 0
@@ -24,7 +25,6 @@ Item {
             height: root.imageHeight
         }
     }
-
 
     Circle {
         id: mask

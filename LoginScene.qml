@@ -3,6 +3,7 @@ import "qrc:/components"
 
 Item {
     id: scene
+
     signal login()
 
     Image {

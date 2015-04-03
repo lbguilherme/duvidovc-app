@@ -8,5 +8,4 @@ Rectangle {
     height: radius*2
     x: centerX - radius
     y: centerY - radius
-
 }

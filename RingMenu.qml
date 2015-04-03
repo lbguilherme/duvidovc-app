@@ -5,13 +5,14 @@ import "qrc:/basic-components"
 
 Item {
     id: root
-    anchors.fill: parent
+
     property real menuRadius: width*0.6
+
+    anchors.fill: parent
 
     Item {
         id: container
         anchors.fill: parent
-
 
         Circle {
             id: menu
@@ -20,7 +21,6 @@ Item {
             centerY: root.width/18
             color: Qt.lighter("#0f6464", 2)
         }
-
     }
 
     RingMenuButton {

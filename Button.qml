@@ -4,6 +4,7 @@ import QtQuick.Window 2.2
 
 Item {
     id: root
+
     signal clicked()
     property color color: "gray"
     property color textColor: "black"
@@ -19,12 +20,12 @@ Item {
 
         Rectangle {
             id: rect
-            anchors.fill: parent
-            anchors.margins: 5
-            radius: 6
 
             property color referenceColor: root.color
 
+            anchors.fill: parent
+            anchors.margins: 5
+            radius: 6
             gradient: Gradient {
                 GradientStop { position: 0.0; color: Qt.darker(rect.referenceColor, 0.84) }
                 GradientStop { position: 1.0; color: rect.referenceColor }
@@ -70,7 +71,6 @@ Item {
         color: "#80000000"
     }
 
-
     states: [
         State {
             name: "pressed"
@@ -84,6 +84,7 @@ Item {
             }
         }
     ]
+
     transitions: [
         Transition {
             to: "*"
@@ -103,4 +104,3 @@ Item {
         }
     ]
 }
-
