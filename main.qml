@@ -27,7 +27,7 @@ Window {
             onLogin: root.state = "main"
         }
 
-        state: "main"
+        state: "login"
         states: [
             State {
                 name: "login"

@@ -1,11 +1,12 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
 import QtQuick.Window 2.2
+import "qrc:/basic-components"
 
 Item {
     id: root
     anchors.fill: parent
-    property real menuRadius: width*0.5
+    property real menuRadius: width*0.6
 
     Item {
         id: container
@@ -20,15 +21,6 @@ Item {
             color: Qt.lighter("#0f6464", 2)
         }
 
-    }
-
-    DropShadow {
-        id: shadow
-        source: container
-        anchors.fill: source
-        radius: 5
-        samples: 16
-        color: "#80000000"
     }
 
     RingMenuButton {

@@ -7,10 +7,13 @@
         <file>FacebookLoginButton.qml</file>
         <file>RingMenu.qml</file>
         <file>RingMenuButton.qml</file>
-        <file>Circle.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
         <file>MainScene.qml</file>
+    </qresource>
+    <qresource prefix="/basic-components">
+        <file>Circle.qml</file>
+        <file>RoundImage.qml</file>
     </qresource>
 </RCC>
