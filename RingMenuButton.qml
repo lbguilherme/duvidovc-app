@@ -63,9 +63,17 @@ Item {
 
         hoverEnabled: true
         anchors.fill: container
-        onPressed: if (computeDist() <= Math.max(dist, button.radius)) gestureStarted = true
+        onPressed: {
+            if (computeDist() <= Math.max(dist, button.radius))
+                gestureStarted = true;
+            else if (dist > 0 && computeDist() > dist)
+                dist = 0;
+            else
+                mouse.accepted = false;
+        }
         onReleased: {
             if (!gestureStarted) return;
+            mouse.accepted = false;
             gestureStarted = false;
             if (computeDist() > root.maximumExpansionValue/2) {
                 dist = root.maximumExpansionValue;
@@ -75,6 +83,7 @@ Item {
         }
         onPositionChanged: {
             if (!gestureStarted) return;
+            mouse.accepted = false;
             var newDist = Math.min(root.maximumExpansionValue, computeDist());
             dist = newDist < button.radius ? 0 : newDist;
         }

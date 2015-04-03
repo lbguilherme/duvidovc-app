@@ -10,17 +10,18 @@ Item {
 
     anchors.fill: parent
 
-    Item {
-        id: container
+    Rectangle {
         anchors.fill: parent
+        color: "black"
+        opacity: button.expansionValue/button.maximumExpansionValue/2
+    }
 
-        Circle {
-            id: menu
-            radius: button.expansionValue
-            centerX: root.width/18
-            centerY: root.width/18
-            color: Qt.lighter("#0f6464", 2)
-        }
+    Circle {
+        id: menu
+        radius: button.expansionValue
+        centerX: root.width/18
+        centerY: root.width/18
+        color: Qt.lighter("#0f6464", 2)
     }
 
     RingMenuButton {

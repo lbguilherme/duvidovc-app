@@ -7,6 +7,8 @@
         <file>FacebookLoginButton.qml</file>
         <file>RingMenu.qml</file>
         <file>RingMenuButton.qml</file>
+        <file>FeedItem.qml</file>
+        <file>Feed.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>

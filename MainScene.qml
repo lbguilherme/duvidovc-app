@@ -9,7 +9,9 @@ Item {
         color: "#0f6464"
     }
 
-    RingMenu {
-
+    Feed {
+        anchors.fill: parent
     }
+
+    RingMenu {}
 }
