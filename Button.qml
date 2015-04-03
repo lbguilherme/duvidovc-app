@@ -66,7 +66,7 @@ Item {
         anchors.fill: source
         radius: 5
         samples: 16
-        verticalOffset: Screen.pixelDensity/2
+        verticalOffset: Screen.pixelDensity/3
         color: "#80000000"
     }
 
