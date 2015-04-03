@@ -7,7 +7,7 @@ Item {
     id: root
     anchors.fill: parent
     property real maximumExpansionValue: 100
-    property real expansionValue: mouseArea.dist
+    property real expansionValue: mouseArea.dist > button.radius ? mouseArea.dist : 0
 
     Item {
         id: container
@@ -25,7 +25,6 @@ Item {
             imageWidth: radius*2-imageX
             imageHeight: radius*2-imageY
         }
-
     }
 
     DropShadow {
@@ -36,6 +35,7 @@ Item {
         samples: 16
         color: "#a0000000"
         cached: true
+        opacity: 0.5 + (root.expansionValue/root.maximumExpansionValue)/2
     }
 
     MouseArea {
@@ -64,7 +64,7 @@ Item {
         onReleased: {
             if (!gestureStarted) return;
             gestureStarted = false;
-            if (computeDist() > button.radius + (root.maximumExpansionValue-button.radius)/2) {
+            if (computeDist() > root.maximumExpansionValue/2) {
                 dist = root.maximumExpansionValue;
             } else {
                 dist = 0;
