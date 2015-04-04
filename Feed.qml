@@ -16,9 +16,6 @@ Item {
             FeedItem {}
             FeedItem {}
             FeedItem {}
-            FeedItem {}
-            FeedItem {}
-            FeedItem {}
         }
     }
 }

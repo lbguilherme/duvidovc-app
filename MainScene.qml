@@ -13,5 +13,6 @@ Item {
         anchors.fill: parent
     }
 
-    RingMenu {}
+    RingMenu {
+    }
 }
