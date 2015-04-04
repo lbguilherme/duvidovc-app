@@ -13,7 +13,7 @@ Item {
     Rectangle {
         anchors.fill: parent
         color: "black"
-        opacity: button.expansionValue/button.maximumExpansionValue/2
+        opacity: button.expansionValue/button.maximumExpansionValue/1.5
     }
 
     Circle {
