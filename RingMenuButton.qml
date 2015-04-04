@@ -44,6 +44,7 @@ Item {
         id: mouseArea
 
         property bool gestureStarted: false
+        property bool moved: false
         property real dist: 0
 
         Behavior on dist {
@@ -63,6 +64,7 @@ Item {
 
         hoverEnabled: true
         anchors.fill: container
+
         onPressed: {
             if (computeDist() <= Math.max(dist, button.radius))
                 gestureStarted = true;
@@ -75,17 +77,23 @@ Item {
             if (!gestureStarted) return;
             mouse.accepted = false;
             gestureStarted = false;
-            if (computeDist() > root.maximumExpansionValue/2) {
+            if (!moved && dist == 0) {
                 dist = root.maximumExpansionValue;
             } else {
-                dist = 0;
+                if (computeDist() > root.maximumExpansionValue/2) {
+                    dist = root.maximumExpansionValue;
+                } else {
+                    dist = 0;
+                }
             }
+            moved = false;
         }
         onPositionChanged: {
             if (!gestureStarted) return;
             mouse.accepted = false;
             var newDist = Math.min(root.maximumExpansionValue, computeDist());
-            dist = newDist < button.radius ? 0 : newDist;
+            if (newDist > button.radius) dist = newDist;
+            if (dist > 0) moved = true;
         }
     }
 }
