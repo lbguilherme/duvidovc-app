@@ -6,6 +6,7 @@ Item {
         anchors.fill: parent
         contentHeight: feedItems.height
         pixelAligned: true
+        maximumFlickVelocity: height
         Column {
             id: feedItems
             width: parent.width
