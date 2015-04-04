@@ -18,5 +18,6 @@
     <qresource prefix="/basic-components">
         <file>Circle.qml</file>
         <file>RoundImage.qml</file>
+        <file>ImageBox.qml</file>
     </qresource>
 </RCC>
