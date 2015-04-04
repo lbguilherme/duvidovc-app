@@ -14,7 +14,7 @@ Item {
         source: box
         radius: 12
         samples: 16
-        horizontalOffset: -2
+        horizontalOffset: -1
         verticalOffset: 3
         color: "#b0000000"
         fast: true
@@ -26,7 +26,7 @@ Item {
         source: tempShadow
         radius: 12
         samples: 16
-        horizontalOffset: 2
+        horizontalOffset: 1
         verticalOffset: -3
         color: "#b0000000"
         fast: true
