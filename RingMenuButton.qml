@@ -7,36 +7,20 @@ Item {
     id: root
 
     property real maximumExpansionValue: 100
-    property real expansionValue: mouseArea.dist > button.radius ? mouseArea.dist : 0
+    property real expansionValue: mouseArea.dist > root.width/6 ? mouseArea.dist : 0
 
     anchors.fill: parent
 
-    Item {
-        id: container
-        anchors.fill: parent
-        visible: false
-
-        RoundImage {
-            id: button
-            source: "qrc:/artwork/face.jpg"
-            radius: root.width/6
-            centerX: root.width/18
-            centerY: root.width/18
-            imageX: radius-centerX
-            imageY: radius-centerY
-            imageWidth: radius*2-imageX
-            imageHeight: radius*2-imageY
-        }
-    }
-
-    DropShadow {
-        id: shadow
-        source: container
-        anchors.fill: source
-        radius: 5
-        samples: 16
-        color: "#a0000000"
-        cached: true
+    RoundImage {
+        id: button
+        source: "qrc:/artwork/face.jpg"
+        radius: root.width/6 + (root.width/10)*(root.expansionValue/root.maximumExpansionValue)
+        centerX: root.width/18
+        centerY: root.width/18
+        imageX: radius-centerX-2
+        imageY: radius-centerY-2
+        imageWidth: radius*2-imageX
+        imageHeight: radius*2-imageY
         opacity: 0.5 + (root.expansionValue/root.maximumExpansionValue)/2
     }
 
@@ -63,7 +47,7 @@ Item {
         }
 
         hoverEnabled: true
-        anchors.fill: container
+        anchors.fill: parent
 
         onPressed: {
             if (computeDist() <= Math.max(dist, button.radius))

@@ -31,7 +31,7 @@ Item {
 
     Item {
         id: content
-        opacity: Math.max(0, 2*button.expansionValue/root.menuRadius-1)
+        opacity: Math.max(0, 3*button.expansionValue/root.menuRadius-2)
 
         RingMenuItem {
             x: menu.centerX
