@@ -37,7 +37,19 @@ Item {
         spacing: Screen.pixelDensity
 
         Text {
-            text: "Desafio Teste"
+            id: senderName
+            color: "white"
+            text: "Fulano de Tal"
+            width: parent.width
+            horizontalAlignment: Text.AlignRight
+        }
+
+        RoundImage {
+            id: senderAvatar
+            source: "qrc:/artwork/face.jpg"
+            radius: senderName.contentHeight/1.7
+            centerX: senderName.x + senderName.width - senderName.contentWidth - radius*1.5
+            centerY: senderName.y + senderName.contentHeight/2
         }
 
         ImageBox {
