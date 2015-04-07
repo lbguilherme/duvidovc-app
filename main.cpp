@@ -6,7 +6,7 @@
 #include <QtAndroid>
 #include <QAndroidJniEnvironment>
 #include <java.lang.String.hpp>
-#include <com.facebook.Session.hpp>
+#include <com.facebook.login.LoginManager.hpp>
 using namespace java::lang;
 #endif
 
@@ -20,18 +20,7 @@ int main(int argc, char *argv[])
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
 #ifdef Q_OS_ANDROID
-    QAndroidJniEnvironment jniEnv;
-    QAndroidJniObject act = QtAndroid::androidActivity();
-    java::jni = jniEnv;
-    java::ref = java::jni->NewGlobalRef(act.object());
-
-    String s("teste");
-    qDebug() << s._class;
-    qDebug() << s.obj;
-    qDebug() << s.length();
-    qDebug() << s._class;
-
-    //qDebug() << com::facebook::Session::getActiveSession().isOpened();
+    //qDebug() << com::facebook::login::LoginManager::getInstance().obj;
 #endif
 
     //FacebookManager::login();

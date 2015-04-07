@@ -241,7 +241,6 @@ class JavaSpace
 #include <jni.h>
 namespace java {
 
-extern thread_local jobject ref;
 extern thread_local JNIEnv* jni;
 
 jclass fetch_class(const char* classname);
@@ -260,24 +259,25 @@ END
 
 namespace java {
 
-thread_local jobject ref(nullptr);
 static thread_local java::lang::ClassLoader class_loader(nullptr);
 thread_local JNIEnv* jni;
 
-static void fetch_class_loader() {
-    if (class_loader.obj) return;
-    java::lang::Object::_class = (jclass)jni->NewGlobalRef((jobject)jni->FindClass("java/lang/Object"));
-    java::lang::Class::_class = (jclass)jni->NewGlobalRef((jobject)jni->FindClass("java/lang/Class"));
-    java::lang::ClassLoader::_class = (jclass)jni->NewGlobalRef((jobject)jni->FindClass("java/lang/ClassLoader"));
-    class_loader = java::lang::Object(ref).getClass().getClassLoader();
-    class_loader.obj = jni->NewGlobalRef(class_loader.obj);
-}
-
 jclass fetch_class(const char* classname) {
-    fetch_class_loader();
     return (jclass)jni->NewGlobalRef(class_loader.loadClass(classname).obj);
 }
 
+}
+
+JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
+  vm->GetEnv(reinterpret_cast<void**>(&java::jni), JNI_VERSION_1_6);
+
+  java::lang::ClassLoader::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/ClassLoader"));
+  java::lang::Thread::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/Thread"));
+
+  java::class_loader = java::lang::Thread::currentThread().getContextClassLoader().obj;
+  java::class_loader.obj = java::jni->NewGlobalRef(java::class_loader.obj);
+
+  return JNI_VERSION_1_6;
 }
 END
         cpp.done
