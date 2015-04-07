@@ -36,7 +36,7 @@ Item {
         RingMenuItem {
             x: menu.centerX
             y: menu.centerY
-            radius: root.menuRadius*0.7
+            radius: root.menuRadius*0.3 + root.menuRadius*0.4*button.expansionValue/root.menuRadius
             angle: Math.PI/15
             size: root.width/9
         }
@@ -44,7 +44,7 @@ Item {
         RingMenuItem {
             x: menu.centerX
             y: menu.centerY
-            radius: root.menuRadius*0.7
+            radius: root.menuRadius*0.3 + root.menuRadius*0.4*button.expansionValue/root.menuRadius
             angle: Math.PI/4
             size: root.width/9
         }
@@ -52,7 +52,7 @@ Item {
         RingMenuItem {
             x: menu.centerX
             y: menu.centerY
-            radius: root.menuRadius*0.7
+            radius: root.menuRadius*0.3 + root.menuRadius*0.4*button.expansionValue/root.menuRadius
             angle: Math.PI/2 - Math.PI/15
             size: root.width/9
         }
