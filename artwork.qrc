@@ -4,5 +4,6 @@
         <file>artwork/facebook.png</file>
         <file>artwork/facebook-white.png</file>
         <file>artwork/face.jpg</file>
+        <file>artwork/sample.jpg</file>
     </qresource>
 </RCC>

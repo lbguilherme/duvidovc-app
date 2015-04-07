@@ -5,7 +5,7 @@ import "qrc:/basic-components"
 
 Item {
     id: root
-    height: Screen.pixelDensity*60
+    height: contents.height + Screen.pixelDensity*8
     width: parent.width
 
     Item {
@@ -32,13 +32,15 @@ Item {
     }
 
     Column {
-        anchors.fill: container
-        anchors.margins: Screen.pixelDensity*4
+        id: contents
+        width: container.width - Screen.pixelDensity*8
+        x: Screen.pixelDensity*4
+        y: Screen.pixelDensity*4
         spacing: Screen.pixelDensity
 
         Text {
             id: senderName
-            color: "white"
+            color: "#333"
             text: "Fulano de Tal"
             width: parent.width
             horizontalAlignment: Text.AlignRight
@@ -54,11 +56,20 @@ Item {
 
         ImageBox {
             width: parent.width
-            height: root.height/2
+            source: "qrc:/artwork/sample.jpg"
         }
 
         Text {
-            text: "aaaa"
+            text: "Me mostre o quanto você gosta de livros! Vale tudo."
+            width: parent.width
+            wrapMode: Text.WordWrap
+        }
+
+        Text {
+            text: "<b>Recompensa:</b> Um dos meus livros velhos, você escolhe. Estou de mudança."
+            width: parent.width
+            wrapMode: Text.WordWrap
+            font.pointSize: 11
         }
     }
 }
