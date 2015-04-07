@@ -15,7 +15,7 @@ END {
     java = JavaSpace.new
     Library.new(java, "bolts-android-1.2.0.jar")
     Library.new(java, "android-api15.jar")
-    Library.new(java, "facebook-sdk-3.23.1.jar")
+    Library.new(java, "facebook-sdk-4.0.1.jar")
     Library.new(java, "support-v4-22.0.0.jar")
     #java.cheat
     puts "Requested #{java.classes.size} classes."

@@ -46,6 +46,7 @@ SOURCES += \
     java/src/android.os.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
-    java/src/com.facebook.cpp
+    java/src/com.facebook.cpp \
+    java/src/com.facebook.login.cpp
 
 }
