@@ -1,0 +1,26 @@
+digraph Design {
+    android [label="Android Platform", style="filled", color="lightgray"]
+    ios [label="iOS Platform", style="filled", color="lightgray"]
+    qt [label="Qt", style="filled", color="lightgray"]
+    qml [label="QML", style="filled", color="lightgray"]
+    app [label="Duvido App"]
+
+    android -> qt
+    ios -> qt -> qml -> app
+
+    java2cpp [label="Java Native Interface"]
+    objc2cpp [label="Objective-C Native Interface"]
+    android -> java2cpp
+    ios -> objc2cpp
+
+    logic [label="Duvido Logic"]
+    wrapper [label="Platform Wrapper"]
+    java2cpp -> wrapper
+    objc2cpp -> wrapper -> logic -> app
+    qt -> wrapper
+
+    api [label="REST API"]
+    server [label="Duvido Server"]
+    nodejs [label="NodeJS", style="filled", color="lightgray"]
+    nodejs -> server -> api -> logic
+}

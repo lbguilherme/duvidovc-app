@@ -23,7 +23,8 @@ DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.properties \
     android/gradlew \
     .gitignore \
-    Readme.md
+    Readme.md \
+    design.dot
 
 RESOURCES += \
     qml.qrc \
@@ -31,6 +32,12 @@ RESOURCES += \
 
 OTHER_FILES += \
     java/java2cpp.rb
+
+design_graph.depends = design.dot
+design_graph.target = design.png
+design_graph.commands = dot -Tpng design.dot > design.png
+
+QMAKE_EXTRA_TARGETS += design_graph
 
 android: {
 
