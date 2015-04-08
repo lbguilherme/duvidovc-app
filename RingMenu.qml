@@ -24,13 +24,25 @@ Item {
         color: Qt.lighter("#0f6464", 2)
     }
 
+    Circle {
+        id: fragmentBackground
+        radius: button.backMode ? Screen.height*2 : 0
+        centerX: root.width/18
+        centerY: root.width/18
+        color: Qt.lighter("#0f6464", 2)
+        Behavior on radius {
+            NumberAnimation {
+                duration: 1000
+            }
+        }
+    }
+
     RingMenuButton {
         id: button
         maximumExpansionValue: root.menuRadius
     }
 
     Item {
-        id: content
         opacity: Math.max(0, 3*button.expansionValue/root.menuRadius-2)
 
         RingMenuItem {
@@ -39,6 +51,10 @@ Item {
             radius: root.menuRadius*0.3 + root.menuRadius*0.4*button.expansionValue/root.menuRadius
             angle: Math.PI/15
             size: root.width/9
+            enabled : button.expansionValue == button.maximumExpansionValue
+            onClicked: {
+                button.enterBackMode();
+            }
         }
 
         RingMenuItem {
@@ -47,6 +63,10 @@ Item {
             radius: root.menuRadius*0.3 + root.menuRadius*0.4*button.expansionValue/root.menuRadius
             angle: Math.PI/4
             size: root.width/9
+            enabled : button.expansionValue == button.maximumExpansionValue
+            onClicked: {
+                button.enterBackMode();
+            }
         }
 
         RingMenuItem {
@@ -55,6 +75,10 @@ Item {
             radius: root.menuRadius*0.3 + root.menuRadius*0.4*button.expansionValue/root.menuRadius
             angle: Math.PI/2 - Math.PI/15
             size: root.width/9
+            enabled : button.expansionValue == button.maximumExpansionValue
+            onClicked: {
+                button.enterBackMode();
+            }
         }
     }
 }

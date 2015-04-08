@@ -8,12 +8,18 @@ Item {
 
     property real maximumExpansionValue: 100
     property real expansionValue: mouseArea.dist > root.width/6 ? mouseArea.dist : 0
+    property bool backMode: false
+
+    function enterBackMode() {
+        backMode = true;
+        mouseArea.dist = 0;
+    }
 
     anchors.fill: parent
 
     RoundImage {
         id: button
-        source: "qrc:/artwork/face.jpg"
+        source: /*root.backMode ? "" :*/ "qrc:/artwork/face.jpg"
         radius: root.width/6 + (root.width/10)*(root.expansionValue/root.maximumExpansionValue)
         centerX: root.width/18
         centerY: root.width/18
@@ -26,6 +32,7 @@ Item {
 
     MouseArea {
         id: mouseArea
+        enabled: !root.backMode
 
         property bool gestureStarted: false
         property bool moved: false

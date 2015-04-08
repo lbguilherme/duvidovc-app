@@ -3,9 +3,14 @@ import QtGraphicalEffects 1.0
 import "qrc:/basic-components"
 
 Item {
+    id: root
+
     property real angle: 0
     property real radius: 0
     property real size: 0
+    property bool enabled: true
+
+    signal clicked()
 
     Circle {
         id: circle
@@ -25,5 +30,20 @@ Item {
         verticalOffset: 3
         color: "#b0000000"
         fast: true
+    }
+
+    MouseArea {
+        enabled: root.enabled
+        anchors.fill: circle
+        propagateComposedEvents: true
+        onClicked: {
+            var dx = (mouse.x + x - circle.centerX);
+            var dy = (mouse.y + y - circle.centerY);
+            if (Math.sqrt(dx*dx + dy*dy) <= circle.radius) {
+                root.clicked();
+            } else {
+                mouse.accepted = false;
+            }
+        }
     }
 }
