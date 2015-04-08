@@ -71,5 +71,19 @@ Item {
             wrapMode: Text.WordWrap
             font.pointSize: 11
         }
+
+        Row {
+            width: parent.width
+            Button {
+                width: parent.width/2
+                color: Qt.darker("#FB5240", 1.1)
+                text: "Tô Fora"
+            }
+            Button {
+                width: parent.width/2
+                color: Qt.darker("#36C77B", 1.1)
+                text: "Tô Dentro"
+            }
+        }
     }
 }

@@ -5,5 +5,6 @@ Button {
     icon: "qrc:/artwork/facebook-white.png"
     text: "Entrar com o Facebook"
     textColor: "white"
+    textShadow: true
 }
 

@@ -10,9 +10,10 @@ Item {
     property color textColor: "black"
     property string icon
     property string text
+    property bool textShadow: false
 
-    width: 100
-    height: 30
+    width: Screen.width/2
+    height: Screen.height/15
 
     Item {
         id: container
@@ -25,7 +26,7 @@ Item {
 
             anchors.fill: parent
             anchors.margins: 5
-            radius: 6
+            radius: 4
             gradient: Gradient {
                 GradientStop { position: 0.0; color: Qt.darker(rect.referenceColor, 0.84) }
                 GradientStop { position: 1.0; color: rect.referenceColor }
@@ -45,7 +46,7 @@ Item {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.weight: Font.Bold
-                style: Text.Raised
+                style: root.textShadow ? Text.Raised : Text.Normal
                 text: root.text
                 color: root.textColor
                 font.pixelSize: root.height/4
@@ -65,10 +66,11 @@ Item {
         id: shadow
         source: container
         anchors.fill: source
-        radius: 5
+        radius: 3
         samples: 16
         verticalOffset: Screen.pixelDensity/3
         color: "#80000000"
+        cached: true
     }
 
     states: [
