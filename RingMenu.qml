@@ -6,9 +6,17 @@ import "qrc:/basic-components"
 Item {
     id: root
 
+    property bool hidden: false
     property real menuRadius: width*0.65
 
     anchors.fill: parent
+    anchors.topMargin: hidden ? -menuRadius : 0
+
+    Behavior on anchors.topMargin {
+        NumberAnimation {
+            duration: 200
+        }
+    }
 
     Rectangle {
         anchors.fill: parent

@@ -6,13 +6,15 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: "#0f6464"
+        color: "#30D7D0"
     }
 
     Feed {
+        id: feed
         anchors.fill: parent
     }
 
     RingMenu {
+        hidden: feed.goingDown
     }
 }

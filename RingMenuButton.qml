@@ -27,7 +27,6 @@ Item {
         imageY: radius-centerY-2
         imageWidth: radius*2-imageX
         imageHeight: radius*2-imageY
-        opacity: 0.5 + (root.expansionValue/root.maximumExpansionValue)/2
     }
 
     MouseArea {

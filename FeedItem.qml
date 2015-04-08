@@ -16,7 +16,7 @@ Item {
             anchors.fill: parent
             anchors.margins: Screen.pixelDensity*2
             radius: Screen.pixelDensity
-            color: Qt.lighter("#0f6464")
+            color: "#eee"
         }
     }
 
