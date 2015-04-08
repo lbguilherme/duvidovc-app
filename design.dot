@@ -14,7 +14,7 @@ digraph Design {
     ios -> objc2cpp
 
     logic [label="Duvido Logic"]
-    wrapper [label="Platform Wrapper"]
+    wrapper [label="Platform Interface"]
     java2cpp -> wrapper
     objc2cpp -> wrapper -> logic -> app
     qt -> wrapper
