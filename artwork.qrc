@@ -1,9 +1,15 @@
 <RCC>
     <qresource prefix="/">
         <file>artwork/login-background.png</file>
-        <file>artwork/facebook.png</file>
         <file>artwork/facebook-white.png</file>
         <file>artwork/face.jpg</file>
         <file>artwork/sample.jpg</file>
+        <file>artwork/facebook.png</file>
+        <file>artwork/icons/settings48-white.png</file>
+        <file>artwork/icons/settings48.png</file>
+        <file>artwork/icons/paper20-white.png</file>
+        <file>artwork/icons/paper20.png</file>
+        <file>artwork/icons/flag32-white.png</file>
+        <file>artwork/icons/flag32.png</file>
     </qresource>
 </RCC>

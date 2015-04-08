@@ -60,6 +60,7 @@ Item {
             angle: Math.PI/15
             size: root.width/9
             enabled : button.expansionValue == button.maximumExpansionValue
+            icon: "qrc:/artwork/icons/paper20-white.png"
             onClicked: {
                 button.enterBackMode();
             }
@@ -72,6 +73,7 @@ Item {
             angle: Math.PI/4
             size: root.width/9
             enabled : button.expansionValue == button.maximumExpansionValue
+            icon: "qrc:/artwork/icons/flag32-white.png"
             onClicked: {
                 button.enterBackMode();
             }
@@ -84,6 +86,7 @@ Item {
             angle: Math.PI/2 - Math.PI/15
             size: root.width/9
             enabled : button.expansionValue == button.maximumExpansionValue
+            icon: "qrc:/artwork/icons/settings48-white.png"
             onClicked: {
                 button.enterBackMode();
             }

@@ -9,6 +9,7 @@ Item {
     property real radius: 0
     property real size: 0
     property bool enabled: true
+    property string icon
 
     signal clicked()
 
@@ -19,6 +20,7 @@ Item {
         centerY: parent.radius * Math.sin(angle)
         radius: parent.size
         color: Qt.lighter("#0f6464", 1.2)
+
     }
 
     InnerShadow {
@@ -30,6 +32,27 @@ Item {
         verticalOffset: 3
         color: "#b0000000"
         fast: true
+    }
+
+    Image {
+        id: img
+        anchors.centerIn: circle
+        width: circle.radius
+        height: circle.radius
+        source: root.icon
+        visible: false
+        smooth: true
+    }
+
+    DropShadow {
+        anchors.fill: source
+        source: img
+        radius: 8
+        samples: 16
+        horizontalOffset: -3
+        verticalOffset: 3
+        color: "#b0000000"
+        cached: true
     }
 
     MouseArea {
