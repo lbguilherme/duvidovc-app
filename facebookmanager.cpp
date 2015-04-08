@@ -1,5 +1,29 @@
-/*
 #include "facebookmanager.hpp"
+
+#include <Qt>
+
+#ifdef Q_OS_ANDROID
+#include <QtAndroid>
+#include <android.app.Activity.hpp>
+#include <com.facebook.FacebookSdk.hpp>
+
+using namespace android::app;
+using namespace com::facebook;
+#endif
+
+
+void FacebookManager::initialize() {
+#ifdef Q_OS_ANDROID
+    Activity activity(QtAndroid::androidActivity().object());
+    FacebookSdk::sdkInitialize(activity.getApplicationContext());
+#endif
+}
+
+void FacebookManager::login() {
+
+}
+
+/*
 #include <java.lang.String.hpp>
 #include <java.lang.Throwable.hpp>
 #include <android.app.Activity.hpp>
