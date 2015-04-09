@@ -1,3 +1,5 @@
+![Graph](design.png)
+
 # Dependencies
 
  - Android SDK
