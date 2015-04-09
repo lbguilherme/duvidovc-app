@@ -259,25 +259,30 @@ END
 
 namespace java {
 
-static thread_local java::lang::ClassLoader class_loader(nullptr);
+static java::lang::ClassLoader class_loader(nullptr);
 thread_local JNIEnv* jni;
+JavaVM* vm;
 
 jclass fetch_class(const char* classname) {
+    if (!jni) {
+        vm->GetEnv((void**)&jni, JNI_VERSION_1_6);
+        vm->AttachCurrentThread(&jni, NULL);
+    }
+
     return (jclass)jni->NewGlobalRef(class_loader.loadClass(classname).obj);
 }
 
 }
 
 JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
-  vm->GetEnv(reinterpret_cast<void**>(&java::jni), JNI_VERSION_1_6);
+    java::vm = vm;
+    vm->GetEnv((void**)&java::jni, JNI_VERSION_1_6);
 
-  java::lang::ClassLoader::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/ClassLoader"));
-  java::lang::Thread::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/Thread"));
+    java::lang::ClassLoader::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/ClassLoader"));
+    java::lang::Thread::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/Thread"));
 
-  java::class_loader = java::lang::Thread::currentThread().getContextClassLoader().obj;
-  java::class_loader.obj = java::jni->NewGlobalRef(java::class_loader.obj);
-
-  return JNI_VERSION_1_6;
+    java::class_loader = java::lang::Thread::currentThread().getContextClassLoader().obj;
+    return JNI_VERSION_1_6;
 }
 END
         cpp.done
@@ -516,13 +521,14 @@ class JavaClass
         f << "jobject obj;\n" if self == @java.find_class("java.lang.Object")
         f << "\n"
         if self == @java.find_class("java.lang.Object")
-            f << "Object(jobject _obj) {obj = _obj;}\n"
+            f << "Object(jobject _obj) {obj = _obj ? java::jni->NewGlobalRef(_obj) : 0;}\n"
+            f << "~Object() {if (obj) java::jni->DeleteGlobalRef(obj);}\n"
             f << "bool isNull() {return obj == nullptr;}\n"
         else
             f << "#{@name}(jobject _obj) : #{inherit.map{|c|c.cppname+"(_obj)"}.join(", ")} {}\n"
         end
         if self == @java.find_class("java.lang.String")
-            f << "String(const char* utf) : #{inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = java::jni->NewStringUTF(utf);}\n"
+            f << "String(const char* utf) : #{inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(utf));}\n"
         end
         f << "\n"
         @methods.each do |m|
