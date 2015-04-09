@@ -243,6 +243,7 @@ namespace java {
 
 extern thread_local JNIEnv* jni;
 
+void initialize();
 jclass fetch_class(const char* classname);
 
 }
@@ -263,12 +264,14 @@ static java::lang::ClassLoader class_loader(nullptr);
 thread_local JNIEnv* jni;
 JavaVM* vm;
 
-jclass fetch_class(const char* classname) {
+void initialize() {
     if (!jni) {
         vm->GetEnv((void**)&jni, JNI_VERSION_1_6);
         vm->AttachCurrentThread(&jni, NULL);
     }
+}
 
+jclass fetch_class(const char* classname) {
     return (jclass)jni->NewGlobalRef(class_loader.loadClass(classname).obj);
 }
 
@@ -281,7 +284,7 @@ JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
     java::lang::ClassLoader::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/ClassLoader"));
     java::lang::Thread::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/Thread"));
 
-    java::class_loader = java::lang::Thread::currentThread().getContextClassLoader().obj;
+    java::class_loader = java::lang::Thread::currentThread().getContextClassLoader();
     return JNI_VERSION_1_6;
 }
 END
@@ -470,23 +473,19 @@ class JavaClass
 
     def all_inherits
         list = [@extends + @implements].flatten - [self]
+        list.delete_if {|c| !c.valid?}
         list += list.map(&:all_inherits)
-        list
+        ([@java.find_class("java.lang.Object")] + list.flatten.sort).uniq
     end
 
     def inherit
         list = [@extends + @implements].flatten - [self]
         list.delete_if {|c| !c.valid?}
-        list = [@java.find_class("java.lang.Object")] + (list - list.map(&:all_inherits).flatten).sort
-        list.uniq
+        ([@java.find_class("java.lang.Object")] + list.sort).uniq
     end
 
     def inherit_sheme
-        if self == @java.find_class("java.lang.Object")
-            "public virtual #{cppname}"
-        else
-            "public #{cppname}"
-        end
+        "public virtual #{cppname}"
     end
 
     def all_children
@@ -517,19 +516,47 @@ class JavaClass
         end
         f << "public:\n\n"
         f.ident 1
-        f << "static jclass _class;\n"
-        f << "jobject obj;\n" if self == @java.find_class("java.lang.Object")
         f << "\n"
         if self == @java.find_class("java.lang.Object")
-            f << "Object(jobject _obj) {obj = _obj ? java::jni->NewGlobalRef(_obj) : 0;}\n"
-            f << "~Object() {if (obj) java::jni->DeleteGlobalRef(obj);}\n"
-            f << "bool isNull() {return obj == nullptr;}\n"
+            f << "struct JavaObject {\n"
+            f << "    jobject obj;\n"
+            f << "    JavaObject(jobject _obj) {obj = _obj ? java::jni->NewGlobalRef(_obj) : 0;}\n"
+            f << "    ~JavaObject() {if (obj) java::jni->DeleteGlobalRef(obj);}\n"
+            f << "    JavaObject& operator=(const JavaObject&) = delete;\n"
+            f << "    JavaObject& operator=(JavaObject&&) = delete;\n"
+            f << "    operator jobject() const {return obj;}\n"
+            f << "};\n"
+            f << "\n"
+            f << "struct JavaObjectHolder : std::shared_ptr<JavaObject> {\n"
+            f << "    JavaObjectHolder(jobject obj) : shared_ptr(new JavaObject(obj)) {}\n"
+            f << "    operator jobject() const {return get()->obj;}\n"
+            f << "};\n"
+            f << "\n"
+            f << "static jclass _class;\n"
+            f << "JavaObjectHolder obj;\n"
+            f << "\n"
+            f << "explicit Object(jobject _obj) : obj(_obj) {}\n"
+            f << "bool isNull() {return (jobject)obj == nullptr;}\n"
         else
-            f << "#{@name}(jobject _obj) : #{inherit.map{|c|c.cppname+"(_obj)"}.join(", ")} {}\n"
+            f << "static jclass _class;\n"
+            f << "\n"
+            f << "#pragma GCC diagnostic push\n"
+            f << "#pragma GCC diagnostic ignored \"-Wreorder\"\n"
+            f << "explicit #{@name}(jobject _obj) : #{all_inherits.map{|c|c.cppname+"(_obj)"}.join(", ")} {}\n"
+            f << "#pragma GCC diagnostic pop\n"
         end
+        f << "\n"
+        f << "#pragma GCC diagnostic push\n"
+        f << "#pragma GCC diagnostic ignored \"-Wreorder\"\n"
+        f << "#{@name}(const #{cppname}& x) : #{all_inherits.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = x.obj;}\n"
+        f << "#{@name}(#{cppname}&& x) : #{all_inherits.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = x.obj; x.obj = JavaObjectHolder((jobject)0);}\n"
         if self == @java.find_class("java.lang.String")
             f << "String(const char* utf) : #{inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(utf));}\n"
         end
+        f << "#pragma GCC diagnostic pop\n"
+        f << "\n"
+        f << "#{cppname}& operator=(const #{cppname}& x) {obj = x.obj; return *this;}\n"
+        f << "#{cppname}& operator=(#{cppname}&& x) {obj = std::move(x.obj); return *this;}\n"
         f << "\n"
         @methods.each do |m|
             m.declare(f)
@@ -546,6 +573,7 @@ class JavaClass
         hpp << "#include \"../src/java-core.hpp\"\n"
         hpp << "#include <jni.h>\n"
         hpp << "#include <cstdint>\n"
+        hpp << "#include <memory>\n"
         hpp << "#include <vector>\n\n"
         gen_class(hpp)
         hpp << "\n"
@@ -565,7 +593,7 @@ class JavaClass
     end
 
     def prepare_return(f, src, dst)
-        f << "jobject #{dst} = #{src};\n"
+        f << "#{cppname} #{dst}(#{src});\n"
     end
 
 end
@@ -667,6 +695,7 @@ class JavaConstructor < JavaMethod
     end
 
     def valid?
+        return false if @args == [@javaclass]
         @args.all?(&:valid?) rescue false
     end
 
@@ -687,9 +716,11 @@ class JavaConstructor < JavaMethod
     end
 
     def define(f)
+        f << "#pragma GCC diagnostic push\n"
+        f << "#pragma GCC diagnostic ignored \"-Wreorder\"\n"
         argparams = @args.map(&:argtype).map.with_index {|t, n| "#{t} arg#{n}" }.join(", ")
         arglist = @args.map(&:argtype).map.with_index {|t, n| ", _arg#{n}" }.join
-        f << "#{@javaclass.cppname}::#{@javaclass.name}(#{argparams}) : #{@javaclass.inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {\n"
+        f << "#{@javaclass.cppname}::#{@javaclass.name}(#{argparams}) : #{@javaclass.all_inherits.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {\n"
         f.ident(1)
         @javaclass.gen_fetch_class(f)
         gen_fetch_method(f)
@@ -697,6 +728,7 @@ class JavaConstructor < JavaMethod
         f << "obj = java::jni->NewObject(_class, mid" << arglist << ");\n"
         f.ident(-1)
         f << "}\n\n"
+        f << "#pragma GCC diagnostic pop\n"
     end
 end
 
@@ -882,7 +914,7 @@ class ArrayType
             f.ident(1)
             @base.prepare_return(f, "#{src}e", "#{src}d")
             f.ident(-1)
-            f << "  #{dst}[#{src}i] = #{src}d;\n"
+            f << "  #{dst}[#{src}i] = std::move(#{src}d);\n"
             f << "}\n"
         else
             f << "// TODO: return 2d array\n"
