@@ -24,7 +24,8 @@ DISTFILES += \
     android/gradlew \
     .gitignore \
     Readme.md \
-    design.dot
+    design.dot \
+    android/res/values/strings.xml
 
 RESOURCES += \
     qml.qrc \
