@@ -862,7 +862,7 @@ class ArrayType
         @base.depends
     end
     def cppname
-        "std::vector<#{@base.cppname}>"
+        "std::vector< #{@base.cppname}>"
     end
     def argtype
         "const #{cppname}&"
