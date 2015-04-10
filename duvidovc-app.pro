@@ -10,10 +10,10 @@ include(deployment.pri)
 
 SOURCES += \
     main.cpp \
-    facebookmanager.cpp
+    facebook.cpp
 
 HEADERS += \
-    facebookmanager.hpp
+    facebook.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

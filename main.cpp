@@ -1,8 +1,9 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 #include <QDebug>
 
-#include "facebookmanager.hpp"
+#include "facebook.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
@@ -16,11 +17,11 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    Facebook* facebook = new Facebook;
 
-    FacebookManager::initialize();
-    FacebookManager::login();
+    QQmlApplicationEngine engine;
+    engine.rootContext()->setContextProperty("facebook", facebook);
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     return app.exec();
 }

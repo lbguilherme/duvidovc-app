@@ -20,7 +20,10 @@ Item {
         anchors.left: scene.left
         anchors.right: scene.right
 
-        onClicked: scene.login()
+        onClicked: {
+            facebook.login();
+        }
+        // scene.login()
     }
 }
 
