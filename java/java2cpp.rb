@@ -17,9 +17,9 @@ END {
     Library.new(java, "bolts-android-1.2.0.jar")
     Library.new(java, "facebook-sdk-4.0.1.jar")
     Library.new(java, "support-v4-22.0.0.jar")
-    Library.new(java, "..")
+    Library.new(java, "../../build-android-release/android-build/build/intermediates/classes/debug/")
     #java.cheat
-    java.find_package("duvido.android").native = true
+    java.find_package("vc.duvido").native = true
     puts "Requested #{java.classes.size} classes."
 
     puts "Extracting classes..."
@@ -263,7 +263,7 @@ END
     @packages.each_value do |pkg|
         if pkg.native?
             pkg.classes.each do |javaclass|
-                javaclass.gen_include(cpp)
+                javaclass.gen_include(cpp) if javaclass.native?
             end
         end
     end
@@ -303,14 +303,7 @@ END
     @packages.each_value do |pkg|
         if pkg.native?
             pkg.classes.each do |javaclass|
-                cpp << "    {\n"
-                cpp << "        QFile data(\":/#{javaclass.fullname.gsub(".", "/")}.class\");\n"
-                cpp << "        data.open(QIODevice::ReadOnly);\n"
-                cpp << "        QByteArray buf = data.readAll();\n"
-                cpp << "        java::jni->DefineClass(\"#{javaclass.fullname.gsub(".", "/")}\", java::class_loader.obj, (const signed char*)buf.constData(), buf.size());\n"
-                cpp << "        #{javaclass.cppname}::jniInitializeNative();\n"
-                cpp << "    }\n"
-                cpp << "    #{javaclass.cppname}::jniInitializeNative();\n"
+                cpp << "    #{javaclass.cppname}::jniInitializeNative();\n" if javaclass.native?
             end
         end
     end
@@ -378,9 +371,10 @@ private
     def extract_classes_from_dir
         filelist = `find #{@path} | grep .class`
         filelist.each_line do |file|
+            next unless file =~ /\.class$/
             file.sub!(".class", "")
+            file.gsub!(@path, "")
             file.gsub!("/", ".")
-            file.gsub!(/^\.+/, "")
             file.strip!
             next if file =~ /\$\d/
             @classes << JavaClass.new(@java, self, file)
@@ -406,6 +400,10 @@ class JavaClass
 
     def public?
         @mods.include? :public
+    end
+
+    def native?
+        @package.native && @methods.any? {|m| m.mods.include? :native }
     end
 
     def add_child(child)
@@ -601,7 +599,7 @@ class JavaClass
         f << "#{cppname}& operator=(const #{cppname}& x) {obj = x.obj; return *this;}\n"
         f << "#{cppname}& operator=(#{cppname}&& x) {obj = std::move(x.obj); return *this;}\n"
         f << "\n"
-        if @package.native?
+        if native?
             f << "static void jniInitializeNative();"
             f << "\n"
         end
@@ -718,7 +716,7 @@ class JavaMethod
             end
             argparams = args.map.with_index {|t, n| ", #{t} arg#{n}" }.join
 
-            f << "static #{jnireturn} #{@nativename}(JNIEnv*, jobject obj#{argparams}) {\n"
+            f << "static #{jnireturn} JNICALL #{@nativename}(JNIEnv*, jobject obj#{argparams}) {\n"
             f.ident(1)
             @javaclass.prepare_return(f, "obj", "_obj")
             @args.each.with_index do |arg, n|
@@ -892,7 +890,7 @@ class Package
                 method.define(cpp)
             end
 
-            if native?
+            if javaclass.native?
                 cpp << "void #{javaclass.cppname}::jniInitializeNative() {\n"
                 cpp.ident(1)
                 javaclass.gen_fetch_class(cpp)

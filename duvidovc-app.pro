@@ -11,21 +11,10 @@ include(deployment.pri)
 SOURCES += \
     main.cpp \
     facebook.cpp \
-    duvido/android/FacebookStatusCallback.cpp
+    android/src/vc/duvido/FacebookStatusCallback.cpp
 
 HEADERS += \
     facebook.hpp
-
-JAVAFILES = \
-    duvido/android/FacebookStatusCallback.java
-OTHER_FILES += JAVAFILES
-
-javac.output  = $$PWD/duvido/android/${QMAKE_FILE_BASE}.class
-javac.commands = javac -d $$PWD -cp $$PWD/java/facebook-sdk-4.0.1.jar ${QMAKE_FILE_NAME}
-javac.input = JAVAFILES
-javac.variable_out = JAVACLASSES
-QMAKE_EXTRA_COMPILERS += javac
-PRE_TARGETDEPS += compiler_javac_make_all
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -42,11 +31,11 @@ DISTFILES += \
 
 RESOURCES += \
     qml.qrc \
-    artwork.qrc \
-    java.qrc
+    artwork.qrc
 
 OTHER_FILES += \
-    java/java2cpp.rb
+    java/java2cpp.rb \
+    android/src/vc/duvido/FacebookStatusCallback.java
 
 design_graph.depends = $$PWD/design.dot
 design_graph.target = $$PWD/design.png
@@ -71,6 +60,6 @@ SOURCES += \
     java/src/java.util.cpp \
     java/src/com.facebook.cpp \
     java/src/com.facebook.login.cpp \
-    java/src/duvido.android.cpp
+    java/src/vc.duvido.cpp
 
 }

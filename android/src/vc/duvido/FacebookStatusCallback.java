@@ -1,4 +1,4 @@
-package duvido.android;
+package vc.duvido;
 
 import java.lang.*;
 import com.facebook.*;
