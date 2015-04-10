@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FacebookStatusCallback.class</file>
+    </qresource>
+</RCC>

@@ -15,6 +15,15 @@ SOURCES += \
 HEADERS += \
     facebook.hpp
 
+JAVAFILES = \
+    FacebookStatusCallback.java
+
+javac.output  = $$PWD/${QMAKE_FILE_BASE}.class
+javac.commands = javac ${QMAKE_FILE_NAME}
+javac.input = JAVAFILES
+javac.variable_out = JAVACLASSES
+QMAKE_EXTRA_COMPILERS += javac
+
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
     android/AndroidManifest.xml \
@@ -30,16 +39,17 @@ DISTFILES += \
 
 RESOURCES += \
     qml.qrc \
-    artwork.qrc
+    artwork.qrc \
+    java.qrc
 
 OTHER_FILES += \
     java/java2cpp.rb
 
-design_graph.depends = design.dot
+design_graph.depends = $$PWD/design.dot
 design_graph.target = design.png
-design_graph.commands = dot -Tpng design.dot > design.png
-
+design_graph.commands = dot -Tpng $$PWD/design.dot > design.png
 QMAKE_EXTRA_TARGETS += design_graph
+PRE_TARGETDEPS += design.png
 
 android: {
 
