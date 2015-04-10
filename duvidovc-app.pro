@@ -18,11 +18,12 @@ HEADERS += \
 JAVAFILES = \
     FacebookStatusCallback.java
 
-javac.output  = $$PWD/${QMAKE_FILE_BASE}.class
-javac.commands = javac -cp $$PWD/java/facebook-sdk-4.0.1.jar ${QMAKE_FILE_NAME}
+javac.output  = $$PWD/duvido/${QMAKE_FILE_BASE}.class
+javac.commands = javac -d $$PWD -cp $$PWD/java/facebook-sdk-4.0.1.jar ${QMAKE_FILE_NAME}
 javac.input = JAVAFILES
 javac.variable_out = JAVACLASSES
 QMAKE_EXTRA_COMPILERS += javac
+PRE_TARGETDEPS += compiler_javac_make_all
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -46,10 +47,10 @@ OTHER_FILES += \
     java/java2cpp.rb
 
 design_graph.depends = $$PWD/design.dot
-design_graph.target = design.png
-design_graph.commands = dot -Tpng $$PWD/design.dot > design.png
+design_graph.target = $$PWD/design.png
+design_graph.commands = dot -Tpng $$PWD/design.dot > $$PWD/design.png
 QMAKE_EXTRA_TARGETS += design_graph
-PRE_TARGETDEPS += design.png
+PRE_TARGETDEPS += $$PWD/design.png
 
 android: {
 
