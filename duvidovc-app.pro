@@ -19,7 +19,7 @@ JAVAFILES = \
     FacebookStatusCallback.java
 
 javac.output  = $$PWD/${QMAKE_FILE_BASE}.class
-javac.commands = javac ${QMAKE_FILE_NAME}
+javac.commands = javac -cp $$PWD/java/facebook-sdk-4.0.1.jar ${QMAKE_FILE_NAME}
 javac.input = JAVAFILES
 javac.variable_out = JAVACLASSES
 QMAKE_EXTRA_COMPILERS += javac
