@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>duvido/FacebookStatusCallback.class</file>
+        <file>duvido/android/FacebookStatusCallback.class</file>
     </qresource>
 </RCC>

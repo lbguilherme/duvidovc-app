@@ -10,15 +10,17 @@ include(deployment.pri)
 
 SOURCES += \
     main.cpp \
-    facebook.cpp
+    facebook.cpp \
+    duvido/android/FacebookStatusCallback.cpp
 
 HEADERS += \
     facebook.hpp
 
 JAVAFILES = \
-    FacebookStatusCallback.java
+    duvido/android/FacebookStatusCallback.java
+OTHER_FILES += JAVAFILES
 
-javac.output  = $$PWD/duvido/${QMAKE_FILE_BASE}.class
+javac.output  = $$PWD/duvido/android/${QMAKE_FILE_BASE}.class
 javac.commands = javac -d $$PWD -cp $$PWD/java/facebook-sdk-4.0.1.jar ${QMAKE_FILE_NAME}
 javac.input = JAVAFILES
 javac.variable_out = JAVACLASSES
@@ -68,6 +70,7 @@ SOURCES += \
     java/src/java.lang.cpp \
     java/src/java.util.cpp \
     java/src/com.facebook.cpp \
-    java/src/com.facebook.login.cpp
+    java/src/com.facebook.login.cpp \
+    java/src/duvido.android.cpp
 
 }

@@ -13,11 +13,13 @@ END {
     `mkdir -p src`
 
     java = JavaSpace.new
-    Library.new(java, "bolts-android-1.2.0.jar")
     Library.new(java, "android-api15.jar")
+    Library.new(java, "bolts-android-1.2.0.jar")
     Library.new(java, "facebook-sdk-4.0.1.jar")
     Library.new(java, "support-v4-22.0.0.jar")
+    Library.new(java, "..")
     #java.cheat
+    java.find_package("duvido.android").native = true
     puts "Requested #{java.classes.size} classes."
 
     puts "Extracting classes..."
@@ -189,8 +191,7 @@ class JavaSpace
     def cheat
         @classes = {}
         @packages = {}
-        find_class("java.lang.Object")
-        find_class("java.lang.Thread")
+        find_class("duvido.android.FacebookStatusCallback")
     end
 
     def process_classes(&block)
@@ -258,6 +259,18 @@ END
 #include <java.lang.String.hpp>
 #include <java.lang.Class.hpp>
 
+END
+    @packages.each_value do |pkg|
+        if pkg.native?
+            pkg.classes.each do |javaclass|
+                javaclass.gen_include(cpp)
+            end
+        end
+    end
+cpp << <<END
+
+#include <QFile>
+
 namespace java {
 
 static java::lang::ClassLoader class_loader(nullptr);
@@ -285,6 +298,24 @@ JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
     java::lang::Thread::_class = (jclass)java::jni->NewGlobalRef((jobject)java::jni->FindClass("java/lang/Thread"));
 
     java::class_loader = java::lang::Thread::currentThread().getContextClassLoader();
+
+END
+    @packages.each_value do |pkg|
+        if pkg.native?
+            pkg.classes.each do |javaclass|
+                cpp << "    {\n"
+                cpp << "        QFile data(\":/#{javaclass.fullname.gsub(".", "/")}.class\");\n"
+                cpp << "        data.open(QIODevice::ReadOnly);\n"
+                cpp << "        QByteArray buf = data.readAll();\n"
+                cpp << "        java::jni->DefineClass(\"#{javaclass.fullname.gsub(".", "/")}\", java::class_loader.obj, (const signed char*)buf.constData(), buf.size());\n"
+                cpp << "        #{javaclass.cppname}::jniInitializeNative();\n"
+                cpp << "    }\n"
+                cpp << "    #{javaclass.cppname}::jniInitializeNative();\n"
+            end
+        end
+    end
+cpp << <<END
+
     return JNI_VERSION_1_6;
 }
 END
@@ -329,7 +360,7 @@ private
         if @path[-4..-1] == ".jar"
             extract_classes_from_jar
         else
-            raise "Unknown library type"
+            extract_classes_from_dir
         end
     end
 
@@ -344,10 +375,22 @@ private
         end
     end
 
+    def extract_classes_from_dir
+        filelist = `find #{@path} | grep .class`
+        filelist.each_line do |file|
+            file.sub!(".class", "")
+            file.gsub!("/", ".")
+            file.gsub!(/^\.+/, "")
+            file.strip!
+            next if file =~ /\$\d/
+            @classes << JavaClass.new(@java, self, file)
+        end
+    end
+
 end
 
 class JavaClass
-    attr_accessor :fullname, :name, :mods, :methods, :library, :parent
+    attr_accessor :fullname, :name, :mods, :methods, :library, :parent, :package
     def initialize(java, library, fullname)
         @java = java
         raise unless library
@@ -558,6 +601,10 @@ class JavaClass
         f << "#{cppname}& operator=(const #{cppname}& x) {obj = x.obj; return *this;}\n"
         f << "#{cppname}& operator=(#{cppname}&& x) {obj = std::move(x.obj); return *this;}\n"
         f << "\n"
+        if @package.native?
+            f << "static void jniInitializeNative();"
+            f << "\n"
+        end
         @methods.each do |m|
             m.declare(f)
         end
@@ -599,7 +646,7 @@ class JavaClass
 end
 
 class JavaMethod
-    attr_accessor :name, :args, :javaclass
+    attr_accessor :name, :args, :javaclass, :mods, :nativename
     def initialize(java, javaclass, hash)
         @java = java
         @javaclass = javaclass
@@ -650,43 +697,88 @@ class JavaMethod
     end
 
     def define(f)
-        argparams = @args.map(&:argtype).map.with_index {|t, n| "#{t} arg#{n}" }.join(", ")
-        arglist = @args.map(&:argtype).map.with_index {|t, n| ", _arg#{n}" }.join
-        f << "#{@return.cppname} #{@javaclass.cppname[2..-1]}::#{@name}(#{argparams}) {\n"
-        f.ident(1)
-        @javaclass.gen_fetch_class(f)
-        gen_fetch_method(f)
-        @args.each.with_index {|a, n| a.prepare_argument(f, "arg#{n}", "_arg#{n}") }
+        if @javaclass.package.native? && @mods.include?(:native)
+            parts = ["Java", @javaclass.fullname, @name, "", *@args.map(&:signature).join]
+            parts.map! do |part|
+                part.gsub("_", "_1").gsub(";", "_2").gsub("[", "_3").gsub(".", "_").gsub("/", "_")
+            end
+            @nativename = parts.join("_")
+            jnireturn = "jobject"
+            if @return == VoidType
+                jnireturn = "void"
+            elsif @return.is_a? PrimitiveType
+                jnireturn = "j#{@return.javaname}"
+            end
+            args = @args.map do |argt|
+                if argt.is_a? JavaClass
+                    "jobject"
+                elsif argt.is_a? JavaClass
+                    "j#{argt.javaname}"
+                end
+            end
+            argparams = args.map.with_index {|t, n| ", #{t} arg#{n}" }.join
 
-        if @return == VoidType
-            if @mods.include? :static
-                f << "java::jni->CallStaticVoidMethod(_class, mid" << arglist << ");\n"
-            else
-                f << "java::jni->CallVoidMethod(obj, mid" << arglist << ");\n"
+            f << "static #{jnireturn} #{@nativename}(JNIEnv*, jobject obj#{argparams}) {\n"
+            f.ident(1)
+            @javaclass.prepare_return(f, "obj", "_obj")
+            @args.each.with_index do |arg, n|
+                arg.prepare_return(f, "arg#{n}", "_arg#{n}")
             end
-        elsif @return.is_a? PrimitiveType
-            if @mods.include? :static
-                f << "return java::jni->CallStatic#{@return.javaname.capitalize}Method(_class, mid" << arglist << ");\n"
+
+            arglist = @args.map.with_index {|t, n| "_arg#{n}" }.join(", ")
+            if @return == VoidType
+                f << "_obj.#{@name}(#{arglist});\n"
+            elsif @return.is_a? PrimitiveType
+                f << "return _obj.#{@name}(#{arglist});\n"
             else
-                f << "return java::jni->Call#{@return.javaname.capitalize}Method(obj, mid" << arglist << ");\n"
+                f << "auto _ret = _obj.#{@name}(#{arglist});\n"
+                @return.prepare_argument(f, "_ret", "ret")
+                f << "return ret;\n"
             end
+            f.ident(-1)
+            f << "}\n\n"
+
+            puts @nativename
+            return
         else
-            if @mods.include? :static
-                f << "jobject ret = java::jni->CallStaticObjectMethod(_class, mid" << arglist << ");\n"
-            else
-                f << "jobject ret = java::jni->CallObjectMethod(obj, mid" << arglist << ");\n"
-            end
-            @return.prepare_return(f, "ret", "_ret")
-            f << "return _ret;\n"
-        end
+            argparams = @args.map(&:argtype).map.with_index {|t, n| "#{t} arg#{n}" }.join(", ")
+            arglist = @args.map.with_index {|t, n| ", _arg#{n}" }.join
+            f << "#{@return.cppname} #{@javaclass.cppname[2..-1]}::#{@name}(#{argparams}) {\n"
+            f.ident(1)
+            @javaclass.gen_fetch_class(f)
+            gen_fetch_method(f)
+            @args.each.with_index {|a, n| a.prepare_argument(f, "arg#{n}", "_arg#{n}") }
 
-        f.ident(-1)
-        f << "}\n\n"
+            if @return == VoidType
+                if @mods.include? :static
+                    f << "java::jni->CallStaticVoidMethod(_class, mid" << arglist << ");\n"
+                else
+                    f << "java::jni->CallVoidMethod(obj, mid" << arglist << ");\n"
+                end
+            elsif @return.is_a? PrimitiveType
+                if @mods.include? :static
+                    f << "return java::jni->CallStatic#{@return.javaname.capitalize}Method(_class, mid" << arglist << ");\n"
+                else
+                    f << "return java::jni->Call#{@return.javaname.capitalize}Method(obj, mid" << arglist << ");\n"
+                end
+            else
+                if @mods.include? :static
+                    f << "jobject ret = java::jni->CallStaticObjectMethod(_class, mid" << arglist << ");\n"
+                else
+                    f << "jobject ret = java::jni->CallObjectMethod(obj, mid" << arglist << ");\n"
+                end
+                @return.prepare_return(f, "ret", "_ret")
+                f << "return _ret;\n"
+            end
+
+            f.ident(-1)
+            f << "}\n\n"
+        end
     end
 end
 
 class JavaConstructor < JavaMethod
-    attr_accessor :name, :args, :javaclass
+    attr_accessor :name, :args, :javaclass, :mods
     def initialize(java, javaclass, hash)
         @java = java
         @javaclass = javaclass
@@ -727,17 +819,22 @@ class JavaConstructor < JavaMethod
         @args.each.with_index {|a, n| a.prepare_argument(f, "arg#{n}", "_arg#{n}") }
         f << "obj = java::jni->NewObject(_class, mid" << arglist << ");\n"
         f.ident(-1)
-        f << "}\n\n"
-        f << "#pragma GCC diagnostic pop\n"
+        f << "}\n"
+        f << "#pragma GCC diagnostic pop\n\n"
     end
 end
 
 class Package
-    attr_accessor :name
+    attr_accessor :name, :native, :classes
     def initialize(java, name)
         @java = java
         @name = name
         @classes = []
+        @native = false
+    end
+
+    def native?
+        !!@native
     end
 
     def add_class(javaclass)
@@ -785,7 +882,7 @@ class Package
         cpp << "\n"
 
         @classes.each do |javaclass|
-            cpp << "jclass #{javaclass.cppname}::_class = nullptr;\n"
+            cpp << "jclass #{javaclass.cppname[2..-1]}::_class = nullptr;\n"
         end
 
         cpp << "\n"
@@ -793,6 +890,22 @@ class Package
         @classes.each do |javaclass|
             javaclass.methods.each do |method|
                 method.define(cpp)
+            end
+
+            if native?
+                cpp << "void #{javaclass.cppname}::jniInitializeNative() {\n"
+                cpp.ident(1)
+                javaclass.gen_fetch_class(cpp)
+                cpp << "JNINativeMethod methods[] = {\n"
+                javaclass.methods.each do |m|
+                    if m.mods.include?(:native)
+                        cpp << "    {\"#{m.name}\", \"#{m.signature}\", (void*)#{m.nativename}},\n"
+                    end
+                end
+                cpp << "};\n"
+                cpp << "java::jni->RegisterNatives(_class, methods, sizeof(methods)/sizeof(methods[0]));\n"
+                cpp.ident(-1)
+                cpp << "}\n"
             end
         end
 
@@ -953,11 +1066,11 @@ class GeneratedFile < String
     end
     def ident(ident)
         @ident += ident
-        self << "  "*ident if ident > 0
-        self[(ident*2)..-1] = "" if ident < 0 && self[(ident*2)..-1] == "  "*(-ident)
+        self << "    "*ident if ident > 0
+        self[(ident*4)..-1] = "" if ident < 0 && self[(ident*4)..-1] == "    "*(-ident)
     end
     def <<(str)
-        super(str.gsub("\n", "\n" + "  "*@ident))
+        super(str.gsub("\n", "\n" + "    "*@ident))
     end
     def done
         orig = File.read(@filename) if File.exists?(@filename)
