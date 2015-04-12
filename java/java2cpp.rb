@@ -17,7 +17,7 @@ END {
     Library.new(java, "bolts-android-1.2.0.jar")
     Library.new(java, "facebook-sdk-4.0.1.jar")
     Library.new(java, "support-v4-22.0.0.jar")
-    Library.new(java, "../../build-android-release/android-build/build/intermediates/classes/debug/")
+    Library.new(java, "../../build-android-debug/android-build/build/intermediates/classes/debug/")
     #java.cheat
     java.find_package("vc.duvido").native = true
     puts "Requested #{java.classes.size} classes."
@@ -577,7 +577,7 @@ class JavaClass
             f << "JavaObjectHolder obj;\n"
             f << "\n"
             f << "explicit Object(jobject _obj) : obj(_obj) {}\n"
-            f << "bool isNull() {return (jobject)obj == nullptr;}\n"
+            f << "bool isNull() const {return (jobject)obj == nullptr;}\n"
         else
             f << "static jclass _class;\n"
             f << "\n"
@@ -687,7 +687,11 @@ class JavaMethod
         if @mods.include? :static
             f << "static "
         end
-        f << @return.cppname << " " << @name << "(" << @args.map(&:argtype).join(", ") << ");\n"
+        f << @return.cppname << " " << @name << "(" << @args.map(&:argtype).join(", ") << ")"
+        unless @mods.include? :static
+            f << " const "
+        end
+        f << ";\n"
     end
 
     def signature
@@ -721,20 +725,38 @@ class JavaMethod
             end
             argparams = args.map.with_index {|t, n| ", #{t} arg#{n}" }.join
 
-            f << "static #{jnireturn} JNICALL #{@nativename}(JNIEnv*, jobject obj#{argparams}) {\n"
+            if @mods.include? :static
+                f << "static #{jnireturn} JNICALL #{@nativename}(JNIEnv*, jclass#{argparams}) {\n"
+            else
+                f << "static #{jnireturn} JNICALL #{@nativename}(JNIEnv*, jobject obj#{argparams}) {\n"
+            end
             f.ident(1)
-            @javaclass.prepare_return(f, "obj", "_obj")
+            unless @mods.include? :static
+                @javaclass.prepare_return(f, "obj", "_obj")
+            end
             @args.each.with_index do |arg, n|
                 arg.prepare_return(f, "arg#{n}", "_arg#{n}")
             end
 
             arglist = @args.map.with_index {|t, n| "_arg#{n}" }.join(", ")
             if @return == VoidType
-                f << "_obj.#{@name}(#{arglist});\n"
+                if @mods.include? :static
+                    f << "#{@javaclass.cppname}::#{@name}(#{arglist});\n"
+                else
+                    f << "_obj.#{@name}(#{arglist});\n"
+                end
             elsif @return.is_a? PrimitiveType
-                f << "return _obj.#{@name}(#{arglist});\n"
+                if @mods.include? :static
+                    f << "return #{@javaclass.cppname}::#{@name}(#{arglist});\n"
+                else
+                    f << "return _obj.#{@name}(#{arglist});\n"
+                end
             else
-                f << "auto _ret = _obj.#{@name}(#{arglist});\n"
+                if @mods.include? :static
+                    f << "auto _ret = #{@javaclass.cppname}::#{@name}(#{arglist});\n"
+                else
+                    f << "auto _ret = _obj.#{@name}(#{arglist});\n"
+                end
                 @return.prepare_argument(f, "_ret", "ret")
                 f << "return ret;\n"
             end
@@ -746,7 +768,11 @@ class JavaMethod
         else
             argparams = @args.map(&:argtype).map.with_index {|t, n| "#{t} arg#{n}" }.join(", ")
             arglist = @args.map.with_index {|t, n| ", _arg#{n}" }.join
-            f << "#{@return.cppname} #{@javaclass.cppname[2..-1]}::#{@name}(#{argparams}) {\n"
+            f << "#{@return.cppname} #{@javaclass.cppname[2..-1]}::#{@name}(#{argparams})"
+            unless @mods.include? :static
+                f << " const "
+            end
+            f << "{\n"
             f.ident(1)
             @javaclass.gen_fetch_class(f)
             gen_fetch_method(f)

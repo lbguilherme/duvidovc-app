@@ -27,7 +27,7 @@ Window {
             onLogin: root.state = "main"
         }
 
-        state: "login"
+        state: facebook.accessToken === "" ? "login" : "main"
         states: [
             State {
                 name: "login"

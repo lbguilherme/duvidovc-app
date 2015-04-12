@@ -11,7 +11,7 @@ include(deployment.pri)
 SOURCES += \
     main.cpp \
     facebook.cpp \
-    android/src/vc/duvido/FacebookStatusCallback.cpp
+    android/src/vc/duvido/FacebookBridge.cpp
 
 HEADERS += \
     facebook.hpp
@@ -27,15 +27,16 @@ DISTFILES += \
     .gitignore \
     Readme.md \
     design.dot \
-    android/res/values/strings.xml
+    android/res/values/strings.xml \
+    android/src/vc/duvido/FacebookBridge.java \
+    android/src/vc/duvido/DuvidoActivity.java
 
 RESOURCES += \
     qml.qrc \
     artwork.qrc
 
 OTHER_FILES += \
-    java/java2cpp.rb \
-    android/src/vc/duvido/FacebookStatusCallback.java
+    java/java2cpp.rb
 
 design_graph.depends = $$PWD/design.dot
 design_graph.target = $$PWD/design.png
