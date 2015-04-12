@@ -2,6 +2,8 @@
 
 #include <Qt>
 
+Facebook* facebook;
+
 #ifdef Q_OS_ANDROID
 #include <QtAndroid>
 
@@ -10,37 +12,36 @@
 #include <android.app.Activity.hpp>
 #include <com.facebook.FacebookSdk.hpp>
 #include <com.facebook.login.LoginManager.hpp>
+#include <com.facebook.CallbackManager.hpp>
+#include <vc.duvido.FacebookStatusCallback.hpp>
 
 using namespace java::lang;
 using namespace java::util;
 using namespace android::app;
 using namespace com::facebook;
 using namespace com::facebook::login;
-
-#include <QDebug>
-#include <java.lang.String.hpp>
-
-QDebug& operator<<(QDebug s, java::lang::String str) {
-    auto bytes = str.getBytes();
-    bytes.push_back(0);
-    return s << QString::fromUtf8((const char*)bytes.data());
-}
+using namespace vc::duvido;
 #endif
 
-Facebook::Facebook() {
+Facebook::Facebook()
+#ifdef Q_OS_ANDROID
+    : _manager(LoginManager::getInstance())
+#endif
+{
 #ifdef Q_OS_ANDROID
     Activity activity(QtAndroid::androidActivity().object());
     FacebookSdk::sdkInitialize(activity.getApplicationContext());
+    CallbackManager callbackManager = CallbackManager_Factory::create();
+    _manager.registerCallback(callbackManager, _statusCallback);
 #endif
 }
 
 void Facebook::login() {
 #ifdef Q_OS_ANDROID
     Activity activity(QtAndroid::androidActivity().object());
-    LoginManager manager = LoginManager::getInstance();
     ArrayList list;
     list.add(String("user_friends"));
     list.add(String("public_profile"));
-    manager.logInWithReadPermissions(activity, list);
+    _manager.logInWithReadPermissions(activity, list);
 #endif
 }
