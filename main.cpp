@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     facebook = new Facebook;
+    facebook->initialize();
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty("facebook", facebook);

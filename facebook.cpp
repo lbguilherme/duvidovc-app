@@ -2,6 +2,10 @@
 
 #include <Qt>
 #include <QDebug>
+#include <QJsonDocument>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QUrlQuery>
 
 Facebook* facebook;
 
@@ -11,7 +15,11 @@ Facebook* facebook;
 using namespace vc::duvido;
 #endif
 
-Facebook::Facebook() {
+Facebook::Facebook() : _me(new FacebookUser) {
+    qRegisterMetaType<FacebookUser*>("FacebookUser");
+}
+
+void Facebook::initialize() {
 #ifdef Q_OS_ANDROID
     FacebookBridge::initialize();
 #endif
@@ -25,6 +33,25 @@ void Facebook::login() {
 #endif
 }
 
+void Facebook::graphCall(QString method, QString endpoint, QUrlQuery params, const std::function<void(QJsonDocument result)>& callback) const {
+    params.addQueryItem("access_token", _accessToken);
+    QUrl url("https://graph.facebook.com");
+    url.setPath(endpoint);
+    url.setQuery(params);
+
+    QNetworkReply* reply;
+    if (method == "get")
+        reply = _http.get(QNetworkRequest(url));
+    else
+        reply = _http.post(QNetworkRequest(url), "");
+
+    connect(reply, &QNetworkReply::finished, [reply, callback]{
+        auto data = QJsonDocument::fromJson(reply->readAll());
+        reply->deleteLater();
+        callback(data);
+    });
+}
+
 QString Facebook::accessToken() const {
     return _accessToken;
 }
@@ -35,3 +62,11 @@ void Facebook::setAccessToken(const QString& value) {
     emit accessTokenChanged();
 }
 
+FacebookUser* Facebook::me() const {
+    if (_me->isDummy()) {
+        graphCall("get", "/me", QUrlQuery(), [this](QJsonDocument data){
+            _me->loadData(data);
+        });
+    }
+    return _me;
+}
