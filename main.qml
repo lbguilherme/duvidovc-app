@@ -7,6 +7,10 @@ Window {
     width: 400
     height: 650
 
+    property int windowWidth: width;
+    property int windowHeight: height;
+    property int dpi: Screen.pixelDensity;
+
     Item {
         id: root
         anchors.fill: parent
@@ -24,7 +28,5 @@ Window {
                 ? "qrc:/scenes/LoginScene.qml"
                 : "qrc:/scenes/MainScene.qml"
         }
-
     }
-
 }
