@@ -4,8 +4,6 @@ import "qrc:/components"
 Item {
     id: scene
 
-    signal login()
-
     Image {
         anchors.fill: parent
         source: "qrc:/artwork/login-background.png"
@@ -23,7 +21,6 @@ Item {
         onClicked: {
             facebook.login();
         }
-        // scene.login()
     }
 }
 
