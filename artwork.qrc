@@ -11,5 +11,6 @@
         <file>artwork/icons/paper20.png</file>
         <file>artwork/icons/flag32-white.png</file>
         <file>artwork/icons/flag32.png</file>
+        <file>artwork/avatar-placeholder.png</file>
     </qresource>
 </RCC>

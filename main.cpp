@@ -4,6 +4,7 @@
 #include <QDebug>
 
 #include "facebook.hpp"
+#include "facebookavatarprovider.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
@@ -21,6 +22,7 @@ int main(int argc, char *argv[])
     facebook->initialize();
 
     QQmlApplicationEngine engine;
+    engine.addImageProvider(QLatin1String("avatar"), new FacebookAvatarProvider);
     engine.rootContext()->setContextProperty("facebook", facebook);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
