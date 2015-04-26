@@ -15,8 +15,6 @@ Item {
         mouseArea.dist = 0;
     }
 
-    anchors.fill: parent
-
     RoundAvatar {
         id: button
         userId: facebook.me.id
