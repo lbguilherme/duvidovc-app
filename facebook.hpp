@@ -12,7 +12,7 @@ class QUrlQuery;
 class Facebook : public QObject{
     Q_OBJECT
     Q_PROPERTY(QString accessToken READ accessToken WRITE setAccessToken NOTIFY accessTokenChanged)
-    Q_PROPERTY(FacebookUser* me READ me)
+    Q_PROPERTY(FacebookUser* me READ me NOTIFY meChanged)
 public:
 
     Facebook();
@@ -26,6 +26,7 @@ public:
 
 signals:
 
+    void meChanged();
     void accessTokenChanged();
     void javaCallbackLoginSuccess();
     void javaCallbackLoginError();
