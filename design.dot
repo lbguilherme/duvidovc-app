@@ -1,15 +1,26 @@
 digraph Design {
-    android [label="Android Platform", style="filled", color="lightgray"]
-    ios [label="iOS Platform", style="filled", color="lightgray"]
+
+    fb [label="Facebook\nGraph API", style="filled", color="lightgray"]
+
+    subgraph cluster_do {
+        label = "DigitalOcean"
+        server [label="Duvido Server"]
+        nodejs [label="NodeJS", style="filled", color="lightgray"]
+        mongo [label="MongoDB", style="filled", color="lightgray"]
+    }
+
+    android [label="Android", style="filled", color="lightgray"]
+    ios [label="iOS", style="filled", color="lightgray"]
     qt [label="Qt", style="filled", color="lightgray"]
     qml [label="QML", style="filled", color="lightgray"]
-    app [label="Duvido App"]
+    ui [label="UI Components"]
+    app [label="Duvido"]
 
     android -> qt
-    ios -> qt -> qml -> app
+    ios -> qt -> qml -> ui -> app
 
-    java2cpp [label="Java Native Interface"]
-    objc2cpp [label="Objective-C Native Interface"]
+    java2cpp [label="Android Interface"]
+    objc2cpp [label="iOS Interface"]
     android -> java2cpp
     ios -> objc2cpp
 
@@ -19,8 +30,8 @@ digraph Design {
     objc2cpp -> wrapper -> logic -> app
     qt -> wrapper
 
-    api [label="REST API"]
-    server [label="Duvido Server"]
-    nodejs [label="NodeJS", style="filled", color="lightgray"]
-    nodejs -> server -> api -> logic
+    mongo -> server
+    fb -> server
+    nodejs -> server -> logic
+    fb -> logic
 }
