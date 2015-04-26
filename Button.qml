@@ -1,6 +1,5 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
-import QtQuick.Window 2.2
 
 Item {
     id: root
@@ -12,8 +11,8 @@ Item {
     property string text
     property bool textShadow: false
 
-    width: Screen.width/2
-    height: Screen.height/15
+    width: windowWidth/2
+    height: windowHeight/15
 
     Item {
         id: container
@@ -68,7 +67,7 @@ Item {
         anchors.fill: source
         radius: 3
         samples: 16
-        verticalOffset: Screen.pixelDensity/3
+        verticalOffset: dpi/3
         color: "#80000000"
         cached: true
     }

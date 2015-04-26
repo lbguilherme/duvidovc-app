@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.4
 import "qrc:/components"
 
 Item {
@@ -15,6 +15,7 @@ Item {
     }
 
     RingMenu {
+        anchors.fill: parent
         hidden: feed.goingDown
     }
 }

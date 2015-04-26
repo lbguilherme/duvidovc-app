@@ -1,11 +1,10 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
-import QtQuick.Window 2.2
 import "qrc:/basic-components"
 
 Item {
     id: root
-    height: contents.height + Screen.pixelDensity*8
+    height: contents.height + dpi*8
     width: parent.width
 
     Item {
@@ -14,8 +13,8 @@ Item {
         Rectangle {
             id: box
             anchors.fill: parent
-            anchors.margins: Screen.pixelDensity*2
-            radius: Screen.pixelDensity
+            anchors.margins: dpi*2
+            radius: dpi
             color: "#eee"
         }
     }
@@ -24,8 +23,8 @@ Item {
         id: shadow
         source: container
         anchors.fill: source
-        radius: Screen.pixelDensity
-        verticalOffset: Screen.pixelDensity/2
+        radius: dpi
+        verticalOffset: dpi/2
         samples: 16
         color: "#a0000000"
         cached: true
@@ -33,10 +32,10 @@ Item {
 
     Column {
         id: contents
-        width: container.width - Screen.pixelDensity*8
-        x: Screen.pixelDensity*4
-        y: Screen.pixelDensity*4
-        spacing: Screen.pixelDensity
+        width: container.width - dpi*8
+        x: dpi*4
+        y: dpi*4
+        spacing: dpi
 
         Text {
             id: senderName

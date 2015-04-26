@@ -20,7 +20,6 @@ Item {
         centerY: parent.radius * Math.sin(angle)
         radius: parent.size
         color: Qt.lighter("#0f6464", 1.2)
-
     }
 
     InnerShadow {
