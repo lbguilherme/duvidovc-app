@@ -11,12 +11,13 @@ include(deployment.pri)
 SOURCES += \
     main.cpp \
     facebook.cpp \
-    android/src/vc/duvido/FacebookBridge.cpp \
-    facebookuser.cpp
+    facebookuser.cpp \
+    facebookavatarprovider.cpp
 
 HEADERS += \
     facebook.hpp \
-    facebookuser.hpp
+    facebookuser.hpp \
+    facebookavatarprovider.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -55,6 +56,7 @@ HEADERS += \
     java/src/java-core.hpp
 
 SOURCES += \
+    android/src/vc/duvido/FacebookBridge.cpp \
     java/src/android.app.cpp \
     java/src/android.content.cpp \
     java/src/android.os.cpp \
