@@ -50,7 +50,7 @@ public class FacebookBridge {
     }
 
     public static void login() {
-        ArrayList<String> perms = new ArrayList<>();
+        ArrayList<String> perms = new ArrayList<String>();
         perms.add("user_friends");
         perms.add("public_profile");
         LoginManager.getInstance().logInWithReadPermissions(DuvidoActivity.getInstance(), perms);
