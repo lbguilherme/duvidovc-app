@@ -14,7 +14,7 @@ Item {
 
         property real lastContentY: 0
         visibleArea.onYPositionChanged: {
-            root.goingDown = (lastContentY < visibleArea.yPosition);
+            root.goingDown = (lastContentY < visibleArea.yPosition && visibleArea.yPosition > 0);
             lastContentY = visibleArea.yPosition;
         }
 
