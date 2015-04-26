@@ -30,6 +30,8 @@ void Facebook::login() {
 
 #ifdef Q_OS_ANDROID
     FacebookBridge::login();
+#else
+    setAccessToken("dummy");
 #endif
 }
 
