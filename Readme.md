@@ -15,3 +15,8 @@ First run:
     cd java && ./java2cpp.rb
 
 Then open project on Qt Creator and build it (or use `qmake` if you are brave enough).
+
+# Upstream bugs affecting this app:
+
+- Flickable speed: https://bugreports.qt.io/browse/QTBUG-35608
+
