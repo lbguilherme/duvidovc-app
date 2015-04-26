@@ -17,9 +17,9 @@ Item {
 
     anchors.fill: parent
 
-    RoundImage {
+    RoundAvatar {
         id: button
-        source: /*root.backMode ? "" :*/ "qrc:/artwork/face.jpg"
+        userId: facebook.me.id
         radius: root.width/6 + (root.width/10)*(root.expansionValue/root.maximumExpansionValue)
         centerX: root.width/18
         centerY: root.width/18
