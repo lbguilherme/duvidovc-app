@@ -94,13 +94,13 @@ Item {
             ColorAnimation {
                 target: rect
                 property: "referenceColor"
-                duration: 100
+                duration: 50
                 easing.type: Easing.InOutQuad
             }
             NumberAnimation {
                 target: shadow
                 property: "radius"
-                duration: 100
+                duration: 50
                 easing.type: Easing.InOutQuad
             }
         }
