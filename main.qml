@@ -20,31 +20,10 @@ Window {
             id: loader
             anchors.fill: parent
 
+            source: facebook.accessToken === ""
+                ? "qrc:/scenes/LoginScene.qml"
+                : "qrc:/scenes/MainScene.qml"
         }
-
-        Connections {
-            target: root.state == "login" ? loader.item : null
-            onLogin: root.state = "main"
-        }
-
-        state: facebook.accessToken === "" ? "login" : "main"
-        states: [
-            State {
-                name: "login"
-                PropertyChanges {
-                    target: loader
-                    source: "qrc:/scenes/LoginScene.qml"
-                }
-            },
-            State {
-                name: "main"
-                PropertyChanges {
-                    target: loader
-                    source: "qrc:/scenes/MainScene.qml"
-                }
-            }
-
-        ]
 
     }
 
