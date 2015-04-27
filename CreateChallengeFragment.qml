@@ -7,34 +7,56 @@ Item {
 
     Item {
         anchors.fill: parent
-        anchors.margins: windowWidth/25
 
-        Column {
+        Flickable {
             anchors.fill: parent
-            spacing: windowHeight/35
+            contentHeight: createForm.height + 2*createForm.margin
+            pixelAligned: true
+            boundsBehavior: Flickable.StopAtBounds
 
-            TextInputBox {
-                width: parent.width
+            Column {
+                id: createForm
+
+                property int margin: windowWidth/30
+
+                width: parent.width - 2*margin
+                x: margin
+                y: margin
+                spacing: margin
+
+                TextInputBox {
+                    width: parent.width
+                    placeholder: "Título"
+                }
+
+                MultilineTextInputBox {
+                    width: parent.width
+                    placeholder: "Te desafio a..."
+                }
+
+                TextInputBox {
+                    width: parent.width
+                    placeholder: "Recompensa"
+                }
+
+                TextInputBox {
+                    width: parent.width
+                    placeholder: "Amigos"
+                }
+
+                TextInputBox {
+                    width: parent.width
+                    placeholder: "Prazo"
+                }
+
+                Button {
+                    text: "Duvido!"
+                    width: parent.width/2
+                    height: width/2
+                    anchors.horizontalCenter: parent.horizontalCenter;
+                }
+
             }
-
-            TextInputBox {
-                width: parent.width
-            }
-
-            TextInputBox {
-                width: parent.width
-            }
-
-            MultilineTextInputBox {
-                width: parent.width
-            }
-
-            Button {
-                text: "Duvido!"
-                width: parent.width/3
-                anchors.horizontalCenter: parent.horizontalCenter;
-            }
-
         }
     }
 }
