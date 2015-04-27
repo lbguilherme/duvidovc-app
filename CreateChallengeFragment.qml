@@ -25,6 +25,10 @@ Item {
                 width: parent.width
             }
 
+            MultilineTextInputBox {
+                width: parent.width
+            }
+
             Button {
                 text: "Duvido!"
                 width: parent.width/3
