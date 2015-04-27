@@ -10,6 +10,7 @@ Item {
         contentHeight: feedItems.height
         pixelAligned: true
         maximumFlickVelocity: height
+        enabled: parent.enabled
 
         property real lastContentY: 0
         visibleArea.onYPositionChanged: {
@@ -30,4 +31,3 @@ Item {
         }
     }
 }
-

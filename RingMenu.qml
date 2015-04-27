@@ -7,6 +7,7 @@ Item {
 
     property bool hidden: false
     property real menuRadius: width*0.65
+    property bool activated: button.backMode
 
     Item {
         anchors.fill: parent
