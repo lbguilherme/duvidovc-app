@@ -7,13 +7,13 @@ Item {
     property string placeholder: ""
 
     width: windowWidth/2
-    height: input.height*2
+    height: input.height + input.font.pixelSize
     clip: true
 
     Rectangle {
         id: back
         anchors.fill: root
-        radius: height/4
+        radius: input.font.pixelSize/2
         color: "white"
         visible: false
     }
@@ -35,7 +35,7 @@ Item {
         anchors.left: root.left
         anchors.right: root.right
         anchors.verticalCenter: root.verticalCenter
-        anchors.margins: height/2
+        anchors.margins: font.pixelSize/2
         font.pointSize: 14
         color: "black"
     }
