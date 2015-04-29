@@ -24,8 +24,8 @@ Item {
         source: back
         radius: 10
         samples: 16
-        horizontalOffset: -1
-        verticalOffset: 10
+        horizontalOffset: -500/root.width
+        verticalOffset: 250/root.height
         color: "#ff000000"
         fast: true
     }

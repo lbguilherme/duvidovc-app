@@ -7,7 +7,7 @@ Item {
     property string placeholder: ""
 
     width: windowWidth/2
-    height: input.height + input.font.pixelSize
+    height: input.font.pixelSize*6
     clip: true
 
     Rectangle {
@@ -24,8 +24,8 @@ Item {
         source: back
         radius: 10
         samples: 16
-        horizontalOffset: -1
-        verticalOffset: 5
+        horizontalOffset: -500/root.width
+        verticalOffset: 250/root.height
         color: "#ff000000"
         fast: true
     }
@@ -37,7 +37,7 @@ Item {
         anchors.verticalCenter: root.verticalCenter
         anchors.margins: font.pixelSize/2
         font.pointSize: 14
-        height: font.pixelSize*5
+        height: root.height - font.pixelSize
         wrapMode: TextEdit.Wrap
         color: "black"
     }
