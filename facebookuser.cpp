@@ -4,24 +4,18 @@
 #include <QJsonObject>
 
 FacebookUser::FacebookUser() : QObject(facebook) {
-    setDummy();
-}
-
-void FacebookUser::setDummy() {
     _id = "";
 }
 
-void FacebookUser::loadData(QJsonDocument userData) {
+FacebookUser::FacebookUser(QJsonDocument userData) : QObject(facebook) {
     QJsonObject obj = userData.object();
     _id = obj["id"].toString();
-
-    emit idChanged();
 }
 
-bool FacebookUser::isDummy() {
+bool FacebookUser::isDummy() const {
     return _id.isEmpty();
 }
 
-QString FacebookUser::id() {
+QString FacebookUser::id() const {
     return _id;
 }

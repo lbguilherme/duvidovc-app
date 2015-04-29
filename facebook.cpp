@@ -67,7 +67,9 @@ void Facebook::setAccessToken(const QString& value) {
 FacebookUser* Facebook::me() const {
     if (_me->isDummy()) {
         graphCall("get", "/me", QUrlQuery(), [this](QJsonDocument data){
-            _me->loadData(data);
+            _me->deleteLater();
+            _me = new FacebookUser(data);
+            emit meChanged();
         });
     }
     return _me;

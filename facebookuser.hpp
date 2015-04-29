@@ -4,23 +4,17 @@
 
 class FacebookUser : public QObject {
     Q_OBJECT
-    Q_PROPERTY(QString id READ id NOTIFY idChanged)
+    Q_PROPERTY(QString id READ id CONSTANT)
 
     friend class Facebook;
 
     FacebookUser();
-
-    void setDummy();
-    void loadData(QJsonDocument userData);
+    FacebookUser(QJsonDocument userData);
 
 public:
 
-    QString id();
-    bool isDummy();
-
-signals:
-
-    void idChanged();
+    QString id() const;
+    bool isDummy() const;
 
 private:
 
