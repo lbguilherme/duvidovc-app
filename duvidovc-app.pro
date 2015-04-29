@@ -57,14 +57,9 @@ HEADERS += \
 
 SOURCES += \
     android/src/vc/duvido/FacebookBridge.cpp \
-    java/src/android.app.cpp \
-    java/src/android.content.cpp \
-    java/src/android.os.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
-    java/src/java.util.cpp \
     java/src/com.facebook.cpp \
-    java/src/com.facebook.login.cpp \
     java/src/vc.duvido.cpp
 
 }
