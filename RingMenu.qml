@@ -73,7 +73,7 @@ Item {
                 icon: "qrc:/artwork/icons/paper20-white.png"
                 onClicked: {
                     button.enterBackMode();
-                    menuLoader.source = "qrc:/frags/CreateChallengeFragment.qml"
+                    menuLoader.source = "qrc:/frags/ChallengeCreator.qml"
                 }
             }
 
