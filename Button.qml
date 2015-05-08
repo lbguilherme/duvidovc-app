@@ -10,6 +10,7 @@ Item {
     property string icon
     property string text
     property bool textShadow: false
+    property bool enabled: true
 
     width: windowWidth/2
     height: windowHeight/15
@@ -55,9 +56,9 @@ Item {
         MouseArea {
             id: mouseArea
             anchors.fill: rect
-            onPressed: root.state = "pressed"
+            onPressed: if (enabled) root.state = "pressed"
             onReleased: root.state = ""
-            onClicked: root.clicked()
+            onClicked: if (enabled) root.clicked()
         }
     }
 

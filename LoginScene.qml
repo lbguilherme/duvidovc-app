@@ -19,6 +19,7 @@ Item {
         anchors.right: scene.right
 
         onClicked: {
+            enabled = false;
             facebook.login();
         }
     }
