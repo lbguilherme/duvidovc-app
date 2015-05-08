@@ -1,0 +1,49 @@
+#pragma once
+
+#include "../src/java-core.hpp"
+#include <jni.h>
+#include <cstdint>
+#include <memory>
+#include <vector>
+
+#include "java.lang.Object.hpp"
+#include "android.support.v4.internal.view.SupportMenu.hpp"
+#include "android.view.SubMenu.hpp"
+
+
+namespace android {
+namespace support {
+namespace v4 {
+namespace internal {
+namespace view {
+class SupportSubMenu : public virtual ::java::lang::Object,
+                       public virtual ::android::support::v4::internal::view::SupportMenu,
+                       public virtual ::android::view::SubMenu {
+public:
+
+    
+    static jclass _class;
+    
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wreorder"
+    explicit SupportSubMenu(jobject _obj) : ::java::lang::Object(_obj), ::android::support::v4::internal::view::SupportMenu(_obj), ::android::view::Menu(_obj), ::android::view::SubMenu(_obj) {}
+    #pragma GCC diagnostic pop
+    
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wreorder"
+    SupportSubMenu(const ::android::support::v4::internal::view::SupportSubMenu& x) : ::java::lang::Object((jobject)0), ::android::support::v4::internal::view::SupportMenu((jobject)0), ::android::view::Menu((jobject)0), ::android::view::SubMenu((jobject)0) {obj = x.obj;}
+    SupportSubMenu(::android::support::v4::internal::view::SupportSubMenu&& x) : ::java::lang::Object((jobject)0), ::android::support::v4::internal::view::SupportMenu((jobject)0), ::android::view::Menu((jobject)0), ::android::view::SubMenu((jobject)0) {obj = x.obj; x.obj = JavaObjectHolder((jobject)0);}
+    #pragma GCC diagnostic pop
+    
+    ::android::support::v4::internal::view::SupportSubMenu& operator=(const ::android::support::v4::internal::view::SupportSubMenu& x) {obj = x.obj; return *this;}
+    ::android::support::v4::internal::view::SupportSubMenu& operator=(::android::support::v4::internal::view::SupportSubMenu&& x) {obj = std::move(x.obj); return *this;}
+    
+
+};
+}
+}
+}
+}
+}
+
+
