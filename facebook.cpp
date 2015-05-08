@@ -22,6 +22,8 @@ Facebook::Facebook() : _me(new FacebookUser) {
 void Facebook::initialize() {
 #ifdef Q_OS_ANDROID
     FacebookBridge::initialize();
+
+    connect(this, &Facebook::javaCallbackAccessToken, this, &Facebook::setAccessToken, Qt::QueuedConnection);
 #endif
 }
 

@@ -35,6 +35,7 @@ signals:
 private:
 
     void graphCall(QString method, QString endpoint, QUrlQuery params, const std::function<void(QJsonDocument result)>& callback) const;
+    void javaCallbackAccessToken(const QString& value);
 
 private:
 

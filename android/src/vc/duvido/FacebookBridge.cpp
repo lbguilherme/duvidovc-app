@@ -22,5 +22,5 @@ void FacebookBridge::onLoginCancel() {
 
 void FacebookBridge::onAccessTokenReceived(const AccessToken& token) {
     if (token.isNull()) return;
-    facebook->setAccessToken(token.getToken());
+    emit facebook->javaCallbackAccessToken(token.getToken());
 }
