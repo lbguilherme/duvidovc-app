@@ -15,7 +15,7 @@ Item {
 
     RoundAvatar {
         id: button
-        userId: facebook.me.id
+        userId: duvido.me.id
         radius: root.width/6 + (root.width/10)*(root.expansionValue/root.maximumExpansionValue)
         centerX: root.width/18
         centerY: root.width/18

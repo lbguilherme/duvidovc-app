@@ -3,8 +3,8 @@
 #include <QQmlContext>
 #include <QDebug>
 
+#include "duvido.hpp"
 #include "facebook.hpp"
-#include "facebookavatarprovider.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
@@ -21,10 +21,12 @@ int main(int argc, char *argv[])
     facebook = new Facebook;
     facebook->initialize();
 
+    duvido = new Duvido;
+
     QQmlApplicationEngine engine;
-    engine.addImageProvider(QLatin1String("avatar"), new FacebookAvatarProvider);
 
     engine.rootContext()->setContextProperty("facebook", facebook);
+    engine.rootContext()->setContextProperty("duvido", duvido);
 
     // These properties are set by main.qml
     // They are only set here to aid QtCreator code completion

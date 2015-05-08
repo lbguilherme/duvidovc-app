@@ -24,9 +24,9 @@ Window {
             id: loader
             anchors.fill: parent
 
-            source: facebook.accessToken === ""
-                ? "qrc:/scenes/LoginScene.qml"
-                : "qrc:/scenes/MainScene.qml"
+            source: duvido.loggedIn
+                ? "qrc:/scenes/MainScene.qml"
+                : "qrc:/scenes/LoginScene.qml"
         }
     }
 }

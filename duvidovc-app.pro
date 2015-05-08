@@ -11,13 +11,15 @@ include(deployment.pri)
 SOURCES += \
     main.cpp \
     facebook.cpp \
-    facebookuser.cpp \
-    facebookavatarprovider.cpp
+    duvido.cpp \
+    user.cpp \
+    friendsmodel.cpp
 
 HEADERS += \
     facebook.hpp \
-    facebookuser.hpp \
-    facebookavatarprovider.hpp
+    duvido.hpp \
+    user.hpp \
+    friendsmodel.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
