@@ -3,6 +3,4 @@
 *.pro.user*
 *.class
 java/tmp/
-java/include/
-java/src/
 android/*.properties
