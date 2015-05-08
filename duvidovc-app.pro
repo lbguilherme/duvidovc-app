@@ -1,5 +1,5 @@
 TEMPLATE = app
-CONFIG += c++11
+CONFIG += C++11
 QT += qml quick
 
 QML_IMPORT_PATH =
