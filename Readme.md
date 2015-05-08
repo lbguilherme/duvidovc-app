@@ -5,16 +5,17 @@
  - Android SDK
  - Android NDK
  - Qt 5.4+
- - Ruby 1.9+
- - Parslet (`sudo gem install parslet`)
+ - For generating the java interface only (java2cpp):
+     - Ruby 1.9+
+     - Parslet (`sudo gem install parslet`)
 
 # Building Process
 
-First run:
+Simply open project on Qt Creator and build it (or use `qmake` if you are brave enough).
+
+For generating the java interface use this command:
 
     cd java && ./java2cpp.rb
-
-Then open project on Qt Creator and build it (or use `qmake` if you are brave enough).
 
 # Upstream bugs affecting this app:
 
