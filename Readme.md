@@ -20,4 +20,4 @@ For generating the java interface use this command:
 # Upstream bugs affecting this app:
 
 - Flickable speed: https://bugreports.qt.io/browse/QTBUG-35608
-
+    - Seems like a fix is on the way for Qt 5.5
