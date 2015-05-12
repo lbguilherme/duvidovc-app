@@ -52,11 +52,11 @@ void Duvido::apiCall(QString endpoint, QMap<QString, QVariant> args, std::functi
     QNetworkReply* reply = _http->get(request);
     connect(reply, &QNetworkReply::finished, [callback, reply]{
         if (reply->error() != QNetworkReply::NoError)
-            ;// Connection error
+            (void)0;// Connection error
 
         int status = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
         if (status != 200)
-            ;// Server error?
+            (void)0;// Server error?
 
         QByteArray data = reply->readAll();
         qDebug() << data;
