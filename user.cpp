@@ -12,7 +12,7 @@ QString User::id() const {
 }
 
 FriendsModel* User::friendsModel() const {
-    if (_friends)
+    if (!_friends)
         _friends = new FriendsModel(_id, duvido);
     return _friends;
 }
