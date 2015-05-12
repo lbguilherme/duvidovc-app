@@ -6,6 +6,8 @@ QML_IMPORT_PATH =
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 QMAKE_LFLAGS += -Wl,--retain-symbols-file,../duvidovc-app/mainsymbol
 
+QMAKE_CXXFLAGS += -Wextra
+
 include(deployment.pri)
 
 SOURCES += \
