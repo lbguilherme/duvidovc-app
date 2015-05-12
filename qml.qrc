@@ -26,5 +26,6 @@
     </qresource>
     <qresource prefix="/frags">
         <file>ChallengeCreator.qml</file>
+        <file>FriendsSelector.qml</file>
     </qresource>
 </RCC>
