@@ -22,7 +22,6 @@ public:
 
     Q_INVOKABLE QString avatarUrl(QString id) const;
 
-    void apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonObject)> callback);
 
     bool loggedIn();
     User* me();
@@ -34,6 +33,9 @@ signals:
 
 private:
 
+    void apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonObject)> callback);
+    void apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonArray)> callback);
+    void apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QByteArray)> callback);
     User* _me;
     FriendsModel* _friendsModel;
     QNetworkAccessManager* _http;

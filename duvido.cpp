@@ -7,6 +7,7 @@
 #include <QUrlQuery>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QJsonArray>
 #include <QDebug>
 
 Duvido* duvido;
@@ -25,10 +26,19 @@ Duvido::Duvido()
             _me = new User(resp["id"].toString());
             emit loggedInChanged();
         });
+void Duvido::apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonArray)> callback) {
+    apiCall(endpoint, args, [=](QByteArray bytes){
+        callback(QJsonDocument::fromJson(bytes).array());
     });
 }
 
 void Duvido::apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonObject)> callback) {
+    apiCall(endpoint, args, [=](QByteArray bytes){
+        callback(QJsonDocument::fromJson(bytes).object());
+    });
+}
+
+void Duvido::apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QByteArray)> callback) {
     QUrlQuery query;
     for (auto key : args.keys()) {
         query.addQueryItem(key, args[key].toString());
@@ -48,7 +58,11 @@ void Duvido::apiCall(QString endpoint, QMap<QString, QVariant> args, std::functi
         if (status != 200)
             ;// Server error?
 
-        callback(QJsonDocument::fromJson(reply->readAll()).object());
+        QByteArray data = reply->readAll();
+        qDebug() << data;
+
+        callback(data);
+
         reply->deleteLater();
     });
 }
