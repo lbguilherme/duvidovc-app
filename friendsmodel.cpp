@@ -22,7 +22,7 @@ QVariant FriendsModel::data(const QModelIndex& index, int role) const {
     int i = index.row();
     switch (role) {
     case IdRole:
-        return _friends[i].id();
+        return QVariant::fromValue<User*>(_friends[i]);
     default:
         return QVariant();
     }

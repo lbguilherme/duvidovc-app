@@ -24,6 +24,6 @@ public:
 private:
 
     QString _userId;
-    QList<User> _friends;
+    QList<User*> _friends;
 
 };

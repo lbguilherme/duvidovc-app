@@ -22,3 +22,5 @@ private:
     mutable FriendsModel* _friends;
 
 };
+
+Q_DECLARE_METATYPE(User*)
