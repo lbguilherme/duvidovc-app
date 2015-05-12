@@ -25,6 +25,6 @@
         <file>MultilineTextInputBox.qml</file>
     </qresource>
     <qresource prefix="/frags">
-        <file>CreateChallengeFragment.qml</file>
+        <file>ChallengeCreator.qml</file>
     </qresource>
 </RCC>
