@@ -21,11 +21,21 @@ Duvido::Duvido()
     qRegisterMetaType<FriendsModel*>("FriendsModel");
 
     connect(facebook, &Facebook::accessTokenChanged, [this]{
-        apiCall("/login", QVariantMap({{"token", facebook->accessToken()}}), [this](QJsonObject resp){
-            qDebug() << QJsonDocument(resp).toJson();
-            _me = new User(resp["id"].toString());
-            emit loggedInChanged();
-        });
+        login(facebook->accessToken());
+    });
+}
+
+void Duvido::login(QString token) {
+    apiCall("/login", QVariantMap{{"token", token}}, [this](QJsonObject resp){
+        _me = new User(resp["id"].toString());
+        emit loggedInChanged();
+    });
+}
+
+void Duvido::friends(QString id, std::function<void(QJsonArray)> callback) {
+    apiCall("/friends", QVariantMap{{"id", id}}, callback);
+}
+
 void Duvido::apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonArray)> callback) {
     apiCall(endpoint, args, [=](QByteArray bytes){
         callback(QJsonDocument::fromJson(bytes).array());
