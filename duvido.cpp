@@ -51,7 +51,3 @@ void Duvido::setMe(User* me) {
     _friendsModel = new FriendsModel(me->id());
     emit meChanged();
 }
-
-FriendsModel* Duvido::friendsModel() {
-    return _friendsModel;
-}
