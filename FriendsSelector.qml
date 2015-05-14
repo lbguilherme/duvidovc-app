@@ -3,9 +3,13 @@ import "qrc:/basic-components"
 
 Rectangle {
     width: 100
-    height: 62
+    height: 200
 
     ListView {
+        anchors.fill: parent
+        anchors.margins: 10
+        spacing: 10
+
         model: duvido.friends
         delegate: friendDelegate
     }
@@ -14,10 +18,19 @@ Rectangle {
         id: friendDelegate
 
         Rectangle {
-            Avatar {
+            width: parent.width
+            height: 50
+
+            RoundAvatar {
                 userId: id
+                radius: 25
+                centerX: 25
+                centerY: 25
             }
+
             Text {
+                x: 60
+                anchors.verticalCenter: parent.verticalCenter
                 text: name
             }
         }
