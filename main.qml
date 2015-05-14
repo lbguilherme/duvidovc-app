@@ -24,7 +24,7 @@ Window {
             id: loader
             anchors.fill: parent
 
-            source: duvido.loggedIn
+            source: duvido.me
                 ? "qrc:/scenes/MainScene.qml"
                 : "qrc:/scenes/LoginScene.qml"
         }
