@@ -29,5 +29,3 @@ private:
     QNetworkAccessManager* _http;
 
 };
-
-Q_DECLARE_METATYPE(DuvidoApi*)

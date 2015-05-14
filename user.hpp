@@ -22,5 +22,3 @@ private:
     QString _name;
 
 };
-
-Q_DECLARE_METATYPE(User*)
