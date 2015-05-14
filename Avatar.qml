@@ -8,7 +8,7 @@ Item {
     Image {
         id: avatar
         anchors.fill: parent
-        source: duvido.avatarUrl(root.userId)
+        source: duvido.api.avatar(root.userId)
     }
 
     Image {
