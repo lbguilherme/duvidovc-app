@@ -20,7 +20,7 @@ Item {
 
         onClicked: {
             enabled = false;
-            facebook.login();
+            duvido.login();
         }
     }
 }

@@ -18,14 +18,10 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    facebook = new Facebook;
-    facebook->initialize();
-
     duvido = new Duvido;
 
     QQmlApplicationEngine engine;
 
-    engine.rootContext()->setContextProperty("facebook", facebook);
     engine.rootContext()->setContextProperty("duvido", duvido);
 
     // These properties are set by main.qml

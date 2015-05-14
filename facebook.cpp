@@ -7,8 +7,6 @@
 #include <QNetworkReply>
 #include <QUrlQuery>
 
-Facebook* facebook;
-
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.FacebookBridge.hpp>
 

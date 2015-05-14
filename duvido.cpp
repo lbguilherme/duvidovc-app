@@ -17,12 +17,19 @@ const QString Duvido::apiUrl = "http://duvido.vc/api/v0";
 Duvido::Duvido()
     : QObject(nullptr), _me(nullptr), _friendsModel(nullptr), _http(new QNetworkAccessManager(this)) {
 
+    _facebook = new Facebook;
+    _facebook->initialize();
+
     qRegisterMetaType<User*>("User");
     qRegisterMetaType<FriendsModel*>("FriendsModel");
 
-    connect(facebook, &Facebook::accessTokenChanged, [this]{
-        login(facebook->accessToken());
+    connect(_facebook, &Facebook::accessTokenChanged, [this]{
+        login(_facebook->accessToken());
     });
+}
+
+void Duvido::login() {
+    _facebook->login();
 }
 
 void Duvido::login(QString token) {

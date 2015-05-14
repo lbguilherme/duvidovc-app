@@ -14,8 +14,9 @@ class Facebook : public QObject{
 public:
 
     Facebook();
+
     void initialize();
-    Q_INVOKABLE void login();
+    void login();
 
     QString accessToken() const;
     void setAccessToken(const QString& value);
@@ -34,4 +35,3 @@ private:
 
 };
 
-extern Facebook* facebook;
