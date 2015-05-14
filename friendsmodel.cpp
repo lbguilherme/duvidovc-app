@@ -3,7 +3,6 @@
 
 #include <QJsonObject>
 #include <QJsonArray>
-#include <QDebug>
 
 FriendsModel::FriendsModel(QString userId, QObject* parent) : QAbstractListModel(parent) {
     _userId = userId;
@@ -44,7 +43,6 @@ QVariant FriendsModel::data(const QModelIndex& index, int role) const {
     case IdRole:
         return _friends[i]->id();
     case NameRole:
-        qDebug() << _friends[i]->name();
         return _friends[i]->name();
     default:
         return QVariant();
