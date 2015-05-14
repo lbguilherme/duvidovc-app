@@ -1,7 +1,27 @@
 #include "friendsmodel.hpp"
+#include "duvido.hpp"
+
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QDebug>
 
 FriendsModel::FriendsModel(QString userId, QObject* parent) : QAbstractListModel(parent) {
     _userId = userId;
+
+    duvido->api()->friends(_userId, [this](QJsonArray resp){
+        beginRemoveRows(QModelIndex(), 0, _friends.count()-1);
+        for (User* user : _friends) {
+            user->deleteLater();
+        }
+        _friends.clear();
+        endRemoveRows();
+        beginInsertRows(QModelIndex(), 0, resp.count()-1);
+        for (QJsonValue el : resp) {
+            QJsonObject obj = el.toObject();
+            _friends.append(new User(obj["id"].toString(), obj["name"].toString()));
+        }
+        endInsertRows();
+    });
 }
 
 QHash<int, QByteArray> FriendsModel::roleNames() const {
@@ -22,7 +42,10 @@ QVariant FriendsModel::data(const QModelIndex& index, int role) const {
     int i = index.row();
     switch (role) {
     case IdRole:
-        return QVariant::fromValue<User*>(_friends[i]);
+        return _friends[i]->id();
+    case NameRole:
+        qDebug() << _friends[i]->name();
+        return _friends[i]->name();
     default:
         return QVariant();
     }
