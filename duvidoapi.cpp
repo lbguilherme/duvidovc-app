@@ -19,9 +19,10 @@ QString DuvidoApi::avatar(QString id) {
     return apiUrl + "/avatar?id=" + id;
 }
 
-void DuvidoApi::login(QString token) {
-    apiCall("/login", QVariantMap{{"token", token}}, [this](QJsonObject resp){
-        duvido->setMe(new User(resp["id"].toString()));
+void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
+    apiCall("/login", QVariantMap{{"token", token}}, [this, callback](QJsonObject resp){
+        auto user = new User(resp["id"].toString());
+        callback(user);
     });
 }
 

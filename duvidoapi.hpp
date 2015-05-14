@@ -3,6 +3,8 @@
 #include <functional>
 #include <QNetworkAccessManager>
 
+class User;
+
 class DuvidoApi : public QObject {
     Q_OBJECT
 
@@ -12,7 +14,7 @@ public:
 
     DuvidoApi();
 
-    Q_INVOKABLE void login(QString token);
+    Q_INVOKABLE void login(QString token, std::function<void(User*)> callback);
     Q_INVOKABLE QString avatar(QString id);
     Q_INVOKABLE void friends(QString id, std::function<void(QJsonArray)> callback);
 

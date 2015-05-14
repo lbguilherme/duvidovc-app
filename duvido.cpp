@@ -20,7 +20,9 @@ Duvido::Duvido()
     _facebook->initialize();
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
-        _api.login(_facebook->accessToken());
+        _api.login(_facebook->accessToken(), [this](User* me){
+            setMe(me);
+        });
     });
 }
 
@@ -32,6 +34,11 @@ void Duvido::login() {
     _facebook->login();
 }
 
+FriendsModel* Duvido::friends() {
+    Q_ASSERT(_friendsModel);
+    return _friendsModel;
+}
+
 User* Duvido::me() {
     return _me;
 }
@@ -39,7 +46,9 @@ User* Duvido::me() {
 void Duvido::setMe(User* me) {
     if (_me == me) return;
     if (_me) _me->deleteLater();
+    if (_friendsModel) _friendsModel->deleteLater();
     _me = me;
+    _friendsModel = new FriendsModel(me->id());
     emit meChanged();
 }
 

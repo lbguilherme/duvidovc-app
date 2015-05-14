@@ -6,7 +6,7 @@ Rectangle {
     height: 62
 
     ListView {
-        model: duvido.me.friendsModel
+        model: duvido.friends
         delegate: friendDelegate
     }
 
