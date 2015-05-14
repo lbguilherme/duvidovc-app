@@ -9,6 +9,9 @@ Duvido* duvido;
 Duvido::Duvido()
     : QObject(nullptr), _me(nullptr), _friendsModel(nullptr) {
 
+    if (duvido) abort();
+    duvido = this;
+
     qRegisterMetaType<User*>("User");
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");

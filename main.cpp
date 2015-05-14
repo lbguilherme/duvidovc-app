@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    duvido = new Duvido;
+    new Duvido;
 
     QQmlApplicationEngine engine;
 
