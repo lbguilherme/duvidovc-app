@@ -4,7 +4,7 @@ Item {
     id: button
 
     property bool flat: false
-    property color color: "white"    // Text color if flat. Background color if raised.
+    property color color: flat ? "black" : "white"    // Text color if flat. Background color if raised.
     property string text: "Button"
     signal clicked()
 
