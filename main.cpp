@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("windowWidth", 0);
     engine.rootContext()->setContextProperty("windowHeight", 0);
     engine.rootContext()->setContextProperty("dpi", 0);
+    engine.rootContext()->setContextProperty("dp", 0);
 
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
