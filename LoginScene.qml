@@ -10,7 +10,7 @@ Item {
     }
 
     FacebookLoginButton {
-        height: scene.height/10
+        //height: scene.height/10
         anchors.leftMargin: scene.width/8
         anchors.rightMargin: scene.width/8
         anchors.bottomMargin: scene.height/8 - height/2

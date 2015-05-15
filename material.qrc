@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/material">
+        <file>Button.qml</file>
+        <file>Surface.qml</file>
+        <file>Card.qml</file>
+        <file>CardSplitLine.qml</file>
+        <file>CardContentArea.qml</file>
+        <file>CardActionArea.qml</file>
+        <file>CardImageArea.qml</file>
+    </qresource>
+</RCC>

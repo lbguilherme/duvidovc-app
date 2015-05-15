@@ -42,7 +42,8 @@ DISTFILES += \
 
 RESOURCES += \
     qml.qrc \
-    artwork.qrc
+    artwork.qrc \
+    material.qrc
 
 OTHER_FILES += \
     java/java2cpp.rb

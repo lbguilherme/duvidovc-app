@@ -3,7 +3,6 @@
         <file>main.qml</file>
     </qresource>
     <qresource prefix="/components">
-        <file>Button.qml</file>
         <file>FacebookLoginButton.qml</file>
         <file>RingMenu.qml</file>
         <file>RingMenuButton.qml</file>
@@ -18,7 +17,6 @@
     <qresource prefix="/basic-components">
         <file>Circle.qml</file>
         <file>RoundImage.qml</file>
-        <file>ImageBox.qml</file>
         <file>TextInputBox.qml</file>
         <file>Avatar.qml</file>
         <file>RoundAvatar.qml</file>

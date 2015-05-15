@@ -21,6 +21,7 @@ Item {
         Column {
             id: feedItems
             width: parent.width
+            spacing: 25*dp
 
             FeedItem {}
             FeedItem {}
