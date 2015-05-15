@@ -7,7 +7,7 @@ Item {
 
     Flickable {
         anchors.fill: parent
-        contentHeight: feedItems.height
+        contentHeight: feedItems.height + 2*feedItems.spacing
         pixelAligned: true
         maximumFlickVelocity: height
         enabled: parent.enabled
@@ -21,6 +21,7 @@ Item {
         Column {
             id: feedItems
             width: parent.width
+            y: spacing
             spacing: 25*dp
 
             FeedItem {}
