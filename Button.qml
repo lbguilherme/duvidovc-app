@@ -22,6 +22,7 @@ Item {
 
     Surface {
         anchors.fill: button
+        radius: 2*dp
         elevation: flat ? 0 : touchTarget.containsPress ? 2 : 1
         backgroundColor:  Qt.tint(flat ? "transparent" : button.color,
                               Qt.rgba(153, 153, 153,

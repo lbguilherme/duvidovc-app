@@ -6,6 +6,7 @@ Surface {
     width: parent.width - 15*dp
     height: contents.height
     anchors.horizontalCenter: parent.horizontalCenter
+    radius: 2*dp
     elevation: 2
     backgroundColor: "#FAFAFA"
 
