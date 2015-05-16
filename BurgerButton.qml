@@ -6,24 +6,25 @@ Item {
 
     Column {
         anchors.centerIn: parent
-        spacing: 5*dp
+        spacing: parent.height/5
+        width: parent.width
 
         Rectangle {
             id: rect1
-            width: 24*dp
-            height: Math.ceil(2*dp)
+            width: parent.width
+            height: Math.ceil(parent.spacing/2)
         }
 
         Rectangle {
             id: rect2
-            width: 24*dp
-            height: Math.ceil(2*dp)
+            width: parent.width
+            height: Math.ceil(parent.spacing/2)
         }
 
         Rectangle {
             id: rect3
-            width: 24*dp
-            height: Math.ceil(2*dp)
+            width: parent.width
+            height: Math.ceil(parent.spacing/2)
         }
     }
 }
