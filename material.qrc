@@ -7,5 +7,6 @@
         <file>CardContentArea.qml</file>
         <file>CardActionArea.qml</file>
         <file>CardImageArea.qml</file>
+        <file>ActionBar.qml</file>
     </qresource>
 </RCC>
