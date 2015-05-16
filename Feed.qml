@@ -18,6 +18,12 @@ Item {
             lastContentY = visibleArea.yPosition;
         }
 
+        // Work around Qt bug => https://bugreports.qt.io/browse/QTBUG-35608
+        Component.onCompleted: {
+            flickDeceleration = flickDeceleration * 4
+            maximumFlickVelocity = maximumFlickVelocity * 4
+        }
+
         Column {
             id: feedItems
             width: parent.width
