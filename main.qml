@@ -9,7 +9,6 @@ Window {
 
     property int windowWidth: width
     property int windowHeight: height
-    property int dpi: Screen.pixelDensity
     property real dp: Screen.pixelDensity * 25.4 / 160 // 1dp = 1 pixel in a 160 dpi screen
 
     Item {
