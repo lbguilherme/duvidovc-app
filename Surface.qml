@@ -11,7 +11,7 @@ Item {
         width: parent.width
         height: parent.height
         anchors.centerIn: parent
-        anchors.verticalCenterOffset: parent.elevation * 1.5*dp
+        anchors.verticalCenterOffset: parent.elevation * 1.8*dp
         glowRadius: parent.elevation * 1.5*dp
         opacity: 0.35 + parent.elevation * 0.05
         spread: 0.1
