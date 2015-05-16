@@ -10,14 +10,6 @@ Item {
     }
 
     Feed {
-        id: feed
         anchors.fill: parent
-        enabled: !menu.activated
-    }
-
-    RingMenu {
-        id: menu
-        anchors.fill: parent
-        hidden: feed.goingDown
     }
 }
