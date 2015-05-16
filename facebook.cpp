@@ -34,6 +34,7 @@ void Facebook::login() {
     setAccessToken("dummy");
 #endif
 }
+
 QString Facebook::accessToken() const {
     return _accessToken;
 }

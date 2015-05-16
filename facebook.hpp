@@ -34,4 +34,3 @@ private:
     QString _accessToken;
 
 };
-
