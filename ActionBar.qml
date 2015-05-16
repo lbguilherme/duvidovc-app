@@ -13,6 +13,11 @@ Item {
         elevation: 3
         radius: 0
 
+        BurgerButton {
+            x: 16*dp
+            y: 16*dp
+        }
+
         Text {
             x: 72*dp
             anchors.verticalCenter: parent.verticalCenter

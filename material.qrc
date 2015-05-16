@@ -8,5 +8,6 @@
         <file>CardActionArea.qml</file>
         <file>CardImageArea.qml</file>
         <file>ActionBar.qml</file>
+        <file>BurgerButton.qml</file>
     </qresource>
 </RCC>
