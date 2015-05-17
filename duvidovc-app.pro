@@ -56,7 +56,6 @@ PRE_TARGETDEPS += $$PWD/design.png
 
 android: {
 
-QT += androidextras
 INCLUDEPATH += java/include
 
 HEADERS += \
