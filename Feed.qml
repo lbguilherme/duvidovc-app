@@ -11,6 +11,7 @@ Item {
         pixelAligned: true
         maximumFlickVelocity: height
         enabled: parent.enabled
+        boundsBehavior: Flickable.StopAtBounds
 
         property real lastContentY: 0
         visibleArea.onYPositionChanged: {
