@@ -5,7 +5,7 @@ Item {
     width: 20*dp
     height: 20*dp
 
-    property real arrow: 0.5
+    property real arrow: 0
     property bool wasArrow: false
 
     Behavior on arrow {
