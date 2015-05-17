@@ -11,7 +11,7 @@ Item {
     Behavior on arrowness {
         NumberAnimation {
             duration: 400
-            easing.type: Easing.InOutQuad
+            easing.type: Easing.OutQuint
             onRunningChanged: if (!running) wasArrow = (arrowness == 1);
         }
     }
