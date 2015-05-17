@@ -16,6 +16,7 @@ Item {
         radius: 0
 
         BurgerButton {
+            id: burger
             anchors.verticalCenter: parent.verticalCenter
             x: y
         }
@@ -29,4 +30,7 @@ Item {
         }
     }
 
+    NavigationDrawer {
+        openness: burger.arrowness
+    }
 }

@@ -10,5 +10,6 @@
         <file>ActionBar.qml</file>
         <file>BurgerButton.qml</file>
         <file>Scrollable.qml</file>
+        <file>NavigationDrawer.qml</file>
     </qresource>
 </RCC>
