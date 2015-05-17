@@ -5,21 +5,21 @@ Item {
     property color color: "white"
 
     width: parent.width
-    height: 56*dp
+    height: 64*dp
 
     Surface {
         anchors.fill: parent
         backgroundColor: parent.color
-        elevation: 3
+        elevation: 2
         radius: 0
 
         BurgerButton {
-            x: 16*dp
-            y: 16*dp
+            anchors.verticalCenter: parent.verticalCenter
+            x: y
         }
 
         Text {
-            x: 72*dp
+            x: 68*dp
             anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: 20*dp
             text: "Duvido.vc"

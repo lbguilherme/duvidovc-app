@@ -1,8 +1,8 @@
 import QtQuick 2.0
 
 Item {
-    width: 24*dp
-    height: 24*dp
+    width: 20*dp
+    height: 20*dp
 
     Column {
         anchors.centerIn: parent
