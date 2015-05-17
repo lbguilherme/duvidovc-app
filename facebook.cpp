@@ -1,11 +1,6 @@
 #include "facebook.hpp"
 
 #include <Qt>
-#include <QDebug>
-#include <QJsonDocument>
-#include <QNetworkRequest>
-#include <QNetworkReply>
-#include <QUrlQuery>
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.FacebookBridge.hpp>
