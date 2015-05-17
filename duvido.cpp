@@ -17,13 +17,14 @@ Duvido::Duvido()
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");
 
     _facebook = new Facebook;
-    _facebook->initialize();
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
         _api.login(_facebook->accessToken(), [this](User* me){
             setMe(me);
         });
     });
+
+    _facebook->initialize();
 }
 
 DuvidoApi* Duvido::api() {
