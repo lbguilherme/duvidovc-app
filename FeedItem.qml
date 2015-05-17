@@ -15,9 +15,9 @@ Card {
             horizontalAlignment: Text.AlignRight
         }
 
-        RoundImage {
+        Avatar {
             id: senderAvatar
-            source: "qrc:/artwork/face.jpg"
+            userId: "4"
             radius: senderName.contentHeight/1.7
             centerX: senderName.x + senderName.width - senderName.contentWidth - radius*1.5
             centerY: senderName.y + senderName.contentHeight/2
