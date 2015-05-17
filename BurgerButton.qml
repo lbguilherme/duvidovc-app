@@ -5,30 +5,30 @@ Item {
     width: 20*dp
     height: 20*dp
 
-    property real arrow: 0
+    property real arrowness: 0
     property bool wasArrow: false
 
-    Behavior on arrow {
+    Behavior on arrowness {
         NumberAnimation {
             duration: 400
             easing.type: Easing.InOutQuad
-            onRunningChanged: if (!running) wasArrow = (arrow == 1);
+            onRunningChanged: if (!running) wasArrow = (arrowness == 1);
         }
     }
 
-    rotation: 180*arrow * (wasArrow ? -1 : 1)
+    rotation: 180*arrowness * (wasArrow ? -1 : 1)
 
     Column {
         id: column
         anchors.centerIn: parent
-        spacing: Math.ceil(parent.height/5) - root.arrow*(Math.ceil(root.height/8)+Math.ceil(root.height/5))
+        spacing: Math.ceil(parent.height/5) - root.arrowness*(Math.ceil(root.height/8)+Math.ceil(root.height/5))
 
         Rectangle {
             width: root.width - arrow*root.width/3
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
-            rotation: root.arrow*45
+            rotation: root.arrowness*45
         }
 
         Rectangle {
@@ -41,13 +41,13 @@ Item {
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
-            rotation: -root.arrow*45
+            rotation: -root.arrowness*45
         }
     }
 
     MouseArea {
         anchors.fill: parent
         anchors.margins: -20*dp
-        onPressed: parent.arrow = parent.arrow == 1 ? 0 : 1
+        onPressed: parent.arrowness = parent.arrowness == 1 ? 0 : 1
     }
 }
