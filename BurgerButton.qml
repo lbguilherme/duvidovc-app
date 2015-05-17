@@ -24,7 +24,7 @@ Item {
         spacing: Math.ceil(parent.height/5) - root.arrowness*(Math.ceil(root.height/8)+Math.ceil(root.height/5))
 
         Rectangle {
-            width: root.width - arrow*root.width/3
+            width: root.width - root.arrowness*root.width/3
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
@@ -37,7 +37,7 @@ Item {
         }
 
         Rectangle {
-            width: root.width - arrow*root.width/3
+            width: root.width - root.arrowness*root.width/3
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
