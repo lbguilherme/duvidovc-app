@@ -15,7 +15,8 @@ public:
         NameRole
     };
 
-    FriendsModel(QString userId, QObject* parent = 0);
+    FriendsModel(QObject* parent = 0);
+    void refresh(QString userId);
 
     QHash<int, QByteArray> roleNames() const;
     int rowCount(const QModelIndex& parent = QModelIndex()) const;

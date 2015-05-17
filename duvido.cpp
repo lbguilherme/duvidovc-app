@@ -7,7 +7,7 @@
 Duvido* duvido;
 
 Duvido::Duvido()
-    : QObject(nullptr), _me(nullptr), _friendsModel(nullptr) {
+    : QObject(nullptr), _me(nullptr), _friendsModel(new FriendsModel(this)) {
 
     if (duvido) abort();
     duvido = this;
@@ -47,8 +47,7 @@ User* Duvido::me() {
 void Duvido::setMe(User* me) {
     if (_me == me) return;
     if (_me) _me->deleteLater();
-    if (_friendsModel) _friendsModel->deleteLater();
     _me = me;
-    _friendsModel = new FriendsModel(me->id());
+    _friendsModel->refresh(_me->id());
     emit meChanged();
 }

@@ -4,16 +4,22 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
-FriendsModel::FriendsModel(QString userId, QObject* parent) : QAbstractListModel(parent) {
+FriendsModel::FriendsModel(QObject* parent) : QAbstractListModel(parent) {
+
+}
+
+void FriendsModel::refresh(QString userId) {
     _userId = userId;
 
-    duvido->api()->friends(_userId, [this](QJsonArray resp){
-        beginRemoveRows(QModelIndex(), 0, _friends.count()-1);
-        for (User* user : _friends) {
-            user->deleteLater();
-        }
-        _friends.clear();
-        endRemoveRows();
+    beginRemoveRows(QModelIndex(), 0, _friends.count()-1);
+    for (User* user : _friends) {
+        user->deleteLater();
+    }
+    _friends.clear();
+    endRemoveRows();
+
+    duvido->api()->friends(_userId, [this, userId](QJsonArray resp){
+        if (_userId != userId) return;
         beginInsertRows(QModelIndex(), 0, resp.count()-1);
         for (QJsonValue el : resp) {
             QJsonObject obj = el.toObject();
