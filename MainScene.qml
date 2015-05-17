@@ -23,5 +23,6 @@ Item {
     ActionBar {
         id: actionBar
         color: "#0E6965"
+        title: "Duvido.vc"
     }
 }
