@@ -4,9 +4,9 @@ QT += qml quick
 
 QML_IMPORT_PATH =
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
-QMAKE_LFLAGS += -Wl,--retain-symbols-file,../duvidovc-app/mainsymbol
+QMAKE_LFLAGS += -Wl,--retain-symbols-file,../duvidovc-app/mainsymbol,--gc-sections
 
-QMAKE_CXXFLAGS += -Wextra
+QMAKE_CXXFLAGS += -Wextra -fvisibility=hidden -ffunction-sections
 
 include(deployment.pri)
 

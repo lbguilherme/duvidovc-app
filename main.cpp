@@ -10,6 +10,7 @@
 #include "java/src/java-core.hpp"
 #endif
 
+__attribute__((visibility("default")))
 int main(int argc, char *argv[])
 {
 #ifdef Q_OS_ANDROID
