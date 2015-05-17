@@ -8,6 +8,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QSettings>
 
 const QString DuvidoApi::apiUrl = "http://duvido.vc/api/v0";
 
@@ -20,9 +21,20 @@ QString DuvidoApi::avatar(QString id) {
 }
 
 void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
+    QSettings settings;
+    QString id = settings.value("myId").toString();
+    QString name = settings.value("myName").toString();
+    if (!id.isEmpty()) {
+        callback(new User(id, name));
+    }
     apiCall("/login", QVariantMap{{"token", token}}, [this, callback](QJsonObject resp){
-        auto user = new User(resp["id"].toString(), resp["name"].toString());
-        callback(user);
+        QString id = resp["id"].toString();
+        QString name = resp["name"].toString();
+        QSettings settings;
+        if (settings.value("myId").toString() == id && settings.value("myName").toString() == name) return;
+        settings.setValue("myId", id);
+        settings.setValue("myName", name);
+        callback(new User(id, name));
     });
 }
 
