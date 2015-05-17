@@ -13,7 +13,7 @@ Item {
         anchors.centerIn: parent
         anchors.verticalCenterOffset: parent.elevation * 1.8*dp
         glowRadius: parent.elevation * 1.5*dp
-        opacity: 0.35 + parent.elevation * 0.05
+        opacity: 0.35 + parent.elevation * 0.08
         spread: 0.1
         color: "black"
         cornerRadius: rect.radius + glowRadius * 2.5
