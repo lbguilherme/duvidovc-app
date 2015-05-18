@@ -7,8 +7,10 @@ Item {
 
     property real arrowness: 0
     property bool wasArrow: false
+    property bool animationEnabled: true
 
     Behavior on arrowness {
+        enabled: root.animationEnabled
         NumberAnimation {
             duration: 400
             easing.type: Easing.OutQuint

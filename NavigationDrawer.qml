@@ -42,8 +42,10 @@ Item {
                     return;
                 }
 
-                if (Math.abs(mouse.x-pressX) > 15*dp)
+                if (Math.abs(mouse.x-pressX) > 15*dp) {
                     draging = true;
+                    root.burger.animationEnabled = false;
+                }
 
                 if (draging) {
                     mouse.accepted = true;
@@ -68,6 +70,7 @@ Item {
         }
 
         onReleased: {
+            root.burger.animationEnabled = true;
             if (holding) {
                 holding = false;
                 if (draging) {
