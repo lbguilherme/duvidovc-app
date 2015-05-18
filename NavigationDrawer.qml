@@ -36,22 +36,19 @@ Item {
         property real tempX
 
         onPositionChanged: {
-            if (holding) {
-                if (!draging && Math.abs(mouse.y-pressY) >= 15*dp) {
-                    holding = false;
-                    return;
-                }
+            if (!holding) return;
 
-                if (Math.abs(mouse.x-pressX) > 15*dp) {
+            if (draging) {
+                mouse.accepted = true;
+                root.burger.arrowness = Math.max(0, Math.min(1, startV+(mouse.x-pressX)/drawer.width));
+                lastX = tempX;
+                tempX = mouse.x;
+            } else {
+                if (Math.abs(mouse.y-pressY) >= 15*dp) {
+                    holding = false;
+                } else if (Math.abs(mouse.x-pressX) > 15*dp) {
                     draging = true;
                     root.burger.animationEnabled = false;
-                }
-
-                if (draging) {
-                    mouse.accepted = true;
-                    root.burger.arrowness = Math.max(0, Math.min(1, startV+(mouse.x-pressX)/drawer.width));
-                    lastX = tempX;
-                    tempX = mouse.x;
                 }
             }
         }
