@@ -12,7 +12,7 @@ Item {
         NumberAnimation {
             duration: 400
             easing.type: Easing.OutQuint
-            onRunningChanged: if (!running) wasArrow = (arrowness == 1);
+            onRunningChanged: if (!running) wasArrow = arrowness == 1 ? true : arrowness == 0 ? false : wasArrow;
         }
     }
 
