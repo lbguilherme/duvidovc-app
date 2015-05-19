@@ -1,6 +1,5 @@
 import QtQuick 2.4
-import "qrc:/basic-components"
-
+import 'qrc:/components'
 Rectangle {
     width: 100
     height: 200
@@ -21,7 +20,7 @@ Rectangle {
             width: parent.width
             height: 50
 
-            RoundAvatar {
+            Avatar {
                 userId: id
                 radius: 25
                 centerX: 25
