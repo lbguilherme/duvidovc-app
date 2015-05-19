@@ -7,6 +7,8 @@
         <file>FeedItem.qml</file>
         <file>Feed.qml</file>
         <file>Avatar.qml</file>
+        <file>NavigationDrawerContent.qml</file>
+        <file>NavigationDrawerOption.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
