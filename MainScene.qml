@@ -40,6 +40,7 @@ Item {
 
         NavigationDrawerContent {
             anchors.fill: parent
+            stackManager: stackManager
         }
     }
 
