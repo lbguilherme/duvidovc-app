@@ -34,7 +34,7 @@ Item {
             font.capitalization: Font.AllUppercase
             font.family: "Roboto"
             text: button.text
-            color: flat ? button.color : "white"
+            color: button.flat ? button.color : "white"
         }
     }
 
