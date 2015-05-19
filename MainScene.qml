@@ -24,5 +24,10 @@ Item {
         id: actionBar
         color: "#0E6965"
         title: "Duvido.vc"
+
+        NavigationDrawerContent {
+            anchors.fill: parent
+        }
     }
+
 }

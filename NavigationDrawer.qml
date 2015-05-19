@@ -7,20 +7,12 @@ Item {
     height: windowHeight-parent.height
 
     property BurgerButton burger
+    default property alias data: drawer.data
 
     Rectangle {
         anchors.fill: parent
         color: Qt.rgba(0, 0, 0, 0.7)
         opacity: root.burger.arrowness
-    }
-
-    Surface {
-        id: drawer
-        width: Math.min(360*dp, windowWidth - 60*dp)
-        height: parent.height
-        x: (root.burger.arrowness - 1) * width
-        elevation: root.burger.arrowness > 0 ? 4 : 0
-        backgroundColor: "#FAFAFA"
     }
 
     MouseArea {
@@ -83,5 +75,14 @@ Item {
             }
             mouse.accepted = false;
         }
+    }
+
+    Surface {
+        id: drawer
+        width: Math.min(360*dp, windowWidth - 60*dp)
+        height: parent.height
+        x: (root.burger.arrowness - 1) * width
+        elevation: root.burger.arrowness > 0 ? 4 : 0
+        backgroundColor: "#FAFAFA"
     }
 }
