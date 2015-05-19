@@ -71,6 +71,11 @@ void DuvidoApi::apiCall(QString endpoint, QMap<QString, QVariant> args, std::fun
             (void)0;// Connection error
 
         int status = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+        if (status == 401) {
+            QSettings().clear();
+            duvido->setMe(nullptr);
+            return;
+        }
         if (status != 200)
             (void)0;// Server error?
 
