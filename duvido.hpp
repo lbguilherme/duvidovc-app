@@ -30,8 +30,6 @@ public:
     User* me();
     FriendsModel* friends();
 
-private:
-
     void setMe(User* me);
 
 signals:
