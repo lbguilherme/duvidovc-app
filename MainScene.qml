@@ -5,6 +5,17 @@ import "qrc:/material"
 Item {
     id: scene
 
+    QtObject {
+        id: stackManager
+        property variant sceneStack: ['qrc:/components/Feed.qml']
+
+        function go (nextScene) {
+            sceneStack.push(nextScene);
+            stackLoader.source = nextScene;
+            actionBar.burger.arrowness = 0;
+        }
+    }
+
     Item {
         y: actionBar.height
         width: parent.width
@@ -15,8 +26,10 @@ Item {
             color: "#10A8A1"
         }
 
-        Feed {
+        Loader {
+            id: stackLoader
             anchors.fill: parent
+            source: stackManager.sceneStack[stackManager.sceneStack.length-1]
         }
     }
 
@@ -27,6 +40,7 @@ Item {
 
         NavigationDrawerContent {
             anchors.fill: parent
+            stackManager: stackManager
         }
     }
 

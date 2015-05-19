@@ -6,6 +6,7 @@ Item {
     property color color: "white"
     property string title
     default property alias data: drawer.data
+    property BurgerButton burger: burgerButton
 
     width: parent.width
     height: 64*dp

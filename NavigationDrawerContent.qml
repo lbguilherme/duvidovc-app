@@ -3,6 +3,8 @@ import QtQuick 2.4
 Item {
     id: drawerContent
 
+    property QtObject stackManager
+
     Column {
         spacing: 8*dp
         width: parent.width
@@ -36,7 +38,8 @@ Item {
 
             ListElement {
                 icon: 'qrc:/artwork/icons/settings48.png'
-                name: 'Hello'
+                name: 'Selecionar amigo'
+                action: 'qrc:/frags/FriendsSelector.qml'
             }
 
 
@@ -55,6 +58,7 @@ Item {
             ListElement {
                 icon: ''
                 name: 'Alo'
+
             }
 
             ListElement {
@@ -67,7 +71,9 @@ Item {
             width: parent.width
             id: drawerOptionsView
             model: drawerOptions
-            delegate: NavigationDrawerOption{}
+            delegate: NavigationDrawerOption{
+                stackManager: drawerContent.stackManager
+            }
             height: drawerContent.height - header.height - parent.spacing
             boundsBehavior: Flickable.StopAtBounds
             clip: true

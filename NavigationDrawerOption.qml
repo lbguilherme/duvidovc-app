@@ -1,6 +1,8 @@
 import QtQuick 2.0
 import "qrc:/material"
 Item {
+    id: root
+    property QtObject stackManager
 
     width: parent.width
     height: 48*dp
@@ -28,6 +30,9 @@ Item {
         id: mouseAreaOption
         anchors.fill: parent
 
+        onClicked: {
+            root.stackManager.go(action);
+        }
     }
 }
 
