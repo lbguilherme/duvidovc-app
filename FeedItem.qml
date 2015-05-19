@@ -1,6 +1,5 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
-import "qrc:/basic-components"
 import "qrc:/material"
 
 Card {
