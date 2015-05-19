@@ -48,6 +48,6 @@ void Duvido::setMe(User* me) {
     if (_me == me) return;
     if (_me) _me->deleteLater();
     _me = me;
-    _friendsModel->refresh(_me->id());
+    if (_me) _friendsModel->refresh(_me->id());
     emit meChanged();
 }
