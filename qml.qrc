@@ -6,11 +6,15 @@
         <file>FacebookLoginButton.qml</file>
         <file>FeedItem.qml</file>
         <file>Feed.qml</file>
-        <file>Avatar.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
         <file>MainScene.qml</file>
+    </qresource>
+    <qresource prefix="/basic-components">
+        <file>TextInputBox.qml</file>
+        <file>MultilineTextInputBox.qml</file>
+        <file>Avatar.qml</file>
     </qresource>
     <qresource prefix="/frags">
         <file>ChallengeCreator.qml</file>
