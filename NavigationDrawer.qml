@@ -7,6 +7,7 @@ Item {
     height: windowHeight-parent.height
 
     property BurgerButton burger
+    default property alias data: drawer.data
 
     Rectangle {
         anchors.fill: parent
