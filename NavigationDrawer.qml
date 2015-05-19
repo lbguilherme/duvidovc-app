@@ -15,15 +15,6 @@ Item {
         opacity: root.burger.arrowness
     }
 
-    Surface {
-        id: drawer
-        width: Math.min(360*dp, windowWidth - 60*dp)
-        height: parent.height
-        x: (root.burger.arrowness - 1) * width
-        elevation: root.burger.arrowness > 0 ? 4 : 0
-        backgroundColor: "#FAFAFA"
-    }
-
     MouseArea {
         anchors.fill: parent
         preventStealing: true
@@ -84,5 +75,14 @@ Item {
             }
             mouse.accepted = false;
         }
+    }
+
+    Surface {
+        id: drawer
+        width: Math.min(360*dp, windowWidth - 60*dp)
+        height: parent.height
+        x: (root.burger.arrowness - 1) * width
+        elevation: root.burger.arrowness > 0 ? 4 : 0
+        backgroundColor: "#FAFAFA"
     }
 }
