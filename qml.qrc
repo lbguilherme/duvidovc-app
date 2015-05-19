@@ -14,7 +14,6 @@
         <file>LoginScene.qml</file>
         <file>MainScene.qml</file>
     </qresource>
-    <qresource prefix="/basic-components"/>
     <qresource prefix="/frags">
         <file>ChallengeCreator.qml</file>
         <file>FriendsSelector.qml</file>
