@@ -2,8 +2,7 @@ import QtQuick 2.4
 import QtQuick.Window 2.2
 import "qrc:/scenes"
 
-Window {
-    visible: true
+Item {
     width: 400
     height: 650
 

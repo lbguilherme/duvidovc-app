@@ -1,10 +1,8 @@
 #include <QGuiApplication>
-#include <QQmlApplicationEngine>
+#include <QQuickView>
 #include <QQmlContext>
-#include <QDebug>
 
 #include "duvido.hpp"
-#include "facebook.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
@@ -21,18 +19,18 @@ int main(int argc, char *argv[])
 
     new Duvido;
 
-    QQmlApplicationEngine engine;
-
-    engine.rootContext()->setContextProperty("duvido", duvido);
+    QQuickView view;
+    view.rootContext()->setContextProperty("duvido", duvido);
 
     // These properties are set by main.qml
     // They are only set here to aid QtCreator code completion
     // This has no runtime impact
-    engine.rootContext()->setContextProperty("windowWidth", 0);
-    engine.rootContext()->setContextProperty("windowHeight", 0);
-    engine.rootContext()->setContextProperty("dp", 0);
+    view.rootContext()->setContextProperty("windowWidth", 0);
+    view.rootContext()->setContextProperty("windowHeight", 0);
+    view.rootContext()->setContextProperty("dp", 0);
 
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+    view.show();
 
     return app.exec();
 }
