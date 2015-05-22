@@ -17,11 +17,12 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
-    auto dpi = app.screens().at(0)->logicalDotsPerInch();
+    auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
     new Duvido;
 
     QQuickView view;
+    view.setResizeMode(QQuickView::SizeRootObjectToView);
     view.rootContext()->setContextProperty("duvido", duvido);
     view.rootContext()->setContextProperty("dp", qMax(1.0, dpi/160));
     view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
@@ -33,6 +34,5 @@ int main(int argc, char *argv[])
     view.rootContext()->setContextProperty("windowHeight", 0);
 
     view.show();
-
     return app.exec();
 }
