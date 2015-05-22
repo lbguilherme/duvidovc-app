@@ -1,26 +1,10 @@
 import QtQuick 2.4
 import "qrc:/components"
 import "qrc:/material"
+import "qrc:/singletons"
 
 Item {
     id: scene
-
-    QtObject {
-        id: stackManager
-
-        property var sceneStack: []
-        property string currentScene: "qrc:/components/Feed.qml"
-
-        function go(nextScene) {
-            sceneStack.push(currentScene);
-            currentScene = nextScene;
-            actionBar.burger.arrowness = 0;
-        }
-
-        function back() {
-            currentScene = sceneStack.pop();
-        }
-    }
 
     Rectangle {
         anchors.fill: parent
@@ -31,7 +15,10 @@ Item {
         y: actionBar.height
         width: parent.width
         height: parent.height - actionBar.height
-        source: stackManager.currentScene
+        source: StackManager.currentScene
+        onLoaded: {
+            actionBar.burger.arrowness = 0;
+        }
     }
 
     ActionBar {
@@ -41,7 +28,6 @@ Item {
 
         NavigationDrawerContent {
             anchors.fill: parent
-            stackManager: stackManager
         }
     }
 }

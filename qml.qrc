@@ -18,4 +18,8 @@
         <file>ChallengeCreator.qml</file>
         <file>FriendsSelector.qml</file>
     </qresource>
+    <qresource prefix="/singletons">
+        <file>StackManager.qml</file>
+        <file>qmldir</file>
+    </qresource>
 </RCC>

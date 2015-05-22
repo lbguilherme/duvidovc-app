@@ -1,12 +1,11 @@
 import QtQuick 2.0
 import "qrc:/material"
+import "qrc:/singletons"
 
 Item {
     id: root
     width: parent.width
     height: 48*dp
-
-    property QtObject stackManager
 
     Rectangle {
         anchors.fill: parent
@@ -32,7 +31,7 @@ Item {
         anchors.fill: parent
 
         onClicked: {
-            root.stackManager.go(action);
+            StackManager.go(action);
         }
     }
 }

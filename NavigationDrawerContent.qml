@@ -4,8 +4,6 @@ import QtGraphicalEffects 1.0
 Item {
     id: drawerContent
 
-    property QtObject stackManager
-
     Column {
         spacing: 8*dp
         width: parent.width
@@ -92,9 +90,7 @@ Item {
             width: parent.width
             id: drawerOptionsView
             model: drawerOptions
-            delegate: NavigationDrawerOption{
-                stackManager: drawerContent.stackManager
-            }
+            delegate: NavigationDrawerOption {}
             height: drawerContent.height - header.height - parent.spacing
             boundsBehavior: Flickable.StopAtBounds
             clip: true
