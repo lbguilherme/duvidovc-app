@@ -22,21 +22,16 @@ Item {
         }
     }
 
-    Item {
+    Rectangle {
+        anchors.fill: parent
+        color: "#10A8A1"
+    }
+
+    Loader {
         y: actionBar.height
         width: parent.width
         height: parent.height - actionBar.height
-
-        Rectangle {
-            anchors.fill: parent
-            color: "#10A8A1"
-        }
-
-        Loader {
-            id: stackLoader
-            anchors.fill: parent
-            source: stackManager.currentScene
-        }
+        source: stackManager.currentScene
     }
 
     ActionBar {
@@ -49,5 +44,4 @@ Item {
             stackManager: stackManager
         }
     }
-
 }
