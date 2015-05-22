@@ -21,5 +21,6 @@
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>
         <file>qmldir</file>
+        <file>MenuOptionsModel.qml</file>
     </qresource>
 </RCC>

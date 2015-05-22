@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
+import "qrc:/singletons"
 
 Item {
     id: drawerContent
@@ -56,40 +57,10 @@ Item {
             }
         }
 
-        ListModel {
-            id: drawerOptions
-
-            ListElement {
-                icon: 'qrc:/artwork/icons/settings48.png'
-                name: 'Selecionar amigo'
-                action: 'qrc:/frags/FriendsSelector.qml'
-            }
-
-            ListElement {
-                icon: ""
-                name: 'Ola'
-            }
-
-            ListElement {
-                icon: ""
-                name: 'Hi'
-            }
-
-            ListElement {
-                icon: ""
-                name: 'Alo'
-            }
-
-            ListElement {
-                icon: ""
-                name: 'Alo'
-            }
-        }
-
         ListView {
             width: parent.width
             id: drawerOptionsView
-            model: drawerOptions
+            model: MenuOptionsModel
             delegate: NavigationDrawerOption {}
             height: drawerContent.height - header.height - parent.spacing
             boundsBehavior: Flickable.StopAtBounds
