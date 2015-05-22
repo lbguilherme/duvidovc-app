@@ -1,5 +1,4 @@
 import QtQuick 2.4
-import QtQuick.Window 2.2
 import "qrc:/scenes"
 
 Item {
@@ -8,7 +7,6 @@ Item {
 
     property int windowWidth: width
     property int windowHeight: height
-    property real dp: Screen.pixelDensity * 25.4 / 160 // 1dp = 1 pixel in a 160 dpi screen
 
     Item {
         id: root
@@ -25,7 +23,9 @@ Item {
 
             source: duvido.me
                 ? "qrc:/scenes/MainScene.qml"
+                //? "qrc:/frags/FriendsSelector.qml"
                 : "qrc:/scenes/LoginScene.qml"
+
         }
     }
 }
