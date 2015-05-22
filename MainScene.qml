@@ -7,12 +7,18 @@ Item {
 
     QtObject {
         id: stackManager
-        property variant sceneStack: ['qrc:/components/Feed.qml']
 
-        function go (nextScene) {
-            sceneStack.push(nextScene);
-            stackLoader.source = nextScene;
+        property var sceneStack: []
+        property string currentScene: "qrc:/components/Feed.qml"
+
+        function go(nextScene) {
+            sceneStack.push(currentScene);
+            currentScene = nextScene;
             actionBar.burger.arrowness = 0;
+        }
+
+        function back() {
+            currentScene = sceneStack.pop();
         }
     }
 
@@ -29,7 +35,7 @@ Item {
         Loader {
             id: stackLoader
             anchors.fill: parent
-            source: stackManager.sceneStack[stackManager.sceneStack.length-1]
+            source: stackManager.currentScene
         }
     }
 
