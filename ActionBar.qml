@@ -9,7 +9,7 @@ Item {
     property BurgerButton burger: burgerButton
 
     width: parent.width
-    height: 64*dp
+    height: 56*dp
 
     Surface {
         anchors.fill: parent
