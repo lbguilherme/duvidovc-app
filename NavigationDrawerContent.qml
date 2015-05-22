@@ -66,27 +66,23 @@ Item {
                 action: 'qrc:/frags/FriendsSelector.qml'
             }
 
-
             ListElement {
-                icon: ''
+                icon: ""
                 name: 'Ola'
             }
 
-
             ListElement {
-                icon: ''
+                icon: ""
                 name: 'Hi'
             }
 
-
             ListElement {
-                icon: ''
+                icon: ""
                 name: 'Alo'
-
             }
 
             ListElement {
-                icon: ''
+                icon: ""
                 name: 'Alo'
             }
         }

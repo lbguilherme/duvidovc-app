@@ -1,11 +1,12 @@
 import QtQuick 2.0
 import "qrc:/material"
+
 Item {
     id: root
-    property QtObject stackManager
-
     width: parent.width
     height: 48*dp
+
+    property QtObject stackManager
 
     Rectangle {
         anchors.fill: parent
@@ -35,4 +36,3 @@ Item {
         }
     }
 }
-
