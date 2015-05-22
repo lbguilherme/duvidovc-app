@@ -20,6 +20,7 @@ Item {
                 id: avatarBack
                 source: duvido.api.avatar(duvido.me.id)
                 width: parent.width
+                height: width*sourceSize.height/sourceSize.width
                 anchors.verticalCenter: parent.verticalCenter
                 visible: false
             }
