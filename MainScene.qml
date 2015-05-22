@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import "qrc:/components"
+import "qrc:/frags"
 import "qrc:/material"
 import "qrc:/singletons"
 

@@ -5,9 +5,7 @@
     <qresource prefix="/components">
         <file>FacebookLoginButton.qml</file>
         <file>FeedItem.qml</file>
-        <file>Feed.qml</file>
         <file>Avatar.qml</file>
-        <file>NavigationDrawerContent.qml</file>
         <file>NavigationDrawerOption.qml</file>
     </qresource>
     <qresource prefix="/scenes">
@@ -17,6 +15,8 @@
     <qresource prefix="/frags">
         <file>ChallengeCreator.qml</file>
         <file>FriendsSelector.qml</file>
+        <file>NavigationDrawerContent.qml</file>
+        <file>Feed.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>

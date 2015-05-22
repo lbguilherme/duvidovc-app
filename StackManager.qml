@@ -6,7 +6,7 @@ QtObject {
     id: stackManager
 
     property var sceneStack: []
-    property string currentScene: "qrc:/components/Feed.qml"
+    property string currentScene: "qrc:/frags/Feed.qml"
 
     function go(nextScene) {
         sceneStack.push(currentScene);
