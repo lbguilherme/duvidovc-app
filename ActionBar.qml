@@ -14,7 +14,7 @@ Item {
     Surface {
         anchors.fill: parent
         backgroundColor: parent.color
-        elevation: 2
+        elevation: 1.2
         radius: 0
 
         BurgerButton {
