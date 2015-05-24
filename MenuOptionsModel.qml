@@ -6,28 +6,28 @@ ListModel {
     id: drawerOptions
 
     ListElement {
-        icon: 'qrc:/artwork/icons/settings48.png'
-        name: 'Selecionar amigo'
-        action: 'qrc:/frags/FriendsSelector.qml'
+        icon: "qrc:/artwork/icons/settings48.png"
+        name: "Criar desafio"
+        action: "qrc:/frags/ChallengeCreator.qml"
     }
 
     ListElement {
         icon: ""
-        name: 'Ola'
+        name: "Ola"
     }
 
     ListElement {
         icon: ""
-        name: 'Hi'
+        name: "Hi"
     }
 
     ListElement {
         icon: ""
-        name: 'Alo'
+        name: "Alo"
     }
 
     ListElement {
         icon: ""
-        name: 'Alo'
+        name: "Alo"
     }
 }
