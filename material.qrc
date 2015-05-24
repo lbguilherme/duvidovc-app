@@ -11,5 +11,6 @@
         <file>BurgerButton.qml</file>
         <file>Scrollable.qml</file>
         <file>NavigationDrawer.qml</file>
+        <file>FullWidthTextInput.qml</file>
     </qresource>
 </RCC>
