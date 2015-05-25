@@ -8,9 +8,12 @@ Item {
         anchors.fill: parent
         spacing: Math.max(1, Math.ceil(1*dp))
 
-        FullWidthTextInput {
+        FullWidthInput {
             id: targets
             label: "Desafiados"
+            onClicked: {
+                window.dialogLoader.source = "qrc:/frags/FriendsSelector.qml"
+            }
         }
 
         FullWidthTextInput {
