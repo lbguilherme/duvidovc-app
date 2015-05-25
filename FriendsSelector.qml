@@ -25,6 +25,7 @@ Dialog {
             height: 50*dp
 
             SelectionTick {
+                id: selection
                 x: 10*dp
                 anchors.verticalCenter: parent.verticalCenter
                 color: "#0f6464"
@@ -41,6 +42,11 @@ Dialog {
                 x: 110*dp
                 anchors.verticalCenter: parent.verticalCenter
                 text: name
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: selection.ticked = !selection.ticked
             }
         }
     }

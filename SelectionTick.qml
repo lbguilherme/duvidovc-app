@@ -6,6 +6,7 @@ Item {
     height: width
 
     property color color: "#777"
+    property bool ticked: false
 
     Rectangle {
         radius: width/2
@@ -17,6 +18,7 @@ Item {
         radius: width/2
         anchors.fill: parent
         color: root.color
+        visible: parent.ticked
 
         Rectangle {
             width: parent.radius/2
