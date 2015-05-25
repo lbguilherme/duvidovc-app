@@ -2,8 +2,6 @@
 
 #include <QObject>
 
-class FriendsModel;
-
 class User : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString id READ id CONSTANT)
