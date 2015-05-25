@@ -9,6 +9,11 @@ Item {
         opacity: 0.65
     }
 
+    MouseArea {
+        anchors.fill: parent
+        onClicked: window.dialogLoader.source = ""
+    }
+
     Surface {
         anchors.centerIn: parent
         width: parent.width - 50*dp
@@ -16,6 +21,10 @@ Item {
         radius: 2*dp
         elevation: 5
         backgroundColor: "#FAFAFA"
+
+        MouseArea {
+            anchors.fill: parent
+        }
 
         Column {
             id: contents
