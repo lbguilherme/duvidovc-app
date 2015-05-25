@@ -7,7 +7,7 @@ Duvido* duvido;
 Duvido::Duvido()
     : QObject(nullptr), _me(nullptr), _friendsModel(new FriendsModel(this)) {
 
-    if (duvido) abort();
+    Q_ASSERT(!duvido);
     duvido = this;
 
     qRegisterMetaType<User*>("User");
