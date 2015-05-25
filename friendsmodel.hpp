@@ -16,13 +16,16 @@ public:
         SelectedRole
     };
 
-    FriendsModel(QObject* parent = 0);
-    void refresh(QString userId);
+    FriendsModel(QString userId, QObject* parent = 0);
 
     QHash<int, QByteArray> roleNames() const;
     int rowCount(const QModelIndex& parent = QModelIndex()) const;
     QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
     bool setData(const QModelIndex& index, const QVariant& value, int role = Qt::DisplayRole);
+
+private:
+
+    void refresh(QString userId);
 
 private:
 

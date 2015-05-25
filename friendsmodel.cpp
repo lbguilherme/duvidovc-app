@@ -4,8 +4,8 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
-FriendsModel::FriendsModel(QObject* parent) : QAbstractListModel(parent) {
-
+FriendsModel::FriendsModel(QString userId, QObject* parent) : QAbstractListModel(parent) {
+    refresh(userId);
 }
 
 void FriendsModel::refresh(QString userId) {

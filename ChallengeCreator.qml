@@ -3,6 +3,7 @@ import "qrc:/material"
 
 Item {
     id: root
+    property var friendsModel: duvido.friendsModel()
 
     Column {
         anchors.fill: parent
@@ -12,7 +13,8 @@ Item {
             id: targets
             label: "Desafiados"
             onClicked: {
-                window.dialogLoader.source = "qrc:/frags/FriendsSelector.qml"
+                window.dialogLoader.source = "qrc:/frags/FriendsSelector.qml";
+                window.dialogLoader.item.friendsModel = root.friendsModel;
             }
         }
 

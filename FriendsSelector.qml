@@ -3,14 +3,16 @@ import "qrc:/components"
 import "qrc:/material"
 
 Dialog {
+    id: root
+    property var friendsModel
+
     Item {
         width: parent.width
         height: window.height - 150*dp
 
         ScrollableListView {
             anchors.fill: parent
-
-            model: duvido.friends
+            model: root.friendsModel
             delegate: friendDelegate
         }
     }

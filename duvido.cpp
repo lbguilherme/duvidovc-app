@@ -5,7 +5,7 @@
 Duvido* duvido;
 
 Duvido::Duvido()
-    : QObject(nullptr), _me(nullptr), _friendsModel(new FriendsModel(this)) {
+    : QObject(nullptr), _me(nullptr) {
 
     Q_ASSERT(!duvido);
     duvido = this;
@@ -33,9 +33,9 @@ void Duvido::login() {
     _facebook->login();
 }
 
-FriendsModel* Duvido::friends() {
-    Q_ASSERT(_friendsModel);
-    return _friendsModel;
+FriendsModel* Duvido::friendsModel() {
+    Q_ASSERT(_me);
+    return new FriendsModel(_me->id(), this);
 }
 
 User* Duvido::me() {
@@ -46,6 +46,5 @@ void Duvido::setMe(User* me) {
     if (_me == me) return;
     if (_me) _me->deleteLater();
     _me = me;
-    if (_me) _friendsModel->refresh(_me->id());
     emit meChanged();
 }
