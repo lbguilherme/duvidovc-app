@@ -1,34 +1,38 @@
 import QtQuick 2.4
-import 'qrc:/components'
-Rectangle {
-    width: 100
-    height: 200
+import "qrc:/components"
+import "qrc:/material"
 
-    ListView {
-        anchors.fill: parent
-        anchors.margins: 10
-        spacing: 10
+Dialog {
+    Item {
+        width: parent.width
+        height: window.height - 150*dp
 
-        model: duvido.friends
-        delegate: friendDelegate
+        ScrollableListView {
+            anchors.fill: parent
+            anchors.margins: 15*dp
+            spacing: 15*dp
+
+            model: duvido.friends
+            delegate: friendDelegate
+        }
     }
 
     Component {
         id: friendDelegate
 
-        Rectangle {
+        Item {
             width: parent.width
-            height: 50
+            height: 50*dp
 
             Avatar {
                 userId: id
-                radius: 25
-                centerX: 25
-                centerY: 25
+                radius: 25*dp
+                centerX: 25*dp
+                centerY: 25*dp
             }
 
             Text {
-                x: 60
+                x: 70*dp
                 anchors.verticalCenter: parent.verticalCenter
                 text: name
             }

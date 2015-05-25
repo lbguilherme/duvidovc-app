@@ -7,6 +7,7 @@ Item {
     height: 650
 
     property Item window: window
+    property Loader dialogLoader: dialogLoader
 
     Item {
         id: root
@@ -24,7 +25,11 @@ Item {
             source: duvido.me
                 ? "qrc:/scenes/MainScene.qml"
                 : "qrc:/scenes/LoginScene.qml"
+        }
 
+        Loader {
+            id: dialogLoader
+            anchors.fill: parent
         }
     }
 }
