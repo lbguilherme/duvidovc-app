@@ -12,7 +12,7 @@ void FriendsModel::refresh(QString userId) {
     _userId = userId;
 
     beginRemoveRows(QModelIndex(), 0, _friends.count()-1);
-    for (User* user : _friends) {
+    for (Friend* user : _friends) {
         user->deleteLater();
     }
     _friends.clear();
@@ -23,7 +23,7 @@ void FriendsModel::refresh(QString userId) {
         beginInsertRows(QModelIndex(), 0, resp.count()-1);
         for (QJsonValue el : resp) {
             QJsonObject obj = el.toObject();
-            _friends.append(new User(obj["id"].toString(), obj["name"].toString()));
+            _friends.append(new Friend(obj["id"].toString(), obj["name"].toString()));
         }
         endInsertRows();
     });
@@ -50,7 +50,20 @@ QVariant FriendsModel::data(const QModelIndex& index, int role) const {
         return _friends[i]->id();
     case NameRole:
         return _friends[i]->name();
+    case SelectedRole:
+        return _friends[i]->selected();
     default:
         return QVariant();
+    }
+}
+
+bool FriendsModel::setData(const QModelIndex& index, const QVariant& value, int role) {
+    int i = index.row();
+    switch (role) {
+    case SelectedRole:
+        _friends[i]->setSelected(value.toBool());
+        emit dataChanged(index, index, {SelectedRole});
+    default:
+        return false;
     }
 }

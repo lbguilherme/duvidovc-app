@@ -1,6 +1,6 @@
 #pragma once
 
-#include "user.hpp"
+#include "friend.hpp"
 
 #include <QAbstractListModel>
 
@@ -12,7 +12,8 @@ public:
 
     enum Roles {
         IdRole = Qt::UserRole + 1,
-        NameRole
+        NameRole,
+        SelectedRole
     };
 
     FriendsModel(QObject* parent = 0);
@@ -21,10 +22,11 @@ public:
     QHash<int, QByteArray> roleNames() const;
     int rowCount(const QModelIndex& parent = QModelIndex()) const;
     QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
+    bool setData(const QModelIndex& index, const QVariant& value, int role = Qt::DisplayRole);
 
 private:
 
     QString _userId;
-    QList<User*> _friends;
+    QList<Friend*> _friends;
 
 };
