@@ -2,8 +2,6 @@
 #include "facebook.hpp"
 #include "user.hpp"
 
-#include <QDebug>
-
 Duvido* duvido;
 
 Duvido::Duvido()
