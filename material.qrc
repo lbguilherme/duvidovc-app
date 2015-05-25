@@ -12,5 +12,6 @@
         <file>Scrollable.qml</file>
         <file>NavigationDrawer.qml</file>
         <file>FullWidthTextInput.qml</file>
+        <file>ScrollableListView.qml</file>
     </qresource>
 </RCC>

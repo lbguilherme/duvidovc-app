@@ -2,6 +2,7 @@ import QtQuick 2.4
 import QtGraphicalEffects 1.0
 import "qrc:/components"
 import "qrc:/singletons"
+import "qrc:/material"
 
 Item {
     id: drawerContent
@@ -58,16 +59,12 @@ Item {
             }
         }
 
-        ListView {
-            width: parent.width
+        ScrollableListView {
             id: drawerOptionsView
+            width: parent.width
+            height: drawerContent.height - header.height - parent.spacing
             model: MenuOptionsModel
             delegate: NavigationDrawerOption {}
-            height: drawerContent.height - header.height - parent.spacing
-            boundsBehavior: Flickable.StopAtBounds
-            clip: true
         }
-
     }
-
 }
