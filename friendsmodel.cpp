@@ -33,6 +33,7 @@ QHash<int, QByteArray> FriendsModel::roleNames() const {
     QHash<int, QByteArray> roles;
     roles[IdRole] = "id";
     roles[NameRole] = "name";
+    roles[SelectedRole] = "selected";
     return roles;
 }
 
