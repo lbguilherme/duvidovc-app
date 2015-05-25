@@ -1,6 +1,7 @@
 #include "duvido.hpp"
 #include "facebook.hpp"
 #include "user.hpp"
+#include <QSortFilterProxyModel>
 
 Duvido* duvido;
 
@@ -13,6 +14,7 @@ Duvido::Duvido()
     qRegisterMetaType<User*>("User");
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");
+    qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
 
     _facebook = new Facebook(this);
 

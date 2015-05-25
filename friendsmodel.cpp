@@ -4,8 +4,26 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
+class SelectedFriendsModel : public QSortFilterProxyModel {
+public:
+
+    using QSortFilterProxyModel::QSortFilterProxyModel;
+
+protected:
+
+    bool filterAcceptsRow(int row, const QModelIndex& parent) const {
+        auto index = sourceModel()->index(row, 0);
+        return sourceModel()->data(index, filterRole()).toBool();
+    }
+
+};
+
 FriendsModel::FriendsModel(QString userId, QObject* parent) : QAbstractListModel(parent) {
     refresh(userId);
+
+    _selectedFriends = new SelectedFriendsModel(this);
+    _selectedFriends->setSourceModel(this);
+    _selectedFriends->setFilterRole(SelectedRole);
 }
 
 void FriendsModel::refresh(QString userId) {
@@ -28,6 +46,11 @@ void FriendsModel::refresh(QString userId) {
         endInsertRows();
     });
 }
+
+QSortFilterProxyModel* FriendsModel::selectedFriends() const {
+    return _selectedFriends;
+}
+
 
 QHash<int, QByteArray> FriendsModel::roleNames() const {
     QHash<int, QByteArray> roles;
