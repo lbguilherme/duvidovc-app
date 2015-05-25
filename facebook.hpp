@@ -13,7 +13,7 @@ class Facebook : public QObject{
 
 public:
 
-    Facebook();
+    Facebook(QObject* parent = 0);
 
     void initialize();
     void login();

@@ -14,7 +14,7 @@ Duvido::Duvido()
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");
 
-    _facebook = new Facebook;
+    _facebook = new Facebook(this);
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
         _api.login(_facebook->accessToken(), [this](User* me){

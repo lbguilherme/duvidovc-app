@@ -9,7 +9,7 @@
 using namespace vc::duvido;
 #endif
 
-Facebook::Facebook() {
+Facebook::Facebook(QObject* parent) : QObject(parent) {
 
 }
 
