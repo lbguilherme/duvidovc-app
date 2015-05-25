@@ -9,8 +9,6 @@ Dialog {
 
         ScrollableListView {
             anchors.fill: parent
-            anchors.margins: 15*dp
-            spacing: 15*dp
 
             model: duvido.friends
             delegate: friendDelegate
@@ -22,11 +20,11 @@ Dialog {
 
         Item {
             width: parent.width
-            height: 50*dp
+            height: 60*dp
 
             SelectionTick {
                 id: selection
-                x: 10*dp
+                x: 20*dp
                 anchors.verticalCenter: parent.verticalCenter
                 color: "#0f6464"
             }
@@ -34,12 +32,12 @@ Dialog {
             Avatar {
                 userId: model.id
                 radius: 25*dp
-                x: 50*dp
+                x: 60*dp
                 anchors.verticalCenter: parent.verticalCenter
             }
 
             Text {
-                x: 110*dp
+                x: 120*dp
                 anchors.verticalCenter: parent.verticalCenter
                 text: model.name
             }
