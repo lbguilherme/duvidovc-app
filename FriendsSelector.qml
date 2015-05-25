@@ -27,6 +27,7 @@ Dialog {
                 x: 20*dp
                 anchors.verticalCenter: parent.verticalCenter
                 color: "#0f6464"
+                ticked: model.selected
             }
 
             Avatar {
@@ -44,7 +45,7 @@ Dialog {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: selection.ticked = !selection.ticked
+                onClicked: model.selected = !model.selected
             }
         }
     }
