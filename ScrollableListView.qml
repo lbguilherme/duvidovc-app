@@ -11,11 +11,14 @@ Item {
     ListView {
         id: list
         anchors.fill: parent
+        topMargin: spacing
+        bottomMargin: spacing
         pixelAligned: true
         maximumFlickVelocity: 8000*dp
         flickDeceleration: 2000*dp
         spacing: 8*dp
         boundsBehavior: Flickable.StopAtBounds
+        clip: true
 
         property real lastContentY: 0
         visibleArea.onYPositionChanged: {

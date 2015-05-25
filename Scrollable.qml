@@ -9,11 +9,14 @@ Item {
 
     Flickable {
         anchors.fill: parent
-        contentHeight: items.height + 2*items.spacing
+        topMargin: items.spacing
+        bottomMargin: items.spacing
+        contentHeight: items.height
         pixelAligned: true
         maximumFlickVelocity: 8000*dp
         flickDeceleration: 2000*dp
         boundsBehavior: Flickable.StopAtBounds
+        clip: true
 
         property real lastContentY: 0
         visibleArea.onYPositionChanged: {
@@ -24,7 +27,6 @@ Item {
         Column {
             id: items
             width: parent.width
-            y: spacing
             spacing: 25*dp
         }
     }
