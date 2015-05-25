@@ -23,7 +23,6 @@ Item {
 
             source: duvido.me
                 ? "qrc:/scenes/MainScene.qml"
-                //? "qrc:/frags/FriendsSelector.qml"
                 : "qrc:/scenes/LoginScene.qml"
 
         }
