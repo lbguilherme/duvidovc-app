@@ -16,14 +16,16 @@ SOURCES += \
     duvido.cpp \
     user.cpp \
     friendsmodel.cpp \
-    duvidoapi.cpp
+    duvidoapi.cpp \
+    friend.cpp
 
 HEADERS += \
     facebook.hpp \
     duvido.hpp \
     user.hpp \
     friendsmodel.hpp \
-    duvidoapi.hpp
+    duvidoapi.hpp \
+    friend.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
