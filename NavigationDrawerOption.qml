@@ -22,7 +22,7 @@ Item {
 
     Text {
         x: 72*dp
-        text: name
+        text: model.name
         anchors.verticalCenter: parent.verticalCenter
     }
 
@@ -31,7 +31,7 @@ Item {
         anchors.fill: parent
 
         onClicked: {
-            StackManager.go(action);
+            StackManager.go(model.action);
         }
     }
 }

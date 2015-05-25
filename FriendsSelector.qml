@@ -32,7 +32,7 @@ Dialog {
             }
 
             Avatar {
-                userId: id
+                userId: model.id
                 radius: 25*dp
                 x: 50*dp
                 anchors.verticalCenter: parent.verticalCenter
@@ -41,7 +41,7 @@ Dialog {
             Text {
                 x: 110*dp
                 anchors.verticalCenter: parent.verticalCenter
-                text: name
+                text: model.name
             }
 
             MouseArea {
