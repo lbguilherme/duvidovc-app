@@ -8,10 +8,14 @@ Item {
     property real radius: Math.max(width, height)
     property real centerX: 0
     property real centerY: 0
+    x: centerX - radius
+    y: centerY - radius
+    width: radius*2
+    height: radius*2
 
     Item {
         id: img
-        anchors.fill: mask
+        anchors.fill: parent
         visible: false
 
         Image {
@@ -29,17 +33,14 @@ Item {
 
     Rectangle {
         id: mask
+        anchors.fill: parent
         radius: root.radius
         visible: false
         color: "black"
-        width: radius*2
-        height: radius*2
-        x: root.centerX - radius
-        y: root.centerY - radius
     }
 
     OpacityMask {
-        anchors.fill: mask
+        anchors.fill: parent
         source: img
         maskSource: mask
         cached: true
