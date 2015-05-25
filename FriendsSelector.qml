@@ -24,13 +24,10 @@ Dialog {
             width: parent.width
             height: 50*dp
 
-            Rectangle {
-                radius: width/2
-                width: 25*dp
-                height: width
-                border.color: "#999"
+            SelectionTick {
                 x: 10*dp
                 anchors.verticalCenter: parent.verticalCenter
+                color: "#0f6464"
             }
 
             Avatar {
