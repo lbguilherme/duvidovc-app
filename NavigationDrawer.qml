@@ -3,8 +3,8 @@ import QtQuick 2.0
 Item {
     id: root
     y: parent.height
-    width: windowWidth
-    height: windowHeight-parent.height
+    width: window.width
+    height: window.height-parent.height
 
     property BurgerButton burger
     default property alias data: drawer.data
@@ -79,7 +79,7 @@ Item {
 
     Surface {
         id: drawer
-        width: Math.min(360*dp, windowWidth - 60*dp)
+        width: Math.min(360*dp, window.width - 60*dp)
         height: parent.height
         x: (root.burger.arrowness - 1) * width
         elevation: root.burger.arrowness > 0 ? 4 : 0

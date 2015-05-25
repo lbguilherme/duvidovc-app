@@ -2,11 +2,11 @@ import QtQuick 2.4
 import "qrc:/scenes"
 
 Item {
+    id: window
     width: 400
     height: 650
 
-    property int windowWidth: width
-    property int windowHeight: height
+    property Item window: window
 
     Item {
         id: root

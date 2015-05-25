@@ -19,19 +19,13 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
-    new Duvido;
-
     QQuickView view;
-    view.setResizeMode(QQuickView::SizeRootObjectToView);
-    view.rootContext()->setContextProperty("duvido", duvido);
+    view.rootContext()->setContextProperty("duvido", new Duvido);
     view.rootContext()->setContextProperty("dp", qMax(1.0, dpi/160));
-    view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+    view.rootContext()->setContextProperty("window", 0);
 
-    // These properties are set by main.qml
-    // They are only set here to aid QtCreator code completion
-    // This has no runtime impact
-    view.rootContext()->setContextProperty("windowWidth", 0);
-    view.rootContext()->setContextProperty("windowHeight", 0);
+    view.setResizeMode(QQuickView::SizeRootObjectToView);
+    view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
 
     view.show();
     return app.exec();
