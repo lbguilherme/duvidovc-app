@@ -8,7 +8,6 @@ Item {
     id: drawerContent
 
     Column {
-        spacing: 8*dp
         width: parent.width
 
         Item {
