@@ -2,7 +2,6 @@ import QtQuick 2.0
 
 FullWidthInput {
     labelVisible: input.displayText == ""
-    onClicked: input.forceActiveFocus()
 
     TextInput {
         id: input
@@ -10,6 +9,11 @@ FullWidthInput {
         x: 20*dp
         y: 20*dp
         width: parent.width - 40*dp
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: input.forceActiveFocus()
     }
 
     // On hide onscreen keyboard

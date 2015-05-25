@@ -1,21 +1,15 @@
 import QtQuick 2.4
+import "qrc:/components"
 import "qrc:/material"
 
 Item {
-    id: root
-    property var friendsModel: duvido.friendsModel()
-
     Column {
         anchors.fill: parent
         spacing: Math.max(1, Math.ceil(1*dp))
 
-        FullWidthInput {
+        FullWidthFriendsInput {
             id: targets
             label: "Desafiados"
-            onClicked: {
-                window.dialogLoader.source = "qrc:/frags/FriendsSelector.qml";
-                window.dialogLoader.item.friendsModel = root.friendsModel;
-            }
         }
 
         FullWidthTextInput {

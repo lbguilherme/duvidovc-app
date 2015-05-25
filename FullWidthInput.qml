@@ -6,7 +6,6 @@ Item {
 
     property string label
     property bool labelVisible: true
-    signal clicked()
 
     Rectangle {
         anchors.fill: parent
@@ -27,10 +26,5 @@ Item {
         text: parent.label
         color: "#aaa"
         visible: parent.labelVisible
-    }
-
-    MouseArea {
-        anchors.fill: parent
-        onClicked: parent.clicked()
     }
 }
