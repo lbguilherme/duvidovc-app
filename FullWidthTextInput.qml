@@ -44,7 +44,7 @@ Item {
     Connections {
         target: Qt.inputMethod
         onVisibleChanged:
-            if (Qt.inputMethod.visible == false)
+            if (Qt.inputMethod.visible === false)
                 parent.forceActiveFocus();
     }
 }
