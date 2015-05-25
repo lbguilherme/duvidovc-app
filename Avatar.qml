@@ -6,10 +6,6 @@ Item {
 
     property string userId
     property real radius: Math.max(width, height)
-    property real centerX: 0
-    property real centerY: 0
-    x: centerX - radius
-    y: centerY - radius
     width: radius*2
     height: radius*2
 

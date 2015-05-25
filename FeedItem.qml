@@ -6,20 +6,25 @@ Card {
     id: root
 
     CardContentArea {
-        Text {
-            id: senderName
-            color: "#333"
-            text: "Fulano de Tal"
+        Item {
             width: parent.width
-            horizontalAlignment: Text.AlignRight
-        }
+            height: senderName.height
 
-        Avatar {
-            id: senderAvatar
-            userId: "4"
-            radius: senderName.contentHeight/1.7
-            centerX: senderName.x + senderName.width - senderName.contentWidth - radius*1.5
-            centerY: senderName.y + senderName.contentHeight/2
+            Text {
+                id: senderName
+                color: "#333"
+                text: "Fulano de Tal"
+                width: parent.width
+                horizontalAlignment: Text.AlignRight
+            }
+
+            Avatar {
+                id: senderAvatar
+                userId: "4"
+                radius: senderName.contentHeight/1.7
+                anchors.verticalCenter: senderName.verticalCenter
+                x: senderName.x + senderName.width - senderName.contentWidth - radius*3
+            }
         }
     }
 

@@ -44,8 +44,8 @@ Item {
                 id: avatar
                 userId: duvido.me.id
                 radius: 65*dp
-                centerX: parent.width /2
-                centerY: 10*dp+radius
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: -15*dp
             }
 
             Text {
