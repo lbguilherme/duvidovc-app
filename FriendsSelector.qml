@@ -24,15 +24,24 @@ Dialog {
             width: parent.width
             height: 50*dp
 
+            Rectangle {
+                radius: width/2
+                width: 25*dp
+                height: width
+                border.color: "#999"
+                x: 10*dp
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
             Avatar {
                 userId: id
                 radius: 25*dp
-                centerX: 25*dp
-                centerY: 25*dp
+                x: 50*dp
+                anchors.verticalCenter: parent.verticalCenter
             }
 
             Text {
-                x: 70*dp
+                x: 110*dp
                 anchors.verticalCenter: parent.verticalCenter
                 text: name
             }
