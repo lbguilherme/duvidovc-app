@@ -14,5 +14,6 @@
         <file>FullWidthTextInput.qml</file>
         <file>Dialog.qml</file>
         <file>ScrollableListView.qml</file>
+        <file>FullWidthInput.qml</file>
     </qresource>
 </RCC>
