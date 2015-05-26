@@ -24,12 +24,6 @@ ListModel {
     }
 
     ListElement {
-        icon: "qrc:/artwork/icons/molecule10.png"
-        name: "Feed"
-        action: "qrc:/frags/Feed.qml"
-    }
-
-    ListElement {
         icon: "qrc:/artwork/icons/settings48.png"
         name: "Opções"
         action: ""
