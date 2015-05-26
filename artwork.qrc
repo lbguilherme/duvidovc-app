@@ -6,5 +6,8 @@
         <file>artwork/facebook.png</file>
         <file>artwork/icons/settings48.png</file>
         <file>artwork/avatar-placeholder.png</file>
+        <file>artwork/icons/send12.png</file>
+        <file>artwork/icons/create3.png</file>
+        <file>artwork/icons/clipboard99.png</file>
     </qresource>
 </RCC>
