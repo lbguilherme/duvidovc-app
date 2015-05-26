@@ -3,21 +3,17 @@ import "qrc:/material"
 
 FullWidthInput {
     id: root
-    height: Math.max(grid.contentHeight, 40*dp) + 2*grid.topMargin
+    height: Math.max(grid.contentHeight, 56*dp)
 
     property var model: duvido.friendsModel()
     labelVisible: grid.count === 0
 
     GridView {
         id: grid
-        topMargin: Math.floor(8*dp)
-        bottomMargin: topMargin
         anchors.fill: parent
-        anchors.leftMargin: topMargin
-        anchors.rightMargin: topMargin
         model: root.model.selectedFriends
-        cellWidth: 40*dp
-        cellHeight: cellWidth
+        cellWidth: 53*dp
+        cellHeight: 56*dp
         delegate: selectedFriendDelegate
     }
 
@@ -33,12 +29,12 @@ FullWidthInput {
         id: selectedFriendDelegate
 
         Item {
-            width: 40*dp
-            height: width
+            width: grid.cellWidth
+            height: grid.cellHeight
 
             Avatar {
                 userId: model.id
-                radius: 17*dp
+                radius: 23*dp
                 anchors.centerIn: parent
             }
         }
