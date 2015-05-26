@@ -20,8 +20,8 @@ FullWidthInput {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            window.dialogLoader.source = "qrc:/frags/FriendsSelector.qml";
-            window.dialogLoader.item.friendsModel = root.model;
+            window.dialogSource = "qrc:/frags/FriendsSelector.qml";
+            window.dialog.friendsModel = root.model;
         }
     }
 

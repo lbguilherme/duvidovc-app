@@ -11,7 +11,7 @@ Item {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: window.dialogLoader.source = ""
+        onClicked: window.dialogSource = ""
     }
 
     Surface {
