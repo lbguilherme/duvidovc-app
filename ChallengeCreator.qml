@@ -3,6 +3,14 @@ import "qrc:/components"
 import "qrc:/material"
 
 Item {
+
+    ActionBarButton {
+        icon: "qrc:/artwork/icons/send12.png"
+        onClicked: {
+            print("send clicked");
+        }
+    }
+
     Column {
         anchors.fill: parent
         spacing: Math.max(1, Math.ceil(1*dp))
