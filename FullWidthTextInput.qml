@@ -3,6 +3,11 @@ import QtQuick 2.4
 FullWidthInput {
     labelVisible: input.displayText == ""
 
+    ActionBarButton {
+        icon: "qrc:/artwork/icons/clipboard99.png"
+        enabled: input.focus
+    }
+
     TextInput {
         id: input
         font.pixelSize: 16*dp

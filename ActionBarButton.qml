@@ -6,6 +6,7 @@ Item {
     property ActionBar actionBar: window.frag.actionBar
     property string icon: ""
     property Item button
+    property bool enabled: true
 
     signal clicked();
 
@@ -14,7 +15,7 @@ Item {
 
         Item {
             height: actionBar.height
-            width: height
+            width: root.enabled ? height : 0
 
             Image {
                 anchors.fill: parent
