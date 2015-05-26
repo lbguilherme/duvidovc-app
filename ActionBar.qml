@@ -7,6 +7,7 @@ Item {
     property string title
     default property alias data: drawer.data
     property BurgerButton burger: burgerButton
+    property Row buttonRow: buttonRow
 
     width: parent.width
     height: 56*dp
@@ -29,6 +30,12 @@ Item {
             font.pixelSize: 20*dp
             text: root.title
             color: "white"
+        }
+
+        Row {
+            id: buttonRow
+            height: parent.height
+            x: parent.width - width
         }
     }
 

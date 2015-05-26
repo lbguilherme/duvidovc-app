@@ -6,6 +6,8 @@ import "qrc:/singletons"
 Item {
     id: scene
 
+    property ActionBar actionBar: actionBar
+
     Rectangle {
         anchors.fill: parent
         color: "#10A8A1"

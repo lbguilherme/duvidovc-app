@@ -16,5 +16,6 @@
         <file>ScrollableListView.qml</file>
         <file>FullWidthInput.qml</file>
         <file>SelectionTick.qml</file>
+        <file>ActionBarButton.qml</file>
     </qresource>
 </RCC>

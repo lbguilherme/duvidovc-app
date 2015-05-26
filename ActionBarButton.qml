@@ -1,0 +1,49 @@
+import QtQuick 2.4
+
+Item {
+    id: root
+
+    property ActionBar actionBar: window.frag.actionBar
+    property string icon: ""
+    property Item button
+
+    signal clicked();
+
+    Component {
+        id: buttonComponent
+
+        Item {
+            height: actionBar.height
+            width: height
+
+            Image {
+                anchors.fill: parent
+                anchors.margins: 14*dp
+                source: root.icon
+                mipmap: true
+            }
+
+            Rectangle {
+                anchors.fill: parent
+                color: "white"
+                opacity: 0.2
+                visible: mouseArea.containsPress
+            }
+
+            MouseArea {
+                id: mouseArea
+                anchors.fill: parent
+                hoverEnabled: true
+                onClicked: root.clicked()
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        root.button = buttonComponent.createObject(actionBar.buttonRow);
+    }
+
+    Component.onDestruction: {
+        root.button.destroy();
+    }
+}
