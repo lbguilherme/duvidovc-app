@@ -9,7 +9,7 @@ class User : public QObject {
 
 public:
 
-    explicit User(QString id, QString name, QObject* parent = 0);
+    explicit User(QString id, QString name);
 
     QString id() const;
     QString name() const;

@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
-    app.installEventFilter(new GlobalBackDetector);
+    app.installEventFilter(new GlobalBackDetector(&app));
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
     QQuickView view;
@@ -31,5 +31,8 @@ int main(int argc, char *argv[])
     view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
 
     view.show();
-    return app.exec();
+
+    app.exec();
+
+    delete duvido;
 }

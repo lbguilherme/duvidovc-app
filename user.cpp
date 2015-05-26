@@ -2,7 +2,7 @@
 #include "friendsmodel.hpp"
 #include "duvido.hpp"
 
-User::User(QString id, QString name, QObject* parent) : QObject(parent) {
+User::User(QString id, QString name) : QObject(duvido) {
     _id = id;
     _name = name;
 }
