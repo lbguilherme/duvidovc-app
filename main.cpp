@@ -9,6 +9,8 @@
 #include "java/src/java-core.hpp"
 #endif
 
+#include "globalbackdetector.hpp"
+
 __attribute__((visibility("default")))
 int main(int argc, char *argv[])
 {
@@ -17,6 +19,7 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
+    app.installEventFilter(new GlobalBackDetector);
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
     QQuickView view;

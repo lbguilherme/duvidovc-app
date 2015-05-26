@@ -17,7 +17,8 @@ SOURCES += \
     user.cpp \
     friendsmodel.cpp \
     duvidoapi.cpp \
-    friend.cpp
+    friend.cpp \
+    globalbackdetector.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -25,7 +26,8 @@ HEADERS += \
     user.hpp \
     friendsmodel.hpp \
     duvidoapi.hpp \
-    friend.hpp
+    friend.hpp \
+    globalbackdetector.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
