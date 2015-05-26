@@ -50,6 +50,9 @@ Item {
     MouseArea {
         anchors.fill: parent
         anchors.margins: -20*dp
-        onPressed: parent.arrowness = parent.arrowness == 1 ? 0 : 1
+        onPressed: {
+            forceActiveFocus();
+            parent.arrowness = parent.arrowness == 1 ? 0 : 1;
+        }
     }
 }

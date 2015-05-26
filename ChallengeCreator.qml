@@ -7,6 +7,7 @@ Item {
     ActionBarButton {
         icon: "qrc:/artwork/icons/send12.png"
         onClicked: {
+            forceActiveFocus();
             print("send clicked");
         }
     }

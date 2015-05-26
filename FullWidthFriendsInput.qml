@@ -20,6 +20,7 @@ FullWidthInput {
     MouseArea {
         anchors.fill: parent
         onClicked: {
+            forceActiveFocus();
             window.dialogSource = "qrc:/frags/FriendsSelector.qml";
             window.dialog.friendsModel = root.model;
         }
