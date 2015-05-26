@@ -8,6 +8,9 @@ Item {
     property real arrowness: 0
     property bool wasArrow: false
     property bool animationEnabled: true
+    property bool backMode: window.canBack
+
+    property real _arrowness: backMode ? 1 : arrowness;
 
     Behavior on arrowness {
         enabled: root.animationEnabled
@@ -18,19 +21,19 @@ Item {
         }
     }
 
-    rotation: 180*arrowness * (wasArrow ? -1 : 1)
+    rotation: 180*_arrowness * (wasArrow ? -1 : 1)
 
     Column {
         id: column
         anchors.centerIn: parent
-        spacing: Math.ceil(parent.height/5) - root.arrowness*(Math.ceil(root.height/8)+Math.ceil(root.height/5))
+        spacing: Math.ceil(parent.height/5) - root._arrowness*(Math.ceil(root.height/8)+Math.ceil(root.height/5))
 
         Rectangle {
-            width: root.width - root.arrowness*root.width/3
+            width: root.width - root._arrowness*root.width/3
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
-            rotation: root.arrowness*45
+            rotation: root._arrowness*45
         }
 
         Rectangle {
@@ -39,11 +42,11 @@ Item {
         }
 
         Rectangle {
-            width: root.width - root.arrowness*root.width/3
+            width: root.width - root._arrowness*root.width/3
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
-            rotation: -root.arrowness*45
+            rotation: -root._arrowness*45
         }
     }
 
@@ -52,7 +55,10 @@ Item {
         anchors.margins: -20*dp
         onPressed: {
             forceActiveFocus();
-            parent.arrowness = parent.arrowness == 1 ? 0 : 1;
+            if (window.canBack)
+                window.back();
+            else
+                parent.arrowness = parent.arrowness == 1 ? 0 : 1;
         }
     }
 }

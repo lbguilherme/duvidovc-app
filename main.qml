@@ -37,15 +37,19 @@ Item {
         }
     }
 
+    property bool canBack: dialog || StackManager.canGoBack
+
+    function back() {
+        if (dialog)
+            dialogSource = "";
+        else if (StackManager.canGoBack)
+            StackManager.back();
+        else
+            Qt.quit();
+    }
+
     Connections {
         target: duvido
-        onBackPressed: {
-            if (dialog)
-                dialogSource = "";
-            else if (StackManager.canGoBack)
-                StackManager.back();
-            else
-                Qt.quit();
-        }
+        onBackPressed: window.back()
     }
 }
