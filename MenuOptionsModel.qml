@@ -12,19 +12,19 @@ ListModel {
     }
 
     ListElement {
-        icon: ""
+        icon: "qrc:/artwork/icons/swing1.png"
         name: "Meus desafios"
         action: ""
     }
 
     ListElement {
-        icon: ""
+        icon: "qrc:/artwork/icons/celebration11.png"
         name: "Participando"
         action: ""
     }
 
     ListElement {
-        icon: ""
+        icon: "qrc:/artwork/icons/molecule10.png"
         name: "Feed"
         action: "qrc:/frags/Feed.qml"
     }

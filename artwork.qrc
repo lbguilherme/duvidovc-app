@@ -9,5 +9,8 @@
         <file>artwork/icons/send12.png</file>
         <file>artwork/icons/create3.png</file>
         <file>artwork/icons/clipboard99.png</file>
+        <file>artwork/icons/molecule10.png</file>
+        <file>artwork/icons/celebration11.png</file>
+        <file>artwork/icons/swing1.png</file>
     </qresource>
 </RCC>
