@@ -34,7 +34,7 @@ Item {
             height: Math.ceil(3*dp)
             transformOrigin: Item.Left
             rotation: -45
-            x: 2.5*width/3
+            x: 2.2*width/3
             y: 3.75*width/3
         }
     }
