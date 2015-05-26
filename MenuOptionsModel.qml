@@ -6,28 +6,32 @@ ListModel {
     id: drawerOptions
 
     ListElement {
-        icon: "qrc:/artwork/icons/settings48.png"
+        icon: "qrc:/artwork/icons/create3.png"
         name: "Criar desafio"
         action: "qrc:/frags/ChallengeCreator.qml"
     }
 
     ListElement {
         icon: ""
-        name: "Ola"
+        name: "Meus desafios"
+        action: ""
     }
 
     ListElement {
         icon: ""
-        name: "Hi"
+        name: "Participando"
+        action: ""
     }
 
     ListElement {
         icon: ""
-        name: "Alo"
+        name: "Feed"
+        action: "qrc:/frags/Feed.qml"
     }
 
     ListElement {
-        icon: ""
-        name: "Alo"
+        icon: "qrc:/artwork/icons/settings48.png"
+        name: "Opções"
+        action: ""
     }
 }
