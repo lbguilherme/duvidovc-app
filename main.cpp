@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQuickView>
 #include <QQmlContext>
+#include <QQmlEngine>
 #include <QScreen>
 
 #include "duvido.hpp"
@@ -29,6 +30,10 @@ int main(int argc, char *argv[])
 
     view.setResizeMode(QQuickView::SizeRootObjectToView);
     view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+
+    QObject::connect(view.engine(), &QQmlEngine::quit, [&]{
+        app.quit();
+    });
 
     view.show();
 
