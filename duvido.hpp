@@ -34,6 +34,7 @@ public:
 signals:
 
     void meChanged();
+    void backPressed();
 
 private:
 

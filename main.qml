@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import "qrc:/scenes"
+import "qrc:/singletons"
 
 Item {
     id: window
@@ -33,6 +34,18 @@ Item {
         Loader {
             id: dialogLoader
             anchors.fill: parent
+        }
+    }
+
+    Connections {
+        target: duvido
+        onBackPressed: {
+            if (dialog)
+                dialogSource = "";
+            else if (StackManager.canGoBack)
+                StackManager.back();
+            else
+                Qt.quit();
         }
     }
 }
