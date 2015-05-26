@@ -6,11 +6,11 @@ FullWidthInput {
     height: Math.max(grid.contentHeight, 56*dp)
 
     property var model: duvido.friendsModel()
-    labelVisible: grid.count === 0
 
     GridView {
         id: grid
         anchors.fill: parent
+        anchors.leftMargin: root.labelWidth + 30*dp
         model: root.model.selectedFriends
         cellWidth: 53*dp
         cellHeight: 56*dp

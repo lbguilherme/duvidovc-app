@@ -5,7 +5,8 @@ Item {
     height: 56*dp
 
     property string label
-    property bool labelVisible: true
+    property alias labelVisible: label.visible
+    property alias labelWidth: label.contentWidth
 
     Rectangle {
         anchors.fill: parent
@@ -20,11 +21,11 @@ Item {
     }
 
     Text {
+        id: label
         font.pixelSize: 16*dp
         x: 20*dp
         y: 20*dp
         text: parent.label
         color: "#aaa"
-        visible: parent.labelVisible
     }
 }
