@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.4
 import "qrc:/material"
 import "qrc:/singletons"
 
@@ -16,6 +16,7 @@ Item {
         source: icon
         width: 24*dp
         height: 24*dp
+        mipmap: true
         anchors.verticalCenter: parent.verticalCenter
         x: 16*dp
     }
