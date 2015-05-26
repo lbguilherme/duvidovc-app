@@ -12,6 +12,7 @@ public:
 protected:
 
     bool filterAcceptsRow(int row, const QModelIndex& parent) const {
+        (void)parent;
         auto index = sourceModel()->index(row, 0);
         return sourceModel()->data(index, filterRole()).toBool();
     }
