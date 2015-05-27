@@ -2,15 +2,18 @@ import QtQuick 2.4
 
 Item {
     default property alias data: contents.data
+    property real spacing: 10*dp
+    property real horizontalMargin: 20*dp
+    property real verticalMargin: 20*dp
 
-    width: parent.width - 40*dp
-    height: contents.height + 40*dp
+    width: parent.width - horizontalMargin*2
+    height: contents.height + verticalMargin*2
 
     Column {
-        x: 20*dp
-        y: 20*dp
+        x: horizontalMargin
+        y: verticalMargin
         id: contents
         width: parent.width
-        spacing: 10*dp
+        spacing: parent.spacing
     }
 }
