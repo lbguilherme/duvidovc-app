@@ -48,18 +48,45 @@ Card {
 
     CardContentArea {
         verticalMargin: 10*dp
+        horizontalMargin: 15*dp
         Text {
             text: "Me mostre o quanto você gosta de livros! Vale tudo."
             width: parent.width
             wrapMode: Text.WordWrap
+            font.pixelSize: 16*dp
         }
 
-        Text {
-            text: "<b>Recompensa:</b> Um dos meus livros velhos, você escolhe. Estou de mudança."
+        Row {
             width: parent.width
-            wrapMode: Text.WordWrap
-            font.pointSize: 11
+            spacing: 8*dp
+
+            Text {
+                text: "<b>Recompensa:</b> Um dos meus livros velhos, você escolhe. Estou de mudança."
+                width: parent.width - timeLeftZone.width - parent.spacing
+                wrapMode: Text.WordWrap
+                font.pixelSize: 12*dp
+            }
+
+            Row {
+                id: timeLeftZone
+                anchors.bottom: parent.bottom
+                spacing: 4*dp
+
+                Image {
+                    width: 16*dp
+                    height: width
+                    source: "qrc:/artwork/icons/clock.png"
+                    mipmap: true
+                }
+
+                Text {
+                    id: timeLeft
+                    text: "6:31"
+                }
+            }
         }
+
+
     }
 
     CardSplitLine {}
