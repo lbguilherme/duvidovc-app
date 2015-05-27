@@ -6,25 +6,31 @@ Card {
     id: root
 
     CardContentArea {
-        Item {
+        spacing: 3*dp
+        verticalMargin: 10*dp
+        horizontalMargin: 10*dp
+
+        Row {
             width: parent.width
-            height: senderName.height
+            height: senderAvatar.height
+            spacing: 8*dp
+
+            Avatar {
+                id: senderAvatar
+                userId: duvido.me.id
+                radius: 16*dp
+                anchors.verticalCenter: senderName.verticalCenter
+            }
 
             Text {
                 id: senderName
                 color: "#333"
-                text: "Fulano de Tal"
-                width: parent.width
-                horizontalAlignment: Text.AlignRight
+                text: "<i>"+duvido.me.name+"</i> duvida que..."
+                font.pixelSize: 14*dp
+                anchors.verticalCenter: senderAvatar.verticalCenter
             }
+        }
 
-            Avatar {
-                id: senderAvatar
-                userId: "4"
-                radius: senderName.contentHeight/1.7
-                anchors.verticalCenter: senderName.verticalCenter
-                x: senderName.x + senderName.width - senderName.contentWidth - radius*3
-            }
         Text {
             id: challengeName
             color: "#111"
@@ -41,6 +47,7 @@ Card {
     }
 
     CardContentArea {
+        verticalMargin: 10*dp
         Text {
             text: "Me mostre o quanto você gosta de livros! Vale tudo."
             width: parent.width
