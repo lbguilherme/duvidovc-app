@@ -11,5 +11,6 @@
         <file>artwork/icons/clipboard99.png</file>
         <file>artwork/icons/celebration11.png</file>
         <file>artwork/icons/swing1.png</file>
+        <file>artwork/icons/clock.png</file>
     </qresource>
 </RCC>
