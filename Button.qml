@@ -35,6 +35,7 @@ Item {
             font.family: "Roboto"
             text: button.text
             color: button.flat ? button.color : "white"
+            font.pixelSize: 16*dp
         }
     }
 
