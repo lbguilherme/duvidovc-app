@@ -25,6 +25,14 @@ Card {
                 anchors.verticalCenter: senderName.verticalCenter
                 x: senderName.x + senderName.width - senderName.contentWidth - radius*3
             }
+        Text {
+            id: challengeName
+            color: "#111"
+            text: "você faça a dança da macarena de toalha no meio do morrinho da ufba"
+            font.pixelSize: 18*dp
+            width: parent.width
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WordWrap
         }
     }
 
