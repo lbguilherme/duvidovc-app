@@ -11,10 +11,8 @@
         <file>BurgerButton.qml</file>
         <file>Scrollable.qml</file>
         <file>NavigationDrawer.qml</file>
-        <file>FullWidthTextInput.qml</file>
         <file>Dialog.qml</file>
         <file>ScrollableListView.qml</file>
-        <file>FullWidthInput.qml</file>
         <file>SelectionTick.qml</file>
         <file>ActionBarButton.qml</file>
         <file>TextField.qml</file>
