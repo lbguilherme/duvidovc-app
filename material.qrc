@@ -17,5 +17,6 @@
         <file>FullWidthInput.qml</file>
         <file>SelectionTick.qml</file>
         <file>ActionBarButton.qml</file>
+        <file>TextField.qml</file>
     </qresource>
 </RCC>
