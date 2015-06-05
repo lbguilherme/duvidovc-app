@@ -8,6 +8,7 @@
         <file>Avatar.qml</file>
         <file>NavigationDrawerOption.qml</file>
         <file>FullWidthFriendsInput.qml</file>
+        <file>EditableChallenge.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
