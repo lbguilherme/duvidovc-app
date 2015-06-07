@@ -46,6 +46,7 @@ public:
     AccessToken(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::util::Collection&, const ::java::util::Collection&, const ::com::facebook::AccessTokenSource&, const ::java::util::Date&, const ::java::util::Date&);
     static ::com::facebook::AccessToken getCurrentAccessToken();
     static void setCurrentAccessToken(const ::com::facebook::AccessToken&);
+    static void refreshCurrentAccessTokenAsync();
     ::java::lang::String getToken() const ;
     ::java::util::Date getExpires() const ;
     ::java::util::Set getPermissions() const ;

@@ -10,7 +10,6 @@
 #include "com.facebook.share.model.ShareModel.hpp"
 
 namespace android { namespace os { class Parcel; } }
-namespace com { namespace facebook { namespace share { namespace widget { class LikeView_ObjectType; } } } }
 namespace java { namespace lang { class String; } }
 
 namespace com {
@@ -39,7 +38,7 @@ public:
     ::com::facebook::share::internal::LikeContent& operator=(::com::facebook::share::internal::LikeContent&& x) {obj = std::move(x.obj); return *this;}
     
     ::java::lang::String getObjectId() const ;
-    ::com::facebook::share::widget::LikeView_ObjectType getObjectType() const ;
+    ::java::lang::String getObjectType() const ;
     int32_t describeContents() const ;
     void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
 

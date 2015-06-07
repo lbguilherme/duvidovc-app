@@ -10,6 +10,7 @@
 
 namespace android { namespace content { class Context; } }
 namespace java { namespace lang { class String; } }
+namespace java { namespace util { class TreeSet; } }
 
 namespace com {
 namespace facebook {
@@ -35,6 +36,7 @@ public:
     ::com::facebook::internal::NativeProtocol_NativeAppInfo& operator=(::com::facebook::internal::NativeProtocol_NativeAppInfo&& x) {obj = std::move(x.obj); return *this;}
     
     bool validateSignature(const ::android::content::Context&, const ::java::lang::String&) const ;
+    ::java::util::TreeSet getAvailableVersions() const ;
 
 };
 }

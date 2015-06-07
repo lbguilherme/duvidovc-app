@@ -9,6 +9,7 @@
 #include "java.lang.Object.hpp"
 
 namespace java { namespace lang { class String; } }
+namespace java { namespace util { class List; } }
 
 namespace com {
 namespace facebook {
@@ -35,6 +36,7 @@ public:
     ::com::facebook::share::widget::GameRequestDialog_Result& operator=(::com::facebook::share::widget::GameRequestDialog_Result&& x) {obj = std::move(x.obj); return *this;}
     
     ::java::lang::String getRequestId() const ;
+    ::java::util::List getRequestRecipients() const ;
 
 };
 }

@@ -36,6 +36,5 @@ public:
 }
 }
 
-#include "com.facebook.AccessTokenManager_TokenRefreshRequest.hpp"
-#include "com.facebook.AccessTokenManager_TokenRefreshRequestHandler.hpp"
+#include "com.facebook.AccessTokenManager_RefreshResult.hpp"
 

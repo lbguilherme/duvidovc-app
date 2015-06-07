@@ -36,6 +36,7 @@
 #include "com.facebook.share.internal.ShareContentValidation.hpp"
 #include "com.facebook.share.internal.ShareDialogFeature.hpp"
 #include "com.facebook.share.internal.ShareInternalUtility.hpp"
+#include "com.facebook.share.internal.VideoUploader.hpp"
 #include "com.facebook.share.internal.WebDialogParameters.hpp"
 #include "com.facebook.share.model.AppGroupCreationContent.hpp"
 #include "com.facebook.share.model.GameRequestContent.hpp"
@@ -96,11 +97,18 @@ jclass com::facebook::share::internal::OpenGraphJSONUtility::_class = nullptr;
 jclass com::facebook::share::internal::OpenGraphMessageDialogFeature::_class = nullptr;
 jclass com::facebook::share::internal::ResultProcessor::_class = nullptr;
 jclass com::facebook::share::internal::ShareConstants::_class = nullptr;
+jclass com::facebook::share::internal::ShareContentValidation_ApiValidator::_class = nullptr;
 jclass com::facebook::share::internal::ShareContentValidation_Validator::_class = nullptr;
 jclass com::facebook::share::internal::ShareContentValidation_WebShareValidator::_class = nullptr;
 jclass com::facebook::share::internal::ShareContentValidation::_class = nullptr;
 jclass com::facebook::share::internal::ShareDialogFeature::_class = nullptr;
 jclass com::facebook::share::internal::ShareInternalUtility::_class = nullptr;
+jclass com::facebook::share::internal::VideoUploader_FinishUploadWorkItem::_class = nullptr;
+jclass com::facebook::share::internal::VideoUploader_StartUploadWorkItem::_class = nullptr;
+jclass com::facebook::share::internal::VideoUploader_TransferChunkWorkItem::_class = nullptr;
+jclass com::facebook::share::internal::VideoUploader_UploadContext::_class = nullptr;
+jclass com::facebook::share::internal::VideoUploader_UploadWorkItemBase::_class = nullptr;
+jclass com::facebook::share::internal::VideoUploader::_class = nullptr;
 jclass com::facebook::share::internal::WebDialogParameters::_class = nullptr;
 
 std::vector< ::com::facebook::share::internal::AppInviteDialogFeature> com::facebook::share::internal::AppInviteDialogFeature::values(){
@@ -354,9 +362,9 @@ void com::facebook::share::internal::LikeButton::setSelected(bool arg0) const {
     return _ret;
 }
 
-::com::facebook::share::internal::LikeContent_Builder com::facebook::share::internal::LikeContent_Builder::setObjectType(const ::com::facebook::share::widget::LikeView_ObjectType& arg0) const {
+::com::facebook::share::internal::LikeContent_Builder com::facebook::share::internal::LikeContent_Builder::setObjectType(const ::java::lang::String& arg0) const {
     if (!::com::facebook::share::internal::LikeContent_Builder::_class) ::com::facebook::share::internal::LikeContent_Builder::_class = java::fetch_class("com/facebook/share/internal/LikeContent$Builder");
-    static jmethodID mid = java::jni->GetMethodID(_class, "setObjectType", "(Lcom/facebook/share/widget/LikeView$ObjectType;)Lcom/facebook/share/internal/LikeContent$Builder;");
+    static jmethodID mid = java::jni->GetMethodID(_class, "setObjectType", "(Ljava/lang/String;)Lcom/facebook/share/internal/LikeContent$Builder;");
     jobject _arg0 = arg0.obj;
     jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
     ::com::facebook::share::internal::LikeContent_Builder _ret(ret);
@@ -406,11 +414,11 @@ void com::facebook::share::internal::LikeButton::setSelected(bool arg0) const {
     return _ret;
 }
 
-::com::facebook::share::widget::LikeView_ObjectType com::facebook::share::internal::LikeContent::getObjectType() const {
+::java::lang::String com::facebook::share::internal::LikeContent::getObjectType() const {
     if (!::com::facebook::share::internal::LikeContent::_class) ::com::facebook::share::internal::LikeContent::_class = java::fetch_class("com/facebook/share/internal/LikeContent");
-    static jmethodID mid = java::jni->GetMethodID(_class, "getObjectType", "()Lcom/facebook/share/widget/LikeView$ObjectType;");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getObjectType", "()Ljava/lang/String;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
-    ::com::facebook::share::widget::LikeView_ObjectType _ret(ret);
+    ::java::lang::String _ret(ret);
     return _ret;
 }
 
@@ -752,6 +760,13 @@ void com::facebook::share::internal::ResultProcessor::onError(const ::com::faceb
 }
 #pragma GCC diagnostic pop
 
+void com::facebook::share::internal::ShareContentValidation_ApiValidator::validate(const ::com::facebook::share::model::SharePhoto& arg0) const {
+    if (!::com::facebook::share::internal::ShareContentValidation_ApiValidator::_class) ::com::facebook::share::internal::ShareContentValidation_ApiValidator::_class = java::fetch_class("com/facebook/share/internal/ShareContentValidation$ApiValidator");
+    static jmethodID mid = java::jni->GetMethodID(_class, "validate", "(Lcom/facebook/share/model/SharePhoto;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallVoidMethod(obj, mid, _arg0);
+}
+
 void com::facebook::share::internal::ShareContentValidation_Validator::validate(const ::com::facebook::share::model::ShareLinkContent& arg0) const {
     if (!::com::facebook::share::internal::ShareContentValidation_Validator::_class) ::com::facebook::share::internal::ShareContentValidation_Validator::_class = java::fetch_class("com/facebook/share/internal/ShareContentValidation$Validator");
     static jmethodID mid = java::jni->GetMethodID(_class, "validate", "(Lcom/facebook/share/model/ShareLinkContent;)V");
@@ -1012,9 +1027,19 @@ void com::facebook::share::internal::ShareInternalUtility::registerSharerCallbac
     return _ret;
 }
 
-::org::json::JSONObject com::facebook::share::internal::ShareInternalUtility::toJSONObjectForCall(const ::java::util::UUID& arg0, const ::com::facebook::share::model::ShareOpenGraphAction& arg1){
+::java::lang::String com::facebook::share::internal::ShareInternalUtility::getVideoUrl(const ::com::facebook::share::model::ShareVideoContent& arg0, const ::java::util::UUID& arg1){
     if (!::com::facebook::share::internal::ShareInternalUtility::_class) ::com::facebook::share::internal::ShareInternalUtility::_class = java::fetch_class("com/facebook/share/internal/ShareInternalUtility");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "toJSONObjectForCall", "(Ljava/util/UUID;Lcom/facebook/share/model/ShareOpenGraphAction;)Lorg/json/JSONObject;");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "getVideoUrl", "(Lcom/facebook/share/model/ShareVideoContent;Ljava/util/UUID;)Ljava/lang/String;");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+::org::json::JSONObject com::facebook::share::internal::ShareInternalUtility::toJSONObjectForCall(const ::java::util::UUID& arg0, const ::com::facebook::share::model::ShareOpenGraphContent& arg1){
+    if (!::com::facebook::share::internal::ShareInternalUtility::_class) ::com::facebook::share::internal::ShareInternalUtility::_class = java::fetch_class("com/facebook/share/internal/ShareInternalUtility");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "toJSONObjectForCall", "(Ljava/util/UUID;Lcom/facebook/share/model/ShareOpenGraphContent;)Lorg/json/JSONObject;");
     jobject _arg0 = arg0.obj;
     jobject _arg1 = arg1.obj;
     jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1);
@@ -1125,57 +1150,44 @@ void com::facebook::share::internal::ShareInternalUtility::registerSharerCallbac
     return _ret;
 }
 
-::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadPhotoRequest(const ::com::facebook::AccessToken& arg0, const ::android::graphics::Bitmap& arg1, const ::com::facebook::GraphRequest_Callback& arg2){
+::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadPhotoRequest(const ::java::lang::String& arg0, const ::com::facebook::AccessToken& arg1, const ::android::graphics::Bitmap& arg2, const ::java::lang::String& arg3, const ::android::os::Bundle& arg4, const ::com::facebook::GraphRequest_Callback& arg5){
     if (!::com::facebook::share::internal::ShareInternalUtility::_class) ::com::facebook::share::internal::ShareInternalUtility::_class = java::fetch_class("com/facebook/share/internal/ShareInternalUtility");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadPhotoRequest", "(Lcom/facebook/AccessToken;Landroid/graphics/Bitmap;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadPhotoRequest", "(Ljava/lang/String;Lcom/facebook/AccessToken;Landroid/graphics/Bitmap;Ljava/lang/String;Landroid/os/Bundle;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
     jobject _arg0 = arg0.obj;
     jobject _arg1 = arg1.obj;
     jobject _arg2 = arg2.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2);
+    jobject _arg3 = arg3.obj;
+    jobject _arg4 = arg4.obj;
+    jobject _arg5 = arg5.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2, _arg3, _arg4, _arg5);
     ::com::facebook::GraphRequest _ret(ret);
     return _ret;
 }
 
-::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadPhotoRequest(const ::com::facebook::AccessToken& arg0, const ::java::io::File& arg1, const ::com::facebook::GraphRequest_Callback& arg2){
+::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadPhotoRequest(const ::java::lang::String& arg0, const ::com::facebook::AccessToken& arg1, const ::java::io::File& arg2, const ::java::lang::String& arg3, const ::android::os::Bundle& arg4, const ::com::facebook::GraphRequest_Callback& arg5){
     if (!::com::facebook::share::internal::ShareInternalUtility::_class) ::com::facebook::share::internal::ShareInternalUtility::_class = java::fetch_class("com/facebook/share/internal/ShareInternalUtility");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadPhotoRequest", "(Lcom/facebook/AccessToken;Ljava/io/File;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadPhotoRequest", "(Ljava/lang/String;Lcom/facebook/AccessToken;Ljava/io/File;Ljava/lang/String;Landroid/os/Bundle;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
     jobject _arg0 = arg0.obj;
     jobject _arg1 = arg1.obj;
     jobject _arg2 = arg2.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2);
+    jobject _arg3 = arg3.obj;
+    jobject _arg4 = arg4.obj;
+    jobject _arg5 = arg5.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2, _arg3, _arg4, _arg5);
     ::com::facebook::GraphRequest _ret(ret);
     return _ret;
 }
 
-::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadPhotoRequest(const ::com::facebook::AccessToken& arg0, const ::android::net::Uri& arg1, const ::com::facebook::GraphRequest_Callback& arg2){
+::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadPhotoRequest(const ::java::lang::String& arg0, const ::com::facebook::AccessToken& arg1, const ::android::net::Uri& arg2, const ::java::lang::String& arg3, const ::android::os::Bundle& arg4, const ::com::facebook::GraphRequest_Callback& arg5){
     if (!::com::facebook::share::internal::ShareInternalUtility::_class) ::com::facebook::share::internal::ShareInternalUtility::_class = java::fetch_class("com/facebook/share/internal/ShareInternalUtility");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadPhotoRequest", "(Lcom/facebook/AccessToken;Landroid/net/Uri;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadPhotoRequest", "(Ljava/lang/String;Lcom/facebook/AccessToken;Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
     jobject _arg0 = arg0.obj;
     jobject _arg1 = arg1.obj;
     jobject _arg2 = arg2.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2);
-    ::com::facebook::GraphRequest _ret(ret);
-    return _ret;
-}
-
-::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadVideoRequest(const ::com::facebook::AccessToken& arg0, const ::java::io::File& arg1, const ::com::facebook::GraphRequest_Callback& arg2){
-    if (!::com::facebook::share::internal::ShareInternalUtility::_class) ::com::facebook::share::internal::ShareInternalUtility::_class = java::fetch_class("com/facebook/share/internal/ShareInternalUtility");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadVideoRequest", "(Lcom/facebook/AccessToken;Ljava/io/File;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
-    jobject _arg0 = arg0.obj;
-    jobject _arg1 = arg1.obj;
-    jobject _arg2 = arg2.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2);
-    ::com::facebook::GraphRequest _ret(ret);
-    return _ret;
-}
-
-::com::facebook::GraphRequest com::facebook::share::internal::ShareInternalUtility::newUploadVideoRequest(const ::com::facebook::AccessToken& arg0, const ::android::net::Uri& arg1, const ::com::facebook::GraphRequest_Callback& arg2){
-    if (!::com::facebook::share::internal::ShareInternalUtility::_class) ::com::facebook::share::internal::ShareInternalUtility::_class = java::fetch_class("com/facebook/share/internal/ShareInternalUtility");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "newUploadVideoRequest", "(Lcom/facebook/AccessToken;Landroid/net/Uri;Lcom/facebook/GraphRequest$Callback;)Lcom/facebook/GraphRequest;");
-    jobject _arg0 = arg0.obj;
-    jobject _arg1 = arg1.obj;
-    jobject _arg2 = arg2.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2);
+    jobject _arg3 = arg3.obj;
+    jobject _arg4 = arg4.obj;
+    jobject _arg5 = arg5.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2, _arg3, _arg4, _arg5);
     ::com::facebook::GraphRequest _ret(ret);
     return _ret;
 }
@@ -1245,6 +1257,97 @@ void com::facebook::share::internal::ShareInternalUtility::registerSharerCallbac
     jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1);
     ::com::facebook::share::widget::LikeView_ObjectType _ret(ret);
     return _ret;
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::share::internal::VideoUploader_FinishUploadWorkItem::VideoUploader_FinishUploadWorkItem(const ::com::facebook::share::internal::VideoUploader_UploadContext& arg0, int32_t arg1) : ::java::lang::Object((jobject)0), ::com::facebook::share::internal::VideoUploader_UploadWorkItemBase((jobject)0), ::java::lang::Runnable((jobject)0) {
+    if (!::com::facebook::share::internal::VideoUploader_FinishUploadWorkItem::_class) ::com::facebook::share::internal::VideoUploader_FinishUploadWorkItem::_class = java::fetch_class("com/facebook/share/internal/VideoUploader$FinishUploadWorkItem");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "(Lcom/facebook/share/internal/VideoUploader$UploadContext;I)V");
+    jobject _arg0 = arg0.obj;
+    int32_t _arg1 = arg1;
+    obj = java::jni->NewObject(_class, mid, _arg0, _arg1);
+}
+#pragma GCC diagnostic pop
+
+::android::os::Bundle com::facebook::share::internal::VideoUploader_FinishUploadWorkItem::getParameters() const {
+    if (!::com::facebook::share::internal::VideoUploader_FinishUploadWorkItem::_class) ::com::facebook::share::internal::VideoUploader_FinishUploadWorkItem::_class = java::fetch_class("com/facebook/share/internal/VideoUploader$FinishUploadWorkItem");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getParameters", "()Landroid/os/Bundle;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::android::os::Bundle _ret(ret);
+    return _ret;
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::share::internal::VideoUploader_StartUploadWorkItem::VideoUploader_StartUploadWorkItem(const ::com::facebook::share::internal::VideoUploader_UploadContext& arg0, int32_t arg1) : ::java::lang::Object((jobject)0), ::com::facebook::share::internal::VideoUploader_UploadWorkItemBase((jobject)0), ::java::lang::Runnable((jobject)0) {
+    if (!::com::facebook::share::internal::VideoUploader_StartUploadWorkItem::_class) ::com::facebook::share::internal::VideoUploader_StartUploadWorkItem::_class = java::fetch_class("com/facebook/share/internal/VideoUploader$StartUploadWorkItem");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "(Lcom/facebook/share/internal/VideoUploader$UploadContext;I)V");
+    jobject _arg0 = arg0.obj;
+    int32_t _arg1 = arg1;
+    obj = java::jni->NewObject(_class, mid, _arg0, _arg1);
+}
+#pragma GCC diagnostic pop
+
+::android::os::Bundle com::facebook::share::internal::VideoUploader_StartUploadWorkItem::getParameters() const {
+    if (!::com::facebook::share::internal::VideoUploader_StartUploadWorkItem::_class) ::com::facebook::share::internal::VideoUploader_StartUploadWorkItem::_class = java::fetch_class("com/facebook/share/internal/VideoUploader$StartUploadWorkItem");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getParameters", "()Landroid/os/Bundle;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::android::os::Bundle _ret(ret);
+    return _ret;
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::share::internal::VideoUploader_TransferChunkWorkItem::VideoUploader_TransferChunkWorkItem(const ::com::facebook::share::internal::VideoUploader_UploadContext& arg0, const ::java::lang::String& arg1, const ::java::lang::String& arg2, int32_t arg3) : ::java::lang::Object((jobject)0), ::com::facebook::share::internal::VideoUploader_UploadWorkItemBase((jobject)0), ::java::lang::Runnable((jobject)0) {
+    if (!::com::facebook::share::internal::VideoUploader_TransferChunkWorkItem::_class) ::com::facebook::share::internal::VideoUploader_TransferChunkWorkItem::_class = java::fetch_class("com/facebook/share/internal/VideoUploader$TransferChunkWorkItem");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "(Lcom/facebook/share/internal/VideoUploader$UploadContext;Ljava/lang/String;Ljava/lang/String;I)V");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    jobject _arg2 = arg2.obj;
+    int32_t _arg3 = arg3;
+    obj = java::jni->NewObject(_class, mid, _arg0, _arg1, _arg2, _arg3);
+}
+#pragma GCC diagnostic pop
+
+::android::os::Bundle com::facebook::share::internal::VideoUploader_TransferChunkWorkItem::getParameters() const {
+    if (!::com::facebook::share::internal::VideoUploader_TransferChunkWorkItem::_class) ::com::facebook::share::internal::VideoUploader_TransferChunkWorkItem::_class = java::fetch_class("com/facebook/share/internal/VideoUploader$TransferChunkWorkItem");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getParameters", "()Landroid/os/Bundle;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::android::os::Bundle _ret(ret);
+    return _ret;
+}
+
+void com::facebook::share::internal::VideoUploader_UploadWorkItemBase::run() const {
+    if (!::com::facebook::share::internal::VideoUploader_UploadWorkItemBase::_class) ::com::facebook::share::internal::VideoUploader_UploadWorkItemBase::_class = java::fetch_class("com/facebook/share/internal/VideoUploader$UploadWorkItemBase");
+    static jmethodID mid = java::jni->GetMethodID(_class, "run", "()V");
+    java::jni->CallVoidMethod(obj, mid);
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::share::internal::VideoUploader::VideoUploader() : ::java::lang::Object((jobject)0) {
+    if (!::com::facebook::share::internal::VideoUploader::_class) ::com::facebook::share::internal::VideoUploader::_class = java::fetch_class("com/facebook/share/internal/VideoUploader");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+void com::facebook::share::internal::VideoUploader::uploadAsync(const ::com::facebook::share::model::ShareVideoContent& arg0, const ::com::facebook::FacebookCallback& arg1){
+    if (!::com::facebook::share::internal::VideoUploader::_class) ::com::facebook::share::internal::VideoUploader::_class = java::fetch_class("com/facebook/share/internal/VideoUploader");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "uploadAsync", "(Lcom/facebook/share/model/ShareVideoContent;Lcom/facebook/FacebookCallback;)V");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void com::facebook::share::internal::VideoUploader::uploadAsync(const ::com::facebook::share::model::ShareVideoContent& arg0, const ::java::lang::String& arg1, const ::com::facebook::FacebookCallback& arg2){
+    if (!::com::facebook::share::internal::VideoUploader::_class) ::com::facebook::share::internal::VideoUploader::_class = java::fetch_class("com/facebook/share/internal/VideoUploader");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "uploadAsync", "(Lcom/facebook/share/model/ShareVideoContent;Ljava/lang/String;Lcom/facebook/FacebookCallback;)V");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    jobject _arg2 = arg2.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1, _arg2);
 }
 
 #pragma GCC diagnostic push

@@ -8,7 +8,6 @@
 
 #include "java.lang.Object.hpp"
 
-namespace android { namespace content { class ContentResolver; } }
 namespace android { namespace content { class Context; } }
 namespace com { namespace facebook { class LoggingBehavior; } }
 namespace java { namespace io { class File; } }
@@ -57,7 +56,6 @@ public:
     static void setFacebookDomain(const ::java::lang::String&);
     static ::android::content::Context getApplicationContext();
     static void publishInstallAsync(const ::android::content::Context&, const ::java::lang::String&);
-    static ::java::lang::String getAttributionId(const ::android::content::ContentResolver&);
     static ::java::lang::String getSdkVersion();
     static bool getLimitEventAndDataUsage(const ::android::content::Context&);
     static void setLimitEventAndDataUsage(const ::android::content::Context&, bool);
@@ -70,6 +68,8 @@ public:
     static void setApplicationName(const ::java::lang::String&);
     static ::java::lang::String getClientToken();
     static void setClientToken(const ::java::lang::String&);
+    static int32_t getWebDialogTheme();
+    static void setWebDialogTheme(int32_t);
     static ::java::io::File getCacheDir();
     static void setCacheDir(const ::java::io::File&);
     static int32_t getCallbackRequestCodeOffset();

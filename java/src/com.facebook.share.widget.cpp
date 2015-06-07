@@ -28,6 +28,7 @@
 #include "java.lang.Class.hpp"
 #include "java.lang.Object.hpp"
 #include "java.lang.String.hpp"
+#include "java.util.List.hpp"
 
 jclass com::facebook::share::widget::AppInviteDialog_NativeHandler::_class = nullptr;
 jclass com::facebook::share::widget::AppInviteDialog_Result::_class = nullptr;
@@ -272,6 +273,14 @@ void com::facebook::share::widget::CreateAppGroupDialog::show(const ::android::s
     static jmethodID mid = java::jni->GetMethodID(_class, "getRequestId", "()Ljava/lang/String;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+::java::util::List com::facebook::share::widget::GameRequestDialog_Result::getRequestRecipients() const {
+    if (!::com::facebook::share::widget::GameRequestDialog_Result::_class) ::com::facebook::share::widget::GameRequestDialog_Result::_class = java::fetch_class("com/facebook/share/widget/GameRequestDialog$Result");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getRequestRecipients", "()Ljava/util/List;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::util::List _ret(ret);
     return _ret;
 }
 
@@ -852,6 +861,12 @@ void com::facebook::share::widget::ShareButtonBase::setShareContent(const ::com:
     static jmethodID mid = java::jni->GetMethodID(_class, "setShareContent", "(Lcom/facebook/share/model/ShareContent;)V");
     jobject _arg0 = arg0.obj;
     java::jni->CallVoidMethod(obj, mid, _arg0);
+}
+
+int32_t com::facebook::share::widget::ShareButtonBase::getRequestCode() const {
+    if (!::com::facebook::share::widget::ShareButtonBase::_class) ::com::facebook::share::widget::ShareButtonBase::_class = java::fetch_class("com/facebook/share/widget/ShareButtonBase");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getRequestCode", "()I");
+    return java::jni->CallIntMethod(obj, mid);
 }
 
 void com::facebook::share::widget::ShareButtonBase::registerCallback(const ::com::facebook::CallbackManager& arg0, const ::com::facebook::FacebookCallback& arg1) const {

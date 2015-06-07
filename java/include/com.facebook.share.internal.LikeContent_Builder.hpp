@@ -14,7 +14,6 @@ namespace com { namespace facebook { namespace share { namespace internal { clas
 namespace com { namespace facebook { namespace share { namespace internal { class LikeContent_Builder; } } } }
 namespace com { namespace facebook { namespace share { namespace model { class ShareModel; } } } }
 namespace com { namespace facebook { namespace share { namespace model { class ShareModelBuilder; } } } }
-namespace com { namespace facebook { namespace share { namespace widget { class LikeView_ObjectType; } } } }
 namespace java { namespace lang { class String; } }
 
 namespace com {
@@ -44,7 +43,7 @@ public:
     
     LikeContent_Builder();
     ::com::facebook::share::internal::LikeContent_Builder setObjectId(const ::java::lang::String&) const ;
-    ::com::facebook::share::internal::LikeContent_Builder setObjectType(const ::com::facebook::share::widget::LikeView_ObjectType&) const ;
+    ::com::facebook::share::internal::LikeContent_Builder setObjectType(const ::java::lang::String&) const ;
     ::com::facebook::share::internal::LikeContent build() const ;
     ::com::facebook::share::internal::LikeContent_Builder readFrom(const ::com::facebook::share::internal::LikeContent&) const ;
     ::com::facebook::share::internal::LikeContent_Builder readFrom(const ::android::os::Parcel&) const ;

@@ -20,9 +20,9 @@ namespace com { namespace facebook { class GraphRequest; } }
 namespace com { namespace facebook { class GraphRequest_Callback; } }
 namespace com { namespace facebook { class GraphResponse; } }
 namespace com { namespace facebook { namespace share { namespace internal { class ResultProcessor; } } } }
-namespace com { namespace facebook { namespace share { namespace model { class ShareOpenGraphAction; } } } }
 namespace com { namespace facebook { namespace share { namespace model { class ShareOpenGraphContent; } } } }
 namespace com { namespace facebook { namespace share { namespace model { class SharePhotoContent; } } } }
+namespace com { namespace facebook { namespace share { namespace model { class ShareVideoContent; } } } }
 namespace com { namespace facebook { namespace share { namespace widget { class LikeView_ObjectType; } } } }
 namespace java { namespace io { class File; } }
 namespace java { namespace lang { class Exception; } }
@@ -67,7 +67,8 @@ public:
     static void registerStaticShareCallback(int32_t);
     static void registerSharerCallback(int32_t, const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&);
     static ::java::util::List getPhotoUrls(const ::com::facebook::share::model::SharePhotoContent&, const ::java::util::UUID&);
-    static ::org::json::JSONObject toJSONObjectForCall(const ::java::util::UUID&, const ::com::facebook::share::model::ShareOpenGraphAction&);
+    static ::java::lang::String getVideoUrl(const ::com::facebook::share::model::ShareVideoContent&, const ::java::util::UUID&);
+    static ::org::json::JSONObject toJSONObjectForCall(const ::java::util::UUID&, const ::com::facebook::share::model::ShareOpenGraphContent&);
     static ::org::json::JSONObject toJSONObjectForWeb(const ::com::facebook::share::model::ShareOpenGraphContent&);
     static ::org::json::JSONArray removeNamespacesFromOGJsonArray(const ::org::json::JSONArray&, bool);
     static ::org::json::JSONObject removeNamespacesFromOGJsonObject(const ::org::json::JSONObject&, bool);
@@ -77,11 +78,9 @@ public:
     static ::com::facebook::GraphRequest newPostOpenGraphActionRequest(const ::com::facebook::AccessToken&, const ::org::json::JSONObject&, const ::com::facebook::GraphRequest_Callback&);
     static ::com::facebook::GraphRequest newUpdateOpenGraphObjectRequest(const ::com::facebook::AccessToken&, const ::org::json::JSONObject&, const ::com::facebook::GraphRequest_Callback&);
     static ::com::facebook::GraphRequest newUpdateOpenGraphObjectRequest(const ::com::facebook::AccessToken&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::org::json::JSONObject&, const ::com::facebook::GraphRequest_Callback&);
-    static ::com::facebook::GraphRequest newUploadPhotoRequest(const ::com::facebook::AccessToken&, const ::android::graphics::Bitmap&, const ::com::facebook::GraphRequest_Callback&);
-    static ::com::facebook::GraphRequest newUploadPhotoRequest(const ::com::facebook::AccessToken&, const ::java::io::File&, const ::com::facebook::GraphRequest_Callback&);
-    static ::com::facebook::GraphRequest newUploadPhotoRequest(const ::com::facebook::AccessToken&, const ::android::net::Uri&, const ::com::facebook::GraphRequest_Callback&);
-    static ::com::facebook::GraphRequest newUploadVideoRequest(const ::com::facebook::AccessToken&, const ::java::io::File&, const ::com::facebook::GraphRequest_Callback&);
-    static ::com::facebook::GraphRequest newUploadVideoRequest(const ::com::facebook::AccessToken&, const ::android::net::Uri&, const ::com::facebook::GraphRequest_Callback&);
+    static ::com::facebook::GraphRequest newUploadPhotoRequest(const ::java::lang::String&, const ::com::facebook::AccessToken&, const ::android::graphics::Bitmap&, const ::java::lang::String&, const ::android::os::Bundle&, const ::com::facebook::GraphRequest_Callback&);
+    static ::com::facebook::GraphRequest newUploadPhotoRequest(const ::java::lang::String&, const ::com::facebook::AccessToken&, const ::java::io::File&, const ::java::lang::String&, const ::android::os::Bundle&, const ::com::facebook::GraphRequest_Callback&);
+    static ::com::facebook::GraphRequest newUploadPhotoRequest(const ::java::lang::String&, const ::com::facebook::AccessToken&, const ::android::net::Uri&, const ::java::lang::String&, const ::android::os::Bundle&, const ::com::facebook::GraphRequest_Callback&);
     static ::com::facebook::GraphRequest newStatusUpdateRequest(const ::com::facebook::AccessToken&, const ::java::lang::String&, const ::com::facebook::GraphRequest_Callback&);
     static ::com::facebook::GraphRequest newStatusUpdateRequest(const ::com::facebook::AccessToken&, const ::java::lang::String&, const ::org::json::JSONObject&, const ::java::util::List&, const ::com::facebook::GraphRequest_Callback&);
     static ::com::facebook::GraphRequest newUploadStagingResourceWithImageRequest(const ::com::facebook::AccessToken&, const ::android::graphics::Bitmap&, const ::com::facebook::GraphRequest_Callback&);

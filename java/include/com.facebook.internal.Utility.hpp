@@ -36,6 +36,7 @@ namespace java { namespace util { class Date; } }
 namespace java { namespace util { class HashSet; } }
 namespace java { namespace util { class List; } }
 namespace java { namespace util { class Map; } }
+namespace java { namespace util { class Set; } }
 namespace org { namespace json { class JSONArray; } }
 namespace org { namespace json { class JSONObject; } }
 
@@ -104,6 +105,7 @@ public:
     static void deleteDirectory(const ::java::io::File&);
     static ::java::util::List asListNoNulls(const std::vector< ::java::lang::Object>&);
     static ::java::util::List jsonArrayToStringList(const ::org::json::JSONArray&);
+    static ::java::util::Set jsonArrayToSet(const ::org::json::JSONArray&);
     static void setAppEventAttributionParameters(const ::org::json::JSONObject&, const ::com::facebook::internal::AttributionIdentifiers&, const ::java::lang::String&, bool);
     static void setAppEventExtendedDeviceInfoParameters(const ::org::json::JSONObject&, const ::android::content::Context&);
     static ::java::lang::reflect::Method getMethodQuietly(const ::java::lang::Class&, const ::java::lang::String&, const std::vector< ::java::lang::Class>&);
@@ -116,6 +118,7 @@ public:
     static bool isWebUri(const ::android::net::Uri&);
     static bool isContentUri(const ::android::net::Uri&);
     static bool isFileUri(const ::android::net::Uri&);
+    static int64_t getContentSize(const ::android::net::Uri&);
     static ::java::util::Date getBundleLongAsDate(const ::android::os::Bundle&, const ::java::lang::String&, const ::java::util::Date&);
     static void writeStringMapToParcel(const ::android::os::Parcel&, const ::java::util::Map&);
     static ::java::util::Map readStringMapFromParcel(const ::android::os::Parcel&);

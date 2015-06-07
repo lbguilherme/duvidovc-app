@@ -10,6 +10,7 @@
 
 namespace com { namespace facebook { class FacebookCallback; } }
 namespace com { namespace facebook { namespace share { namespace model { class ShareContent; } } } }
+namespace java { namespace lang { class String; } }
 
 namespace com {
 namespace facebook {
@@ -36,6 +37,10 @@ public:
     
     static void share(const ::com::facebook::share::model::ShareContent&, const ::com::facebook::FacebookCallback&);
     ShareApi(const ::com::facebook::share::model::ShareContent&);
+    ::java::lang::String getMessage() const ;
+    void setMessage(const ::java::lang::String&) const ;
+    ::java::lang::String getGraphNode() const ;
+    void setGraphNode(const ::java::lang::String&) const ;
     ::com::facebook::share::model::ShareContent getShareContent() const ;
     bool canShare() const ;
     void share(const ::com::facebook::FacebookCallback&) const ;

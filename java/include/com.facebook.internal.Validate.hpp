@@ -8,6 +8,7 @@
 
 #include "java.lang.Object.hpp"
 
+namespace android { namespace content { class Context; } }
 namespace java { namespace lang { class Object; } }
 namespace java { namespace lang { class String; } }
 namespace java { namespace util { class Collection; } }
@@ -41,9 +42,16 @@ public:
     static void containsNoNulls(const ::java::util::Collection&, const ::java::lang::String&);
     static void containsNoNullOrEmpty(const ::java::util::Collection&, const ::java::lang::String&);
     static void notEmptyAndContainsNoNulls(const ::java::util::Collection&, const ::java::lang::String&);
+    static void runningOnUiThread();
     static void notNullOrEmpty(const ::java::lang::String&, const ::java::lang::String&);
     static void oneOf(const ::java::lang::Object&, const ::java::lang::String&, const std::vector< ::java::lang::Object>&);
     static void sdkInitialized();
+    static ::java::lang::String hasAppID();
+    static void hasInternetPermissions(const ::android::content::Context&);
+    static void hasInternetPermissions(const ::android::content::Context&, bool);
+    static void hasFacebookActivity(const ::android::content::Context&);
+    static void hasFacebookActivity(const ::android::content::Context&, bool);
+    static void hasContentProvider(const ::android::content::Context&);
 
 };
 }

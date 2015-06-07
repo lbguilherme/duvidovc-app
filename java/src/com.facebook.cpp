@@ -1,7 +1,5 @@
 #include "java-core.hpp"
 #include <memory>
-#include "android.content.ComponentName.hpp"
-#include "android.content.ContentResolver.hpp"
 #include "android.content.ContentValues.hpp"
 #include "android.content.Context.hpp"
 #include "android.content.Intent.hpp"
@@ -12,8 +10,6 @@
 #include "android.net.Uri.hpp"
 #include "android.os.Bundle.hpp"
 #include "android.os.Handler.hpp"
-#include "android.os.IBinder.hpp"
-#include "android.os.Message.hpp"
 #include "android.os.Parcel.hpp"
 #include "android.os.ParcelFileDescriptor.hpp"
 #include "android.os.Parcelable.hpp"
@@ -79,8 +75,7 @@ jclass com::facebook::AccessToken_AccessTokenCreationCallback::_class = nullptr;
 jclass com::facebook::AccessToken::_class = nullptr;
 jclass com::facebook::AccessTokenCache_SharedPreferencesTokenCachingStrategyFactory::_class = nullptr;
 jclass com::facebook::AccessTokenCache::_class = nullptr;
-jclass com::facebook::AccessTokenManager_TokenRefreshRequest::_class = nullptr;
-jclass com::facebook::AccessTokenManager_TokenRefreshRequestHandler::_class = nullptr;
+jclass com::facebook::AccessTokenManager_RefreshResult::_class = nullptr;
 jclass com::facebook::AccessTokenManager::_class = nullptr;
 jclass com::facebook::AccessTokenSource::_class = nullptr;
 jclass com::facebook::AccessTokenTracker_CurrentAccessTokenBroadcastReceiver::_class = nullptr;
@@ -135,14 +130,14 @@ jclass com::facebook::RequestOutputStream::_class = nullptr;
 jclass com::facebook::RequestProgress::_class = nullptr;
 jclass com::facebook::TestUserManager_Mode::_class = nullptr;
 jclass com::facebook::TestUserManager::_class = nullptr;
-jclass com::facebook::R_id::_class = nullptr;
-jclass com::facebook::R_drawable::_class = nullptr;
-jclass com::facebook::R::_class = nullptr;
-jclass com::facebook::R_layout::_class = nullptr;
 jclass com::facebook::R_string::_class = nullptr;
 jclass com::facebook::R_dimen::_class = nullptr;
+jclass com::facebook::R_id::_class = nullptr;
+jclass com::facebook::R_layout::_class = nullptr;
 jclass com::facebook::R_styleable::_class = nullptr;
 jclass com::facebook::R_style::_class = nullptr;
+jclass com::facebook::R::_class = nullptr;
+jclass com::facebook::R_drawable::_class = nullptr;
 jclass com::facebook::R_color::_class = nullptr;
 jclass com::facebook::R_attr::_class = nullptr;
 
@@ -190,6 +185,12 @@ void com::facebook::AccessToken::setCurrentAccessToken(const ::com::facebook::Ac
     static jmethodID mid = java::jni->GetStaticMethodID(_class, "setCurrentAccessToken", "(Lcom/facebook/AccessToken;)V");
     jobject _arg0 = arg0.obj;
     java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
+void com::facebook::AccessToken::refreshCurrentAccessTokenAsync(){
+    if (!::com::facebook::AccessToken::_class) ::com::facebook::AccessToken::_class = java::fetch_class("com/facebook/AccessToken");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "refreshCurrentAccessTokenAsync", "()V");
+    java::jni->CallStaticVoidMethod(_class, mid);
 }
 
 ::java::lang::String com::facebook::AccessToken::getToken() const {
@@ -342,34 +343,6 @@ void com::facebook::AccessTokenCache::clear() const {
     if (!::com::facebook::AccessTokenCache::_class) ::com::facebook::AccessTokenCache::_class = java::fetch_class("com/facebook/AccessTokenCache");
     static jmethodID mid = java::jni->GetMethodID(_class, "clear", "()V");
     java::jni->CallVoidMethod(obj, mid);
-}
-
-void com::facebook::AccessTokenManager_TokenRefreshRequest::bind() const {
-    if (!::com::facebook::AccessTokenManager_TokenRefreshRequest::_class) ::com::facebook::AccessTokenManager_TokenRefreshRequest::_class = java::fetch_class("com/facebook/AccessTokenManager$TokenRefreshRequest");
-    static jmethodID mid = java::jni->GetMethodID(_class, "bind", "()V");
-    java::jni->CallVoidMethod(obj, mid);
-}
-
-void com::facebook::AccessTokenManager_TokenRefreshRequest::onServiceConnected(const ::android::content::ComponentName& arg0, const ::android::os::IBinder& arg1) const {
-    if (!::com::facebook::AccessTokenManager_TokenRefreshRequest::_class) ::com::facebook::AccessTokenManager_TokenRefreshRequest::_class = java::fetch_class("com/facebook/AccessTokenManager$TokenRefreshRequest");
-    static jmethodID mid = java::jni->GetMethodID(_class, "onServiceConnected", "(Landroid/content/ComponentName;Landroid/os/IBinder;)V");
-    jobject _arg0 = arg0.obj;
-    jobject _arg1 = arg1.obj;
-    java::jni->CallVoidMethod(obj, mid, _arg0, _arg1);
-}
-
-void com::facebook::AccessTokenManager_TokenRefreshRequest::onServiceDisconnected(const ::android::content::ComponentName& arg0) const {
-    if (!::com::facebook::AccessTokenManager_TokenRefreshRequest::_class) ::com::facebook::AccessTokenManager_TokenRefreshRequest::_class = java::fetch_class("com/facebook/AccessTokenManager$TokenRefreshRequest");
-    static jmethodID mid = java::jni->GetMethodID(_class, "onServiceDisconnected", "(Landroid/content/ComponentName;)V");
-    jobject _arg0 = arg0.obj;
-    java::jni->CallVoidMethod(obj, mid, _arg0);
-}
-
-void com::facebook::AccessTokenManager_TokenRefreshRequestHandler::handleMessage(const ::android::os::Message& arg0) const {
-    if (!::com::facebook::AccessTokenManager_TokenRefreshRequestHandler::_class) ::com::facebook::AccessTokenManager_TokenRefreshRequestHandler::_class = java::fetch_class("com/facebook/AccessTokenManager$TokenRefreshRequestHandler");
-    static jmethodID mid = java::jni->GetMethodID(_class, "handleMessage", "(Landroid/os/Message;)V");
-    jobject _arg0 = arg0.obj;
-    java::jni->CallVoidMethod(obj, mid, _arg0);
 }
 
 std::vector< ::com::facebook::AccessTokenSource> com::facebook::AccessTokenSource::values(){
@@ -870,6 +843,14 @@ int32_t com::facebook::FacebookDialogException::getErrorCode() const {
     return _ret;
 }
 
+::java::lang::String com::facebook::FacebookGraphResponseException::toString() const {
+    if (!::com::facebook::FacebookGraphResponseException::_class) ::com::facebook::FacebookGraphResponseException::_class = java::fetch_class("com/facebook/FacebookGraphResponseException");
+    static jmethodID mid = java::jni->GetMethodID(_class, "toString", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
 ::com::facebook::FacebookOperationCanceledException::FacebookOperationCanceledException() : ::java::lang::Object((jobject)0), ::com::facebook::FacebookException((jobject)0), ::java::io::Serializable((jobject)0), ::java::lang::Exception((jobject)0), ::java::lang::RuntimeException((jobject)0), ::java::lang::Throwable((jobject)0) {
@@ -1196,15 +1177,6 @@ void com::facebook::FacebookSdk::publishInstallAsync(const ::android::content::C
     java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
 }
 
-::java::lang::String com::facebook::FacebookSdk::getAttributionId(const ::android::content::ContentResolver& arg0){
-    if (!::com::facebook::FacebookSdk::_class) ::com::facebook::FacebookSdk::_class = java::fetch_class("com/facebook/FacebookSdk");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "getAttributionId", "(Landroid/content/ContentResolver;)Ljava/lang/String;");
-    jobject _arg0 = arg0.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0);
-    ::java::lang::String _ret(ret);
-    return _ret;
-}
-
 ::java::lang::String com::facebook::FacebookSdk::getSdkVersion(){
     if (!::com::facebook::FacebookSdk::_class) ::com::facebook::FacebookSdk::_class = java::fetch_class("com/facebook/FacebookSdk");
     static jmethodID mid = java::jni->GetStaticMethodID(_class, "getSdkVersion", "()Ljava/lang/String;");
@@ -1292,6 +1264,19 @@ void com::facebook::FacebookSdk::setClientToken(const ::java::lang::String& arg0
     if (!::com::facebook::FacebookSdk::_class) ::com::facebook::FacebookSdk::_class = java::fetch_class("com/facebook/FacebookSdk");
     static jmethodID mid = java::jni->GetStaticMethodID(_class, "setClientToken", "(Ljava/lang/String;)V");
     jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
+int32_t com::facebook::FacebookSdk::getWebDialogTheme(){
+    if (!::com::facebook::FacebookSdk::_class) ::com::facebook::FacebookSdk::_class = java::fetch_class("com/facebook/FacebookSdk");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "getWebDialogTheme", "()I");
+    return java::jni->CallStaticIntMethod(_class, mid);
+}
+
+void com::facebook::FacebookSdk::setWebDialogTheme(int32_t arg0){
+    if (!::com::facebook::FacebookSdk::_class) ::com::facebook::FacebookSdk::_class = java::fetch_class("com/facebook/FacebookSdk");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setWebDialogTheme", "(I)V");
+    int32_t _arg0 = arg0;
     java::jni->CallStaticVoidMethod(_class, mid, _arg0);
 }
 
@@ -3040,42 +3025,6 @@ std::vector< ::com::facebook::TestUserManager_Mode> com::facebook::TestUserManag
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::com::facebook::R_id::R_id() : ::java::lang::Object((jobject)0) {
-    if (!::com::facebook::R_id::_class) ::com::facebook::R_id::_class = java::fetch_class("com/facebook/R$id");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::com::facebook::R_drawable::R_drawable() : ::java::lang::Object((jobject)0) {
-    if (!::com::facebook::R_drawable::_class) ::com::facebook::R_drawable::_class = java::fetch_class("com/facebook/R$drawable");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::com::facebook::R::R() : ::java::lang::Object((jobject)0) {
-    if (!::com::facebook::R::_class) ::com::facebook::R::_class = java::fetch_class("com/facebook/R");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::com::facebook::R_layout::R_layout() : ::java::lang::Object((jobject)0) {
-    if (!::com::facebook::R_layout::_class) ::com::facebook::R_layout::_class = java::fetch_class("com/facebook/R$layout");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
 ::com::facebook::R_string::R_string() : ::java::lang::Object((jobject)0) {
     if (!::com::facebook::R_string::_class) ::com::facebook::R_string::_class = java::fetch_class("com/facebook/R$string");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
@@ -3094,6 +3043,24 @@ std::vector< ::com::facebook::TestUserManager_Mode> com::facebook::TestUserManag
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::R_id::R_id() : ::java::lang::Object((jobject)0) {
+    if (!::com::facebook::R_id::_class) ::com::facebook::R_id::_class = java::fetch_class("com/facebook/R$id");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::R_layout::R_layout() : ::java::lang::Object((jobject)0) {
+    if (!::com::facebook::R_layout::_class) ::com::facebook::R_layout::_class = java::fetch_class("com/facebook/R$layout");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
 ::com::facebook::R_styleable::R_styleable() : ::java::lang::Object((jobject)0) {
     if (!::com::facebook::R_styleable::_class) ::com::facebook::R_styleable::_class = java::fetch_class("com/facebook/R$styleable");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
@@ -3105,6 +3072,24 @@ std::vector< ::com::facebook::TestUserManager_Mode> com::facebook::TestUserManag
 #pragma GCC diagnostic ignored "-Wreorder"
 ::com::facebook::R_style::R_style() : ::java::lang::Object((jobject)0) {
     if (!::com::facebook::R_style::_class) ::com::facebook::R_style::_class = java::fetch_class("com/facebook/R$style");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::R::R() : ::java::lang::Object((jobject)0) {
+    if (!::com::facebook::R::_class) ::com::facebook::R::_class = java::fetch_class("com/facebook/R");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::R_drawable::R_drawable() : ::java::lang::Object((jobject)0) {
+    if (!::com::facebook::R_drawable::_class) ::com::facebook::R_drawable::_class = java::fetch_class("com/facebook/R$drawable");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }

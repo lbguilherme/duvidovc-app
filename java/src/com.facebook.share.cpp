@@ -31,6 +31,36 @@ void com::facebook::share::ShareApi::share(const ::com::facebook::share::model::
 }
 #pragma GCC diagnostic pop
 
+::java::lang::String com::facebook::share::ShareApi::getMessage() const {
+    if (!::com::facebook::share::ShareApi::_class) ::com::facebook::share::ShareApi::_class = java::fetch_class("com/facebook/share/ShareApi");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getMessage", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+void com::facebook::share::ShareApi::setMessage(const ::java::lang::String& arg0) const {
+    if (!::com::facebook::share::ShareApi::_class) ::com::facebook::share::ShareApi::_class = java::fetch_class("com/facebook/share/ShareApi");
+    static jmethodID mid = java::jni->GetMethodID(_class, "setMessage", "(Ljava/lang/String;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallVoidMethod(obj, mid, _arg0);
+}
+
+::java::lang::String com::facebook::share::ShareApi::getGraphNode() const {
+    if (!::com::facebook::share::ShareApi::_class) ::com::facebook::share::ShareApi::_class = java::fetch_class("com/facebook/share/ShareApi");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getGraphNode", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+void com::facebook::share::ShareApi::setGraphNode(const ::java::lang::String& arg0) const {
+    if (!::com::facebook::share::ShareApi::_class) ::com::facebook::share::ShareApi::_class = java::fetch_class("com/facebook/share/ShareApi");
+    static jmethodID mid = java::jni->GetMethodID(_class, "setGraphNode", "(Ljava/lang/String;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallVoidMethod(obj, mid, _arg0);
+}
+
 ::com::facebook::share::model::ShareContent com::facebook::share::ShareApi::getShareContent() const {
     if (!::com::facebook::share::ShareApi::_class) ::com::facebook::share::ShareApi::_class = java::fetch_class("com/facebook/share/ShareApi");
     static jmethodID mid = java::jni->GetMethodID(_class, "getShareContent", "()Lcom/facebook/share/model/ShareContent;");

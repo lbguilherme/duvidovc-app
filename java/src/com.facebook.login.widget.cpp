@@ -288,15 +288,6 @@ void com::facebook::login::widget::LoginButton::registerCallback(const ::com::fa
     java::jni->CallVoidMethod(obj, mid, _arg0, _arg1);
 }
 
-void com::facebook::login::widget::LoginButton::registerCallback(const ::com::facebook::CallbackManager& arg0, const ::com::facebook::FacebookCallback& arg1, int32_t arg2) const {
-    if (!::com::facebook::login::widget::LoginButton::_class) ::com::facebook::login::widget::LoginButton::_class = java::fetch_class("com/facebook/login/widget/LoginButton");
-    static jmethodID mid = java::jni->GetMethodID(_class, "registerCallback", "(Lcom/facebook/CallbackManager;Lcom/facebook/FacebookCallback;I)V");
-    jobject _arg0 = arg0.obj;
-    jobject _arg1 = arg1.obj;
-    int32_t _arg2 = arg2;
-    java::jni->CallVoidMethod(obj, mid, _arg0, _arg1, _arg2);
-}
-
 void com::facebook::login::widget::ProfilePictureView_OnErrorListener::onError(const ::com::facebook::FacebookException& arg0) const {
     if (!::com::facebook::login::widget::ProfilePictureView_OnErrorListener::_class) ::com::facebook::login::widget::ProfilePictureView_OnErrorListener::_class = java::fetch_class("com/facebook/login/widget/ProfilePictureView$OnErrorListener");
     static jmethodID mid = java::jni->GetMethodID(_class, "onError", "(Lcom/facebook/FacebookException;)V");

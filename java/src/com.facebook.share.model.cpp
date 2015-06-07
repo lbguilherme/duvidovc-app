@@ -9,6 +9,7 @@
 #include "com.facebook.share.model.GameRequestContent.hpp"
 #include "com.facebook.share.model.ShareContent.hpp"
 #include "com.facebook.share.model.ShareLinkContent.hpp"
+#include "com.facebook.share.model.ShareMedia.hpp"
 #include "com.facebook.share.model.ShareModel.hpp"
 #include "com.facebook.share.model.ShareModelBuilder.hpp"
 #include "com.facebook.share.model.ShareOpenGraphAction.hpp"
@@ -38,6 +39,8 @@ jclass com::facebook::share::model::ShareContent_Builder::_class = nullptr;
 jclass com::facebook::share::model::ShareContent::_class = nullptr;
 jclass com::facebook::share::model::ShareLinkContent_Builder::_class = nullptr;
 jclass com::facebook::share::model::ShareLinkContent::_class = nullptr;
+jclass com::facebook::share::model::ShareMedia_Builder::_class = nullptr;
+jclass com::facebook::share::model::ShareMedia::_class = nullptr;
 jclass com::facebook::share::model::ShareModel::_class = nullptr;
 jclass com::facebook::share::model::ShareModelBuilder::_class = nullptr;
 jclass com::facebook::share::model::ShareOpenGraphAction_Builder::_class = nullptr;
@@ -748,6 +751,74 @@ void com::facebook::share::model::ShareLinkContent::writeToParcel(const ::androi
     java::jni->CallVoidMethod(obj, mid, _arg0, _arg1);
 }
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::share::model::ShareMedia_Builder::ShareMedia_Builder() : ::java::lang::Object((jobject)0), ::com::facebook::share::ShareBuilder((jobject)0), ::com::facebook::share::model::ShareModelBuilder((jobject)0) {
+    if (!::com::facebook::share::model::ShareMedia_Builder::_class) ::com::facebook::share::model::ShareMedia_Builder::_class = java::fetch_class("com/facebook/share/model/ShareMedia$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+::com::facebook::share::model::ShareMedia_Builder com::facebook::share::model::ShareMedia_Builder::setParameter(const ::java::lang::String& arg0, const ::java::lang::String& arg1) const {
+    if (!::com::facebook::share::model::ShareMedia_Builder::_class) ::com::facebook::share::model::ShareMedia_Builder::_class = java::fetch_class("com/facebook/share/model/ShareMedia$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "setParameter", "(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/share/model/ShareMedia$Builder;");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0, _arg1);
+    ::com::facebook::share::model::ShareMedia_Builder _ret(ret);
+    return _ret;
+}
+
+::com::facebook::share::model::ShareMedia_Builder com::facebook::share::model::ShareMedia_Builder::setParameters(const ::android::os::Bundle& arg0) const {
+    if (!::com::facebook::share::model::ShareMedia_Builder::_class) ::com::facebook::share::model::ShareMedia_Builder::_class = java::fetch_class("com/facebook/share/model/ShareMedia$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "setParameters", "(Landroid/os/Bundle;)Lcom/facebook/share/model/ShareMedia$Builder;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    ::com::facebook::share::model::ShareMedia_Builder _ret(ret);
+    return _ret;
+}
+
+::com::facebook::share::model::ShareMedia_Builder com::facebook::share::model::ShareMedia_Builder::readFrom(const ::com::facebook::share::model::ShareMedia& arg0) const {
+    if (!::com::facebook::share::model::ShareMedia_Builder::_class) ::com::facebook::share::model::ShareMedia_Builder::_class = java::fetch_class("com/facebook/share/model/ShareMedia$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "readFrom", "(Lcom/facebook/share/model/ShareMedia;)Lcom/facebook/share/model/ShareMedia$Builder;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    ::com::facebook::share::model::ShareMedia_Builder _ret(ret);
+    return _ret;
+}
+
+::com::facebook::share::model::ShareModelBuilder com::facebook::share::model::ShareMedia_Builder::readFrom(const ::com::facebook::share::model::ShareModel& arg0) const {
+    if (!::com::facebook::share::model::ShareMedia_Builder::_class) ::com::facebook::share::model::ShareMedia_Builder::_class = java::fetch_class("com/facebook/share/model/ShareMedia$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "readFrom", "(Lcom/facebook/share/model/ShareModel;)Lcom/facebook/share/model/ShareModelBuilder;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    ::com::facebook::share::model::ShareModelBuilder _ret(ret);
+    return _ret;
+}
+
+::android::os::Bundle com::facebook::share::model::ShareMedia::getParameters() const {
+    if (!::com::facebook::share::model::ShareMedia::_class) ::com::facebook::share::model::ShareMedia::_class = java::fetch_class("com/facebook/share/model/ShareMedia");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getParameters", "()Landroid/os/Bundle;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::android::os::Bundle _ret(ret);
+    return _ret;
+}
+
+int32_t com::facebook::share::model::ShareMedia::describeContents() const {
+    if (!::com::facebook::share::model::ShareMedia::_class) ::com::facebook::share::model::ShareMedia::_class = java::fetch_class("com/facebook/share/model/ShareMedia");
+    static jmethodID mid = java::jni->GetMethodID(_class, "describeContents", "()I");
+    return java::jni->CallIntMethod(obj, mid);
+}
+
+void com::facebook::share::model::ShareMedia::writeToParcel(const ::android::os::Parcel& arg0, int32_t arg1) const {
+    if (!::com::facebook::share::model::ShareMedia::_class) ::com::facebook::share::model::ShareMedia::_class = java::fetch_class("com/facebook/share/model/ShareMedia");
+    static jmethodID mid = java::jni->GetMethodID(_class, "writeToParcel", "(Landroid/os/Parcel;I)V");
+    jobject _arg0 = arg0.obj;
+    int32_t _arg1 = arg1;
+    java::jni->CallVoidMethod(obj, mid, _arg0, _arg1);
+}
+
 ::com::facebook::share::model::ShareModelBuilder com::facebook::share::model::ShareModelBuilder::readFrom(const ::com::facebook::share::model::ShareModel& arg0) const {
     if (!::com::facebook::share::model::ShareModelBuilder::_class) ::com::facebook::share::model::ShareModelBuilder::_class = java::fetch_class("com/facebook/share/model/ShareModelBuilder");
     static jmethodID mid = java::jni->GetMethodID(_class, "readFrom", "(Lcom/facebook/share/model/ShareModel;)Lcom/facebook/share/model/ShareModelBuilder;");
@@ -1314,7 +1385,7 @@ void com::facebook::share::model::ShareOpenGraphValueContainer::writeToParcel(co
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::com::facebook::share::model::SharePhoto_Builder::SharePhoto_Builder() : ::java::lang::Object((jobject)0), ::com::facebook::share::ShareBuilder((jobject)0), ::com::facebook::share::model::ShareModelBuilder((jobject)0) {
+::com::facebook::share::model::SharePhoto_Builder::SharePhoto_Builder() : ::java::lang::Object((jobject)0), ::com::facebook::share::ShareBuilder((jobject)0), ::com::facebook::share::model::ShareMedia_Builder((jobject)0), ::com::facebook::share::model::ShareModelBuilder((jobject)0) {
     if (!::com::facebook::share::model::SharePhoto_Builder::_class) ::com::facebook::share::model::SharePhoto_Builder::_class = java::fetch_class("com/facebook/share/model/SharePhoto$Builder");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
@@ -1343,6 +1414,15 @@ void com::facebook::share::model::ShareOpenGraphValueContainer::writeToParcel(co
     if (!::com::facebook::share::model::SharePhoto_Builder::_class) ::com::facebook::share::model::SharePhoto_Builder::_class = java::fetch_class("com/facebook/share/model/SharePhoto$Builder");
     static jmethodID mid = java::jni->GetMethodID(_class, "setUserGenerated", "(Z)Lcom/facebook/share/model/SharePhoto$Builder;");
     bool _arg0 = arg0;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    ::com::facebook::share::model::SharePhoto_Builder _ret(ret);
+    return _ret;
+}
+
+::com::facebook::share::model::SharePhoto_Builder com::facebook::share::model::SharePhoto_Builder::setCaption(const ::java::lang::String& arg0) const {
+    if (!::com::facebook::share::model::SharePhoto_Builder::_class) ::com::facebook::share::model::SharePhoto_Builder::_class = java::fetch_class("com/facebook/share/model/SharePhoto$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "setCaption", "(Ljava/lang/String;)Lcom/facebook/share/model/SharePhoto$Builder;");
+    jobject _arg0 = arg0.obj;
     jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
     ::com::facebook::share::model::SharePhoto_Builder _ret(ret);
     return _ret;
@@ -1391,6 +1471,15 @@ void com::facebook::share::model::SharePhoto_Builder::writeListTo(const ::androi
     return _ret;
 }
 
+::com::facebook::share::model::ShareMedia_Builder com::facebook::share::model::SharePhoto_Builder::readFrom(const ::com::facebook::share::model::ShareMedia& arg0) const {
+    if (!::com::facebook::share::model::SharePhoto_Builder::_class) ::com::facebook::share::model::SharePhoto_Builder::_class = java::fetch_class("com/facebook/share/model/SharePhoto$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "readFrom", "(Lcom/facebook/share/model/ShareMedia;)Lcom/facebook/share/model/ShareMedia$Builder;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    ::com::facebook::share::model::ShareMedia_Builder _ret(ret);
+    return _ret;
+}
+
 ::com::facebook::share::model::ShareModelBuilder com::facebook::share::model::SharePhoto_Builder::readFrom(const ::com::facebook::share::model::ShareModel& arg0) const {
     if (!::com::facebook::share::model::SharePhoto_Builder::_class) ::com::facebook::share::model::SharePhoto_Builder::_class = java::fetch_class("com/facebook/share/model/SharePhoto$Builder");
     static jmethodID mid = java::jni->GetMethodID(_class, "readFrom", "(Lcom/facebook/share/model/ShareModel;)Lcom/facebook/share/model/ShareModelBuilder;");
@@ -1420,6 +1509,14 @@ bool com::facebook::share::model::SharePhoto::getUserGenerated() const {
     if (!::com::facebook::share::model::SharePhoto::_class) ::com::facebook::share::model::SharePhoto::_class = java::fetch_class("com/facebook/share/model/SharePhoto");
     static jmethodID mid = java::jni->GetMethodID(_class, "getUserGenerated", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
+}
+
+::java::lang::String com::facebook::share::model::SharePhoto::getCaption() const {
+    if (!::com::facebook::share::model::SharePhoto::_class) ::com::facebook::share::model::SharePhoto::_class = java::fetch_class("com/facebook/share/model/SharePhoto");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getCaption", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
 }
 
 int32_t com::facebook::share::model::SharePhoto::describeContents() const {
@@ -1540,7 +1637,7 @@ void com::facebook::share::model::SharePhotoContent::writeToParcel(const ::andro
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::com::facebook::share::model::ShareVideo_Builder::ShareVideo_Builder() : ::java::lang::Object((jobject)0), ::com::facebook::share::ShareBuilder((jobject)0), ::com::facebook::share::model::ShareModelBuilder((jobject)0) {
+::com::facebook::share::model::ShareVideo_Builder::ShareVideo_Builder() : ::java::lang::Object((jobject)0), ::com::facebook::share::ShareBuilder((jobject)0), ::com::facebook::share::model::ShareMedia_Builder((jobject)0), ::com::facebook::share::model::ShareModelBuilder((jobject)0) {
     if (!::com::facebook::share::model::ShareVideo_Builder::_class) ::com::facebook::share::model::ShareVideo_Builder::_class = java::fetch_class("com/facebook/share/model/ShareVideo$Builder");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
@@ -1579,6 +1676,15 @@ void com::facebook::share::model::SharePhotoContent::writeToParcel(const ::andro
     jobject _arg0 = arg0.obj;
     jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
     ::com::facebook::share::model::ShareVideo_Builder _ret(ret);
+    return _ret;
+}
+
+::com::facebook::share::model::ShareMedia_Builder com::facebook::share::model::ShareVideo_Builder::readFrom(const ::com::facebook::share::model::ShareMedia& arg0) const {
+    if (!::com::facebook::share::model::ShareVideo_Builder::_class) ::com::facebook::share::model::ShareVideo_Builder::_class = java::fetch_class("com/facebook/share/model/ShareVideo$Builder");
+    static jmethodID mid = java::jni->GetMethodID(_class, "readFrom", "(Lcom/facebook/share/model/ShareMedia;)Lcom/facebook/share/model/ShareMedia$Builder;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    ::com::facebook::share::model::ShareMedia_Builder _ret(ret);
     return _ret;
 }
 

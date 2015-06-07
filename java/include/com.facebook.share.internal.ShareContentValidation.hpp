@@ -46,6 +46,7 @@ public:
 }
 }
 
+#include "com.facebook.share.internal.ShareContentValidation_ApiValidator.hpp"
 #include "com.facebook.share.internal.ShareContentValidation_Validator.hpp"
 #include "com.facebook.share.internal.ShareContentValidation_WebShareValidator.hpp"
 

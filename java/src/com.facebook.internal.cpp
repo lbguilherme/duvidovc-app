@@ -24,6 +24,7 @@
 #include "com.facebook.LoggingBehavior.hpp"
 #include "com.facebook.internal.AnalyticsEvents.hpp"
 #include "com.facebook.internal.AppCall.hpp"
+#include "com.facebook.internal.AppEventsLoggerUtility.hpp"
 #include "com.facebook.internal.AttributionIdentifiers.hpp"
 #include "com.facebook.internal.BoltsMeasurementEventListener.hpp"
 #include "com.facebook.internal.BundleJSONConverter.hpp"
@@ -77,6 +78,7 @@
 #include "java.util.Iterator.hpp"
 #include "java.util.List.hpp"
 #include "java.util.Map.hpp"
+#include "java.util.Set.hpp"
 #include "java.util.TreeSet.hpp"
 #include "java.util.UUID.hpp"
 #include "java.util.concurrent.Executor.hpp"
@@ -85,6 +87,8 @@
 
 jclass com::facebook::internal::AnalyticsEvents::_class = nullptr;
 jclass com::facebook::internal::AppCall::_class = nullptr;
+jclass com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType::_class = nullptr;
+jclass com::facebook::internal::AppEventsLoggerUtility::_class = nullptr;
 jclass com::facebook::internal::AttributionIdentifiers::_class = nullptr;
 jclass com::facebook::internal::BoltsMeasurementEventListener::_class = nullptr;
 jclass com::facebook::internal::BundleJSONConverter_Setter::_class = nullptr;
@@ -247,6 +251,51 @@ bool com::facebook::internal::AppCall::setPending() const {
     if (!::com::facebook::internal::AppCall::_class) ::com::facebook::internal::AppCall::_class = java::fetch_class("com/facebook/internal/AppCall");
     static jmethodID mid = java::jni->GetMethodID(_class, "setPending", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
+}
+
+std::vector< ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType> com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType::values(){
+    if (!::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType::_class) ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType::_class = java::fetch_class("com/facebook/internal/AppEventsLoggerUtility$GraphAPIActivityType");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "values", "()[Lcom/facebook/internal/AppEventsLoggerUtility$GraphAPIActivityType;");
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid);
+    unsigned rets = java::jni->GetArrayLength((jarray)ret);
+    std::vector< ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType> _ret(rets, ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType((jobject)nullptr));
+    for (unsigned reti = 0; reti < rets; ++reti) {
+      jobject rete = java::jni->GetObjectArrayElement((jobjectArray)ret, reti);
+        ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType retd(rete);
+      _ret[reti] = std::move(retd);
+    }
+    return _ret;
+}
+
+::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType::valueOf(const ::java::lang::String& arg0){
+    if (!::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType::_class) ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType::_class = java::fetch_class("com/facebook/internal/AppEventsLoggerUtility$GraphAPIActivityType");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "valueOf", "(Ljava/lang/String;)Lcom/facebook/internal/AppEventsLoggerUtility$GraphAPIActivityType;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0);
+    ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType _ret(ret);
+    return _ret;
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::com::facebook::internal::AppEventsLoggerUtility::AppEventsLoggerUtility() : ::java::lang::Object((jobject)0) {
+    if (!::com::facebook::internal::AppEventsLoggerUtility::_class) ::com::facebook::internal::AppEventsLoggerUtility::_class = java::fetch_class("com/facebook/internal/AppEventsLoggerUtility");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+::org::json::JSONObject com::facebook::internal::AppEventsLoggerUtility::getJSONObjectForGraphAPICall(const ::com::facebook::internal::AppEventsLoggerUtility_GraphAPIActivityType& arg0, const ::com::facebook::internal::AttributionIdentifiers& arg1, const ::java::lang::String& arg2, bool arg3, const ::android::content::Context& arg4){
+    if (!::com::facebook::internal::AppEventsLoggerUtility::_class) ::com::facebook::internal::AppEventsLoggerUtility::_class = java::fetch_class("com/facebook/internal/AppEventsLoggerUtility");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "getJSONObjectForGraphAPICall", "(Lcom/facebook/internal/AppEventsLoggerUtility$GraphAPIActivityType;Lcom/facebook/internal/AttributionIdentifiers;Ljava/lang/String;ZLandroid/content/Context;)Lorg/json/JSONObject;");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    jobject _arg2 = arg2.obj;
+    bool _arg3 = arg3;
+    jobject _arg4 = arg4.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2, _arg3, _arg4);
+    ::org::json::JSONObject _ret(ret);
+    return _ret;
 }
 
 #pragma GCC diagnostic push
@@ -1525,6 +1574,14 @@ bool com::facebook::internal::NativeProtocol_NativeAppInfo::validateSignature(co
     return java::jni->CallBooleanMethod(obj, mid, _arg0, _arg1);
 }
 
+::java::util::TreeSet com::facebook::internal::NativeProtocol_NativeAppInfo::getAvailableVersions() const {
+    if (!::com::facebook::internal::NativeProtocol_NativeAppInfo::_class) ::com::facebook::internal::NativeProtocol_NativeAppInfo::_class = java::fetch_class("com/facebook/internal/NativeProtocol$NativeAppInfo");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getAvailableVersions", "()Ljava/util/TreeSet;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::util::TreeSet _ret(ret);
+    return _ret;
+}
+
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
 ::com::facebook::internal::NativeProtocol::NativeProtocol() : ::java::lang::Object((jobject)0) {
@@ -1534,16 +1591,17 @@ bool com::facebook::internal::NativeProtocol_NativeAppInfo::validateSignature(co
 }
 #pragma GCC diagnostic pop
 
-::android::content::Intent com::facebook::internal::NativeProtocol::createProxyAuthIntent(const ::android::content::Context& arg0, const ::java::lang::String& arg1, const ::java::util::Collection& arg2, const ::java::lang::String& arg3, bool arg4, const ::com::facebook::login::DefaultAudience& arg5){
+::android::content::Intent com::facebook::internal::NativeProtocol::createProxyAuthIntent(const ::android::content::Context& arg0, const ::java::lang::String& arg1, const ::java::util::Collection& arg2, const ::java::lang::String& arg3, bool arg4, bool arg5, const ::com::facebook::login::DefaultAudience& arg6){
     if (!::com::facebook::internal::NativeProtocol::_class) ::com::facebook::internal::NativeProtocol::_class = java::fetch_class("com/facebook/internal/NativeProtocol");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "createProxyAuthIntent", "(Landroid/content/Context;Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;ZLcom/facebook/login/DefaultAudience;)Landroid/content/Intent;");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "createProxyAuthIntent", "(Landroid/content/Context;Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;ZZLcom/facebook/login/DefaultAudience;)Landroid/content/Intent;");
     jobject _arg0 = arg0.obj;
     jobject _arg1 = arg1.obj;
     jobject _arg2 = arg2.obj;
     jobject _arg3 = arg3.obj;
     bool _arg4 = arg4;
-    jobject _arg5 = arg5.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2, _arg3, _arg4, _arg5);
+    bool _arg5 = arg5;
+    jobject _arg6 = arg6.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
     ::android::content::Intent _ret(ret);
     return _ret;
 }
@@ -1705,6 +1763,12 @@ int32_t com::facebook::internal::NativeProtocol::getLatestAvailableProtocolVersi
     jintArray _arg1 = java::jni->NewIntArray(arg1.size());
     java::jni->SetIntArrayRegion(_arg1, 0, arg1.size(), arg1.data());
     return java::jni->CallStaticIntMethod(_class, mid, _arg0, _arg1);
+}
+
+void com::facebook::internal::NativeProtocol::updateAllAvailableProtocolVersionsAsync(){
+    if (!::com::facebook::internal::NativeProtocol::_class) ::com::facebook::internal::NativeProtocol::_class = java::fetch_class("com/facebook/internal/NativeProtocol");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "updateAllAvailableProtocolVersionsAsync", "()V");
+    java::jni->CallStaticVoidMethod(_class, mid);
 }
 
 int32_t com::facebook::internal::NativeProtocol::computeLatestAvailableVersionFromVersionSpec(const ::java::util::TreeSet& arg0, int32_t arg1, const std::vector< int32_t>& arg2){
@@ -2367,6 +2431,15 @@ void com::facebook::internal::Utility::deleteDirectory(const ::java::io::File& a
     return _ret;
 }
 
+::java::util::Set com::facebook::internal::Utility::jsonArrayToSet(const ::org::json::JSONArray& arg0){
+    if (!::com::facebook::internal::Utility::_class) ::com::facebook::internal::Utility::_class = java::fetch_class("com/facebook/internal/Utility");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "jsonArrayToSet", "(Lorg/json/JSONArray;)Ljava/util/Set;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0);
+    ::java::util::Set _ret(ret);
+    return _ret;
+}
+
 void com::facebook::internal::Utility::setAppEventAttributionParameters(const ::org::json::JSONObject& arg0, const ::com::facebook::internal::AttributionIdentifiers& arg1, const ::java::lang::String& arg2, bool arg3){
     if (!::com::facebook::internal::Utility::_class) ::com::facebook::internal::Utility::_class = java::fetch_class("com/facebook/internal/Utility");
     static jmethodID mid = java::jni->GetStaticMethodID(_class, "setAppEventAttributionParameters", "(Lorg/json/JSONObject;Lcom/facebook/internal/AttributionIdentifiers;Ljava/lang/String;Z)V");
@@ -2498,6 +2571,13 @@ bool com::facebook::internal::Utility::isFileUri(const ::android::net::Uri& arg0
     return java::jni->CallStaticBooleanMethod(_class, mid, _arg0);
 }
 
+int64_t com::facebook::internal::Utility::getContentSize(const ::android::net::Uri& arg0){
+    if (!::com::facebook::internal::Utility::_class) ::com::facebook::internal::Utility::_class = java::fetch_class("com/facebook/internal/Utility");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "getContentSize", "(Landroid/net/Uri;)J");
+    jobject _arg0 = arg0.obj;
+    return java::jni->CallStaticLongMethod(_class, mid, _arg0);
+}
+
 ::java::util::Date com::facebook::internal::Utility::getBundleLongAsDate(const ::android::os::Bundle& arg0, const ::java::lang::String& arg1, const ::java::util::Date& arg2){
     if (!::com::facebook::internal::Utility::_class) ::com::facebook::internal::Utility::_class = java::fetch_class("com/facebook/internal/Utility");
     static jmethodID mid = java::jni->GetStaticMethodID(_class, "getBundleLongAsDate", "(Landroid/os/Bundle;Ljava/lang/String;Ljava/util/Date;)Ljava/util/Date;");
@@ -2599,6 +2679,12 @@ void com::facebook::internal::Validate::notEmptyAndContainsNoNulls(const ::java:
     java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
 }
 
+void com::facebook::internal::Validate::runningOnUiThread(){
+    if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "runningOnUiThread", "()V");
+    java::jni->CallStaticVoidMethod(_class, mid);
+}
+
 void com::facebook::internal::Validate::notNullOrEmpty(const ::java::lang::String& arg0, const ::java::lang::String& arg1){
     if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
     static jmethodID mid = java::jni->GetStaticMethodID(_class, "notNullOrEmpty", "(Ljava/lang/String;Ljava/lang/String;)V");
@@ -2627,6 +2713,51 @@ void com::facebook::internal::Validate::sdkInitialized(){
     if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
     static jmethodID mid = java::jni->GetStaticMethodID(_class, "sdkInitialized", "()V");
     java::jni->CallStaticVoidMethod(_class, mid);
+}
+
+::java::lang::String com::facebook::internal::Validate::hasAppID(){
+    if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "hasAppID", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+void com::facebook::internal::Validate::hasInternetPermissions(const ::android::content::Context& arg0){
+    if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "hasInternetPermissions", "(Landroid/content/Context;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
+void com::facebook::internal::Validate::hasInternetPermissions(const ::android::content::Context& arg0, bool arg1){
+    if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "hasInternetPermissions", "(Landroid/content/Context;Z)V");
+    jobject _arg0 = arg0.obj;
+    bool _arg1 = arg1;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void com::facebook::internal::Validate::hasFacebookActivity(const ::android::content::Context& arg0){
+    if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "hasFacebookActivity", "(Landroid/content/Context;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
+void com::facebook::internal::Validate::hasFacebookActivity(const ::android::content::Context& arg0, bool arg1){
+    if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "hasFacebookActivity", "(Landroid/content/Context;Z)V");
+    jobject _arg0 = arg0.obj;
+    bool _arg1 = arg1;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void com::facebook::internal::Validate::hasContentProvider(const ::android::content::Context& arg0){
+    if (!::com::facebook::internal::Validate::_class) ::com::facebook::internal::Validate::_class = java::fetch_class("com/facebook/internal/Validate");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "hasContentProvider", "(Landroid/content/Context;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
 }
 
 #pragma GCC diagnostic push

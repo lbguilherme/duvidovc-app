@@ -42,7 +42,7 @@ public:
     ::com::facebook::internal::NativeProtocol& operator=(::com::facebook::internal::NativeProtocol&& x) {obj = std::move(x.obj); return *this;}
     
     NativeProtocol();
-    static ::android::content::Intent createProxyAuthIntent(const ::android::content::Context&, const ::java::lang::String&, const ::java::util::Collection&, const ::java::lang::String&, bool, const ::com::facebook::login::DefaultAudience&);
+    static ::android::content::Intent createProxyAuthIntent(const ::android::content::Context&, const ::java::lang::String&, const ::java::util::Collection&, const ::java::lang::String&, bool, bool, const ::com::facebook::login::DefaultAudience&);
     static ::android::content::Intent createTokenRefreshIntent(const ::android::content::Context&);
     static int32_t getLatestKnownVersion();
     static bool isVersionCompatibleWithBucketedIntent(int32_t);
@@ -61,6 +61,7 @@ public:
     static ::android::os::Bundle createBundleForException(const ::com::facebook::FacebookException&);
     static int32_t getLatestAvailableProtocolVersionForService(int32_t);
     static int32_t getLatestAvailableProtocolVersionForAction(const ::java::lang::String&, const std::vector< int32_t>&);
+    static void updateAllAvailableProtocolVersionsAsync();
     static int32_t computeLatestAvailableVersionFromVersionSpec(const ::java::util::TreeSet&, int32_t, const std::vector< int32_t>&);
 
 };

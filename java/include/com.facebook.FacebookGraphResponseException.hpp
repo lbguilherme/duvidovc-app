@@ -37,6 +37,7 @@ public:
     
     FacebookGraphResponseException(const ::com::facebook::GraphResponse&, const ::java::lang::String&);
     ::com::facebook::GraphResponse getGraphResponse() const ;
+    ::java::lang::String toString() const ;
 
 };
 }
