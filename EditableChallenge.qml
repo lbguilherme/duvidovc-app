@@ -49,8 +49,24 @@ Card {
 
     }
 
-    CardImageArea {
-        source: "qrc:/artwork/sample.jpg"
+    Rectangle {
+        width: parent.width
+        height: 180*dp
+        color: "#aaa"
+
+        Row {
+            anchors.centerIn: parent
+            spacing: 8*dp
+
+            Button {
+                text: "Camera"
+                color: "#33a"
+            }
+            Button {
+                text: "Galeria"
+                color: "#33a"
+            }
+        }
     }
 
     CardContentArea {
