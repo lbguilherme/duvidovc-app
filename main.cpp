@@ -5,16 +5,14 @@
 #include <QScreen>
 
 #include "duvido.hpp"
+#include "globalbackdetector.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
 #endif
 
-#include "globalbackdetector.hpp"
-
 __attribute__((visibility("default")))
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 #ifdef Q_OS_ANDROID
     java::initialize();
 #endif
@@ -23,21 +21,19 @@ int main(int argc, char *argv[])
     app.installEventFilter(new GlobalBackDetector(&app));
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
+    Duvido d; (void)d;
+
     QQuickView view;
-    view.rootContext()->setContextProperty("duvido", new Duvido);
+    view.rootContext()->setContextProperty("duvido", duvido);
     view.rootContext()->setContextProperty("dp", qMax(1.0, dpi/160));
     view.rootContext()->setContextProperty("window", 0);
-
     view.setResizeMode(QQuickView::SizeRootObjectToView);
     view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+    view.show();
 
     QObject::connect(view.engine(), &QQmlEngine::quit, [&]{
         app.quit();
     });
 
-    view.show();
-
-    app.exec();
-
-    delete duvido;
+    return app.exec();
 }
