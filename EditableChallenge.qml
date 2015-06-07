@@ -3,8 +3,6 @@ import QtGraphicalEffects 1.0
 import "qrc:/material"
 
 Card {
-    id: root
-
     CardContentArea {
         spacing: 3*dp
         verticalMargin: 10*dp
@@ -91,7 +89,5 @@ Card {
 
             }
         }
-
-
     }
 }
