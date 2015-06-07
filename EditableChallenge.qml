@@ -65,6 +65,7 @@ Card {
             Button {
                 text: "Galeria"
                 color: "#33a"
+                onClicked: duvido.fetchPhotoFromGallery();
             }
         }
     }

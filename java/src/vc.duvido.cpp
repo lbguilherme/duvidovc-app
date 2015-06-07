@@ -1,49 +1,32 @@
 #include "java-core.hpp"
 #include <memory>
 #include "android.content.Intent.hpp"
+#include "android.net.Uri.hpp"
 #include "com.facebook.AccessToken.hpp"
 #include "vc.duvido.BuildConfig.hpp"
 #include "vc.duvido.DuvidoActivity.hpp"
 #include "vc.duvido.FacebookBridge.hpp"
 #include "vc.duvido.R.hpp"
 
+jclass vc::duvido::R_string::_class = nullptr;
+jclass vc::duvido::BuildConfig::_class = nullptr;
+jclass vc::duvido::DuvidoActivity::_class = nullptr;
+jclass vc::duvido::R_dimen::_class = nullptr;
 jclass vc::duvido::R_array::_class = nullptr;
 jclass vc::duvido::R_id::_class = nullptr;
-jclass vc::duvido::R_drawable::_class = nullptr;
-jclass vc::duvido::BuildConfig::_class = nullptr;
-jclass vc::duvido::R::_class = nullptr;
-jclass vc::duvido::DuvidoActivity::_class = nullptr;
 jclass vc::duvido::R_layout::_class = nullptr;
-jclass vc::duvido::R_string::_class = nullptr;
 jclass vc::duvido::FacebookBridge::_class = nullptr;
-jclass vc::duvido::R_dimen::_class = nullptr;
 jclass vc::duvido::R_styleable::_class = nullptr;
 jclass vc::duvido::R_style::_class = nullptr;
+jclass vc::duvido::R::_class = nullptr;
+jclass vc::duvido::R_drawable::_class = nullptr;
 jclass vc::duvido::R_color::_class = nullptr;
 jclass vc::duvido::R_attr::_class = nullptr;
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::vc::duvido::R_array::R_array() : ::java::lang::Object((jobject)0) {
-    if (!::vc::duvido::R_array::_class) ::vc::duvido::R_array::_class = java::fetch_class("vc/duvido/R$array");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::vc::duvido::R_id::R_id() : ::java::lang::Object((jobject)0) {
-    if (!::vc::duvido::R_id::_class) ::vc::duvido::R_id::_class = java::fetch_class("vc/duvido/R$id");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::vc::duvido::R_drawable::R_drawable() : ::java::lang::Object((jobject)0) {
-    if (!::vc::duvido::R_drawable::_class) ::vc::duvido::R_drawable::_class = java::fetch_class("vc/duvido/R$drawable");
+::vc::duvido::R_string::R_string() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_string::_class) ::vc::duvido::R_string::_class = java::fetch_class("vc/duvido/R$string");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }
@@ -53,15 +36,6 @@ jclass vc::duvido::R_attr::_class = nullptr;
 #pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::BuildConfig::BuildConfig() : ::java::lang::Object((jobject)0) {
     if (!::vc::duvido::BuildConfig::_class) ::vc::duvido::BuildConfig::_class = java::fetch_class("vc/duvido/BuildConfig");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::vc::duvido::R::R() : ::java::lang::Object((jobject)0) {
-    if (!::vc::duvido::R::_class) ::vc::duvido::R::_class = java::fetch_class("vc/duvido/R");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }
@@ -84,10 +58,29 @@ jclass vc::duvido::R_attr::_class = nullptr;
 }
 #pragma GCC diagnostic pop
 
+void vc::duvido::DuvidoActivity::fetchPhotoFromGallery() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "fetchPhotoFromGallery", "()V");
+    java::jni->CallVoidMethod(obj, mid);
+}
+
+static void JNICALL Java_vc_duvido_DuvidoActivity_onPhotoFetched__Landroid_net_Uri_2(JNIEnv*, jobject obj, jobject arg0) {
+    ::vc::duvido::DuvidoActivity _obj(obj);
+    ::android::net::Uri _arg0(arg0);
+    _obj.onPhotoFetched(_arg0);
+}
+
+void ::vc::duvido::DuvidoActivity::jniInitializeNative() {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    JNINativeMethod methods[] = {
+        {"onPhotoFetched", "(Landroid/net/Uri;)V", (void*)Java_vc_duvido_DuvidoActivity_onPhotoFetched__Landroid_net_Uri_2},
+    };
+    java::jni->RegisterNatives(_class, methods, sizeof(methods)/sizeof(methods[0]));
+}
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::vc::duvido::R_layout::R_layout() : ::java::lang::Object((jobject)0) {
-    if (!::vc::duvido::R_layout::_class) ::vc::duvido::R_layout::_class = java::fetch_class("vc/duvido/R$layout");
+::vc::duvido::R_dimen::R_dimen() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_dimen::_class) ::vc::duvido::R_dimen::_class = java::fetch_class("vc/duvido/R$dimen");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }
@@ -95,8 +88,26 @@ jclass vc::duvido::R_attr::_class = nullptr;
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::vc::duvido::R_string::R_string() : ::java::lang::Object((jobject)0) {
-    if (!::vc::duvido::R_string::_class) ::vc::duvido::R_string::_class = java::fetch_class("vc/duvido/R$string");
+::vc::duvido::R_array::R_array() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_array::_class) ::vc::duvido::R_array::_class = java::fetch_class("vc/duvido/R$array");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::R_id::R_id() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_id::_class) ::vc::duvido::R_id::_class = java::fetch_class("vc/duvido/R$id");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::R_layout::R_layout() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_layout::_class) ::vc::duvido::R_layout::_class = java::fetch_class("vc/duvido/R$layout");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }
@@ -161,15 +172,6 @@ void ::vc::duvido::FacebookBridge::jniInitializeNative() {
 }
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::vc::duvido::R_dimen::R_dimen() : ::java::lang::Object((jobject)0) {
-    if (!::vc::duvido::R_dimen::_class) ::vc::duvido::R_dimen::_class = java::fetch_class("vc/duvido/R$dimen");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::R_styleable::R_styleable() : ::java::lang::Object((jobject)0) {
     if (!::vc::duvido::R_styleable::_class) ::vc::duvido::R_styleable::_class = java::fetch_class("vc/duvido/R$styleable");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
@@ -181,6 +183,24 @@ void ::vc::duvido::FacebookBridge::jniInitializeNative() {
 #pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::R_style::R_style() : ::java::lang::Object((jobject)0) {
     if (!::vc::duvido::R_style::_class) ::vc::duvido::R_style::_class = java::fetch_class("vc/duvido/R$style");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::R::R() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R::_class) ::vc::duvido::R::_class = java::fetch_class("vc/duvido/R");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::R_drawable::R_drawable() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_drawable::_class) ::vc::duvido::R_drawable::_class = java::fetch_class("vc/duvido/R$drawable");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }

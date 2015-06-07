@@ -25,73 +25,9 @@
 #include "org.qtproject.qt5.android.bindings.QtActivity.hpp"
 #include "org.qtproject.qt5.android.bindings.QtApplication.hpp"
 
-jclass org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::_class = nullptr;
-jclass org::qtproject::qt5::android::bindings::QtApplication::_class = nullptr;
 jclass org::qtproject::qt5::android::bindings::QtActivity::_class = nullptr;
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::QtApplication_InvokeResult() : ::java::lang::Object((jobject)0) {
-    if (!::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::_class) ::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication$InvokeResult");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::org::qtproject::qt5::android::bindings::QtApplication::QtApplication() : ::java::lang::Object((jobject)0), ::android::app::Application((jobject)0), ::android::content::ComponentCallbacks((jobject)0), ::android::content::ComponentCallbacks2((jobject)0), ::android::content::Context((jobject)0), ::android::content::ContextWrapper((jobject)0) {
-    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-void org::qtproject::qt5::android::bindings::QtApplication::setQtActivityDelegate(const ::java::lang::Object& arg0){
-    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setQtActivityDelegate", "(Ljava/lang/Object;)V");
-    jobject _arg0 = arg0.obj;
-    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
-}
-
-void org::qtproject::qt5::android::bindings::QtApplication::onTerminate() const {
-    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
-    static jmethodID mid = java::jni->GetMethodID(_class, "onTerminate", "()V");
-    java::jni->CallVoidMethod(obj, mid);
-}
-
-::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult org::qtproject::qt5::android::bindings::QtApplication::invokeDelegate(const std::vector< ::java::lang::Object>& arg0){
-    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "invokeDelegate", "([Ljava/lang/Object;)Lorg/qtproject/qt5/android/bindings/QtApplication$InvokeResult;");
-    unsigned arg0s = arg0.size();
-    if (!::java::lang::Object::_class) ::java::lang::Object::_class = java::fetch_class("java/lang/Object");
-    jobjectArray _arg0 = java::jni->NewObjectArray(arg0s, ::java::lang::Object::_class, nullptr);
-    for (unsigned arg0i = 0; arg0i < arg0s; ++arg0i) {
-      const ::java::lang::Object& arg0e = arg0[arg0i];
-        jobject arg0d = arg0e.obj;
-      java::jni->SetObjectArrayElement(_arg0, arg0i, arg0d);
-    }
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0);
-    ::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult _ret(ret);
-    return _ret;
-}
-
-::java::lang::Object org::qtproject::qt5::android::bindings::QtApplication::invokeDelegateMethod(const ::java::lang::reflect::Method& arg0, const std::vector< ::java::lang::Object>& arg1){
-    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "invokeDelegateMethod", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;");
-    jobject _arg0 = arg0.obj;
-    unsigned arg1s = arg1.size();
-    if (!::java::lang::Object::_class) ::java::lang::Object::_class = java::fetch_class("java/lang/Object");
-    jobjectArray _arg1 = java::jni->NewObjectArray(arg1s, ::java::lang::Object::_class, nullptr);
-    for (unsigned arg1i = 0; arg1i < arg1s; ++arg1i) {
-      const ::java::lang::Object& arg1e = arg1[arg1i];
-        jobject arg1d = arg1e.obj;
-      java::jni->SetObjectArrayElement(_arg1, arg1i, arg1d);
-    }
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1);
-    ::java::lang::Object _ret(ret);
-    return _ret;
-}
+jclass org::qtproject::qt5::android::bindings::QtApplication::_class = nullptr;
+jclass org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::_class = nullptr;
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
@@ -747,4 +683,68 @@ void org::qtproject::qt5::android::bindings::QtActivity::super_onPrepareDialog(i
     jobject _arg2 = arg2.obj;
     java::jni->CallVoidMethod(obj, mid, _arg0, _arg1, _arg2);
 }
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::org::qtproject::qt5::android::bindings::QtApplication::QtApplication() : ::java::lang::Object((jobject)0), ::android::app::Application((jobject)0), ::android::content::ComponentCallbacks((jobject)0), ::android::content::ComponentCallbacks2((jobject)0), ::android::content::Context((jobject)0), ::android::content::ContextWrapper((jobject)0) {
+    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+void org::qtproject::qt5::android::bindings::QtApplication::setQtActivityDelegate(const ::java::lang::Object& arg0){
+    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setQtActivityDelegate", "(Ljava/lang/Object;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
+void org::qtproject::qt5::android::bindings::QtApplication::onTerminate() const {
+    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
+    static jmethodID mid = java::jni->GetMethodID(_class, "onTerminate", "()V");
+    java::jni->CallVoidMethod(obj, mid);
+}
+
+::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult org::qtproject::qt5::android::bindings::QtApplication::invokeDelegate(const std::vector< ::java::lang::Object>& arg0){
+    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "invokeDelegate", "([Ljava/lang/Object;)Lorg/qtproject/qt5/android/bindings/QtApplication$InvokeResult;");
+    unsigned arg0s = arg0.size();
+    if (!::java::lang::Object::_class) ::java::lang::Object::_class = java::fetch_class("java/lang/Object");
+    jobjectArray _arg0 = java::jni->NewObjectArray(arg0s, ::java::lang::Object::_class, nullptr);
+    for (unsigned arg0i = 0; arg0i < arg0s; ++arg0i) {
+      const ::java::lang::Object& arg0e = arg0[arg0i];
+        jobject arg0d = arg0e.obj;
+      java::jni->SetObjectArrayElement(_arg0, arg0i, arg0d);
+    }
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0);
+    ::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult _ret(ret);
+    return _ret;
+}
+
+::java::lang::Object org::qtproject::qt5::android::bindings::QtApplication::invokeDelegateMethod(const ::java::lang::reflect::Method& arg0, const std::vector< ::java::lang::Object>& arg1){
+    if (!::org::qtproject::qt5::android::bindings::QtApplication::_class) ::org::qtproject::qt5::android::bindings::QtApplication::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "invokeDelegateMethod", "(Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;");
+    jobject _arg0 = arg0.obj;
+    unsigned arg1s = arg1.size();
+    if (!::java::lang::Object::_class) ::java::lang::Object::_class = java::fetch_class("java/lang/Object");
+    jobjectArray _arg1 = java::jni->NewObjectArray(arg1s, ::java::lang::Object::_class, nullptr);
+    for (unsigned arg1i = 0; arg1i < arg1s; ++arg1i) {
+      const ::java::lang::Object& arg1e = arg1[arg1i];
+        jobject arg1d = arg1e.obj;
+      java::jni->SetObjectArrayElement(_arg1, arg1i, arg1d);
+    }
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1);
+    ::java::lang::Object _ret(ret);
+    return _ret;
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::QtApplication_InvokeResult() : ::java::lang::Object((jobject)0) {
+    if (!::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::_class) ::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult::_class = java::fetch_class("org/qtproject/qt5/android/bindings/QtApplication$InvokeResult");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
 

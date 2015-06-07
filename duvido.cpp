@@ -3,6 +3,11 @@
 #include "user.hpp"
 #include <QSortFilterProxyModel>
 
+#ifdef Q_OS_ANDROID
+#include <vc.duvido.DuvidoActivity.hpp>
+using namespace vc::duvido;
+#endif
+
 Duvido* duvido;
 
 Duvido::Duvido()
@@ -49,4 +54,12 @@ void Duvido::setMe(User* me) {
     if (_me) _me->deleteLater();
     _me = me;
     emit meChanged();
+}
+
+void Duvido::fetchPhotoFromCamera() {
+
+}
+
+void Duvido::fetchPhotoFromGallery() {
+    DuvidoActivity::getInstance().fetchPhotoFromGallery();
 }

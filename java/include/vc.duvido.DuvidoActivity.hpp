@@ -9,6 +9,7 @@
 #include "java.lang.Object.hpp"
 #include "org.qtproject.qt5.android.bindings.QtActivity.hpp"
 
+namespace android { namespace net { class Uri; } }
 namespace vc { namespace duvido { class DuvidoActivity; } }
 
 namespace vc {
@@ -34,8 +35,11 @@ public:
     ::vc::duvido::DuvidoActivity& operator=(const ::vc::duvido::DuvidoActivity& x) {obj = x.obj; return *this;}
     ::vc::duvido::DuvidoActivity& operator=(::vc::duvido::DuvidoActivity&& x) {obj = std::move(x.obj); return *this;}
     
+    static void jniInitializeNative();
     static ::vc::duvido::DuvidoActivity getInstance();
     DuvidoActivity();
+    void fetchPhotoFromGallery() const ;
+    void onPhotoFetched(const ::android::net::Uri&) const ;
 
 };
 }

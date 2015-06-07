@@ -4,6 +4,7 @@
 #include <java.lang.String.hpp>
 #include <java.lang.Class.hpp>
 
+#include "vc.duvido.DuvidoActivity.hpp"
 #include "vc.duvido.FacebookBridge.hpp"
 
 #include <QFile>
@@ -36,6 +37,7 @@ JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
 
     java::class_loader = java::lang::Thread::currentThread().getContextClassLoader();
 
+    ::vc::duvido::DuvidoActivity::jniInitializeNative();
     ::vc::duvido::FacebookBridge::jniInitializeNative();
 
     return JNI_VERSION_1_6;

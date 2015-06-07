@@ -15,9 +15,9 @@ END {
     java = JavaSpace.new
     Library.new(java, "android-api15.jar")
     Library.new(java, "bolts-android-1.2.0.jar")
-    Library.new(java, "facebook-sdk-4.0.1.jar")
-    Library.new(java, "support-v4-22.0.0.jar")
-    Library.new(java, "../../build-android-debug/android-build/build/intermediates/classes/debug/")
+    Library.new(java, "facebook-sdk-4.2.0.jar")
+    Library.new(java, "support-v4-22.1.1.jar")
+    Library.new(java, "../../build-android-x86-debug/android-build/build/intermediates/classes/debug/")
     #java.cheat
     java.find_package("vc.duvido").native = true
     puts "Requested #{java.classes.size} classes."

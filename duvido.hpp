@@ -29,12 +29,16 @@ public:
     User* me();
     Q_INVOKABLE FriendsModel* friendsModel();
 
+    Q_INVOKABLE void fetchPhotoFromGallery();
+    Q_INVOKABLE void fetchPhotoFromCamera();
+
     void setMe(User* me);
 
 signals:
 
     void meChanged();
     void backPressed();
+    void photoFetched();
 
 private:
 
