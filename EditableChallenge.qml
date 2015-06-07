@@ -29,6 +29,11 @@ Card {
             }
         }
 
+        Item {
+            width: parent.width
+            height: 5*dp
+        }
+
         TextField {
             label: "Título"
             width: parent.width
@@ -49,7 +54,8 @@ Card {
     }
 
     CardContentArea {
-        verticalMargin: 10*dp
+        spacing: 18*dp
+        verticalMargin: 16*dp
         horizontalMargin: 15*dp
 
         TextField {
@@ -60,7 +66,7 @@ Card {
 
         Row {
             width: parent.width
-            spacing: 8*dp
+            spacing: 14*dp
 
             TextField {
                 label: "Recompensa"
