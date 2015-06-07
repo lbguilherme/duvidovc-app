@@ -12,5 +12,8 @@
         <file>artwork/icons/celebration11.png</file>
         <file>artwork/icons/swing1.png</file>
         <file>artwork/icons/clock.png</file>
+        <file>artwork/icons/images10.png</file>
+        <file>artwork/icons/camera3.png</file>
+        <file>artwork/icons/surprised3.png</file>
     </qresource>
 </RCC>
