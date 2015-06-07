@@ -37,6 +37,14 @@ public:
     ::android::support::v4::view::ViewParentCompat& operator=(::android::support::v4::view::ViewParentCompat&& x) {obj = std::move(x.obj); return *this;}
     
     static bool requestSendAccessibilityEvent(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&);
+    static bool onStartNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t);
+    static void onNestedScrollAccepted(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t);
+    static void onStopNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&);
+    static void onNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, int32_t, int32_t);
+    static void onNestedPreScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, const std::vector< int32_t>&);
+    static bool onNestedFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float, bool);
+    static bool onNestedPreFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float);
+    static void notifySubtreeAccessibilityStateChanged(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t);
 
 };
 }
@@ -46,5 +54,7 @@ public:
 
 #include "android.support.v4.view.ViewParentCompat_ViewParentCompatICSImpl.hpp"
 #include "android.support.v4.view.ViewParentCompat_ViewParentCompatImpl.hpp"
+#include "android.support.v4.view.ViewParentCompat_ViewParentCompatKitKatImpl.hpp"
+#include "android.support.v4.view.ViewParentCompat_ViewParentCompatLollipopImpl.hpp"
 #include "android.support.v4.view.ViewParentCompat_ViewParentCompatStubImpl.hpp"
 

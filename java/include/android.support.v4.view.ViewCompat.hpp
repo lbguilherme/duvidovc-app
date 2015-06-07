@@ -8,7 +8,9 @@
 
 #include "java.lang.Object.hpp"
 
+namespace android { namespace content { namespace res { class ColorStateList; } } }
 namespace android { namespace graphics { class Paint; } }
+namespace android { namespace graphics { class PorterDuff_Mode; } }
 namespace android { namespace os { class Bundle; } }
 namespace android { namespace support { namespace v4 { namespace view { class AccessibilityDelegateCompat; } } } }
 namespace android { namespace support { namespace v4 { namespace view { class ViewPropertyAnimatorCompat; } } } }
@@ -79,6 +81,7 @@ public:
     static int32_t getMeasuredWidthAndState(const ::android::view::View&);
     static int32_t getMeasuredHeightAndState(const ::android::view::View&);
     static int32_t getMeasuredState(const ::android::view::View&);
+    static int32_t combineMeasuredStates(int32_t, int32_t);
     static int32_t getAccessibilityLiveRegion(const ::android::view::View&);
     static void setAccessibilityLiveRegion(const ::android::view::View&, int32_t);
     static int32_t getPaddingStart(const ::android::view::View&);
@@ -126,6 +129,22 @@ public:
     static void jumpDrawablesToCurrentState(const ::android::view::View&);
     static void setSaveFromParentEnabled(const ::android::view::View&, bool);
     static void setActivated(const ::android::view::View&, bool);
+    static bool isPaddingRelative(const ::android::view::View&);
+    static ::android::content::res::ColorStateList getBackgroundTintList(const ::android::view::View&);
+    static void setBackgroundTintList(const ::android::view::View&, const ::android::content::res::ColorStateList&);
+    static ::android::graphics::PorterDuff_Mode getBackgroundTintMode(const ::android::view::View&);
+    static void setBackgroundTintMode(const ::android::view::View&, const ::android::graphics::PorterDuff_Mode&);
+    static void setNestedScrollingEnabled(const ::android::view::View&, bool);
+    static bool isNestedScrollingEnabled(const ::android::view::View&);
+    static bool startNestedScroll(const ::android::view::View&, int32_t);
+    static void stopNestedScroll(const ::android::view::View&);
+    static bool hasNestedScrollingParent(const ::android::view::View&);
+    static bool dispatchNestedScroll(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t, const std::vector< int32_t>&);
+    static bool dispatchNestedPreScroll(const ::android::view::View&, int32_t, int32_t, const std::vector< int32_t>&, const std::vector< int32_t>&);
+    static bool dispatchNestedFling(const ::android::view::View&, float, float, bool);
+    static bool dispatchNestedPreFling(const ::android::view::View&, float, float);
+    static bool isLaidOut(const ::android::view::View&);
+    static float getZ(const ::android::view::View&);
 
 };
 }
@@ -134,7 +153,6 @@ public:
 }
 
 #include "android.support.v4.view.ViewCompat_AccessibilityLiveRegion.hpp"
-#include "android.support.v4.view.ViewCompat_Api21ViewCompatImpl.hpp"
 #include "android.support.v4.view.ViewCompat_BaseViewCompatImpl.hpp"
 #include "android.support.v4.view.ViewCompat_EclairMr1ViewCompatImpl.hpp"
 #include "android.support.v4.view.ViewCompat_GBViewCompatImpl.hpp"
@@ -146,6 +164,7 @@ public:
 #include "android.support.v4.view.ViewCompat_KitKatViewCompatImpl.hpp"
 #include "android.support.v4.view.ViewCompat_LayerType.hpp"
 #include "android.support.v4.view.ViewCompat_LayoutDirectionMode.hpp"
+#include "android.support.v4.view.ViewCompat_LollipopViewCompatImpl.hpp"
 #include "android.support.v4.view.ViewCompat_OverScroll.hpp"
 #include "android.support.v4.view.ViewCompat_ResolvedLayoutDirectionMode.hpp"
 #include "android.support.v4.view.ViewCompat_ViewCompatImpl.hpp"

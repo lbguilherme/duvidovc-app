@@ -46,6 +46,7 @@ public:
     bool onRelease(const ::java::lang::Object&) const ;
     bool onAbsorb(const ::java::lang::Object&, int32_t) const ;
     bool draw(const ::java::lang::Object&, const ::android::graphics::Canvas&) const ;
+    bool onPull(const ::java::lang::Object&, float, float) const ;
 
 };
 }

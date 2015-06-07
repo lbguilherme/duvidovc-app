@@ -8,7 +8,6 @@
 
 #include "java.lang.Object.hpp"
 #include "android.support.v4.app.FragmentManager.hpp"
-#include "android.view.LayoutInflater_Factory.hpp"
 
 namespace android { namespace content { class Context; } }
 namespace android { namespace content { namespace res { class Configuration; } } }
@@ -37,8 +36,7 @@ namespace support {
 namespace v4 {
 namespace app {
 class FragmentManagerImpl : public virtual ::java::lang::Object,
-                            public virtual ::android::support::v4::app::FragmentManager,
-                            public virtual ::android::view::LayoutInflater_Factory {
+                            public virtual ::android::support::v4::app::FragmentManager {
 public:
 
     
@@ -46,13 +44,13 @@ public:
     
     #pragma GCC diagnostic push
     #pragma GCC diagnostic ignored "-Wreorder"
-    explicit FragmentManagerImpl(jobject _obj) : ::java::lang::Object(_obj), ::android::support::v4::app::FragmentManager(_obj), ::android::view::LayoutInflater_Factory(_obj) {}
+    explicit FragmentManagerImpl(jobject _obj) : ::java::lang::Object(_obj), ::android::support::v4::app::FragmentManager(_obj) {}
     #pragma GCC diagnostic pop
     
     #pragma GCC diagnostic push
     #pragma GCC diagnostic ignored "-Wreorder"
-    FragmentManagerImpl(const ::android::support::v4::app::FragmentManagerImpl& x) : ::java::lang::Object((jobject)0), ::android::support::v4::app::FragmentManager((jobject)0), ::android::view::LayoutInflater_Factory((jobject)0) {obj = x.obj;}
-    FragmentManagerImpl(::android::support::v4::app::FragmentManagerImpl&& x) : ::java::lang::Object((jobject)0), ::android::support::v4::app::FragmentManager((jobject)0), ::android::view::LayoutInflater_Factory((jobject)0) {obj = x.obj; x.obj = JavaObjectHolder((jobject)0);}
+    FragmentManagerImpl(const ::android::support::v4::app::FragmentManagerImpl& x) : ::java::lang::Object((jobject)0), ::android::support::v4::app::FragmentManager((jobject)0) {obj = x.obj;}
+    FragmentManagerImpl(::android::support::v4::app::FragmentManagerImpl&& x) : ::java::lang::Object((jobject)0), ::android::support::v4::app::FragmentManager((jobject)0) {obj = x.obj; x.obj = JavaObjectHolder((jobject)0);}
     #pragma GCC diagnostic pop
     
     ::android::support::v4::app::FragmentManagerImpl& operator=(const ::android::support::v4::app::FragmentManagerImpl& x) {obj = x.obj; return *this;}
@@ -112,7 +110,7 @@ public:
     void dispatchOptionsMenuClosed(const ::android::view::Menu&) const ;
     static int32_t reverseTransit(int32_t);
     static int32_t transitToStyleIndex(int32_t, bool);
-    ::android::view::View onCreateView(const ::java::lang::String&, const ::android::content::Context&, const ::android::util::AttributeSet&) const ;
+    ::android::view::View onCreateView(const ::android::view::View&, const ::java::lang::String&, const ::android::content::Context&, const ::android::util::AttributeSet&) const ;
 
 };
 }

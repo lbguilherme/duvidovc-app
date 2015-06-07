@@ -40,6 +40,8 @@ public:
     static void appendRecord(const ::android::view::accessibility::AccessibilityEvent&, const ::android::support::v4::view::accessibility::AccessibilityRecordCompat&);
     static ::android::support::v4::view::accessibility::AccessibilityRecordCompat getRecord(const ::android::view::accessibility::AccessibilityEvent&, int32_t);
     static ::android::support::v4::view::accessibility::AccessibilityRecordCompat asRecord(const ::android::view::accessibility::AccessibilityEvent&);
+    static void setContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&, int32_t);
+    static int32_t getContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&);
 
 };
 }
@@ -49,6 +51,7 @@ public:
 }
 
 #include "android.support.v4.view.accessibility.AccessibilityEventCompat_AccessibilityEventIcsImpl.hpp"
+#include "android.support.v4.view.accessibility.AccessibilityEventCompat_AccessibilityEventKitKatImpl.hpp"
 #include "android.support.v4.view.accessibility.AccessibilityEventCompat_AccessibilityEventStubImpl.hpp"
 #include "android.support.v4.view.accessibility.AccessibilityEventCompat_AccessibilityEventVersionImpl.hpp"
 

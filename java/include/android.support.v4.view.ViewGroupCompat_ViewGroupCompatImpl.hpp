@@ -42,6 +42,7 @@ public:
     void setLayoutMode(const ::android::view::ViewGroup&, int32_t) const ;
     void setTransitionGroup(const ::android::view::ViewGroup&, bool) const ;
     bool isTransitionGroup(const ::android::view::ViewGroup&) const ;
+    int32_t getNestedScrollAxes(const ::android::view::ViewGroup&) const ;
 
 };
 }

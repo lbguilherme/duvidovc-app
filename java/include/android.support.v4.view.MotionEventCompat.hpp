@@ -42,6 +42,9 @@ public:
     static float getX(const ::android::view::MotionEvent&, int32_t);
     static float getY(const ::android::view::MotionEvent&, int32_t);
     static int32_t getPointerCount(const ::android::view::MotionEvent&);
+    static int32_t getSource(const ::android::view::MotionEvent&);
+    static float getAxisValue(const ::android::view::MotionEvent&, int32_t);
+    static float getAxisValue(const ::android::view::MotionEvent&, int32_t, int32_t);
 
 };
 }
@@ -51,5 +54,7 @@ public:
 
 #include "android.support.v4.view.MotionEventCompat_BaseMotionEventVersionImpl.hpp"
 #include "android.support.v4.view.MotionEventCompat_EclairMotionEventVersionImpl.hpp"
+#include "android.support.v4.view.MotionEventCompat_GingerbreadMotionEventVersionImpl.hpp"
+#include "android.support.v4.view.MotionEventCompat_HoneycombMr1MotionEventVersionImpl.hpp"
 #include "android.support.v4.view.MotionEventCompat_MotionEventVersionImpl.hpp"
 

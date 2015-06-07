@@ -9,13 +9,13 @@
 #include "java.io.File.hpp"
 #include "java.lang.String.hpp"
 
-jclass android::support::v4::provider::TreeDocumentFile::_class = nullptr;
+jclass android::support::v4::provider::RawDocumentFile::_class = nullptr;
 jclass android::support::v4::provider::DocumentFile::_class = nullptr;
 jclass android::support::v4::provider::SingleDocumentFile::_class = nullptr;
-jclass android::support::v4::provider::RawDocumentFile::_class = nullptr;
+jclass android::support::v4::provider::TreeDocumentFile::_class = nullptr;
 
-::android::support::v4::provider::DocumentFile android::support::v4::provider::TreeDocumentFile::createFile(const ::java::lang::String& arg0, const ::java::lang::String& arg1) const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+::android::support::v4::provider::DocumentFile android::support::v4::provider::RawDocumentFile::createFile(const ::java::lang::String& arg0, const ::java::lang::String& arg1) const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "createFile", "(Ljava/lang/String;Ljava/lang/String;)Landroid/support/v4/provider/DocumentFile;");
     jobject _arg0 = arg0.obj;
     jobject _arg1 = arg1.obj;
@@ -24,8 +24,8 @@ jclass android::support::v4::provider::RawDocumentFile::_class = nullptr;
     return _ret;
 }
 
-::android::support::v4::provider::DocumentFile android::support::v4::provider::TreeDocumentFile::createDirectory(const ::java::lang::String& arg0) const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+::android::support::v4::provider::DocumentFile android::support::v4::provider::RawDocumentFile::createDirectory(const ::java::lang::String& arg0) const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "createDirectory", "(Ljava/lang/String;)Landroid/support/v4/provider/DocumentFile;");
     jobject _arg0 = arg0.obj;
     jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
@@ -33,80 +33,80 @@ jclass android::support::v4::provider::RawDocumentFile::_class = nullptr;
     return _ret;
 }
 
-::android::net::Uri android::support::v4::provider::TreeDocumentFile::getUri() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+::android::net::Uri android::support::v4::provider::RawDocumentFile::getUri() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "getUri", "()Landroid/net/Uri;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     ::android::net::Uri _ret(ret);
     return _ret;
 }
 
-::java::lang::String android::support::v4::provider::TreeDocumentFile::getName() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+::java::lang::String android::support::v4::provider::RawDocumentFile::getName() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "getName", "()Ljava/lang/String;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     ::java::lang::String _ret(ret);
     return _ret;
 }
 
-::java::lang::String android::support::v4::provider::TreeDocumentFile::getType() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+::java::lang::String android::support::v4::provider::RawDocumentFile::getType() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "getType", "()Ljava/lang/String;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     ::java::lang::String _ret(ret);
     return _ret;
 }
 
-bool android::support::v4::provider::TreeDocumentFile::isDirectory() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+bool android::support::v4::provider::RawDocumentFile::isDirectory() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "isDirectory", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::TreeDocumentFile::isFile() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+bool android::support::v4::provider::RawDocumentFile::isFile() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "isFile", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-int64_t android::support::v4::provider::TreeDocumentFile::lastModified() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+int64_t android::support::v4::provider::RawDocumentFile::lastModified() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "lastModified", "()J");
     return java::jni->CallLongMethod(obj, mid);
 }
 
-int64_t android::support::v4::provider::TreeDocumentFile::length() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+int64_t android::support::v4::provider::RawDocumentFile::length() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "length", "()J");
     return java::jni->CallLongMethod(obj, mid);
 }
 
-bool android::support::v4::provider::TreeDocumentFile::canRead() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+bool android::support::v4::provider::RawDocumentFile::canRead() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "canRead", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::TreeDocumentFile::canWrite() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+bool android::support::v4::provider::RawDocumentFile::canWrite() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "canWrite", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::TreeDocumentFile::delete_() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+bool android::support::v4::provider::RawDocumentFile::delete_() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "delete_", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::TreeDocumentFile::exists() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+bool android::support::v4::provider::RawDocumentFile::exists() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "exists", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-std::vector< ::android::support::v4::provider::DocumentFile> android::support::v4::provider::TreeDocumentFile::listFiles() const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+std::vector< ::android::support::v4::provider::DocumentFile> android::support::v4::provider::RawDocumentFile::listFiles() const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "listFiles", "()[Landroid/support/v4/provider/DocumentFile;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     unsigned rets = java::jni->GetArrayLength((jarray)ret);
@@ -119,8 +119,8 @@ std::vector< ::android::support::v4::provider::DocumentFile> android::support::v
     return _ret;
 }
 
-bool android::support::v4::provider::TreeDocumentFile::renameTo(const ::java::lang::String& arg0) const {
-    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
+bool android::support::v4::provider::RawDocumentFile::renameTo(const ::java::lang::String& arg0) const {
+    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "renameTo", "(Ljava/lang/String;)Z");
     jobject _arg0 = arg0.obj;
     return java::jni->CallBooleanMethod(obj, mid, _arg0);
@@ -404,8 +404,8 @@ bool android::support::v4::provider::SingleDocumentFile::renameTo(const ::java::
     return java::jni->CallBooleanMethod(obj, mid, _arg0);
 }
 
-::android::support::v4::provider::DocumentFile android::support::v4::provider::RawDocumentFile::createFile(const ::java::lang::String& arg0, const ::java::lang::String& arg1) const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+::android::support::v4::provider::DocumentFile android::support::v4::provider::TreeDocumentFile::createFile(const ::java::lang::String& arg0, const ::java::lang::String& arg1) const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "createFile", "(Ljava/lang/String;Ljava/lang/String;)Landroid/support/v4/provider/DocumentFile;");
     jobject _arg0 = arg0.obj;
     jobject _arg1 = arg1.obj;
@@ -414,8 +414,8 @@ bool android::support::v4::provider::SingleDocumentFile::renameTo(const ::java::
     return _ret;
 }
 
-::android::support::v4::provider::DocumentFile android::support::v4::provider::RawDocumentFile::createDirectory(const ::java::lang::String& arg0) const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+::android::support::v4::provider::DocumentFile android::support::v4::provider::TreeDocumentFile::createDirectory(const ::java::lang::String& arg0) const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "createDirectory", "(Ljava/lang/String;)Landroid/support/v4/provider/DocumentFile;");
     jobject _arg0 = arg0.obj;
     jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
@@ -423,80 +423,80 @@ bool android::support::v4::provider::SingleDocumentFile::renameTo(const ::java::
     return _ret;
 }
 
-::android::net::Uri android::support::v4::provider::RawDocumentFile::getUri() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+::android::net::Uri android::support::v4::provider::TreeDocumentFile::getUri() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "getUri", "()Landroid/net/Uri;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     ::android::net::Uri _ret(ret);
     return _ret;
 }
 
-::java::lang::String android::support::v4::provider::RawDocumentFile::getName() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+::java::lang::String android::support::v4::provider::TreeDocumentFile::getName() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "getName", "()Ljava/lang/String;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     ::java::lang::String _ret(ret);
     return _ret;
 }
 
-::java::lang::String android::support::v4::provider::RawDocumentFile::getType() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+::java::lang::String android::support::v4::provider::TreeDocumentFile::getType() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "getType", "()Ljava/lang/String;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     ::java::lang::String _ret(ret);
     return _ret;
 }
 
-bool android::support::v4::provider::RawDocumentFile::isDirectory() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+bool android::support::v4::provider::TreeDocumentFile::isDirectory() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "isDirectory", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::RawDocumentFile::isFile() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+bool android::support::v4::provider::TreeDocumentFile::isFile() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "isFile", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-int64_t android::support::v4::provider::RawDocumentFile::lastModified() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+int64_t android::support::v4::provider::TreeDocumentFile::lastModified() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "lastModified", "()J");
     return java::jni->CallLongMethod(obj, mid);
 }
 
-int64_t android::support::v4::provider::RawDocumentFile::length() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+int64_t android::support::v4::provider::TreeDocumentFile::length() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "length", "()J");
     return java::jni->CallLongMethod(obj, mid);
 }
 
-bool android::support::v4::provider::RawDocumentFile::canRead() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+bool android::support::v4::provider::TreeDocumentFile::canRead() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "canRead", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::RawDocumentFile::canWrite() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+bool android::support::v4::provider::TreeDocumentFile::canWrite() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "canWrite", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::RawDocumentFile::delete_() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+bool android::support::v4::provider::TreeDocumentFile::delete_() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "delete_", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool android::support::v4::provider::RawDocumentFile::exists() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+bool android::support::v4::provider::TreeDocumentFile::exists() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "exists", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-std::vector< ::android::support::v4::provider::DocumentFile> android::support::v4::provider::RawDocumentFile::listFiles() const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+std::vector< ::android::support::v4::provider::DocumentFile> android::support::v4::provider::TreeDocumentFile::listFiles() const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "listFiles", "()[Landroid/support/v4/provider/DocumentFile;");
     jobject ret = java::jni->CallObjectMethod(obj, mid);
     unsigned rets = java::jni->GetArrayLength((jarray)ret);
@@ -509,8 +509,8 @@ std::vector< ::android::support::v4::provider::DocumentFile> android::support::v
     return _ret;
 }
 
-bool android::support::v4::provider::RawDocumentFile::renameTo(const ::java::lang::String& arg0) const {
-    if (!::android::support::v4::provider::RawDocumentFile::_class) ::android::support::v4::provider::RawDocumentFile::_class = java::fetch_class("android/support/v4/provider/RawDocumentFile");
+bool android::support::v4::provider::TreeDocumentFile::renameTo(const ::java::lang::String& arg0) const {
+    if (!::android::support::v4::provider::TreeDocumentFile::_class) ::android::support::v4::provider::TreeDocumentFile::_class = java::fetch_class("android/support/v4/provider/TreeDocumentFile");
     static jmethodID mid = java::jni->GetMethodID(_class, "renameTo", "(Ljava/lang/String;)Z");
     jobject _arg0 = arg0.obj;
     return java::jni->CallBooleanMethod(obj, mid, _arg0);

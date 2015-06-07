@@ -71,6 +71,7 @@ public:
     void jumpDrawablesToCurrentState(const ::android::view::View&) const ;
     void setSaveFromParentEnabled(const ::android::view::View&, bool) const ;
     void setActivated(const ::android::view::View&, bool) const ;
+    int32_t combineMeasuredStates(int32_t, int32_t) const ;
 
 };
 }

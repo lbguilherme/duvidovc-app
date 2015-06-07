@@ -54,6 +54,8 @@ public:
     int32_t getCollectionItemRowSpan(const ::java::lang::Object&) const ;
     bool isCollectionItemHeading(const ::java::lang::Object&) const ;
     void setCollectionItemInfo(const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    void setContentInvalid(const ::java::lang::Object&, bool) const ;
+    bool isContentInvalid(const ::java::lang::Object&) const ;
 
 };
 }

@@ -42,6 +42,7 @@ public:
     static void setLayoutMode(const ::android::view::ViewGroup&, int32_t);
     static void setTransitionGroup(const ::android::view::ViewGroup&, bool);
     static bool isTransitionGroup(const ::android::view::ViewGroup&);
+    static int32_t getNestedScrollAxes(const ::android::view::ViewGroup&);
 
 };
 }
@@ -49,10 +50,10 @@ public:
 }
 }
 
-#include "android.support.v4.view.ViewGroupCompat_ViewGroupCompatApi21Impl.hpp"
 #include "android.support.v4.view.ViewGroupCompat_ViewGroupCompatHCImpl.hpp"
 #include "android.support.v4.view.ViewGroupCompat_ViewGroupCompatIcsImpl.hpp"
 #include "android.support.v4.view.ViewGroupCompat_ViewGroupCompatImpl.hpp"
 #include "android.support.v4.view.ViewGroupCompat_ViewGroupCompatJellybeanMR2Impl.hpp"
+#include "android.support.v4.view.ViewGroupCompat_ViewGroupCompatLollipopImpl.hpp"
 #include "android.support.v4.view.ViewGroupCompat_ViewGroupCompatStubImpl.hpp"
 

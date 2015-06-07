@@ -46,6 +46,8 @@ public:
     static void setTint(const ::android::graphics::drawable::Drawable&, int32_t);
     static void setTintList(const ::android::graphics::drawable::Drawable&, const ::android::content::res::ColorStateList&);
     static void setTintMode(const ::android::graphics::drawable::Drawable&, const ::android::graphics::PorterDuff_Mode&);
+    static ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&);
+    static ::android::graphics::drawable::Drawable unwrap(const ::android::graphics::drawable::Drawable&);
 
 };
 }
@@ -58,5 +60,6 @@ public:
 #include "android.support.v4.graphics.drawable.DrawableCompat_DrawableImpl.hpp"
 #include "android.support.v4.graphics.drawable.DrawableCompat_HoneycombDrawableImpl.hpp"
 #include "android.support.v4.graphics.drawable.DrawableCompat_KitKatDrawableImpl.hpp"
-#include "android.support.v4.graphics.drawable.DrawableCompat_LDrawableImpl.hpp"
+#include "android.support.v4.graphics.drawable.DrawableCompat_LollipopDrawableImpl.hpp"
+#include "android.support.v4.graphics.drawable.DrawableCompat_LollipopMr1DrawableImpl.hpp"
 

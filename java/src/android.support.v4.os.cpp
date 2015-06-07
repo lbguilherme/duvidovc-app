@@ -5,64 +5,37 @@
 #include "android.support.v4.os.AsyncTaskCompat.hpp"
 #include "android.support.v4.os.EnvironmentCompat.hpp"
 #include "android.support.v4.os.ParcelableCompat.hpp"
+#include "android.support.v4.os.TraceCompat.hpp"
 #include "java.io.File.hpp"
 #include "java.lang.Object.hpp"
 #include "java.lang.String.hpp"
 
-jclass android::support::v4::os::ParcelableCompat::_class = nullptr;
-jclass android::support::v4::os::EnvironmentCompat::_class = nullptr;
-jclass android::support::v4::os::ParcelableCompat_CompatCreator::_class = nullptr;
+jclass android::support::v4::os::TraceCompat::_class = nullptr;
 jclass android::support::v4::os::AsyncTaskCompat::_class = nullptr;
+jclass android::support::v4::os::EnvironmentCompat::_class = nullptr;
+jclass android::support::v4::os::ParcelableCompat::_class = nullptr;
+jclass android::support::v4::os::ParcelableCompat_CompatCreator::_class = nullptr;
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
-::android::support::v4::os::ParcelableCompat::ParcelableCompat() : ::java::lang::Object((jobject)0) {
-    if (!::android::support::v4::os::ParcelableCompat::_class) ::android::support::v4::os::ParcelableCompat::_class = java::fetch_class("android/support/v4/os/ParcelableCompat");
+::android::support::v4::os::TraceCompat::TraceCompat() : ::java::lang::Object((jobject)0) {
+    if (!::android::support::v4::os::TraceCompat::_class) ::android::support::v4::os::TraceCompat::_class = java::fetch_class("android/support/v4/os/TraceCompat");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }
 #pragma GCC diagnostic pop
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreorder"
-::android::support::v4::os::EnvironmentCompat::EnvironmentCompat() : ::java::lang::Object((jobject)0) {
-    if (!::android::support::v4::os::EnvironmentCompat::_class) ::android::support::v4::os::EnvironmentCompat::_class = java::fetch_class("android/support/v4/os/EnvironmentCompat");
-    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
-    obj = java::jni->NewObject(_class, mid);
-}
-#pragma GCC diagnostic pop
-
-::java::lang::String android::support::v4::os::EnvironmentCompat::getStorageState(const ::java::io::File& arg0){
-    if (!::android::support::v4::os::EnvironmentCompat::_class) ::android::support::v4::os::EnvironmentCompat::_class = java::fetch_class("android/support/v4/os/EnvironmentCompat");
-    static jmethodID mid = java::jni->GetStaticMethodID(_class, "getStorageState", "(Ljava/io/File;)Ljava/lang/String;");
+void android::support::v4::os::TraceCompat::beginSection(const ::java::lang::String& arg0){
+    if (!::android::support::v4::os::TraceCompat::_class) ::android::support::v4::os::TraceCompat::_class = java::fetch_class("android/support/v4/os/TraceCompat");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "beginSection", "(Ljava/lang/String;)V");
     jobject _arg0 = arg0.obj;
-    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0);
-    ::java::lang::String _ret(ret);
-    return _ret;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
 }
 
-::java::lang::Object android::support::v4::os::ParcelableCompat_CompatCreator::createFromParcel(const ::android::os::Parcel& arg0) const {
-    if (!::android::support::v4::os::ParcelableCompat_CompatCreator::_class) ::android::support::v4::os::ParcelableCompat_CompatCreator::_class = java::fetch_class("android/support/v4/os/ParcelableCompat$CompatCreator");
-    static jmethodID mid = java::jni->GetMethodID(_class, "createFromParcel", "(Landroid/os/Parcel;)Ljava/lang/Object;");
-    jobject _arg0 = arg0.obj;
-    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
-    ::java::lang::Object _ret(ret);
-    return _ret;
-}
-
-std::vector< ::java::lang::Object> android::support::v4::os::ParcelableCompat_CompatCreator::newArray(int32_t arg0) const {
-    if (!::android::support::v4::os::ParcelableCompat_CompatCreator::_class) ::android::support::v4::os::ParcelableCompat_CompatCreator::_class = java::fetch_class("android/support/v4/os/ParcelableCompat$CompatCreator");
-    static jmethodID mid = java::jni->GetMethodID(_class, "newArray", "(I)[Ljava/lang/Object;");
-    int32_t _arg0 = arg0;
-    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
-    unsigned rets = java::jni->GetArrayLength((jarray)ret);
-    std::vector< ::java::lang::Object> _ret(rets, ::java::lang::Object((jobject)nullptr));
-    for (unsigned reti = 0; reti < rets; ++reti) {
-      jobject rete = java::jni->GetObjectArrayElement((jobjectArray)ret, reti);
-        ::java::lang::Object retd(rete);
-      _ret[reti] = std::move(retd);
-    }
-    return _ret;
+void android::support::v4::os::TraceCompat::endSection(){
+    if (!::android::support::v4::os::TraceCompat::_class) ::android::support::v4::os::TraceCompat::_class = java::fetch_class("android/support/v4/os/TraceCompat");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "endSection", "()V");
+    java::jni->CallStaticVoidMethod(_class, mid);
 }
 
 #pragma GCC diagnostic push
@@ -88,6 +61,57 @@ std::vector< ::java::lang::Object> android::support::v4::os::ParcelableCompat_Co
     }
     jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0, _arg1);
     ::android::os::AsyncTask _ret(ret);
+    return _ret;
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::android::support::v4::os::EnvironmentCompat::EnvironmentCompat() : ::java::lang::Object((jobject)0) {
+    if (!::android::support::v4::os::EnvironmentCompat::_class) ::android::support::v4::os::EnvironmentCompat::_class = java::fetch_class("android/support/v4/os/EnvironmentCompat");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+::java::lang::String android::support::v4::os::EnvironmentCompat::getStorageState(const ::java::io::File& arg0){
+    if (!::android::support::v4::os::EnvironmentCompat::_class) ::android::support::v4::os::EnvironmentCompat::_class = java::fetch_class("android/support/v4/os/EnvironmentCompat");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "getStorageState", "(Ljava/io/File;)Ljava/lang/String;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallStaticObjectMethod(_class, mid, _arg0);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::android::support::v4::os::ParcelableCompat::ParcelableCompat() : ::java::lang::Object((jobject)0) {
+    if (!::android::support::v4::os::ParcelableCompat::_class) ::android::support::v4::os::ParcelableCompat::_class = java::fetch_class("android/support/v4/os/ParcelableCompat");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+::java::lang::Object android::support::v4::os::ParcelableCompat_CompatCreator::createFromParcel(const ::android::os::Parcel& arg0) const {
+    if (!::android::support::v4::os::ParcelableCompat_CompatCreator::_class) ::android::support::v4::os::ParcelableCompat_CompatCreator::_class = java::fetch_class("android/support/v4/os/ParcelableCompat$CompatCreator");
+    static jmethodID mid = java::jni->GetMethodID(_class, "createFromParcel", "(Landroid/os/Parcel;)Ljava/lang/Object;");
+    jobject _arg0 = arg0.obj;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    ::java::lang::Object _ret(ret);
+    return _ret;
+}
+
+std::vector< ::java::lang::Object> android::support::v4::os::ParcelableCompat_CompatCreator::newArray(int32_t arg0) const {
+    if (!::android::support::v4::os::ParcelableCompat_CompatCreator::_class) ::android::support::v4::os::ParcelableCompat_CompatCreator::_class = java::fetch_class("android/support/v4/os/ParcelableCompat$CompatCreator");
+    static jmethodID mid = java::jni->GetMethodID(_class, "newArray", "(I)[Ljava/lang/Object;");
+    int32_t _arg0 = arg0;
+    jobject ret = java::jni->CallObjectMethod(obj, mid, _arg0);
+    unsigned rets = java::jni->GetArrayLength((jarray)ret);
+    std::vector< ::java::lang::Object> _ret(rets, ::java::lang::Object((jobject)nullptr));
+    for (unsigned reti = 0; reti < rets; ++reti) {
+      jobject rete = java::jni->GetObjectArrayElement((jobjectArray)ret, reti);
+        ::java::lang::Object retd(rete);
+      _ret[reti] = std::move(retd);
+    }
     return _ret;
 }
 

@@ -40,6 +40,7 @@ public:
     bool isFinished() const ;
     void finish() const ;
     bool onPull(float) const ;
+    bool onPull(float, float) const ;
     bool onRelease() const ;
     bool onAbsorb(int32_t) const ;
     bool draw(const ::android::graphics::Canvas&) const ;
@@ -53,4 +54,5 @@ public:
 #include "android.support.v4.widget.EdgeEffectCompat_BaseEdgeEffectImpl.hpp"
 #include "android.support.v4.widget.EdgeEffectCompat_EdgeEffectIcsImpl.hpp"
 #include "android.support.v4.widget.EdgeEffectCompat_EdgeEffectImpl.hpp"
+#include "android.support.v4.widget.EdgeEffectCompat_EdgeEffectLollipopImpl.hpp"
 

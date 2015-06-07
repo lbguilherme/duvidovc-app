@@ -9,7 +9,9 @@
 #include "java.lang.Object.hpp"
 #include "android.support.v4.view.ViewCompat_ViewCompatImpl.hpp"
 
+namespace android { namespace content { namespace res { class ColorStateList; } } }
 namespace android { namespace graphics { class Paint; } }
+namespace android { namespace graphics { class PorterDuff_Mode; } }
 namespace android { namespace os { class Bundle; } }
 namespace android { namespace support { namespace v4 { namespace view { class AccessibilityDelegateCompat; } } } }
 namespace android { namespace support { namespace v4 { namespace view { class ViewPropertyAnimatorCompat; } } } }
@@ -128,6 +130,23 @@ public:
     void jumpDrawablesToCurrentState(const ::android::view::View&) const ;
     void setSaveFromParentEnabled(const ::android::view::View&, bool) const ;
     void setActivated(const ::android::view::View&, bool) const ;
+    bool isPaddingRelative(const ::android::view::View&) const ;
+    void setNestedScrollingEnabled(const ::android::view::View&, bool) const ;
+    bool isNestedScrollingEnabled(const ::android::view::View&) const ;
+    ::android::content::res::ColorStateList getBackgroundTintList(const ::android::view::View&) const ;
+    void setBackgroundTintList(const ::android::view::View&, const ::android::content::res::ColorStateList&) const ;
+    void setBackgroundTintMode(const ::android::view::View&, const ::android::graphics::PorterDuff_Mode&) const ;
+    ::android::graphics::PorterDuff_Mode getBackgroundTintMode(const ::android::view::View&) const ;
+    bool startNestedScroll(const ::android::view::View&, int32_t) const ;
+    void stopNestedScroll(const ::android::view::View&) const ;
+    bool hasNestedScrollingParent(const ::android::view::View&) const ;
+    bool dispatchNestedScroll(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t, const std::vector< int32_t>&) const ;
+    bool dispatchNestedPreScroll(const ::android::view::View&, int32_t, int32_t, const std::vector< int32_t>&, const std::vector< int32_t>&) const ;
+    bool dispatchNestedFling(const ::android::view::View&, float, float, bool) const ;
+    bool dispatchNestedPreFling(const ::android::view::View&, float, float) const ;
+    bool isLaidOut(const ::android::view::View&) const ;
+    int32_t combineMeasuredStates(int32_t, int32_t) const ;
+    float getZ(const ::android::view::View&) const ;
 
 };
 }

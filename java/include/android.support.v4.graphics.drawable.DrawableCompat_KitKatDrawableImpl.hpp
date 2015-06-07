@@ -39,6 +39,7 @@ public:
     
     void setAutoMirrored(const ::android::graphics::drawable::Drawable&, bool) const ;
     bool isAutoMirrored(const ::android::graphics::drawable::Drawable&) const ;
+    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const ;
 
 };
 }

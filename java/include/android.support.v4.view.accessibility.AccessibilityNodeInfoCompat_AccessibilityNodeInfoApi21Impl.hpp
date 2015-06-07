@@ -9,6 +9,7 @@
 #include "java.lang.Object.hpp"
 #include "android.support.v4.view.accessibility.AccessibilityNodeInfoCompat_AccessibilityNodeInfoKitKatImpl.hpp"
 
+namespace android { namespace view { class View; } }
 namespace java { namespace lang { class CharSequence; } }
 namespace java { namespace lang { class Object; } }
 namespace java { namespace util { class List; } }
@@ -47,6 +48,10 @@ public:
     ::java::lang::CharSequence getAccessibilityActionLabel(const ::java::lang::Object&) const ;
     ::java::lang::Object obtainCollectionItemInfo(int32_t, int32_t, int32_t, int32_t, bool, bool) const ;
     bool isCollectionItemSelected(const ::java::lang::Object&) const ;
+    ::java::lang::CharSequence getError(const ::java::lang::Object&) const ;
+    void setError(const ::java::lang::Object&, const ::java::lang::CharSequence&) const ;
+    void setLabelFor(const ::java::lang::Object&, const ::android::view::View&) const ;
+    void setLabelFor(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
 
 };
 }

@@ -135,6 +135,12 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat getTraversalAfter(const ::java::lang::Object&) const ;
     void setTraversalAfter(const ::java::lang::Object&, const ::android::view::View&) const ;
     void setTraversalAfter(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
+    void setContentInvalid(const ::java::lang::Object&, bool) const ;
+    bool isContentInvalid(const ::java::lang::Object&) const ;
+    void setError(const ::java::lang::Object&, const ::java::lang::CharSequence&) const ;
+    ::java::lang::CharSequence getError(const ::java::lang::Object&) const ;
+    void setLabelFor(const ::java::lang::Object&, const ::android::view::View&) const ;
+    void setLabelFor(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
 
 };
 }

@@ -47,6 +47,7 @@ public:
     void setTint(const ::android::graphics::drawable::Drawable&, int32_t) const ;
     void setTintList(const ::android::graphics::drawable::Drawable&, const ::android::content::res::ColorStateList&) const ;
     void setTintMode(const ::android::graphics::drawable::Drawable&, const ::android::graphics::PorterDuff_Mode&) const ;
+    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const ;
 
 };
 }

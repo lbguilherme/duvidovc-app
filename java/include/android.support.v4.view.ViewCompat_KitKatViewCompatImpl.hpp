@@ -39,6 +39,7 @@ public:
     int32_t getAccessibilityLiveRegion(const ::android::view::View&) const ;
     void setAccessibilityLiveRegion(const ::android::view::View&, int32_t) const ;
     void setImportantForAccessibility(const ::android::view::View&, int32_t) const ;
+    bool isLaidOut(const ::android::view::View&) const ;
 
 };
 }

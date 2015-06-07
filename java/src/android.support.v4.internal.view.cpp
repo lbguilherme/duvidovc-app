@@ -8,9 +8,9 @@
 #include "android.view.MenuItem.hpp"
 #include "android.view.View.hpp"
 
-jclass android::support::v4::internal::view::SupportMenu::_class = nullptr;
 jclass android::support::v4::internal::view::SupportMenuItem::_class = nullptr;
 jclass android::support::v4::internal::view::SupportSubMenu::_class = nullptr;
+jclass android::support::v4::internal::view::SupportMenu::_class = nullptr;
 
 void android::support::v4::internal::view::SupportMenuItem::setShowAsAction(int32_t arg0) const {
     if (!::android::support::v4::internal::view::SupportMenuItem::_class) ::android::support::v4::internal::view::SupportMenuItem::_class = java::fetch_class("android/support/v4/internal/view/SupportMenuItem");
