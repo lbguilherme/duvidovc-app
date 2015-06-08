@@ -8,6 +8,7 @@
 #include <QObject>
 #include <QMap>
 #include <QNetworkAccessManager>
+#include <QImage>
 #include <functional>
 
 namespace vc { namespace duvido { class FacebookBridge; } }
@@ -38,7 +39,7 @@ signals:
 
     void meChanged();
     void backPressed();
-    void photoFetched();
+    void photoFetched(QImage img);
 
 private:
 
