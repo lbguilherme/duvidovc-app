@@ -32,7 +32,7 @@ void DuvidoActivity::onPhotoFetched(const Uri& uri) const {
     } else if (config.equals(Bitmap_Config::valueOf("ARGB_4444"))) {
         format = QImage::Format_ARGB4444_Premultiplied;
     } else if (config.equals(Bitmap_Config::valueOf("ARGB_8888"))) {
-        format = QImage::Format_ARGB32;
+        format = QImage::Format_RGBX8888;
     } else if (config.equals(Bitmap_Config::valueOf("RGB_565"))) {
         format = QImage::Format_RGB16;
     } else {
