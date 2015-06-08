@@ -6,6 +6,7 @@
 
 #include "duvido.hpp"
 #include "globalbackdetector.hpp"
+#include "duvidotempphotoprovider.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
@@ -22,8 +23,10 @@ int main(int argc, char *argv[]) {
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
     Duvido d; (void)d;
+    DuvidoTempPhotoProvider prov;
 
     QQuickView view;
+    view.engine()->addImageProvider("tempphoto", &prov);
     view.rootContext()->setContextProperty("duvido", duvido);
     view.rootContext()->setContextProperty("dp", qMax(1.0, dpi/160));
     view.rootContext()->setContextProperty("window", 0);
