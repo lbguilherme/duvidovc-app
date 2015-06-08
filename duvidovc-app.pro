@@ -73,6 +73,7 @@ SOURCES += \
     java/src/android.net.cpp \
     java/src/android.content.cpp \
     java/src/android.graphics.cpp \
+    java/src/android.provider.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
     java/src/java.nio.cpp \

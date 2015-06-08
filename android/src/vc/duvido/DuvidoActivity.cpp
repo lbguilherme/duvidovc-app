@@ -6,6 +6,7 @@
 #include <android.graphics.Bitmap.hpp>
 #include <android.graphics.BitmapFactory.hpp>
 #include <android.content.ContentResolver.hpp>
+#include <android.provider.MediaStore_Images_Media.hpp>
 #include <duvido.hpp>
 
 #include <QDebug>
@@ -14,18 +15,19 @@
 using namespace vc::duvido;
 using namespace android::net;
 using namespace android::graphics;
+using namespace android::provider;
 using namespace java::io;
 using namespace java::nio;
 using namespace std;
 
 void DuvidoActivity::onPhotoFetched(const Uri& uri) const {
-    InputStream is = getContentResolver().openInputStream(uri);
-    Bitmap bitmap = BitmapFactory::decodeStream(is);
+    Bitmap bitmap = MediaStore_Images_Media::getBitmap(getContentResolver(), uri);
+
     ByteBuffer buf = ByteBuffer::allocate(bitmap.getByteCount());
     bitmap.copyPixelsToBuffer(buf);
-    vector<int8_t> data = buf.array();
+    const vector<int8_t>& data = buf.array();
 
-    QImage::Format format = QImage::Format_Invalid;
+    QImage::Format format;
     Bitmap_Config config = bitmap.getConfig();
     if (config.equals(Bitmap_Config::valueOf("ALPHA_8"))) {
         return;
