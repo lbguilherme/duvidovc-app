@@ -57,17 +57,29 @@ void Duvido::setMe(User* me) {
 }
 
 bool Duvido::hasCamera() {
+#ifdef Q_OS_ANDROID
     return DuvidoActivity::getInstance().hasCamera();
+#else
+    return false;
+#endif
 }
 
 bool Duvido::hasGallery() {
+#ifdef Q_OS_ANDROID
     return DuvidoActivity::getInstance().hasGallery();
+#else
+    return false;
+#endif
 }
 
 void Duvido::fetchPhotoFromCamera() {
+#ifdef Q_OS_ANDROID
     DuvidoActivity::getInstance().fetchPhotoFromCamera();
+#endif
 }
 
 void Duvido::fetchPhotoFromGallery() {
+#ifdef Q_OS_ANDROID
     DuvidoActivity::getInstance().fetchPhotoFromGallery();
+#endif
 }

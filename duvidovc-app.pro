@@ -18,8 +18,7 @@ SOURCES += \
     friendsmodel.cpp \
     duvidoapi.cpp \
     friend.cpp \
-    globalbackdetector.cpp \
-    android/src/vc/duvido/DuvidoActivity.cpp
+    globalbackdetector.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -67,6 +66,7 @@ HEADERS += \
     java/src/java-core.hpp
 
 SOURCES += \
+    android/src/vc/duvido/DuvidoActivity.cpp \
     android/src/vc/duvido/FacebookBridge.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
