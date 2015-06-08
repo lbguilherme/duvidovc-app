@@ -39,10 +39,10 @@ public:
     ::javax::crypto::SealedObject& operator=(::javax::crypto::SealedObject&& x) {obj = std::move(x.obj); return *this;}
     
     SealedObject(const ::java::io::Serializable&, const ::javax::crypto::Cipher&);
-    ::java::lang::String getAlgorithm() const ;
-    ::java::lang::Object getObject(const ::java::security::Key&) const ;
-    ::java::lang::Object getObject(const ::javax::crypto::Cipher&) const ;
-    ::java::lang::Object getObject(const ::java::security::Key&, const ::java::lang::String&) const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::lang::Object getObject(const ::java::security::Key&) const;
+    ::java::lang::Object getObject(const ::javax::crypto::Cipher&) const;
+    ::java::lang::Object getObject(const ::java::security::Key&, const ::java::lang::String&) const;
 
 };
 }

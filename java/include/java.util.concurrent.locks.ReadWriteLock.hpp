@@ -34,8 +34,8 @@ public:
     ::java::util::concurrent::locks::ReadWriteLock& operator=(const ::java::util::concurrent::locks::ReadWriteLock& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::locks::ReadWriteLock& operator=(::java::util::concurrent::locks::ReadWriteLock&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::concurrent::locks::Lock readLock() const ;
-    ::java::util::concurrent::locks::Lock writeLock() const ;
+    ::java::util::concurrent::locks::Lock readLock() const;
+    ::java::util::concurrent::locks::Lock writeLock() const;
 
 };
 }

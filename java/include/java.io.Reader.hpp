@@ -36,16 +36,16 @@ public:
     ::java::io::Reader& operator=(const ::java::io::Reader& x) {obj = x.obj; return *this;}
     ::java::io::Reader& operator=(::java::io::Reader&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    void mark(int32_t) const ;
-    bool markSupported() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< uint16_t>&) const ;
-    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    bool ready() const ;
-    void reset() const ;
-    int64_t skip(int64_t) const ;
-    int32_t read(const ::java::nio::CharBuffer&) const ;
+    void close() const;
+    void mark(int32_t) const;
+    bool markSupported() const;
+    int32_t read() const;
+    int32_t read(const std::vector< uint16_t>&) const;
+    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    bool ready() const;
+    void reset() const;
+    int64_t skip(int64_t) const;
+    int32_t read(const ::java::nio::CharBuffer&) const;
 
 };
 }

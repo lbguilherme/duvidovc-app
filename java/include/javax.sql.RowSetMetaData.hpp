@@ -34,23 +34,23 @@ public:
     ::javax::sql::RowSetMetaData& operator=(const ::javax::sql::RowSetMetaData& x) {obj = x.obj; return *this;}
     ::javax::sql::RowSetMetaData& operator=(::javax::sql::RowSetMetaData&& x) {obj = std::move(x.obj); return *this;}
     
-    void setAutoIncrement(int32_t, bool) const ;
-    void setCaseSensitive(int32_t, bool) const ;
-    void setCatalogName(int32_t, const ::java::lang::String&) const ;
-    void setColumnCount(int32_t) const ;
-    void setColumnDisplaySize(int32_t, int32_t) const ;
-    void setColumnLabel(int32_t, const ::java::lang::String&) const ;
-    void setColumnName(int32_t, const ::java::lang::String&) const ;
-    void setColumnType(int32_t, int32_t) const ;
-    void setColumnTypeName(int32_t, const ::java::lang::String&) const ;
-    void setCurrency(int32_t, bool) const ;
-    void setNullable(int32_t, int32_t) const ;
-    void setPrecision(int32_t, int32_t) const ;
-    void setScale(int32_t, int32_t) const ;
-    void setSchemaName(int32_t, const ::java::lang::String&) const ;
-    void setSearchable(int32_t, bool) const ;
-    void setSigned(int32_t, bool) const ;
-    void setTableName(int32_t, const ::java::lang::String&) const ;
+    void setAutoIncrement(int32_t, bool) const;
+    void setCaseSensitive(int32_t, bool) const;
+    void setCatalogName(int32_t, const ::java::lang::String&) const;
+    void setColumnCount(int32_t) const;
+    void setColumnDisplaySize(int32_t, int32_t) const;
+    void setColumnLabel(int32_t, const ::java::lang::String&) const;
+    void setColumnName(int32_t, const ::java::lang::String&) const;
+    void setColumnType(int32_t, int32_t) const;
+    void setColumnTypeName(int32_t, const ::java::lang::String&) const;
+    void setCurrency(int32_t, bool) const;
+    void setNullable(int32_t, int32_t) const;
+    void setPrecision(int32_t, int32_t) const;
+    void setScale(int32_t, int32_t) const;
+    void setSchemaName(int32_t, const ::java::lang::String&) const;
+    void setSearchable(int32_t, bool) const;
+    void setSigned(int32_t, bool) const;
+    void setTableName(int32_t, const ::java::lang::String&) const;
 
 };
 }

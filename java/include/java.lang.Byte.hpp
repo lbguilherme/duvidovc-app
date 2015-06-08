@@ -40,24 +40,24 @@ public:
     
     Byte(int8_t);
     Byte(const ::java::lang::String&);
-    int8_t byteValue() const ;
-    int32_t compareTo(const ::java::lang::Byte&) const ;
+    int8_t byteValue() const;
+    int32_t compareTo(const ::java::lang::Byte&) const;
     static ::java::lang::Byte decode(const ::java::lang::String&);
-    double doubleValue() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    float floatValue() const ;
-    int32_t hashCode() const ;
-    int32_t intValue() const ;
-    int64_t longValue() const ;
+    double doubleValue() const;
+    bool equals(const ::java::lang::Object&) const;
+    float floatValue() const;
+    int32_t hashCode() const;
+    int32_t intValue() const;
+    int64_t longValue() const;
     static int8_t parseByte(const ::java::lang::String&);
     static int8_t parseByte(const ::java::lang::String&, int32_t);
-    int16_t shortValue() const ;
-    ::java::lang::String toString() const ;
+    int16_t shortValue() const;
+    ::java::lang::String toString() const;
     static ::java::lang::String toString(int8_t);
     static ::java::lang::Byte valueOf(const ::java::lang::String&);
     static ::java::lang::Byte valueOf(const ::java::lang::String&, int32_t);
     static ::java::lang::Byte valueOf(int8_t);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

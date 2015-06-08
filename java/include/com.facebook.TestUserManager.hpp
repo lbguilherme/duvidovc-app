@@ -35,11 +35,11 @@ public:
     ::com::facebook::TestUserManager& operator=(::com::facebook::TestUserManager&& x) {obj = std::move(x.obj); return *this;}
     
     TestUserManager(const ::java::lang::String&, const ::java::lang::String&);
-    ::com::facebook::AccessToken getAccessTokenForPrivateUser(const ::java::util::List&) const ;
-    ::com::facebook::AccessToken getAccessTokenForSharedUser(const ::java::util::List&) const ;
-    ::com::facebook::AccessToken getAccessTokenForSharedUser(const ::java::util::List&, const ::java::lang::String&) const ;
-    ::java::lang::String getTestApplicationId() const ;
-    ::java::lang::String getTestApplicationSecret() const ;
+    ::com::facebook::AccessToken getAccessTokenForPrivateUser(const ::java::util::List&) const;
+    ::com::facebook::AccessToken getAccessTokenForSharedUser(const ::java::util::List&) const;
+    ::com::facebook::AccessToken getAccessTokenForSharedUser(const ::java::util::List&, const ::java::lang::String&) const;
+    ::java::lang::String getTestApplicationId() const;
+    ::java::lang::String getTestApplicationSecret() const;
 
 };
 }

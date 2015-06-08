@@ -37,8 +37,8 @@ public:
     ::org::apache::http::impl::conn::tsccm::PoolEntryRequest& operator=(const ::org::apache::http::impl::conn::tsccm::PoolEntryRequest& x) {obj = x.obj; return *this;}
     ::org::apache::http::impl::conn::tsccm::PoolEntryRequest& operator=(::org::apache::http::impl::conn::tsccm::PoolEntryRequest&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::impl::conn::tsccm::BasicPoolEntry getPoolEntry(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void abortRequest() const ;
+    ::org::apache::http::impl::conn::tsccm::BasicPoolEntry getPoolEntry(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void abortRequest() const;
 
 };
 }

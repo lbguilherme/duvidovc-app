@@ -39,15 +39,15 @@ public:
     ::org::w3c::dom::ls::LSParser& operator=(const ::org::w3c::dom::ls::LSParser& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::ls::LSParser& operator=(::org::w3c::dom::ls::LSParser&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::DOMConfiguration getDomConfig() const ;
-    ::org::w3c::dom::ls::LSParserFilter getFilter() const ;
-    void setFilter(const ::org::w3c::dom::ls::LSParserFilter&) const ;
-    bool getAsync() const ;
-    bool getBusy() const ;
-    ::org::w3c::dom::Document parse(const ::org::w3c::dom::ls::LSInput&) const ;
-    ::org::w3c::dom::Document parseURI(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Node parseWithContext(const ::org::w3c::dom::ls::LSInput&, const ::org::w3c::dom::Node&, int16_t) const ;
-    void abort() const ;
+    ::org::w3c::dom::DOMConfiguration getDomConfig() const;
+    ::org::w3c::dom::ls::LSParserFilter getFilter() const;
+    void setFilter(const ::org::w3c::dom::ls::LSParserFilter&) const;
+    bool getAsync() const;
+    bool getBusy() const;
+    ::org::w3c::dom::Document parse(const ::org::w3c::dom::ls::LSInput&) const;
+    ::org::w3c::dom::Document parseURI(const ::java::lang::String&) const;
+    ::org::w3c::dom::Node parseWithContext(const ::org::w3c::dom::ls::LSInput&, const ::org::w3c::dom::Node&, int16_t) const;
+    void abort() const;
 
 };
 }

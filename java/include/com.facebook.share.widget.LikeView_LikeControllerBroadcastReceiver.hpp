@@ -37,7 +37,7 @@ public:
     ::com::facebook::share::widget::LikeView_LikeControllerBroadcastReceiver& operator=(const ::com::facebook::share::widget::LikeView_LikeControllerBroadcastReceiver& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::LikeView_LikeControllerBroadcastReceiver& operator=(::com::facebook::share::widget::LikeView_LikeControllerBroadcastReceiver&& x) {obj = std::move(x.obj); return *this;}
     
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
 
 };
 }

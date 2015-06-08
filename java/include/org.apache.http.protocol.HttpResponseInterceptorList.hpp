@@ -36,13 +36,13 @@ public:
     ::org::apache::http::protocol::HttpResponseInterceptorList& operator=(const ::org::apache::http::protocol::HttpResponseInterceptorList& x) {obj = x.obj; return *this;}
     ::org::apache::http::protocol::HttpResponseInterceptorList& operator=(::org::apache::http::protocol::HttpResponseInterceptorList&& x) {obj = std::move(x.obj); return *this;}
     
-    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&) const ;
-    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&, int32_t) const ;
-    int32_t getResponseInterceptorCount() const ;
-    ::org::apache::http::HttpResponseInterceptor getResponseInterceptor(int32_t) const ;
-    void clearResponseInterceptors() const ;
-    void removeResponseInterceptorByClass(const ::java::lang::Class&) const ;
-    void setInterceptors(const ::java::util::List&) const ;
+    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&) const;
+    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&, int32_t) const;
+    int32_t getResponseInterceptorCount() const;
+    ::org::apache::http::HttpResponseInterceptor getResponseInterceptor(int32_t) const;
+    void clearResponseInterceptors() const;
+    void removeResponseInterceptorByClass(const ::java::lang::Class&) const;
+    void setInterceptors(const ::java::util::List&) const;
 
 };
 }

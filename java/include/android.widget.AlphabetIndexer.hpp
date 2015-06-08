@@ -39,12 +39,12 @@ public:
     ::android::widget::AlphabetIndexer& operator=(::android::widget::AlphabetIndexer&& x) {obj = std::move(x.obj); return *this;}
     
     AlphabetIndexer(const ::android::database::Cursor&, int32_t, const ::java::lang::CharSequence&);
-    std::vector< ::java::lang::Object> getSections() const ;
-    void setCursor(const ::android::database::Cursor&) const ;
-    int32_t getPositionForSection(int32_t) const ;
-    int32_t getSectionForPosition(int32_t) const ;
-    void onChanged() const ;
-    void onInvalidated() const ;
+    std::vector< ::java::lang::Object> getSections() const;
+    void setCursor(const ::android::database::Cursor&) const;
+    int32_t getPositionForSection(int32_t) const;
+    int32_t getSectionForPosition(int32_t) const;
+    void onChanged() const;
+    void onInvalidated() const;
 
 };
 }

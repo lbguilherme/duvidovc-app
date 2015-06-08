@@ -38,10 +38,10 @@ public:
     ::android::support::v4::app::NavUtils_NavUtilsImpl& operator=(const ::android::support::v4::app::NavUtils_NavUtilsImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NavUtils_NavUtilsImpl& operator=(::android::support::v4::app::NavUtils_NavUtilsImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::Intent getParentActivityIntent(const ::android::app::Activity&) const ;
-    bool shouldUpRecreateTask(const ::android::app::Activity&, const ::android::content::Intent&) const ;
-    void navigateUpTo(const ::android::app::Activity&, const ::android::content::Intent&) const ;
-    ::java::lang::String getParentActivityName(const ::android::content::Context&, const ::android::content::pm::ActivityInfo&) const ;
+    ::android::content::Intent getParentActivityIntent(const ::android::app::Activity&) const;
+    bool shouldUpRecreateTask(const ::android::app::Activity&, const ::android::content::Intent&) const;
+    void navigateUpTo(const ::android::app::Activity&, const ::android::content::Intent&) const;
+    ::java::lang::String getParentActivityName(const ::android::content::Context&, const ::android::content::pm::ActivityInfo&) const;
 
 };
 }

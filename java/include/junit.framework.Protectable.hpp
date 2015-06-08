@@ -31,7 +31,7 @@ public:
     ::junit::framework::Protectable& operator=(const ::junit::framework::Protectable& x) {obj = x.obj; return *this;}
     ::junit::framework::Protectable& operator=(::junit::framework::Protectable&& x) {obj = std::move(x.obj); return *this;}
     
-    void protect() const ;
+    void protect() const;
 
 };
 }

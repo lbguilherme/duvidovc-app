@@ -42,14 +42,14 @@ public:
     ::org::apache::http::impl::cookie::BasicClientCookie2& operator=(::org::apache::http::impl::cookie::BasicClientCookie2&& x) {obj = std::move(x.obj); return *this;}
     
     BasicClientCookie2(const ::java::lang::String&, const ::java::lang::String&);
-    std::vector< int32_t> getPorts() const ;
-    void setPorts(const std::vector< int32_t>&) const ;
-    ::java::lang::String getCommentURL() const ;
-    void setCommentURL(const ::java::lang::String&) const ;
-    void setDiscard(bool) const ;
-    bool isPersistent() const ;
-    bool isExpired(const ::java::util::Date&) const ;
-    ::java::lang::Object clone() const ;
+    std::vector< int32_t> getPorts() const;
+    void setPorts(const std::vector< int32_t>&) const;
+    ::java::lang::String getCommentURL() const;
+    void setCommentURL(const ::java::lang::String&) const;
+    void setDiscard(bool) const;
+    bool isPersistent() const;
+    bool isExpired(const ::java::util::Date&) const;
+    ::java::lang::Object clone() const;
 
 };
 }

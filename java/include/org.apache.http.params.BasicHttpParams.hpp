@@ -43,15 +43,15 @@ public:
     ::org::apache::http::params::BasicHttpParams& operator=(::org::apache::http::params::BasicHttpParams&& x) {obj = std::move(x.obj); return *this;}
     
     BasicHttpParams();
-    ::java::lang::Object getParameter(const ::java::lang::String&) const ;
-    ::org::apache::http::params::HttpParams setParameter(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    bool removeParameter(const ::java::lang::String&) const ;
-    void setParameters(const std::vector< ::java::lang::String>&, const ::java::lang::Object&) const ;
-    bool isParameterSet(const ::java::lang::String&) const ;
-    bool isParameterSetLocally(const ::java::lang::String&) const ;
-    void clear() const ;
-    ::org::apache::http::params::HttpParams copy() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::Object getParameter(const ::java::lang::String&) const;
+    ::org::apache::http::params::HttpParams setParameter(const ::java::lang::String&, const ::java::lang::Object&) const;
+    bool removeParameter(const ::java::lang::String&) const;
+    void setParameters(const std::vector< ::java::lang::String>&, const ::java::lang::Object&) const;
+    bool isParameterSet(const ::java::lang::String&) const;
+    bool isParameterSetLocally(const ::java::lang::String&) const;
+    void clear() const;
+    ::org::apache::http::params::HttpParams copy() const;
+    ::java::lang::Object clone() const;
 
 };
 }

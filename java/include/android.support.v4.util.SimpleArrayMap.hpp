@@ -38,24 +38,24 @@ public:
     
     SimpleArrayMap();
     SimpleArrayMap(int32_t);
-    void clear() const ;
-    void ensureCapacity(int32_t) const ;
-    bool containsKey(const ::java::lang::Object&) const ;
-    int32_t indexOfKey(const ::java::lang::Object&) const ;
-    bool containsValue(const ::java::lang::Object&) const ;
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    ::java::lang::Object keyAt(int32_t) const ;
-    ::java::lang::Object valueAt(int32_t) const ;
-    ::java::lang::Object setValueAt(int32_t, const ::java::lang::Object&) const ;
-    bool isEmpty() const ;
-    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    void putAll(const ::android::support::v4::util::SimpleArrayMap&) const ;
-    ::java::lang::Object remove(const ::java::lang::Object&) const ;
-    ::java::lang::Object removeAt(int32_t) const ;
-    int32_t size() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    void clear() const;
+    void ensureCapacity(int32_t) const;
+    bool containsKey(const ::java::lang::Object&) const;
+    int32_t indexOfKey(const ::java::lang::Object&) const;
+    bool containsValue(const ::java::lang::Object&) const;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    ::java::lang::Object keyAt(int32_t) const;
+    ::java::lang::Object valueAt(int32_t) const;
+    ::java::lang::Object setValueAt(int32_t, const ::java::lang::Object&) const;
+    bool isEmpty() const;
+    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    void putAll(const ::android::support::v4::util::SimpleArrayMap&) const;
+    ::java::lang::Object remove(const ::java::lang::Object&) const;
+    ::java::lang::Object removeAt(int32_t) const;
+    int32_t size() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

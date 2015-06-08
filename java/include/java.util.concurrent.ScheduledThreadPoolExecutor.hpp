@@ -50,21 +50,21 @@ public:
     ScheduledThreadPoolExecutor(int32_t, const ::java::util::concurrent::ThreadFactory&);
     ScheduledThreadPoolExecutor(int32_t, const ::java::util::concurrent::RejectedExecutionHandler&);
     ScheduledThreadPoolExecutor(int32_t, const ::java::util::concurrent::ThreadFactory&, const ::java::util::concurrent::RejectedExecutionHandler&);
-    ::java::util::concurrent::ScheduledFuture schedule(const ::java::lang::Runnable&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::ScheduledFuture schedule(const ::java::util::concurrent::Callable&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::ScheduledFuture scheduleAtFixedRate(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::ScheduledFuture scheduleWithFixedDelay(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void execute(const ::java::lang::Runnable&) const ;
-    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&) const ;
-    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const ;
-    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const ;
-    void setContinueExistingPeriodicTasksAfterShutdownPolicy(bool) const ;
-    bool getContinueExistingPeriodicTasksAfterShutdownPolicy() const ;
-    void setExecuteExistingDelayedTasksAfterShutdownPolicy(bool) const ;
-    bool getExecuteExistingDelayedTasksAfterShutdownPolicy() const ;
-    void shutdown() const ;
-    ::java::util::List shutdownNow() const ;
-    ::java::util::concurrent::BlockingQueue getQueue() const ;
+    ::java::util::concurrent::ScheduledFuture schedule(const ::java::lang::Runnable&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::ScheduledFuture schedule(const ::java::util::concurrent::Callable&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::ScheduledFuture scheduleAtFixedRate(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::ScheduledFuture scheduleWithFixedDelay(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void execute(const ::java::lang::Runnable&) const;
+    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&) const;
+    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const;
+    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const;
+    void setContinueExistingPeriodicTasksAfterShutdownPolicy(bool) const;
+    bool getContinueExistingPeriodicTasksAfterShutdownPolicy() const;
+    void setExecuteExistingDelayedTasksAfterShutdownPolicy(bool) const;
+    bool getExecuteExistingDelayedTasksAfterShutdownPolicy() const;
+    void shutdown() const;
+    ::java::util::List shutdownNow() const;
+    ::java::util::concurrent::BlockingQueue getQueue() const;
 
 };
 }

@@ -41,10 +41,10 @@ public:
     
     NotificationCompat_BigPictureStyle();
     NotificationCompat_BigPictureStyle(const ::android::support::v4::app::NotificationCompat_Builder&);
-    ::android::support::v4::app::NotificationCompat_BigPictureStyle setBigContentTitle(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::NotificationCompat_BigPictureStyle setSummaryText(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::NotificationCompat_BigPictureStyle bigPicture(const ::android::graphics::Bitmap&) const ;
-    ::android::support::v4::app::NotificationCompat_BigPictureStyle bigLargeIcon(const ::android::graphics::Bitmap&) const ;
+    ::android::support::v4::app::NotificationCompat_BigPictureStyle setBigContentTitle(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::NotificationCompat_BigPictureStyle setSummaryText(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::NotificationCompat_BigPictureStyle bigPicture(const ::android::graphics::Bitmap&) const;
+    ::android::support::v4::app::NotificationCompat_BigPictureStyle bigLargeIcon(const ::android::graphics::Bitmap&) const;
 
 };
 }

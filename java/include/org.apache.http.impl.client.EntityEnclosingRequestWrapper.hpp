@@ -41,10 +41,10 @@ public:
     ::org::apache::http::impl::client::EntityEnclosingRequestWrapper& operator=(::org::apache::http::impl::client::EntityEnclosingRequestWrapper&& x) {obj = std::move(x.obj); return *this;}
     
     EntityEnclosingRequestWrapper(const ::org::apache::http::HttpEntityEnclosingRequest&);
-    ::org::apache::http::HttpEntity getEntity() const ;
-    void setEntity(const ::org::apache::http::HttpEntity&) const ;
-    bool expectContinue() const ;
-    bool isRepeatable() const ;
+    ::org::apache::http::HttpEntity getEntity() const;
+    void setEntity(const ::org::apache::http::HttpEntity&) const;
+    bool expectContinue() const;
+    bool isRepeatable() const;
 
 };
 }

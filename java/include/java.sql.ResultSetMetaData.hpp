@@ -34,27 +34,27 @@ public:
     ::java::sql::ResultSetMetaData& operator=(const ::java::sql::ResultSetMetaData& x) {obj = x.obj; return *this;}
     ::java::sql::ResultSetMetaData& operator=(::java::sql::ResultSetMetaData&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getCatalogName(int32_t) const ;
-    ::java::lang::String getColumnClassName(int32_t) const ;
-    int32_t getColumnCount() const ;
-    int32_t getColumnDisplaySize(int32_t) const ;
-    ::java::lang::String getColumnLabel(int32_t) const ;
-    ::java::lang::String getColumnName(int32_t) const ;
-    int32_t getColumnType(int32_t) const ;
-    ::java::lang::String getColumnTypeName(int32_t) const ;
-    int32_t getPrecision(int32_t) const ;
-    int32_t getScale(int32_t) const ;
-    ::java::lang::String getSchemaName(int32_t) const ;
-    ::java::lang::String getTableName(int32_t) const ;
-    bool isAutoIncrement(int32_t) const ;
-    bool isCaseSensitive(int32_t) const ;
-    bool isCurrency(int32_t) const ;
-    bool isDefinitelyWritable(int32_t) const ;
-    int32_t isNullable(int32_t) const ;
-    bool isReadOnly(int32_t) const ;
-    bool isSearchable(int32_t) const ;
-    bool isSigned(int32_t) const ;
-    bool isWritable(int32_t) const ;
+    ::java::lang::String getCatalogName(int32_t) const;
+    ::java::lang::String getColumnClassName(int32_t) const;
+    int32_t getColumnCount() const;
+    int32_t getColumnDisplaySize(int32_t) const;
+    ::java::lang::String getColumnLabel(int32_t) const;
+    ::java::lang::String getColumnName(int32_t) const;
+    int32_t getColumnType(int32_t) const;
+    ::java::lang::String getColumnTypeName(int32_t) const;
+    int32_t getPrecision(int32_t) const;
+    int32_t getScale(int32_t) const;
+    ::java::lang::String getSchemaName(int32_t) const;
+    ::java::lang::String getTableName(int32_t) const;
+    bool isAutoIncrement(int32_t) const;
+    bool isCaseSensitive(int32_t) const;
+    bool isCurrency(int32_t) const;
+    bool isDefinitelyWritable(int32_t) const;
+    int32_t isNullable(int32_t) const;
+    bool isReadOnly(int32_t) const;
+    bool isSearchable(int32_t) const;
+    bool isSigned(int32_t) const;
+    bool isWritable(int32_t) const;
 
 };
 }

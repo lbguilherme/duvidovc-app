@@ -33,11 +33,11 @@ public:
     ::android::webkit::WebSyncManager& operator=(const ::android::webkit::WebSyncManager& x) {obj = x.obj; return *this;}
     ::android::webkit::WebSyncManager& operator=(::android::webkit::WebSyncManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
-    void sync() const ;
-    void resetSync() const ;
-    void startSync() const ;
-    void stopSync() const ;
+    void run() const;
+    void sync() const;
+    void resetSync() const;
+    void startSync() const;
+    void stopSync() const;
 
 };
 }

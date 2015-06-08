@@ -32,7 +32,7 @@ public:
     ::android::os::Handler_Callback& operator=(const ::android::os::Handler_Callback& x) {obj = x.obj; return *this;}
     ::android::os::Handler_Callback& operator=(::android::os::Handler_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    bool handleMessage(const ::android::os::Message&) const ;
+    bool handleMessage(const ::android::os::Message&) const;
 
 };
 }

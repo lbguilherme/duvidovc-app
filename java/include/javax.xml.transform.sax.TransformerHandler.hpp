@@ -42,10 +42,10 @@ public:
     ::javax::xml::transform::sax::TransformerHandler& operator=(const ::javax::xml::transform::sax::TransformerHandler& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::sax::TransformerHandler& operator=(::javax::xml::transform::sax::TransformerHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void setResult(const ::javax::xml::transform::Result&) const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
-    ::javax::xml::transform::Transformer getTransformer() const ;
+    void setResult(const ::javax::xml::transform::Result&) const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
+    ::javax::xml::transform::Transformer getTransformer() const;
 
 };
 }

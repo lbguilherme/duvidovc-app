@@ -35,8 +35,8 @@ public:
     ::java::util::concurrent::Exchanger& operator=(::java::util::concurrent::Exchanger&& x) {obj = std::move(x.obj); return *this;}
     
     Exchanger();
-    ::java::lang::Object exchange(const ::java::lang::Object&) const ;
-    ::java::lang::Object exchange(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    ::java::lang::Object exchange(const ::java::lang::Object&) const;
+    ::java::lang::Object exchange(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

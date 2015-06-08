@@ -45,17 +45,17 @@ public:
     ::android::test::IsolatedContext& operator=(::android::test::IsolatedContext&& x) {obj = std::move(x.obj); return *this;}
     
     IsolatedContext(const ::android::content::ContentResolver&, const ::android::content::Context&);
-    ::java::util::List getAndClearBroadcastIntents() const ;
-    ::android::content::ContentResolver getContentResolver() const ;
-    bool bindService(const ::android::content::Intent&, const ::android::content::ServiceConnection&, int32_t) const ;
-    ::android::content::Intent registerReceiver(const ::android::content::BroadcastReceiver&, const ::android::content::IntentFilter&) const ;
-    void unregisterReceiver(const ::android::content::BroadcastReceiver&) const ;
-    void sendBroadcast(const ::android::content::Intent&) const ;
-    void sendOrderedBroadcast(const ::android::content::Intent&, const ::java::lang::String&) const ;
-    int32_t checkUriPermission(const ::android::net::Uri&, const ::java::lang::String&, const ::java::lang::String&, int32_t, int32_t, int32_t) const ;
-    int32_t checkUriPermission(const ::android::net::Uri&, int32_t, int32_t, int32_t) const ;
-    ::java::lang::Object getSystemService(const ::java::lang::String&) const ;
-    ::java::io::File getFilesDir() const ;
+    ::java::util::List getAndClearBroadcastIntents() const;
+    ::android::content::ContentResolver getContentResolver() const;
+    bool bindService(const ::android::content::Intent&, const ::android::content::ServiceConnection&, int32_t) const;
+    ::android::content::Intent registerReceiver(const ::android::content::BroadcastReceiver&, const ::android::content::IntentFilter&) const;
+    void unregisterReceiver(const ::android::content::BroadcastReceiver&) const;
+    void sendBroadcast(const ::android::content::Intent&) const;
+    void sendOrderedBroadcast(const ::android::content::Intent&, const ::java::lang::String&) const;
+    int32_t checkUriPermission(const ::android::net::Uri&, const ::java::lang::String&, const ::java::lang::String&, int32_t, int32_t, int32_t) const;
+    int32_t checkUriPermission(const ::android::net::Uri&, int32_t, int32_t, int32_t) const;
+    ::java::lang::Object getSystemService(const ::java::lang::String&) const;
+    ::java::io::File getFilesDir() const;
 
 };
 }

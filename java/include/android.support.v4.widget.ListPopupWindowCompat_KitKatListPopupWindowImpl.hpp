@@ -38,7 +38,7 @@ public:
     ::android::support::v4::widget::ListPopupWindowCompat_KitKatListPopupWindowImpl& operator=(const ::android::support::v4::widget::ListPopupWindowCompat_KitKatListPopupWindowImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::ListPopupWindowCompat_KitKatListPopupWindowImpl& operator=(::android::support::v4::widget::ListPopupWindowCompat_KitKatListPopupWindowImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View_OnTouchListener createDragToOpenListener(const ::java::lang::Object&, const ::android::view::View&) const ;
+    ::android::view::View_OnTouchListener createDragToOpenListener(const ::java::lang::Object&, const ::android::view::View&) const;
 
 };
 }

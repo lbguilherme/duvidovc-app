@@ -40,16 +40,16 @@ public:
     ::android::app::admin::DeviceAdminReceiver& operator=(::android::app::admin::DeviceAdminReceiver&& x) {obj = std::move(x.obj); return *this;}
     
     DeviceAdminReceiver();
-    ::android::app::admin::DevicePolicyManager getManager(const ::android::content::Context&) const ;
-    ::android::content::ComponentName getWho(const ::android::content::Context&) const ;
-    void onEnabled(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    ::java::lang::CharSequence onDisableRequested(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void onDisabled(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void onPasswordChanged(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void onPasswordFailed(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void onPasswordSucceeded(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void onPasswordExpiring(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
+    ::android::app::admin::DevicePolicyManager getManager(const ::android::content::Context&) const;
+    ::android::content::ComponentName getWho(const ::android::content::Context&) const;
+    void onEnabled(const ::android::content::Context&, const ::android::content::Intent&) const;
+    ::java::lang::CharSequence onDisableRequested(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void onDisabled(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void onPasswordChanged(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void onPasswordFailed(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void onPasswordSucceeded(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void onPasswordExpiring(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
 
 };
 }

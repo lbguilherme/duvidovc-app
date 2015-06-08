@@ -36,18 +36,18 @@ public:
     ::android::net::sip::SipSession_Listener& operator=(::android::net::sip::SipSession_Listener&& x) {obj = std::move(x.obj); return *this;}
     
     SipSession_Listener();
-    void onCalling(const ::android::net::sip::SipSession&) const ;
-    void onRinging(const ::android::net::sip::SipSession&, const ::android::net::sip::SipProfile&, const ::java::lang::String&) const ;
-    void onRingingBack(const ::android::net::sip::SipSession&) const ;
-    void onCallEstablished(const ::android::net::sip::SipSession&, const ::java::lang::String&) const ;
-    void onCallEnded(const ::android::net::sip::SipSession&) const ;
-    void onCallBusy(const ::android::net::sip::SipSession&) const ;
-    void onError(const ::android::net::sip::SipSession&, int32_t, const ::java::lang::String&) const ;
-    void onCallChangeFailed(const ::android::net::sip::SipSession&, int32_t, const ::java::lang::String&) const ;
-    void onRegistering(const ::android::net::sip::SipSession&) const ;
-    void onRegistrationDone(const ::android::net::sip::SipSession&, int32_t) const ;
-    void onRegistrationFailed(const ::android::net::sip::SipSession&, int32_t, const ::java::lang::String&) const ;
-    void onRegistrationTimeout(const ::android::net::sip::SipSession&) const ;
+    void onCalling(const ::android::net::sip::SipSession&) const;
+    void onRinging(const ::android::net::sip::SipSession&, const ::android::net::sip::SipProfile&, const ::java::lang::String&) const;
+    void onRingingBack(const ::android::net::sip::SipSession&) const;
+    void onCallEstablished(const ::android::net::sip::SipSession&, const ::java::lang::String&) const;
+    void onCallEnded(const ::android::net::sip::SipSession&) const;
+    void onCallBusy(const ::android::net::sip::SipSession&) const;
+    void onError(const ::android::net::sip::SipSession&, int32_t, const ::java::lang::String&) const;
+    void onCallChangeFailed(const ::android::net::sip::SipSession&, int32_t, const ::java::lang::String&) const;
+    void onRegistering(const ::android::net::sip::SipSession&) const;
+    void onRegistrationDone(const ::android::net::sip::SipSession&, int32_t) const;
+    void onRegistrationFailed(const ::android::net::sip::SipSession&, int32_t, const ::java::lang::String&) const;
+    void onRegistrationTimeout(const ::android::net::sip::SipSession&) const;
 
 };
 }

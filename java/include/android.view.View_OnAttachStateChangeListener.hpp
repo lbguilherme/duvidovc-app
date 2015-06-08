@@ -32,8 +32,8 @@ public:
     ::android::view::View_OnAttachStateChangeListener& operator=(const ::android::view::View_OnAttachStateChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnAttachStateChangeListener& operator=(::android::view::View_OnAttachStateChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onViewAttachedToWindow(const ::android::view::View&) const ;
-    void onViewDetachedFromWindow(const ::android::view::View&) const ;
+    void onViewAttachedToWindow(const ::android::view::View&) const;
+    void onViewDetachedFromWindow(const ::android::view::View&) const;
 
 };
 }

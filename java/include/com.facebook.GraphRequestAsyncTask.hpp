@@ -44,7 +44,7 @@ public:
     GraphRequestAsyncTask(const ::java::net::HttpURLConnection&, const std::vector< ::com::facebook::GraphRequest>&);
     GraphRequestAsyncTask(const ::java::net::HttpURLConnection&, const ::java::util::Collection&);
     GraphRequestAsyncTask(const ::java::net::HttpURLConnection&, const ::com::facebook::GraphRequestBatch&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

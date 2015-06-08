@@ -37,8 +37,8 @@ public:
     ::android::support::v4::app::ActivityOptionsCompat_ActivityOptionsImpl21& operator=(const ::android::support::v4::app::ActivityOptionsCompat_ActivityOptionsImpl21& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ActivityOptionsCompat_ActivityOptionsImpl21& operator=(::android::support::v4::app::ActivityOptionsCompat_ActivityOptionsImpl21&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::Bundle toBundle() const ;
-    void update(const ::android::support::v4::app::ActivityOptionsCompat&) const ;
+    ::android::os::Bundle toBundle() const;
+    void update(const ::android::support::v4::app::ActivityOptionsCompat&) const;
 
 };
 }

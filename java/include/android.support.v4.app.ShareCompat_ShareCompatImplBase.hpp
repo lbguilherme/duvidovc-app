@@ -39,8 +39,8 @@ public:
     ::android::support::v4::app::ShareCompat_ShareCompatImplBase& operator=(const ::android::support::v4::app::ShareCompat_ShareCompatImplBase& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ShareCompat_ShareCompatImplBase& operator=(::android::support::v4::app::ShareCompat_ShareCompatImplBase&& x) {obj = std::move(x.obj); return *this;}
     
-    void configureMenuItem(const ::android::view::MenuItem&, const ::android::support::v4::app::ShareCompat_IntentBuilder&) const ;
-    ::java::lang::String escapeHtml(const ::java::lang::CharSequence&) const ;
+    void configureMenuItem(const ::android::view::MenuItem&, const ::android::support::v4::app::ShareCompat_IntentBuilder&) const;
+    ::java::lang::String escapeHtml(const ::java::lang::CharSequence&) const;
 
 };
 }

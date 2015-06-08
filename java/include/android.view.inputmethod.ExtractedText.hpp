@@ -36,8 +36,8 @@ public:
     ::android::view::inputmethod::ExtractedText& operator=(::android::view::inputmethod::ExtractedText&& x) {obj = std::move(x.obj); return *this;}
     
     ExtractedText();
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

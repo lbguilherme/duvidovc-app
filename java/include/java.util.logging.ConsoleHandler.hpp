@@ -36,8 +36,8 @@ public:
     ::java::util::logging::ConsoleHandler& operator=(::java::util::logging::ConsoleHandler&& x) {obj = std::move(x.obj); return *this;}
     
     ConsoleHandler();
-    void close() const ;
-    void publish(const ::java::util::logging::LogRecord&) const ;
+    void close() const;
+    void publish(const ::java::util::logging::LogRecord&) const;
 
 };
 }

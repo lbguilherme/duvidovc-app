@@ -38,9 +38,9 @@ public:
     ::org::kde::necessitas::ministro::IMinistroCallback_Stub_Proxy& operator=(const ::org::kde::necessitas::ministro::IMinistroCallback_Stub_Proxy& x) {obj = x.obj; return *this;}
     ::org::kde::necessitas::ministro::IMinistroCallback_Stub_Proxy& operator=(::org::kde::necessitas::ministro::IMinistroCallback_Stub_Proxy&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::IBinder asBinder() const ;
-    ::java::lang::String getInterfaceDescriptor() const ;
-    void loaderReady(const ::android::os::Bundle&) const ;
+    ::android::os::IBinder asBinder() const;
+    ::java::lang::String getInterfaceDescriptor() const;
+    void loaderReady(const ::android::os::Bundle&) const;
 
 };
 }

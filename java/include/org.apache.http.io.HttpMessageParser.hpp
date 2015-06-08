@@ -34,7 +34,7 @@ public:
     ::org::apache::http::io::HttpMessageParser& operator=(const ::org::apache::http::io::HttpMessageParser& x) {obj = x.obj; return *this;}
     ::org::apache::http::io::HttpMessageParser& operator=(::org::apache::http::io::HttpMessageParser&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::HttpMessage parse() const ;
+    ::org::apache::http::HttpMessage parse() const;
 
 };
 }

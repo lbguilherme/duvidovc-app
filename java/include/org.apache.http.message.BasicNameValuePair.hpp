@@ -40,12 +40,12 @@ public:
     ::org::apache::http::message::BasicNameValuePair& operator=(::org::apache::http::message::BasicNameValuePair&& x) {obj = std::move(x.obj); return *this;}
     
     BasicNameValuePair(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::Object clone() const;
 
 };
 }

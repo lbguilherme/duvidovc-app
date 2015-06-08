@@ -34,10 +34,10 @@ public:
     ::android::view::InputEvent& operator=(const ::android::view::InputEvent& x) {obj = x.obj; return *this;}
     ::android::view::InputEvent& operator=(::android::view::InputEvent&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getDeviceId() const ;
-    ::android::view::InputDevice getDevice() const ;
-    int32_t getSource() const ;
-    int32_t describeContents() const ;
+    int32_t getDeviceId() const;
+    ::android::view::InputDevice getDevice() const;
+    int32_t getSource() const;
+    int32_t describeContents() const;
 
 };
 }

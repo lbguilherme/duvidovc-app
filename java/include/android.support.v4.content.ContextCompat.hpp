@@ -46,8 +46,8 @@ public:
     static std::vector< ::java::io::File> getExternalFilesDirs(const ::android::content::Context&, const ::java::lang::String&);
     static std::vector< ::java::io::File> getExternalCacheDirs(const ::android::content::Context&);
     static ::android::graphics::drawable::Drawable getDrawable(const ::android::content::Context&, int32_t);
-    ::java::io::File getNoBackupFilesDir(const ::android::content::Context&) const ;
-    ::java::io::File getCodeCacheDir(const ::android::content::Context&) const ;
+    ::java::io::File getNoBackupFilesDir(const ::android::content::Context&) const;
+    ::java::io::File getCodeCacheDir(const ::android::content::Context&) const;
 
 };
 }

@@ -40,20 +40,20 @@ public:
     ::android::content::ContentProviderOperation& operator=(const ::android::content::ContentProviderOperation& x) {obj = x.obj; return *this;}
     ::android::content::ContentProviderOperation& operator=(::android::content::ContentProviderOperation&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
     static ::android::content::ContentProviderOperation_Builder newInsert(const ::android::net::Uri&);
     static ::android::content::ContentProviderOperation_Builder newUpdate(const ::android::net::Uri&);
     static ::android::content::ContentProviderOperation_Builder newDelete(const ::android::net::Uri&);
     static ::android::content::ContentProviderOperation_Builder newAssertQuery(const ::android::net::Uri&);
-    ::android::net::Uri getUri() const ;
-    bool isYieldAllowed() const ;
-    bool isWriteOperation() const ;
-    bool isReadOperation() const ;
-    ::android::content::ContentProviderResult apply(const ::android::content::ContentProvider&, const std::vector< ::android::content::ContentProviderResult>&, int32_t) const ;
-    ::android::content::ContentValues resolveValueBackReferences(const std::vector< ::android::content::ContentProviderResult>&, int32_t) const ;
-    std::vector< ::java::lang::String> resolveSelectionArgsBackReferences(const std::vector< ::android::content::ContentProviderResult>&, int32_t) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
+    ::android::net::Uri getUri() const;
+    bool isYieldAllowed() const;
+    bool isWriteOperation() const;
+    bool isReadOperation() const;
+    ::android::content::ContentProviderResult apply(const ::android::content::ContentProvider&, const std::vector< ::android::content::ContentProviderResult>&, int32_t) const;
+    ::android::content::ContentValues resolveValueBackReferences(const std::vector< ::android::content::ContentProviderResult>&, int32_t) const;
+    std::vector< ::java::lang::String> resolveSelectionArgsBackReferences(const std::vector< ::android::content::ContentProviderResult>&, int32_t) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
 
 };
 }

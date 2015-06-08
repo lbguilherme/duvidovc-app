@@ -37,8 +37,8 @@ public:
     
     NetPermission(const ::java::lang::String&);
     NetPermission(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getActions() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    ::java::lang::String getActions() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

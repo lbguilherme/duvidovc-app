@@ -39,7 +39,7 @@ public:
     
     ConnectionEvent(const ::javax::sql::PooledConnection&);
     ConnectionEvent(const ::javax::sql::PooledConnection&, const ::java::sql::SQLException&);
-    ::java::sql::SQLException getSQLException() const ;
+    ::java::sql::SQLException getSQLException() const;
 
 };
 }

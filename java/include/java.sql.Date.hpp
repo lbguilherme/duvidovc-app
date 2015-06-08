@@ -37,14 +37,14 @@ public:
     
     Date(int32_t, int32_t, int32_t);
     Date(int64_t);
-    int32_t getHours() const ;
-    int32_t getMinutes() const ;
-    int32_t getSeconds() const ;
-    void setHours(int32_t) const ;
-    void setMinutes(int32_t) const ;
-    void setSeconds(int32_t) const ;
-    void setTime(int64_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t getHours() const;
+    int32_t getMinutes() const;
+    int32_t getSeconds() const;
+    void setHours(int32_t) const;
+    void setMinutes(int32_t) const;
+    void setSeconds(int32_t) const;
+    void setTime(int64_t) const;
+    ::java::lang::String toString() const;
     static ::java::sql::Date valueOf(const ::java::lang::String&);
 
 };

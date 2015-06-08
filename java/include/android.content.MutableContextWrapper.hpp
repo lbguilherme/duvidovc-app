@@ -35,7 +35,7 @@ public:
     ::android::content::MutableContextWrapper& operator=(::android::content::MutableContextWrapper&& x) {obj = std::move(x.obj); return *this;}
     
     MutableContextWrapper(const ::android::content::Context&);
-    void setBaseContext(const ::android::content::Context&) const ;
+    void setBaseContext(const ::android::content::Context&) const;
 
 };
 }

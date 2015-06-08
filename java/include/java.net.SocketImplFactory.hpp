@@ -32,7 +32,7 @@ public:
     ::java::net::SocketImplFactory& operator=(const ::java::net::SocketImplFactory& x) {obj = x.obj; return *this;}
     ::java::net::SocketImplFactory& operator=(::java::net::SocketImplFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::SocketImpl createSocketImpl() const ;
+    ::java::net::SocketImpl createSocketImpl() const;
 
 };
 }

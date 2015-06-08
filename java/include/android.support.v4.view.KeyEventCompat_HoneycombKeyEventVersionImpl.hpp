@@ -35,9 +35,9 @@ public:
     ::android::support::v4::view::KeyEventCompat_HoneycombKeyEventVersionImpl& operator=(const ::android::support::v4::view::KeyEventCompat_HoneycombKeyEventVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::KeyEventCompat_HoneycombKeyEventVersionImpl& operator=(::android::support::v4::view::KeyEventCompat_HoneycombKeyEventVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t normalizeMetaState(int32_t) const ;
-    bool metaStateHasModifiers(int32_t, int32_t) const ;
-    bool metaStateHasNoModifiers(int32_t) const ;
+    int32_t normalizeMetaState(int32_t) const;
+    bool metaStateHasModifiers(int32_t, int32_t) const;
+    bool metaStateHasNoModifiers(int32_t) const;
 
 };
 }

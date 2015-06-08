@@ -35,7 +35,7 @@ public:
     ::java::security::cert::CertPathBuilderSpi& operator=(::java::security::cert::CertPathBuilderSpi&& x) {obj = std::move(x.obj); return *this;}
     
     CertPathBuilderSpi();
-    ::java::security::cert::CertPathBuilderResult engineBuild(const ::java::security::cert::CertPathParameters&) const ;
+    ::java::security::cert::CertPathBuilderResult engineBuild(const ::java::security::cert::CertPathParameters&) const;
 
 };
 }

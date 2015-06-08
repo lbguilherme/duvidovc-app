@@ -35,13 +35,13 @@ public:
     ::android::speech::tts::SynthesisRequest& operator=(::android::speech::tts::SynthesisRequest&& x) {obj = std::move(x.obj); return *this;}
     
     SynthesisRequest(const ::java::lang::String&, const ::android::os::Bundle&);
-    ::java::lang::String getText() const ;
-    ::java::lang::String getLanguage() const ;
-    ::java::lang::String getCountry() const ;
-    ::java::lang::String getVariant() const ;
-    int32_t getSpeechRate() const ;
-    int32_t getPitch() const ;
-    ::android::os::Bundle getParams() const ;
+    ::java::lang::String getText() const;
+    ::java::lang::String getLanguage() const;
+    ::java::lang::String getCountry() const;
+    ::java::lang::String getVariant() const;
+    int32_t getSpeechRate() const;
+    int32_t getPitch() const;
+    ::android::os::Bundle getParams() const;
 
 };
 }

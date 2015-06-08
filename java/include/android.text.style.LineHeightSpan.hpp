@@ -38,7 +38,7 @@ public:
     ::android::text::style::LineHeightSpan& operator=(const ::android::text::style::LineHeightSpan& x) {obj = x.obj; return *this;}
     ::android::text::style::LineHeightSpan& operator=(::android::text::style::LineHeightSpan&& x) {obj = std::move(x.obj); return *this;}
     
-    void chooseHeight(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const ;
+    void chooseHeight(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const;
 
 };
 }

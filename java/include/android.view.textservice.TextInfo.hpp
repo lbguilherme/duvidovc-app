@@ -39,11 +39,11 @@ public:
     TextInfo(const ::java::lang::String&);
     TextInfo(const ::java::lang::String&, int32_t, int32_t);
     TextInfo(const ::android::os::Parcel&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String getText() const ;
-    int32_t getCookie() const ;
-    int32_t getSequence() const ;
-    int32_t describeContents() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String getText() const;
+    int32_t getCookie() const;
+    int32_t getSequence() const;
+    int32_t describeContents() const;
 
 };
 }

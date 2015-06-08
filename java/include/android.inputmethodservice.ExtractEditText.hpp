@@ -39,16 +39,16 @@ public:
     ExtractEditText(const ::android::content::Context&);
     ExtractEditText(const ::android::content::Context&, const ::android::util::AttributeSet&);
     ExtractEditText(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void startInternalChanges() const ;
-    void finishInternalChanges() const ;
-    void setExtractedText(const ::android::view::inputmethod::ExtractedText&) const ;
-    bool performClick() const ;
-    bool onTextContextMenuItem(int32_t) const ;
-    bool isInputMethodTarget() const ;
-    bool hasVerticalScrollBar() const ;
-    bool hasWindowFocus() const ;
-    bool isFocused() const ;
-    bool hasFocus() const ;
+    void startInternalChanges() const;
+    void finishInternalChanges() const;
+    void setExtractedText(const ::android::view::inputmethod::ExtractedText&) const;
+    bool performClick() const;
+    bool onTextContextMenuItem(int32_t) const;
+    bool isInputMethodTarget() const;
+    bool hasVerticalScrollBar() const;
+    bool hasWindowFocus() const;
+    bool isFocused() const;
+    bool hasFocus() const;
 
 };
 }

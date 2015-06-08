@@ -46,23 +46,23 @@ public:
     ::android::graphics::drawable::ScaleDrawable& operator=(::android::graphics::drawable::ScaleDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     ScaleDrawable(const ::android::graphics::drawable::Drawable&, int32_t, float, float);
-    ::android::graphics::drawable::Drawable getDrawable() const ;
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const ;
-    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    int32_t getChangingConfigurations() const ;
-    bool getPadding(const ::android::graphics::Rect&) const ;
-    bool setVisible(bool, bool) const ;
-    void setAlpha(int32_t) const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    int32_t getOpacity() const ;
-    bool isStateful() const ;
-    int32_t getIntrinsicWidth() const ;
-    int32_t getIntrinsicHeight() const ;
-    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    ::android::graphics::drawable::Drawable getDrawable() const;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const;
+    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const;
+    void draw(const ::android::graphics::Canvas&) const;
+    int32_t getChangingConfigurations() const;
+    bool getPadding(const ::android::graphics::Rect&) const;
+    bool setVisible(bool, bool) const;
+    void setAlpha(int32_t) const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    int32_t getOpacity() const;
+    bool isStateful() const;
+    int32_t getIntrinsicWidth() const;
+    int32_t getIntrinsicHeight() const;
+    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

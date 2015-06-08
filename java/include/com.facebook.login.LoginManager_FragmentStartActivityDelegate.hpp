@@ -36,8 +36,8 @@ public:
     ::com::facebook::login::LoginManager_FragmentStartActivityDelegate& operator=(const ::com::facebook::login::LoginManager_FragmentStartActivityDelegate& x) {obj = x.obj; return *this;}
     ::com::facebook::login::LoginManager_FragmentStartActivityDelegate& operator=(::com::facebook::login::LoginManager_FragmentStartActivityDelegate&& x) {obj = std::move(x.obj); return *this;}
     
-    void startActivityForResult(const ::android::content::Intent&, int32_t) const ;
-    ::android::app::Activity getActivityContext() const ;
+    void startActivityForResult(const ::android::content::Intent&, int32_t) const;
+    ::android::app::Activity getActivityContext() const;
 
 };
 }

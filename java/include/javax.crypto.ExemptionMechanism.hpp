@@ -37,19 +37,19 @@ public:
     ::javax::crypto::ExemptionMechanism& operator=(const ::javax::crypto::ExemptionMechanism& x) {obj = x.obj; return *this;}
     ::javax::crypto::ExemptionMechanism& operator=(::javax::crypto::ExemptionMechanism&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
+    ::java::lang::String getName() const;
     static ::javax::crypto::ExemptionMechanism getInstance(const ::java::lang::String&);
     static ::javax::crypto::ExemptionMechanism getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::javax::crypto::ExemptionMechanism getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::Provider getProvider() const ;
-    bool isCryptoAllowed(const ::java::security::Key&) const ;
-    int32_t getOutputSize(int32_t) const ;
-    void init(const ::java::security::Key&) const ;
-    void init(const ::java::security::Key&, const ::java::security::AlgorithmParameters&) const ;
-    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&) const ;
-    std::vector< int8_t> genExemptionBlob() const ;
-    int32_t genExemptionBlob(const std::vector< int8_t>&) const ;
-    int32_t genExemptionBlob(const std::vector< int8_t>&, int32_t) const ;
+    ::java::security::Provider getProvider() const;
+    bool isCryptoAllowed(const ::java::security::Key&) const;
+    int32_t getOutputSize(int32_t) const;
+    void init(const ::java::security::Key&) const;
+    void init(const ::java::security::Key&, const ::java::security::AlgorithmParameters&) const;
+    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&) const;
+    std::vector< int8_t> genExemptionBlob() const;
+    int32_t genExemptionBlob(const std::vector< int8_t>&) const;
+    int32_t genExemptionBlob(const std::vector< int8_t>&, int32_t) const;
 
 };
 }

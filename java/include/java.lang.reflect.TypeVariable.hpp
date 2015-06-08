@@ -37,9 +37,9 @@ public:
     ::java::lang::reflect::TypeVariable& operator=(const ::java::lang::reflect::TypeVariable& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::TypeVariable& operator=(::java::lang::reflect::TypeVariable&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::reflect::Type> getBounds() const ;
-    ::java::lang::reflect::GenericDeclaration getGenericDeclaration() const ;
-    ::java::lang::String getName() const ;
+    std::vector< ::java::lang::reflect::Type> getBounds() const;
+    ::java::lang::reflect::GenericDeclaration getGenericDeclaration() const;
+    ::java::lang::String getName() const;
 
 };
 }

@@ -39,17 +39,17 @@ public:
     ::java::security::KeyPairGenerator& operator=(const ::java::security::KeyPairGenerator& x) {obj = x.obj; return *this;}
     ::java::security::KeyPairGenerator& operator=(::java::security::KeyPairGenerator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
+    ::java::lang::String getAlgorithm() const;
     static ::java::security::KeyPairGenerator getInstance(const ::java::lang::String&);
     static ::java::security::KeyPairGenerator getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::KeyPairGenerator getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::Provider getProvider() const ;
-    void initialize(int32_t) const ;
-    void initialize(const ::java::security::spec::AlgorithmParameterSpec&) const ;
-    ::java::security::KeyPair genKeyPair() const ;
-    ::java::security::KeyPair generateKeyPair() const ;
-    void initialize(int32_t, const ::java::security::SecureRandom&) const ;
-    void initialize(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const ;
+    ::java::security::Provider getProvider() const;
+    void initialize(int32_t) const;
+    void initialize(const ::java::security::spec::AlgorithmParameterSpec&) const;
+    ::java::security::KeyPair genKeyPair() const;
+    ::java::security::KeyPair generateKeyPair() const;
+    void initialize(int32_t, const ::java::security::SecureRandom&) const;
+    void initialize(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const;
 
 };
 }

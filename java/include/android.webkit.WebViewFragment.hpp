@@ -39,12 +39,12 @@ public:
     ::android::webkit::WebViewFragment& operator=(::android::webkit::WebViewFragment&& x) {obj = std::move(x.obj); return *this;}
     
     WebViewFragment();
-    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const ;
-    void onPause() const ;
-    void onResume() const ;
-    void onDestroyView() const ;
-    void onDestroy() const ;
-    ::android::webkit::WebView getWebView() const ;
+    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const;
+    void onPause() const;
+    void onResume() const;
+    void onDestroyView() const;
+    void onDestroy() const;
+    ::android::webkit::WebView getWebView() const;
 
 };
 }

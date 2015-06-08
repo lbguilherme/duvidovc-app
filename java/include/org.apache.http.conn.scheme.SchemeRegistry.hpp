@@ -40,13 +40,13 @@ public:
     ::org::apache::http::conn::scheme::SchemeRegistry& operator=(::org::apache::http::conn::scheme::SchemeRegistry&& x) {obj = std::move(x.obj); return *this;}
     
     SchemeRegistry();
-    ::org::apache::http::conn::scheme::Scheme getScheme(const ::java::lang::String&) const ;
-    ::org::apache::http::conn::scheme::Scheme getScheme(const ::org::apache::http::HttpHost&) const ;
-    ::org::apache::http::conn::scheme::Scheme get(const ::java::lang::String&) const ;
-    ::org::apache::http::conn::scheme::Scheme register_(const ::org::apache::http::conn::scheme::Scheme&) const ;
-    ::org::apache::http::conn::scheme::Scheme unregister(const ::java::lang::String&) const ;
-    ::java::util::List getSchemeNames() const ;
-    void setItems(const ::java::util::Map&) const ;
+    ::org::apache::http::conn::scheme::Scheme getScheme(const ::java::lang::String&) const;
+    ::org::apache::http::conn::scheme::Scheme getScheme(const ::org::apache::http::HttpHost&) const;
+    ::org::apache::http::conn::scheme::Scheme get(const ::java::lang::String&) const;
+    ::org::apache::http::conn::scheme::Scheme register_(const ::org::apache::http::conn::scheme::Scheme&) const;
+    ::org::apache::http::conn::scheme::Scheme unregister(const ::java::lang::String&) const;
+    ::java::util::List getSchemeNames() const;
+    void setItems(const ::java::util::Map&) const;
 
 };
 }

@@ -31,7 +31,7 @@ public:
     ::android::os::RecoverySystem_ProgressListener& operator=(const ::android::os::RecoverySystem_ProgressListener& x) {obj = x.obj; return *this;}
     ::android::os::RecoverySystem_ProgressListener& operator=(::android::os::RecoverySystem_ProgressListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onProgress(int32_t) const ;
+    void onProgress(int32_t) const;
 
 };
 }

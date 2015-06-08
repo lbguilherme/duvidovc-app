@@ -38,11 +38,11 @@ public:
     ::com::facebook::share::widget::ShareButtonBase& operator=(const ::com::facebook::share::widget::ShareButtonBase& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::ShareButtonBase& operator=(::com::facebook::share::widget::ShareButtonBase&& x) {obj = std::move(x.obj); return *this;}
     
-    ::com::facebook::share::model::ShareContent getShareContent() const ;
-    void setShareContent(const ::com::facebook::share::model::ShareContent&) const ;
-    int32_t getRequestCode() const ;
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const ;
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&, int32_t) const ;
+    ::com::facebook::share::model::ShareContent getShareContent() const;
+    void setShareContent(const ::com::facebook::share::model::ShareContent&) const;
+    int32_t getRequestCode() const;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&, int32_t) const;
 
 };
 }

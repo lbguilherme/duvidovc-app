@@ -39,11 +39,11 @@ public:
     ::android::content::ContentQueryMap& operator=(::android::content::ContentQueryMap&& x) {obj = std::move(x.obj); return *this;}
     
     ContentQueryMap(const ::android::database::Cursor&, const ::java::lang::String&, bool, const ::android::os::Handler&);
-    void setKeepUpdated(bool) const ;
-    ::android::content::ContentValues getValues(const ::java::lang::String&) const ;
-    void requery() const ;
-    ::java::util::Map getRows() const ;
-    void close() const ;
+    void setKeepUpdated(bool) const;
+    ::android::content::ContentValues getValues(const ::java::lang::String&) const;
+    void requery() const;
+    ::java::util::Map getRows() const;
+    void close() const;
 
 };
 }

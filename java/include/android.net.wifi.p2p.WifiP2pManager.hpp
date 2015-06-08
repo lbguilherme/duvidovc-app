@@ -42,15 +42,15 @@ public:
     ::android::net::wifi::p2p::WifiP2pManager& operator=(const ::android::net::wifi::p2p::WifiP2pManager& x) {obj = x.obj; return *this;}
     ::android::net::wifi::p2p::WifiP2pManager& operator=(::android::net::wifi::p2p::WifiP2pManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::net::wifi::p2p::WifiP2pManager_Channel initialize(const ::android::content::Context&, const ::android::os::Looper&, const ::android::net::wifi::p2p::WifiP2pManager_ChannelListener&) const ;
-    void discoverPeers(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const ;
-    void connect(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pConfig&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const ;
-    void cancelConnect(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const ;
-    void createGroup(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const ;
-    void removeGroup(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const ;
-    void requestPeers(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_PeerListListener&) const ;
-    void requestConnectionInfo(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ConnectionInfoListener&) const ;
-    void requestGroupInfo(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_GroupInfoListener&) const ;
+    ::android::net::wifi::p2p::WifiP2pManager_Channel initialize(const ::android::content::Context&, const ::android::os::Looper&, const ::android::net::wifi::p2p::WifiP2pManager_ChannelListener&) const;
+    void discoverPeers(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const;
+    void connect(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pConfig&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const;
+    void cancelConnect(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const;
+    void createGroup(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const;
+    void removeGroup(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ActionListener&) const;
+    void requestPeers(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_PeerListListener&) const;
+    void requestConnectionInfo(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_ConnectionInfoListener&) const;
+    void requestGroupInfo(const ::android::net::wifi::p2p::WifiP2pManager_Channel&, const ::android::net::wifi::p2p::WifiP2pManager_GroupInfoListener&) const;
 
 };
 }

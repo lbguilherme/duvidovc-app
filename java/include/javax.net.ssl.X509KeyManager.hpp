@@ -39,12 +39,12 @@ public:
     ::javax::net::ssl::X509KeyManager& operator=(const ::javax::net::ssl::X509KeyManager& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::X509KeyManager& operator=(::javax::net::ssl::X509KeyManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String chooseClientAlias(const std::vector< ::java::lang::String>&, const std::vector< ::java::security::Principal>&, const ::java::net::Socket&) const ;
-    ::java::lang::String chooseServerAlias(const ::java::lang::String&, const std::vector< ::java::security::Principal>&, const ::java::net::Socket&) const ;
-    std::vector< ::java::security::cert::X509Certificate> getCertificateChain(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> getClientAliases(const ::java::lang::String&, const std::vector< ::java::security::Principal>&) const ;
-    std::vector< ::java::lang::String> getServerAliases(const ::java::lang::String&, const std::vector< ::java::security::Principal>&) const ;
-    ::java::security::PrivateKey getPrivateKey(const ::java::lang::String&) const ;
+    ::java::lang::String chooseClientAlias(const std::vector< ::java::lang::String>&, const std::vector< ::java::security::Principal>&, const ::java::net::Socket&) const;
+    ::java::lang::String chooseServerAlias(const ::java::lang::String&, const std::vector< ::java::security::Principal>&, const ::java::net::Socket&) const;
+    std::vector< ::java::security::cert::X509Certificate> getCertificateChain(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> getClientAliases(const ::java::lang::String&, const std::vector< ::java::security::Principal>&) const;
+    std::vector< ::java::lang::String> getServerAliases(const ::java::lang::String&, const std::vector< ::java::security::Principal>&) const;
+    ::java::security::PrivateKey getPrivateKey(const ::java::lang::String&) const;
 
 };
 }

@@ -35,17 +35,17 @@ public:
     ::java::sql::Array& operator=(const ::java::sql::Array& x) {obj = x.obj; return *this;}
     ::java::sql::Array& operator=(::java::sql::Array&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object getArray() const ;
-    ::java::lang::Object getArray(int64_t, int32_t) const ;
-    ::java::lang::Object getArray(int64_t, int32_t, const ::java::util::Map&) const ;
-    ::java::lang::Object getArray(const ::java::util::Map&) const ;
-    int32_t getBaseType() const ;
-    ::java::lang::String getBaseTypeName() const ;
-    ::java::sql::ResultSet getResultSet() const ;
-    ::java::sql::ResultSet getResultSet(int64_t, int32_t) const ;
-    ::java::sql::ResultSet getResultSet(int64_t, int32_t, const ::java::util::Map&) const ;
-    ::java::sql::ResultSet getResultSet(const ::java::util::Map&) const ;
-    void free() const ;
+    ::java::lang::Object getArray() const;
+    ::java::lang::Object getArray(int64_t, int32_t) const;
+    ::java::lang::Object getArray(int64_t, int32_t, const ::java::util::Map&) const;
+    ::java::lang::Object getArray(const ::java::util::Map&) const;
+    int32_t getBaseType() const;
+    ::java::lang::String getBaseTypeName() const;
+    ::java::sql::ResultSet getResultSet() const;
+    ::java::sql::ResultSet getResultSet(int64_t, int32_t) const;
+    ::java::sql::ResultSet getResultSet(int64_t, int32_t, const ::java::util::Map&) const;
+    ::java::sql::ResultSet getResultSet(const ::java::util::Map&) const;
+    void free() const;
 
 };
 }

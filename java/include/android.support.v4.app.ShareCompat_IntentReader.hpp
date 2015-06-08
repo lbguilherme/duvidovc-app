@@ -41,24 +41,24 @@ public:
     ::android::support::v4::app::ShareCompat_IntentReader& operator=(::android::support::v4::app::ShareCompat_IntentReader&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::app::ShareCompat_IntentReader from(const ::android::app::Activity&);
-    bool isShareIntent() const ;
-    bool isSingleShare() const ;
-    bool isMultipleShare() const ;
-    ::java::lang::String getType() const ;
-    ::java::lang::CharSequence getText() const ;
-    ::java::lang::String getHtmlText() const ;
-    ::android::net::Uri getStream() const ;
-    ::android::net::Uri getStream(int32_t) const ;
-    int32_t getStreamCount() const ;
-    std::vector< ::java::lang::String> getEmailTo() const ;
-    std::vector< ::java::lang::String> getEmailCc() const ;
-    std::vector< ::java::lang::String> getEmailBcc() const ;
-    ::java::lang::String getSubject() const ;
-    ::java::lang::String getCallingPackage() const ;
-    ::android::content::ComponentName getCallingActivity() const ;
-    ::android::graphics::drawable::Drawable getCallingActivityIcon() const ;
-    ::android::graphics::drawable::Drawable getCallingApplicationIcon() const ;
-    ::java::lang::CharSequence getCallingApplicationLabel() const ;
+    bool isShareIntent() const;
+    bool isSingleShare() const;
+    bool isMultipleShare() const;
+    ::java::lang::String getType() const;
+    ::java::lang::CharSequence getText() const;
+    ::java::lang::String getHtmlText() const;
+    ::android::net::Uri getStream() const;
+    ::android::net::Uri getStream(int32_t) const;
+    int32_t getStreamCount() const;
+    std::vector< ::java::lang::String> getEmailTo() const;
+    std::vector< ::java::lang::String> getEmailCc() const;
+    std::vector< ::java::lang::String> getEmailBcc() const;
+    ::java::lang::String getSubject() const;
+    ::java::lang::String getCallingPackage() const;
+    ::android::content::ComponentName getCallingActivity() const;
+    ::android::graphics::drawable::Drawable getCallingActivityIcon() const;
+    ::android::graphics::drawable::Drawable getCallingApplicationIcon() const;
+    ::java::lang::CharSequence getCallingApplicationLabel() const;
 
 };
 }

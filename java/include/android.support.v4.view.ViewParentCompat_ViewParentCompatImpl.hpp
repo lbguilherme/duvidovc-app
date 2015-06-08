@@ -36,15 +36,15 @@ public:
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatImpl& operator=(const ::android::support::v4::view::ViewParentCompat_ViewParentCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatImpl& operator=(::android::support::v4::view::ViewParentCompat_ViewParentCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool requestSendAccessibilityEvent(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    bool onStartNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const ;
-    void onNestedScrollAccepted(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const ;
-    void onStopNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&) const ;
-    void onNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const ;
-    void onNestedPreScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, const std::vector< int32_t>&) const ;
-    bool onNestedFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float, bool) const ;
-    bool onNestedPreFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float) const ;
-    void notifySubtreeAccessibilityStateChanged(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const ;
+    bool requestSendAccessibilityEvent(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    bool onStartNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const;
+    void onNestedScrollAccepted(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const;
+    void onStopNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&) const;
+    void onNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const;
+    void onNestedPreScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, const std::vector< int32_t>&) const;
+    bool onNestedFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float, bool) const;
+    bool onNestedPreFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float) const;
+    void notifySubtreeAccessibilityStateChanged(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const;
 
 };
 }

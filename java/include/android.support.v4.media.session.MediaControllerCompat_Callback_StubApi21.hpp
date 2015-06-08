@@ -37,10 +37,10 @@ public:
     ::android::support::v4::media::session::MediaControllerCompat_Callback_StubApi21& operator=(const ::android::support::v4::media::session::MediaControllerCompat_Callback_StubApi21& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::MediaControllerCompat_Callback_StubApi21& operator=(::android::support::v4::media::session::MediaControllerCompat_Callback_StubApi21&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSessionDestroyed() const ;
-    void onSessionEvent(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void onPlaybackStateChanged(const ::java::lang::Object&) const ;
-    void onMetadataChanged(const ::java::lang::Object&) const ;
+    void onSessionDestroyed() const;
+    void onSessionEvent(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void onPlaybackStateChanged(const ::java::lang::Object&) const;
+    void onMetadataChanged(const ::java::lang::Object&) const;
 
 };
 }

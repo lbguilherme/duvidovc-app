@@ -41,15 +41,15 @@ public:
     ::org::apache::http::impl::conn::AbstractPooledConnAdapter& operator=(const ::org::apache::http::impl::conn::AbstractPooledConnAdapter& x) {obj = x.obj; return *this;}
     ::org::apache::http::impl::conn::AbstractPooledConnAdapter& operator=(::org::apache::http::impl::conn::AbstractPooledConnAdapter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::conn::routing::HttpRoute getRoute() const ;
-    void open(const ::org::apache::http::conn::routing::HttpRoute&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const ;
-    void tunnelTarget(bool, const ::org::apache::http::params::HttpParams&) const ;
-    void tunnelProxy(const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const ;
-    void layerProtocol(const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const ;
-    void close() const ;
-    void shutdown() const ;
-    ::java::lang::Object getState() const ;
-    void setState(const ::java::lang::Object&) const ;
+    ::org::apache::http::conn::routing::HttpRoute getRoute() const;
+    void open(const ::org::apache::http::conn::routing::HttpRoute&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const;
+    void tunnelTarget(bool, const ::org::apache::http::params::HttpParams&) const;
+    void tunnelProxy(const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const;
+    void layerProtocol(const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const;
+    void close() const;
+    void shutdown() const;
+    ::java::lang::Object getState() const;
+    void setState(const ::java::lang::Object&) const;
 
 };
 }

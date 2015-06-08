@@ -35,7 +35,7 @@ public:
     ::org::apache::http::HttpRequest& operator=(const ::org::apache::http::HttpRequest& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpRequest& operator=(::org::apache::http::HttpRequest&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::RequestLine getRequestLine() const ;
+    ::org::apache::http::RequestLine getRequestLine() const;
 
 };
 }

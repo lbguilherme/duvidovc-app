@@ -38,8 +38,8 @@ public:
     ::android::text::method::ReplacementTransformationMethod& operator=(::android::text::method::ReplacementTransformationMethod&& x) {obj = std::move(x.obj); return *this;}
     
     ReplacementTransformationMethod();
-    ::java::lang::CharSequence getTransformation(const ::java::lang::CharSequence&, const ::android::view::View&) const ;
-    void onFocusChanged(const ::android::view::View&, const ::java::lang::CharSequence&, bool, int32_t, const ::android::graphics::Rect&) const ;
+    ::java::lang::CharSequence getTransformation(const ::java::lang::CharSequence&, const ::android::view::View&) const;
+    void onFocusChanged(const ::android::view::View&, const ::java::lang::CharSequence&, bool, int32_t, const ::android::graphics::Rect&) const;
 
 };
 }

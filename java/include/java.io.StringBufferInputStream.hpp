@@ -35,11 +35,11 @@ public:
     ::java::io::StringBufferInputStream& operator=(::java::io::StringBufferInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     StringBufferInputStream(const ::java::lang::String&);
-    int32_t available() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void reset() const ;
-    int64_t skip(int64_t) const ;
+    int32_t available() const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void reset() const;
+    int64_t skip(int64_t) const;
 
 };
 }

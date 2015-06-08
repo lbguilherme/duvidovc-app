@@ -33,7 +33,7 @@ public:
     ::android::view::View_OnHoverListener& operator=(const ::android::view::View_OnHoverListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnHoverListener& operator=(::android::view::View_OnHoverListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onHover(const ::android::view::View&, const ::android::view::MotionEvent&) const ;
+    bool onHover(const ::android::view::View&, const ::android::view::MotionEvent&) const;
 
 };
 }

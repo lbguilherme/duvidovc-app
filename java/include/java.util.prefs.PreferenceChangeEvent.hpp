@@ -39,9 +39,9 @@ public:
     ::java::util::prefs::PreferenceChangeEvent& operator=(::java::util::prefs::PreferenceChangeEvent&& x) {obj = std::move(x.obj); return *this;}
     
     PreferenceChangeEvent(const ::java::util::prefs::Preferences&, const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getKey() const ;
-    ::java::lang::String getNewValue() const ;
-    ::java::util::prefs::Preferences getNode() const ;
+    ::java::lang::String getKey() const;
+    ::java::lang::String getNewValue() const;
+    ::java::util::prefs::Preferences getNode() const;
 
 };
 }

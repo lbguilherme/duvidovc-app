@@ -38,10 +38,10 @@ public:
     RC2ParameterSpec(int32_t);
     RC2ParameterSpec(int32_t, const std::vector< int8_t>&);
     RC2ParameterSpec(int32_t, const std::vector< int8_t>&, int32_t);
-    int32_t getEffectiveKeyBits() const ;
-    std::vector< int8_t> getIV() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    int32_t getEffectiveKeyBits() const;
+    std::vector< int8_t> getIV() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

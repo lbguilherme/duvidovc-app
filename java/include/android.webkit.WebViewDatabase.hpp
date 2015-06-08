@@ -34,12 +34,12 @@ public:
     ::android::webkit::WebViewDatabase& operator=(::android::webkit::WebViewDatabase&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::webkit::WebViewDatabase getInstance(const ::android::content::Context&);
-    bool hasUsernamePassword() const ;
-    void clearUsernamePassword() const ;
-    bool hasHttpAuthUsernamePassword() const ;
-    void clearHttpAuthUsernamePassword() const ;
-    bool hasFormData() const ;
-    void clearFormData() const ;
+    bool hasUsernamePassword() const;
+    void clearUsernamePassword() const;
+    bool hasHttpAuthUsernamePassword() const;
+    void clearHttpAuthUsernamePassword() const;
+    bool hasFormData() const;
+    void clearFormData() const;
 
 };
 }

@@ -41,10 +41,10 @@ public:
     
     BasicHeaderElementIterator(const ::org::apache::http::HeaderIterator&, const ::org::apache::http::message::HeaderValueParser&);
     BasicHeaderElementIterator(const ::org::apache::http::HeaderIterator&);
-    bool hasNext() const ;
-    ::org::apache::http::HeaderElement nextElement() const ;
-    ::java::lang::Object next() const ;
-    void remove() const ;
+    bool hasNext() const;
+    ::org::apache::http::HeaderElement nextElement() const;
+    ::java::lang::Object next() const;
+    void remove() const;
 
 };
 }

@@ -33,13 +33,13 @@ public:
     ::org::apache::http::HttpConnection& operator=(const ::org::apache::http::HttpConnection& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpConnection& operator=(::org::apache::http::HttpConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    bool isOpen() const ;
-    bool isStale() const ;
-    void setSocketTimeout(int32_t) const ;
-    int32_t getSocketTimeout() const ;
-    void shutdown() const ;
-    ::org::apache::http::HttpConnectionMetrics getMetrics() const ;
+    void close() const;
+    bool isOpen() const;
+    bool isStale() const;
+    void setSocketTimeout(int32_t) const;
+    int32_t getSocketTimeout() const;
+    void shutdown() const;
+    ::org::apache::http::HttpConnectionMetrics getMetrics() const;
 
 };
 }

@@ -35,17 +35,17 @@ public:
     ::android::support::v4::media::TransportController& operator=(::android::support::v4::media::TransportController&& x) {obj = std::move(x.obj); return *this;}
     
     TransportController();
-    void registerStateListener(const ::android::support::v4::media::TransportStateListener&) const ;
-    void unregisterStateListener(const ::android::support::v4::media::TransportStateListener&) const ;
-    void startPlaying() const ;
-    void pausePlaying() const ;
-    void stopPlaying() const ;
-    int64_t getDuration() const ;
-    int64_t getCurrentPosition() const ;
-    void seekTo(int64_t) const ;
-    bool isPlaying() const ;
-    int32_t getBufferPercentage() const ;
-    int32_t getTransportControlFlags() const ;
+    void registerStateListener(const ::android::support::v4::media::TransportStateListener&) const;
+    void unregisterStateListener(const ::android::support::v4::media::TransportStateListener&) const;
+    void startPlaying() const;
+    void pausePlaying() const;
+    void stopPlaying() const;
+    int64_t getDuration() const;
+    int64_t getCurrentPosition() const;
+    void seekTo(int64_t) const;
+    bool isPlaying() const;
+    int32_t getBufferPercentage() const;
+    int32_t getTransportControlFlags() const;
 
 };
 }

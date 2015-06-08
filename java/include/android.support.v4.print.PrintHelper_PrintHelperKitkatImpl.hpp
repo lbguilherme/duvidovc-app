@@ -39,14 +39,14 @@ public:
     ::android::support::v4::print::PrintHelper_PrintHelperKitkatImpl& operator=(const ::android::support::v4::print::PrintHelper_PrintHelperKitkatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::print::PrintHelper_PrintHelperKitkatImpl& operator=(::android::support::v4::print::PrintHelper_PrintHelperKitkatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setScaleMode(int32_t) const ;
-    int32_t getScaleMode() const ;
-    void setColorMode(int32_t) const ;
-    int32_t getColorMode() const ;
-    void setOrientation(int32_t) const ;
-    int32_t getOrientation() const ;
-    void printBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const ;
-    void printBitmap(const ::java::lang::String&, const ::android::net::Uri&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const ;
+    void setScaleMode(int32_t) const;
+    int32_t getScaleMode() const;
+    void setColorMode(int32_t) const;
+    int32_t getColorMode() const;
+    void setOrientation(int32_t) const;
+    int32_t getOrientation() const;
+    void printBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const;
+    void printBitmap(const ::java::lang::String&, const ::android::net::Uri&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const;
 
 };
 }

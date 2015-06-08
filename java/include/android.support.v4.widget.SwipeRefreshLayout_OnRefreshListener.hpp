@@ -33,7 +33,7 @@ public:
     ::android::support::v4::widget::SwipeRefreshLayout_OnRefreshListener& operator=(const ::android::support::v4::widget::SwipeRefreshLayout_OnRefreshListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SwipeRefreshLayout_OnRefreshListener& operator=(::android::support::v4::widget::SwipeRefreshLayout_OnRefreshListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onRefresh() const ;
+    void onRefresh() const;
 
 };
 }

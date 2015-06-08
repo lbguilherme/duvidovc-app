@@ -34,8 +34,8 @@ public:
     ::java::net::CacheResponse& operator=(::java::net::CacheResponse&& x) {obj = std::move(x.obj); return *this;}
     
     CacheResponse();
-    ::java::io::InputStream getBody() const ;
-    ::java::util::Map getHeaders() const ;
+    ::java::io::InputStream getBody() const;
+    ::java::util::Map getHeaders() const;
 
 };
 }

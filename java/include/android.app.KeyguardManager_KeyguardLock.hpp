@@ -31,8 +31,8 @@ public:
     ::android::app::KeyguardManager_KeyguardLock& operator=(const ::android::app::KeyguardManager_KeyguardLock& x) {obj = x.obj; return *this;}
     ::android::app::KeyguardManager_KeyguardLock& operator=(::android::app::KeyguardManager_KeyguardLock&& x) {obj = std::move(x.obj); return *this;}
     
-    void disableKeyguard() const ;
-    void reenableKeyguard() const ;
+    void disableKeyguard() const;
+    void reenableKeyguard() const;
 
 };
 }

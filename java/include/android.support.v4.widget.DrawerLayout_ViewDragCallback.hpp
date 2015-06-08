@@ -39,19 +39,19 @@ public:
     ::android::support::v4::widget::DrawerLayout_ViewDragCallback& operator=(::android::support::v4::widget::DrawerLayout_ViewDragCallback&& x) {obj = std::move(x.obj); return *this;}
     
     DrawerLayout_ViewDragCallback(const ::android::support::v4::widget::DrawerLayout&, int32_t);
-    void setDragger(const ::android::support::v4::widget::ViewDragHelper&) const ;
-    void removeCallbacks() const ;
-    bool tryCaptureView(const ::android::view::View&, int32_t) const ;
-    void onViewDragStateChanged(int32_t) const ;
-    void onViewPositionChanged(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const ;
-    void onViewCaptured(const ::android::view::View&, int32_t) const ;
-    void onViewReleased(const ::android::view::View&, float, float) const ;
-    void onEdgeTouched(int32_t, int32_t) const ;
-    bool onEdgeLock(int32_t) const ;
-    void onEdgeDragStarted(int32_t, int32_t) const ;
-    int32_t getViewHorizontalDragRange(const ::android::view::View&) const ;
-    int32_t clampViewPositionHorizontal(const ::android::view::View&, int32_t, int32_t) const ;
-    int32_t clampViewPositionVertical(const ::android::view::View&, int32_t, int32_t) const ;
+    void setDragger(const ::android::support::v4::widget::ViewDragHelper&) const;
+    void removeCallbacks() const;
+    bool tryCaptureView(const ::android::view::View&, int32_t) const;
+    void onViewDragStateChanged(int32_t) const;
+    void onViewPositionChanged(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const;
+    void onViewCaptured(const ::android::view::View&, int32_t) const;
+    void onViewReleased(const ::android::view::View&, float, float) const;
+    void onEdgeTouched(int32_t, int32_t) const;
+    bool onEdgeLock(int32_t) const;
+    void onEdgeDragStarted(int32_t, int32_t) const;
+    int32_t getViewHorizontalDragRange(const ::android::view::View&) const;
+    int32_t clampViewPositionHorizontal(const ::android::view::View&, int32_t, int32_t) const;
+    int32_t clampViewPositionVertical(const ::android::view::View&, int32_t, int32_t) const;
 
 };
 }

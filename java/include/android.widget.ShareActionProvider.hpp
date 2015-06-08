@@ -40,12 +40,12 @@ public:
     ::android::widget::ShareActionProvider& operator=(::android::widget::ShareActionProvider&& x) {obj = std::move(x.obj); return *this;}
     
     ShareActionProvider(const ::android::content::Context&);
-    void setOnShareTargetSelectedListener(const ::android::widget::ShareActionProvider_OnShareTargetSelectedListener&) const ;
-    ::android::view::View onCreateActionView() const ;
-    bool hasSubMenu() const ;
-    void onPrepareSubMenu(const ::android::view::SubMenu&) const ;
-    void setShareHistoryFileName(const ::java::lang::String&) const ;
-    void setShareIntent(const ::android::content::Intent&) const ;
+    void setOnShareTargetSelectedListener(const ::android::widget::ShareActionProvider_OnShareTargetSelectedListener&) const;
+    ::android::view::View onCreateActionView() const;
+    bool hasSubMenu() const;
+    void onPrepareSubMenu(const ::android::view::SubMenu&) const;
+    void setShareHistoryFileName(const ::java::lang::String&) const;
+    void setShareIntent(const ::android::content::Intent&) const;
 
 };
 }

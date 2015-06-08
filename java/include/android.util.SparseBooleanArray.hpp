@@ -36,18 +36,18 @@ public:
     
     SparseBooleanArray();
     SparseBooleanArray(int32_t);
-    ::android::util::SparseBooleanArray clone() const ;
-    bool get(int32_t) const ;
-    bool get(int32_t, bool) const ;
-    void delete_(int32_t) const ;
-    void put(int32_t, bool) const ;
-    int32_t size() const ;
-    int32_t keyAt(int32_t) const ;
-    bool valueAt(int32_t) const ;
-    int32_t indexOfKey(int32_t) const ;
-    int32_t indexOfValue(bool) const ;
-    void clear() const ;
-    void append(int32_t, bool) const ;
+    ::android::util::SparseBooleanArray clone() const;
+    bool get(int32_t) const;
+    bool get(int32_t, bool) const;
+    void delete_(int32_t) const;
+    void put(int32_t, bool) const;
+    int32_t size() const;
+    int32_t keyAt(int32_t) const;
+    bool valueAt(int32_t) const;
+    int32_t indexOfKey(int32_t) const;
+    int32_t indexOfValue(bool) const;
+    void clear() const;
+    void append(int32_t, bool) const;
 
 };
 }

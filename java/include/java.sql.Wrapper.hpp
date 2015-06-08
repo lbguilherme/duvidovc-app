@@ -33,8 +33,8 @@ public:
     ::java::sql::Wrapper& operator=(const ::java::sql::Wrapper& x) {obj = x.obj; return *this;}
     ::java::sql::Wrapper& operator=(::java::sql::Wrapper&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object unwrap(const ::java::lang::Class&) const ;
-    bool isWrapperFor(const ::java::lang::Class&) const ;
+    ::java::lang::Object unwrap(const ::java::lang::Class&) const;
+    bool isWrapperFor(const ::java::lang::Class&) const;
 
 };
 }

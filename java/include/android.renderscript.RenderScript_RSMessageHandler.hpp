@@ -34,7 +34,7 @@ public:
     ::android::renderscript::RenderScript_RSMessageHandler& operator=(::android::renderscript::RenderScript_RSMessageHandler&& x) {obj = std::move(x.obj); return *this;}
     
     RenderScript_RSMessageHandler();
-    void run() const ;
+    void run() const;
 
 };
 }

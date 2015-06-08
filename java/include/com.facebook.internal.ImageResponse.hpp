@@ -35,10 +35,10 @@ public:
     ::com::facebook::internal::ImageResponse& operator=(const ::com::facebook::internal::ImageResponse& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::ImageResponse& operator=(::com::facebook::internal::ImageResponse&& x) {obj = std::move(x.obj); return *this;}
     
-    ::com::facebook::internal::ImageRequest getRequest() const ;
-    ::java::lang::Exception getError() const ;
-    ::android::graphics::Bitmap getBitmap() const ;
-    bool isCachedRedirect() const ;
+    ::com::facebook::internal::ImageRequest getRequest() const;
+    ::java::lang::Exception getError() const;
+    ::android::graphics::Bitmap getBitmap() const;
+    bool isCachedRedirect() const;
 
 };
 }

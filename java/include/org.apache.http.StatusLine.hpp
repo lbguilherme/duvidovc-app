@@ -34,9 +34,9 @@ public:
     ::org::apache::http::StatusLine& operator=(const ::org::apache::http::StatusLine& x) {obj = x.obj; return *this;}
     ::org::apache::http::StatusLine& operator=(::org::apache::http::StatusLine&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    int32_t getStatusCode() const ;
-    ::java::lang::String getReasonPhrase() const ;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    int32_t getStatusCode() const;
+    ::java::lang::String getReasonPhrase() const;
 
 };
 }

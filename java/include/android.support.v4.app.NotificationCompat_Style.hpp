@@ -36,8 +36,8 @@ public:
     ::android::support::v4::app::NotificationCompat_Style& operator=(::android::support::v4::app::NotificationCompat_Style&& x) {obj = std::move(x.obj); return *this;}
     
     NotificationCompat_Style();
-    void setBuilder(const ::android::support::v4::app::NotificationCompat_Builder&) const ;
-    ::android::app::Notification build() const ;
+    void setBuilder(const ::android::support::v4::app::NotificationCompat_Builder&) const;
+    ::android::app::Notification build() const;
 
 };
 }

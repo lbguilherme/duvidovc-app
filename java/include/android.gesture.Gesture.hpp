@@ -41,21 +41,21 @@ public:
     ::android::gesture::Gesture& operator=(::android::gesture::Gesture&& x) {obj = std::move(x.obj); return *this;}
     
     Gesture();
-    ::java::lang::Object clone() const ;
-    ::java::util::ArrayList getStrokes() const ;
-    int32_t getStrokesCount() const ;
-    void addStroke(const ::android::gesture::GestureStroke&) const ;
-    float getLength() const ;
-    ::android::graphics::RectF getBoundingBox() const ;
-    ::android::graphics::Path toPath() const ;
-    ::android::graphics::Path toPath(const ::android::graphics::Path&) const ;
-    ::android::graphics::Path toPath(int32_t, int32_t, int32_t, int32_t) const ;
-    ::android::graphics::Path toPath(const ::android::graphics::Path&, int32_t, int32_t, int32_t, int32_t) const ;
-    int64_t getID() const ;
-    ::android::graphics::Bitmap toBitmap(int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    ::android::graphics::Bitmap toBitmap(int32_t, int32_t, int32_t, int32_t) const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    ::java::lang::Object clone() const;
+    ::java::util::ArrayList getStrokes() const;
+    int32_t getStrokesCount() const;
+    void addStroke(const ::android::gesture::GestureStroke&) const;
+    float getLength() const;
+    ::android::graphics::RectF getBoundingBox() const;
+    ::android::graphics::Path toPath() const;
+    ::android::graphics::Path toPath(const ::android::graphics::Path&) const;
+    ::android::graphics::Path toPath(int32_t, int32_t, int32_t, int32_t) const;
+    ::android::graphics::Path toPath(const ::android::graphics::Path&, int32_t, int32_t, int32_t, int32_t) const;
+    int64_t getID() const;
+    ::android::graphics::Bitmap toBitmap(int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    ::android::graphics::Bitmap toBitmap(int32_t, int32_t, int32_t, int32_t) const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

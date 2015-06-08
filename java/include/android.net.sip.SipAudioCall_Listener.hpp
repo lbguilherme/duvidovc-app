@@ -36,16 +36,16 @@ public:
     ::android::net::sip::SipAudioCall_Listener& operator=(::android::net::sip::SipAudioCall_Listener&& x) {obj = std::move(x.obj); return *this;}
     
     SipAudioCall_Listener();
-    void onReadyToCall(const ::android::net::sip::SipAudioCall&) const ;
-    void onCalling(const ::android::net::sip::SipAudioCall&) const ;
-    void onRinging(const ::android::net::sip::SipAudioCall&, const ::android::net::sip::SipProfile&) const ;
-    void onRingingBack(const ::android::net::sip::SipAudioCall&) const ;
-    void onCallEstablished(const ::android::net::sip::SipAudioCall&) const ;
-    void onCallEnded(const ::android::net::sip::SipAudioCall&) const ;
-    void onCallBusy(const ::android::net::sip::SipAudioCall&) const ;
-    void onCallHeld(const ::android::net::sip::SipAudioCall&) const ;
-    void onError(const ::android::net::sip::SipAudioCall&, int32_t, const ::java::lang::String&) const ;
-    void onChanged(const ::android::net::sip::SipAudioCall&) const ;
+    void onReadyToCall(const ::android::net::sip::SipAudioCall&) const;
+    void onCalling(const ::android::net::sip::SipAudioCall&) const;
+    void onRinging(const ::android::net::sip::SipAudioCall&, const ::android::net::sip::SipProfile&) const;
+    void onRingingBack(const ::android::net::sip::SipAudioCall&) const;
+    void onCallEstablished(const ::android::net::sip::SipAudioCall&) const;
+    void onCallEnded(const ::android::net::sip::SipAudioCall&) const;
+    void onCallBusy(const ::android::net::sip::SipAudioCall&) const;
+    void onCallHeld(const ::android::net::sip::SipAudioCall&) const;
+    void onError(const ::android::net::sip::SipAudioCall&, int32_t, const ::java::lang::String&) const;
+    void onChanged(const ::android::net::sip::SipAudioCall&) const;
 
 };
 }

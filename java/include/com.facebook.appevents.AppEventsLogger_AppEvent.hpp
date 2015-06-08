@@ -40,10 +40,10 @@ public:
     ::com::facebook::appevents::AppEventsLogger_AppEvent& operator=(::com::facebook::appevents::AppEventsLogger_AppEvent&& x) {obj = std::move(x.obj); return *this;}
     
     AppEventsLogger_AppEvent(const ::android::content::Context&, const ::java::lang::String&, const ::java::lang::Double&, const ::android::os::Bundle&, bool);
-    ::java::lang::String getName() const ;
-    bool getIsImplicit() const ;
-    ::org::json::JSONObject getJSONObject() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getName() const;
+    bool getIsImplicit() const;
+    ::org::json::JSONObject getJSONObject() const;
+    ::java::lang::String toString() const;
 
 };
 }

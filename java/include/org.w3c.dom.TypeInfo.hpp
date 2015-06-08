@@ -33,9 +33,9 @@ public:
     ::org::w3c::dom::TypeInfo& operator=(const ::org::w3c::dom::TypeInfo& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::TypeInfo& operator=(::org::w3c::dom::TypeInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getTypeName() const ;
-    ::java::lang::String getTypeNamespace() const ;
-    bool isDerivedFrom(const ::java::lang::String&, const ::java::lang::String&, int32_t) const ;
+    ::java::lang::String getTypeName() const;
+    ::java::lang::String getTypeNamespace() const;
+    bool isDerivedFrom(const ::java::lang::String&, const ::java::lang::String&, int32_t) const;
 
 };
 }

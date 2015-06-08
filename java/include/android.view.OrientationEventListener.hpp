@@ -34,10 +34,10 @@ public:
     
     OrientationEventListener(const ::android::content::Context&);
     OrientationEventListener(const ::android::content::Context&, int32_t);
-    void enable() const ;
-    void disable() const ;
-    bool canDetectOrientation() const ;
-    void onOrientationChanged(int32_t) const ;
+    void enable() const;
+    void disable() const;
+    bool canDetectOrientation() const;
+    void onOrientationChanged(int32_t) const;
 
 };
 }

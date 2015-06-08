@@ -38,29 +38,29 @@ public:
     ::org::apache::http::util::CharArrayBuffer& operator=(::org::apache::http::util::CharArrayBuffer&& x) {obj = std::move(x.obj); return *this;}
     
     CharArrayBuffer(int32_t);
-    void append(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void append(const ::java::lang::String&) const ;
-    void append(const ::org::apache::http::util::CharArrayBuffer&, int32_t, int32_t) const ;
-    void append(const ::org::apache::http::util::CharArrayBuffer&) const ;
-    void append(uint16_t) const ;
-    void append(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void append(const ::org::apache::http::util::ByteArrayBuffer&, int32_t, int32_t) const ;
-    void append(const ::java::lang::Object&) const ;
-    void clear() const ;
-    std::vector< uint16_t> toCharArray() const ;
-    uint16_t charAt(int32_t) const ;
-    std::vector< uint16_t> buffer() const ;
-    int32_t capacity() const ;
-    int32_t length() const ;
-    void ensureCapacity(int32_t) const ;
-    void setLength(int32_t) const ;
-    bool isEmpty() const ;
-    bool isFull() const ;
-    int32_t indexOf(int32_t, int32_t, int32_t) const ;
-    int32_t indexOf(int32_t) const ;
-    ::java::lang::String substring(int32_t, int32_t) const ;
-    ::java::lang::String substringTrimmed(int32_t, int32_t) const ;
-    ::java::lang::String toString() const ;
+    void append(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void append(const ::java::lang::String&) const;
+    void append(const ::org::apache::http::util::CharArrayBuffer&, int32_t, int32_t) const;
+    void append(const ::org::apache::http::util::CharArrayBuffer&) const;
+    void append(uint16_t) const;
+    void append(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void append(const ::org::apache::http::util::ByteArrayBuffer&, int32_t, int32_t) const;
+    void append(const ::java::lang::Object&) const;
+    void clear() const;
+    std::vector< uint16_t> toCharArray() const;
+    uint16_t charAt(int32_t) const;
+    std::vector< uint16_t> buffer() const;
+    int32_t capacity() const;
+    int32_t length() const;
+    void ensureCapacity(int32_t) const;
+    void setLength(int32_t) const;
+    bool isEmpty() const;
+    bool isFull() const;
+    int32_t indexOf(int32_t, int32_t, int32_t) const;
+    int32_t indexOf(int32_t) const;
+    ::java::lang::String substring(int32_t, int32_t) const;
+    ::java::lang::String substringTrimmed(int32_t, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     ::org::xml::sax::ext::EntityResolver2& operator=(const ::org::xml::sax::ext::EntityResolver2& x) {obj = x.obj; return *this;}
     ::org::xml::sax::ext::EntityResolver2& operator=(::org::xml::sax::ext::EntityResolver2&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::xml::sax::InputSource getExternalSubset(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::org::xml::sax::InputSource getExternalSubset(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

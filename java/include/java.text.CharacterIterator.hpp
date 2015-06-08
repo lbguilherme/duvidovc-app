@@ -34,16 +34,16 @@ public:
     ::java::text::CharacterIterator& operator=(const ::java::text::CharacterIterator& x) {obj = x.obj; return *this;}
     ::java::text::CharacterIterator& operator=(::java::text::CharacterIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
-    uint16_t current() const ;
-    uint16_t first() const ;
-    int32_t getBeginIndex() const ;
-    int32_t getEndIndex() const ;
-    int32_t getIndex() const ;
-    uint16_t last() const ;
-    uint16_t next() const ;
-    uint16_t previous() const ;
-    uint16_t setIndex(int32_t) const ;
+    ::java::lang::Object clone() const;
+    uint16_t current() const;
+    uint16_t first() const;
+    int32_t getBeginIndex() const;
+    int32_t getEndIndex() const;
+    int32_t getIndex() const;
+    uint16_t last() const;
+    uint16_t next() const;
+    uint16_t previous() const;
+    uint16_t setIndex(int32_t) const;
 
 };
 }

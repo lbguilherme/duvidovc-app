@@ -38,27 +38,27 @@ public:
     ::android::animation::LayoutTransition& operator=(::android::animation::LayoutTransition&& x) {obj = std::move(x.obj); return *this;}
     
     LayoutTransition();
-    void setDuration(int64_t) const ;
-    void setStartDelay(int32_t, int64_t) const ;
-    int64_t getStartDelay(int32_t) const ;
-    void setDuration(int32_t, int64_t) const ;
-    int64_t getDuration(int32_t) const ;
-    void setStagger(int32_t, int64_t) const ;
-    int64_t getStagger(int32_t) const ;
-    void setInterpolator(int32_t, const ::android::animation::TimeInterpolator&) const ;
-    ::android::animation::TimeInterpolator getInterpolator(int32_t) const ;
-    void setAnimator(int32_t, const ::android::animation::Animator&) const ;
-    ::android::animation::Animator getAnimator(int32_t) const ;
-    void setAnimateParentHierarchy(bool) const ;
-    bool isChangingLayout() const ;
-    bool isRunning() const ;
-    void addChild(const ::android::view::ViewGroup&, const ::android::view::View&) const ;
-    void showChild(const ::android::view::ViewGroup&, const ::android::view::View&) const ;
-    void removeChild(const ::android::view::ViewGroup&, const ::android::view::View&) const ;
-    void hideChild(const ::android::view::ViewGroup&, const ::android::view::View&) const ;
-    void addTransitionListener(const ::android::animation::LayoutTransition_TransitionListener&) const ;
-    void removeTransitionListener(const ::android::animation::LayoutTransition_TransitionListener&) const ;
-    ::java::util::List getTransitionListeners() const ;
+    void setDuration(int64_t) const;
+    void setStartDelay(int32_t, int64_t) const;
+    int64_t getStartDelay(int32_t) const;
+    void setDuration(int32_t, int64_t) const;
+    int64_t getDuration(int32_t) const;
+    void setStagger(int32_t, int64_t) const;
+    int64_t getStagger(int32_t) const;
+    void setInterpolator(int32_t, const ::android::animation::TimeInterpolator&) const;
+    ::android::animation::TimeInterpolator getInterpolator(int32_t) const;
+    void setAnimator(int32_t, const ::android::animation::Animator&) const;
+    ::android::animation::Animator getAnimator(int32_t) const;
+    void setAnimateParentHierarchy(bool) const;
+    bool isChangingLayout() const;
+    bool isRunning() const;
+    void addChild(const ::android::view::ViewGroup&, const ::android::view::View&) const;
+    void showChild(const ::android::view::ViewGroup&, const ::android::view::View&) const;
+    void removeChild(const ::android::view::ViewGroup&, const ::android::view::View&) const;
+    void hideChild(const ::android::view::ViewGroup&, const ::android::view::View&) const;
+    void addTransitionListener(const ::android::animation::LayoutTransition_TransitionListener&) const;
+    void removeTransitionListener(const ::android::animation::LayoutTransition_TransitionListener&) const;
+    ::java::util::List getTransitionListeners() const;
 
 };
 }

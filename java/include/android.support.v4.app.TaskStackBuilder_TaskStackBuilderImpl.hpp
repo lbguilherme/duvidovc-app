@@ -37,7 +37,7 @@ public:
     ::android::support::v4::app::TaskStackBuilder_TaskStackBuilderImpl& operator=(const ::android::support::v4::app::TaskStackBuilder_TaskStackBuilderImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::TaskStackBuilder_TaskStackBuilderImpl& operator=(::android::support::v4::app::TaskStackBuilder_TaskStackBuilderImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::app::PendingIntent getPendingIntent(const ::android::content::Context&, const std::vector< ::android::content::Intent>&, int32_t, int32_t, const ::android::os::Bundle&) const ;
+    ::android::app::PendingIntent getPendingIntent(const ::android::content::Context&, const std::vector< ::android::content::Intent>&, int32_t, int32_t, const ::android::os::Bundle&) const;
 
 };
 }

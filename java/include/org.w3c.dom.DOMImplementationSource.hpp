@@ -35,8 +35,8 @@ public:
     ::org::w3c::dom::DOMImplementationSource& operator=(const ::org::w3c::dom::DOMImplementationSource& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMImplementationSource& operator=(::org::w3c::dom::DOMImplementationSource&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::DOMImplementation getDOMImplementation(const ::java::lang::String&) const ;
-    ::org::w3c::dom::DOMImplementationList getDOMImplementationList(const ::java::lang::String&) const ;
+    ::org::w3c::dom::DOMImplementation getDOMImplementation(const ::java::lang::String&) const;
+    ::org::w3c::dom::DOMImplementationList getDOMImplementationList(const ::java::lang::String&) const;
 
 };
 }

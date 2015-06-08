@@ -38,10 +38,10 @@ public:
     ::android::accessibilityservice::AccessibilityService& operator=(::android::accessibilityservice::AccessibilityService&& x) {obj = std::move(x.obj); return *this;}
     
     AccessibilityService();
-    void onAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInterrupt() const ;
-    void setServiceInfo(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
+    void onAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInterrupt() const;
+    void setServiceInfo(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
 
 };
 }

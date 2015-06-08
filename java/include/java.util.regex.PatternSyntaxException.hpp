@@ -36,10 +36,10 @@ public:
     ::java::util::regex::PatternSyntaxException& operator=(::java::util::regex::PatternSyntaxException&& x) {obj = std::move(x.obj); return *this;}
     
     PatternSyntaxException(const ::java::lang::String&, const ::java::lang::String&, int32_t);
-    ::java::lang::String getPattern() const ;
-    ::java::lang::String getMessage() const ;
-    ::java::lang::String getDescription() const ;
-    int32_t getIndex() const ;
+    ::java::lang::String getPattern() const;
+    ::java::lang::String getMessage() const;
+    ::java::lang::String getDescription() const;
+    int32_t getIndex() const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatKitKatImpl& operator=(const ::android::support::v4::view::ViewParentCompat_ViewParentCompatKitKatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatKitKatImpl& operator=(::android::support::v4::view::ViewParentCompat_ViewParentCompatKitKatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void notifySubtreeAccessibilityStateChanged(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const ;
+    void notifySubtreeAccessibilityStateChanged(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const;
 
 };
 }

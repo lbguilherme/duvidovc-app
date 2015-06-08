@@ -40,11 +40,11 @@ public:
     ::java::security::cert::PKIXCertPathValidatorResult& operator=(::java::security::cert::PKIXCertPathValidatorResult&& x) {obj = std::move(x.obj); return *this;}
     
     PKIXCertPathValidatorResult(const ::java::security::cert::TrustAnchor&, const ::java::security::cert::PolicyNode&, const ::java::security::PublicKey&);
-    ::java::security::cert::PolicyNode getPolicyTree() const ;
-    ::java::security::PublicKey getPublicKey() const ;
-    ::java::security::cert::TrustAnchor getTrustAnchor() const ;
-    ::java::lang::Object clone() const ;
-    ::java::lang::String toString() const ;
+    ::java::security::cert::PolicyNode getPolicyTree() const;
+    ::java::security::PublicKey getPublicKey() const;
+    ::java::security::cert::TrustAnchor getTrustAnchor() const;
+    ::java::lang::Object clone() const;
+    ::java::lang::String toString() const;
 
 };
 }

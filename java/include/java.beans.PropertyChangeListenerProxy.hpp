@@ -39,8 +39,8 @@ public:
     ::java::beans::PropertyChangeListenerProxy& operator=(::java::beans::PropertyChangeListenerProxy&& x) {obj = std::move(x.obj); return *this;}
     
     PropertyChangeListenerProxy(const ::java::lang::String&, const ::java::beans::PropertyChangeListener&);
-    ::java::lang::String getPropertyName() const ;
-    void propertyChange(const ::java::beans::PropertyChangeEvent&) const ;
+    ::java::lang::String getPropertyName() const;
+    void propertyChange(const ::java::beans::PropertyChangeEvent&) const;
 
 };
 }

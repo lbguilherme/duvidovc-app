@@ -37,8 +37,8 @@ public:
     ::javax::sql::DataSource& operator=(const ::javax::sql::DataSource& x) {obj = x.obj; return *this;}
     ::javax::sql::DataSource& operator=(::javax::sql::DataSource&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::sql::Connection getConnection() const ;
-    ::java::sql::Connection getConnection(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::sql::Connection getConnection() const;
+    ::java::sql::Connection getConnection(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

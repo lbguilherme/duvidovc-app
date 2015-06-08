@@ -34,7 +34,7 @@ public:
     ::java::beans::PropertyChangeListener& operator=(const ::java::beans::PropertyChangeListener& x) {obj = x.obj; return *this;}
     ::java::beans::PropertyChangeListener& operator=(::java::beans::PropertyChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void propertyChange(const ::java::beans::PropertyChangeEvent&) const ;
+    void propertyChange(const ::java::beans::PropertyChangeEvent&) const;
 
 };
 }

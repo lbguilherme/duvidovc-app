@@ -37,13 +37,13 @@ public:
     ::android::preference::PreferenceActivity_Header& operator=(::android::preference::PreferenceActivity_Header&& x) {obj = std::move(x.obj); return *this;}
     
     PreferenceActivity_Header();
-    ::java::lang::CharSequence getTitle(const ::android::content::res::Resources&) const ;
-    ::java::lang::CharSequence getSummary(const ::android::content::res::Resources&) const ;
-    ::java::lang::CharSequence getBreadCrumbTitle(const ::android::content::res::Resources&) const ;
-    ::java::lang::CharSequence getBreadCrumbShortTitle(const ::android::content::res::Resources&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    ::java::lang::CharSequence getTitle(const ::android::content::res::Resources&) const;
+    ::java::lang::CharSequence getSummary(const ::android::content::res::Resources&) const;
+    ::java::lang::CharSequence getBreadCrumbTitle(const ::android::content::res::Resources&) const;
+    ::java::lang::CharSequence getBreadCrumbShortTitle(const ::android::content::res::Resources&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

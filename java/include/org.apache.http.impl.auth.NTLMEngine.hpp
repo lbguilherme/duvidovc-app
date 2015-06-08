@@ -35,8 +35,8 @@ public:
     ::org::apache::http::impl::auth::NTLMEngine& operator=(const ::org::apache::http::impl::auth::NTLMEngine& x) {obj = x.obj; return *this;}
     ::org::apache::http::impl::auth::NTLMEngine& operator=(::org::apache::http::impl::auth::NTLMEngine&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String generateType1Msg(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String generateType3Msg(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::lang::String generateType1Msg(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String generateType3Msg(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

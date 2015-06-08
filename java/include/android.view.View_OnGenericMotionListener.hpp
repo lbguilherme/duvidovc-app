@@ -33,7 +33,7 @@ public:
     ::android::view::View_OnGenericMotionListener& operator=(const ::android::view::View_OnGenericMotionListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnGenericMotionListener& operator=(::android::view::View_OnGenericMotionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onGenericMotion(const ::android::view::View&, const ::android::view::MotionEvent&) const ;
+    bool onGenericMotion(const ::android::view::View&, const ::android::view::MotionEvent&) const;
 
 };
 }

@@ -38,10 +38,10 @@ public:
     ::javax::crypto::spec::OAEPParameterSpec& operator=(::javax::crypto::spec::OAEPParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     OAEPParameterSpec(const ::java::lang::String&, const ::java::lang::String&, const ::java::security::spec::AlgorithmParameterSpec&, const ::javax::crypto::spec::PSource&);
-    ::java::lang::String getDigestAlgorithm() const ;
-    ::java::lang::String getMGFAlgorithm() const ;
-    ::java::security::spec::AlgorithmParameterSpec getMGFParameters() const ;
-    ::javax::crypto::spec::PSource getPSource() const ;
+    ::java::lang::String getDigestAlgorithm() const;
+    ::java::lang::String getMGFAlgorithm() const;
+    ::java::security::spec::AlgorithmParameterSpec getMGFParameters() const;
+    ::javax::crypto::spec::PSource getPSource() const;
 
 };
 }

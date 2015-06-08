@@ -36,11 +36,11 @@ public:
     
     OrientationListener(const ::android::content::Context&);
     OrientationListener(const ::android::content::Context&, int32_t);
-    void enable() const ;
-    void disable() const ;
-    void onAccuracyChanged(int32_t, int32_t) const ;
-    void onSensorChanged(int32_t, const std::vector< float>&) const ;
-    void onOrientationChanged(int32_t) const ;
+    void enable() const;
+    void disable() const;
+    void onAccuracyChanged(int32_t, int32_t) const;
+    void onSensorChanged(int32_t, const std::vector< float>&) const;
+    void onOrientationChanged(int32_t) const;
 
 };
 }

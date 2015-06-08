@@ -38,9 +38,9 @@ public:
     ::org::apache::http::conn::BasicEofSensorWatcher& operator=(::org::apache::http::conn::BasicEofSensorWatcher&& x) {obj = std::move(x.obj); return *this;}
     
     BasicEofSensorWatcher(const ::org::apache::http::conn::ManagedClientConnection&, bool);
-    bool eofDetected(const ::java::io::InputStream&) const ;
-    bool streamClosed(const ::java::io::InputStream&) const ;
-    bool streamAbort(const ::java::io::InputStream&) const ;
+    bool eofDetected(const ::java::io::InputStream&) const;
+    bool streamClosed(const ::java::io::InputStream&) const;
+    bool streamAbort(const ::java::io::InputStream&) const;
 
 };
 }

@@ -41,7 +41,7 @@ public:
     
     QtApplication();
     static void setQtActivityDelegate(const ::java::lang::Object&);
-    void onTerminate() const ;
+    void onTerminate() const;
     static ::org::qtproject::qt5::android::bindings::QtApplication_InvokeResult invokeDelegate(const std::vector< ::java::lang::Object>&);
     static ::java::lang::Object invokeDelegateMethod(const ::java::lang::reflect::Method&, const std::vector< ::java::lang::Object>&);
 

@@ -38,11 +38,11 @@ public:
     
     Account(const ::java::lang::String&, const ::java::lang::String&);
     Account(const ::android::os::Parcel&);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

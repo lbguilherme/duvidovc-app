@@ -32,7 +32,7 @@ public:
     ::android::util::Printer& operator=(const ::android::util::Printer& x) {obj = x.obj; return *this;}
     ::android::util::Printer& operator=(::android::util::Printer&& x) {obj = std::move(x.obj); return *this;}
     
-    void println(const ::java::lang::String&) const ;
+    void println(const ::java::lang::String&) const;
 
 };
 }

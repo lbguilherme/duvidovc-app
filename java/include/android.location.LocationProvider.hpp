@@ -33,17 +33,17 @@ public:
     ::android::location::LocationProvider& operator=(const ::android::location::LocationProvider& x) {obj = x.obj; return *this;}
     ::android::location::LocationProvider& operator=(::android::location::LocationProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    bool meetsCriteria(const ::android::location::Criteria&) const ;
-    bool requiresNetwork() const ;
-    bool requiresSatellite() const ;
-    bool requiresCell() const ;
-    bool hasMonetaryCost() const ;
-    bool supportsAltitude() const ;
-    bool supportsSpeed() const ;
-    bool supportsBearing() const ;
-    int32_t getPowerRequirement() const ;
-    int32_t getAccuracy() const ;
+    ::java::lang::String getName() const;
+    bool meetsCriteria(const ::android::location::Criteria&) const;
+    bool requiresNetwork() const;
+    bool requiresSatellite() const;
+    bool requiresCell() const;
+    bool hasMonetaryCost() const;
+    bool supportsAltitude() const;
+    bool supportsSpeed() const;
+    bool supportsBearing() const;
+    int32_t getPowerRequirement() const;
+    int32_t getAccuracy() const;
 
 };
 }

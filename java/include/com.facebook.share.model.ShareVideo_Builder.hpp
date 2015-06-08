@@ -44,12 +44,12 @@ public:
     ::com::facebook::share::model::ShareVideo_Builder& operator=(::com::facebook::share::model::ShareVideo_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ShareVideo_Builder();
-    ::com::facebook::share::model::ShareVideo_Builder setLocalUrl(const ::android::net::Uri&) const ;
-    ::com::facebook::share::model::ShareVideo build() const ;
-    ::com::facebook::share::model::ShareVideo_Builder readFrom(const ::com::facebook::share::model::ShareVideo&) const ;
-    ::com::facebook::share::model::ShareVideo_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::ShareMedia_Builder readFrom(const ::com::facebook::share::model::ShareMedia&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::ShareVideo_Builder setLocalUrl(const ::android::net::Uri&) const;
+    ::com::facebook::share::model::ShareVideo build() const;
+    ::com::facebook::share::model::ShareVideo_Builder readFrom(const ::com::facebook::share::model::ShareVideo&) const;
+    ::com::facebook::share::model::ShareVideo_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::ShareMedia_Builder readFrom(const ::com::facebook::share::model::ShareMedia&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

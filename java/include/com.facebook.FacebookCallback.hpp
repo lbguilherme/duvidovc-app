@@ -33,9 +33,9 @@ public:
     ::com::facebook::FacebookCallback& operator=(const ::com::facebook::FacebookCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::FacebookCallback& operator=(::com::facebook::FacebookCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSuccess(const ::java::lang::Object&) const ;
-    void onCancel() const ;
-    void onError(const ::com::facebook::FacebookException&) const ;
+    void onSuccess(const ::java::lang::Object&) const;
+    void onCancel() const;
+    void onError(const ::com::facebook::FacebookException&) const;
 
 };
 }

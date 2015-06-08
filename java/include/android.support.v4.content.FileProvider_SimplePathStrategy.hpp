@@ -39,9 +39,9 @@ public:
     ::android::support::v4::content::FileProvider_SimplePathStrategy& operator=(::android::support::v4::content::FileProvider_SimplePathStrategy&& x) {obj = std::move(x.obj); return *this;}
     
     FileProvider_SimplePathStrategy(const ::java::lang::String&);
-    void addRoot(const ::java::lang::String&, const ::java::io::File&) const ;
-    ::android::net::Uri getUriForFile(const ::java::io::File&) const ;
-    ::java::io::File getFileForUri(const ::android::net::Uri&) const ;
+    void addRoot(const ::java::lang::String&, const ::java::io::File&) const;
+    ::android::net::Uri getUriForFile(const ::java::io::File&) const;
+    ::java::io::File getFileForUri(const ::android::net::Uri&) const;
 
 };
 }

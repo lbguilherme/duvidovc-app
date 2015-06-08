@@ -38,10 +38,10 @@ public:
     ::java::security::spec::ECParameterSpec& operator=(::java::security::spec::ECParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     ECParameterSpec(const ::java::security::spec::EllipticCurve&, const ::java::security::spec::ECPoint&, const ::java::math::BigInteger&, int32_t);
-    int32_t getCofactor() const ;
-    ::java::security::spec::EllipticCurve getCurve() const ;
-    ::java::security::spec::ECPoint getGenerator() const ;
-    ::java::math::BigInteger getOrder() const ;
+    int32_t getCofactor() const;
+    ::java::security::spec::EllipticCurve getCurve() const;
+    ::java::security::spec::ECPoint getGenerator() const;
+    ::java::math::BigInteger getOrder() const;
 
 };
 }

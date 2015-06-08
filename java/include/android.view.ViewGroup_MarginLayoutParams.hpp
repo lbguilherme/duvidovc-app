@@ -39,7 +39,7 @@ public:
     ViewGroup_MarginLayoutParams(const ::android::content::Context&, const ::android::util::AttributeSet&);
     ViewGroup_MarginLayoutParams(int32_t, int32_t);
     ViewGroup_MarginLayoutParams(const ::android::view::ViewGroup_LayoutParams&);
-    void setMargins(int32_t, int32_t, int32_t, int32_t) const ;
+    void setMargins(int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

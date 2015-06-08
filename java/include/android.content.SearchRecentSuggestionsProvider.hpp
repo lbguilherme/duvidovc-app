@@ -38,12 +38,12 @@ public:
     ::android::content::SearchRecentSuggestionsProvider& operator=(::android::content::SearchRecentSuggestionsProvider&& x) {obj = std::move(x.obj); return *this;}
     
     SearchRecentSuggestionsProvider();
-    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::String getType(const ::android::net::Uri&) const ;
-    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const ;
-    bool onCreate() const ;
-    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const ;
-    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
+    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    ::java::lang::String getType(const ::android::net::Uri&) const;
+    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const;
+    bool onCreate() const;
+    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const;
+    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
 
 };
 }

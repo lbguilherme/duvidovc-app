@@ -40,10 +40,10 @@ public:
     
     AlignmentSpan_Standard(const ::android::text::Layout_Alignment&);
     AlignmentSpan_Standard(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::android::text::Layout_Alignment getAlignment() const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::android::text::Layout_Alignment getAlignment() const;
 
 };
 }

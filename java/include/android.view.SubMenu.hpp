@@ -38,15 +38,15 @@ public:
     ::android::view::SubMenu& operator=(const ::android::view::SubMenu& x) {obj = x.obj; return *this;}
     ::android::view::SubMenu& operator=(::android::view::SubMenu&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::SubMenu setHeaderTitle(int32_t) const ;
-    ::android::view::SubMenu setHeaderTitle(const ::java::lang::CharSequence&) const ;
-    ::android::view::SubMenu setHeaderIcon(int32_t) const ;
-    ::android::view::SubMenu setHeaderIcon(const ::android::graphics::drawable::Drawable&) const ;
-    ::android::view::SubMenu setHeaderView(const ::android::view::View&) const ;
-    void clearHeader() const ;
-    ::android::view::SubMenu setIcon(int32_t) const ;
-    ::android::view::SubMenu setIcon(const ::android::graphics::drawable::Drawable&) const ;
-    ::android::view::MenuItem getItem() const ;
+    ::android::view::SubMenu setHeaderTitle(int32_t) const;
+    ::android::view::SubMenu setHeaderTitle(const ::java::lang::CharSequence&) const;
+    ::android::view::SubMenu setHeaderIcon(int32_t) const;
+    ::android::view::SubMenu setHeaderIcon(const ::android::graphics::drawable::Drawable&) const;
+    ::android::view::SubMenu setHeaderView(const ::android::view::View&) const;
+    void clearHeader() const;
+    ::android::view::SubMenu setIcon(int32_t) const;
+    ::android::view::SubMenu setIcon(const ::android::graphics::drawable::Drawable&) const;
+    ::android::view::MenuItem getItem() const;
 
 };
 }

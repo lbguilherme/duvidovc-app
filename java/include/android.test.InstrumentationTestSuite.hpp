@@ -41,8 +41,8 @@ public:
     InstrumentationTestSuite(const ::android::app::Instrumentation&);
     InstrumentationTestSuite(const ::java::lang::String&, const ::android::app::Instrumentation&);
     InstrumentationTestSuite(const ::java::lang::Class&, const ::android::app::Instrumentation&);
-    void addTestSuite(const ::java::lang::Class&) const ;
-    void runTest(const ::junit::framework::Test&, const ::junit::framework::TestResult&) const ;
+    void addTestSuite(const ::java::lang::Class&) const;
+    void runTest(const ::junit::framework::Test&, const ::junit::framework::TestResult&) const;
 
 };
 }

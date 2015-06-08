@@ -34,9 +34,9 @@ public:
     ::android::app::backup::RestoreObserver& operator=(::android::app::backup::RestoreObserver&& x) {obj = std::move(x.obj); return *this;}
     
     RestoreObserver();
-    void restoreStarting(int32_t) const ;
-    void onUpdate(int32_t, const ::java::lang::String&) const ;
-    void restoreFinished(int32_t) const ;
+    void restoreStarting(int32_t) const;
+    void onUpdate(int32_t, const ::java::lang::String&) const;
+    void restoreFinished(int32_t) const;
 
 };
 }

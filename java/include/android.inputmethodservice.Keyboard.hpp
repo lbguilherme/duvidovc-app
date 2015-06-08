@@ -38,14 +38,14 @@ public:
     Keyboard(const ::android::content::Context&, int32_t, int32_t, int32_t, int32_t);
     Keyboard(const ::android::content::Context&, int32_t, int32_t);
     Keyboard(const ::android::content::Context&, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t);
-    ::java::util::List getKeys() const ;
-    ::java::util::List getModifierKeys() const ;
-    int32_t getHeight() const ;
-    int32_t getMinWidth() const ;
-    bool setShifted(bool) const ;
-    bool isShifted() const ;
-    int32_t getShiftKeyIndex() const ;
-    std::vector< int32_t> getNearestKeys(int32_t, int32_t) const ;
+    ::java::util::List getKeys() const;
+    ::java::util::List getModifierKeys() const;
+    int32_t getHeight() const;
+    int32_t getMinWidth() const;
+    bool setShifted(bool) const;
+    bool isShifted() const;
+    int32_t getShiftKeyIndex() const;
+    std::vector< int32_t> getNearestKeys(int32_t, int32_t) const;
 
 };
 }

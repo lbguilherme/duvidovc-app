@@ -34,9 +34,9 @@ public:
     ::javax::xml::namespace_::NamespaceContext& operator=(const ::javax::xml::namespace_::NamespaceContext& x) {obj = x.obj; return *this;}
     ::javax::xml::namespace_::NamespaceContext& operator=(::javax::xml::namespace_::NamespaceContext&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getNamespaceURI(const ::java::lang::String&) const ;
-    ::java::lang::String getPrefix(const ::java::lang::String&) const ;
-    ::java::util::Iterator getPrefixes(const ::java::lang::String&) const ;
+    ::java::lang::String getNamespaceURI(const ::java::lang::String&) const;
+    ::java::lang::String getPrefix(const ::java::lang::String&) const;
+    ::java::util::Iterator getPrefixes(const ::java::lang::String&) const;
 
 };
 }

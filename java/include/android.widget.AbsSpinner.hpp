@@ -42,17 +42,17 @@ public:
     AbsSpinner(const ::android::content::Context&);
     AbsSpinner(const ::android::content::Context&, const ::android::util::AttributeSet&);
     AbsSpinner(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setAdapter(const ::android::widget::SpinnerAdapter&) const ;
-    void setSelection(int32_t, bool) const ;
-    void setSelection(int32_t) const ;
-    ::android::view::View getSelectedView() const ;
-    void requestLayout() const ;
-    ::android::widget::SpinnerAdapter getAdapter() const ;
-    int32_t getCount() const ;
-    int32_t pointToPosition(int32_t, int32_t) const ;
-    ::android::os::Parcelable onSaveInstanceState() const ;
-    void onRestoreInstanceState(const ::android::os::Parcelable&) const ;
-    void setAdapter(const ::android::widget::Adapter&) const ;
+    void setAdapter(const ::android::widget::SpinnerAdapter&) const;
+    void setSelection(int32_t, bool) const;
+    void setSelection(int32_t) const;
+    ::android::view::View getSelectedView() const;
+    void requestLayout() const;
+    ::android::widget::SpinnerAdapter getAdapter() const;
+    int32_t getCount() const;
+    int32_t pointToPosition(int32_t, int32_t) const;
+    ::android::os::Parcelable onSaveInstanceState() const;
+    void onRestoreInstanceState(const ::android::os::Parcelable&) const;
+    void setAdapter(const ::android::widget::Adapter&) const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     
     static std::vector< ::bolts::AppLinkNavigation_NavigationResult> values();
     static ::bolts::AppLinkNavigation_NavigationResult valueOf(const ::java::lang::String&);
-    ::java::lang::String getCode() const ;
-    bool isSucceeded() const ;
+    ::java::lang::String getCode() const;
+    bool isSucceeded() const;
 
 };
 }

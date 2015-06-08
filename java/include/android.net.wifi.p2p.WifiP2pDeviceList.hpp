@@ -39,10 +39,10 @@ public:
     ::android::net::wifi::p2p::WifiP2pDeviceList& operator=(::android::net::wifi::p2p::WifiP2pDeviceList&& x) {obj = std::move(x.obj); return *this;}
     
     WifiP2pDeviceList();
-    ::java::util::Collection getDeviceList() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::util::Collection getDeviceList() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

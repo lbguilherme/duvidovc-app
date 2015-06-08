@@ -35,8 +35,8 @@ public:
     ::com::facebook::internal::NativeProtocol_NativeAppInfo& operator=(const ::com::facebook::internal::NativeProtocol_NativeAppInfo& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::NativeProtocol_NativeAppInfo& operator=(::com::facebook::internal::NativeProtocol_NativeAppInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    bool validateSignature(const ::android::content::Context&, const ::java::lang::String&) const ;
-    ::java::util::TreeSet getAvailableVersions() const ;
+    bool validateSignature(const ::android::content::Context&, const ::java::lang::String&) const;
+    ::java::util::TreeSet getAvailableVersions() const;
 
 };
 }

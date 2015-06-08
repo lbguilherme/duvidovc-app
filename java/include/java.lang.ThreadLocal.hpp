@@ -33,9 +33,9 @@ public:
     ::java::lang::ThreadLocal& operator=(::java::lang::ThreadLocal&& x) {obj = std::move(x.obj); return *this;}
     
     ThreadLocal();
-    ::java::lang::Object get() const ;
-    void set(const ::java::lang::Object&) const ;
-    void remove() const ;
+    ::java::lang::Object get() const;
+    void set(const ::java::lang::Object&) const;
+    void remove() const;
 
 };
 }

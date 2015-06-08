@@ -39,10 +39,10 @@ public:
     DrmRights(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&);
     DrmRights(const ::java::io::File&, const ::java::lang::String&);
     DrmRights(const ::android::drm::ProcessedData&, const ::java::lang::String&);
-    std::vector< int8_t> getData() const ;
-    ::java::lang::String getMimeType() const ;
-    ::java::lang::String getAccountId() const ;
-    ::java::lang::String getSubscriptionId() const ;
+    std::vector< int8_t> getData() const;
+    ::java::lang::String getMimeType() const;
+    ::java::lang::String getAccountId() const;
+    ::java::lang::String getSubscriptionId() const;
 
 };
 }

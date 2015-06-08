@@ -34,17 +34,17 @@ public:
     ::android::graphics::Camera& operator=(::android::graphics::Camera&& x) {obj = std::move(x.obj); return *this;}
     
     Camera();
-    void save() const ;
-    void restore() const ;
-    void translate(float, float, float) const ;
-    void rotateX(float) const ;
-    void rotateY(float) const ;
-    void rotateZ(float) const ;
-    void rotate(float, float, float) const ;
-    void setLocation(float, float, float) const ;
-    void getMatrix(const ::android::graphics::Matrix&) const ;
-    void applyToCanvas(const ::android::graphics::Canvas&) const ;
-    float dotWithNormal(float, float, float) const ;
+    void save() const;
+    void restore() const;
+    void translate(float, float, float) const;
+    void rotateX(float) const;
+    void rotateY(float) const;
+    void rotateZ(float) const;
+    void rotate(float, float, float) const;
+    void setLocation(float, float, float) const;
+    void getMatrix(const ::android::graphics::Matrix&) const;
+    void applyToCanvas(const ::android::graphics::Canvas&) const;
+    float dotWithNormal(float, float, float) const;
 
 };
 }

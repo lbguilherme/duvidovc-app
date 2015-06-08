@@ -33,7 +33,7 @@ public:
     ::android::content::ComponentCallbacks2& operator=(const ::android::content::ComponentCallbacks2& x) {obj = x.obj; return *this;}
     ::android::content::ComponentCallbacks2& operator=(::android::content::ComponentCallbacks2&& x) {obj = std::move(x.obj); return *this;}
     
-    void onTrimMemory(int32_t) const ;
+    void onTrimMemory(int32_t) const;
 
 };
 }

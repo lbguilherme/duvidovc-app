@@ -34,8 +34,8 @@ public:
     ::android::content::UriMatcher& operator=(::android::content::UriMatcher&& x) {obj = std::move(x.obj); return *this;}
     
     UriMatcher(int32_t);
-    void addURI(const ::java::lang::String&, const ::java::lang::String&, int32_t) const ;
-    int32_t match(const ::android::net::Uri&) const ;
+    void addURI(const ::java::lang::String&, const ::java::lang::String&, int32_t) const;
+    int32_t match(const ::android::net::Uri&) const;
 
 };
 }

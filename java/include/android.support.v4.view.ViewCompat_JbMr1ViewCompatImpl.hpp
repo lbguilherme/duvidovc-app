@@ -37,16 +37,16 @@ public:
     ::android::support::v4::view::ViewCompat_JbMr1ViewCompatImpl& operator=(const ::android::support::v4::view::ViewCompat_JbMr1ViewCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewCompat_JbMr1ViewCompatImpl& operator=(::android::support::v4::view::ViewCompat_JbMr1ViewCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLabelFor(const ::android::view::View&) const ;
-    void setLabelFor(const ::android::view::View&, int32_t) const ;
-    void setLayerPaint(const ::android::view::View&, const ::android::graphics::Paint&) const ;
-    int32_t getLayoutDirection(const ::android::view::View&) const ;
-    void setLayoutDirection(const ::android::view::View&, int32_t) const ;
-    int32_t getPaddingStart(const ::android::view::View&) const ;
-    int32_t getPaddingEnd(const ::android::view::View&) const ;
-    void setPaddingRelative(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const ;
-    int32_t getWindowSystemUiVisibility(const ::android::view::View&) const ;
-    bool isPaddingRelative(const ::android::view::View&) const ;
+    int32_t getLabelFor(const ::android::view::View&) const;
+    void setLabelFor(const ::android::view::View&, int32_t) const;
+    void setLayerPaint(const ::android::view::View&, const ::android::graphics::Paint&) const;
+    int32_t getLayoutDirection(const ::android::view::View&) const;
+    void setLayoutDirection(const ::android::view::View&, int32_t) const;
+    int32_t getPaddingStart(const ::android::view::View&) const;
+    int32_t getPaddingEnd(const ::android::view::View&) const;
+    void setPaddingRelative(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const;
+    int32_t getWindowSystemUiVisibility(const ::android::view::View&) const;
+    bool isPaddingRelative(const ::android::view::View&) const;
 
 };
 }

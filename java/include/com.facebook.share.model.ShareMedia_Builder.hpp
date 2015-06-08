@@ -42,10 +42,10 @@ public:
     ::com::facebook::share::model::ShareMedia_Builder& operator=(::com::facebook::share::model::ShareMedia_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ShareMedia_Builder();
-    ::com::facebook::share::model::ShareMedia_Builder setParameter(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareMedia_Builder setParameters(const ::android::os::Bundle&) const ;
-    ::com::facebook::share::model::ShareMedia_Builder readFrom(const ::com::facebook::share::model::ShareMedia&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::ShareMedia_Builder setParameter(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareMedia_Builder setParameters(const ::android::os::Bundle&) const;
+    ::com::facebook::share::model::ShareMedia_Builder readFrom(const ::com::facebook::share::model::ShareMedia&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

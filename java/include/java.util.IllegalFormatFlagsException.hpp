@@ -37,8 +37,8 @@ public:
     ::java::util::IllegalFormatFlagsException& operator=(::java::util::IllegalFormatFlagsException&& x) {obj = std::move(x.obj); return *this;}
     
     IllegalFormatFlagsException(const ::java::lang::String&);
-    ::java::lang::String getFlags() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getFlags() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

@@ -42,16 +42,16 @@ public:
     
     ColorDrawable();
     ColorDrawable(int32_t);
-    int32_t getChangingConfigurations() const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    int32_t getColor() const ;
-    void setColor(int32_t) const ;
-    int32_t getAlpha() const ;
-    void setAlpha(int32_t) const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    int32_t getOpacity() const ;
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const ;
+    int32_t getChangingConfigurations() const;
+    void draw(const ::android::graphics::Canvas&) const;
+    int32_t getColor() const;
+    void setColor(int32_t) const;
+    int32_t getAlpha() const;
+    void setAlpha(int32_t) const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    int32_t getOpacity() const;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const;
 
 };
 }

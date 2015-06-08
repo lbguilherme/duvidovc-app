@@ -38,9 +38,9 @@ public:
     ::java::util::IllegalFormatConversionException& operator=(::java::util::IllegalFormatConversionException&& x) {obj = std::move(x.obj); return *this;}
     
     IllegalFormatConversionException(uint16_t, const ::java::lang::Class&);
-    ::java::lang::Class getArgumentClass() const ;
-    uint16_t getConversion() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::Class getArgumentClass() const;
+    uint16_t getConversion() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

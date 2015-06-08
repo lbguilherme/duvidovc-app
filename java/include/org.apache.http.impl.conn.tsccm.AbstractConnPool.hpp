@@ -43,15 +43,15 @@ public:
     ::org::apache::http::impl::conn::tsccm::AbstractConnPool& operator=(const ::org::apache::http::impl::conn::tsccm::AbstractConnPool& x) {obj = x.obj; return *this;}
     ::org::apache::http::impl::conn::tsccm::AbstractConnPool& operator=(::org::apache::http::impl::conn::tsccm::AbstractConnPool&& x) {obj = std::move(x.obj); return *this;}
     
-    void enableConnectionGC() const ;
-    ::org::apache::http::impl::conn::tsccm::BasicPoolEntry getEntry(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::org::apache::http::impl::conn::tsccm::PoolEntryRequest requestPoolEntry(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const ;
-    void freeEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&, bool, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void handleReference(const ::java::lang::ref::Reference&) const ;
-    void closeIdleConnections(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void closeExpiredConnections() const ;
-    void deleteClosedConnections() const ;
-    void shutdown() const ;
+    void enableConnectionGC() const;
+    ::org::apache::http::impl::conn::tsccm::BasicPoolEntry getEntry(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::org::apache::http::impl::conn::tsccm::PoolEntryRequest requestPoolEntry(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const;
+    void freeEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&, bool, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void handleReference(const ::java::lang::ref::Reference&) const;
+    void closeIdleConnections(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void closeExpiredConnections() const;
+    void deleteClosedConnections() const;
+    void shutdown() const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     ::org::xml::sax::ext::Locator2& operator=(const ::org::xml::sax::ext::Locator2& x) {obj = x.obj; return *this;}
     ::org::xml::sax::ext::Locator2& operator=(::org::xml::sax::ext::Locator2&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getXMLVersion() const ;
-    ::java::lang::String getEncoding() const ;
+    ::java::lang::String getXMLVersion() const;
+    ::java::lang::String getEncoding() const;
 
 };
 }

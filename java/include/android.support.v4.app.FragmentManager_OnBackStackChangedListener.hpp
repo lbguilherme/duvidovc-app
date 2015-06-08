@@ -33,7 +33,7 @@ public:
     ::android::support::v4::app::FragmentManager_OnBackStackChangedListener& operator=(const ::android::support::v4::app::FragmentManager_OnBackStackChangedListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::FragmentManager_OnBackStackChangedListener& operator=(::android::support::v4::app::FragmentManager_OnBackStackChangedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onBackStackChanged() const ;
+    void onBackStackChanged() const;
 
 };
 }

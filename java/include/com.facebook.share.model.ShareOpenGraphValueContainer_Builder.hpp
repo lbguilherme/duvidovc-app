@@ -44,22 +44,22 @@ public:
     ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder& operator=(::com::facebook::share::model::ShareOpenGraphValueContainer_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ShareOpenGraphValueContainer_Builder();
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putBoolean(const ::java::lang::String&, bool) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putBooleanArray(const ::java::lang::String&, const std::vector< bool>&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putDouble(const ::java::lang::String&, double) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putDoubleArray(const ::java::lang::String&, const std::vector< double>&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putInt(const ::java::lang::String&, int32_t) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putIntArray(const ::java::lang::String&, const std::vector< int32_t>&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putLong(const ::java::lang::String&, int64_t) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putLongArray(const ::java::lang::String&, const std::vector< int64_t>&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putObject(const ::java::lang::String&, const ::com::facebook::share::model::ShareOpenGraphObject&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putObjectArrayList(const ::java::lang::String&, const ::java::util::ArrayList&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putPhoto(const ::java::lang::String&, const ::com::facebook::share::model::SharePhoto&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putPhotoArrayList(const ::java::lang::String&, const ::java::util::ArrayList&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putString(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putStringArrayList(const ::java::lang::String&, const ::java::util::ArrayList&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder readFrom(const ::com::facebook::share::model::ShareOpenGraphValueContainer&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putBoolean(const ::java::lang::String&, bool) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putBooleanArray(const ::java::lang::String&, const std::vector< bool>&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putDouble(const ::java::lang::String&, double) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putDoubleArray(const ::java::lang::String&, const std::vector< double>&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putInt(const ::java::lang::String&, int32_t) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putIntArray(const ::java::lang::String&, const std::vector< int32_t>&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putLong(const ::java::lang::String&, int64_t) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putLongArray(const ::java::lang::String&, const std::vector< int64_t>&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putObject(const ::java::lang::String&, const ::com::facebook::share::model::ShareOpenGraphObject&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putObjectArrayList(const ::java::lang::String&, const ::java::util::ArrayList&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putPhoto(const ::java::lang::String&, const ::com::facebook::share::model::SharePhoto&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putPhotoArrayList(const ::java::lang::String&, const ::java::util::ArrayList&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putString(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder putStringArrayList(const ::java::lang::String&, const ::java::util::ArrayList&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder readFrom(const ::com::facebook::share::model::ShareOpenGraphValueContainer&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

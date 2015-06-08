@@ -36,8 +36,8 @@ public:
     ::android::support::v4::text::ICUCompat_ICUCompatImplIcs& operator=(const ::android::support::v4::text::ICUCompat_ICUCompatImplIcs& x) {obj = x.obj; return *this;}
     ::android::support::v4::text::ICUCompat_ICUCompatImplIcs& operator=(::android::support::v4::text::ICUCompat_ICUCompatImplIcs&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getScript(const ::java::lang::String&) const ;
-    ::java::lang::String addLikelySubtags(const ::java::lang::String&) const ;
+    ::java::lang::String getScript(const ::java::lang::String&) const;
+    ::java::lang::String addLikelySubtags(const ::java::lang::String&) const;
 
 };
 }

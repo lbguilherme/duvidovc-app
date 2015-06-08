@@ -36,7 +36,7 @@ public:
     ::org::apache::http::impl::conn::tsccm::RefQueueHandler& operator=(const ::org::apache::http::impl::conn::tsccm::RefQueueHandler& x) {obj = x.obj; return *this;}
     ::org::apache::http::impl::conn::tsccm::RefQueueHandler& operator=(::org::apache::http::impl::conn::tsccm::RefQueueHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void handleReference(const ::java::lang::ref::Reference&) const ;
+    void handleReference(const ::java::lang::ref::Reference&) const;
 
 };
 }

@@ -37,13 +37,13 @@ public:
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatLollipopImpl& operator=(const ::android::support::v4::view::ViewParentCompat_ViewParentCompatLollipopImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatLollipopImpl& operator=(::android::support::v4::view::ViewParentCompat_ViewParentCompatLollipopImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onStartNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const ;
-    void onNestedScrollAccepted(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const ;
-    void onStopNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&) const ;
-    void onNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const ;
-    void onNestedPreScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, const std::vector< int32_t>&) const ;
-    bool onNestedFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float, bool) const ;
-    bool onNestedPreFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float) const ;
+    bool onStartNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const;
+    void onNestedScrollAccepted(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::View&, int32_t) const;
+    void onStopNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&) const;
+    void onNestedScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const;
+    void onNestedPreScroll(const ::android::view::ViewParent&, const ::android::view::View&, int32_t, int32_t, const std::vector< int32_t>&) const;
+    bool onNestedFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float, bool) const;
+    bool onNestedPreFling(const ::android::view::ViewParent&, const ::android::view::View&, float, float) const;
 
 };
 }

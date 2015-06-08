@@ -35,9 +35,9 @@ public:
     ::com::facebook::FacebookDialogException& operator=(::com::facebook::FacebookDialogException&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookDialogException(const ::java::lang::String&, int32_t, const ::java::lang::String&);
-    int32_t getErrorCode() const ;
-    ::java::lang::String getFailingUrl() const ;
-    ::java::lang::String toString() const ;
+    int32_t getErrorCode() const;
+    ::java::lang::String getFailingUrl() const;
+    ::java::lang::String toString() const;
 
 };
 }

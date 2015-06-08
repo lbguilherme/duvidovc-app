@@ -32,7 +32,7 @@ public:
     ::android::view::ViewTreeObserver_OnGlobalFocusChangeListener& operator=(const ::android::view::ViewTreeObserver_OnGlobalFocusChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::ViewTreeObserver_OnGlobalFocusChangeListener& operator=(::android::view::ViewTreeObserver_OnGlobalFocusChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGlobalFocusChanged(const ::android::view::View&, const ::android::view::View&) const ;
+    void onGlobalFocusChanged(const ::android::view::View&, const ::android::view::View&) const;
 
 };
 }

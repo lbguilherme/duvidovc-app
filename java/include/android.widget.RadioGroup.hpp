@@ -42,13 +42,13 @@ public:
     
     RadioGroup(const ::android::content::Context&);
     RadioGroup(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setOnHierarchyChangeListener(const ::android::view::ViewGroup_OnHierarchyChangeListener&) const ;
-    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const ;
-    void check(int32_t) const ;
-    int32_t getCheckedRadioButtonId() const ;
-    void clearCheck() const ;
-    void setOnCheckedChangeListener(const ::android::widget::RadioGroup_OnCheckedChangeListener&) const ;
-    ::android::widget::RadioGroup_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const ;
+    void setOnHierarchyChangeListener(const ::android::view::ViewGroup_OnHierarchyChangeListener&) const;
+    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const;
+    void check(int32_t) const;
+    int32_t getCheckedRadioButtonId() const;
+    void clearCheck() const;
+    void setOnCheckedChangeListener(const ::android::widget::RadioGroup_OnCheckedChangeListener&) const;
+    ::android::widget::RadioGroup_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const;
 
 };
 }

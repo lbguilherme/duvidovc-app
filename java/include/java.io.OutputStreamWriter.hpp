@@ -41,12 +41,12 @@ public:
     OutputStreamWriter(const ::java::io::OutputStream&, const ::java::lang::String&);
     OutputStreamWriter(const ::java::io::OutputStream&, const ::java::nio::charset::Charset&);
     OutputStreamWriter(const ::java::io::OutputStream&, const ::java::nio::charset::CharsetEncoder&);
-    void close() const ;
-    void flush() const ;
-    ::java::lang::String getEncoding() const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void write(const ::java::lang::String&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    ::java::lang::String getEncoding() const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void write(const ::java::lang::String&, int32_t, int32_t) const;
 
 };
 }

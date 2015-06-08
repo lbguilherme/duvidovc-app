@@ -39,7 +39,7 @@ public:
     ::com::facebook::share::internal::VideoUploader_TransferChunkWorkItem& operator=(::com::facebook::share::internal::VideoUploader_TransferChunkWorkItem&& x) {obj = std::move(x.obj); return *this;}
     
     VideoUploader_TransferChunkWorkItem(const ::com::facebook::share::internal::VideoUploader_UploadContext&, const ::java::lang::String&, const ::java::lang::String&, int32_t);
-    ::android::os::Bundle getParameters() const ;
+    ::android::os::Bundle getParameters() const;
 
 };
 }

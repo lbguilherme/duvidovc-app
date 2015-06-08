@@ -36,9 +36,9 @@ public:
     ::android::content::res::ObbInfo& operator=(const ::android::content::res::ObbInfo& x) {obj = x.obj; return *this;}
     ::android::content::res::ObbInfo& operator=(::android::content::res::ObbInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

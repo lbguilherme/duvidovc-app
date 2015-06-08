@@ -34,11 +34,11 @@ public:
     ::java::io::FilterWriter& operator=(const ::java::io::FilterWriter& x) {obj = x.obj; return *this;}
     ::java::io::FilterWriter& operator=(::java::io::FilterWriter&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    void flush() const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void write(const ::java::lang::String&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void write(const ::java::lang::String&, int32_t, int32_t) const;
 
 };
 }

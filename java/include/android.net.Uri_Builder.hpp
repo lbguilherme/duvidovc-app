@@ -35,23 +35,23 @@ public:
     ::android::net::Uri_Builder& operator=(::android::net::Uri_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     Uri_Builder();
-    ::android::net::Uri_Builder scheme(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder opaquePart(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder encodedOpaquePart(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder authority(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder encodedAuthority(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder path(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder encodedPath(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder appendPath(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder appendEncodedPath(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder query(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder encodedQuery(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder fragment(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder encodedFragment(const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder appendQueryParameter(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::net::Uri_Builder clearQuery() const ;
-    ::android::net::Uri build() const ;
-    ::java::lang::String toString() const ;
+    ::android::net::Uri_Builder scheme(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder opaquePart(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder encodedOpaquePart(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder authority(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder encodedAuthority(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder path(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder encodedPath(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder appendPath(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder appendEncodedPath(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder query(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder encodedQuery(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder fragment(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder encodedFragment(const ::java::lang::String&) const;
+    ::android::net::Uri_Builder appendQueryParameter(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::net::Uri_Builder clearQuery() const;
+    ::android::net::Uri build() const;
+    ::java::lang::String toString() const;
 
 };
 }

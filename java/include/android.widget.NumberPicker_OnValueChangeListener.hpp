@@ -32,7 +32,7 @@ public:
     ::android::widget::NumberPicker_OnValueChangeListener& operator=(const ::android::widget::NumberPicker_OnValueChangeListener& x) {obj = x.obj; return *this;}
     ::android::widget::NumberPicker_OnValueChangeListener& operator=(::android::widget::NumberPicker_OnValueChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onValueChange(const ::android::widget::NumberPicker&, int32_t, int32_t) const ;
+    void onValueChange(const ::android::widget::NumberPicker&, int32_t, int32_t) const;
 
 };
 }

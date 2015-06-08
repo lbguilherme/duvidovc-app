@@ -39,9 +39,9 @@ public:
     
     ActivityInstrumentationTestCase2(const ::java::lang::String&, const ::java::lang::Class&);
     ActivityInstrumentationTestCase2(const ::java::lang::Class&);
-    ::android::app::Activity getActivity() const ;
-    void setActivityIntent(const ::android::content::Intent&) const ;
-    void setActivityInitialTouchMode(bool) const ;
+    ::android::app::Activity getActivity() const;
+    void setActivityIntent(const ::android::content::Intent&) const;
+    void setActivityInitialTouchMode(bool) const;
 
 };
 }

@@ -31,7 +31,7 @@ public:
     ::android::app::FragmentManager_OnBackStackChangedListener& operator=(const ::android::app::FragmentManager_OnBackStackChangedListener& x) {obj = x.obj; return *this;}
     ::android::app::FragmentManager_OnBackStackChangedListener& operator=(::android::app::FragmentManager_OnBackStackChangedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onBackStackChanged() const ;
+    void onBackStackChanged() const;
 
 };
 }

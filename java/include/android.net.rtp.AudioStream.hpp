@@ -38,13 +38,13 @@ public:
     ::android::net::rtp::AudioStream& operator=(::android::net::rtp::AudioStream&& x) {obj = std::move(x.obj); return *this;}
     
     AudioStream(const ::java::net::InetAddress&);
-    bool isBusy() const ;
-    ::android::net::rtp::AudioGroup getGroup() const ;
-    void join(const ::android::net::rtp::AudioGroup&) const ;
-    ::android::net::rtp::AudioCodec getCodec() const ;
-    void setCodec(const ::android::net::rtp::AudioCodec&) const ;
-    int32_t getDtmfType() const ;
-    void setDtmfType(int32_t) const ;
+    bool isBusy() const;
+    ::android::net::rtp::AudioGroup getGroup() const;
+    void join(const ::android::net::rtp::AudioGroup&) const;
+    ::android::net::rtp::AudioCodec getCodec() const;
+    void setCodec(const ::android::net::rtp::AudioCodec&) const;
+    int32_t getDtmfType() const;
+    void setDtmfType(int32_t) const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::android::support::v4::app::ShareCompat_ShareCompatImplICS& operator=(const ::android::support::v4::app::ShareCompat_ShareCompatImplICS& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ShareCompat_ShareCompatImplICS& operator=(::android::support::v4::app::ShareCompat_ShareCompatImplICS&& x) {obj = std::move(x.obj); return *this;}
     
-    void configureMenuItem(const ::android::view::MenuItem&, const ::android::support::v4::app::ShareCompat_IntentBuilder&) const ;
+    void configureMenuItem(const ::android::view::MenuItem&, const ::android::support::v4::app::ShareCompat_IntentBuilder&) const;
 
 };
 }

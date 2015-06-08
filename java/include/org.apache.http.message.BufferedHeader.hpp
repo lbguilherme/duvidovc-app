@@ -42,13 +42,13 @@ public:
     ::org::apache::http::message::BufferedHeader& operator=(::org::apache::http::message::BufferedHeader&& x) {obj = std::move(x.obj); return *this;}
     
     BufferedHeader(const ::org::apache::http::util::CharArrayBuffer&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    std::vector< ::org::apache::http::HeaderElement> getElements() const ;
-    int32_t getValuePos() const ;
-    ::org::apache::http::util::CharArrayBuffer getBuffer() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    std::vector< ::org::apache::http::HeaderElement> getElements() const;
+    int32_t getValuePos() const;
+    ::org::apache::http::util::CharArrayBuffer getBuffer() const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
 
 };
 }

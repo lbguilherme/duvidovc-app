@@ -40,7 +40,7 @@ public:
     AbsoluteLayout_LayoutParams(int32_t, int32_t, int32_t, int32_t);
     AbsoluteLayout_LayoutParams(const ::android::content::Context&, const ::android::util::AttributeSet&);
     AbsoluteLayout_LayoutParams(const ::android::view::ViewGroup_LayoutParams&);
-    ::java::lang::String debug(const ::java::lang::String&) const ;
+    ::java::lang::String debug(const ::java::lang::String&) const;
 
 };
 }

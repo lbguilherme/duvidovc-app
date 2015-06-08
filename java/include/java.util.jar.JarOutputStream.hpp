@@ -39,7 +39,7 @@ public:
     
     JarOutputStream(const ::java::io::OutputStream&, const ::java::util::jar::Manifest&);
     JarOutputStream(const ::java::io::OutputStream&);
-    void putNextEntry(const ::java::util::zip::ZipEntry&) const ;
+    void putNextEntry(const ::java::util::zip::ZipEntry&) const;
 
 };
 }

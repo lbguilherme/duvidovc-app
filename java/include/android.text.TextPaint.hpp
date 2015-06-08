@@ -38,7 +38,7 @@ public:
     TextPaint();
     TextPaint(int32_t);
     TextPaint(const ::android::graphics::Paint&);
-    void set(const ::android::text::TextPaint&) const ;
+    void set(const ::android::text::TextPaint&) const;
 
 };
 }

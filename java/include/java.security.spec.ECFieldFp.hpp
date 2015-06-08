@@ -37,10 +37,10 @@ public:
     ::java::security::spec::ECFieldFp& operator=(::java::security::spec::ECFieldFp&& x) {obj = std::move(x.obj); return *this;}
     
     ECFieldFp(const ::java::math::BigInteger&);
-    int32_t getFieldSize() const ;
-    ::java::math::BigInteger getP() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    int32_t getFieldSize() const;
+    ::java::math::BigInteger getP() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

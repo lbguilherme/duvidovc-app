@@ -33,7 +33,7 @@ public:
     ::java::util::concurrent::Callable& operator=(const ::java::util::concurrent::Callable& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::Callable& operator=(::java::util::concurrent::Callable&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object call() const ;
+    ::java::lang::Object call() const;
 
 };
 }

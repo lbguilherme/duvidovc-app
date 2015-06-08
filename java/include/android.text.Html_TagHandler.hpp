@@ -34,7 +34,7 @@ public:
     ::android::text::Html_TagHandler& operator=(const ::android::text::Html_TagHandler& x) {obj = x.obj; return *this;}
     ::android::text::Html_TagHandler& operator=(::android::text::Html_TagHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void handleTag(bool, const ::java::lang::String&, const ::android::text::Editable&, const ::org::xml::sax::XMLReader&) const ;
+    void handleTag(bool, const ::java::lang::String&, const ::android::text::Editable&, const ::org::xml::sax::XMLReader&) const;
 
 };
 }

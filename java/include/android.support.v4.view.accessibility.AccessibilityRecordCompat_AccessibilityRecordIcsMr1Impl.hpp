@@ -37,10 +37,10 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordIcsMr1Impl& operator=(const ::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordIcsMr1Impl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordIcsMr1Impl& operator=(::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordIcsMr1Impl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getMaxScrollX(const ::java::lang::Object&) const ;
-    int32_t getMaxScrollY(const ::java::lang::Object&) const ;
-    void setMaxScrollX(const ::java::lang::Object&, int32_t) const ;
-    void setMaxScrollY(const ::java::lang::Object&, int32_t) const ;
+    int32_t getMaxScrollX(const ::java::lang::Object&) const;
+    int32_t getMaxScrollY(const ::java::lang::Object&) const;
+    void setMaxScrollX(const ::java::lang::Object&, int32_t) const;
+    void setMaxScrollY(const ::java::lang::Object&, int32_t) const;
 
 };
 }

@@ -37,16 +37,16 @@ public:
     ::java::awt::font::NumericShaper& operator=(const ::java::awt::font::NumericShaper& x) {obj = x.obj; return *this;}
     ::java::awt::font::NumericShaper& operator=(::java::awt::font::NumericShaper&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
     static ::java::awt::font::NumericShaper getContextualShaper(int32_t, int32_t);
     static ::java::awt::font::NumericShaper getContextualShaper(int32_t);
-    int32_t getRanges() const ;
+    int32_t getRanges() const;
     static ::java::awt::font::NumericShaper getShaper(int32_t);
-    bool isContextual() const ;
-    void shape(const std::vector< uint16_t>&, int32_t, int32_t, int32_t) const ;
-    void shape(const std::vector< uint16_t>&, int32_t, int32_t) const ;
+    bool isContextual() const;
+    void shape(const std::vector< uint16_t>&, int32_t, int32_t, int32_t) const;
+    void shape(const std::vector< uint16_t>&, int32_t, int32_t) const;
 
 };
 }

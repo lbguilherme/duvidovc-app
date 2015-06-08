@@ -32,8 +32,8 @@ public:
     ::com::facebook::share::Sharer& operator=(const ::com::facebook::share::Sharer& x) {obj = x.obj; return *this;}
     ::com::facebook::share::Sharer& operator=(::com::facebook::share::Sharer&& x) {obj = std::move(x.obj); return *this;}
     
-    bool getShouldFailOnDataError() const ;
-    void setShouldFailOnDataError(bool) const ;
+    bool getShouldFailOnDataError() const;
+    void setShouldFailOnDataError(bool) const;
 
 };
 }

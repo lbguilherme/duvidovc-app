@@ -32,7 +32,7 @@ public:
     ::android::widget::TimePicker_OnTimeChangedListener& operator=(const ::android::widget::TimePicker_OnTimeChangedListener& x) {obj = x.obj; return *this;}
     ::android::widget::TimePicker_OnTimeChangedListener& operator=(::android::widget::TimePicker_OnTimeChangedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onTimeChanged(const ::android::widget::TimePicker&, int32_t, int32_t) const ;
+    void onTimeChanged(const ::android::widget::TimePicker&, int32_t, int32_t) const;
 
 };
 }

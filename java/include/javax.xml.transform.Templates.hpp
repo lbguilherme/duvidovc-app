@@ -34,8 +34,8 @@ public:
     ::javax::xml::transform::Templates& operator=(const ::javax::xml::transform::Templates& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::Templates& operator=(::javax::xml::transform::Templates&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::xml::transform::Transformer newTransformer() const ;
-    ::java::util::Properties getOutputProperties() const ;
+    ::javax::xml::transform::Transformer newTransformer() const;
+    ::java::util::Properties getOutputProperties() const;
 
 };
 }

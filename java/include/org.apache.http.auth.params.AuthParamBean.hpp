@@ -39,7 +39,7 @@ public:
     ::org::apache::http::auth::params::AuthParamBean& operator=(::org::apache::http::auth::params::AuthParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     AuthParamBean(const ::org::apache::http::params::HttpParams&);
-    void setCredentialCharset(const ::java::lang::String&) const ;
+    void setCredentialCharset(const ::java::lang::String&) const;
 
 };
 }

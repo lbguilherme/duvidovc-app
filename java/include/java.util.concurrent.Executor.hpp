@@ -33,7 +33,7 @@ public:
     ::java::util::concurrent::Executor& operator=(const ::java::util::concurrent::Executor& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::Executor& operator=(::java::util::concurrent::Executor&& x) {obj = std::move(x.obj); return *this;}
     
-    void execute(const ::java::lang::Runnable&) const ;
+    void execute(const ::java::lang::Runnable&) const;
 
 };
 }

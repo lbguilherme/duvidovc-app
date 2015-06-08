@@ -37,7 +37,7 @@ public:
     ::android::support::v4::content::IntentCompat_IntentCompatImplIcsMr1& operator=(const ::android::support::v4::content::IntentCompat_IntentCompatImplIcsMr1& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::IntentCompat_IntentCompatImplIcsMr1& operator=(::android::support::v4::content::IntentCompat_IntentCompatImplIcsMr1&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::Intent makeMainSelectorActivity(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::android::content::Intent makeMainSelectorActivity(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

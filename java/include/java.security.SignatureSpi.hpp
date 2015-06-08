@@ -33,7 +33,7 @@ public:
     ::java::security::SignatureSpi& operator=(::java::security::SignatureSpi&& x) {obj = std::move(x.obj); return *this;}
     
     SignatureSpi();
-    ::java::lang::Object clone() const ;
+    ::java::lang::Object clone() const;
 
 };
 }

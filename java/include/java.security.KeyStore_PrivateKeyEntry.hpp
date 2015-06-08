@@ -37,10 +37,10 @@ public:
     ::java::security::KeyStore_PrivateKeyEntry& operator=(::java::security::KeyStore_PrivateKeyEntry&& x) {obj = std::move(x.obj); return *this;}
     
     KeyStore_PrivateKeyEntry(const ::java::security::PrivateKey&, const std::vector< ::java::security::cert::Certificate>&);
-    ::java::security::PrivateKey getPrivateKey() const ;
-    std::vector< ::java::security::cert::Certificate> getCertificateChain() const ;
-    ::java::security::cert::Certificate getCertificate() const ;
-    ::java::lang::String toString() const ;
+    ::java::security::PrivateKey getPrivateKey() const;
+    std::vector< ::java::security::cert::Certificate> getCertificateChain() const;
+    ::java::security::cert::Certificate getCertificate() const;
+    ::java::lang::String toString() const;
 
 };
 }

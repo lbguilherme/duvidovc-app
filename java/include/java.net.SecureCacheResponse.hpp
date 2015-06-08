@@ -37,11 +37,11 @@ public:
     ::java::net::SecureCacheResponse& operator=(::java::net::SecureCacheResponse&& x) {obj = std::move(x.obj); return *this;}
     
     SecureCacheResponse();
-    ::java::lang::String getCipherSuite() const ;
-    ::java::util::List getLocalCertificateChain() const ;
-    ::java::util::List getServerCertificateChain() const ;
-    ::java::security::Principal getPeerPrincipal() const ;
-    ::java::security::Principal getLocalPrincipal() const ;
+    ::java::lang::String getCipherSuite() const;
+    ::java::util::List getLocalCertificateChain() const;
+    ::java::util::List getServerCertificateChain() const;
+    ::java::security::Principal getPeerPrincipal() const;
+    ::java::security::Principal getLocalPrincipal() const;
 
 };
 }

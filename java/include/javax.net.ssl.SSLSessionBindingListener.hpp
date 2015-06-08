@@ -35,8 +35,8 @@ public:
     ::javax::net::ssl::SSLSessionBindingListener& operator=(const ::javax::net::ssl::SSLSessionBindingListener& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::SSLSessionBindingListener& operator=(::javax::net::ssl::SSLSessionBindingListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void valueBound(const ::javax::net::ssl::SSLSessionBindingEvent&) const ;
-    void valueUnbound(const ::javax::net::ssl::SSLSessionBindingEvent&) const ;
+    void valueBound(const ::javax::net::ssl::SSLSessionBindingEvent&) const;
+    void valueUnbound(const ::javax::net::ssl::SSLSessionBindingEvent&) const;
 
 };
 }

@@ -37,9 +37,9 @@ public:
     ::android::support::v4::widget::TextViewCompat_BaseTextViewCompatImpl& operator=(const ::android::support::v4::widget::TextViewCompat_BaseTextViewCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::TextViewCompat_BaseTextViewCompatImpl& operator=(::android::support::v4::widget::TextViewCompat_BaseTextViewCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setCompoundDrawablesRelative(const ::android::widget::TextView&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&) const ;
-    void setCompoundDrawablesRelativeWithIntrinsicBounds(const ::android::widget::TextView&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&) const ;
-    void setCompoundDrawablesRelativeWithIntrinsicBounds(const ::android::widget::TextView&, int32_t, int32_t, int32_t, int32_t) const ;
+    void setCompoundDrawablesRelative(const ::android::widget::TextView&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&) const;
+    void setCompoundDrawablesRelativeWithIntrinsicBounds(const ::android::widget::TextView&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&, const ::android::graphics::drawable::Drawable&) const;
+    void setCompoundDrawablesRelativeWithIntrinsicBounds(const ::android::widget::TextView&, int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

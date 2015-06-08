@@ -35,9 +35,9 @@ public:
     ::android::app::backup::BackupHelper& operator=(const ::android::app::backup::BackupHelper& x) {obj = x.obj; return *this;}
     ::android::app::backup::BackupHelper& operator=(::android::app::backup::BackupHelper&& x) {obj = std::move(x.obj); return *this;}
     
-    void performBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const ;
-    void restoreEntity(const ::android::app::backup::BackupDataInputStream&) const ;
-    void writeNewStateDescription(const ::android::os::ParcelFileDescriptor&) const ;
+    void performBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const;
+    void restoreEntity(const ::android::app::backup::BackupDataInputStream&) const;
+    void writeNewStateDescription(const ::android::os::ParcelFileDescriptor&) const;
 
 };
 }

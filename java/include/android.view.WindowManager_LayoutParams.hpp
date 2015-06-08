@@ -47,13 +47,13 @@ public:
     WindowManager_LayoutParams(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t);
     WindowManager_LayoutParams(const ::android::os::Parcel&);
     static bool mayUseInputMethod(int32_t);
-    void setTitle(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence getTitle() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t copyFrom(const ::android::view::WindowManager_LayoutParams&) const ;
-    ::java::lang::String debug(const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
+    void setTitle(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence getTitle() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t copyFrom(const ::android::view::WindowManager_LayoutParams&) const;
+    ::java::lang::String debug(const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
 
 };
 }

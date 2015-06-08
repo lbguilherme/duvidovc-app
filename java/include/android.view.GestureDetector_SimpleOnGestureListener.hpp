@@ -37,15 +37,15 @@ public:
     ::android::view::GestureDetector_SimpleOnGestureListener& operator=(::android::view::GestureDetector_SimpleOnGestureListener&& x) {obj = std::move(x.obj); return *this;}
     
     GestureDetector_SimpleOnGestureListener();
-    bool onSingleTapUp(const ::android::view::MotionEvent&) const ;
-    void onLongPress(const ::android::view::MotionEvent&) const ;
-    bool onScroll(const ::android::view::MotionEvent&, const ::android::view::MotionEvent&, float, float) const ;
-    bool onFling(const ::android::view::MotionEvent&, const ::android::view::MotionEvent&, float, float) const ;
-    void onShowPress(const ::android::view::MotionEvent&) const ;
-    bool onDown(const ::android::view::MotionEvent&) const ;
-    bool onDoubleTap(const ::android::view::MotionEvent&) const ;
-    bool onDoubleTapEvent(const ::android::view::MotionEvent&) const ;
-    bool onSingleTapConfirmed(const ::android::view::MotionEvent&) const ;
+    bool onSingleTapUp(const ::android::view::MotionEvent&) const;
+    void onLongPress(const ::android::view::MotionEvent&) const;
+    bool onScroll(const ::android::view::MotionEvent&, const ::android::view::MotionEvent&, float, float) const;
+    bool onFling(const ::android::view::MotionEvent&, const ::android::view::MotionEvent&, float, float) const;
+    void onShowPress(const ::android::view::MotionEvent&) const;
+    bool onDown(const ::android::view::MotionEvent&) const;
+    bool onDoubleTap(const ::android::view::MotionEvent&) const;
+    bool onDoubleTapEvent(const ::android::view::MotionEvent&) const;
+    bool onSingleTapConfirmed(const ::android::view::MotionEvent&) const;
 
 };
 }

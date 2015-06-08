@@ -32,11 +32,11 @@ public:
     ::java::util::Map_Entry& operator=(const ::java::util::Map_Entry& x) {obj = x.obj; return *this;}
     ::java::util::Map_Entry& operator=(::java::util::Map_Entry&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::Object getKey() const ;
-    ::java::lang::Object getValue() const ;
-    int32_t hashCode() const ;
-    ::java::lang::Object setValue(const ::java::lang::Object&) const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::Object getKey() const;
+    ::java::lang::Object getValue() const;
+    int32_t hashCode() const;
+    ::java::lang::Object setValue(const ::java::lang::Object&) const;
 
 };
 }

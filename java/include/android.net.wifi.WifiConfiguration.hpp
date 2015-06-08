@@ -37,9 +37,9 @@ public:
     ::android::net::wifi::WifiConfiguration& operator=(::android::net::wifi::WifiConfiguration&& x) {obj = std::move(x.obj); return *this;}
     
     WifiConfiguration();
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

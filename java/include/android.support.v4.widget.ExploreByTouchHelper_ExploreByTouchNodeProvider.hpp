@@ -37,8 +37,8 @@ public:
     ::android::support::v4::widget::ExploreByTouchHelper_ExploreByTouchNodeProvider& operator=(const ::android::support::v4::widget::ExploreByTouchHelper_ExploreByTouchNodeProvider& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::ExploreByTouchHelper_ExploreByTouchNodeProvider& operator=(::android::support::v4::widget::ExploreByTouchHelper_ExploreByTouchNodeProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat createAccessibilityNodeInfo(int32_t) const ;
-    bool performAction(int32_t, int32_t, const ::android::os::Bundle&) const ;
+    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat createAccessibilityNodeInfo(int32_t) const;
+    bool performAction(int32_t, int32_t, const ::android::os::Bundle&) const;
 
 };
 }

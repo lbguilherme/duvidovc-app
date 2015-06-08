@@ -37,10 +37,10 @@ public:
     ::org::apache::http::protocol::UriPatternMatcher& operator=(::org::apache::http::protocol::UriPatternMatcher&& x) {obj = std::move(x.obj); return *this;}
     
     UriPatternMatcher();
-    void register_(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    void unregister(const ::java::lang::String&) const ;
-    void setHandlers(const ::java::util::Map&) const ;
-    ::java::lang::Object lookup(const ::java::lang::String&) const ;
+    void register_(const ::java::lang::String&, const ::java::lang::Object&) const;
+    void unregister(const ::java::lang::String&) const;
+    void setHandlers(const ::java::util::Map&) const;
+    ::java::lang::Object lookup(const ::java::lang::String&) const;
 
 };
 }

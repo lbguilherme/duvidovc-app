@@ -38,11 +38,11 @@ public:
     ::com::facebook::internal::ImageRequest& operator=(::com::facebook::internal::ImageRequest&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::net::Uri getProfilePictureUri(const ::java::lang::String&, int32_t, int32_t);
-    ::android::content::Context getContext() const ;
-    ::android::net::Uri getImageUri() const ;
-    ::com::facebook::internal::ImageRequest_Callback getCallback() const ;
-    bool isCachedRedirectAllowed() const ;
-    ::java::lang::Object getCallerTag() const ;
+    ::android::content::Context getContext() const;
+    ::android::net::Uri getImageUri() const;
+    ::com::facebook::internal::ImageRequest_Callback getCallback() const;
+    bool isCachedRedirectAllowed() const;
+    ::java::lang::Object getCallerTag() const;
 
 };
 }

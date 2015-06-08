@@ -45,13 +45,13 @@ public:
     X500Principal(const ::java::io::InputStream&);
     X500Principal(const ::java::lang::String&);
     X500Principal(const ::java::lang::String&, const ::java::util::Map&);
-    bool equals(const ::java::lang::Object&) const ;
-    std::vector< int8_t> getEncoded() const ;
-    ::java::lang::String getName() const ;
-    ::java::lang::String getName(const ::java::lang::String&) const ;
-    ::java::lang::String getName(const ::java::lang::String&, const ::java::util::Map&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    std::vector< int8_t> getEncoded() const;
+    ::java::lang::String getName() const;
+    ::java::lang::String getName(const ::java::lang::String&) const;
+    ::java::lang::String getName(const ::java::lang::String&, const ::java::util::Map&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

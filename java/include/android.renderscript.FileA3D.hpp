@@ -40,8 +40,8 @@ public:
     ::android::renderscript::FileA3D& operator=(const ::android::renderscript::FileA3D& x) {obj = x.obj; return *this;}
     ::android::renderscript::FileA3D& operator=(::android::renderscript::FileA3D&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getIndexEntryCount() const ;
-    ::android::renderscript::FileA3D_IndexEntry getIndexEntry(int32_t) const ;
+    int32_t getIndexEntryCount() const;
+    ::android::renderscript::FileA3D_IndexEntry getIndexEntry(int32_t) const;
     static ::android::renderscript::FileA3D createFromAsset(const ::android::renderscript::RenderScript&, const ::android::content::res::AssetManager&, const ::java::lang::String&);
     static ::android::renderscript::FileA3D createFromFile(const ::android::renderscript::RenderScript&, const ::java::lang::String&);
     static ::android::renderscript::FileA3D createFromFile(const ::android::renderscript::RenderScript&, const ::java::io::File&);

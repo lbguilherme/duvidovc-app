@@ -35,9 +35,9 @@ public:
     ::android::renderscript::Program& operator=(const ::android::renderscript::Program& x) {obj = x.obj; return *this;}
     ::android::renderscript::Program& operator=(::android::renderscript::Program&& x) {obj = std::move(x.obj); return *this;}
     
-    void bindConstants(const ::android::renderscript::Allocation&, int32_t) const ;
-    void bindTexture(const ::android::renderscript::Allocation&, int32_t) const ;
-    void bindSampler(const ::android::renderscript::Sampler&, int32_t) const ;
+    void bindConstants(const ::android::renderscript::Allocation&, int32_t) const;
+    void bindTexture(const ::android::renderscript::Allocation&, int32_t) const;
+    void bindSampler(const ::android::renderscript::Sampler&, int32_t) const;
 
 };
 }

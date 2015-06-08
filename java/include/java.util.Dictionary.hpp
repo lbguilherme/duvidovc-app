@@ -34,13 +34,13 @@ public:
     ::java::util::Dictionary& operator=(::java::util::Dictionary&& x) {obj = std::move(x.obj); return *this;}
     
     Dictionary();
-    ::java::util::Enumeration elements() const ;
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    bool isEmpty() const ;
-    ::java::util::Enumeration keys() const ;
-    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::Object remove(const ::java::lang::Object&) const ;
-    int32_t size() const ;
+    ::java::util::Enumeration elements() const;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    bool isEmpty() const;
+    ::java::util::Enumeration keys() const;
+    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::Object remove(const ::java::lang::Object&) const;
+    int32_t size() const;
 
 };
 }

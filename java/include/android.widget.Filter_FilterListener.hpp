@@ -31,7 +31,7 @@ public:
     ::android::widget::Filter_FilterListener& operator=(const ::android::widget::Filter_FilterListener& x) {obj = x.obj; return *this;}
     ::android::widget::Filter_FilterListener& operator=(::android::widget::Filter_FilterListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onFilterComplete(int32_t) const ;
+    void onFilterComplete(int32_t) const;
 
 };
 }

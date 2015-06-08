@@ -41,13 +41,13 @@ public:
     static ::java::security::SecureRandom getInstance(const ::java::lang::String&);
     static ::java::security::SecureRandom getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::SecureRandom getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::Provider getProvider() const ;
-    ::java::lang::String getAlgorithm() const ;
-    void setSeed(const std::vector< int8_t>&) const ;
-    void setSeed(int64_t) const ;
-    void nextBytes(const std::vector< int8_t>&) const ;
+    ::java::security::Provider getProvider() const;
+    ::java::lang::String getAlgorithm() const;
+    void setSeed(const std::vector< int8_t>&) const;
+    void setSeed(int64_t) const;
+    void nextBytes(const std::vector< int8_t>&) const;
     static std::vector< int8_t> getSeed(int32_t);
-    std::vector< int8_t> generateSeed(int32_t) const ;
+    std::vector< int8_t> generateSeed(int32_t) const;
 
 };
 }

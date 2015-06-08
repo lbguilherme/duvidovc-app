@@ -36,14 +36,14 @@ public:
     ::android::support::v4::widget::EdgeEffectCompat& operator=(::android::support::v4::widget::EdgeEffectCompat&& x) {obj = std::move(x.obj); return *this;}
     
     EdgeEffectCompat(const ::android::content::Context&);
-    void setSize(int32_t, int32_t) const ;
-    bool isFinished() const ;
-    void finish() const ;
-    bool onPull(float) const ;
-    bool onPull(float, float) const ;
-    bool onRelease() const ;
-    bool onAbsorb(int32_t) const ;
-    bool draw(const ::android::graphics::Canvas&) const ;
+    void setSize(int32_t, int32_t) const;
+    bool isFinished() const;
+    void finish() const;
+    bool onPull(float) const;
+    bool onPull(float, float) const;
+    bool onRelease() const;
+    bool onAbsorb(int32_t) const;
+    bool draw(const ::android::graphics::Canvas&) const;
 
 };
 }

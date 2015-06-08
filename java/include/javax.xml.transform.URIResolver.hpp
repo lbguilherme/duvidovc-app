@@ -34,7 +34,7 @@ public:
     ::javax::xml::transform::URIResolver& operator=(const ::javax::xml::transform::URIResolver& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::URIResolver& operator=(::javax::xml::transform::URIResolver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::xml::transform::Source resolve(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::javax::xml::transform::Source resolve(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

@@ -34,9 +34,9 @@ public:
     ::android::support::v4::widget::SlidingPaneLayout_PanelSlideListener& operator=(const ::android::support::v4::widget::SlidingPaneLayout_PanelSlideListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SlidingPaneLayout_PanelSlideListener& operator=(::android::support::v4::widget::SlidingPaneLayout_PanelSlideListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onPanelSlide(const ::android::view::View&, float) const ;
-    void onPanelOpened(const ::android::view::View&) const ;
-    void onPanelClosed(const ::android::view::View&) const ;
+    void onPanelSlide(const ::android::view::View&, float) const;
+    void onPanelOpened(const ::android::view::View&) const;
+    void onPanelClosed(const ::android::view::View&) const;
 
 };
 }

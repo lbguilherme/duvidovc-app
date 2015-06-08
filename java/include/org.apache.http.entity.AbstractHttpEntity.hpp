@@ -37,15 +37,15 @@ public:
     ::org::apache::http::entity::AbstractHttpEntity& operator=(const ::org::apache::http::entity::AbstractHttpEntity& x) {obj = x.obj; return *this;}
     ::org::apache::http::entity::AbstractHttpEntity& operator=(::org::apache::http::entity::AbstractHttpEntity&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::Header getContentType() const ;
-    ::org::apache::http::Header getContentEncoding() const ;
-    bool isChunked() const ;
-    void setContentType(const ::org::apache::http::Header&) const ;
-    void setContentType(const ::java::lang::String&) const ;
-    void setContentEncoding(const ::org::apache::http::Header&) const ;
-    void setContentEncoding(const ::java::lang::String&) const ;
-    void setChunked(bool) const ;
-    void consumeContent() const ;
+    ::org::apache::http::Header getContentType() const;
+    ::org::apache::http::Header getContentEncoding() const;
+    bool isChunked() const;
+    void setContentType(const ::org::apache::http::Header&) const;
+    void setContentType(const ::java::lang::String&) const;
+    void setContentEncoding(const ::org::apache::http::Header&) const;
+    void setContentEncoding(const ::java::lang::String&) const;
+    void setChunked(bool) const;
+    void consumeContent() const;
 
 };
 }

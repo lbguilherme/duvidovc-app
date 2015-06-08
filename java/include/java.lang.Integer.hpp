@@ -40,25 +40,25 @@ public:
     
     Integer(int32_t);
     Integer(const ::java::lang::String&);
-    int8_t byteValue() const ;
-    int32_t compareTo(const ::java::lang::Integer&) const ;
+    int8_t byteValue() const;
+    int32_t compareTo(const ::java::lang::Integer&) const;
     static ::java::lang::Integer decode(const ::java::lang::String&);
-    double doubleValue() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    float floatValue() const ;
+    double doubleValue() const;
+    bool equals(const ::java::lang::Object&) const;
+    float floatValue() const;
     static ::java::lang::Integer getInteger(const ::java::lang::String&);
     static ::java::lang::Integer getInteger(const ::java::lang::String&, int32_t);
     static ::java::lang::Integer getInteger(const ::java::lang::String&, const ::java::lang::Integer&);
-    int32_t hashCode() const ;
-    int32_t intValue() const ;
-    int64_t longValue() const ;
+    int32_t hashCode() const;
+    int32_t intValue() const;
+    int64_t longValue() const;
     static int32_t parseInt(const ::java::lang::String&);
     static int32_t parseInt(const ::java::lang::String&, int32_t);
-    int16_t shortValue() const ;
+    int16_t shortValue() const;
     static ::java::lang::String toBinaryString(int32_t);
     static ::java::lang::String toHexString(int32_t);
     static ::java::lang::String toOctalString(int32_t);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
     static ::java::lang::String toString(int32_t);
     static ::java::lang::String toString(int32_t, int32_t);
     static ::java::lang::Integer valueOf(const ::java::lang::String&);
@@ -74,7 +74,7 @@ public:
     static int32_t reverse(int32_t);
     static int32_t signum(int32_t);
     static ::java::lang::Integer valueOf(int32_t);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

@@ -41,12 +41,12 @@ public:
     
     MediaMetadataCompat_Builder();
     MediaMetadataCompat_Builder(const ::android::support::v4::media::MediaMetadataCompat&);
-    ::android::support::v4::media::MediaMetadataCompat_Builder putText(const ::java::lang::String&, const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::media::MediaMetadataCompat_Builder putString(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::support::v4::media::MediaMetadataCompat_Builder putLong(const ::java::lang::String&, int64_t) const ;
-    ::android::support::v4::media::MediaMetadataCompat_Builder putRating(const ::java::lang::String&, const ::android::support::v4::media::RatingCompat&) const ;
-    ::android::support::v4::media::MediaMetadataCompat_Builder putBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&) const ;
-    ::android::support::v4::media::MediaMetadataCompat build() const ;
+    ::android::support::v4::media::MediaMetadataCompat_Builder putText(const ::java::lang::String&, const ::java::lang::CharSequence&) const;
+    ::android::support::v4::media::MediaMetadataCompat_Builder putString(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::support::v4::media::MediaMetadataCompat_Builder putLong(const ::java::lang::String&, int64_t) const;
+    ::android::support::v4::media::MediaMetadataCompat_Builder putRating(const ::java::lang::String&, const ::android::support::v4::media::RatingCompat&) const;
+    ::android::support::v4::media::MediaMetadataCompat_Builder putBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&) const;
+    ::android::support::v4::media::MediaMetadataCompat build() const;
 
 };
 }

@@ -41,12 +41,12 @@ public:
     ::java::text::Format& operator=(const ::java::text::Format& x) {obj = x.obj; return *this;}
     ::java::text::Format& operator=(::java::text::Format&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
-    ::java::lang::String format(const ::java::lang::Object&) const ;
-    ::java::lang::StringBuffer format(const ::java::lang::Object&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
-    ::java::text::AttributedCharacterIterator formatToCharacterIterator(const ::java::lang::Object&) const ;
-    ::java::lang::Object parseObject(const ::java::lang::String&) const ;
-    ::java::lang::Object parseObject(const ::java::lang::String&, const ::java::text::ParsePosition&) const ;
+    ::java::lang::Object clone() const;
+    ::java::lang::String format(const ::java::lang::Object&) const;
+    ::java::lang::StringBuffer format(const ::java::lang::Object&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
+    ::java::text::AttributedCharacterIterator formatToCharacterIterator(const ::java::lang::Object&) const;
+    ::java::lang::Object parseObject(const ::java::lang::String&) const;
+    ::java::lang::Object parseObject(const ::java::lang::String&, const ::java::text::ParsePosition&) const;
 
 };
 }

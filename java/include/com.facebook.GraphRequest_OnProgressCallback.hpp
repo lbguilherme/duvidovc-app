@@ -33,7 +33,7 @@ public:
     ::com::facebook::GraphRequest_OnProgressCallback& operator=(const ::com::facebook::GraphRequest_OnProgressCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::GraphRequest_OnProgressCallback& operator=(::com::facebook::GraphRequest_OnProgressCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onProgress(int64_t, int64_t) const ;
+    void onProgress(int64_t, int64_t) const;
 
 };
 }

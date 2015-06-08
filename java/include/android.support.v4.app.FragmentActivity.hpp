@@ -52,30 +52,30 @@ public:
     ::android::support::v4::app::FragmentActivity& operator=(::android::support::v4::app::FragmentActivity&& x) {obj = std::move(x.obj); return *this;}
     
     FragmentActivity();
-    void onBackPressed() const ;
-    void supportFinishAfterTransition() const ;
-    void setEnterSharedElementCallback(const ::android::support::v4::app::SharedElementCallback&) const ;
-    void setExitSharedElementCallback(const ::android::support::v4::app::SharedElementCallback&) const ;
-    void supportPostponeEnterTransition() const ;
-    void supportStartPostponedEnterTransition() const ;
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
-    bool onCreatePanelMenu(int32_t, const ::android::view::Menu&) const ;
-    ::android::view::View onCreateView(const ::java::lang::String&, const ::android::content::Context&, const ::android::util::AttributeSet&) const ;
-    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const ;
-    void onLowMemory() const ;
-    bool onMenuItemSelected(int32_t, const ::android::view::MenuItem&) const ;
-    void onPanelClosed(int32_t, const ::android::view::Menu&) const ;
-    bool onPreparePanel(int32_t, const ::android::view::View&, const ::android::view::Menu&) const ;
-    ::java::lang::Object onRetainNonConfigurationInstance() const ;
-    ::java::lang::Object onRetainCustomNonConfigurationInstance() const ;
-    ::java::lang::Object getLastCustomNonConfigurationInstance() const ;
-    void supportInvalidateOptionsMenu() const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
-    void onAttachFragment(const ::android::support::v4::app::Fragment&) const ;
-    ::android::support::v4::app::FragmentManager getSupportFragmentManager() const ;
-    void startActivityForResult(const ::android::content::Intent&, int32_t) const ;
-    void startActivityFromFragment(const ::android::support::v4::app::Fragment&, const ::android::content::Intent&, int32_t) const ;
-    ::android::support::v4::app::LoaderManager getSupportLoaderManager() const ;
+    void onBackPressed() const;
+    void supportFinishAfterTransition() const;
+    void setEnterSharedElementCallback(const ::android::support::v4::app::SharedElementCallback&) const;
+    void setExitSharedElementCallback(const ::android::support::v4::app::SharedElementCallback&) const;
+    void supportPostponeEnterTransition() const;
+    void supportStartPostponedEnterTransition() const;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
+    bool onCreatePanelMenu(int32_t, const ::android::view::Menu&) const;
+    ::android::view::View onCreateView(const ::java::lang::String&, const ::android::content::Context&, const ::android::util::AttributeSet&) const;
+    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const;
+    void onLowMemory() const;
+    bool onMenuItemSelected(int32_t, const ::android::view::MenuItem&) const;
+    void onPanelClosed(int32_t, const ::android::view::Menu&) const;
+    bool onPreparePanel(int32_t, const ::android::view::View&, const ::android::view::Menu&) const;
+    ::java::lang::Object onRetainNonConfigurationInstance() const;
+    ::java::lang::Object onRetainCustomNonConfigurationInstance() const;
+    ::java::lang::Object getLastCustomNonConfigurationInstance() const;
+    void supportInvalidateOptionsMenu() const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
+    void onAttachFragment(const ::android::support::v4::app::Fragment&) const;
+    ::android::support::v4::app::FragmentManager getSupportFragmentManager() const;
+    void startActivityForResult(const ::android::content::Intent&, int32_t) const;
+    void startActivityFromFragment(const ::android::support::v4::app::Fragment&, const ::android::content::Intent&, int32_t) const;
+    ::android::support::v4::app::LoaderManager getSupportLoaderManager() const;
 
 };
 }

@@ -34,7 +34,7 @@ public:
     ::android::support::v4::view::ViewPager_PageTransformer& operator=(const ::android::support::v4::view::ViewPager_PageTransformer& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPager_PageTransformer& operator=(::android::support::v4::view::ViewPager_PageTransformer&& x) {obj = std::move(x.obj); return *this;}
     
-    void transformPage(const ::android::view::View&, float) const ;
+    void transformPage(const ::android::view::View&, float) const;
 
 };
 }

@@ -38,16 +38,16 @@ public:
     ::android::view::DragEvent& operator=(const ::android::view::DragEvent& x) {obj = x.obj; return *this;}
     ::android::view::DragEvent& operator=(::android::view::DragEvent&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getAction() const ;
-    float getX() const ;
-    float getY() const ;
-    ::android::content::ClipData getClipData() const ;
-    ::android::content::ClipDescription getClipDescription() const ;
-    ::java::lang::Object getLocalState() const ;
-    bool getResult() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t getAction() const;
+    float getX() const;
+    float getY() const;
+    ::android::content::ClipData getClipData() const;
+    ::android::content::ClipDescription getClipDescription() const;
+    ::java::lang::Object getLocalState() const;
+    bool getResult() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

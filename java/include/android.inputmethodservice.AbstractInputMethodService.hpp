@@ -42,11 +42,11 @@ public:
     ::android::inputmethodservice::AbstractInputMethodService& operator=(::android::inputmethodservice::AbstractInputMethodService&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractInputMethodService();
-    ::android::view::KeyEvent_DispatcherState getKeyDispatcherState() const ;
-    ::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodImpl onCreateInputMethodInterface() const ;
-    ::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodSessionImpl onCreateInputMethodSessionInterface() const ;
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    bool onTrackballEvent(const ::android::view::MotionEvent&) const ;
+    ::android::view::KeyEvent_DispatcherState getKeyDispatcherState() const;
+    ::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodImpl onCreateInputMethodInterface() const;
+    ::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodSessionImpl onCreateInputMethodSessionInterface() const;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    bool onTrackballEvent(const ::android::view::MotionEvent&) const;
 
 };
 }

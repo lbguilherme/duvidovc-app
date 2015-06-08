@@ -34,7 +34,7 @@ public:
     ::android::text::TextUtils_StringSplitter& operator=(const ::android::text::TextUtils_StringSplitter& x) {obj = x.obj; return *this;}
     ::android::text::TextUtils_StringSplitter& operator=(::android::text::TextUtils_StringSplitter&& x) {obj = std::move(x.obj); return *this;}
     
-    void setString(const ::java::lang::String&) const ;
+    void setString(const ::java::lang::String&) const;
 
 };
 }

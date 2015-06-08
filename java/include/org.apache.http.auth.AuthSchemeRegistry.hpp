@@ -40,11 +40,11 @@ public:
     ::org::apache::http::auth::AuthSchemeRegistry& operator=(::org::apache::http::auth::AuthSchemeRegistry&& x) {obj = std::move(x.obj); return *this;}
     
     AuthSchemeRegistry();
-    void register_(const ::java::lang::String&, const ::org::apache::http::auth::AuthSchemeFactory&) const ;
-    void unregister(const ::java::lang::String&) const ;
-    ::org::apache::http::auth::AuthScheme getAuthScheme(const ::java::lang::String&, const ::org::apache::http::params::HttpParams&) const ;
-    ::java::util::List getSchemeNames() const ;
-    void setItems(const ::java::util::Map&) const ;
+    void register_(const ::java::lang::String&, const ::org::apache::http::auth::AuthSchemeFactory&) const;
+    void unregister(const ::java::lang::String&) const;
+    ::org::apache::http::auth::AuthScheme getAuthScheme(const ::java::lang::String&, const ::org::apache::http::params::HttpParams&) const;
+    ::java::util::List getSchemeNames() const;
+    void setItems(const ::java::util::Map&) const;
 
 };
 }

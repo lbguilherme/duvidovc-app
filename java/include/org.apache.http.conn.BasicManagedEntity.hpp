@@ -44,15 +44,15 @@ public:
     ::org::apache::http::conn::BasicManagedEntity& operator=(::org::apache::http::conn::BasicManagedEntity&& x) {obj = std::move(x.obj); return *this;}
     
     BasicManagedEntity(const ::org::apache::http::HttpEntity&, const ::org::apache::http::conn::ManagedClientConnection&, bool);
-    bool isRepeatable() const ;
-    ::java::io::InputStream getContent() const ;
-    void consumeContent() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    void releaseConnection() const ;
-    void abortConnection() const ;
-    bool eofDetected(const ::java::io::InputStream&) const ;
-    bool streamClosed(const ::java::io::InputStream&) const ;
-    bool streamAbort(const ::java::io::InputStream&) const ;
+    bool isRepeatable() const;
+    ::java::io::InputStream getContent() const;
+    void consumeContent() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    void releaseConnection() const;
+    void abortConnection() const;
+    bool eofDetected(const ::java::io::InputStream&) const;
+    bool streamClosed(const ::java::io::InputStream&) const;
+    bool streamAbort(const ::java::io::InputStream&) const;
 
 };
 }

@@ -36,11 +36,11 @@ public:
     ::javax::net::SocketFactory& operator=(::javax::net::SocketFactory&& x) {obj = std::move(x.obj); return *this;}
     
     static ::javax::net::SocketFactory getDefault();
-    ::java::net::Socket createSocket() const ;
-    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t) const ;
-    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t) const ;
-    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t) const ;
-    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t, const ::java::net::InetAddress&, int32_t) const ;
+    ::java::net::Socket createSocket() const;
+    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t) const;
+    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t) const;
+    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t) const;
+    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t, const ::java::net::InetAddress&, int32_t) const;
 
 };
 }

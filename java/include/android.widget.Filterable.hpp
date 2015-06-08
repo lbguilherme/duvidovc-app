@@ -32,7 +32,7 @@ public:
     ::android::widget::Filterable& operator=(const ::android::widget::Filterable& x) {obj = x.obj; return *this;}
     ::android::widget::Filterable& operator=(::android::widget::Filterable&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::widget::Filter getFilter() const ;
+    ::android::widget::Filter getFilter() const;
 
 };
 }

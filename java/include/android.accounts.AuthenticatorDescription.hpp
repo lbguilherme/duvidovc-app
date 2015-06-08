@@ -40,11 +40,11 @@ public:
     AuthenticatorDescription(const ::java::lang::String&, const ::java::lang::String&, int32_t, int32_t, int32_t, int32_t, bool);
     AuthenticatorDescription(const ::java::lang::String&, const ::java::lang::String&, int32_t, int32_t, int32_t, int32_t);
     static ::android::accounts::AuthenticatorDescription newKey(const ::java::lang::String&);
-    int32_t describeContents() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

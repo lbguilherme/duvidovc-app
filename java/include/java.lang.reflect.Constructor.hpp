@@ -44,25 +44,25 @@ public:
     ::java::lang::reflect::Constructor& operator=(const ::java::lang::reflect::Constructor& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::Constructor& operator=(::java::lang::reflect::Constructor&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::reflect::TypeVariable> getTypeParameters() const ;
-    ::java::lang::String toGenericString() const ;
-    std::vector< ::java::lang::reflect::Type> getGenericParameterTypes() const ;
-    std::vector< ::java::lang::reflect::Type> getGenericExceptionTypes() const ;
-    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const ;
-    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const ;
-    bool isAnnotationPresent(const ::java::lang::Class&) const ;
-    std::vector< ::java::lang::annotation::Annotation> getParameterAnnotations() const ;
-    bool isVarArgs() const ;
-    bool isSynthetic() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::Class getDeclaringClass() const ;
-    std::vector< ::java::lang::Class> getExceptionTypes() const ;
-    int32_t getModifiers() const ;
-    ::java::lang::String getName() const ;
-    std::vector< ::java::lang::Class> getParameterTypes() const ;
-    int32_t hashCode() const ;
-    ::java::lang::Object newInstance(const std::vector< ::java::lang::Object>&) const ;
-    ::java::lang::String toString() const ;
+    std::vector< ::java::lang::reflect::TypeVariable> getTypeParameters() const;
+    ::java::lang::String toGenericString() const;
+    std::vector< ::java::lang::reflect::Type> getGenericParameterTypes() const;
+    std::vector< ::java::lang::reflect::Type> getGenericExceptionTypes() const;
+    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const;
+    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const;
+    bool isAnnotationPresent(const ::java::lang::Class&) const;
+    std::vector< ::java::lang::annotation::Annotation> getParameterAnnotations() const;
+    bool isVarArgs() const;
+    bool isSynthetic() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::Class getDeclaringClass() const;
+    std::vector< ::java::lang::Class> getExceptionTypes() const;
+    int32_t getModifiers() const;
+    ::java::lang::String getName() const;
+    std::vector< ::java::lang::Class> getParameterTypes() const;
+    int32_t hashCode() const;
+    ::java::lang::Object newInstance(const std::vector< ::java::lang::Object>&) const;
+    ::java::lang::String toString() const;
 
 };
 }

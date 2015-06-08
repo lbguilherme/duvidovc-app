@@ -39,12 +39,12 @@ public:
     ::org::apache::http::entity::BufferedHttpEntity& operator=(::org::apache::http::entity::BufferedHttpEntity&& x) {obj = std::move(x.obj); return *this;}
     
     BufferedHttpEntity(const ::org::apache::http::HttpEntity&);
-    int64_t getContentLength() const ;
-    ::java::io::InputStream getContent() const ;
-    bool isChunked() const ;
-    bool isRepeatable() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
+    int64_t getContentLength() const;
+    ::java::io::InputStream getContent() const;
+    bool isChunked() const;
+    bool isRepeatable() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
 
 };
 }

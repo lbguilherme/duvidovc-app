@@ -35,7 +35,7 @@ public:
     ::org::apache::http::client::ResponseHandler& operator=(const ::org::apache::http::client::ResponseHandler& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::ResponseHandler& operator=(::org::apache::http::client::ResponseHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object handleResponse(const ::org::apache::http::HttpResponse&) const ;
+    ::java::lang::Object handleResponse(const ::org::apache::http::HttpResponse&) const;
 
 };
 }

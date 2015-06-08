@@ -41,16 +41,16 @@ public:
     
     SQLiteCursor(const ::android::database::sqlite::SQLiteDatabase&, const ::android::database::sqlite::SQLiteCursorDriver&, const ::java::lang::String&, const ::android::database::sqlite::SQLiteQuery&);
     SQLiteCursor(const ::android::database::sqlite::SQLiteCursorDriver&, const ::java::lang::String&, const ::android::database::sqlite::SQLiteQuery&);
-    ::android::database::sqlite::SQLiteDatabase getDatabase() const ;
-    bool onMove(int32_t, int32_t) const ;
-    int32_t getCount() const ;
-    int32_t getColumnIndex(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> getColumnNames() const ;
-    void deactivate() const ;
-    void close() const ;
-    bool requery() const ;
-    void setWindow(const ::android::database::CursorWindow&) const ;
-    void setSelectionArguments(const std::vector< ::java::lang::String>&) const ;
+    ::android::database::sqlite::SQLiteDatabase getDatabase() const;
+    bool onMove(int32_t, int32_t) const;
+    int32_t getCount() const;
+    int32_t getColumnIndex(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> getColumnNames() const;
+    void deactivate() const;
+    void close() const;
+    bool requery() const;
+    void setWindow(const ::android::database::CursorWindow&) const;
+    void setSelectionArguments(const std::vector< ::java::lang::String>&) const;
 
 };
 }

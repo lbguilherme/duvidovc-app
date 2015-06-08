@@ -32,9 +32,9 @@ public:
     ::android::widget::SectionIndexer& operator=(const ::android::widget::SectionIndexer& x) {obj = x.obj; return *this;}
     ::android::widget::SectionIndexer& operator=(::android::widget::SectionIndexer&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::Object> getSections() const ;
-    int32_t getPositionForSection(int32_t) const ;
-    int32_t getSectionForPosition(int32_t) const ;
+    std::vector< ::java::lang::Object> getSections() const;
+    int32_t getPositionForSection(int32_t) const;
+    int32_t getSectionForPosition(int32_t) const;
 
 };
 }

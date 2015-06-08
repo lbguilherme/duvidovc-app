@@ -36,8 +36,8 @@ public:
     ::android::speech::RecognitionService& operator=(::android::speech::RecognitionService&& x) {obj = std::move(x.obj); return *this;}
     
     RecognitionService();
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    void onDestroy() const ;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    void onDestroy() const;
 
 };
 }

@@ -34,7 +34,7 @@ public:
     ::android::widget::AbsListView_MultiChoiceModeListener& operator=(const ::android::widget::AbsListView_MultiChoiceModeListener& x) {obj = x.obj; return *this;}
     ::android::widget::AbsListView_MultiChoiceModeListener& operator=(::android::widget::AbsListView_MultiChoiceModeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onItemCheckedStateChanged(const ::android::view::ActionMode&, int32_t, int64_t, bool) const ;
+    void onItemCheckedStateChanged(const ::android::view::ActionMode&, int32_t, int64_t, bool) const;
 
 };
 }

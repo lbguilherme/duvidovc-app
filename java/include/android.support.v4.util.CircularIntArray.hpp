@@ -35,18 +35,18 @@ public:
     
     CircularIntArray();
     CircularIntArray(int32_t);
-    void addFirst(int32_t) const ;
-    void addLast(int32_t) const ;
-    int32_t popFirst() const ;
-    int32_t popLast() const ;
-    void clear() const ;
-    void removeFromStart(int32_t) const ;
-    void removeFromEnd(int32_t) const ;
-    int32_t getFirst() const ;
-    int32_t getLast() const ;
-    int32_t get(int32_t) const ;
-    int32_t size() const ;
-    bool isEmpty() const ;
+    void addFirst(int32_t) const;
+    void addLast(int32_t) const;
+    int32_t popFirst() const;
+    int32_t popLast() const;
+    void clear() const;
+    void removeFromStart(int32_t) const;
+    void removeFromEnd(int32_t) const;
+    int32_t getFirst() const;
+    int32_t getLast() const;
+    int32_t get(int32_t) const;
+    int32_t size() const;
+    bool isEmpty() const;
 
 };
 }

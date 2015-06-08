@@ -35,17 +35,17 @@ public:
     ::java::io::ObjectInputStream_GetField& operator=(::java::io::ObjectInputStream_GetField&& x) {obj = std::move(x.obj); return *this;}
     
     ObjectInputStream_GetField();
-    ::java::io::ObjectStreamClass getObjectStreamClass() const ;
-    bool defaulted(const ::java::lang::String&) const ;
-    bool get(const ::java::lang::String&, bool) const ;
-    uint16_t get(const ::java::lang::String&, uint16_t) const ;
-    int8_t get(const ::java::lang::String&, int8_t) const ;
-    int16_t get(const ::java::lang::String&, int16_t) const ;
-    int32_t get(const ::java::lang::String&, int32_t) const ;
-    int64_t get(const ::java::lang::String&, int64_t) const ;
-    float get(const ::java::lang::String&, float) const ;
-    double get(const ::java::lang::String&, double) const ;
-    ::java::lang::Object get(const ::java::lang::String&, const ::java::lang::Object&) const ;
+    ::java::io::ObjectStreamClass getObjectStreamClass() const;
+    bool defaulted(const ::java::lang::String&) const;
+    bool get(const ::java::lang::String&, bool) const;
+    uint16_t get(const ::java::lang::String&, uint16_t) const;
+    int8_t get(const ::java::lang::String&, int8_t) const;
+    int16_t get(const ::java::lang::String&, int16_t) const;
+    int32_t get(const ::java::lang::String&, int32_t) const;
+    int64_t get(const ::java::lang::String&, int64_t) const;
+    float get(const ::java::lang::String&, float) const;
+    double get(const ::java::lang::String&, double) const;
+    ::java::lang::Object get(const ::java::lang::String&, const ::java::lang::Object&) const;
 
 };
 }

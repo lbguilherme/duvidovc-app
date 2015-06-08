@@ -34,7 +34,7 @@ public:
     ::android::support::v4::app::NotificationManagerCompat_Task& operator=(const ::android::support::v4::app::NotificationManagerCompat_Task& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationManagerCompat_Task& operator=(::android::support::v4::app::NotificationManagerCompat_Task&& x) {obj = std::move(x.obj); return *this;}
     
-    void send(const ::android::support::v4::app::INotificationSideChannel&) const ;
+    void send(const ::android::support::v4::app::INotificationSideChannel&) const;
 
 };
 }

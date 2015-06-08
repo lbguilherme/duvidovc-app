@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::RFC2965SpecFactory& operator=(::org::apache::http::impl::cookie::RFC2965SpecFactory&& x) {obj = std::move(x.obj); return *this;}
     
     RFC2965SpecFactory();
-    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

@@ -42,18 +42,18 @@ public:
     TimePicker(const ::android::content::Context&);
     TimePicker(const ::android::content::Context&, const ::android::util::AttributeSet&);
     TimePicker(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setEnabled(bool) const ;
-    bool isEnabled() const ;
-    void setOnTimeChangedListener(const ::android::widget::TimePicker_OnTimeChangedListener&) const ;
-    ::java::lang::Integer getCurrentHour() const ;
-    void setCurrentHour(const ::java::lang::Integer&) const ;
-    void setIs24HourView(const ::java::lang::Boolean&) const ;
-    bool is24HourView() const ;
-    ::java::lang::Integer getCurrentMinute() const ;
-    void setCurrentMinute(const ::java::lang::Integer&) const ;
-    int32_t getBaseline() const ;
-    bool dispatchPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void setEnabled(bool) const;
+    bool isEnabled() const;
+    void setOnTimeChangedListener(const ::android::widget::TimePicker_OnTimeChangedListener&) const;
+    ::java::lang::Integer getCurrentHour() const;
+    void setCurrentHour(const ::java::lang::Integer&) const;
+    void setIs24HourView(const ::java::lang::Boolean&) const;
+    bool is24HourView() const;
+    ::java::lang::Integer getCurrentMinute() const;
+    void setCurrentMinute(const ::java::lang::Integer&) const;
+    int32_t getBaseline() const;
+    bool dispatchPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

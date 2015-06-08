@@ -41,24 +41,24 @@ public:
     ::android::bluetooth::BluetoothAdapter& operator=(::android::bluetooth::BluetoothAdapter&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::bluetooth::BluetoothAdapter getDefaultAdapter();
-    ::android::bluetooth::BluetoothDevice getRemoteDevice(const ::java::lang::String&) const ;
-    bool isEnabled() const ;
-    int32_t getState() const ;
-    bool enable() const ;
-    bool disable() const ;
-    ::java::lang::String getAddress() const ;
-    ::java::lang::String getName() const ;
-    bool setName(const ::java::lang::String&) const ;
-    int32_t getScanMode() const ;
-    bool startDiscovery() const ;
-    bool cancelDiscovery() const ;
-    bool isDiscovering() const ;
-    ::java::util::Set getBondedDevices() const ;
-    int32_t getProfileConnectionState(int32_t) const ;
-    ::android::bluetooth::BluetoothServerSocket listenUsingRfcommWithServiceRecord(const ::java::lang::String&, const ::java::util::UUID&) const ;
-    ::android::bluetooth::BluetoothServerSocket listenUsingInsecureRfcommWithServiceRecord(const ::java::lang::String&, const ::java::util::UUID&) const ;
-    bool getProfileProxy(const ::android::content::Context&, const ::android::bluetooth::BluetoothProfile_ServiceListener&, int32_t) const ;
-    void closeProfileProxy(int32_t, const ::android::bluetooth::BluetoothProfile&) const ;
+    ::android::bluetooth::BluetoothDevice getRemoteDevice(const ::java::lang::String&) const;
+    bool isEnabled() const;
+    int32_t getState() const;
+    bool enable() const;
+    bool disable() const;
+    ::java::lang::String getAddress() const;
+    ::java::lang::String getName() const;
+    bool setName(const ::java::lang::String&) const;
+    int32_t getScanMode() const;
+    bool startDiscovery() const;
+    bool cancelDiscovery() const;
+    bool isDiscovering() const;
+    ::java::util::Set getBondedDevices() const;
+    int32_t getProfileConnectionState(int32_t) const;
+    ::android::bluetooth::BluetoothServerSocket listenUsingRfcommWithServiceRecord(const ::java::lang::String&, const ::java::util::UUID&) const;
+    ::android::bluetooth::BluetoothServerSocket listenUsingInsecureRfcommWithServiceRecord(const ::java::lang::String&, const ::java::util::UUID&) const;
+    bool getProfileProxy(const ::android::content::Context&, const ::android::bluetooth::BluetoothProfile_ServiceListener&, int32_t) const;
+    void closeProfileProxy(int32_t, const ::android::bluetooth::BluetoothProfile&) const;
     static bool checkBluetoothAddress(const ::java::lang::String&);
 
 };

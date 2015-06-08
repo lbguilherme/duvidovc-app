@@ -38,26 +38,26 @@ public:
     ::org::w3c::dom::Element& operator=(const ::org::w3c::dom::Element& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::Element& operator=(::org::w3c::dom::Element&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getTagName() const ;
-    ::java::lang::String getAttribute(const ::java::lang::String&) const ;
-    void setAttribute(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void removeAttribute(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Attr getAttributeNode(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Attr setAttributeNode(const ::org::w3c::dom::Attr&) const ;
-    ::org::w3c::dom::Attr removeAttributeNode(const ::org::w3c::dom::Attr&) const ;
-    ::org::w3c::dom::NodeList getElementsByTagName(const ::java::lang::String&) const ;
-    ::java::lang::String getAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setAttributeNS(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void removeAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Attr getAttributeNodeNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Attr setAttributeNodeNS(const ::org::w3c::dom::Attr&) const ;
-    ::org::w3c::dom::NodeList getElementsByTagNameNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    bool hasAttribute(const ::java::lang::String&) const ;
-    bool hasAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::TypeInfo getSchemaTypeInfo() const ;
-    void setIdAttribute(const ::java::lang::String&, bool) const ;
-    void setIdAttributeNS(const ::java::lang::String&, const ::java::lang::String&, bool) const ;
-    void setIdAttributeNode(const ::org::w3c::dom::Attr&, bool) const ;
+    ::java::lang::String getTagName() const;
+    ::java::lang::String getAttribute(const ::java::lang::String&) const;
+    void setAttribute(const ::java::lang::String&, const ::java::lang::String&) const;
+    void removeAttribute(const ::java::lang::String&) const;
+    ::org::w3c::dom::Attr getAttributeNode(const ::java::lang::String&) const;
+    ::org::w3c::dom::Attr setAttributeNode(const ::org::w3c::dom::Attr&) const;
+    ::org::w3c::dom::Attr removeAttributeNode(const ::org::w3c::dom::Attr&) const;
+    ::org::w3c::dom::NodeList getElementsByTagName(const ::java::lang::String&) const;
+    ::java::lang::String getAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    void setAttributeNS(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void removeAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Attr getAttributeNodeNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Attr setAttributeNodeNS(const ::org::w3c::dom::Attr&) const;
+    ::org::w3c::dom::NodeList getElementsByTagNameNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    bool hasAttribute(const ::java::lang::String&) const;
+    bool hasAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::TypeInfo getSchemaTypeInfo() const;
+    void setIdAttribute(const ::java::lang::String&, bool) const;
+    void setIdAttributeNS(const ::java::lang::String&, const ::java::lang::String&, bool) const;
+    void setIdAttributeNode(const ::org::w3c::dom::Attr&, bool) const;
 
 };
 }

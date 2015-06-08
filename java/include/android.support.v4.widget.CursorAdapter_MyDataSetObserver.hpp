@@ -35,8 +35,8 @@ public:
     ::android::support::v4::widget::CursorAdapter_MyDataSetObserver& operator=(const ::android::support::v4::widget::CursorAdapter_MyDataSetObserver& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::CursorAdapter_MyDataSetObserver& operator=(::android::support::v4::widget::CursorAdapter_MyDataSetObserver&& x) {obj = std::move(x.obj); return *this;}
     
-    void onChanged() const ;
-    void onInvalidated() const ;
+    void onChanged() const;
+    void onInvalidated() const;
 
 };
 }

@@ -35,18 +35,18 @@ public:
     ::android::text::util::Rfc822Token& operator=(::android::text::util::Rfc822Token&& x) {obj = std::move(x.obj); return *this;}
     
     Rfc822Token(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getAddress() const ;
-    ::java::lang::String getComment() const ;
-    void setName(const ::java::lang::String&) const ;
-    void setAddress(const ::java::lang::String&) const ;
-    void setComment(const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getAddress() const;
+    ::java::lang::String getComment() const;
+    void setName(const ::java::lang::String&) const;
+    void setAddress(const ::java::lang::String&) const;
+    void setComment(const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
     static ::java::lang::String quoteNameIfNecessary(const ::java::lang::String&);
     static ::java::lang::String quoteName(const ::java::lang::String&);
     static ::java::lang::String quoteComment(const ::java::lang::String&);
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

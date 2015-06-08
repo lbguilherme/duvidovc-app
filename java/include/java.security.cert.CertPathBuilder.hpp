@@ -37,12 +37,12 @@ public:
     ::java::security::cert::CertPathBuilder& operator=(const ::java::security::cert::CertPathBuilder& x) {obj = x.obj; return *this;}
     ::java::security::cert::CertPathBuilder& operator=(::java::security::cert::CertPathBuilder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
     static ::java::security::cert::CertPathBuilder getInstance(const ::java::lang::String&);
     static ::java::security::cert::CertPathBuilder getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::cert::CertPathBuilder getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::cert::CertPathBuilderResult build(const ::java::security::cert::CertPathParameters&) const ;
+    ::java::security::cert::CertPathBuilderResult build(const ::java::security::cert::CertPathParameters&) const;
     static ::java::lang::String getDefaultType();
 
 };

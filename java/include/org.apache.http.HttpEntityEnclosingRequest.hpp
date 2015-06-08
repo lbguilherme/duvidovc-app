@@ -35,9 +35,9 @@ public:
     ::org::apache::http::HttpEntityEnclosingRequest& operator=(const ::org::apache::http::HttpEntityEnclosingRequest& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpEntityEnclosingRequest& operator=(::org::apache::http::HttpEntityEnclosingRequest&& x) {obj = std::move(x.obj); return *this;}
     
-    bool expectContinue() const ;
-    void setEntity(const ::org::apache::http::HttpEntity&) const ;
-    ::org::apache::http::HttpEntity getEntity() const ;
+    bool expectContinue() const;
+    void setEntity(const ::org::apache::http::HttpEntity&) const;
+    ::org::apache::http::HttpEntity getEntity() const;
 
 };
 }

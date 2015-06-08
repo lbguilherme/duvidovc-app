@@ -33,7 +33,7 @@ public:
     ::android::test::FlakyTest& operator=(const ::android::test::FlakyTest& x) {obj = x.obj; return *this;}
     ::android::test::FlakyTest& operator=(::android::test::FlakyTest&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t tolerance() const ;
+    int32_t tolerance() const;
 
 };
 }

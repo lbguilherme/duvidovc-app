@@ -34,12 +34,12 @@ public:
     ::android::webkit::WebResourceResponse& operator=(::android::webkit::WebResourceResponse&& x) {obj = std::move(x.obj); return *this;}
     
     WebResourceResponse(const ::java::lang::String&, const ::java::lang::String&, const ::java::io::InputStream&);
-    void setMimeType(const ::java::lang::String&) const ;
-    ::java::lang::String getMimeType() const ;
-    void setEncoding(const ::java::lang::String&) const ;
-    ::java::lang::String getEncoding() const ;
-    void setData(const ::java::io::InputStream&) const ;
-    ::java::io::InputStream getData() const ;
+    void setMimeType(const ::java::lang::String&) const;
+    ::java::lang::String getMimeType() const;
+    void setEncoding(const ::java::lang::String&) const;
+    ::java::lang::String getEncoding() const;
+    void setData(const ::java::io::InputStream&) const;
+    ::java::io::InputStream getData() const;
 
 };
 }

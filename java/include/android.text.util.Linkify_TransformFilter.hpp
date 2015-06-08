@@ -34,7 +34,7 @@ public:
     ::android::text::util::Linkify_TransformFilter& operator=(const ::android::text::util::Linkify_TransformFilter& x) {obj = x.obj; return *this;}
     ::android::text::util::Linkify_TransformFilter& operator=(::android::text::util::Linkify_TransformFilter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String transformUrl(const ::java::util::regex::Matcher&, const ::java::lang::String&) const ;
+    ::java::lang::String transformUrl(const ::java::util::regex::Matcher&, const ::java::lang::String&) const;
 
 };
 }

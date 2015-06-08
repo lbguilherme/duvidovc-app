@@ -44,8 +44,8 @@ public:
     ::android::text::method::CharacterPickerDialog& operator=(::android::text::method::CharacterPickerDialog&& x) {obj = std::move(x.obj); return *this;}
     
     CharacterPickerDialog(const ::android::content::Context&, const ::android::view::View&, const ::android::text::Editable&, const ::java::lang::String&, bool);
-    void onItemClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const ;
-    void onClick(const ::android::view::View&) const ;
+    void onItemClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const;
+    void onClick(const ::android::view::View&) const;
 
 };
 }

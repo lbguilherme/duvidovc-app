@@ -32,7 +32,7 @@ public:
     ::android::nfc::NfcAdapter_OnNdefPushCompleteCallback& operator=(const ::android::nfc::NfcAdapter_OnNdefPushCompleteCallback& x) {obj = x.obj; return *this;}
     ::android::nfc::NfcAdapter_OnNdefPushCompleteCallback& operator=(::android::nfc::NfcAdapter_OnNdefPushCompleteCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onNdefPushComplete(const ::android::nfc::NfcEvent&) const ;
+    void onNdefPushComplete(const ::android::nfc::NfcEvent&) const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::android::view::View_OnDragListener& operator=(const ::android::view::View_OnDragListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnDragListener& operator=(::android::view::View_OnDragListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onDrag(const ::android::view::View&, const ::android::view::DragEvent&) const ;
+    bool onDrag(const ::android::view::View&, const ::android::view::DragEvent&) const;
 
 };
 }

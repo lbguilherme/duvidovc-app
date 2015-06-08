@@ -32,9 +32,9 @@ public:
     ::android::widget::MultiAutoCompleteTextView_Tokenizer& operator=(const ::android::widget::MultiAutoCompleteTextView_Tokenizer& x) {obj = x.obj; return *this;}
     ::android::widget::MultiAutoCompleteTextView_Tokenizer& operator=(::android::widget::MultiAutoCompleteTextView_Tokenizer&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t findTokenStart(const ::java::lang::CharSequence&, int32_t) const ;
-    int32_t findTokenEnd(const ::java::lang::CharSequence&, int32_t) const ;
-    ::java::lang::CharSequence terminateToken(const ::java::lang::CharSequence&) const ;
+    int32_t findTokenStart(const ::java::lang::CharSequence&, int32_t) const;
+    int32_t findTokenEnd(const ::java::lang::CharSequence&, int32_t) const;
+    ::java::lang::CharSequence terminateToken(const ::java::lang::CharSequence&) const;
 
 };
 }

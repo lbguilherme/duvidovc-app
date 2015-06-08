@@ -40,11 +40,11 @@ public:
     ::java::security::Permission& operator=(::java::security::Permission&& x) {obj = std::move(x.obj); return *this;}
     
     Permission(const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    void checkGuard(const ::java::lang::Object&) const ;
-    ::java::security::PermissionCollection newPermissionCollection() const ;
-    ::java::lang::String getActions() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    ::java::lang::String getName() const;
+    void checkGuard(const ::java::lang::Object&) const;
+    ::java::security::PermissionCollection newPermissionCollection() const;
+    ::java::lang::String getActions() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

@@ -40,13 +40,13 @@ public:
     ::android::media::MediaScannerConnection& operator=(::android::media::MediaScannerConnection&& x) {obj = std::move(x.obj); return *this;}
     
     MediaScannerConnection(const ::android::content::Context&, const ::android::media::MediaScannerConnection_MediaScannerConnectionClient&);
-    void connect() const ;
-    void disconnect() const ;
-    bool isConnected() const ;
-    void scanFile(const ::java::lang::String&, const ::java::lang::String&) const ;
+    void connect() const;
+    void disconnect() const;
+    bool isConnected() const;
+    void scanFile(const ::java::lang::String&, const ::java::lang::String&) const;
     static void scanFile(const ::android::content::Context&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&, const ::android::media::MediaScannerConnection_OnScanCompletedListener&);
-    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const ;
-    void onServiceDisconnected(const ::android::content::ComponentName&) const ;
+    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const;
+    void onServiceDisconnected(const ::android::content::ComponentName&) const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::android::widget::FilterQueryProvider& operator=(const ::android::widget::FilterQueryProvider& x) {obj = x.obj; return *this;}
     ::android::widget::FilterQueryProvider& operator=(::android::widget::FilterQueryProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::database::Cursor runQuery(const ::java::lang::CharSequence&) const ;
+    ::android::database::Cursor runQuery(const ::java::lang::CharSequence&) const;
 
 };
 }

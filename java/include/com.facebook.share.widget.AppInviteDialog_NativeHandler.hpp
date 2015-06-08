@@ -38,10 +38,10 @@ public:
     ::com::facebook::share::widget::AppInviteDialog_NativeHandler& operator=(const ::com::facebook::share::widget::AppInviteDialog_NativeHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::AppInviteDialog_NativeHandler& operator=(::com::facebook::share::widget::AppInviteDialog_NativeHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool canShow(const ::com::facebook::share::model::AppInviteContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::model::AppInviteContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const ;
-    bool canShow(const ::java::lang::Object&) const ;
+    bool canShow(const ::com::facebook::share::model::AppInviteContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::model::AppInviteContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const;
+    bool canShow(const ::java::lang::Object&) const;
 
 };
 }

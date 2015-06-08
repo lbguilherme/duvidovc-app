@@ -39,22 +39,22 @@ public:
     ::android::support::v4::media::RatingCompat& operator=(const ::android::support::v4::media::RatingCompat& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::RatingCompat& operator=(::android::support::v4::media::RatingCompat&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
     static ::android::support::v4::media::RatingCompat newUnratedRating(int32_t);
     static ::android::support::v4::media::RatingCompat newHeartRating(bool);
     static ::android::support::v4::media::RatingCompat newThumbRating(bool);
     static ::android::support::v4::media::RatingCompat newStarRating(int32_t, float);
     static ::android::support::v4::media::RatingCompat newPercentageRating(float);
-    bool isRated() const ;
-    int32_t getRatingStyle() const ;
-    bool hasHeart() const ;
-    bool isThumbUp() const ;
-    float getStarRating() const ;
-    float getPercentRating() const ;
+    bool isRated() const;
+    int32_t getRatingStyle() const;
+    bool hasHeart() const;
+    bool isThumbUp() const;
+    float getStarRating() const;
+    float getPercentRating() const;
     static ::android::support::v4::media::RatingCompat fromRating(const ::java::lang::Object&);
-    ::java::lang::Object getRating() const ;
+    ::java::lang::Object getRating() const;
 
 };
 }

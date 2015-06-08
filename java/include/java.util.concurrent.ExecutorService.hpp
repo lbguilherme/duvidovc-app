@@ -41,18 +41,18 @@ public:
     ::java::util::concurrent::ExecutorService& operator=(const ::java::util::concurrent::ExecutorService& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::ExecutorService& operator=(::java::util::concurrent::ExecutorService&& x) {obj = std::move(x.obj); return *this;}
     
-    void shutdown() const ;
-    ::java::util::List shutdownNow() const ;
-    bool isShutdown() const ;
-    bool isTerminated() const ;
-    bool awaitTermination(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const ;
-    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const ;
-    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&) const ;
-    ::java::util::List invokeAll(const ::java::util::Collection&) const ;
-    ::java::util::List invokeAll(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::lang::Object invokeAny(const ::java::util::Collection&) const ;
-    ::java::lang::Object invokeAny(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    void shutdown() const;
+    ::java::util::List shutdownNow() const;
+    bool isShutdown() const;
+    bool isTerminated() const;
+    bool awaitTermination(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const;
+    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const;
+    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&) const;
+    ::java::util::List invokeAll(const ::java::util::Collection&) const;
+    ::java::util::List invokeAll(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::lang::Object invokeAny(const ::java::util::Collection&) const;
+    ::java::lang::Object invokeAny(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

@@ -38,9 +38,9 @@ public:
     ::java::util::logging::XMLFormatter& operator=(::java::util::logging::XMLFormatter&& x) {obj = std::move(x.obj); return *this;}
     
     XMLFormatter();
-    ::java::lang::String format(const ::java::util::logging::LogRecord&) const ;
-    ::java::lang::String getHead(const ::java::util::logging::Handler&) const ;
-    ::java::lang::String getTail(const ::java::util::logging::Handler&) const ;
+    ::java::lang::String format(const ::java::util::logging::LogRecord&) const;
+    ::java::lang::String getHead(const ::java::util::logging::Handler&) const;
+    ::java::lang::String getTail(const ::java::util::logging::Handler&) const;
 
 };
 }

@@ -38,18 +38,18 @@ public:
     ::android::support::v4::util::MapCollections_ValuesCollection& operator=(const ::android::support::v4::util::MapCollections_ValuesCollection& x) {obj = x.obj; return *this;}
     ::android::support::v4::util::MapCollections_ValuesCollection& operator=(::android::support::v4::util::MapCollections_ValuesCollection&& x) {obj = std::move(x.obj); return *this;}
     
-    bool addAll(const ::java::util::Collection&) const ;
-    void clear() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    bool containsAll(const ::java::util::Collection&) const ;
-    bool isEmpty() const ;
-    ::java::util::Iterator iterator() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool removeAll(const ::java::util::Collection&) const ;
-    bool retainAll(const ::java::util::Collection&) const ;
-    int32_t size() const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
+    bool addAll(const ::java::util::Collection&) const;
+    void clear() const;
+    bool contains(const ::java::lang::Object&) const;
+    bool containsAll(const ::java::util::Collection&) const;
+    bool isEmpty() const;
+    ::java::util::Iterator iterator() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool removeAll(const ::java::util::Collection&) const;
+    bool retainAll(const ::java::util::Collection&) const;
+    int32_t size() const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
 
 };
 }

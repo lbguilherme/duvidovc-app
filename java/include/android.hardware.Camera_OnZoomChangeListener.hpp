@@ -32,7 +32,7 @@ public:
     ::android::hardware::Camera_OnZoomChangeListener& operator=(const ::android::hardware::Camera_OnZoomChangeListener& x) {obj = x.obj; return *this;}
     ::android::hardware::Camera_OnZoomChangeListener& operator=(::android::hardware::Camera_OnZoomChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onZoomChange(int32_t, bool, const ::android::hardware::Camera&) const ;
+    void onZoomChange(int32_t, bool, const ::android::hardware::Camera&) const;
 
 };
 }

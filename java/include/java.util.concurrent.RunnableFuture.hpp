@@ -36,7 +36,7 @@ public:
     ::java::util::concurrent::RunnableFuture& operator=(const ::java::util::concurrent::RunnableFuture& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::RunnableFuture& operator=(::java::util::concurrent::RunnableFuture&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::android::media::effect::EffectContext& operator=(::android::media::effect::EffectContext&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::media::effect::EffectContext createWithCurrentGlContext();
-    ::android::media::effect::EffectFactory getFactory() const ;
-    void release() const ;
+    ::android::media::effect::EffectFactory getFactory() const;
+    void release() const;
 
 };
 }

@@ -37,25 +37,25 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoKitKatImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoKitKatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoKitKatImpl& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoKitKatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLiveRegion(const ::java::lang::Object&) const ;
-    void setLiveRegion(const ::java::lang::Object&, int32_t) const ;
-    ::java::lang::Object getCollectionInfo(const ::java::lang::Object&) const ;
-    void setCollectionInfo(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::Object obtainCollectionInfo(int32_t, int32_t, bool, int32_t) const ;
-    ::java::lang::Object obtainCollectionItemInfo(int32_t, int32_t, int32_t, int32_t, bool, bool) const ;
-    int32_t getCollectionInfoColumnCount(const ::java::lang::Object&) const ;
-    int32_t getCollectionInfoRowCount(const ::java::lang::Object&) const ;
-    bool isCollectionInfoHierarchical(const ::java::lang::Object&) const ;
-    ::java::lang::Object getCollectionItemInfo(const ::java::lang::Object&) const ;
-    ::java::lang::Object getRangeInfo(const ::java::lang::Object&) const ;
-    int32_t getCollectionItemColumnIndex(const ::java::lang::Object&) const ;
-    int32_t getCollectionItemColumnSpan(const ::java::lang::Object&) const ;
-    int32_t getCollectionItemRowIndex(const ::java::lang::Object&) const ;
-    int32_t getCollectionItemRowSpan(const ::java::lang::Object&) const ;
-    bool isCollectionItemHeading(const ::java::lang::Object&) const ;
-    void setCollectionItemInfo(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    void setContentInvalid(const ::java::lang::Object&, bool) const ;
-    bool isContentInvalid(const ::java::lang::Object&) const ;
+    int32_t getLiveRegion(const ::java::lang::Object&) const;
+    void setLiveRegion(const ::java::lang::Object&, int32_t) const;
+    ::java::lang::Object getCollectionInfo(const ::java::lang::Object&) const;
+    void setCollectionInfo(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::Object obtainCollectionInfo(int32_t, int32_t, bool, int32_t) const;
+    ::java::lang::Object obtainCollectionItemInfo(int32_t, int32_t, int32_t, int32_t, bool, bool) const;
+    int32_t getCollectionInfoColumnCount(const ::java::lang::Object&) const;
+    int32_t getCollectionInfoRowCount(const ::java::lang::Object&) const;
+    bool isCollectionInfoHierarchical(const ::java::lang::Object&) const;
+    ::java::lang::Object getCollectionItemInfo(const ::java::lang::Object&) const;
+    ::java::lang::Object getRangeInfo(const ::java::lang::Object&) const;
+    int32_t getCollectionItemColumnIndex(const ::java::lang::Object&) const;
+    int32_t getCollectionItemColumnSpan(const ::java::lang::Object&) const;
+    int32_t getCollectionItemRowIndex(const ::java::lang::Object&) const;
+    int32_t getCollectionItemRowSpan(const ::java::lang::Object&) const;
+    bool isCollectionItemHeading(const ::java::lang::Object&) const;
+    void setCollectionItemInfo(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    void setContentInvalid(const ::java::lang::Object&, bool) const;
+    bool isContentInvalid(const ::java::lang::Object&) const;
 
 };
 }

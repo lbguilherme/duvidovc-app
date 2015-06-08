@@ -34,7 +34,7 @@ public:
     ::com::facebook::internal::ImageDownloader_CacheReadWorkItem& operator=(const ::com::facebook::internal::ImageDownloader_CacheReadWorkItem& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::ImageDownloader_CacheReadWorkItem& operator=(::com::facebook::internal::ImageDownloader_CacheReadWorkItem&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

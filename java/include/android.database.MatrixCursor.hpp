@@ -39,20 +39,20 @@ public:
     
     MatrixCursor(const std::vector< ::java::lang::String>&, int32_t);
     MatrixCursor(const std::vector< ::java::lang::String>&);
-    ::android::database::MatrixCursor_RowBuilder newRow() const ;
-    void addRow(const std::vector< ::java::lang::Object>&) const ;
-    void addRow(const ::java::lang::Iterable&) const ;
-    int32_t getCount() const ;
-    std::vector< ::java::lang::String> getColumnNames() const ;
-    ::java::lang::String getString(int32_t) const ;
-    int16_t getShort(int32_t) const ;
-    int32_t getInt(int32_t) const ;
-    int64_t getLong(int32_t) const ;
-    float getFloat(int32_t) const ;
-    double getDouble(int32_t) const ;
-    std::vector< int8_t> getBlob(int32_t) const ;
-    int32_t getType(int32_t) const ;
-    bool isNull(int32_t) const ;
+    ::android::database::MatrixCursor_RowBuilder newRow() const;
+    void addRow(const std::vector< ::java::lang::Object>&) const;
+    void addRow(const ::java::lang::Iterable&) const;
+    int32_t getCount() const;
+    std::vector< ::java::lang::String> getColumnNames() const;
+    ::java::lang::String getString(int32_t) const;
+    int16_t getShort(int32_t) const;
+    int32_t getInt(int32_t) const;
+    int64_t getLong(int32_t) const;
+    float getFloat(int32_t) const;
+    double getDouble(int32_t) const;
+    std::vector< int8_t> getBlob(int32_t) const;
+    int32_t getType(int32_t) const;
+    bool isNull(int32_t) const;
 
 };
 }

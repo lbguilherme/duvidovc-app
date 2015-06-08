@@ -34,13 +34,13 @@ public:
     ::org::xml::sax::ext::LexicalHandler& operator=(const ::org::xml::sax::ext::LexicalHandler& x) {obj = x.obj; return *this;}
     ::org::xml::sax::ext::LexicalHandler& operator=(::org::xml::sax::ext::LexicalHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void startDTD(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void endDTD() const ;
-    void startEntity(const ::java::lang::String&) const ;
-    void endEntity(const ::java::lang::String&) const ;
-    void startCDATA() const ;
-    void endCDATA() const ;
-    void comment(const std::vector< uint16_t>&, int32_t, int32_t) const ;
+    void startDTD(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void endDTD() const;
+    void startEntity(const ::java::lang::String&) const;
+    void endEntity(const ::java::lang::String&) const;
+    void startCDATA() const;
+    void endCDATA() const;
+    void comment(const std::vector< uint16_t>&, int32_t, int32_t) const;
 
 };
 }

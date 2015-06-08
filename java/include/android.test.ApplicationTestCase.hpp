@@ -37,9 +37,9 @@ public:
     ::android::test::ApplicationTestCase& operator=(::android::test::ApplicationTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     ApplicationTestCase(const ::java::lang::Class&);
-    ::android::app::Application getApplication() const ;
-    ::android::content::Context getSystemContext() const ;
-    void testApplicationTestCaseSetUpProperly() const ;
+    ::android::app::Application getApplication() const;
+    ::android::content::Context getSystemContext() const;
+    void testApplicationTestCaseSetUpProperly() const;
 
 };
 }

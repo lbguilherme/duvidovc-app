@@ -35,8 +35,8 @@ public:
     ::java::nio::channels::ScatteringByteChannel& operator=(const ::java::nio::channels::ScatteringByteChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::ScatteringByteChannel& operator=(::java::nio::channels::ScatteringByteChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t read(const std::vector< ::java::nio::ByteBuffer>&) const ;
-    int64_t read(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const ;
+    int64_t read(const std::vector< ::java::nio::ByteBuffer>&) const;
+    int64_t read(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const;
 
 };
 }

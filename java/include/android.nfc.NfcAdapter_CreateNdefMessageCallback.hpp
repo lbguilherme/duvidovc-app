@@ -33,7 +33,7 @@ public:
     ::android::nfc::NfcAdapter_CreateNdefMessageCallback& operator=(const ::android::nfc::NfcAdapter_CreateNdefMessageCallback& x) {obj = x.obj; return *this;}
     ::android::nfc::NfcAdapter_CreateNdefMessageCallback& operator=(::android::nfc::NfcAdapter_CreateNdefMessageCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::nfc::NdefMessage createNdefMessage(const ::android::nfc::NfcEvent&) const ;
+    ::android::nfc::NdefMessage createNdefMessage(const ::android::nfc::NfcEvent&) const;
 
 };
 }

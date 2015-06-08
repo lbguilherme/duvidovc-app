@@ -47,24 +47,24 @@ public:
     
     TabHost(const ::android::content::Context&);
     TabHost(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    ::android::widget::TabHost_TabSpec newTabSpec(const ::java::lang::String&) const ;
-    void setup() const ;
-    void sendAccessibilityEvent(int32_t) const ;
-    void setup(const ::android::app::LocalActivityManager&) const ;
-    void onTouchModeChanged(bool) const ;
-    void addTab(const ::android::widget::TabHost_TabSpec&) const ;
-    void clearAllTabs() const ;
-    ::android::widget::TabWidget getTabWidget() const ;
-    int32_t getCurrentTab() const ;
-    ::java::lang::String getCurrentTabTag() const ;
-    ::android::view::View getCurrentTabView() const ;
-    ::android::view::View getCurrentView() const ;
-    void setCurrentTabByTag(const ::java::lang::String&) const ;
-    ::android::widget::FrameLayout getTabContentView() const ;
-    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const ;
-    void dispatchWindowFocusChanged(bool) const ;
-    void setCurrentTab(int32_t) const ;
-    void setOnTabChangedListener(const ::android::widget::TabHost_OnTabChangeListener&) const ;
+    ::android::widget::TabHost_TabSpec newTabSpec(const ::java::lang::String&) const;
+    void setup() const;
+    void sendAccessibilityEvent(int32_t) const;
+    void setup(const ::android::app::LocalActivityManager&) const;
+    void onTouchModeChanged(bool) const;
+    void addTab(const ::android::widget::TabHost_TabSpec&) const;
+    void clearAllTabs() const;
+    ::android::widget::TabWidget getTabWidget() const;
+    int32_t getCurrentTab() const;
+    ::java::lang::String getCurrentTabTag() const;
+    ::android::view::View getCurrentTabView() const;
+    ::android::view::View getCurrentView() const;
+    void setCurrentTabByTag(const ::java::lang::String&) const;
+    ::android::widget::FrameLayout getTabContentView() const;
+    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const;
+    void dispatchWindowFocusChanged(bool) const;
+    void setCurrentTab(int32_t) const;
+    void setOnTabChangedListener(const ::android::widget::TabHost_OnTabChangeListener&) const;
 
 };
 }

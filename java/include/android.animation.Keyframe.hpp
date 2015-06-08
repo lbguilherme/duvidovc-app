@@ -44,15 +44,15 @@ public:
     static ::android::animation::Keyframe ofFloat(float);
     static ::android::animation::Keyframe ofObject(float, const ::java::lang::Object&);
     static ::android::animation::Keyframe ofObject(float);
-    bool hasValue() const ;
-    ::java::lang::Object getValue() const ;
-    void setValue(const ::java::lang::Object&) const ;
-    float getFraction() const ;
-    void setFraction(float) const ;
-    ::android::animation::TimeInterpolator getInterpolator() const ;
-    void setInterpolator(const ::android::animation::TimeInterpolator&) const ;
-    ::java::lang::Class getType() const ;
-    ::android::animation::Keyframe clone() const ;
+    bool hasValue() const;
+    ::java::lang::Object getValue() const;
+    void setValue(const ::java::lang::Object&) const;
+    float getFraction() const;
+    void setFraction(float) const;
+    ::android::animation::TimeInterpolator getInterpolator() const;
+    void setInterpolator(const ::android::animation::TimeInterpolator&) const;
+    ::java::lang::Class getType() const;
+    ::android::animation::Keyframe clone() const;
 
 };
 }

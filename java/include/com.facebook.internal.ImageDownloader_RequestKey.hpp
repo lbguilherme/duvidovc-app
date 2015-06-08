@@ -33,8 +33,8 @@ public:
     ::com::facebook::internal::ImageDownloader_RequestKey& operator=(const ::com::facebook::internal::ImageDownloader_RequestKey& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::ImageDownloader_RequestKey& operator=(::com::facebook::internal::ImageDownloader_RequestKey&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

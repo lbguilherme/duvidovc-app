@@ -49,11 +49,11 @@ public:
     SQLException(const ::java::lang::String&, const ::java::lang::Throwable&);
     SQLException(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::Throwable&);
     SQLException(const ::java::lang::String&, const ::java::lang::String&, int32_t, const ::java::lang::Throwable&);
-    int32_t getErrorCode() const ;
-    ::java::sql::SQLException getNextException() const ;
-    ::java::lang::String getSQLState() const ;
-    void setNextException(const ::java::sql::SQLException&) const ;
-    ::java::util::Iterator iterator() const ;
+    int32_t getErrorCode() const;
+    ::java::sql::SQLException getNextException() const;
+    ::java::lang::String getSQLState() const;
+    void setNextException(const ::java::sql::SQLException&) const;
+    ::java::util::Iterator iterator() const;
 
 };
 }

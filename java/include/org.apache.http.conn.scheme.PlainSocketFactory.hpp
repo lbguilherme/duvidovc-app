@@ -46,11 +46,11 @@ public:
     PlainSocketFactory(const ::org::apache::http::conn::scheme::HostNameResolver&);
     PlainSocketFactory();
     static ::org::apache::http::conn::scheme::PlainSocketFactory getSocketFactory();
-    ::java::net::Socket createSocket() const ;
-    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const ;
-    bool isSecure(const ::java::net::Socket&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    ::java::net::Socket createSocket() const;
+    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const;
+    bool isSecure(const ::java::net::Socket&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

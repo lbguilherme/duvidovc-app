@@ -38,7 +38,7 @@ public:
     ::org::apache::http::HttpVersion& operator=(::org::apache::http::HttpVersion&& x) {obj = std::move(x.obj); return *this;}
     
     HttpVersion(int32_t, int32_t);
-    ::org::apache::http::ProtocolVersion forVersion(int32_t, int32_t) const ;
+    ::org::apache::http::ProtocolVersion forVersion(int32_t, int32_t) const;
 
 };
 }

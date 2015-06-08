@@ -34,7 +34,7 @@ public:
     ::com::facebook::internal::ImageResponseCache_BufferedHttpInputStream& operator=(const ::com::facebook::internal::ImageResponseCache_BufferedHttpInputStream& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::ImageResponseCache_BufferedHttpInputStream& operator=(::com::facebook::internal::ImageResponseCache_BufferedHttpInputStream&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
+    void close() const;
 
 };
 }

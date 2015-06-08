@@ -42,8 +42,8 @@ public:
     CertPathValidatorException(const ::java::lang::Throwable&);
     CertPathValidatorException(const ::java::lang::String&);
     CertPathValidatorException();
-    ::java::security::cert::CertPath getCertPath() const ;
-    int32_t getIndex() const ;
+    ::java::security::cert::CertPath getCertPath() const;
+    int32_t getIndex() const;
 
 };
 }

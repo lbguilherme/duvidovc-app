@@ -37,9 +37,9 @@ public:
     ::java::util::FormatFlagsConversionMismatchException& operator=(::java::util::FormatFlagsConversionMismatchException&& x) {obj = std::move(x.obj); return *this;}
     
     FormatFlagsConversionMismatchException(const ::java::lang::String&, uint16_t);
-    ::java::lang::String getFlags() const ;
-    uint16_t getConversion() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getFlags() const;
+    uint16_t getConversion() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

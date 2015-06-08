@@ -39,14 +39,14 @@ public:
     
     SQLiteOpenHelper(const ::android::content::Context&, const ::java::lang::String&, const ::android::database::sqlite::SQLiteDatabase_CursorFactory&, int32_t);
     SQLiteOpenHelper(const ::android::content::Context&, const ::java::lang::String&, const ::android::database::sqlite::SQLiteDatabase_CursorFactory&, int32_t, const ::android::database::DatabaseErrorHandler&);
-    ::java::lang::String getDatabaseName() const ;
-    ::android::database::sqlite::SQLiteDatabase getWritableDatabase() const ;
-    ::android::database::sqlite::SQLiteDatabase getReadableDatabase() const ;
-    void close() const ;
-    void onCreate(const ::android::database::sqlite::SQLiteDatabase&) const ;
-    void onUpgrade(const ::android::database::sqlite::SQLiteDatabase&, int32_t, int32_t) const ;
-    void onDowngrade(const ::android::database::sqlite::SQLiteDatabase&, int32_t, int32_t) const ;
-    void onOpen(const ::android::database::sqlite::SQLiteDatabase&) const ;
+    ::java::lang::String getDatabaseName() const;
+    ::android::database::sqlite::SQLiteDatabase getWritableDatabase() const;
+    ::android::database::sqlite::SQLiteDatabase getReadableDatabase() const;
+    void close() const;
+    void onCreate(const ::android::database::sqlite::SQLiteDatabase&) const;
+    void onUpgrade(const ::android::database::sqlite::SQLiteDatabase&, int32_t, int32_t) const;
+    void onDowngrade(const ::android::database::sqlite::SQLiteDatabase&, int32_t, int32_t) const;
+    void onOpen(const ::android::database::sqlite::SQLiteDatabase&) const;
 
 };
 }

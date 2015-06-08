@@ -36,12 +36,12 @@ public:
     ::java::util::SortedMap& operator=(const ::java::util::SortedMap& x) {obj = x.obj; return *this;}
     ::java::util::SortedMap& operator=(::java::util::SortedMap&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Comparator comparator() const ;
-    ::java::lang::Object firstKey() const ;
-    ::java::util::SortedMap headMap(const ::java::lang::Object&) const ;
-    ::java::lang::Object lastKey() const ;
-    ::java::util::SortedMap subMap(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::util::SortedMap tailMap(const ::java::lang::Object&) const ;
+    ::java::util::Comparator comparator() const;
+    ::java::lang::Object firstKey() const;
+    ::java::util::SortedMap headMap(const ::java::lang::Object&) const;
+    ::java::lang::Object lastKey() const;
+    ::java::util::SortedMap subMap(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::util::SortedMap tailMap(const ::java::lang::Object&) const;
 
 };
 }

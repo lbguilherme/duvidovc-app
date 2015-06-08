@@ -35,7 +35,7 @@ public:
     ::org::apache::http::conn::ConnectionKeepAliveStrategy& operator=(const ::org::apache::http::conn::ConnectionKeepAliveStrategy& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::ConnectionKeepAliveStrategy& operator=(::org::apache::http::conn::ConnectionKeepAliveStrategy&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t getKeepAliveDuration(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    int64_t getKeepAliveDuration(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

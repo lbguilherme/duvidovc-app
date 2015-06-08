@@ -38,8 +38,8 @@ public:
     ::org::apache::http::impl::auth::RFC2617Scheme& operator=(::org::apache::http::impl::auth::RFC2617Scheme&& x) {obj = std::move(x.obj); return *this;}
     
     RFC2617Scheme();
-    ::java::lang::String getParameter(const ::java::lang::String&) const ;
-    ::java::lang::String getRealm() const ;
+    ::java::lang::String getParameter(const ::java::lang::String&) const;
+    ::java::lang::String getRealm() const;
 
 };
 }

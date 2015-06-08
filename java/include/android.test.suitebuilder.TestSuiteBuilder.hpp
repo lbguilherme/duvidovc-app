@@ -41,13 +41,13 @@ public:
     
     TestSuiteBuilder(const ::java::lang::Class&);
     TestSuiteBuilder(const ::java::lang::String&, const ::java::lang::ClassLoader&);
-    ::android::test::suitebuilder::TestSuiteBuilder includePackages(const std::vector< ::java::lang::String>&) const ;
-    ::android::test::suitebuilder::TestSuiteBuilder excludePackages(const std::vector< ::java::lang::String>&) const ;
-    ::android::test::suitebuilder::TestSuiteBuilder addRequirements(const ::java::util::List&) const ;
-    ::android::test::suitebuilder::TestSuiteBuilder includeAllPackagesUnderHere() const ;
-    ::android::test::suitebuilder::TestSuiteBuilder named(const ::java::lang::String&) const ;
-    ::junit::framework::TestSuite build() const ;
-    ::android::test::suitebuilder::TestSuiteBuilder addRequirements(const std::vector< ::com::android::internal::util::Predicate>&) const ;
+    ::android::test::suitebuilder::TestSuiteBuilder includePackages(const std::vector< ::java::lang::String>&) const;
+    ::android::test::suitebuilder::TestSuiteBuilder excludePackages(const std::vector< ::java::lang::String>&) const;
+    ::android::test::suitebuilder::TestSuiteBuilder addRequirements(const ::java::util::List&) const;
+    ::android::test::suitebuilder::TestSuiteBuilder includeAllPackagesUnderHere() const;
+    ::android::test::suitebuilder::TestSuiteBuilder named(const ::java::lang::String&) const;
+    ::junit::framework::TestSuite build() const;
+    ::android::test::suitebuilder::TestSuiteBuilder addRequirements(const std::vector< ::com::android::internal::util::Predicate>&) const;
 
 };
 }

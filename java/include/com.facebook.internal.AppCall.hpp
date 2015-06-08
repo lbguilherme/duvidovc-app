@@ -39,12 +39,12 @@ public:
     static ::com::facebook::internal::AppCall finishPendingCall(const ::java::util::UUID&, int32_t);
     AppCall(int32_t);
     AppCall(int32_t, const ::java::util::UUID&);
-    ::android::content::Intent getRequestIntent() const ;
-    ::java::util::UUID getCallId() const ;
-    int32_t getRequestCode() const ;
-    void setRequestCode(int32_t) const ;
-    void setRequestIntent(const ::android::content::Intent&) const ;
-    bool setPending() const ;
+    ::android::content::Intent getRequestIntent() const;
+    ::java::util::UUID getCallId() const;
+    int32_t getRequestCode() const;
+    void setRequestCode(int32_t) const;
+    void setRequestIntent(const ::android::content::Intent&) const;
+    bool setPending() const;
 
 };
 }

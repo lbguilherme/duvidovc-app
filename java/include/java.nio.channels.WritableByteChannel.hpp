@@ -35,7 +35,7 @@ public:
     ::java::nio::channels::WritableByteChannel& operator=(const ::java::nio::channels::WritableByteChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::WritableByteChannel& operator=(::java::nio::channels::WritableByteChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t write(const ::java::nio::ByteBuffer&) const ;
+    int32_t write(const ::java::nio::ByteBuffer&) const;
 
 };
 }

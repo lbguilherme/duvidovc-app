@@ -48,15 +48,15 @@ public:
     static ::android::text::method::TextKeyListener getInstance(bool, const ::android::text::method::TextKeyListener_Capitalize&);
     static ::android::text::method::TextKeyListener getInstance();
     static bool shouldCap(const ::android::text::method::TextKeyListener_Capitalize&, const ::java::lang::CharSequence&, int32_t);
-    int32_t getInputType() const ;
-    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyUp(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyOther(const ::android::view::View&, const ::android::text::Editable&, const ::android::view::KeyEvent&) const ;
+    int32_t getInputType() const;
+    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyUp(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyOther(const ::android::view::View&, const ::android::text::Editable&, const ::android::view::KeyEvent&) const;
     static void clear(const ::android::text::Editable&);
-    void onSpanAdded(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const ;
-    void onSpanRemoved(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const ;
-    void onSpanChanged(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t, int32_t, int32_t) const ;
-    void release() const ;
+    void onSpanAdded(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const;
+    void onSpanRemoved(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const;
+    void onSpanChanged(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t, int32_t, int32_t) const;
+    void release() const;
 
 };
 }

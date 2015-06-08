@@ -35,11 +35,11 @@ public:
     ::com::facebook::internal::Utility_FetchedAppSettings& operator=(const ::com::facebook::internal::Utility_FetchedAppSettings& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::Utility_FetchedAppSettings& operator=(::com::facebook::internal::Utility_FetchedAppSettings&& x) {obj = std::move(x.obj); return *this;}
     
-    bool supportsImplicitLogging() const ;
-    ::java::lang::String getNuxContent() const ;
-    bool getNuxEnabled() const ;
-    ::java::util::Map getDialogConfigurations() const ;
-    ::com::facebook::internal::FacebookRequestErrorClassification getErrorClassification() const ;
+    bool supportsImplicitLogging() const;
+    ::java::lang::String getNuxContent() const;
+    bool getNuxEnabled() const;
+    ::java::util::Map getDialogConfigurations() const;
+    ::com::facebook::internal::FacebookRequestErrorClassification getErrorClassification() const;
 
 };
 }

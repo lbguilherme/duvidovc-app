@@ -35,16 +35,16 @@ public:
     ::android::widget::Adapter& operator=(const ::android::widget::Adapter& x) {obj = x.obj; return *this;}
     ::android::widget::Adapter& operator=(::android::widget::Adapter&& x) {obj = std::move(x.obj); return *this;}
     
-    void registerDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    int32_t getCount() const ;
-    ::java::lang::Object getItem(int32_t) const ;
-    int64_t getItemId(int32_t) const ;
-    bool hasStableIds() const ;
-    ::android::view::View getView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
-    int32_t getItemViewType(int32_t) const ;
-    int32_t getViewTypeCount() const ;
-    bool isEmpty() const ;
+    void registerDataSetObserver(const ::android::database::DataSetObserver&) const;
+    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const;
+    int32_t getCount() const;
+    ::java::lang::Object getItem(int32_t) const;
+    int64_t getItemId(int32_t) const;
+    bool hasStableIds() const;
+    ::android::view::View getView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const;
+    int32_t getItemViewType(int32_t) const;
+    int32_t getViewTypeCount() const;
+    bool isEmpty() const;
 
 };
 }

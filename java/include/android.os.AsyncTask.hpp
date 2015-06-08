@@ -38,13 +38,13 @@ public:
     ::android::os::AsyncTask& operator=(::android::os::AsyncTask&& x) {obj = std::move(x.obj); return *this;}
     
     AsyncTask();
-    ::android::os::AsyncTask_Status getStatus() const ;
-    bool isCancelled() const ;
-    bool cancel(bool) const ;
-    ::java::lang::Object get() const ;
-    ::java::lang::Object get(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::android::os::AsyncTask execute(const std::vector< ::java::lang::Object>&) const ;
-    ::android::os::AsyncTask executeOnExecutor(const ::java::util::concurrent::Executor&, const std::vector< ::java::lang::Object>&) const ;
+    ::android::os::AsyncTask_Status getStatus() const;
+    bool isCancelled() const;
+    bool cancel(bool) const;
+    ::java::lang::Object get() const;
+    ::java::lang::Object get(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::android::os::AsyncTask execute(const std::vector< ::java::lang::Object>&) const;
+    ::android::os::AsyncTask executeOnExecutor(const ::java::util::concurrent::Executor&, const std::vector< ::java::lang::Object>&) const;
     static void execute(const ::java::lang::Runnable&);
 
 };

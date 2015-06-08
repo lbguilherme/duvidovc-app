@@ -37,7 +37,7 @@ public:
     ::android::database::sqlite::SQLiteDatabase_CursorFactory& operator=(const ::android::database::sqlite::SQLiteDatabase_CursorFactory& x) {obj = x.obj; return *this;}
     ::android::database::sqlite::SQLiteDatabase_CursorFactory& operator=(::android::database::sqlite::SQLiteDatabase_CursorFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::database::Cursor newCursor(const ::android::database::sqlite::SQLiteDatabase&, const ::android::database::sqlite::SQLiteCursorDriver&, const ::java::lang::String&, const ::android::database::sqlite::SQLiteQuery&) const ;
+    ::android::database::Cursor newCursor(const ::android::database::sqlite::SQLiteDatabase&, const ::android::database::sqlite::SQLiteCursorDriver&, const ::java::lang::String&, const ::android::database::sqlite::SQLiteQuery&) const;
 
 };
 }

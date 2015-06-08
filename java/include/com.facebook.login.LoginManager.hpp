@@ -42,18 +42,18 @@ public:
     ::com::facebook::login::LoginManager& operator=(::com::facebook::login::LoginManager&& x) {obj = std::move(x.obj); return *this;}
     
     static ::com::facebook::login::LoginManager getInstance();
-    void resolveError(const ::android::app::Activity&, const ::com::facebook::GraphResponse&) const ;
-    void resolveError(const ::android::support::v4::app::Fragment&, const ::com::facebook::GraphResponse&) const ;
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const ;
-    ::com::facebook::login::LoginBehavior getLoginBehavior() const ;
-    ::com::facebook::login::LoginManager setLoginBehavior(const ::com::facebook::login::LoginBehavior&) const ;
-    ::com::facebook::login::DefaultAudience getDefaultAudience() const ;
-    ::com::facebook::login::LoginManager setDefaultAudience(const ::com::facebook::login::DefaultAudience&) const ;
-    void logOut() const ;
-    void logInWithReadPermissions(const ::android::support::v4::app::Fragment&, const ::java::util::Collection&) const ;
-    void logInWithReadPermissions(const ::android::app::Activity&, const ::java::util::Collection&) const ;
-    void logInWithPublishPermissions(const ::android::support::v4::app::Fragment&, const ::java::util::Collection&) const ;
-    void logInWithPublishPermissions(const ::android::app::Activity&, const ::java::util::Collection&) const ;
+    void resolveError(const ::android::app::Activity&, const ::com::facebook::GraphResponse&) const;
+    void resolveError(const ::android::support::v4::app::Fragment&, const ::com::facebook::GraphResponse&) const;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const;
+    ::com::facebook::login::LoginBehavior getLoginBehavior() const;
+    ::com::facebook::login::LoginManager setLoginBehavior(const ::com::facebook::login::LoginBehavior&) const;
+    ::com::facebook::login::DefaultAudience getDefaultAudience() const;
+    ::com::facebook::login::LoginManager setDefaultAudience(const ::com::facebook::login::DefaultAudience&) const;
+    void logOut() const;
+    void logInWithReadPermissions(const ::android::support::v4::app::Fragment&, const ::java::util::Collection&) const;
+    void logInWithReadPermissions(const ::android::app::Activity&, const ::java::util::Collection&) const;
+    void logInWithPublishPermissions(const ::android::support::v4::app::Fragment&, const ::java::util::Collection&) const;
+    void logInWithPublishPermissions(const ::android::app::Activity&, const ::java::util::Collection&) const;
 
 };
 }

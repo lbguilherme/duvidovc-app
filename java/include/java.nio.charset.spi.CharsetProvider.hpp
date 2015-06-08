@@ -36,8 +36,8 @@ public:
     ::java::nio::charset::spi::CharsetProvider& operator=(const ::java::nio::charset::spi::CharsetProvider& x) {obj = x.obj; return *this;}
     ::java::nio::charset::spi::CharsetProvider& operator=(::java::nio::charset::spi::CharsetProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Iterator charsets() const ;
-    ::java::nio::charset::Charset charsetForName(const ::java::lang::String&) const ;
+    ::java::util::Iterator charsets() const;
+    ::java::nio::charset::Charset charsetForName(const ::java::lang::String&) const;
 
 };
 }

@@ -40,20 +40,20 @@ public:
     ::java::text::Collator& operator=(const ::java::text::Collator& x) {obj = x.obj; return *this;}
     ::java::text::Collator& operator=(::java::text::Collator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
-    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    int32_t compare(const ::java::lang::String&, const ::java::lang::String&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    bool equals(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::lang::Object clone() const;
+    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    int32_t compare(const ::java::lang::String&, const ::java::lang::String&) const;
+    bool equals(const ::java::lang::Object&) const;
+    bool equals(const ::java::lang::String&, const ::java::lang::String&) const;
     static std::vector< ::java::util::Locale> getAvailableLocales();
-    ::java::text::CollationKey getCollationKey(const ::java::lang::String&) const ;
-    int32_t getDecomposition() const ;
+    ::java::text::CollationKey getCollationKey(const ::java::lang::String&) const;
+    int32_t getDecomposition() const;
     static ::java::text::Collator getInstance();
     static ::java::text::Collator getInstance(const ::java::util::Locale&);
-    int32_t getStrength() const ;
-    int32_t hashCode() const ;
-    void setDecomposition(int32_t) const ;
-    void setStrength(int32_t) const ;
+    int32_t getStrength() const;
+    int32_t hashCode() const;
+    void setDecomposition(int32_t) const;
+    void setStrength(int32_t) const;
 
 };
 }

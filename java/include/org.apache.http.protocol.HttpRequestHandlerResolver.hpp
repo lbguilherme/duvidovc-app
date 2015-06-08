@@ -35,7 +35,7 @@ public:
     ::org::apache::http::protocol::HttpRequestHandlerResolver& operator=(const ::org::apache::http::protocol::HttpRequestHandlerResolver& x) {obj = x.obj; return *this;}
     ::org::apache::http::protocol::HttpRequestHandlerResolver& operator=(::org::apache::http::protocol::HttpRequestHandlerResolver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::protocol::HttpRequestHandler lookup(const ::java::lang::String&) const ;
+    ::org::apache::http::protocol::HttpRequestHandler lookup(const ::java::lang::String&) const;
 
 };
 }

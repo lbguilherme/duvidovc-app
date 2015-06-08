@@ -34,16 +34,16 @@ public:
     ::android::content::SharedPreferences_Editor& operator=(const ::android::content::SharedPreferences_Editor& x) {obj = x.obj; return *this;}
     ::android::content::SharedPreferences_Editor& operator=(::android::content::SharedPreferences_Editor&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::SharedPreferences_Editor putString(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::content::SharedPreferences_Editor putStringSet(const ::java::lang::String&, const ::java::util::Set&) const ;
-    ::android::content::SharedPreferences_Editor putInt(const ::java::lang::String&, int32_t) const ;
-    ::android::content::SharedPreferences_Editor putLong(const ::java::lang::String&, int64_t) const ;
-    ::android::content::SharedPreferences_Editor putFloat(const ::java::lang::String&, float) const ;
-    ::android::content::SharedPreferences_Editor putBoolean(const ::java::lang::String&, bool) const ;
-    ::android::content::SharedPreferences_Editor remove(const ::java::lang::String&) const ;
-    ::android::content::SharedPreferences_Editor clear() const ;
-    bool commit() const ;
-    void apply() const ;
+    ::android::content::SharedPreferences_Editor putString(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::content::SharedPreferences_Editor putStringSet(const ::java::lang::String&, const ::java::util::Set&) const;
+    ::android::content::SharedPreferences_Editor putInt(const ::java::lang::String&, int32_t) const;
+    ::android::content::SharedPreferences_Editor putLong(const ::java::lang::String&, int64_t) const;
+    ::android::content::SharedPreferences_Editor putFloat(const ::java::lang::String&, float) const;
+    ::android::content::SharedPreferences_Editor putBoolean(const ::java::lang::String&, bool) const;
+    ::android::content::SharedPreferences_Editor remove(const ::java::lang::String&) const;
+    ::android::content::SharedPreferences_Editor clear() const;
+    bool commit() const;
+    void apply() const;
 
 };
 }

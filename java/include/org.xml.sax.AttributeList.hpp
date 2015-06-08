@@ -33,12 +33,12 @@ public:
     ::org::xml::sax::AttributeList& operator=(const ::org::xml::sax::AttributeList& x) {obj = x.obj; return *this;}
     ::org::xml::sax::AttributeList& operator=(::org::xml::sax::AttributeList&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLength() const ;
-    ::java::lang::String getName(int32_t) const ;
-    ::java::lang::String getType(int32_t) const ;
-    ::java::lang::String getValue(int32_t) const ;
-    ::java::lang::String getType(const ::java::lang::String&) const ;
-    ::java::lang::String getValue(const ::java::lang::String&) const ;
+    int32_t getLength() const;
+    ::java::lang::String getName(int32_t) const;
+    ::java::lang::String getType(int32_t) const;
+    ::java::lang::String getValue(int32_t) const;
+    ::java::lang::String getType(const ::java::lang::String&) const;
+    ::java::lang::String getValue(const ::java::lang::String&) const;
 
 };
 }

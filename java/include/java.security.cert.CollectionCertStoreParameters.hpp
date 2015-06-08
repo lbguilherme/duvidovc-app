@@ -39,9 +39,9 @@ public:
     
     CollectionCertStoreParameters();
     CollectionCertStoreParameters(const ::java::util::Collection&);
-    ::java::lang::Object clone() const ;
-    ::java::util::Collection getCollection() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Object clone() const;
+    ::java::util::Collection getCollection() const;
+    ::java::lang::String toString() const;
 
 };
 }

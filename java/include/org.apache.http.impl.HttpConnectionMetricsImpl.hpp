@@ -39,15 +39,15 @@ public:
     ::org::apache::http::impl::HttpConnectionMetricsImpl& operator=(::org::apache::http::impl::HttpConnectionMetricsImpl&& x) {obj = std::move(x.obj); return *this;}
     
     HttpConnectionMetricsImpl(const ::org::apache::http::io::HttpTransportMetrics&, const ::org::apache::http::io::HttpTransportMetrics&);
-    int64_t getReceivedBytesCount() const ;
-    int64_t getSentBytesCount() const ;
-    int64_t getRequestCount() const ;
-    void incrementRequestCount() const ;
-    int64_t getResponseCount() const ;
-    void incrementResponseCount() const ;
-    ::java::lang::Object getMetric(const ::java::lang::String&) const ;
-    void setMetric(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    void reset() const ;
+    int64_t getReceivedBytesCount() const;
+    int64_t getSentBytesCount() const;
+    int64_t getRequestCount() const;
+    void incrementRequestCount() const;
+    int64_t getResponseCount() const;
+    void incrementResponseCount() const;
+    ::java::lang::Object getMetric(const ::java::lang::String&) const;
+    void setMetric(const ::java::lang::String&, const ::java::lang::Object&) const;
+    void reset() const;
 
 };
 }

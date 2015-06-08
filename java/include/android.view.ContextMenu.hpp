@@ -37,12 +37,12 @@ public:
     ::android::view::ContextMenu& operator=(const ::android::view::ContextMenu& x) {obj = x.obj; return *this;}
     ::android::view::ContextMenu& operator=(::android::view::ContextMenu&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::ContextMenu setHeaderTitle(int32_t) const ;
-    ::android::view::ContextMenu setHeaderTitle(const ::java::lang::CharSequence&) const ;
-    ::android::view::ContextMenu setHeaderIcon(int32_t) const ;
-    ::android::view::ContextMenu setHeaderIcon(const ::android::graphics::drawable::Drawable&) const ;
-    ::android::view::ContextMenu setHeaderView(const ::android::view::View&) const ;
-    void clearHeader() const ;
+    ::android::view::ContextMenu setHeaderTitle(int32_t) const;
+    ::android::view::ContextMenu setHeaderTitle(const ::java::lang::CharSequence&) const;
+    ::android::view::ContextMenu setHeaderIcon(int32_t) const;
+    ::android::view::ContextMenu setHeaderIcon(const ::android::graphics::drawable::Drawable&) const;
+    ::android::view::ContextMenu setHeaderView(const ::android::view::View&) const;
+    void clearHeader() const;
 
 };
 }

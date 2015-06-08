@@ -32,7 +32,7 @@ public:
     ::android::database::DatabaseErrorHandler& operator=(const ::android::database::DatabaseErrorHandler& x) {obj = x.obj; return *this;}
     ::android::database::DatabaseErrorHandler& operator=(::android::database::DatabaseErrorHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCorruption(const ::android::database::sqlite::SQLiteDatabase&) const ;
+    void onCorruption(const ::android::database::sqlite::SQLiteDatabase&) const;
 
 };
 }

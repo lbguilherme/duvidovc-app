@@ -33,16 +33,16 @@ public:
     ::java::text::CollationElementIterator& operator=(const ::java::text::CollationElementIterator& x) {obj = x.obj; return *this;}
     ::java::text::CollationElementIterator& operator=(::java::text::CollationElementIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getMaxExpansion(int32_t) const ;
-    int32_t getOffset() const ;
-    int32_t next() const ;
-    int32_t previous() const ;
+    int32_t getMaxExpansion(int32_t) const;
+    int32_t getOffset() const;
+    int32_t next() const;
+    int32_t previous() const;
     static int32_t primaryOrder(int32_t);
-    void reset() const ;
+    void reset() const;
     static int16_t secondaryOrder(int32_t);
-    void setOffset(int32_t) const ;
-    void setText(const ::java::text::CharacterIterator&) const ;
-    void setText(const ::java::lang::String&) const ;
+    void setOffset(int32_t) const;
+    void setText(const ::java::text::CharacterIterator&) const;
+    void setText(const ::java::lang::String&) const;
     static int16_t tertiaryOrder(int32_t);
 
 };

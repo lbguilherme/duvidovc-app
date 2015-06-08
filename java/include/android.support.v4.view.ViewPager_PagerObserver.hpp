@@ -35,8 +35,8 @@ public:
     ::android::support::v4::view::ViewPager_PagerObserver& operator=(const ::android::support::v4::view::ViewPager_PagerObserver& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPager_PagerObserver& operator=(::android::support::v4::view::ViewPager_PagerObserver&& x) {obj = std::move(x.obj); return *this;}
     
-    void onChanged() const ;
-    void onInvalidated() const ;
+    void onChanged() const;
+    void onInvalidated() const;
 
 };
 }

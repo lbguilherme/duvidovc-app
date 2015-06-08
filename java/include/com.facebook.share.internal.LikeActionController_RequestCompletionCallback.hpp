@@ -33,7 +33,7 @@ public:
     ::com::facebook::share::internal::LikeActionController_RequestCompletionCallback& operator=(const ::com::facebook::share::internal::LikeActionController_RequestCompletionCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::LikeActionController_RequestCompletionCallback& operator=(::com::facebook::share::internal::LikeActionController_RequestCompletionCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onComplete() const ;
+    void onComplete() const;
 
 };
 }

@@ -39,24 +39,24 @@ public:
     ::java::io::DataInputStream& operator=(::java::io::DataInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     DataInputStream(const ::java::io::InputStream&);
-    int32_t read(const std::vector< int8_t>&) const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    bool readBoolean() const ;
-    int8_t readByte() const ;
-    uint16_t readChar() const ;
-    double readDouble() const ;
-    float readFloat() const ;
-    void readFully(const std::vector< int8_t>&) const ;
-    void readFully(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t readInt() const ;
-    ::java::lang::String readLine() const ;
-    int64_t readLong() const ;
-    int16_t readShort() const ;
-    int32_t readUnsignedByte() const ;
-    int32_t readUnsignedShort() const ;
-    ::java::lang::String readUTF() const ;
+    int32_t read(const std::vector< int8_t>&) const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    bool readBoolean() const;
+    int8_t readByte() const;
+    uint16_t readChar() const;
+    double readDouble() const;
+    float readFloat() const;
+    void readFully(const std::vector< int8_t>&) const;
+    void readFully(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t readInt() const;
+    ::java::lang::String readLine() const;
+    int64_t readLong() const;
+    int16_t readShort() const;
+    int32_t readUnsignedByte() const;
+    int32_t readUnsignedShort() const;
+    ::java::lang::String readUTF() const;
     static ::java::lang::String readUTF(const ::java::io::DataInput&);
-    int32_t skipBytes(int32_t) const ;
+    int32_t skipBytes(int32_t) const;
 
 };
 }

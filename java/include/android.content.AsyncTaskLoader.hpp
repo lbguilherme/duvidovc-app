@@ -39,11 +39,11 @@ public:
     ::android::content::AsyncTaskLoader& operator=(::android::content::AsyncTaskLoader&& x) {obj = std::move(x.obj); return *this;}
     
     AsyncTaskLoader(const ::android::content::Context&);
-    void setUpdateThrottle(int64_t) const ;
-    bool cancelLoad() const ;
-    void onCanceled(const ::java::lang::Object&) const ;
-    ::java::lang::Object loadInBackground() const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
+    void setUpdateThrottle(int64_t) const;
+    bool cancelLoad() const;
+    void onCanceled(const ::java::lang::Object&) const;
+    ::java::lang::Object loadInBackground() const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
 
 };
 }

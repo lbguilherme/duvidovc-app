@@ -35,7 +35,7 @@ public:
     ::android::net::UrlQuerySanitizer_IllegalCharacterValueSanitizer& operator=(::android::net::UrlQuerySanitizer_IllegalCharacterValueSanitizer&& x) {obj = std::move(x.obj); return *this;}
     
     UrlQuerySanitizer_IllegalCharacterValueSanitizer(int32_t);
-    ::java::lang::String sanitize(const ::java::lang::String&) const ;
+    ::java::lang::String sanitize(const ::java::lang::String&) const;
 
 };
 }

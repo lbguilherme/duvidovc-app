@@ -38,16 +38,16 @@ public:
     ::android::graphics::drawable::PictureDrawable& operator=(::android::graphics::drawable::PictureDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     PictureDrawable(const ::android::graphics::Picture&);
-    ::android::graphics::Picture getPicture() const ;
-    void setPicture(const ::android::graphics::Picture&) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    int32_t getIntrinsicWidth() const ;
-    int32_t getIntrinsicHeight() const ;
-    int32_t getOpacity() const ;
-    void setFilterBitmap(bool) const ;
-    void setDither(bool) const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    void setAlpha(int32_t) const ;
+    ::android::graphics::Picture getPicture() const;
+    void setPicture(const ::android::graphics::Picture&) const;
+    void draw(const ::android::graphics::Canvas&) const;
+    int32_t getIntrinsicWidth() const;
+    int32_t getIntrinsicHeight() const;
+    int32_t getOpacity() const;
+    void setFilterBitmap(bool) const;
+    void setDither(bool) const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    void setAlpha(int32_t) const;
 
 };
 }

@@ -37,17 +37,17 @@ public:
     ::java::util::concurrent::BlockingQueue& operator=(const ::java::util::concurrent::BlockingQueue& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::BlockingQueue& operator=(::java::util::concurrent::BlockingQueue&& x) {obj = std::move(x.obj); return *this;}
     
-    bool add(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&) const ;
-    void put(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::lang::Object take() const ;
-    ::java::lang::Object poll(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    int32_t remainingCapacity() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool contains(const ::java::lang::Object&) const ;
-    int32_t drainTo(const ::java::util::Collection&) const ;
-    int32_t drainTo(const ::java::util::Collection&, int32_t) const ;
+    bool add(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&) const;
+    void put(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::lang::Object take() const;
+    ::java::lang::Object poll(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    int32_t remainingCapacity() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool contains(const ::java::lang::Object&) const;
+    int32_t drainTo(const ::java::util::Collection&) const;
+    int32_t drainTo(const ::java::util::Collection&, int32_t) const;
 
 };
 }

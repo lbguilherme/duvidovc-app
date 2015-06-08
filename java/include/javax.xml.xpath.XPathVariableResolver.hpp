@@ -34,7 +34,7 @@ public:
     ::javax::xml::xpath::XPathVariableResolver& operator=(const ::javax::xml::xpath::XPathVariableResolver& x) {obj = x.obj; return *this;}
     ::javax::xml::xpath::XPathVariableResolver& operator=(::javax::xml::xpath::XPathVariableResolver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object resolveVariable(const ::javax::xml::namespace_::QName&) const ;
+    ::java::lang::Object resolveVariable(const ::javax::xml::namespace_::QName&) const;
 
 };
 }

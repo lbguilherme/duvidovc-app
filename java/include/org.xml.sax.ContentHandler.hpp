@@ -35,17 +35,17 @@ public:
     ::org::xml::sax::ContentHandler& operator=(const ::org::xml::sax::ContentHandler& x) {obj = x.obj; return *this;}
     ::org::xml::sax::ContentHandler& operator=(::org::xml::sax::ContentHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void setDocumentLocator(const ::org::xml::sax::Locator&) const ;
-    void startDocument() const ;
-    void endDocument() const ;
-    void startPrefixMapping(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void endPrefixMapping(const ::java::lang::String&) const ;
-    void startElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::org::xml::sax::Attributes&) const ;
-    void endElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void characters(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void ignorableWhitespace(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void processingInstruction(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void skippedEntity(const ::java::lang::String&) const ;
+    void setDocumentLocator(const ::org::xml::sax::Locator&) const;
+    void startDocument() const;
+    void endDocument() const;
+    void startPrefixMapping(const ::java::lang::String&, const ::java::lang::String&) const;
+    void endPrefixMapping(const ::java::lang::String&) const;
+    void startElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::org::xml::sax::Attributes&) const;
+    void endElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void characters(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void ignorableWhitespace(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void processingInstruction(const ::java::lang::String&, const ::java::lang::String&) const;
+    void skippedEntity(const ::java::lang::String&) const;
 
 };
 }

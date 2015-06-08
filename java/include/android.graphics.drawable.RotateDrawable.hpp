@@ -46,23 +46,23 @@ public:
     ::android::graphics::drawable::RotateDrawable& operator=(::android::graphics::drawable::RotateDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     RotateDrawable();
-    void draw(const ::android::graphics::Canvas&) const ;
-    ::android::graphics::drawable::Drawable getDrawable() const ;
-    int32_t getChangingConfigurations() const ;
-    void setAlpha(int32_t) const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    int32_t getOpacity() const ;
-    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const ;
-    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const ;
-    bool getPadding(const ::android::graphics::Rect&) const ;
-    bool setVisible(bool, bool) const ;
-    bool isStateful() const ;
-    int32_t getIntrinsicWidth() const ;
-    int32_t getIntrinsicHeight() const ;
-    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const ;
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    void draw(const ::android::graphics::Canvas&) const;
+    ::android::graphics::drawable::Drawable getDrawable() const;
+    int32_t getChangingConfigurations() const;
+    void setAlpha(int32_t) const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    int32_t getOpacity() const;
+    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const;
+    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const;
+    bool getPadding(const ::android::graphics::Rect&) const;
+    bool setVisible(bool, bool) const;
+    bool isStateful() const;
+    int32_t getIntrinsicWidth() const;
+    int32_t getIntrinsicHeight() const;
+    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

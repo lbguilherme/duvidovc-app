@@ -37,8 +37,8 @@ public:
     ::android::support::v4::os::ParcelableCompat_CompatCreator& operator=(const ::android::support::v4::os::ParcelableCompat_CompatCreator& x) {obj = x.obj; return *this;}
     ::android::support::v4::os::ParcelableCompat_CompatCreator& operator=(::android::support::v4::os::ParcelableCompat_CompatCreator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object createFromParcel(const ::android::os::Parcel&) const ;
-    std::vector< ::java::lang::Object> newArray(int32_t) const ;
+    ::java::lang::Object createFromParcel(const ::android::os::Parcel&) const;
+    std::vector< ::java::lang::Object> newArray(int32_t) const;
 
 };
 }

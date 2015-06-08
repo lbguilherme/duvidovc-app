@@ -38,11 +38,11 @@ public:
     ::android::support::v4::widget::CircleImageView& operator=(::android::support::v4::widget::CircleImageView&& x) {obj = std::move(x.obj); return *this;}
     
     CircleImageView(const ::android::content::Context&, int32_t, float);
-    void setAnimationListener(const ::android::view::animation::Animation_AnimationListener&) const ;
-    void onAnimationStart() const ;
-    void onAnimationEnd() const ;
-    void setBackgroundColorRes(int32_t) const ;
-    void setBackgroundColor(int32_t) const ;
+    void setAnimationListener(const ::android::view::animation::Animation_AnimationListener&) const;
+    void onAnimationStart() const;
+    void onAnimationEnd() const;
+    void setBackgroundColorRes(int32_t) const;
+    void setBackgroundColor(int32_t) const;
 
 };
 }

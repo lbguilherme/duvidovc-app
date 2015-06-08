@@ -36,10 +36,10 @@ public:
     ::android::support::v4::view::ViewCompat_KitKatViewCompatImpl& operator=(const ::android::support::v4::view::ViewCompat_KitKatViewCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewCompat_KitKatViewCompatImpl& operator=(::android::support::v4::view::ViewCompat_KitKatViewCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getAccessibilityLiveRegion(const ::android::view::View&) const ;
-    void setAccessibilityLiveRegion(const ::android::view::View&, int32_t) const ;
-    void setImportantForAccessibility(const ::android::view::View&, int32_t) const ;
-    bool isLaidOut(const ::android::view::View&) const ;
+    int32_t getAccessibilityLiveRegion(const ::android::view::View&) const;
+    void setAccessibilityLiveRegion(const ::android::view::View&, int32_t) const;
+    void setImportantForAccessibility(const ::android::view::View&, int32_t) const;
+    bool isLaidOut(const ::android::view::View&) const;
 
 };
 }

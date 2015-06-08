@@ -33,7 +33,7 @@ public:
     ::android::view::ViewDebug_CapturedViewProperty& operator=(const ::android::view::ViewDebug_CapturedViewProperty& x) {obj = x.obj; return *this;}
     ::android::view::ViewDebug_CapturedViewProperty& operator=(::android::view::ViewDebug_CapturedViewProperty&& x) {obj = std::move(x.obj); return *this;}
     
-    bool retrieveReturn() const ;
+    bool retrieveReturn() const;
 
 };
 }

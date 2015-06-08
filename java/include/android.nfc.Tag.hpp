@@ -35,11 +35,11 @@ public:
     ::android::nfc::Tag& operator=(const ::android::nfc::Tag& x) {obj = x.obj; return *this;}
     ::android::nfc::Tag& operator=(::android::nfc::Tag&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< int8_t> getId() const ;
-    std::vector< ::java::lang::String> getTechList() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    std::vector< int8_t> getId() const;
+    std::vector< ::java::lang::String> getTechList() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

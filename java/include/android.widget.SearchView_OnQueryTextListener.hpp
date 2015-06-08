@@ -32,8 +32,8 @@ public:
     ::android::widget::SearchView_OnQueryTextListener& operator=(const ::android::widget::SearchView_OnQueryTextListener& x) {obj = x.obj; return *this;}
     ::android::widget::SearchView_OnQueryTextListener& operator=(::android::widget::SearchView_OnQueryTextListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onQueryTextSubmit(const ::java::lang::String&) const ;
-    bool onQueryTextChange(const ::java::lang::String&) const ;
+    bool onQueryTextSubmit(const ::java::lang::String&) const;
+    bool onQueryTextChange(const ::java::lang::String&) const;
 
 };
 }

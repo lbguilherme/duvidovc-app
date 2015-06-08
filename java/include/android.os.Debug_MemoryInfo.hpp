@@ -36,16 +36,16 @@ public:
     ::android::os::Debug_MemoryInfo& operator=(::android::os::Debug_MemoryInfo&& x) {obj = std::move(x.obj); return *this;}
     
     Debug_MemoryInfo();
-    int32_t getTotalPss() const ;
-    int32_t getTotalPrivateDirty() const ;
-    int32_t getTotalSharedDirty() const ;
-    int32_t getOtherPss(int32_t) const ;
-    int32_t getOtherPrivateDirty(int32_t) const ;
-    int32_t getOtherSharedDirty(int32_t) const ;
+    int32_t getTotalPss() const;
+    int32_t getTotalPrivateDirty() const;
+    int32_t getTotalSharedDirty() const;
+    int32_t getOtherPss(int32_t) const;
+    int32_t getOtherPrivateDirty(int32_t) const;
+    int32_t getOtherSharedDirty(int32_t) const;
     static ::java::lang::String getOtherLabel(int32_t);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

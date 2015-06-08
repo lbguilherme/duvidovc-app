@@ -45,14 +45,14 @@ public:
     ::com::facebook::share::model::SharePhotoContent_Builder& operator=(::com::facebook::share::model::SharePhotoContent_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     SharePhotoContent_Builder();
-    ::com::facebook::share::model::SharePhotoContent_Builder addPhoto(const ::com::facebook::share::model::SharePhoto&) const ;
-    ::com::facebook::share::model::SharePhotoContent_Builder addPhotos(const ::java::util::List&) const ;
-    ::com::facebook::share::model::SharePhotoContent build() const ;
-    ::com::facebook::share::model::SharePhotoContent_Builder readFrom(const ::com::facebook::share::model::SharePhotoContent&) const ;
-    ::com::facebook::share::model::SharePhotoContent_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::SharePhotoContent_Builder setPhotos(const ::java::util::List&) const ;
-    ::com::facebook::share::model::ShareContent_Builder readFrom(const ::com::facebook::share::model::ShareContent&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::SharePhotoContent_Builder addPhoto(const ::com::facebook::share::model::SharePhoto&) const;
+    ::com::facebook::share::model::SharePhotoContent_Builder addPhotos(const ::java::util::List&) const;
+    ::com::facebook::share::model::SharePhotoContent build() const;
+    ::com::facebook::share::model::SharePhotoContent_Builder readFrom(const ::com::facebook::share::model::SharePhotoContent&) const;
+    ::com::facebook::share::model::SharePhotoContent_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::SharePhotoContent_Builder setPhotos(const ::java::util::List&) const;
+    ::com::facebook::share::model::ShareContent_Builder readFrom(const ::com::facebook::share::model::ShareContent&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

@@ -32,8 +32,8 @@ public:
     ::java::util::Enumeration& operator=(const ::java::util::Enumeration& x) {obj = x.obj; return *this;}
     ::java::util::Enumeration& operator=(::java::util::Enumeration&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasMoreElements() const ;
-    ::java::lang::Object nextElement() const ;
+    bool hasMoreElements() const;
+    ::java::lang::Object nextElement() const;
 
 };
 }

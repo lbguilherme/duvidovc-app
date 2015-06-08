@@ -40,17 +40,17 @@ public:
     
     Boolean(const ::java::lang::String&);
     Boolean(bool);
-    bool booleanValue() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t compareTo(const ::java::lang::Boolean&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool booleanValue() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t compareTo(const ::java::lang::Boolean&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
     static bool getBoolean(const ::java::lang::String&);
     static bool parseBoolean(const ::java::lang::String&);
     static ::java::lang::String toString(bool);
     static ::java::lang::Boolean valueOf(const ::java::lang::String&);
     static ::java::lang::Boolean valueOf(bool);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

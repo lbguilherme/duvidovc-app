@@ -38,12 +38,12 @@ public:
     ::java::util::regex::Pattern& operator=(const ::java::util::regex::Pattern& x) {obj = x.obj; return *this;}
     ::java::util::regex::Pattern& operator=(::java::util::regex::Pattern&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::regex::Matcher matcher(const ::java::lang::CharSequence&) const ;
-    std::vector< ::java::lang::String> split(const ::java::lang::CharSequence&, int32_t) const ;
-    std::vector< ::java::lang::String> split(const ::java::lang::CharSequence&) const ;
-    ::java::lang::String pattern() const ;
-    ::java::lang::String toString() const ;
-    int32_t flags() const ;
+    ::java::util::regex::Matcher matcher(const ::java::lang::CharSequence&) const;
+    std::vector< ::java::lang::String> split(const ::java::lang::CharSequence&, int32_t) const;
+    std::vector< ::java::lang::String> split(const ::java::lang::CharSequence&) const;
+    ::java::lang::String pattern() const;
+    ::java::lang::String toString() const;
+    int32_t flags() const;
     static ::java::util::regex::Pattern compile(const ::java::lang::String&, int32_t);
     static ::java::util::regex::Pattern compile(const ::java::lang::String&);
     static bool matches(const ::java::lang::String&, const ::java::lang::CharSequence&);

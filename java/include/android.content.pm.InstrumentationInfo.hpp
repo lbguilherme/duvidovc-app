@@ -39,9 +39,9 @@ public:
     ::android::content::pm::InstrumentationInfo& operator=(::android::content::pm::InstrumentationInfo&& x) {obj = std::move(x.obj); return *this;}
     
     InstrumentationInfo();
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

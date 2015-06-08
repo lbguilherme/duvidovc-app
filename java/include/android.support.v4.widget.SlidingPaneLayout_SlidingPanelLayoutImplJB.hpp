@@ -37,7 +37,7 @@ public:
     ::android::support::v4::widget::SlidingPaneLayout_SlidingPanelLayoutImplJB& operator=(const ::android::support::v4::widget::SlidingPaneLayout_SlidingPanelLayoutImplJB& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SlidingPaneLayout_SlidingPanelLayoutImplJB& operator=(::android::support::v4::widget::SlidingPaneLayout_SlidingPanelLayoutImplJB&& x) {obj = std::move(x.obj); return *this;}
     
-    void invalidateChildRegion(const ::android::support::v4::widget::SlidingPaneLayout&, const ::android::view::View&) const ;
+    void invalidateChildRegion(const ::android::support::v4::widget::SlidingPaneLayout&, const ::android::view::View&) const;
 
 };
 }

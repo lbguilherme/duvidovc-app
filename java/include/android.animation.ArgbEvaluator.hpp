@@ -35,7 +35,7 @@ public:
     ::android::animation::ArgbEvaluator& operator=(::android::animation::ArgbEvaluator&& x) {obj = std::move(x.obj); return *this;}
     
     ArgbEvaluator();
-    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

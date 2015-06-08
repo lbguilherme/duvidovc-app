@@ -33,7 +33,7 @@ public:
     ::android::hardware::Camera_FaceDetectionListener& operator=(const ::android::hardware::Camera_FaceDetectionListener& x) {obj = x.obj; return *this;}
     ::android::hardware::Camera_FaceDetectionListener& operator=(::android::hardware::Camera_FaceDetectionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onFaceDetection(const std::vector< ::android::hardware::Camera_Face>&, const ::android::hardware::Camera&) const ;
+    void onFaceDetection(const std::vector< ::android::hardware::Camera_Face>&, const ::android::hardware::Camera&) const;
 
 };
 }

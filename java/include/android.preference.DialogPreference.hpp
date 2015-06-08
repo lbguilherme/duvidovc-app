@@ -47,27 +47,27 @@ public:
     
     DialogPreference(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     DialogPreference(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setDialogTitle(const ::java::lang::CharSequence&) const ;
-    void setDialogTitle(int32_t) const ;
-    ::java::lang::CharSequence getDialogTitle() const ;
-    void setDialogMessage(const ::java::lang::CharSequence&) const ;
-    void setDialogMessage(int32_t) const ;
-    ::java::lang::CharSequence getDialogMessage() const ;
-    void setDialogIcon(const ::android::graphics::drawable::Drawable&) const ;
-    void setDialogIcon(int32_t) const ;
-    ::android::graphics::drawable::Drawable getDialogIcon() const ;
-    void setPositiveButtonText(const ::java::lang::CharSequence&) const ;
-    void setPositiveButtonText(int32_t) const ;
-    ::java::lang::CharSequence getPositiveButtonText() const ;
-    void setNegativeButtonText(const ::java::lang::CharSequence&) const ;
-    void setNegativeButtonText(int32_t) const ;
-    ::java::lang::CharSequence getNegativeButtonText() const ;
-    void setDialogLayoutResource(int32_t) const ;
-    int32_t getDialogLayoutResource() const ;
-    void onClick(const ::android::content::DialogInterface&, int32_t) const ;
-    void onDismiss(const ::android::content::DialogInterface&) const ;
-    ::android::app::Dialog getDialog() const ;
-    void onActivityDestroy() const ;
+    void setDialogTitle(const ::java::lang::CharSequence&) const;
+    void setDialogTitle(int32_t) const;
+    ::java::lang::CharSequence getDialogTitle() const;
+    void setDialogMessage(const ::java::lang::CharSequence&) const;
+    void setDialogMessage(int32_t) const;
+    ::java::lang::CharSequence getDialogMessage() const;
+    void setDialogIcon(const ::android::graphics::drawable::Drawable&) const;
+    void setDialogIcon(int32_t) const;
+    ::android::graphics::drawable::Drawable getDialogIcon() const;
+    void setPositiveButtonText(const ::java::lang::CharSequence&) const;
+    void setPositiveButtonText(int32_t) const;
+    ::java::lang::CharSequence getPositiveButtonText() const;
+    void setNegativeButtonText(const ::java::lang::CharSequence&) const;
+    void setNegativeButtonText(int32_t) const;
+    ::java::lang::CharSequence getNegativeButtonText() const;
+    void setDialogLayoutResource(int32_t) const;
+    int32_t getDialogLayoutResource() const;
+    void onClick(const ::android::content::DialogInterface&, int32_t) const;
+    void onDismiss(const ::android::content::DialogInterface&) const;
+    ::android::app::Dialog getDialog() const;
+    void onActivityDestroy() const;
 
 };
 }

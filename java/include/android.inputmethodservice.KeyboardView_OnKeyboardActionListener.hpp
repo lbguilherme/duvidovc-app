@@ -32,14 +32,14 @@ public:
     ::android::inputmethodservice::KeyboardView_OnKeyboardActionListener& operator=(const ::android::inputmethodservice::KeyboardView_OnKeyboardActionListener& x) {obj = x.obj; return *this;}
     ::android::inputmethodservice::KeyboardView_OnKeyboardActionListener& operator=(::android::inputmethodservice::KeyboardView_OnKeyboardActionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onPress(int32_t) const ;
-    void onRelease(int32_t) const ;
-    void onKey(int32_t, const std::vector< int32_t>&) const ;
-    void onText(const ::java::lang::CharSequence&) const ;
-    void swipeLeft() const ;
-    void swipeRight() const ;
-    void swipeDown() const ;
-    void swipeUp() const ;
+    void onPress(int32_t) const;
+    void onRelease(int32_t) const;
+    void onKey(int32_t, const std::vector< int32_t>&) const;
+    void onText(const ::java::lang::CharSequence&) const;
+    void swipeLeft() const;
+    void swipeRight() const;
+    void swipeDown() const;
+    void swipeUp() const;
 
 };
 }

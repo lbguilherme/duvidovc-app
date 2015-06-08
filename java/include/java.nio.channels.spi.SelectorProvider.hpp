@@ -41,12 +41,12 @@ public:
     ::java::nio::channels::spi::SelectorProvider& operator=(::java::nio::channels::spi::SelectorProvider&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::nio::channels::spi::SelectorProvider provider();
-    ::java::nio::channels::DatagramChannel openDatagramChannel() const ;
-    ::java::nio::channels::Pipe openPipe() const ;
-    ::java::nio::channels::spi::AbstractSelector openSelector() const ;
-    ::java::nio::channels::ServerSocketChannel openServerSocketChannel() const ;
-    ::java::nio::channels::SocketChannel openSocketChannel() const ;
-    ::java::nio::channels::Channel inheritedChannel() const ;
+    ::java::nio::channels::DatagramChannel openDatagramChannel() const;
+    ::java::nio::channels::Pipe openPipe() const;
+    ::java::nio::channels::spi::AbstractSelector openSelector() const;
+    ::java::nio::channels::ServerSocketChannel openServerSocketChannel() const;
+    ::java::nio::channels::SocketChannel openSocketChannel() const;
+    ::java::nio::channels::Channel inheritedChannel() const;
 
 };
 }

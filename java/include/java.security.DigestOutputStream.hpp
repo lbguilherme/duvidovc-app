@@ -37,12 +37,12 @@ public:
     ::java::security::DigestOutputStream& operator=(::java::security::DigestOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
     DigestOutputStream(const ::java::io::OutputStream&, const ::java::security::MessageDigest&);
-    ::java::security::MessageDigest getMessageDigest() const ;
-    void setMessageDigest(const ::java::security::MessageDigest&) const ;
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void on(bool) const ;
-    ::java::lang::String toString() const ;
+    ::java::security::MessageDigest getMessageDigest() const;
+    void setMessageDigest(const ::java::security::MessageDigest&) const;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void on(bool) const;
+    ::java::lang::String toString() const;
 
 };
 }

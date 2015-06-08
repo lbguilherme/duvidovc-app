@@ -32,9 +32,9 @@ public:
     ::android::net::Credentials& operator=(::android::net::Credentials&& x) {obj = std::move(x.obj); return *this;}
     
     Credentials(int32_t, int32_t, int32_t);
-    int32_t getPid() const ;
-    int32_t getUid() const ;
-    int32_t getGid() const ;
+    int32_t getPid() const;
+    int32_t getUid() const;
+    int32_t getGid() const;
 
 };
 }

@@ -40,10 +40,10 @@ public:
     ::android::text::method::BaseKeyListener& operator=(::android::text::method::BaseKeyListener&& x) {obj = std::move(x.obj); return *this;}
     
     BaseKeyListener();
-    bool backspace(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool forwardDelete(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyOther(const ::android::view::View&, const ::android::text::Editable&, const ::android::view::KeyEvent&) const ;
+    bool backspace(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool forwardDelete(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyOther(const ::android::view::View&, const ::android::text::Editable&, const ::android::view::KeyEvent&) const;
 
 };
 }

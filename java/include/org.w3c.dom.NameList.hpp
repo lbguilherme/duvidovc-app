@@ -33,11 +33,11 @@ public:
     ::org::w3c::dom::NameList& operator=(const ::org::w3c::dom::NameList& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::NameList& operator=(::org::w3c::dom::NameList&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName(int32_t) const ;
-    ::java::lang::String getNamespaceURI(int32_t) const ;
-    int32_t getLength() const ;
-    bool contains(const ::java::lang::String&) const ;
-    bool containsNS(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::lang::String getName(int32_t) const;
+    ::java::lang::String getNamespaceURI(int32_t) const;
+    int32_t getLength() const;
+    bool contains(const ::java::lang::String&) const;
+    bool containsNS(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

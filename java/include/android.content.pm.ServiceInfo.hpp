@@ -40,10 +40,10 @@ public:
     ::android::content::pm::ServiceInfo& operator=(::android::content::pm::ServiceInfo&& x) {obj = std::move(x.obj); return *this;}
     
     ServiceInfo();
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

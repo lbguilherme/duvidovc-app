@@ -32,7 +32,7 @@ public:
     ::java::security::DomainCombiner& operator=(const ::java::security::DomainCombiner& x) {obj = x.obj; return *this;}
     ::java::security::DomainCombiner& operator=(::java::security::DomainCombiner&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::security::ProtectionDomain> combine(const std::vector< ::java::security::ProtectionDomain>&, const std::vector< ::java::security::ProtectionDomain>&) const ;
+    std::vector< ::java::security::ProtectionDomain> combine(const std::vector< ::java::security::ProtectionDomain>&, const std::vector< ::java::security::ProtectionDomain>&) const;
 
 };
 }

@@ -32,11 +32,11 @@ public:
     ::android::speech::tts::SynthesisCallback& operator=(const ::android::speech::tts::SynthesisCallback& x) {obj = x.obj; return *this;}
     ::android::speech::tts::SynthesisCallback& operator=(::android::speech::tts::SynthesisCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getMaxBufferSize() const ;
-    int32_t start(int32_t, int32_t, int32_t) const ;
-    int32_t audioAvailable(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t done() const ;
-    void error() const ;
+    int32_t getMaxBufferSize() const;
+    int32_t start(int32_t, int32_t, int32_t) const;
+    int32_t audioAvailable(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t done() const;
+    void error() const;
 
 };
 }

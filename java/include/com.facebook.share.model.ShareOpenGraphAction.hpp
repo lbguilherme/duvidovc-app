@@ -36,7 +36,7 @@ public:
     ::com::facebook::share::model::ShareOpenGraphAction& operator=(const ::com::facebook::share::model::ShareOpenGraphAction& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareOpenGraphAction& operator=(::com::facebook::share::model::ShareOpenGraphAction&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getActionType() const ;
+    ::java::lang::String getActionType() const;
 
 };
 }

@@ -40,23 +40,23 @@ public:
     
     SparseArrayCompat();
     SparseArrayCompat(int32_t);
-    ::android::support::v4::util::SparseArrayCompat clone() const ;
-    ::java::lang::Object get(int32_t) const ;
-    ::java::lang::Object get(int32_t, const ::java::lang::Object&) const ;
-    void delete_(int32_t) const ;
-    void remove(int32_t) const ;
-    void removeAt(int32_t) const ;
-    void removeAtRange(int32_t, int32_t) const ;
-    void put(int32_t, const ::java::lang::Object&) const ;
-    int32_t size() const ;
-    int32_t keyAt(int32_t) const ;
-    ::java::lang::Object valueAt(int32_t) const ;
-    void setValueAt(int32_t, const ::java::lang::Object&) const ;
-    int32_t indexOfKey(int32_t) const ;
-    int32_t indexOfValue(const ::java::lang::Object&) const ;
-    void clear() const ;
-    void append(int32_t, const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    ::android::support::v4::util::SparseArrayCompat clone() const;
+    ::java::lang::Object get(int32_t) const;
+    ::java::lang::Object get(int32_t, const ::java::lang::Object&) const;
+    void delete_(int32_t) const;
+    void remove(int32_t) const;
+    void removeAt(int32_t) const;
+    void removeAtRange(int32_t, int32_t) const;
+    void put(int32_t, const ::java::lang::Object&) const;
+    int32_t size() const;
+    int32_t keyAt(int32_t) const;
+    ::java::lang::Object valueAt(int32_t) const;
+    void setValueAt(int32_t, const ::java::lang::Object&) const;
+    int32_t indexOfKey(int32_t) const;
+    int32_t indexOfValue(const ::java::lang::Object&) const;
+    void clear() const;
+    void append(int32_t, const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

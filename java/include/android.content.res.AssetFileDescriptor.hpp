@@ -41,17 +41,17 @@ public:
     ::android::content::res::AssetFileDescriptor& operator=(::android::content::res::AssetFileDescriptor&& x) {obj = std::move(x.obj); return *this;}
     
     AssetFileDescriptor(const ::android::os::ParcelFileDescriptor&, int64_t, int64_t);
-    ::android::os::ParcelFileDescriptor getParcelFileDescriptor() const ;
-    ::java::io::FileDescriptor getFileDescriptor() const ;
-    int64_t getStartOffset() const ;
-    int64_t getLength() const ;
-    int64_t getDeclaredLength() const ;
-    void close() const ;
-    ::java::io::FileInputStream createInputStream() const ;
-    ::java::io::FileOutputStream createOutputStream() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::os::ParcelFileDescriptor getParcelFileDescriptor() const;
+    ::java::io::FileDescriptor getFileDescriptor() const;
+    int64_t getStartOffset() const;
+    int64_t getLength() const;
+    int64_t getDeclaredLength() const;
+    void close() const;
+    ::java::io::FileInputStream createInputStream() const;
+    ::java::io::FileOutputStream createOutputStream() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

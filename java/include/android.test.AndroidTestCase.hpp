@@ -37,12 +37,12 @@ public:
     ::android::test::AndroidTestCase& operator=(::android::test::AndroidTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     AndroidTestCase();
-    void testAndroidTestCaseSetupProperly() const ;
-    void setContext(const ::android::content::Context&) const ;
-    ::android::content::Context getContext() const ;
-    void assertActivityRequiresPermission(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void assertReadingContentUriRequiresPermission(const ::android::net::Uri&, const ::java::lang::String&) const ;
-    void assertWritingContentUriRequiresPermission(const ::android::net::Uri&, const ::java::lang::String&) const ;
+    void testAndroidTestCaseSetupProperly() const;
+    void setContext(const ::android::content::Context&) const;
+    ::android::content::Context getContext() const;
+    void assertActivityRequiresPermission(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void assertReadingContentUriRequiresPermission(const ::android::net::Uri&, const ::java::lang::String&) const;
+    void assertWritingContentUriRequiresPermission(const ::android::net::Uri&, const ::java::lang::String&) const;
 
 };
 }

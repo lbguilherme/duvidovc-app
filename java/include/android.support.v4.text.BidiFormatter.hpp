@@ -40,13 +40,13 @@ public:
     static ::android::support::v4::text::BidiFormatter getInstance();
     static ::android::support::v4::text::BidiFormatter getInstance(bool);
     static ::android::support::v4::text::BidiFormatter getInstance(const ::java::util::Locale&);
-    bool isRtlContext() const ;
-    bool getStereoReset() const ;
-    bool isRtl(const ::java::lang::String&) const ;
-    ::java::lang::String unicodeWrap(const ::java::lang::String&, const ::android::support::v4::text::TextDirectionHeuristicCompat&, bool) const ;
-    ::java::lang::String unicodeWrap(const ::java::lang::String&, const ::android::support::v4::text::TextDirectionHeuristicCompat&) const ;
-    ::java::lang::String unicodeWrap(const ::java::lang::String&, bool) const ;
-    ::java::lang::String unicodeWrap(const ::java::lang::String&) const ;
+    bool isRtlContext() const;
+    bool getStereoReset() const;
+    bool isRtl(const ::java::lang::String&) const;
+    ::java::lang::String unicodeWrap(const ::java::lang::String&, const ::android::support::v4::text::TextDirectionHeuristicCompat&, bool) const;
+    ::java::lang::String unicodeWrap(const ::java::lang::String&, const ::android::support::v4::text::TextDirectionHeuristicCompat&) const;
+    ::java::lang::String unicodeWrap(const ::java::lang::String&, bool) const;
+    ::java::lang::String unicodeWrap(const ::java::lang::String&) const;
 
 };
 }

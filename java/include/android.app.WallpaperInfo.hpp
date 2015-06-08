@@ -44,20 +44,20 @@ public:
     ::android::app::WallpaperInfo& operator=(::android::app::WallpaperInfo&& x) {obj = std::move(x.obj); return *this;}
     
     WallpaperInfo(const ::android::content::Context&, const ::android::content::pm::ResolveInfo&);
-    ::java::lang::String getPackageName() const ;
-    ::java::lang::String getServiceName() const ;
-    ::android::content::pm::ServiceInfo getServiceInfo() const ;
-    ::android::content::ComponentName getComponent() const ;
-    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const ;
-    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const ;
-    ::android::graphics::drawable::Drawable loadThumbnail(const ::android::content::pm::PackageManager&) const ;
-    ::java::lang::CharSequence loadAuthor(const ::android::content::pm::PackageManager&) const ;
-    ::java::lang::CharSequence loadDescription(const ::android::content::pm::PackageManager&) const ;
-    ::java::lang::String getSettingsActivity() const ;
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    ::java::lang::String getPackageName() const;
+    ::java::lang::String getServiceName() const;
+    ::android::content::pm::ServiceInfo getServiceInfo() const;
+    ::android::content::ComponentName getComponent() const;
+    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const;
+    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const;
+    ::android::graphics::drawable::Drawable loadThumbnail(const ::android::content::pm::PackageManager&) const;
+    ::java::lang::CharSequence loadAuthor(const ::android::content::pm::PackageManager&) const;
+    ::java::lang::CharSequence loadDescription(const ::android::content::pm::PackageManager&) const;
+    ::java::lang::String getSettingsActivity() const;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

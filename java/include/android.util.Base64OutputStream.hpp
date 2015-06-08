@@ -35,9 +35,9 @@ public:
     ::android::util::Base64OutputStream& operator=(::android::util::Base64OutputStream&& x) {obj = std::move(x.obj); return *this;}
     
     Base64OutputStream(const ::java::io::OutputStream&, int32_t);
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void close() const ;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void close() const;
 
 };
 }

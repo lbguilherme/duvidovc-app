@@ -38,9 +38,9 @@ public:
     
     PathPermission(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::java::lang::String&);
     PathPermission(const ::android::os::Parcel&);
-    ::java::lang::String getReadPermission() const ;
-    ::java::lang::String getWritePermission() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getReadPermission() const;
+    ::java::lang::String getWritePermission() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

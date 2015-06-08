@@ -43,13 +43,13 @@ public:
     QuickContactBadge(const ::android::content::Context&);
     QuickContactBadge(const ::android::content::Context&, const ::android::util::AttributeSet&);
     QuickContactBadge(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setMode(int32_t) const ;
-    void setImageToDefault() const ;
-    void assignContactUri(const ::android::net::Uri&) const ;
-    void assignContactFromEmail(const ::java::lang::String&, bool) const ;
-    void assignContactFromPhone(const ::java::lang::String&, bool) const ;
-    void onClick(const ::android::view::View&) const ;
-    void setExcludeMimes(const std::vector< ::java::lang::String>&) const ;
+    void setMode(int32_t) const;
+    void setImageToDefault() const;
+    void assignContactUri(const ::android::net::Uri&) const;
+    void assignContactFromEmail(const ::java::lang::String&, bool) const;
+    void assignContactFromPhone(const ::java::lang::String&, bool) const;
+    void onClick(const ::android::view::View&) const;
+    void setExcludeMimes(const std::vector< ::java::lang::String>&) const;
 
 };
 }

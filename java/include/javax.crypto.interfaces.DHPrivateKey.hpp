@@ -37,7 +37,7 @@ public:
     ::javax::crypto::interfaces::DHPrivateKey& operator=(const ::javax::crypto::interfaces::DHPrivateKey& x) {obj = x.obj; return *this;}
     ::javax::crypto::interfaces::DHPrivateKey& operator=(::javax::crypto::interfaces::DHPrivateKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::math::BigInteger getX() const ;
+    ::java::math::BigInteger getX() const;
 
 };
 }

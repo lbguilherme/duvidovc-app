@@ -34,23 +34,23 @@ public:
     
     Inflater();
     Inflater(bool);
-    void end() const ;
-    bool finished() const ;
-    int32_t getAdler() const ;
-    int64_t getBytesRead() const ;
-    int64_t getBytesWritten() const ;
-    int32_t getRemaining() const ;
-    int32_t getTotalIn() const ;
-    int32_t getTotalOut() const ;
-    int32_t inflate(const std::vector< int8_t>&) const ;
-    int32_t inflate(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    bool needsDictionary() const ;
-    bool needsInput() const ;
-    void reset() const ;
-    void setDictionary(const std::vector< int8_t>&) const ;
-    void setDictionary(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void setInput(const std::vector< int8_t>&) const ;
-    void setInput(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    void end() const;
+    bool finished() const;
+    int32_t getAdler() const;
+    int64_t getBytesRead() const;
+    int64_t getBytesWritten() const;
+    int32_t getRemaining() const;
+    int32_t getTotalIn() const;
+    int32_t getTotalOut() const;
+    int32_t inflate(const std::vector< int8_t>&) const;
+    int32_t inflate(const std::vector< int8_t>&, int32_t, int32_t) const;
+    bool needsDictionary() const;
+    bool needsInput() const;
+    void reset() const;
+    void setDictionary(const std::vector< int8_t>&) const;
+    void setDictionary(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void setInput(const std::vector< int8_t>&) const;
+    void setInput(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

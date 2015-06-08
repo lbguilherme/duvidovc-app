@@ -38,11 +38,11 @@ public:
     ::java::security::cert::PKIXCertPathChecker& operator=(const ::java::security::cert::PKIXCertPathChecker& x) {obj = x.obj; return *this;}
     ::java::security::cert::PKIXCertPathChecker& operator=(::java::security::cert::PKIXCertPathChecker&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
-    void init(bool) const ;
-    bool isForwardCheckingSupported() const ;
-    ::java::util::Set getSupportedExtensions() const ;
-    void check(const ::java::security::cert::Certificate&, const ::java::util::Collection&) const ;
+    ::java::lang::Object clone() const;
+    void init(bool) const;
+    bool isForwardCheckingSupported() const;
+    ::java::util::Set getSupportedExtensions() const;
+    void check(const ::java::security::cert::Certificate&, const ::java::util::Collection&) const;
 
 };
 }

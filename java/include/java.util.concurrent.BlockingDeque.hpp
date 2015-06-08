@@ -39,35 +39,35 @@ public:
     ::java::util::concurrent::BlockingDeque& operator=(const ::java::util::concurrent::BlockingDeque& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::BlockingDeque& operator=(::java::util::concurrent::BlockingDeque&& x) {obj = std::move(x.obj); return *this;}
     
-    void addFirst(const ::java::lang::Object&) const ;
-    void addLast(const ::java::lang::Object&) const ;
-    bool offerFirst(const ::java::lang::Object&) const ;
-    bool offerLast(const ::java::lang::Object&) const ;
-    void putFirst(const ::java::lang::Object&) const ;
-    void putLast(const ::java::lang::Object&) const ;
-    bool offerFirst(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    bool offerLast(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::lang::Object takeFirst() const ;
-    ::java::lang::Object takeLast() const ;
-    ::java::lang::Object pollFirst(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::lang::Object pollLast(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    bool removeFirstOccurrence(const ::java::lang::Object&) const ;
-    bool removeLastOccurrence(const ::java::lang::Object&) const ;
-    bool add(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&) const ;
-    void put(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::lang::Object remove() const ;
-    ::java::lang::Object poll() const ;
-    ::java::lang::Object take() const ;
-    ::java::lang::Object poll(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::lang::Object element() const ;
-    ::java::lang::Object peek() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool contains(const ::java::lang::Object&) const ;
-    int32_t size() const ;
-    ::java::util::Iterator iterator() const ;
-    void push(const ::java::lang::Object&) const ;
+    void addFirst(const ::java::lang::Object&) const;
+    void addLast(const ::java::lang::Object&) const;
+    bool offerFirst(const ::java::lang::Object&) const;
+    bool offerLast(const ::java::lang::Object&) const;
+    void putFirst(const ::java::lang::Object&) const;
+    void putLast(const ::java::lang::Object&) const;
+    bool offerFirst(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    bool offerLast(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::lang::Object takeFirst() const;
+    ::java::lang::Object takeLast() const;
+    ::java::lang::Object pollFirst(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::lang::Object pollLast(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    bool removeFirstOccurrence(const ::java::lang::Object&) const;
+    bool removeLastOccurrence(const ::java::lang::Object&) const;
+    bool add(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&) const;
+    void put(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::lang::Object remove() const;
+    ::java::lang::Object poll() const;
+    ::java::lang::Object take() const;
+    ::java::lang::Object poll(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::lang::Object element() const;
+    ::java::lang::Object peek() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool contains(const ::java::lang::Object&) const;
+    int32_t size() const;
+    ::java::util::Iterator iterator() const;
+    void push(const ::java::lang::Object&) const;
 
 };
 }

@@ -39,12 +39,12 @@ public:
     SwitchPreference(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     SwitchPreference(const ::android::content::Context&, const ::android::util::AttributeSet&);
     SwitchPreference(const ::android::content::Context&);
-    void setSwitchTextOn(const ::java::lang::CharSequence&) const ;
-    void setSwitchTextOff(const ::java::lang::CharSequence&) const ;
-    void setSwitchTextOn(int32_t) const ;
-    void setSwitchTextOff(int32_t) const ;
-    ::java::lang::CharSequence getSwitchTextOn() const ;
-    ::java::lang::CharSequence getSwitchTextOff() const ;
+    void setSwitchTextOn(const ::java::lang::CharSequence&) const;
+    void setSwitchTextOff(const ::java::lang::CharSequence&) const;
+    void setSwitchTextOn(int32_t) const;
+    void setSwitchTextOff(int32_t) const;
+    ::java::lang::CharSequence getSwitchTextOn() const;
+    ::java::lang::CharSequence getSwitchTextOff() const;
 
 };
 }

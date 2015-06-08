@@ -40,10 +40,10 @@ public:
     
     ViewSwitcher(const ::android::content::Context&);
     ViewSwitcher(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const ;
-    ::android::view::View getNextView() const ;
-    void setFactory(const ::android::widget::ViewSwitcher_ViewFactory&) const ;
-    void reset() const ;
+    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const;
+    ::android::view::View getNextView() const;
+    void setFactory(const ::android::widget::ViewSwitcher_ViewFactory&) const;
+    void reset() const;
 
 };
 }

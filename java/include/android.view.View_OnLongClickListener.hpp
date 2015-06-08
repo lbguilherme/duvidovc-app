@@ -32,7 +32,7 @@ public:
     ::android::view::View_OnLongClickListener& operator=(const ::android::view::View_OnLongClickListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnLongClickListener& operator=(::android::view::View_OnLongClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onLongClick(const ::android::view::View&) const ;
+    bool onLongClick(const ::android::view::View&) const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::org::kde::necessitas::ministro::IMinistro& operator=(const ::org::kde::necessitas::ministro::IMinistro& x) {obj = x.obj; return *this;}
     ::org::kde::necessitas::ministro::IMinistro& operator=(::org::kde::necessitas::ministro::IMinistro&& x) {obj = std::move(x.obj); return *this;}
     
-    void requestLoader(const ::org::kde::necessitas::ministro::IMinistroCallback&, const ::android::os::Bundle&) const ;
+    void requestLoader(const ::org::kde::necessitas::ministro::IMinistroCallback&, const ::android::os::Bundle&) const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::android::media::MediaPlayer_OnBufferingUpdateListener& operator=(const ::android::media::MediaPlayer_OnBufferingUpdateListener& x) {obj = x.obj; return *this;}
     ::android::media::MediaPlayer_OnBufferingUpdateListener& operator=(::android::media::MediaPlayer_OnBufferingUpdateListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onBufferingUpdate(const ::android::media::MediaPlayer&, int32_t) const ;
+    void onBufferingUpdate(const ::android::media::MediaPlayer&, int32_t) const;
 
 };
 }

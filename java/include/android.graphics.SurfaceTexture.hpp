@@ -33,12 +33,12 @@ public:
     ::android::graphics::SurfaceTexture& operator=(::android::graphics::SurfaceTexture&& x) {obj = std::move(x.obj); return *this;}
     
     SurfaceTexture(int32_t);
-    void setOnFrameAvailableListener(const ::android::graphics::SurfaceTexture_OnFrameAvailableListener&) const ;
-    void setDefaultBufferSize(int32_t, int32_t) const ;
-    void updateTexImage() const ;
-    void getTransformMatrix(const std::vector< float>&) const ;
-    int64_t getTimestamp() const ;
-    void release() const ;
+    void setOnFrameAvailableListener(const ::android::graphics::SurfaceTexture_OnFrameAvailableListener&) const;
+    void setDefaultBufferSize(int32_t, int32_t) const;
+    void updateTexImage() const;
+    void getTransformMatrix(const std::vector< float>&) const;
+    int64_t getTimestamp() const;
+    void release() const;
 
 };
 }

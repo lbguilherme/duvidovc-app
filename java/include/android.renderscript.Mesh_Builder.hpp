@@ -38,14 +38,14 @@ public:
     ::android::renderscript::Mesh_Builder& operator=(::android::renderscript::Mesh_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     Mesh_Builder(const ::android::renderscript::RenderScript&, int32_t);
-    int32_t getCurrentVertexTypeIndex() const ;
-    int32_t getCurrentIndexSetIndex() const ;
-    ::android::renderscript::Mesh_Builder addVertexType(const ::android::renderscript::Type&) const ;
-    ::android::renderscript::Mesh_Builder addVertexType(const ::android::renderscript::Element&, int32_t) const ;
-    ::android::renderscript::Mesh_Builder addIndexSetType(const ::android::renderscript::Type&, const ::android::renderscript::Mesh_Primitive&) const ;
-    ::android::renderscript::Mesh_Builder addIndexSetType(const ::android::renderscript::Mesh_Primitive&) const ;
-    ::android::renderscript::Mesh_Builder addIndexSetType(const ::android::renderscript::Element&, int32_t, const ::android::renderscript::Mesh_Primitive&) const ;
-    ::android::renderscript::Mesh create() const ;
+    int32_t getCurrentVertexTypeIndex() const;
+    int32_t getCurrentIndexSetIndex() const;
+    ::android::renderscript::Mesh_Builder addVertexType(const ::android::renderscript::Type&) const;
+    ::android::renderscript::Mesh_Builder addVertexType(const ::android::renderscript::Element&, int32_t) const;
+    ::android::renderscript::Mesh_Builder addIndexSetType(const ::android::renderscript::Type&, const ::android::renderscript::Mesh_Primitive&) const;
+    ::android::renderscript::Mesh_Builder addIndexSetType(const ::android::renderscript::Mesh_Primitive&) const;
+    ::android::renderscript::Mesh_Builder addIndexSetType(const ::android::renderscript::Element&, int32_t, const ::android::renderscript::Mesh_Primitive&) const;
+    ::android::renderscript::Mesh create() const;
 
 };
 }

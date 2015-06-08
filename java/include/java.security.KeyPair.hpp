@@ -36,8 +36,8 @@ public:
     ::java::security::KeyPair& operator=(::java::security::KeyPair&& x) {obj = std::move(x.obj); return *this;}
     
     KeyPair(const ::java::security::PublicKey&, const ::java::security::PrivateKey&);
-    ::java::security::PrivateKey getPrivate() const ;
-    ::java::security::PublicKey getPublic() const ;
+    ::java::security::PrivateKey getPrivate() const;
+    ::java::security::PublicKey getPublic() const;
 
 };
 }

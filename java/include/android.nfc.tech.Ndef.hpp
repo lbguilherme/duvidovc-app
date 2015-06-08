@@ -39,18 +39,18 @@ public:
     ::android::nfc::tech::Ndef& operator=(::android::nfc::tech::Ndef&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::nfc::tech::Ndef get(const ::android::nfc::Tag&);
-    ::android::nfc::NdefMessage getCachedNdefMessage() const ;
-    ::java::lang::String getType() const ;
-    int32_t getMaxSize() const ;
-    bool isWritable() const ;
-    ::android::nfc::NdefMessage getNdefMessage() const ;
-    void writeNdefMessage(const ::android::nfc::NdefMessage&) const ;
-    bool canMakeReadOnly() const ;
-    bool makeReadOnly() const ;
-    void close() const ;
-    void connect() const ;
-    bool isConnected() const ;
-    ::android::nfc::Tag getTag() const ;
+    ::android::nfc::NdefMessage getCachedNdefMessage() const;
+    ::java::lang::String getType() const;
+    int32_t getMaxSize() const;
+    bool isWritable() const;
+    ::android::nfc::NdefMessage getNdefMessage() const;
+    void writeNdefMessage(const ::android::nfc::NdefMessage&) const;
+    bool canMakeReadOnly() const;
+    bool makeReadOnly() const;
+    void close() const;
+    void connect() const;
+    bool isConnected() const;
+    ::android::nfc::Tag getTag() const;
 
 };
 }

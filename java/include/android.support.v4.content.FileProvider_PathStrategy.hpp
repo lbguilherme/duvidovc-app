@@ -35,8 +35,8 @@ public:
     ::android::support::v4::content::FileProvider_PathStrategy& operator=(const ::android::support::v4::content::FileProvider_PathStrategy& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::FileProvider_PathStrategy& operator=(::android::support::v4::content::FileProvider_PathStrategy&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::net::Uri getUriForFile(const ::java::io::File&) const ;
-    ::java::io::File getFileForUri(const ::android::net::Uri&) const ;
+    ::android::net::Uri getUriForFile(const ::java::io::File&) const;
+    ::java::io::File getFileForUri(const ::android::net::Uri&) const;
 
 };
 }

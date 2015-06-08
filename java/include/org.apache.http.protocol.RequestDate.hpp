@@ -38,7 +38,7 @@ public:
     ::org::apache::http::protocol::RequestDate& operator=(::org::apache::http::protocol::RequestDate&& x) {obj = std::move(x.obj); return *this;}
     
     RequestDate();
-    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

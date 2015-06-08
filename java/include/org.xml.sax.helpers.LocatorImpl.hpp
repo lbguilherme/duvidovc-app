@@ -39,14 +39,14 @@ public:
     
     LocatorImpl();
     LocatorImpl(const ::org::xml::sax::Locator&);
-    ::java::lang::String getPublicId() const ;
-    ::java::lang::String getSystemId() const ;
-    int32_t getLineNumber() const ;
-    int32_t getColumnNumber() const ;
-    void setPublicId(const ::java::lang::String&) const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    void setLineNumber(int32_t) const ;
-    void setColumnNumber(int32_t) const ;
+    ::java::lang::String getPublicId() const;
+    ::java::lang::String getSystemId() const;
+    int32_t getLineNumber() const;
+    int32_t getColumnNumber() const;
+    void setPublicId(const ::java::lang::String&) const;
+    void setSystemId(const ::java::lang::String&) const;
+    void setLineNumber(int32_t) const;
+    void setColumnNumber(int32_t) const;
 
 };
 }

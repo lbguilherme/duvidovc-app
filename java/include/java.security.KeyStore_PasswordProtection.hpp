@@ -36,9 +36,9 @@ public:
     ::java::security::KeyStore_PasswordProtection& operator=(::java::security::KeyStore_PasswordProtection&& x) {obj = std::move(x.obj); return *this;}
     
     KeyStore_PasswordProtection(const std::vector< uint16_t>&);
-    std::vector< uint16_t> getPassword() const ;
-    void destroy() const ;
-    bool isDestroyed() const ;
+    std::vector< uint16_t> getPassword() const;
+    void destroy() const;
+    bool isDestroyed() const;
 
 };
 }

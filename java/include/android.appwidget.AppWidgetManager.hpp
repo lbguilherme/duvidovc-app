@@ -38,17 +38,17 @@ public:
     ::android::appwidget::AppWidgetManager& operator=(::android::appwidget::AppWidgetManager&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::appwidget::AppWidgetManager getInstance(const ::android::content::Context&);
-    void updateAppWidget(const std::vector< int32_t>&, const ::android::widget::RemoteViews&) const ;
-    void updateAppWidget(int32_t, const ::android::widget::RemoteViews&) const ;
-    void partiallyUpdateAppWidget(const std::vector< int32_t>&, const ::android::widget::RemoteViews&) const ;
-    void partiallyUpdateAppWidget(int32_t, const ::android::widget::RemoteViews&) const ;
-    void updateAppWidget(const ::android::content::ComponentName&, const ::android::widget::RemoteViews&) const ;
-    void notifyAppWidgetViewDataChanged(const std::vector< int32_t>&, int32_t) const ;
-    void notifyAppWidgetViewDataChanged(int32_t, int32_t) const ;
-    ::java::util::List getInstalledProviders() const ;
-    ::android::appwidget::AppWidgetProviderInfo getAppWidgetInfo(int32_t) const ;
-    void bindAppWidgetId(int32_t, const ::android::content::ComponentName&) const ;
-    std::vector< int32_t> getAppWidgetIds(const ::android::content::ComponentName&) const ;
+    void updateAppWidget(const std::vector< int32_t>&, const ::android::widget::RemoteViews&) const;
+    void updateAppWidget(int32_t, const ::android::widget::RemoteViews&) const;
+    void partiallyUpdateAppWidget(const std::vector< int32_t>&, const ::android::widget::RemoteViews&) const;
+    void partiallyUpdateAppWidget(int32_t, const ::android::widget::RemoteViews&) const;
+    void updateAppWidget(const ::android::content::ComponentName&, const ::android::widget::RemoteViews&) const;
+    void notifyAppWidgetViewDataChanged(const std::vector< int32_t>&, int32_t) const;
+    void notifyAppWidgetViewDataChanged(int32_t, int32_t) const;
+    ::java::util::List getInstalledProviders() const;
+    ::android::appwidget::AppWidgetProviderInfo getAppWidgetInfo(int32_t) const;
+    void bindAppWidgetId(int32_t, const ::android::content::ComponentName&) const;
+    std::vector< int32_t> getAppWidgetIds(const ::android::content::ComponentName&) const;
 
 };
 }

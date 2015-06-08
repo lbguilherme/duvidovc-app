@@ -34,10 +34,10 @@ public:
     ::junit::framework::TestListener& operator=(const ::junit::framework::TestListener& x) {obj = x.obj; return *this;}
     ::junit::framework::TestListener& operator=(::junit::framework::TestListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void addError(const ::junit::framework::Test&, const ::java::lang::Throwable&) const ;
-    void addFailure(const ::junit::framework::Test&, const ::junit::framework::AssertionFailedError&) const ;
-    void endTest(const ::junit::framework::Test&) const ;
-    void startTest(const ::junit::framework::Test&) const ;
+    void addError(const ::junit::framework::Test&, const ::java::lang::Throwable&) const;
+    void addFailure(const ::junit::framework::Test&, const ::junit::framework::AssertionFailedError&) const;
+    void endTest(const ::junit::framework::Test&) const;
+    void startTest(const ::junit::framework::Test&) const;
 
 };
 }

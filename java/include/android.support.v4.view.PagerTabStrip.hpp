@@ -41,17 +41,17 @@ public:
     
     PagerTabStrip(const ::android::content::Context&);
     PagerTabStrip(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setTabIndicatorColor(int32_t) const ;
-    void setTabIndicatorColorResource(int32_t) const ;
-    int32_t getTabIndicatorColor() const ;
-    void setPadding(int32_t, int32_t, int32_t, int32_t) const ;
-    void setTextSpacing(int32_t) const ;
-    void setBackgroundDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void setBackgroundColor(int32_t) const ;
-    void setBackgroundResource(int32_t) const ;
-    void setDrawFullUnderline(bool) const ;
-    bool getDrawFullUnderline() const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
+    void setTabIndicatorColor(int32_t) const;
+    void setTabIndicatorColorResource(int32_t) const;
+    int32_t getTabIndicatorColor() const;
+    void setPadding(int32_t, int32_t, int32_t, int32_t) const;
+    void setTextSpacing(int32_t) const;
+    void setBackgroundDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void setBackgroundColor(int32_t) const;
+    void setBackgroundResource(int32_t) const;
+    void setDrawFullUnderline(bool) const;
+    bool getDrawFullUnderline() const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
 
 };
 }

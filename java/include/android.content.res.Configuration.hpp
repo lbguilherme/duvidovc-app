@@ -41,21 +41,21 @@ public:
     ::android::content::res::Configuration& operator=(::android::content::res::Configuration&& x) {obj = std::move(x.obj); return *this;}
     
     Configuration();
-    bool isLayoutSizeAtLeast(int32_t) const ;
-    void setTo(const ::android::content::res::Configuration&) const ;
-    ::java::lang::String toString() const ;
-    void setToDefaults() const ;
-    int32_t updateFrom(const ::android::content::res::Configuration&) const ;
-    int32_t diff(const ::android::content::res::Configuration&) const ;
+    bool isLayoutSizeAtLeast(int32_t) const;
+    void setTo(const ::android::content::res::Configuration&) const;
+    ::java::lang::String toString() const;
+    void setToDefaults() const;
+    int32_t updateFrom(const ::android::content::res::Configuration&) const;
+    int32_t diff(const ::android::content::res::Configuration&) const;
     static bool needNewResources(int32_t, int32_t);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
-    int32_t compareTo(const ::android::content::res::Configuration&) const ;
-    bool equals(const ::android::content::res::Configuration&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
+    int32_t compareTo(const ::android::content::res::Configuration&) const;
+    bool equals(const ::android::content::res::Configuration&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

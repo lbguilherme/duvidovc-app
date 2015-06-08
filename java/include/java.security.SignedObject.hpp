@@ -40,10 +40,10 @@ public:
     ::java::security::SignedObject& operator=(::java::security::SignedObject&& x) {obj = std::move(x.obj); return *this;}
     
     SignedObject(const ::java::io::Serializable&, const ::java::security::PrivateKey&, const ::java::security::Signature&);
-    ::java::lang::Object getObject() const ;
-    std::vector< int8_t> getSignature() const ;
-    ::java::lang::String getAlgorithm() const ;
-    bool verify(const ::java::security::PublicKey&, const ::java::security::Signature&) const ;
+    ::java::lang::Object getObject() const;
+    std::vector< int8_t> getSignature() const;
+    ::java::lang::String getAlgorithm() const;
+    bool verify(const ::java::security::PublicKey&, const ::java::security::Signature&) const;
 
 };
 }

@@ -36,7 +36,7 @@ public:
     ::java::security::spec::ECGenParameterSpec& operator=(::java::security::spec::ECGenParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     ECGenParameterSpec(const ::java::lang::String&);
-    ::java::lang::String getName() const ;
+    ::java::lang::String getName() const;
 
 };
 }

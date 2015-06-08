@@ -34,9 +34,9 @@ public:
     ::java::sql::Struct& operator=(const ::java::sql::Struct& x) {obj = x.obj; return *this;}
     ::java::sql::Struct& operator=(::java::sql::Struct&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getSQLTypeName() const ;
-    std::vector< ::java::lang::Object> getAttributes() const ;
-    std::vector< ::java::lang::Object> getAttributes(const ::java::util::Map&) const ;
+    ::java::lang::String getSQLTypeName() const;
+    std::vector< ::java::lang::Object> getAttributes() const;
+    std::vector< ::java::lang::Object> getAttributes(const ::java::util::Map&) const;
 
 };
 }

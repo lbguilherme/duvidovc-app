@@ -40,18 +40,18 @@ public:
     ::android::support::v4::view::ActionProvider& operator=(::android::support::v4::view::ActionProvider&& x) {obj = std::move(x.obj); return *this;}
     
     ActionProvider(const ::android::content::Context&);
-    ::android::content::Context getContext() const ;
-    ::android::view::View onCreateActionView() const ;
-    ::android::view::View onCreateActionView(const ::android::view::MenuItem&) const ;
-    bool overridesItemVisibility() const ;
-    bool isVisible() const ;
-    void refreshVisibility() const ;
-    bool onPerformDefaultAction() const ;
-    bool hasSubMenu() const ;
-    void onPrepareSubMenu(const ::android::view::SubMenu&) const ;
-    void subUiVisibilityChanged(bool) const ;
-    void setSubUiVisibilityListener(const ::android::support::v4::view::ActionProvider_SubUiVisibilityListener&) const ;
-    void setVisibilityListener(const ::android::support::v4::view::ActionProvider_VisibilityListener&) const ;
+    ::android::content::Context getContext() const;
+    ::android::view::View onCreateActionView() const;
+    ::android::view::View onCreateActionView(const ::android::view::MenuItem&) const;
+    bool overridesItemVisibility() const;
+    bool isVisible() const;
+    void refreshVisibility() const;
+    bool onPerformDefaultAction() const;
+    bool hasSubMenu() const;
+    void onPrepareSubMenu(const ::android::view::SubMenu&) const;
+    void subUiVisibilityChanged(bool) const;
+    void setSubUiVisibilityListener(const ::android::support::v4::view::ActionProvider_SubUiVisibilityListener&) const;
+    void setVisibilityListener(const ::android::support::v4::view::ActionProvider_VisibilityListener&) const;
 
 };
 }

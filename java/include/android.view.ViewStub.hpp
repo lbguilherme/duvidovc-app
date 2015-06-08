@@ -42,14 +42,14 @@ public:
     ViewStub(const ::android::content::Context&, int32_t);
     ViewStub(const ::android::content::Context&, const ::android::util::AttributeSet&);
     ViewStub(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    int32_t getInflatedId() const ;
-    void setInflatedId(int32_t) const ;
-    int32_t getLayoutResource() const ;
-    void setLayoutResource(int32_t) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    void setVisibility(int32_t) const ;
-    ::android::view::View inflate() const ;
-    void setOnInflateListener(const ::android::view::ViewStub_OnInflateListener&) const ;
+    int32_t getInflatedId() const;
+    void setInflatedId(int32_t) const;
+    int32_t getLayoutResource() const;
+    void setLayoutResource(int32_t) const;
+    void draw(const ::android::graphics::Canvas&) const;
+    void setVisibility(int32_t) const;
+    ::android::view::View inflate() const;
+    void setOnInflateListener(const ::android::view::ViewStub_OnInflateListener&) const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     
     GZIPInputStream(const ::java::io::InputStream&);
     GZIPInputStream(const ::java::io::InputStream&, int32_t);
-    void close() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    void close() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

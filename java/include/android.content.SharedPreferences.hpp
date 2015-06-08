@@ -36,17 +36,17 @@ public:
     ::android::content::SharedPreferences& operator=(const ::android::content::SharedPreferences& x) {obj = x.obj; return *this;}
     ::android::content::SharedPreferences& operator=(::android::content::SharedPreferences&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Map getAll() const ;
-    ::java::lang::String getString(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::util::Set getStringSet(const ::java::lang::String&, const ::java::util::Set&) const ;
-    int32_t getInt(const ::java::lang::String&, int32_t) const ;
-    int64_t getLong(const ::java::lang::String&, int64_t) const ;
-    float getFloat(const ::java::lang::String&, float) const ;
-    bool getBoolean(const ::java::lang::String&, bool) const ;
-    bool contains(const ::java::lang::String&) const ;
-    ::android::content::SharedPreferences_Editor edit() const ;
-    void registerOnSharedPreferenceChangeListener(const ::android::content::SharedPreferences_OnSharedPreferenceChangeListener&) const ;
-    void unregisterOnSharedPreferenceChangeListener(const ::android::content::SharedPreferences_OnSharedPreferenceChangeListener&) const ;
+    ::java::util::Map getAll() const;
+    ::java::lang::String getString(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::util::Set getStringSet(const ::java::lang::String&, const ::java::util::Set&) const;
+    int32_t getInt(const ::java::lang::String&, int32_t) const;
+    int64_t getLong(const ::java::lang::String&, int64_t) const;
+    float getFloat(const ::java::lang::String&, float) const;
+    bool getBoolean(const ::java::lang::String&, bool) const;
+    bool contains(const ::java::lang::String&) const;
+    ::android::content::SharedPreferences_Editor edit() const;
+    void registerOnSharedPreferenceChangeListener(const ::android::content::SharedPreferences_OnSharedPreferenceChangeListener&) const;
+    void unregisterOnSharedPreferenceChangeListener(const ::android::content::SharedPreferences_OnSharedPreferenceChangeListener&) const;
 
 };
 }

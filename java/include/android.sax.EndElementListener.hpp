@@ -31,7 +31,7 @@ public:
     ::android::sax::EndElementListener& operator=(const ::android::sax::EndElementListener& x) {obj = x.obj; return *this;}
     ::android::sax::EndElementListener& operator=(::android::sax::EndElementListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void end() const ;
+    void end() const;
 
 };
 }

@@ -41,20 +41,20 @@ public:
     static ::java::security::MessageDigest getInstance(const ::java::lang::String&);
     static ::java::security::MessageDigest getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::MessageDigest getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    void reset() const ;
-    void update(int8_t) const ;
-    void update(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void update(const std::vector< int8_t>&) const ;
-    std::vector< int8_t> digest() const ;
-    int32_t digest(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    std::vector< int8_t> digest(const std::vector< int8_t>&) const ;
-    ::java::lang::String toString() const ;
+    void reset() const;
+    void update(int8_t) const;
+    void update(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void update(const std::vector< int8_t>&) const;
+    std::vector< int8_t> digest() const;
+    int32_t digest(const std::vector< int8_t>&, int32_t, int32_t) const;
+    std::vector< int8_t> digest(const std::vector< int8_t>&) const;
+    ::java::lang::String toString() const;
     static bool isEqual(const std::vector< int8_t>&, const std::vector< int8_t>&);
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
-    int32_t getDigestLength() const ;
-    ::java::lang::Object clone() const ;
-    void update(const ::java::nio::ByteBuffer&) const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
+    int32_t getDigestLength() const;
+    ::java::lang::Object clone() const;
+    void update(const ::java::nio::ByteBuffer&) const;
 
 };
 }

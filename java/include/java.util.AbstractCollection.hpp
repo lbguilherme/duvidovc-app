@@ -37,20 +37,20 @@ public:
     ::java::util::AbstractCollection& operator=(const ::java::util::AbstractCollection& x) {obj = x.obj; return *this;}
     ::java::util::AbstractCollection& operator=(::java::util::AbstractCollection&& x) {obj = std::move(x.obj); return *this;}
     
-    bool add(const ::java::lang::Object&) const ;
-    bool addAll(const ::java::util::Collection&) const ;
-    void clear() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    bool containsAll(const ::java::util::Collection&) const ;
-    bool isEmpty() const ;
-    ::java::util::Iterator iterator() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool removeAll(const ::java::util::Collection&) const ;
-    bool retainAll(const ::java::util::Collection&) const ;
-    int32_t size() const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
-    ::java::lang::String toString() const ;
+    bool add(const ::java::lang::Object&) const;
+    bool addAll(const ::java::util::Collection&) const;
+    void clear() const;
+    bool contains(const ::java::lang::Object&) const;
+    bool containsAll(const ::java::util::Collection&) const;
+    bool isEmpty() const;
+    ::java::util::Iterator iterator() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool removeAll(const ::java::util::Collection&) const;
+    bool retainAll(const ::java::util::Collection&) const;
+    int32_t size() const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
+    ::java::lang::String toString() const;
 
 };
 }

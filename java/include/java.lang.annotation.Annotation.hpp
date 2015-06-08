@@ -35,10 +35,10 @@ public:
     ::java::lang::annotation::Annotation& operator=(const ::java::lang::annotation::Annotation& x) {obj = x.obj; return *this;}
     ::java::lang::annotation::Annotation& operator=(::java::lang::annotation::Annotation&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Class annotationType() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Class annotationType() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

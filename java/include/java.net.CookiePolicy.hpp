@@ -33,7 +33,7 @@ public:
     ::java::net::CookiePolicy& operator=(const ::java::net::CookiePolicy& x) {obj = x.obj; return *this;}
     ::java::net::CookiePolicy& operator=(::java::net::CookiePolicy&& x) {obj = std::move(x.obj); return *this;}
     
-    bool shouldAccept(const ::java::net::URI&, const ::java::net::HttpCookie&) const ;
+    bool shouldAccept(const ::java::net::URI&, const ::java::net::HttpCookie&) const;
 
 };
 }

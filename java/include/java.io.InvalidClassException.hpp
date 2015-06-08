@@ -36,7 +36,7 @@ public:
     
     InvalidClassException(const ::java::lang::String&);
     InvalidClassException(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getMessage() const;
 
 };
 }

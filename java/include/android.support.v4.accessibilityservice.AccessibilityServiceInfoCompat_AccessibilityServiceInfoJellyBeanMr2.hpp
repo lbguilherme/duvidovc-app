@@ -36,7 +36,7 @@ public:
     ::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoJellyBeanMr2& operator=(const ::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoJellyBeanMr2& x) {obj = x.obj; return *this;}
     ::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoJellyBeanMr2& operator=(::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoJellyBeanMr2&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getCapabilities(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
+    int32_t getCapabilities(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
 
 };
 }

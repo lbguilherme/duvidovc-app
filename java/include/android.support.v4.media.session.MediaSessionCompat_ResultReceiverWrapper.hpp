@@ -39,8 +39,8 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_ResultReceiverWrapper& operator=(::android::support::v4::media::session::MediaSessionCompat_ResultReceiverWrapper&& x) {obj = std::move(x.obj); return *this;}
     
     MediaSessionCompat_ResultReceiverWrapper(const ::android::os::ResultReceiver&);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

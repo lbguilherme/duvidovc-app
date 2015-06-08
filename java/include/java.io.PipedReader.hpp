@@ -38,11 +38,11 @@ public:
     PipedReader(const ::java::io::PipedWriter&);
     PipedReader(int32_t);
     PipedReader(const ::java::io::PipedWriter&, int32_t);
-    void close() const ;
-    void connect(const ::java::io::PipedWriter&) const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    bool ready() const ;
+    void close() const;
+    void connect(const ::java::io::PipedWriter&) const;
+    int32_t read() const;
+    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    bool ready() const;
 
 };
 }

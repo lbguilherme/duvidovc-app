@@ -36,7 +36,7 @@ public:
     ::android::renderscript::ProgramFragment_Builder& operator=(::android::renderscript::ProgramFragment_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ProgramFragment_Builder(const ::android::renderscript::RenderScript&);
-    ::android::renderscript::ProgramFragment create() const ;
+    ::android::renderscript::ProgramFragment create() const;
 
 };
 }

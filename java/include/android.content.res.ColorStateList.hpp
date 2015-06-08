@@ -42,13 +42,13 @@ public:
     ColorStateList(const std::vector< int32_t>&, const std::vector< int32_t>&);
     static ::android::content::res::ColorStateList valueOf(int32_t);
     static ::android::content::res::ColorStateList createFromXml(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&);
-    ::android::content::res::ColorStateList withAlpha(int32_t) const ;
-    bool isStateful() const ;
-    int32_t getColorForState(const std::vector< int32_t>&, int32_t) const ;
-    int32_t getDefaultColor() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::content::res::ColorStateList withAlpha(int32_t) const;
+    bool isStateful() const;
+    int32_t getColorForState(const std::vector< int32_t>&, int32_t) const;
+    int32_t getDefaultColor() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

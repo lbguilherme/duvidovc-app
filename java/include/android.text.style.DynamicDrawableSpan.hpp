@@ -40,10 +40,10 @@ public:
     ::android::text::style::DynamicDrawableSpan& operator=(::android::text::style::DynamicDrawableSpan&& x) {obj = std::move(x.obj); return *this;}
     
     DynamicDrawableSpan();
-    int32_t getVerticalAlignment() const ;
-    ::android::graphics::drawable::Drawable getDrawable() const ;
-    int32_t getSize(const ::android::graphics::Paint&, const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const ;
-    void draw(const ::android::graphics::Canvas&, const ::java::lang::CharSequence&, int32_t, int32_t, float, int32_t, int32_t, int32_t, const ::android::graphics::Paint&) const ;
+    int32_t getVerticalAlignment() const;
+    ::android::graphics::drawable::Drawable getDrawable() const;
+    int32_t getSize(const ::android::graphics::Paint&, const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const;
+    void draw(const ::android::graphics::Canvas&, const ::java::lang::CharSequence&, int32_t, int32_t, float, int32_t, int32_t, int32_t, const ::android::graphics::Paint&) const;
 
 };
 }

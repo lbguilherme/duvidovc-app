@@ -34,7 +34,7 @@ public:
     ::android::support::v4::view::ViewPager_OnAdapterChangeListener& operator=(const ::android::support::v4::view::ViewPager_OnAdapterChangeListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPager_OnAdapterChangeListener& operator=(::android::support::v4::view::ViewPager_OnAdapterChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAdapterChanged(const ::android::support::v4::view::PagerAdapter&, const ::android::support::v4::view::PagerAdapter&) const ;
+    void onAdapterChanged(const ::android::support::v4::view::PagerAdapter&, const ::android::support::v4::view::PagerAdapter&) const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::NativeAppCallAttachmentStore_Attachment& operator=(const ::com::facebook::internal::NativeAppCallAttachmentStore_Attachment& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::NativeAppCallAttachmentStore_Attachment& operator=(::com::facebook::internal::NativeAppCallAttachmentStore_Attachment&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAttachmentUrl() const ;
+    ::java::lang::String getAttachmentUrl() const;
 
 };
 }

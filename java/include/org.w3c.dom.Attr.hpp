@@ -37,13 +37,13 @@ public:
     ::org::w3c::dom::Attr& operator=(const ::org::w3c::dom::Attr& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::Attr& operator=(::org::w3c::dom::Attr&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    bool getSpecified() const ;
-    ::java::lang::String getValue() const ;
-    void setValue(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Element getOwnerElement() const ;
-    ::org::w3c::dom::TypeInfo getSchemaTypeInfo() const ;
-    bool isId() const ;
+    ::java::lang::String getName() const;
+    bool getSpecified() const;
+    ::java::lang::String getValue() const;
+    void setValue(const ::java::lang::String&) const;
+    ::org::w3c::dom::Element getOwnerElement() const;
+    ::org::w3c::dom::TypeInfo getSchemaTypeInfo() const;
+    bool isId() const;
 
 };
 }

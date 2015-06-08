@@ -34,7 +34,7 @@ public:
     ::android::app::LauncherActivity_IconResizer& operator=(::android::app::LauncherActivity_IconResizer&& x) {obj = std::move(x.obj); return *this;}
     
     LauncherActivity_IconResizer(const ::android::app::LauncherActivity&);
-    ::android::graphics::drawable::Drawable createIconThumbnail(const ::android::graphics::drawable::Drawable&) const ;
+    ::android::graphics::drawable::Drawable createIconThumbnail(const ::android::graphics::drawable::Drawable&) const;
 
 };
 }

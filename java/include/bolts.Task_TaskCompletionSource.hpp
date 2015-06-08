@@ -32,11 +32,11 @@ public:
     ::bolts::Task_TaskCompletionSource& operator=(const ::bolts::Task_TaskCompletionSource& x) {obj = x.obj; return *this;}
     ::bolts::Task_TaskCompletionSource& operator=(::bolts::Task_TaskCompletionSource&& x) {obj = std::move(x.obj); return *this;}
     
-    ::bolts::Task getTask() const ;
-    bool trySetCancelled() const ;
-    bool trySetError(const ::java::lang::Exception&) const ;
-    void setCancelled() const ;
-    void setError(const ::java::lang::Exception&) const ;
+    ::bolts::Task getTask() const;
+    bool trySetCancelled() const;
+    bool trySetError(const ::java::lang::Exception&) const;
+    void setCancelled() const;
+    void setError(const ::java::lang::Exception&) const;
 
 };
 }

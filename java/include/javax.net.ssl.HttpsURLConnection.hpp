@@ -43,15 +43,15 @@ public:
     static ::javax::net::ssl::HostnameVerifier getDefaultHostnameVerifier();
     static void setDefaultSSLSocketFactory(const ::javax::net::ssl::SSLSocketFactory&);
     static ::javax::net::ssl::SSLSocketFactory getDefaultSSLSocketFactory();
-    ::java::lang::String getCipherSuite() const ;
-    std::vector< ::java::security::cert::Certificate> getLocalCertificates() const ;
-    std::vector< ::java::security::cert::Certificate> getServerCertificates() const ;
-    ::java::security::Principal getPeerPrincipal() const ;
-    ::java::security::Principal getLocalPrincipal() const ;
-    void setHostnameVerifier(const ::javax::net::ssl::HostnameVerifier&) const ;
-    ::javax::net::ssl::HostnameVerifier getHostnameVerifier() const ;
-    void setSSLSocketFactory(const ::javax::net::ssl::SSLSocketFactory&) const ;
-    ::javax::net::ssl::SSLSocketFactory getSSLSocketFactory() const ;
+    ::java::lang::String getCipherSuite() const;
+    std::vector< ::java::security::cert::Certificate> getLocalCertificates() const;
+    std::vector< ::java::security::cert::Certificate> getServerCertificates() const;
+    ::java::security::Principal getPeerPrincipal() const;
+    ::java::security::Principal getLocalPrincipal() const;
+    void setHostnameVerifier(const ::javax::net::ssl::HostnameVerifier&) const;
+    ::javax::net::ssl::HostnameVerifier getHostnameVerifier() const;
+    void setSSLSocketFactory(const ::javax::net::ssl::SSLSocketFactory&) const;
+    ::javax::net::ssl::SSLSocketFactory getSSLSocketFactory() const;
 
 };
 }

@@ -35,10 +35,10 @@ public:
     ::android::bluetooth::BluetoothA2dp& operator=(const ::android::bluetooth::BluetoothA2dp& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothA2dp& operator=(::android::bluetooth::BluetoothA2dp&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::List getConnectedDevices() const ;
-    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const ;
-    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const ;
-    bool isA2dpPlaying(const ::android::bluetooth::BluetoothDevice&) const ;
+    ::java::util::List getConnectedDevices() const;
+    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const;
+    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const;
+    bool isA2dpPlaying(const ::android::bluetooth::BluetoothDevice&) const;
 
 };
 }

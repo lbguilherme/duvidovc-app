@@ -40,8 +40,8 @@ public:
     ::android::support::v4::media::session::PlaybackStateCompat_CustomAction_Builder& operator=(::android::support::v4::media::session::PlaybackStateCompat_CustomAction_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     PlaybackStateCompat_CustomAction_Builder(const ::java::lang::String&, const ::java::lang::CharSequence&, int32_t);
-    ::android::support::v4::media::session::PlaybackStateCompat_CustomAction_Builder setExtras(const ::android::os::Bundle&) const ;
-    ::android::support::v4::media::session::PlaybackStateCompat_CustomAction build() const ;
+    ::android::support::v4::media::session::PlaybackStateCompat_CustomAction_Builder setExtras(const ::android::os::Bundle&) const;
+    ::android::support::v4::media::session::PlaybackStateCompat_CustomAction build() const;
 
 };
 }

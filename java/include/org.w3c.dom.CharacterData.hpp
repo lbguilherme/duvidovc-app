@@ -35,14 +35,14 @@ public:
     ::org::w3c::dom::CharacterData& operator=(const ::org::w3c::dom::CharacterData& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::CharacterData& operator=(::org::w3c::dom::CharacterData&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getData() const ;
-    void setData(const ::java::lang::String&) const ;
-    int32_t getLength() const ;
-    ::java::lang::String substringData(int32_t, int32_t) const ;
-    void appendData(const ::java::lang::String&) const ;
-    void insertData(int32_t, const ::java::lang::String&) const ;
-    void deleteData(int32_t, int32_t) const ;
-    void replaceData(int32_t, int32_t, const ::java::lang::String&) const ;
+    ::java::lang::String getData() const;
+    void setData(const ::java::lang::String&) const;
+    int32_t getLength() const;
+    ::java::lang::String substringData(int32_t, int32_t) const;
+    void appendData(const ::java::lang::String&) const;
+    void insertData(int32_t, const ::java::lang::String&) const;
+    void deleteData(int32_t, int32_t) const;
+    void replaceData(int32_t, int32_t, const ::java::lang::String&) const;
 
 };
 }

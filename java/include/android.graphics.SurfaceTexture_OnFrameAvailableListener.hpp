@@ -32,7 +32,7 @@ public:
     ::android::graphics::SurfaceTexture_OnFrameAvailableListener& operator=(const ::android::graphics::SurfaceTexture_OnFrameAvailableListener& x) {obj = x.obj; return *this;}
     ::android::graphics::SurfaceTexture_OnFrameAvailableListener& operator=(::android::graphics::SurfaceTexture_OnFrameAvailableListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onFrameAvailable(const ::android::graphics::SurfaceTexture&) const ;
+    void onFrameAvailable(const ::android::graphics::SurfaceTexture&) const;
 
 };
 }

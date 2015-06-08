@@ -35,8 +35,8 @@ public:
     ::android::graphics::LayerRasterizer& operator=(::android::graphics::LayerRasterizer&& x) {obj = std::move(x.obj); return *this;}
     
     LayerRasterizer();
-    void addLayer(const ::android::graphics::Paint&, float, float) const ;
-    void addLayer(const ::android::graphics::Paint&) const ;
+    void addLayer(const ::android::graphics::Paint&, float, float) const;
+    void addLayer(const ::android::graphics::Paint&) const;
 
 };
 }

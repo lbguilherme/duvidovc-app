@@ -38,11 +38,11 @@ public:
     ::android::support::v4::app::RemoteInput& operator=(const ::android::support::v4::app::RemoteInput& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::RemoteInput& operator=(::android::support::v4::app::RemoteInput&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getResultKey() const ;
-    ::java::lang::CharSequence getLabel() const ;
-    std::vector< ::java::lang::CharSequence> getChoices() const ;
-    bool getAllowFreeFormInput() const ;
-    ::android::os::Bundle getExtras() const ;
+    ::java::lang::String getResultKey() const;
+    ::java::lang::CharSequence getLabel() const;
+    std::vector< ::java::lang::CharSequence> getChoices() const;
+    bool getAllowFreeFormInput() const;
+    ::android::os::Bundle getExtras() const;
     static ::android::os::Bundle getResultsFromIntent(const ::android::content::Intent&);
     static void addResultsToIntent(const std::vector< ::android::support::v4::app::RemoteInput>&, const ::android::content::Intent&, const ::android::os::Bundle&);
 

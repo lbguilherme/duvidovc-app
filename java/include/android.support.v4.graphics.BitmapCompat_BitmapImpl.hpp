@@ -34,9 +34,9 @@ public:
     ::android::support::v4::graphics::BitmapCompat_BitmapImpl& operator=(const ::android::support::v4::graphics::BitmapCompat_BitmapImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::BitmapCompat_BitmapImpl& operator=(::android::support::v4::graphics::BitmapCompat_BitmapImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasMipMap(const ::android::graphics::Bitmap&) const ;
-    void setHasMipMap(const ::android::graphics::Bitmap&, bool) const ;
-    int32_t getAllocationByteCount(const ::android::graphics::Bitmap&) const ;
+    bool hasMipMap(const ::android::graphics::Bitmap&) const;
+    void setHasMipMap(const ::android::graphics::Bitmap&, bool) const;
+    int32_t getAllocationByteCount(const ::android::graphics::Bitmap&) const;
 
 };
 }

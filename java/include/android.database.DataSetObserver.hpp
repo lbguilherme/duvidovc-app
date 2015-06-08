@@ -32,8 +32,8 @@ public:
     ::android::database::DataSetObserver& operator=(::android::database::DataSetObserver&& x) {obj = std::move(x.obj); return *this;}
     
     DataSetObserver();
-    void onChanged() const ;
-    void onInvalidated() const ;
+    void onChanged() const;
+    void onInvalidated() const;
 
 };
 }

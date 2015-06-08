@@ -40,9 +40,9 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_Token& operator=(::android::support::v4::media::session::MediaSessionCompat_Token&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::media::session::MediaSessionCompat_Token fromToken(const ::java::lang::Object&);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::Object getToken() const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::Object getToken() const;
 
 };
 }

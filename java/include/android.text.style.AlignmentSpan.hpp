@@ -35,7 +35,7 @@ public:
     ::android::text::style::AlignmentSpan& operator=(const ::android::text::style::AlignmentSpan& x) {obj = x.obj; return *this;}
     ::android::text::style::AlignmentSpan& operator=(::android::text::style::AlignmentSpan&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::text::Layout_Alignment getAlignment() const ;
+    ::android::text::Layout_Alignment getAlignment() const;
 
 };
 }

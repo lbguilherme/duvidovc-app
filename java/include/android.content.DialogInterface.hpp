@@ -31,8 +31,8 @@ public:
     ::android::content::DialogInterface& operator=(const ::android::content::DialogInterface& x) {obj = x.obj; return *this;}
     ::android::content::DialogInterface& operator=(::android::content::DialogInterface&& x) {obj = std::move(x.obj); return *this;}
     
-    void cancel() const ;
-    void dismiss() const ;
+    void cancel() const;
+    void dismiss() const;
 
 };
 }

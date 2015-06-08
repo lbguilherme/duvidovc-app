@@ -35,18 +35,18 @@ public:
     ::org::apache::http::cookie::Cookie& operator=(const ::org::apache::http::cookie::Cookie& x) {obj = x.obj; return *this;}
     ::org::apache::http::cookie::Cookie& operator=(::org::apache::http::cookie::Cookie&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    ::java::lang::String getComment() const ;
-    ::java::lang::String getCommentURL() const ;
-    ::java::util::Date getExpiryDate() const ;
-    bool isPersistent() const ;
-    ::java::lang::String getDomain() const ;
-    ::java::lang::String getPath() const ;
-    std::vector< int32_t> getPorts() const ;
-    bool isSecure() const ;
-    int32_t getVersion() const ;
-    bool isExpired(const ::java::util::Date&) const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    ::java::lang::String getComment() const;
+    ::java::lang::String getCommentURL() const;
+    ::java::util::Date getExpiryDate() const;
+    bool isPersistent() const;
+    ::java::lang::String getDomain() const;
+    ::java::lang::String getPath() const;
+    std::vector< int32_t> getPorts() const;
+    bool isSecure() const;
+    int32_t getVersion() const;
+    bool isExpired(const ::java::util::Date&) const;
 
 };
 }

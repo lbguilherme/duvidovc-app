@@ -41,15 +41,15 @@ public:
     ::android::test::InstrumentationTestCase& operator=(::android::test::InstrumentationTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     InstrumentationTestCase();
-    void injectInstrumentation(const ::android::app::Instrumentation&) const ;
-    void injectInsrumentation(const ::android::app::Instrumentation&) const ;
-    ::android::app::Instrumentation getInstrumentation() const ;
-    ::android::app::Activity launchActivity(const ::java::lang::String&, const ::java::lang::Class&, const ::android::os::Bundle&) const ;
-    ::android::app::Activity launchActivityWithIntent(const ::java::lang::String&, const ::java::lang::Class&, const ::android::content::Intent&) const ;
-    void runTestOnUiThread(const ::java::lang::Runnable&) const ;
-    void sendKeys(const ::java::lang::String&) const ;
-    void sendKeys(const std::vector< int32_t>&) const ;
-    void sendRepeatedKeys(const std::vector< int32_t>&) const ;
+    void injectInstrumentation(const ::android::app::Instrumentation&) const;
+    void injectInsrumentation(const ::android::app::Instrumentation&) const;
+    ::android::app::Instrumentation getInstrumentation() const;
+    ::android::app::Activity launchActivity(const ::java::lang::String&, const ::java::lang::Class&, const ::android::os::Bundle&) const;
+    ::android::app::Activity launchActivityWithIntent(const ::java::lang::String&, const ::java::lang::Class&, const ::android::content::Intent&) const;
+    void runTestOnUiThread(const ::java::lang::Runnable&) const;
+    void sendKeys(const ::java::lang::String&) const;
+    void sendKeys(const std::vector< int32_t>&) const;
+    void sendRepeatedKeys(const std::vector< int32_t>&) const;
 
 };
 }

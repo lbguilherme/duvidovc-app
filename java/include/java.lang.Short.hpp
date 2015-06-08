@@ -40,25 +40,25 @@ public:
     
     Short(const ::java::lang::String&);
     Short(int16_t);
-    int8_t byteValue() const ;
-    int32_t compareTo(const ::java::lang::Short&) const ;
+    int8_t byteValue() const;
+    int32_t compareTo(const ::java::lang::Short&) const;
     static ::java::lang::Short decode(const ::java::lang::String&);
-    double doubleValue() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    float floatValue() const ;
-    int32_t hashCode() const ;
-    int32_t intValue() const ;
-    int64_t longValue() const ;
+    double doubleValue() const;
+    bool equals(const ::java::lang::Object&) const;
+    float floatValue() const;
+    int32_t hashCode() const;
+    int32_t intValue() const;
+    int64_t longValue() const;
     static int16_t parseShort(const ::java::lang::String&);
     static int16_t parseShort(const ::java::lang::String&, int32_t);
-    int16_t shortValue() const ;
-    ::java::lang::String toString() const ;
+    int16_t shortValue() const;
+    ::java::lang::String toString() const;
     static ::java::lang::String toString(int16_t);
     static ::java::lang::Short valueOf(const ::java::lang::String&);
     static ::java::lang::Short valueOf(const ::java::lang::String&, int32_t);
     static int16_t reverseBytes(int16_t);
     static ::java::lang::Short valueOf(int16_t);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

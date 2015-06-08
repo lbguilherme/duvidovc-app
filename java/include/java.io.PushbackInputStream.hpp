@@ -36,17 +36,17 @@ public:
     
     PushbackInputStream(const ::java::io::InputStream&);
     PushbackInputStream(const ::java::io::InputStream&, int32_t);
-    int32_t available() const ;
-    void close() const ;
-    bool markSupported() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int64_t skip(int64_t) const ;
-    void unread(const std::vector< int8_t>&) const ;
-    void unread(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void unread(int32_t) const ;
-    void mark(int32_t) const ;
-    void reset() const ;
+    int32_t available() const;
+    void close() const;
+    bool markSupported() const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int64_t skip(int64_t) const;
+    void unread(const std::vector< int8_t>&) const;
+    void unread(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void unread(int32_t) const;
+    void mark(int32_t) const;
+    void reset() const;
 
 };
 }

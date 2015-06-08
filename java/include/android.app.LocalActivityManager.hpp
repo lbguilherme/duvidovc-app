@@ -37,18 +37,18 @@ public:
     ::android::app::LocalActivityManager& operator=(::android::app::LocalActivityManager&& x) {obj = std::move(x.obj); return *this;}
     
     LocalActivityManager(const ::android::app::Activity&, bool);
-    ::android::view::Window startActivity(const ::java::lang::String&, const ::android::content::Intent&) const ;
-    ::android::view::Window destroyActivity(const ::java::lang::String&, bool) const ;
-    ::android::app::Activity getCurrentActivity() const ;
-    ::java::lang::String getCurrentId() const ;
-    ::android::app::Activity getActivity(const ::java::lang::String&) const ;
-    void dispatchCreate(const ::android::os::Bundle&) const ;
-    ::android::os::Bundle saveInstanceState() const ;
-    void dispatchResume() const ;
-    void dispatchPause(bool) const ;
-    void dispatchStop() const ;
-    void removeAllActivities() const ;
-    void dispatchDestroy(bool) const ;
+    ::android::view::Window startActivity(const ::java::lang::String&, const ::android::content::Intent&) const;
+    ::android::view::Window destroyActivity(const ::java::lang::String&, bool) const;
+    ::android::app::Activity getCurrentActivity() const;
+    ::java::lang::String getCurrentId() const;
+    ::android::app::Activity getActivity(const ::java::lang::String&) const;
+    void dispatchCreate(const ::android::os::Bundle&) const;
+    ::android::os::Bundle saveInstanceState() const;
+    void dispatchResume() const;
+    void dispatchPause(bool) const;
+    void dispatchStop() const;
+    void removeAllActivities() const;
+    void dispatchDestroy(bool) const;
 
 };
 }

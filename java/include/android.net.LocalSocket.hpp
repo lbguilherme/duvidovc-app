@@ -38,32 +38,32 @@ public:
     ::android::net::LocalSocket& operator=(::android::net::LocalSocket&& x) {obj = std::move(x.obj); return *this;}
     
     LocalSocket();
-    ::java::lang::String toString() const ;
-    void connect(const ::android::net::LocalSocketAddress&) const ;
-    void bind(const ::android::net::LocalSocketAddress&) const ;
-    ::android::net::LocalSocketAddress getLocalSocketAddress() const ;
-    ::java::io::InputStream getInputStream() const ;
-    ::java::io::OutputStream getOutputStream() const ;
-    void close() const ;
-    void shutdownInput() const ;
-    void shutdownOutput() const ;
-    void setReceiveBufferSize(int32_t) const ;
-    int32_t getReceiveBufferSize() const ;
-    void setSoTimeout(int32_t) const ;
-    int32_t getSoTimeout() const ;
-    void setSendBufferSize(int32_t) const ;
-    int32_t getSendBufferSize() const ;
-    ::android::net::LocalSocketAddress getRemoteSocketAddress() const ;
-    bool isConnected() const ;
-    bool isClosed() const ;
-    bool isBound() const ;
-    bool isOutputShutdown() const ;
-    bool isInputShutdown() const ;
-    void connect(const ::android::net::LocalSocketAddress&, int32_t) const ;
-    void setFileDescriptorsForSend(const std::vector< ::java::io::FileDescriptor>&) const ;
-    std::vector< ::java::io::FileDescriptor> getAncillaryFileDescriptors() const ;
-    ::android::net::Credentials getPeerCredentials() const ;
-    ::java::io::FileDescriptor getFileDescriptor() const ;
+    ::java::lang::String toString() const;
+    void connect(const ::android::net::LocalSocketAddress&) const;
+    void bind(const ::android::net::LocalSocketAddress&) const;
+    ::android::net::LocalSocketAddress getLocalSocketAddress() const;
+    ::java::io::InputStream getInputStream() const;
+    ::java::io::OutputStream getOutputStream() const;
+    void close() const;
+    void shutdownInput() const;
+    void shutdownOutput() const;
+    void setReceiveBufferSize(int32_t) const;
+    int32_t getReceiveBufferSize() const;
+    void setSoTimeout(int32_t) const;
+    int32_t getSoTimeout() const;
+    void setSendBufferSize(int32_t) const;
+    int32_t getSendBufferSize() const;
+    ::android::net::LocalSocketAddress getRemoteSocketAddress() const;
+    bool isConnected() const;
+    bool isClosed() const;
+    bool isBound() const;
+    bool isOutputShutdown() const;
+    bool isInputShutdown() const;
+    void connect(const ::android::net::LocalSocketAddress&, int32_t) const;
+    void setFileDescriptorsForSend(const std::vector< ::java::io::FileDescriptor>&) const;
+    std::vector< ::java::io::FileDescriptor> getAncillaryFileDescriptors() const;
+    ::android::net::Credentials getPeerCredentials() const;
+    ::java::io::FileDescriptor getFileDescriptor() const;
 
 };
 }

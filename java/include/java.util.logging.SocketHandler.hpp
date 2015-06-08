@@ -38,8 +38,8 @@ public:
     
     SocketHandler();
     SocketHandler(const ::java::lang::String&, int32_t);
-    void close() const ;
-    void publish(const ::java::util::logging::LogRecord&) const ;
+    void close() const;
+    void publish(const ::java::util::logging::LogRecord&) const;
 
 };
 }

@@ -37,9 +37,9 @@ public:
     ::android::support::v4::app::INotificationSideChannel& operator=(const ::android::support::v4::app::INotificationSideChannel& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::INotificationSideChannel& operator=(::android::support::v4::app::INotificationSideChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    void notify(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::android::app::Notification&) const ;
-    void cancel(const ::java::lang::String&, int32_t, const ::java::lang::String&) const ;
-    void cancelAll(const ::java::lang::String&) const ;
+    void notify(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::android::app::Notification&) const;
+    void cancel(const ::java::lang::String&, int32_t, const ::java::lang::String&) const;
+    void cancelAll(const ::java::lang::String&) const;
 
 };
 }

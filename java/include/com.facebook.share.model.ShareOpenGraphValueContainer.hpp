@@ -43,25 +43,25 @@ public:
     ::com::facebook::share::model::ShareOpenGraphValueContainer& operator=(const ::com::facebook::share::model::ShareOpenGraphValueContainer& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareOpenGraphValueContainer& operator=(::com::facebook::share::model::ShareOpenGraphValueContainer&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object get(const ::java::lang::String&) const ;
-    bool getBoolean(const ::java::lang::String&, bool) const ;
-    std::vector< bool> getBooleanArray(const ::java::lang::String&) const ;
-    double getDouble(const ::java::lang::String&, double) const ;
-    std::vector< double> getDoubleArray(const ::java::lang::String&) const ;
-    int32_t getInt(const ::java::lang::String&, int32_t) const ;
-    std::vector< int32_t> getIntArray(const ::java::lang::String&) const ;
-    int64_t getLong(const ::java::lang::String&, int64_t) const ;
-    std::vector< int64_t> getLongArray(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareOpenGraphObject getObject(const ::java::lang::String&) const ;
-    ::java::util::ArrayList getObjectArrayList(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::SharePhoto getPhoto(const ::java::lang::String&) const ;
-    ::java::util::ArrayList getPhotoArrayList(const ::java::lang::String&) const ;
-    ::java::lang::String getString(const ::java::lang::String&) const ;
-    ::java::util::ArrayList getStringArrayList(const ::java::lang::String&) const ;
-    ::android::os::Bundle getBundle() const ;
-    ::java::util::Set keySet() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::Object get(const ::java::lang::String&) const;
+    bool getBoolean(const ::java::lang::String&, bool) const;
+    std::vector< bool> getBooleanArray(const ::java::lang::String&) const;
+    double getDouble(const ::java::lang::String&, double) const;
+    std::vector< double> getDoubleArray(const ::java::lang::String&) const;
+    int32_t getInt(const ::java::lang::String&, int32_t) const;
+    std::vector< int32_t> getIntArray(const ::java::lang::String&) const;
+    int64_t getLong(const ::java::lang::String&, int64_t) const;
+    std::vector< int64_t> getLongArray(const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareOpenGraphObject getObject(const ::java::lang::String&) const;
+    ::java::util::ArrayList getObjectArrayList(const ::java::lang::String&) const;
+    ::com::facebook::share::model::SharePhoto getPhoto(const ::java::lang::String&) const;
+    ::java::util::ArrayList getPhotoArrayList(const ::java::lang::String&) const;
+    ::java::lang::String getString(const ::java::lang::String&) const;
+    ::java::util::ArrayList getStringArrayList(const ::java::lang::String&) const;
+    ::android::os::Bundle getBundle() const;
+    ::java::util::Set keySet() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

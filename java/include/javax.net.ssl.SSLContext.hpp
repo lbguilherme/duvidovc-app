@@ -48,17 +48,17 @@ public:
     static ::javax::net::ssl::SSLContext getInstance(const ::java::lang::String&);
     static ::javax::net::ssl::SSLContext getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::javax::net::ssl::SSLContext getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::lang::String getProtocol() const ;
-    ::java::security::Provider getProvider() const ;
-    void init(const std::vector< ::javax::net::ssl::KeyManager>&, const std::vector< ::javax::net::ssl::TrustManager>&, const ::java::security::SecureRandom&) const ;
-    ::javax::net::ssl::SSLSocketFactory getSocketFactory() const ;
-    ::javax::net::ssl::SSLServerSocketFactory getServerSocketFactory() const ;
-    ::javax::net::ssl::SSLEngine createSSLEngine() const ;
-    ::javax::net::ssl::SSLEngine createSSLEngine(const ::java::lang::String&, int32_t) const ;
-    ::javax::net::ssl::SSLSessionContext getServerSessionContext() const ;
-    ::javax::net::ssl::SSLSessionContext getClientSessionContext() const ;
-    ::javax::net::ssl::SSLParameters getDefaultSSLParameters() const ;
-    ::javax::net::ssl::SSLParameters getSupportedSSLParameters() const ;
+    ::java::lang::String getProtocol() const;
+    ::java::security::Provider getProvider() const;
+    void init(const std::vector< ::javax::net::ssl::KeyManager>&, const std::vector< ::javax::net::ssl::TrustManager>&, const ::java::security::SecureRandom&) const;
+    ::javax::net::ssl::SSLSocketFactory getSocketFactory() const;
+    ::javax::net::ssl::SSLServerSocketFactory getServerSocketFactory() const;
+    ::javax::net::ssl::SSLEngine createSSLEngine() const;
+    ::javax::net::ssl::SSLEngine createSSLEngine(const ::java::lang::String&, int32_t) const;
+    ::javax::net::ssl::SSLSessionContext getServerSessionContext() const;
+    ::javax::net::ssl::SSLSessionContext getClientSessionContext() const;
+    ::javax::net::ssl::SSLParameters getDefaultSSLParameters() const;
+    ::javax::net::ssl::SSLParameters getSupportedSSLParameters() const;
 
 };
 }

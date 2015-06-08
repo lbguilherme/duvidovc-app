@@ -32,7 +32,7 @@ public:
     ::android::hardware::Camera_AutoFocusCallback& operator=(const ::android::hardware::Camera_AutoFocusCallback& x) {obj = x.obj; return *this;}
     ::android::hardware::Camera_AutoFocusCallback& operator=(::android::hardware::Camera_AutoFocusCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAutoFocus(bool, const ::android::hardware::Camera&) const ;
+    void onAutoFocus(bool, const ::android::hardware::Camera&) const;
 
 };
 }

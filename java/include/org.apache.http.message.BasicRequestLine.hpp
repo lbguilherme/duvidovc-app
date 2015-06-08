@@ -41,11 +41,11 @@ public:
     ::org::apache::http::message::BasicRequestLine& operator=(::org::apache::http::message::BasicRequestLine&& x) {obj = std::move(x.obj); return *this;}
     
     BasicRequestLine(const ::java::lang::String&, const ::java::lang::String&, const ::org::apache::http::ProtocolVersion&);
-    ::java::lang::String getMethod() const ;
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    ::java::lang::String getUri() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getMethod() const;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    ::java::lang::String getUri() const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
 
 };
 }

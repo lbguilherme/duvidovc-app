@@ -34,12 +34,12 @@ public:
     ::android::graphics::YuvImage& operator=(::android::graphics::YuvImage&& x) {obj = std::move(x.obj); return *this;}
     
     YuvImage(const std::vector< int8_t>&, int32_t, int32_t, int32_t, const std::vector< int32_t>&);
-    bool compressToJpeg(const ::android::graphics::Rect&, int32_t, const ::java::io::OutputStream&) const ;
-    std::vector< int8_t> getYuvData() const ;
-    int32_t getYuvFormat() const ;
-    std::vector< int32_t> getStrides() const ;
-    int32_t getWidth() const ;
-    int32_t getHeight() const ;
+    bool compressToJpeg(const ::android::graphics::Rect&, int32_t, const ::java::io::OutputStream&) const;
+    std::vector< int8_t> getYuvData() const;
+    int32_t getYuvFormat() const;
+    std::vector< int32_t> getStrides() const;
+    int32_t getWidth() const;
+    int32_t getHeight() const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatJellybeanMR2Impl& operator=(const ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatJellybeanMR2Impl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatJellybeanMR2Impl& operator=(::android::support::v4::view::ViewGroupCompat_ViewGroupCompatJellybeanMR2Impl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLayoutMode(const ::android::view::ViewGroup&) const ;
-    void setLayoutMode(const ::android::view::ViewGroup&, int32_t) const ;
+    int32_t getLayoutMode(const ::android::view::ViewGroup&) const;
+    void setLayoutMode(const ::android::view::ViewGroup&, int32_t) const;
 
 };
 }

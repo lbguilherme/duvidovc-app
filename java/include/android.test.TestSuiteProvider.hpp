@@ -32,7 +32,7 @@ public:
     ::android::test::TestSuiteProvider& operator=(const ::android::test::TestSuiteProvider& x) {obj = x.obj; return *this;}
     ::android::test::TestSuiteProvider& operator=(::android::test::TestSuiteProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::junit::framework::TestSuite getTestSuite() const ;
+    ::junit::framework::TestSuite getTestSuite() const;
 
 };
 }

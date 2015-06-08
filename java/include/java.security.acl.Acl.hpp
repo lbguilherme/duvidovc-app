@@ -39,14 +39,14 @@ public:
     ::java::security::acl::Acl& operator=(const ::java::security::acl::Acl& x) {obj = x.obj; return *this;}
     ::java::security::acl::Acl& operator=(::java::security::acl::Acl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setName(const ::java::security::Principal&, const ::java::lang::String&) const ;
-    ::java::lang::String getName() const ;
-    bool addEntry(const ::java::security::Principal&, const ::java::security::acl::AclEntry&) const ;
-    bool removeEntry(const ::java::security::Principal&, const ::java::security::acl::AclEntry&) const ;
-    ::java::util::Enumeration getPermissions(const ::java::security::Principal&) const ;
-    ::java::util::Enumeration entries() const ;
-    bool checkPermission(const ::java::security::Principal&, const ::java::security::acl::Permission&) const ;
-    ::java::lang::String toString() const ;
+    void setName(const ::java::security::Principal&, const ::java::lang::String&) const;
+    ::java::lang::String getName() const;
+    bool addEntry(const ::java::security::Principal&, const ::java::security::acl::AclEntry&) const;
+    bool removeEntry(const ::java::security::Principal&, const ::java::security::acl::AclEntry&) const;
+    ::java::util::Enumeration getPermissions(const ::java::security::Principal&) const;
+    ::java::util::Enumeration entries() const;
+    bool checkPermission(const ::java::security::Principal&, const ::java::security::acl::Permission&) const;
+    ::java::lang::String toString() const;
 
 };
 }

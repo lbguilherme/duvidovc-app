@@ -35,13 +35,13 @@ public:
     ::android::appwidget::AppWidgetHost& operator=(::android::appwidget::AppWidgetHost&& x) {obj = std::move(x.obj); return *this;}
     
     AppWidgetHost(const ::android::content::Context&, int32_t);
-    void startListening() const ;
-    void stopListening() const ;
-    int32_t allocateAppWidgetId() const ;
-    void deleteAppWidgetId(int32_t) const ;
-    void deleteHost() const ;
+    void startListening() const;
+    void stopListening() const;
+    int32_t allocateAppWidgetId() const;
+    void deleteAppWidgetId(int32_t) const;
+    void deleteHost() const;
     static void deleteAllHosts();
-    ::android::appwidget::AppWidgetHostView createView(const ::android::content::Context&, int32_t, const ::android::appwidget::AppWidgetProviderInfo&) const ;
+    ::android::appwidget::AppWidgetHostView createView(const ::android::content::Context&, int32_t, const ::android::appwidget::AppWidgetProviderInfo&) const;
 
 };
 }

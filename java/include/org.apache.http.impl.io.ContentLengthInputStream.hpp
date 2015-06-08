@@ -38,11 +38,11 @@ public:
     ::org::apache::http::impl::io::ContentLengthInputStream& operator=(::org::apache::http::impl::io::ContentLengthInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     ContentLengthInputStream(const ::org::apache::http::io::SessionInputBuffer&, int64_t);
-    void close() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t read(const std::vector< int8_t>&) const ;
-    int64_t skip(int64_t) const ;
+    void close() const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t read(const std::vector< int8_t>&) const;
+    int64_t skip(int64_t) const;
 
 };
 }

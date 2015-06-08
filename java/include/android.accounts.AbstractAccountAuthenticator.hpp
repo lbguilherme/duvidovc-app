@@ -38,15 +38,15 @@ public:
     ::android::accounts::AbstractAccountAuthenticator& operator=(::android::accounts::AbstractAccountAuthenticator&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractAccountAuthenticator(const ::android::content::Context&);
-    ::android::os::IBinder getIBinder() const ;
-    ::android::os::Bundle editProperties(const ::android::accounts::AccountAuthenticatorResponse&, const ::java::lang::String&) const ;
-    ::android::os::Bundle addAccount(const ::android::accounts::AccountAuthenticatorResponse&, const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::android::os::Bundle&) const ;
-    ::android::os::Bundle confirmCredentials(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const ::android::os::Bundle&) const ;
-    ::android::os::Bundle getAuthToken(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    ::java::lang::String getAuthTokenLabel(const ::java::lang::String&) const ;
-    ::android::os::Bundle updateCredentials(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    ::android::os::Bundle hasFeatures(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const std::vector< ::java::lang::String>&) const ;
-    ::android::os::Bundle getAccountRemovalAllowed(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&) const ;
+    ::android::os::IBinder getIBinder() const;
+    ::android::os::Bundle editProperties(const ::android::accounts::AccountAuthenticatorResponse&, const ::java::lang::String&) const;
+    ::android::os::Bundle addAccount(const ::android::accounts::AccountAuthenticatorResponse&, const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::android::os::Bundle&) const;
+    ::android::os::Bundle confirmCredentials(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const ::android::os::Bundle&) const;
+    ::android::os::Bundle getAuthToken(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const ::java::lang::String&, const ::android::os::Bundle&) const;
+    ::java::lang::String getAuthTokenLabel(const ::java::lang::String&) const;
+    ::android::os::Bundle updateCredentials(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const ::java::lang::String&, const ::android::os::Bundle&) const;
+    ::android::os::Bundle hasFeatures(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&, const std::vector< ::java::lang::String>&) const;
+    ::android::os::Bundle getAccountRemovalAllowed(const ::android::accounts::AccountAuthenticatorResponse&, const ::android::accounts::Account&) const;
 
 };
 }

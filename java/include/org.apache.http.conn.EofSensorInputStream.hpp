@@ -40,13 +40,13 @@ public:
     ::org::apache::http::conn::EofSensorInputStream& operator=(::org::apache::http::conn::EofSensorInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     EofSensorInputStream(const ::java::io::InputStream&, const ::org::apache::http::conn::EofSensorWatcher&);
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t read(const std::vector< int8_t>&) const ;
-    int32_t available() const ;
-    void close() const ;
-    void releaseConnection() const ;
-    void abortConnection() const ;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t read(const std::vector< int8_t>&) const;
+    int32_t available() const;
+    void close() const;
+    void releaseConnection() const;
+    void abortConnection() const;
 
 };
 }

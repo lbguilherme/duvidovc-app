@@ -34,8 +34,8 @@ public:
     ::javax::sql::StatementEventListener& operator=(const ::javax::sql::StatementEventListener& x) {obj = x.obj; return *this;}
     ::javax::sql::StatementEventListener& operator=(::javax::sql::StatementEventListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void statementClosed(const ::javax::sql::StatementEvent&) const ;
-    void statementErrorOccurred(const ::javax::sql::StatementEvent&) const ;
+    void statementClosed(const ::javax::sql::StatementEvent&) const;
+    void statementErrorOccurred(const ::javax::sql::StatementEvent&) const;
 
 };
 }

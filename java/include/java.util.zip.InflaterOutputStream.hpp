@@ -39,11 +39,11 @@ public:
     InflaterOutputStream(const ::java::io::OutputStream&);
     InflaterOutputStream(const ::java::io::OutputStream&, const ::java::util::zip::Inflater&);
     InflaterOutputStream(const ::java::io::OutputStream&, const ::java::util::zip::Inflater&, int32_t);
-    void close() const ;
-    void flush() const ;
-    void finish() const ;
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    void finish() const;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

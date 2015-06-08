@@ -42,18 +42,18 @@ public:
     SimpleExpandableListAdapter(const ::android::content::Context&, const ::java::util::List&, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&, const ::java::util::List&, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
     SimpleExpandableListAdapter(const ::android::content::Context&, const ::java::util::List&, int32_t, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&, const ::java::util::List&, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
     SimpleExpandableListAdapter(const ::android::content::Context&, const ::java::util::List&, int32_t, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&, const ::java::util::List&, int32_t, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
-    ::java::lang::Object getChild(int32_t, int32_t) const ;
-    int64_t getChildId(int32_t, int32_t) const ;
-    ::android::view::View getChildView(int32_t, int32_t, bool, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
-    ::android::view::View newChildView(bool, const ::android::view::ViewGroup&) const ;
-    int32_t getChildrenCount(int32_t) const ;
-    ::java::lang::Object getGroup(int32_t) const ;
-    int32_t getGroupCount() const ;
-    int64_t getGroupId(int32_t) const ;
-    ::android::view::View getGroupView(int32_t, bool, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
-    ::android::view::View newGroupView(bool, const ::android::view::ViewGroup&) const ;
-    bool isChildSelectable(int32_t, int32_t) const ;
-    bool hasStableIds() const ;
+    ::java::lang::Object getChild(int32_t, int32_t) const;
+    int64_t getChildId(int32_t, int32_t) const;
+    ::android::view::View getChildView(int32_t, int32_t, bool, const ::android::view::View&, const ::android::view::ViewGroup&) const;
+    ::android::view::View newChildView(bool, const ::android::view::ViewGroup&) const;
+    int32_t getChildrenCount(int32_t) const;
+    ::java::lang::Object getGroup(int32_t) const;
+    int32_t getGroupCount() const;
+    int64_t getGroupId(int32_t) const;
+    ::android::view::View getGroupView(int32_t, bool, const ::android::view::View&, const ::android::view::ViewGroup&) const;
+    ::android::view::View newGroupView(bool, const ::android::view::ViewGroup&) const;
+    bool isChildSelectable(int32_t, int32_t) const;
+    bool hasStableIds() const;
 
 };
 }

@@ -38,8 +38,8 @@ public:
     ::com::facebook::share::model::ShareModelBuilder& operator=(const ::com::facebook::share::model::ShareModelBuilder& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareModelBuilder& operator=(::com::facebook::share::model::ShareModelBuilder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::android::os::Parcel&) const ;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::android::os::Parcel&) const;
 
 };
 }

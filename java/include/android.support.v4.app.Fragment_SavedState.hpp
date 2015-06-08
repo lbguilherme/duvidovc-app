@@ -36,8 +36,8 @@ public:
     ::android::support::v4::app::Fragment_SavedState& operator=(const ::android::support::v4::app::Fragment_SavedState& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::Fragment_SavedState& operator=(::android::support::v4::app::Fragment_SavedState&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

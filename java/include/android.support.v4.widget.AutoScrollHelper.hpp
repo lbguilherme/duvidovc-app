@@ -39,23 +39,23 @@ public:
     ::android::support::v4::widget::AutoScrollHelper& operator=(::android::support::v4::widget::AutoScrollHelper&& x) {obj = std::move(x.obj); return *this;}
     
     AutoScrollHelper(const ::android::view::View&);
-    ::android::support::v4::widget::AutoScrollHelper setEnabled(bool) const ;
-    bool isEnabled() const ;
-    ::android::support::v4::widget::AutoScrollHelper setExclusive(bool) const ;
-    bool isExclusive() const ;
-    ::android::support::v4::widget::AutoScrollHelper setMaximumVelocity(float, float) const ;
-    ::android::support::v4::widget::AutoScrollHelper setMinimumVelocity(float, float) const ;
-    ::android::support::v4::widget::AutoScrollHelper setRelativeVelocity(float, float) const ;
-    ::android::support::v4::widget::AutoScrollHelper setEdgeType(int32_t) const ;
-    ::android::support::v4::widget::AutoScrollHelper setRelativeEdges(float, float) const ;
-    ::android::support::v4::widget::AutoScrollHelper setMaximumEdges(float, float) const ;
-    ::android::support::v4::widget::AutoScrollHelper setActivationDelay(int32_t) const ;
-    ::android::support::v4::widget::AutoScrollHelper setRampUpDuration(int32_t) const ;
-    ::android::support::v4::widget::AutoScrollHelper setRampDownDuration(int32_t) const ;
-    bool onTouch(const ::android::view::View&, const ::android::view::MotionEvent&) const ;
-    void scrollTargetBy(int32_t, int32_t) const ;
-    bool canTargetScrollHorizontally(int32_t) const ;
-    bool canTargetScrollVertically(int32_t) const ;
+    ::android::support::v4::widget::AutoScrollHelper setEnabled(bool) const;
+    bool isEnabled() const;
+    ::android::support::v4::widget::AutoScrollHelper setExclusive(bool) const;
+    bool isExclusive() const;
+    ::android::support::v4::widget::AutoScrollHelper setMaximumVelocity(float, float) const;
+    ::android::support::v4::widget::AutoScrollHelper setMinimumVelocity(float, float) const;
+    ::android::support::v4::widget::AutoScrollHelper setRelativeVelocity(float, float) const;
+    ::android::support::v4::widget::AutoScrollHelper setEdgeType(int32_t) const;
+    ::android::support::v4::widget::AutoScrollHelper setRelativeEdges(float, float) const;
+    ::android::support::v4::widget::AutoScrollHelper setMaximumEdges(float, float) const;
+    ::android::support::v4::widget::AutoScrollHelper setActivationDelay(int32_t) const;
+    ::android::support::v4::widget::AutoScrollHelper setRampUpDuration(int32_t) const;
+    ::android::support::v4::widget::AutoScrollHelper setRampDownDuration(int32_t) const;
+    bool onTouch(const ::android::view::View&, const ::android::view::MotionEvent&) const;
+    void scrollTargetBy(int32_t, int32_t) const;
+    bool canTargetScrollHorizontally(int32_t) const;
+    bool canTargetScrollVertically(int32_t) const;
 
 };
 }

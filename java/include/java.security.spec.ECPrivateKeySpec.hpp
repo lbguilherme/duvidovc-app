@@ -37,8 +37,8 @@ public:
     ::java::security::spec::ECPrivateKeySpec& operator=(::java::security::spec::ECPrivateKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     ECPrivateKeySpec(const ::java::math::BigInteger&, const ::java::security::spec::ECParameterSpec&);
-    ::java::security::spec::ECParameterSpec getParams() const ;
-    ::java::math::BigInteger getS() const ;
+    ::java::security::spec::ECParameterSpec getParams() const;
+    ::java::math::BigInteger getS() const;
 
 };
 }

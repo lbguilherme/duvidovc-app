@@ -31,7 +31,7 @@ public:
     ::android::app::ActionBar_OnMenuVisibilityListener& operator=(const ::android::app::ActionBar_OnMenuVisibilityListener& x) {obj = x.obj; return *this;}
     ::android::app::ActionBar_OnMenuVisibilityListener& operator=(::android::app::ActionBar_OnMenuVisibilityListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onMenuVisibilityChanged(bool) const ;
+    void onMenuVisibilityChanged(bool) const;
 
 };
 }

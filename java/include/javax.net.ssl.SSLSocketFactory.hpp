@@ -39,9 +39,9 @@ public:
     
     SSLSocketFactory();
     static ::javax::net::SocketFactory getDefault();
-    std::vector< ::java::lang::String> getDefaultCipherSuites() const ;
-    std::vector< ::java::lang::String> getSupportedCipherSuites() const ;
-    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const ;
+    std::vector< ::java::lang::String> getDefaultCipherSuites() const;
+    std::vector< ::java::lang::String> getSupportedCipherSuites() const;
+    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const;
 
 };
 }

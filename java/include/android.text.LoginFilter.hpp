@@ -35,11 +35,11 @@ public:
     ::android::text::LoginFilter& operator=(const ::android::text::LoginFilter& x) {obj = x.obj; return *this;}
     ::android::text::LoginFilter& operator=(::android::text::LoginFilter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const ;
-    void onStart() const ;
-    void onInvalidCharacter(uint16_t) const ;
-    void onStop() const ;
-    bool isAllowed(uint16_t) const ;
+    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const;
+    void onStart() const;
+    void onInvalidCharacter(uint16_t) const;
+    void onStop() const;
+    bool isAllowed(uint16_t) const;
 
 };
 }

@@ -45,7 +45,7 @@ public:
     static ::java::lang::String encodeCustomImProtocol(const ::java::lang::String&);
     static ::java::lang::Object decodeImProtocol(const ::java::lang::String&);
     static ::java::lang::CharSequence getDisplayLabel(const ::android::content::Context&, int32_t, int32_t, const ::java::lang::CharSequence&);
-    void addPostalLocation(const ::android::content::Context&, int64_t, double, double) const ;
+    void addPostalLocation(const ::android::content::Context&, int64_t, double, double) const;
 
 };
 }

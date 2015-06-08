@@ -34,9 +34,9 @@ public:
     ::android::bluetooth::BluetoothServerSocket& operator=(const ::android::bluetooth::BluetoothServerSocket& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothServerSocket& operator=(::android::bluetooth::BluetoothServerSocket&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::bluetooth::BluetoothSocket accept() const ;
-    ::android::bluetooth::BluetoothSocket accept(int32_t) const ;
-    void close() const ;
+    ::android::bluetooth::BluetoothSocket accept() const;
+    ::android::bluetooth::BluetoothSocket accept(int32_t) const;
+    void close() const;
 
 };
 }

@@ -34,7 +34,7 @@ public:
     ::org::apache::http::entity::ContentLengthStrategy& operator=(const ::org::apache::http::entity::ContentLengthStrategy& x) {obj = x.obj; return *this;}
     ::org::apache::http::entity::ContentLengthStrategy& operator=(::org::apache::http::entity::ContentLengthStrategy&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t determineLength(const ::org::apache::http::HttpMessage&) const ;
+    int64_t determineLength(const ::org::apache::http::HttpMessage&) const;
 
 };
 }

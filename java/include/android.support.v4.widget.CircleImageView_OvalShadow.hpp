@@ -39,7 +39,7 @@ public:
     ::android::support::v4::widget::CircleImageView_OvalShadow& operator=(::android::support::v4::widget::CircleImageView_OvalShadow&& x) {obj = std::move(x.obj); return *this;}
     
     CircleImageView_OvalShadow(const ::android::support::v4::widget::CircleImageView&, int32_t, int32_t);
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const ;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const;
 
 };
 }

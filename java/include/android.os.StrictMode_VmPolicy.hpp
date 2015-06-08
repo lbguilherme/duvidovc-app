@@ -32,7 +32,7 @@ public:
     ::android::os::StrictMode_VmPolicy& operator=(const ::android::os::StrictMode_VmPolicy& x) {obj = x.obj; return *this;}
     ::android::os::StrictMode_VmPolicy& operator=(::android::os::StrictMode_VmPolicy&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

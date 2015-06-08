@@ -42,17 +42,17 @@ public:
     ::android::view::textservice::SpellCheckerInfo& operator=(const ::android::view::textservice::SpellCheckerInfo& x) {obj = x.obj; return *this;}
     ::android::view::textservice::SpellCheckerInfo& operator=(::android::view::textservice::SpellCheckerInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getId() const ;
-    ::android::content::ComponentName getComponent() const ;
-    ::java::lang::String getPackageName() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const ;
-    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const ;
-    ::android::content::pm::ServiceInfo getServiceInfo() const ;
-    ::java::lang::String getSettingsActivity() const ;
-    int32_t getSubtypeCount() const ;
-    ::android::view::textservice::SpellCheckerSubtype getSubtypeAt(int32_t) const ;
-    int32_t describeContents() const ;
+    ::java::lang::String getId() const;
+    ::android::content::ComponentName getComponent() const;
+    ::java::lang::String getPackageName() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const;
+    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const;
+    ::android::content::pm::ServiceInfo getServiceInfo() const;
+    ::java::lang::String getSettingsActivity() const;
+    int32_t getSubtypeCount() const;
+    ::android::view::textservice::SpellCheckerSubtype getSubtypeAt(int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

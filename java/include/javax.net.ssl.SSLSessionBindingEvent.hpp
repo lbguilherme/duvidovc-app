@@ -37,8 +37,8 @@ public:
     ::javax::net::ssl::SSLSessionBindingEvent& operator=(::javax::net::ssl::SSLSessionBindingEvent&& x) {obj = std::move(x.obj); return *this;}
     
     SSLSessionBindingEvent(const ::javax::net::ssl::SSLSession&, const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::javax::net::ssl::SSLSession getSession() const ;
+    ::java::lang::String getName() const;
+    ::javax::net::ssl::SSLSession getSession() const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::android::text::Html_ImageGetter& operator=(const ::android::text::Html_ImageGetter& x) {obj = x.obj; return *this;}
     ::android::text::Html_ImageGetter& operator=(::android::text::Html_ImageGetter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::graphics::drawable::Drawable getDrawable(const ::java::lang::String&) const ;
+    ::android::graphics::drawable::Drawable getDrawable(const ::java::lang::String&) const;
 
 };
 }

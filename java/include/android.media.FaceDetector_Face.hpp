@@ -32,10 +32,10 @@ public:
     ::android::media::FaceDetector_Face& operator=(const ::android::media::FaceDetector_Face& x) {obj = x.obj; return *this;}
     ::android::media::FaceDetector_Face& operator=(::android::media::FaceDetector_Face&& x) {obj = std::move(x.obj); return *this;}
     
-    float confidence() const ;
-    void getMidPoint(const ::android::graphics::PointF&) const ;
-    float eyesDistance() const ;
-    float pose(int32_t) const ;
+    float confidence() const;
+    void getMidPoint(const ::android::graphics::PointF&) const;
+    float eyesDistance() const;
+    float pose(int32_t) const;
 
 };
 }

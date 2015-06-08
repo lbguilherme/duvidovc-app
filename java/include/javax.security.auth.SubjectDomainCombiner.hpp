@@ -37,8 +37,8 @@ public:
     ::javax::security::auth::SubjectDomainCombiner& operator=(::javax::security::auth::SubjectDomainCombiner&& x) {obj = std::move(x.obj); return *this;}
     
     SubjectDomainCombiner(const ::javax::security::auth::Subject&);
-    ::javax::security::auth::Subject getSubject() const ;
-    std::vector< ::java::security::ProtectionDomain> combine(const std::vector< ::java::security::ProtectionDomain>&, const std::vector< ::java::security::ProtectionDomain>&) const ;
+    ::javax::security::auth::Subject getSubject() const;
+    std::vector< ::java::security::ProtectionDomain> combine(const std::vector< ::java::security::ProtectionDomain>&, const std::vector< ::java::security::ProtectionDomain>&) const;
 
 };
 }

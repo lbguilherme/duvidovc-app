@@ -34,8 +34,8 @@ public:
     ::android::provider::SearchRecentSuggestions& operator=(::android::provider::SearchRecentSuggestions&& x) {obj = std::move(x.obj); return *this;}
     
     SearchRecentSuggestions(const ::android::content::Context&, const ::java::lang::String&, int32_t);
-    void saveRecentQuery(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void clearHistory() const ;
+    void saveRecentQuery(const ::java::lang::String&, const ::java::lang::String&) const;
+    void clearHistory() const;
 
 };
 }

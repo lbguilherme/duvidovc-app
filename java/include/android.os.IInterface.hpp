@@ -32,7 +32,7 @@ public:
     ::android::os::IInterface& operator=(const ::android::os::IInterface& x) {obj = x.obj; return *this;}
     ::android::os::IInterface& operator=(::android::os::IInterface&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::IBinder asBinder() const ;
+    ::android::os::IBinder asBinder() const;
 
 };
 }

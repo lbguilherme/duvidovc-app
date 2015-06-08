@@ -41,17 +41,17 @@ public:
     
     Attributes2Impl();
     Attributes2Impl(const ::org::xml::sax::Attributes&);
-    bool isDeclared(int32_t) const ;
-    bool isDeclared(const ::java::lang::String&, const ::java::lang::String&) const ;
-    bool isDeclared(const ::java::lang::String&) const ;
-    bool isSpecified(int32_t) const ;
-    bool isSpecified(const ::java::lang::String&, const ::java::lang::String&) const ;
-    bool isSpecified(const ::java::lang::String&) const ;
-    void setAttributes(const ::org::xml::sax::Attributes&) const ;
-    void addAttribute(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void removeAttribute(int32_t) const ;
-    void setDeclared(int32_t, bool) const ;
-    void setSpecified(int32_t, bool) const ;
+    bool isDeclared(int32_t) const;
+    bool isDeclared(const ::java::lang::String&, const ::java::lang::String&) const;
+    bool isDeclared(const ::java::lang::String&) const;
+    bool isSpecified(int32_t) const;
+    bool isSpecified(const ::java::lang::String&, const ::java::lang::String&) const;
+    bool isSpecified(const ::java::lang::String&) const;
+    void setAttributes(const ::org::xml::sax::Attributes&) const;
+    void addAttribute(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void removeAttribute(int32_t) const;
+    void setDeclared(int32_t, bool) const;
+    void setSpecified(int32_t, bool) const;
 
 };
 }

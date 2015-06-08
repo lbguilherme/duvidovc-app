@@ -35,7 +35,7 @@ public:
     ::java::security::cert::CertPathValidatorResult& operator=(const ::java::security::cert::CertPathValidatorResult& x) {obj = x.obj; return *this;}
     ::java::security::cert::CertPathValidatorResult& operator=(::java::security::cert::CertPathValidatorResult&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
+    ::java::lang::Object clone() const;
 
 };
 }

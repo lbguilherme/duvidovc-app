@@ -31,8 +31,8 @@ public:
     ::android::view::CollapsibleActionView& operator=(const ::android::view::CollapsibleActionView& x) {obj = x.obj; return *this;}
     ::android::view::CollapsibleActionView& operator=(::android::view::CollapsibleActionView&& x) {obj = std::move(x.obj); return *this;}
     
-    void onActionViewExpanded() const ;
-    void onActionViewCollapsed() const ;
+    void onActionViewExpanded() const;
+    void onActionViewCollapsed() const;
 
 };
 }

@@ -34,8 +34,8 @@ public:
     ::android::util::Pair& operator=(::android::util::Pair&& x) {obj = std::move(x.obj); return *this;}
     
     Pair(const ::java::lang::Object&, const ::java::lang::Object&);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
     static ::android::util::Pair create(const ::java::lang::Object&, const ::java::lang::Object&);
 
 };

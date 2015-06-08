@@ -47,17 +47,17 @@ public:
     ::com::facebook::share::model::SharePhoto_Builder& operator=(::com::facebook::share::model::SharePhoto_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     SharePhoto_Builder();
-    ::com::facebook::share::model::SharePhoto_Builder setBitmap(const ::android::graphics::Bitmap&) const ;
-    ::com::facebook::share::model::SharePhoto_Builder setImageUrl(const ::android::net::Uri&) const ;
-    ::com::facebook::share::model::SharePhoto_Builder setUserGenerated(bool) const ;
-    ::com::facebook::share::model::SharePhoto_Builder setCaption(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::SharePhoto build() const ;
-    ::com::facebook::share::model::SharePhoto_Builder readFrom(const ::com::facebook::share::model::SharePhoto&) const ;
-    ::com::facebook::share::model::SharePhoto_Builder readFrom(const ::android::os::Parcel&) const ;
+    ::com::facebook::share::model::SharePhoto_Builder setBitmap(const ::android::graphics::Bitmap&) const;
+    ::com::facebook::share::model::SharePhoto_Builder setImageUrl(const ::android::net::Uri&) const;
+    ::com::facebook::share::model::SharePhoto_Builder setUserGenerated(bool) const;
+    ::com::facebook::share::model::SharePhoto_Builder setCaption(const ::java::lang::String&) const;
+    ::com::facebook::share::model::SharePhoto build() const;
+    ::com::facebook::share::model::SharePhoto_Builder readFrom(const ::com::facebook::share::model::SharePhoto&) const;
+    ::com::facebook::share::model::SharePhoto_Builder readFrom(const ::android::os::Parcel&) const;
     static void writeListTo(const ::android::os::Parcel&, const ::java::util::List&);
     static ::java::util::List readListFrom(const ::android::os::Parcel&);
-    ::com::facebook::share::model::ShareMedia_Builder readFrom(const ::com::facebook::share::model::ShareMedia&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::ShareMedia_Builder readFrom(const ::com::facebook::share::model::ShareMedia&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

@@ -36,7 +36,7 @@ public:
     ::android::support::v4::net::ConnectivityManagerCompat_JellyBeanConnectivityManagerCompatImpl& operator=(const ::android::support::v4::net::ConnectivityManagerCompat_JellyBeanConnectivityManagerCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::net::ConnectivityManagerCompat_JellyBeanConnectivityManagerCompatImpl& operator=(::android::support::v4::net::ConnectivityManagerCompat_JellyBeanConnectivityManagerCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isActiveNetworkMetered(const ::android::net::ConnectivityManager&) const ;
+    bool isActiveNetworkMetered(const ::android::net::ConnectivityManager&) const;
 
 };
 }

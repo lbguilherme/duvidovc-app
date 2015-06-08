@@ -36,8 +36,8 @@ public:
     ::java::security::spec::EncodedKeySpec& operator=(::java::security::spec::EncodedKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     EncodedKeySpec(const std::vector< int8_t>&);
-    std::vector< int8_t> getEncoded() const ;
-    ::java::lang::String getFormat() const ;
+    std::vector< int8_t> getEncoded() const;
+    ::java::lang::String getFormat() const;
 
 };
 }

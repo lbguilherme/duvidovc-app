@@ -39,12 +39,12 @@ public:
     ::org::apache::http::entity::EntityTemplate& operator=(::org::apache::http::entity::EntityTemplate&& x) {obj = std::move(x.obj); return *this;}
     
     EntityTemplate(const ::org::apache::http::entity::ContentProducer&);
-    int64_t getContentLength() const ;
-    ::java::io::InputStream getContent() const ;
-    bool isRepeatable() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    void consumeContent() const ;
+    int64_t getContentLength() const;
+    ::java::io::InputStream getContent() const;
+    bool isRepeatable() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    void consumeContent() const;
 
 };
 }

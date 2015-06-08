@@ -35,13 +35,13 @@ public:
     
     PathMeasure();
     PathMeasure(const ::android::graphics::Path&, bool);
-    void setPath(const ::android::graphics::Path&, bool) const ;
-    float getLength() const ;
-    bool getPosTan(float, const std::vector< float>&, const std::vector< float>&) const ;
-    bool getMatrix(float, const ::android::graphics::Matrix&, int32_t) const ;
-    bool getSegment(float, float, const ::android::graphics::Path&, bool) const ;
-    bool isClosed() const ;
-    bool nextContour() const ;
+    void setPath(const ::android::graphics::Path&, bool) const;
+    float getLength() const;
+    bool getPosTan(float, const std::vector< float>&, const std::vector< float>&) const;
+    bool getMatrix(float, const ::android::graphics::Matrix&, int32_t) const;
+    bool getSegment(float, float, const ::android::graphics::Path&, bool) const;
+    bool isClosed() const;
+    bool nextContour() const;
 
 };
 }

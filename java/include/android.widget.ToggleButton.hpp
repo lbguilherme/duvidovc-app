@@ -41,13 +41,13 @@ public:
     ToggleButton(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     ToggleButton(const ::android::content::Context&, const ::android::util::AttributeSet&);
     ToggleButton(const ::android::content::Context&);
-    void setChecked(bool) const ;
-    ::java::lang::CharSequence getTextOn() const ;
-    void setTextOn(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence getTextOff() const ;
-    void setTextOff(const ::java::lang::CharSequence&) const ;
-    void setBackgroundDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void setChecked(bool) const;
+    ::java::lang::CharSequence getTextOn() const;
+    void setTextOn(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence getTextOff() const;
+    void setTextOff(const ::java::lang::CharSequence&) const;
+    void setBackgroundDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

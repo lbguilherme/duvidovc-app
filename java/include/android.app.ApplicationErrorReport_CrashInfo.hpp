@@ -38,8 +38,8 @@ public:
     ApplicationErrorReport_CrashInfo();
     ApplicationErrorReport_CrashInfo(const ::java::lang::Throwable&);
     ApplicationErrorReport_CrashInfo(const ::android::os::Parcel&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
 
 };
 }

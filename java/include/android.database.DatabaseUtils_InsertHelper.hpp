@@ -35,21 +35,21 @@ public:
     ::android::database::DatabaseUtils_InsertHelper& operator=(::android::database::DatabaseUtils_InsertHelper&& x) {obj = std::move(x.obj); return *this;}
     
     DatabaseUtils_InsertHelper(const ::android::database::sqlite::SQLiteDatabase&, const ::java::lang::String&);
-    int32_t getColumnIndex(const ::java::lang::String&) const ;
-    void bind(int32_t, double) const ;
-    void bind(int32_t, float) const ;
-    void bind(int32_t, int64_t) const ;
-    void bind(int32_t, int32_t) const ;
-    void bind(int32_t, bool) const ;
-    void bindNull(int32_t) const ;
-    void bind(int32_t, const std::vector< int8_t>&) const ;
-    void bind(int32_t, const ::java::lang::String&) const ;
-    int64_t insert(const ::android::content::ContentValues&) const ;
-    int64_t execute() const ;
-    void prepareForInsert() const ;
-    void prepareForReplace() const ;
-    int64_t replace(const ::android::content::ContentValues&) const ;
-    void close() const ;
+    int32_t getColumnIndex(const ::java::lang::String&) const;
+    void bind(int32_t, double) const;
+    void bind(int32_t, float) const;
+    void bind(int32_t, int64_t) const;
+    void bind(int32_t, int32_t) const;
+    void bind(int32_t, bool) const;
+    void bindNull(int32_t) const;
+    void bind(int32_t, const std::vector< int8_t>&) const;
+    void bind(int32_t, const ::java::lang::String&) const;
+    int64_t insert(const ::android::content::ContentValues&) const;
+    int64_t execute() const;
+    void prepareForInsert() const;
+    void prepareForReplace() const;
+    int64_t replace(const ::android::content::ContentValues&) const;
+    void close() const;
 
 };
 }

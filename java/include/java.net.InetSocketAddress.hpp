@@ -41,13 +41,13 @@ public:
     InetSocketAddress(const ::java::net::InetAddress&, int32_t);
     InetSocketAddress(const ::java::lang::String&, int32_t);
     static ::java::net::InetSocketAddress createUnresolved(const ::java::lang::String&, int32_t);
-    int32_t getPort() const ;
-    ::java::net::InetAddress getAddress() const ;
-    ::java::lang::String getHostName() const ;
-    bool isUnresolved() const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    int32_t getPort() const;
+    ::java::net::InetAddress getAddress() const;
+    ::java::lang::String getHostName() const;
+    bool isUnresolved() const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

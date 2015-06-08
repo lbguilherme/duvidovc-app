@@ -39,10 +39,10 @@ public:
     ::android::graphics::drawable::StateListDrawable& operator=(::android::graphics::drawable::StateListDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     StateListDrawable();
-    void addState(const std::vector< int32_t>&, const ::android::graphics::drawable::Drawable&) const ;
-    bool isStateful() const ;
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    void addState(const std::vector< int32_t>&, const ::android::graphics::drawable::Drawable&) const;
+    bool isStateful() const;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

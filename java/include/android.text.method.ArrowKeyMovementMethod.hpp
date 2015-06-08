@@ -41,10 +41,10 @@ public:
     ::android::text::method::ArrowKeyMovementMethod& operator=(::android::text::method::ArrowKeyMovementMethod&& x) {obj = std::move(x.obj); return *this;}
     
     ArrowKeyMovementMethod();
-    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const ;
-    bool canSelectArbitrarily() const ;
-    void initialize(const ::android::widget::TextView&, const ::android::text::Spannable&) const ;
-    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const ;
+    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const;
+    bool canSelectArbitrarily() const;
+    void initialize(const ::android::widget::TextView&, const ::android::text::Spannable&) const;
+    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const;
     static ::android::text::method::MovementMethod getInstance();
 
 };

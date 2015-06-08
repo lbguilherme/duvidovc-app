@@ -35,8 +35,8 @@ public:
     ::org::apache::http::conn::ClientConnectionRequest& operator=(const ::org::apache::http::conn::ClientConnectionRequest& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::ClientConnectionRequest& operator=(::org::apache::http::conn::ClientConnectionRequest&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::conn::ManagedClientConnection getConnection(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void abortRequest() const ;
+    ::org::apache::http::conn::ManagedClientConnection getConnection(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void abortRequest() const;
 
 };
 }

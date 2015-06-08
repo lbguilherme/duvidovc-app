@@ -33,7 +33,7 @@ public:
     ::java::util::logging::Filter& operator=(const ::java::util::logging::Filter& x) {obj = x.obj; return *this;}
     ::java::util::logging::Filter& operator=(::java::util::logging::Filter&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isLoggable(const ::java::util::logging::LogRecord&) const ;
+    bool isLoggable(const ::java::util::logging::LogRecord&) const;
 
 };
 }

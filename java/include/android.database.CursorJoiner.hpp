@@ -40,10 +40,10 @@ public:
     ::android::database::CursorJoiner& operator=(::android::database::CursorJoiner&& x) {obj = std::move(x.obj); return *this;}
     
     CursorJoiner(const ::android::database::Cursor&, const std::vector< ::java::lang::String>&, const ::android::database::Cursor&, const std::vector< ::java::lang::String>&);
-    ::java::util::Iterator iterator() const ;
-    bool hasNext() const ;
-    ::android::database::CursorJoiner_Result next() const ;
-    void remove() const ;
+    ::java::util::Iterator iterator() const;
+    bool hasNext() const;
+    ::android::database::CursorJoiner_Result next() const;
+    void remove() const;
 
 };
 }

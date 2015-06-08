@@ -31,7 +31,7 @@ public:
     ::android::widget::PopupWindow_OnDismissListener& operator=(const ::android::widget::PopupWindow_OnDismissListener& x) {obj = x.obj; return *this;}
     ::android::widget::PopupWindow_OnDismissListener& operator=(::android::widget::PopupWindow_OnDismissListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onDismiss() const ;
+    void onDismiss() const;
 
 };
 }

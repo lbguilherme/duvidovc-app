@@ -37,11 +37,11 @@ public:
     ::com::facebook::internal::FacebookDialogBase& operator=(const ::com::facebook::internal::FacebookDialogBase& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::FacebookDialogBase& operator=(::com::facebook::internal::FacebookDialogBase&& x) {obj = std::move(x.obj); return *this;}
     
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const ;
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&, int32_t) const ;
-    int32_t getRequestCode() const ;
-    bool canShow(const ::java::lang::Object&) const ;
-    void show(const ::java::lang::Object&) const ;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&, int32_t) const;
+    int32_t getRequestCode() const;
+    bool canShow(const ::java::lang::Object&) const;
+    void show(const ::java::lang::Object&) const;
 
 };
 }

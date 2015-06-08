@@ -37,10 +37,10 @@ public:
     ::org::apache::http::message::HeaderValueParser& operator=(const ::org::apache::http::message::HeaderValueParser& x) {obj = x.obj; return *this;}
     ::org::apache::http::message::HeaderValueParser& operator=(::org::apache::http::message::HeaderValueParser&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::org::apache::http::HeaderElement> parseElements(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    ::org::apache::http::HeaderElement parseHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    std::vector< ::org::apache::http::NameValuePair> parseParameters(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    ::org::apache::http::NameValuePair parseNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    std::vector< ::org::apache::http::HeaderElement> parseElements(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    ::org::apache::http::HeaderElement parseHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    std::vector< ::org::apache::http::NameValuePair> parseParameters(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    ::org::apache::http::NameValuePair parseNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
 
 };
 }

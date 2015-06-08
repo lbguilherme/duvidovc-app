@@ -32,7 +32,7 @@ public:
     ::android::widget::ViewSwitcher_ViewFactory& operator=(const ::android::widget::ViewSwitcher_ViewFactory& x) {obj = x.obj; return *this;}
     ::android::widget::ViewSwitcher_ViewFactory& operator=(::android::widget::ViewSwitcher_ViewFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View makeView() const ;
+    ::android::view::View makeView() const;
 
 };
 }

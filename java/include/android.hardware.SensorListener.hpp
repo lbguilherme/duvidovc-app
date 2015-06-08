@@ -31,8 +31,8 @@ public:
     ::android::hardware::SensorListener& operator=(const ::android::hardware::SensorListener& x) {obj = x.obj; return *this;}
     ::android::hardware::SensorListener& operator=(::android::hardware::SensorListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSensorChanged(int32_t, const std::vector< float>&) const ;
-    void onAccuracyChanged(int32_t, int32_t) const ;
+    void onSensorChanged(int32_t, const std::vector< float>&) const;
+    void onAccuracyChanged(int32_t, int32_t) const;
 
 };
 }

@@ -34,12 +34,12 @@ public:
     ::android::webkit::WebIconDatabase& operator=(const ::android::webkit::WebIconDatabase& x) {obj = x.obj; return *this;}
     ::android::webkit::WebIconDatabase& operator=(::android::webkit::WebIconDatabase&& x) {obj = std::move(x.obj); return *this;}
     
-    void open(const ::java::lang::String&) const ;
-    void close() const ;
-    void removeAllIcons() const ;
-    void requestIconForPageUrl(const ::java::lang::String&, const ::android::webkit::WebIconDatabase_IconListener&) const ;
-    void retainIconForPageUrl(const ::java::lang::String&) const ;
-    void releaseIconForPageUrl(const ::java::lang::String&) const ;
+    void open(const ::java::lang::String&) const;
+    void close() const;
+    void removeAllIcons() const;
+    void requestIconForPageUrl(const ::java::lang::String&, const ::android::webkit::WebIconDatabase_IconListener&) const;
+    void retainIconForPageUrl(const ::java::lang::String&) const;
+    void releaseIconForPageUrl(const ::java::lang::String&) const;
     static ::android::webkit::WebIconDatabase getInstance();
 
 };

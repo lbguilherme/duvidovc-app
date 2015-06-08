@@ -36,14 +36,14 @@ public:
     ::android::support::v4::media::VolumeProviderCompat& operator=(::android::support::v4::media::VolumeProviderCompat&& x) {obj = std::move(x.obj); return *this;}
     
     VolumeProviderCompat(int32_t, int32_t, int32_t);
-    int32_t getCurrentVolume() const ;
-    int32_t getVolumeControl() const ;
-    int32_t getMaxVolume() const ;
-    void setCurrentVolume(int32_t) const ;
-    void onSetVolumeTo(int32_t) const ;
-    void onAdjustVolume(int32_t) const ;
-    void setCallback(const ::android::support::v4::media::VolumeProviderCompat_Callback&) const ;
-    ::java::lang::Object getVolumeProvider() const ;
+    int32_t getCurrentVolume() const;
+    int32_t getVolumeControl() const;
+    int32_t getMaxVolume() const;
+    void setCurrentVolume(int32_t) const;
+    void onSetVolumeTo(int32_t) const;
+    void onAdjustVolume(int32_t) const;
+    void setCallback(const ::android::support::v4::media::VolumeProviderCompat_Callback&) const;
+    ::java::lang::Object getVolumeProvider() const;
 
 };
 }

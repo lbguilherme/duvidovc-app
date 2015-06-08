@@ -33,10 +33,10 @@ public:
     ::android::util::TimingLogger& operator=(::android::util::TimingLogger&& x) {obj = std::move(x.obj); return *this;}
     
     TimingLogger(const ::java::lang::String&, const ::java::lang::String&);
-    void reset(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void reset() const ;
-    void addSplit(const ::java::lang::String&) const ;
-    void dumpToLog() const ;
+    void reset(const ::java::lang::String&, const ::java::lang::String&) const;
+    void reset() const;
+    void addSplit(const ::java::lang::String&) const;
+    void dumpToLog() const;
 
 };
 }

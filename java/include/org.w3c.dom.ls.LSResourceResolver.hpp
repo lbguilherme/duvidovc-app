@@ -35,7 +35,7 @@ public:
     ::org::w3c::dom::ls::LSResourceResolver& operator=(const ::org::w3c::dom::ls::LSResourceResolver& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::ls::LSResourceResolver& operator=(::org::w3c::dom::ls::LSResourceResolver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::ls::LSInput resolveResource(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::org::w3c::dom::ls::LSInput resolveResource(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

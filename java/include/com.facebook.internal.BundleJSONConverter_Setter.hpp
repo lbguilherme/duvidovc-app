@@ -36,8 +36,8 @@ public:
     ::com::facebook::internal::BundleJSONConverter_Setter& operator=(const ::com::facebook::internal::BundleJSONConverter_Setter& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::BundleJSONConverter_Setter& operator=(::com::facebook::internal::BundleJSONConverter_Setter&& x) {obj = std::move(x.obj); return *this;}
     
-    void setOnBundle(const ::android::os::Bundle&, const ::java::lang::String&, const ::java::lang::Object&) const ;
-    void setOnJSON(const ::org::json::JSONObject&, const ::java::lang::String&, const ::java::lang::Object&) const ;
+    void setOnBundle(const ::android::os::Bundle&, const ::java::lang::String&, const ::java::lang::Object&) const;
+    void setOnJSON(const ::org::json::JSONObject&, const ::java::lang::String&, const ::java::lang::Object&) const;
 
 };
 }

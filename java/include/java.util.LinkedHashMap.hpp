@@ -40,9 +40,9 @@ public:
     LinkedHashMap(int32_t, float);
     LinkedHashMap(int32_t, float, bool);
     LinkedHashMap(const ::java::util::Map&);
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    bool containsValue(const ::java::lang::Object&) const ;
-    void clear() const ;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    bool containsValue(const ::java::lang::Object&) const;
+    void clear() const;
 
 };
 }

@@ -35,12 +35,12 @@ public:
     ::java::util::concurrent::locks::Lock& operator=(const ::java::util::concurrent::locks::Lock& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::locks::Lock& operator=(::java::util::concurrent::locks::Lock&& x) {obj = std::move(x.obj); return *this;}
     
-    void lock() const ;
-    void lockInterruptibly() const ;
-    bool tryLock() const ;
-    bool tryLock(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void unlock() const ;
-    ::java::util::concurrent::locks::Condition newCondition() const ;
+    void lock() const;
+    void lockInterruptibly() const;
+    bool tryLock() const;
+    bool tryLock(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void unlock() const;
+    ::java::util::concurrent::locks::Condition newCondition() const;
 
 };
 }

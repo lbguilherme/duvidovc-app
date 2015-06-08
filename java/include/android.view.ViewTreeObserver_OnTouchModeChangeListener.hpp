@@ -31,7 +31,7 @@ public:
     ::android::view::ViewTreeObserver_OnTouchModeChangeListener& operator=(const ::android::view::ViewTreeObserver_OnTouchModeChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::ViewTreeObserver_OnTouchModeChangeListener& operator=(::android::view::ViewTreeObserver_OnTouchModeChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onTouchModeChanged(bool) const ;
+    void onTouchModeChanged(bool) const;
 
 };
 }

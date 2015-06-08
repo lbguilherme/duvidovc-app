@@ -41,20 +41,20 @@ public:
     
     DialerFilter(const ::android::content::Context&);
     DialerFilter(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    bool isQwertyKeyboard() const ;
-    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const ;
-    int32_t getMode() const ;
-    void setMode(int32_t) const ;
-    ::java::lang::CharSequence getLetters() const ;
-    ::java::lang::CharSequence getDigits() const ;
-    ::java::lang::CharSequence getFilterText() const ;
-    void append(const ::java::lang::String&) const ;
-    void clearText() const ;
-    void setLettersWatcher(const ::android::text::TextWatcher&) const ;
-    void setDigitsWatcher(const ::android::text::TextWatcher&) const ;
-    void setFilterWatcher(const ::android::text::TextWatcher&) const ;
-    void removeFilterWatcher(const ::android::text::TextWatcher&) const ;
+    bool isQwertyKeyboard() const;
+    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const;
+    int32_t getMode() const;
+    void setMode(int32_t) const;
+    ::java::lang::CharSequence getLetters() const;
+    ::java::lang::CharSequence getDigits() const;
+    ::java::lang::CharSequence getFilterText() const;
+    void append(const ::java::lang::String&) const;
+    void clearText() const;
+    void setLettersWatcher(const ::android::text::TextWatcher&) const;
+    void setDigitsWatcher(const ::android::text::TextWatcher&) const;
+    void setFilterWatcher(const ::android::text::TextWatcher&) const;
+    void removeFilterWatcher(const ::android::text::TextWatcher&) const;
 
 };
 }

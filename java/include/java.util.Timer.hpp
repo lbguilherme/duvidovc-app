@@ -38,14 +38,14 @@ public:
     Timer(const ::java::lang::String&);
     Timer(bool);
     Timer();
-    void cancel() const ;
-    int32_t purge() const ;
-    void schedule(const ::java::util::TimerTask&, const ::java::util::Date&) const ;
-    void schedule(const ::java::util::TimerTask&, int64_t) const ;
-    void schedule(const ::java::util::TimerTask&, int64_t, int64_t) const ;
-    void schedule(const ::java::util::TimerTask&, const ::java::util::Date&, int64_t) const ;
-    void scheduleAtFixedRate(const ::java::util::TimerTask&, int64_t, int64_t) const ;
-    void scheduleAtFixedRate(const ::java::util::TimerTask&, const ::java::util::Date&, int64_t) const ;
+    void cancel() const;
+    int32_t purge() const;
+    void schedule(const ::java::util::TimerTask&, const ::java::util::Date&) const;
+    void schedule(const ::java::util::TimerTask&, int64_t) const;
+    void schedule(const ::java::util::TimerTask&, int64_t, int64_t) const;
+    void schedule(const ::java::util::TimerTask&, const ::java::util::Date&, int64_t) const;
+    void scheduleAtFixedRate(const ::java::util::TimerTask&, int64_t, int64_t) const;
+    void scheduleAtFixedRate(const ::java::util::TimerTask&, const ::java::util::Date&, int64_t) const;
 
 };
 }

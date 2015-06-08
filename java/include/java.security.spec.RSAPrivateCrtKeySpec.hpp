@@ -36,12 +36,12 @@ public:
     ::java::security::spec::RSAPrivateCrtKeySpec& operator=(::java::security::spec::RSAPrivateCrtKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     RSAPrivateCrtKeySpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getCrtCoefficient() const ;
-    ::java::math::BigInteger getPrimeExponentP() const ;
-    ::java::math::BigInteger getPrimeExponentQ() const ;
-    ::java::math::BigInteger getPrimeP() const ;
-    ::java::math::BigInteger getPrimeQ() const ;
-    ::java::math::BigInteger getPublicExponent() const ;
+    ::java::math::BigInteger getCrtCoefficient() const;
+    ::java::math::BigInteger getPrimeExponentP() const;
+    ::java::math::BigInteger getPrimeExponentQ() const;
+    ::java::math::BigInteger getPrimeP() const;
+    ::java::math::BigInteger getPrimeQ() const;
+    ::java::math::BigInteger getPublicExponent() const;
 
 };
 }

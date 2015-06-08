@@ -33,9 +33,9 @@ public:
     ::android::net::sip::SipRegistrationListener& operator=(const ::android::net::sip::SipRegistrationListener& x) {obj = x.obj; return *this;}
     ::android::net::sip::SipRegistrationListener& operator=(::android::net::sip::SipRegistrationListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onRegistering(const ::java::lang::String&) const ;
-    void onRegistrationDone(const ::java::lang::String&, int64_t) const ;
-    void onRegistrationFailed(const ::java::lang::String&, int32_t, const ::java::lang::String&) const ;
+    void onRegistering(const ::java::lang::String&) const;
+    void onRegistrationDone(const ::java::lang::String&, int64_t) const;
+    void onRegistrationFailed(const ::java::lang::String&, int32_t, const ::java::lang::String&) const;
 
 };
 }

@@ -39,16 +39,16 @@ public:
     
     NdefRecord(int16_t, const std::vector< int8_t>&, const std::vector< int8_t>&, const std::vector< int8_t>&);
     NdefRecord(const std::vector< int8_t>&);
-    int16_t getTnf() const ;
-    std::vector< int8_t> getType() const ;
-    std::vector< int8_t> getId() const ;
-    std::vector< int8_t> getPayload() const ;
+    int16_t getTnf() const;
+    std::vector< int8_t> getType() const;
+    std::vector< int8_t> getId() const;
+    std::vector< int8_t> getPayload() const;
     static ::android::nfc::NdefRecord createApplicationRecord(const ::java::lang::String&);
     static ::android::nfc::NdefRecord createUri(const ::android::net::Uri&);
     static ::android::nfc::NdefRecord createUri(const ::java::lang::String&);
-    std::vector< int8_t> toByteArray() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    std::vector< int8_t> toByteArray() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

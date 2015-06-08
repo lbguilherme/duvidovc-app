@@ -35,7 +35,7 @@ public:
     ::com::facebook::share::internal::LikeActionController_CreationCallback& operator=(const ::com::facebook::share::internal::LikeActionController_CreationCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::LikeActionController_CreationCallback& operator=(::com::facebook::share::internal::LikeActionController_CreationCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onComplete(const ::com::facebook::share::internal::LikeActionController&, const ::com::facebook::FacebookException&) const ;
+    void onComplete(const ::com::facebook::share::internal::LikeActionController&, const ::com::facebook::FacebookException&) const;
 
 };
 }

@@ -42,10 +42,10 @@ public:
     static void fetchDeferredAppLinkData(const ::android::content::Context&, const ::com::facebook::applinks::AppLinkData_CompletionHandler&);
     static void fetchDeferredAppLinkData(const ::android::content::Context&, const ::java::lang::String&, const ::com::facebook::applinks::AppLinkData_CompletionHandler&);
     static ::com::facebook::applinks::AppLinkData createFromActivity(const ::android::app::Activity&);
-    ::android::net::Uri getTargetUri() const ;
-    ::java::lang::String getRef() const ;
-    ::android::os::Bundle getArgumentBundle() const ;
-    ::android::os::Bundle getRefererData() const ;
+    ::android::net::Uri getTargetUri() const;
+    ::java::lang::String getRef() const;
+    ::android::os::Bundle getArgumentBundle() const;
+    ::android::os::Bundle getRefererData() const;
 
 };
 }

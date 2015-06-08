@@ -38,16 +38,16 @@ public:
     SipProfile_Builder(const ::android::net::sip::SipProfile&);
     SipProfile_Builder(const ::java::lang::String&);
     SipProfile_Builder(const ::java::lang::String&, const ::java::lang::String&);
-    ::android::net::sip::SipProfile_Builder setAuthUserName(const ::java::lang::String&) const ;
-    ::android::net::sip::SipProfile_Builder setProfileName(const ::java::lang::String&) const ;
-    ::android::net::sip::SipProfile_Builder setPassword(const ::java::lang::String&) const ;
-    ::android::net::sip::SipProfile_Builder setPort(int32_t) const ;
-    ::android::net::sip::SipProfile_Builder setProtocol(const ::java::lang::String&) const ;
-    ::android::net::sip::SipProfile_Builder setOutboundProxy(const ::java::lang::String&) const ;
-    ::android::net::sip::SipProfile_Builder setDisplayName(const ::java::lang::String&) const ;
-    ::android::net::sip::SipProfile_Builder setSendKeepAlive(bool) const ;
-    ::android::net::sip::SipProfile_Builder setAutoRegistration(bool) const ;
-    ::android::net::sip::SipProfile build() const ;
+    ::android::net::sip::SipProfile_Builder setAuthUserName(const ::java::lang::String&) const;
+    ::android::net::sip::SipProfile_Builder setProfileName(const ::java::lang::String&) const;
+    ::android::net::sip::SipProfile_Builder setPassword(const ::java::lang::String&) const;
+    ::android::net::sip::SipProfile_Builder setPort(int32_t) const;
+    ::android::net::sip::SipProfile_Builder setProtocol(const ::java::lang::String&) const;
+    ::android::net::sip::SipProfile_Builder setOutboundProxy(const ::java::lang::String&) const;
+    ::android::net::sip::SipProfile_Builder setDisplayName(const ::java::lang::String&) const;
+    ::android::net::sip::SipProfile_Builder setSendKeepAlive(bool) const;
+    ::android::net::sip::SipProfile_Builder setAutoRegistration(bool) const;
+    ::android::net::sip::SipProfile build() const;
 
 };
 }

@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::NetscapeDraftSpecFactory& operator=(::org::apache::http::impl::cookie::NetscapeDraftSpecFactory&& x) {obj = std::move(x.obj); return *this;}
     
     NetscapeDraftSpecFactory();
-    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

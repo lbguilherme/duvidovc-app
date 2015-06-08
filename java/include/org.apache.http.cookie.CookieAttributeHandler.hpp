@@ -37,9 +37,9 @@ public:
     ::org::apache::http::cookie::CookieAttributeHandler& operator=(const ::org::apache::http::cookie::CookieAttributeHandler& x) {obj = x.obj; return *this;}
     ::org::apache::http::cookie::CookieAttributeHandler& operator=(::org::apache::http::cookie::CookieAttributeHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
 
 };
 }

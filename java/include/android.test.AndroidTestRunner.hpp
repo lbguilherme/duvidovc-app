@@ -42,21 +42,21 @@ public:
     ::android::test::AndroidTestRunner& operator=(::android::test::AndroidTestRunner&& x) {obj = std::move(x.obj); return *this;}
     
     AndroidTestRunner();
-    void setTestClassName(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setTest(const ::junit::framework::Test&) const ;
-    void clearTestListeners() const ;
-    void addTestListener(const ::junit::framework::TestListener&) const ;
-    ::java::util::List getTestCases() const ;
-    ::java::lang::String getTestClassName() const ;
-    ::junit::framework::TestResult getTestResult() const ;
-    void runTest() const ;
-    void runTest(const ::junit::framework::TestResult&) const ;
-    void setContext(const ::android::content::Context&) const ;
-    void setInstrumentation(const ::android::app::Instrumentation&) const ;
-    void setInstrumentaiton(const ::android::app::Instrumentation&) const ;
-    void testStarted(const ::java::lang::String&) const ;
-    void testEnded(const ::java::lang::String&) const ;
-    void testFailed(int32_t, const ::junit::framework::Test&, const ::java::lang::Throwable&) const ;
+    void setTestClassName(const ::java::lang::String&, const ::java::lang::String&) const;
+    void setTest(const ::junit::framework::Test&) const;
+    void clearTestListeners() const;
+    void addTestListener(const ::junit::framework::TestListener&) const;
+    ::java::util::List getTestCases() const;
+    ::java::lang::String getTestClassName() const;
+    ::junit::framework::TestResult getTestResult() const;
+    void runTest() const;
+    void runTest(const ::junit::framework::TestResult&) const;
+    void setContext(const ::android::content::Context&) const;
+    void setInstrumentation(const ::android::app::Instrumentation&) const;
+    void setInstrumentaiton(const ::android::app::Instrumentation&) const;
+    void testStarted(const ::java::lang::String&) const;
+    void testEnded(const ::java::lang::String&) const;
+    void testFailed(int32_t, const ::junit::framework::Test&, const ::java::lang::Throwable&) const;
 
 };
 }

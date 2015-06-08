@@ -33,7 +33,7 @@ public:
     ::android::app::backup::FileBackupHelperBase& operator=(const ::android::app::backup::FileBackupHelperBase& x) {obj = x.obj; return *this;}
     ::android::app::backup::FileBackupHelperBase& operator=(::android::app::backup::FileBackupHelperBase&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeNewStateDescription(const ::android::os::ParcelFileDescriptor&) const ;
+    void writeNewStateDescription(const ::android::os::ParcelFileDescriptor&) const;
 
 };
 }

@@ -35,11 +35,11 @@ public:
     ::android::app::backup::BackupDataInputStream& operator=(const ::android::app::backup::BackupDataInputStream& x) {obj = x.obj; return *this;}
     ::android::app::backup::BackupDataInputStream& operator=(::android::app::backup::BackupDataInputStream&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t read(const std::vector< int8_t>&) const ;
-    ::java::lang::String getKey() const ;
-    int32_t size() const ;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t read(const std::vector< int8_t>&) const;
+    ::java::lang::String getKey() const;
+    int32_t size() const;
 
 };
 }

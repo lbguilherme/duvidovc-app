@@ -35,7 +35,7 @@ public:
     ::android::text::BoringLayout_Metrics& operator=(::android::text::BoringLayout_Metrics&& x) {obj = std::move(x.obj); return *this;}
     
     BoringLayout_Metrics();
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

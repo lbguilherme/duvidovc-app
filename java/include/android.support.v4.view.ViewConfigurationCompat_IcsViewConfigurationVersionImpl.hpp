@@ -36,7 +36,7 @@ public:
     ::android::support::v4::view::ViewConfigurationCompat_IcsViewConfigurationVersionImpl& operator=(const ::android::support::v4::view::ViewConfigurationCompat_IcsViewConfigurationVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewConfigurationCompat_IcsViewConfigurationVersionImpl& operator=(::android::support::v4::view::ViewConfigurationCompat_IcsViewConfigurationVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasPermanentMenuKey(const ::android::view::ViewConfiguration&) const ;
+    bool hasPermanentMenuKey(const ::android::view::ViewConfiguration&) const;
 
 };
 }

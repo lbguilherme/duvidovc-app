@@ -36,7 +36,7 @@ public:
     ::android::support::v4::graphics::BitmapCompat_KitKatBitmapCompatImpl& operator=(const ::android::support::v4::graphics::BitmapCompat_KitKatBitmapCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::BitmapCompat_KitKatBitmapCompatImpl& operator=(::android::support::v4::graphics::BitmapCompat_KitKatBitmapCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getAllocationByteCount(const ::android::graphics::Bitmap&) const ;
+    int32_t getAllocationByteCount(const ::android::graphics::Bitmap&) const;
 
 };
 }

@@ -34,7 +34,7 @@ public:
     ::android::view::SurfaceHolder_Callback2& operator=(const ::android::view::SurfaceHolder_Callback2& x) {obj = x.obj; return *this;}
     ::android::view::SurfaceHolder_Callback2& operator=(::android::view::SurfaceHolder_Callback2&& x) {obj = std::move(x.obj); return *this;}
     
-    void surfaceRedrawNeeded(const ::android::view::SurfaceHolder&) const ;
+    void surfaceRedrawNeeded(const ::android::view::SurfaceHolder&) const;
 
 };
 }

@@ -37,11 +37,11 @@ public:
     ::org::apache::http::impl::conn::IdleConnectionHandler& operator=(::org::apache::http::impl::conn::IdleConnectionHandler&& x) {obj = std::move(x.obj); return *this;}
     
     IdleConnectionHandler();
-    void add(const ::org::apache::http::HttpConnection&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    bool remove(const ::org::apache::http::HttpConnection&) const ;
-    void removeAll() const ;
-    void closeIdleConnections(int64_t) const ;
-    void closeExpiredConnections() const ;
+    void add(const ::org::apache::http::HttpConnection&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    bool remove(const ::org::apache::http::HttpConnection&) const;
+    void removeAll() const;
+    void closeIdleConnections(int64_t) const;
+    void closeExpiredConnections() const;
 
 };
 }

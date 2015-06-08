@@ -35,7 +35,7 @@ public:
     ::com::facebook::internal::CollectionMapper_OnMapValueCompleteListener& operator=(const ::com::facebook::internal::CollectionMapper_OnMapValueCompleteListener& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::CollectionMapper_OnMapValueCompleteListener& operator=(::com::facebook::internal::CollectionMapper_OnMapValueCompleteListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onComplete(const ::java::lang::Object&) const ;
+    void onComplete(const ::java::lang::Object&) const;
 
 };
 }

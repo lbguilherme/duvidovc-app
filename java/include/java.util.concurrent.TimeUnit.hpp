@@ -40,17 +40,17 @@ public:
     
     static std::vector< ::java::util::concurrent::TimeUnit> values();
     static ::java::util::concurrent::TimeUnit valueOf(const ::java::lang::String&);
-    int64_t convert(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    int64_t toNanos(int64_t) const ;
-    int64_t toMicros(int64_t) const ;
-    int64_t toMillis(int64_t) const ;
-    int64_t toSeconds(int64_t) const ;
-    int64_t toMinutes(int64_t) const ;
-    int64_t toHours(int64_t) const ;
-    int64_t toDays(int64_t) const ;
-    void timedWait(const ::java::lang::Object&, int64_t) const ;
-    void timedJoin(const ::java::lang::Thread&, int64_t) const ;
-    void sleep(int64_t) const ;
+    int64_t convert(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    int64_t toNanos(int64_t) const;
+    int64_t toMicros(int64_t) const;
+    int64_t toMillis(int64_t) const;
+    int64_t toSeconds(int64_t) const;
+    int64_t toMinutes(int64_t) const;
+    int64_t toHours(int64_t) const;
+    int64_t toDays(int64_t) const;
+    void timedWait(const ::java::lang::Object&, int64_t) const;
+    void timedJoin(const ::java::lang::Thread&, int64_t) const;
+    void sleep(int64_t) const;
 
 };
 }

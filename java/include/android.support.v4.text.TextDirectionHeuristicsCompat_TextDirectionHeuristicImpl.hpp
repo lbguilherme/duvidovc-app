@@ -38,8 +38,8 @@ public:
     ::android::support::v4::text::TextDirectionHeuristicsCompat_TextDirectionHeuristicImpl& operator=(::android::support::v4::text::TextDirectionHeuristicsCompat_TextDirectionHeuristicImpl&& x) {obj = std::move(x.obj); return *this;}
     
     TextDirectionHeuristicsCompat_TextDirectionHeuristicImpl(const ::android::support::v4::text::TextDirectionHeuristicsCompat_TextDirectionAlgorithm&);
-    bool isRtl(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    bool isRtl(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    bool isRtl(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    bool isRtl(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

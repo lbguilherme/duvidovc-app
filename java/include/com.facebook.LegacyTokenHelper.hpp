@@ -40,9 +40,9 @@ public:
     
     LegacyTokenHelper(const ::android::content::Context&);
     LegacyTokenHelper(const ::android::content::Context&, const ::java::lang::String&);
-    ::android::os::Bundle load() const ;
-    void save(const ::android::os::Bundle&) const ;
-    void clear() const ;
+    ::android::os::Bundle load() const;
+    void save(const ::android::os::Bundle&) const;
+    void clear() const;
     static bool hasTokenInformation(const ::android::os::Bundle&);
     static ::java::lang::String getToken(const ::android::os::Bundle&);
     static void putToken(const ::android::os::Bundle&, const ::java::lang::String&);

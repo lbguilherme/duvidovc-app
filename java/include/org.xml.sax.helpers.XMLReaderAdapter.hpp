@@ -49,24 +49,24 @@ public:
     
     XMLReaderAdapter();
     XMLReaderAdapter(const ::org::xml::sax::XMLReader&);
-    void setLocale(const ::java::util::Locale&) const ;
-    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const ;
-    void setDTDHandler(const ::org::xml::sax::DTDHandler&) const ;
-    void setDocumentHandler(const ::org::xml::sax::DocumentHandler&) const ;
-    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const ;
-    void parse(const ::java::lang::String&) const ;
-    void parse(const ::org::xml::sax::InputSource&) const ;
-    void setDocumentLocator(const ::org::xml::sax::Locator&) const ;
-    void startDocument() const ;
-    void endDocument() const ;
-    void startPrefixMapping(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void endPrefixMapping(const ::java::lang::String&) const ;
-    void startElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::org::xml::sax::Attributes&) const ;
-    void endElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void characters(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void ignorableWhitespace(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void processingInstruction(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void skippedEntity(const ::java::lang::String&) const ;
+    void setLocale(const ::java::util::Locale&) const;
+    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const;
+    void setDTDHandler(const ::org::xml::sax::DTDHandler&) const;
+    void setDocumentHandler(const ::org::xml::sax::DocumentHandler&) const;
+    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const;
+    void parse(const ::java::lang::String&) const;
+    void parse(const ::org::xml::sax::InputSource&) const;
+    void setDocumentLocator(const ::org::xml::sax::Locator&) const;
+    void startDocument() const;
+    void endDocument() const;
+    void startPrefixMapping(const ::java::lang::String&, const ::java::lang::String&) const;
+    void endPrefixMapping(const ::java::lang::String&) const;
+    void startElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::org::xml::sax::Attributes&) const;
+    void endElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void characters(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void ignorableWhitespace(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void processingInstruction(const ::java::lang::String&, const ::java::lang::String&) const;
+    void skippedEntity(const ::java::lang::String&) const;
 
 };
 }

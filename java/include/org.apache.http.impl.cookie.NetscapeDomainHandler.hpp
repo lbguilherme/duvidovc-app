@@ -39,8 +39,8 @@ public:
     ::org::apache::http::impl::cookie::NetscapeDomainHandler& operator=(::org::apache::http::impl::cookie::NetscapeDomainHandler&& x) {obj = std::move(x.obj); return *this;}
     
     NetscapeDomainHandler();
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
 
 };
 }

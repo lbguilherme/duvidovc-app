@@ -46,15 +46,15 @@ public:
     ::com::facebook::share::model::ShareVideoContent_Builder& operator=(::com::facebook::share::model::ShareVideoContent_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ShareVideoContent_Builder();
-    ::com::facebook::share::model::ShareVideoContent_Builder setContentDescription(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareVideoContent_Builder setContentTitle(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareVideoContent_Builder setPreviewPhoto(const ::com::facebook::share::model::SharePhoto&) const ;
-    ::com::facebook::share::model::ShareVideoContent_Builder setVideo(const ::com::facebook::share::model::ShareVideo&) const ;
-    ::com::facebook::share::model::ShareVideoContent build() const ;
-    ::com::facebook::share::model::ShareVideoContent_Builder readFrom(const ::com::facebook::share::model::ShareVideoContent&) const ;
-    ::com::facebook::share::model::ShareVideoContent_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::ShareContent_Builder readFrom(const ::com::facebook::share::model::ShareContent&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::ShareVideoContent_Builder setContentDescription(const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareVideoContent_Builder setContentTitle(const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareVideoContent_Builder setPreviewPhoto(const ::com::facebook::share::model::SharePhoto&) const;
+    ::com::facebook::share::model::ShareVideoContent_Builder setVideo(const ::com::facebook::share::model::ShareVideo&) const;
+    ::com::facebook::share::model::ShareVideoContent build() const;
+    ::com::facebook::share::model::ShareVideoContent_Builder readFrom(const ::com::facebook::share::model::ShareVideoContent&) const;
+    ::com::facebook::share::model::ShareVideoContent_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::ShareContent_Builder readFrom(const ::com::facebook::share::model::ShareContent&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

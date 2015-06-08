@@ -32,8 +32,8 @@ public:
     ::android::media::AudioRecord_OnRecordPositionUpdateListener& operator=(const ::android::media::AudioRecord_OnRecordPositionUpdateListener& x) {obj = x.obj; return *this;}
     ::android::media::AudioRecord_OnRecordPositionUpdateListener& operator=(::android::media::AudioRecord_OnRecordPositionUpdateListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onMarkerReached(const ::android::media::AudioRecord&) const ;
-    void onPeriodicNotification(const ::android::media::AudioRecord&) const ;
+    void onMarkerReached(const ::android::media::AudioRecord&) const;
+    void onPeriodicNotification(const ::android::media::AudioRecord&) const;
 
 };
 }

@@ -36,9 +36,9 @@ public:
     ::android::test::mock::MockApplication& operator=(::android::test::mock::MockApplication&& x) {obj = std::move(x.obj); return *this;}
     
     MockApplication();
-    void onCreate() const ;
-    void onTerminate() const ;
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
+    void onCreate() const;
+    void onTerminate() const;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
 
 };
 }

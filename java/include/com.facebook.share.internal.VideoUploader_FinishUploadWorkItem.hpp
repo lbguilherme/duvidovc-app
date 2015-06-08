@@ -38,7 +38,7 @@ public:
     ::com::facebook::share::internal::VideoUploader_FinishUploadWorkItem& operator=(::com::facebook::share::internal::VideoUploader_FinishUploadWorkItem&& x) {obj = std::move(x.obj); return *this;}
     
     VideoUploader_FinishUploadWorkItem(const ::com::facebook::share::internal::VideoUploader_UploadContext&, int32_t);
-    ::android::os::Bundle getParameters() const ;
+    ::android::os::Bundle getParameters() const;
 
 };
 }

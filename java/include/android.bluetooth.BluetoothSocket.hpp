@@ -36,12 +36,12 @@ public:
     ::android::bluetooth::BluetoothSocket& operator=(const ::android::bluetooth::BluetoothSocket& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothSocket& operator=(::android::bluetooth::BluetoothSocket&& x) {obj = std::move(x.obj); return *this;}
     
-    void connect() const ;
-    void close() const ;
-    ::android::bluetooth::BluetoothDevice getRemoteDevice() const ;
-    ::java::io::InputStream getInputStream() const ;
-    ::java::io::OutputStream getOutputStream() const ;
-    bool isConnected() const ;
+    void connect() const;
+    void close() const;
+    ::android::bluetooth::BluetoothDevice getRemoteDevice() const;
+    ::java::io::InputStream getInputStream() const;
+    ::java::io::OutputStream getOutputStream() const;
+    bool isConnected() const;
 
 };
 }

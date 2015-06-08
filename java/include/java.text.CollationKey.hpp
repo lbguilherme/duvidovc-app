@@ -36,10 +36,10 @@ public:
     ::java::text::CollationKey& operator=(const ::java::text::CollationKey& x) {obj = x.obj; return *this;}
     ::java::text::CollationKey& operator=(::java::text::CollationKey&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t compareTo(const ::java::text::CollationKey&) const ;
-    ::java::lang::String getSourceString() const ;
-    std::vector< int8_t> toByteArray() const ;
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::text::CollationKey&) const;
+    ::java::lang::String getSourceString() const;
+    std::vector< int8_t> toByteArray() const;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

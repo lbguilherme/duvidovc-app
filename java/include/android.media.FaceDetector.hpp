@@ -34,7 +34,7 @@ public:
     ::android::media::FaceDetector& operator=(::android::media::FaceDetector&& x) {obj = std::move(x.obj); return *this;}
     
     FaceDetector(int32_t, int32_t, int32_t);
-    int32_t findFaces(const ::android::graphics::Bitmap&, const std::vector< ::android::media::FaceDetector_Face>&) const ;
+    int32_t findFaces(const ::android::graphics::Bitmap&, const std::vector< ::android::media::FaceDetector_Face>&) const;
 
 };
 }

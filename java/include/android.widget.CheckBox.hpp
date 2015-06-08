@@ -39,7 +39,7 @@ public:
     CheckBox(const ::android::content::Context&);
     CheckBox(const ::android::content::Context&, const ::android::util::AttributeSet&);
     CheckBox(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

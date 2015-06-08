@@ -35,19 +35,19 @@ public:
     ::android::view::SurfaceHolder& operator=(const ::android::view::SurfaceHolder& x) {obj = x.obj; return *this;}
     ::android::view::SurfaceHolder& operator=(::android::view::SurfaceHolder&& x) {obj = std::move(x.obj); return *this;}
     
-    void addCallback(const ::android::view::SurfaceHolder_Callback&) const ;
-    void removeCallback(const ::android::view::SurfaceHolder_Callback&) const ;
-    bool isCreating() const ;
-    void setType(int32_t) const ;
-    void setFixedSize(int32_t, int32_t) const ;
-    void setSizeFromLayout() const ;
-    void setFormat(int32_t) const ;
-    void setKeepScreenOn(bool) const ;
-    ::android::graphics::Canvas lockCanvas() const ;
-    ::android::graphics::Canvas lockCanvas(const ::android::graphics::Rect&) const ;
-    void unlockCanvasAndPost(const ::android::graphics::Canvas&) const ;
-    ::android::graphics::Rect getSurfaceFrame() const ;
-    ::android::view::Surface getSurface() const ;
+    void addCallback(const ::android::view::SurfaceHolder_Callback&) const;
+    void removeCallback(const ::android::view::SurfaceHolder_Callback&) const;
+    bool isCreating() const;
+    void setType(int32_t) const;
+    void setFixedSize(int32_t, int32_t) const;
+    void setSizeFromLayout() const;
+    void setFormat(int32_t) const;
+    void setKeepScreenOn(bool) const;
+    ::android::graphics::Canvas lockCanvas() const;
+    ::android::graphics::Canvas lockCanvas(const ::android::graphics::Rect&) const;
+    void unlockCanvasAndPost(const ::android::graphics::Canvas&) const;
+    ::android::graphics::Rect getSurfaceFrame() const;
+    ::android::view::Surface getSurface() const;
 
 };
 }

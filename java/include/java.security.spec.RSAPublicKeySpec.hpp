@@ -36,8 +36,8 @@ public:
     ::java::security::spec::RSAPublicKeySpec& operator=(::java::security::spec::RSAPublicKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     RSAPublicKeySpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getModulus() const ;
-    ::java::math::BigInteger getPublicExponent() const ;
+    ::java::math::BigInteger getModulus() const;
+    ::java::math::BigInteger getPublicExponent() const;
 
 };
 }

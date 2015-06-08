@@ -36,10 +36,10 @@ public:
     ::com::facebook::GraphRequest_ParcelableResourceWithMimeType& operator=(const ::com::facebook::GraphRequest_ParcelableResourceWithMimeType& x) {obj = x.obj; return *this;}
     ::com::facebook::GraphRequest_ParcelableResourceWithMimeType& operator=(::com::facebook::GraphRequest_ParcelableResourceWithMimeType&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getMimeType() const ;
-    ::android::os::Parcelable getResource() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getMimeType() const;
+    ::android::os::Parcelable getResource() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
     GraphRequest_ParcelableResourceWithMimeType(const ::android::os::Parcelable&, const ::java::lang::String&);
 
 };

@@ -38,8 +38,8 @@ public:
     ::org::apache::http::conn::ssl::AllowAllHostnameVerifier& operator=(::org::apache::http::conn::ssl::AllowAllHostnameVerifier&& x) {obj = std::move(x.obj); return *this;}
     
     AllowAllHostnameVerifier();
-    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::String toString() const ;
+    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -34,12 +34,12 @@ public:
     ::android::view::textservice::SpellCheckerSession& operator=(const ::android::view::textservice::SpellCheckerSession& x) {obj = x.obj; return *this;}
     ::android::view::textservice::SpellCheckerSession& operator=(::android::view::textservice::SpellCheckerSession&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isSessionDisconnected() const ;
-    ::android::view::textservice::SpellCheckerInfo getSpellChecker() const ;
-    void cancel() const ;
-    void close() const ;
-    void getSuggestions(const ::android::view::textservice::TextInfo&, int32_t) const ;
-    void getSuggestions(const std::vector< ::android::view::textservice::TextInfo>&, int32_t, bool) const ;
+    bool isSessionDisconnected() const;
+    ::android::view::textservice::SpellCheckerInfo getSpellChecker() const;
+    void cancel() const;
+    void close() const;
+    void getSuggestions(const ::android::view::textservice::TextInfo&, int32_t) const;
+    void getSuggestions(const std::vector< ::android::view::textservice::TextInfo>&, int32_t, bool) const;
 
 };
 }

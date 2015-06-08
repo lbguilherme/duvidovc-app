@@ -39,12 +39,12 @@ public:
     SslError(int32_t, const ::java::security::cert::X509Certificate&);
     SslError(int32_t, const ::android::net::http::SslCertificate&, const ::java::lang::String&);
     SslError(int32_t, const ::java::security::cert::X509Certificate&, const ::java::lang::String&);
-    ::android::net::http::SslCertificate getCertificate() const ;
-    ::java::lang::String getUrl() const ;
-    bool addError(int32_t) const ;
-    bool hasError(int32_t) const ;
-    int32_t getPrimaryError() const ;
-    ::java::lang::String toString() const ;
+    ::android::net::http::SslCertificate getCertificate() const;
+    ::java::lang::String getUrl() const;
+    bool addError(int32_t) const;
+    bool hasError(int32_t) const;
+    int32_t getPrimaryError() const;
+    ::java::lang::String toString() const;
 
 };
 }

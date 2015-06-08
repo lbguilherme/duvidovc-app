@@ -58,14 +58,14 @@ public:
     Formatter(const ::java::io::OutputStream&, const ::java::lang::String&);
     Formatter(const ::java::io::OutputStream&, const ::java::lang::String&, const ::java::util::Locale&);
     Formatter(const ::java::io::PrintStream&);
-    ::java::util::Locale locale() const ;
-    ::java::lang::Appendable out() const ;
-    ::java::lang::String toString() const ;
-    void flush() const ;
-    void close() const ;
-    ::java::io::IOException ioException() const ;
-    ::java::util::Formatter format(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
-    ::java::util::Formatter format(const ::java::util::Locale&, const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
+    ::java::util::Locale locale() const;
+    ::java::lang::Appendable out() const;
+    ::java::lang::String toString() const;
+    void flush() const;
+    void close() const;
+    ::java::io::IOException ioException() const;
+    ::java::util::Formatter format(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
+    ::java::util::Formatter format(const ::java::util::Locale&, const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
 
 };
 }

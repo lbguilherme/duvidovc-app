@@ -39,11 +39,11 @@ public:
     static bool isRecognitionAvailable(const ::android::content::Context&);
     static ::android::speech::SpeechRecognizer createSpeechRecognizer(const ::android::content::Context&);
     static ::android::speech::SpeechRecognizer createSpeechRecognizer(const ::android::content::Context&, const ::android::content::ComponentName&);
-    void setRecognitionListener(const ::android::speech::RecognitionListener&) const ;
-    void startListening(const ::android::content::Intent&) const ;
-    void stopListening() const ;
-    void cancel() const ;
-    void destroy() const ;
+    void setRecognitionListener(const ::android::speech::RecognitionListener&) const;
+    void startListening(const ::android::content::Intent&) const;
+    void stopListening() const;
+    void cancel() const;
+    void destroy() const;
 
 };
 }

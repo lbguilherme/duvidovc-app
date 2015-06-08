@@ -38,16 +38,16 @@ public:
     
     AdapterViewFlipper(const ::android::content::Context&);
     AdapterViewFlipper(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setAdapter(const ::android::widget::Adapter&) const ;
-    void setFlipInterval(int32_t) const ;
-    void startFlipping() const ;
-    void stopFlipping() const ;
-    void showNext() const ;
-    void showPrevious() const ;
-    bool isFlipping() const ;
-    void setAutoStart(bool) const ;
-    bool isAutoStart() const ;
-    void fyiWillBeAdvancedByHostKThx() const ;
+    void setAdapter(const ::android::widget::Adapter&) const;
+    void setFlipInterval(int32_t) const;
+    void startFlipping() const;
+    void stopFlipping() const;
+    void showNext() const;
+    void showPrevious() const;
+    bool isFlipping() const;
+    void setAutoStart(bool) const;
+    bool isAutoStart() const;
+    void fyiWillBeAdvancedByHostKThx() const;
 
 };
 }

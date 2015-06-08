@@ -33,7 +33,7 @@ public:
     ::android::widget::ExpandableListView_OnGroupClickListener& operator=(const ::android::widget::ExpandableListView_OnGroupClickListener& x) {obj = x.obj; return *this;}
     ::android::widget::ExpandableListView_OnGroupClickListener& operator=(::android::widget::ExpandableListView_OnGroupClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onGroupClick(const ::android::widget::ExpandableListView&, const ::android::view::View&, int32_t, int64_t) const ;
+    bool onGroupClick(const ::android::widget::ExpandableListView&, const ::android::view::View&, int32_t, int64_t) const;
 
 };
 }

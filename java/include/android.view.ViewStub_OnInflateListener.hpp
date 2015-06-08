@@ -33,7 +33,7 @@ public:
     ::android::view::ViewStub_OnInflateListener& operator=(const ::android::view::ViewStub_OnInflateListener& x) {obj = x.obj; return *this;}
     ::android::view::ViewStub_OnInflateListener& operator=(::android::view::ViewStub_OnInflateListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onInflate(const ::android::view::ViewStub&, const ::android::view::View&) const ;
+    void onInflate(const ::android::view::ViewStub&, const ::android::view::View&) const;
 
 };
 }

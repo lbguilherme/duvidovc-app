@@ -37,22 +37,22 @@ public:
     ::android::net::NetworkInfo& operator=(const ::android::net::NetworkInfo& x) {obj = x.obj; return *this;}
     ::android::net::NetworkInfo& operator=(::android::net::NetworkInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getType() const ;
-    int32_t getSubtype() const ;
-    ::java::lang::String getTypeName() const ;
-    ::java::lang::String getSubtypeName() const ;
-    bool isConnectedOrConnecting() const ;
-    bool isConnected() const ;
-    bool isAvailable() const ;
-    bool isFailover() const ;
-    bool isRoaming() const ;
-    ::android::net::NetworkInfo_State getState() const ;
-    ::android::net::NetworkInfo_DetailedState getDetailedState() const ;
-    ::java::lang::String getReason() const ;
-    ::java::lang::String getExtraInfo() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t getType() const;
+    int32_t getSubtype() const;
+    ::java::lang::String getTypeName() const;
+    ::java::lang::String getSubtypeName() const;
+    bool isConnectedOrConnecting() const;
+    bool isConnected() const;
+    bool isAvailable() const;
+    bool isFailover() const;
+    bool isRoaming() const;
+    ::android::net::NetworkInfo_State getState() const;
+    ::android::net::NetworkInfo_DetailedState getDetailedState() const;
+    ::java::lang::String getReason() const;
+    ::java::lang::String getExtraInfo() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

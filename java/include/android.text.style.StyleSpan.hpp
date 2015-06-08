@@ -40,12 +40,12 @@ public:
     
     StyleSpan(int32_t);
     StyleSpan(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t getStyle() const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
-    void updateMeasureState(const ::android::text::TextPaint&) const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t getStyle() const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
+    void updateMeasureState(const ::android::text::TextPaint&) const;
 
 };
 }

@@ -35,7 +35,7 @@ public:
     ::com::facebook::share::internal::VideoUploader_UploadWorkItemBase& operator=(const ::com::facebook::share::internal::VideoUploader_UploadWorkItemBase& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::VideoUploader_UploadWorkItemBase& operator=(::com::facebook::share::internal::VideoUploader_UploadWorkItemBase&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

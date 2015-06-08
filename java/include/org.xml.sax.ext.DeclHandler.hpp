@@ -34,10 +34,10 @@ public:
     ::org::xml::sax::ext::DeclHandler& operator=(const ::org::xml::sax::ext::DeclHandler& x) {obj = x.obj; return *this;}
     ::org::xml::sax::ext::DeclHandler& operator=(::org::xml::sax::ext::DeclHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void elementDecl(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void attributeDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void internalEntityDecl(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void externalEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    void elementDecl(const ::java::lang::String&, const ::java::lang::String&) const;
+    void attributeDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void internalEntityDecl(const ::java::lang::String&, const ::java::lang::String&) const;
+    void externalEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

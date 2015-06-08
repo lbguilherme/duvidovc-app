@@ -47,17 +47,17 @@ public:
     Spinner(const ::android::content::Context&, const ::android::util::AttributeSet&);
     Spinner(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     Spinner(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t, int32_t);
-    void setEnabled(bool) const ;
-    void setGravity(int32_t) const ;
-    void setAdapter(const ::android::widget::SpinnerAdapter&) const ;
-    int32_t getBaseline() const ;
-    void setOnItemClickListener(const ::android::widget::AdapterView_OnItemClickListener&) const ;
-    bool performClick() const ;
-    void onClick(const ::android::content::DialogInterface&, int32_t) const ;
-    void setPrompt(const ::java::lang::CharSequence&) const ;
-    void setPromptId(int32_t) const ;
-    ::java::lang::CharSequence getPrompt() const ;
-    void setAdapter(const ::android::widget::Adapter&) const ;
+    void setEnabled(bool) const;
+    void setGravity(int32_t) const;
+    void setAdapter(const ::android::widget::SpinnerAdapter&) const;
+    int32_t getBaseline() const;
+    void setOnItemClickListener(const ::android::widget::AdapterView_OnItemClickListener&) const;
+    bool performClick() const;
+    void onClick(const ::android::content::DialogInterface&, int32_t) const;
+    void setPrompt(const ::java::lang::CharSequence&) const;
+    void setPromptId(int32_t) const;
+    ::java::lang::CharSequence getPrompt() const;
+    void setAdapter(const ::android::widget::Adapter&) const;
 
 };
 }

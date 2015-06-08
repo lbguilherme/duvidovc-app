@@ -34,18 +34,18 @@ public:
     
     Matrix2f();
     Matrix2f(const std::vector< float>&);
-    std::vector< float> getArray() const ;
-    float get(int32_t, int32_t) const ;
-    void set(int32_t, int32_t, float) const ;
-    void loadIdentity() const ;
-    void load(const ::android::renderscript::Matrix2f&) const ;
-    void loadRotate(float) const ;
-    void loadScale(float, float) const ;
-    void loadMultiply(const ::android::renderscript::Matrix2f&, const ::android::renderscript::Matrix2f&) const ;
-    void multiply(const ::android::renderscript::Matrix2f&) const ;
-    void rotate(float) const ;
-    void scale(float, float) const ;
-    void transpose() const ;
+    std::vector< float> getArray() const;
+    float get(int32_t, int32_t) const;
+    void set(int32_t, int32_t, float) const;
+    void loadIdentity() const;
+    void load(const ::android::renderscript::Matrix2f&) const;
+    void loadRotate(float) const;
+    void loadScale(float, float) const;
+    void loadMultiply(const ::android::renderscript::Matrix2f&, const ::android::renderscript::Matrix2f&) const;
+    void multiply(const ::android::renderscript::Matrix2f&) const;
+    void rotate(float) const;
+    void scale(float, float) const;
+    void transpose() const;
 
 };
 }

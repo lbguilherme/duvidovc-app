@@ -38,7 +38,7 @@ public:
     ::android::support::v4::view::ViewPropertyAnimatorCompat_JBMr2ViewPropertyAnimatorCompatImpl& operator=(const ::android::support::v4::view::ViewPropertyAnimatorCompat_JBMr2ViewPropertyAnimatorCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPropertyAnimatorCompat_JBMr2ViewPropertyAnimatorCompatImpl& operator=(::android::support::v4::view::ViewPropertyAnimatorCompat_JBMr2ViewPropertyAnimatorCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::animation::Interpolator getInterpolator(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&) const ;
+    ::android::view::animation::Interpolator getInterpolator(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&) const;
 
 };
 }

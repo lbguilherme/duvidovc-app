@@ -36,9 +36,9 @@ public:
     ::javax::crypto::spec::DHPublicKeySpec& operator=(::javax::crypto::spec::DHPublicKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     DHPublicKeySpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getY() const ;
-    ::java::math::BigInteger getP() const ;
-    ::java::math::BigInteger getG() const ;
+    ::java::math::BigInteger getY() const;
+    ::java::math::BigInteger getP() const;
+    ::java::math::BigInteger getG() const;
 
 };
 }

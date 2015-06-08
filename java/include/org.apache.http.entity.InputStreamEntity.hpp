@@ -38,12 +38,12 @@ public:
     ::org::apache::http::entity::InputStreamEntity& operator=(::org::apache::http::entity::InputStreamEntity&& x) {obj = std::move(x.obj); return *this;}
     
     InputStreamEntity(const ::java::io::InputStream&, int64_t);
-    bool isRepeatable() const ;
-    int64_t getContentLength() const ;
-    ::java::io::InputStream getContent() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    void consumeContent() const ;
+    bool isRepeatable() const;
+    int64_t getContentLength() const;
+    ::java::io::InputStream getContent() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    void consumeContent() const;
 
 };
 }

@@ -33,8 +33,8 @@ public:
     ::android::app::DownloadManager_Query& operator=(::android::app::DownloadManager_Query&& x) {obj = std::move(x.obj); return *this;}
     
     DownloadManager_Query();
-    ::android::app::DownloadManager_Query setFilterById(const std::vector< int64_t>&) const ;
-    ::android::app::DownloadManager_Query setFilterByStatus(int32_t) const ;
+    ::android::app::DownloadManager_Query setFilterById(const std::vector< int64_t>&) const;
+    ::android::app::DownloadManager_Query setFilterByStatus(int32_t) const;
 
 };
 }

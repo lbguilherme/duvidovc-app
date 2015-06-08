@@ -32,8 +32,8 @@ public:
     ::android::view::ViewGroup_OnHierarchyChangeListener& operator=(const ::android::view::ViewGroup_OnHierarchyChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::ViewGroup_OnHierarchyChangeListener& operator=(::android::view::ViewGroup_OnHierarchyChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onChildViewAdded(const ::android::view::View&, const ::android::view::View&) const ;
-    void onChildViewRemoved(const ::android::view::View&, const ::android::view::View&) const ;
+    void onChildViewAdded(const ::android::view::View&, const ::android::view::View&) const;
+    void onChildViewRemoved(const ::android::view::View&, const ::android::view::View&) const;
 
 };
 }

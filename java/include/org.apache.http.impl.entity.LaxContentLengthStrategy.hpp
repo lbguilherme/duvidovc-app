@@ -38,7 +38,7 @@ public:
     ::org::apache::http::impl::entity::LaxContentLengthStrategy& operator=(::org::apache::http::impl::entity::LaxContentLengthStrategy&& x) {obj = std::move(x.obj); return *this;}
     
     LaxContentLengthStrategy();
-    int64_t determineLength(const ::org::apache::http::HttpMessage&) const ;
+    int64_t determineLength(const ::org::apache::http::HttpMessage&) const;
 
 };
 }

@@ -42,23 +42,23 @@ public:
     ::android::support::v4::widget::MaterialProgressDrawable& operator=(::android::support::v4::widget::MaterialProgressDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     MaterialProgressDrawable(const ::android::content::Context&, const ::android::view::View&);
-    void updateSizes(int32_t) const ;
-    void showArrow(bool) const ;
-    void setArrowScale(float) const ;
-    void setStartEndTrim(float, float) const ;
-    void setProgressRotation(float) const ;
-    void setBackgroundColor(int32_t) const ;
-    void setColorSchemeColors(const std::vector< int32_t>&) const ;
-    int32_t getIntrinsicHeight() const ;
-    int32_t getIntrinsicWidth() const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    void setAlpha(int32_t) const ;
-    int32_t getAlpha() const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    int32_t getOpacity() const ;
-    bool isRunning() const ;
-    void start() const ;
-    void stop() const ;
+    void updateSizes(int32_t) const;
+    void showArrow(bool) const;
+    void setArrowScale(float) const;
+    void setStartEndTrim(float, float) const;
+    void setProgressRotation(float) const;
+    void setBackgroundColor(int32_t) const;
+    void setColorSchemeColors(const std::vector< int32_t>&) const;
+    int32_t getIntrinsicHeight() const;
+    int32_t getIntrinsicWidth() const;
+    void draw(const ::android::graphics::Canvas&) const;
+    void setAlpha(int32_t) const;
+    int32_t getAlpha() const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    int32_t getOpacity() const;
+    bool isRunning() const;
+    void start() const;
+    void stop() const;
 
 };
 }

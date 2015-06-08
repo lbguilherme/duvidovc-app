@@ -41,7 +41,7 @@ public:
     FacebookException(const ::java::lang::String&, const std::vector< ::java::lang::Object>&);
     FacebookException(const ::java::lang::String&, const ::java::lang::Throwable&);
     FacebookException(const ::java::lang::Throwable&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

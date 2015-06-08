@@ -40,18 +40,18 @@ public:
     ::javax::xml::xpath::XPath& operator=(const ::javax::xml::xpath::XPath& x) {obj = x.obj; return *this;}
     ::javax::xml::xpath::XPath& operator=(::javax::xml::xpath::XPath&& x) {obj = std::move(x.obj); return *this;}
     
-    void reset() const ;
-    void setXPathVariableResolver(const ::javax::xml::xpath::XPathVariableResolver&) const ;
-    ::javax::xml::xpath::XPathVariableResolver getXPathVariableResolver() const ;
-    void setXPathFunctionResolver(const ::javax::xml::xpath::XPathFunctionResolver&) const ;
-    ::javax::xml::xpath::XPathFunctionResolver getXPathFunctionResolver() const ;
-    void setNamespaceContext(const ::javax::xml::namespace_::NamespaceContext&) const ;
-    ::javax::xml::namespace_::NamespaceContext getNamespaceContext() const ;
-    ::javax::xml::xpath::XPathExpression compile(const ::java::lang::String&) const ;
-    ::java::lang::Object evaluate(const ::java::lang::String&, const ::java::lang::Object&, const ::javax::xml::namespace_::QName&) const ;
-    ::java::lang::String evaluate(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object evaluate(const ::java::lang::String&, const ::org::xml::sax::InputSource&, const ::javax::xml::namespace_::QName&) const ;
-    ::java::lang::String evaluate(const ::java::lang::String&, const ::org::xml::sax::InputSource&) const ;
+    void reset() const;
+    void setXPathVariableResolver(const ::javax::xml::xpath::XPathVariableResolver&) const;
+    ::javax::xml::xpath::XPathVariableResolver getXPathVariableResolver() const;
+    void setXPathFunctionResolver(const ::javax::xml::xpath::XPathFunctionResolver&) const;
+    ::javax::xml::xpath::XPathFunctionResolver getXPathFunctionResolver() const;
+    void setNamespaceContext(const ::javax::xml::namespace_::NamespaceContext&) const;
+    ::javax::xml::namespace_::NamespaceContext getNamespaceContext() const;
+    ::javax::xml::xpath::XPathExpression compile(const ::java::lang::String&) const;
+    ::java::lang::Object evaluate(const ::java::lang::String&, const ::java::lang::Object&, const ::javax::xml::namespace_::QName&) const;
+    ::java::lang::String evaluate(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object evaluate(const ::java::lang::String&, const ::org::xml::sax::InputSource&, const ::javax::xml::namespace_::QName&) const;
+    ::java::lang::String evaluate(const ::java::lang::String&, const ::org::xml::sax::InputSource&) const;
 
 };
 }

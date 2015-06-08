@@ -36,7 +36,7 @@ public:
     
     Editable_Factory();
     static ::android::text::Editable_Factory getInstance();
-    ::android::text::Editable newEditable(const ::java::lang::CharSequence&) const ;
+    ::android::text::Editable newEditable(const ::java::lang::CharSequence&) const;
 
 };
 }

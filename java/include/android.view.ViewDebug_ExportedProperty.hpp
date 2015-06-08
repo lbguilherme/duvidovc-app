@@ -36,13 +36,13 @@ public:
     ::android::view::ViewDebug_ExportedProperty& operator=(const ::android::view::ViewDebug_ExportedProperty& x) {obj = x.obj; return *this;}
     ::android::view::ViewDebug_ExportedProperty& operator=(::android::view::ViewDebug_ExportedProperty&& x) {obj = std::move(x.obj); return *this;}
     
-    bool resolveId() const ;
-    std::vector< ::android::view::ViewDebug_IntToString> mapping() const ;
-    std::vector< ::android::view::ViewDebug_IntToString> indexMapping() const ;
-    std::vector< ::android::view::ViewDebug_FlagToString> flagMapping() const ;
-    bool deepExport() const ;
-    ::java::lang::String prefix() const ;
-    ::java::lang::String category() const ;
+    bool resolveId() const;
+    std::vector< ::android::view::ViewDebug_IntToString> mapping() const;
+    std::vector< ::android::view::ViewDebug_IntToString> indexMapping() const;
+    std::vector< ::android::view::ViewDebug_FlagToString> flagMapping() const;
+    bool deepExport() const;
+    ::java::lang::String prefix() const;
+    ::java::lang::String category() const;
 
 };
 }

@@ -33,9 +33,9 @@ public:
     ::java::security::interfaces::DSAParams& operator=(const ::java::security::interfaces::DSAParams& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::DSAParams& operator=(::java::security::interfaces::DSAParams&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::math::BigInteger getG() const ;
-    ::java::math::BigInteger getP() const ;
-    ::java::math::BigInteger getQ() const ;
+    ::java::math::BigInteger getG() const;
+    ::java::math::BigInteger getP() const;
+    ::java::math::BigInteger getQ() const;
 
 };
 }

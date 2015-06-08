@@ -43,8 +43,8 @@ public:
     HttpOptions();
     HttpOptions(const ::java::net::URI&);
     HttpOptions(const ::java::lang::String&);
-    ::java::lang::String getMethod() const ;
-    ::java::util::Set getAllowedMethods(const ::org::apache::http::HttpResponse&) const ;
+    ::java::lang::String getMethod() const;
+    ::java::util::Set getAllowedMethods(const ::org::apache::http::HttpResponse&) const;
 
 };
 }

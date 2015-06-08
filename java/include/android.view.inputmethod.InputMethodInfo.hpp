@@ -48,23 +48,23 @@ public:
     
     InputMethodInfo(const ::android::content::Context&, const ::android::content::pm::ResolveInfo&);
     InputMethodInfo(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::CharSequence&, const ::java::lang::String&);
-    ::java::lang::String getId() const ;
-    ::java::lang::String getPackageName() const ;
-    ::java::lang::String getServiceName() const ;
-    ::android::content::pm::ServiceInfo getServiceInfo() const ;
-    ::android::content::ComponentName getComponent() const ;
-    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const ;
-    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const ;
-    ::java::lang::String getSettingsActivity() const ;
-    int32_t getSubtypeCount() const ;
-    ::android::view::inputmethod::InputMethodSubtype getSubtypeAt(int32_t) const ;
-    int32_t getIsDefaultResourceId() const ;
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    ::java::lang::String getId() const;
+    ::java::lang::String getPackageName() const;
+    ::java::lang::String getServiceName() const;
+    ::android::content::pm::ServiceInfo getServiceInfo() const;
+    ::android::content::ComponentName getComponent() const;
+    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const;
+    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const;
+    ::java::lang::String getSettingsActivity() const;
+    int32_t getSubtypeCount() const;
+    ::android::view::inputmethod::InputMethodSubtype getSubtypeAt(int32_t) const;
+    int32_t getIsDefaultResourceId() const;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

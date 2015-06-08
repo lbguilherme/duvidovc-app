@@ -36,8 +36,8 @@ public:
     ::android::support::v4::view::ViewCompat_GBViewCompatImpl& operator=(const ::android::support::v4::view::ViewCompat_GBViewCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewCompat_GBViewCompatImpl& operator=(::android::support::v4::view::ViewCompat_GBViewCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getOverScrollMode(const ::android::view::View&) const ;
-    void setOverScrollMode(const ::android::view::View&, int32_t) const ;
+    int32_t getOverScrollMode(const ::android::view::View&) const;
+    void setOverScrollMode(const ::android::view::View&, int32_t) const;
 
 };
 }

@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::client::BasicResponseHandler& operator=(::org::apache::http::impl::client::BasicResponseHandler&& x) {obj = std::move(x.obj); return *this;}
     
     BasicResponseHandler();
-    ::java::lang::String handleResponse(const ::org::apache::http::HttpResponse&) const ;
+    ::java::lang::String handleResponse(const ::org::apache::http::HttpResponse&) const;
 
 };
 }

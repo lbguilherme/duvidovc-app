@@ -42,17 +42,17 @@ public:
     FrameLayout(const ::android::content::Context&);
     FrameLayout(const ::android::content::Context&, const ::android::util::AttributeSet&);
     FrameLayout(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setForegroundGravity(int32_t) const ;
-    void jumpDrawablesToCurrentState() const ;
-    void setForeground(const ::android::graphics::drawable::Drawable&) const ;
-    ::android::graphics::drawable::Drawable getForeground() const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    bool gatherTransparentRegion(const ::android::graphics::Region&) const ;
-    void setMeasureAllChildren(bool) const ;
-    bool getConsiderGoneChildrenWhenMeasuring() const ;
-    bool getMeasureAllChildren() const ;
-    ::android::widget::FrameLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const ;
-    bool shouldDelayChildPressedState() const ;
+    void setForegroundGravity(int32_t) const;
+    void jumpDrawablesToCurrentState() const;
+    void setForeground(const ::android::graphics::drawable::Drawable&) const;
+    ::android::graphics::drawable::Drawable getForeground() const;
+    void draw(const ::android::graphics::Canvas&) const;
+    bool gatherTransparentRegion(const ::android::graphics::Region&) const;
+    void setMeasureAllChildren(bool) const;
+    bool getConsiderGoneChildrenWhenMeasuring() const;
+    bool getMeasureAllChildren() const;
+    ::android::widget::FrameLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const;
+    bool shouldDelayChildPressedState() const;
 
 };
 }

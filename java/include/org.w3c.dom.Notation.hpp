@@ -35,8 +35,8 @@ public:
     ::org::w3c::dom::Notation& operator=(const ::org::w3c::dom::Notation& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::Notation& operator=(::org::w3c::dom::Notation&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getPublicId() const ;
-    ::java::lang::String getSystemId() const ;
+    ::java::lang::String getPublicId() const;
+    ::java::lang::String getSystemId() const;
 
 };
 }

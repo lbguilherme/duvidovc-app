@@ -36,7 +36,7 @@ public:
     ::android::text::InputFilter_LengthFilter& operator=(::android::text::InputFilter_LengthFilter&& x) {obj = std::move(x.obj); return *this;}
     
     InputFilter_LengthFilter(int32_t);
-    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const ;
+    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const;
 
 };
 }

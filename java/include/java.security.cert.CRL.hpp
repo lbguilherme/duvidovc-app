@@ -34,9 +34,9 @@ public:
     ::java::security::cert::CRL& operator=(const ::java::security::cert::CRL& x) {obj = x.obj; return *this;}
     ::java::security::cert::CRL& operator=(::java::security::cert::CRL&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getType() const ;
-    bool isRevoked(const ::java::security::cert::Certificate&) const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getType() const;
+    bool isRevoked(const ::java::security::cert::Certificate&) const;
+    ::java::lang::String toString() const;
 
 };
 }

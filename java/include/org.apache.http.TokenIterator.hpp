@@ -35,8 +35,8 @@ public:
     ::org::apache::http::TokenIterator& operator=(const ::org::apache::http::TokenIterator& x) {obj = x.obj; return *this;}
     ::org::apache::http::TokenIterator& operator=(::org::apache::http::TokenIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasNext() const ;
-    ::java::lang::String nextToken() const ;
+    bool hasNext() const;
+    ::java::lang::String nextToken() const;
 
 };
 }

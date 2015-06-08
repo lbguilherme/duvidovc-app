@@ -37,19 +37,19 @@ public:
     ::android::app::DownloadManager_Request& operator=(::android::app::DownloadManager_Request&& x) {obj = std::move(x.obj); return *this;}
     
     DownloadManager_Request(const ::android::net::Uri&);
-    ::android::app::DownloadManager_Request setDestinationUri(const ::android::net::Uri&) const ;
-    ::android::app::DownloadManager_Request setDestinationInExternalFilesDir(const ::android::content::Context&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::app::DownloadManager_Request setDestinationInExternalPublicDir(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void allowScanningByMediaScanner() const ;
-    ::android::app::DownloadManager_Request addRequestHeader(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::app::DownloadManager_Request setTitle(const ::java::lang::CharSequence&) const ;
-    ::android::app::DownloadManager_Request setDescription(const ::java::lang::CharSequence&) const ;
-    ::android::app::DownloadManager_Request setMimeType(const ::java::lang::String&) const ;
-    ::android::app::DownloadManager_Request setShowRunningNotification(bool) const ;
-    ::android::app::DownloadManager_Request setNotificationVisibility(int32_t) const ;
-    ::android::app::DownloadManager_Request setAllowedNetworkTypes(int32_t) const ;
-    ::android::app::DownloadManager_Request setAllowedOverRoaming(bool) const ;
-    ::android::app::DownloadManager_Request setVisibleInDownloadsUi(bool) const ;
+    ::android::app::DownloadManager_Request setDestinationUri(const ::android::net::Uri&) const;
+    ::android::app::DownloadManager_Request setDestinationInExternalFilesDir(const ::android::content::Context&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::app::DownloadManager_Request setDestinationInExternalPublicDir(const ::java::lang::String&, const ::java::lang::String&) const;
+    void allowScanningByMediaScanner() const;
+    ::android::app::DownloadManager_Request addRequestHeader(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::app::DownloadManager_Request setTitle(const ::java::lang::CharSequence&) const;
+    ::android::app::DownloadManager_Request setDescription(const ::java::lang::CharSequence&) const;
+    ::android::app::DownloadManager_Request setMimeType(const ::java::lang::String&) const;
+    ::android::app::DownloadManager_Request setShowRunningNotification(bool) const;
+    ::android::app::DownloadManager_Request setNotificationVisibility(int32_t) const;
+    ::android::app::DownloadManager_Request setAllowedNetworkTypes(int32_t) const;
+    ::android::app::DownloadManager_Request setAllowedOverRoaming(bool) const;
+    ::android::app::DownloadManager_Request setVisibleInDownloadsUi(bool) const;
 
 };
 }

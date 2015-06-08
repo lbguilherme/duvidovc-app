@@ -36,14 +36,14 @@ public:
     ::java::lang::StackTraceElement& operator=(::java::lang::StackTraceElement&& x) {obj = std::move(x.obj); return *this;}
     
     StackTraceElement(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, int32_t);
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String getClassName() const ;
-    ::java::lang::String getFileName() const ;
-    int32_t getLineNumber() const ;
-    ::java::lang::String getMethodName() const ;
-    int32_t hashCode() const ;
-    bool isNativeMethod() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String getClassName() const;
+    ::java::lang::String getFileName() const;
+    int32_t getLineNumber() const;
+    ::java::lang::String getMethodName() const;
+    int32_t hashCode() const;
+    bool isNativeMethod() const;
+    ::java::lang::String toString() const;
 
 };
 }

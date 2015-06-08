@@ -36,23 +36,23 @@ public:
     ::android::widget::Toast& operator=(::android::widget::Toast&& x) {obj = std::move(x.obj); return *this;}
     
     Toast(const ::android::content::Context&);
-    void show() const ;
-    void cancel() const ;
-    void setView(const ::android::view::View&) const ;
-    ::android::view::View getView() const ;
-    void setDuration(int32_t) const ;
-    int32_t getDuration() const ;
-    void setMargin(float, float) const ;
-    float getHorizontalMargin() const ;
-    float getVerticalMargin() const ;
-    void setGravity(int32_t, int32_t, int32_t) const ;
-    int32_t getGravity() const ;
-    int32_t getXOffset() const ;
-    int32_t getYOffset() const ;
+    void show() const;
+    void cancel() const;
+    void setView(const ::android::view::View&) const;
+    ::android::view::View getView() const;
+    void setDuration(int32_t) const;
+    int32_t getDuration() const;
+    void setMargin(float, float) const;
+    float getHorizontalMargin() const;
+    float getVerticalMargin() const;
+    void setGravity(int32_t, int32_t, int32_t) const;
+    int32_t getGravity() const;
+    int32_t getXOffset() const;
+    int32_t getYOffset() const;
     static ::android::widget::Toast makeText(const ::android::content::Context&, const ::java::lang::CharSequence&, int32_t);
     static ::android::widget::Toast makeText(const ::android::content::Context&, int32_t, int32_t);
-    void setText(int32_t) const ;
-    void setText(const ::java::lang::CharSequence&) const ;
+    void setText(int32_t) const;
+    void setText(const ::java::lang::CharSequence&) const;
 
 };
 }

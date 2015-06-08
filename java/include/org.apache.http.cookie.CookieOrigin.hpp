@@ -35,11 +35,11 @@ public:
     ::org::apache::http::cookie::CookieOrigin& operator=(::org::apache::http::cookie::CookieOrigin&& x) {obj = std::move(x.obj); return *this;}
     
     CookieOrigin(const ::java::lang::String&, int32_t, const ::java::lang::String&, bool);
-    ::java::lang::String getHost() const ;
-    ::java::lang::String getPath() const ;
-    int32_t getPort() const ;
-    bool isSecure() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getHost() const;
+    ::java::lang::String getPath() const;
+    int32_t getPort() const;
+    bool isSecure() const;
+    ::java::lang::String toString() const;
 
 };
 }

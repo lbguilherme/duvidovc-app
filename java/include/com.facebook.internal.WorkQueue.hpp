@@ -38,9 +38,9 @@ public:
     WorkQueue();
     WorkQueue(int32_t);
     WorkQueue(int32_t, const ::java::util::concurrent::Executor&);
-    ::com::facebook::internal::WorkQueue_WorkItem addActiveWorkItem(const ::java::lang::Runnable&) const ;
-    ::com::facebook::internal::WorkQueue_WorkItem addActiveWorkItem(const ::java::lang::Runnable&, bool) const ;
-    void validate() const ;
+    ::com::facebook::internal::WorkQueue_WorkItem addActiveWorkItem(const ::java::lang::Runnable&) const;
+    ::com::facebook::internal::WorkQueue_WorkItem addActiveWorkItem(const ::java::lang::Runnable&, bool) const;
+    void validate() const;
 
 };
 }

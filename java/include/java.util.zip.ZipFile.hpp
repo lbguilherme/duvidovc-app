@@ -40,12 +40,12 @@ public:
     ZipFile(const ::java::io::File&);
     ZipFile(const ::java::io::File&, int32_t);
     ZipFile(const ::java::lang::String&);
-    void close() const ;
-    ::java::util::Enumeration entries() const ;
-    ::java::util::zip::ZipEntry getEntry(const ::java::lang::String&) const ;
-    ::java::io::InputStream getInputStream(const ::java::util::zip::ZipEntry&) const ;
-    ::java::lang::String getName() const ;
-    int32_t size() const ;
+    void close() const;
+    ::java::util::Enumeration entries() const;
+    ::java::util::zip::ZipEntry getEntry(const ::java::lang::String&) const;
+    ::java::io::InputStream getInputStream(const ::java::util::zip::ZipEntry&) const;
+    ::java::lang::String getName() const;
+    int32_t size() const;
 
 };
 }

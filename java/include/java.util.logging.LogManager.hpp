@@ -40,17 +40,17 @@ public:
     ::java::util::logging::LogManager& operator=(::java::util::logging::LogManager&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::util::logging::LoggingMXBean getLoggingMXBean();
-    void checkAccess() const ;
-    bool addLogger(const ::java::util::logging::Logger&) const ;
-    ::java::util::logging::Logger getLogger(const ::java::lang::String&) const ;
-    ::java::util::Enumeration getLoggerNames() const ;
+    void checkAccess() const;
+    bool addLogger(const ::java::util::logging::Logger&) const;
+    ::java::util::logging::Logger getLogger(const ::java::lang::String&) const;
+    ::java::util::Enumeration getLoggerNames() const;
     static ::java::util::logging::LogManager getLogManager();
-    ::java::lang::String getProperty(const ::java::lang::String&) const ;
-    void readConfiguration() const ;
-    void readConfiguration(const ::java::io::InputStream&) const ;
-    void reset() const ;
-    void addPropertyChangeListener(const ::java::beans::PropertyChangeListener&) const ;
-    void removePropertyChangeListener(const ::java::beans::PropertyChangeListener&) const ;
+    ::java::lang::String getProperty(const ::java::lang::String&) const;
+    void readConfiguration() const;
+    void readConfiguration(const ::java::io::InputStream&) const;
+    void reset() const;
+    void addPropertyChangeListener(const ::java::beans::PropertyChangeListener&) const;
+    void removePropertyChangeListener(const ::java::beans::PropertyChangeListener&) const;
 
 };
 }

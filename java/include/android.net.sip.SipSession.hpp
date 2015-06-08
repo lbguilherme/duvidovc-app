@@ -35,19 +35,19 @@ public:
     ::android::net::sip::SipSession& operator=(const ::android::net::sip::SipSession& x) {obj = x.obj; return *this;}
     ::android::net::sip::SipSession& operator=(::android::net::sip::SipSession&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getLocalIp() const ;
-    ::android::net::sip::SipProfile getLocalProfile() const ;
-    ::android::net::sip::SipProfile getPeerProfile() const ;
-    int32_t getState() const ;
-    bool isInCall() const ;
-    ::java::lang::String getCallId() const ;
-    void setListener(const ::android::net::sip::SipSession_Listener&) const ;
-    void register_(int32_t) const ;
-    void unregister() const ;
-    void makeCall(const ::android::net::sip::SipProfile&, const ::java::lang::String&, int32_t) const ;
-    void answerCall(const ::java::lang::String&, int32_t) const ;
-    void endCall() const ;
-    void changeCall(const ::java::lang::String&, int32_t) const ;
+    ::java::lang::String getLocalIp() const;
+    ::android::net::sip::SipProfile getLocalProfile() const;
+    ::android::net::sip::SipProfile getPeerProfile() const;
+    int32_t getState() const;
+    bool isInCall() const;
+    ::java::lang::String getCallId() const;
+    void setListener(const ::android::net::sip::SipSession_Listener&) const;
+    void register_(int32_t) const;
+    void unregister() const;
+    void makeCall(const ::android::net::sip::SipProfile&, const ::java::lang::String&, int32_t) const;
+    void answerCall(const ::java::lang::String&, int32_t) const;
+    void endCall() const;
+    void changeCall(const ::java::lang::String&, int32_t) const;
 
 };
 }

@@ -33,8 +33,8 @@ public:
     ::java::net::PasswordAuthentication& operator=(::java::net::PasswordAuthentication&& x) {obj = std::move(x.obj); return *this;}
     
     PasswordAuthentication(const ::java::lang::String&, const std::vector< uint16_t>&);
-    std::vector< uint16_t> getPassword() const ;
-    ::java::lang::String getUserName() const ;
+    std::vector< uint16_t> getPassword() const;
+    ::java::lang::String getUserName() const;
 
 };
 }

@@ -37,12 +37,12 @@ public:
     ::org::apache::http::params::HttpConnectionParamBean& operator=(::org::apache::http::params::HttpConnectionParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     HttpConnectionParamBean(const ::org::apache::http::params::HttpParams&);
-    void setSoTimeout(int32_t) const ;
-    void setTcpNoDelay(bool) const ;
-    void setSocketBufferSize(int32_t) const ;
-    void setLinger(int32_t) const ;
-    void setConnectionTimeout(int32_t) const ;
-    void setStaleCheckingEnabled(bool) const ;
+    void setSoTimeout(int32_t) const;
+    void setTcpNoDelay(bool) const;
+    void setSocketBufferSize(int32_t) const;
+    void setLinger(int32_t) const;
+    void setConnectionTimeout(int32_t) const;
+    void setStaleCheckingEnabled(bool) const;
 
 };
 }

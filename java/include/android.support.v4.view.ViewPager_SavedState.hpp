@@ -39,8 +39,8 @@ public:
     ::android::support::v4::view::ViewPager_SavedState& operator=(::android::support::v4::view::ViewPager_SavedState&& x) {obj = std::move(x.obj); return *this;}
     
     ViewPager_SavedState(const ::android::os::Parcelable&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

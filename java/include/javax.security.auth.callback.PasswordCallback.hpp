@@ -39,11 +39,11 @@ public:
     ::javax::security::auth::callback::PasswordCallback& operator=(::javax::security::auth::callback::PasswordCallback&& x) {obj = std::move(x.obj); return *this;}
     
     PasswordCallback(const ::java::lang::String&, bool);
-    ::java::lang::String getPrompt() const ;
-    bool isEchoOn() const ;
-    void setPassword(const std::vector< uint16_t>&) const ;
-    std::vector< uint16_t> getPassword() const ;
-    void clearPassword() const ;
+    ::java::lang::String getPrompt() const;
+    bool isEchoOn() const;
+    void setPassword(const std::vector< uint16_t>&) const;
+    std::vector< uint16_t> getPassword() const;
+    void clearPassword() const;
 
 };
 }

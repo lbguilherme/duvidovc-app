@@ -41,10 +41,10 @@ public:
     ::org::apache::http::conn::ssl::AbstractVerifier& operator=(::org::apache::http::conn::ssl::AbstractVerifier&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractVerifier();
-    void verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSocket&) const ;
-    bool verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSession&) const ;
-    void verify(const ::java::lang::String&, const ::java::security::cert::X509Certificate&) const ;
-    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&, bool) const ;
+    void verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSocket&) const;
+    bool verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSession&) const;
+    void verify(const ::java::lang::String&, const ::java::security::cert::X509Certificate&) const;
+    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&, bool) const;
     static bool acceptableCountryWildcard(const ::java::lang::String&);
     static std::vector< ::java::lang::String> getCNs(const ::java::security::cert::X509Certificate&);
     static std::vector< ::java::lang::String> getDNSSubjectAlts(const ::java::security::cert::X509Certificate&);

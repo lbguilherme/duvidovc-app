@@ -46,15 +46,15 @@ public:
     static ::java::util::ResourceBundle getBundle(const ::java::lang::String&, const ::java::util::ResourceBundle_Control&);
     static ::java::util::ResourceBundle getBundle(const ::java::lang::String&, const ::java::util::Locale&, const ::java::util::ResourceBundle_Control&);
     static ::java::util::ResourceBundle getBundle(const ::java::lang::String&, const ::java::util::Locale&, const ::java::lang::ClassLoader&, const ::java::util::ResourceBundle_Control&);
-    ::java::util::Enumeration getKeys() const ;
-    ::java::util::Locale getLocale() const ;
-    ::java::lang::Object getObject(const ::java::lang::String&) const ;
-    ::java::lang::String getString(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> getStringArray(const ::java::lang::String&) const ;
+    ::java::util::Enumeration getKeys() const;
+    ::java::util::Locale getLocale() const;
+    ::java::lang::Object getObject(const ::java::lang::String&) const;
+    ::java::lang::String getString(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> getStringArray(const ::java::lang::String&) const;
     static void clearCache();
     static void clearCache(const ::java::lang::ClassLoader&);
-    bool containsKey(const ::java::lang::String&) const ;
-    ::java::util::Set keySet() const ;
+    bool containsKey(const ::java::lang::String&) const;
+    ::java::util::Set keySet() const;
 
 };
 }

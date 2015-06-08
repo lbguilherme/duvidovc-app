@@ -37,15 +37,15 @@ public:
     ::android::renderscript::Script& operator=(const ::android::renderscript::Script& x) {obj = x.obj; return *this;}
     ::android::renderscript::Script& operator=(::android::renderscript::Script&& x) {obj = std::move(x.obj); return *this;}
     
-    void bindAllocation(const ::android::renderscript::Allocation&, int32_t) const ;
-    void setVar(int32_t, float) const ;
-    void setVar(int32_t, double) const ;
-    void setVar(int32_t, int32_t) const ;
-    void setVar(int32_t, int64_t) const ;
-    void setVar(int32_t, bool) const ;
-    void setVar(int32_t, const ::android::renderscript::BaseObj&) const ;
-    void setVar(int32_t, const ::android::renderscript::FieldPacker&) const ;
-    void setTimeZone(const ::java::lang::String&) const ;
+    void bindAllocation(const ::android::renderscript::Allocation&, int32_t) const;
+    void setVar(int32_t, float) const;
+    void setVar(int32_t, double) const;
+    void setVar(int32_t, int32_t) const;
+    void setVar(int32_t, int64_t) const;
+    void setVar(int32_t, bool) const;
+    void setVar(int32_t, const ::android::renderscript::BaseObj&) const;
+    void setVar(int32_t, const ::android::renderscript::FieldPacker&) const;
+    void setTimeZone(const ::java::lang::String&) const;
 
 };
 }

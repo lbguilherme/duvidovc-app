@@ -35,9 +35,9 @@ public:
     ::java::util::jar::Attributes_Name& operator=(::java::util::jar::Attributes_Name&& x) {obj = std::move(x.obj); return *this;}
     
     Attributes_Name(const ::java::lang::String&);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

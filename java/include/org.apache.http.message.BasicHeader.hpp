@@ -41,11 +41,11 @@ public:
     ::org::apache::http::message::BasicHeader& operator=(::org::apache::http::message::BasicHeader&& x) {obj = std::move(x.obj); return *this;}
     
     BasicHeader(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    ::java::lang::String toString() const ;
-    std::vector< ::org::apache::http::HeaderElement> getElements() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    ::java::lang::String toString() const;
+    std::vector< ::org::apache::http::HeaderElement> getElements() const;
+    ::java::lang::Object clone() const;
 
 };
 }

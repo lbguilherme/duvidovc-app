@@ -32,8 +32,8 @@ public:
     ::android::webkit::WebView_HitTestResult& operator=(const ::android::webkit::WebView_HitTestResult& x) {obj = x.obj; return *this;}
     ::android::webkit::WebView_HitTestResult& operator=(::android::webkit::WebView_HitTestResult&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getType() const ;
-    ::java::lang::String getExtra() const ;
+    int32_t getType() const;
+    ::java::lang::String getExtra() const;
 
 };
 }

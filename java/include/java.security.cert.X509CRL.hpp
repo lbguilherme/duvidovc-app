@@ -46,24 +46,24 @@ public:
     ::java::security::cert::X509CRL& operator=(const ::java::security::cert::X509CRL& x) {obj = x.obj; return *this;}
     ::java::security::cert::X509CRL& operator=(::java::security::cert::X509CRL&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    std::vector< int8_t> getEncoded() const ;
-    void verify(const ::java::security::PublicKey&) const ;
-    void verify(const ::java::security::PublicKey&, const ::java::lang::String&) const ;
-    int32_t getVersion() const ;
-    ::java::security::Principal getIssuerDN() const ;
-    ::javax::security::auth::x500::X500Principal getIssuerX500Principal() const ;
-    ::java::util::Date getThisUpdate() const ;
-    ::java::util::Date getNextUpdate() const ;
-    ::java::security::cert::X509CRLEntry getRevokedCertificate(const ::java::math::BigInteger&) const ;
-    ::java::security::cert::X509CRLEntry getRevokedCertificate(const ::java::security::cert::X509Certificate&) const ;
-    ::java::util::Set getRevokedCertificates() const ;
-    std::vector< int8_t> getTBSCertList() const ;
-    std::vector< int8_t> getSignature() const ;
-    ::java::lang::String getSigAlgName() const ;
-    ::java::lang::String getSigAlgOID() const ;
-    std::vector< int8_t> getSigAlgParams() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    std::vector< int8_t> getEncoded() const;
+    void verify(const ::java::security::PublicKey&) const;
+    void verify(const ::java::security::PublicKey&, const ::java::lang::String&) const;
+    int32_t getVersion() const;
+    ::java::security::Principal getIssuerDN() const;
+    ::javax::security::auth::x500::X500Principal getIssuerX500Principal() const;
+    ::java::util::Date getThisUpdate() const;
+    ::java::util::Date getNextUpdate() const;
+    ::java::security::cert::X509CRLEntry getRevokedCertificate(const ::java::math::BigInteger&) const;
+    ::java::security::cert::X509CRLEntry getRevokedCertificate(const ::java::security::cert::X509Certificate&) const;
+    ::java::util::Set getRevokedCertificates() const;
+    std::vector< int8_t> getTBSCertList() const;
+    std::vector< int8_t> getSignature() const;
+    ::java::lang::String getSigAlgName() const;
+    ::java::lang::String getSigAlgOID() const;
+    std::vector< int8_t> getSigAlgParams() const;
 
 };
 }

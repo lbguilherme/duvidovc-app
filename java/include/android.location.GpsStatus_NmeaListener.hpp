@@ -32,7 +32,7 @@ public:
     ::android::location::GpsStatus_NmeaListener& operator=(const ::android::location::GpsStatus_NmeaListener& x) {obj = x.obj; return *this;}
     ::android::location::GpsStatus_NmeaListener& operator=(::android::location::GpsStatus_NmeaListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onNmeaReceived(int64_t, const ::java::lang::String&) const ;
+    void onNmeaReceived(int64_t, const ::java::lang::String&) const;
 
 };
 }

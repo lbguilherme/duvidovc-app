@@ -36,9 +36,9 @@ public:
     ::android::app::backup::BackupManager& operator=(::android::app::backup::BackupManager&& x) {obj = std::move(x.obj); return *this;}
     
     BackupManager(const ::android::content::Context&);
-    void dataChanged() const ;
+    void dataChanged() const;
     static void dataChanged(const ::java::lang::String&);
-    int32_t requestRestore(const ::android::app::backup::RestoreObserver&) const ;
+    int32_t requestRestore(const ::android::app::backup::RestoreObserver&) const;
 
 };
 }

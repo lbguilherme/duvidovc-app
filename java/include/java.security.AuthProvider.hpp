@@ -35,9 +35,9 @@ public:
     ::java::security::AuthProvider& operator=(const ::java::security::AuthProvider& x) {obj = x.obj; return *this;}
     ::java::security::AuthProvider& operator=(::java::security::AuthProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    void login(const ::javax::security::auth::Subject&, const ::javax::security::auth::callback::CallbackHandler&) const ;
-    void logout() const ;
-    void setCallbackHandler(const ::javax::security::auth::callback::CallbackHandler&) const ;
+    void login(const ::javax::security::auth::Subject&, const ::javax::security::auth::callback::CallbackHandler&) const;
+    void logout() const;
+    void setCallbackHandler(const ::javax::security::auth::callback::CallbackHandler&) const;
 
 };
 }

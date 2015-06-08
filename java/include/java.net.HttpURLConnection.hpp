@@ -36,22 +36,22 @@ public:
     ::java::net::HttpURLConnection& operator=(const ::java::net::HttpURLConnection& x) {obj = x.obj; return *this;}
     ::java::net::HttpURLConnection& operator=(::java::net::HttpURLConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    void disconnect() const ;
-    ::java::io::InputStream getErrorStream() const ;
+    void disconnect() const;
+    ::java::io::InputStream getErrorStream() const;
     static bool getFollowRedirects();
-    ::java::security::Permission getPermission() const ;
-    ::java::lang::String getRequestMethod() const ;
-    int32_t getResponseCode() const ;
-    ::java::lang::String getResponseMessage() const ;
+    ::java::security::Permission getPermission() const;
+    ::java::lang::String getRequestMethod() const;
+    int32_t getResponseCode() const;
+    ::java::lang::String getResponseMessage() const;
     static void setFollowRedirects(bool);
-    void setRequestMethod(const ::java::lang::String&) const ;
-    bool usingProxy() const ;
-    ::java::lang::String getContentEncoding() const ;
-    bool getInstanceFollowRedirects() const ;
-    void setInstanceFollowRedirects(bool) const ;
-    int64_t getHeaderFieldDate(const ::java::lang::String&, int64_t) const ;
-    void setFixedLengthStreamingMode(int32_t) const ;
-    void setChunkedStreamingMode(int32_t) const ;
+    void setRequestMethod(const ::java::lang::String&) const;
+    bool usingProxy() const;
+    ::java::lang::String getContentEncoding() const;
+    bool getInstanceFollowRedirects() const;
+    void setInstanceFollowRedirects(bool) const;
+    int64_t getHeaderFieldDate(const ::java::lang::String&, int64_t) const;
+    void setFixedLengthStreamingMode(int32_t) const;
+    void setChunkedStreamingMode(int32_t) const;
 
 };
 }

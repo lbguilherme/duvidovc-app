@@ -39,9 +39,9 @@ public:
     ::android::text::method::LinkMovementMethod& operator=(::android::text::method::LinkMovementMethod&& x) {obj = std::move(x.obj); return *this;}
     
     LinkMovementMethod();
-    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const ;
-    void initialize(const ::android::widget::TextView&, const ::android::text::Spannable&) const ;
-    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const ;
+    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const;
+    void initialize(const ::android::widget::TextView&, const ::android::text::Spannable&) const;
+    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const;
     static ::android::text::method::MovementMethod getInstance();
 
 };

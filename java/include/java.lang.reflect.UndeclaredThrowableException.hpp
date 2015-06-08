@@ -38,8 +38,8 @@ public:
     
     UndeclaredThrowableException(const ::java::lang::Throwable&);
     UndeclaredThrowableException(const ::java::lang::Throwable&, const ::java::lang::String&);
-    ::java::lang::Throwable getUndeclaredThrowable() const ;
-    ::java::lang::Throwable getCause() const ;
+    ::java::lang::Throwable getUndeclaredThrowable() const;
+    ::java::lang::Throwable getCause() const;
 
 };
 }

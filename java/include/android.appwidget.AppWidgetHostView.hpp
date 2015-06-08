@@ -42,12 +42,12 @@ public:
     
     AppWidgetHostView(const ::android::content::Context&);
     AppWidgetHostView(const ::android::content::Context&, int32_t, int32_t);
-    void setAppWidget(int32_t, const ::android::appwidget::AppWidgetProviderInfo&) const ;
+    void setAppWidget(int32_t, const ::android::appwidget::AppWidgetProviderInfo&) const;
     static ::android::graphics::Rect getDefaultPaddingForWidget(const ::android::content::Context&, const ::android::content::ComponentName&, const ::android::graphics::Rect&);
-    int32_t getAppWidgetId() const ;
-    ::android::appwidget::AppWidgetProviderInfo getAppWidgetInfo() const ;
-    ::android::widget::FrameLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const ;
-    void updateAppWidget(const ::android::widget::RemoteViews&) const ;
+    int32_t getAppWidgetId() const;
+    ::android::appwidget::AppWidgetProviderInfo getAppWidgetInfo() const;
+    ::android::widget::FrameLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const;
+    void updateAppWidget(const ::android::widget::RemoteViews&) const;
 
 };
 }

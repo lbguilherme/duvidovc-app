@@ -39,12 +39,12 @@ public:
     ::android::support::v4::widget::ExploreByTouchHelper& operator=(::android::support::v4::widget::ExploreByTouchHelper&& x) {obj = std::move(x.obj); return *this;}
     
     ExploreByTouchHelper(const ::android::view::View&);
-    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::android::view::View&) const ;
-    bool dispatchHoverEvent(const ::android::view::MotionEvent&) const ;
-    bool sendEventForVirtualView(int32_t, int32_t) const ;
-    void invalidateRoot() const ;
-    void invalidateVirtualView(int32_t) const ;
-    int32_t getFocusedVirtualView() const ;
+    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::android::view::View&) const;
+    bool dispatchHoverEvent(const ::android::view::MotionEvent&) const;
+    bool sendEventForVirtualView(int32_t, int32_t) const;
+    void invalidateRoot() const;
+    void invalidateVirtualView(int32_t) const;
+    int32_t getFocusedVirtualView() const;
 
 };
 }

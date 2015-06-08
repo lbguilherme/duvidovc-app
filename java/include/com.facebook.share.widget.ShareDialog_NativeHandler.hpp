@@ -38,11 +38,11 @@ public:
     ::com::facebook::share::widget::ShareDialog_NativeHandler& operator=(const ::com::facebook::share::widget::ShareDialog_NativeHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::ShareDialog_NativeHandler& operator=(::com::facebook::share::widget::ShareDialog_NativeHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object getMode() const ;
-    bool canShow(const ::com::facebook::share::model::ShareContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::model::ShareContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const ;
-    bool canShow(const ::java::lang::Object&) const ;
+    ::java::lang::Object getMode() const;
+    bool canShow(const ::com::facebook::share::model::ShareContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::model::ShareContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const;
+    bool canShow(const ::java::lang::Object&) const;
 
 };
 }

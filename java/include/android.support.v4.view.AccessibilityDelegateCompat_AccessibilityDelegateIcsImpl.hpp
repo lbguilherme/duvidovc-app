@@ -41,15 +41,15 @@ public:
     ::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateIcsImpl& operator=(const ::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateIcsImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateIcsImpl& operator=(::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateIcsImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object newAccessiblityDelegateDefaultImpl() const ;
-    ::java::lang::Object newAccessiblityDelegateBridge(const ::android::support::v4::view::AccessibilityDelegateCompat&) const ;
-    bool dispatchPopulateAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityNodeInfo(const ::java::lang::Object&, const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const ;
-    void onPopulateAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    bool onRequestSendAccessibilityEvent(const ::java::lang::Object&, const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void sendAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
-    void sendAccessibilityEventUnchecked(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
+    ::java::lang::Object newAccessiblityDelegateDefaultImpl() const;
+    ::java::lang::Object newAccessiblityDelegateBridge(const ::android::support::v4::view::AccessibilityDelegateCompat&) const;
+    bool dispatchPopulateAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityNodeInfo(const ::java::lang::Object&, const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const;
+    void onPopulateAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    bool onRequestSendAccessibilityEvent(const ::java::lang::Object&, const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void sendAccessibilityEvent(const ::java::lang::Object&, const ::android::view::View&, int32_t) const;
+    void sendAccessibilityEventUnchecked(const ::java::lang::Object&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

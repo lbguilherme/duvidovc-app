@@ -37,12 +37,12 @@ public:
     
     ViewFlipper(const ::android::content::Context&);
     ViewFlipper(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setFlipInterval(int32_t) const ;
-    void startFlipping() const ;
-    void stopFlipping() const ;
-    bool isFlipping() const ;
-    void setAutoStart(bool) const ;
-    bool isAutoStart() const ;
+    void setFlipInterval(int32_t) const;
+    void startFlipping() const;
+    void stopFlipping() const;
+    bool isFlipping() const;
+    void setAutoStart(bool) const;
+    bool isAutoStart() const;
 
 };
 }

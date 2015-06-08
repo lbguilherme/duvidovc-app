@@ -36,12 +36,12 @@ public:
     ::javax::crypto::CipherInputStream& operator=(::javax::crypto::CipherInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     CipherInputStream(const ::java::io::InputStream&, const ::javax::crypto::Cipher&);
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int64_t skip(int64_t) const ;
-    int32_t available() const ;
-    void close() const ;
-    bool markSupported() const ;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int64_t skip(int64_t) const;
+    int32_t available() const;
+    void close() const;
+    bool markSupported() const;
 
 };
 }

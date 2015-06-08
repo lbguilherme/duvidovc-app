@@ -32,7 +32,7 @@ public:
     ::android::animation::ValueAnimator_AnimatorUpdateListener& operator=(const ::android::animation::ValueAnimator_AnimatorUpdateListener& x) {obj = x.obj; return *this;}
     ::android::animation::ValueAnimator_AnimatorUpdateListener& operator=(::android::animation::ValueAnimator_AnimatorUpdateListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAnimationUpdate(const ::android::animation::ValueAnimator&) const ;
+    void onAnimationUpdate(const ::android::animation::ValueAnimator&) const;
 
 };
 }

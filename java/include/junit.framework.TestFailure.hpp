@@ -35,12 +35,12 @@ public:
     ::junit::framework::TestFailure& operator=(::junit::framework::TestFailure&& x) {obj = std::move(x.obj); return *this;}
     
     TestFailure(const ::junit::framework::Test&, const ::java::lang::Throwable&);
-    ::junit::framework::Test failedTest() const ;
-    ::java::lang::Throwable thrownException() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::String trace() const ;
-    ::java::lang::String exceptionMessage() const ;
-    bool isFailure() const ;
+    ::junit::framework::Test failedTest() const;
+    ::java::lang::Throwable thrownException() const;
+    ::java::lang::String toString() const;
+    ::java::lang::String trace() const;
+    ::java::lang::String exceptionMessage() const;
+    bool isFailure() const;
 
 };
 }

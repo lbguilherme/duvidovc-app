@@ -34,7 +34,7 @@ public:
     ::javax::net::ssl::HostnameVerifier& operator=(const ::javax::net::ssl::HostnameVerifier& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::HostnameVerifier& operator=(::javax::net::ssl::HostnameVerifier&& x) {obj = std::move(x.obj); return *this;}
     
-    bool verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSession&) const ;
+    bool verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSession&) const;
 
 };
 }

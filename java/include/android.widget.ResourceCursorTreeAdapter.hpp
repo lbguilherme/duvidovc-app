@@ -40,8 +40,8 @@ public:
     ResourceCursorTreeAdapter(const ::android::content::Context&, const ::android::database::Cursor&, int32_t, int32_t, int32_t, int32_t);
     ResourceCursorTreeAdapter(const ::android::content::Context&, const ::android::database::Cursor&, int32_t, int32_t, int32_t);
     ResourceCursorTreeAdapter(const ::android::content::Context&, const ::android::database::Cursor&, int32_t, int32_t);
-    ::android::view::View newChildView(const ::android::content::Context&, const ::android::database::Cursor&, bool, const ::android::view::ViewGroup&) const ;
-    ::android::view::View newGroupView(const ::android::content::Context&, const ::android::database::Cursor&, bool, const ::android::view::ViewGroup&) const ;
+    ::android::view::View newChildView(const ::android::content::Context&, const ::android::database::Cursor&, bool, const ::android::view::ViewGroup&) const;
+    ::android::view::View newGroupView(const ::android::content::Context&, const ::android::database::Cursor&, bool, const ::android::view::ViewGroup&) const;
 
 };
 }

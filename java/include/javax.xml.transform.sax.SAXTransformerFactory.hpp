@@ -40,12 +40,12 @@ public:
     ::javax::xml::transform::sax::SAXTransformerFactory& operator=(const ::javax::xml::transform::sax::SAXTransformerFactory& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::sax::SAXTransformerFactory& operator=(::javax::xml::transform::sax::SAXTransformerFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::xml::transform::sax::TransformerHandler newTransformerHandler(const ::javax::xml::transform::Source&) const ;
-    ::javax::xml::transform::sax::TransformerHandler newTransformerHandler(const ::javax::xml::transform::Templates&) const ;
-    ::javax::xml::transform::sax::TransformerHandler newTransformerHandler() const ;
-    ::javax::xml::transform::sax::TemplatesHandler newTemplatesHandler() const ;
-    ::org::xml::sax::XMLFilter newXMLFilter(const ::javax::xml::transform::Source&) const ;
-    ::org::xml::sax::XMLFilter newXMLFilter(const ::javax::xml::transform::Templates&) const ;
+    ::javax::xml::transform::sax::TransformerHandler newTransformerHandler(const ::javax::xml::transform::Source&) const;
+    ::javax::xml::transform::sax::TransformerHandler newTransformerHandler(const ::javax::xml::transform::Templates&) const;
+    ::javax::xml::transform::sax::TransformerHandler newTransformerHandler() const;
+    ::javax::xml::transform::sax::TemplatesHandler newTemplatesHandler() const;
+    ::org::xml::sax::XMLFilter newXMLFilter(const ::javax::xml::transform::Source&) const;
+    ::org::xml::sax::XMLFilter newXMLFilter(const ::javax::xml::transform::Templates&) const;
 
 };
 }

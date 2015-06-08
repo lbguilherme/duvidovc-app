@@ -36,7 +36,7 @@ public:
     ::android::support::v4::widget::ScrollerCompat_ScrollerCompatImplIcs& operator=(const ::android::support::v4::widget::ScrollerCompat_ScrollerCompatImplIcs& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::ScrollerCompat_ScrollerCompatImplIcs& operator=(::android::support::v4::widget::ScrollerCompat_ScrollerCompatImplIcs&& x) {obj = std::move(x.obj); return *this;}
     
-    float getCurrVelocity(const ::java::lang::Object&) const ;
+    float getCurrVelocity(const ::java::lang::Object&) const;
 
 };
 }

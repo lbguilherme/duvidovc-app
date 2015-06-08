@@ -36,9 +36,9 @@ public:
     ::com::facebook::internal::JsonUtil_JSONObjectEntry& operator=(const ::com::facebook::internal::JsonUtil_JSONObjectEntry& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::JsonUtil_JSONObjectEntry& operator=(::com::facebook::internal::JsonUtil_JSONObjectEntry&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getKey() const ;
-    ::java::lang::Object getValue() const ;
-    ::java::lang::Object setValue(const ::java::lang::Object&) const ;
+    ::java::lang::String getKey() const;
+    ::java::lang::Object getValue() const;
+    ::java::lang::Object setValue(const ::java::lang::Object&) const;
 
 };
 }

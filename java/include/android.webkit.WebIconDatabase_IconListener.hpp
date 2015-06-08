@@ -33,7 +33,7 @@ public:
     ::android::webkit::WebIconDatabase_IconListener& operator=(const ::android::webkit::WebIconDatabase_IconListener& x) {obj = x.obj; return *this;}
     ::android::webkit::WebIconDatabase_IconListener& operator=(::android::webkit::WebIconDatabase_IconListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onReceivedIcon(const ::java::lang::String&, const ::android::graphics::Bitmap&) const ;
+    void onReceivedIcon(const ::java::lang::String&, const ::android::graphics::Bitmap&) const;
 
 };
 }

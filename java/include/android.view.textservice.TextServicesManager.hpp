@@ -36,7 +36,7 @@ public:
     ::android::view::textservice::TextServicesManager& operator=(const ::android::view::textservice::TextServicesManager& x) {obj = x.obj; return *this;}
     ::android::view::textservice::TextServicesManager& operator=(::android::view::textservice::TextServicesManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::textservice::SpellCheckerSession newSpellCheckerSession(const ::android::os::Bundle&, const ::java::util::Locale&, const ::android::view::textservice::SpellCheckerSession_SpellCheckerSessionListener&, bool) const ;
+    ::android::view::textservice::SpellCheckerSession newSpellCheckerSession(const ::android::os::Bundle&, const ::java::util::Locale&, const ::android::view::textservice::SpellCheckerSession_SpellCheckerSessionListener&, bool) const;
 
 };
 }

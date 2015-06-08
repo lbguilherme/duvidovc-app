@@ -35,7 +35,7 @@ public:
     ::java::security::KeyStore_CallbackHandlerProtection& operator=(::java::security::KeyStore_CallbackHandlerProtection&& x) {obj = std::move(x.obj); return *this;}
     
     KeyStore_CallbackHandlerProtection(const ::javax::security::auth::callback::CallbackHandler&);
-    ::javax::security::auth::callback::CallbackHandler getCallbackHandler() const ;
+    ::javax::security::auth::callback::CallbackHandler getCallbackHandler() const;
 
 };
 }

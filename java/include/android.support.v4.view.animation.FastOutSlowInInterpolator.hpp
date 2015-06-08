@@ -37,7 +37,7 @@ public:
     ::android::support::v4::view::animation::FastOutSlowInInterpolator& operator=(::android::support::v4::view::animation::FastOutSlowInInterpolator&& x) {obj = std::move(x.obj); return *this;}
     
     FastOutSlowInInterpolator();
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

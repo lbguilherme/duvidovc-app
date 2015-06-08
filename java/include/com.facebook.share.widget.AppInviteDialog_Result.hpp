@@ -35,7 +35,7 @@ public:
     ::com::facebook::share::widget::AppInviteDialog_Result& operator=(::com::facebook::share::widget::AppInviteDialog_Result&& x) {obj = std::move(x.obj); return *this;}
     
     AppInviteDialog_Result(const ::android::os::Bundle&);
-    ::android::os::Bundle getData() const ;
+    ::android::os::Bundle getData() const;
 
 };
 }

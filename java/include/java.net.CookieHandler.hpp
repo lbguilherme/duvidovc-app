@@ -37,8 +37,8 @@ public:
     CookieHandler();
     static ::java::net::CookieHandler getDefault();
     static void setDefault(const ::java::net::CookieHandler&);
-    ::java::util::Map get(const ::java::net::URI&, const ::java::util::Map&) const ;
-    void put(const ::java::net::URI&, const ::java::util::Map&) const ;
+    ::java::util::Map get(const ::java::net::URI&, const ::java::util::Map&) const;
+    void put(const ::java::net::URI&, const ::java::util::Map&) const;
 
 };
 }

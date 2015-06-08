@@ -46,15 +46,15 @@ public:
     StreamSource(const ::java::io::Reader&, const ::java::lang::String&);
     StreamSource(const ::java::lang::String&);
     StreamSource(const ::java::io::File&);
-    void setInputStream(const ::java::io::InputStream&) const ;
-    ::java::io::InputStream getInputStream() const ;
-    void setReader(const ::java::io::Reader&) const ;
-    ::java::io::Reader getReader() const ;
-    void setPublicId(const ::java::lang::String&) const ;
-    ::java::lang::String getPublicId() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
-    void setSystemId(const ::java::io::File&) const ;
+    void setInputStream(const ::java::io::InputStream&) const;
+    ::java::io::InputStream getInputStream() const;
+    void setReader(const ::java::io::Reader&) const;
+    ::java::io::Reader getReader() const;
+    void setPublicId(const ::java::lang::String&) const;
+    ::java::lang::String getPublicId() const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
+    void setSystemId(const ::java::io::File&) const;
 
 };
 }

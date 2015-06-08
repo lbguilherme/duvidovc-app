@@ -40,14 +40,14 @@ public:
     ::java::net::JarURLConnection& operator=(const ::java::net::JarURLConnection& x) {obj = x.obj; return *this;}
     ::java::net::JarURLConnection& operator=(::java::net::JarURLConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::jar::Attributes getAttributes() const ;
-    std::vector< ::java::security::cert::Certificate> getCertificates() const ;
-    ::java::lang::String getEntryName() const ;
-    ::java::util::jar::JarEntry getJarEntry() const ;
-    ::java::util::jar::Manifest getManifest() const ;
-    ::java::util::jar::JarFile getJarFile() const ;
-    ::java::net::URL getJarFileURL() const ;
-    ::java::util::jar::Attributes getMainAttributes() const ;
+    ::java::util::jar::Attributes getAttributes() const;
+    std::vector< ::java::security::cert::Certificate> getCertificates() const;
+    ::java::lang::String getEntryName() const;
+    ::java::util::jar::JarEntry getJarEntry() const;
+    ::java::util::jar::Manifest getManifest() const;
+    ::java::util::jar::JarFile getJarFile() const;
+    ::java::net::URL getJarFileURL() const;
+    ::java::util::jar::Attributes getMainAttributes() const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::android::widget::PopupMenu_OnMenuItemClickListener& operator=(const ::android::widget::PopupMenu_OnMenuItemClickListener& x) {obj = x.obj; return *this;}
     ::android::widget::PopupMenu_OnMenuItemClickListener& operator=(::android::widget::PopupMenu_OnMenuItemClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onMenuItemClick(const ::android::view::MenuItem&) const ;
+    bool onMenuItemClick(const ::android::view::MenuItem&) const;
 
 };
 }

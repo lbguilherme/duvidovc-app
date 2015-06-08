@@ -36,7 +36,7 @@ public:
     ::android::os::Parcelable_ClassLoaderCreator& operator=(const ::android::os::Parcelable_ClassLoaderCreator& x) {obj = x.obj; return *this;}
     ::android::os::Parcelable_ClassLoaderCreator& operator=(::android::os::Parcelable_ClassLoaderCreator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object createFromParcel(const ::android::os::Parcel&, const ::java::lang::ClassLoader&) const ;
+    ::java::lang::Object createFromParcel(const ::android::os::Parcel&, const ::java::lang::ClassLoader&) const;
 
 };
 }

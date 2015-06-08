@@ -38,7 +38,7 @@ public:
     ::org::apache::http::protocol::ResponseContent& operator=(::org::apache::http::protocol::ResponseContent&& x) {obj = std::move(x.obj); return *this;}
     
     ResponseContent();
-    void process(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

@@ -36,7 +36,7 @@ public:
     ::android::util::PrintWriterPrinter& operator=(::android::util::PrintWriterPrinter&& x) {obj = std::move(x.obj); return *this;}
     
     PrintWriterPrinter(const ::java::io::PrintWriter&);
-    void println(const ::java::lang::String&) const ;
+    void println(const ::java::lang::String&) const;
 
 };
 }

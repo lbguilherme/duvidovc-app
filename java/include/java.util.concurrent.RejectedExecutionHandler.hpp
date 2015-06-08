@@ -34,7 +34,7 @@ public:
     ::java::util::concurrent::RejectedExecutionHandler& operator=(const ::java::util::concurrent::RejectedExecutionHandler& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::RejectedExecutionHandler& operator=(::java::util::concurrent::RejectedExecutionHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void rejectedExecution(const ::java::lang::Runnable&, const ::java::util::concurrent::ThreadPoolExecutor&) const ;
+    void rejectedExecution(const ::java::lang::Runnable&, const ::java::util::concurrent::ThreadPoolExecutor&) const;
 
 };
 }

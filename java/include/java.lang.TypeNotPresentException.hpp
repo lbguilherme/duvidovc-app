@@ -36,7 +36,7 @@ public:
     ::java::lang::TypeNotPresentException& operator=(::java::lang::TypeNotPresentException&& x) {obj = std::move(x.obj); return *this;}
     
     TypeNotPresentException(const ::java::lang::String&, const ::java::lang::Throwable&);
-    ::java::lang::String typeName() const ;
+    ::java::lang::String typeName() const;
 
 };
 }

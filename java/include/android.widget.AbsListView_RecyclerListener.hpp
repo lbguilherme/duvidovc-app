@@ -32,7 +32,7 @@ public:
     ::android::widget::AbsListView_RecyclerListener& operator=(const ::android::widget::AbsListView_RecyclerListener& x) {obj = x.obj; return *this;}
     ::android::widget::AbsListView_RecyclerListener& operator=(::android::widget::AbsListView_RecyclerListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onMovedToScrapHeap(const ::android::view::View&) const ;
+    void onMovedToScrapHeap(const ::android::view::View&) const;
 
 };
 }

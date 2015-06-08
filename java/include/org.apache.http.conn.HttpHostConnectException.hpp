@@ -38,7 +38,7 @@ public:
     ::org::apache::http::conn::HttpHostConnectException& operator=(::org::apache::http::conn::HttpHostConnectException&& x) {obj = std::move(x.obj); return *this;}
     
     HttpHostConnectException(const ::org::apache::http::HttpHost&, const ::java::net::ConnectException&);
-    ::org::apache::http::HttpHost getHost() const ;
+    ::org::apache::http::HttpHost getHost() const;
 
 };
 }

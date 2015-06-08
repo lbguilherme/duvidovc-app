@@ -37,11 +37,11 @@ public:
     ::android::accounts::AccountAuthenticatorResponse& operator=(::android::accounts::AccountAuthenticatorResponse&& x) {obj = std::move(x.obj); return *this;}
     
     AccountAuthenticatorResponse(const ::android::os::Parcel&);
-    void onResult(const ::android::os::Bundle&) const ;
-    void onRequestContinued() const ;
-    void onError(int32_t, const ::java::lang::String&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void onResult(const ::android::os::Bundle&) const;
+    void onRequestContinued() const;
+    void onError(int32_t, const ::java::lang::String&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

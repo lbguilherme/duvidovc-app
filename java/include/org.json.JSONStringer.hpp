@@ -35,16 +35,16 @@ public:
     ::org::json::JSONStringer& operator=(::org::json::JSONStringer&& x) {obj = std::move(x.obj); return *this;}
     
     JSONStringer();
-    ::org::json::JSONStringer array() const ;
-    ::org::json::JSONStringer endArray() const ;
-    ::org::json::JSONStringer object() const ;
-    ::org::json::JSONStringer endObject() const ;
-    ::org::json::JSONStringer value(const ::java::lang::Object&) const ;
-    ::org::json::JSONStringer value(bool) const ;
-    ::org::json::JSONStringer value(double) const ;
-    ::org::json::JSONStringer value(int64_t) const ;
-    ::org::json::JSONStringer key(const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
+    ::org::json::JSONStringer array() const;
+    ::org::json::JSONStringer endArray() const;
+    ::org::json::JSONStringer object() const;
+    ::org::json::JSONStringer endObject() const;
+    ::org::json::JSONStringer value(const ::java::lang::Object&) const;
+    ::org::json::JSONStringer value(bool) const;
+    ::org::json::JSONStringer value(double) const;
+    ::org::json::JSONStringer value(int64_t) const;
+    ::org::json::JSONStringer key(const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
 
 };
 }

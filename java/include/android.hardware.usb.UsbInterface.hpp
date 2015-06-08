@@ -37,15 +37,15 @@ public:
     ::android::hardware::usb::UsbInterface& operator=(const ::android::hardware::usb::UsbInterface& x) {obj = x.obj; return *this;}
     ::android::hardware::usb::UsbInterface& operator=(::android::hardware::usb::UsbInterface&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getId() const ;
-    int32_t getInterfaceClass() const ;
-    int32_t getInterfaceSubclass() const ;
-    int32_t getInterfaceProtocol() const ;
-    int32_t getEndpointCount() const ;
-    ::android::hardware::usb::UsbEndpoint getEndpoint(int32_t) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t getId() const;
+    int32_t getInterfaceClass() const;
+    int32_t getInterfaceSubclass() const;
+    int32_t getInterfaceProtocol() const;
+    int32_t getEndpointCount() const;
+    ::android::hardware::usb::UsbEndpoint getEndpoint(int32_t) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

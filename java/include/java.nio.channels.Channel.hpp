@@ -34,8 +34,8 @@ public:
     ::java::nio::channels::Channel& operator=(const ::java::nio::channels::Channel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::Channel& operator=(::java::nio::channels::Channel&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isOpen() const ;
-    void close() const ;
+    bool isOpen() const;
+    void close() const;
 
 };
 }

@@ -41,23 +41,23 @@ public:
     ::android::app::Service& operator=(::android::app::Service&& x) {obj = std::move(x.obj); return *this;}
     
     Service();
-    ::android::app::Application getApplication() const ;
-    void onCreate() const ;
-    void onStart(const ::android::content::Intent&, int32_t) const ;
-    int32_t onStartCommand(const ::android::content::Intent&, int32_t, int32_t) const ;
-    void onDestroy() const ;
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
-    void onLowMemory() const ;
-    void onTrimMemory(int32_t) const ;
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    bool onUnbind(const ::android::content::Intent&) const ;
-    void onRebind(const ::android::content::Intent&) const ;
-    void onTaskRemoved(const ::android::content::Intent&) const ;
-    void stopSelf() const ;
-    void stopSelf(int32_t) const ;
-    bool stopSelfResult(int32_t) const ;
-    void startForeground(int32_t, const ::android::app::Notification&) const ;
-    void stopForeground(bool) const ;
+    ::android::app::Application getApplication() const;
+    void onCreate() const;
+    void onStart(const ::android::content::Intent&, int32_t) const;
+    int32_t onStartCommand(const ::android::content::Intent&, int32_t, int32_t) const;
+    void onDestroy() const;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
+    void onLowMemory() const;
+    void onTrimMemory(int32_t) const;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    bool onUnbind(const ::android::content::Intent&) const;
+    void onRebind(const ::android::content::Intent&) const;
+    void onTaskRemoved(const ::android::content::Intent&) const;
+    void stopSelf() const;
+    void stopSelf(int32_t) const;
+    bool stopSelfResult(int32_t) const;
+    void startForeground(int32_t, const ::android::app::Notification&) const;
+    void stopForeground(bool) const;
 
 };
 }

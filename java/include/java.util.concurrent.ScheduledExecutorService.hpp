@@ -38,10 +38,10 @@ public:
     ::java::util::concurrent::ScheduledExecutorService& operator=(const ::java::util::concurrent::ScheduledExecutorService& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::ScheduledExecutorService& operator=(::java::util::concurrent::ScheduledExecutorService&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::concurrent::ScheduledFuture schedule(const ::java::lang::Runnable&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::ScheduledFuture schedule(const ::java::util::concurrent::Callable&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::ScheduledFuture scheduleAtFixedRate(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::ScheduledFuture scheduleWithFixedDelay(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    ::java::util::concurrent::ScheduledFuture schedule(const ::java::lang::Runnable&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::ScheduledFuture schedule(const ::java::util::concurrent::Callable&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::ScheduledFuture scheduleAtFixedRate(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::ScheduledFuture scheduleWithFixedDelay(const ::java::lang::Runnable&, int64_t, int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

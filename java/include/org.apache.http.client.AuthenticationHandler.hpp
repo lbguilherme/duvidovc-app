@@ -37,9 +37,9 @@ public:
     ::org::apache::http::client::AuthenticationHandler& operator=(const ::org::apache::http::client::AuthenticationHandler& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::AuthenticationHandler& operator=(::org::apache::http::client::AuthenticationHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isAuthenticationRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::java::util::Map getChallenges(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::org::apache::http::auth::AuthScheme selectScheme(const ::java::util::Map&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool isAuthenticationRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::java::util::Map getChallenges(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::org::apache::http::auth::AuthScheme selectScheme(const ::java::util::Map&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

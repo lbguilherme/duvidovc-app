@@ -44,17 +44,17 @@ public:
     ::android::app::NativeActivity& operator=(::android::app::NativeActivity&& x) {obj = std::move(x.obj); return *this;}
     
     NativeActivity();
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
-    void onLowMemory() const ;
-    void onWindowFocusChanged(bool) const ;
-    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const ;
-    void surfaceCreated(const ::android::view::SurfaceHolder&) const ;
-    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const ;
-    void surfaceRedrawNeeded(const ::android::view::SurfaceHolder&) const ;
-    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const ;
-    void onInputQueueCreated(const ::android::view::InputQueue&) const ;
-    void onInputQueueDestroyed(const ::android::view::InputQueue&) const ;
-    void onGlobalLayout() const ;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
+    void onLowMemory() const;
+    void onWindowFocusChanged(bool) const;
+    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const;
+    void surfaceCreated(const ::android::view::SurfaceHolder&) const;
+    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const;
+    void surfaceRedrawNeeded(const ::android::view::SurfaceHolder&) const;
+    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const;
+    void onInputQueueCreated(const ::android::view::InputQueue&) const;
+    void onInputQueueDestroyed(const ::android::view::InputQueue&) const;
+    void onGlobalLayout() const;
 
 };
 }

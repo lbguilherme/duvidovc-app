@@ -34,8 +34,8 @@ public:
     ::android::hardware::Camera_Size& operator=(::android::hardware::Camera_Size&& x) {obj = std::move(x.obj); return *this;}
     
     Camera_Size(const ::android::hardware::Camera&, int32_t, int32_t);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

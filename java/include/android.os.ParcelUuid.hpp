@@ -40,12 +40,12 @@ public:
     
     ParcelUuid(const ::java::util::UUID&);
     static ::android::os::ParcelUuid fromString(const ::java::lang::String&);
-    ::java::util::UUID getUuid() const ;
-    ::java::lang::String toString() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::util::UUID getUuid() const;
+    ::java::lang::String toString() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

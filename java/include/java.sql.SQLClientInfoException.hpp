@@ -45,7 +45,7 @@ public:
     SQLClientInfoException(const ::java::lang::String&, const ::java::lang::String&, int32_t, const ::java::util::Map&, const ::java::lang::Throwable&);
     SQLClientInfoException(const ::java::lang::String&, const ::java::lang::String&, const ::java::util::Map&);
     SQLClientInfoException(const ::java::lang::String&, const ::java::lang::String&, const ::java::util::Map&, const ::java::lang::Throwable&);
-    ::java::util::Map getFailedProperties() const ;
+    ::java::util::Map getFailedProperties() const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::android::preference::PreferenceManager_OnActivityResultListener& operator=(const ::android::preference::PreferenceManager_OnActivityResultListener& x) {obj = x.obj; return *this;}
     ::android::preference::PreferenceManager_OnActivityResultListener& operator=(::android::preference::PreferenceManager_OnActivityResultListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const ;
+    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const;
 
 };
 }

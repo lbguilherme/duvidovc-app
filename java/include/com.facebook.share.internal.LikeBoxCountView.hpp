@@ -39,8 +39,8 @@ public:
     ::com::facebook::share::internal::LikeBoxCountView& operator=(::com::facebook::share::internal::LikeBoxCountView&& x) {obj = std::move(x.obj); return *this;}
     
     LikeBoxCountView(const ::android::content::Context&);
-    void setText(const ::java::lang::String&) const ;
-    void setCaretPosition(const ::com::facebook::share::internal::LikeBoxCountView_LikeBoxCountViewCaretPosition&) const ;
+    void setText(const ::java::lang::String&) const;
+    void setCaretPosition(const ::com::facebook::share::internal::LikeBoxCountView_LikeBoxCountViewCaretPosition&) const;
 
 };
 }

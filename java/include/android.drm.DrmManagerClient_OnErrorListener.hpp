@@ -33,7 +33,7 @@ public:
     ::android::drm::DrmManagerClient_OnErrorListener& operator=(const ::android::drm::DrmManagerClient_OnErrorListener& x) {obj = x.obj; return *this;}
     ::android::drm::DrmManagerClient_OnErrorListener& operator=(::android::drm::DrmManagerClient_OnErrorListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onError(const ::android::drm::DrmManagerClient&, const ::android::drm::DrmErrorEvent&) const ;
+    void onError(const ::android::drm::DrmManagerClient&, const ::android::drm::DrmErrorEvent&) const;
 
 };
 }

@@ -33,11 +33,11 @@ public:
     ::android::os::PowerManager& operator=(const ::android::os::PowerManager& x) {obj = x.obj; return *this;}
     ::android::os::PowerManager& operator=(::android::os::PowerManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::PowerManager_WakeLock newWakeLock(int32_t, const ::java::lang::String&) const ;
-    void userActivity(int64_t, bool) const ;
-    void goToSleep(int64_t) const ;
-    bool isScreenOn() const ;
-    void reboot(const ::java::lang::String&) const ;
+    ::android::os::PowerManager_WakeLock newWakeLock(int32_t, const ::java::lang::String&) const;
+    void userActivity(int64_t, bool) const;
+    void goToSleep(int64_t) const;
+    bool isScreenOn() const;
+    void reboot(const ::java::lang::String&) const;
 
 };
 }

@@ -35,12 +35,12 @@ public:
     ::java::sql::Driver& operator=(const ::java::sql::Driver& x) {obj = x.obj; return *this;}
     ::java::sql::Driver& operator=(::java::sql::Driver&& x) {obj = std::move(x.obj); return *this;}
     
-    bool acceptsURL(const ::java::lang::String&) const ;
-    ::java::sql::Connection connect(const ::java::lang::String&, const ::java::util::Properties&) const ;
-    int32_t getMajorVersion() const ;
-    int32_t getMinorVersion() const ;
-    std::vector< ::java::sql::DriverPropertyInfo> getPropertyInfo(const ::java::lang::String&, const ::java::util::Properties&) const ;
-    bool jdbcCompliant() const ;
+    bool acceptsURL(const ::java::lang::String&) const;
+    ::java::sql::Connection connect(const ::java::lang::String&, const ::java::util::Properties&) const;
+    int32_t getMajorVersion() const;
+    int32_t getMinorVersion() const;
+    std::vector< ::java::sql::DriverPropertyInfo> getPropertyInfo(const ::java::lang::String&, const ::java::util::Properties&) const;
+    bool jdbcCompliant() const;
 
 };
 }

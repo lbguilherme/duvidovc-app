@@ -41,20 +41,20 @@ public:
     ::javax::xml::parsers::DocumentBuilder& operator=(const ::javax::xml::parsers::DocumentBuilder& x) {obj = x.obj; return *this;}
     ::javax::xml::parsers::DocumentBuilder& operator=(::javax::xml::parsers::DocumentBuilder&& x) {obj = std::move(x.obj); return *this;}
     
-    void reset() const ;
-    ::org::w3c::dom::Document parse(const ::java::io::InputStream&) const ;
-    ::org::w3c::dom::Document parse(const ::java::io::InputStream&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Document parse(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Document parse(const ::java::io::File&) const ;
-    ::org::w3c::dom::Document parse(const ::org::xml::sax::InputSource&) const ;
-    bool isNamespaceAware() const ;
-    bool isValidating() const ;
-    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const ;
-    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const ;
-    ::org::w3c::dom::Document newDocument() const ;
-    ::org::w3c::dom::DOMImplementation getDOMImplementation() const ;
-    ::javax::xml::validation::Schema getSchema() const ;
-    bool isXIncludeAware() const ;
+    void reset() const;
+    ::org::w3c::dom::Document parse(const ::java::io::InputStream&) const;
+    ::org::w3c::dom::Document parse(const ::java::io::InputStream&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Document parse(const ::java::lang::String&) const;
+    ::org::w3c::dom::Document parse(const ::java::io::File&) const;
+    ::org::w3c::dom::Document parse(const ::org::xml::sax::InputSource&) const;
+    bool isNamespaceAware() const;
+    bool isValidating() const;
+    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const;
+    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const;
+    ::org::w3c::dom::Document newDocument() const;
+    ::org::w3c::dom::DOMImplementation getDOMImplementation() const;
+    ::javax::xml::validation::Schema getSchema() const;
+    bool isXIncludeAware() const;
 
 };
 }

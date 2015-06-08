@@ -41,11 +41,11 @@ public:
     
     AbstractThreadedSyncAdapter(const ::android::content::Context&, bool);
     AbstractThreadedSyncAdapter(const ::android::content::Context&, bool, bool);
-    ::android::content::Context getContext() const ;
-    ::android::os::IBinder getSyncAdapterBinder() const ;
-    void onPerformSync(const ::android::accounts::Account&, const ::android::os::Bundle&, const ::java::lang::String&, const ::android::content::ContentProviderClient&, const ::android::content::SyncResult&) const ;
-    void onSyncCanceled() const ;
-    void onSyncCanceled(const ::java::lang::Thread&) const ;
+    ::android::content::Context getContext() const;
+    ::android::os::IBinder getSyncAdapterBinder() const;
+    void onPerformSync(const ::android::accounts::Account&, const ::android::os::Bundle&, const ::java::lang::String&, const ::android::content::ContentProviderClient&, const ::android::content::SyncResult&) const;
+    void onSyncCanceled() const;
+    void onSyncCanceled(const ::java::lang::Thread&) const;
 
 };
 }

@@ -38,22 +38,22 @@ public:
     
     Semaphore(int32_t);
     Semaphore(int32_t, bool);
-    void acquire() const ;
-    void acquireUninterruptibly() const ;
-    bool tryAcquire() const ;
-    bool tryAcquire(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void release() const ;
-    void acquire(int32_t) const ;
-    void acquireUninterruptibly(int32_t) const ;
-    bool tryAcquire(int32_t) const ;
-    bool tryAcquire(int32_t, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void release(int32_t) const ;
-    int32_t availablePermits() const ;
-    int32_t drainPermits() const ;
-    bool isFair() const ;
-    bool hasQueuedThreads() const ;
-    int32_t getQueueLength() const ;
-    ::java::lang::String toString() const ;
+    void acquire() const;
+    void acquireUninterruptibly() const;
+    bool tryAcquire() const;
+    bool tryAcquire(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void release() const;
+    void acquire(int32_t) const;
+    void acquireUninterruptibly(int32_t) const;
+    bool tryAcquire(int32_t) const;
+    bool tryAcquire(int32_t, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void release(int32_t) const;
+    int32_t availablePermits() const;
+    int32_t drainPermits() const;
+    bool isFair() const;
+    bool hasQueuedThreads() const;
+    int32_t getQueueLength() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -44,14 +44,14 @@ public:
     LabeledIntent(const ::android::content::Intent&, const ::java::lang::String&, const ::java::lang::CharSequence&, int32_t);
     LabeledIntent(const ::java::lang::String&, int32_t, int32_t);
     LabeledIntent(const ::java::lang::String&, const ::java::lang::CharSequence&, int32_t);
-    ::java::lang::String getSourcePackage() const ;
-    int32_t getLabelResource() const ;
-    ::java::lang::CharSequence getNonLocalizedLabel() const ;
-    int32_t getIconResource() const ;
-    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const ;
-    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    ::java::lang::String getSourcePackage() const;
+    int32_t getLabelResource() const;
+    ::java::lang::CharSequence getNonLocalizedLabel() const;
+    int32_t getIconResource() const;
+    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const;
+    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

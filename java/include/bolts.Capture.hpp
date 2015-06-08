@@ -33,8 +33,8 @@ public:
     
     Capture();
     Capture(const ::java::lang::Object&);
-    ::java::lang::Object get() const ;
-    void set(const ::java::lang::Object&) const ;
+    ::java::lang::Object get() const;
+    void set(const ::java::lang::Object&) const;
 
 };
 }

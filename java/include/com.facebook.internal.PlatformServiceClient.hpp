@@ -40,11 +40,11 @@ public:
     ::com::facebook::internal::PlatformServiceClient& operator=(::com::facebook::internal::PlatformServiceClient&& x) {obj = std::move(x.obj); return *this;}
     
     PlatformServiceClient(const ::android::content::Context&, int32_t, int32_t, int32_t, const ::java::lang::String&);
-    void setCompletedListener(const ::com::facebook::internal::PlatformServiceClient_CompletedListener&) const ;
-    bool start() const ;
-    void cancel() const ;
-    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const ;
-    void onServiceDisconnected(const ::android::content::ComponentName&) const ;
+    void setCompletedListener(const ::com::facebook::internal::PlatformServiceClient_CompletedListener&) const;
+    bool start() const;
+    void cancel() const;
+    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const;
+    void onServiceDisconnected(const ::android::content::ComponentName&) const;
 
 };
 }

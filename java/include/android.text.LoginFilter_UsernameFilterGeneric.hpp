@@ -35,7 +35,7 @@ public:
     
     LoginFilter_UsernameFilterGeneric();
     LoginFilter_UsernameFilterGeneric(bool);
-    bool isAllowed(uint16_t) const ;
+    bool isAllowed(uint16_t) const;
 
 };
 }

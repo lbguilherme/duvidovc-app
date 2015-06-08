@@ -37,8 +37,8 @@ public:
     ::java::lang::annotation::IncompleteAnnotationException& operator=(::java::lang::annotation::IncompleteAnnotationException&& x) {obj = std::move(x.obj); return *this;}
     
     IncompleteAnnotationException(const ::java::lang::Class&, const ::java::lang::String&);
-    ::java::lang::Class annotationType() const ;
-    ::java::lang::String elementName() const ;
+    ::java::lang::Class annotationType() const;
+    ::java::lang::String elementName() const;
 
 };
 }

@@ -40,13 +40,13 @@ public:
     ::com::facebook::login::LoginFragment& operator=(::com::facebook::login::LoginFragment&& x) {obj = std::move(x.obj); return *this;}
     
     LoginFragment();
-    void onCreate(const ::android::os::Bundle&) const ;
-    void onDestroy() const ;
-    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const ;
-    void onResume() const ;
-    void onPause() const ;
-    void onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const ;
-    void onSaveInstanceState(const ::android::os::Bundle&) const ;
+    void onCreate(const ::android::os::Bundle&) const;
+    void onDestroy() const;
+    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const;
+    void onResume() const;
+    void onPause() const;
+    void onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const;
+    void onSaveInstanceState(const ::android::os::Bundle&) const;
 
 };
 }

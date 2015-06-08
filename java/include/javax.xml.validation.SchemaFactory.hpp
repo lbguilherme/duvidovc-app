@@ -44,20 +44,20 @@ public:
     
     static ::javax::xml::validation::SchemaFactory newInstance(const ::java::lang::String&);
     static ::javax::xml::validation::SchemaFactory newInstance(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::ClassLoader&);
-    bool isSchemaLanguageSupported(const ::java::lang::String&) const ;
-    bool getFeature(const ::java::lang::String&) const ;
-    void setFeature(const ::java::lang::String&, bool) const ;
-    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getProperty(const ::java::lang::String&) const ;
-    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const ;
-    ::org::xml::sax::ErrorHandler getErrorHandler() const ;
-    void setResourceResolver(const ::org::w3c::dom::ls::LSResourceResolver&) const ;
-    ::org::w3c::dom::ls::LSResourceResolver getResourceResolver() const ;
-    ::javax::xml::validation::Schema newSchema(const ::javax::xml::transform::Source&) const ;
-    ::javax::xml::validation::Schema newSchema(const ::java::io::File&) const ;
-    ::javax::xml::validation::Schema newSchema(const ::java::net::URL&) const ;
-    ::javax::xml::validation::Schema newSchema(const std::vector< ::javax::xml::transform::Source>&) const ;
-    ::javax::xml::validation::Schema newSchema() const ;
+    bool isSchemaLanguageSupported(const ::java::lang::String&) const;
+    bool getFeature(const ::java::lang::String&) const;
+    void setFeature(const ::java::lang::String&, bool) const;
+    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object getProperty(const ::java::lang::String&) const;
+    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const;
+    ::org::xml::sax::ErrorHandler getErrorHandler() const;
+    void setResourceResolver(const ::org::w3c::dom::ls::LSResourceResolver&) const;
+    ::org::w3c::dom::ls::LSResourceResolver getResourceResolver() const;
+    ::javax::xml::validation::Schema newSchema(const ::javax::xml::transform::Source&) const;
+    ::javax::xml::validation::Schema newSchema(const ::java::io::File&) const;
+    ::javax::xml::validation::Schema newSchema(const ::java::net::URL&) const;
+    ::javax::xml::validation::Schema newSchema(const std::vector< ::javax::xml::transform::Source>&) const;
+    ::javax::xml::validation::Schema newSchema() const;
 
 };
 }

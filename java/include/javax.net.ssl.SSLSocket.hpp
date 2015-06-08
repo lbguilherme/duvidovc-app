@@ -38,28 +38,28 @@ public:
     ::javax::net::ssl::SSLSocket& operator=(const ::javax::net::ssl::SSLSocket& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::SSLSocket& operator=(::javax::net::ssl::SSLSocket&& x) {obj = std::move(x.obj); return *this;}
     
-    void shutdownInput() const ;
-    void shutdownOutput() const ;
-    std::vector< ::java::lang::String> getSupportedCipherSuites() const ;
-    std::vector< ::java::lang::String> getEnabledCipherSuites() const ;
-    void setEnabledCipherSuites(const std::vector< ::java::lang::String>&) const ;
-    std::vector< ::java::lang::String> getSupportedProtocols() const ;
-    std::vector< ::java::lang::String> getEnabledProtocols() const ;
-    void setEnabledProtocols(const std::vector< ::java::lang::String>&) const ;
-    ::javax::net::ssl::SSLSession getSession() const ;
-    void addHandshakeCompletedListener(const ::javax::net::ssl::HandshakeCompletedListener&) const ;
-    void removeHandshakeCompletedListener(const ::javax::net::ssl::HandshakeCompletedListener&) const ;
-    void startHandshake() const ;
-    void setUseClientMode(bool) const ;
-    bool getUseClientMode() const ;
-    void setNeedClientAuth(bool) const ;
-    void setWantClientAuth(bool) const ;
-    bool getNeedClientAuth() const ;
-    bool getWantClientAuth() const ;
-    void setEnableSessionCreation(bool) const ;
-    bool getEnableSessionCreation() const ;
-    ::javax::net::ssl::SSLParameters getSSLParameters() const ;
-    void setSSLParameters(const ::javax::net::ssl::SSLParameters&) const ;
+    void shutdownInput() const;
+    void shutdownOutput() const;
+    std::vector< ::java::lang::String> getSupportedCipherSuites() const;
+    std::vector< ::java::lang::String> getEnabledCipherSuites() const;
+    void setEnabledCipherSuites(const std::vector< ::java::lang::String>&) const;
+    std::vector< ::java::lang::String> getSupportedProtocols() const;
+    std::vector< ::java::lang::String> getEnabledProtocols() const;
+    void setEnabledProtocols(const std::vector< ::java::lang::String>&) const;
+    ::javax::net::ssl::SSLSession getSession() const;
+    void addHandshakeCompletedListener(const ::javax::net::ssl::HandshakeCompletedListener&) const;
+    void removeHandshakeCompletedListener(const ::javax::net::ssl::HandshakeCompletedListener&) const;
+    void startHandshake() const;
+    void setUseClientMode(bool) const;
+    bool getUseClientMode() const;
+    void setNeedClientAuth(bool) const;
+    void setWantClientAuth(bool) const;
+    bool getNeedClientAuth() const;
+    bool getWantClientAuth() const;
+    void setEnableSessionCreation(bool) const;
+    bool getEnableSessionCreation() const;
+    ::javax::net::ssl::SSLParameters getSSLParameters() const;
+    void setSSLParameters(const ::javax::net::ssl::SSLParameters&) const;
 
 };
 }

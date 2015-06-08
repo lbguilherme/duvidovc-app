@@ -42,8 +42,8 @@ public:
     static std::vector< ::android::net::wifi::SupplicantState> values();
     static ::android::net::wifi::SupplicantState valueOf(const ::java::lang::String&);
     static bool isValidState(const ::android::net::wifi::SupplicantState&);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

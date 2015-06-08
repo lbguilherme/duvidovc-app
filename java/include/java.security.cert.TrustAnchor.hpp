@@ -39,12 +39,12 @@ public:
     TrustAnchor(const ::java::security::cert::X509Certificate&, const std::vector< int8_t>&);
     TrustAnchor(const ::java::lang::String&, const ::java::security::PublicKey&, const std::vector< int8_t>&);
     TrustAnchor(const ::javax::security::auth::x500::X500Principal&, const ::java::security::PublicKey&, const std::vector< int8_t>&);
-    std::vector< int8_t> getNameConstraints() const ;
-    ::java::security::cert::X509Certificate getTrustedCert() const ;
-    ::javax::security::auth::x500::X500Principal getCA() const ;
-    ::java::lang::String getCAName() const ;
-    ::java::security::PublicKey getCAPublicKey() const ;
-    ::java::lang::String toString() const ;
+    std::vector< int8_t> getNameConstraints() const;
+    ::java::security::cert::X509Certificate getTrustedCert() const;
+    ::javax::security::auth::x500::X500Principal getCA() const;
+    ::java::lang::String getCAName() const;
+    ::java::security::PublicKey getCAPublicKey() const;
+    ::java::lang::String toString() const;
 
 };
 }

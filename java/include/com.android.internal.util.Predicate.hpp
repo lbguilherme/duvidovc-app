@@ -34,7 +34,7 @@ public:
     ::com::android::internal::util::Predicate& operator=(const ::com::android::internal::util::Predicate& x) {obj = x.obj; return *this;}
     ::com::android::internal::util::Predicate& operator=(::com::android::internal::util::Predicate&& x) {obj = std::move(x.obj); return *this;}
     
-    bool apply(const ::java::lang::Object&) const ;
+    bool apply(const ::java::lang::Object&) const;
 
 };
 }

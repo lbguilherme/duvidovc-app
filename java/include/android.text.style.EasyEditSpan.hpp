@@ -36,9 +36,9 @@ public:
     ::android::text::style::EasyEditSpan& operator=(::android::text::style::EasyEditSpan&& x) {obj = std::move(x.obj); return *this;}
     
     EasyEditSpan();
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t getSpanTypeId() const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t getSpanTypeId() const;
 
 };
 }

@@ -48,37 +48,37 @@ public:
     ::org::w3c::dom::Document& operator=(const ::org::w3c::dom::Document& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::Document& operator=(::org::w3c::dom::Document&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::DocumentType getDoctype() const ;
-    ::org::w3c::dom::DOMImplementation getImplementation() const ;
-    ::org::w3c::dom::Element getDocumentElement() const ;
-    ::org::w3c::dom::Element createElement(const ::java::lang::String&) const ;
-    ::org::w3c::dom::DocumentFragment createDocumentFragment() const ;
-    ::org::w3c::dom::Text createTextNode(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Comment createComment(const ::java::lang::String&) const ;
-    ::org::w3c::dom::CDATASection createCDATASection(const ::java::lang::String&) const ;
-    ::org::w3c::dom::ProcessingInstruction createProcessingInstruction(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Attr createAttribute(const ::java::lang::String&) const ;
-    ::org::w3c::dom::EntityReference createEntityReference(const ::java::lang::String&) const ;
-    ::org::w3c::dom::NodeList getElementsByTagName(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Node importNode(const ::org::w3c::dom::Node&, bool) const ;
-    ::org::w3c::dom::Element createElementNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Attr createAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::NodeList getElementsByTagNameNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Element getElementById(const ::java::lang::String&) const ;
-    ::java::lang::String getInputEncoding() const ;
-    ::java::lang::String getXmlEncoding() const ;
-    bool getXmlStandalone() const ;
-    void setXmlStandalone(bool) const ;
-    ::java::lang::String getXmlVersion() const ;
-    void setXmlVersion(const ::java::lang::String&) const ;
-    bool getStrictErrorChecking() const ;
-    void setStrictErrorChecking(bool) const ;
-    ::java::lang::String getDocumentURI() const ;
-    void setDocumentURI(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Node adoptNode(const ::org::w3c::dom::Node&) const ;
-    ::org::w3c::dom::DOMConfiguration getDomConfig() const ;
-    void normalizeDocument() const ;
-    ::org::w3c::dom::Node renameNode(const ::org::w3c::dom::Node&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::org::w3c::dom::DocumentType getDoctype() const;
+    ::org::w3c::dom::DOMImplementation getImplementation() const;
+    ::org::w3c::dom::Element getDocumentElement() const;
+    ::org::w3c::dom::Element createElement(const ::java::lang::String&) const;
+    ::org::w3c::dom::DocumentFragment createDocumentFragment() const;
+    ::org::w3c::dom::Text createTextNode(const ::java::lang::String&) const;
+    ::org::w3c::dom::Comment createComment(const ::java::lang::String&) const;
+    ::org::w3c::dom::CDATASection createCDATASection(const ::java::lang::String&) const;
+    ::org::w3c::dom::ProcessingInstruction createProcessingInstruction(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Attr createAttribute(const ::java::lang::String&) const;
+    ::org::w3c::dom::EntityReference createEntityReference(const ::java::lang::String&) const;
+    ::org::w3c::dom::NodeList getElementsByTagName(const ::java::lang::String&) const;
+    ::org::w3c::dom::Node importNode(const ::org::w3c::dom::Node&, bool) const;
+    ::org::w3c::dom::Element createElementNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Attr createAttributeNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::NodeList getElementsByTagNameNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Element getElementById(const ::java::lang::String&) const;
+    ::java::lang::String getInputEncoding() const;
+    ::java::lang::String getXmlEncoding() const;
+    bool getXmlStandalone() const;
+    void setXmlStandalone(bool) const;
+    ::java::lang::String getXmlVersion() const;
+    void setXmlVersion(const ::java::lang::String&) const;
+    bool getStrictErrorChecking() const;
+    void setStrictErrorChecking(bool) const;
+    ::java::lang::String getDocumentURI() const;
+    void setDocumentURI(const ::java::lang::String&) const;
+    ::org::w3c::dom::Node adoptNode(const ::org::w3c::dom::Node&) const;
+    ::org::w3c::dom::DOMConfiguration getDomConfig() const;
+    void normalizeDocument() const;
+    ::org::w3c::dom::Node renameNode(const ::org::w3c::dom::Node&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

@@ -40,13 +40,13 @@ public:
     ::android::app::backup::BackupAgent& operator=(::android::app::backup::BackupAgent&& x) {obj = std::move(x.obj); return *this;}
     
     BackupAgent();
-    void onCreate() const ;
-    void onDestroy() const ;
-    void onBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const ;
-    void onRestore(const ::android::app::backup::BackupDataInput&, int32_t, const ::android::os::ParcelFileDescriptor&) const ;
-    void onFullBackup(const ::android::app::backup::FullBackupDataOutput&) const ;
-    void fullBackupFile(const ::java::io::File&, const ::android::app::backup::FullBackupDataOutput&) const ;
-    void onRestoreFile(const ::android::os::ParcelFileDescriptor&, int64_t, const ::java::io::File&, int32_t, int64_t, int64_t) const ;
+    void onCreate() const;
+    void onDestroy() const;
+    void onBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const;
+    void onRestore(const ::android::app::backup::BackupDataInput&, int32_t, const ::android::os::ParcelFileDescriptor&) const;
+    void onFullBackup(const ::android::app::backup::FullBackupDataOutput&) const;
+    void fullBackupFile(const ::java::io::File&, const ::android::app::backup::FullBackupDataOutput&) const;
+    void onRestoreFile(const ::android::os::ParcelFileDescriptor&, int64_t, const ::java::io::File&, int32_t, int64_t, int64_t) const;
 
 };
 }

@@ -34,7 +34,7 @@ public:
     ::java::nio::channels::InterruptibleChannel& operator=(const ::java::nio::channels::InterruptibleChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::InterruptibleChannel& operator=(::java::nio::channels::InterruptibleChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
+    void close() const;
 
 };
 }

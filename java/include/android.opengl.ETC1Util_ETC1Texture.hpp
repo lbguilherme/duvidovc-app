@@ -33,9 +33,9 @@ public:
     ::android::opengl::ETC1Util_ETC1Texture& operator=(::android::opengl::ETC1Util_ETC1Texture&& x) {obj = std::move(x.obj); return *this;}
     
     ETC1Util_ETC1Texture(int32_t, int32_t, const ::java::nio::ByteBuffer&);
-    int32_t getWidth() const ;
-    int32_t getHeight() const ;
-    ::java::nio::ByteBuffer getData() const ;
+    int32_t getWidth() const;
+    int32_t getHeight() const;
+    ::java::nio::ByteBuffer getData() const;
 
 };
 }

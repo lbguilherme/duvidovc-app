@@ -38,20 +38,20 @@ public:
     
     static ::java::net::Inet6Address getByAddress(const ::java::lang::String&, const std::vector< int8_t>&, int32_t);
     static ::java::net::Inet6Address getByAddress(const ::java::lang::String&, const std::vector< int8_t>&, const ::java::net::NetworkInterface&);
-    bool isAnyLocalAddress() const ;
-    bool isIPv4CompatibleAddress() const ;
-    bool isLinkLocalAddress() const ;
-    bool isLoopbackAddress() const ;
-    bool isMCGlobal() const ;
-    bool isMCLinkLocal() const ;
-    bool isMCNodeLocal() const ;
-    bool isMCOrgLocal() const ;
-    bool isMCSiteLocal() const ;
-    bool isMulticastAddress() const ;
-    bool isSiteLocalAddress() const ;
-    int32_t getScopeId() const ;
-    ::java::net::NetworkInterface getScopedInterface() const ;
-    ::java::lang::String toString() const ;
+    bool isAnyLocalAddress() const;
+    bool isIPv4CompatibleAddress() const;
+    bool isLinkLocalAddress() const;
+    bool isLoopbackAddress() const;
+    bool isMCGlobal() const;
+    bool isMCLinkLocal() const;
+    bool isMCNodeLocal() const;
+    bool isMCOrgLocal() const;
+    bool isMCSiteLocal() const;
+    bool isMulticastAddress() const;
+    bool isSiteLocalAddress() const;
+    int32_t getScopeId() const;
+    ::java::net::NetworkInterface getScopedInterface() const;
+    ::java::lang::String toString() const;
 
 };
 }

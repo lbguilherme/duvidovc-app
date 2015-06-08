@@ -42,15 +42,15 @@ public:
     
     RSSurfaceView(const ::android::content::Context&);
     RSSurfaceView(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void surfaceCreated(const ::android::view::SurfaceHolder&) const ;
-    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const ;
-    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const ;
-    void pause() const ;
-    void resume() const ;
-    ::android::renderscript::RenderScriptGL createRenderScriptGL(const ::android::renderscript::RenderScriptGL_SurfaceConfig&) const ;
-    void destroyRenderScriptGL() const ;
-    void setRenderScriptGL(const ::android::renderscript::RenderScriptGL&) const ;
-    ::android::renderscript::RenderScriptGL getRenderScriptGL() const ;
+    void surfaceCreated(const ::android::view::SurfaceHolder&) const;
+    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const;
+    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const;
+    void pause() const;
+    void resume() const;
+    ::android::renderscript::RenderScriptGL createRenderScriptGL(const ::android::renderscript::RenderScriptGL_SurfaceConfig&) const;
+    void destroyRenderScriptGL() const;
+    void setRenderScriptGL(const ::android::renderscript::RenderScriptGL&) const;
+    ::android::renderscript::RenderScriptGL getRenderScriptGL() const;
 
 };
 }

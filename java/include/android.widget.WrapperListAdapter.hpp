@@ -34,7 +34,7 @@ public:
     ::android::widget::WrapperListAdapter& operator=(const ::android::widget::WrapperListAdapter& x) {obj = x.obj; return *this;}
     ::android::widget::WrapperListAdapter& operator=(::android::widget::WrapperListAdapter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::widget::ListAdapter getWrappedAdapter() const ;
+    ::android::widget::ListAdapter getWrappedAdapter() const;
 
 };
 }

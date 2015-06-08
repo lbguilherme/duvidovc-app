@@ -33,7 +33,7 @@ public:
     ::java::net::URLStreamHandlerFactory& operator=(const ::java::net::URLStreamHandlerFactory& x) {obj = x.obj; return *this;}
     ::java::net::URLStreamHandlerFactory& operator=(::java::net::URLStreamHandlerFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::URLStreamHandler createURLStreamHandler(const ::java::lang::String&) const ;
+    ::java::net::URLStreamHandler createURLStreamHandler(const ::java::lang::String&) const;
 
 };
 }

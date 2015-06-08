@@ -35,12 +35,12 @@ public:
     ::android::webkit::WebStorage& operator=(::android::webkit::WebStorage&& x) {obj = std::move(x.obj); return *this;}
     
     WebStorage();
-    void getOrigins(const ::android::webkit::ValueCallback&) const ;
-    void getUsageForOrigin(const ::java::lang::String&, const ::android::webkit::ValueCallback&) const ;
-    void getQuotaForOrigin(const ::java::lang::String&, const ::android::webkit::ValueCallback&) const ;
-    void setQuotaForOrigin(const ::java::lang::String&, int64_t) const ;
-    void deleteOrigin(const ::java::lang::String&) const ;
-    void deleteAllData() const ;
+    void getOrigins(const ::android::webkit::ValueCallback&) const;
+    void getUsageForOrigin(const ::java::lang::String&, const ::android::webkit::ValueCallback&) const;
+    void getQuotaForOrigin(const ::java::lang::String&, const ::android::webkit::ValueCallback&) const;
+    void setQuotaForOrigin(const ::java::lang::String&, int64_t) const;
+    void deleteOrigin(const ::java::lang::String&) const;
+    void deleteAllData() const;
     static ::android::webkit::WebStorage getInstance();
 
 };

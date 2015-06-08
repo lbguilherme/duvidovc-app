@@ -32,10 +32,10 @@ public:
     ::android::os::Debug_InstructionCount& operator=(::android::os::Debug_InstructionCount&& x) {obj = std::move(x.obj); return *this;}
     
     Debug_InstructionCount();
-    bool resetAndStart() const ;
-    bool collect() const ;
-    int32_t globalTotal() const ;
-    int32_t globalMethodInvocations() const ;
+    bool resetAndStart() const;
+    bool collect() const;
+    int32_t globalTotal() const;
+    int32_t globalMethodInvocations() const;
 
 };
 }

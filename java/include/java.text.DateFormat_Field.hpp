@@ -34,7 +34,7 @@ public:
     ::java::text::DateFormat_Field& operator=(const ::java::text::DateFormat_Field& x) {obj = x.obj; return *this;}
     ::java::text::DateFormat_Field& operator=(::java::text::DateFormat_Field&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getCalendarField() const ;
+    int32_t getCalendarField() const;
     static ::java::text::DateFormat_Field ofCalendarField(int32_t);
 
 };

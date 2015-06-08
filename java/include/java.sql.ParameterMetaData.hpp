@@ -34,15 +34,15 @@ public:
     ::java::sql::ParameterMetaData& operator=(const ::java::sql::ParameterMetaData& x) {obj = x.obj; return *this;}
     ::java::sql::ParameterMetaData& operator=(::java::sql::ParameterMetaData&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getParameterClassName(int32_t) const ;
-    int32_t getParameterCount() const ;
-    int32_t getParameterMode(int32_t) const ;
-    int32_t getParameterType(int32_t) const ;
-    ::java::lang::String getParameterTypeName(int32_t) const ;
-    int32_t getPrecision(int32_t) const ;
-    int32_t getScale(int32_t) const ;
-    int32_t isNullable(int32_t) const ;
-    bool isSigned(int32_t) const ;
+    ::java::lang::String getParameterClassName(int32_t) const;
+    int32_t getParameterCount() const;
+    int32_t getParameterMode(int32_t) const;
+    int32_t getParameterType(int32_t) const;
+    ::java::lang::String getParameterTypeName(int32_t) const;
+    int32_t getPrecision(int32_t) const;
+    int32_t getScale(int32_t) const;
+    int32_t isNullable(int32_t) const;
+    bool isSigned(int32_t) const;
 
 };
 }

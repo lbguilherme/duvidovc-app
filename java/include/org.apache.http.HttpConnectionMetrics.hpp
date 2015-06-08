@@ -34,12 +34,12 @@ public:
     ::org::apache::http::HttpConnectionMetrics& operator=(const ::org::apache::http::HttpConnectionMetrics& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpConnectionMetrics& operator=(::org::apache::http::HttpConnectionMetrics&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t getRequestCount() const ;
-    int64_t getResponseCount() const ;
-    int64_t getSentBytesCount() const ;
-    int64_t getReceivedBytesCount() const ;
-    ::java::lang::Object getMetric(const ::java::lang::String&) const ;
-    void reset() const ;
+    int64_t getRequestCount() const;
+    int64_t getResponseCount() const;
+    int64_t getSentBytesCount() const;
+    int64_t getReceivedBytesCount() const;
+    ::java::lang::Object getMetric(const ::java::lang::String&) const;
+    void reset() const;
 
 };
 }

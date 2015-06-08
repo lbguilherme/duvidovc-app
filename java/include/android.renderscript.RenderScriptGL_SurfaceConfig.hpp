@@ -32,10 +32,10 @@ public:
     ::android::renderscript::RenderScriptGL_SurfaceConfig& operator=(::android::renderscript::RenderScriptGL_SurfaceConfig&& x) {obj = std::move(x.obj); return *this;}
     
     RenderScriptGL_SurfaceConfig();
-    void setColor(int32_t, int32_t) const ;
-    void setAlpha(int32_t, int32_t) const ;
-    void setDepth(int32_t, int32_t) const ;
-    void setSamples(int32_t, int32_t, float) const ;
+    void setColor(int32_t, int32_t) const;
+    void setAlpha(int32_t, int32_t) const;
+    void setDepth(int32_t, int32_t) const;
+    void setSamples(int32_t, int32_t, float) const;
 
 };
 }

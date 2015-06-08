@@ -37,9 +37,9 @@ public:
     ::com::facebook::share::model::SharePhotoContent& operator=(const ::com::facebook::share::model::SharePhotoContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::SharePhotoContent& operator=(::com::facebook::share::model::SharePhotoContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::List getPhotos() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::util::List getPhotos() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

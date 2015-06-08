@@ -34,7 +34,7 @@ public:
     ::java::util::concurrent::ThreadFactory& operator=(const ::java::util::concurrent::ThreadFactory& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::ThreadFactory& operator=(::java::util::concurrent::ThreadFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Thread newThread(const ::java::lang::Runnable&) const ;
+    ::java::lang::Thread newThread(const ::java::lang::Runnable&) const;
 
 };
 }

@@ -36,7 +36,7 @@ public:
     ::com::facebook::share::internal::ShareContentValidation_ApiValidator& operator=(const ::com::facebook::share::internal::ShareContentValidation_ApiValidator& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::ShareContentValidation_ApiValidator& operator=(::com::facebook::share::internal::ShareContentValidation_ApiValidator&& x) {obj = std::move(x.obj); return *this;}
     
-    void validate(const ::com::facebook::share::model::SharePhoto&) const ;
+    void validate(const ::com::facebook::share::model::SharePhoto&) const;
 
 };
 }

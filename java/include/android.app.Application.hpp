@@ -39,15 +39,15 @@ public:
     ::android::app::Application& operator=(::android::app::Application&& x) {obj = std::move(x.obj); return *this;}
     
     Application();
-    void onCreate() const ;
-    void onTerminate() const ;
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
-    void onLowMemory() const ;
-    void onTrimMemory(int32_t) const ;
-    void registerComponentCallbacks(const ::android::content::ComponentCallbacks&) const ;
-    void unregisterComponentCallbacks(const ::android::content::ComponentCallbacks&) const ;
-    void registerActivityLifecycleCallbacks(const ::android::app::Application_ActivityLifecycleCallbacks&) const ;
-    void unregisterActivityLifecycleCallbacks(const ::android::app::Application_ActivityLifecycleCallbacks&) const ;
+    void onCreate() const;
+    void onTerminate() const;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
+    void onLowMemory() const;
+    void onTrimMemory(int32_t) const;
+    void registerComponentCallbacks(const ::android::content::ComponentCallbacks&) const;
+    void unregisterComponentCallbacks(const ::android::content::ComponentCallbacks&) const;
+    void registerActivityLifecycleCallbacks(const ::android::app::Application_ActivityLifecycleCallbacks&) const;
+    void unregisterActivityLifecycleCallbacks(const ::android::app::Application_ActivityLifecycleCallbacks&) const;
 
 };
 }

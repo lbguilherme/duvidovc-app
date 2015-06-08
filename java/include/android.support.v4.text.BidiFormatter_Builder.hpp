@@ -40,9 +40,9 @@ public:
     BidiFormatter_Builder();
     BidiFormatter_Builder(bool);
     BidiFormatter_Builder(const ::java::util::Locale&);
-    ::android::support::v4::text::BidiFormatter_Builder stereoReset(bool) const ;
-    ::android::support::v4::text::BidiFormatter_Builder setTextDirectionHeuristic(const ::android::support::v4::text::TextDirectionHeuristicCompat&) const ;
-    ::android::support::v4::text::BidiFormatter build() const ;
+    ::android::support::v4::text::BidiFormatter_Builder stereoReset(bool) const;
+    ::android::support::v4::text::BidiFormatter_Builder setTextDirectionHeuristic(const ::android::support::v4::text::TextDirectionHeuristicCompat&) const;
+    ::android::support::v4::text::BidiFormatter build() const;
 
 };
 }

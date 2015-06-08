@@ -40,7 +40,7 @@ public:
     ScaleAnimation(float, float, float, float);
     ScaleAnimation(float, float, float, float, float, float);
     ScaleAnimation(float, float, float, float, int32_t, float, int32_t, float);
-    void initialize(int32_t, int32_t, int32_t, int32_t) const ;
+    void initialize(int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

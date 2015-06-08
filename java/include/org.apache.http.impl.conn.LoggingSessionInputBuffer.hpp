@@ -42,13 +42,13 @@ public:
     ::org::apache::http::impl::conn::LoggingSessionInputBuffer& operator=(::org::apache::http::impl::conn::LoggingSessionInputBuffer&& x) {obj = std::move(x.obj); return *this;}
     
     LoggingSessionInputBuffer(const ::org::apache::http::io::SessionInputBuffer&, const ::org::apache::http::impl::conn::Wire&);
-    bool isDataAvailable(int32_t) const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&) const ;
-    ::java::lang::String readLine() const ;
-    int32_t readLine(const ::org::apache::http::util::CharArrayBuffer&) const ;
-    ::org::apache::http::io::HttpTransportMetrics getMetrics() const ;
+    bool isDataAvailable(int32_t) const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&) const;
+    ::java::lang::String readLine() const;
+    int32_t readLine(const ::org::apache::http::util::CharArrayBuffer&) const;
+    ::org::apache::http::io::HttpTransportMetrics getMetrics() const;
 
 };
 }

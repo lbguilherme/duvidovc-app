@@ -38,8 +38,8 @@ public:
     ::android::support::v4::app::RemoteInput_ImplJellybean& operator=(const ::android::support::v4::app::RemoteInput_ImplJellybean& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::RemoteInput_ImplJellybean& operator=(::android::support::v4::app::RemoteInput_ImplJellybean&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::Bundle getResultsFromIntent(const ::android::content::Intent&) const ;
-    void addResultsToIntent(const std::vector< ::android::support::v4::app::RemoteInput>&, const ::android::content::Intent&, const ::android::os::Bundle&) const ;
+    ::android::os::Bundle getResultsFromIntent(const ::android::content::Intent&) const;
+    void addResultsToIntent(const std::vector< ::android::support::v4::app::RemoteInput>&, const ::android::content::Intent&, const ::android::os::Bundle&) const;
 
 };
 }

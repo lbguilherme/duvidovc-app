@@ -42,12 +42,12 @@ public:
     ::android::text::method::PasswordTransformationMethod& operator=(::android::text::method::PasswordTransformationMethod&& x) {obj = std::move(x.obj); return *this;}
     
     PasswordTransformationMethod();
-    ::java::lang::CharSequence getTransformation(const ::java::lang::CharSequence&, const ::android::view::View&) const ;
+    ::java::lang::CharSequence getTransformation(const ::java::lang::CharSequence&, const ::android::view::View&) const;
     static ::android::text::method::PasswordTransformationMethod getInstance();
-    void beforeTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const ;
-    void onTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const ;
-    void afterTextChanged(const ::android::text::Editable&) const ;
-    void onFocusChanged(const ::android::view::View&, const ::java::lang::CharSequence&, bool, int32_t, const ::android::graphics::Rect&) const ;
+    void beforeTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const;
+    void onTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const;
+    void afterTextChanged(const ::android::text::Editable&) const;
+    void onFocusChanged(const ::android::view::View&, const ::java::lang::CharSequence&, bool, int32_t, const ::android::graphics::Rect&) const;
 
 };
 }

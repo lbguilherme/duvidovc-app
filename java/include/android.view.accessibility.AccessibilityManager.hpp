@@ -35,15 +35,15 @@ public:
     ::android::view::accessibility::AccessibilityManager& operator=(const ::android::view::accessibility::AccessibilityManager& x) {obj = x.obj; return *this;}
     ::android::view::accessibility::AccessibilityManager& operator=(::android::view::accessibility::AccessibilityManager&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isEnabled() const ;
-    bool isTouchExplorationEnabled() const ;
-    void sendAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void interrupt() const ;
-    ::java::util::List getAccessibilityServiceList() const ;
-    ::java::util::List getInstalledAccessibilityServiceList() const ;
-    ::java::util::List getEnabledAccessibilityServiceList(int32_t) const ;
-    bool addAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener&) const ;
-    bool removeAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener&) const ;
+    bool isEnabled() const;
+    bool isTouchExplorationEnabled() const;
+    void sendAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
+    void interrupt() const;
+    ::java::util::List getAccessibilityServiceList() const;
+    ::java::util::List getInstalledAccessibilityServiceList() const;
+    ::java::util::List getEnabledAccessibilityServiceList(int32_t) const;
+    bool addAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener&) const;
+    bool removeAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener&) const;
 
 };
 }

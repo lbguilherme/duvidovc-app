@@ -36,8 +36,8 @@ public:
     ::android::animation::IntEvaluator& operator=(::android::animation::IntEvaluator&& x) {obj = std::move(x.obj); return *this;}
     
     IntEvaluator();
-    ::java::lang::Integer evaluate(float, const ::java::lang::Integer&, const ::java::lang::Integer&) const ;
-    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    ::java::lang::Integer evaluate(float, const ::java::lang::Integer&, const ::java::lang::Integer&) const;
+    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

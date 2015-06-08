@@ -34,8 +34,8 @@ public:
     ::android::animation::LayoutTransition_TransitionListener& operator=(const ::android::animation::LayoutTransition_TransitionListener& x) {obj = x.obj; return *this;}
     ::android::animation::LayoutTransition_TransitionListener& operator=(::android::animation::LayoutTransition_TransitionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void startTransition(const ::android::animation::LayoutTransition&, const ::android::view::ViewGroup&, const ::android::view::View&, int32_t) const ;
-    void endTransition(const ::android::animation::LayoutTransition&, const ::android::view::ViewGroup&, const ::android::view::View&, int32_t) const ;
+    void startTransition(const ::android::animation::LayoutTransition&, const ::android::view::ViewGroup&, const ::android::view::View&, int32_t) const;
+    void endTransition(const ::android::animation::LayoutTransition&, const ::android::view::ViewGroup&, const ::android::view::View&, int32_t) const;
 
 };
 }

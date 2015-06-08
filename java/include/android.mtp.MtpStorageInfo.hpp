@@ -32,11 +32,11 @@ public:
     ::android::mtp::MtpStorageInfo& operator=(const ::android::mtp::MtpStorageInfo& x) {obj = x.obj; return *this;}
     ::android::mtp::MtpStorageInfo& operator=(::android::mtp::MtpStorageInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getStorageId() const ;
-    int64_t getMaxCapacity() const ;
-    int64_t getFreeSpace() const ;
-    ::java::lang::String getDescription() const ;
-    ::java::lang::String getVolumeIdentifier() const ;
+    int32_t getStorageId() const;
+    int64_t getMaxCapacity() const;
+    int64_t getFreeSpace() const;
+    ::java::lang::String getDescription() const;
+    ::java::lang::String getVolumeIdentifier() const;
 
 };
 }

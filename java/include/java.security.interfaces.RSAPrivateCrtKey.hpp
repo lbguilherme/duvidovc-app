@@ -35,12 +35,12 @@ public:
     ::java::security::interfaces::RSAPrivateCrtKey& operator=(const ::java::security::interfaces::RSAPrivateCrtKey& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::RSAPrivateCrtKey& operator=(::java::security::interfaces::RSAPrivateCrtKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::math::BigInteger getCrtCoefficient() const ;
-    ::java::math::BigInteger getPrimeP() const ;
-    ::java::math::BigInteger getPrimeQ() const ;
-    ::java::math::BigInteger getPrimeExponentP() const ;
-    ::java::math::BigInteger getPrimeExponentQ() const ;
-    ::java::math::BigInteger getPublicExponent() const ;
+    ::java::math::BigInteger getCrtCoefficient() const;
+    ::java::math::BigInteger getPrimeP() const;
+    ::java::math::BigInteger getPrimeQ() const;
+    ::java::math::BigInteger getPrimeExponentP() const;
+    ::java::math::BigInteger getPrimeExponentQ() const;
+    ::java::math::BigInteger getPublicExponent() const;
 
 };
 }

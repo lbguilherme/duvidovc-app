@@ -37,11 +37,11 @@ public:
     
     static ::android::webkit::CookieSyncManager getInstance();
     static ::android::webkit::CookieSyncManager createInstance(const ::android::content::Context&);
-    void stopSync() const ;
-    void startSync() const ;
-    void resetSync() const ;
-    void sync() const ;
-    void run() const ;
+    void stopSync() const;
+    void startSync() const;
+    void resetSync() const;
+    void sync() const;
+    void run() const;
 
 };
 }

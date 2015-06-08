@@ -33,9 +33,9 @@ public:
     ::android::view::ViewManager& operator=(const ::android::view::ViewManager& x) {obj = x.obj; return *this;}
     ::android::view::ViewManager& operator=(::android::view::ViewManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void addView(const ::android::view::View&, const ::android::view::ViewGroup_LayoutParams&) const ;
-    void updateViewLayout(const ::android::view::View&, const ::android::view::ViewGroup_LayoutParams&) const ;
-    void removeView(const ::android::view::View&) const ;
+    void addView(const ::android::view::View&, const ::android::view::ViewGroup_LayoutParams&) const;
+    void updateViewLayout(const ::android::view::View&, const ::android::view::ViewGroup_LayoutParams&) const;
+    void removeView(const ::android::view::View&) const;
 
 };
 }

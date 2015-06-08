@@ -31,8 +31,8 @@ public:
     ::android::webkit::JsResult& operator=(const ::android::webkit::JsResult& x) {obj = x.obj; return *this;}
     ::android::webkit::JsResult& operator=(::android::webkit::JsResult&& x) {obj = std::move(x.obj); return *this;}
     
-    void cancel() const ;
-    void confirm() const ;
+    void cancel() const;
+    void confirm() const;
 
 };
 }

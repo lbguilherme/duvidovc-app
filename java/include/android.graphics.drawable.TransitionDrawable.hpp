@@ -39,12 +39,12 @@ public:
     ::android::graphics::drawable::TransitionDrawable& operator=(::android::graphics::drawable::TransitionDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     TransitionDrawable(const std::vector< ::android::graphics::drawable::Drawable>&);
-    void startTransition(int32_t) const ;
-    void resetTransition() const ;
-    void reverseTransition(int32_t) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    void setCrossFadeEnabled(bool) const ;
-    bool isCrossFadeEnabled() const ;
+    void startTransition(int32_t) const;
+    void resetTransition() const;
+    void reverseTransition(int32_t) const;
+    void draw(const ::android::graphics::Canvas&) const;
+    void setCrossFadeEnabled(bool) const;
+    bool isCrossFadeEnabled() const;
 
 };
 }

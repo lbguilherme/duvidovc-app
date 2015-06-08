@@ -40,10 +40,10 @@ public:
     ::org::apache::http::impl::client::BasicCredentialsProvider& operator=(::org::apache::http::impl::client::BasicCredentialsProvider&& x) {obj = std::move(x.obj); return *this;}
     
     BasicCredentialsProvider();
-    void setCredentials(const ::org::apache::http::auth::AuthScope&, const ::org::apache::http::auth::Credentials&) const ;
-    ::org::apache::http::auth::Credentials getCredentials(const ::org::apache::http::auth::AuthScope&) const ;
-    ::java::lang::String toString() const ;
-    void clear() const ;
+    void setCredentials(const ::org::apache::http::auth::AuthScope&, const ::org::apache::http::auth::Credentials&) const;
+    ::org::apache::http::auth::Credentials getCredentials(const ::org::apache::http::auth::AuthScope&) const;
+    ::java::lang::String toString() const;
+    void clear() const;
 
 };
 }

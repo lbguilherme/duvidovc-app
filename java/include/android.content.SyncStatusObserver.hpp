@@ -31,7 +31,7 @@ public:
     ::android::content::SyncStatusObserver& operator=(const ::android::content::SyncStatusObserver& x) {obj = x.obj; return *this;}
     ::android::content::SyncStatusObserver& operator=(::android::content::SyncStatusObserver&& x) {obj = std::move(x.obj); return *this;}
     
-    void onStatusChanged(int32_t) const ;
+    void onStatusChanged(int32_t) const;
 
 };
 }

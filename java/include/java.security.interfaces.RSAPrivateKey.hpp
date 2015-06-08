@@ -37,7 +37,7 @@ public:
     ::java::security::interfaces::RSAPrivateKey& operator=(const ::java::security::interfaces::RSAPrivateKey& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::RSAPrivateKey& operator=(::java::security::interfaces::RSAPrivateKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::math::BigInteger getPrivateExponent() const ;
+    ::java::math::BigInteger getPrivateExponent() const;
 
 };
 }

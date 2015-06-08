@@ -36,7 +36,7 @@ public:
     ::android::support::v4::content::ModernAsyncTask_InternalHandler& operator=(const ::android::support::v4::content::ModernAsyncTask_InternalHandler& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::ModernAsyncTask_InternalHandler& operator=(::android::support::v4::content::ModernAsyncTask_InternalHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void handleMessage(const ::android::os::Message&) const ;
+    void handleMessage(const ::android::os::Message&) const;
 
 };
 }

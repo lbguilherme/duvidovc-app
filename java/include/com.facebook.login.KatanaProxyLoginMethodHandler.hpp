@@ -35,8 +35,8 @@ public:
     ::com::facebook::login::KatanaProxyLoginMethodHandler& operator=(const ::com::facebook::login::KatanaProxyLoginMethodHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::login::KatanaProxyLoginMethodHandler& operator=(::com::facebook::login::KatanaProxyLoginMethodHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

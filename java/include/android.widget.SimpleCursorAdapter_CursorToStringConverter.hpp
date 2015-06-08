@@ -33,7 +33,7 @@ public:
     ::android::widget::SimpleCursorAdapter_CursorToStringConverter& operator=(const ::android::widget::SimpleCursorAdapter_CursorToStringConverter& x) {obj = x.obj; return *this;}
     ::android::widget::SimpleCursorAdapter_CursorToStringConverter& operator=(::android::widget::SimpleCursorAdapter_CursorToStringConverter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const ;
+    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const;
 
 };
 }

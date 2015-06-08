@@ -35,26 +35,26 @@ public:
     ::android::media::AudioRecord& operator=(::android::media::AudioRecord&& x) {obj = std::move(x.obj); return *this;}
     
     AudioRecord(int32_t, int32_t, int32_t, int32_t, int32_t);
-    void release() const ;
-    int32_t getSampleRate() const ;
-    int32_t getAudioSource() const ;
-    int32_t getAudioFormat() const ;
-    int32_t getChannelConfiguration() const ;
-    int32_t getChannelCount() const ;
-    int32_t getState() const ;
-    int32_t getRecordingState() const ;
-    int32_t getNotificationMarkerPosition() const ;
-    int32_t getPositionNotificationPeriod() const ;
+    void release() const;
+    int32_t getSampleRate() const;
+    int32_t getAudioSource() const;
+    int32_t getAudioFormat() const;
+    int32_t getChannelConfiguration() const;
+    int32_t getChannelCount() const;
+    int32_t getState() const;
+    int32_t getRecordingState() const;
+    int32_t getNotificationMarkerPosition() const;
+    int32_t getPositionNotificationPeriod() const;
     static int32_t getMinBufferSize(int32_t, int32_t, int32_t);
-    void startRecording() const ;
-    void stop() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t read(const std::vector< int16_t>&, int32_t, int32_t) const ;
-    int32_t read(const ::java::nio::ByteBuffer&, int32_t) const ;
-    void setRecordPositionUpdateListener(const ::android::media::AudioRecord_OnRecordPositionUpdateListener&) const ;
-    void setRecordPositionUpdateListener(const ::android::media::AudioRecord_OnRecordPositionUpdateListener&, const ::android::os::Handler&) const ;
-    int32_t setNotificationMarkerPosition(int32_t) const ;
-    int32_t setPositionNotificationPeriod(int32_t) const ;
+    void startRecording() const;
+    void stop() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t read(const std::vector< int16_t>&, int32_t, int32_t) const;
+    int32_t read(const ::java::nio::ByteBuffer&, int32_t) const;
+    void setRecordPositionUpdateListener(const ::android::media::AudioRecord_OnRecordPositionUpdateListener&) const;
+    void setRecordPositionUpdateListener(const ::android::media::AudioRecord_OnRecordPositionUpdateListener&, const ::android::os::Handler&) const;
+    int32_t setNotificationMarkerPosition(int32_t) const;
+    int32_t setPositionNotificationPeriod(int32_t) const;
 
 };
 }

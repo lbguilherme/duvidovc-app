@@ -38,8 +38,8 @@ public:
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplApi21& operator=(const ::android::support::v4::app::NotificationCompat_NotificationCompatImplApi21& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplApi21& operator=(::android::support::v4::app::NotificationCompat_NotificationCompatImplApi21&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const ;
-    ::java::lang::String getCategory(const ::android::app::Notification&) const ;
+    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const;
+    ::java::lang::String getCategory(const ::android::app::Notification&) const;
 
 };
 }

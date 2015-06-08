@@ -42,14 +42,14 @@ public:
     ::org::apache::http::protocol::HttpService& operator=(::org::apache::http::protocol::HttpService&& x) {obj = std::move(x.obj); return *this;}
     
     HttpService(const ::org::apache::http::protocol::HttpProcessor&, const ::org::apache::http::ConnectionReuseStrategy&, const ::org::apache::http::HttpResponseFactory&);
-    void setHttpProcessor(const ::org::apache::http::protocol::HttpProcessor&) const ;
-    void setConnReuseStrategy(const ::org::apache::http::ConnectionReuseStrategy&) const ;
-    void setResponseFactory(const ::org::apache::http::HttpResponseFactory&) const ;
-    void setHandlerResolver(const ::org::apache::http::protocol::HttpRequestHandlerResolver&) const ;
-    void setExpectationVerifier(const ::org::apache::http::protocol::HttpExpectationVerifier&) const ;
-    ::org::apache::http::params::HttpParams getParams() const ;
-    void setParams(const ::org::apache::http::params::HttpParams&) const ;
-    void handleRequest(const ::org::apache::http::HttpServerConnection&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void setHttpProcessor(const ::org::apache::http::protocol::HttpProcessor&) const;
+    void setConnReuseStrategy(const ::org::apache::http::ConnectionReuseStrategy&) const;
+    void setResponseFactory(const ::org::apache::http::HttpResponseFactory&) const;
+    void setHandlerResolver(const ::org::apache::http::protocol::HttpRequestHandlerResolver&) const;
+    void setExpectationVerifier(const ::org::apache::http::protocol::HttpExpectationVerifier&) const;
+    ::org::apache::http::params::HttpParams getParams() const;
+    void setParams(const ::org::apache::http::params::HttpParams&) const;
+    void handleRequest(const ::org::apache::http::HttpServerConnection&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

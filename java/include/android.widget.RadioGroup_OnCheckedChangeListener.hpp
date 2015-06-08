@@ -32,7 +32,7 @@ public:
     ::android::widget::RadioGroup_OnCheckedChangeListener& operator=(const ::android::widget::RadioGroup_OnCheckedChangeListener& x) {obj = x.obj; return *this;}
     ::android::widget::RadioGroup_OnCheckedChangeListener& operator=(::android::widget::RadioGroup_OnCheckedChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCheckedChanged(const ::android::widget::RadioGroup&, int32_t) const ;
+    void onCheckedChanged(const ::android::widget::RadioGroup&, int32_t) const;
 
 };
 }

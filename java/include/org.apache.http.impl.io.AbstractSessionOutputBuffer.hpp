@@ -40,13 +40,13 @@ public:
     ::org::apache::http::impl::io::AbstractSessionOutputBuffer& operator=(::org::apache::http::impl::io::AbstractSessionOutputBuffer&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractSessionOutputBuffer();
-    void flush() const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(const std::vector< int8_t>&) const ;
-    void write(int32_t) const ;
-    void writeLine(const ::java::lang::String&) const ;
-    void writeLine(const ::org::apache::http::util::CharArrayBuffer&) const ;
-    ::org::apache::http::io::HttpTransportMetrics getMetrics() const ;
+    void flush() const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(const std::vector< int8_t>&) const;
+    void write(int32_t) const;
+    void writeLine(const ::java::lang::String&) const;
+    void writeLine(const ::org::apache::http::util::CharArrayBuffer&) const;
+    ::org::apache::http::io::HttpTransportMetrics getMetrics() const;
 
 };
 }

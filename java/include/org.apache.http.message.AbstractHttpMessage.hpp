@@ -39,22 +39,22 @@ public:
     ::org::apache::http::message::AbstractHttpMessage& operator=(const ::org::apache::http::message::AbstractHttpMessage& x) {obj = x.obj; return *this;}
     ::org::apache::http::message::AbstractHttpMessage& operator=(::org::apache::http::message::AbstractHttpMessage&& x) {obj = std::move(x.obj); return *this;}
     
-    bool containsHeader(const ::java::lang::String&) const ;
-    std::vector< ::org::apache::http::Header> getHeaders(const ::java::lang::String&) const ;
-    ::org::apache::http::Header getFirstHeader(const ::java::lang::String&) const ;
-    ::org::apache::http::Header getLastHeader(const ::java::lang::String&) const ;
-    std::vector< ::org::apache::http::Header> getAllHeaders() const ;
-    void addHeader(const ::org::apache::http::Header&) const ;
-    void addHeader(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setHeader(const ::org::apache::http::Header&) const ;
-    void setHeader(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setHeaders(const std::vector< ::org::apache::http::Header>&) const ;
-    void removeHeader(const ::org::apache::http::Header&) const ;
-    void removeHeaders(const ::java::lang::String&) const ;
-    ::org::apache::http::HeaderIterator headerIterator() const ;
-    ::org::apache::http::HeaderIterator headerIterator(const ::java::lang::String&) const ;
-    ::org::apache::http::params::HttpParams getParams() const ;
-    void setParams(const ::org::apache::http::params::HttpParams&) const ;
+    bool containsHeader(const ::java::lang::String&) const;
+    std::vector< ::org::apache::http::Header> getHeaders(const ::java::lang::String&) const;
+    ::org::apache::http::Header getFirstHeader(const ::java::lang::String&) const;
+    ::org::apache::http::Header getLastHeader(const ::java::lang::String&) const;
+    std::vector< ::org::apache::http::Header> getAllHeaders() const;
+    void addHeader(const ::org::apache::http::Header&) const;
+    void addHeader(const ::java::lang::String&, const ::java::lang::String&) const;
+    void setHeader(const ::org::apache::http::Header&) const;
+    void setHeader(const ::java::lang::String&, const ::java::lang::String&) const;
+    void setHeaders(const std::vector< ::org::apache::http::Header>&) const;
+    void removeHeader(const ::org::apache::http::Header&) const;
+    void removeHeaders(const ::java::lang::String&) const;
+    ::org::apache::http::HeaderIterator headerIterator() const;
+    ::org::apache::http::HeaderIterator headerIterator(const ::java::lang::String&) const;
+    ::org::apache::http::params::HttpParams getParams() const;
+    void setParams(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

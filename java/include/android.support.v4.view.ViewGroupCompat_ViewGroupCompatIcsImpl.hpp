@@ -38,7 +38,7 @@ public:
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatIcsImpl& operator=(const ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatIcsImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatIcsImpl& operator=(::android::support::v4::view::ViewGroupCompat_ViewGroupCompatIcsImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
+    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

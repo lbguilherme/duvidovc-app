@@ -43,9 +43,9 @@ public:
     ::android::support::v4::app::LoaderManagerImpl_LoaderInfo& operator=(::android::support::v4::app::LoaderManagerImpl_LoaderInfo&& x) {obj = std::move(x.obj); return *this;}
     
     LoaderManagerImpl_LoaderInfo(int32_t, const ::android::os::Bundle&, const ::android::support::v4::app::LoaderManager_LoaderCallbacks&);
-    void onLoadComplete(const ::android::support::v4::content::Loader&, const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
+    void onLoadComplete(const ::android::support::v4::content::Loader&, const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
 
 };
 }

@@ -37,10 +37,10 @@ public:
     ::android::renderscript::ProgramFragmentFixedFunction_Builder& operator=(::android::renderscript::ProgramFragmentFixedFunction_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ProgramFragmentFixedFunction_Builder(const ::android::renderscript::RenderScript&);
-    ::android::renderscript::ProgramFragmentFixedFunction_Builder setTexture(const ::android::renderscript::ProgramFragmentFixedFunction_Builder_EnvMode&, const ::android::renderscript::ProgramFragmentFixedFunction_Builder_Format&, int32_t) const ;
-    ::android::renderscript::ProgramFragmentFixedFunction_Builder setPointSpriteTexCoordinateReplacement(bool) const ;
-    ::android::renderscript::ProgramFragmentFixedFunction_Builder setVaryingColor(bool) const ;
-    ::android::renderscript::ProgramFragmentFixedFunction create() const ;
+    ::android::renderscript::ProgramFragmentFixedFunction_Builder setTexture(const ::android::renderscript::ProgramFragmentFixedFunction_Builder_EnvMode&, const ::android::renderscript::ProgramFragmentFixedFunction_Builder_Format&, int32_t) const;
+    ::android::renderscript::ProgramFragmentFixedFunction_Builder setPointSpriteTexCoordinateReplacement(bool) const;
+    ::android::renderscript::ProgramFragmentFixedFunction_Builder setVaryingColor(bool) const;
+    ::android::renderscript::ProgramFragmentFixedFunction create() const;
 
 };
 }

@@ -40,14 +40,14 @@ public:
     EncryptedPrivateKeyInfo(const std::vector< int8_t>&);
     EncryptedPrivateKeyInfo(const ::java::lang::String&, const std::vector< int8_t>&);
     EncryptedPrivateKeyInfo(const ::java::security::AlgorithmParameters&, const std::vector< int8_t>&);
-    ::java::lang::String getAlgName() const ;
-    ::java::security::AlgorithmParameters getAlgParameters() const ;
-    std::vector< int8_t> getEncryptedData() const ;
-    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::javax::crypto::Cipher&) const ;
-    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::java::security::Key&) const ;
-    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::java::security::Key&, const ::java::lang::String&) const ;
-    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::java::security::Key&, const ::java::security::Provider&) const ;
-    std::vector< int8_t> getEncoded() const ;
+    ::java::lang::String getAlgName() const;
+    ::java::security::AlgorithmParameters getAlgParameters() const;
+    std::vector< int8_t> getEncryptedData() const;
+    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::javax::crypto::Cipher&) const;
+    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::java::security::Key&) const;
+    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::java::security::Key&, const ::java::lang::String&) const;
+    ::java::security::spec::PKCS8EncodedKeySpec getKeySpec(const ::java::security::Key&, const ::java::security::Provider&) const;
+    std::vector< int8_t> getEncoded() const;
 
 };
 }

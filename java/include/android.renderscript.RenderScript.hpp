@@ -36,16 +36,16 @@ public:
     ::android::renderscript::RenderScript& operator=(const ::android::renderscript::RenderScript& x) {obj = x.obj; return *this;}
     ::android::renderscript::RenderScript& operator=(::android::renderscript::RenderScript&& x) {obj = std::move(x.obj); return *this;}
     
-    void setMessageHandler(const ::android::renderscript::RenderScript_RSMessageHandler&) const ;
-    ::android::renderscript::RenderScript_RSMessageHandler getMessageHandler() const ;
-    void setErrorHandler(const ::android::renderscript::RenderScript_RSErrorHandler&) const ;
-    ::android::renderscript::RenderScript_RSErrorHandler getErrorHandler() const ;
-    void setPriority(const ::android::renderscript::RenderScript_Priority&) const ;
-    ::android::content::Context getApplicationContext() const ;
+    void setMessageHandler(const ::android::renderscript::RenderScript_RSMessageHandler&) const;
+    ::android::renderscript::RenderScript_RSMessageHandler getMessageHandler() const;
+    void setErrorHandler(const ::android::renderscript::RenderScript_RSErrorHandler&) const;
+    ::android::renderscript::RenderScript_RSErrorHandler getErrorHandler() const;
+    void setPriority(const ::android::renderscript::RenderScript_Priority&) const;
+    ::android::content::Context getApplicationContext() const;
     static ::android::renderscript::RenderScript create(const ::android::content::Context&);
-    void contextDump() const ;
-    void finish() const ;
-    void destroy() const ;
+    void contextDump() const;
+    void finish() const;
+    void destroy() const;
 
 };
 }

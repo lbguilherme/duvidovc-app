@@ -32,7 +32,7 @@ public:
     ::android::media::MediaPlayer_OnVideoSizeChangedListener& operator=(const ::android::media::MediaPlayer_OnVideoSizeChangedListener& x) {obj = x.obj; return *this;}
     ::android::media::MediaPlayer_OnVideoSizeChangedListener& operator=(::android::media::MediaPlayer_OnVideoSizeChangedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onVideoSizeChanged(const ::android::media::MediaPlayer&, int32_t, int32_t) const ;
+    void onVideoSizeChanged(const ::android::media::MediaPlayer&, int32_t, int32_t) const;
 
 };
 }

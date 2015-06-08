@@ -38,11 +38,11 @@ public:
     ::android::support::v4::widget::DrawerLayout_DrawerLayoutCompatImpl& operator=(const ::android::support::v4::widget::DrawerLayout_DrawerLayoutCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::DrawerLayout_DrawerLayoutCompatImpl& operator=(::android::support::v4::widget::DrawerLayout_DrawerLayoutCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void configureApplyInsets(const ::android::view::View&) const ;
-    void dispatchChildInsets(const ::android::view::View&, const ::java::lang::Object&, int32_t) const ;
-    void applyMarginInsets(const ::android::view::ViewGroup_MarginLayoutParams&, const ::java::lang::Object&, int32_t) const ;
-    int32_t getTopInset(const ::java::lang::Object&) const ;
-    ::android::graphics::drawable::Drawable getDefaultStatusBarBackground(const ::android::content::Context&) const ;
+    void configureApplyInsets(const ::android::view::View&) const;
+    void dispatchChildInsets(const ::android::view::View&, const ::java::lang::Object&, int32_t) const;
+    void applyMarginInsets(const ::android::view::ViewGroup_MarginLayoutParams&, const ::java::lang::Object&, int32_t) const;
+    int32_t getTopInset(const ::java::lang::Object&) const;
+    ::android::graphics::drawable::Drawable getDefaultStatusBarBackground(const ::android::content::Context&) const;
 
 };
 }

@@ -36,9 +36,9 @@ public:
     
     HttpRetryException(const ::java::lang::String&, int32_t);
     HttpRetryException(const ::java::lang::String&, int32_t, const ::java::lang::String&);
-    ::java::lang::String getLocation() const ;
-    ::java::lang::String getReason() const ;
-    int32_t responseCode() const ;
+    ::java::lang::String getLocation() const;
+    ::java::lang::String getReason() const;
+    int32_t responseCode() const;
 
 };
 }

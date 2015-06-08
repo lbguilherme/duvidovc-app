@@ -39,7 +39,7 @@ public:
     
     UnsupportedCallbackException(const ::javax::security::auth::callback::Callback&);
     UnsupportedCallbackException(const ::javax::security::auth::callback::Callback&, const ::java::lang::String&);
-    ::javax::security::auth::callback::Callback getCallback() const ;
+    ::javax::security::auth::callback::Callback getCallback() const;
 
 };
 }

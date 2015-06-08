@@ -34,17 +34,17 @@ public:
     ::android::media::audiofx::Visualizer& operator=(::android::media::audiofx::Visualizer&& x) {obj = std::move(x.obj); return *this;}
     
     Visualizer(int32_t);
-    void release() const ;
-    int32_t setEnabled(bool) const ;
-    bool getEnabled() const ;
+    void release() const;
+    int32_t setEnabled(bool) const;
+    bool getEnabled() const;
     static std::vector< int32_t> getCaptureSizeRange();
     static int32_t getMaxCaptureRate();
-    int32_t setCaptureSize(int32_t) const ;
-    int32_t getCaptureSize() const ;
-    int32_t getSamplingRate() const ;
-    int32_t getWaveForm(const std::vector< int8_t>&) const ;
-    int32_t getFft(const std::vector< int8_t>&) const ;
-    int32_t setDataCaptureListener(const ::android::media::audiofx::Visualizer_OnDataCaptureListener&, int32_t, bool, bool) const ;
+    int32_t setCaptureSize(int32_t) const;
+    int32_t getCaptureSize() const;
+    int32_t getSamplingRate() const;
+    int32_t getWaveForm(const std::vector< int8_t>&) const;
+    int32_t getFft(const std::vector< int8_t>&) const;
+    int32_t setDataCaptureListener(const ::android::media::audiofx::Visualizer_OnDataCaptureListener&, int32_t, bool, bool) const;
 
 };
 }

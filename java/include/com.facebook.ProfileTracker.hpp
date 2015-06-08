@@ -32,9 +32,9 @@ public:
     ::com::facebook::ProfileTracker& operator=(::com::facebook::ProfileTracker&& x) {obj = std::move(x.obj); return *this;}
     
     ProfileTracker();
-    void startTracking() const ;
-    void stopTracking() const ;
-    bool isTracking() const ;
+    void startTracking() const;
+    void stopTracking() const;
+    bool isTracking() const;
 
 };
 }

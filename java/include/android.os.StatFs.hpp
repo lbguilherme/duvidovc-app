@@ -33,11 +33,11 @@ public:
     ::android::os::StatFs& operator=(::android::os::StatFs&& x) {obj = std::move(x.obj); return *this;}
     
     StatFs(const ::java::lang::String&);
-    void restat(const ::java::lang::String&) const ;
-    int32_t getBlockSize() const ;
-    int32_t getBlockCount() const ;
-    int32_t getFreeBlocks() const ;
-    int32_t getAvailableBlocks() const ;
+    void restat(const ::java::lang::String&) const;
+    int32_t getBlockSize() const;
+    int32_t getBlockCount() const;
+    int32_t getFreeBlocks() const;
+    int32_t getAvailableBlocks() const;
 
 };
 }

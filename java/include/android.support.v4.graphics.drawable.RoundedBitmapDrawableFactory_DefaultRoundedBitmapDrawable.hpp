@@ -34,8 +34,8 @@ public:
     ::android::support::v4::graphics::drawable::RoundedBitmapDrawableFactory_DefaultRoundedBitmapDrawable& operator=(const ::android::support::v4::graphics::drawable::RoundedBitmapDrawableFactory_DefaultRoundedBitmapDrawable& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::drawable::RoundedBitmapDrawableFactory_DefaultRoundedBitmapDrawable& operator=(::android::support::v4::graphics::drawable::RoundedBitmapDrawableFactory_DefaultRoundedBitmapDrawable&& x) {obj = std::move(x.obj); return *this;}
     
-    void setMipMap(bool) const ;
-    bool hasMipMap() const ;
+    void setMipMap(bool) const;
+    bool hasMipMap() const;
 
 };
 }

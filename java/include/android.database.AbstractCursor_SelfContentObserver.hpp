@@ -35,8 +35,8 @@ public:
     ::android::database::AbstractCursor_SelfContentObserver& operator=(::android::database::AbstractCursor_SelfContentObserver&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractCursor_SelfContentObserver(const ::android::database::AbstractCursor&);
-    bool deliverSelfNotifications() const ;
-    void onChange(bool) const ;
+    bool deliverSelfNotifications() const;
+    void onChange(bool) const;
 
 };
 }

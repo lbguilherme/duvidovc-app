@@ -31,7 +31,7 @@ public:
     ::android::webkit::WebChromeClient_CustomViewCallback& operator=(const ::android::webkit::WebChromeClient_CustomViewCallback& x) {obj = x.obj; return *this;}
     ::android::webkit::WebChromeClient_CustomViewCallback& operator=(::android::webkit::WebChromeClient_CustomViewCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCustomViewHidden() const ;
+    void onCustomViewHidden() const;
 
 };
 }

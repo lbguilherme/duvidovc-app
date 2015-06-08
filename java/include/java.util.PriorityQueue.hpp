@@ -45,15 +45,15 @@ public:
     PriorityQueue(int32_t, const ::java::util::Comparator&);
     PriorityQueue(const ::java::util::Collection&);
     PriorityQueue(const ::java::util::SortedSet&);
-    ::java::util::Iterator iterator() const ;
-    int32_t size() const ;
-    void clear() const ;
-    bool offer(const ::java::lang::Object&) const ;
-    ::java::lang::Object poll() const ;
-    ::java::lang::Object peek() const ;
-    ::java::util::Comparator comparator() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool add(const ::java::lang::Object&) const ;
+    ::java::util::Iterator iterator() const;
+    int32_t size() const;
+    void clear() const;
+    bool offer(const ::java::lang::Object&) const;
+    ::java::lang::Object poll() const;
+    ::java::lang::Object peek() const;
+    ::java::util::Comparator comparator() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool add(const ::java::lang::Object&) const;
 
 };
 }

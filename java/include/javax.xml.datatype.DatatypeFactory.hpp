@@ -42,27 +42,27 @@ public:
     
     static ::javax::xml::datatype::DatatypeFactory newInstance();
     static ::javax::xml::datatype::DatatypeFactory newInstance(const ::java::lang::String&, const ::java::lang::ClassLoader&);
-    ::javax::xml::datatype::Duration newDuration(const ::java::lang::String&) const ;
-    ::javax::xml::datatype::Duration newDuration(int64_t) const ;
-    ::javax::xml::datatype::Duration newDuration(bool, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigDecimal&) const ;
-    ::javax::xml::datatype::Duration newDuration(bool, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    ::javax::xml::datatype::Duration newDurationDayTime(const ::java::lang::String&) const ;
-    ::javax::xml::datatype::Duration newDurationDayTime(int64_t) const ;
-    ::javax::xml::datatype::Duration newDurationDayTime(bool, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&) const ;
-    ::javax::xml::datatype::Duration newDurationDayTime(bool, int32_t, int32_t, int32_t, int32_t) const ;
-    ::javax::xml::datatype::Duration newDurationYearMonth(const ::java::lang::String&) const ;
-    ::javax::xml::datatype::Duration newDurationYearMonth(int64_t) const ;
-    ::javax::xml::datatype::Duration newDurationYearMonth(bool, const ::java::math::BigInteger&, const ::java::math::BigInteger&) const ;
-    ::javax::xml::datatype::Duration newDurationYearMonth(bool, int32_t, int32_t) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar() const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(const ::java::lang::String&) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(const ::java::util::GregorianCalendar&) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(const ::java::math::BigInteger&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::math::BigDecimal&, int32_t) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarDate(int32_t, int32_t, int32_t, int32_t) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarTime(int32_t, int32_t, int32_t, int32_t) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarTime(int32_t, int32_t, int32_t, const ::java::math::BigDecimal&, int32_t) const ;
-    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarTime(int32_t, int32_t, int32_t, int32_t, int32_t) const ;
+    ::javax::xml::datatype::Duration newDuration(const ::java::lang::String&) const;
+    ::javax::xml::datatype::Duration newDuration(int64_t) const;
+    ::javax::xml::datatype::Duration newDuration(bool, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigDecimal&) const;
+    ::javax::xml::datatype::Duration newDuration(bool, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    ::javax::xml::datatype::Duration newDurationDayTime(const ::java::lang::String&) const;
+    ::javax::xml::datatype::Duration newDurationDayTime(int64_t) const;
+    ::javax::xml::datatype::Duration newDurationDayTime(bool, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&) const;
+    ::javax::xml::datatype::Duration newDurationDayTime(bool, int32_t, int32_t, int32_t, int32_t) const;
+    ::javax::xml::datatype::Duration newDurationYearMonth(const ::java::lang::String&) const;
+    ::javax::xml::datatype::Duration newDurationYearMonth(int64_t) const;
+    ::javax::xml::datatype::Duration newDurationYearMonth(bool, const ::java::math::BigInteger&, const ::java::math::BigInteger&) const;
+    ::javax::xml::datatype::Duration newDurationYearMonth(bool, int32_t, int32_t) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar() const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(const ::java::lang::String&) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(const ::java::util::GregorianCalendar&) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(const ::java::math::BigInteger&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::math::BigDecimal&, int32_t) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendar(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarDate(int32_t, int32_t, int32_t, int32_t) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarTime(int32_t, int32_t, int32_t, int32_t) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarTime(int32_t, int32_t, int32_t, const ::java::math::BigDecimal&, int32_t) const;
+    ::javax::xml::datatype::XMLGregorianCalendar newXMLGregorianCalendarTime(int32_t, int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

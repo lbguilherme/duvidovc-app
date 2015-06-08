@@ -34,11 +34,11 @@ public:
     ::java::util::concurrent::Future& operator=(const ::java::util::concurrent::Future& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::Future& operator=(::java::util::concurrent::Future&& x) {obj = std::move(x.obj); return *this;}
     
-    bool cancel(bool) const ;
-    bool isCancelled() const ;
-    bool isDone() const ;
-    ::java::lang::Object get() const ;
-    ::java::lang::Object get(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    bool cancel(bool) const;
+    bool isCancelled() const;
+    bool isDone() const;
+    ::java::lang::Object get() const;
+    ::java::lang::Object get(int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

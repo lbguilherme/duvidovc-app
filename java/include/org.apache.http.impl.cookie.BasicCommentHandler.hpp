@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::BasicCommentHandler& operator=(::org::apache::http::impl::cookie::BasicCommentHandler&& x) {obj = std::move(x.obj); return *this;}
     
     BasicCommentHandler();
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
 
 };
 }

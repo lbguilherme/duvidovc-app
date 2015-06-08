@@ -31,7 +31,7 @@ public:
     ::android::os::MessageQueue_IdleHandler& operator=(const ::android::os::MessageQueue_IdleHandler& x) {obj = x.obj; return *this;}
     ::android::os::MessageQueue_IdleHandler& operator=(::android::os::MessageQueue_IdleHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool queueIdle() const ;
+    bool queueIdle() const;
 
 };
 }

@@ -42,12 +42,12 @@ public:
     ::com::facebook::share::model::AppInviteContent_Builder& operator=(::com::facebook::share::model::AppInviteContent_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     AppInviteContent_Builder();
-    ::com::facebook::share::model::AppInviteContent_Builder setApplinkUrl(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::AppInviteContent_Builder setPreviewImageUrl(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::AppInviteContent build() const ;
-    ::com::facebook::share::model::AppInviteContent_Builder readFrom(const ::com::facebook::share::model::AppInviteContent&) const ;
-    ::com::facebook::share::model::AppInviteContent_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::AppInviteContent_Builder setApplinkUrl(const ::java::lang::String&) const;
+    ::com::facebook::share::model::AppInviteContent_Builder setPreviewImageUrl(const ::java::lang::String&) const;
+    ::com::facebook::share::model::AppInviteContent build() const;
+    ::com::facebook::share::model::AppInviteContent_Builder readFrom(const ::com::facebook::share::model::AppInviteContent&) const;
+    ::com::facebook::share::model::AppInviteContent_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

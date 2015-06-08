@@ -35,24 +35,24 @@ public:
     ::org::apache::commons::logging::Log& operator=(const ::org::apache::commons::logging::Log& x) {obj = x.obj; return *this;}
     ::org::apache::commons::logging::Log& operator=(::org::apache::commons::logging::Log&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isDebugEnabled() const ;
-    bool isErrorEnabled() const ;
-    bool isFatalEnabled() const ;
-    bool isInfoEnabled() const ;
-    bool isTraceEnabled() const ;
-    bool isWarnEnabled() const ;
-    void trace(const ::java::lang::Object&) const ;
-    void trace(const ::java::lang::Object&, const ::java::lang::Throwable&) const ;
-    void debug(const ::java::lang::Object&) const ;
-    void debug(const ::java::lang::Object&, const ::java::lang::Throwable&) const ;
-    void info(const ::java::lang::Object&) const ;
-    void info(const ::java::lang::Object&, const ::java::lang::Throwable&) const ;
-    void warn(const ::java::lang::Object&) const ;
-    void warn(const ::java::lang::Object&, const ::java::lang::Throwable&) const ;
-    void error(const ::java::lang::Object&) const ;
-    void error(const ::java::lang::Object&, const ::java::lang::Throwable&) const ;
-    void fatal(const ::java::lang::Object&) const ;
-    void fatal(const ::java::lang::Object&, const ::java::lang::Throwable&) const ;
+    bool isDebugEnabled() const;
+    bool isErrorEnabled() const;
+    bool isFatalEnabled() const;
+    bool isInfoEnabled() const;
+    bool isTraceEnabled() const;
+    bool isWarnEnabled() const;
+    void trace(const ::java::lang::Object&) const;
+    void trace(const ::java::lang::Object&, const ::java::lang::Throwable&) const;
+    void debug(const ::java::lang::Object&) const;
+    void debug(const ::java::lang::Object&, const ::java::lang::Throwable&) const;
+    void info(const ::java::lang::Object&) const;
+    void info(const ::java::lang::Object&, const ::java::lang::Throwable&) const;
+    void warn(const ::java::lang::Object&) const;
+    void warn(const ::java::lang::Object&, const ::java::lang::Throwable&) const;
+    void error(const ::java::lang::Object&) const;
+    void error(const ::java::lang::Object&, const ::java::lang::Throwable&) const;
+    void fatal(const ::java::lang::Object&) const;
+    void fatal(const ::java::lang::Object&, const ::java::lang::Throwable&) const;
 
 };
 }

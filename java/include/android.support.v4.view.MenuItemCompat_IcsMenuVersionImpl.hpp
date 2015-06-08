@@ -37,10 +37,10 @@ public:
     ::android::support::v4::view::MenuItemCompat_IcsMenuVersionImpl& operator=(const ::android::support::v4::view::MenuItemCompat_IcsMenuVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MenuItemCompat_IcsMenuVersionImpl& operator=(::android::support::v4::view::MenuItemCompat_IcsMenuVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool expandActionView(const ::android::view::MenuItem&) const ;
-    bool collapseActionView(const ::android::view::MenuItem&) const ;
-    bool isActionViewExpanded(const ::android::view::MenuItem&) const ;
-    ::android::view::MenuItem setOnActionExpandListener(const ::android::view::MenuItem&, const ::android::support::v4::view::MenuItemCompat_OnActionExpandListener&) const ;
+    bool expandActionView(const ::android::view::MenuItem&) const;
+    bool collapseActionView(const ::android::view::MenuItem&) const;
+    bool isActionViewExpanded(const ::android::view::MenuItem&) const;
+    ::android::view::MenuItem setOnActionExpandListener(const ::android::view::MenuItem&, const ::android::support::v4::view::MenuItemCompat_OnActionExpandListener&) const;
 
 };
 }

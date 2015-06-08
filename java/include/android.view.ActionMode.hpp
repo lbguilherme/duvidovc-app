@@ -37,20 +37,20 @@ public:
     ::android::view::ActionMode& operator=(::android::view::ActionMode&& x) {obj = std::move(x.obj); return *this;}
     
     ActionMode();
-    void setTag(const ::java::lang::Object&) const ;
-    ::java::lang::Object getTag() const ;
-    void setTitle(const ::java::lang::CharSequence&) const ;
-    void setTitle(int32_t) const ;
-    void setSubtitle(const ::java::lang::CharSequence&) const ;
-    void setSubtitle(int32_t) const ;
-    void setCustomView(const ::android::view::View&) const ;
-    void invalidate() const ;
-    void finish() const ;
-    ::android::view::Menu getMenu() const ;
-    ::java::lang::CharSequence getTitle() const ;
-    ::java::lang::CharSequence getSubtitle() const ;
-    ::android::view::View getCustomView() const ;
-    ::android::view::MenuInflater getMenuInflater() const ;
+    void setTag(const ::java::lang::Object&) const;
+    ::java::lang::Object getTag() const;
+    void setTitle(const ::java::lang::CharSequence&) const;
+    void setTitle(int32_t) const;
+    void setSubtitle(const ::java::lang::CharSequence&) const;
+    void setSubtitle(int32_t) const;
+    void setCustomView(const ::android::view::View&) const;
+    void invalidate() const;
+    void finish() const;
+    ::android::view::Menu getMenu() const;
+    ::java::lang::CharSequence getTitle() const;
+    ::java::lang::CharSequence getSubtitle() const;
+    ::android::view::View getCustomView() const;
+    ::android::view::MenuInflater getMenuInflater() const;
 
 };
 }

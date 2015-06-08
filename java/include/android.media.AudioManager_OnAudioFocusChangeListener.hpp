@@ -31,7 +31,7 @@ public:
     ::android::media::AudioManager_OnAudioFocusChangeListener& operator=(const ::android::media::AudioManager_OnAudioFocusChangeListener& x) {obj = x.obj; return *this;}
     ::android::media::AudioManager_OnAudioFocusChangeListener& operator=(::android::media::AudioManager_OnAudioFocusChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAudioFocusChange(int32_t) const ;
+    void onAudioFocusChange(int32_t) const;
 
 };
 }

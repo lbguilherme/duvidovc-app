@@ -31,16 +31,16 @@ public:
     ::android::widget::MediaController_MediaPlayerControl& operator=(const ::android::widget::MediaController_MediaPlayerControl& x) {obj = x.obj; return *this;}
     ::android::widget::MediaController_MediaPlayerControl& operator=(::android::widget::MediaController_MediaPlayerControl&& x) {obj = std::move(x.obj); return *this;}
     
-    void start() const ;
-    void pause() const ;
-    int32_t getDuration() const ;
-    int32_t getCurrentPosition() const ;
-    void seekTo(int32_t) const ;
-    bool isPlaying() const ;
-    int32_t getBufferPercentage() const ;
-    bool canPause() const ;
-    bool canSeekBackward() const ;
-    bool canSeekForward() const ;
+    void start() const;
+    void pause() const;
+    int32_t getDuration() const;
+    int32_t getCurrentPosition() const;
+    void seekTo(int32_t) const;
+    bool isPlaying() const;
+    int32_t getBufferPercentage() const;
+    bool canPause() const;
+    bool canSeekBackward() const;
+    bool canSeekForward() const;
 
 };
 }

@@ -40,17 +40,17 @@ public:
     ::android::view::inputmethod::InputMethod& operator=(const ::android::view::inputmethod::InputMethod& x) {obj = x.obj; return *this;}
     ::android::view::inputmethod::InputMethod& operator=(::android::view::inputmethod::InputMethod&& x) {obj = std::move(x.obj); return *this;}
     
-    void attachToken(const ::android::os::IBinder&) const ;
-    void bindInput(const ::android::view::inputmethod::InputBinding&) const ;
-    void unbindInput() const ;
-    void startInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const ;
-    void restartInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const ;
-    void createSession(const ::android::view::inputmethod::InputMethod_SessionCallback&) const ;
-    void setSessionEnabled(const ::android::view::inputmethod::InputMethodSession&, bool) const ;
-    void revokeSession(const ::android::view::inputmethod::InputMethodSession&) const ;
-    void showSoftInput(int32_t, const ::android::os::ResultReceiver&) const ;
-    void hideSoftInput(int32_t, const ::android::os::ResultReceiver&) const ;
-    void changeInputMethodSubtype(const ::android::view::inputmethod::InputMethodSubtype&) const ;
+    void attachToken(const ::android::os::IBinder&) const;
+    void bindInput(const ::android::view::inputmethod::InputBinding&) const;
+    void unbindInput() const;
+    void startInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const;
+    void restartInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const;
+    void createSession(const ::android::view::inputmethod::InputMethod_SessionCallback&) const;
+    void setSessionEnabled(const ::android::view::inputmethod::InputMethodSession&, bool) const;
+    void revokeSession(const ::android::view::inputmethod::InputMethodSession&) const;
+    void showSoftInput(int32_t, const ::android::os::ResultReceiver&) const;
+    void hideSoftInput(int32_t, const ::android::os::ResultReceiver&) const;
+    void changeInputMethodSubtype(const ::android::view::inputmethod::InputMethodSubtype&) const;
 
 };
 }

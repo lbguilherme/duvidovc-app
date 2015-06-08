@@ -36,7 +36,7 @@ public:
     ::com::facebook::login::widget::LoginButton_LoginClickListener& operator=(const ::com::facebook::login::widget::LoginButton_LoginClickListener& x) {obj = x.obj; return *this;}
     ::com::facebook::login::widget::LoginButton_LoginClickListener& operator=(::com::facebook::login::widget::LoginButton_LoginClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onClick(const ::android::view::View&) const ;
+    void onClick(const ::android::view::View&) const;
 
 };
 }

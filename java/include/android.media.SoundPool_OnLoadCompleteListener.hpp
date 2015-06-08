@@ -32,7 +32,7 @@ public:
     ::android::media::SoundPool_OnLoadCompleteListener& operator=(const ::android::media::SoundPool_OnLoadCompleteListener& x) {obj = x.obj; return *this;}
     ::android::media::SoundPool_OnLoadCompleteListener& operator=(::android::media::SoundPool_OnLoadCompleteListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onLoadComplete(const ::android::media::SoundPool&, int32_t, int32_t) const ;
+    void onLoadComplete(const ::android::media::SoundPool&, int32_t, int32_t) const;
 
 };
 }

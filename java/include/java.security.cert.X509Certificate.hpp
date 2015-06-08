@@ -43,28 +43,28 @@ public:
     ::java::security::cert::X509Certificate& operator=(const ::java::security::cert::X509Certificate& x) {obj = x.obj; return *this;}
     ::java::security::cert::X509Certificate& operator=(::java::security::cert::X509Certificate&& x) {obj = std::move(x.obj); return *this;}
     
-    void checkValidity() const ;
-    void checkValidity(const ::java::util::Date&) const ;
-    int32_t getVersion() const ;
-    ::java::math::BigInteger getSerialNumber() const ;
-    ::java::security::Principal getIssuerDN() const ;
-    ::javax::security::auth::x500::X500Principal getIssuerX500Principal() const ;
-    ::java::security::Principal getSubjectDN() const ;
-    ::javax::security::auth::x500::X500Principal getSubjectX500Principal() const ;
-    ::java::util::Date getNotBefore() const ;
-    ::java::util::Date getNotAfter() const ;
-    std::vector< int8_t> getTBSCertificate() const ;
-    std::vector< int8_t> getSignature() const ;
-    ::java::lang::String getSigAlgName() const ;
-    ::java::lang::String getSigAlgOID() const ;
-    std::vector< int8_t> getSigAlgParams() const ;
-    std::vector< bool> getIssuerUniqueID() const ;
-    std::vector< bool> getSubjectUniqueID() const ;
-    std::vector< bool> getKeyUsage() const ;
-    ::java::util::List getExtendedKeyUsage() const ;
-    int32_t getBasicConstraints() const ;
-    ::java::util::Collection getSubjectAlternativeNames() const ;
-    ::java::util::Collection getIssuerAlternativeNames() const ;
+    void checkValidity() const;
+    void checkValidity(const ::java::util::Date&) const;
+    int32_t getVersion() const;
+    ::java::math::BigInteger getSerialNumber() const;
+    ::java::security::Principal getIssuerDN() const;
+    ::javax::security::auth::x500::X500Principal getIssuerX500Principal() const;
+    ::java::security::Principal getSubjectDN() const;
+    ::javax::security::auth::x500::X500Principal getSubjectX500Principal() const;
+    ::java::util::Date getNotBefore() const;
+    ::java::util::Date getNotAfter() const;
+    std::vector< int8_t> getTBSCertificate() const;
+    std::vector< int8_t> getSignature() const;
+    ::java::lang::String getSigAlgName() const;
+    ::java::lang::String getSigAlgOID() const;
+    std::vector< int8_t> getSigAlgParams() const;
+    std::vector< bool> getIssuerUniqueID() const;
+    std::vector< bool> getSubjectUniqueID() const;
+    std::vector< bool> getKeyUsage() const;
+    ::java::util::List getExtendedKeyUsage() const;
+    int32_t getBasicConstraints() const;
+    ::java::util::Collection getSubjectAlternativeNames() const;
+    ::java::util::Collection getIssuerAlternativeNames() const;
 
 };
 }

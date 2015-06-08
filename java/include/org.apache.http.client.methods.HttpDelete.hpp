@@ -41,7 +41,7 @@ public:
     HttpDelete();
     HttpDelete(const ::java::net::URI&);
     HttpDelete(const ::java::lang::String&);
-    ::java::lang::String getMethod() const ;
+    ::java::lang::String getMethod() const;
 
 };
 }

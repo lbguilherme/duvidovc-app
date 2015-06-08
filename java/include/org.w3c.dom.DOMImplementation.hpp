@@ -36,10 +36,10 @@ public:
     ::org::w3c::dom::DOMImplementation& operator=(const ::org::w3c::dom::DOMImplementation& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMImplementation& operator=(::org::w3c::dom::DOMImplementation&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasFeature(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::DocumentType createDocumentType(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Document createDocument(const ::java::lang::String&, const ::java::lang::String&, const ::org::w3c::dom::DocumentType&) const ;
-    ::java::lang::Object getFeature(const ::java::lang::String&, const ::java::lang::String&) const ;
+    bool hasFeature(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::DocumentType createDocumentType(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Document createDocument(const ::java::lang::String&, const ::java::lang::String&, const ::org::w3c::dom::DocumentType&) const;
+    ::java::lang::Object getFeature(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

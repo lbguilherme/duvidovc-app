@@ -35,9 +35,9 @@ public:
     ::android::widget::Filter& operator=(::android::widget::Filter&& x) {obj = std::move(x.obj); return *this;}
     
     Filter();
-    void filter(const ::java::lang::CharSequence&) const ;
-    void filter(const ::java::lang::CharSequence&, const ::android::widget::Filter_FilterListener&) const ;
-    ::java::lang::CharSequence convertResultToString(const ::java::lang::Object&) const ;
+    void filter(const ::java::lang::CharSequence&) const;
+    void filter(const ::java::lang::CharSequence&, const ::android::widget::Filter_FilterListener&) const;
+    ::java::lang::CharSequence convertResultToString(const ::java::lang::Object&) const;
 
 };
 }

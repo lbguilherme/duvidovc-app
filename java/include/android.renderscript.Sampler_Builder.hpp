@@ -35,12 +35,12 @@ public:
     ::android::renderscript::Sampler_Builder& operator=(::android::renderscript::Sampler_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     Sampler_Builder(const ::android::renderscript::RenderScript&);
-    void setMinification(const ::android::renderscript::Sampler_Value&) const ;
-    void setMagnification(const ::android::renderscript::Sampler_Value&) const ;
-    void setWrapS(const ::android::renderscript::Sampler_Value&) const ;
-    void setWrapT(const ::android::renderscript::Sampler_Value&) const ;
-    void setAnisotropy(float) const ;
-    ::android::renderscript::Sampler create() const ;
+    void setMinification(const ::android::renderscript::Sampler_Value&) const;
+    void setMagnification(const ::android::renderscript::Sampler_Value&) const;
+    void setWrapS(const ::android::renderscript::Sampler_Value&) const;
+    void setWrapT(const ::android::renderscript::Sampler_Value&) const;
+    void setAnisotropy(float) const;
+    ::android::renderscript::Sampler create() const;
 
 };
 }

@@ -43,13 +43,13 @@ public:
     ::com::facebook::share::model::AppGroupCreationContent_Builder& operator=(::com::facebook::share::model::AppGroupCreationContent_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     AppGroupCreationContent_Builder();
-    ::com::facebook::share::model::AppGroupCreationContent_Builder setName(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::AppGroupCreationContent_Builder setDescription(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::AppGroupCreationContent_Builder setAppGroupPrivacy(const ::com::facebook::share::model::AppGroupCreationContent_AppGroupPrivacy&) const ;
-    ::com::facebook::share::model::AppGroupCreationContent build() const ;
-    ::com::facebook::share::model::AppGroupCreationContent_Builder readFrom(const ::com::facebook::share::model::AppGroupCreationContent&) const ;
-    ::com::facebook::share::model::AppGroupCreationContent_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::AppGroupCreationContent_Builder setName(const ::java::lang::String&) const;
+    ::com::facebook::share::model::AppGroupCreationContent_Builder setDescription(const ::java::lang::String&) const;
+    ::com::facebook::share::model::AppGroupCreationContent_Builder setAppGroupPrivacy(const ::com::facebook::share::model::AppGroupCreationContent_AppGroupPrivacy&) const;
+    ::com::facebook::share::model::AppGroupCreationContent build() const;
+    ::com::facebook::share::model::AppGroupCreationContent_Builder readFrom(const ::com::facebook::share::model::AppGroupCreationContent&) const;
+    ::com::facebook::share::model::AppGroupCreationContent_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

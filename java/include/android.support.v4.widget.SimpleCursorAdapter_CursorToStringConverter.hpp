@@ -35,7 +35,7 @@ public:
     ::android::support::v4::widget::SimpleCursorAdapter_CursorToStringConverter& operator=(const ::android::support::v4::widget::SimpleCursorAdapter_CursorToStringConverter& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SimpleCursorAdapter_CursorToStringConverter& operator=(::android::support::v4::widget::SimpleCursorAdapter_CursorToStringConverter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const ;
+    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const;
 
 };
 }

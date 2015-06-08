@@ -42,15 +42,15 @@ public:
     
     Manifest();
     Manifest(const ::java::io::InputStream&);
-    void clear() const ;
-    ::java::util::jar::Attributes getAttributes(const ::java::lang::String&) const ;
-    ::java::util::Map getEntries() const ;
-    ::java::util::jar::Attributes getMainAttributes() const ;
-    ::java::lang::Object clone() const ;
-    void write(const ::java::io::OutputStream&) const ;
-    void read(const ::java::io::InputStream&) const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    void clear() const;
+    ::java::util::jar::Attributes getAttributes(const ::java::lang::String&) const;
+    ::java::util::Map getEntries() const;
+    ::java::util::jar::Attributes getMainAttributes() const;
+    ::java::lang::Object clone() const;
+    void write(const ::java::io::OutputStream&) const;
+    void read(const ::java::io::InputStream&) const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

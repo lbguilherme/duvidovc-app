@@ -33,7 +33,7 @@ public:
     ::java::security::MessageDigestSpi& operator=(::java::security::MessageDigestSpi&& x) {obj = std::move(x.obj); return *this;}
     
     MessageDigestSpi();
-    ::java::lang::Object clone() const ;
+    ::java::lang::Object clone() const;
 
 };
 }

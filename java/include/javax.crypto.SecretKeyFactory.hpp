@@ -37,14 +37,14 @@ public:
     ::javax::crypto::SecretKeyFactory& operator=(const ::javax::crypto::SecretKeyFactory& x) {obj = x.obj; return *this;}
     ::javax::crypto::SecretKeyFactory& operator=(::javax::crypto::SecretKeyFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
     static ::javax::crypto::SecretKeyFactory getInstance(const ::java::lang::String&);
     static ::javax::crypto::SecretKeyFactory getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::javax::crypto::SecretKeyFactory getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::javax::crypto::SecretKey generateSecret(const ::java::security::spec::KeySpec&) const ;
-    ::java::security::spec::KeySpec getKeySpec(const ::javax::crypto::SecretKey&, const ::java::lang::Class&) const ;
-    ::javax::crypto::SecretKey translateKey(const ::javax::crypto::SecretKey&) const ;
+    ::javax::crypto::SecretKey generateSecret(const ::java::security::spec::KeySpec&) const;
+    ::java::security::spec::KeySpec getKeySpec(const ::javax::crypto::SecretKey&, const ::java::lang::Class&) const;
+    ::javax::crypto::SecretKey translateKey(const ::javax::crypto::SecretKey&) const;
 
 };
 }

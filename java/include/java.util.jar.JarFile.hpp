@@ -46,12 +46,12 @@ public:
     JarFile(const ::java::io::File&, bool, int32_t);
     JarFile(const ::java::lang::String&);
     JarFile(const ::java::lang::String&, bool);
-    ::java::util::Enumeration entries() const ;
-    ::java::util::jar::JarEntry getJarEntry(const ::java::lang::String&) const ;
-    ::java::util::jar::Manifest getManifest() const ;
-    ::java::io::InputStream getInputStream(const ::java::util::zip::ZipEntry&) const ;
-    ::java::util::zip::ZipEntry getEntry(const ::java::lang::String&) const ;
-    void close() const ;
+    ::java::util::Enumeration entries() const;
+    ::java::util::jar::JarEntry getJarEntry(const ::java::lang::String&) const;
+    ::java::util::jar::Manifest getManifest() const;
+    ::java::io::InputStream getInputStream(const ::java::util::zip::ZipEntry&) const;
+    ::java::util::zip::ZipEntry getEntry(const ::java::lang::String&) const;
+    void close() const;
 
 };
 }

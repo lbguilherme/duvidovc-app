@@ -39,9 +39,9 @@ public:
     ::org::apache::http::protocol::SyncBasicHttpContext& operator=(::org::apache::http::protocol::SyncBasicHttpContext&& x) {obj = std::move(x.obj); return *this;}
     
     SyncBasicHttpContext(const ::org::apache::http::protocol::HttpContext&);
-    ::java::lang::Object getAttribute(const ::java::lang::String&) const ;
-    void setAttribute(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object removeAttribute(const ::java::lang::String&) const ;
+    ::java::lang::Object getAttribute(const ::java::lang::String&) const;
+    void setAttribute(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object removeAttribute(const ::java::lang::String&) const;
 
 };
 }

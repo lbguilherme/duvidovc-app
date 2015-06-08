@@ -36,9 +36,9 @@ public:
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatLollipopImpl& operator=(const ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatLollipopImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatLollipopImpl& operator=(::android::support::v4::view::ViewGroupCompat_ViewGroupCompatLollipopImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setTransitionGroup(const ::android::view::ViewGroup&, bool) const ;
-    bool isTransitionGroup(const ::android::view::ViewGroup&) const ;
-    int32_t getNestedScrollAxes(const ::android::view::ViewGroup&) const ;
+    void setTransitionGroup(const ::android::view::ViewGroup&, bool) const;
+    bool isTransitionGroup(const ::android::view::ViewGroup&) const;
+    int32_t getNestedScrollAxes(const ::android::view::ViewGroup&) const;
 
 };
 }

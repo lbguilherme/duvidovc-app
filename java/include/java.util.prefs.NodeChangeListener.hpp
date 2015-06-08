@@ -35,8 +35,8 @@ public:
     ::java::util::prefs::NodeChangeListener& operator=(const ::java::util::prefs::NodeChangeListener& x) {obj = x.obj; return *this;}
     ::java::util::prefs::NodeChangeListener& operator=(::java::util::prefs::NodeChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void childAdded(const ::java::util::prefs::NodeChangeEvent&) const ;
-    void childRemoved(const ::java::util::prefs::NodeChangeEvent&) const ;
+    void childAdded(const ::java::util::prefs::NodeChangeEvent&) const;
+    void childRemoved(const ::java::util::prefs::NodeChangeEvent&) const;
 
 };
 }

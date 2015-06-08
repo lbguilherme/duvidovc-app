@@ -37,7 +37,7 @@ public:
     
     EGLContext();
     static ::javax::microedition::khronos::egl::EGL getEGL();
-    ::javax::microedition::khronos::opengles::GL getGL() const ;
+    ::javax::microedition::khronos::opengles::GL getGL() const;
 
 };
 }

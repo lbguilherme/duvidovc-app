@@ -32,9 +32,9 @@ public:
     ::android::webkit::WebStorage_Origin& operator=(const ::android::webkit::WebStorage_Origin& x) {obj = x.obj; return *this;}
     ::android::webkit::WebStorage_Origin& operator=(::android::webkit::WebStorage_Origin&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getOrigin() const ;
-    int64_t getQuota() const ;
-    int64_t getUsage() const ;
+    ::java::lang::String getOrigin() const;
+    int64_t getQuota() const;
+    int64_t getUsage() const;
 
 };
 }

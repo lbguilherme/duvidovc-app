@@ -39,8 +39,8 @@ public:
     
     NotificationManagerCompat_CancelTask(const ::java::lang::String&);
     NotificationManagerCompat_CancelTask(const ::java::lang::String&, int32_t, const ::java::lang::String&);
-    void send(const ::android::support::v4::app::INotificationSideChannel&) const ;
-    ::java::lang::String toString() const ;
+    void send(const ::android::support::v4::app::INotificationSideChannel&) const;
+    ::java::lang::String toString() const;
 
 };
 }

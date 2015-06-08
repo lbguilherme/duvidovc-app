@@ -38,12 +38,12 @@ public:
     StringTokenizer(const ::java::lang::String&);
     StringTokenizer(const ::java::lang::String&, const ::java::lang::String&);
     StringTokenizer(const ::java::lang::String&, const ::java::lang::String&, bool);
-    int32_t countTokens() const ;
-    bool hasMoreElements() const ;
-    bool hasMoreTokens() const ;
-    ::java::lang::Object nextElement() const ;
-    ::java::lang::String nextToken() const ;
-    ::java::lang::String nextToken(const ::java::lang::String&) const ;
+    int32_t countTokens() const;
+    bool hasMoreElements() const;
+    bool hasMoreTokens() const;
+    ::java::lang::Object nextElement() const;
+    ::java::lang::String nextToken() const;
+    ::java::lang::String nextToken(const ::java::lang::String&) const;
 
 };
 }

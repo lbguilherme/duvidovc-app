@@ -34,10 +34,10 @@ public:
     ::java::security::cert::PolicyQualifierInfo& operator=(::java::security::cert::PolicyQualifierInfo&& x) {obj = std::move(x.obj); return *this;}
     
     PolicyQualifierInfo(const std::vector< int8_t>&);
-    std::vector< int8_t> getEncoded() const ;
-    ::java::lang::String getPolicyQualifierId() const ;
-    std::vector< int8_t> getPolicyQualifier() const ;
-    ::java::lang::String toString() const ;
+    std::vector< int8_t> getEncoded() const;
+    ::java::lang::String getPolicyQualifierId() const;
+    std::vector< int8_t> getPolicyQualifier() const;
+    ::java::lang::String toString() const;
 
 };
 }

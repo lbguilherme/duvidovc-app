@@ -48,22 +48,22 @@ public:
     LoginButton(const ::android::content::Context&);
     LoginButton(const ::android::content::Context&, const ::android::util::AttributeSet&);
     LoginButton(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setDefaultAudience(const ::com::facebook::login::DefaultAudience&) const ;
-    ::com::facebook::login::DefaultAudience getDefaultAudience() const ;
-    void setReadPermissions(const ::java::util::List&) const ;
-    void setReadPermissions(const std::vector< ::java::lang::String>&) const ;
-    void setPublishPermissions(const ::java::util::List&) const ;
-    void setPublishPermissions(const std::vector< ::java::lang::String>&) const ;
-    void clearPermissions() const ;
-    void setLoginBehavior(const ::com::facebook::login::LoginBehavior&) const ;
-    ::com::facebook::login::LoginBehavior getLoginBehavior() const ;
-    void setToolTipStyle(const ::com::facebook::login::widget::ToolTipPopup_Style&) const ;
-    void setToolTipMode(const ::com::facebook::login::widget::LoginButton_ToolTipMode&) const ;
-    ::com::facebook::login::widget::LoginButton_ToolTipMode getToolTipMode() const ;
-    void setToolTipDisplayTime(int64_t) const ;
-    int64_t getToolTipDisplayTime() const ;
-    void dismissToolTip() const ;
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const ;
+    void setDefaultAudience(const ::com::facebook::login::DefaultAudience&) const;
+    ::com::facebook::login::DefaultAudience getDefaultAudience() const;
+    void setReadPermissions(const ::java::util::List&) const;
+    void setReadPermissions(const std::vector< ::java::lang::String>&) const;
+    void setPublishPermissions(const ::java::util::List&) const;
+    void setPublishPermissions(const std::vector< ::java::lang::String>&) const;
+    void clearPermissions() const;
+    void setLoginBehavior(const ::com::facebook::login::LoginBehavior&) const;
+    ::com::facebook::login::LoginBehavior getLoginBehavior() const;
+    void setToolTipStyle(const ::com::facebook::login::widget::ToolTipPopup_Style&) const;
+    void setToolTipMode(const ::com::facebook::login::widget::LoginButton_ToolTipMode&) const;
+    ::com::facebook::login::widget::LoginButton_ToolTipMode getToolTipMode() const;
+    void setToolTipDisplayTime(int64_t) const;
+    int64_t getToolTipDisplayTime() const;
+    void dismissToolTip() const;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const;
 
 };
 }

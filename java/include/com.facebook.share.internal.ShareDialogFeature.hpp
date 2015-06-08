@@ -41,8 +41,8 @@ public:
     
     static std::vector< ::com::facebook::share::internal::ShareDialogFeature> values();
     static ::com::facebook::share::internal::ShareDialogFeature valueOf(const ::java::lang::String&);
-    ::java::lang::String getAction() const ;
-    int32_t getMinVersion() const ;
+    ::java::lang::String getAction() const;
+    int32_t getMinVersion() const;
 
 };
 }

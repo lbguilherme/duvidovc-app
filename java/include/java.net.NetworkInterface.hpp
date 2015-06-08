@@ -37,25 +37,25 @@ public:
     ::java::net::NetworkInterface& operator=(const ::java::net::NetworkInterface& x) {obj = x.obj; return *this;}
     ::java::net::NetworkInterface& operator=(::java::net::NetworkInterface&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::java::util::Enumeration getInetAddresses() const ;
-    ::java::lang::String getDisplayName() const ;
+    ::java::lang::String getName() const;
+    ::java::util::Enumeration getInetAddresses() const;
+    ::java::lang::String getDisplayName() const;
     static ::java::net::NetworkInterface getByName(const ::java::lang::String&);
     static ::java::net::NetworkInterface getByInetAddress(const ::java::net::InetAddress&);
     static ::java::util::Enumeration getNetworkInterfaces();
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    ::java::util::List getInterfaceAddresses() const ;
-    ::java::util::Enumeration getSubInterfaces() const ;
-    ::java::net::NetworkInterface getParent() const ;
-    bool isUp() const ;
-    bool isLoopback() const ;
-    bool isPointToPoint() const ;
-    bool supportsMulticast() const ;
-    std::vector< int8_t> getHardwareAddress() const ;
-    int32_t getMTU() const ;
-    bool isVirtual() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    ::java::util::List getInterfaceAddresses() const;
+    ::java::util::Enumeration getSubInterfaces() const;
+    ::java::net::NetworkInterface getParent() const;
+    bool isUp() const;
+    bool isLoopback() const;
+    bool isPointToPoint() const;
+    bool supportsMulticast() const;
+    std::vector< int8_t> getHardwareAddress() const;
+    int32_t getMTU() const;
+    bool isVirtual() const;
 
 };
 }

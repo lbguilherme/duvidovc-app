@@ -33,10 +33,10 @@ public:
     ::java::security::Principal& operator=(const ::java::security::Principal& x) {obj = x.obj; return *this;}
     ::java::security::Principal& operator=(::java::security::Principal&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String getName() const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String getName() const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

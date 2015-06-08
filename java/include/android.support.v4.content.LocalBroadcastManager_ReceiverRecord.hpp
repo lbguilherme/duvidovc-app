@@ -34,7 +34,7 @@ public:
     ::android::support::v4::content::LocalBroadcastManager_ReceiverRecord& operator=(const ::android::support::v4::content::LocalBroadcastManager_ReceiverRecord& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::LocalBroadcastManager_ReceiverRecord& operator=(::android::support::v4::content::LocalBroadcastManager_ReceiverRecord&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

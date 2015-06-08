@@ -39,11 +39,11 @@ public:
     ::com::facebook::internal::WebDialog_DialogWebViewClient& operator=(const ::com::facebook::internal::WebDialog_DialogWebViewClient& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::WebDialog_DialogWebViewClient& operator=(::com::facebook::internal::WebDialog_DialogWebViewClient&& x) {obj = std::move(x.obj); return *this;}
     
-    bool shouldOverrideUrlLoading(const ::android::webkit::WebView&, const ::java::lang::String&) const ;
-    void onReceivedError(const ::android::webkit::WebView&, int32_t, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void onReceivedSslError(const ::android::webkit::WebView&, const ::android::webkit::SslErrorHandler&, const ::android::net::http::SslError&) const ;
-    void onPageStarted(const ::android::webkit::WebView&, const ::java::lang::String&, const ::android::graphics::Bitmap&) const ;
-    void onPageFinished(const ::android::webkit::WebView&, const ::java::lang::String&) const ;
+    bool shouldOverrideUrlLoading(const ::android::webkit::WebView&, const ::java::lang::String&) const;
+    void onReceivedError(const ::android::webkit::WebView&, int32_t, const ::java::lang::String&, const ::java::lang::String&) const;
+    void onReceivedSslError(const ::android::webkit::WebView&, const ::android::webkit::SslErrorHandler&, const ::android::net::http::SslError&) const;
+    void onPageStarted(const ::android::webkit::WebView&, const ::java::lang::String&, const ::android::graphics::Bitmap&) const;
+    void onPageFinished(const ::android::webkit::WebView&, const ::java::lang::String&) const;
 
 };
 }

@@ -36,7 +36,7 @@ public:
     ::org::apache::http::protocol::HttpRequestHandler& operator=(const ::org::apache::http::protocol::HttpRequestHandler& x) {obj = x.obj; return *this;}
     ::org::apache::http::protocol::HttpRequestHandler& operator=(::org::apache::http::protocol::HttpRequestHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void handle(const ::org::apache::http::HttpRequest&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void handle(const ::org::apache::http::HttpRequest&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

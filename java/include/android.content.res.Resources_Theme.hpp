@@ -37,13 +37,13 @@ public:
     ::android::content::res::Resources_Theme& operator=(const ::android::content::res::Resources_Theme& x) {obj = x.obj; return *this;}
     ::android::content::res::Resources_Theme& operator=(::android::content::res::Resources_Theme&& x) {obj = std::move(x.obj); return *this;}
     
-    void applyStyle(int32_t, bool) const ;
-    void setTo(const ::android::content::res::Resources_Theme&) const ;
-    ::android::content::res::TypedArray obtainStyledAttributes(const std::vector< int32_t>&) const ;
-    ::android::content::res::TypedArray obtainStyledAttributes(int32_t, const std::vector< int32_t>&) const ;
-    ::android::content::res::TypedArray obtainStyledAttributes(const ::android::util::AttributeSet&, const std::vector< int32_t>&, int32_t, int32_t) const ;
-    bool resolveAttribute(int32_t, const ::android::util::TypedValue&, bool) const ;
-    void dump(int32_t, const ::java::lang::String&, const ::java::lang::String&) const ;
+    void applyStyle(int32_t, bool) const;
+    void setTo(const ::android::content::res::Resources_Theme&) const;
+    ::android::content::res::TypedArray obtainStyledAttributes(const std::vector< int32_t>&) const;
+    ::android::content::res::TypedArray obtainStyledAttributes(int32_t, const std::vector< int32_t>&) const;
+    ::android::content::res::TypedArray obtainStyledAttributes(const ::android::util::AttributeSet&, const std::vector< int32_t>&, int32_t, int32_t) const;
+    bool resolveAttribute(int32_t, const ::android::util::TypedValue&, bool) const;
+    void dump(int32_t, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

@@ -43,22 +43,22 @@ public:
     ::android::preference::PreferenceFragment& operator=(::android::preference::PreferenceFragment&& x) {obj = std::move(x.obj); return *this;}
     
     PreferenceFragment();
-    void onCreate(const ::android::os::Bundle&) const ;
-    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const ;
-    void onActivityCreated(const ::android::os::Bundle&) const ;
-    void onStart() const ;
-    void onStop() const ;
-    void onDestroyView() const ;
-    void onDestroy() const ;
-    void onSaveInstanceState(const ::android::os::Bundle&) const ;
-    void onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const ;
-    ::android::preference::PreferenceManager getPreferenceManager() const ;
-    void setPreferenceScreen(const ::android::preference::PreferenceScreen&) const ;
-    ::android::preference::PreferenceScreen getPreferenceScreen() const ;
-    void addPreferencesFromIntent(const ::android::content::Intent&) const ;
-    void addPreferencesFromResource(int32_t) const ;
-    bool onPreferenceTreeClick(const ::android::preference::PreferenceScreen&, const ::android::preference::Preference&) const ;
-    ::android::preference::Preference findPreference(const ::java::lang::CharSequence&) const ;
+    void onCreate(const ::android::os::Bundle&) const;
+    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const;
+    void onActivityCreated(const ::android::os::Bundle&) const;
+    void onStart() const;
+    void onStop() const;
+    void onDestroyView() const;
+    void onDestroy() const;
+    void onSaveInstanceState(const ::android::os::Bundle&) const;
+    void onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const;
+    ::android::preference::PreferenceManager getPreferenceManager() const;
+    void setPreferenceScreen(const ::android::preference::PreferenceScreen&) const;
+    ::android::preference::PreferenceScreen getPreferenceScreen() const;
+    void addPreferencesFromIntent(const ::android::content::Intent&) const;
+    void addPreferencesFromResource(int32_t) const;
+    bool onPreferenceTreeClick(const ::android::preference::PreferenceScreen&, const ::android::preference::Preference&) const;
+    ::android::preference::Preference findPreference(const ::java::lang::CharSequence&) const;
 
 };
 }

@@ -34,9 +34,9 @@ public:
     ::javax::sql::RowSetListener& operator=(const ::javax::sql::RowSetListener& x) {obj = x.obj; return *this;}
     ::javax::sql::RowSetListener& operator=(::javax::sql::RowSetListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void cursorMoved(const ::javax::sql::RowSetEvent&) const ;
-    void rowChanged(const ::javax::sql::RowSetEvent&) const ;
-    void rowSetChanged(const ::javax::sql::RowSetEvent&) const ;
+    void cursorMoved(const ::javax::sql::RowSetEvent&) const;
+    void rowChanged(const ::javax::sql::RowSetEvent&) const;
+    void rowSetChanged(const ::javax::sql::RowSetEvent&) const;
 
 };
 }

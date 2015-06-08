@@ -34,14 +34,14 @@ public:
     ::java::nio::channels::FileLock& operator=(const ::java::nio::channels::FileLock& x) {obj = x.obj; return *this;}
     ::java::nio::channels::FileLock& operator=(::java::nio::channels::FileLock&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::nio::channels::FileChannel channel() const ;
-    int64_t position() const ;
-    int64_t size() const ;
-    bool isShared() const ;
-    bool overlaps(int64_t, int64_t) const ;
-    bool isValid() const ;
-    void release() const ;
-    ::java::lang::String toString() const ;
+    ::java::nio::channels::FileChannel channel() const;
+    int64_t position() const;
+    int64_t size() const;
+    bool isShared() const;
+    bool overlaps(int64_t, int64_t) const;
+    bool isValid() const;
+    void release() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -34,17 +34,17 @@ public:
     ::android::support::v4::widget::AutoScrollHelper_ClampedScroller& operator=(::android::support::v4::widget::AutoScrollHelper_ClampedScroller&& x) {obj = std::move(x.obj); return *this;}
     
     AutoScrollHelper_ClampedScroller();
-    void setRampUpDuration(int32_t) const ;
-    void setRampDownDuration(int32_t) const ;
-    void start() const ;
-    void requestStop() const ;
-    bool isFinished() const ;
-    void computeScrollDelta() const ;
-    void setTargetVelocity(float, float) const ;
-    int32_t getHorizontalDirection() const ;
-    int32_t getVerticalDirection() const ;
-    int32_t getDeltaX() const ;
-    int32_t getDeltaY() const ;
+    void setRampUpDuration(int32_t) const;
+    void setRampDownDuration(int32_t) const;
+    void start() const;
+    void requestStop() const;
+    bool isFinished() const;
+    void computeScrollDelta() const;
+    void setTargetVelocity(float, float) const;
+    int32_t getHorizontalDirection() const;
+    int32_t getVerticalDirection() const;
+    int32_t getDeltaX() const;
+    int32_t getDeltaY() const;
 
 };
 }

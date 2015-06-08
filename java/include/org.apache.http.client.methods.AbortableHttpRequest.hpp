@@ -36,9 +36,9 @@ public:
     ::org::apache::http::client::methods::AbortableHttpRequest& operator=(const ::org::apache::http::client::methods::AbortableHttpRequest& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::methods::AbortableHttpRequest& operator=(::org::apache::http::client::methods::AbortableHttpRequest&& x) {obj = std::move(x.obj); return *this;}
     
-    void setConnectionRequest(const ::org::apache::http::conn::ClientConnectionRequest&) const ;
-    void setReleaseTrigger(const ::org::apache::http::conn::ConnectionReleaseTrigger&) const ;
-    void abort() const ;
+    void setConnectionRequest(const ::org::apache::http::conn::ClientConnectionRequest&) const;
+    void setReleaseTrigger(const ::org::apache::http::conn::ConnectionReleaseTrigger&) const;
+    void abort() const;
 
 };
 }

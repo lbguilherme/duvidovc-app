@@ -35,8 +35,8 @@ public:
     ::java::util::MissingFormatWidthException& operator=(::java::util::MissingFormatWidthException&& x) {obj = std::move(x.obj); return *this;}
     
     MissingFormatWidthException(const ::java::lang::String&);
-    ::java::lang::String getFormatSpecifier() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getFormatSpecifier() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

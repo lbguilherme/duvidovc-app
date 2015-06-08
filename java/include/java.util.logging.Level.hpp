@@ -38,13 +38,13 @@ public:
     ::java::util::logging::Level& operator=(::java::util::logging::Level&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::util::logging::Level parse(const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getResourceBundleName() const ;
-    int32_t intValue() const ;
-    ::java::lang::String getLocalizedName() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getResourceBundleName() const;
+    int32_t intValue() const;
+    ::java::lang::String getLocalizedName() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

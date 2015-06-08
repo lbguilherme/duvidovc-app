@@ -43,17 +43,17 @@ public:
     
     ActionBarDrawerToggle(const ::android::app::Activity&, const ::android::support::v4::widget::DrawerLayout&, int32_t, int32_t, int32_t);
     ActionBarDrawerToggle(const ::android::app::Activity&, const ::android::support::v4::widget::DrawerLayout&, bool, int32_t, int32_t, int32_t);
-    void syncState() const ;
-    void setHomeAsUpIndicator(const ::android::graphics::drawable::Drawable&) const ;
-    void setHomeAsUpIndicator(int32_t) const ;
-    void setDrawerIndicatorEnabled(bool) const ;
-    bool isDrawerIndicatorEnabled() const ;
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
-    bool onOptionsItemSelected(const ::android::view::MenuItem&) const ;
-    void onDrawerSlide(const ::android::view::View&, float) const ;
-    void onDrawerOpened(const ::android::view::View&) const ;
-    void onDrawerClosed(const ::android::view::View&) const ;
-    void onDrawerStateChanged(int32_t) const ;
+    void syncState() const;
+    void setHomeAsUpIndicator(const ::android::graphics::drawable::Drawable&) const;
+    void setHomeAsUpIndicator(int32_t) const;
+    void setDrawerIndicatorEnabled(bool) const;
+    bool isDrawerIndicatorEnabled() const;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
+    bool onOptionsItemSelected(const ::android::view::MenuItem&) const;
+    void onDrawerSlide(const ::android::view::View&, float) const;
+    void onDrawerOpened(const ::android::view::View&) const;
+    void onDrawerClosed(const ::android::view::View&) const;
+    void onDrawerStateChanged(int32_t) const;
 
 };
 }

@@ -38,27 +38,27 @@ public:
     ::java::util::NavigableMap& operator=(const ::java::util::NavigableMap& x) {obj = x.obj; return *this;}
     ::java::util::NavigableMap& operator=(::java::util::NavigableMap&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Map_Entry lowerEntry(const ::java::lang::Object&) const ;
-    ::java::lang::Object lowerKey(const ::java::lang::Object&) const ;
-    ::java::util::Map_Entry floorEntry(const ::java::lang::Object&) const ;
-    ::java::lang::Object floorKey(const ::java::lang::Object&) const ;
-    ::java::util::Map_Entry ceilingEntry(const ::java::lang::Object&) const ;
-    ::java::lang::Object ceilingKey(const ::java::lang::Object&) const ;
-    ::java::util::Map_Entry higherEntry(const ::java::lang::Object&) const ;
-    ::java::lang::Object higherKey(const ::java::lang::Object&) const ;
-    ::java::util::Map_Entry firstEntry() const ;
-    ::java::util::Map_Entry lastEntry() const ;
-    ::java::util::Map_Entry pollFirstEntry() const ;
-    ::java::util::Map_Entry pollLastEntry() const ;
-    ::java::util::NavigableMap descendingMap() const ;
-    ::java::util::NavigableSet navigableKeySet() const ;
-    ::java::util::NavigableSet descendingKeySet() const ;
-    ::java::util::NavigableMap subMap(const ::java::lang::Object&, bool, const ::java::lang::Object&, bool) const ;
-    ::java::util::NavigableMap headMap(const ::java::lang::Object&, bool) const ;
-    ::java::util::NavigableMap tailMap(const ::java::lang::Object&, bool) const ;
-    ::java::util::SortedMap subMap(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::util::SortedMap headMap(const ::java::lang::Object&) const ;
-    ::java::util::SortedMap tailMap(const ::java::lang::Object&) const ;
+    ::java::util::Map_Entry lowerEntry(const ::java::lang::Object&) const;
+    ::java::lang::Object lowerKey(const ::java::lang::Object&) const;
+    ::java::util::Map_Entry floorEntry(const ::java::lang::Object&) const;
+    ::java::lang::Object floorKey(const ::java::lang::Object&) const;
+    ::java::util::Map_Entry ceilingEntry(const ::java::lang::Object&) const;
+    ::java::lang::Object ceilingKey(const ::java::lang::Object&) const;
+    ::java::util::Map_Entry higherEntry(const ::java::lang::Object&) const;
+    ::java::lang::Object higherKey(const ::java::lang::Object&) const;
+    ::java::util::Map_Entry firstEntry() const;
+    ::java::util::Map_Entry lastEntry() const;
+    ::java::util::Map_Entry pollFirstEntry() const;
+    ::java::util::Map_Entry pollLastEntry() const;
+    ::java::util::NavigableMap descendingMap() const;
+    ::java::util::NavigableSet navigableKeySet() const;
+    ::java::util::NavigableSet descendingKeySet() const;
+    ::java::util::NavigableMap subMap(const ::java::lang::Object&, bool, const ::java::lang::Object&, bool) const;
+    ::java::util::NavigableMap headMap(const ::java::lang::Object&, bool) const;
+    ::java::util::NavigableMap tailMap(const ::java::lang::Object&, bool) const;
+    ::java::util::SortedMap subMap(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::util::SortedMap headMap(const ::java::lang::Object&) const;
+    ::java::util::SortedMap tailMap(const ::java::lang::Object&) const;
 
 };
 }

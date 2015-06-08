@@ -41,7 +41,7 @@ public:
     ::com::facebook::login::LoginMethodHandler& operator=(::com::facebook::login::LoginMethodHandler&& x) {obj = std::move(x.obj); return *this;}
     
     static ::com::facebook::AccessToken createAccessTokenFromWebBundle(const ::java::util::Collection&, const ::android::os::Bundle&, const ::com::facebook::AccessTokenSource&, const ::java::lang::String&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

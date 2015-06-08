@@ -31,7 +31,7 @@ public:
     ::android::widget::SlidingDrawer_OnDrawerOpenListener& operator=(const ::android::widget::SlidingDrawer_OnDrawerOpenListener& x) {obj = x.obj; return *this;}
     ::android::widget::SlidingDrawer_OnDrawerOpenListener& operator=(::android::widget::SlidingDrawer_OnDrawerOpenListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onDrawerOpened() const ;
+    void onDrawerOpened() const;
 
 };
 }

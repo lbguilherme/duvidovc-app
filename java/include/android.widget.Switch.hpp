@@ -42,19 +42,19 @@ public:
     Switch(const ::android::content::Context&);
     Switch(const ::android::content::Context&, const ::android::util::AttributeSet&);
     Switch(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setSwitchTextAppearance(const ::android::content::Context&, int32_t) const ;
-    void setSwitchTypeface(const ::android::graphics::Typeface&, int32_t) const ;
-    void setSwitchTypeface(const ::android::graphics::Typeface&) const ;
-    ::java::lang::CharSequence getTextOn() const ;
-    void setTextOn(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence getTextOff() const ;
-    void setTextOff(const ::java::lang::CharSequence&) const ;
-    void onMeasure(int32_t, int32_t) const ;
-    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void setChecked(bool) const ;
-    int32_t getCompoundPaddingRight() const ;
-    void jumpDrawablesToCurrentState() const ;
+    void setSwitchTextAppearance(const ::android::content::Context&, int32_t) const;
+    void setSwitchTypeface(const ::android::graphics::Typeface&, int32_t) const;
+    void setSwitchTypeface(const ::android::graphics::Typeface&) const;
+    ::java::lang::CharSequence getTextOn() const;
+    void setTextOn(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence getTextOff() const;
+    void setTextOff(const ::java::lang::CharSequence&) const;
+    void onMeasure(int32_t, int32_t) const;
+    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void setChecked(bool) const;
+    int32_t getCompoundPaddingRight() const;
+    void jumpDrawablesToCurrentState() const;
 
 };
 }

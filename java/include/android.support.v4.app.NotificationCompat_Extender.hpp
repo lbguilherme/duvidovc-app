@@ -34,7 +34,7 @@ public:
     ::android::support::v4::app::NotificationCompat_Extender& operator=(const ::android::support::v4::app::NotificationCompat_Extender& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationCompat_Extender& operator=(::android::support::v4::app::NotificationCompat_Extender&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::support::v4::app::NotificationCompat_Builder extend(const ::android::support::v4::app::NotificationCompat_Builder&) const ;
+    ::android::support::v4::app::NotificationCompat_Builder extend(const ::android::support::v4::app::NotificationCompat_Builder&) const;
 
 };
 }

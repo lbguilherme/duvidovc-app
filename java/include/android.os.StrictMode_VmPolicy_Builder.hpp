@@ -36,15 +36,15 @@ public:
     
     StrictMode_VmPolicy_Builder();
     StrictMode_VmPolicy_Builder(const ::android::os::StrictMode_VmPolicy&);
-    ::android::os::StrictMode_VmPolicy_Builder setClassInstanceLimit(const ::java::lang::Class&, int32_t) const ;
-    ::android::os::StrictMode_VmPolicy_Builder detectActivityLeaks() const ;
-    ::android::os::StrictMode_VmPolicy_Builder detectAll() const ;
-    ::android::os::StrictMode_VmPolicy_Builder detectLeakedSqlLiteObjects() const ;
-    ::android::os::StrictMode_VmPolicy_Builder detectLeakedClosableObjects() const ;
-    ::android::os::StrictMode_VmPolicy_Builder penaltyDeath() const ;
-    ::android::os::StrictMode_VmPolicy_Builder penaltyLog() const ;
-    ::android::os::StrictMode_VmPolicy_Builder penaltyDropBox() const ;
-    ::android::os::StrictMode_VmPolicy build() const ;
+    ::android::os::StrictMode_VmPolicy_Builder setClassInstanceLimit(const ::java::lang::Class&, int32_t) const;
+    ::android::os::StrictMode_VmPolicy_Builder detectActivityLeaks() const;
+    ::android::os::StrictMode_VmPolicy_Builder detectAll() const;
+    ::android::os::StrictMode_VmPolicy_Builder detectLeakedSqlLiteObjects() const;
+    ::android::os::StrictMode_VmPolicy_Builder detectLeakedClosableObjects() const;
+    ::android::os::StrictMode_VmPolicy_Builder penaltyDeath() const;
+    ::android::os::StrictMode_VmPolicy_Builder penaltyLog() const;
+    ::android::os::StrictMode_VmPolicy_Builder penaltyDropBox() const;
+    ::android::os::StrictMode_VmPolicy build() const;
 
 };
 }

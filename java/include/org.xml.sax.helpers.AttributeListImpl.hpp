@@ -39,16 +39,16 @@ public:
     
     AttributeListImpl();
     AttributeListImpl(const ::org::xml::sax::AttributeList&);
-    void setAttributeList(const ::org::xml::sax::AttributeList&) const ;
-    void addAttribute(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void removeAttribute(const ::java::lang::String&) const ;
-    void clear() const ;
-    int32_t getLength() const ;
-    ::java::lang::String getName(int32_t) const ;
-    ::java::lang::String getType(int32_t) const ;
-    ::java::lang::String getValue(int32_t) const ;
-    ::java::lang::String getType(const ::java::lang::String&) const ;
-    ::java::lang::String getValue(const ::java::lang::String&) const ;
+    void setAttributeList(const ::org::xml::sax::AttributeList&) const;
+    void addAttribute(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void removeAttribute(const ::java::lang::String&) const;
+    void clear() const;
+    int32_t getLength() const;
+    ::java::lang::String getName(int32_t) const;
+    ::java::lang::String getType(int32_t) const;
+    ::java::lang::String getValue(int32_t) const;
+    ::java::lang::String getType(const ::java::lang::String&) const;
+    ::java::lang::String getValue(const ::java::lang::String&) const;
 
 };
 }

@@ -37,11 +37,11 @@ public:
     ::android::appwidget::AppWidgetProvider& operator=(::android::appwidget::AppWidgetProvider&& x) {obj = std::move(x.obj); return *this;}
     
     AppWidgetProvider();
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void onUpdate(const ::android::content::Context&, const ::android::appwidget::AppWidgetManager&, const std::vector< int32_t>&) const ;
-    void onDeleted(const ::android::content::Context&, const std::vector< int32_t>&) const ;
-    void onEnabled(const ::android::content::Context&) const ;
-    void onDisabled(const ::android::content::Context&) const ;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void onUpdate(const ::android::content::Context&, const ::android::appwidget::AppWidgetManager&, const std::vector< int32_t>&) const;
+    void onDeleted(const ::android::content::Context&, const std::vector< int32_t>&) const;
+    void onEnabled(const ::android::content::Context&) const;
+    void onDisabled(const ::android::content::Context&) const;
 
 };
 }

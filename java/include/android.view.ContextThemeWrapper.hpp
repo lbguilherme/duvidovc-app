@@ -39,9 +39,9 @@ public:
     
     ContextThemeWrapper();
     ContextThemeWrapper(const ::android::content::Context&, int32_t);
-    void setTheme(int32_t) const ;
-    ::android::content::res::Resources_Theme getTheme() const ;
-    ::java::lang::Object getSystemService(const ::java::lang::String&) const ;
+    void setTheme(int32_t) const;
+    ::android::content::res::Resources_Theme getTheme() const;
+    ::java::lang::Object getSystemService(const ::java::lang::String&) const;
 
 };
 }

@@ -47,10 +47,10 @@ public:
     static bool canShow(const ::java::lang::Class&);
     ShareDialog(const ::android::app::Activity&);
     ShareDialog(const ::android::support::v4::app::Fragment&);
-    bool getShouldFailOnDataError() const ;
-    void setShouldFailOnDataError(bool) const ;
-    bool canShow(const ::com::facebook::share::model::ShareContent&, const ::com::facebook::share::widget::ShareDialog_Mode&) const ;
-    void show(const ::com::facebook::share::model::ShareContent&, const ::com::facebook::share::widget::ShareDialog_Mode&) const ;
+    bool getShouldFailOnDataError() const;
+    void setShouldFailOnDataError(bool) const;
+    bool canShow(const ::com::facebook::share::model::ShareContent&, const ::com::facebook::share::widget::ShareDialog_Mode&) const;
+    void show(const ::com::facebook::share::model::ShareContent&, const ::com::facebook::share::widget::ShareDialog_Mode&) const;
 
 };
 }

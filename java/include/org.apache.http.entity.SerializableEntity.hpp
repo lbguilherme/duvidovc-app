@@ -39,11 +39,11 @@ public:
     ::org::apache::http::entity::SerializableEntity& operator=(::org::apache::http::entity::SerializableEntity&& x) {obj = std::move(x.obj); return *this;}
     
     SerializableEntity(const ::java::io::Serializable&, bool);
-    ::java::io::InputStream getContent() const ;
-    int64_t getContentLength() const ;
-    bool isRepeatable() const ;
-    bool isStreaming() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
+    ::java::io::InputStream getContent() const;
+    int64_t getContentLength() const;
+    bool isRepeatable() const;
+    bool isStreaming() const;
+    void writeTo(const ::java::io::OutputStream&) const;
 
 };
 }

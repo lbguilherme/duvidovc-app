@@ -37,7 +37,7 @@ public:
     ::org::apache::http::client::HttpResponseException& operator=(::org::apache::http::client::HttpResponseException&& x) {obj = std::move(x.obj); return *this;}
     
     HttpResponseException(int32_t, const ::java::lang::String&);
-    int32_t getStatusCode() const ;
+    int32_t getStatusCode() const;
 
 };
 }

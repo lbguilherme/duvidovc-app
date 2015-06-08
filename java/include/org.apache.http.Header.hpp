@@ -34,9 +34,9 @@ public:
     ::org::apache::http::Header& operator=(const ::org::apache::http::Header& x) {obj = x.obj; return *this;}
     ::org::apache::http::Header& operator=(::org::apache::http::Header&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    std::vector< ::org::apache::http::HeaderElement> getElements() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    std::vector< ::org::apache::http::HeaderElement> getElements() const;
 
 };
 }

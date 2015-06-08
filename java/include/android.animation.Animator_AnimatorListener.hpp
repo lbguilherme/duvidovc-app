@@ -32,10 +32,10 @@ public:
     ::android::animation::Animator_AnimatorListener& operator=(const ::android::animation::Animator_AnimatorListener& x) {obj = x.obj; return *this;}
     ::android::animation::Animator_AnimatorListener& operator=(::android::animation::Animator_AnimatorListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAnimationStart(const ::android::animation::Animator&) const ;
-    void onAnimationEnd(const ::android::animation::Animator&) const ;
-    void onAnimationCancel(const ::android::animation::Animator&) const ;
-    void onAnimationRepeat(const ::android::animation::Animator&) const ;
+    void onAnimationStart(const ::android::animation::Animator&) const;
+    void onAnimationEnd(const ::android::animation::Animator&) const;
+    void onAnimationCancel(const ::android::animation::Animator&) const;
+    void onAnimationRepeat(const ::android::animation::Animator&) const;
 
 };
 }

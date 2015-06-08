@@ -37,9 +37,9 @@ public:
     ::android::support::v4::widget::ListViewAutoScrollHelper& operator=(::android::support::v4::widget::ListViewAutoScrollHelper&& x) {obj = std::move(x.obj); return *this;}
     
     ListViewAutoScrollHelper(const ::android::widget::ListView&);
-    void scrollTargetBy(int32_t, int32_t) const ;
-    bool canTargetScrollHorizontally(int32_t) const ;
-    bool canTargetScrollVertically(int32_t) const ;
+    void scrollTargetBy(int32_t, int32_t) const;
+    bool canTargetScrollHorizontally(int32_t) const;
+    bool canTargetScrollVertically(int32_t) const;
 
 };
 }

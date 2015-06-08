@@ -33,8 +33,8 @@ public:
     ::android::widget::AdapterView_OnItemSelectedListener& operator=(const ::android::widget::AdapterView_OnItemSelectedListener& x) {obj = x.obj; return *this;}
     ::android::widget::AdapterView_OnItemSelectedListener& operator=(::android::widget::AdapterView_OnItemSelectedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onItemSelected(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const ;
-    void onNothingSelected(const ::android::widget::AdapterView&) const ;
+    void onItemSelected(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const;
+    void onNothingSelected(const ::android::widget::AdapterView&) const;
 
 };
 }

@@ -38,25 +38,25 @@ public:
     ::android::database::MergeCursor& operator=(::android::database::MergeCursor&& x) {obj = std::move(x.obj); return *this;}
     
     MergeCursor(const std::vector< ::android::database::Cursor>&);
-    int32_t getCount() const ;
-    bool onMove(int32_t, int32_t) const ;
-    ::java::lang::String getString(int32_t) const ;
-    int16_t getShort(int32_t) const ;
-    int32_t getInt(int32_t) const ;
-    int64_t getLong(int32_t) const ;
-    float getFloat(int32_t) const ;
-    double getDouble(int32_t) const ;
-    int32_t getType(int32_t) const ;
-    bool isNull(int32_t) const ;
-    std::vector< int8_t> getBlob(int32_t) const ;
-    std::vector< ::java::lang::String> getColumnNames() const ;
-    void deactivate() const ;
-    void close() const ;
-    void registerContentObserver(const ::android::database::ContentObserver&) const ;
-    void unregisterContentObserver(const ::android::database::ContentObserver&) const ;
-    void registerDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    bool requery() const ;
+    int32_t getCount() const;
+    bool onMove(int32_t, int32_t) const;
+    ::java::lang::String getString(int32_t) const;
+    int16_t getShort(int32_t) const;
+    int32_t getInt(int32_t) const;
+    int64_t getLong(int32_t) const;
+    float getFloat(int32_t) const;
+    double getDouble(int32_t) const;
+    int32_t getType(int32_t) const;
+    bool isNull(int32_t) const;
+    std::vector< int8_t> getBlob(int32_t) const;
+    std::vector< ::java::lang::String> getColumnNames() const;
+    void deactivate() const;
+    void close() const;
+    void registerContentObserver(const ::android::database::ContentObserver&) const;
+    void unregisterContentObserver(const ::android::database::ContentObserver&) const;
+    void registerDataSetObserver(const ::android::database::DataSetObserver&) const;
+    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const;
+    bool requery() const;
 
 };
 }

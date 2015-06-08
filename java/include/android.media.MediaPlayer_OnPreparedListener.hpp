@@ -32,7 +32,7 @@ public:
     ::android::media::MediaPlayer_OnPreparedListener& operator=(const ::android::media::MediaPlayer_OnPreparedListener& x) {obj = x.obj; return *this;}
     ::android::media::MediaPlayer_OnPreparedListener& operator=(::android::media::MediaPlayer_OnPreparedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onPrepared(const ::android::media::MediaPlayer&) const ;
+    void onPrepared(const ::android::media::MediaPlayer&) const;
 
 };
 }

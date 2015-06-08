@@ -35,7 +35,7 @@ public:
     ::android::view::TouchDelegate& operator=(::android::view::TouchDelegate&& x) {obj = std::move(x.obj); return *this;}
     
     TouchDelegate(const ::android::graphics::Rect&, const ::android::view::View&);
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
 
 };
 }

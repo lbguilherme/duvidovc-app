@@ -36,8 +36,8 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityActionCompat& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityActionCompat&& x) {obj = std::move(x.obj); return *this;}
     
     AccessibilityNodeInfoCompat_AccessibilityActionCompat(int32_t, const ::java::lang::CharSequence&);
-    int32_t getId() const ;
-    ::java::lang::CharSequence getLabel() const ;
+    int32_t getId() const;
+    ::java::lang::CharSequence getLabel() const;
 
 };
 }

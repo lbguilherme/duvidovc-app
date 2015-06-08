@@ -35,7 +35,7 @@ public:
     ::java::lang::annotation::Target& operator=(const ::java::lang::annotation::Target& x) {obj = x.obj; return *this;}
     ::java::lang::annotation::Target& operator=(::java::lang::annotation::Target&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::annotation::ElementType> value() const ;
+    std::vector< ::java::lang::annotation::ElementType> value() const;
 
 };
 }

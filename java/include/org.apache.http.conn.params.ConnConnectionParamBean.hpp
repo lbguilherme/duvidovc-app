@@ -38,7 +38,7 @@ public:
     ::org::apache::http::conn::params::ConnConnectionParamBean& operator=(::org::apache::http::conn::params::ConnConnectionParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     ConnConnectionParamBean(const ::org::apache::http::params::HttpParams&);
-    void setMaxStatusLineGarbage(int32_t) const ;
+    void setMaxStatusLineGarbage(int32_t) const;
 
 };
 }

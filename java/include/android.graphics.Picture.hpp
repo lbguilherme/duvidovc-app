@@ -36,13 +36,13 @@ public:
     ::android::graphics::Picture& operator=(::android::graphics::Picture&& x) {obj = std::move(x.obj); return *this;}
     
     Picture();
-    ::android::graphics::Canvas beginRecording(int32_t, int32_t) const ;
-    void endRecording() const ;
-    int32_t getWidth() const ;
-    int32_t getHeight() const ;
-    void draw(const ::android::graphics::Canvas&) const ;
+    ::android::graphics::Canvas beginRecording(int32_t, int32_t) const;
+    void endRecording() const;
+    int32_t getWidth() const;
+    int32_t getHeight() const;
+    void draw(const ::android::graphics::Canvas&) const;
     static ::android::graphics::Picture createFromStream(const ::java::io::InputStream&);
-    void writeToStream(const ::java::io::OutputStream&) const ;
+    void writeToStream(const ::java::io::OutputStream&) const;
 
 };
 }

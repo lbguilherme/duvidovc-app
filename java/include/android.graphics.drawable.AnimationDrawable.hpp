@@ -44,20 +44,20 @@ public:
     ::android::graphics::drawable::AnimationDrawable& operator=(::android::graphics::drawable::AnimationDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     AnimationDrawable();
-    bool setVisible(bool, bool) const ;
-    void start() const ;
-    void stop() const ;
-    bool isRunning() const ;
-    void run() const ;
-    void unscheduleSelf(const ::java::lang::Runnable&) const ;
-    int32_t getNumberOfFrames() const ;
-    ::android::graphics::drawable::Drawable getFrame(int32_t) const ;
-    int32_t getDuration(int32_t) const ;
-    bool isOneShot() const ;
-    void setOneShot(bool) const ;
-    void addFrame(const ::android::graphics::drawable::Drawable&, int32_t) const ;
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    bool setVisible(bool, bool) const;
+    void start() const;
+    void stop() const;
+    bool isRunning() const;
+    void run() const;
+    void unscheduleSelf(const ::java::lang::Runnable&) const;
+    int32_t getNumberOfFrames() const;
+    ::android::graphics::drawable::Drawable getFrame(int32_t) const;
+    int32_t getDuration(int32_t) const;
+    bool isOneShot() const;
+    void setOneShot(bool) const;
+    void addFrame(const ::android::graphics::drawable::Drawable&, int32_t) const;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

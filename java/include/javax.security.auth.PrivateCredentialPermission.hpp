@@ -37,10 +37,10 @@ public:
     ::javax::security::auth::PrivateCredentialPermission& operator=(::javax::security::auth::PrivateCredentialPermission&& x) {obj = std::move(x.obj); return *this;}
     
     PrivateCredentialPermission(const ::java::lang::String&, const ::java::lang::String&);
-    std::vector< ::java::lang::String> getPrincipals() const ;
-    ::java::lang::String getCredentialClass() const ;
-    ::java::lang::String getActions() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    std::vector< ::java::lang::String> getPrincipals() const;
+    ::java::lang::String getCredentialClass() const;
+    ::java::lang::String getActions() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

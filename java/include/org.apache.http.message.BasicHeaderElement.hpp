@@ -42,16 +42,16 @@ public:
     
     BasicHeaderElement(const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::org::apache::http::NameValuePair>&);
     BasicHeaderElement(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    std::vector< ::org::apache::http::NameValuePair> getParameters() const ;
-    int32_t getParameterCount() const ;
-    ::org::apache::http::NameValuePair getParameter(int32_t) const ;
-    ::org::apache::http::NameValuePair getParameterByName(const ::java::lang::String&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    std::vector< ::org::apache::http::NameValuePair> getParameters() const;
+    int32_t getParameterCount() const;
+    ::org::apache::http::NameValuePair getParameter(int32_t) const;
+    ::org::apache::http::NameValuePair getParameterByName(const ::java::lang::String&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
 
 };
 }

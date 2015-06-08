@@ -36,14 +36,14 @@ public:
     SSLParameters();
     SSLParameters(const std::vector< ::java::lang::String>&);
     SSLParameters(const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&);
-    std::vector< ::java::lang::String> getCipherSuites() const ;
-    void setCipherSuites(const std::vector< ::java::lang::String>&) const ;
-    std::vector< ::java::lang::String> getProtocols() const ;
-    void setProtocols(const std::vector< ::java::lang::String>&) const ;
-    bool getNeedClientAuth() const ;
-    void setNeedClientAuth(bool) const ;
-    bool getWantClientAuth() const ;
-    void setWantClientAuth(bool) const ;
+    std::vector< ::java::lang::String> getCipherSuites() const;
+    void setCipherSuites(const std::vector< ::java::lang::String>&) const;
+    std::vector< ::java::lang::String> getProtocols() const;
+    void setProtocols(const std::vector< ::java::lang::String>&) const;
+    bool getNeedClientAuth() const;
+    void setNeedClientAuth(bool) const;
+    bool getWantClientAuth() const;
+    void setWantClientAuth(bool) const;
 
 };
 }

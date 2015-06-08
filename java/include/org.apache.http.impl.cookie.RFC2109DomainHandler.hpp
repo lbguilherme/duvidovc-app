@@ -41,9 +41,9 @@ public:
     ::org::apache::http::impl::cookie::RFC2109DomainHandler& operator=(::org::apache::http::impl::cookie::RFC2109DomainHandler&& x) {obj = std::move(x.obj); return *this;}
     
     RFC2109DomainHandler();
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
 
 };
 }

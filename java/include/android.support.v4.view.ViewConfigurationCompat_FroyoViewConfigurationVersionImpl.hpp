@@ -36,7 +36,7 @@ public:
     ::android::support::v4::view::ViewConfigurationCompat_FroyoViewConfigurationVersionImpl& operator=(const ::android::support::v4::view::ViewConfigurationCompat_FroyoViewConfigurationVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewConfigurationCompat_FroyoViewConfigurationVersionImpl& operator=(::android::support::v4::view::ViewConfigurationCompat_FroyoViewConfigurationVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getScaledPagingTouchSlop(const ::android::view::ViewConfiguration&) const ;
+    int32_t getScaledPagingTouchSlop(const ::android::view::ViewConfiguration&) const;
 
 };
 }

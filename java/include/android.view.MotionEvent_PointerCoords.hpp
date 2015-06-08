@@ -33,10 +33,10 @@ public:
     ::android::view::MotionEvent_PointerCoords& operator=(::android::view::MotionEvent_PointerCoords&& x) {obj = std::move(x.obj); return *this;}
     
     MotionEvent_PointerCoords();
-    void clear() const ;
-    void copyFrom(const ::android::view::MotionEvent_PointerCoords&) const ;
-    float getAxisValue(int32_t) const ;
-    void setAxisValue(int32_t, float) const ;
+    void clear() const;
+    void copyFrom(const ::android::view::MotionEvent_PointerCoords&) const;
+    float getAxisValue(int32_t) const;
+    void setAxisValue(int32_t, float) const;
 
 };
 }

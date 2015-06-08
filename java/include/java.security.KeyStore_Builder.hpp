@@ -37,8 +37,8 @@ public:
     ::java::security::KeyStore_Builder& operator=(const ::java::security::KeyStore_Builder& x) {obj = x.obj; return *this;}
     ::java::security::KeyStore_Builder& operator=(::java::security::KeyStore_Builder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::security::KeyStore getKeyStore() const ;
-    ::java::security::KeyStore_ProtectionParameter getProtectionParameter(const ::java::lang::String&) const ;
+    ::java::security::KeyStore getKeyStore() const;
+    ::java::security::KeyStore_ProtectionParameter getProtectionParameter(const ::java::lang::String&) const;
     static ::java::security::KeyStore_Builder newInstance(const ::java::security::KeyStore&, const ::java::security::KeyStore_ProtectionParameter&);
     static ::java::security::KeyStore_Builder newInstance(const ::java::lang::String&, const ::java::security::Provider&, const ::java::io::File&, const ::java::security::KeyStore_ProtectionParameter&);
     static ::java::security::KeyStore_Builder newInstance(const ::java::lang::String&, const ::java::security::Provider&, const ::java::security::KeyStore_ProtectionParameter&);

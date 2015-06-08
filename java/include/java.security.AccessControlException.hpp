@@ -37,7 +37,7 @@ public:
     
     AccessControlException(const ::java::lang::String&);
     AccessControlException(const ::java::lang::String&, const ::java::security::Permission&);
-    ::java::security::Permission getPermission() const ;
+    ::java::security::Permission getPermission() const;
 
 };
 }

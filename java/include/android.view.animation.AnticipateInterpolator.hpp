@@ -39,7 +39,7 @@ public:
     AnticipateInterpolator();
     AnticipateInterpolator(float);
     AnticipateInterpolator(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

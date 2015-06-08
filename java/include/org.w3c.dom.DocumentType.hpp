@@ -36,12 +36,12 @@ public:
     ::org::w3c::dom::DocumentType& operator=(const ::org::w3c::dom::DocumentType& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DocumentType& operator=(::org::w3c::dom::DocumentType&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::org::w3c::dom::NamedNodeMap getEntities() const ;
-    ::org::w3c::dom::NamedNodeMap getNotations() const ;
-    ::java::lang::String getPublicId() const ;
-    ::java::lang::String getSystemId() const ;
-    ::java::lang::String getInternalSubset() const ;
+    ::java::lang::String getName() const;
+    ::org::w3c::dom::NamedNodeMap getEntities() const;
+    ::org::w3c::dom::NamedNodeMap getNotations() const;
+    ::java::lang::String getPublicId() const;
+    ::java::lang::String getSystemId() const;
+    ::java::lang::String getInternalSubset() const;
 
 };
 }

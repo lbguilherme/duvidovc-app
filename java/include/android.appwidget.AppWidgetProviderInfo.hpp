@@ -37,9 +37,9 @@ public:
     
     AppWidgetProviderInfo();
     AppWidgetProviderInfo(const ::android::os::Parcel&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    ::java::lang::String toString() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -39,15 +39,15 @@ public:
     static ::java::security::AlgorithmParameters getInstance(const ::java::lang::String&);
     static ::java::security::AlgorithmParameters getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::AlgorithmParameters getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::Provider getProvider() const ;
-    ::java::lang::String getAlgorithm() const ;
-    void init(const ::java::security::spec::AlgorithmParameterSpec&) const ;
-    void init(const std::vector< int8_t>&) const ;
-    void init(const std::vector< int8_t>&, const ::java::lang::String&) const ;
-    ::java::security::spec::AlgorithmParameterSpec getParameterSpec(const ::java::lang::Class&) const ;
-    std::vector< int8_t> getEncoded() const ;
-    std::vector< int8_t> getEncoded(const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
+    ::java::security::Provider getProvider() const;
+    ::java::lang::String getAlgorithm() const;
+    void init(const ::java::security::spec::AlgorithmParameterSpec&) const;
+    void init(const std::vector< int8_t>&) const;
+    void init(const std::vector< int8_t>&, const ::java::lang::String&) const;
+    ::java::security::spec::AlgorithmParameterSpec getParameterSpec(const ::java::lang::Class&) const;
+    std::vector< int8_t> getEncoded() const;
+    std::vector< int8_t> getEncoded(const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
 
 };
 }

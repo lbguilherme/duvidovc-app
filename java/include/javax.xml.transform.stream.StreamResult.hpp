@@ -44,13 +44,13 @@ public:
     StreamResult(const ::java::io::Writer&);
     StreamResult(const ::java::lang::String&);
     StreamResult(const ::java::io::File&);
-    void setOutputStream(const ::java::io::OutputStream&) const ;
-    ::java::io::OutputStream getOutputStream() const ;
-    void setWriter(const ::java::io::Writer&) const ;
-    ::java::io::Writer getWriter() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    void setSystemId(const ::java::io::File&) const ;
-    ::java::lang::String getSystemId() const ;
+    void setOutputStream(const ::java::io::OutputStream&) const;
+    ::java::io::OutputStream getOutputStream() const;
+    void setWriter(const ::java::io::Writer&) const;
+    ::java::io::Writer getWriter() const;
+    void setSystemId(const ::java::lang::String&) const;
+    void setSystemId(const ::java::io::File&) const;
+    ::java::lang::String getSystemId() const;
 
 };
 }

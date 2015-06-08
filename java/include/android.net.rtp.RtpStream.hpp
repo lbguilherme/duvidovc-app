@@ -33,15 +33,15 @@ public:
     ::android::net::rtp::RtpStream& operator=(const ::android::net::rtp::RtpStream& x) {obj = x.obj; return *this;}
     ::android::net::rtp::RtpStream& operator=(::android::net::rtp::RtpStream&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::InetAddress getLocalAddress() const ;
-    int32_t getLocalPort() const ;
-    ::java::net::InetAddress getRemoteAddress() const ;
-    int32_t getRemotePort() const ;
-    bool isBusy() const ;
-    int32_t getMode() const ;
-    void setMode(int32_t) const ;
-    void associate(const ::java::net::InetAddress&, int32_t) const ;
-    void release() const ;
+    ::java::net::InetAddress getLocalAddress() const;
+    int32_t getLocalPort() const;
+    ::java::net::InetAddress getRemoteAddress() const;
+    int32_t getRemotePort() const;
+    bool isBusy() const;
+    int32_t getMode() const;
+    void setMode(int32_t) const;
+    void associate(const ::java::net::InetAddress&, int32_t) const;
+    void release() const;
 
 };
 }

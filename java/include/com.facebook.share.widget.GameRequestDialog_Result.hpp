@@ -35,8 +35,8 @@ public:
     ::com::facebook::share::widget::GameRequestDialog_Result& operator=(const ::com::facebook::share::widget::GameRequestDialog_Result& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::GameRequestDialog_Result& operator=(::com::facebook::share::widget::GameRequestDialog_Result&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getRequestId() const ;
-    ::java::util::List getRequestRecipients() const ;
+    ::java::lang::String getRequestId() const;
+    ::java::util::List getRequestRecipients() const;
 
 };
 }

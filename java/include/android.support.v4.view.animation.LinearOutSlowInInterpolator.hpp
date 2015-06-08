@@ -37,7 +37,7 @@ public:
     ::android::support::v4::view::animation::LinearOutSlowInInterpolator& operator=(::android::support::v4::view::animation::LinearOutSlowInInterpolator&& x) {obj = std::move(x.obj); return *this;}
     
     LinearOutSlowInInterpolator();
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

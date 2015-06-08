@@ -37,13 +37,13 @@ public:
     ::java::security::spec::RSAMultiPrimePrivateCrtKeySpec& operator=(::java::security::spec::RSAMultiPrimePrivateCrtKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     RSAMultiPrimePrivateCrtKeySpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const std::vector< ::java::security::spec::RSAOtherPrimeInfo>&);
-    ::java::math::BigInteger getCrtCoefficient() const ;
-    std::vector< ::java::security::spec::RSAOtherPrimeInfo> getOtherPrimeInfo() const ;
-    ::java::math::BigInteger getPrimeExponentP() const ;
-    ::java::math::BigInteger getPrimeExponentQ() const ;
-    ::java::math::BigInteger getPrimeP() const ;
-    ::java::math::BigInteger getPrimeQ() const ;
-    ::java::math::BigInteger getPublicExponent() const ;
+    ::java::math::BigInteger getCrtCoefficient() const;
+    std::vector< ::java::security::spec::RSAOtherPrimeInfo> getOtherPrimeInfo() const;
+    ::java::math::BigInteger getPrimeExponentP() const;
+    ::java::math::BigInteger getPrimeExponentQ() const;
+    ::java::math::BigInteger getPrimeP() const;
+    ::java::math::BigInteger getPrimeQ() const;
+    ::java::math::BigInteger getPublicExponent() const;
 
 };
 }

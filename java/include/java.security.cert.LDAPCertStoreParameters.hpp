@@ -39,10 +39,10 @@ public:
     LDAPCertStoreParameters(const ::java::lang::String&, int32_t);
     LDAPCertStoreParameters();
     LDAPCertStoreParameters(const ::java::lang::String&);
-    ::java::lang::Object clone() const ;
-    int32_t getPort() const ;
-    ::java::lang::String getServerName() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Object clone() const;
+    int32_t getPort() const;
+    ::java::lang::String getServerName() const;
+    ::java::lang::String toString() const;
 
 };
 }

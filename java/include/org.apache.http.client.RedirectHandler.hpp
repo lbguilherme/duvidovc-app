@@ -36,8 +36,8 @@ public:
     ::org::apache::http::client::RedirectHandler& operator=(const ::org::apache::http::client::RedirectHandler& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::RedirectHandler& operator=(::org::apache::http::client::RedirectHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isRedirectRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::java::net::URI getLocationURI(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool isRedirectRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::java::net::URI getLocationURI(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

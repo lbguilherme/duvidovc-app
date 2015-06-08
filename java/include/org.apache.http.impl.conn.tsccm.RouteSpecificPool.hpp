@@ -40,20 +40,20 @@ public:
     ::org::apache::http::impl::conn::tsccm::RouteSpecificPool& operator=(::org::apache::http::impl::conn::tsccm::RouteSpecificPool&& x) {obj = std::move(x.obj); return *this;}
     
     RouteSpecificPool(const ::org::apache::http::conn::routing::HttpRoute&, int32_t);
-    ::org::apache::http::conn::routing::HttpRoute getRoute() const ;
-    int32_t getMaxEntries() const ;
-    bool isUnused() const ;
-    int32_t getCapacity() const ;
-    int32_t getEntryCount() const ;
-    ::org::apache::http::impl::conn::tsccm::BasicPoolEntry allocEntry(const ::java::lang::Object&) const ;
-    void freeEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&) const ;
-    void createdEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&) const ;
-    bool deleteEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&) const ;
-    void dropEntry() const ;
-    void queueThread(const ::org::apache::http::impl::conn::tsccm::WaitingThread&) const ;
-    bool hasThread() const ;
-    ::org::apache::http::impl::conn::tsccm::WaitingThread nextThread() const ;
-    void removeThread(const ::org::apache::http::impl::conn::tsccm::WaitingThread&) const ;
+    ::org::apache::http::conn::routing::HttpRoute getRoute() const;
+    int32_t getMaxEntries() const;
+    bool isUnused() const;
+    int32_t getCapacity() const;
+    int32_t getEntryCount() const;
+    ::org::apache::http::impl::conn::tsccm::BasicPoolEntry allocEntry(const ::java::lang::Object&) const;
+    void freeEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&) const;
+    void createdEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&) const;
+    bool deleteEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&) const;
+    void dropEntry() const;
+    void queueThread(const ::org::apache::http::impl::conn::tsccm::WaitingThread&) const;
+    bool hasThread() const;
+    ::org::apache::http::impl::conn::tsccm::WaitingThread nextThread() const;
+    void removeThread(const ::org::apache::http::impl::conn::tsccm::WaitingThread&) const;
 
 };
 }

@@ -38,11 +38,11 @@ public:
     ::java::security::CodeSigner& operator=(::java::security::CodeSigner&& x) {obj = std::move(x.obj); return *this;}
     
     CodeSigner(const ::java::security::cert::CertPath&, const ::java::security::Timestamp&);
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::security::cert::CertPath getSignerCertPath() const ;
-    ::java::security::Timestamp getTimestamp() const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::security::cert::CertPath getSignerCertPath() const;
+    ::java::security::Timestamp getTimestamp() const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -34,10 +34,10 @@ public:
     ::java::lang::reflect::AnnotatedElement& operator=(const ::java::lang::reflect::AnnotatedElement& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::AnnotatedElement& operator=(::java::lang::reflect::AnnotatedElement&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const ;
-    std::vector< ::java::lang::annotation::Annotation> getAnnotations() const ;
-    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const ;
-    bool isAnnotationPresent(const ::java::lang::Class&) const ;
+    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const;
+    std::vector< ::java::lang::annotation::Annotation> getAnnotations() const;
+    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const;
+    bool isAnnotationPresent(const ::java::lang::Class&) const;
 
 };
 }

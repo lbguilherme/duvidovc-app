@@ -33,9 +33,9 @@ public:
     ::android::database::Observable& operator=(::android::database::Observable&& x) {obj = std::move(x.obj); return *this;}
     
     Observable();
-    void registerObserver(const ::java::lang::Object&) const ;
-    void unregisterObserver(const ::java::lang::Object&) const ;
-    void unregisterAll() const ;
+    void registerObserver(const ::java::lang::Object&) const;
+    void unregisterObserver(const ::java::lang::Object&) const;
+    void unregisterAll() const;
 
 };
 }

@@ -33,9 +33,9 @@ public:
     ::android::database::ContentObserver& operator=(::android::database::ContentObserver&& x) {obj = std::move(x.obj); return *this;}
     
     ContentObserver(const ::android::os::Handler&);
-    bool deliverSelfNotifications() const ;
-    void onChange(bool) const ;
-    void dispatchChange(bool) const ;
+    bool deliverSelfNotifications() const;
+    void onChange(bool) const;
+    void dispatchChange(bool) const;
 
 };
 }

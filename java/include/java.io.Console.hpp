@@ -38,15 +38,15 @@ public:
     ::java::io::Console& operator=(const ::java::io::Console& x) {obj = x.obj; return *this;}
     ::java::io::Console& operator=(::java::io::Console&& x) {obj = std::move(x.obj); return *this;}
     
-    void flush() const ;
-    ::java::io::Console format(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
-    ::java::io::Console printf(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
-    ::java::io::Reader reader() const ;
-    ::java::lang::String readLine() const ;
-    ::java::lang::String readLine(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
-    std::vector< uint16_t> readPassword() const ;
-    std::vector< uint16_t> readPassword(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
-    ::java::io::PrintWriter writer() const ;
+    void flush() const;
+    ::java::io::Console format(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
+    ::java::io::Console printf(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
+    ::java::io::Reader reader() const;
+    ::java::lang::String readLine() const;
+    ::java::lang::String readLine(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
+    std::vector< uint16_t> readPassword() const;
+    std::vector< uint16_t> readPassword(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
+    ::java::io::PrintWriter writer() const;
 
 };
 }

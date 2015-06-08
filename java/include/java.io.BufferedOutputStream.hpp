@@ -36,10 +36,10 @@ public:
     
     BufferedOutputStream(const ::java::io::OutputStream&);
     BufferedOutputStream(const ::java::io::OutputStream&, int32_t);
-    void flush() const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void close() const ;
-    void write(int32_t) const ;
+    void flush() const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void close() const;
+    void write(int32_t) const;
 
 };
 }

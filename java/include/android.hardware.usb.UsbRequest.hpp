@@ -37,13 +37,13 @@ public:
     ::android::hardware::usb::UsbRequest& operator=(::android::hardware::usb::UsbRequest&& x) {obj = std::move(x.obj); return *this;}
     
     UsbRequest();
-    bool initialize(const ::android::hardware::usb::UsbDeviceConnection&, const ::android::hardware::usb::UsbEndpoint&) const ;
-    void close() const ;
-    ::android::hardware::usb::UsbEndpoint getEndpoint() const ;
-    ::java::lang::Object getClientData() const ;
-    void setClientData(const ::java::lang::Object&) const ;
-    bool queue(const ::java::nio::ByteBuffer&, int32_t) const ;
-    bool cancel() const ;
+    bool initialize(const ::android::hardware::usb::UsbDeviceConnection&, const ::android::hardware::usb::UsbEndpoint&) const;
+    void close() const;
+    ::android::hardware::usb::UsbEndpoint getEndpoint() const;
+    ::java::lang::Object getClientData() const;
+    void setClientData(const ::java::lang::Object&) const;
+    bool queue(const ::java::nio::ByteBuffer&, int32_t) const;
+    bool cancel() const;
 
 };
 }

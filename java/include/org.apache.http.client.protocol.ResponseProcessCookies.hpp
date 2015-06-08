@@ -39,7 +39,7 @@ public:
     ::org::apache::http::client::protocol::ResponseProcessCookies& operator=(::org::apache::http::client::protocol::ResponseProcessCookies&& x) {obj = std::move(x.obj); return *this;}
     
     ResponseProcessCookies();
-    void process(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

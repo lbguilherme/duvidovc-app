@@ -36,15 +36,15 @@ public:
     ::android::content::ContentProviderOperation_Builder& operator=(const ::android::content::ContentProviderOperation_Builder& x) {obj = x.obj; return *this;}
     ::android::content::ContentProviderOperation_Builder& operator=(::android::content::ContentProviderOperation_Builder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::ContentProviderOperation build() const ;
-    ::android::content::ContentProviderOperation_Builder withValueBackReferences(const ::android::content::ContentValues&) const ;
-    ::android::content::ContentProviderOperation_Builder withValueBackReference(const ::java::lang::String&, int32_t) const ;
-    ::android::content::ContentProviderOperation_Builder withSelectionBackReference(int32_t, int32_t) const ;
-    ::android::content::ContentProviderOperation_Builder withValues(const ::android::content::ContentValues&) const ;
-    ::android::content::ContentProviderOperation_Builder withValue(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::android::content::ContentProviderOperation_Builder withSelection(const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    ::android::content::ContentProviderOperation_Builder withExpectedCount(int32_t) const ;
-    ::android::content::ContentProviderOperation_Builder withYieldAllowed(bool) const ;
+    ::android::content::ContentProviderOperation build() const;
+    ::android::content::ContentProviderOperation_Builder withValueBackReferences(const ::android::content::ContentValues&) const;
+    ::android::content::ContentProviderOperation_Builder withValueBackReference(const ::java::lang::String&, int32_t) const;
+    ::android::content::ContentProviderOperation_Builder withSelectionBackReference(int32_t, int32_t) const;
+    ::android::content::ContentProviderOperation_Builder withValues(const ::android::content::ContentValues&) const;
+    ::android::content::ContentProviderOperation_Builder withValue(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::android::content::ContentProviderOperation_Builder withSelection(const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    ::android::content::ContentProviderOperation_Builder withExpectedCount(int32_t) const;
+    ::android::content::ContentProviderOperation_Builder withYieldAllowed(bool) const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     ::android::test::SingleLaunchActivityTestCase& operator=(::android::test::SingleLaunchActivityTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     SingleLaunchActivityTestCase(const ::java::lang::String&, const ::java::lang::Class&);
-    ::android::app::Activity getActivity() const ;
-    void testActivityTestCaseSetUpProperly() const ;
+    ::android::app::Activity getActivity() const;
+    void testActivityTestCaseSetUpProperly() const;
 
 };
 }

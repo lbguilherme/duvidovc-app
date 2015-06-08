@@ -38,7 +38,7 @@ public:
     PreferenceCategory(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     PreferenceCategory(const ::android::content::Context&, const ::android::util::AttributeSet&);
     PreferenceCategory(const ::android::content::Context&);
-    bool isEnabled() const ;
+    bool isEnabled() const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     ::android::support::v4::view::ScaleGestureDetectorCompat_BaseScaleGestureDetectorImpl& operator=(const ::android::support::v4::view::ScaleGestureDetectorCompat_BaseScaleGestureDetectorImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ScaleGestureDetectorCompat_BaseScaleGestureDetectorImpl& operator=(::android::support::v4::view::ScaleGestureDetectorCompat_BaseScaleGestureDetectorImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setQuickScaleEnabled(const ::java::lang::Object&, bool) const ;
-    bool isQuickScaleEnabled(const ::java::lang::Object&) const ;
+    void setQuickScaleEnabled(const ::java::lang::Object&, bool) const;
+    bool isQuickScaleEnabled(const ::java::lang::Object&) const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::javax::crypto::spec::PBEParameterSpec& operator=(::javax::crypto::spec::PBEParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     PBEParameterSpec(const std::vector< int8_t>&, int32_t);
-    std::vector< int8_t> getSalt() const ;
-    int32_t getIterationCount() const ;
+    std::vector< int8_t> getSalt() const;
+    int32_t getIterationCount() const;
 
 };
 }

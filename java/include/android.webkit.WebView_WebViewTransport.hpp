@@ -33,8 +33,8 @@ public:
     ::android::webkit::WebView_WebViewTransport& operator=(::android::webkit::WebView_WebViewTransport&& x) {obj = std::move(x.obj); return *this;}
     
     WebView_WebViewTransport(const ::android::webkit::WebView&);
-    void setWebView(const ::android::webkit::WebView&) const ;
-    ::android::webkit::WebView getWebView() const ;
+    void setWebView(const ::android::webkit::WebView&) const;
+    ::android::webkit::WebView getWebView() const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     ::java::nio::channels::spi::AbstractInterruptibleChannel& operator=(const ::java::nio::channels::spi::AbstractInterruptibleChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::spi::AbstractInterruptibleChannel& operator=(::java::nio::channels::spi::AbstractInterruptibleChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isOpen() const ;
-    void close() const ;
+    bool isOpen() const;
+    void close() const;
 
 };
 }

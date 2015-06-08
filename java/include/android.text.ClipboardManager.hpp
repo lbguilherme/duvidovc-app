@@ -33,9 +33,9 @@ public:
     ::android::text::ClipboardManager& operator=(::android::text::ClipboardManager&& x) {obj = std::move(x.obj); return *this;}
     
     ClipboardManager();
-    ::java::lang::CharSequence getText() const ;
-    void setText(const ::java::lang::CharSequence&) const ;
-    bool hasText() const ;
+    ::java::lang::CharSequence getText() const;
+    void setText(const ::java::lang::CharSequence&) const;
+    bool hasText() const;
 
 };
 }

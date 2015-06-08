@@ -33,8 +33,8 @@ public:
     ::android::graphics::Shader& operator=(::android::graphics::Shader&& x) {obj = std::move(x.obj); return *this;}
     
     Shader();
-    bool getLocalMatrix(const ::android::graphics::Matrix&) const ;
-    void setLocalMatrix(const ::android::graphics::Matrix&) const ;
+    bool getLocalMatrix(const ::android::graphics::Matrix&) const;
+    void setLocalMatrix(const ::android::graphics::Matrix&) const;
 
 };
 }

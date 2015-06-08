@@ -37,9 +37,9 @@ public:
     ::com::facebook::share::model::ShareVideo& operator=(const ::com::facebook::share::model::ShareVideo& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareVideo& operator=(::com::facebook::share::model::ShareVideo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::net::Uri getLocalUrl() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::net::Uri getLocalUrl() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

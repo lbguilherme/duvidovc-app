@@ -36,8 +36,8 @@ public:
     ::org::apache::http::cookie::ClientCookie& operator=(const ::org::apache::http::cookie::ClientCookie& x) {obj = x.obj; return *this;}
     ::org::apache::http::cookie::ClientCookie& operator=(::org::apache::http::cookie::ClientCookie&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAttribute(const ::java::lang::String&) const ;
-    bool containsAttribute(const ::java::lang::String&) const ;
+    ::java::lang::String getAttribute(const ::java::lang::String&) const;
+    bool containsAttribute(const ::java::lang::String&) const;
 
 };
 }

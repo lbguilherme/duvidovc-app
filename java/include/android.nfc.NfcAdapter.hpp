@@ -42,14 +42,14 @@ public:
     
     static ::android::nfc::NfcAdapter getDefaultAdapter(const ::android::content::Context&);
     static ::android::nfc::NfcAdapter getDefaultAdapter();
-    bool isEnabled() const ;
-    void setNdefPushMessage(const ::android::nfc::NdefMessage&, const ::android::app::Activity&, const std::vector< ::android::app::Activity>&) const ;
-    void setNdefPushMessageCallback(const ::android::nfc::NfcAdapter_CreateNdefMessageCallback&, const ::android::app::Activity&, const std::vector< ::android::app::Activity>&) const ;
-    void setOnNdefPushCompleteCallback(const ::android::nfc::NfcAdapter_OnNdefPushCompleteCallback&, const ::android::app::Activity&, const std::vector< ::android::app::Activity>&) const ;
-    void enableForegroundDispatch(const ::android::app::Activity&, const ::android::app::PendingIntent&, const std::vector< ::android::content::IntentFilter>&, const std::vector< ::java::lang::String>&) const ;
-    void disableForegroundDispatch(const ::android::app::Activity&) const ;
-    void enableForegroundNdefPush(const ::android::app::Activity&, const ::android::nfc::NdefMessage&) const ;
-    void disableForegroundNdefPush(const ::android::app::Activity&) const ;
+    bool isEnabled() const;
+    void setNdefPushMessage(const ::android::nfc::NdefMessage&, const ::android::app::Activity&, const std::vector< ::android::app::Activity>&) const;
+    void setNdefPushMessageCallback(const ::android::nfc::NfcAdapter_CreateNdefMessageCallback&, const ::android::app::Activity&, const std::vector< ::android::app::Activity>&) const;
+    void setOnNdefPushCompleteCallback(const ::android::nfc::NfcAdapter_OnNdefPushCompleteCallback&, const ::android::app::Activity&, const std::vector< ::android::app::Activity>&) const;
+    void enableForegroundDispatch(const ::android::app::Activity&, const ::android::app::PendingIntent&, const std::vector< ::android::content::IntentFilter>&, const std::vector< ::java::lang::String>&) const;
+    void disableForegroundDispatch(const ::android::app::Activity&) const;
+    void enableForegroundNdefPush(const ::android::app::Activity&, const ::android::nfc::NdefMessage&) const;
+    void disableForegroundNdefPush(const ::android::app::Activity&) const;
 
 };
 }

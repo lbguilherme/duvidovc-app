@@ -41,7 +41,7 @@ public:
     OperationApplicationException(const ::java::lang::Throwable&);
     OperationApplicationException(int32_t);
     OperationApplicationException(const ::java::lang::String&, int32_t);
-    int32_t getNumSuccessfulYieldPoints() const ;
+    int32_t getNumSuccessfulYieldPoints() const;
 
 };
 }

@@ -38,20 +38,20 @@ public:
     ::android::media::audiofx::Equalizer& operator=(::android::media::audiofx::Equalizer&& x) {obj = std::move(x.obj); return *this;}
     
     Equalizer(int32_t, int32_t);
-    int16_t getNumberOfBands() const ;
-    std::vector< int16_t> getBandLevelRange() const ;
-    void setBandLevel(int16_t, int16_t) const ;
-    int16_t getBandLevel(int16_t) const ;
-    int32_t getCenterFreq(int16_t) const ;
-    std::vector< int32_t> getBandFreqRange(int16_t) const ;
-    int16_t getBand(int32_t) const ;
-    int16_t getCurrentPreset() const ;
-    void usePreset(int16_t) const ;
-    int16_t getNumberOfPresets() const ;
-    ::java::lang::String getPresetName(int16_t) const ;
-    void setParameterListener(const ::android::media::audiofx::Equalizer_OnParameterChangeListener&) const ;
-    ::android::media::audiofx::Equalizer_Settings getProperties() const ;
-    void setProperties(const ::android::media::audiofx::Equalizer_Settings&) const ;
+    int16_t getNumberOfBands() const;
+    std::vector< int16_t> getBandLevelRange() const;
+    void setBandLevel(int16_t, int16_t) const;
+    int16_t getBandLevel(int16_t) const;
+    int32_t getCenterFreq(int16_t) const;
+    std::vector< int32_t> getBandFreqRange(int16_t) const;
+    int16_t getBand(int32_t) const;
+    int16_t getCurrentPreset() const;
+    void usePreset(int16_t) const;
+    int16_t getNumberOfPresets() const;
+    ::java::lang::String getPresetName(int16_t) const;
+    void setParameterListener(const ::android::media::audiofx::Equalizer_OnParameterChangeListener&) const;
+    ::android::media::audiofx::Equalizer_Settings getProperties() const;
+    void setProperties(const ::android::media::audiofx::Equalizer_Settings&) const;
 
 };
 }

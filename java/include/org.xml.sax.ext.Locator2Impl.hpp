@@ -41,10 +41,10 @@ public:
     
     Locator2Impl();
     Locator2Impl(const ::org::xml::sax::Locator&);
-    ::java::lang::String getXMLVersion() const ;
-    ::java::lang::String getEncoding() const ;
-    void setXMLVersion(const ::java::lang::String&) const ;
-    void setEncoding(const ::java::lang::String&) const ;
+    ::java::lang::String getXMLVersion() const;
+    ::java::lang::String getEncoding() const;
+    void setXMLVersion(const ::java::lang::String&) const;
+    void setEncoding(const ::java::lang::String&) const;
 
 };
 }

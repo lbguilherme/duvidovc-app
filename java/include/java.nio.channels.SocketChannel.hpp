@@ -46,18 +46,18 @@ public:
     
     static ::java::nio::channels::SocketChannel open();
     static ::java::nio::channels::SocketChannel open(const ::java::net::SocketAddress&);
-    int32_t validOps() const ;
-    ::java::net::Socket socket() const ;
-    bool isConnected() const ;
-    bool isConnectionPending() const ;
-    bool connect(const ::java::net::SocketAddress&) const ;
-    bool finishConnect() const ;
-    int32_t read(const ::java::nio::ByteBuffer&) const ;
-    int64_t read(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const ;
-    int64_t read(const std::vector< ::java::nio::ByteBuffer>&) const ;
-    int32_t write(const ::java::nio::ByteBuffer&) const ;
-    int64_t write(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const ;
-    int64_t write(const std::vector< ::java::nio::ByteBuffer>&) const ;
+    int32_t validOps() const;
+    ::java::net::Socket socket() const;
+    bool isConnected() const;
+    bool isConnectionPending() const;
+    bool connect(const ::java::net::SocketAddress&) const;
+    bool finishConnect() const;
+    int32_t read(const ::java::nio::ByteBuffer&) const;
+    int64_t read(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const;
+    int64_t read(const std::vector< ::java::nio::ByteBuffer>&) const;
+    int32_t write(const ::java::nio::ByteBuffer&) const;
+    int64_t write(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const;
+    int64_t write(const std::vector< ::java::nio::ByteBuffer>&) const;
 
 };
 }

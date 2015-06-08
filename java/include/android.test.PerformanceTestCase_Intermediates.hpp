@@ -32,11 +32,11 @@ public:
     ::android::test::PerformanceTestCase_Intermediates& operator=(const ::android::test::PerformanceTestCase_Intermediates& x) {obj = x.obj; return *this;}
     ::android::test::PerformanceTestCase_Intermediates& operator=(::android::test::PerformanceTestCase_Intermediates&& x) {obj = std::move(x.obj); return *this;}
     
-    void setInternalIterations(int32_t) const ;
-    void startTiming(bool) const ;
-    void addIntermediate(const ::java::lang::String&) const ;
-    void addIntermediate(const ::java::lang::String&, int64_t) const ;
-    void finishTiming(bool) const ;
+    void setInternalIterations(int32_t) const;
+    void startTiming(bool) const;
+    void addIntermediate(const ::java::lang::String&) const;
+    void addIntermediate(const ::java::lang::String&, int64_t) const;
+    void finishTiming(bool) const;
 
 };
 }

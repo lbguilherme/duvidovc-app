@@ -32,7 +32,7 @@ public:
     ::android::widget::CalendarView_OnDateChangeListener& operator=(const ::android::widget::CalendarView_OnDateChangeListener& x) {obj = x.obj; return *this;}
     ::android::widget::CalendarView_OnDateChangeListener& operator=(::android::widget::CalendarView_OnDateChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSelectedDayChange(const ::android::widget::CalendarView&, int32_t, int32_t, int32_t) const ;
+    void onSelectedDayChange(const ::android::widget::CalendarView&, int32_t, int32_t, int32_t) const;
 
 };
 }

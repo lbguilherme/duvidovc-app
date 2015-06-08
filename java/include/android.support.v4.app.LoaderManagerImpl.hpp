@@ -41,13 +41,13 @@ public:
     ::android::support::v4::app::LoaderManagerImpl& operator=(const ::android::support::v4::app::LoaderManagerImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::LoaderManagerImpl& operator=(::android::support::v4::app::LoaderManagerImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::support::v4::content::Loader initLoader(int32_t, const ::android::os::Bundle&, const ::android::support::v4::app::LoaderManager_LoaderCallbacks&) const ;
-    ::android::support::v4::content::Loader restartLoader(int32_t, const ::android::os::Bundle&, const ::android::support::v4::app::LoaderManager_LoaderCallbacks&) const ;
-    void destroyLoader(int32_t) const ;
-    ::android::support::v4::content::Loader getLoader(int32_t) const ;
-    ::java::lang::String toString() const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
-    bool hasRunningLoaders() const ;
+    ::android::support::v4::content::Loader initLoader(int32_t, const ::android::os::Bundle&, const ::android::support::v4::app::LoaderManager_LoaderCallbacks&) const;
+    ::android::support::v4::content::Loader restartLoader(int32_t, const ::android::os::Bundle&, const ::android::support::v4::app::LoaderManager_LoaderCallbacks&) const;
+    void destroyLoader(int32_t) const;
+    ::android::support::v4::content::Loader getLoader(int32_t) const;
+    ::java::lang::String toString() const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
+    bool hasRunningLoaders() const;
 
 };
 }

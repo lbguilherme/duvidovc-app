@@ -42,12 +42,12 @@ public:
     static ::java::security::KeyFactory getInstance(const ::java::lang::String&);
     static ::java::security::KeyFactory getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::KeyFactory getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::Provider getProvider() const ;
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::PublicKey generatePublic(const ::java::security::spec::KeySpec&) const ;
-    ::java::security::PrivateKey generatePrivate(const ::java::security::spec::KeySpec&) const ;
-    ::java::security::spec::KeySpec getKeySpec(const ::java::security::Key&, const ::java::lang::Class&) const ;
-    ::java::security::Key translateKey(const ::java::security::Key&) const ;
+    ::java::security::Provider getProvider() const;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::PublicKey generatePublic(const ::java::security::spec::KeySpec&) const;
+    ::java::security::PrivateKey generatePrivate(const ::java::security::spec::KeySpec&) const;
+    ::java::security::spec::KeySpec getKeySpec(const ::java::security::Key&, const ::java::lang::Class&) const;
+    ::java::security::Key translateKey(const ::java::security::Key&) const;
 
 };
 }

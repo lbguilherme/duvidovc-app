@@ -33,7 +33,7 @@ public:
     ::android::media::audiofx::EnvironmentalReverb_OnParameterChangeListener& operator=(const ::android::media::audiofx::EnvironmentalReverb_OnParameterChangeListener& x) {obj = x.obj; return *this;}
     ::android::media::audiofx::EnvironmentalReverb_OnParameterChangeListener& operator=(::android::media::audiofx::EnvironmentalReverb_OnParameterChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onParameterChange(const ::android::media::audiofx::EnvironmentalReverb&, int32_t, int32_t, int32_t) const ;
+    void onParameterChange(const ::android::media::audiofx::EnvironmentalReverb&, int32_t, int32_t, int32_t) const;
 
 };
 }

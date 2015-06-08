@@ -38,10 +38,10 @@ public:
     ::com::facebook::share::internal::LikeDialog_WebFallbackHandler& operator=(const ::com::facebook::share::internal::LikeDialog_WebFallbackHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::LikeDialog_WebFallbackHandler& operator=(::com::facebook::share::internal::LikeDialog_WebFallbackHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool canShow(const ::com::facebook::share::internal::LikeContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::internal::LikeContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const ;
-    bool canShow(const ::java::lang::Object&) const ;
+    bool canShow(const ::com::facebook::share::internal::LikeContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::internal::LikeContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const;
+    bool canShow(const ::java::lang::Object&) const;
 
 };
 }

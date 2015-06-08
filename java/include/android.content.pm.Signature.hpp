@@ -39,14 +39,14 @@ public:
     
     Signature(const std::vector< int8_t>&);
     Signature(const ::java::lang::String&);
-    std::vector< uint16_t> toChars() const ;
-    std::vector< uint16_t> toChars(const std::vector< uint16_t>&, const std::vector< int32_t>&) const ;
-    ::java::lang::String toCharsString() const ;
-    std::vector< int8_t> toByteArray() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    std::vector< uint16_t> toChars() const;
+    std::vector< uint16_t> toChars(const std::vector< uint16_t>&, const std::vector< int32_t>&) const;
+    ::java::lang::String toCharsString() const;
+    std::vector< int8_t> toByteArray() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

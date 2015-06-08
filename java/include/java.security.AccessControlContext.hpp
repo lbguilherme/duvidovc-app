@@ -37,8 +37,8 @@ public:
     
     AccessControlContext(const ::java::security::AccessControlContext&, const ::java::security::DomainCombiner&);
     AccessControlContext(const std::vector< ::java::security::ProtectionDomain>&);
-    void checkPermission(const ::java::security::Permission&) const ;
-    ::java::security::DomainCombiner getDomainCombiner() const ;
+    void checkPermission(const ::java::security::Permission&) const;
+    ::java::security::DomainCombiner getDomainCombiner() const;
 
 };
 }

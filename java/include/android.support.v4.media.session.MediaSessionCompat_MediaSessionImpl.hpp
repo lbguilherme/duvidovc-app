@@ -46,25 +46,25 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImpl& operator=(const ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImpl& operator=(::android::support::v4::media::session::MediaSessionCompat_MediaSessionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setCallback(const ::android::support::v4::media::session::MediaSessionCompat_Callback&, const ::android::os::Handler&) const ;
-    void setFlags(int32_t) const ;
-    void setPlaybackToLocal(int32_t) const ;
-    void setPlaybackToRemote(const ::android::support::v4::media::VolumeProviderCompat&) const ;
-    void setActive(bool) const ;
-    bool isActive() const ;
-    void sendSessionEvent(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void release() const ;
-    ::android::support::v4::media::session::MediaSessionCompat_Token getSessionToken() const ;
-    void setPlaybackState(const ::android::support::v4::media::session::PlaybackStateCompat&) const ;
-    void setMetadata(const ::android::support::v4::media::MediaMetadataCompat&) const ;
-    void setSessionActivity(const ::android::app::PendingIntent&) const ;
-    void setMediaButtonReceiver(const ::android::app::PendingIntent&) const ;
-    void setQueue(const ::java::util::List&) const ;
-    void setQueueTitle(const ::java::lang::CharSequence&) const ;
-    void setRatingType(int32_t) const ;
-    void setExtras(const ::android::os::Bundle&) const ;
-    ::java::lang::Object getMediaSession() const ;
-    ::java::lang::Object getRemoteControlClient() const ;
+    void setCallback(const ::android::support::v4::media::session::MediaSessionCompat_Callback&, const ::android::os::Handler&) const;
+    void setFlags(int32_t) const;
+    void setPlaybackToLocal(int32_t) const;
+    void setPlaybackToRemote(const ::android::support::v4::media::VolumeProviderCompat&) const;
+    void setActive(bool) const;
+    bool isActive() const;
+    void sendSessionEvent(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void release() const;
+    ::android::support::v4::media::session::MediaSessionCompat_Token getSessionToken() const;
+    void setPlaybackState(const ::android::support::v4::media::session::PlaybackStateCompat&) const;
+    void setMetadata(const ::android::support::v4::media::MediaMetadataCompat&) const;
+    void setSessionActivity(const ::android::app::PendingIntent&) const;
+    void setMediaButtonReceiver(const ::android::app::PendingIntent&) const;
+    void setQueue(const ::java::util::List&) const;
+    void setQueueTitle(const ::java::lang::CharSequence&) const;
+    void setRatingType(int32_t) const;
+    void setExtras(const ::android::os::Bundle&) const;
+    ::java::lang::Object getMediaSession() const;
+    ::java::lang::Object getRemoteControlClient() const;
 
 };
 }

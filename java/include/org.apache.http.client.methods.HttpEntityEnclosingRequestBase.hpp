@@ -41,10 +41,10 @@ public:
     ::org::apache::http::client::methods::HttpEntityEnclosingRequestBase& operator=(::org::apache::http::client::methods::HttpEntityEnclosingRequestBase&& x) {obj = std::move(x.obj); return *this;}
     
     HttpEntityEnclosingRequestBase();
-    ::org::apache::http::HttpEntity getEntity() const ;
-    void setEntity(const ::org::apache::http::HttpEntity&) const ;
-    bool expectContinue() const ;
-    ::java::lang::Object clone() const ;
+    ::org::apache::http::HttpEntity getEntity() const;
+    void setEntity(const ::org::apache::http::HttpEntity&) const;
+    bool expectContinue() const;
+    ::java::lang::Object clone() const;
 
 };
 }

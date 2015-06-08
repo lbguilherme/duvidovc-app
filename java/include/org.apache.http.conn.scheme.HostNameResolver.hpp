@@ -36,7 +36,7 @@ public:
     ::org::apache::http::conn::scheme::HostNameResolver& operator=(const ::org::apache::http::conn::scheme::HostNameResolver& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::scheme::HostNameResolver& operator=(::org::apache::http::conn::scheme::HostNameResolver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::InetAddress resolve(const ::java::lang::String&) const ;
+    ::java::net::InetAddress resolve(const ::java::lang::String&) const;
 
 };
 }

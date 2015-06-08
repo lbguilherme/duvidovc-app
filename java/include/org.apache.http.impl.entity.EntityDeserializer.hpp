@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::entity::EntityDeserializer& operator=(::org::apache::http::impl::entity::EntityDeserializer&& x) {obj = std::move(x.obj); return *this;}
     
     EntityDeserializer(const ::org::apache::http::entity::ContentLengthStrategy&);
-    ::org::apache::http::HttpEntity deserialize(const ::org::apache::http::io::SessionInputBuffer&, const ::org::apache::http::HttpMessage&) const ;
+    ::org::apache::http::HttpEntity deserialize(const ::org::apache::http::io::SessionInputBuffer&, const ::org::apache::http::HttpMessage&) const;
 
 };
 }

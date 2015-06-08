@@ -34,13 +34,13 @@ public:
     ::android::widget::EdgeEffect& operator=(::android::widget::EdgeEffect&& x) {obj = std::move(x.obj); return *this;}
     
     EdgeEffect(const ::android::content::Context&);
-    void setSize(int32_t, int32_t) const ;
-    bool isFinished() const ;
-    void finish() const ;
-    void onPull(float) const ;
-    void onRelease() const ;
-    void onAbsorb(int32_t) const ;
-    bool draw(const ::android::graphics::Canvas&) const ;
+    void setSize(int32_t, int32_t) const;
+    bool isFinished() const;
+    void finish() const;
+    void onPull(float) const;
+    void onRelease() const;
+    void onAbsorb(int32_t) const;
+    bool draw(const ::android::graphics::Canvas&) const;
 
 };
 }

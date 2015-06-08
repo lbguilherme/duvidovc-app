@@ -36,15 +36,15 @@ public:
     ::android::text::method::MovementMethod& operator=(const ::android::text::method::MovementMethod& x) {obj = x.obj; return *this;}
     ::android::text::method::MovementMethod& operator=(::android::text::method::MovementMethod&& x) {obj = std::move(x.obj); return *this;}
     
-    void initialize(const ::android::widget::TextView&, const ::android::text::Spannable&) const ;
-    bool onKeyDown(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyUp(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyOther(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::KeyEvent&) const ;
-    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const ;
-    bool onTrackballEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const ;
-    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const ;
-    bool onGenericMotionEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const ;
-    bool canSelectArbitrarily() const ;
+    void initialize(const ::android::widget::TextView&, const ::android::text::Spannable&) const;
+    bool onKeyDown(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyUp(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyOther(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::KeyEvent&) const;
+    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const;
+    bool onTrackballEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const;
+    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const;
+    bool onGenericMotionEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const;
+    bool canSelectArbitrarily() const;
 
 };
 }

@@ -39,17 +39,17 @@ public:
     TwoStatePreference(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     TwoStatePreference(const ::android::content::Context&, const ::android::util::AttributeSet&);
     TwoStatePreference(const ::android::content::Context&);
-    void setChecked(bool) const ;
-    bool isChecked() const ;
-    bool shouldDisableDependents() const ;
-    void setSummaryOn(const ::java::lang::CharSequence&) const ;
-    void setSummaryOn(int32_t) const ;
-    ::java::lang::CharSequence getSummaryOn() const ;
-    void setSummaryOff(const ::java::lang::CharSequence&) const ;
-    void setSummaryOff(int32_t) const ;
-    ::java::lang::CharSequence getSummaryOff() const ;
-    bool getDisableDependentsState() const ;
-    void setDisableDependentsState(bool) const ;
+    void setChecked(bool) const;
+    bool isChecked() const;
+    bool shouldDisableDependents() const;
+    void setSummaryOn(const ::java::lang::CharSequence&) const;
+    void setSummaryOn(int32_t) const;
+    ::java::lang::CharSequence getSummaryOn() const;
+    void setSummaryOff(const ::java::lang::CharSequence&) const;
+    void setSummaryOff(int32_t) const;
+    ::java::lang::CharSequence getSummaryOff() const;
+    bool getDisableDependentsState() const;
+    void setDisableDependentsState(bool) const;
 
 };
 }

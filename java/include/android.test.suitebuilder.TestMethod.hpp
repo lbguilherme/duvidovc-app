@@ -41,14 +41,14 @@ public:
     TestMethod(const ::java::lang::reflect::Method&, const ::java::lang::Class&);
     TestMethod(const ::java::lang::String&, const ::java::lang::Class&);
     TestMethod(const ::junit::framework::TestCase&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getEnclosingClassname() const ;
-    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const ;
-    ::java::lang::Class getEnclosingClass() const ;
-    ::junit::framework::TestCase createTest() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getEnclosingClassname() const;
+    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const;
+    ::java::lang::Class getEnclosingClass() const;
+    ::junit::framework::TestCase createTest() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -38,8 +38,8 @@ public:
     
     ActivityInstrumentationTestCase(const ::java::lang::String&, const ::java::lang::Class&);
     ActivityInstrumentationTestCase(const ::java::lang::String&, const ::java::lang::Class&, bool);
-    ::android::app::Activity getActivity() const ;
-    void testActivityTestCaseSetUpProperly() const ;
+    ::android::app::Activity getActivity() const;
+    void testActivityTestCaseSetUpProperly() const;
 
 };
 }

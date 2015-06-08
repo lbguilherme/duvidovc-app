@@ -33,7 +33,7 @@ public:
     ::com::facebook::share::ShareBuilder& operator=(const ::com::facebook::share::ShareBuilder& x) {obj = x.obj; return *this;}
     ::com::facebook::share::ShareBuilder& operator=(::com::facebook::share::ShareBuilder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object build() const ;
+    ::java::lang::Object build() const;
 
 };
 }

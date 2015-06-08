@@ -35,7 +35,7 @@ public:
     ::android::database::DefaultDatabaseErrorHandler& operator=(::android::database::DefaultDatabaseErrorHandler&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultDatabaseErrorHandler();
-    void onCorruption(const ::android::database::sqlite::SQLiteDatabase&) const ;
+    void onCorruption(const ::android::database::sqlite::SQLiteDatabase&) const;
 
 };
 }

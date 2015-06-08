@@ -40,15 +40,15 @@ public:
     ::android::support::v4::view::AccessibilityDelegateCompat& operator=(::android::support::v4::view::AccessibilityDelegateCompat&& x) {obj = std::move(x.obj); return *this;}
     
     AccessibilityDelegateCompat();
-    void sendAccessibilityEvent(const ::android::view::View&, int32_t) const ;
-    void sendAccessibilityEventUnchecked(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    bool dispatchPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const ;
-    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::android::view::View&) const ;
-    bool performAccessibilityAction(const ::android::view::View&, int32_t, const ::android::os::Bundle&) const ;
+    void sendAccessibilityEvent(const ::android::view::View&, int32_t) const;
+    void sendAccessibilityEventUnchecked(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    bool dispatchPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const;
+    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::android::view::View&) const;
+    bool performAccessibilityAction(const ::android::view::View&, int32_t, const ::android::os::Bundle&) const;
 
 };
 }

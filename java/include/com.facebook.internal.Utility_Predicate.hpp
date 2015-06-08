@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::Utility_Predicate& operator=(const ::com::facebook::internal::Utility_Predicate& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::Utility_Predicate& operator=(::com::facebook::internal::Utility_Predicate&& x) {obj = std::move(x.obj); return *this;}
     
-    bool apply(const ::java::lang::Object&) const ;
+    bool apply(const ::java::lang::Object&) const;
 
 };
 }

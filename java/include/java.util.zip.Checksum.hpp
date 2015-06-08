@@ -32,10 +32,10 @@ public:
     ::java::util::zip::Checksum& operator=(const ::java::util::zip::Checksum& x) {obj = x.obj; return *this;}
     ::java::util::zip::Checksum& operator=(::java::util::zip::Checksum&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t getValue() const ;
-    void reset() const ;
-    void update(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void update(int32_t) const ;
+    int64_t getValue() const;
+    void reset() const;
+    void update(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void update(int32_t) const;
 
 };
 }

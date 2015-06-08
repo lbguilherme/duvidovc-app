@@ -35,8 +35,8 @@ public:
     ::java::nio::channels::GatheringByteChannel& operator=(const ::java::nio::channels::GatheringByteChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::GatheringByteChannel& operator=(::java::nio::channels::GatheringByteChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t write(const std::vector< ::java::nio::ByteBuffer>&) const ;
-    int64_t write(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const ;
+    int64_t write(const std::vector< ::java::nio::ByteBuffer>&) const;
+    int64_t write(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const;
 
 };
 }

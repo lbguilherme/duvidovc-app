@@ -39,8 +39,8 @@ public:
     TwoLineListItem(const ::android::content::Context&);
     TwoLineListItem(const ::android::content::Context&, const ::android::util::AttributeSet&);
     TwoLineListItem(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    ::android::widget::TextView getText1() const ;
-    ::android::widget::TextView getText2() const ;
+    ::android::widget::TextView getText1() const;
+    ::android::widget::TextView getText2() const;
 
 };
 }

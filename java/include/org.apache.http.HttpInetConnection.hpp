@@ -35,10 +35,10 @@ public:
     ::org::apache::http::HttpInetConnection& operator=(const ::org::apache::http::HttpInetConnection& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpInetConnection& operator=(::org::apache::http::HttpInetConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::InetAddress getLocalAddress() const ;
-    int32_t getLocalPort() const ;
-    ::java::net::InetAddress getRemoteAddress() const ;
-    int32_t getRemotePort() const ;
+    ::java::net::InetAddress getLocalAddress() const;
+    int32_t getLocalPort() const;
+    ::java::net::InetAddress getRemoteAddress() const;
+    int32_t getRemotePort() const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     ::java::util::PropertyPermission& operator=(::java::util::PropertyPermission&& x) {obj = std::move(x.obj); return *this;}
     
     PropertyPermission(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getActions() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    ::java::lang::String getActions() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

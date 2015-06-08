@@ -38,7 +38,7 @@ public:
     ::org::apache::http::impl::NoConnectionReuseStrategy& operator=(::org::apache::http::impl::NoConnectionReuseStrategy&& x) {obj = std::move(x.obj); return *this;}
     
     NoConnectionReuseStrategy();
-    bool keepAlive(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool keepAlive(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

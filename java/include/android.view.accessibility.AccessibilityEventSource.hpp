@@ -33,8 +33,8 @@ public:
     ::android::view::accessibility::AccessibilityEventSource& operator=(const ::android::view::accessibility::AccessibilityEventSource& x) {obj = x.obj; return *this;}
     ::android::view::accessibility::AccessibilityEventSource& operator=(::android::view::accessibility::AccessibilityEventSource&& x) {obj = std::move(x.obj); return *this;}
     
-    void sendAccessibilityEvent(int32_t) const ;
-    void sendAccessibilityEventUnchecked(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void sendAccessibilityEvent(int32_t) const;
+    void sendAccessibilityEventUnchecked(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

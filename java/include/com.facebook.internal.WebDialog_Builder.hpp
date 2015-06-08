@@ -40,14 +40,14 @@ public:
     
     WebDialog_Builder(const ::android::content::Context&, const ::java::lang::String&, const ::android::os::Bundle&);
     WebDialog_Builder(const ::android::content::Context&, const ::java::lang::String&, const ::java::lang::String&, const ::android::os::Bundle&);
-    ::com::facebook::internal::WebDialog_Builder setTheme(int32_t) const ;
-    ::com::facebook::internal::WebDialog_Builder setOnCompleteListener(const ::com::facebook::internal::WebDialog_OnCompleteListener&) const ;
-    ::com::facebook::internal::WebDialog build() const ;
-    ::java::lang::String getApplicationId() const ;
-    ::android::content::Context getContext() const ;
-    int32_t getTheme() const ;
-    ::android::os::Bundle getParameters() const ;
-    ::com::facebook::internal::WebDialog_OnCompleteListener getListener() const ;
+    ::com::facebook::internal::WebDialog_Builder setTheme(int32_t) const;
+    ::com::facebook::internal::WebDialog_Builder setOnCompleteListener(const ::com::facebook::internal::WebDialog_OnCompleteListener&) const;
+    ::com::facebook::internal::WebDialog build() const;
+    ::java::lang::String getApplicationId() const;
+    ::android::content::Context getContext() const;
+    int32_t getTheme() const;
+    ::android::os::Bundle getParameters() const;
+    ::com::facebook::internal::WebDialog_OnCompleteListener getListener() const;
 
 };
 }

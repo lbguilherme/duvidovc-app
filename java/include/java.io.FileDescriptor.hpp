@@ -33,9 +33,9 @@ public:
     ::java::io::FileDescriptor& operator=(::java::io::FileDescriptor&& x) {obj = std::move(x.obj); return *this;}
     
     FileDescriptor();
-    void sync() const ;
-    bool valid() const ;
-    ::java::lang::String toString() const ;
+    void sync() const;
+    bool valid() const;
+    ::java::lang::String toString() const;
 
 };
 }

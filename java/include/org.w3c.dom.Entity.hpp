@@ -35,12 +35,12 @@ public:
     ::org::w3c::dom::Entity& operator=(const ::org::w3c::dom::Entity& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::Entity& operator=(::org::w3c::dom::Entity&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getPublicId() const ;
-    ::java::lang::String getSystemId() const ;
-    ::java::lang::String getNotationName() const ;
-    ::java::lang::String getInputEncoding() const ;
-    ::java::lang::String getXmlEncoding() const ;
-    ::java::lang::String getXmlVersion() const ;
+    ::java::lang::String getPublicId() const;
+    ::java::lang::String getSystemId() const;
+    ::java::lang::String getNotationName() const;
+    ::java::lang::String getInputEncoding() const;
+    ::java::lang::String getXmlEncoding() const;
+    ::java::lang::String getXmlVersion() const;
 
 };
 }

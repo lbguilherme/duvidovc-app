@@ -37,7 +37,7 @@ public:
     ::android::content::AsyncQueryHandler_WorkerHandler& operator=(::android::content::AsyncQueryHandler_WorkerHandler&& x) {obj = std::move(x.obj); return *this;}
     
     AsyncQueryHandler_WorkerHandler(const ::android::content::AsyncQueryHandler&, const ::android::os::Looper&);
-    void handleMessage(const ::android::os::Message&) const ;
+    void handleMessage(const ::android::os::Message&) const;
 
 };
 }

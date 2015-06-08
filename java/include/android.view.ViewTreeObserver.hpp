@@ -36,19 +36,19 @@ public:
     ::android::view::ViewTreeObserver& operator=(const ::android::view::ViewTreeObserver& x) {obj = x.obj; return *this;}
     ::android::view::ViewTreeObserver& operator=(::android::view::ViewTreeObserver&& x) {obj = std::move(x.obj); return *this;}
     
-    void addOnGlobalFocusChangeListener(const ::android::view::ViewTreeObserver_OnGlobalFocusChangeListener&) const ;
-    void removeOnGlobalFocusChangeListener(const ::android::view::ViewTreeObserver_OnGlobalFocusChangeListener&) const ;
-    void addOnGlobalLayoutListener(const ::android::view::ViewTreeObserver_OnGlobalLayoutListener&) const ;
-    void removeGlobalOnLayoutListener(const ::android::view::ViewTreeObserver_OnGlobalLayoutListener&) const ;
-    void addOnPreDrawListener(const ::android::view::ViewTreeObserver_OnPreDrawListener&) const ;
-    void removeOnPreDrawListener(const ::android::view::ViewTreeObserver_OnPreDrawListener&) const ;
-    void addOnScrollChangedListener(const ::android::view::ViewTreeObserver_OnScrollChangedListener&) const ;
-    void removeOnScrollChangedListener(const ::android::view::ViewTreeObserver_OnScrollChangedListener&) const ;
-    void addOnTouchModeChangeListener(const ::android::view::ViewTreeObserver_OnTouchModeChangeListener&) const ;
-    void removeOnTouchModeChangeListener(const ::android::view::ViewTreeObserver_OnTouchModeChangeListener&) const ;
-    bool isAlive() const ;
-    void dispatchOnGlobalLayout() const ;
-    bool dispatchOnPreDraw() const ;
+    void addOnGlobalFocusChangeListener(const ::android::view::ViewTreeObserver_OnGlobalFocusChangeListener&) const;
+    void removeOnGlobalFocusChangeListener(const ::android::view::ViewTreeObserver_OnGlobalFocusChangeListener&) const;
+    void addOnGlobalLayoutListener(const ::android::view::ViewTreeObserver_OnGlobalLayoutListener&) const;
+    void removeGlobalOnLayoutListener(const ::android::view::ViewTreeObserver_OnGlobalLayoutListener&) const;
+    void addOnPreDrawListener(const ::android::view::ViewTreeObserver_OnPreDrawListener&) const;
+    void removeOnPreDrawListener(const ::android::view::ViewTreeObserver_OnPreDrawListener&) const;
+    void addOnScrollChangedListener(const ::android::view::ViewTreeObserver_OnScrollChangedListener&) const;
+    void removeOnScrollChangedListener(const ::android::view::ViewTreeObserver_OnScrollChangedListener&) const;
+    void addOnTouchModeChangeListener(const ::android::view::ViewTreeObserver_OnTouchModeChangeListener&) const;
+    void removeOnTouchModeChangeListener(const ::android::view::ViewTreeObserver_OnTouchModeChangeListener&) const;
+    bool isAlive() const;
+    void dispatchOnGlobalLayout() const;
+    bool dispatchOnPreDraw() const;
 
 };
 }

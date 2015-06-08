@@ -42,13 +42,13 @@ public:
     EditText(const ::android::content::Context&);
     EditText(const ::android::content::Context&, const ::android::util::AttributeSet&);
     EditText(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    ::android::text::Editable getText() const ;
-    void setText(const ::java::lang::CharSequence&, const ::android::widget::TextView_BufferType&) const ;
-    void setSelection(int32_t, int32_t) const ;
-    void setSelection(int32_t) const ;
-    void selectAll() const ;
-    void extendSelection(int32_t) const ;
-    void setEllipsize(const ::android::text::TextUtils_TruncateAt&) const ;
+    ::android::text::Editable getText() const;
+    void setText(const ::java::lang::CharSequence&, const ::android::widget::TextView_BufferType&) const;
+    void setSelection(int32_t, int32_t) const;
+    void setSelection(int32_t) const;
+    void selectAll() const;
+    void extendSelection(int32_t) const;
+    void setEllipsize(const ::android::text::TextUtils_TruncateAt&) const;
 
 };
 }

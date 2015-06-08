@@ -37,11 +37,11 @@ public:
     ::java::util::concurrent::CompletionService& operator=(const ::java::util::concurrent::CompletionService& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::CompletionService& operator=(::java::util::concurrent::CompletionService&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const ;
-    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const ;
-    ::java::util::concurrent::Future take() const ;
-    ::java::util::concurrent::Future poll() const ;
-    ::java::util::concurrent::Future poll(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const;
+    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const;
+    ::java::util::concurrent::Future take() const;
+    ::java::util::concurrent::Future poll() const;
+    ::java::util::concurrent::Future poll(int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

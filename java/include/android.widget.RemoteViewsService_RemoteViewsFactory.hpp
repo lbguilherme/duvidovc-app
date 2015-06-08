@@ -32,15 +32,15 @@ public:
     ::android::widget::RemoteViewsService_RemoteViewsFactory& operator=(const ::android::widget::RemoteViewsService_RemoteViewsFactory& x) {obj = x.obj; return *this;}
     ::android::widget::RemoteViewsService_RemoteViewsFactory& operator=(::android::widget::RemoteViewsService_RemoteViewsFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCreate() const ;
-    void onDataSetChanged() const ;
-    void onDestroy() const ;
-    int32_t getCount() const ;
-    ::android::widget::RemoteViews getViewAt(int32_t) const ;
-    ::android::widget::RemoteViews getLoadingView() const ;
-    int32_t getViewTypeCount() const ;
-    int64_t getItemId(int32_t) const ;
-    bool hasStableIds() const ;
+    void onCreate() const;
+    void onDataSetChanged() const;
+    void onDestroy() const;
+    int32_t getCount() const;
+    ::android::widget::RemoteViews getViewAt(int32_t) const;
+    ::android::widget::RemoteViews getLoadingView() const;
+    int32_t getViewTypeCount() const;
+    int64_t getItemId(int32_t) const;
+    bool hasStableIds() const;
 
 };
 }

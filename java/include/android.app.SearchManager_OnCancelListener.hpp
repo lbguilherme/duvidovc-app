@@ -31,7 +31,7 @@ public:
     ::android::app::SearchManager_OnCancelListener& operator=(const ::android::app::SearchManager_OnCancelListener& x) {obj = x.obj; return *this;}
     ::android::app::SearchManager_OnCancelListener& operator=(::android::app::SearchManager_OnCancelListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCancel() const ;
+    void onCancel() const;
 
 };
 }

@@ -37,14 +37,14 @@ public:
     ::com::facebook::internal::FileLruCache& operator=(::com::facebook::internal::FileLruCache&& x) {obj = std::move(x.obj); return *this;}
     
     FileLruCache(const ::java::lang::String&, const ::com::facebook::internal::FileLruCache_Limits&);
-    ::java::io::InputStream get(const ::java::lang::String&) const ;
-    ::java::io::InputStream get(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::io::OutputStream openPutStream(const ::java::lang::String&) const ;
-    ::java::io::OutputStream openPutStream(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void clearCache() const ;
-    ::java::lang::String getLocation() const ;
-    ::java::io::InputStream interceptAndPut(const ::java::lang::String&, const ::java::io::InputStream&) const ;
-    ::java::lang::String toString() const ;
+    ::java::io::InputStream get(const ::java::lang::String&) const;
+    ::java::io::InputStream get(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::io::OutputStream openPutStream(const ::java::lang::String&) const;
+    ::java::io::OutputStream openPutStream(const ::java::lang::String&, const ::java::lang::String&) const;
+    void clearCache() const;
+    ::java::lang::String getLocation() const;
+    ::java::io::InputStream interceptAndPut(const ::java::lang::String&, const ::java::io::InputStream&) const;
+    ::java::lang::String toString() const;
 
 };
 }

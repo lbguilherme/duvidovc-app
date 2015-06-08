@@ -40,11 +40,11 @@ public:
     
     ConnPerRouteBean(int32_t);
     ConnPerRouteBean();
-    int32_t getDefaultMax() const ;
-    void setDefaultMaxPerRoute(int32_t) const ;
-    void setMaxForRoute(const ::org::apache::http::conn::routing::HttpRoute&, int32_t) const ;
-    int32_t getMaxForRoute(const ::org::apache::http::conn::routing::HttpRoute&) const ;
-    void setMaxForRoutes(const ::java::util::Map&) const ;
+    int32_t getDefaultMax() const;
+    void setDefaultMaxPerRoute(int32_t) const;
+    void setMaxForRoute(const ::org::apache::http::conn::routing::HttpRoute&, int32_t) const;
+    int32_t getMaxForRoute(const ::org::apache::http::conn::routing::HttpRoute&) const;
+    void setMaxForRoutes(const ::java::util::Map&) const;
 
 };
 }

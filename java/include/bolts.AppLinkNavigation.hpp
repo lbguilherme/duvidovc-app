@@ -40,10 +40,10 @@ public:
     ::bolts::AppLinkNavigation& operator=(::bolts::AppLinkNavigation&& x) {obj = std::move(x.obj); return *this;}
     
     AppLinkNavigation(const ::bolts::AppLink&, const ::android::os::Bundle&, const ::android::os::Bundle&);
-    ::bolts::AppLink getAppLink() const ;
-    ::android::os::Bundle getAppLinkData() const ;
-    ::android::os::Bundle getExtras() const ;
-    ::bolts::AppLinkNavigation_NavigationResult navigate(const ::android::content::Context&) const ;
+    ::bolts::AppLink getAppLink() const;
+    ::android::os::Bundle getAppLinkData() const;
+    ::android::os::Bundle getExtras() const;
+    ::bolts::AppLinkNavigation_NavigationResult navigate(const ::android::content::Context&) const;
     static void setDefaultResolver(const ::bolts::AppLinkResolver&);
     static ::bolts::AppLinkResolver getDefaultResolver();
     static ::bolts::AppLinkNavigation_NavigationResult navigate(const ::android::content::Context&, const ::bolts::AppLink&);

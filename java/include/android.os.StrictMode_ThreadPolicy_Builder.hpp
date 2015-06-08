@@ -35,23 +35,23 @@ public:
     
     StrictMode_ThreadPolicy_Builder();
     StrictMode_ThreadPolicy_Builder(const ::android::os::StrictMode_ThreadPolicy&);
-    ::android::os::StrictMode_ThreadPolicy_Builder detectAll() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder permitAll() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder detectNetwork() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder permitNetwork() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder detectDiskReads() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder permitDiskReads() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder detectCustomSlowCalls() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder permitCustomSlowCalls() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder detectDiskWrites() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder permitDiskWrites() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDialog() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDeath() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDeathOnNetwork() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder penaltyFlashScreen() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder penaltyLog() const ;
-    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDropBox() const ;
-    ::android::os::StrictMode_ThreadPolicy build() const ;
+    ::android::os::StrictMode_ThreadPolicy_Builder detectAll() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder permitAll() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder detectNetwork() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder permitNetwork() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder detectDiskReads() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder permitDiskReads() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder detectCustomSlowCalls() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder permitCustomSlowCalls() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder detectDiskWrites() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder permitDiskWrites() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDialog() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDeath() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDeathOnNetwork() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder penaltyFlashScreen() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder penaltyLog() const;
+    ::android::os::StrictMode_ThreadPolicy_Builder penaltyDropBox() const;
+    ::android::os::StrictMode_ThreadPolicy build() const;
 
 };
 }

@@ -40,30 +40,30 @@ public:
     ::android::app::Notification_Builder& operator=(::android::app::Notification_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     Notification_Builder(const ::android::content::Context&);
-    ::android::app::Notification_Builder setWhen(int64_t) const ;
-    ::android::app::Notification_Builder setSmallIcon(int32_t) const ;
-    ::android::app::Notification_Builder setSmallIcon(int32_t, int32_t) const ;
-    ::android::app::Notification_Builder setContentTitle(const ::java::lang::CharSequence&) const ;
-    ::android::app::Notification_Builder setContentText(const ::java::lang::CharSequence&) const ;
-    ::android::app::Notification_Builder setNumber(int32_t) const ;
-    ::android::app::Notification_Builder setContentInfo(const ::java::lang::CharSequence&) const ;
-    ::android::app::Notification_Builder setProgress(int32_t, int32_t, bool) const ;
-    ::android::app::Notification_Builder setContent(const ::android::widget::RemoteViews&) const ;
-    ::android::app::Notification_Builder setContentIntent(const ::android::app::PendingIntent&) const ;
-    ::android::app::Notification_Builder setDeleteIntent(const ::android::app::PendingIntent&) const ;
-    ::android::app::Notification_Builder setFullScreenIntent(const ::android::app::PendingIntent&, bool) const ;
-    ::android::app::Notification_Builder setTicker(const ::java::lang::CharSequence&) const ;
-    ::android::app::Notification_Builder setTicker(const ::java::lang::CharSequence&, const ::android::widget::RemoteViews&) const ;
-    ::android::app::Notification_Builder setLargeIcon(const ::android::graphics::Bitmap&) const ;
-    ::android::app::Notification_Builder setSound(const ::android::net::Uri&) const ;
-    ::android::app::Notification_Builder setSound(const ::android::net::Uri&, int32_t) const ;
-    ::android::app::Notification_Builder setVibrate(const std::vector< int64_t>&) const ;
-    ::android::app::Notification_Builder setLights(int32_t, int32_t, int32_t) const ;
-    ::android::app::Notification_Builder setOngoing(bool) const ;
-    ::android::app::Notification_Builder setOnlyAlertOnce(bool) const ;
-    ::android::app::Notification_Builder setAutoCancel(bool) const ;
-    ::android::app::Notification_Builder setDefaults(int32_t) const ;
-    ::android::app::Notification getNotification() const ;
+    ::android::app::Notification_Builder setWhen(int64_t) const;
+    ::android::app::Notification_Builder setSmallIcon(int32_t) const;
+    ::android::app::Notification_Builder setSmallIcon(int32_t, int32_t) const;
+    ::android::app::Notification_Builder setContentTitle(const ::java::lang::CharSequence&) const;
+    ::android::app::Notification_Builder setContentText(const ::java::lang::CharSequence&) const;
+    ::android::app::Notification_Builder setNumber(int32_t) const;
+    ::android::app::Notification_Builder setContentInfo(const ::java::lang::CharSequence&) const;
+    ::android::app::Notification_Builder setProgress(int32_t, int32_t, bool) const;
+    ::android::app::Notification_Builder setContent(const ::android::widget::RemoteViews&) const;
+    ::android::app::Notification_Builder setContentIntent(const ::android::app::PendingIntent&) const;
+    ::android::app::Notification_Builder setDeleteIntent(const ::android::app::PendingIntent&) const;
+    ::android::app::Notification_Builder setFullScreenIntent(const ::android::app::PendingIntent&, bool) const;
+    ::android::app::Notification_Builder setTicker(const ::java::lang::CharSequence&) const;
+    ::android::app::Notification_Builder setTicker(const ::java::lang::CharSequence&, const ::android::widget::RemoteViews&) const;
+    ::android::app::Notification_Builder setLargeIcon(const ::android::graphics::Bitmap&) const;
+    ::android::app::Notification_Builder setSound(const ::android::net::Uri&) const;
+    ::android::app::Notification_Builder setSound(const ::android::net::Uri&, int32_t) const;
+    ::android::app::Notification_Builder setVibrate(const std::vector< int64_t>&) const;
+    ::android::app::Notification_Builder setLights(int32_t, int32_t, int32_t) const;
+    ::android::app::Notification_Builder setOngoing(bool) const;
+    ::android::app::Notification_Builder setOnlyAlertOnce(bool) const;
+    ::android::app::Notification_Builder setAutoCancel(bool) const;
+    ::android::app::Notification_Builder setDefaults(int32_t) const;
+    ::android::app::Notification getNotification() const;
 
 };
 }

@@ -31,7 +31,7 @@ public:
     ::android::view::View_OnSystemUiVisibilityChangeListener& operator=(const ::android::view::View_OnSystemUiVisibilityChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnSystemUiVisibilityChangeListener& operator=(::android::view::View_OnSystemUiVisibilityChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSystemUiVisibilityChange(int32_t) const ;
+    void onSystemUiVisibilityChange(int32_t) const;
 
 };
 }

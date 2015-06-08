@@ -38,31 +38,31 @@ public:
     ::java::util::List& operator=(const ::java::util::List& x) {obj = x.obj; return *this;}
     ::java::util::List& operator=(::java::util::List&& x) {obj = std::move(x.obj); return *this;}
     
-    void add(int32_t, const ::java::lang::Object&) const ;
-    bool add(const ::java::lang::Object&) const ;
-    bool addAll(int32_t, const ::java::util::Collection&) const ;
-    bool addAll(const ::java::util::Collection&) const ;
-    void clear() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    bool containsAll(const ::java::util::Collection&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::Object get(int32_t) const ;
-    int32_t hashCode() const ;
-    int32_t indexOf(const ::java::lang::Object&) const ;
-    bool isEmpty() const ;
-    ::java::util::Iterator iterator() const ;
-    int32_t lastIndexOf(const ::java::lang::Object&) const ;
-    ::java::util::ListIterator listIterator() const ;
-    ::java::util::ListIterator listIterator(int32_t) const ;
-    ::java::lang::Object remove(int32_t) const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool removeAll(const ::java::util::Collection&) const ;
-    bool retainAll(const ::java::util::Collection&) const ;
-    ::java::lang::Object set(int32_t, const ::java::lang::Object&) const ;
-    int32_t size() const ;
-    ::java::util::List subList(int32_t, int32_t) const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
+    void add(int32_t, const ::java::lang::Object&) const;
+    bool add(const ::java::lang::Object&) const;
+    bool addAll(int32_t, const ::java::util::Collection&) const;
+    bool addAll(const ::java::util::Collection&) const;
+    void clear() const;
+    bool contains(const ::java::lang::Object&) const;
+    bool containsAll(const ::java::util::Collection&) const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::Object get(int32_t) const;
+    int32_t hashCode() const;
+    int32_t indexOf(const ::java::lang::Object&) const;
+    bool isEmpty() const;
+    ::java::util::Iterator iterator() const;
+    int32_t lastIndexOf(const ::java::lang::Object&) const;
+    ::java::util::ListIterator listIterator() const;
+    ::java::util::ListIterator listIterator(int32_t) const;
+    ::java::lang::Object remove(int32_t) const;
+    bool remove(const ::java::lang::Object&) const;
+    bool removeAll(const ::java::util::Collection&) const;
+    bool retainAll(const ::java::util::Collection&) const;
+    ::java::lang::Object set(int32_t, const ::java::lang::Object&) const;
+    int32_t size() const;
+    ::java::util::List subList(int32_t, int32_t) const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
 
 };
 }

@@ -38,7 +38,7 @@ public:
     ::org::apache::http::conn::routing::BasicRouteDirector& operator=(::org::apache::http::conn::routing::BasicRouteDirector&& x) {obj = std::move(x.obj); return *this;}
     
     BasicRouteDirector();
-    int32_t nextStep(const ::org::apache::http::conn::routing::RouteInfo&, const ::org::apache::http::conn::routing::RouteInfo&) const ;
+    int32_t nextStep(const ::org::apache::http::conn::routing::RouteInfo&, const ::org::apache::http::conn::routing::RouteInfo&) const;
 
 };
 }

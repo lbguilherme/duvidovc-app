@@ -35,9 +35,9 @@ public:
     ::android::support::v4::view::ViewPropertyAnimatorListenerAdapter& operator=(::android::support::v4::view::ViewPropertyAnimatorListenerAdapter&& x) {obj = std::move(x.obj); return *this;}
     
     ViewPropertyAnimatorListenerAdapter();
-    void onAnimationStart(const ::android::view::View&) const ;
-    void onAnimationEnd(const ::android::view::View&) const ;
-    void onAnimationCancel(const ::android::view::View&) const ;
+    void onAnimationStart(const ::android::view::View&) const;
+    void onAnimationEnd(const ::android::view::View&) const;
+    void onAnimationCancel(const ::android::view::View&) const;
 
 };
 }

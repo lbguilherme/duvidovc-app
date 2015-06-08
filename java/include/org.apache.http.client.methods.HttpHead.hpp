@@ -41,7 +41,7 @@ public:
     HttpHead();
     HttpHead(const ::java::net::URI&);
     HttpHead(const ::java::lang::String&);
-    ::java::lang::String getMethod() const ;
+    ::java::lang::String getMethod() const;
 
 };
 }

@@ -41,13 +41,13 @@ public:
     
     FacebookContentProvider();
     static ::java::lang::String getAttachmentUrl(const ::java::lang::String&, const ::java::util::UUID&, const ::java::lang::String&);
-    bool onCreate() const ;
-    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const ;
-    ::java::lang::String getType(const ::android::net::Uri&) const ;
-    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const ;
-    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    ::android::os::ParcelFileDescriptor openFile(const ::android::net::Uri&, const ::java::lang::String&) const ;
+    bool onCreate() const;
+    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const;
+    ::java::lang::String getType(const ::android::net::Uri&) const;
+    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const;
+    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    ::android::os::ParcelFileDescriptor openFile(const ::android::net::Uri&, const ::java::lang::String&) const;
 
 };
 }

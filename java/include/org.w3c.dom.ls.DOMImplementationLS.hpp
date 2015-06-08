@@ -38,10 +38,10 @@ public:
     ::org::w3c::dom::ls::DOMImplementationLS& operator=(const ::org::w3c::dom::ls::DOMImplementationLS& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::ls::DOMImplementationLS& operator=(::org::w3c::dom::ls::DOMImplementationLS&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::ls::LSParser createLSParser(int16_t, const ::java::lang::String&) const ;
-    ::org::w3c::dom::ls::LSSerializer createLSSerializer() const ;
-    ::org::w3c::dom::ls::LSInput createLSInput() const ;
-    ::org::w3c::dom::ls::LSOutput createLSOutput() const ;
+    ::org::w3c::dom::ls::LSParser createLSParser(int16_t, const ::java::lang::String&) const;
+    ::org::w3c::dom::ls::LSSerializer createLSSerializer() const;
+    ::org::w3c::dom::ls::LSInput createLSInput() const;
+    ::org::w3c::dom::ls::LSOutput createLSOutput() const;
 
 };
 }

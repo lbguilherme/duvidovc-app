@@ -39,10 +39,10 @@ public:
     ::org::apache::http::message::BasicTokenIterator& operator=(::org::apache::http::message::BasicTokenIterator&& x) {obj = std::move(x.obj); return *this;}
     
     BasicTokenIterator(const ::org::apache::http::HeaderIterator&);
-    bool hasNext() const ;
-    ::java::lang::String nextToken() const ;
-    ::java::lang::Object next() const ;
-    void remove() const ;
+    bool hasNext() const;
+    ::java::lang::String nextToken() const;
+    ::java::lang::Object next() const;
+    void remove() const;
 
 };
 }

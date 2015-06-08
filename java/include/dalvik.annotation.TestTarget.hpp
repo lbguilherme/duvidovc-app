@@ -35,9 +35,9 @@ public:
     ::dalvik::annotation::TestTarget& operator=(const ::dalvik::annotation::TestTarget& x) {obj = x.obj; return *this;}
     ::dalvik::annotation::TestTarget& operator=(::dalvik::annotation::TestTarget&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String methodName() const ;
-    ::java::lang::String conceptName() const ;
-    std::vector< ::java::lang::Class> methodArgs() const ;
+    ::java::lang::String methodName() const;
+    ::java::lang::String conceptName() const;
+    std::vector< ::java::lang::Class> methodArgs() const;
 
 };
 }

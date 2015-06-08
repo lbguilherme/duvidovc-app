@@ -39,13 +39,13 @@ public:
     
     TestCase();
     TestCase(const ::java::lang::String&);
-    int32_t countTestCases() const ;
-    ::junit::framework::TestResult run() const ;
-    void run(const ::junit::framework::TestResult&) const ;
-    void runBare() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::String getName() const ;
-    void setName(const ::java::lang::String&) const ;
+    int32_t countTestCases() const;
+    ::junit::framework::TestResult run() const;
+    void run(const ::junit::framework::TestResult&) const;
+    void runBare() const;
+    ::java::lang::String toString() const;
+    ::java::lang::String getName() const;
+    void setName(const ::java::lang::String&) const;
 
 };
 }

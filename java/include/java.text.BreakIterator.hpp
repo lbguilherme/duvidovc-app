@@ -47,19 +47,19 @@ public:
     static ::java::text::BreakIterator getSentenceInstance(const ::java::util::Locale&);
     static ::java::text::BreakIterator getWordInstance();
     static ::java::text::BreakIterator getWordInstance(const ::java::util::Locale&);
-    bool isBoundary(int32_t) const ;
-    int32_t preceding(int32_t) const ;
-    void setText(const ::java::lang::String&) const ;
-    int32_t current() const ;
-    int32_t first() const ;
-    int32_t following(int32_t) const ;
-    ::java::text::CharacterIterator getText() const ;
-    int32_t last() const ;
-    int32_t next() const ;
-    int32_t next(int32_t) const ;
-    int32_t previous() const ;
-    void setText(const ::java::text::CharacterIterator&) const ;
-    ::java::lang::Object clone() const ;
+    bool isBoundary(int32_t) const;
+    int32_t preceding(int32_t) const;
+    void setText(const ::java::lang::String&) const;
+    int32_t current() const;
+    int32_t first() const;
+    int32_t following(int32_t) const;
+    ::java::text::CharacterIterator getText() const;
+    int32_t last() const;
+    int32_t next() const;
+    int32_t next(int32_t) const;
+    int32_t previous() const;
+    void setText(const ::java::text::CharacterIterator&) const;
+    ::java::lang::Object clone() const;
 
 };
 }

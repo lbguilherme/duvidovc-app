@@ -34,9 +34,9 @@ public:
     ::java::security::spec::RSAOtherPrimeInfo& operator=(::java::security::spec::RSAOtherPrimeInfo&& x) {obj = std::move(x.obj); return *this;}
     
     RSAOtherPrimeInfo(const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getCrtCoefficient() const ;
-    ::java::math::BigInteger getPrime() const ;
-    ::java::math::BigInteger getExponent() const ;
+    ::java::math::BigInteger getCrtCoefficient() const;
+    ::java::math::BigInteger getPrime() const;
+    ::java::math::BigInteger getExponent() const;
 
 };
 }

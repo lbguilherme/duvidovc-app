@@ -40,21 +40,21 @@ public:
     MulticastSocket();
     MulticastSocket(int32_t);
     MulticastSocket(const ::java::net::SocketAddress&);
-    ::java::net::InetAddress getInterface() const ;
-    ::java::net::NetworkInterface getNetworkInterface() const ;
-    int32_t getTimeToLive() const ;
-    int8_t getTTL() const ;
-    void joinGroup(const ::java::net::InetAddress&) const ;
-    void joinGroup(const ::java::net::SocketAddress&, const ::java::net::NetworkInterface&) const ;
-    void leaveGroup(const ::java::net::InetAddress&) const ;
-    void leaveGroup(const ::java::net::SocketAddress&, const ::java::net::NetworkInterface&) const ;
-    void send(const ::java::net::DatagramPacket&, int8_t) const ;
-    void setInterface(const ::java::net::InetAddress&) const ;
-    void setNetworkInterface(const ::java::net::NetworkInterface&) const ;
-    void setTimeToLive(int32_t) const ;
-    void setTTL(int8_t) const ;
-    bool getLoopbackMode() const ;
-    void setLoopbackMode(bool) const ;
+    ::java::net::InetAddress getInterface() const;
+    ::java::net::NetworkInterface getNetworkInterface() const;
+    int32_t getTimeToLive() const;
+    int8_t getTTL() const;
+    void joinGroup(const ::java::net::InetAddress&) const;
+    void joinGroup(const ::java::net::SocketAddress&, const ::java::net::NetworkInterface&) const;
+    void leaveGroup(const ::java::net::InetAddress&) const;
+    void leaveGroup(const ::java::net::SocketAddress&, const ::java::net::NetworkInterface&) const;
+    void send(const ::java::net::DatagramPacket&, int8_t) const;
+    void setInterface(const ::java::net::InetAddress&) const;
+    void setNetworkInterface(const ::java::net::NetworkInterface&) const;
+    void setTimeToLive(int32_t) const;
+    void setTTL(int8_t) const;
+    bool getLoopbackMode() const;
+    void setLoopbackMode(bool) const;
 
 };
 }

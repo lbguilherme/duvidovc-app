@@ -43,29 +43,29 @@ public:
     ::android::graphics::drawable::DrawableContainer& operator=(::android::graphics::drawable::DrawableContainer&& x) {obj = std::move(x.obj); return *this;}
     
     DrawableContainer();
-    void draw(const ::android::graphics::Canvas&) const ;
-    int32_t getChangingConfigurations() const ;
-    bool getPadding(const ::android::graphics::Rect&) const ;
-    void setAlpha(int32_t) const ;
-    void setDither(bool) const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    void setEnterFadeDuration(int32_t) const ;
-    void setExitFadeDuration(int32_t) const ;
-    bool isStateful() const ;
-    void jumpToCurrentState() const ;
-    int32_t getIntrinsicWidth() const ;
-    int32_t getIntrinsicHeight() const ;
-    int32_t getMinimumWidth() const ;
-    int32_t getMinimumHeight() const ;
-    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const ;
-    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const ;
-    bool setVisible(bool, bool) const ;
-    int32_t getOpacity() const ;
-    bool selectDrawable(int32_t) const ;
-    ::android::graphics::drawable::Drawable getCurrent() const ;
-    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    void draw(const ::android::graphics::Canvas&) const;
+    int32_t getChangingConfigurations() const;
+    bool getPadding(const ::android::graphics::Rect&) const;
+    void setAlpha(int32_t) const;
+    void setDither(bool) const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    void setEnterFadeDuration(int32_t) const;
+    void setExitFadeDuration(int32_t) const;
+    bool isStateful() const;
+    void jumpToCurrentState() const;
+    int32_t getIntrinsicWidth() const;
+    int32_t getIntrinsicHeight() const;
+    int32_t getMinimumWidth() const;
+    int32_t getMinimumHeight() const;
+    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const;
+    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const;
+    bool setVisible(bool, bool) const;
+    int32_t getOpacity() const;
+    bool selectDrawable(int32_t) const;
+    ::android::graphics::drawable::Drawable getCurrent() const;
+    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

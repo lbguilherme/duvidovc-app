@@ -39,9 +39,9 @@ public:
     
     ImageSwitcher(const ::android::content::Context&);
     ImageSwitcher(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setImageResource(int32_t) const ;
-    void setImageURI(const ::android::net::Uri&) const ;
-    void setImageDrawable(const ::android::graphics::drawable::Drawable&) const ;
+    void setImageResource(int32_t) const;
+    void setImageURI(const ::android::net::Uri&) const;
+    void setImageDrawable(const ::android::graphics::drawable::Drawable&) const;
 
 };
 }

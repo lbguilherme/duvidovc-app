@@ -37,8 +37,8 @@ public:
     ::java::io::WriteAbortedException& operator=(::java::io::WriteAbortedException&& x) {obj = std::move(x.obj); return *this;}
     
     WriteAbortedException(const ::java::lang::String&, const ::java::lang::Exception&);
-    ::java::lang::String getMessage() const ;
-    ::java::lang::Throwable getCause() const ;
+    ::java::lang::String getMessage() const;
+    ::java::lang::Throwable getCause() const;
 
 };
 }

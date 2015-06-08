@@ -36,7 +36,7 @@ public:
     ::javax::net::ssl::CertPathTrustManagerParameters& operator=(::javax::net::ssl::CertPathTrustManagerParameters&& x) {obj = std::move(x.obj); return *this;}
     
     CertPathTrustManagerParameters(const ::java::security::cert::CertPathParameters&);
-    ::java::security::cert::CertPathParameters getParameters() const ;
+    ::java::security::cert::CertPathParameters getParameters() const;
 
 };
 }

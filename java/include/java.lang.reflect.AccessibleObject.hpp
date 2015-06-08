@@ -38,12 +38,12 @@ public:
     ::java::lang::reflect::AccessibleObject& operator=(::java::lang::reflect::AccessibleObject&& x) {obj = std::move(x.obj); return *this;}
     
     static void setAccessible(const std::vector< ::java::lang::reflect::AccessibleObject>&, bool);
-    bool isAccessible() const ;
-    void setAccessible(bool) const ;
-    bool isAnnotationPresent(const ::java::lang::Class&) const ;
-    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const ;
-    std::vector< ::java::lang::annotation::Annotation> getAnnotations() const ;
-    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const ;
+    bool isAccessible() const;
+    void setAccessible(bool) const;
+    bool isAnnotationPresent(const ::java::lang::Class&) const;
+    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const;
+    std::vector< ::java::lang::annotation::Annotation> getAnnotations() const;
+    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const;
 
 };
 }

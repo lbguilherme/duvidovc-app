@@ -34,7 +34,7 @@ public:
     ::com::facebook::share::widget::CreateAppGroupDialog_Result& operator=(const ::com::facebook::share::widget::CreateAppGroupDialog_Result& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::CreateAppGroupDialog_Result& operator=(::com::facebook::share::widget::CreateAppGroupDialog_Result&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getId() const ;
+    ::java::lang::String getId() const;
 
 };
 }

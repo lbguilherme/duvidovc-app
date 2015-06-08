@@ -36,11 +36,11 @@ public:
     ::android::support::v4::view::MotionEventCompat_EclairMotionEventVersionImpl& operator=(const ::android::support::v4::view::MotionEventCompat_EclairMotionEventVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MotionEventCompat_EclairMotionEventVersionImpl& operator=(::android::support::v4::view::MotionEventCompat_EclairMotionEventVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t findPointerIndex(const ::android::view::MotionEvent&, int32_t) const ;
-    int32_t getPointerId(const ::android::view::MotionEvent&, int32_t) const ;
-    float getX(const ::android::view::MotionEvent&, int32_t) const ;
-    float getY(const ::android::view::MotionEvent&, int32_t) const ;
-    int32_t getPointerCount(const ::android::view::MotionEvent&) const ;
+    int32_t findPointerIndex(const ::android::view::MotionEvent&, int32_t) const;
+    int32_t getPointerId(const ::android::view::MotionEvent&, int32_t) const;
+    float getX(const ::android::view::MotionEvent&, int32_t) const;
+    float getY(const ::android::view::MotionEvent&, int32_t) const;
+    int32_t getPointerCount(const ::android::view::MotionEvent&) const;
 
 };
 }

@@ -39,8 +39,8 @@ public:
     ::android::support::v4::app::NotificationManagerCompat_NotifyTask& operator=(::android::support::v4::app::NotificationManagerCompat_NotifyTask&& x) {obj = std::move(x.obj); return *this;}
     
     NotificationManagerCompat_NotifyTask(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::android::app::Notification&);
-    void send(const ::android::support::v4::app::INotificationSideChannel&) const ;
-    ::java::lang::String toString() const ;
+    void send(const ::android::support::v4::app::INotificationSideChannel&) const;
+    ::java::lang::String toString() const;
 
 };
 }

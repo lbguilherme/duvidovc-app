@@ -40,8 +40,8 @@ public:
     ::org::apache::http::impl::client::DefaultTargetAuthenticationHandler& operator=(::org::apache::http::impl::client::DefaultTargetAuthenticationHandler&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultTargetAuthenticationHandler();
-    bool isAuthenticationRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::java::util::Map getChallenges(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool isAuthenticationRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::java::util::Map getChallenges(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

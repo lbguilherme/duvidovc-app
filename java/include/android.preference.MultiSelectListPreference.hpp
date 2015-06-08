@@ -40,15 +40,15 @@ public:
     
     MultiSelectListPreference(const ::android::content::Context&, const ::android::util::AttributeSet&);
     MultiSelectListPreference(const ::android::content::Context&);
-    void setEntries(const std::vector< ::java::lang::CharSequence>&) const ;
-    void setEntries(int32_t) const ;
-    std::vector< ::java::lang::CharSequence> getEntries() const ;
-    void setEntryValues(const std::vector< ::java::lang::CharSequence>&) const ;
-    void setEntryValues(int32_t) const ;
-    std::vector< ::java::lang::CharSequence> getEntryValues() const ;
-    void setValues(const ::java::util::Set&) const ;
-    ::java::util::Set getValues() const ;
-    int32_t findIndexOfValue(const ::java::lang::String&) const ;
+    void setEntries(const std::vector< ::java::lang::CharSequence>&) const;
+    void setEntries(int32_t) const;
+    std::vector< ::java::lang::CharSequence> getEntries() const;
+    void setEntryValues(const std::vector< ::java::lang::CharSequence>&) const;
+    void setEntryValues(int32_t) const;
+    std::vector< ::java::lang::CharSequence> getEntryValues() const;
+    void setValues(const ::java::util::Set&) const;
+    ::java::util::Set getValues() const;
+    int32_t findIndexOfValue(const ::java::lang::String&) const;
 
 };
 }

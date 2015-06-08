@@ -40,12 +40,12 @@ public:
     QName(const ::java::lang::String&, const ::java::lang::String&);
     QName(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&);
     QName(const ::java::lang::String&);
-    ::java::lang::String getNamespaceURI() const ;
-    ::java::lang::String getLocalPart() const ;
-    ::java::lang::String getPrefix() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getNamespaceURI() const;
+    ::java::lang::String getLocalPart() const;
+    ::java::lang::String getPrefix() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
     static ::javax::xml::namespace_::QName valueOf(const ::java::lang::String&);
 
 };

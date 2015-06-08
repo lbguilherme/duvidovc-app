@@ -44,12 +44,12 @@ public:
     FragmentBreadCrumbs(const ::android::content::Context&);
     FragmentBreadCrumbs(const ::android::content::Context&, const ::android::util::AttributeSet&);
     FragmentBreadCrumbs(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setActivity(const ::android::app::Activity&) const ;
-    void setMaxVisible(int32_t) const ;
-    void setParentTitle(const ::java::lang::CharSequence&, const ::java::lang::CharSequence&, const ::android::view::View_OnClickListener&) const ;
-    void setOnBreadCrumbClickListener(const ::android::app::FragmentBreadCrumbs_OnBreadCrumbClickListener&) const ;
-    void setTitle(const ::java::lang::CharSequence&, const ::java::lang::CharSequence&) const ;
-    void onBackStackChanged() const ;
+    void setActivity(const ::android::app::Activity&) const;
+    void setMaxVisible(int32_t) const;
+    void setParentTitle(const ::java::lang::CharSequence&, const ::java::lang::CharSequence&, const ::android::view::View_OnClickListener&) const;
+    void setOnBreadCrumbClickListener(const ::android::app::FragmentBreadCrumbs_OnBreadCrumbClickListener&) const;
+    void setTitle(const ::java::lang::CharSequence&, const ::java::lang::CharSequence&) const;
+    void onBackStackChanged() const;
 
 };
 }

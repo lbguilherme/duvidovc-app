@@ -33,10 +33,10 @@ public:
     ::bolts::CancellationTokenSource& operator=(::bolts::CancellationTokenSource&& x) {obj = std::move(x.obj); return *this;}
     
     CancellationTokenSource();
-    bool isCancellationRequested() const ;
-    ::bolts::CancellationToken getToken() const ;
-    void cancel() const ;
-    ::java::lang::String toString() const ;
+    bool isCancellationRequested() const;
+    ::bolts::CancellationToken getToken() const;
+    void cancel() const;
+    ::java::lang::String toString() const;
 
 };
 }

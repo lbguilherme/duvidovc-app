@@ -32,9 +32,9 @@ public:
     ::com::facebook::internal::WorkQueue_WorkItem& operator=(const ::com::facebook::internal::WorkQueue_WorkItem& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::WorkQueue_WorkItem& operator=(::com::facebook::internal::WorkQueue_WorkItem&& x) {obj = std::move(x.obj); return *this;}
     
-    bool cancel() const ;
-    bool isRunning() const ;
-    void moveToFront() const ;
+    bool cancel() const;
+    bool isRunning() const;
+    void moveToFront() const;
 
 };
 }

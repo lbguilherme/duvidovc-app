@@ -39,10 +39,10 @@ public:
     ::android::support::v4::widget::DrawerLayout_AccessibilityDelegate& operator=(const ::android::support::v4::widget::DrawerLayout_AccessibilityDelegate& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::DrawerLayout_AccessibilityDelegate& operator=(::android::support::v4::widget::DrawerLayout_AccessibilityDelegate&& x) {obj = std::move(x.obj); return *this;}
     
-    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const ;
-    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    bool dispatchPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const;
+    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    bool dispatchPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

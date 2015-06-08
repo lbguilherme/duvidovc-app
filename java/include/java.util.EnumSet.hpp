@@ -53,7 +53,7 @@ public:
     static ::java::util::EnumSet of(const ::java::lang::Enum&, const ::java::lang::Enum&, const ::java::lang::Enum&, const ::java::lang::Enum&, const ::java::lang::Enum&);
     static ::java::util::EnumSet of(const ::java::lang::Enum&, const std::vector< ::java::lang::Enum>&);
     static ::java::util::EnumSet range(const ::java::lang::Enum&, const ::java::lang::Enum&);
-    ::java::util::EnumSet clone() const ;
+    ::java::util::EnumSet clone() const;
 
 };
 }

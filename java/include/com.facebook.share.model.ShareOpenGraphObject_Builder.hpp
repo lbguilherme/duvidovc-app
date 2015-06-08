@@ -39,8 +39,8 @@ public:
     ::com::facebook::share::model::ShareOpenGraphObject_Builder& operator=(::com::facebook::share::model::ShareOpenGraphObject_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ShareOpenGraphObject_Builder();
-    ::com::facebook::share::model::ShareOpenGraphObject build() const ;
-    ::com::facebook::share::model::ShareOpenGraphObject_Builder readFrom(const ::android::os::Parcel&) const ;
+    ::com::facebook::share::model::ShareOpenGraphObject build() const;
+    ::com::facebook::share::model::ShareOpenGraphObject_Builder readFrom(const ::android::os::Parcel&) const;
 
 };
 }

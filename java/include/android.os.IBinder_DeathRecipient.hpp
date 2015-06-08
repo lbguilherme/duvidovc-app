@@ -31,7 +31,7 @@ public:
     ::android::os::IBinder_DeathRecipient& operator=(const ::android::os::IBinder_DeathRecipient& x) {obj = x.obj; return *this;}
     ::android::os::IBinder_DeathRecipient& operator=(::android::os::IBinder_DeathRecipient&& x) {obj = std::move(x.obj); return *this;}
     
-    void binderDied() const ;
+    void binderDied() const;
 
 };
 }

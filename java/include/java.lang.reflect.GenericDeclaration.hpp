@@ -33,7 +33,7 @@ public:
     ::java::lang::reflect::GenericDeclaration& operator=(const ::java::lang::reflect::GenericDeclaration& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::GenericDeclaration& operator=(::java::lang::reflect::GenericDeclaration&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::reflect::TypeVariable> getTypeParameters() const ;
+    std::vector< ::java::lang::reflect::TypeVariable> getTypeParameters() const;
 
 };
 }

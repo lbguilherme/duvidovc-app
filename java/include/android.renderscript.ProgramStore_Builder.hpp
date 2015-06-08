@@ -38,12 +38,12 @@ public:
     ::android::renderscript::ProgramStore_Builder& operator=(::android::renderscript::ProgramStore_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ProgramStore_Builder(const ::android::renderscript::RenderScript&);
-    ::android::renderscript::ProgramStore_Builder setDepthFunc(const ::android::renderscript::ProgramStore_DepthFunc&) const ;
-    ::android::renderscript::ProgramStore_Builder setDepthMaskEnabled(bool) const ;
-    ::android::renderscript::ProgramStore_Builder setColorMaskEnabled(bool, bool, bool, bool) const ;
-    ::android::renderscript::ProgramStore_Builder setBlendFunc(const ::android::renderscript::ProgramStore_BlendSrcFunc&, const ::android::renderscript::ProgramStore_BlendDstFunc&) const ;
-    ::android::renderscript::ProgramStore_Builder setDitherEnabled(bool) const ;
-    ::android::renderscript::ProgramStore create() const ;
+    ::android::renderscript::ProgramStore_Builder setDepthFunc(const ::android::renderscript::ProgramStore_DepthFunc&) const;
+    ::android::renderscript::ProgramStore_Builder setDepthMaskEnabled(bool) const;
+    ::android::renderscript::ProgramStore_Builder setColorMaskEnabled(bool, bool, bool, bool) const;
+    ::android::renderscript::ProgramStore_Builder setBlendFunc(const ::android::renderscript::ProgramStore_BlendSrcFunc&, const ::android::renderscript::ProgramStore_BlendDstFunc&) const;
+    ::android::renderscript::ProgramStore_Builder setDitherEnabled(bool) const;
+    ::android::renderscript::ProgramStore create() const;
 
 };
 }

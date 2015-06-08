@@ -36,11 +36,11 @@ public:
     
     Keyboard_Key(const ::android::inputmethodservice::Keyboard_Row&);
     Keyboard_Key(const ::android::content::res::Resources&, const ::android::inputmethodservice::Keyboard_Row&, int32_t, int32_t, const ::android::content::res::XmlResourceParser&);
-    void onPressed() const ;
-    void onReleased(bool) const ;
-    bool isInside(int32_t, int32_t) const ;
-    int32_t squaredDistanceFrom(int32_t, int32_t) const ;
-    std::vector< int32_t> getCurrentDrawableState() const ;
+    void onPressed() const;
+    void onReleased(bool) const;
+    bool isInside(int32_t, int32_t) const;
+    int32_t squaredDistanceFrom(int32_t, int32_t) const;
+    std::vector< int32_t> getCurrentDrawableState() const;
 
 };
 }

@@ -34,10 +34,10 @@ public:
     ::com::facebook::internal::Utility_DialogFeatureConfig& operator=(const ::com::facebook::internal::Utility_DialogFeatureConfig& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::Utility_DialogFeatureConfig& operator=(::com::facebook::internal::Utility_DialogFeatureConfig&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getDialogName() const ;
-    ::java::lang::String getFeatureName() const ;
-    ::android::net::Uri getFallbackUrl() const ;
-    std::vector< int32_t> getVersionSpec() const ;
+    ::java::lang::String getDialogName() const;
+    ::java::lang::String getFeatureName() const;
+    ::android::net::Uri getFallbackUrl() const;
+    std::vector< int32_t> getVersionSpec() const;
 
 };
 }

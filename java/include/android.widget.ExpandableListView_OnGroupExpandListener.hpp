@@ -31,7 +31,7 @@ public:
     ::android::widget::ExpandableListView_OnGroupExpandListener& operator=(const ::android::widget::ExpandableListView_OnGroupExpandListener& x) {obj = x.obj; return *this;}
     ::android::widget::ExpandableListView_OnGroupExpandListener& operator=(::android::widget::ExpandableListView_OnGroupExpandListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGroupExpand(int32_t) const ;
+    void onGroupExpand(int32_t) const;
 
 };
 }

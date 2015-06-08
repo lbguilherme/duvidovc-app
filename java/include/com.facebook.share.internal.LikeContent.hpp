@@ -37,10 +37,10 @@ public:
     ::com::facebook::share::internal::LikeContent& operator=(const ::com::facebook::share::internal::LikeContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::LikeContent& operator=(::com::facebook::share::internal::LikeContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getObjectId() const ;
-    ::java::lang::String getObjectType() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getObjectId() const;
+    ::java::lang::String getObjectType() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

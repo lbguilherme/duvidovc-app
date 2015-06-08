@@ -37,12 +37,12 @@ public:
     
     EllipticCurve(const ::java::security::spec::ECField&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const std::vector< int8_t>&);
     EllipticCurve(const ::java::security::spec::ECField&, const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getA() const ;
-    ::java::math::BigInteger getB() const ;
-    ::java::security::spec::ECField getField() const ;
-    std::vector< int8_t> getSeed() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    ::java::math::BigInteger getA() const;
+    ::java::math::BigInteger getB() const;
+    ::java::security::spec::ECField getField() const;
+    std::vector< int8_t> getSeed() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

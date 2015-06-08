@@ -43,7 +43,7 @@ public:
     GridLayout_LayoutParams(const ::android::view::ViewGroup_LayoutParams&);
     GridLayout_LayoutParams(const ::android::view::ViewGroup_MarginLayoutParams&);
     GridLayout_LayoutParams(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setGravity(int32_t) const ;
+    void setGravity(int32_t) const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::android::content::DialogInterface_OnClickListener& operator=(const ::android::content::DialogInterface_OnClickListener& x) {obj = x.obj; return *this;}
     ::android::content::DialogInterface_OnClickListener& operator=(::android::content::DialogInterface_OnClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onClick(const ::android::content::DialogInterface&, int32_t) const ;
+    void onClick(const ::android::content::DialogInterface&, int32_t) const;
 
 };
 }

@@ -40,21 +40,21 @@ public:
     ::android::support::v4::view::ViewCompat_JBViewCompatImpl& operator=(const ::android::support::v4::view::ViewCompat_JBViewCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewCompat_JBViewCompatImpl& operator=(::android::support::v4::view::ViewCompat_JBViewCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasTransientState(const ::android::view::View&) const ;
-    void setHasTransientState(const ::android::view::View&, bool) const ;
-    void postInvalidateOnAnimation(const ::android::view::View&) const ;
-    void postInvalidateOnAnimation(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const ;
-    void postOnAnimation(const ::android::view::View&, const ::java::lang::Runnable&) const ;
-    void postOnAnimationDelayed(const ::android::view::View&, const ::java::lang::Runnable&, int64_t) const ;
-    int32_t getImportantForAccessibility(const ::android::view::View&) const ;
-    void setImportantForAccessibility(const ::android::view::View&, int32_t) const ;
-    bool performAccessibilityAction(const ::android::view::View&, int32_t, const ::android::os::Bundle&) const ;
-    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::android::view::View&) const ;
-    ::android::view::ViewParent getParentForAccessibility(const ::android::view::View&) const ;
-    int32_t getMinimumWidth(const ::android::view::View&) const ;
-    int32_t getMinimumHeight(const ::android::view::View&) const ;
-    void requestApplyInsets(const ::android::view::View&) const ;
-    bool getFitsSystemWindows(const ::android::view::View&) const ;
+    bool hasTransientState(const ::android::view::View&) const;
+    void setHasTransientState(const ::android::view::View&, bool) const;
+    void postInvalidateOnAnimation(const ::android::view::View&) const;
+    void postInvalidateOnAnimation(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const;
+    void postOnAnimation(const ::android::view::View&, const ::java::lang::Runnable&) const;
+    void postOnAnimationDelayed(const ::android::view::View&, const ::java::lang::Runnable&, int64_t) const;
+    int32_t getImportantForAccessibility(const ::android::view::View&) const;
+    void setImportantForAccessibility(const ::android::view::View&, int32_t) const;
+    bool performAccessibilityAction(const ::android::view::View&, int32_t, const ::android::os::Bundle&) const;
+    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::android::view::View&) const;
+    ::android::view::ViewParent getParentForAccessibility(const ::android::view::View&) const;
+    int32_t getMinimumWidth(const ::android::view::View&) const;
+    int32_t getMinimumHeight(const ::android::view::View&) const;
+    void requestApplyInsets(const ::android::view::View&) const;
+    bool getFitsSystemWindows(const ::android::view::View&) const;
 
 };
 }

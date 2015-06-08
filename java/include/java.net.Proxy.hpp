@@ -36,11 +36,11 @@ public:
     ::java::net::Proxy& operator=(::java::net::Proxy&& x) {obj = std::move(x.obj); return *this;}
     
     Proxy(const ::java::net::Proxy_Type&, const ::java::net::SocketAddress&);
-    ::java::net::Proxy_Type type() const ;
-    ::java::net::SocketAddress address() const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    ::java::net::Proxy_Type type() const;
+    ::java::net::SocketAddress address() const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

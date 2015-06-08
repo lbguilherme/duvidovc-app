@@ -37,11 +37,11 @@ public:
     ::java::util::zip::ZipInputStream& operator=(::java::util::zip::ZipInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     ZipInputStream(const ::java::io::InputStream&);
-    void close() const ;
-    void closeEntry() const ;
-    ::java::util::zip::ZipEntry getNextEntry() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t available() const ;
+    void close() const;
+    void closeEntry() const;
+    ::java::util::zip::ZipEntry getNextEntry() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t available() const;
 
 };
 }

@@ -35,7 +35,7 @@ public:
     ::com::facebook::ProfileTracker_ProfileBroadcastReceiver& operator=(const ::com::facebook::ProfileTracker_ProfileBroadcastReceiver& x) {obj = x.obj; return *this;}
     ::com::facebook::ProfileTracker_ProfileBroadcastReceiver& operator=(::com::facebook::ProfileTracker_ProfileBroadcastReceiver&& x) {obj = std::move(x.obj); return *this;}
     
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
 
 };
 }

@@ -38,7 +38,7 @@ public:
     ::java::nio::channels::Pipe_SourceChannel& operator=(const ::java::nio::channels::Pipe_SourceChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::Pipe_SourceChannel& operator=(::java::nio::channels::Pipe_SourceChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t validOps() const ;
+    int32_t validOps() const;
 
 };
 }

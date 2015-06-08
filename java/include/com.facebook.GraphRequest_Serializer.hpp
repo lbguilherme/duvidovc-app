@@ -44,17 +44,17 @@ public:
     ::com::facebook::GraphRequest_Serializer& operator=(::com::facebook::GraphRequest_Serializer&& x) {obj = std::move(x.obj); return *this;}
     
     GraphRequest_Serializer(const ::java::io::OutputStream&, const ::com::facebook::internal::Logger&, bool);
-    void writeObject(const ::java::lang::String&, const ::java::lang::Object&, const ::com::facebook::GraphRequest&) const ;
-    void writeRequestsAsJson(const ::java::lang::String&, const ::org::json::JSONArray&, const ::java::util::Collection&) const ;
-    void writeString(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void writeBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&) const ;
-    void writeBytes(const ::java::lang::String&, const std::vector< int8_t>&) const ;
-    void writeContentUri(const ::java::lang::String&, const ::android::net::Uri&, const ::java::lang::String&) const ;
-    void writeFile(const ::java::lang::String&, const ::android::os::ParcelFileDescriptor&, const ::java::lang::String&) const ;
-    void writeRecordBoundary() const ;
-    void writeContentDisposition(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void write(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
-    void writeLine(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
+    void writeObject(const ::java::lang::String&, const ::java::lang::Object&, const ::com::facebook::GraphRequest&) const;
+    void writeRequestsAsJson(const ::java::lang::String&, const ::org::json::JSONArray&, const ::java::util::Collection&) const;
+    void writeString(const ::java::lang::String&, const ::java::lang::String&) const;
+    void writeBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&) const;
+    void writeBytes(const ::java::lang::String&, const std::vector< int8_t>&) const;
+    void writeContentUri(const ::java::lang::String&, const ::android::net::Uri&, const ::java::lang::String&) const;
+    void writeFile(const ::java::lang::String&, const ::android::os::ParcelFileDescriptor&, const ::java::lang::String&) const;
+    void writeRecordBoundary() const;
+    void writeContentDisposition(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void write(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
+    void writeLine(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
 
 };
 }

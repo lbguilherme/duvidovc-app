@@ -38,20 +38,20 @@ public:
     ::android::support::v4::media::session::MediaControllerCompat_TransportControls& operator=(const ::android::support::v4::media::session::MediaControllerCompat_TransportControls& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::MediaControllerCompat_TransportControls& operator=(::android::support::v4::media::session::MediaControllerCompat_TransportControls&& x) {obj = std::move(x.obj); return *this;}
     
-    void play() const ;
-    void playFromMediaId(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void playFromSearch(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void skipToQueueItem(int64_t) const ;
-    void pause() const ;
-    void stop() const ;
-    void seekTo(int64_t) const ;
-    void fastForward() const ;
-    void skipToNext() const ;
-    void rewind() const ;
-    void skipToPrevious() const ;
-    void setRating(const ::android::support::v4::media::RatingCompat&) const ;
-    void sendCustomAction(const ::android::support::v4::media::session::PlaybackStateCompat_CustomAction&, const ::android::os::Bundle&) const ;
-    void sendCustomAction(const ::java::lang::String&, const ::android::os::Bundle&) const ;
+    void play() const;
+    void playFromMediaId(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void playFromSearch(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void skipToQueueItem(int64_t) const;
+    void pause() const;
+    void stop() const;
+    void seekTo(int64_t) const;
+    void fastForward() const;
+    void skipToNext() const;
+    void rewind() const;
+    void skipToPrevious() const;
+    void setRating(const ::android::support::v4::media::RatingCompat&) const;
+    void sendCustomAction(const ::android::support::v4::media::session::PlaybackStateCompat_CustomAction&, const ::android::os::Bundle&) const;
+    void sendCustomAction(const ::java::lang::String&, const ::android::os::Bundle&) const;
 
 };
 }

@@ -38,8 +38,8 @@ public:
     ::android::support::v4::app::NotificationManagerCompat_ImplEclair& operator=(const ::android::support::v4::app::NotificationManagerCompat_ImplEclair& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationManagerCompat_ImplEclair& operator=(::android::support::v4::app::NotificationManagerCompat_ImplEclair&& x) {obj = std::move(x.obj); return *this;}
     
-    void cancelNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t) const ;
-    void postNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t, const ::android::app::Notification&) const ;
+    void cancelNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t) const;
+    void postNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t, const ::android::app::Notification&) const;
 
 };
 }

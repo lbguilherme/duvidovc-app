@@ -42,11 +42,11 @@ public:
     ::android::content::pm::ApplicationInfo& operator=(::android::content::pm::ApplicationInfo&& x) {obj = std::move(x.obj); return *this;}
     
     ApplicationInfo();
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::CharSequence loadDescription(const ::android::content::pm::PackageManager&) const ;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::CharSequence loadDescription(const ::android::content::pm::PackageManager&) const;
 
 };
 }

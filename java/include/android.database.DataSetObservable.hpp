@@ -34,8 +34,8 @@ public:
     ::android::database::DataSetObservable& operator=(::android::database::DataSetObservable&& x) {obj = std::move(x.obj); return *this;}
     
     DataSetObservable();
-    void notifyChanged() const ;
-    void notifyInvalidated() const ;
+    void notifyChanged() const;
+    void notifyInvalidated() const;
 
 };
 }

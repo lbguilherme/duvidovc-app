@@ -37,7 +37,7 @@ public:
     ::java::util::logging::SimpleFormatter& operator=(::java::util::logging::SimpleFormatter&& x) {obj = std::move(x.obj); return *this;}
     
     SimpleFormatter();
-    ::java::lang::String format(const ::java::util::logging::LogRecord&) const ;
+    ::java::lang::String format(const ::java::util::logging::LogRecord&) const;
 
 };
 }

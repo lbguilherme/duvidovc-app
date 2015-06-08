@@ -36,10 +36,10 @@ public:
     ::javax::xml::xpath::XPathExpression& operator=(const ::javax::xml::xpath::XPathExpression& x) {obj = x.obj; return *this;}
     ::javax::xml::xpath::XPathExpression& operator=(::javax::xml::xpath::XPathExpression&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object evaluate(const ::java::lang::Object&, const ::javax::xml::namespace_::QName&) const ;
-    ::java::lang::String evaluate(const ::java::lang::Object&) const ;
-    ::java::lang::Object evaluate(const ::org::xml::sax::InputSource&, const ::javax::xml::namespace_::QName&) const ;
-    ::java::lang::String evaluate(const ::org::xml::sax::InputSource&) const ;
+    ::java::lang::Object evaluate(const ::java::lang::Object&, const ::javax::xml::namespace_::QName&) const;
+    ::java::lang::String evaluate(const ::java::lang::Object&) const;
+    ::java::lang::Object evaluate(const ::org::xml::sax::InputSource&, const ::javax::xml::namespace_::QName&) const;
+    ::java::lang::String evaluate(const ::org::xml::sax::InputSource&) const;
 
 };
 }

@@ -36,9 +36,9 @@ public:
     ::java::nio::channels::spi::AbstractSelector& operator=(const ::java::nio::channels::spi::AbstractSelector& x) {obj = x.obj; return *this;}
     ::java::nio::channels::spi::AbstractSelector& operator=(::java::nio::channels::spi::AbstractSelector&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    bool isOpen() const ;
-    ::java::nio::channels::spi::SelectorProvider provider() const ;
+    void close() const;
+    bool isOpen() const;
+    ::java::nio::channels::spi::SelectorProvider provider() const;
 
 };
 }

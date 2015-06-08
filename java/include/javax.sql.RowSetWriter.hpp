@@ -32,7 +32,7 @@ public:
     ::javax::sql::RowSetWriter& operator=(const ::javax::sql::RowSetWriter& x) {obj = x.obj; return *this;}
     ::javax::sql::RowSetWriter& operator=(::javax::sql::RowSetWriter&& x) {obj = std::move(x.obj); return *this;}
     
-    bool writeData(const ::javax::sql::RowSetInternal&) const ;
+    bool writeData(const ::javax::sql::RowSetInternal&) const;
 
 };
 }

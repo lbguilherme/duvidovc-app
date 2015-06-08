@@ -33,7 +33,7 @@ public:
     ::android::widget::TabHost_TabContentFactory& operator=(const ::android::widget::TabHost_TabContentFactory& x) {obj = x.obj; return *this;}
     ::android::widget::TabHost_TabContentFactory& operator=(::android::widget::TabHost_TabContentFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View createTabContent(const ::java::lang::String&) const ;
+    ::android::view::View createTabContent(const ::java::lang::String&) const;
 
 };
 }

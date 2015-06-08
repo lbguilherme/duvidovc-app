@@ -41,21 +41,21 @@ public:
     ::android::webkit::WebViewClient& operator=(::android::webkit::WebViewClient&& x) {obj = std::move(x.obj); return *this;}
     
     WebViewClient();
-    bool shouldOverrideUrlLoading(const ::android::webkit::WebView&, const ::java::lang::String&) const ;
-    void onPageStarted(const ::android::webkit::WebView&, const ::java::lang::String&, const ::android::graphics::Bitmap&) const ;
-    void onPageFinished(const ::android::webkit::WebView&, const ::java::lang::String&) const ;
-    void onLoadResource(const ::android::webkit::WebView&, const ::java::lang::String&) const ;
-    ::android::webkit::WebResourceResponse shouldInterceptRequest(const ::android::webkit::WebView&, const ::java::lang::String&) const ;
-    void onTooManyRedirects(const ::android::webkit::WebView&, const ::android::os::Message&, const ::android::os::Message&) const ;
-    void onReceivedError(const ::android::webkit::WebView&, int32_t, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void onFormResubmission(const ::android::webkit::WebView&, const ::android::os::Message&, const ::android::os::Message&) const ;
-    void doUpdateVisitedHistory(const ::android::webkit::WebView&, const ::java::lang::String&, bool) const ;
-    void onReceivedSslError(const ::android::webkit::WebView&, const ::android::webkit::SslErrorHandler&, const ::android::net::http::SslError&) const ;
-    void onReceivedHttpAuthRequest(const ::android::webkit::WebView&, const ::android::webkit::HttpAuthHandler&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    bool shouldOverrideKeyEvent(const ::android::webkit::WebView&, const ::android::view::KeyEvent&) const ;
-    void onUnhandledKeyEvent(const ::android::webkit::WebView&, const ::android::view::KeyEvent&) const ;
-    void onScaleChanged(const ::android::webkit::WebView&, float, float) const ;
-    void onReceivedLoginRequest(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    bool shouldOverrideUrlLoading(const ::android::webkit::WebView&, const ::java::lang::String&) const;
+    void onPageStarted(const ::android::webkit::WebView&, const ::java::lang::String&, const ::android::graphics::Bitmap&) const;
+    void onPageFinished(const ::android::webkit::WebView&, const ::java::lang::String&) const;
+    void onLoadResource(const ::android::webkit::WebView&, const ::java::lang::String&) const;
+    ::android::webkit::WebResourceResponse shouldInterceptRequest(const ::android::webkit::WebView&, const ::java::lang::String&) const;
+    void onTooManyRedirects(const ::android::webkit::WebView&, const ::android::os::Message&, const ::android::os::Message&) const;
+    void onReceivedError(const ::android::webkit::WebView&, int32_t, const ::java::lang::String&, const ::java::lang::String&) const;
+    void onFormResubmission(const ::android::webkit::WebView&, const ::android::os::Message&, const ::android::os::Message&) const;
+    void doUpdateVisitedHistory(const ::android::webkit::WebView&, const ::java::lang::String&, bool) const;
+    void onReceivedSslError(const ::android::webkit::WebView&, const ::android::webkit::SslErrorHandler&, const ::android::net::http::SslError&) const;
+    void onReceivedHttpAuthRequest(const ::android::webkit::WebView&, const ::android::webkit::HttpAuthHandler&, const ::java::lang::String&, const ::java::lang::String&) const;
+    bool shouldOverrideKeyEvent(const ::android::webkit::WebView&, const ::android::view::KeyEvent&) const;
+    void onUnhandledKeyEvent(const ::android::webkit::WebView&, const ::android::view::KeyEvent&) const;
+    void onScaleChanged(const ::android::webkit::WebView&, float, float) const;
+    void onReceivedLoginRequest(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

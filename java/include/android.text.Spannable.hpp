@@ -34,8 +34,8 @@ public:
     ::android::text::Spannable& operator=(const ::android::text::Spannable& x) {obj = x.obj; return *this;}
     ::android::text::Spannable& operator=(::android::text::Spannable&& x) {obj = std::move(x.obj); return *this;}
     
-    void setSpan(const ::java::lang::Object&, int32_t, int32_t, int32_t) const ;
-    void removeSpan(const ::java::lang::Object&) const ;
+    void setSpan(const ::java::lang::Object&, int32_t, int32_t, int32_t) const;
+    void removeSpan(const ::java::lang::Object&) const;
 
 };
 }

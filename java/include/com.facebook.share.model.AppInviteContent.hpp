@@ -37,10 +37,10 @@ public:
     ::com::facebook::share::model::AppInviteContent& operator=(const ::com::facebook::share::model::AppInviteContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::AppInviteContent& operator=(::com::facebook::share::model::AppInviteContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getApplinkUrl() const ;
-    ::java::lang::String getPreviewImageUrl() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getApplinkUrl() const;
+    ::java::lang::String getPreviewImageUrl() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

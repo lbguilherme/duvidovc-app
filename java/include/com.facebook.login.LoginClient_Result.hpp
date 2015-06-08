@@ -35,8 +35,8 @@ public:
     ::com::facebook::login::LoginClient_Result& operator=(const ::com::facebook::login::LoginClient_Result& x) {obj = x.obj; return *this;}
     ::com::facebook::login::LoginClient_Result& operator=(::com::facebook::login::LoginClient_Result&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

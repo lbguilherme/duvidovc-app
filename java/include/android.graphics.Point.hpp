@@ -38,16 +38,16 @@ public:
     
     Point();
     Point(int32_t, int32_t);
-    void set(int32_t, int32_t) const ;
-    void negate() const ;
-    void offset(int32_t, int32_t) const ;
-    bool equals(int32_t, int32_t) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    void set(int32_t, int32_t) const;
+    void negate() const;
+    void offset(int32_t, int32_t) const;
+    bool equals(int32_t, int32_t) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

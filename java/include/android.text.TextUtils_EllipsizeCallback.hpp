@@ -31,7 +31,7 @@ public:
     ::android::text::TextUtils_EllipsizeCallback& operator=(const ::android::text::TextUtils_EllipsizeCallback& x) {obj = x.obj; return *this;}
     ::android::text::TextUtils_EllipsizeCallback& operator=(::android::text::TextUtils_EllipsizeCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void ellipsized(int32_t, int32_t) const ;
+    void ellipsized(int32_t, int32_t) const;
 
 };
 }

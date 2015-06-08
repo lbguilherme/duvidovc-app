@@ -39,21 +39,21 @@ public:
     ::junit::runner::BaseTestRunner& operator=(::junit::runner::BaseTestRunner&& x) {obj = std::move(x.obj); return *this;}
     
     BaseTestRunner();
-    void startTest(const ::junit::framework::Test&) const ;
+    void startTest(const ::junit::framework::Test&) const;
     static void savePreferences();
-    void setPreference(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void endTest(const ::junit::framework::Test&) const ;
-    void addError(const ::junit::framework::Test&, const ::java::lang::Throwable&) const ;
-    void addFailure(const ::junit::framework::Test&, const ::junit::framework::AssertionFailedError&) const ;
-    void testStarted(const ::java::lang::String&) const ;
-    void testEnded(const ::java::lang::String&) const ;
-    void testFailed(int32_t, const ::junit::framework::Test&, const ::java::lang::Throwable&) const ;
-    ::junit::framework::Test getTest(const ::java::lang::String&) const ;
-    ::java::lang::String elapsedTimeAsString(int64_t) const ;
-    void setLoading(bool) const ;
-    ::java::lang::String extractClassName(const ::java::lang::String&) const ;
+    void setPreference(const ::java::lang::String&, const ::java::lang::String&) const;
+    void endTest(const ::junit::framework::Test&) const;
+    void addError(const ::junit::framework::Test&, const ::java::lang::Throwable&) const;
+    void addFailure(const ::junit::framework::Test&, const ::junit::framework::AssertionFailedError&) const;
+    void testStarted(const ::java::lang::String&) const;
+    void testEnded(const ::java::lang::String&) const;
+    void testFailed(int32_t, const ::junit::framework::Test&, const ::java::lang::Throwable&) const;
+    ::junit::framework::Test getTest(const ::java::lang::String&) const;
+    ::java::lang::String elapsedTimeAsString(int64_t) const;
+    void setLoading(bool) const;
+    ::java::lang::String extractClassName(const ::java::lang::String&) const;
     static ::java::lang::String truncate(const ::java::lang::String&);
-    ::junit::runner::TestSuiteLoader getLoader() const ;
+    ::junit::runner::TestSuiteLoader getLoader() const;
     static ::java::lang::String getPreference(const ::java::lang::String&);
     static int32_t getPreference(const ::java::lang::String&, int32_t);
     static bool inVAJava();

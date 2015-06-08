@@ -32,7 +32,7 @@ public:
     ::java::lang::Iterable& operator=(const ::java::lang::Iterable& x) {obj = x.obj; return *this;}
     ::java::lang::Iterable& operator=(::java::lang::Iterable&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Iterator iterator() const ;
+    ::java::util::Iterator iterator() const;
 
 };
 }

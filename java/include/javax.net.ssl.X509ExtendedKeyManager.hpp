@@ -37,8 +37,8 @@ public:
     ::javax::net::ssl::X509ExtendedKeyManager& operator=(const ::javax::net::ssl::X509ExtendedKeyManager& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::X509ExtendedKeyManager& operator=(::javax::net::ssl::X509ExtendedKeyManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String chooseEngineClientAlias(const std::vector< ::java::lang::String>&, const std::vector< ::java::security::Principal>&, const ::javax::net::ssl::SSLEngine&) const ;
-    ::java::lang::String chooseEngineServerAlias(const ::java::lang::String&, const std::vector< ::java::security::Principal>&, const ::javax::net::ssl::SSLEngine&) const ;
+    ::java::lang::String chooseEngineClientAlias(const std::vector< ::java::lang::String>&, const std::vector< ::java::security::Principal>&, const ::javax::net::ssl::SSLEngine&) const;
+    ::java::lang::String chooseEngineServerAlias(const ::java::lang::String&, const std::vector< ::java::security::Principal>&, const ::javax::net::ssl::SSLEngine&) const;
 
 };
 }

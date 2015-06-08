@@ -40,8 +40,8 @@ public:
     FactoryConfigurationError(const ::java::lang::String&);
     FactoryConfigurationError(const ::java::lang::Exception&);
     FactoryConfigurationError(const ::java::lang::Exception&, const ::java::lang::String&);
-    ::java::lang::String getMessage() const ;
-    ::java::lang::Exception getException() const ;
+    ::java::lang::String getMessage() const;
+    ::java::lang::Exception getException() const;
 
 };
 }

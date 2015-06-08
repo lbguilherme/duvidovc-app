@@ -35,9 +35,9 @@ public:
     ::java::lang::reflect::ParameterizedType& operator=(const ::java::lang::reflect::ParameterizedType& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::ParameterizedType& operator=(::java::lang::reflect::ParameterizedType&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::reflect::Type> getActualTypeArguments() const ;
-    ::java::lang::reflect::Type getOwnerType() const ;
-    ::java::lang::reflect::Type getRawType() const ;
+    std::vector< ::java::lang::reflect::Type> getActualTypeArguments() const;
+    ::java::lang::reflect::Type getOwnerType() const;
+    ::java::lang::reflect::Type getRawType() const;
 
 };
 }

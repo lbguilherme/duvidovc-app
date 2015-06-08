@@ -37,13 +37,13 @@ public:
     ::android::support::v4::util::AtomicFile& operator=(::android::support::v4::util::AtomicFile&& x) {obj = std::move(x.obj); return *this;}
     
     AtomicFile(const ::java::io::File&);
-    ::java::io::File getBaseFile() const ;
-    void delete_() const ;
-    ::java::io::FileOutputStream startWrite() const ;
-    void finishWrite(const ::java::io::FileOutputStream&) const ;
-    void failWrite(const ::java::io::FileOutputStream&) const ;
-    ::java::io::FileInputStream openRead() const ;
-    std::vector< int8_t> readFully() const ;
+    ::java::io::File getBaseFile() const;
+    void delete_() const;
+    ::java::io::FileOutputStream startWrite() const;
+    void finishWrite(const ::java::io::FileOutputStream&) const;
+    void failWrite(const ::java::io::FileOutputStream&) const;
+    ::java::io::FileInputStream openRead() const;
+    std::vector< int8_t> readFully() const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::java::util::MissingResourceException& operator=(::java::util::MissingResourceException&& x) {obj = std::move(x.obj); return *this;}
     
     MissingResourceException(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getClassName() const ;
-    ::java::lang::String getKey() const ;
+    ::java::lang::String getClassName() const;
+    ::java::lang::String getKey() const;
 
 };
 }

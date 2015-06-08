@@ -40,9 +40,9 @@ public:
     
     PKIXBuilderParameters(const ::java::util::Set&, const ::java::security::cert::CertSelector&);
     PKIXBuilderParameters(const ::java::security::KeyStore&, const ::java::security::cert::CertSelector&);
-    int32_t getMaxPathLength() const ;
-    void setMaxPathLength(int32_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t getMaxPathLength() const;
+    void setMaxPathLength(int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

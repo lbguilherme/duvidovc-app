@@ -40,19 +40,19 @@ public:
     ::android::bluetooth::BluetoothDevice& operator=(const ::android::bluetooth::BluetoothDevice& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothDevice& operator=(::android::bluetooth::BluetoothDevice&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String getAddress() const ;
-    ::java::lang::String getName() const ;
-    int32_t getBondState() const ;
-    ::android::bluetooth::BluetoothClass getBluetoothClass() const ;
-    std::vector< ::android::os::ParcelUuid> getUuids() const ;
-    bool fetchUuidsWithSdp() const ;
-    ::android::bluetooth::BluetoothSocket createRfcommSocketToServiceRecord(const ::java::util::UUID&) const ;
-    ::android::bluetooth::BluetoothSocket createInsecureRfcommSocketToServiceRecord(const ::java::util::UUID&) const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String getAddress() const;
+    ::java::lang::String getName() const;
+    int32_t getBondState() const;
+    ::android::bluetooth::BluetoothClass getBluetoothClass() const;
+    std::vector< ::android::os::ParcelUuid> getUuids() const;
+    bool fetchUuidsWithSdp() const;
+    ::android::bluetooth::BluetoothSocket createRfcommSocketToServiceRecord(const ::java::util::UUID&) const;
+    ::android::bluetooth::BluetoothSocket createInsecureRfcommSocketToServiceRecord(const ::java::util::UUID&) const;
 
 };
 }

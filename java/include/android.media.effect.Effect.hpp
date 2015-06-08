@@ -36,11 +36,11 @@ public:
     ::android::media::effect::Effect& operator=(::android::media::effect::Effect&& x) {obj = std::move(x.obj); return *this;}
     
     Effect();
-    ::java::lang::String getName() const ;
-    void apply(int32_t, int32_t, int32_t, int32_t) const ;
-    void setParameter(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    void setUpdateListener(const ::android::media::effect::EffectUpdateListener&) const ;
-    void release() const ;
+    ::java::lang::String getName() const;
+    void apply(int32_t, int32_t, int32_t, int32_t) const;
+    void setParameter(const ::java::lang::String&, const ::java::lang::Object&) const;
+    void setUpdateListener(const ::android::media::effect::EffectUpdateListener&) const;
+    void release() const;
 
 };
 }

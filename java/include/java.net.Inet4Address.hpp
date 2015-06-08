@@ -33,16 +33,16 @@ public:
     ::java::net::Inet4Address& operator=(const ::java::net::Inet4Address& x) {obj = x.obj; return *this;}
     ::java::net::Inet4Address& operator=(::java::net::Inet4Address&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isAnyLocalAddress() const ;
-    bool isLinkLocalAddress() const ;
-    bool isLoopbackAddress() const ;
-    bool isMCGlobal() const ;
-    bool isMCLinkLocal() const ;
-    bool isMCNodeLocal() const ;
-    bool isMCOrgLocal() const ;
-    bool isMCSiteLocal() const ;
-    bool isMulticastAddress() const ;
-    bool isSiteLocalAddress() const ;
+    bool isAnyLocalAddress() const;
+    bool isLinkLocalAddress() const;
+    bool isLoopbackAddress() const;
+    bool isMCGlobal() const;
+    bool isMCLinkLocal() const;
+    bool isMCNodeLocal() const;
+    bool isMCOrgLocal() const;
+    bool isMCSiteLocal() const;
+    bool isMulticastAddress() const;
+    bool isSiteLocalAddress() const;
 
 };
 }

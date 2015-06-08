@@ -40,20 +40,20 @@ public:
     ::android::net::sip::SipProfile& operator=(const ::android::net::sip::SipProfile& x) {obj = x.obj; return *this;}
     ::android::net::sip::SipProfile& operator=(::android::net::sip::SipProfile&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    ::java::lang::String getUriString() const ;
-    ::java::lang::String getDisplayName() const ;
-    ::java::lang::String getUserName() const ;
-    ::java::lang::String getAuthUserName() const ;
-    ::java::lang::String getPassword() const ;
-    ::java::lang::String getSipDomain() const ;
-    int32_t getPort() const ;
-    ::java::lang::String getProtocol() const ;
-    ::java::lang::String getProxyAddress() const ;
-    ::java::lang::String getProfileName() const ;
-    bool getSendKeepAlive() const ;
-    bool getAutoRegistration() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    ::java::lang::String getUriString() const;
+    ::java::lang::String getDisplayName() const;
+    ::java::lang::String getUserName() const;
+    ::java::lang::String getAuthUserName() const;
+    ::java::lang::String getPassword() const;
+    ::java::lang::String getSipDomain() const;
+    int32_t getPort() const;
+    ::java::lang::String getProtocol() const;
+    ::java::lang::String getProxyAddress() const;
+    ::java::lang::String getProfileName() const;
+    bool getSendKeepAlive() const;
+    bool getAutoRegistration() const;
 
 };
 }

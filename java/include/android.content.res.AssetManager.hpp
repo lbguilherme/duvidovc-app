@@ -36,16 +36,16 @@ public:
     ::android::content::res::AssetManager& operator=(const ::android::content::res::AssetManager& x) {obj = x.obj; return *this;}
     ::android::content::res::AssetManager& operator=(::android::content::res::AssetManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    ::java::io::InputStream open(const ::java::lang::String&) const ;
-    ::java::io::InputStream open(const ::java::lang::String&, int32_t) const ;
-    ::android::content::res::AssetFileDescriptor openFd(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> list(const ::java::lang::String&) const ;
-    ::android::content::res::AssetFileDescriptor openNonAssetFd(const ::java::lang::String&) const ;
-    ::android::content::res::AssetFileDescriptor openNonAssetFd(int32_t, const ::java::lang::String&) const ;
-    ::android::content::res::XmlResourceParser openXmlResourceParser(const ::java::lang::String&) const ;
-    ::android::content::res::XmlResourceParser openXmlResourceParser(int32_t, const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> getLocales() const ;
+    void close() const;
+    ::java::io::InputStream open(const ::java::lang::String&) const;
+    ::java::io::InputStream open(const ::java::lang::String&, int32_t) const;
+    ::android::content::res::AssetFileDescriptor openFd(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> list(const ::java::lang::String&) const;
+    ::android::content::res::AssetFileDescriptor openNonAssetFd(const ::java::lang::String&) const;
+    ::android::content::res::AssetFileDescriptor openNonAssetFd(int32_t, const ::java::lang::String&) const;
+    ::android::content::res::XmlResourceParser openXmlResourceParser(const ::java::lang::String&) const;
+    ::android::content::res::XmlResourceParser openXmlResourceParser(int32_t, const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> getLocales() const;
 
 };
 }

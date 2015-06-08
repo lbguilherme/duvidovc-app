@@ -36,7 +36,7 @@ public:
     ::bolts::WebViewAppLinkResolver& operator=(::bolts::WebViewAppLinkResolver&& x) {obj = std::move(x.obj); return *this;}
     
     WebViewAppLinkResolver(const ::android::content::Context&);
-    ::bolts::Task getAppLinkFromUrlInBackground(const ::android::net::Uri&) const ;
+    ::bolts::Task getAppLinkFromUrlInBackground(const ::android::net::Uri&) const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     ::javax::microedition::khronos::opengles::GL10Ext& operator=(const ::javax::microedition::khronos::opengles::GL10Ext& x) {obj = x.obj; return *this;}
     ::javax::microedition::khronos::opengles::GL10Ext& operator=(::javax::microedition::khronos::opengles::GL10Ext&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t glQueryMatrixxOES(const std::vector< int32_t>&, int32_t, const std::vector< int32_t>&, int32_t) const ;
-    int32_t glQueryMatrixxOES(const ::java::nio::IntBuffer&, const ::java::nio::IntBuffer&) const ;
+    int32_t glQueryMatrixxOES(const std::vector< int32_t>&, int32_t, const std::vector< int32_t>&, int32_t) const;
+    int32_t glQueryMatrixxOES(const ::java::nio::IntBuffer&, const ::java::nio::IntBuffer&) const;
 
 };
 }

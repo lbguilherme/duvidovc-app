@@ -42,20 +42,20 @@ public:
     
     static ::android::os::ParcelFileDescriptor open(const ::java::io::File&, int32_t);
     static ::android::os::ParcelFileDescriptor dup(const ::java::io::FileDescriptor&);
-    ::android::os::ParcelFileDescriptor dup() const ;
+    ::android::os::ParcelFileDescriptor dup() const;
     static ::android::os::ParcelFileDescriptor fromFd(int32_t);
     static ::android::os::ParcelFileDescriptor adoptFd(int32_t);
     static ::android::os::ParcelFileDescriptor fromSocket(const ::java::net::Socket&);
     static ::android::os::ParcelFileDescriptor fromDatagramSocket(const ::java::net::DatagramSocket&);
     static std::vector< ::android::os::ParcelFileDescriptor> createPipe();
-    ::java::io::FileDescriptor getFileDescriptor() const ;
-    int64_t getStatSize() const ;
-    int32_t getFd() const ;
-    int32_t detachFd() const ;
-    void close() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::io::FileDescriptor getFileDescriptor() const;
+    int64_t getStatSize() const;
+    int32_t getFd() const;
+    int32_t detachFd() const;
+    void close() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

@@ -41,11 +41,11 @@ public:
     InputStreamReader(const ::java::io::InputStream&, const ::java::lang::String&);
     InputStreamReader(const ::java::io::InputStream&, const ::java::nio::charset::CharsetDecoder&);
     InputStreamReader(const ::java::io::InputStream&, const ::java::nio::charset::Charset&);
-    void close() const ;
-    ::java::lang::String getEncoding() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    bool ready() const ;
+    void close() const;
+    ::java::lang::String getEncoding() const;
+    int32_t read() const;
+    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    bool ready() const;
 
 };
 }

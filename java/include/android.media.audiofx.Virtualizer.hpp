@@ -37,12 +37,12 @@ public:
     ::android::media::audiofx::Virtualizer& operator=(::android::media::audiofx::Virtualizer&& x) {obj = std::move(x.obj); return *this;}
     
     Virtualizer(int32_t, int32_t);
-    bool getStrengthSupported() const ;
-    void setStrength(int16_t) const ;
-    int16_t getRoundedStrength() const ;
-    void setParameterListener(const ::android::media::audiofx::Virtualizer_OnParameterChangeListener&) const ;
-    ::android::media::audiofx::Virtualizer_Settings getProperties() const ;
-    void setProperties(const ::android::media::audiofx::Virtualizer_Settings&) const ;
+    bool getStrengthSupported() const;
+    void setStrength(int16_t) const;
+    int16_t getRoundedStrength() const;
+    void setParameterListener(const ::android::media::audiofx::Virtualizer_OnParameterChangeListener&) const;
+    ::android::media::audiofx::Virtualizer_Settings getProperties() const;
+    void setProperties(const ::android::media::audiofx::Virtualizer_Settings&) const;
 
 };
 }

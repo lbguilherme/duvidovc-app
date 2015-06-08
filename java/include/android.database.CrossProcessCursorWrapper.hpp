@@ -38,9 +38,9 @@ public:
     ::android::database::CrossProcessCursorWrapper& operator=(::android::database::CrossProcessCursorWrapper&& x) {obj = std::move(x.obj); return *this;}
     
     CrossProcessCursorWrapper(const ::android::database::Cursor&);
-    void fillWindow(int32_t, const ::android::database::CursorWindow&) const ;
-    ::android::database::CursorWindow getWindow() const ;
-    bool onMove(int32_t, int32_t) const ;
+    void fillWindow(int32_t, const ::android::database::CursorWindow&) const;
+    ::android::database::CursorWindow getWindow() const;
+    bool onMove(int32_t, int32_t) const;
 
 };
 }

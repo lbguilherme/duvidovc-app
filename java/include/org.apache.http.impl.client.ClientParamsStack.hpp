@@ -42,14 +42,14 @@ public:
     
     ClientParamsStack(const ::org::apache::http::params::HttpParams&, const ::org::apache::http::params::HttpParams&, const ::org::apache::http::params::HttpParams&, const ::org::apache::http::params::HttpParams&);
     ClientParamsStack(const ::org::apache::http::impl::client::ClientParamsStack&, const ::org::apache::http::params::HttpParams&, const ::org::apache::http::params::HttpParams&, const ::org::apache::http::params::HttpParams&, const ::org::apache::http::params::HttpParams&);
-    ::org::apache::http::params::HttpParams getApplicationParams() const ;
-    ::org::apache::http::params::HttpParams getClientParams() const ;
-    ::org::apache::http::params::HttpParams getRequestParams() const ;
-    ::org::apache::http::params::HttpParams getOverrideParams() const ;
-    ::java::lang::Object getParameter(const ::java::lang::String&) const ;
-    ::org::apache::http::params::HttpParams setParameter(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    bool removeParameter(const ::java::lang::String&) const ;
-    ::org::apache::http::params::HttpParams copy() const ;
+    ::org::apache::http::params::HttpParams getApplicationParams() const;
+    ::org::apache::http::params::HttpParams getClientParams() const;
+    ::org::apache::http::params::HttpParams getRequestParams() const;
+    ::org::apache::http::params::HttpParams getOverrideParams() const;
+    ::java::lang::Object getParameter(const ::java::lang::String&) const;
+    ::org::apache::http::params::HttpParams setParameter(const ::java::lang::String&, const ::java::lang::Object&) const;
+    bool removeParameter(const ::java::lang::String&) const;
+    ::org::apache::http::params::HttpParams copy() const;
 
 };
 }

@@ -37,9 +37,9 @@ public:
     ::android::os::ResultReceiver& operator=(::android::os::ResultReceiver&& x) {obj = std::move(x.obj); return *this;}
     
     ResultReceiver(const ::android::os::Handler&);
-    void send(int32_t, const ::android::os::Bundle&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void send(int32_t, const ::android::os::Bundle&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

@@ -40,14 +40,14 @@ public:
     Chronometer(const ::android::content::Context&);
     Chronometer(const ::android::content::Context&, const ::android::util::AttributeSet&);
     Chronometer(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setBase(int64_t) const ;
-    int64_t getBase() const ;
-    void setFormat(const ::java::lang::String&) const ;
-    ::java::lang::String getFormat() const ;
-    void setOnChronometerTickListener(const ::android::widget::Chronometer_OnChronometerTickListener&) const ;
-    ::android::widget::Chronometer_OnChronometerTickListener getOnChronometerTickListener() const ;
-    void start() const ;
-    void stop() const ;
+    void setBase(int64_t) const;
+    int64_t getBase() const;
+    void setFormat(const ::java::lang::String&) const;
+    ::java::lang::String getFormat() const;
+    void setOnChronometerTickListener(const ::android::widget::Chronometer_OnChronometerTickListener&) const;
+    ::android::widget::Chronometer_OnChronometerTickListener getOnChronometerTickListener() const;
+    void start() const;
+    void stop() const;
 
 };
 }

@@ -36,9 +36,9 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_CollectionInfoCompat& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_CollectionInfoCompat&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_CollectionInfoCompat obtain(int32_t, int32_t, bool, int32_t);
-    int32_t getColumnCount() const ;
-    int32_t getRowCount() const ;
-    bool isHierarchical() const ;
+    int32_t getColumnCount() const;
+    int32_t getRowCount() const;
+    bool isHierarchical() const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     ::android::support::v4::util::Pools_SynchronizedPool& operator=(::android::support::v4::util::Pools_SynchronizedPool&& x) {obj = std::move(x.obj); return *this;}
     
     Pools_SynchronizedPool(int32_t);
-    ::java::lang::Object acquire() const ;
-    bool release(const ::java::lang::Object&) const ;
+    ::java::lang::Object acquire() const;
+    bool release(const ::java::lang::Object&) const;
 
 };
 }

@@ -40,14 +40,14 @@ public:
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplApi20& operator=(const ::android::support::v4::app::NotificationCompat_NotificationCompatImplApi20& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplApi20& operator=(::android::support::v4::app::NotificationCompat_NotificationCompatImplApi20&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const ;
-    ::android::support::v4::app::NotificationCompat_Action getAction(const ::android::app::Notification&, int32_t) const ;
-    std::vector< ::android::support::v4::app::NotificationCompat_Action> getActionsFromParcelableArrayList(const ::java::util::ArrayList&) const ;
-    ::java::util::ArrayList getParcelableArrayListForActions(const std::vector< ::android::support::v4::app::NotificationCompat_Action>&) const ;
-    bool getLocalOnly(const ::android::app::Notification&) const ;
-    ::java::lang::String getGroup(const ::android::app::Notification&) const ;
-    bool isGroupSummary(const ::android::app::Notification&) const ;
-    ::java::lang::String getSortKey(const ::android::app::Notification&) const ;
+    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const;
+    ::android::support::v4::app::NotificationCompat_Action getAction(const ::android::app::Notification&, int32_t) const;
+    std::vector< ::android::support::v4::app::NotificationCompat_Action> getActionsFromParcelableArrayList(const ::java::util::ArrayList&) const;
+    ::java::util::ArrayList getParcelableArrayListForActions(const std::vector< ::android::support::v4::app::NotificationCompat_Action>&) const;
+    bool getLocalOnly(const ::android::app::Notification&) const;
+    ::java::lang::String getGroup(const ::android::app::Notification&) const;
+    bool isGroupSummary(const ::android::app::Notification&) const;
+    ::java::lang::String getSortKey(const ::android::app::Notification&) const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     ::android::widget::RemoteViewsService& operator=(::android::widget::RemoteViewsService&& x) {obj = std::move(x.obj); return *this;}
     
     RemoteViewsService();
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    ::android::widget::RemoteViewsService_RemoteViewsFactory onGetViewFactory(const ::android::content::Intent&) const ;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    ::android::widget::RemoteViewsService_RemoteViewsFactory onGetViewFactory(const ::android::content::Intent&) const;
 
 };
 }

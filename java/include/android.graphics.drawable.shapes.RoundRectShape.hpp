@@ -40,8 +40,8 @@ public:
     ::android::graphics::drawable::shapes::RoundRectShape& operator=(::android::graphics::drawable::shapes::RoundRectShape&& x) {obj = std::move(x.obj); return *this;}
     
     RoundRectShape(const std::vector< float>&, const ::android::graphics::RectF&, const std::vector< float>&);
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const ;
-    ::android::graphics::drawable::shapes::RoundRectShape clone() const ;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const;
+    ::android::graphics::drawable::shapes::RoundRectShape clone() const;
 
 };
 }

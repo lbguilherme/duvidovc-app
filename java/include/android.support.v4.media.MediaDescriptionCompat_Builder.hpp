@@ -41,14 +41,14 @@ public:
     ::android::support::v4::media::MediaDescriptionCompat_Builder& operator=(::android::support::v4::media::MediaDescriptionCompat_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     MediaDescriptionCompat_Builder();
-    ::android::support::v4::media::MediaDescriptionCompat_Builder setMediaId(const ::java::lang::String&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat_Builder setTitle(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat_Builder setSubtitle(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat_Builder setDescription(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat_Builder setIconBitmap(const ::android::graphics::Bitmap&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat_Builder setIconUri(const ::android::net::Uri&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat_Builder setExtras(const ::android::os::Bundle&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat build() const ;
+    ::android::support::v4::media::MediaDescriptionCompat_Builder setMediaId(const ::java::lang::String&) const;
+    ::android::support::v4::media::MediaDescriptionCompat_Builder setTitle(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::media::MediaDescriptionCompat_Builder setSubtitle(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::media::MediaDescriptionCompat_Builder setDescription(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::media::MediaDescriptionCompat_Builder setIconBitmap(const ::android::graphics::Bitmap&) const;
+    ::android::support::v4::media::MediaDescriptionCompat_Builder setIconUri(const ::android::net::Uri&) const;
+    ::android::support::v4::media::MediaDescriptionCompat_Builder setExtras(const ::android::os::Bundle&) const;
+    ::android::support::v4::media::MediaDescriptionCompat build() const;
 
 };
 }

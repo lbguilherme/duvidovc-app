@@ -37,12 +37,12 @@ public:
     ::org::w3c::dom::ls::LSSerializer& operator=(const ::org::w3c::dom::ls::LSSerializer& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::ls::LSSerializer& operator=(::org::w3c::dom::ls::LSSerializer&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::DOMConfiguration getDomConfig() const ;
-    ::java::lang::String getNewLine() const ;
-    void setNewLine(const ::java::lang::String&) const ;
-    bool write(const ::org::w3c::dom::Node&, const ::org::w3c::dom::ls::LSOutput&) const ;
-    bool writeToURI(const ::org::w3c::dom::Node&, const ::java::lang::String&) const ;
-    ::java::lang::String writeToString(const ::org::w3c::dom::Node&) const ;
+    ::org::w3c::dom::DOMConfiguration getDomConfig() const;
+    ::java::lang::String getNewLine() const;
+    void setNewLine(const ::java::lang::String&) const;
+    bool write(const ::org::w3c::dom::Node&, const ::org::w3c::dom::ls::LSOutput&) const;
+    bool writeToURI(const ::org::w3c::dom::Node&, const ::java::lang::String&) const;
+    ::java::lang::String writeToString(const ::org::w3c::dom::Node&) const;
 
 };
 }

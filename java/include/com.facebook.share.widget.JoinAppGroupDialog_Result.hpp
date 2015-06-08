@@ -34,7 +34,7 @@ public:
     ::com::facebook::share::widget::JoinAppGroupDialog_Result& operator=(const ::com::facebook::share::widget::JoinAppGroupDialog_Result& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::JoinAppGroupDialog_Result& operator=(::com::facebook::share::widget::JoinAppGroupDialog_Result&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::Bundle getData() const ;
+    ::android::os::Bundle getData() const;
 
 };
 }

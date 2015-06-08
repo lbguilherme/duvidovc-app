@@ -32,7 +32,7 @@ public:
     ::android::security::KeyChainAliasCallback& operator=(const ::android::security::KeyChainAliasCallback& x) {obj = x.obj; return *this;}
     ::android::security::KeyChainAliasCallback& operator=(::android::security::KeyChainAliasCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void alias(const ::java::lang::String&) const ;
+    void alias(const ::java::lang::String&) const;
 
 };
 }

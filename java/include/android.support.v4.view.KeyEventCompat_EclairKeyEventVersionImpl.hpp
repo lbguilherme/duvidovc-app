@@ -39,10 +39,10 @@ public:
     ::android::support::v4::view::KeyEventCompat_EclairKeyEventVersionImpl& operator=(const ::android::support::v4::view::KeyEventCompat_EclairKeyEventVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::KeyEventCompat_EclairKeyEventVersionImpl& operator=(::android::support::v4::view::KeyEventCompat_EclairKeyEventVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void startTracking(const ::android::view::KeyEvent&) const ;
-    bool isTracking(const ::android::view::KeyEvent&) const ;
-    ::java::lang::Object getKeyDispatcherState(const ::android::view::View&) const ;
-    bool dispatch(const ::android::view::KeyEvent&, const ::android::view::KeyEvent_Callback&, const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    void startTracking(const ::android::view::KeyEvent&) const;
+    bool isTracking(const ::android::view::KeyEvent&) const;
+    ::java::lang::Object getKeyDispatcherState(const ::android::view::View&) const;
+    bool dispatch(const ::android::view::KeyEvent&, const ::android::view::KeyEvent_Callback&, const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

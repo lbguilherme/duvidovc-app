@@ -34,12 +34,12 @@ public:
     ::java::net::InterfaceAddress& operator=(const ::java::net::InterfaceAddress& x) {obj = x.obj; return *this;}
     ::java::net::InterfaceAddress& operator=(::java::net::InterfaceAddress&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    ::java::net::InetAddress getAddress() const ;
-    ::java::net::InetAddress getBroadcast() const ;
-    int16_t getNetworkPrefixLength() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    ::java::net::InetAddress getAddress() const;
+    ::java::net::InetAddress getBroadcast() const;
+    int16_t getNetworkPrefixLength() const;
 
 };
 }

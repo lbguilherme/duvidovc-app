@@ -33,7 +33,7 @@ public:
     ::android::drm::DrmManagerClient_OnEventListener& operator=(const ::android::drm::DrmManagerClient_OnEventListener& x) {obj = x.obj; return *this;}
     ::android::drm::DrmManagerClient_OnEventListener& operator=(::android::drm::DrmManagerClient_OnEventListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onEvent(const ::android::drm::DrmManagerClient&, const ::android::drm::DrmEvent&) const ;
+    void onEvent(const ::android::drm::DrmManagerClient&, const ::android::drm::DrmEvent&) const;
 
 };
 }

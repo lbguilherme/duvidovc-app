@@ -34,9 +34,9 @@ public:
     ::android::util::DisplayMetrics& operator=(::android::util::DisplayMetrics&& x) {obj = std::move(x.obj); return *this;}
     
     DisplayMetrics();
-    void setTo(const ::android::util::DisplayMetrics&) const ;
-    void setToDefaults() const ;
-    ::java::lang::String toString() const ;
+    void setTo(const ::android::util::DisplayMetrics&) const;
+    void setToDefaults() const;
+    ::java::lang::String toString() const;
 
 };
 }

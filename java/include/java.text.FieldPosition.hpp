@@ -37,15 +37,15 @@ public:
     FieldPosition(int32_t);
     FieldPosition(const ::java::text::Format_Field&);
     FieldPosition(const ::java::text::Format_Field&, int32_t);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t getBeginIndex() const ;
-    int32_t getEndIndex() const ;
-    int32_t getField() const ;
-    ::java::text::Format_Field getFieldAttribute() const ;
-    int32_t hashCode() const ;
-    void setBeginIndex(int32_t) const ;
-    void setEndIndex(int32_t) const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t getBeginIndex() const;
+    int32_t getEndIndex() const;
+    int32_t getField() const;
+    ::java::text::Format_Field getFieldAttribute() const;
+    int32_t hashCode() const;
+    void setBeginIndex(int32_t) const;
+    void setEndIndex(int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

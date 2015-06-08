@@ -36,10 +36,10 @@ public:
     ::java::security::acl::Group& operator=(const ::java::security::acl::Group& x) {obj = x.obj; return *this;}
     ::java::security::acl::Group& operator=(::java::security::acl::Group&& x) {obj = std::move(x.obj); return *this;}
     
-    bool addMember(const ::java::security::Principal&) const ;
-    bool removeMember(const ::java::security::Principal&) const ;
-    bool isMember(const ::java::security::Principal&) const ;
-    ::java::util::Enumeration members() const ;
+    bool addMember(const ::java::security::Principal&) const;
+    bool removeMember(const ::java::security::Principal&) const;
+    bool isMember(const ::java::security::Principal&) const;
+    ::java::util::Enumeration members() const;
 
 };
 }

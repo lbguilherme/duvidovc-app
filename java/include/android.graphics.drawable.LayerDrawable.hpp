@@ -46,31 +46,31 @@ public:
     ::android::graphics::drawable::LayerDrawable& operator=(::android::graphics::drawable::LayerDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     LayerDrawable(const std::vector< ::android::graphics::drawable::Drawable>&);
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    ::android::graphics::drawable::Drawable findDrawableByLayerId(int32_t) const ;
-    void setId(int32_t, int32_t) const ;
-    int32_t getNumberOfLayers() const ;
-    ::android::graphics::drawable::Drawable getDrawable(int32_t) const ;
-    int32_t getId(int32_t) const ;
-    bool setDrawableByLayerId(int32_t, const ::android::graphics::drawable::Drawable&) const ;
-    void setLayerInset(int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const ;
-    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    int32_t getChangingConfigurations() const ;
-    bool getPadding(const ::android::graphics::Rect&) const ;
-    bool setVisible(bool, bool) const ;
-    void setDither(bool) const ;
-    void setAlpha(int32_t) const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    void setOpacity(int32_t) const ;
-    int32_t getOpacity() const ;
-    bool isStateful() const ;
-    int32_t getIntrinsicWidth() const ;
-    int32_t getIntrinsicHeight() const ;
-    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    ::android::graphics::drawable::Drawable findDrawableByLayerId(int32_t) const;
+    void setId(int32_t, int32_t) const;
+    int32_t getNumberOfLayers() const;
+    ::android::graphics::drawable::Drawable getDrawable(int32_t) const;
+    int32_t getId(int32_t) const;
+    bool setDrawableByLayerId(int32_t, const ::android::graphics::drawable::Drawable&) const;
+    void setLayerInset(int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const;
+    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const;
+    void draw(const ::android::graphics::Canvas&) const;
+    int32_t getChangingConfigurations() const;
+    bool getPadding(const ::android::graphics::Rect&) const;
+    bool setVisible(bool, bool) const;
+    void setDither(bool) const;
+    void setAlpha(int32_t) const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    void setOpacity(int32_t) const;
+    int32_t getOpacity() const;
+    bool isStateful() const;
+    int32_t getIntrinsicWidth() const;
+    int32_t getIntrinsicHeight() const;
+    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

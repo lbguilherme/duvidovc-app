@@ -42,11 +42,11 @@ public:
     static ::java::security::cert::CertStore getInstance(const ::java::lang::String&, const ::java::security::cert::CertStoreParameters&);
     static ::java::security::cert::CertStore getInstance(const ::java::lang::String&, const ::java::security::cert::CertStoreParameters&, const ::java::lang::String&);
     static ::java::security::cert::CertStore getInstance(const ::java::lang::String&, const ::java::security::cert::CertStoreParameters&, const ::java::security::Provider&);
-    ::java::lang::String getType() const ;
-    ::java::security::Provider getProvider() const ;
-    ::java::security::cert::CertStoreParameters getCertStoreParameters() const ;
-    ::java::util::Collection getCertificates(const ::java::security::cert::CertSelector&) const ;
-    ::java::util::Collection getCRLs(const ::java::security::cert::CRLSelector&) const ;
+    ::java::lang::String getType() const;
+    ::java::security::Provider getProvider() const;
+    ::java::security::cert::CertStoreParameters getCertStoreParameters() const;
+    ::java::util::Collection getCertificates(const ::java::security::cert::CertSelector&) const;
+    ::java::util::Collection getCRLs(const ::java::security::cert::CRLSelector&) const;
     static ::java::lang::String getDefaultType();
 
 };

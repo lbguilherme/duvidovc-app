@@ -45,16 +45,16 @@ public:
     TextAppearanceSpan(const ::android::content::Context&, int32_t, int32_t);
     TextAppearanceSpan(const ::java::lang::String&, int32_t, int32_t, const ::android::content::res::ColorStateList&, const ::android::content::res::ColorStateList&);
     TextAppearanceSpan(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String getFamily() const ;
-    ::android::content::res::ColorStateList getTextColor() const ;
-    ::android::content::res::ColorStateList getLinkTextColor() const ;
-    int32_t getTextSize() const ;
-    int32_t getTextStyle() const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
-    void updateMeasureState(const ::android::text::TextPaint&) const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String getFamily() const;
+    ::android::content::res::ColorStateList getTextColor() const;
+    ::android::content::res::ColorStateList getLinkTextColor() const;
+    int32_t getTextSize() const;
+    int32_t getTextStyle() const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
+    void updateMeasureState(const ::android::text::TextPaint&) const;
 
 };
 }

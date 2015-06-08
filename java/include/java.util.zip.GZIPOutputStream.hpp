@@ -37,8 +37,8 @@ public:
     
     GZIPOutputStream(const ::java::io::OutputStream&);
     GZIPOutputStream(const ::java::io::OutputStream&, int32_t);
-    void finish() const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    void finish() const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

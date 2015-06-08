@@ -45,14 +45,14 @@ public:
     DropBoxManager_Entry(const ::java::lang::String&, int64_t, const std::vector< int8_t>&, int32_t);
     DropBoxManager_Entry(const ::java::lang::String&, int64_t, const ::android::os::ParcelFileDescriptor&, int32_t);
     DropBoxManager_Entry(const ::java::lang::String&, int64_t, const ::java::io::File&, int32_t);
-    void close() const ;
-    ::java::lang::String getTag() const ;
-    int64_t getTimeMillis() const ;
-    int32_t getFlags() const ;
-    ::java::lang::String getText(int32_t) const ;
-    ::java::io::InputStream getInputStream() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void close() const;
+    ::java::lang::String getTag() const;
+    int64_t getTimeMillis() const;
+    int32_t getFlags() const;
+    ::java::lang::String getText(int32_t) const;
+    ::java::io::InputStream getInputStream() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

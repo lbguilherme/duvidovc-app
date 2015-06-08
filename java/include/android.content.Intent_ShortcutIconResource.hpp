@@ -39,9 +39,9 @@ public:
     
     Intent_ShortcutIconResource();
     static ::android::content::Intent_ShortcutIconResource fromContext(const ::android::content::Context&, int32_t);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

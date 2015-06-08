@@ -32,7 +32,7 @@ public:
     ::android::media::MediaPlayer_OnErrorListener& operator=(const ::android::media::MediaPlayer_OnErrorListener& x) {obj = x.obj; return *this;}
     ::android::media::MediaPlayer_OnErrorListener& operator=(::android::media::MediaPlayer_OnErrorListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onError(const ::android::media::MediaPlayer&, int32_t, int32_t) const ;
+    bool onError(const ::android::media::MediaPlayer&, int32_t, int32_t) const;
 
 };
 }

@@ -35,7 +35,7 @@ public:
     ::org::apache::http::cookie::CookieSpecFactory& operator=(const ::org::apache::http::cookie::CookieSpecFactory& x) {obj = x.obj; return *this;}
     ::org::apache::http::cookie::CookieSpecFactory& operator=(::org::apache::http::cookie::CookieSpecFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

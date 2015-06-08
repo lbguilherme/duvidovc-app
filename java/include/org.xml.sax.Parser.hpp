@@ -39,13 +39,13 @@ public:
     ::org::xml::sax::Parser& operator=(const ::org::xml::sax::Parser& x) {obj = x.obj; return *this;}
     ::org::xml::sax::Parser& operator=(::org::xml::sax::Parser&& x) {obj = std::move(x.obj); return *this;}
     
-    void setLocale(const ::java::util::Locale&) const ;
-    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const ;
-    void setDTDHandler(const ::org::xml::sax::DTDHandler&) const ;
-    void setDocumentHandler(const ::org::xml::sax::DocumentHandler&) const ;
-    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const ;
-    void parse(const ::org::xml::sax::InputSource&) const ;
-    void parse(const ::java::lang::String&) const ;
+    void setLocale(const ::java::util::Locale&) const;
+    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const;
+    void setDTDHandler(const ::org::xml::sax::DTDHandler&) const;
+    void setDocumentHandler(const ::org::xml::sax::DocumentHandler&) const;
+    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const;
+    void parse(const ::org::xml::sax::InputSource&) const;
+    void parse(const ::java::lang::String&) const;
 
 };
 }

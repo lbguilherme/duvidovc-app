@@ -32,10 +32,10 @@ public:
     ::android::media::JetPlayer_OnJetEventListener& operator=(const ::android::media::JetPlayer_OnJetEventListener& x) {obj = x.obj; return *this;}
     ::android::media::JetPlayer_OnJetEventListener& operator=(::android::media::JetPlayer_OnJetEventListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onJetEvent(const ::android::media::JetPlayer&, int16_t, int8_t, int8_t, int8_t, int8_t) const ;
-    void onJetUserIdUpdate(const ::android::media::JetPlayer&, int32_t, int32_t) const ;
-    void onJetNumQueuedSegmentUpdate(const ::android::media::JetPlayer&, int32_t) const ;
-    void onJetPauseUpdate(const ::android::media::JetPlayer&, int32_t) const ;
+    void onJetEvent(const ::android::media::JetPlayer&, int16_t, int8_t, int8_t, int8_t, int8_t) const;
+    void onJetUserIdUpdate(const ::android::media::JetPlayer&, int32_t, int32_t) const;
+    void onJetNumQueuedSegmentUpdate(const ::android::media::JetPlayer&, int32_t) const;
+    void onJetPauseUpdate(const ::android::media::JetPlayer&, int32_t) const;
 
 };
 }

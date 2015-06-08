@@ -33,7 +33,7 @@ public:
     ::android::support::v4::print::PrintHelper_OnPrintFinishCallback& operator=(const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback& x) {obj = x.obj; return *this;}
     ::android::support::v4::print::PrintHelper_OnPrintFinishCallback& operator=(::android::support::v4::print::PrintHelper_OnPrintFinishCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onFinish() const ;
+    void onFinish() const;
 
 };
 }

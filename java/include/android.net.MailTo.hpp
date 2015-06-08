@@ -36,12 +36,12 @@ public:
     
     static bool isMailTo(const ::java::lang::String&);
     static ::android::net::MailTo parse(const ::java::lang::String&);
-    ::java::lang::String getTo() const ;
-    ::java::lang::String getCc() const ;
-    ::java::lang::String getSubject() const ;
-    ::java::lang::String getBody() const ;
-    ::java::util::Map getHeaders() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getTo() const;
+    ::java::lang::String getCc() const;
+    ::java::lang::String getSubject() const;
+    ::java::lang::String getBody() const;
+    ::java::util::Map getHeaders() const;
+    ::java::lang::String toString() const;
 
 };
 }

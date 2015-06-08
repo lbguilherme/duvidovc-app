@@ -31,9 +31,9 @@ public:
     ::android::widget::Checkable& operator=(const ::android::widget::Checkable& x) {obj = x.obj; return *this;}
     ::android::widget::Checkable& operator=(::android::widget::Checkable&& x) {obj = std::move(x.obj); return *this;}
     
-    void setChecked(bool) const ;
-    bool isChecked() const ;
-    void toggle() const ;
+    void setChecked(bool) const;
+    bool isChecked() const;
+    void toggle() const;
 
 };
 }

@@ -42,7 +42,7 @@ public:
     ::org::apache::http::impl::conn::DefaultHttpRoutePlanner& operator=(::org::apache::http::impl::conn::DefaultHttpRoutePlanner&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultHttpRoutePlanner(const ::org::apache::http::conn::scheme::SchemeRegistry&);
-    ::org::apache::http::conn::routing::HttpRoute determineRoute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::conn::routing::HttpRoute determineRoute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

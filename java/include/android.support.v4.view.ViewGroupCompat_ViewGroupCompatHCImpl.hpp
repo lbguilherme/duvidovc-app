@@ -36,7 +36,7 @@ public:
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatHCImpl& operator=(const ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatHCImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatHCImpl& operator=(::android::support::v4::view::ViewGroupCompat_ViewGroupCompatHCImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setMotionEventSplittingEnabled(const ::android::view::ViewGroup&, bool) const ;
+    void setMotionEventSplittingEnabled(const ::android::view::ViewGroup&, bool) const;
 
 };
 }

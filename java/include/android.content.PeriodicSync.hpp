@@ -39,9 +39,9 @@ public:
     ::android::content::PeriodicSync& operator=(::android::content::PeriodicSync&& x) {obj = std::move(x.obj); return *this;}
     
     PeriodicSync(const ::android::accounts::Account&, const ::java::lang::String&, const ::android::os::Bundle&, int64_t);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    bool equals(const ::java::lang::Object&) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

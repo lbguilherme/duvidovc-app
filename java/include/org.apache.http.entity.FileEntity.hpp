@@ -43,12 +43,12 @@ public:
     ::org::apache::http::entity::FileEntity& operator=(::org::apache::http::entity::FileEntity&& x) {obj = std::move(x.obj); return *this;}
     
     FileEntity(const ::java::io::File&, const ::java::lang::String&);
-    bool isRepeatable() const ;
-    int64_t getContentLength() const ;
-    ::java::io::InputStream getContent() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    ::java::lang::Object clone() const ;
+    bool isRepeatable() const;
+    int64_t getContentLength() const;
+    ::java::io::InputStream getContent() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    ::java::lang::Object clone() const;
 
 };
 }

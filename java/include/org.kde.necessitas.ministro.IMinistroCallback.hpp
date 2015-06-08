@@ -36,7 +36,7 @@ public:
     ::org::kde::necessitas::ministro::IMinistroCallback& operator=(const ::org::kde::necessitas::ministro::IMinistroCallback& x) {obj = x.obj; return *this;}
     ::org::kde::necessitas::ministro::IMinistroCallback& operator=(::org::kde::necessitas::ministro::IMinistroCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void loaderReady(const ::android::os::Bundle&) const ;
+    void loaderReady(const ::android::os::Bundle&) const;
 
 };
 }

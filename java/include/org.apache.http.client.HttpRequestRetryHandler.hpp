@@ -35,7 +35,7 @@ public:
     ::org::apache::http::client::HttpRequestRetryHandler& operator=(const ::org::apache::http::client::HttpRequestRetryHandler& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::HttpRequestRetryHandler& operator=(::org::apache::http::client::HttpRequestRetryHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool retryRequest(const ::java::io::IOException&, int32_t, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool retryRequest(const ::java::io::IOException&, int32_t, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

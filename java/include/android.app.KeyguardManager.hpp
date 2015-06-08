@@ -34,9 +34,9 @@ public:
     ::android::app::KeyguardManager& operator=(const ::android::app::KeyguardManager& x) {obj = x.obj; return *this;}
     ::android::app::KeyguardManager& operator=(::android::app::KeyguardManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::app::KeyguardManager_KeyguardLock newKeyguardLock(const ::java::lang::String&) const ;
-    bool inKeyguardRestrictedInputMode() const ;
-    void exitKeyguardSecurely(const ::android::app::KeyguardManager_OnKeyguardExitResult&) const ;
+    ::android::app::KeyguardManager_KeyguardLock newKeyguardLock(const ::java::lang::String&) const;
+    bool inKeyguardRestrictedInputMode() const;
+    void exitKeyguardSecurely(const ::android::app::KeyguardManager_OnKeyguardExitResult&) const;
 
 };
 }

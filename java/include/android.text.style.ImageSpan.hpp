@@ -51,8 +51,8 @@ public:
     ImageSpan(const ::android::content::Context&, const ::android::net::Uri&, int32_t);
     ImageSpan(const ::android::content::Context&, int32_t);
     ImageSpan(const ::android::content::Context&, int32_t, int32_t);
-    ::android::graphics::drawable::Drawable getDrawable() const ;
-    ::java::lang::String getSource() const ;
+    ::android::graphics::drawable::Drawable getDrawable() const;
+    ::java::lang::String getSource() const;
 
 };
 }

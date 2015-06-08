@@ -32,8 +32,8 @@ public:
     ::android::view::InputQueue_Callback& operator=(const ::android::view::InputQueue_Callback& x) {obj = x.obj; return *this;}
     ::android::view::InputQueue_Callback& operator=(::android::view::InputQueue_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onInputQueueCreated(const ::android::view::InputQueue&) const ;
-    void onInputQueueDestroyed(const ::android::view::InputQueue&) const ;
+    void onInputQueueCreated(const ::android::view::InputQueue&) const;
+    void onInputQueueDestroyed(const ::android::view::InputQueue&) const;
 
 };
 }

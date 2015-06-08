@@ -39,16 +39,16 @@ public:
     ::org::apache::http::HttpResponse& operator=(const ::org::apache::http::HttpResponse& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpResponse& operator=(::org::apache::http::HttpResponse&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::StatusLine getStatusLine() const ;
-    void setStatusLine(const ::org::apache::http::StatusLine&) const ;
-    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t) const ;
-    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t, const ::java::lang::String&) const ;
-    void setStatusCode(int32_t) const ;
-    void setReasonPhrase(const ::java::lang::String&) const ;
-    ::org::apache::http::HttpEntity getEntity() const ;
-    void setEntity(const ::org::apache::http::HttpEntity&) const ;
-    ::java::util::Locale getLocale() const ;
-    void setLocale(const ::java::util::Locale&) const ;
+    ::org::apache::http::StatusLine getStatusLine() const;
+    void setStatusLine(const ::org::apache::http::StatusLine&) const;
+    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t) const;
+    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t, const ::java::lang::String&) const;
+    void setStatusCode(int32_t) const;
+    void setReasonPhrase(const ::java::lang::String&) const;
+    ::org::apache::http::HttpEntity getEntity() const;
+    void setEntity(const ::org::apache::http::HttpEntity&) const;
+    ::java::util::Locale getLocale() const;
+    void setLocale(const ::java::util::Locale&) const;
 
 };
 }

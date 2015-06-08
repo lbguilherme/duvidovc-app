@@ -37,13 +37,13 @@ public:
     ::java::util::AbstractSequentialList& operator=(const ::java::util::AbstractSequentialList& x) {obj = x.obj; return *this;}
     ::java::util::AbstractSequentialList& operator=(::java::util::AbstractSequentialList&& x) {obj = std::move(x.obj); return *this;}
     
-    void add(int32_t, const ::java::lang::Object&) const ;
-    bool addAll(int32_t, const ::java::util::Collection&) const ;
-    ::java::lang::Object get(int32_t) const ;
-    ::java::util::Iterator iterator() const ;
-    ::java::util::ListIterator listIterator(int32_t) const ;
-    ::java::lang::Object remove(int32_t) const ;
-    ::java::lang::Object set(int32_t, const ::java::lang::Object&) const ;
+    void add(int32_t, const ::java::lang::Object&) const;
+    bool addAll(int32_t, const ::java::util::Collection&) const;
+    ::java::lang::Object get(int32_t) const;
+    ::java::util::Iterator iterator() const;
+    ::java::util::ListIterator listIterator(int32_t) const;
+    ::java::lang::Object remove(int32_t) const;
+    ::java::lang::Object set(int32_t, const ::java::lang::Object&) const;
 
 };
 }

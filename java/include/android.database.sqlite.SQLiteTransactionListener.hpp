@@ -32,9 +32,9 @@ public:
     ::android::database::sqlite::SQLiteTransactionListener& operator=(const ::android::database::sqlite::SQLiteTransactionListener& x) {obj = x.obj; return *this;}
     ::android::database::sqlite::SQLiteTransactionListener& operator=(::android::database::sqlite::SQLiteTransactionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onBegin() const ;
-    void onCommit() const ;
-    void onRollback() const ;
+    void onBegin() const;
+    void onCommit() const;
+    void onRollback() const;
 
 };
 }

@@ -34,24 +34,24 @@ public:
     ::java::nio::Buffer& operator=(const ::java::nio::Buffer& x) {obj = x.obj; return *this;}
     ::java::nio::Buffer& operator=(::java::nio::Buffer&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object array() const ;
-    int32_t arrayOffset() const ;
-    int32_t capacity() const ;
-    ::java::nio::Buffer clear() const ;
-    ::java::nio::Buffer flip() const ;
-    bool hasArray() const ;
-    bool hasRemaining() const ;
-    bool isDirect() const ;
-    bool isReadOnly() const ;
-    int32_t limit() const ;
-    ::java::nio::Buffer limit(int32_t) const ;
-    ::java::nio::Buffer mark() const ;
-    int32_t position() const ;
-    ::java::nio::Buffer position(int32_t) const ;
-    int32_t remaining() const ;
-    ::java::nio::Buffer reset() const ;
-    ::java::nio::Buffer rewind() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Object array() const;
+    int32_t arrayOffset() const;
+    int32_t capacity() const;
+    ::java::nio::Buffer clear() const;
+    ::java::nio::Buffer flip() const;
+    bool hasArray() const;
+    bool hasRemaining() const;
+    bool isDirect() const;
+    bool isReadOnly() const;
+    int32_t limit() const;
+    ::java::nio::Buffer limit(int32_t) const;
+    ::java::nio::Buffer mark() const;
+    int32_t position() const;
+    ::java::nio::Buffer position(int32_t) const;
+    int32_t remaining() const;
+    ::java::nio::Buffer reset() const;
+    ::java::nio::Buffer rewind() const;
+    ::java::lang::String toString() const;
 
 };
 }

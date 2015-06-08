@@ -39,15 +39,15 @@ public:
     ::java::lang::Enum& operator=(const ::java::lang::Enum& x) {obj = x.obj; return *this;}
     ::java::lang::Enum& operator=(::java::lang::Enum&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String name() const ;
-    int32_t ordinal() const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t compareTo(const ::java::lang::Enum&) const ;
-    ::java::lang::Class getDeclaringClass() const ;
+    ::java::lang::String name() const;
+    int32_t ordinal() const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t compareTo(const ::java::lang::Enum&) const;
+    ::java::lang::Class getDeclaringClass() const;
     static ::java::lang::Enum valueOf(const ::java::lang::Class&, const ::java::lang::String&);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

@@ -38,9 +38,9 @@ public:
     ::java::nio::channels::ServerSocketChannel& operator=(::java::nio::channels::ServerSocketChannel&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::nio::channels::ServerSocketChannel open();
-    int32_t validOps() const ;
-    ::java::net::ServerSocket socket() const ;
-    ::java::nio::channels::SocketChannel accept() const ;
+    int32_t validOps() const;
+    ::java::net::ServerSocket socket() const;
+    ::java::nio::channels::SocketChannel accept() const;
 
 };
 }

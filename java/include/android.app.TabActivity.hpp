@@ -37,11 +37,11 @@ public:
     ::android::app::TabActivity& operator=(::android::app::TabActivity&& x) {obj = std::move(x.obj); return *this;}
     
     TabActivity();
-    void setDefaultTab(const ::java::lang::String&) const ;
-    void setDefaultTab(int32_t) const ;
-    void onContentChanged() const ;
-    ::android::widget::TabHost getTabHost() const ;
-    ::android::widget::TabWidget getTabWidget() const ;
+    void setDefaultTab(const ::java::lang::String&) const;
+    void setDefaultTab(int32_t) const;
+    void onContentChanged() const;
+    ::android::widget::TabHost getTabHost() const;
+    ::android::widget::TabWidget getTabWidget() const;
 
 };
 }

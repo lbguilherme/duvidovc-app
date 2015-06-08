@@ -42,11 +42,11 @@ public:
     static ::javax::net::ssl::TrustManagerFactory getInstance(const ::java::lang::String&);
     static ::javax::net::ssl::TrustManagerFactory getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::javax::net::ssl::TrustManagerFactory getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
-    void init(const ::java::security::KeyStore&) const ;
-    void init(const ::javax::net::ssl::ManagerFactoryParameters&) const ;
-    std::vector< ::javax::net::ssl::TrustManager> getTrustManagers() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
+    void init(const ::java::security::KeyStore&) const;
+    void init(const ::javax::net::ssl::ManagerFactoryParameters&) const;
+    std::vector< ::javax::net::ssl::TrustManager> getTrustManagers() const;
 
 };
 }

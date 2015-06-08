@@ -40,10 +40,10 @@ public:
     
     XPathException(const ::java::lang::String&);
     XPathException(const ::java::lang::Throwable&);
-    ::java::lang::Throwable getCause() const ;
-    void printStackTrace(const ::java::io::PrintStream&) const ;
-    void printStackTrace() const ;
-    void printStackTrace(const ::java::io::PrintWriter&) const ;
+    ::java::lang::Throwable getCause() const;
+    void printStackTrace(const ::java::io::PrintStream&) const;
+    void printStackTrace() const;
+    void printStackTrace(const ::java::io::PrintWriter&) const;
 
 };
 }

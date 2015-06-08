@@ -40,23 +40,23 @@ public:
     
     AtomicLong(int64_t);
     AtomicLong();
-    int64_t get() const ;
-    void set(int64_t) const ;
-    void lazySet(int64_t) const ;
-    int64_t getAndSet(int64_t) const ;
-    bool compareAndSet(int64_t, int64_t) const ;
-    bool weakCompareAndSet(int64_t, int64_t) const ;
-    int64_t getAndIncrement() const ;
-    int64_t getAndDecrement() const ;
-    int64_t getAndAdd(int64_t) const ;
-    int64_t incrementAndGet() const ;
-    int64_t decrementAndGet() const ;
-    int64_t addAndGet(int64_t) const ;
-    ::java::lang::String toString() const ;
-    int32_t intValue() const ;
-    int64_t longValue() const ;
-    float floatValue() const ;
-    double doubleValue() const ;
+    int64_t get() const;
+    void set(int64_t) const;
+    void lazySet(int64_t) const;
+    int64_t getAndSet(int64_t) const;
+    bool compareAndSet(int64_t, int64_t) const;
+    bool weakCompareAndSet(int64_t, int64_t) const;
+    int64_t getAndIncrement() const;
+    int64_t getAndDecrement() const;
+    int64_t getAndAdd(int64_t) const;
+    int64_t incrementAndGet() const;
+    int64_t decrementAndGet() const;
+    int64_t addAndGet(int64_t) const;
+    ::java::lang::String toString() const;
+    int32_t intValue() const;
+    int64_t longValue() const;
+    float floatValue() const;
+    double doubleValue() const;
 
 };
 }

@@ -45,19 +45,19 @@ public:
     ::java::nio::channels::DatagramChannel& operator=(::java::nio::channels::DatagramChannel&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::nio::channels::DatagramChannel open();
-    int32_t validOps() const ;
-    ::java::net::DatagramSocket socket() const ;
-    bool isConnected() const ;
-    ::java::nio::channels::DatagramChannel connect(const ::java::net::SocketAddress&) const ;
-    ::java::nio::channels::DatagramChannel disconnect() const ;
-    ::java::net::SocketAddress receive(const ::java::nio::ByteBuffer&) const ;
-    int32_t send(const ::java::nio::ByteBuffer&, const ::java::net::SocketAddress&) const ;
-    int32_t read(const ::java::nio::ByteBuffer&) const ;
-    int64_t read(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const ;
-    int64_t read(const std::vector< ::java::nio::ByteBuffer>&) const ;
-    int32_t write(const ::java::nio::ByteBuffer&) const ;
-    int64_t write(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const ;
-    int64_t write(const std::vector< ::java::nio::ByteBuffer>&) const ;
+    int32_t validOps() const;
+    ::java::net::DatagramSocket socket() const;
+    bool isConnected() const;
+    ::java::nio::channels::DatagramChannel connect(const ::java::net::SocketAddress&) const;
+    ::java::nio::channels::DatagramChannel disconnect() const;
+    ::java::net::SocketAddress receive(const ::java::nio::ByteBuffer&) const;
+    int32_t send(const ::java::nio::ByteBuffer&, const ::java::net::SocketAddress&) const;
+    int32_t read(const ::java::nio::ByteBuffer&) const;
+    int64_t read(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const;
+    int64_t read(const std::vector< ::java::nio::ByteBuffer>&) const;
+    int32_t write(const ::java::nio::ByteBuffer&) const;
+    int64_t write(const std::vector< ::java::nio::ByteBuffer>&, int32_t, int32_t) const;
+    int64_t write(const std::vector< ::java::nio::ByteBuffer>&) const;
 
 };
 }

@@ -37,10 +37,10 @@ public:
     ::org::apache::http::impl::io::HttpTransportMetricsImpl& operator=(::org::apache::http::impl::io::HttpTransportMetricsImpl&& x) {obj = std::move(x.obj); return *this;}
     
     HttpTransportMetricsImpl();
-    int64_t getBytesTransferred() const ;
-    void setBytesTransferred(int64_t) const ;
-    void incrementBytesTransferred(int64_t) const ;
-    void reset() const ;
+    int64_t getBytesTransferred() const;
+    void setBytesTransferred(int64_t) const;
+    void incrementBytesTransferred(int64_t) const;
+    void reset() const;
 
 };
 }

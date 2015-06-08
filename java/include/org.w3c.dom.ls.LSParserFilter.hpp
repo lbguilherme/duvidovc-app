@@ -35,9 +35,9 @@ public:
     ::org::w3c::dom::ls::LSParserFilter& operator=(const ::org::w3c::dom::ls::LSParserFilter& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::ls::LSParserFilter& operator=(::org::w3c::dom::ls::LSParserFilter&& x) {obj = std::move(x.obj); return *this;}
     
-    int16_t startElement(const ::org::w3c::dom::Element&) const ;
-    int16_t acceptNode(const ::org::w3c::dom::Node&) const ;
-    int32_t getWhatToShow() const ;
+    int16_t startElement(const ::org::w3c::dom::Element&) const;
+    int16_t acceptNode(const ::org::w3c::dom::Node&) const;
+    int32_t getWhatToShow() const;
 
 };
 }

@@ -35,7 +35,7 @@ public:
     
     EnvironmentalReverb_Settings();
     EnvironmentalReverb_Settings(const ::java::lang::String&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

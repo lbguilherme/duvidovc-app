@@ -35,7 +35,7 @@ public:
     ::android::text::style::TabStopSpan_Standard& operator=(::android::text::style::TabStopSpan_Standard&& x) {obj = std::move(x.obj); return *this;}
     
     TabStopSpan_Standard(int32_t);
-    int32_t getTabStop() const ;
+    int32_t getTabStop() const;
 
 };
 }

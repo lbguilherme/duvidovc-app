@@ -40,9 +40,9 @@ public:
     ::android::animation::ObjectAnimator& operator=(::android::animation::ObjectAnimator&& x) {obj = std::move(x.obj); return *this;}
     
     ObjectAnimator();
-    void setPropertyName(const ::java::lang::String&) const ;
-    void setProperty(const ::android::util::Property&) const ;
-    ::java::lang::String getPropertyName() const ;
+    void setPropertyName(const ::java::lang::String&) const;
+    void setProperty(const ::android::util::Property&) const;
+    ::java::lang::String getPropertyName() const;
     static ::android::animation::ObjectAnimator ofInt(const ::java::lang::Object&, const ::java::lang::String&, const std::vector< int32_t>&);
     static ::android::animation::ObjectAnimator ofInt(const ::java::lang::Object&, const ::android::util::Property&, const std::vector< int32_t>&);
     static ::android::animation::ObjectAnimator ofFloat(const ::java::lang::Object&, const ::java::lang::String&, const std::vector< float>&);
@@ -50,17 +50,17 @@ public:
     static ::android::animation::ObjectAnimator ofObject(const ::java::lang::Object&, const ::java::lang::String&, const ::android::animation::TypeEvaluator&, const std::vector< ::java::lang::Object>&);
     static ::android::animation::ObjectAnimator ofObject(const ::java::lang::Object&, const ::android::util::Property&, const ::android::animation::TypeEvaluator&, const std::vector< ::java::lang::Object>&);
     static ::android::animation::ObjectAnimator ofPropertyValuesHolder(const ::java::lang::Object&, const std::vector< ::android::animation::PropertyValuesHolder>&);
-    void setIntValues(const std::vector< int32_t>&) const ;
-    void setFloatValues(const std::vector< float>&) const ;
-    void setObjectValues(const std::vector< ::java::lang::Object>&) const ;
-    void start() const ;
-    ::android::animation::ObjectAnimator setDuration(int64_t) const ;
-    ::java::lang::Object getTarget() const ;
-    void setTarget(const ::java::lang::Object&) const ;
-    void setupStartValues() const ;
-    void setupEndValues() const ;
-    ::android::animation::ObjectAnimator clone() const ;
-    ::java::lang::String toString() const ;
+    void setIntValues(const std::vector< int32_t>&) const;
+    void setFloatValues(const std::vector< float>&) const;
+    void setObjectValues(const std::vector< ::java::lang::Object>&) const;
+    void start() const;
+    ::android::animation::ObjectAnimator setDuration(int64_t) const;
+    ::java::lang::Object getTarget() const;
+    void setTarget(const ::java::lang::Object&) const;
+    void setupStartValues() const;
+    void setupEndValues() const;
+    ::android::animation::ObjectAnimator clone() const;
+    ::java::lang::String toString() const;
 
 };
 }

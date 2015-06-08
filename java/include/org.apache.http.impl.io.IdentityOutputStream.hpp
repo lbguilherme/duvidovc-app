@@ -38,11 +38,11 @@ public:
     ::org::apache::http::impl::io::IdentityOutputStream& operator=(::org::apache::http::impl::io::IdentityOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
     IdentityOutputStream(const ::org::apache::http::io::SessionOutputBuffer&);
-    void close() const ;
-    void flush() const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(const std::vector< int8_t>&) const ;
-    void write(int32_t) const ;
+    void close() const;
+    void flush() const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(const std::vector< int8_t>&) const;
+    void write(int32_t) const;
 
 };
 }

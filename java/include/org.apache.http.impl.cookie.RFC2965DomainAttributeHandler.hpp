@@ -41,10 +41,10 @@ public:
     ::org::apache::http::impl::cookie::RFC2965DomainAttributeHandler& operator=(::org::apache::http::impl::cookie::RFC2965DomainAttributeHandler&& x) {obj = std::move(x.obj); return *this;}
     
     RFC2965DomainAttributeHandler();
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
-    bool domainMatch(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
+    bool domainMatch(const ::java::lang::String&, const ::java::lang::String&) const;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
 
 };
 }

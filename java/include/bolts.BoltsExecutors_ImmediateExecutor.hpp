@@ -33,7 +33,7 @@ public:
     ::bolts::BoltsExecutors_ImmediateExecutor& operator=(const ::bolts::BoltsExecutors_ImmediateExecutor& x) {obj = x.obj; return *this;}
     ::bolts::BoltsExecutors_ImmediateExecutor& operator=(::bolts::BoltsExecutors_ImmediateExecutor&& x) {obj = std::move(x.obj); return *this;}
     
-    void execute(const ::java::lang::Runnable&) const ;
+    void execute(const ::java::lang::Runnable&) const;
 
 };
 }

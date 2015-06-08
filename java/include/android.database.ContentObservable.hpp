@@ -36,10 +36,10 @@ public:
     ::android::database::ContentObservable& operator=(::android::database::ContentObservable&& x) {obj = std::move(x.obj); return *this;}
     
     ContentObservable();
-    void registerObserver(const ::android::database::ContentObserver&) const ;
-    void dispatchChange(bool) const ;
-    void notifyChange(bool) const ;
-    void registerObserver(const ::java::lang::Object&) const ;
+    void registerObserver(const ::android::database::ContentObserver&) const;
+    void dispatchChange(bool) const;
+    void notifyChange(bool) const;
+    void registerObserver(const ::java::lang::Object&) const;
 
 };
 }

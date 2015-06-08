@@ -43,7 +43,7 @@ public:
     LinearLayout_LayoutParams(int32_t, int32_t, float);
     LinearLayout_LayoutParams(const ::android::view::ViewGroup_LayoutParams&);
     LinearLayout_LayoutParams(const ::android::view::ViewGroup_MarginLayoutParams&);
-    ::java::lang::String debug(const ::java::lang::String&) const ;
+    ::java::lang::String debug(const ::java::lang::String&) const;
 
 };
 }

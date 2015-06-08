@@ -35,10 +35,10 @@ public:
     ::android::view::ActionProvider& operator=(::android::view::ActionProvider&& x) {obj = std::move(x.obj); return *this;}
     
     ActionProvider(const ::android::content::Context&);
-    ::android::view::View onCreateActionView() const ;
-    bool onPerformDefaultAction() const ;
-    bool hasSubMenu() const ;
-    void onPrepareSubMenu(const ::android::view::SubMenu&) const ;
+    ::android::view::View onCreateActionView() const;
+    bool onPerformDefaultAction() const;
+    bool hasSubMenu() const;
+    void onPrepareSubMenu(const ::android::view::SubMenu&) const;
 
 };
 }

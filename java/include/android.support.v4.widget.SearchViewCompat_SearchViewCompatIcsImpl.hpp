@@ -37,9 +37,9 @@ public:
     ::android::support::v4::widget::SearchViewCompat_SearchViewCompatIcsImpl& operator=(const ::android::support::v4::widget::SearchViewCompat_SearchViewCompatIcsImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SearchViewCompat_SearchViewCompatIcsImpl& operator=(::android::support::v4::widget::SearchViewCompat_SearchViewCompatIcsImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View newSearchView(const ::android::content::Context&) const ;
-    void setImeOptions(const ::android::view::View&, int32_t) const ;
-    void setInputType(const ::android::view::View&, int32_t) const ;
+    ::android::view::View newSearchView(const ::android::content::Context&) const;
+    void setImeOptions(const ::android::view::View&, int32_t) const;
+    void setInputType(const ::android::view::View&, int32_t) const;
 
 };
 }

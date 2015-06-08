@@ -45,11 +45,11 @@ public:
     BulletSpan(int32_t);
     BulletSpan(int32_t, int32_t);
     BulletSpan(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t getLeadingMargin(bool) const ;
-    void drawLeadingMargin(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, bool, const ::android::text::Layout&) const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t getLeadingMargin(bool) const;
+    void drawLeadingMargin(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, bool, const ::android::text::Layout&) const;
 
 };
 }

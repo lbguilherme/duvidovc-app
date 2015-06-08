@@ -39,15 +39,15 @@ public:
     ::org::apache::http::impl::SocketHttpClientConnection& operator=(::org::apache::http::impl::SocketHttpClientConnection&& x) {obj = std::move(x.obj); return *this;}
     
     SocketHttpClientConnection();
-    bool isOpen() const ;
-    ::java::net::InetAddress getLocalAddress() const ;
-    int32_t getLocalPort() const ;
-    ::java::net::InetAddress getRemoteAddress() const ;
-    int32_t getRemotePort() const ;
-    void setSocketTimeout(int32_t) const ;
-    int32_t getSocketTimeout() const ;
-    void shutdown() const ;
-    void close() const ;
+    bool isOpen() const;
+    ::java::net::InetAddress getLocalAddress() const;
+    int32_t getLocalPort() const;
+    ::java::net::InetAddress getRemoteAddress() const;
+    int32_t getRemotePort() const;
+    void setSocketTimeout(int32_t) const;
+    int32_t getSocketTimeout() const;
+    void shutdown() const;
+    void close() const;
 
 };
 }

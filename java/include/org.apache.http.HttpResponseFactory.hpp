@@ -36,8 +36,8 @@ public:
     ::org::apache::http::HttpResponseFactory& operator=(const ::org::apache::http::HttpResponseFactory& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpResponseFactory& operator=(::org::apache::http::HttpResponseFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::ProtocolVersion&, int32_t, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::StatusLine&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::ProtocolVersion&, int32_t, const ::org::apache::http::protocol::HttpContext&) const;
+    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::StatusLine&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

@@ -38,24 +38,24 @@ public:
     ::android::service::wallpaper::WallpaperService_Engine& operator=(::android::service::wallpaper::WallpaperService_Engine&& x) {obj = std::move(x.obj); return *this;}
     
     WallpaperService_Engine(const ::android::service::wallpaper::WallpaperService&);
-    ::android::view::SurfaceHolder getSurfaceHolder() const ;
-    int32_t getDesiredMinimumWidth() const ;
-    int32_t getDesiredMinimumHeight() const ;
-    bool isVisible() const ;
-    bool isPreview() const ;
-    void setTouchEventsEnabled(bool) const ;
-    void setOffsetNotificationsEnabled(bool) const ;
-    void onCreate(const ::android::view::SurfaceHolder&) const ;
-    void onDestroy() const ;
-    void onVisibilityChanged(bool) const ;
-    void onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void onOffsetsChanged(float, float, float, float, int32_t, int32_t) const ;
-    ::android::os::Bundle onCommand(const ::java::lang::String&, int32_t, int32_t, int32_t, const ::android::os::Bundle&, bool) const ;
-    void onDesiredSizeChanged(int32_t, int32_t) const ;
-    void onSurfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const ;
-    void onSurfaceRedrawNeeded(const ::android::view::SurfaceHolder&) const ;
-    void onSurfaceCreated(const ::android::view::SurfaceHolder&) const ;
-    void onSurfaceDestroyed(const ::android::view::SurfaceHolder&) const ;
+    ::android::view::SurfaceHolder getSurfaceHolder() const;
+    int32_t getDesiredMinimumWidth() const;
+    int32_t getDesiredMinimumHeight() const;
+    bool isVisible() const;
+    bool isPreview() const;
+    void setTouchEventsEnabled(bool) const;
+    void setOffsetNotificationsEnabled(bool) const;
+    void onCreate(const ::android::view::SurfaceHolder&) const;
+    void onDestroy() const;
+    void onVisibilityChanged(bool) const;
+    void onTouchEvent(const ::android::view::MotionEvent&) const;
+    void onOffsetsChanged(float, float, float, float, int32_t, int32_t) const;
+    ::android::os::Bundle onCommand(const ::java::lang::String&, int32_t, int32_t, int32_t, const ::android::os::Bundle&, bool) const;
+    void onDesiredSizeChanged(int32_t, int32_t) const;
+    void onSurfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const;
+    void onSurfaceRedrawNeeded(const ::android::view::SurfaceHolder&) const;
+    void onSurfaceCreated(const ::android::view::SurfaceHolder&) const;
+    void onSurfaceDestroyed(const ::android::view::SurfaceHolder&) const;
 
 };
 }

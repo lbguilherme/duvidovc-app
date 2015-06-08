@@ -39,7 +39,7 @@ public:
     ::android::support::v4::app::FragmentTabHost_DummyTabFactory& operator=(::android::support::v4::app::FragmentTabHost_DummyTabFactory&& x) {obj = std::move(x.obj); return *this;}
     
     FragmentTabHost_DummyTabFactory(const ::android::content::Context&);
-    ::android::view::View createTabContent(const ::java::lang::String&) const ;
+    ::android::view::View createTabContent(const ::java::lang::String&) const;
 
 };
 }

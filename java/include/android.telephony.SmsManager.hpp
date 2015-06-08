@@ -35,10 +35,10 @@ public:
     ::android::telephony::SmsManager& operator=(const ::android::telephony::SmsManager& x) {obj = x.obj; return *this;}
     ::android::telephony::SmsManager& operator=(::android::telephony::SmsManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void sendTextMessage(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::android::app::PendingIntent&, const ::android::app::PendingIntent&) const ;
-    ::java::util::ArrayList divideMessage(const ::java::lang::String&) const ;
-    void sendMultipartTextMessage(const ::java::lang::String&, const ::java::lang::String&, const ::java::util::ArrayList&, const ::java::util::ArrayList&, const ::java::util::ArrayList&) const ;
-    void sendDataMessage(const ::java::lang::String&, const ::java::lang::String&, int16_t, const std::vector< int8_t>&, const ::android::app::PendingIntent&, const ::android::app::PendingIntent&) const ;
+    void sendTextMessage(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::android::app::PendingIntent&, const ::android::app::PendingIntent&) const;
+    ::java::util::ArrayList divideMessage(const ::java::lang::String&) const;
+    void sendMultipartTextMessage(const ::java::lang::String&, const ::java::lang::String&, const ::java::util::ArrayList&, const ::java::util::ArrayList&, const ::java::util::ArrayList&) const;
+    void sendDataMessage(const ::java::lang::String&, const ::java::lang::String&, int16_t, const std::vector< int8_t>&, const ::android::app::PendingIntent&, const ::android::app::PendingIntent&) const;
     static ::android::telephony::SmsManager getDefault();
 
 };

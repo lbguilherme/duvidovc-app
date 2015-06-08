@@ -36,7 +36,7 @@ public:
     ::android::util::PrintStreamPrinter& operator=(::android::util::PrintStreamPrinter&& x) {obj = std::move(x.obj); return *this;}
     
     PrintStreamPrinter(const ::java::io::PrintStream&);
-    void println(const ::java::lang::String&) const ;
+    void println(const ::java::lang::String&) const;
 
 };
 }

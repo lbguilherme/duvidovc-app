@@ -32,10 +32,10 @@ public:
     ::android::view::TextureView_SurfaceTextureListener& operator=(const ::android::view::TextureView_SurfaceTextureListener& x) {obj = x.obj; return *this;}
     ::android::view::TextureView_SurfaceTextureListener& operator=(::android::view::TextureView_SurfaceTextureListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSurfaceTextureAvailable(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const ;
-    void onSurfaceTextureSizeChanged(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const ;
-    bool onSurfaceTextureDestroyed(const ::android::graphics::SurfaceTexture&) const ;
-    void onSurfaceTextureUpdated(const ::android::graphics::SurfaceTexture&) const ;
+    void onSurfaceTextureAvailable(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const;
+    void onSurfaceTextureSizeChanged(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const;
+    bool onSurfaceTextureDestroyed(const ::android::graphics::SurfaceTexture&) const;
+    void onSurfaceTextureUpdated(const ::android::graphics::SurfaceTexture&) const;
 
 };
 }

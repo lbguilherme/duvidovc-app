@@ -40,12 +40,12 @@ public:
     
     AbstractMap_SimpleEntry(const ::java::lang::Object&, const ::java::lang::Object&);
     AbstractMap_SimpleEntry(const ::java::util::Map_Entry&);
-    ::java::lang::Object getKey() const ;
-    ::java::lang::Object getValue() const ;
-    ::java::lang::Object setValue(const ::java::lang::Object&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Object getKey() const;
+    ::java::lang::Object getValue() const;
+    ::java::lang::Object setValue(const ::java::lang::Object&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -42,18 +42,18 @@ public:
     static ::java::util::UUID randomUUID();
     static ::java::util::UUID nameUUIDFromBytes(const std::vector< int8_t>&);
     static ::java::util::UUID fromString(const ::java::lang::String&);
-    int64_t getLeastSignificantBits() const ;
-    int64_t getMostSignificantBits() const ;
-    int32_t version() const ;
-    int32_t variant() const ;
-    int64_t timestamp() const ;
-    int32_t clockSequence() const ;
-    int64_t node() const ;
-    int32_t compareTo(const ::java::util::UUID&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int64_t getLeastSignificantBits() const;
+    int64_t getMostSignificantBits() const;
+    int32_t version() const;
+    int32_t variant() const;
+    int64_t timestamp() const;
+    int32_t clockSequence() const;
+    int64_t node() const;
+    int32_t compareTo(const ::java::util::UUID&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

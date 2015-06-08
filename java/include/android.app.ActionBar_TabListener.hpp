@@ -33,9 +33,9 @@ public:
     ::android::app::ActionBar_TabListener& operator=(const ::android::app::ActionBar_TabListener& x) {obj = x.obj; return *this;}
     ::android::app::ActionBar_TabListener& operator=(::android::app::ActionBar_TabListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onTabSelected(const ::android::app::ActionBar_Tab&, const ::android::app::FragmentTransaction&) const ;
-    void onTabUnselected(const ::android::app::ActionBar_Tab&, const ::android::app::FragmentTransaction&) const ;
-    void onTabReselected(const ::android::app::ActionBar_Tab&, const ::android::app::FragmentTransaction&) const ;
+    void onTabSelected(const ::android::app::ActionBar_Tab&, const ::android::app::FragmentTransaction&) const;
+    void onTabUnselected(const ::android::app::ActionBar_Tab&, const ::android::app::FragmentTransaction&) const;
+    void onTabReselected(const ::android::app::ActionBar_Tab&, const ::android::app::FragmentTransaction&) const;
 
 };
 }

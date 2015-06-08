@@ -33,9 +33,9 @@ public:
     ::org::w3c::dom::DOMStringList& operator=(const ::org::w3c::dom::DOMStringList& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMStringList& operator=(::org::w3c::dom::DOMStringList&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String item(int32_t) const ;
-    int32_t getLength() const ;
-    bool contains(const ::java::lang::String&) const ;
+    ::java::lang::String item(int32_t) const;
+    int32_t getLength() const;
+    bool contains(const ::java::lang::String&) const;
 
 };
 }

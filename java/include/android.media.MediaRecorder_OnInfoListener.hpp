@@ -32,7 +32,7 @@ public:
     ::android::media::MediaRecorder_OnInfoListener& operator=(const ::android::media::MediaRecorder_OnInfoListener& x) {obj = x.obj; return *this;}
     ::android::media::MediaRecorder_OnInfoListener& operator=(::android::media::MediaRecorder_OnInfoListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onInfo(const ::android::media::MediaRecorder&, int32_t, int32_t) const ;
+    void onInfo(const ::android::media::MediaRecorder&, int32_t, int32_t) const;
 
 };
 }

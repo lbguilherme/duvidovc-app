@@ -34,9 +34,9 @@ public:
     ::android::content::Intent_FilterComparison& operator=(::android::content::Intent_FilterComparison&& x) {obj = std::move(x.obj); return *this;}
     
     Intent_FilterComparison(const ::android::content::Intent&);
-    ::android::content::Intent getIntent() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    ::android::content::Intent getIntent() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

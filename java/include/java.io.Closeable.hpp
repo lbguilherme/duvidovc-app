@@ -31,7 +31,7 @@ public:
     ::java::io::Closeable& operator=(const ::java::io::Closeable& x) {obj = x.obj; return *this;}
     ::java::io::Closeable& operator=(::java::io::Closeable&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
+    void close() const;
 
 };
 }

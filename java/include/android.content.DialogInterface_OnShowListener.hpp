@@ -32,7 +32,7 @@ public:
     ::android::content::DialogInterface_OnShowListener& operator=(const ::android::content::DialogInterface_OnShowListener& x) {obj = x.obj; return *this;}
     ::android::content::DialogInterface_OnShowListener& operator=(::android::content::DialogInterface_OnShowListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onShow(const ::android::content::DialogInterface&) const ;
+    void onShow(const ::android::content::DialogInterface&) const;
 
 };
 }

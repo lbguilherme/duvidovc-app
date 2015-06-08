@@ -36,13 +36,13 @@ public:
     ::android::os::WorkSource& operator=(::android::os::WorkSource&& x) {obj = std::move(x.obj); return *this;}
     
     WorkSource();
-    void clear() const ;
-    bool diff(const ::android::os::WorkSource&) const ;
-    void set(const ::android::os::WorkSource&) const ;
-    bool add(const ::android::os::WorkSource&) const ;
-    bool remove(const ::android::os::WorkSource&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void clear() const;
+    bool diff(const ::android::os::WorkSource&) const;
+    void set(const ::android::os::WorkSource&) const;
+    bool add(const ::android::os::WorkSource&) const;
+    bool remove(const ::android::os::WorkSource&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

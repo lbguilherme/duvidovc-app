@@ -39,15 +39,15 @@ public:
     ::java::sql::SQLXML& operator=(const ::java::sql::SQLXML& x) {obj = x.obj; return *this;}
     ::java::sql::SQLXML& operator=(::java::sql::SQLXML&& x) {obj = std::move(x.obj); return *this;}
     
-    void free() const ;
-    ::java::io::InputStream getBinaryStream() const ;
-    ::java::io::OutputStream setBinaryStream() const ;
-    ::java::io::Reader getCharacterStream() const ;
-    ::java::io::Writer setCharacterStream() const ;
-    ::java::lang::String getString() const ;
-    void setString(const ::java::lang::String&) const ;
-    ::javax::xml::transform::Source getSource(const ::java::lang::Class&) const ;
-    ::javax::xml::transform::Result setResult(const ::java::lang::Class&) const ;
+    void free() const;
+    ::java::io::InputStream getBinaryStream() const;
+    ::java::io::OutputStream setBinaryStream() const;
+    ::java::io::Reader getCharacterStream() const;
+    ::java::io::Writer setCharacterStream() const;
+    ::java::lang::String getString() const;
+    void setString(const ::java::lang::String&) const;
+    ::javax::xml::transform::Source getSource(const ::java::lang::Class&) const;
+    ::javax::xml::transform::Result setResult(const ::java::lang::Class&) const;
 
 };
 }

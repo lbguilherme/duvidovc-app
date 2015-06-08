@@ -40,9 +40,9 @@ public:
     
     NotificationCompat_BigTextStyle();
     NotificationCompat_BigTextStyle(const ::android::support::v4::app::NotificationCompat_Builder&);
-    ::android::support::v4::app::NotificationCompat_BigTextStyle setBigContentTitle(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::NotificationCompat_BigTextStyle setSummaryText(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::NotificationCompat_BigTextStyle bigText(const ::java::lang::CharSequence&) const ;
+    ::android::support::v4::app::NotificationCompat_BigTextStyle setBigContentTitle(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::NotificationCompat_BigTextStyle setSummaryText(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::NotificationCompat_BigTextStyle bigText(const ::java::lang::CharSequence&) const;
 
 };
 }

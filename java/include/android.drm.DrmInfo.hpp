@@ -36,13 +36,13 @@ public:
     
     DrmInfo(int32_t, const std::vector< int8_t>&, const ::java::lang::String&);
     DrmInfo(int32_t, const ::java::lang::String&, const ::java::lang::String&);
-    void put(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object get(const ::java::lang::String&) const ;
-    ::java::util::Iterator keyIterator() const ;
-    ::java::util::Iterator iterator() const ;
-    std::vector< int8_t> getData() const ;
-    ::java::lang::String getMimeType() const ;
-    int32_t getInfoType() const ;
+    void put(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object get(const ::java::lang::String&) const;
+    ::java::util::Iterator keyIterator() const;
+    ::java::util::Iterator iterator() const;
+    std::vector< int8_t> getData() const;
+    ::java::lang::String getMimeType() const;
+    int32_t getInfoType() const;
 
 };
 }

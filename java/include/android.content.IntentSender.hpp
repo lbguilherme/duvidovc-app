@@ -41,14 +41,14 @@ public:
     ::android::content::IntentSender& operator=(const ::android::content::IntentSender& x) {obj = x.obj; return *this;}
     ::android::content::IntentSender& operator=(::android::content::IntentSender&& x) {obj = std::move(x.obj); return *this;}
     
-    void sendIntent(const ::android::content::Context&, int32_t, const ::android::content::Intent&, const ::android::content::IntentSender_OnFinished&, const ::android::os::Handler&) const ;
-    void sendIntent(const ::android::content::Context&, int32_t, const ::android::content::Intent&, const ::android::content::IntentSender_OnFinished&, const ::android::os::Handler&, const ::java::lang::String&) const ;
-    ::java::lang::String getTargetPackage() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void sendIntent(const ::android::content::Context&, int32_t, const ::android::content::Intent&, const ::android::content::IntentSender_OnFinished&, const ::android::os::Handler&) const;
+    void sendIntent(const ::android::content::Context&, int32_t, const ::android::content::Intent&, const ::android::content::IntentSender_OnFinished&, const ::android::os::Handler&, const ::java::lang::String&) const;
+    ::java::lang::String getTargetPackage() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
     static void writeIntentSenderOrNullToParcel(const ::android::content::IntentSender&, const ::android::os::Parcel&);
     static ::android::content::IntentSender readIntentSenderOrNullFromParcel(const ::android::os::Parcel&);
 

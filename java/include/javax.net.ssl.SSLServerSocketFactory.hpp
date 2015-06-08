@@ -37,8 +37,8 @@ public:
     ::javax::net::ssl::SSLServerSocketFactory& operator=(::javax::net::ssl::SSLServerSocketFactory&& x) {obj = std::move(x.obj); return *this;}
     
     static ::javax::net::ServerSocketFactory getDefault();
-    std::vector< ::java::lang::String> getDefaultCipherSuites() const ;
-    std::vector< ::java::lang::String> getSupportedCipherSuites() const ;
+    std::vector< ::java::lang::String> getDefaultCipherSuites() const;
+    std::vector< ::java::lang::String> getSupportedCipherSuites() const;
 
 };
 }

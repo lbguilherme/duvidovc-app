@@ -31,7 +31,7 @@ public:
     ::java::io::ObjectInputValidation& operator=(const ::java::io::ObjectInputValidation& x) {obj = x.obj; return *this;}
     ::java::io::ObjectInputValidation& operator=(::java::io::ObjectInputValidation&& x) {obj = std::move(x.obj); return *this;}
     
-    void validateObject() const ;
+    void validateObject() const;
 
 };
 }

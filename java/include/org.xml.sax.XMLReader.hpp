@@ -39,20 +39,20 @@ public:
     ::org::xml::sax::XMLReader& operator=(const ::org::xml::sax::XMLReader& x) {obj = x.obj; return *this;}
     ::org::xml::sax::XMLReader& operator=(::org::xml::sax::XMLReader&& x) {obj = std::move(x.obj); return *this;}
     
-    bool getFeature(const ::java::lang::String&) const ;
-    void setFeature(const ::java::lang::String&, bool) const ;
-    ::java::lang::Object getProperty(const ::java::lang::String&) const ;
-    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const ;
-    ::org::xml::sax::EntityResolver getEntityResolver() const ;
-    void setDTDHandler(const ::org::xml::sax::DTDHandler&) const ;
-    ::org::xml::sax::DTDHandler getDTDHandler() const ;
-    void setContentHandler(const ::org::xml::sax::ContentHandler&) const ;
-    ::org::xml::sax::ContentHandler getContentHandler() const ;
-    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const ;
-    ::org::xml::sax::ErrorHandler getErrorHandler() const ;
-    void parse(const ::org::xml::sax::InputSource&) const ;
-    void parse(const ::java::lang::String&) const ;
+    bool getFeature(const ::java::lang::String&) const;
+    void setFeature(const ::java::lang::String&, bool) const;
+    ::java::lang::Object getProperty(const ::java::lang::String&) const;
+    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const;
+    void setEntityResolver(const ::org::xml::sax::EntityResolver&) const;
+    ::org::xml::sax::EntityResolver getEntityResolver() const;
+    void setDTDHandler(const ::org::xml::sax::DTDHandler&) const;
+    ::org::xml::sax::DTDHandler getDTDHandler() const;
+    void setContentHandler(const ::org::xml::sax::ContentHandler&) const;
+    ::org::xml::sax::ContentHandler getContentHandler() const;
+    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const;
+    ::org::xml::sax::ErrorHandler getErrorHandler() const;
+    void parse(const ::org::xml::sax::InputSource&) const;
+    void parse(const ::java::lang::String&) const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::android::view::LayoutInflater_Factory2& operator=(const ::android::view::LayoutInflater_Factory2& x) {obj = x.obj; return *this;}
     ::android::view::LayoutInflater_Factory2& operator=(::android::view::LayoutInflater_Factory2&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View onCreateView(const ::android::view::View&, const ::java::lang::String&, const ::android::content::Context&, const ::android::util::AttributeSet&) const ;
+    ::android::view::View onCreateView(const ::android::view::View&, const ::java::lang::String&, const ::android::content::Context&, const ::android::util::AttributeSet&) const;
 
 };
 }

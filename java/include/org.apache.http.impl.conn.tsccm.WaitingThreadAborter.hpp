@@ -37,8 +37,8 @@ public:
     ::org::apache::http::impl::conn::tsccm::WaitingThreadAborter& operator=(::org::apache::http::impl::conn::tsccm::WaitingThreadAborter&& x) {obj = std::move(x.obj); return *this;}
     
     WaitingThreadAborter();
-    void abort() const ;
-    void setWaitingThread(const ::org::apache::http::impl::conn::tsccm::WaitingThread&) const ;
+    void abort() const;
+    void setWaitingThread(const ::org::apache::http::impl::conn::tsccm::WaitingThread&) const;
 
 };
 }

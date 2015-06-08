@@ -35,8 +35,8 @@ public:
     ::android::support::v4::widget::SearchViewCompat_OnQueryTextListenerCompat& operator=(::android::support::v4::widget::SearchViewCompat_OnQueryTextListenerCompat&& x) {obj = std::move(x.obj); return *this;}
     
     SearchViewCompat_OnQueryTextListenerCompat();
-    bool onQueryTextSubmit(const ::java::lang::String&) const ;
-    bool onQueryTextChange(const ::java::lang::String&) const ;
+    bool onQueryTextSubmit(const ::java::lang::String&) const;
+    bool onQueryTextChange(const ::java::lang::String&) const;
 
 };
 }

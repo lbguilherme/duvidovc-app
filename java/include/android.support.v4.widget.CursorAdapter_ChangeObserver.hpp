@@ -37,8 +37,8 @@ public:
     ::android::support::v4::widget::CursorAdapter_ChangeObserver& operator=(::android::support::v4::widget::CursorAdapter_ChangeObserver&& x) {obj = std::move(x.obj); return *this;}
     
     CursorAdapter_ChangeObserver(const ::android::support::v4::widget::CursorAdapter&);
-    bool deliverSelfNotifications() const ;
-    void onChange(bool) const ;
+    bool deliverSelfNotifications() const;
+    void onChange(bool) const;
 
 };
 }

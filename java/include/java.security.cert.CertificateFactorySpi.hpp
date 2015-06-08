@@ -41,14 +41,14 @@ public:
     ::java::security::cert::CertificateFactorySpi& operator=(::java::security::cert::CertificateFactorySpi&& x) {obj = std::move(x.obj); return *this;}
     
     CertificateFactorySpi();
-    ::java::security::cert::Certificate engineGenerateCertificate(const ::java::io::InputStream&) const ;
-    ::java::util::Collection engineGenerateCertificates(const ::java::io::InputStream&) const ;
-    ::java::security::cert::CRL engineGenerateCRL(const ::java::io::InputStream&) const ;
-    ::java::util::Collection engineGenerateCRLs(const ::java::io::InputStream&) const ;
-    ::java::security::cert::CertPath engineGenerateCertPath(const ::java::io::InputStream&) const ;
-    ::java::security::cert::CertPath engineGenerateCertPath(const ::java::io::InputStream&, const ::java::lang::String&) const ;
-    ::java::security::cert::CertPath engineGenerateCertPath(const ::java::util::List&) const ;
-    ::java::util::Iterator engineGetCertPathEncodings() const ;
+    ::java::security::cert::Certificate engineGenerateCertificate(const ::java::io::InputStream&) const;
+    ::java::util::Collection engineGenerateCertificates(const ::java::io::InputStream&) const;
+    ::java::security::cert::CRL engineGenerateCRL(const ::java::io::InputStream&) const;
+    ::java::util::Collection engineGenerateCRLs(const ::java::io::InputStream&) const;
+    ::java::security::cert::CertPath engineGenerateCertPath(const ::java::io::InputStream&) const;
+    ::java::security::cert::CertPath engineGenerateCertPath(const ::java::io::InputStream&, const ::java::lang::String&) const;
+    ::java::security::cert::CertPath engineGenerateCertPath(const ::java::util::List&) const;
+    ::java::util::Iterator engineGetCertPathEncodings() const;
 
 };
 }

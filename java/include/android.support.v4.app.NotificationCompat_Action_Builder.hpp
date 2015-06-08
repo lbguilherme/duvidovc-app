@@ -42,11 +42,11 @@ public:
     
     NotificationCompat_Action_Builder(int32_t, const ::java::lang::CharSequence&, const ::android::app::PendingIntent&);
     NotificationCompat_Action_Builder(const ::android::support::v4::app::NotificationCompat_Action&);
-    ::android::support::v4::app::NotificationCompat_Action_Builder addExtras(const ::android::os::Bundle&) const ;
-    ::android::os::Bundle getExtras() const ;
-    ::android::support::v4::app::NotificationCompat_Action_Builder addRemoteInput(const ::android::support::v4::app::RemoteInput&) const ;
-    ::android::support::v4::app::NotificationCompat_Action_Builder extend(const ::android::support::v4::app::NotificationCompat_Action_Extender&) const ;
-    ::android::support::v4::app::NotificationCompat_Action build() const ;
+    ::android::support::v4::app::NotificationCompat_Action_Builder addExtras(const ::android::os::Bundle&) const;
+    ::android::os::Bundle getExtras() const;
+    ::android::support::v4::app::NotificationCompat_Action_Builder addRemoteInput(const ::android::support::v4::app::RemoteInput&) const;
+    ::android::support::v4::app::NotificationCompat_Action_Builder extend(const ::android::support::v4::app::NotificationCompat_Action_Extender&) const;
+    ::android::support::v4::app::NotificationCompat_Action build() const;
 
 };
 }

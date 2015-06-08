@@ -43,27 +43,27 @@ public:
     
     DelayQueue();
     DelayQueue(const ::java::util::Collection&);
-    bool add(const ::java::util::concurrent::Delayed&) const ;
-    bool offer(const ::java::util::concurrent::Delayed&) const ;
-    void put(const ::java::util::concurrent::Delayed&) const ;
-    bool offer(const ::java::util::concurrent::Delayed&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::Delayed poll() const ;
-    ::java::util::concurrent::Delayed take() const ;
-    ::java::util::concurrent::Delayed poll(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::concurrent::Delayed peek() const ;
-    int32_t size() const ;
-    int32_t drainTo(const ::java::util::Collection&) const ;
-    int32_t drainTo(const ::java::util::Collection&, int32_t) const ;
-    void clear() const ;
-    int32_t remainingCapacity() const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
-    bool remove(const ::java::lang::Object&) const ;
-    ::java::util::Iterator iterator() const ;
-    bool add(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void put(const ::java::lang::Object&) const ;
+    bool add(const ::java::util::concurrent::Delayed&) const;
+    bool offer(const ::java::util::concurrent::Delayed&) const;
+    void put(const ::java::util::concurrent::Delayed&) const;
+    bool offer(const ::java::util::concurrent::Delayed&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::Delayed poll() const;
+    ::java::util::concurrent::Delayed take() const;
+    ::java::util::concurrent::Delayed poll(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::concurrent::Delayed peek() const;
+    int32_t size() const;
+    int32_t drainTo(const ::java::util::Collection&) const;
+    int32_t drainTo(const ::java::util::Collection&, int32_t) const;
+    void clear() const;
+    int32_t remainingCapacity() const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
+    bool remove(const ::java::lang::Object&) const;
+    ::java::util::Iterator iterator() const;
+    bool add(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void put(const ::java::lang::Object&) const;
 
 };
 }

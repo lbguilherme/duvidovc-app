@@ -37,14 +37,14 @@ public:
     ::android::accessibilityservice::AccessibilityServiceInfo& operator=(::android::accessibilityservice::AccessibilityServiceInfo&& x) {obj = std::move(x.obj); return *this;}
     
     AccessibilityServiceInfo();
-    ::java::lang::String getId() const ;
-    ::android::content::pm::ResolveInfo getResolveInfo() const ;
-    ::java::lang::String getSettingsActivityName() const ;
-    bool getCanRetrieveWindowContent() const ;
-    ::java::lang::String getDescription() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getId() const;
+    ::android::content::pm::ResolveInfo getResolveInfo() const;
+    ::java::lang::String getSettingsActivityName() const;
+    bool getCanRetrieveWindowContent() const;
+    ::java::lang::String getDescription() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
     static ::java::lang::String feedbackTypeToString(int32_t);
     static ::java::lang::String flagToString(int32_t);
 

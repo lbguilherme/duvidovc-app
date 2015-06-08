@@ -37,23 +37,23 @@ public:
     ::android::media::SoundPool& operator=(::android::media::SoundPool&& x) {obj = std::move(x.obj); return *this;}
     
     SoundPool(int32_t, int32_t, int32_t);
-    int32_t load(const ::java::lang::String&, int32_t) const ;
-    int32_t load(const ::android::content::Context&, int32_t, int32_t) const ;
-    int32_t load(const ::android::content::res::AssetFileDescriptor&, int32_t) const ;
-    int32_t load(const ::java::io::FileDescriptor&, int64_t, int64_t, int32_t) const ;
-    bool unload(int32_t) const ;
-    int32_t play(int32_t, float, float, int32_t, int32_t, float) const ;
-    void pause(int32_t) const ;
-    void resume(int32_t) const ;
-    void autoPause() const ;
-    void autoResume() const ;
-    void stop(int32_t) const ;
-    void setVolume(int32_t, float, float) const ;
-    void setPriority(int32_t, int32_t) const ;
-    void setLoop(int32_t, int32_t) const ;
-    void setRate(int32_t, float) const ;
-    void setOnLoadCompleteListener(const ::android::media::SoundPool_OnLoadCompleteListener&) const ;
-    void release() const ;
+    int32_t load(const ::java::lang::String&, int32_t) const;
+    int32_t load(const ::android::content::Context&, int32_t, int32_t) const;
+    int32_t load(const ::android::content::res::AssetFileDescriptor&, int32_t) const;
+    int32_t load(const ::java::io::FileDescriptor&, int64_t, int64_t, int32_t) const;
+    bool unload(int32_t) const;
+    int32_t play(int32_t, float, float, int32_t, int32_t, float) const;
+    void pause(int32_t) const;
+    void resume(int32_t) const;
+    void autoPause() const;
+    void autoResume() const;
+    void stop(int32_t) const;
+    void setVolume(int32_t, float, float) const;
+    void setPriority(int32_t, int32_t) const;
+    void setLoop(int32_t, int32_t) const;
+    void setRate(int32_t, float) const;
+    void setOnLoadCompleteListener(const ::android::media::SoundPool_OnLoadCompleteListener&) const;
+    void release() const;
 
 };
 }

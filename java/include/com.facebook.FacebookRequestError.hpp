@@ -38,21 +38,21 @@ public:
     ::com::facebook::FacebookRequestError& operator=(::com::facebook::FacebookRequestError&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookRequestError(int32_t, const ::java::lang::String&, const ::java::lang::String&);
-    ::com::facebook::FacebookRequestError_Category getCategory() const ;
-    int32_t getRequestStatusCode() const ;
-    int32_t getErrorCode() const ;
-    int32_t getSubErrorCode() const ;
-    ::java::lang::String getErrorType() const ;
-    ::java::lang::String getErrorMessage() const ;
-    ::java::lang::String getErrorRecoveryMessage() const ;
-    ::java::lang::String getErrorUserMessage() const ;
-    ::java::lang::String getErrorUserTitle() const ;
-    ::org::json::JSONObject getRequestResultBody() const ;
-    ::org::json::JSONObject getRequestResult() const ;
-    ::java::lang::Object getBatchRequestResult() const ;
-    ::java::net::HttpURLConnection getConnection() const ;
-    ::com::facebook::FacebookException getException() const ;
-    ::java::lang::String toString() const ;
+    ::com::facebook::FacebookRequestError_Category getCategory() const;
+    int32_t getRequestStatusCode() const;
+    int32_t getErrorCode() const;
+    int32_t getSubErrorCode() const;
+    ::java::lang::String getErrorType() const;
+    ::java::lang::String getErrorMessage() const;
+    ::java::lang::String getErrorRecoveryMessage() const;
+    ::java::lang::String getErrorUserMessage() const;
+    ::java::lang::String getErrorUserTitle() const;
+    ::org::json::JSONObject getRequestResultBody() const;
+    ::org::json::JSONObject getRequestResult() const;
+    ::java::lang::Object getBatchRequestResult() const;
+    ::java::net::HttpURLConnection getConnection() const;
+    ::com::facebook::FacebookException getException() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -39,15 +39,15 @@ public:
     
     ProcessBuilder(const std::vector< ::java::lang::String>&);
     ProcessBuilder(const ::java::util::List&);
-    ::java::util::List command() const ;
-    ::java::lang::ProcessBuilder command(const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::ProcessBuilder command(const ::java::util::List&) const ;
-    ::java::io::File directory() const ;
-    ::java::lang::ProcessBuilder directory(const ::java::io::File&) const ;
-    ::java::util::Map environment() const ;
-    bool redirectErrorStream() const ;
-    ::java::lang::ProcessBuilder redirectErrorStream(bool) const ;
-    ::java::lang::Process start() const ;
+    ::java::util::List command() const;
+    ::java::lang::ProcessBuilder command(const std::vector< ::java::lang::String>&) const;
+    ::java::lang::ProcessBuilder command(const ::java::util::List&) const;
+    ::java::io::File directory() const;
+    ::java::lang::ProcessBuilder directory(const ::java::io::File&) const;
+    ::java::util::Map environment() const;
+    bool redirectErrorStream() const;
+    ::java::lang::ProcessBuilder redirectErrorStream(bool) const;
+    ::java::lang::Process start() const;
 
 };
 }

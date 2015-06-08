@@ -46,14 +46,14 @@ public:
     HashSet(int32_t);
     HashSet(int32_t, float);
     HashSet(const ::java::util::Collection&);
-    bool add(const ::java::lang::Object&) const ;
-    void clear() const ;
-    ::java::lang::Object clone() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    bool isEmpty() const ;
-    ::java::util::Iterator iterator() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    int32_t size() const ;
+    bool add(const ::java::lang::Object&) const;
+    void clear() const;
+    ::java::lang::Object clone() const;
+    bool contains(const ::java::lang::Object&) const;
+    bool isEmpty() const;
+    ::java::util::Iterator iterator() const;
+    bool remove(const ::java::lang::Object&) const;
+    int32_t size() const;
 
 };
 }

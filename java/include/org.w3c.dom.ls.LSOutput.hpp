@@ -36,14 +36,14 @@ public:
     ::org::w3c::dom::ls::LSOutput& operator=(const ::org::w3c::dom::ls::LSOutput& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::ls::LSOutput& operator=(::org::w3c::dom::ls::LSOutput&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::io::Writer getCharacterStream() const ;
-    void setCharacterStream(const ::java::io::Writer&) const ;
-    ::java::io::OutputStream getByteStream() const ;
-    void setByteStream(const ::java::io::OutputStream&) const ;
-    ::java::lang::String getSystemId() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getEncoding() const ;
-    void setEncoding(const ::java::lang::String&) const ;
+    ::java::io::Writer getCharacterStream() const;
+    void setCharacterStream(const ::java::io::Writer&) const;
+    ::java::io::OutputStream getByteStream() const;
+    void setByteStream(const ::java::io::OutputStream&) const;
+    ::java::lang::String getSystemId() const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getEncoding() const;
+    void setEncoding(const ::java::lang::String&) const;
 
 };
 }

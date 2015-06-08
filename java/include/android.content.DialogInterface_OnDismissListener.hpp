@@ -32,7 +32,7 @@ public:
     ::android::content::DialogInterface_OnDismissListener& operator=(const ::android::content::DialogInterface_OnDismissListener& x) {obj = x.obj; return *this;}
     ::android::content::DialogInterface_OnDismissListener& operator=(::android::content::DialogInterface_OnDismissListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onDismiss(const ::android::content::DialogInterface&) const ;
+    void onDismiss(const ::android::content::DialogInterface&) const;
 
 };
 }

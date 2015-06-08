@@ -47,29 +47,29 @@ public:
     ::android::app::DialogFragment& operator=(::android::app::DialogFragment&& x) {obj = std::move(x.obj); return *this;}
     
     DialogFragment();
-    void setStyle(int32_t, int32_t) const ;
-    void show(const ::android::app::FragmentManager&, const ::java::lang::String&) const ;
-    int32_t show(const ::android::app::FragmentTransaction&, const ::java::lang::String&) const ;
-    void dismiss() const ;
-    void dismissAllowingStateLoss() const ;
-    ::android::app::Dialog getDialog() const ;
-    int32_t getTheme() const ;
-    void setCancelable(bool) const ;
-    bool isCancelable() const ;
-    void setShowsDialog(bool) const ;
-    bool getShowsDialog() const ;
-    void onAttach(const ::android::app::Activity&) const ;
-    void onDetach() const ;
-    void onCreate(const ::android::os::Bundle&) const ;
-    ::android::app::Dialog onCreateDialog(const ::android::os::Bundle&) const ;
-    void onCancel(const ::android::content::DialogInterface&) const ;
-    void onDismiss(const ::android::content::DialogInterface&) const ;
-    void onActivityCreated(const ::android::os::Bundle&) const ;
-    void onStart() const ;
-    void onSaveInstanceState(const ::android::os::Bundle&) const ;
-    void onStop() const ;
-    void onDestroyView() const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
+    void setStyle(int32_t, int32_t) const;
+    void show(const ::android::app::FragmentManager&, const ::java::lang::String&) const;
+    int32_t show(const ::android::app::FragmentTransaction&, const ::java::lang::String&) const;
+    void dismiss() const;
+    void dismissAllowingStateLoss() const;
+    ::android::app::Dialog getDialog() const;
+    int32_t getTheme() const;
+    void setCancelable(bool) const;
+    bool isCancelable() const;
+    void setShowsDialog(bool) const;
+    bool getShowsDialog() const;
+    void onAttach(const ::android::app::Activity&) const;
+    void onDetach() const;
+    void onCreate(const ::android::os::Bundle&) const;
+    ::android::app::Dialog onCreateDialog(const ::android::os::Bundle&) const;
+    void onCancel(const ::android::content::DialogInterface&) const;
+    void onDismiss(const ::android::content::DialogInterface&) const;
+    void onActivityCreated(const ::android::os::Bundle&) const;
+    void onStart() const;
+    void onSaveInstanceState(const ::android::os::Bundle&) const;
+    void onStop() const;
+    void onDestroyView() const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
 
 };
 }

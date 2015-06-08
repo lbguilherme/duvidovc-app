@@ -35,19 +35,19 @@ public:
     ::org::apache::http::util::ByteArrayBuffer& operator=(::org::apache::http::util::ByteArrayBuffer&& x) {obj = std::move(x.obj); return *this;}
     
     ByteArrayBuffer(int32_t);
-    void append(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void append(int32_t) const ;
-    void append(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void append(const ::org::apache::http::util::CharArrayBuffer&, int32_t, int32_t) const ;
-    void clear() const ;
-    std::vector< int8_t> toByteArray() const ;
-    int32_t byteAt(int32_t) const ;
-    int32_t capacity() const ;
-    int32_t length() const ;
-    std::vector< int8_t> buffer() const ;
-    void setLength(int32_t) const ;
-    bool isEmpty() const ;
-    bool isFull() const ;
+    void append(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void append(int32_t) const;
+    void append(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void append(const ::org::apache::http::util::CharArrayBuffer&, int32_t, int32_t) const;
+    void clear() const;
+    std::vector< int8_t> toByteArray() const;
+    int32_t byteAt(int32_t) const;
+    int32_t capacity() const;
+    int32_t length() const;
+    std::vector< int8_t> buffer() const;
+    void setLength(int32_t) const;
+    bool isEmpty() const;
+    bool isFull() const;
 
 };
 }

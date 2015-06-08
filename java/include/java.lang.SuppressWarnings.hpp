@@ -34,7 +34,7 @@ public:
     ::java::lang::SuppressWarnings& operator=(const ::java::lang::SuppressWarnings& x) {obj = x.obj; return *this;}
     ::java::lang::SuppressWarnings& operator=(::java::lang::SuppressWarnings&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::String> value() const ;
+    std::vector< ::java::lang::String> value() const;
 
 };
 }

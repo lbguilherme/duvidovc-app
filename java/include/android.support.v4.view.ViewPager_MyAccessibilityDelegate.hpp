@@ -39,9 +39,9 @@ public:
     ::android::support::v4::view::ViewPager_MyAccessibilityDelegate& operator=(const ::android::support::v4::view::ViewPager_MyAccessibilityDelegate& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPager_MyAccessibilityDelegate& operator=(::android::support::v4::view::ViewPager_MyAccessibilityDelegate&& x) {obj = std::move(x.obj); return *this;}
     
-    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const ;
-    bool performAccessibilityAction(const ::android::view::View&, int32_t, const ::android::os::Bundle&) const ;
+    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const;
+    bool performAccessibilityAction(const ::android::view::View&, int32_t, const ::android::os::Bundle&) const;
 
 };
 }

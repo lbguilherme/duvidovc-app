@@ -33,7 +33,7 @@ public:
     ::javax::crypto::spec::PSource& operator=(const ::javax::crypto::spec::PSource& x) {obj = x.obj; return *this;}
     ::javax::crypto::spec::PSource& operator=(::javax::crypto::spec::PSource&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
+    ::java::lang::String getAlgorithm() const;
 
 };
 }

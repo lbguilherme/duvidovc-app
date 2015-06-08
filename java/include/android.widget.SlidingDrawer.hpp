@@ -42,23 +42,23 @@ public:
     
     SlidingDrawer(const ::android::content::Context&, const ::android::util::AttributeSet&);
     SlidingDrawer(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    bool onInterceptTouchEvent(const ::android::view::MotionEvent&) const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void toggle() const ;
-    void animateToggle() const ;
-    void open() const ;
-    void close() const ;
-    void animateClose() const ;
-    void animateOpen() const ;
-    void setOnDrawerOpenListener(const ::android::widget::SlidingDrawer_OnDrawerOpenListener&) const ;
-    void setOnDrawerCloseListener(const ::android::widget::SlidingDrawer_OnDrawerCloseListener&) const ;
-    void setOnDrawerScrollListener(const ::android::widget::SlidingDrawer_OnDrawerScrollListener&) const ;
-    ::android::view::View getHandle() const ;
-    ::android::view::View getContent() const ;
-    void unlock() const ;
-    void lock() const ;
-    bool isOpened() const ;
-    bool isMoving() const ;
+    bool onInterceptTouchEvent(const ::android::view::MotionEvent&) const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void toggle() const;
+    void animateToggle() const;
+    void open() const;
+    void close() const;
+    void animateClose() const;
+    void animateOpen() const;
+    void setOnDrawerOpenListener(const ::android::widget::SlidingDrawer_OnDrawerOpenListener&) const;
+    void setOnDrawerCloseListener(const ::android::widget::SlidingDrawer_OnDrawerCloseListener&) const;
+    void setOnDrawerScrollListener(const ::android::widget::SlidingDrawer_OnDrawerScrollListener&) const;
+    ::android::view::View getHandle() const;
+    ::android::view::View getContent() const;
+    void unlock() const;
+    void lock() const;
+    bool isOpened() const;
+    bool isMoving() const;
 
 };
 }

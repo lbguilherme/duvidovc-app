@@ -33,17 +33,17 @@ public:
     ::android::content::BroadcastReceiver_PendingResult& operator=(const ::android::content::BroadcastReceiver_PendingResult& x) {obj = x.obj; return *this;}
     ::android::content::BroadcastReceiver_PendingResult& operator=(::android::content::BroadcastReceiver_PendingResult&& x) {obj = std::move(x.obj); return *this;}
     
-    void setResultCode(int32_t) const ;
-    int32_t getResultCode() const ;
-    void setResultData(const ::java::lang::String&) const ;
-    ::java::lang::String getResultData() const ;
-    void setResultExtras(const ::android::os::Bundle&) const ;
-    ::android::os::Bundle getResultExtras(bool) const ;
-    void setResult(int32_t, const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    bool getAbortBroadcast() const ;
-    void abortBroadcast() const ;
-    void clearAbortBroadcast() const ;
-    void finish() const ;
+    void setResultCode(int32_t) const;
+    int32_t getResultCode() const;
+    void setResultData(const ::java::lang::String&) const;
+    ::java::lang::String getResultData() const;
+    void setResultExtras(const ::android::os::Bundle&) const;
+    ::android::os::Bundle getResultExtras(bool) const;
+    void setResult(int32_t, const ::java::lang::String&, const ::android::os::Bundle&) const;
+    bool getAbortBroadcast() const;
+    void abortBroadcast() const;
+    void clearAbortBroadcast() const;
+    void finish() const;
 
 };
 }

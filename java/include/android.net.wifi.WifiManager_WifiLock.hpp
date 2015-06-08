@@ -34,12 +34,12 @@ public:
     ::android::net::wifi::WifiManager_WifiLock& operator=(const ::android::net::wifi::WifiManager_WifiLock& x) {obj = x.obj; return *this;}
     ::android::net::wifi::WifiManager_WifiLock& operator=(::android::net::wifi::WifiManager_WifiLock&& x) {obj = std::move(x.obj); return *this;}
     
-    void acquire() const ;
-    void release() const ;
-    void setReferenceCounted(bool) const ;
-    bool isHeld() const ;
-    void setWorkSource(const ::android::os::WorkSource&) const ;
-    ::java::lang::String toString() const ;
+    void acquire() const;
+    void release() const;
+    void setReferenceCounted(bool) const;
+    bool isHeld() const;
+    void setWorkSource(const ::android::os::WorkSource&) const;
+    ::java::lang::String toString() const;
 
 };
 }

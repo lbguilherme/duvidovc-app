@@ -39,12 +39,12 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoApi22Impl& operator=(const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoApi22Impl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoApi22Impl& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoApi22Impl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat getTraversalBefore(const ::java::lang::Object&) const ;
-    void setTraversalBefore(const ::java::lang::Object&, const ::android::view::View&) const ;
-    void setTraversalBefore(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
-    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat getTraversalAfter(const ::java::lang::Object&) const ;
-    void setTraversalAfter(const ::java::lang::Object&, const ::android::view::View&) const ;
-    void setTraversalAfter(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
+    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat getTraversalBefore(const ::java::lang::Object&) const;
+    void setTraversalBefore(const ::java::lang::Object&, const ::android::view::View&) const;
+    void setTraversalBefore(const ::java::lang::Object&, const ::android::view::View&, int32_t) const;
+    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat getTraversalAfter(const ::java::lang::Object&) const;
+    void setTraversalAfter(const ::java::lang::Object&, const ::android::view::View&) const;
+    void setTraversalAfter(const ::java::lang::Object&, const ::android::view::View&, int32_t) const;
 
 };
 }

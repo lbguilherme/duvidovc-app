@@ -37,7 +37,7 @@ public:
     
     DialerKeyListener();
     static ::android::text::method::DialerKeyListener getInstance();
-    int32_t getInputType() const ;
+    int32_t getInputType() const;
 
 };
 }

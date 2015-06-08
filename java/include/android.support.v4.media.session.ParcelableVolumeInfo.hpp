@@ -39,8 +39,8 @@ public:
     
     ParcelableVolumeInfo(int32_t, int32_t, int32_t, int32_t, int32_t);
     ParcelableVolumeInfo(const ::android::os::Parcel&);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

@@ -37,14 +37,14 @@ public:
     ::java::io::ObjectStreamClass& operator=(const ::java::io::ObjectStreamClass& x) {obj = x.obj; return *this;}
     ::java::io::ObjectStreamClass& operator=(::java::io::ObjectStreamClass&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Class forClass() const ;
-    ::java::io::ObjectStreamField getField(const ::java::lang::String&) const ;
-    std::vector< ::java::io::ObjectStreamField> getFields() const ;
-    ::java::lang::String getName() const ;
-    int64_t getSerialVersionUID() const ;
+    ::java::lang::Class forClass() const;
+    ::java::io::ObjectStreamField getField(const ::java::lang::String&) const;
+    std::vector< ::java::io::ObjectStreamField> getFields() const;
+    ::java::lang::String getName() const;
+    int64_t getSerialVersionUID() const;
     static ::java::io::ObjectStreamClass lookup(const ::java::lang::Class&);
     static ::java::io::ObjectStreamClass lookupAny(const ::java::lang::Class&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

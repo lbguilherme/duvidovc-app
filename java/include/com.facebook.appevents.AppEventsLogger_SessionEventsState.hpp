@@ -38,12 +38,12 @@ public:
     ::com::facebook::appevents::AppEventsLogger_SessionEventsState& operator=(::com::facebook::appevents::AppEventsLogger_SessionEventsState&& x) {obj = std::move(x.obj); return *this;}
     
     AppEventsLogger_SessionEventsState(const ::com::facebook::internal::AttributionIdentifiers&, const ::java::lang::String&, const ::java::lang::String&);
-    void addEvent(const ::com::facebook::appevents::AppEventsLogger_AppEvent&) const ;
-    int32_t getAccumulatedEventCount() const ;
-    void clearInFlightAndStats(bool) const ;
-    int32_t populateRequest(const ::com::facebook::GraphRequest&, bool, bool) const ;
-    ::java::util::List getEventsToPersist() const ;
-    void accumulatePersistedEvents(const ::java::util::List&) const ;
+    void addEvent(const ::com::facebook::appevents::AppEventsLogger_AppEvent&) const;
+    int32_t getAccumulatedEventCount() const;
+    void clearInFlightAndStats(bool) const;
+    int32_t populateRequest(const ::com::facebook::GraphRequest&, bool, bool) const;
+    ::java::util::List getEventsToPersist() const;
+    void accumulatePersistedEvents(const ::java::util::List&) const;
 
 };
 }

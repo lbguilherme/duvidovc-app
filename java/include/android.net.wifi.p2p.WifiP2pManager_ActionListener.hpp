@@ -33,8 +33,8 @@ public:
     ::android::net::wifi::p2p::WifiP2pManager_ActionListener& operator=(const ::android::net::wifi::p2p::WifiP2pManager_ActionListener& x) {obj = x.obj; return *this;}
     ::android::net::wifi::p2p::WifiP2pManager_ActionListener& operator=(::android::net::wifi::p2p::WifiP2pManager_ActionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSuccess() const ;
-    void onFailure(int32_t) const ;
+    void onSuccess() const;
+    void onFailure(int32_t) const;
 
 };
 }

@@ -35,14 +35,14 @@ public:
     
     CharArrayReader(const std::vector< uint16_t>&);
     CharArrayReader(const std::vector< uint16_t>&, int32_t, int32_t);
-    void close() const ;
-    void mark(int32_t) const ;
-    bool markSupported() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    bool ready() const ;
-    void reset() const ;
-    int64_t skip(int64_t) const ;
+    void close() const;
+    void mark(int32_t) const;
+    bool markSupported() const;
+    int32_t read() const;
+    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    bool ready() const;
+    void reset() const;
+    int64_t skip(int64_t) const;
 
 };
 }

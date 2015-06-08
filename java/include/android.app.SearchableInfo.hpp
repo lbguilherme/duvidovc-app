@@ -36,32 +36,32 @@ public:
     ::android::app::SearchableInfo& operator=(const ::android::app::SearchableInfo& x) {obj = x.obj; return *this;}
     ::android::app::SearchableInfo& operator=(::android::app::SearchableInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getSuggestAuthority() const ;
-    ::java::lang::String getSuggestPackage() const ;
-    ::android::content::ComponentName getSearchActivity() const ;
-    bool shouldRewriteQueryFromData() const ;
-    bool shouldRewriteQueryFromText() const ;
-    int32_t getSettingsDescriptionId() const ;
-    ::java::lang::String getSuggestPath() const ;
-    ::java::lang::String getSuggestSelection() const ;
-    ::java::lang::String getSuggestIntentAction() const ;
-    ::java::lang::String getSuggestIntentData() const ;
-    int32_t getSuggestThreshold() const ;
-    int32_t getHintId() const ;
-    bool getVoiceSearchEnabled() const ;
-    bool getVoiceSearchLaunchWebSearch() const ;
-    bool getVoiceSearchLaunchRecognizer() const ;
-    int32_t getVoiceLanguageModeId() const ;
-    int32_t getVoicePromptTextId() const ;
-    int32_t getVoiceLanguageId() const ;
-    int32_t getVoiceMaxResults() const ;
-    int32_t getInputType() const ;
-    int32_t getImeOptions() const ;
-    bool shouldIncludeInGlobalSearch() const ;
-    bool queryAfterZeroResults() const ;
-    bool autoUrlDetect() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getSuggestAuthority() const;
+    ::java::lang::String getSuggestPackage() const;
+    ::android::content::ComponentName getSearchActivity() const;
+    bool shouldRewriteQueryFromData() const;
+    bool shouldRewriteQueryFromText() const;
+    int32_t getSettingsDescriptionId() const;
+    ::java::lang::String getSuggestPath() const;
+    ::java::lang::String getSuggestSelection() const;
+    ::java::lang::String getSuggestIntentAction() const;
+    ::java::lang::String getSuggestIntentData() const;
+    int32_t getSuggestThreshold() const;
+    int32_t getHintId() const;
+    bool getVoiceSearchEnabled() const;
+    bool getVoiceSearchLaunchWebSearch() const;
+    bool getVoiceSearchLaunchRecognizer() const;
+    int32_t getVoiceLanguageModeId() const;
+    int32_t getVoicePromptTextId() const;
+    int32_t getVoiceLanguageId() const;
+    int32_t getVoiceMaxResults() const;
+    int32_t getInputType() const;
+    int32_t getImeOptions() const;
+    bool shouldIncludeInGlobalSearch() const;
+    bool queryAfterZeroResults() const;
+    bool autoUrlDetect() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

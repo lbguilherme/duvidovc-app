@@ -35,14 +35,14 @@ public:
     ::android::os::MemoryFile& operator=(::android::os::MemoryFile&& x) {obj = std::move(x.obj); return *this;}
     
     MemoryFile(const ::java::lang::String&, int32_t);
-    void close() const ;
-    int32_t length() const ;
-    bool isPurgingAllowed() const ;
-    bool allowPurging(bool) const ;
-    ::java::io::InputStream getInputStream() const ;
-    ::java::io::OutputStream getOutputStream() const ;
-    int32_t readBytes(const std::vector< int8_t>&, int32_t, int32_t, int32_t) const ;
-    void writeBytes(const std::vector< int8_t>&, int32_t, int32_t, int32_t) const ;
+    void close() const;
+    int32_t length() const;
+    bool isPurgingAllowed() const;
+    bool allowPurging(bool) const;
+    ::java::io::InputStream getInputStream() const;
+    ::java::io::OutputStream getOutputStream() const;
+    int32_t readBytes(const std::vector< int8_t>&, int32_t, int32_t, int32_t) const;
+    void writeBytes(const std::vector< int8_t>&, int32_t, int32_t, int32_t) const;
 
 };
 }

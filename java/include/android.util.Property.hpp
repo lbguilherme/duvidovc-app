@@ -37,11 +37,11 @@ public:
     
     Property(const ::java::lang::Class&, const ::java::lang::String&);
     static ::android::util::Property of(const ::java::lang::Class&, const ::java::lang::Class&, const ::java::lang::String&);
-    bool isReadOnly() const ;
-    void set(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    ::java::lang::String getName() const ;
-    ::java::lang::Class getType() const ;
+    bool isReadOnly() const;
+    void set(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    ::java::lang::String getName() const;
+    ::java::lang::Class getType() const;
 
 };
 }

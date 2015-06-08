@@ -33,13 +33,13 @@ public:
     ::java::util::regex::MatchResult& operator=(const ::java::util::regex::MatchResult& x) {obj = x.obj; return *this;}
     ::java::util::regex::MatchResult& operator=(::java::util::regex::MatchResult&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t end() const ;
-    int32_t end(int32_t) const ;
-    ::java::lang::String group() const ;
-    ::java::lang::String group(int32_t) const ;
-    int32_t groupCount() const ;
-    int32_t start() const ;
-    int32_t start(int32_t) const ;
+    int32_t end() const;
+    int32_t end(int32_t) const;
+    ::java::lang::String group() const;
+    ::java::lang::String group(int32_t) const;
+    int32_t groupCount() const;
+    int32_t start() const;
+    int32_t start(int32_t) const;
 
 };
 }

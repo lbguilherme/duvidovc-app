@@ -34,10 +34,10 @@ public:
     ::android::webkit::MimeTypeMap& operator=(::android::webkit::MimeTypeMap&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::lang::String getFileExtensionFromUrl(const ::java::lang::String&);
-    bool hasMimeType(const ::java::lang::String&) const ;
-    ::java::lang::String getMimeTypeFromExtension(const ::java::lang::String&) const ;
-    bool hasExtension(const ::java::lang::String&) const ;
-    ::java::lang::String getExtensionFromMimeType(const ::java::lang::String&) const ;
+    bool hasMimeType(const ::java::lang::String&) const;
+    ::java::lang::String getMimeTypeFromExtension(const ::java::lang::String&) const;
+    bool hasExtension(const ::java::lang::String&) const;
+    ::java::lang::String getExtensionFromMimeType(const ::java::lang::String&) const;
     static ::android::webkit::MimeTypeMap getSingleton();
 
 };

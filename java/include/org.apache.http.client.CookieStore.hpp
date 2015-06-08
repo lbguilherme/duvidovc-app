@@ -36,10 +36,10 @@ public:
     ::org::apache::http::client::CookieStore& operator=(const ::org::apache::http::client::CookieStore& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::CookieStore& operator=(::org::apache::http::client::CookieStore&& x) {obj = std::move(x.obj); return *this;}
     
-    void addCookie(const ::org::apache::http::cookie::Cookie&) const ;
-    ::java::util::List getCookies() const ;
-    bool clearExpired(const ::java::util::Date&) const ;
-    void clear() const ;
+    void addCookie(const ::org::apache::http::cookie::Cookie&) const;
+    ::java::util::List getCookies() const;
+    bool clearExpired(const ::java::util::Date&) const;
+    void clear() const;
 
 };
 }

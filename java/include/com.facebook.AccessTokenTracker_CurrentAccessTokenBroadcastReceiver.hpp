@@ -35,7 +35,7 @@ public:
     ::com::facebook::AccessTokenTracker_CurrentAccessTokenBroadcastReceiver& operator=(const ::com::facebook::AccessTokenTracker_CurrentAccessTokenBroadcastReceiver& x) {obj = x.obj; return *this;}
     ::com::facebook::AccessTokenTracker_CurrentAccessTokenBroadcastReceiver& operator=(::com::facebook::AccessTokenTracker_CurrentAccessTokenBroadcastReceiver&& x) {obj = std::move(x.obj); return *this;}
     
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
 
 };
 }

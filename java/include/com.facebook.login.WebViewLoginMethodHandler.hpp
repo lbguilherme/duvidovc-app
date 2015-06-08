@@ -35,8 +35,8 @@ public:
     ::com::facebook::login::WebViewLoginMethodHandler& operator=(const ::com::facebook::login::WebViewLoginMethodHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::login::WebViewLoginMethodHandler& operator=(::com::facebook::login::WebViewLoginMethodHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

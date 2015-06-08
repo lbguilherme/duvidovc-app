@@ -35,10 +35,10 @@ public:
     ::android::net::http::SslCertificate_DName& operator=(::android::net::http::SslCertificate_DName&& x) {obj = std::move(x.obj); return *this;}
     
     SslCertificate_DName(const ::android::net::http::SslCertificate&, const ::java::lang::String&);
-    ::java::lang::String getDName() const ;
-    ::java::lang::String getCName() const ;
-    ::java::lang::String getOName() const ;
-    ::java::lang::String getUName() const ;
+    ::java::lang::String getDName() const;
+    ::java::lang::String getCName() const;
+    ::java::lang::String getOName() const;
+    ::java::lang::String getUName() const;
 
 };
 }

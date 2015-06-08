@@ -39,11 +39,11 @@ public:
     ::android::test::InstrumentationTestRunner& operator=(::android::test::InstrumentationTestRunner&& x) {obj = std::move(x.obj); return *this;}
     
     InstrumentationTestRunner();
-    void onCreate(const ::android::os::Bundle&) const ;
-    void onStart() const ;
-    ::junit::framework::TestSuite getTestSuite() const ;
-    ::junit::framework::TestSuite getAllTests() const ;
-    ::java::lang::ClassLoader getLoader() const ;
+    void onCreate(const ::android::os::Bundle&) const;
+    void onStart() const;
+    ::junit::framework::TestSuite getTestSuite() const;
+    ::junit::framework::TestSuite getAllTests() const;
+    ::java::lang::ClassLoader getLoader() const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::android::net::UrlQuerySanitizer_ValueSanitizer& operator=(const ::android::net::UrlQuerySanitizer_ValueSanitizer& x) {obj = x.obj; return *this;}
     ::android::net::UrlQuerySanitizer_ValueSanitizer& operator=(::android::net::UrlQuerySanitizer_ValueSanitizer&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String sanitize(const ::java::lang::String&) const ;
+    ::java::lang::String sanitize(const ::java::lang::String&) const;
 
 };
 }

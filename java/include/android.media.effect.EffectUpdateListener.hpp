@@ -34,7 +34,7 @@ public:
     ::android::media::effect::EffectUpdateListener& operator=(const ::android::media::effect::EffectUpdateListener& x) {obj = x.obj; return *this;}
     ::android::media::effect::EffectUpdateListener& operator=(::android::media::effect::EffectUpdateListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onEffectUpdated(const ::android::media::effect::Effect&, const ::java::lang::Object&) const ;
+    void onEffectUpdated(const ::android::media::effect::Effect&, const ::java::lang::Object&) const;
 
 };
 }

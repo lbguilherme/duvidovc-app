@@ -33,8 +33,8 @@ public:
     ::android::content::ServiceConnection& operator=(const ::android::content::ServiceConnection& x) {obj = x.obj; return *this;}
     ::android::content::ServiceConnection& operator=(::android::content::ServiceConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const ;
-    void onServiceDisconnected(const ::android::content::ComponentName&) const ;
+    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const;
+    void onServiceDisconnected(const ::android::content::ComponentName&) const;
 
 };
 }

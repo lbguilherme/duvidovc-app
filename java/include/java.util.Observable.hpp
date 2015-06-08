@@ -34,13 +34,13 @@ public:
     ::java::util::Observable& operator=(::java::util::Observable&& x) {obj = std::move(x.obj); return *this;}
     
     Observable();
-    void addObserver(const ::java::util::Observer&) const ;
-    int32_t countObservers() const ;
-    void deleteObserver(const ::java::util::Observer&) const ;
-    void deleteObservers() const ;
-    bool hasChanged() const ;
-    void notifyObservers() const ;
-    void notifyObservers(const ::java::lang::Object&) const ;
+    void addObserver(const ::java::util::Observer&) const;
+    int32_t countObservers() const;
+    void deleteObserver(const ::java::util::Observer&) const;
+    void deleteObservers() const;
+    bool hasChanged() const;
+    void notifyObservers() const;
+    void notifyObservers(const ::java::lang::Object&) const;
 
 };
 }

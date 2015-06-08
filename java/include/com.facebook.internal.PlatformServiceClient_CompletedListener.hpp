@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::PlatformServiceClient_CompletedListener& operator=(const ::com::facebook::internal::PlatformServiceClient_CompletedListener& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::PlatformServiceClient_CompletedListener& operator=(::com::facebook::internal::PlatformServiceClient_CompletedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void completed(const ::android::os::Bundle&) const ;
+    void completed(const ::android::os::Bundle&) const;
 
 };
 }

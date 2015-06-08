@@ -31,10 +31,10 @@ public:
     ::android::widget::HeterogeneousExpandableList& operator=(const ::android::widget::HeterogeneousExpandableList& x) {obj = x.obj; return *this;}
     ::android::widget::HeterogeneousExpandableList& operator=(::android::widget::HeterogeneousExpandableList&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getGroupType(int32_t) const ;
-    int32_t getChildType(int32_t, int32_t) const ;
-    int32_t getGroupTypeCount() const ;
-    int32_t getChildTypeCount() const ;
+    int32_t getGroupType(int32_t) const;
+    int32_t getChildType(int32_t, int32_t) const;
+    int32_t getGroupTypeCount() const;
+    int32_t getChildTypeCount() const;
 
 };
 }

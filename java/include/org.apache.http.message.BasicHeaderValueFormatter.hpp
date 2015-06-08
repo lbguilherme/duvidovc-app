@@ -42,13 +42,13 @@ public:
     
     BasicHeaderValueFormatter();
     static ::java::lang::String formatElements(const std::vector< ::org::apache::http::HeaderElement>&, bool, const ::org::apache::http::message::HeaderValueFormatter&);
-    ::org::apache::http::util::CharArrayBuffer formatElements(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::HeaderElement>&, bool) const ;
+    ::org::apache::http::util::CharArrayBuffer formatElements(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::HeaderElement>&, bool) const;
     static ::java::lang::String formatHeaderElement(const ::org::apache::http::HeaderElement&, bool, const ::org::apache::http::message::HeaderValueFormatter&);
-    ::org::apache::http::util::CharArrayBuffer formatHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::HeaderElement&, bool) const ;
+    ::org::apache::http::util::CharArrayBuffer formatHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::HeaderElement&, bool) const;
     static ::java::lang::String formatParameters(const std::vector< ::org::apache::http::NameValuePair>&, bool, const ::org::apache::http::message::HeaderValueFormatter&);
-    ::org::apache::http::util::CharArrayBuffer formatParameters(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::NameValuePair>&, bool) const ;
+    ::org::apache::http::util::CharArrayBuffer formatParameters(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::NameValuePair>&, bool) const;
     static ::java::lang::String formatNameValuePair(const ::org::apache::http::NameValuePair&, bool, const ::org::apache::http::message::HeaderValueFormatter&);
-    ::org::apache::http::util::CharArrayBuffer formatNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::NameValuePair&, bool) const ;
+    ::org::apache::http::util::CharArrayBuffer formatNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::NameValuePair&, bool) const;
 
 };
 }

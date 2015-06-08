@@ -39,12 +39,12 @@ public:
     ::com::facebook::share::model::SharePhoto& operator=(const ::com::facebook::share::model::SharePhoto& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::SharePhoto& operator=(::com::facebook::share::model::SharePhoto&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::graphics::Bitmap getBitmap() const ;
-    ::android::net::Uri getImageUrl() const ;
-    bool getUserGenerated() const ;
-    ::java::lang::String getCaption() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::graphics::Bitmap getBitmap() const;
+    ::android::net::Uri getImageUrl() const;
+    bool getUserGenerated() const;
+    ::java::lang::String getCaption() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

@@ -40,8 +40,8 @@ public:
     ::org::apache::http::cookie::CookiePathComparator& operator=(::org::apache::http::cookie::CookiePathComparator&& x) {obj = std::move(x.obj); return *this;}
     
     CookiePathComparator();
-    int32_t compare(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::Cookie&) const ;
-    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    int32_t compare(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::Cookie&) const;
+    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

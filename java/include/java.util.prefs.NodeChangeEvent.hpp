@@ -38,8 +38,8 @@ public:
     ::java::util::prefs::NodeChangeEvent& operator=(::java::util::prefs::NodeChangeEvent&& x) {obj = std::move(x.obj); return *this;}
     
     NodeChangeEvent(const ::java::util::prefs::Preferences&, const ::java::util::prefs::Preferences&);
-    ::java::util::prefs::Preferences getParent() const ;
-    ::java::util::prefs::Preferences getChild() const ;
+    ::java::util::prefs::Preferences getParent() const;
+    ::java::util::prefs::Preferences getChild() const;
 
 };
 }

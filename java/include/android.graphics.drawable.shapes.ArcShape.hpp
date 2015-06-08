@@ -38,7 +38,7 @@ public:
     ::android::graphics::drawable::shapes::ArcShape& operator=(::android::graphics::drawable::shapes::ArcShape&& x) {obj = std::move(x.obj); return *this;}
     
     ArcShape(float, float);
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const ;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const;
 
 };
 }

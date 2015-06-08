@@ -38,10 +38,10 @@ public:
     ::android::service::wallpaper::WallpaperService& operator=(::android::service::wallpaper::WallpaperService&& x) {obj = std::move(x.obj); return *this;}
     
     WallpaperService();
-    void onCreate() const ;
-    void onDestroy() const ;
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    ::android::service::wallpaper::WallpaperService_Engine onCreateEngine() const ;
+    void onCreate() const;
+    void onDestroy() const;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    ::android::service::wallpaper::WallpaperService_Engine onCreateEngine() const;
 
 };
 }

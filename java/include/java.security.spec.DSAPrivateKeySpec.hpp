@@ -36,10 +36,10 @@ public:
     ::java::security::spec::DSAPrivateKeySpec& operator=(::java::security::spec::DSAPrivateKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     DSAPrivateKeySpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getG() const ;
-    ::java::math::BigInteger getP() const ;
-    ::java::math::BigInteger getQ() const ;
-    ::java::math::BigInteger getX() const ;
+    ::java::math::BigInteger getG() const;
+    ::java::math::BigInteger getP() const;
+    ::java::math::BigInteger getQ() const;
+    ::java::math::BigInteger getX() const;
 
 };
 }

@@ -33,10 +33,10 @@ public:
     ::android::drm::DrmEvent& operator=(const ::android::drm::DrmEvent& x) {obj = x.obj; return *this;}
     ::android::drm::DrmEvent& operator=(::android::drm::DrmEvent&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getUniqueId() const ;
-    int32_t getType() const ;
-    ::java::lang::String getMessage() const ;
-    ::java::lang::Object getAttribute(const ::java::lang::String&) const ;
+    int32_t getUniqueId() const;
+    int32_t getType() const;
+    ::java::lang::String getMessage() const;
+    ::java::lang::Object getAttribute(const ::java::lang::String&) const;
 
 };
 }

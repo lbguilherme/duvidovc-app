@@ -37,29 +37,29 @@ public:
     ::android::media::audiofx::EnvironmentalReverb& operator=(::android::media::audiofx::EnvironmentalReverb&& x) {obj = std::move(x.obj); return *this;}
     
     EnvironmentalReverb(int32_t, int32_t);
-    void setRoomLevel(int16_t) const ;
-    int16_t getRoomLevel() const ;
-    void setRoomHFLevel(int16_t) const ;
-    int16_t getRoomHFLevel() const ;
-    void setDecayTime(int32_t) const ;
-    int32_t getDecayTime() const ;
-    void setDecayHFRatio(int16_t) const ;
-    int16_t getDecayHFRatio() const ;
-    void setReflectionsLevel(int16_t) const ;
-    int16_t getReflectionsLevel() const ;
-    void setReflectionsDelay(int32_t) const ;
-    int32_t getReflectionsDelay() const ;
-    void setReverbLevel(int16_t) const ;
-    int16_t getReverbLevel() const ;
-    void setReverbDelay(int32_t) const ;
-    int32_t getReverbDelay() const ;
-    void setDiffusion(int16_t) const ;
-    int16_t getDiffusion() const ;
-    void setDensity(int16_t) const ;
-    int16_t getDensity() const ;
-    void setParameterListener(const ::android::media::audiofx::EnvironmentalReverb_OnParameterChangeListener&) const ;
-    ::android::media::audiofx::EnvironmentalReverb_Settings getProperties() const ;
-    void setProperties(const ::android::media::audiofx::EnvironmentalReverb_Settings&) const ;
+    void setRoomLevel(int16_t) const;
+    int16_t getRoomLevel() const;
+    void setRoomHFLevel(int16_t) const;
+    int16_t getRoomHFLevel() const;
+    void setDecayTime(int32_t) const;
+    int32_t getDecayTime() const;
+    void setDecayHFRatio(int16_t) const;
+    int16_t getDecayHFRatio() const;
+    void setReflectionsLevel(int16_t) const;
+    int16_t getReflectionsLevel() const;
+    void setReflectionsDelay(int32_t) const;
+    int32_t getReflectionsDelay() const;
+    void setReverbLevel(int16_t) const;
+    int16_t getReverbLevel() const;
+    void setReverbDelay(int32_t) const;
+    int32_t getReverbDelay() const;
+    void setDiffusion(int16_t) const;
+    int16_t getDiffusion() const;
+    void setDensity(int16_t) const;
+    int16_t getDensity() const;
+    void setParameterListener(const ::android::media::audiofx::EnvironmentalReverb_OnParameterChangeListener&) const;
+    ::android::media::audiofx::EnvironmentalReverb_Settings getProperties() const;
+    void setProperties(const ::android::media::audiofx::EnvironmentalReverb_Settings&) const;
 
 };
 }

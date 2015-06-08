@@ -33,7 +33,7 @@ public:
     ::android::media::audiofx::AudioEffect_OnControlStatusChangeListener& operator=(const ::android::media::audiofx::AudioEffect_OnControlStatusChangeListener& x) {obj = x.obj; return *this;}
     ::android::media::audiofx::AudioEffect_OnControlStatusChangeListener& operator=(::android::media::audiofx::AudioEffect_OnControlStatusChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onControlStatusChange(const ::android::media::audiofx::AudioEffect&, bool) const ;
+    void onControlStatusChange(const ::android::media::audiofx::AudioEffect&, bool) const;
 
 };
 }

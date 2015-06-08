@@ -41,26 +41,26 @@ public:
     ::android::app::FragmentManager& operator=(::android::app::FragmentManager&& x) {obj = std::move(x.obj); return *this;}
     
     FragmentManager();
-    ::android::app::FragmentTransaction beginTransaction() const ;
-    bool executePendingTransactions() const ;
-    ::android::app::Fragment findFragmentById(int32_t) const ;
-    ::android::app::Fragment findFragmentByTag(const ::java::lang::String&) const ;
-    void popBackStack() const ;
-    bool popBackStackImmediate() const ;
-    void popBackStack(const ::java::lang::String&, int32_t) const ;
-    bool popBackStackImmediate(const ::java::lang::String&, int32_t) const ;
-    void popBackStack(int32_t, int32_t) const ;
-    bool popBackStackImmediate(int32_t, int32_t) const ;
-    int32_t getBackStackEntryCount() const ;
-    ::android::app::FragmentManager_BackStackEntry getBackStackEntryAt(int32_t) const ;
-    void addOnBackStackChangedListener(const ::android::app::FragmentManager_OnBackStackChangedListener&) const ;
-    void removeOnBackStackChangedListener(const ::android::app::FragmentManager_OnBackStackChangedListener&) const ;
-    void putFragment(const ::android::os::Bundle&, const ::java::lang::String&, const ::android::app::Fragment&) const ;
-    ::android::app::Fragment getFragment(const ::android::os::Bundle&, const ::java::lang::String&) const ;
-    ::android::app::Fragment_SavedState saveFragmentInstanceState(const ::android::app::Fragment&) const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
+    ::android::app::FragmentTransaction beginTransaction() const;
+    bool executePendingTransactions() const;
+    ::android::app::Fragment findFragmentById(int32_t) const;
+    ::android::app::Fragment findFragmentByTag(const ::java::lang::String&) const;
+    void popBackStack() const;
+    bool popBackStackImmediate() const;
+    void popBackStack(const ::java::lang::String&, int32_t) const;
+    bool popBackStackImmediate(const ::java::lang::String&, int32_t) const;
+    void popBackStack(int32_t, int32_t) const;
+    bool popBackStackImmediate(int32_t, int32_t) const;
+    int32_t getBackStackEntryCount() const;
+    ::android::app::FragmentManager_BackStackEntry getBackStackEntryAt(int32_t) const;
+    void addOnBackStackChangedListener(const ::android::app::FragmentManager_OnBackStackChangedListener&) const;
+    void removeOnBackStackChangedListener(const ::android::app::FragmentManager_OnBackStackChangedListener&) const;
+    void putFragment(const ::android::os::Bundle&, const ::java::lang::String&, const ::android::app::Fragment&) const;
+    ::android::app::Fragment getFragment(const ::android::os::Bundle&, const ::java::lang::String&) const;
+    ::android::app::Fragment_SavedState saveFragmentInstanceState(const ::android::app::Fragment&) const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
     static void enableDebugLogging(bool);
-    void invalidateOptionsMenu() const ;
+    void invalidateOptionsMenu() const;
 
 };
 }

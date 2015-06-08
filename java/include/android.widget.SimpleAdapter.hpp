@@ -46,18 +46,18 @@ public:
     ::android::widget::SimpleAdapter& operator=(::android::widget::SimpleAdapter&& x) {obj = std::move(x.obj); return *this;}
     
     SimpleAdapter(const ::android::content::Context&, const ::java::util::List&, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
-    int32_t getCount() const ;
-    ::java::lang::Object getItem(int32_t) const ;
-    int64_t getItemId(int32_t) const ;
-    ::android::view::View getView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
-    void setDropDownViewResource(int32_t) const ;
-    ::android::view::View getDropDownView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
-    ::android::widget::SimpleAdapter_ViewBinder getViewBinder() const ;
-    void setViewBinder(const ::android::widget::SimpleAdapter_ViewBinder&) const ;
-    void setViewImage(const ::android::widget::ImageView&, int32_t) const ;
-    void setViewImage(const ::android::widget::ImageView&, const ::java::lang::String&) const ;
-    void setViewText(const ::android::widget::TextView&, const ::java::lang::String&) const ;
-    ::android::widget::Filter getFilter() const ;
+    int32_t getCount() const;
+    ::java::lang::Object getItem(int32_t) const;
+    int64_t getItemId(int32_t) const;
+    ::android::view::View getView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const;
+    void setDropDownViewResource(int32_t) const;
+    ::android::view::View getDropDownView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const;
+    ::android::widget::SimpleAdapter_ViewBinder getViewBinder() const;
+    void setViewBinder(const ::android::widget::SimpleAdapter_ViewBinder&) const;
+    void setViewImage(const ::android::widget::ImageView&, int32_t) const;
+    void setViewImage(const ::android::widget::ImageView&, const ::java::lang::String&) const;
+    void setViewText(const ::android::widget::TextView&, const ::java::lang::String&) const;
+    ::android::widget::Filter getFilter() const;
 
 };
 }

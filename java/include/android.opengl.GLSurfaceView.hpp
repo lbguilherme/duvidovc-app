@@ -46,27 +46,27 @@ public:
     
     GLSurfaceView(const ::android::content::Context&);
     GLSurfaceView(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setGLWrapper(const ::android::opengl::GLSurfaceView_GLWrapper&) const ;
-    void setDebugFlags(int32_t) const ;
-    int32_t getDebugFlags() const ;
-    void setPreserveEGLContextOnPause(bool) const ;
-    bool getPreserveEGLContextOnPause() const ;
-    void setRenderer(const ::android::opengl::GLSurfaceView_Renderer&) const ;
-    void setEGLContextFactory(const ::android::opengl::GLSurfaceView_EGLContextFactory&) const ;
-    void setEGLWindowSurfaceFactory(const ::android::opengl::GLSurfaceView_EGLWindowSurfaceFactory&) const ;
-    void setEGLConfigChooser(const ::android::opengl::GLSurfaceView_EGLConfigChooser&) const ;
-    void setEGLConfigChooser(bool) const ;
-    void setEGLConfigChooser(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    void setEGLContextClientVersion(int32_t) const ;
-    void setRenderMode(int32_t) const ;
-    int32_t getRenderMode() const ;
-    void requestRender() const ;
-    void surfaceCreated(const ::android::view::SurfaceHolder&) const ;
-    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const ;
-    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const ;
-    void onPause() const ;
-    void onResume() const ;
-    void queueEvent(const ::java::lang::Runnable&) const ;
+    void setGLWrapper(const ::android::opengl::GLSurfaceView_GLWrapper&) const;
+    void setDebugFlags(int32_t) const;
+    int32_t getDebugFlags() const;
+    void setPreserveEGLContextOnPause(bool) const;
+    bool getPreserveEGLContextOnPause() const;
+    void setRenderer(const ::android::opengl::GLSurfaceView_Renderer&) const;
+    void setEGLContextFactory(const ::android::opengl::GLSurfaceView_EGLContextFactory&) const;
+    void setEGLWindowSurfaceFactory(const ::android::opengl::GLSurfaceView_EGLWindowSurfaceFactory&) const;
+    void setEGLConfigChooser(const ::android::opengl::GLSurfaceView_EGLConfigChooser&) const;
+    void setEGLConfigChooser(bool) const;
+    void setEGLConfigChooser(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    void setEGLContextClientVersion(int32_t) const;
+    void setRenderMode(int32_t) const;
+    int32_t getRenderMode() const;
+    void requestRender() const;
+    void surfaceCreated(const ::android::view::SurfaceHolder&) const;
+    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const;
+    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const;
+    void onPause() const;
+    void onResume() const;
+    void queueEvent(const ::java::lang::Runnable&) const;
 
 };
 }

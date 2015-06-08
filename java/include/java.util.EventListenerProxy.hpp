@@ -35,7 +35,7 @@ public:
     ::java::util::EventListenerProxy& operator=(::java::util::EventListenerProxy&& x) {obj = std::move(x.obj); return *this;}
     
     EventListenerProxy(const ::java::util::EventListener&);
-    ::java::util::EventListener getListener() const ;
+    ::java::util::EventListener getListener() const;
 
 };
 }

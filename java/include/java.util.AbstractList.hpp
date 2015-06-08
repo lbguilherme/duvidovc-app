@@ -40,21 +40,21 @@ public:
     ::java::util::AbstractList& operator=(const ::java::util::AbstractList& x) {obj = x.obj; return *this;}
     ::java::util::AbstractList& operator=(::java::util::AbstractList&& x) {obj = std::move(x.obj); return *this;}
     
-    void add(int32_t, const ::java::lang::Object&) const ;
-    bool add(const ::java::lang::Object&) const ;
-    bool addAll(int32_t, const ::java::util::Collection&) const ;
-    void clear() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::Object get(int32_t) const ;
-    int32_t hashCode() const ;
-    int32_t indexOf(const ::java::lang::Object&) const ;
-    ::java::util::Iterator iterator() const ;
-    int32_t lastIndexOf(const ::java::lang::Object&) const ;
-    ::java::util::ListIterator listIterator() const ;
-    ::java::util::ListIterator listIterator(int32_t) const ;
-    ::java::lang::Object remove(int32_t) const ;
-    ::java::lang::Object set(int32_t, const ::java::lang::Object&) const ;
-    ::java::util::List subList(int32_t, int32_t) const ;
+    void add(int32_t, const ::java::lang::Object&) const;
+    bool add(const ::java::lang::Object&) const;
+    bool addAll(int32_t, const ::java::util::Collection&) const;
+    void clear() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::Object get(int32_t) const;
+    int32_t hashCode() const;
+    int32_t indexOf(const ::java::lang::Object&) const;
+    ::java::util::Iterator iterator() const;
+    int32_t lastIndexOf(const ::java::lang::Object&) const;
+    ::java::util::ListIterator listIterator() const;
+    ::java::util::ListIterator listIterator(int32_t) const;
+    ::java::lang::Object remove(int32_t) const;
+    ::java::lang::Object set(int32_t, const ::java::lang::Object&) const;
+    ::java::util::List subList(int32_t, int32_t) const;
 
 };
 }

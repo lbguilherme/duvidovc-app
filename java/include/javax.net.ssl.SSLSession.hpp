@@ -38,27 +38,27 @@ public:
     ::javax::net::ssl::SSLSession& operator=(const ::javax::net::ssl::SSLSession& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::SSLSession& operator=(::javax::net::ssl::SSLSession&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getApplicationBufferSize() const ;
-    ::java::lang::String getCipherSuite() const ;
-    int64_t getCreationTime() const ;
-    std::vector< int8_t> getId() const ;
-    int64_t getLastAccessedTime() const ;
-    std::vector< ::java::security::cert::Certificate> getLocalCertificates() const ;
-    ::java::security::Principal getLocalPrincipal() const ;
-    int32_t getPacketBufferSize() const ;
-    std::vector< ::javax::security::cert::X509Certificate> getPeerCertificateChain() const ;
-    std::vector< ::java::security::cert::Certificate> getPeerCertificates() const ;
-    ::java::lang::String getPeerHost() const ;
-    int32_t getPeerPort() const ;
-    ::java::security::Principal getPeerPrincipal() const ;
-    ::java::lang::String getProtocol() const ;
-    ::javax::net::ssl::SSLSessionContext getSessionContext() const ;
-    ::java::lang::Object getValue(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> getValueNames() const ;
-    void invalidate() const ;
-    bool isValid() const ;
-    void putValue(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    void removeValue(const ::java::lang::String&) const ;
+    int32_t getApplicationBufferSize() const;
+    ::java::lang::String getCipherSuite() const;
+    int64_t getCreationTime() const;
+    std::vector< int8_t> getId() const;
+    int64_t getLastAccessedTime() const;
+    std::vector< ::java::security::cert::Certificate> getLocalCertificates() const;
+    ::java::security::Principal getLocalPrincipal() const;
+    int32_t getPacketBufferSize() const;
+    std::vector< ::javax::security::cert::X509Certificate> getPeerCertificateChain() const;
+    std::vector< ::java::security::cert::Certificate> getPeerCertificates() const;
+    ::java::lang::String getPeerHost() const;
+    int32_t getPeerPort() const;
+    ::java::security::Principal getPeerPrincipal() const;
+    ::java::lang::String getProtocol() const;
+    ::javax::net::ssl::SSLSessionContext getSessionContext() const;
+    ::java::lang::Object getValue(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> getValueNames() const;
+    void invalidate() const;
+    bool isValid() const;
+    void putValue(const ::java::lang::String&, const ::java::lang::Object&) const;
+    void removeValue(const ::java::lang::String&) const;
 
 };
 }

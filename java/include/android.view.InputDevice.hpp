@@ -41,17 +41,17 @@ public:
     
     static ::android::view::InputDevice getDevice(int32_t);
     static std::vector< int32_t> getDeviceIds();
-    int32_t getId() const ;
-    ::java::lang::String getName() const ;
-    int32_t getSources() const ;
-    int32_t getKeyboardType() const ;
-    ::android::view::KeyCharacterMap getKeyCharacterMap() const ;
-    ::android::view::InputDevice_MotionRange getMotionRange(int32_t) const ;
-    ::android::view::InputDevice_MotionRange getMotionRange(int32_t, int32_t) const ;
-    ::java::util::List getMotionRanges() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    ::java::lang::String toString() const ;
+    int32_t getId() const;
+    ::java::lang::String getName() const;
+    int32_t getSources() const;
+    int32_t getKeyboardType() const;
+    ::android::view::KeyCharacterMap getKeyCharacterMap() const;
+    ::android::view::InputDevice_MotionRange getMotionRange(int32_t) const;
+    ::android::view::InputDevice_MotionRange getMotionRange(int32_t, int32_t) const;
+    ::java::util::List getMotionRanges() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -47,18 +47,18 @@ public:
     ::android::app::ExpandableListActivity& operator=(::android::app::ExpandableListActivity&& x) {obj = std::move(x.obj); return *this;}
     
     ExpandableListActivity();
-    void onCreateContextMenu(const ::android::view::ContextMenu&, const ::android::view::View&, const ::android::view::ContextMenu_ContextMenuInfo&) const ;
-    bool onChildClick(const ::android::widget::ExpandableListView&, const ::android::view::View&, int32_t, int32_t, int64_t) const ;
-    void onGroupCollapse(int32_t) const ;
-    void onGroupExpand(int32_t) const ;
-    void onContentChanged() const ;
-    void setListAdapter(const ::android::widget::ExpandableListAdapter&) const ;
-    ::android::widget::ExpandableListView getExpandableListView() const ;
-    ::android::widget::ExpandableListAdapter getExpandableListAdapter() const ;
-    int64_t getSelectedId() const ;
-    int64_t getSelectedPosition() const ;
-    bool setSelectedChild(int32_t, int32_t, bool) const ;
-    void setSelectedGroup(int32_t) const ;
+    void onCreateContextMenu(const ::android::view::ContextMenu&, const ::android::view::View&, const ::android::view::ContextMenu_ContextMenuInfo&) const;
+    bool onChildClick(const ::android::widget::ExpandableListView&, const ::android::view::View&, int32_t, int32_t, int64_t) const;
+    void onGroupCollapse(int32_t) const;
+    void onGroupExpand(int32_t) const;
+    void onContentChanged() const;
+    void setListAdapter(const ::android::widget::ExpandableListAdapter&) const;
+    ::android::widget::ExpandableListView getExpandableListView() const;
+    ::android::widget::ExpandableListAdapter getExpandableListAdapter() const;
+    int64_t getSelectedId() const;
+    int64_t getSelectedPosition() const;
+    bool setSelectedChild(int32_t, int32_t, bool) const;
+    void setSelectedGroup(int32_t) const;
 
 };
 }

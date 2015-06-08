@@ -42,9 +42,9 @@ public:
     static ::com::facebook::appevents::AppEventsLogger_PersistedEvents readAndClearStore(const ::android::content::Context&);
     static void persistEvents(const ::android::content::Context&, const ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair&, const ::com::facebook::appevents::AppEventsLogger_SessionEventsState&);
     static void persistEvents(const ::android::content::Context&, const ::java::util::Map&);
-    ::java::util::Set keySet() const ;
-    ::java::util::List getEvents(const ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair&) const ;
-    void addEvents(const ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair&, const ::java::util::List&) const ;
+    ::java::util::Set keySet() const;
+    ::java::util::List getEvents(const ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair&) const;
+    void addEvents(const ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair&, const ::java::util::List&) const;
 
 };
 }

@@ -41,9 +41,9 @@ public:
     ::android::test::ProviderTestCase& operator=(::android::test::ProviderTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     ProviderTestCase(const ::java::lang::Class&, const ::java::lang::String&);
-    ::android::content::ContentProvider getProvider() const ;
-    ::android::test::mock::MockContentResolver getMockContentResolver() const ;
-    ::android::test::IsolatedContext getMockContext() const ;
+    ::android::content::ContentProvider getProvider() const;
+    ::android::test::mock::MockContentResolver getMockContentResolver() const;
+    ::android::test::IsolatedContext getMockContext() const;
     static ::android::content::ContentResolver newResolverWithContentProviderFromSql(const ::android::content::Context&, const ::java::lang::Class&, const ::java::lang::String&, const ::java::lang::String&, int32_t, const ::java::lang::String&);
 
 };

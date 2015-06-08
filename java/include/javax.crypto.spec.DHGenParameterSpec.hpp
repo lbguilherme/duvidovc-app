@@ -35,8 +35,8 @@ public:
     ::javax::crypto::spec::DHGenParameterSpec& operator=(::javax::crypto::spec::DHGenParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     DHGenParameterSpec(int32_t, int32_t);
-    int32_t getPrimeSize() const ;
-    int32_t getExponentSize() const ;
+    int32_t getPrimeSize() const;
+    int32_t getExponentSize() const;
 
 };
 }

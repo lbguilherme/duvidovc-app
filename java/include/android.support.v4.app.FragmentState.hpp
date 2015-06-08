@@ -40,9 +40,9 @@ public:
     
     FragmentState(const ::android::support::v4::app::Fragment&);
     FragmentState(const ::android::os::Parcel&);
-    ::android::support::v4::app::Fragment instantiate(const ::android::support::v4::app::FragmentActivity&, const ::android::support::v4::app::Fragment&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::support::v4::app::Fragment instantiate(const ::android::support::v4::app::FragmentActivity&, const ::android::support::v4::app::Fragment&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

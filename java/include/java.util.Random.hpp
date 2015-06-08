@@ -35,15 +35,15 @@ public:
     
     Random();
     Random(int64_t);
-    bool nextBoolean() const ;
-    void nextBytes(const std::vector< int8_t>&) const ;
-    double nextDouble() const ;
-    float nextFloat() const ;
-    double nextGaussian() const ;
-    int32_t nextInt() const ;
-    int32_t nextInt(int32_t) const ;
-    int64_t nextLong() const ;
-    void setSeed(int64_t) const ;
+    bool nextBoolean() const;
+    void nextBytes(const std::vector< int8_t>&) const;
+    double nextDouble() const;
+    float nextFloat() const;
+    double nextGaussian() const;
+    int32_t nextInt() const;
+    int32_t nextInt(int32_t) const;
+    int64_t nextLong() const;
+    void setSeed(int64_t) const;
 
 };
 }

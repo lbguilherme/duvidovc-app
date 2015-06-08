@@ -36,7 +36,7 @@ public:
     ::java::security::cert::CertPathValidatorSpi& operator=(::java::security::cert::CertPathValidatorSpi&& x) {obj = std::move(x.obj); return *this;}
     
     CertPathValidatorSpi();
-    ::java::security::cert::CertPathValidatorResult engineValidate(const ::java::security::cert::CertPath&, const ::java::security::cert::CertPathParameters&) const ;
+    ::java::security::cert::CertPathValidatorResult engineValidate(const ::java::security::cert::CertPath&, const ::java::security::cert::CertPathParameters&) const;
 
 };
 }

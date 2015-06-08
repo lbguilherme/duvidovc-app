@@ -38,8 +38,8 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanMr2Impl& operator=(const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanMr2Impl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanMr2Impl& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanMr2Impl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getViewIdResourceName(const ::java::lang::Object&) const ;
-    void setViewIdResourceName(const ::java::lang::Object&, const ::java::lang::String&) const ;
+    ::java::lang::String getViewIdResourceName(const ::java::lang::Object&) const;
+    void setViewIdResourceName(const ::java::lang::Object&, const ::java::lang::String&) const;
 
 };
 }

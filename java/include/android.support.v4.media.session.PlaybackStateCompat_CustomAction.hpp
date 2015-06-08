@@ -40,13 +40,13 @@ public:
     ::android::support::v4::media::session::PlaybackStateCompat_CustomAction& operator=(const ::android::support::v4::media::session::PlaybackStateCompat_CustomAction& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::PlaybackStateCompat_CustomAction& operator=(::android::support::v4::media::session::PlaybackStateCompat_CustomAction&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    ::java::lang::String getAction() const ;
-    ::java::lang::CharSequence getName() const ;
-    int32_t getIcon() const ;
-    ::android::os::Bundle getExtras() const ;
-    ::java::lang::String toString() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    ::java::lang::String getAction() const;
+    ::java::lang::CharSequence getName() const;
+    int32_t getIcon() const;
+    ::android::os::Bundle getExtras() const;
+    ::java::lang::String toString() const;
 
 };
 }

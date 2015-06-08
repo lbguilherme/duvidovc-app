@@ -50,16 +50,16 @@ public:
     ::org::apache::http::client::methods::HttpRequestBase& operator=(::org::apache::http::client::methods::HttpRequestBase&& x) {obj = std::move(x.obj); return *this;}
     
     HttpRequestBase();
-    ::java::lang::String getMethod() const ;
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    ::java::net::URI getURI() const ;
-    ::org::apache::http::RequestLine getRequestLine() const ;
-    void setURI(const ::java::net::URI&) const ;
-    void setConnectionRequest(const ::org::apache::http::conn::ClientConnectionRequest&) const ;
-    void setReleaseTrigger(const ::org::apache::http::conn::ConnectionReleaseTrigger&) const ;
-    void abort() const ;
-    bool isAborted() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getMethod() const;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    ::java::net::URI getURI() const;
+    ::org::apache::http::RequestLine getRequestLine() const;
+    void setURI(const ::java::net::URI&) const;
+    void setConnectionRequest(const ::org::apache::http::conn::ClientConnectionRequest&) const;
+    void setReleaseTrigger(const ::org::apache::http::conn::ConnectionReleaseTrigger&) const;
+    void abort() const;
+    bool isAborted() const;
+    ::java::lang::Object clone() const;
 
 };
 }

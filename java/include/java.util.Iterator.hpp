@@ -32,9 +32,9 @@ public:
     ::java::util::Iterator& operator=(const ::java::util::Iterator& x) {obj = x.obj; return *this;}
     ::java::util::Iterator& operator=(::java::util::Iterator&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasNext() const ;
-    ::java::lang::Object next() const ;
-    void remove() const ;
+    bool hasNext() const;
+    ::java::lang::Object next() const;
+    void remove() const;
 
 };
 }

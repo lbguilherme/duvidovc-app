@@ -38,21 +38,21 @@ public:
     ::junit::framework::TestResult& operator=(::junit::framework::TestResult&& x) {obj = std::move(x.obj); return *this;}
     
     TestResult();
-    void addError(const ::junit::framework::Test&, const ::java::lang::Throwable&) const ;
-    void addFailure(const ::junit::framework::Test&, const ::junit::framework::AssertionFailedError&) const ;
-    void addListener(const ::junit::framework::TestListener&) const ;
-    void removeListener(const ::junit::framework::TestListener&) const ;
-    void endTest(const ::junit::framework::Test&) const ;
-    int32_t errorCount() const ;
-    ::java::util::Enumeration errors() const ;
-    int32_t failureCount() const ;
-    ::java::util::Enumeration failures() const ;
-    int32_t runCount() const ;
-    void runProtected(const ::junit::framework::Test&, const ::junit::framework::Protectable&) const ;
-    bool shouldStop() const ;
-    void startTest(const ::junit::framework::Test&) const ;
-    void stop() const ;
-    bool wasSuccessful() const ;
+    void addError(const ::junit::framework::Test&, const ::java::lang::Throwable&) const;
+    void addFailure(const ::junit::framework::Test&, const ::junit::framework::AssertionFailedError&) const;
+    void addListener(const ::junit::framework::TestListener&) const;
+    void removeListener(const ::junit::framework::TestListener&) const;
+    void endTest(const ::junit::framework::Test&) const;
+    int32_t errorCount() const;
+    ::java::util::Enumeration errors() const;
+    int32_t failureCount() const;
+    ::java::util::Enumeration failures() const;
+    int32_t runCount() const;
+    void runProtected(const ::junit::framework::Test&, const ::junit::framework::Protectable&) const;
+    bool shouldStop() const;
+    void startTest(const ::junit::framework::Test&) const;
+    void stop() const;
+    bool wasSuccessful() const;
 
 };
 }

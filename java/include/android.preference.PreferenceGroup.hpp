@@ -39,16 +39,16 @@ public:
     
     PreferenceGroup(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     PreferenceGroup(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setOrderingAsAdded(bool) const ;
-    bool isOrderingAsAdded() const ;
-    void addItemFromInflater(const ::android::preference::Preference&) const ;
-    int32_t getPreferenceCount() const ;
-    ::android::preference::Preference getPreference(int32_t) const ;
-    bool addPreference(const ::android::preference::Preference&) const ;
-    bool removePreference(const ::android::preference::Preference&) const ;
-    void removeAll() const ;
-    ::android::preference::Preference findPreference(const ::java::lang::CharSequence&) const ;
-    void setEnabled(bool) const ;
+    void setOrderingAsAdded(bool) const;
+    bool isOrderingAsAdded() const;
+    void addItemFromInflater(const ::android::preference::Preference&) const;
+    int32_t getPreferenceCount() const;
+    ::android::preference::Preference getPreference(int32_t) const;
+    bool addPreference(const ::android::preference::Preference&) const;
+    bool removePreference(const ::android::preference::Preference&) const;
+    void removeAll() const;
+    ::android::preference::Preference findPreference(const ::java::lang::CharSequence&) const;
+    void setEnabled(bool) const;
 
 };
 }

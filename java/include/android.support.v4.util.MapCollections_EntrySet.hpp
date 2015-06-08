@@ -39,22 +39,22 @@ public:
     ::android::support::v4::util::MapCollections_EntrySet& operator=(const ::android::support::v4::util::MapCollections_EntrySet& x) {obj = x.obj; return *this;}
     ::android::support::v4::util::MapCollections_EntrySet& operator=(::android::support::v4::util::MapCollections_EntrySet&& x) {obj = std::move(x.obj); return *this;}
     
-    bool add(const ::java::util::Map_Entry&) const ;
-    bool addAll(const ::java::util::Collection&) const ;
-    void clear() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    bool containsAll(const ::java::util::Collection&) const ;
-    bool isEmpty() const ;
-    ::java::util::Iterator iterator() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool removeAll(const ::java::util::Collection&) const ;
-    bool retainAll(const ::java::util::Collection&) const ;
-    int32_t size() const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    bool add(const ::java::lang::Object&) const ;
+    bool add(const ::java::util::Map_Entry&) const;
+    bool addAll(const ::java::util::Collection&) const;
+    void clear() const;
+    bool contains(const ::java::lang::Object&) const;
+    bool containsAll(const ::java::util::Collection&) const;
+    bool isEmpty() const;
+    ::java::util::Iterator iterator() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool removeAll(const ::java::util::Collection&) const;
+    bool retainAll(const ::java::util::Collection&) const;
+    int32_t size() const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    bool add(const ::java::lang::Object&) const;
 
 };
 }

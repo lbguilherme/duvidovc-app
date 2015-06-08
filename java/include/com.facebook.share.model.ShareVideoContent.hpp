@@ -41,12 +41,12 @@ public:
     ::com::facebook::share::model::ShareVideoContent& operator=(const ::com::facebook::share::model::ShareVideoContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareVideoContent& operator=(::com::facebook::share::model::ShareVideoContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getContentDescription() const ;
-    ::java::lang::String getContentTitle() const ;
-    ::com::facebook::share::model::SharePhoto getPreviewPhoto() const ;
-    ::com::facebook::share::model::ShareVideo getVideo() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getContentDescription() const;
+    ::java::lang::String getContentTitle() const;
+    ::com::facebook::share::model::SharePhoto getPreviewPhoto() const;
+    ::com::facebook::share::model::ShareVideo getVideo() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

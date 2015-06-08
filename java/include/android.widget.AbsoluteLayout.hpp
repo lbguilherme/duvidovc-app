@@ -39,8 +39,8 @@ public:
     AbsoluteLayout(const ::android::content::Context&);
     AbsoluteLayout(const ::android::content::Context&, const ::android::util::AttributeSet&);
     AbsoluteLayout(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    ::android::view::ViewGroup_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const ;
-    bool shouldDelayChildPressedState() const ;
+    ::android::view::ViewGroup_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const;
+    bool shouldDelayChildPressedState() const;
 
 };
 }

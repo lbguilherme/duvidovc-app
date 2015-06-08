@@ -41,12 +41,12 @@ public:
     ::org::apache::http::impl::auth::DigestScheme& operator=(::org::apache::http::impl::auth::DigestScheme&& x) {obj = std::move(x.obj); return *this;}
     
     DigestScheme();
-    void processChallenge(const ::org::apache::http::Header&) const ;
-    bool isComplete() const ;
-    ::java::lang::String getSchemeName() const ;
-    bool isConnectionBased() const ;
-    void overrideParamter(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const ;
+    void processChallenge(const ::org::apache::http::Header&) const;
+    bool isComplete() const;
+    ::java::lang::String getSchemeName() const;
+    bool isConnectionBased() const;
+    void overrideParamter(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const;
     static ::java::lang::String createCnonce();
 
 };

@@ -37,8 +37,8 @@ public:
     ::java::lang::annotation::AnnotationTypeMismatchException& operator=(::java::lang::annotation::AnnotationTypeMismatchException&& x) {obj = std::move(x.obj); return *this;}
     
     AnnotationTypeMismatchException(const ::java::lang::reflect::Method&, const ::java::lang::String&);
-    ::java::lang::reflect::Method element() const ;
-    ::java::lang::String foundType() const ;
+    ::java::lang::reflect::Method element() const;
+    ::java::lang::String foundType() const;
 
 };
 }

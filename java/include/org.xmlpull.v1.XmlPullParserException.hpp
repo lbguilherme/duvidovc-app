@@ -39,10 +39,10 @@ public:
     
     XmlPullParserException(const ::java::lang::String&);
     XmlPullParserException(const ::java::lang::String&, const ::org::xmlpull::v1::XmlPullParser&, const ::java::lang::Throwable&);
-    ::java::lang::Throwable getDetail() const ;
-    int32_t getLineNumber() const ;
-    int32_t getColumnNumber() const ;
-    void printStackTrace() const ;
+    ::java::lang::Throwable getDetail() const;
+    int32_t getLineNumber() const;
+    int32_t getColumnNumber() const;
+    void printStackTrace() const;
 
 };
 }

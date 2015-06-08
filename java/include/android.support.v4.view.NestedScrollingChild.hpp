@@ -33,15 +33,15 @@ public:
     ::android::support::v4::view::NestedScrollingChild& operator=(const ::android::support::v4::view::NestedScrollingChild& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::NestedScrollingChild& operator=(::android::support::v4::view::NestedScrollingChild&& x) {obj = std::move(x.obj); return *this;}
     
-    void setNestedScrollingEnabled(bool) const ;
-    bool isNestedScrollingEnabled() const ;
-    bool startNestedScroll(int32_t) const ;
-    void stopNestedScroll() const ;
-    bool hasNestedScrollingParent() const ;
-    bool dispatchNestedScroll(int32_t, int32_t, int32_t, int32_t, const std::vector< int32_t>&) const ;
-    bool dispatchNestedPreScroll(int32_t, int32_t, const std::vector< int32_t>&, const std::vector< int32_t>&) const ;
-    bool dispatchNestedFling(float, float, bool) const ;
-    bool dispatchNestedPreFling(float, float) const ;
+    void setNestedScrollingEnabled(bool) const;
+    bool isNestedScrollingEnabled() const;
+    bool startNestedScroll(int32_t) const;
+    void stopNestedScroll() const;
+    bool hasNestedScrollingParent() const;
+    bool dispatchNestedScroll(int32_t, int32_t, int32_t, int32_t, const std::vector< int32_t>&) const;
+    bool dispatchNestedPreScroll(int32_t, int32_t, const std::vector< int32_t>&, const std::vector< int32_t>&) const;
+    bool dispatchNestedFling(float, float, bool) const;
+    bool dispatchNestedPreFling(float, float) const;
 
 };
 }

@@ -38,13 +38,13 @@ public:
     ::android::widget::PopupMenu& operator=(::android::widget::PopupMenu&& x) {obj = std::move(x.obj); return *this;}
     
     PopupMenu(const ::android::content::Context&, const ::android::view::View&);
-    ::android::view::Menu getMenu() const ;
-    ::android::view::MenuInflater getMenuInflater() const ;
-    void inflate(int32_t) const ;
-    void show() const ;
-    void dismiss() const ;
-    void setOnMenuItemClickListener(const ::android::widget::PopupMenu_OnMenuItemClickListener&) const ;
-    void setOnDismissListener(const ::android::widget::PopupMenu_OnDismissListener&) const ;
+    ::android::view::Menu getMenu() const;
+    ::android::view::MenuInflater getMenuInflater() const;
+    void inflate(int32_t) const;
+    void show() const;
+    void dismiss() const;
+    void setOnMenuItemClickListener(const ::android::widget::PopupMenu_OnMenuItemClickListener&) const;
+    void setOnDismissListener(const ::android::widget::PopupMenu_OnDismissListener&) const;
 
 };
 }

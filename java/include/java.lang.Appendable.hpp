@@ -33,9 +33,9 @@ public:
     ::java::lang::Appendable& operator=(const ::java::lang::Appendable& x) {obj = x.obj; return *this;}
     ::java::lang::Appendable& operator=(::java::lang::Appendable&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Appendable append(uint16_t) const ;
-    ::java::lang::Appendable append(const ::java::lang::CharSequence&) const ;
-    ::java::lang::Appendable append(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    ::java::lang::Appendable append(uint16_t) const;
+    ::java::lang::Appendable append(const ::java::lang::CharSequence&) const;
+    ::java::lang::Appendable append(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     ::android::support::v4::content::IntentCompat_IntentCompatImplHC& operator=(const ::android::support::v4::content::IntentCompat_IntentCompatImplHC& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::IntentCompat_IntentCompatImplHC& operator=(::android::support::v4::content::IntentCompat_IntentCompatImplHC&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::Intent makeMainActivity(const ::android::content::ComponentName&) const ;
-    ::android::content::Intent makeRestartActivityTask(const ::android::content::ComponentName&) const ;
+    ::android::content::Intent makeMainActivity(const ::android::content::ComponentName&) const;
+    ::android::content::Intent makeRestartActivityTask(const ::android::content::ComponentName&) const;
 
 };
 }

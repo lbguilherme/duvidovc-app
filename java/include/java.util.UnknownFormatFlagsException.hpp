@@ -35,8 +35,8 @@ public:
     ::java::util::UnknownFormatFlagsException& operator=(::java::util::UnknownFormatFlagsException&& x) {obj = std::move(x.obj); return *this;}
     
     UnknownFormatFlagsException(const ::java::lang::String&);
-    ::java::lang::String getFlags() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getFlags() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

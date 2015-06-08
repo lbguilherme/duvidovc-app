@@ -33,7 +33,7 @@ public:
     ::android::text::ParcelableSpan& operator=(const ::android::text::ParcelableSpan& x) {obj = x.obj; return *this;}
     ::android::text::ParcelableSpan& operator=(::android::text::ParcelableSpan&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getSpanTypeId() const ;
+    int32_t getSpanTypeId() const;
 
 };
 }

@@ -35,10 +35,10 @@ public:
     ::android::animation::AnimatorListenerAdapter& operator=(::android::animation::AnimatorListenerAdapter&& x) {obj = std::move(x.obj); return *this;}
     
     AnimatorListenerAdapter();
-    void onAnimationCancel(const ::android::animation::Animator&) const ;
-    void onAnimationEnd(const ::android::animation::Animator&) const ;
-    void onAnimationRepeat(const ::android::animation::Animator&) const ;
-    void onAnimationStart(const ::android::animation::Animator&) const ;
+    void onAnimationCancel(const ::android::animation::Animator&) const;
+    void onAnimationEnd(const ::android::animation::Animator&) const;
+    void onAnimationRepeat(const ::android::animation::Animator&) const;
+    void onAnimationStart(const ::android::animation::Animator&) const;
 
 };
 }

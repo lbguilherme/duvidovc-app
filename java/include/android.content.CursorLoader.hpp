@@ -42,22 +42,22 @@ public:
     
     CursorLoader(const ::android::content::Context&);
     CursorLoader(const ::android::content::Context&, const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&);
-    ::android::database::Cursor loadInBackground() const ;
-    void deliverResult(const ::android::database::Cursor&) const ;
-    void onCanceled(const ::android::database::Cursor&) const ;
-    ::android::net::Uri getUri() const ;
-    void setUri(const ::android::net::Uri&) const ;
-    std::vector< ::java::lang::String> getProjection() const ;
-    void setProjection(const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::String getSelection() const ;
-    void setSelection(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> getSelectionArgs() const ;
-    void setSelectionArgs(const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::String getSortOrder() const ;
-    void setSortOrder(const ::java::lang::String&) const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
-    void onCanceled(const ::java::lang::Object&) const ;
-    void deliverResult(const ::java::lang::Object&) const ;
+    ::android::database::Cursor loadInBackground() const;
+    void deliverResult(const ::android::database::Cursor&) const;
+    void onCanceled(const ::android::database::Cursor&) const;
+    ::android::net::Uri getUri() const;
+    void setUri(const ::android::net::Uri&) const;
+    std::vector< ::java::lang::String> getProjection() const;
+    void setProjection(const std::vector< ::java::lang::String>&) const;
+    ::java::lang::String getSelection() const;
+    void setSelection(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> getSelectionArgs() const;
+    void setSelectionArgs(const std::vector< ::java::lang::String>&) const;
+    ::java::lang::String getSortOrder() const;
+    void setSortOrder(const ::java::lang::String&) const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
+    void onCanceled(const ::java::lang::Object&) const;
+    void deliverResult(const ::java::lang::Object&) const;
 
 };
 }

@@ -39,11 +39,11 @@ public:
     MathContext(int32_t);
     MathContext(int32_t, const ::java::math::RoundingMode&);
     MathContext(const ::java::lang::String&);
-    int32_t getPrecision() const ;
-    ::java::math::RoundingMode getRoundingMode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    int32_t getPrecision() const;
+    ::java::math::RoundingMode getRoundingMode() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

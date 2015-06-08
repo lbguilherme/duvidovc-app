@@ -34,10 +34,10 @@ public:
     ::android::view::ViewDebug_FlagToString& operator=(const ::android::view::ViewDebug_FlagToString& x) {obj = x.obj; return *this;}
     ::android::view::ViewDebug_FlagToString& operator=(::android::view::ViewDebug_FlagToString&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t mask() const ;
-    int32_t equals() const ;
-    ::java::lang::String name() const ;
-    bool outputIf() const ;
+    int32_t mask() const;
+    int32_t equals() const;
+    ::java::lang::String name() const;
+    bool outputIf() const;
 
 };
 }

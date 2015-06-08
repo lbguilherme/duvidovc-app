@@ -39,7 +39,7 @@ public:
     
     static std::vector< ::com::facebook::share::widget::LikeView_Style> values();
     static ::com::facebook::share::widget::LikeView_Style valueOf(const ::java::lang::String&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -39,13 +39,13 @@ public:
     ::com::facebook::login::LoginClient& operator=(::com::facebook::login::LoginClient&& x) {obj = std::move(x.obj); return *this;}
     
     LoginClient(const ::android::support::v4::app::Fragment&);
-    ::android::support::v4::app::Fragment getFragment() const ;
-    ::com::facebook::login::LoginClient_Request getPendingRequest() const ;
+    ::android::support::v4::app::Fragment getFragment() const;
+    ::com::facebook::login::LoginClient_Request getPendingRequest() const;
     static int32_t getLoginRequestCode();
-    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const ;
+    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const;
     LoginClient(const ::android::os::Parcel&);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

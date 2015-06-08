@@ -36,13 +36,13 @@ public:
     ::java::security::cert::PolicyNode& operator=(const ::java::security::cert::PolicyNode& x) {obj = x.obj; return *this;}
     ::java::security::cert::PolicyNode& operator=(::java::security::cert::PolicyNode&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Iterator getChildren() const ;
-    int32_t getDepth() const ;
-    ::java::util::Set getExpectedPolicies() const ;
-    ::java::security::cert::PolicyNode getParent() const ;
-    ::java::util::Set getPolicyQualifiers() const ;
-    ::java::lang::String getValidPolicy() const ;
-    bool isCritical() const ;
+    ::java::util::Iterator getChildren() const;
+    int32_t getDepth() const;
+    ::java::util::Set getExpectedPolicies() const;
+    ::java::security::cert::PolicyNode getParent() const;
+    ::java::util::Set getPolicyQualifiers() const;
+    ::java::lang::String getValidPolicy() const;
+    bool isCritical() const;
 
 };
 }

@@ -38,10 +38,10 @@ public:
     ::com::facebook::share::internal::LikeDialog_NativeHandler& operator=(const ::com::facebook::share::internal::LikeDialog_NativeHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::LikeDialog_NativeHandler& operator=(::com::facebook::share::internal::LikeDialog_NativeHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool canShow(const ::com::facebook::share::internal::LikeContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::internal::LikeContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const ;
-    bool canShow(const ::java::lang::Object&) const ;
+    bool canShow(const ::com::facebook::share::internal::LikeContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::internal::LikeContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const;
+    bool canShow(const ::java::lang::Object&) const;
 
 };
 }

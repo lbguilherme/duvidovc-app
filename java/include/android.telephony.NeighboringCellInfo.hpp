@@ -39,16 +39,16 @@ public:
     NeighboringCellInfo(int32_t, int32_t);
     NeighboringCellInfo(int32_t, const ::java::lang::String&, int32_t);
     NeighboringCellInfo(const ::android::os::Parcel&);
-    int32_t getRssi() const ;
-    int32_t getLac() const ;
-    int32_t getCid() const ;
-    int32_t getPsc() const ;
-    int32_t getNetworkType() const ;
-    void setCid(int32_t) const ;
-    void setRssi(int32_t) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t getRssi() const;
+    int32_t getLac() const;
+    int32_t getCid() const;
+    int32_t getPsc() const;
+    int32_t getNetworkType() const;
+    void setCid(int32_t) const;
+    void setRssi(int32_t) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

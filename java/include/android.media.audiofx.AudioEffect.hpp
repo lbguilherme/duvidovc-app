@@ -35,15 +35,15 @@ public:
     ::android::media::audiofx::AudioEffect& operator=(const ::android::media::audiofx::AudioEffect& x) {obj = x.obj; return *this;}
     ::android::media::audiofx::AudioEffect& operator=(::android::media::audiofx::AudioEffect&& x) {obj = std::move(x.obj); return *this;}
     
-    void release() const ;
-    ::android::media::audiofx::AudioEffect_Descriptor getDescriptor() const ;
+    void release() const;
+    ::android::media::audiofx::AudioEffect_Descriptor getDescriptor() const;
     static std::vector< ::android::media::audiofx::AudioEffect_Descriptor> queryEffects();
-    int32_t setEnabled(bool) const ;
-    int32_t getId() const ;
-    bool getEnabled() const ;
-    bool hasControl() const ;
-    void setEnableStatusListener(const ::android::media::audiofx::AudioEffect_OnEnableStatusChangeListener&) const ;
-    void setControlStatusListener(const ::android::media::audiofx::AudioEffect_OnControlStatusChangeListener&) const ;
+    int32_t setEnabled(bool) const;
+    int32_t getId() const;
+    bool getEnabled() const;
+    bool hasControl() const;
+    void setEnableStatusListener(const ::android::media::audiofx::AudioEffect_OnEnableStatusChangeListener&) const;
+    void setControlStatusListener(const ::android::media::audiofx::AudioEffect_OnControlStatusChangeListener&) const;
 
 };
 }

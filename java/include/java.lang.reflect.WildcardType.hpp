@@ -35,8 +35,8 @@ public:
     ::java::lang::reflect::WildcardType& operator=(const ::java::lang::reflect::WildcardType& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::WildcardType& operator=(::java::lang::reflect::WildcardType&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::reflect::Type> getUpperBounds() const ;
-    std::vector< ::java::lang::reflect::Type> getLowerBounds() const ;
+    std::vector< ::java::lang::reflect::Type> getUpperBounds() const;
+    std::vector< ::java::lang::reflect::Type> getLowerBounds() const;
 
 };
 }

@@ -39,11 +39,11 @@ public:
     ::org::apache::http::impl::io::ChunkedInputStream& operator=(::org::apache::http::impl::io::ChunkedInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     ChunkedInputStream(const ::org::apache::http::io::SessionInputBuffer&);
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t read(const std::vector< int8_t>&) const ;
-    void close() const ;
-    std::vector< ::org::apache::http::Header> getFooters() const ;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t read(const std::vector< int8_t>&) const;
+    void close() const;
+    std::vector< ::org::apache::http::Header> getFooters() const;
 
 };
 }

@@ -39,11 +39,11 @@ public:
     ::org::apache::http::message::LineParser& operator=(const ::org::apache::http::message::LineParser& x) {obj = x.obj; return *this;}
     ::org::apache::http::message::LineParser& operator=(::org::apache::http::message::LineParser&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::ProtocolVersion parseProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    bool hasProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    ::org::apache::http::RequestLine parseRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    ::org::apache::http::StatusLine parseStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    ::org::apache::http::Header parseHeader(const ::org::apache::http::util::CharArrayBuffer&) const ;
+    ::org::apache::http::ProtocolVersion parseProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    bool hasProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    ::org::apache::http::RequestLine parseRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    ::org::apache::http::StatusLine parseStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    ::org::apache::http::Header parseHeader(const ::org::apache::http::util::CharArrayBuffer&) const;
 
 };
 }

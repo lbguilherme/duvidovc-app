@@ -32,8 +32,8 @@ public:
     ::android::widget::AutoCompleteTextView_Validator& operator=(const ::android::widget::AutoCompleteTextView_Validator& x) {obj = x.obj; return *this;}
     ::android::widget::AutoCompleteTextView_Validator& operator=(::android::widget::AutoCompleteTextView_Validator&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isValid(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence fixText(const ::java::lang::CharSequence&) const ;
+    bool isValid(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence fixText(const ::java::lang::CharSequence&) const;
 
 };
 }

@@ -44,12 +44,12 @@ public:
     
     DatePickerDialog(const ::android::content::Context&, const ::android::app::DatePickerDialog_OnDateSetListener&, int32_t, int32_t, int32_t);
     DatePickerDialog(const ::android::content::Context&, int32_t, const ::android::app::DatePickerDialog_OnDateSetListener&, int32_t, int32_t, int32_t);
-    void onClick(const ::android::content::DialogInterface&, int32_t) const ;
-    void onDateChanged(const ::android::widget::DatePicker&, int32_t, int32_t, int32_t) const ;
-    ::android::widget::DatePicker getDatePicker() const ;
-    void updateDate(int32_t, int32_t, int32_t) const ;
-    ::android::os::Bundle onSaveInstanceState() const ;
-    void onRestoreInstanceState(const ::android::os::Bundle&) const ;
+    void onClick(const ::android::content::DialogInterface&, int32_t) const;
+    void onDateChanged(const ::android::widget::DatePicker&, int32_t, int32_t, int32_t) const;
+    ::android::widget::DatePicker getDatePicker() const;
+    void updateDate(int32_t, int32_t, int32_t) const;
+    ::android::os::Bundle onSaveInstanceState() const;
+    void onRestoreInstanceState(const ::android::os::Bundle&) const;
 
 };
 }

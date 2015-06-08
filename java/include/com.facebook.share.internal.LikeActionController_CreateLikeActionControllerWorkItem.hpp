@@ -35,7 +35,7 @@ public:
     ::com::facebook::share::internal::LikeActionController_CreateLikeActionControllerWorkItem& operator=(const ::com::facebook::share::internal::LikeActionController_CreateLikeActionControllerWorkItem& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::LikeActionController_CreateLikeActionControllerWorkItem& operator=(::com::facebook::share::internal::LikeActionController_CreateLikeActionControllerWorkItem&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

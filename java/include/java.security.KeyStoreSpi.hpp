@@ -43,27 +43,27 @@ public:
     ::java::security::KeyStoreSpi& operator=(::java::security::KeyStoreSpi&& x) {obj = std::move(x.obj); return *this;}
     
     KeyStoreSpi();
-    ::java::security::Key engineGetKey(const ::java::lang::String&, const std::vector< uint16_t>&) const ;
-    std::vector< ::java::security::cert::Certificate> engineGetCertificateChain(const ::java::lang::String&) const ;
-    ::java::security::cert::Certificate engineGetCertificate(const ::java::lang::String&) const ;
-    ::java::util::Date engineGetCreationDate(const ::java::lang::String&) const ;
-    void engineSetKeyEntry(const ::java::lang::String&, const ::java::security::Key&, const std::vector< uint16_t>&, const std::vector< ::java::security::cert::Certificate>&) const ;
-    void engineSetKeyEntry(const ::java::lang::String&, const std::vector< int8_t>&, const std::vector< ::java::security::cert::Certificate>&) const ;
-    void engineSetCertificateEntry(const ::java::lang::String&, const ::java::security::cert::Certificate&) const ;
-    void engineDeleteEntry(const ::java::lang::String&) const ;
-    ::java::util::Enumeration engineAliases() const ;
-    bool engineContainsAlias(const ::java::lang::String&) const ;
-    int32_t engineSize() const ;
-    bool engineIsKeyEntry(const ::java::lang::String&) const ;
-    bool engineIsCertificateEntry(const ::java::lang::String&) const ;
-    ::java::lang::String engineGetCertificateAlias(const ::java::security::cert::Certificate&) const ;
-    void engineStore(const ::java::io::OutputStream&, const std::vector< uint16_t>&) const ;
-    void engineStore(const ::java::security::KeyStore_LoadStoreParameter&) const ;
-    void engineLoad(const ::java::io::InputStream&, const std::vector< uint16_t>&) const ;
-    void engineLoad(const ::java::security::KeyStore_LoadStoreParameter&) const ;
-    ::java::security::KeyStore_Entry engineGetEntry(const ::java::lang::String&, const ::java::security::KeyStore_ProtectionParameter&) const ;
-    void engineSetEntry(const ::java::lang::String&, const ::java::security::KeyStore_Entry&, const ::java::security::KeyStore_ProtectionParameter&) const ;
-    bool engineEntryInstanceOf(const ::java::lang::String&, const ::java::lang::Class&) const ;
+    ::java::security::Key engineGetKey(const ::java::lang::String&, const std::vector< uint16_t>&) const;
+    std::vector< ::java::security::cert::Certificate> engineGetCertificateChain(const ::java::lang::String&) const;
+    ::java::security::cert::Certificate engineGetCertificate(const ::java::lang::String&) const;
+    ::java::util::Date engineGetCreationDate(const ::java::lang::String&) const;
+    void engineSetKeyEntry(const ::java::lang::String&, const ::java::security::Key&, const std::vector< uint16_t>&, const std::vector< ::java::security::cert::Certificate>&) const;
+    void engineSetKeyEntry(const ::java::lang::String&, const std::vector< int8_t>&, const std::vector< ::java::security::cert::Certificate>&) const;
+    void engineSetCertificateEntry(const ::java::lang::String&, const ::java::security::cert::Certificate&) const;
+    void engineDeleteEntry(const ::java::lang::String&) const;
+    ::java::util::Enumeration engineAliases() const;
+    bool engineContainsAlias(const ::java::lang::String&) const;
+    int32_t engineSize() const;
+    bool engineIsKeyEntry(const ::java::lang::String&) const;
+    bool engineIsCertificateEntry(const ::java::lang::String&) const;
+    ::java::lang::String engineGetCertificateAlias(const ::java::security::cert::Certificate&) const;
+    void engineStore(const ::java::io::OutputStream&, const std::vector< uint16_t>&) const;
+    void engineStore(const ::java::security::KeyStore_LoadStoreParameter&) const;
+    void engineLoad(const ::java::io::InputStream&, const std::vector< uint16_t>&) const;
+    void engineLoad(const ::java::security::KeyStore_LoadStoreParameter&) const;
+    ::java::security::KeyStore_Entry engineGetEntry(const ::java::lang::String&, const ::java::security::KeyStore_ProtectionParameter&) const;
+    void engineSetEntry(const ::java::lang::String&, const ::java::security::KeyStore_Entry&, const ::java::security::KeyStore_ProtectionParameter&) const;
+    bool engineEntryInstanceOf(const ::java::lang::String&, const ::java::lang::Class&) const;
 
 };
 }

@@ -39,22 +39,22 @@ public:
     ::java::nio::charset::CharsetDecoder& operator=(const ::java::nio::charset::CharsetDecoder& x) {obj = x.obj; return *this;}
     ::java::nio::charset::CharsetDecoder& operator=(::java::nio::charset::CharsetDecoder&& x) {obj = std::move(x.obj); return *this;}
     
-    float averageCharsPerByte() const ;
-    ::java::nio::charset::Charset charset() const ;
-    ::java::nio::CharBuffer decode(const ::java::nio::ByteBuffer&) const ;
-    ::java::nio::charset::CoderResult decode(const ::java::nio::ByteBuffer&, const ::java::nio::CharBuffer&, bool) const ;
-    ::java::nio::charset::Charset detectedCharset() const ;
-    ::java::nio::charset::CoderResult flush(const ::java::nio::CharBuffer&) const ;
-    bool isAutoDetecting() const ;
-    bool isCharsetDetected() const ;
-    ::java::nio::charset::CodingErrorAction malformedInputAction() const ;
-    float maxCharsPerByte() const ;
-    ::java::nio::charset::CharsetDecoder onMalformedInput(const ::java::nio::charset::CodingErrorAction&) const ;
-    ::java::nio::charset::CharsetDecoder onUnmappableCharacter(const ::java::nio::charset::CodingErrorAction&) const ;
-    ::java::lang::String replacement() const ;
-    ::java::nio::charset::CharsetDecoder replaceWith(const ::java::lang::String&) const ;
-    ::java::nio::charset::CharsetDecoder reset() const ;
-    ::java::nio::charset::CodingErrorAction unmappableCharacterAction() const ;
+    float averageCharsPerByte() const;
+    ::java::nio::charset::Charset charset() const;
+    ::java::nio::CharBuffer decode(const ::java::nio::ByteBuffer&) const;
+    ::java::nio::charset::CoderResult decode(const ::java::nio::ByteBuffer&, const ::java::nio::CharBuffer&, bool) const;
+    ::java::nio::charset::Charset detectedCharset() const;
+    ::java::nio::charset::CoderResult flush(const ::java::nio::CharBuffer&) const;
+    bool isAutoDetecting() const;
+    bool isCharsetDetected() const;
+    ::java::nio::charset::CodingErrorAction malformedInputAction() const;
+    float maxCharsPerByte() const;
+    ::java::nio::charset::CharsetDecoder onMalformedInput(const ::java::nio::charset::CodingErrorAction&) const;
+    ::java::nio::charset::CharsetDecoder onUnmappableCharacter(const ::java::nio::charset::CodingErrorAction&) const;
+    ::java::lang::String replacement() const;
+    ::java::nio::charset::CharsetDecoder replaceWith(const ::java::lang::String&) const;
+    ::java::nio::charset::CharsetDecoder reset() const;
+    ::java::nio::charset::CodingErrorAction unmappableCharacterAction() const;
 
 };
 }

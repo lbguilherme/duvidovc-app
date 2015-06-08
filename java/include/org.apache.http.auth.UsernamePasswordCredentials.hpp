@@ -40,12 +40,12 @@ public:
     
     UsernamePasswordCredentials(const ::java::lang::String&);
     UsernamePasswordCredentials(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::security::Principal getUserPrincipal() const ;
-    ::java::lang::String getUserName() const ;
-    ::java::lang::String getPassword() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    ::java::security::Principal getUserPrincipal() const;
+    ::java::lang::String getUserName() const;
+    ::java::lang::String getPassword() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

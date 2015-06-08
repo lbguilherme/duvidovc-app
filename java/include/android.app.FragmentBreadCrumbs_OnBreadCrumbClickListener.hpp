@@ -32,7 +32,7 @@ public:
     ::android::app::FragmentBreadCrumbs_OnBreadCrumbClickListener& operator=(const ::android::app::FragmentBreadCrumbs_OnBreadCrumbClickListener& x) {obj = x.obj; return *this;}
     ::android::app::FragmentBreadCrumbs_OnBreadCrumbClickListener& operator=(::android::app::FragmentBreadCrumbs_OnBreadCrumbClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onBreadCrumbClick(const ::android::app::FragmentManager_BackStackEntry&, int32_t) const ;
+    bool onBreadCrumbClick(const ::android::app::FragmentManager_BackStackEntry&, int32_t) const;
 
 };
 }

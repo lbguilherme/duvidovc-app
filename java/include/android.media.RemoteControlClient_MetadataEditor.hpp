@@ -34,11 +34,11 @@ public:
     ::android::media::RemoteControlClient_MetadataEditor& operator=(const ::android::media::RemoteControlClient_MetadataEditor& x) {obj = x.obj; return *this;}
     ::android::media::RemoteControlClient_MetadataEditor& operator=(::android::media::RemoteControlClient_MetadataEditor&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::media::RemoteControlClient_MetadataEditor putString(int32_t, const ::java::lang::String&) const ;
-    ::android::media::RemoteControlClient_MetadataEditor putLong(int32_t, int64_t) const ;
-    ::android::media::RemoteControlClient_MetadataEditor putBitmap(int32_t, const ::android::graphics::Bitmap&) const ;
-    void clear() const ;
-    void apply() const ;
+    ::android::media::RemoteControlClient_MetadataEditor putString(int32_t, const ::java::lang::String&) const;
+    ::android::media::RemoteControlClient_MetadataEditor putLong(int32_t, int64_t) const;
+    ::android::media::RemoteControlClient_MetadataEditor putBitmap(int32_t, const ::android::graphics::Bitmap&) const;
+    void clear() const;
+    void apply() const;
 
 };
 }

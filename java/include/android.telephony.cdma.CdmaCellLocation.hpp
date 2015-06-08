@@ -39,18 +39,18 @@ public:
     
     CdmaCellLocation();
     CdmaCellLocation(const ::android::os::Bundle&);
-    int32_t getBaseStationId() const ;
-    int32_t getBaseStationLatitude() const ;
-    int32_t getBaseStationLongitude() const ;
-    int32_t getSystemId() const ;
-    int32_t getNetworkId() const ;
-    void setStateInvalid() const ;
-    void setCellLocationData(int32_t, int32_t, int32_t) const ;
-    void setCellLocationData(int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    void fillInNotifierBundle(const ::android::os::Bundle&) const ;
+    int32_t getBaseStationId() const;
+    int32_t getBaseStationLatitude() const;
+    int32_t getBaseStationLongitude() const;
+    int32_t getSystemId() const;
+    int32_t getNetworkId() const;
+    void setStateInvalid() const;
+    void setCellLocationData(int32_t, int32_t, int32_t) const;
+    void setCellLocationData(int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    void fillInNotifierBundle(const ::android::os::Bundle&) const;
 
 };
 }

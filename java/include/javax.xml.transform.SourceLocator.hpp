@@ -33,10 +33,10 @@ public:
     ::javax::xml::transform::SourceLocator& operator=(const ::javax::xml::transform::SourceLocator& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::SourceLocator& operator=(::javax::xml::transform::SourceLocator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getPublicId() const ;
-    ::java::lang::String getSystemId() const ;
-    int32_t getLineNumber() const ;
-    int32_t getColumnNumber() const ;
+    ::java::lang::String getPublicId() const;
+    ::java::lang::String getSystemId() const;
+    int32_t getLineNumber() const;
+    int32_t getColumnNumber() const;
 
 };
 }

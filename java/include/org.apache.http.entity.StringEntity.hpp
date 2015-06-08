@@ -43,12 +43,12 @@ public:
     
     StringEntity(const ::java::lang::String&, const ::java::lang::String&);
     StringEntity(const ::java::lang::String&);
-    bool isRepeatable() const ;
-    int64_t getContentLength() const ;
-    ::java::io::InputStream getContent() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    ::java::lang::Object clone() const ;
+    bool isRepeatable() const;
+    int64_t getContentLength() const;
+    ::java::io::InputStream getContent() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    ::java::lang::Object clone() const;
 
 };
 }

@@ -42,10 +42,10 @@ public:
     ResourceCursorAdapter(const ::android::content::Context&, int32_t, const ::android::database::Cursor&);
     ResourceCursorAdapter(const ::android::content::Context&, int32_t, const ::android::database::Cursor&, bool);
     ResourceCursorAdapter(const ::android::content::Context&, int32_t, const ::android::database::Cursor&, int32_t);
-    ::android::view::View newView(const ::android::content::Context&, const ::android::database::Cursor&, const ::android::view::ViewGroup&) const ;
-    ::android::view::View newDropDownView(const ::android::content::Context&, const ::android::database::Cursor&, const ::android::view::ViewGroup&) const ;
-    void setViewResource(int32_t) const ;
-    void setDropDownViewResource(int32_t) const ;
+    ::android::view::View newView(const ::android::content::Context&, const ::android::database::Cursor&, const ::android::view::ViewGroup&) const;
+    ::android::view::View newDropDownView(const ::android::content::Context&, const ::android::database::Cursor&, const ::android::view::ViewGroup&) const;
+    void setViewResource(int32_t) const;
+    void setDropDownViewResource(int32_t) const;
 
 };
 }

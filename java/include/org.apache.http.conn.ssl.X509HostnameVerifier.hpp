@@ -40,10 +40,10 @@ public:
     ::org::apache::http::conn::ssl::X509HostnameVerifier& operator=(const ::org::apache::http::conn::ssl::X509HostnameVerifier& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::ssl::X509HostnameVerifier& operator=(::org::apache::http::conn::ssl::X509HostnameVerifier&& x) {obj = std::move(x.obj); return *this;}
     
-    bool verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSession&) const ;
-    void verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSocket&) const ;
-    void verify(const ::java::lang::String&, const ::java::security::cert::X509Certificate&) const ;
-    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const ;
+    bool verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSession&) const;
+    void verify(const ::java::lang::String&, const ::javax::net::ssl::SSLSocket&) const;
+    void verify(const ::java::lang::String&, const ::java::security::cert::X509Certificate&) const;
+    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const;
 
 };
 }

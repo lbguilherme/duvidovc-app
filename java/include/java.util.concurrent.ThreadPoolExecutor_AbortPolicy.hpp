@@ -37,7 +37,7 @@ public:
     ::java::util::concurrent::ThreadPoolExecutor_AbortPolicy& operator=(::java::util::concurrent::ThreadPoolExecutor_AbortPolicy&& x) {obj = std::move(x.obj); return *this;}
     
     ThreadPoolExecutor_AbortPolicy();
-    void rejectedExecution(const ::java::lang::Runnable&, const ::java::util::concurrent::ThreadPoolExecutor&) const ;
+    void rejectedExecution(const ::java::lang::Runnable&, const ::java::util::concurrent::ThreadPoolExecutor&) const;
 
 };
 }

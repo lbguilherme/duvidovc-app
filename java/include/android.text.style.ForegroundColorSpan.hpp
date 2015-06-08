@@ -42,11 +42,11 @@ public:
     
     ForegroundColorSpan(int32_t);
     ForegroundColorSpan(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t getForegroundColor() const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t getForegroundColor() const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
 
 };
 }

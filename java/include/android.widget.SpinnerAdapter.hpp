@@ -35,7 +35,7 @@ public:
     ::android::widget::SpinnerAdapter& operator=(const ::android::widget::SpinnerAdapter& x) {obj = x.obj; return *this;}
     ::android::widget::SpinnerAdapter& operator=(::android::widget::SpinnerAdapter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View getDropDownView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
+    ::android::view::View getDropDownView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const;
 
 };
 }

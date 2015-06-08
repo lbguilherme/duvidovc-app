@@ -40,16 +40,16 @@ public:
     ::com::facebook::share::model::GameRequestContent& operator=(const ::com::facebook::share::model::GameRequestContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::GameRequestContent& operator=(::com::facebook::share::model::GameRequestContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getMessage() const ;
-    ::java::lang::String getTo() const ;
-    ::java::lang::String getTitle() const ;
-    ::java::lang::String getData() const ;
-    ::com::facebook::share::model::GameRequestContent_ActionType getActionType() const ;
-    ::java::lang::String getObjectId() const ;
-    ::com::facebook::share::model::GameRequestContent_Filters getFilters() const ;
-    ::java::util::ArrayList getSuggestions() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getMessage() const;
+    ::java::lang::String getTo() const;
+    ::java::lang::String getTitle() const;
+    ::java::lang::String getData() const;
+    ::com::facebook::share::model::GameRequestContent_ActionType getActionType() const;
+    ::java::lang::String getObjectId() const;
+    ::com::facebook::share::model::GameRequestContent_Filters getFilters() const;
+    ::java::util::ArrayList getSuggestions() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

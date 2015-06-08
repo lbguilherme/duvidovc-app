@@ -43,26 +43,26 @@ public:
     
     MessageFormat(const ::java::lang::String&, const ::java::util::Locale&);
     MessageFormat(const ::java::lang::String&);
-    void applyPattern(const ::java::lang::String&) const ;
-    ::java::lang::Object clone() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::text::AttributedCharacterIterator formatToCharacterIterator(const ::java::lang::Object&) const ;
-    ::java::lang::StringBuffer format(const std::vector< ::java::lang::Object>&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
-    ::java::lang::StringBuffer format(const ::java::lang::Object&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
+    void applyPattern(const ::java::lang::String&) const;
+    ::java::lang::Object clone() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::text::AttributedCharacterIterator formatToCharacterIterator(const ::java::lang::Object&) const;
+    ::java::lang::StringBuffer format(const std::vector< ::java::lang::Object>&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
+    ::java::lang::StringBuffer format(const ::java::lang::Object&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
     static ::java::lang::String format(const ::java::lang::String&, const std::vector< ::java::lang::Object>&);
-    std::vector< ::java::text::Format> getFormats() const ;
-    std::vector< ::java::text::Format> getFormatsByArgumentIndex() const ;
-    void setFormatByArgumentIndex(int32_t, const ::java::text::Format&) const ;
-    void setFormatsByArgumentIndex(const std::vector< ::java::text::Format>&) const ;
-    ::java::util::Locale getLocale() const ;
-    int32_t hashCode() const ;
-    std::vector< ::java::lang::Object> parse(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::Object> parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const ;
-    ::java::lang::Object parseObject(const ::java::lang::String&, const ::java::text::ParsePosition&) const ;
-    void setFormat(int32_t, const ::java::text::Format&) const ;
-    void setFormats(const std::vector< ::java::text::Format>&) const ;
-    void setLocale(const ::java::util::Locale&) const ;
-    ::java::lang::String toPattern() const ;
+    std::vector< ::java::text::Format> getFormats() const;
+    std::vector< ::java::text::Format> getFormatsByArgumentIndex() const;
+    void setFormatByArgumentIndex(int32_t, const ::java::text::Format&) const;
+    void setFormatsByArgumentIndex(const std::vector< ::java::text::Format>&) const;
+    ::java::util::Locale getLocale() const;
+    int32_t hashCode() const;
+    std::vector< ::java::lang::Object> parse(const ::java::lang::String&) const;
+    std::vector< ::java::lang::Object> parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const;
+    ::java::lang::Object parseObject(const ::java::lang::String&, const ::java::text::ParsePosition&) const;
+    void setFormat(int32_t, const ::java::text::Format&) const;
+    void setFormats(const std::vector< ::java::text::Format>&) const;
+    void setLocale(const ::java::util::Locale&) const;
+    ::java::lang::String toPattern() const;
 
 };
 }

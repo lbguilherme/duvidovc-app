@@ -35,8 +35,8 @@ public:
     ::java::util::DuplicateFormatFlagsException& operator=(::java::util::DuplicateFormatFlagsException&& x) {obj = std::move(x.obj); return *this;}
     
     DuplicateFormatFlagsException(const ::java::lang::String&);
-    ::java::lang::String getFlags() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getFlags() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

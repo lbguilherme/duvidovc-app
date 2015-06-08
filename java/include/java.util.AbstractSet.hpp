@@ -37,9 +37,9 @@ public:
     ::java::util::AbstractSet& operator=(const ::java::util::AbstractSet& x) {obj = x.obj; return *this;}
     ::java::util::AbstractSet& operator=(::java::util::AbstractSet&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    bool removeAll(const ::java::util::Collection&) const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    bool removeAll(const ::java::util::Collection&) const;
 
 };
 }

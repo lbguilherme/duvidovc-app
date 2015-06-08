@@ -32,10 +32,10 @@ public:
     ::javax::sql::CommonDataSource& operator=(const ::javax::sql::CommonDataSource& x) {obj = x.obj; return *this;}
     ::javax::sql::CommonDataSource& operator=(::javax::sql::CommonDataSource&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLoginTimeout() const ;
-    ::java::io::PrintWriter getLogWriter() const ;
-    void setLoginTimeout(int32_t) const ;
-    void setLogWriter(const ::java::io::PrintWriter&) const ;
+    int32_t getLoginTimeout() const;
+    ::java::io::PrintWriter getLogWriter() const;
+    void setLoginTimeout(int32_t) const;
+    void setLogWriter(const ::java::io::PrintWriter&) const;
 
 };
 }

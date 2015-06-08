@@ -37,13 +37,13 @@ public:
     ::android::renderscript::AllocationAdapter& operator=(const ::android::renderscript::AllocationAdapter& x) {obj = x.obj; return *this;}
     ::android::renderscript::AllocationAdapter& operator=(::android::renderscript::AllocationAdapter&& x) {obj = std::move(x.obj); return *this;}
     
-    void setLOD(int32_t) const ;
-    void setFace(const ::android::renderscript::Type_CubemapFace&) const ;
-    void setY(int32_t) const ;
-    void setZ(int32_t) const ;
+    void setLOD(int32_t) const;
+    void setFace(const ::android::renderscript::Type_CubemapFace&) const;
+    void setY(int32_t) const;
+    void setZ(int32_t) const;
     static ::android::renderscript::AllocationAdapter create1D(const ::android::renderscript::RenderScript&, const ::android::renderscript::Allocation&);
     static ::android::renderscript::AllocationAdapter create2D(const ::android::renderscript::RenderScript&, const ::android::renderscript::Allocation&);
-    void resize(int32_t) const ;
+    void resize(int32_t) const;
 
 };
 }

@@ -31,7 +31,7 @@ public:
     ::android::content::ClipboardManager_OnPrimaryClipChangedListener& operator=(const ::android::content::ClipboardManager_OnPrimaryClipChangedListener& x) {obj = x.obj; return *this;}
     ::android::content::ClipboardManager_OnPrimaryClipChangedListener& operator=(::android::content::ClipboardManager_OnPrimaryClipChangedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onPrimaryClipChanged() const ;
+    void onPrimaryClipChanged() const;
 
 };
 }

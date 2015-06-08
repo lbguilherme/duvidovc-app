@@ -34,7 +34,7 @@ public:
     ::android::net::wifi::p2p::WifiP2pManager_PeerListListener& operator=(const ::android::net::wifi::p2p::WifiP2pManager_PeerListListener& x) {obj = x.obj; return *this;}
     ::android::net::wifi::p2p::WifiP2pManager_PeerListListener& operator=(::android::net::wifi::p2p::WifiP2pManager_PeerListListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onPeersAvailable(const ::android::net::wifi::p2p::WifiP2pDeviceList&) const ;
+    void onPeersAvailable(const ::android::net::wifi::p2p::WifiP2pDeviceList&) const;
 
 };
 }

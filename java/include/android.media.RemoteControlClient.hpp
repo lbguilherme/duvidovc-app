@@ -36,9 +36,9 @@ public:
     
     RemoteControlClient(const ::android::app::PendingIntent&);
     RemoteControlClient(const ::android::app::PendingIntent&, const ::android::os::Looper&);
-    ::android::media::RemoteControlClient_MetadataEditor editMetadata(bool) const ;
-    void setPlaybackState(int32_t) const ;
-    void setTransportControlFlags(int32_t) const ;
+    ::android::media::RemoteControlClient_MetadataEditor editMetadata(bool) const;
+    void setPlaybackState(int32_t) const;
+    void setTransportControlFlags(int32_t) const;
 
 };
 }

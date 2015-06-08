@@ -35,13 +35,13 @@ public:
     ::java::util::concurrent::locks::Condition& operator=(const ::java::util::concurrent::locks::Condition& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::locks::Condition& operator=(::java::util::concurrent::locks::Condition&& x) {obj = std::move(x.obj); return *this;}
     
-    void await() const ;
-    void awaitUninterruptibly() const ;
-    int64_t awaitNanos(int64_t) const ;
-    bool await(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    bool awaitUntil(const ::java::util::Date&) const ;
-    void signal() const ;
-    void signalAll() const ;
+    void await() const;
+    void awaitUninterruptibly() const;
+    int64_t awaitNanos(int64_t) const;
+    bool await(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    bool awaitUntil(const ::java::util::Date&) const;
+    void signal() const;
+    void signalAll() const;
 
 };
 }

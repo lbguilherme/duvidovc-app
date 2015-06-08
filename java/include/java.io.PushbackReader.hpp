@@ -36,17 +36,17 @@ public:
     
     PushbackReader(const ::java::io::Reader&);
     PushbackReader(const ::java::io::Reader&, int32_t);
-    void close() const ;
-    void mark(int32_t) const ;
-    bool markSupported() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    bool ready() const ;
-    void reset() const ;
-    void unread(const std::vector< uint16_t>&) const ;
-    void unread(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void unread(int32_t) const ;
-    int64_t skip(int64_t) const ;
+    void close() const;
+    void mark(int32_t) const;
+    bool markSupported() const;
+    int32_t read() const;
+    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    bool ready() const;
+    void reset() const;
+    void unread(const std::vector< uint16_t>&) const;
+    void unread(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void unread(int32_t) const;
+    int64_t skip(int64_t) const;
 
 };
 }

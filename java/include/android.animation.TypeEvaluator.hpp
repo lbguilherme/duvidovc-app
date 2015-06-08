@@ -32,7 +32,7 @@ public:
     ::android::animation::TypeEvaluator& operator=(const ::android::animation::TypeEvaluator& x) {obj = x.obj; return *this;}
     ::android::animation::TypeEvaluator& operator=(::android::animation::TypeEvaluator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

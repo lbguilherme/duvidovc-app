@@ -39,17 +39,17 @@ public:
     
     SyncAdapterType(const ::java::lang::String&, const ::java::lang::String&, bool, bool);
     SyncAdapterType(const ::android::os::Parcel&);
-    bool supportsUploading() const ;
-    bool isUserVisible() const ;
-    bool allowParallelSyncs() const ;
-    bool isAlwaysSyncable() const ;
-    ::java::lang::String getSettingsActivity() const ;
+    bool supportsUploading() const;
+    bool isUserVisible() const;
+    bool allowParallelSyncs() const;
+    bool isAlwaysSyncable() const;
+    ::java::lang::String getSettingsActivity() const;
     static ::android::content::SyncAdapterType newKey(const ::java::lang::String&, const ::java::lang::String&);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

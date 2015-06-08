@@ -40,10 +40,10 @@ public:
     DOMSource();
     DOMSource(const ::org::w3c::dom::Node&);
     DOMSource(const ::org::w3c::dom::Node&, const ::java::lang::String&);
-    void setNode(const ::org::w3c::dom::Node&) const ;
-    ::org::w3c::dom::Node getNode() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
+    void setNode(const ::org::w3c::dom::Node&) const;
+    ::org::w3c::dom::Node getNode() const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
 
 };
 }

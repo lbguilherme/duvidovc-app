@@ -35,10 +35,10 @@ public:
     ::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImpl& operator=(const ::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImpl& operator=(::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isLongpressEnabled() const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void setIsLongpressEnabled(bool) const ;
-    void setOnDoubleTapListener(const ::android::view::GestureDetector_OnDoubleTapListener&) const ;
+    bool isLongpressEnabled() const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void setIsLongpressEnabled(bool) const;
+    void setOnDoubleTapListener(const ::android::view::GestureDetector_OnDoubleTapListener&) const;
 
 };
 }

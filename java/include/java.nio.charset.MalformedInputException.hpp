@@ -36,8 +36,8 @@ public:
     ::java::nio::charset::MalformedInputException& operator=(::java::nio::charset::MalformedInputException&& x) {obj = std::move(x.obj); return *this;}
     
     MalformedInputException(int32_t);
-    int32_t getInputLength() const ;
-    ::java::lang::String getMessage() const ;
+    int32_t getInputLength() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

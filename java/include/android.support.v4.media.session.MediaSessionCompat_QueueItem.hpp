@@ -42,13 +42,13 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_QueueItem& operator=(::android::support::v4::media::session::MediaSessionCompat_QueueItem&& x) {obj = std::move(x.obj); return *this;}
     
     MediaSessionCompat_QueueItem(const ::android::support::v4::media::MediaDescriptionCompat&, int64_t);
-    ::android::support::v4::media::MediaDescriptionCompat getDescription() const ;
-    int64_t getQueueId() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    ::java::lang::Object getQueueItem() const ;
+    ::android::support::v4::media::MediaDescriptionCompat getDescription() const;
+    int64_t getQueueId() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    ::java::lang::Object getQueueItem() const;
     static ::android::support::v4::media::session::MediaSessionCompat_QueueItem obtain(const ::java::lang::Object&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::android::sax::EndTextElementListener& operator=(const ::android::sax::EndTextElementListener& x) {obj = x.obj; return *this;}
     ::android::sax::EndTextElementListener& operator=(::android::sax::EndTextElementListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void end(const ::java::lang::String&) const ;
+    void end(const ::java::lang::String&) const;
 
 };
 }

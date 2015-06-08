@@ -40,30 +40,30 @@ public:
     ::java::util::logging::LogRecord& operator=(::java::util::logging::LogRecord&& x) {obj = std::move(x.obj); return *this;}
     
     LogRecord(const ::java::util::logging::Level&, const ::java::lang::String&);
-    ::java::util::logging::Level getLevel() const ;
-    void setLevel(const ::java::util::logging::Level&) const ;
-    ::java::lang::String getLoggerName() const ;
-    void setLoggerName(const ::java::lang::String&) const ;
-    ::java::lang::String getMessage() const ;
-    void setMessage(const ::java::lang::String&) const ;
-    int64_t getMillis() const ;
-    void setMillis(int64_t) const ;
-    std::vector< ::java::lang::Object> getParameters() const ;
-    void setParameters(const std::vector< ::java::lang::Object>&) const ;
-    ::java::util::ResourceBundle getResourceBundle() const ;
-    void setResourceBundle(const ::java::util::ResourceBundle&) const ;
-    ::java::lang::String getResourceBundleName() const ;
-    void setResourceBundleName(const ::java::lang::String&) const ;
-    int64_t getSequenceNumber() const ;
-    void setSequenceNumber(int64_t) const ;
-    ::java::lang::String getSourceClassName() const ;
-    void setSourceClassName(const ::java::lang::String&) const ;
-    ::java::lang::String getSourceMethodName() const ;
-    void setSourceMethodName(const ::java::lang::String&) const ;
-    int32_t getThreadID() const ;
-    void setThreadID(int32_t) const ;
-    ::java::lang::Throwable getThrown() const ;
-    void setThrown(const ::java::lang::Throwable&) const ;
+    ::java::util::logging::Level getLevel() const;
+    void setLevel(const ::java::util::logging::Level&) const;
+    ::java::lang::String getLoggerName() const;
+    void setLoggerName(const ::java::lang::String&) const;
+    ::java::lang::String getMessage() const;
+    void setMessage(const ::java::lang::String&) const;
+    int64_t getMillis() const;
+    void setMillis(int64_t) const;
+    std::vector< ::java::lang::Object> getParameters() const;
+    void setParameters(const std::vector< ::java::lang::Object>&) const;
+    ::java::util::ResourceBundle getResourceBundle() const;
+    void setResourceBundle(const ::java::util::ResourceBundle&) const;
+    ::java::lang::String getResourceBundleName() const;
+    void setResourceBundleName(const ::java::lang::String&) const;
+    int64_t getSequenceNumber() const;
+    void setSequenceNumber(int64_t) const;
+    ::java::lang::String getSourceClassName() const;
+    void setSourceClassName(const ::java::lang::String&) const;
+    ::java::lang::String getSourceMethodName() const;
+    void setSourceMethodName(const ::java::lang::String&) const;
+    int32_t getThreadID() const;
+    void setThreadID(int32_t) const;
+    ::java::lang::Throwable getThrown() const;
+    void setThrown(const ::java::lang::Throwable&) const;
 
 };
 }

@@ -44,12 +44,12 @@ public:
     ::com::facebook::share::model::ShareOpenGraphAction_Builder& operator=(::com::facebook::share::model::ShareOpenGraphAction_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ShareOpenGraphAction_Builder();
-    ::com::facebook::share::model::ShareOpenGraphAction_Builder setActionType(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareOpenGraphAction build() const ;
-    ::com::facebook::share::model::ShareOpenGraphAction_Builder readFrom(const ::com::facebook::share::model::ShareOpenGraphAction&) const ;
-    ::com::facebook::share::model::ShareOpenGraphAction_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder readFrom(const ::com::facebook::share::model::ShareOpenGraphValueContainer&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::ShareOpenGraphAction_Builder setActionType(const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareOpenGraphAction build() const;
+    ::com::facebook::share::model::ShareOpenGraphAction_Builder readFrom(const ::com::facebook::share::model::ShareOpenGraphAction&) const;
+    ::com::facebook::share::model::ShareOpenGraphAction_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::ShareOpenGraphValueContainer_Builder readFrom(const ::com::facebook::share::model::ShareOpenGraphValueContainer&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

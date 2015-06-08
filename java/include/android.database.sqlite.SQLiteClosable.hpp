@@ -33,9 +33,9 @@ public:
     ::android::database::sqlite::SQLiteClosable& operator=(::android::database::sqlite::SQLiteClosable&& x) {obj = std::move(x.obj); return *this;}
     
     SQLiteClosable();
-    void acquireReference() const ;
-    void releaseReference() const ;
-    void releaseReferenceFromContainer() const ;
+    void acquireReference() const;
+    void releaseReference() const;
+    void releaseReferenceFromContainer() const;
 
 };
 }

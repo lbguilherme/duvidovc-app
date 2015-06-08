@@ -36,9 +36,9 @@ public:
     ::android::support::v4::content::IntentCompat_IntentCompatImpl& operator=(const ::android::support::v4::content::IntentCompat_IntentCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::IntentCompat_IntentCompatImpl& operator=(::android::support::v4::content::IntentCompat_IntentCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::Intent makeMainActivity(const ::android::content::ComponentName&) const ;
-    ::android::content::Intent makeMainSelectorActivity(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::content::Intent makeRestartActivityTask(const ::android::content::ComponentName&) const ;
+    ::android::content::Intent makeMainActivity(const ::android::content::ComponentName&) const;
+    ::android::content::Intent makeMainSelectorActivity(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::content::Intent makeRestartActivityTask(const ::android::content::ComponentName&) const;
 
 };
 }

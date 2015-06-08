@@ -46,15 +46,15 @@ public:
     
     LikeView(const ::android::content::Context&);
     LikeView(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setObjectIdAndType(const ::java::lang::String&, const ::com::facebook::share::widget::LikeView_ObjectType&) const ;
-    void setLikeViewStyle(const ::com::facebook::share::widget::LikeView_Style&) const ;
-    void setAuxiliaryViewPosition(const ::com::facebook::share::widget::LikeView_AuxiliaryViewPosition&) const ;
-    void setHorizontalAlignment(const ::com::facebook::share::widget::LikeView_HorizontalAlignment&) const ;
-    void setForegroundColor(int32_t) const ;
-    void setOnErrorListener(const ::com::facebook::share::widget::LikeView_OnErrorListener&) const ;
-    ::com::facebook::share::widget::LikeView_OnErrorListener getOnErrorListener() const ;
-    void setFragment(const ::android::support::v4::app::Fragment&) const ;
-    void setEnabled(bool) const ;
+    void setObjectIdAndType(const ::java::lang::String&, const ::com::facebook::share::widget::LikeView_ObjectType&) const;
+    void setLikeViewStyle(const ::com::facebook::share::widget::LikeView_Style&) const;
+    void setAuxiliaryViewPosition(const ::com::facebook::share::widget::LikeView_AuxiliaryViewPosition&) const;
+    void setHorizontalAlignment(const ::com::facebook::share::widget::LikeView_HorizontalAlignment&) const;
+    void setForegroundColor(int32_t) const;
+    void setOnErrorListener(const ::com::facebook::share::widget::LikeView_OnErrorListener&) const;
+    ::com::facebook::share::widget::LikeView_OnErrorListener getOnErrorListener() const;
+    void setFragment(const ::android::support::v4::app::Fragment&) const;
+    void setEnabled(bool) const;
 
 };
 }

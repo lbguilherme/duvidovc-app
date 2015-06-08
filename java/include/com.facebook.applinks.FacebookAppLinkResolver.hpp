@@ -38,8 +38,8 @@ public:
     ::com::facebook::applinks::FacebookAppLinkResolver& operator=(::com::facebook::applinks::FacebookAppLinkResolver&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookAppLinkResolver();
-    ::bolts::Task getAppLinkFromUrlInBackground(const ::android::net::Uri&) const ;
-    ::bolts::Task getAppLinkFromUrlsInBackground(const ::java::util::List&) const ;
+    ::bolts::Task getAppLinkFromUrlInBackground(const ::android::net::Uri&) const;
+    ::bolts::Task getAppLinkFromUrlsInBackground(const ::java::util::List&) const;
 
 };
 }

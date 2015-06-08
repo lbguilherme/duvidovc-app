@@ -32,13 +32,13 @@ public:
     ::android::hardware::GeomagneticField& operator=(::android::hardware::GeomagneticField&& x) {obj = std::move(x.obj); return *this;}
     
     GeomagneticField(float, float, float, int64_t);
-    float getX() const ;
-    float getY() const ;
-    float getZ() const ;
-    float getDeclination() const ;
-    float getInclination() const ;
-    float getHorizontalStrength() const ;
-    float getFieldStrength() const ;
+    float getX() const;
+    float getY() const;
+    float getZ() const;
+    float getDeclination() const;
+    float getInclination() const;
+    float getHorizontalStrength() const;
+    float getFieldStrength() const;
 
 };
 }

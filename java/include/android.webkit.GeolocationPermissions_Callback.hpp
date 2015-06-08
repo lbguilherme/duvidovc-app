@@ -32,7 +32,7 @@ public:
     ::android::webkit::GeolocationPermissions_Callback& operator=(const ::android::webkit::GeolocationPermissions_Callback& x) {obj = x.obj; return *this;}
     ::android::webkit::GeolocationPermissions_Callback& operator=(::android::webkit::GeolocationPermissions_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    void invoke(const ::java::lang::String&, bool, bool) const ;
+    void invoke(const ::java::lang::String&, bool, bool) const;
 
 };
 }

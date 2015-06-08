@@ -44,16 +44,16 @@ public:
     TransformerException(const ::java::lang::String&, const ::java::lang::Throwable&);
     TransformerException(const ::java::lang::String&, const ::javax::xml::transform::SourceLocator&);
     TransformerException(const ::java::lang::String&, const ::javax::xml::transform::SourceLocator&, const ::java::lang::Throwable&);
-    ::javax::xml::transform::SourceLocator getLocator() const ;
-    void setLocator(const ::javax::xml::transform::SourceLocator&) const ;
-    ::java::lang::Throwable getException() const ;
-    ::java::lang::Throwable getCause() const ;
-    ::java::lang::Throwable initCause(const ::java::lang::Throwable&) const ;
-    ::java::lang::String getMessageAndLocation() const ;
-    ::java::lang::String getLocationAsString() const ;
-    void printStackTrace() const ;
-    void printStackTrace(const ::java::io::PrintStream&) const ;
-    void printStackTrace(const ::java::io::PrintWriter&) const ;
+    ::javax::xml::transform::SourceLocator getLocator() const;
+    void setLocator(const ::javax::xml::transform::SourceLocator&) const;
+    ::java::lang::Throwable getException() const;
+    ::java::lang::Throwable getCause() const;
+    ::java::lang::Throwable initCause(const ::java::lang::Throwable&) const;
+    ::java::lang::String getMessageAndLocation() const;
+    ::java::lang::String getLocationAsString() const;
+    void printStackTrace() const;
+    void printStackTrace(const ::java::io::PrintStream&) const;
+    void printStackTrace(const ::java::io::PrintWriter&) const;
 
 };
 }

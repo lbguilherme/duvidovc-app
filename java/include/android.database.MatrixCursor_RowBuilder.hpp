@@ -33,7 +33,7 @@ public:
     ::android::database::MatrixCursor_RowBuilder& operator=(const ::android::database::MatrixCursor_RowBuilder& x) {obj = x.obj; return *this;}
     ::android::database::MatrixCursor_RowBuilder& operator=(::android::database::MatrixCursor_RowBuilder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::database::MatrixCursor_RowBuilder add(const ::java::lang::Object&) const ;
+    ::android::database::MatrixCursor_RowBuilder add(const ::java::lang::Object&) const;
 
 };
 }

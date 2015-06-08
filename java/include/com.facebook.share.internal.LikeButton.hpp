@@ -37,7 +37,7 @@ public:
     ::com::facebook::share::internal::LikeButton& operator=(::com::facebook::share::internal::LikeButton&& x) {obj = std::move(x.obj); return *this;}
     
     LikeButton(const ::android::content::Context&, bool);
-    void setSelected(bool) const ;
+    void setSelected(bool) const;
 
 };
 }

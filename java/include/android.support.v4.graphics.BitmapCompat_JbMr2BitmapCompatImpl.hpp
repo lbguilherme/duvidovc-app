@@ -36,8 +36,8 @@ public:
     ::android::support::v4::graphics::BitmapCompat_JbMr2BitmapCompatImpl& operator=(const ::android::support::v4::graphics::BitmapCompat_JbMr2BitmapCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::BitmapCompat_JbMr2BitmapCompatImpl& operator=(::android::support::v4::graphics::BitmapCompat_JbMr2BitmapCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasMipMap(const ::android::graphics::Bitmap&) const ;
-    void setHasMipMap(const ::android::graphics::Bitmap&, bool) const ;
+    bool hasMipMap(const ::android::graphics::Bitmap&) const;
+    void setHasMipMap(const ::android::graphics::Bitmap&, bool) const;
 
 };
 }

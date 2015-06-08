@@ -40,18 +40,18 @@ public:
     ::org::apache::http::ProtocolVersion& operator=(::org::apache::http::ProtocolVersion&& x) {obj = std::move(x.obj); return *this;}
     
     ProtocolVersion(const ::java::lang::String&, int32_t, int32_t);
-    ::java::lang::String getProtocol() const ;
-    int32_t getMajor() const ;
-    int32_t getMinor() const ;
-    ::org::apache::http::ProtocolVersion forVersion(int32_t, int32_t) const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    bool isComparable(const ::org::apache::http::ProtocolVersion&) const ;
-    int32_t compareToVersion(const ::org::apache::http::ProtocolVersion&) const ;
-    bool greaterEquals(const ::org::apache::http::ProtocolVersion&) const ;
-    bool lessEquals(const ::org::apache::http::ProtocolVersion&) const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getProtocol() const;
+    int32_t getMajor() const;
+    int32_t getMinor() const;
+    ::org::apache::http::ProtocolVersion forVersion(int32_t, int32_t) const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    bool isComparable(const ::org::apache::http::ProtocolVersion&) const;
+    int32_t compareToVersion(const ::org::apache::http::ProtocolVersion&) const;
+    bool greaterEquals(const ::org::apache::http::ProtocolVersion&) const;
+    bool lessEquals(const ::org::apache::http::ProtocolVersion&) const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
 
 };
 }

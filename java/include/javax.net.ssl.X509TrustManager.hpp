@@ -36,9 +36,9 @@ public:
     ::javax::net::ssl::X509TrustManager& operator=(const ::javax::net::ssl::X509TrustManager& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::X509TrustManager& operator=(::javax::net::ssl::X509TrustManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void checkClientTrusted(const std::vector< ::java::security::cert::X509Certificate>&, const ::java::lang::String&) const ;
-    void checkServerTrusted(const std::vector< ::java::security::cert::X509Certificate>&, const ::java::lang::String&) const ;
-    std::vector< ::java::security::cert::X509Certificate> getAcceptedIssuers() const ;
+    void checkClientTrusted(const std::vector< ::java::security::cert::X509Certificate>&, const ::java::lang::String&) const;
+    void checkServerTrusted(const std::vector< ::java::security::cert::X509Certificate>&, const ::java::lang::String&) const;
+    std::vector< ::java::security::cert::X509Certificate> getAcceptedIssuers() const;
 
 };
 }

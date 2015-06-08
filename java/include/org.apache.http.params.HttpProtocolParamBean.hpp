@@ -39,11 +39,11 @@ public:
     ::org::apache::http::params::HttpProtocolParamBean& operator=(::org::apache::http::params::HttpProtocolParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     HttpProtocolParamBean(const ::org::apache::http::params::HttpParams&);
-    void setHttpElementCharset(const ::java::lang::String&) const ;
-    void setContentCharset(const ::java::lang::String&) const ;
-    void setVersion(const ::org::apache::http::HttpVersion&) const ;
-    void setUserAgent(const ::java::lang::String&) const ;
-    void setUseExpectContinue(bool) const ;
+    void setHttpElementCharset(const ::java::lang::String&) const;
+    void setContentCharset(const ::java::lang::String&) const;
+    void setVersion(const ::org::apache::http::HttpVersion&) const;
+    void setUserAgent(const ::java::lang::String&) const;
+    void setUseExpectContinue(bool) const;
 
 };
 }

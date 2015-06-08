@@ -34,7 +34,7 @@ public:
     ::android::renderscript::RenderScript_RSErrorHandler& operator=(::android::renderscript::RenderScript_RSErrorHandler&& x) {obj = std::move(x.obj); return *this;}
     
     RenderScript_RSErrorHandler();
-    void run() const ;
+    void run() const;
 
 };
 }

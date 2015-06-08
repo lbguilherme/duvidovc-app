@@ -34,11 +34,11 @@ public:
     ::android::net::rtp::AudioGroup& operator=(::android::net::rtp::AudioGroup&& x) {obj = std::move(x.obj); return *this;}
     
     AudioGroup();
-    std::vector< ::android::net::rtp::AudioStream> getStreams() const ;
-    int32_t getMode() const ;
-    void setMode(int32_t) const ;
-    void sendDtmf(int32_t) const ;
-    void clear() const ;
+    std::vector< ::android::net::rtp::AudioStream> getStreams() const;
+    int32_t getMode() const;
+    void setMode(int32_t) const;
+    void sendDtmf(int32_t) const;
+    void clear() const;
 
 };
 }

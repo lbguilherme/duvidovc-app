@@ -33,7 +33,7 @@ public:
     ::android::text::util::Linkify_MatchFilter& operator=(const ::android::text::util::Linkify_MatchFilter& x) {obj = x.obj; return *this;}
     ::android::text::util::Linkify_MatchFilter& operator=(::android::text::util::Linkify_MatchFilter&& x) {obj = std::move(x.obj); return *this;}
     
-    bool acceptMatch(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    bool acceptMatch(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

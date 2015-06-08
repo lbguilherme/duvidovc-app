@@ -39,26 +39,26 @@ public:
     ::android::net::sip::SipAudioCall& operator=(::android::net::sip::SipAudioCall&& x) {obj = std::move(x.obj); return *this;}
     
     SipAudioCall(const ::android::content::Context&, const ::android::net::sip::SipProfile&);
-    void setListener(const ::android::net::sip::SipAudioCall_Listener&) const ;
-    void setListener(const ::android::net::sip::SipAudioCall_Listener&, bool) const ;
-    bool isInCall() const ;
-    bool isOnHold() const ;
-    void close() const ;
-    ::android::net::sip::SipProfile getLocalProfile() const ;
-    ::android::net::sip::SipProfile getPeerProfile() const ;
-    int32_t getState() const ;
-    void attachCall(const ::android::net::sip::SipSession&, const ::java::lang::String&) const ;
-    void makeCall(const ::android::net::sip::SipProfile&, const ::android::net::sip::SipSession&, int32_t) const ;
-    void endCall() const ;
-    void holdCall(int32_t) const ;
-    void answerCall(int32_t) const ;
-    void continueCall(int32_t) const ;
-    void toggleMute() const ;
-    bool isMuted() const ;
-    void setSpeakerMode(bool) const ;
-    void sendDtmf(int32_t) const ;
-    void sendDtmf(int32_t, const ::android::os::Message&) const ;
-    void startAudio() const ;
+    void setListener(const ::android::net::sip::SipAudioCall_Listener&) const;
+    void setListener(const ::android::net::sip::SipAudioCall_Listener&, bool) const;
+    bool isInCall() const;
+    bool isOnHold() const;
+    void close() const;
+    ::android::net::sip::SipProfile getLocalProfile() const;
+    ::android::net::sip::SipProfile getPeerProfile() const;
+    int32_t getState() const;
+    void attachCall(const ::android::net::sip::SipSession&, const ::java::lang::String&) const;
+    void makeCall(const ::android::net::sip::SipProfile&, const ::android::net::sip::SipSession&, int32_t) const;
+    void endCall() const;
+    void holdCall(int32_t) const;
+    void answerCall(int32_t) const;
+    void continueCall(int32_t) const;
+    void toggleMute() const;
+    bool isMuted() const;
+    void setSpeakerMode(bool) const;
+    void sendDtmf(int32_t) const;
+    void sendDtmf(int32_t, const ::android::os::Message&) const;
+    void startAudio() const;
 
 };
 }

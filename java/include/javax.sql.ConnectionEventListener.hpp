@@ -34,8 +34,8 @@ public:
     ::javax::sql::ConnectionEventListener& operator=(const ::javax::sql::ConnectionEventListener& x) {obj = x.obj; return *this;}
     ::javax::sql::ConnectionEventListener& operator=(::javax::sql::ConnectionEventListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void connectionClosed(const ::javax::sql::ConnectionEvent&) const ;
-    void connectionErrorOccurred(const ::javax::sql::ConnectionEvent&) const ;
+    void connectionClosed(const ::javax::sql::ConnectionEvent&) const;
+    void connectionErrorOccurred(const ::javax::sql::ConnectionEvent&) const;
 
 };
 }

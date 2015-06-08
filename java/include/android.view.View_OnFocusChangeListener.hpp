@@ -32,7 +32,7 @@ public:
     ::android::view::View_OnFocusChangeListener& operator=(const ::android::view::View_OnFocusChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnFocusChangeListener& operator=(::android::view::View_OnFocusChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onFocusChange(const ::android::view::View&, bool) const ;
+    void onFocusChange(const ::android::view::View&, bool) const;
 
 };
 }

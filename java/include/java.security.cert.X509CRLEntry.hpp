@@ -40,14 +40,14 @@ public:
     ::java::security::cert::X509CRLEntry& operator=(::java::security::cert::X509CRLEntry&& x) {obj = std::move(x.obj); return *this;}
     
     X509CRLEntry();
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    std::vector< int8_t> getEncoded() const ;
-    ::java::math::BigInteger getSerialNumber() const ;
-    ::javax::security::auth::x500::X500Principal getCertificateIssuer() const ;
-    ::java::util::Date getRevocationDate() const ;
-    bool hasExtensions() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    std::vector< int8_t> getEncoded() const;
+    ::java::math::BigInteger getSerialNumber() const;
+    ::javax::security::auth::x500::X500Principal getCertificateIssuer() const;
+    ::java::util::Date getRevocationDate() const;
+    bool hasExtensions() const;
+    ::java::lang::String toString() const;
 
 };
 }

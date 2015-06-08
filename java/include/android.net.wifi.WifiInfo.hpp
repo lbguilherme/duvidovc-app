@@ -38,19 +38,19 @@ public:
     ::android::net::wifi::WifiInfo& operator=(const ::android::net::wifi::WifiInfo& x) {obj = x.obj; return *this;}
     ::android::net::wifi::WifiInfo& operator=(::android::net::wifi::WifiInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getSSID() const ;
-    ::java::lang::String getBSSID() const ;
-    int32_t getRssi() const ;
-    int32_t getLinkSpeed() const ;
-    ::java::lang::String getMacAddress() const ;
-    int32_t getNetworkId() const ;
-    ::android::net::wifi::SupplicantState getSupplicantState() const ;
-    int32_t getIpAddress() const ;
-    bool getHiddenSSID() const ;
+    ::java::lang::String getSSID() const;
+    ::java::lang::String getBSSID() const;
+    int32_t getRssi() const;
+    int32_t getLinkSpeed() const;
+    ::java::lang::String getMacAddress() const;
+    int32_t getNetworkId() const;
+    ::android::net::wifi::SupplicantState getSupplicantState() const;
+    int32_t getIpAddress() const;
+    bool getHiddenSSID() const;
     static ::android::net::NetworkInfo_DetailedState getDetailedStateOf(const ::android::net::wifi::SupplicantState&);
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

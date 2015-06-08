@@ -35,15 +35,15 @@ public:
     ::android::database::sqlite::SQLiteProgram& operator=(const ::android::database::sqlite::SQLiteProgram& x) {obj = x.obj; return *this;}
     ::android::database::sqlite::SQLiteProgram& operator=(::android::database::sqlite::SQLiteProgram&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getUniqueId() const ;
-    void bindNull(int32_t) const ;
-    void bindLong(int32_t, int64_t) const ;
-    void bindDouble(int32_t, double) const ;
-    void bindString(int32_t, const ::java::lang::String&) const ;
-    void bindBlob(int32_t, const std::vector< int8_t>&) const ;
-    void clearBindings() const ;
-    void close() const ;
-    void bindAllArgsAsStrings(const std::vector< ::java::lang::String>&) const ;
+    int32_t getUniqueId() const;
+    void bindNull(int32_t) const;
+    void bindLong(int32_t, int64_t) const;
+    void bindDouble(int32_t, double) const;
+    void bindString(int32_t, const ::java::lang::String&) const;
+    void bindBlob(int32_t, const std::vector< int8_t>&) const;
+    void clearBindings() const;
+    void close() const;
+    void bindAllArgsAsStrings(const std::vector< ::java::lang::String>&) const;
 
 };
 }

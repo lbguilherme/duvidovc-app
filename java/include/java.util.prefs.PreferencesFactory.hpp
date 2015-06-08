@@ -33,8 +33,8 @@ public:
     ::java::util::prefs::PreferencesFactory& operator=(const ::java::util::prefs::PreferencesFactory& x) {obj = x.obj; return *this;}
     ::java::util::prefs::PreferencesFactory& operator=(::java::util::prefs::PreferencesFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::prefs::Preferences userRoot() const ;
-    ::java::util::prefs::Preferences systemRoot() const ;
+    ::java::util::prefs::Preferences userRoot() const;
+    ::java::util::prefs::Preferences systemRoot() const;
 
 };
 }

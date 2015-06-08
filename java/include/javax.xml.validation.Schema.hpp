@@ -34,8 +34,8 @@ public:
     ::javax::xml::validation::Schema& operator=(const ::javax::xml::validation::Schema& x) {obj = x.obj; return *this;}
     ::javax::xml::validation::Schema& operator=(::javax::xml::validation::Schema&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::xml::validation::Validator newValidator() const ;
-    ::javax::xml::validation::ValidatorHandler newValidatorHandler() const ;
+    ::javax::xml::validation::Validator newValidator() const;
+    ::javax::xml::validation::ValidatorHandler newValidatorHandler() const;
 
 };
 }

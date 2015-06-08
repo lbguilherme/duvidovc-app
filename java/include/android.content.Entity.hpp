@@ -36,10 +36,10 @@ public:
     ::android::content::Entity& operator=(::android::content::Entity&& x) {obj = std::move(x.obj); return *this;}
     
     Entity(const ::android::content::ContentValues&);
-    ::android::content::ContentValues getEntityValues() const ;
-    ::java::util::ArrayList getSubValues() const ;
-    void addSubValue(const ::android::net::Uri&, const ::android::content::ContentValues&) const ;
-    ::java::lang::String toString() const ;
+    ::android::content::ContentValues getEntityValues() const;
+    ::java::util::ArrayList getSubValues() const;
+    void addSubValue(const ::android::net::Uri&, const ::android::content::ContentValues&) const;
+    ::java::lang::String toString() const;
 
 };
 }

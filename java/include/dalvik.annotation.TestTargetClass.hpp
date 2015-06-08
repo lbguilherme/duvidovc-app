@@ -34,7 +34,7 @@ public:
     ::dalvik::annotation::TestTargetClass& operator=(const ::dalvik::annotation::TestTargetClass& x) {obj = x.obj; return *this;}
     ::dalvik::annotation::TestTargetClass& operator=(::dalvik::annotation::TestTargetClass&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Class value() const ;
+    ::java::lang::Class value() const;
 
 };
 }

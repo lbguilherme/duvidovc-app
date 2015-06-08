@@ -39,19 +39,19 @@ public:
     
     CharArrayWriter();
     CharArrayWriter(int32_t);
-    void close() const ;
-    void flush() const ;
-    void reset() const ;
-    int32_t size() const ;
-    std::vector< uint16_t> toCharArray() const ;
-    ::java::lang::String toString() const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void write(const ::java::lang::String&, int32_t, int32_t) const ;
-    void writeTo(const ::java::io::Writer&) const ;
-    ::java::io::CharArrayWriter append(uint16_t) const ;
-    ::java::io::CharArrayWriter append(const ::java::lang::CharSequence&) const ;
-    ::java::io::CharArrayWriter append(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    void reset() const;
+    int32_t size() const;
+    std::vector< uint16_t> toCharArray() const;
+    ::java::lang::String toString() const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void write(const ::java::lang::String&, int32_t, int32_t) const;
+    void writeTo(const ::java::io::Writer&) const;
+    ::java::io::CharArrayWriter append(uint16_t) const;
+    ::java::io::CharArrayWriter append(const ::java::lang::CharSequence&) const;
+    ::java::io::CharArrayWriter append(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

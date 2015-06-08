@@ -40,12 +40,12 @@ public:
     ::org::apache::http::conn::OperatedClientConnection& operator=(const ::org::apache::http::conn::OperatedClientConnection& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::OperatedClientConnection& operator=(::org::apache::http::conn::OperatedClientConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::HttpHost getTargetHost() const ;
-    bool isSecure() const ;
-    ::java::net::Socket getSocket() const ;
-    void opening(const ::java::net::Socket&, const ::org::apache::http::HttpHost&) const ;
-    void openCompleted(bool, const ::org::apache::http::params::HttpParams&) const ;
-    void update(const ::java::net::Socket&, const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::HttpHost getTargetHost() const;
+    bool isSecure() const;
+    ::java::net::Socket getSocket() const;
+    void opening(const ::java::net::Socket&, const ::org::apache::http::HttpHost&) const;
+    void openCompleted(bool, const ::org::apache::http::params::HttpParams&) const;
+    void update(const ::java::net::Socket&, const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

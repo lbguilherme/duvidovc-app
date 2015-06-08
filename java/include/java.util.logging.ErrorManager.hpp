@@ -35,7 +35,7 @@ public:
     ::java::util::logging::ErrorManager& operator=(::java::util::logging::ErrorManager&& x) {obj = std::move(x.obj); return *this;}
     
     ErrorManager();
-    void error(const ::java::lang::String&, const ::java::lang::Exception&, int32_t) const ;
+    void error(const ::java::lang::String&, const ::java::lang::Exception&, int32_t) const;
 
 };
 }

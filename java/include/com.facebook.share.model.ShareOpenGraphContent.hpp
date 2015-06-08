@@ -38,10 +38,10 @@ public:
     ::com::facebook::share::model::ShareOpenGraphContent& operator=(const ::com::facebook::share::model::ShareOpenGraphContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareOpenGraphContent& operator=(::com::facebook::share::model::ShareOpenGraphContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::com::facebook::share::model::ShareOpenGraphAction getAction() const ;
-    ::java::lang::String getPreviewPropertyName() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::com::facebook::share::model::ShareOpenGraphAction getAction() const;
+    ::java::lang::String getPreviewPropertyName() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

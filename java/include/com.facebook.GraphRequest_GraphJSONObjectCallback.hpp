@@ -33,7 +33,7 @@ public:
     ::com::facebook::GraphRequest_GraphJSONObjectCallback& operator=(const ::com::facebook::GraphRequest_GraphJSONObjectCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::GraphRequest_GraphJSONObjectCallback& operator=(::com::facebook::GraphRequest_GraphJSONObjectCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCompleted(const ::org::json::JSONObject&, const ::com::facebook::GraphResponse&) const ;
+    void onCompleted(const ::org::json::JSONObject&, const ::com::facebook::GraphResponse&) const;
 
 };
 }

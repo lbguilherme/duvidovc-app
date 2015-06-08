@@ -35,13 +35,13 @@ public:
     ::java::util::concurrent::atomic::AtomicMarkableReference& operator=(::java::util::concurrent::atomic::AtomicMarkableReference&& x) {obj = std::move(x.obj); return *this;}
     
     AtomicMarkableReference(const ::java::lang::Object&, bool);
-    ::java::lang::Object getReference() const ;
-    bool isMarked() const ;
-    ::java::lang::Object get(const std::vector< bool>&) const ;
-    bool weakCompareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, bool, bool) const ;
-    bool compareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, bool, bool) const ;
-    void set(const ::java::lang::Object&, bool) const ;
-    bool attemptMark(const ::java::lang::Object&, bool) const ;
+    ::java::lang::Object getReference() const;
+    bool isMarked() const;
+    ::java::lang::Object get(const std::vector< bool>&) const;
+    bool weakCompareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, bool, bool) const;
+    bool compareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, bool, bool) const;
+    void set(const ::java::lang::Object&, bool) const;
+    bool attemptMark(const ::java::lang::Object&, bool) const;
 
 };
 }

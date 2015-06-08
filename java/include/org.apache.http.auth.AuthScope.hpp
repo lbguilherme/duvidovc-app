@@ -39,14 +39,14 @@ public:
     AuthScope(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::java::lang::String&);
     AuthScope(const ::java::lang::String&, int32_t, const ::java::lang::String&);
     AuthScope(const ::java::lang::String&, int32_t);
-    ::java::lang::String getHost() const ;
-    int32_t getPort() const ;
-    ::java::lang::String getRealm() const ;
-    ::java::lang::String getScheme() const ;
-    int32_t match(const ::org::apache::http::auth::AuthScope&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    int32_t hashCode() const ;
+    ::java::lang::String getHost() const;
+    int32_t getPort() const;
+    ::java::lang::String getRealm() const;
+    ::java::lang::String getScheme() const;
+    int32_t match(const ::org::apache::http::auth::AuthScope&) const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    int32_t hashCode() const;
 
 };
 }

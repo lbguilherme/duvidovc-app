@@ -38,11 +38,11 @@ public:
     ::android::support::v4::app::INotificationSideChannel_Stub_Proxy& operator=(const ::android::support::v4::app::INotificationSideChannel_Stub_Proxy& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::INotificationSideChannel_Stub_Proxy& operator=(::android::support::v4::app::INotificationSideChannel_Stub_Proxy&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::IBinder asBinder() const ;
-    ::java::lang::String getInterfaceDescriptor() const ;
-    void notify(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::android::app::Notification&) const ;
-    void cancel(const ::java::lang::String&, int32_t, const ::java::lang::String&) const ;
-    void cancelAll(const ::java::lang::String&) const ;
+    ::android::os::IBinder asBinder() const;
+    ::java::lang::String getInterfaceDescriptor() const;
+    void notify(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::android::app::Notification&) const;
+    void cancel(const ::java::lang::String&, int32_t, const ::java::lang::String&) const;
+    void cancelAll(const ::java::lang::String&) const;
 
 };
 }

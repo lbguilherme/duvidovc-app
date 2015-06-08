@@ -36,7 +36,7 @@ public:
     ::android::content::res::XmlResourceParser& operator=(const ::android::content::res::XmlResourceParser& x) {obj = x.obj; return *this;}
     ::android::content::res::XmlResourceParser& operator=(::android::content::res::XmlResourceParser&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
+    void close() const;
 
 };
 }

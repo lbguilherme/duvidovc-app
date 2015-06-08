@@ -43,11 +43,11 @@ public:
     
     RFC2965Spec();
     RFC2965Spec(const std::vector< ::java::lang::String>&, bool);
-    ::java::util::List parse(const ::org::apache::http::Header&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    int32_t getVersion() const ;
-    ::org::apache::http::Header getVersionHeader() const ;
+    ::java::util::List parse(const ::org::apache::http::Header&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    int32_t getVersion() const;
+    ::org::apache::http::Header getVersionHeader() const;
 
 };
 }

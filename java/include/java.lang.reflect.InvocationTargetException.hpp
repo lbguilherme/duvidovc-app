@@ -38,8 +38,8 @@ public:
     
     InvocationTargetException(const ::java::lang::Throwable&);
     InvocationTargetException(const ::java::lang::Throwable&, const ::java::lang::String&);
-    ::java::lang::Throwable getTargetException() const ;
-    ::java::lang::Throwable getCause() const ;
+    ::java::lang::Throwable getTargetException() const;
+    ::java::lang::Throwable getCause() const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::android::text::style::LineBackgroundSpan& operator=(const ::android::text::style::LineBackgroundSpan& x) {obj = x.obj; return *this;}
     ::android::text::style::LineBackgroundSpan& operator=(::android::text::style::LineBackgroundSpan&& x) {obj = std::move(x.obj); return *this;}
     
-    void drawBackground(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const ;
+    void drawBackground(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const;
 
 };
 }

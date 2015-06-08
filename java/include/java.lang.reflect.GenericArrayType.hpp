@@ -35,7 +35,7 @@ public:
     ::java::lang::reflect::GenericArrayType& operator=(const ::java::lang::reflect::GenericArrayType& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::GenericArrayType& operator=(::java::lang::reflect::GenericArrayType&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::reflect::Type getGenericComponentType() const ;
+    ::java::lang::reflect::Type getGenericComponentType() const;
 
 };
 }

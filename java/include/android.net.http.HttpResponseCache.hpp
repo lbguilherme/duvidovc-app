@@ -46,16 +46,16 @@ public:
     
     static ::android::net::http::HttpResponseCache getInstalled();
     static ::android::net::http::HttpResponseCache install(const ::java::io::File&, int64_t);
-    ::java::net::CacheResponse get(const ::java::net::URI&, const ::java::lang::String&, const ::java::util::Map&) const ;
-    ::java::net::CacheRequest put(const ::java::net::URI&, const ::java::net::URLConnection&) const ;
-    int64_t size() const ;
-    int64_t maxSize() const ;
-    void flush() const ;
-    int32_t getNetworkCount() const ;
-    int32_t getHitCount() const ;
-    int32_t getRequestCount() const ;
-    void close() const ;
-    void delete_() const ;
+    ::java::net::CacheResponse get(const ::java::net::URI&, const ::java::lang::String&, const ::java::util::Map&) const;
+    ::java::net::CacheRequest put(const ::java::net::URI&, const ::java::net::URLConnection&) const;
+    int64_t size() const;
+    int64_t maxSize() const;
+    void flush() const;
+    int32_t getNetworkCount() const;
+    int32_t getHitCount() const;
+    int32_t getRequestCount() const;
+    void close() const;
+    void delete_() const;
 
 };
 }

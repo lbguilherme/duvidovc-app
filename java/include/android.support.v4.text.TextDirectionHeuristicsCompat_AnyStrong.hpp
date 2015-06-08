@@ -36,7 +36,7 @@ public:
     ::android::support::v4::text::TextDirectionHeuristicsCompat_AnyStrong& operator=(const ::android::support::v4::text::TextDirectionHeuristicsCompat_AnyStrong& x) {obj = x.obj; return *this;}
     ::android::support::v4::text::TextDirectionHeuristicsCompat_AnyStrong& operator=(::android::support::v4::text::TextDirectionHeuristicsCompat_AnyStrong&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t checkRtl(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    int32_t checkRtl(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

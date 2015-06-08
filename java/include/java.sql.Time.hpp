@@ -37,15 +37,15 @@ public:
     
     Time(int32_t, int32_t, int32_t);
     Time(int64_t);
-    int32_t getDate() const ;
-    int32_t getDay() const ;
-    int32_t getMonth() const ;
-    int32_t getYear() const ;
-    void setDate(int32_t) const ;
-    void setMonth(int32_t) const ;
-    void setYear(int32_t) const ;
-    void setTime(int64_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t getDate() const;
+    int32_t getDay() const;
+    int32_t getMonth() const;
+    int32_t getYear() const;
+    void setDate(int32_t) const;
+    void setMonth(int32_t) const;
+    void setYear(int32_t) const;
+    void setTime(int64_t) const;
+    ::java::lang::String toString() const;
     static ::java::sql::Time valueOf(const ::java::lang::String&);
 
 };

@@ -40,8 +40,8 @@ public:
     ::org::apache::http::impl::client::DefaultRedirectHandler& operator=(::org::apache::http::impl::client::DefaultRedirectHandler&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultRedirectHandler();
-    bool isRedirectRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::java::net::URI getLocationURI(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool isRedirectRequested(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::java::net::URI getLocationURI(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

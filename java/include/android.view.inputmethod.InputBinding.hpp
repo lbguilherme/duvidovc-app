@@ -41,13 +41,13 @@ public:
     
     InputBinding(const ::android::view::inputmethod::InputConnection&, const ::android::os::IBinder&, int32_t, int32_t);
     InputBinding(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::InputBinding&);
-    ::android::view::inputmethod::InputConnection getConnection() const ;
-    ::android::os::IBinder getConnectionToken() const ;
-    int32_t getUid() const ;
-    int32_t getPid() const ;
-    ::java::lang::String toString() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    ::android::view::inputmethod::InputConnection getConnection() const;
+    ::android::os::IBinder getConnectionToken() const;
+    int32_t getUid() const;
+    int32_t getPid() const;
+    ::java::lang::String toString() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

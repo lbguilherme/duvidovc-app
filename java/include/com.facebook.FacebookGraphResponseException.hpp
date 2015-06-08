@@ -36,8 +36,8 @@ public:
     ::com::facebook::FacebookGraphResponseException& operator=(::com::facebook::FacebookGraphResponseException&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookGraphResponseException(const ::com::facebook::GraphResponse&, const ::java::lang::String&);
-    ::com::facebook::GraphResponse getGraphResponse() const ;
-    ::java::lang::String toString() const ;
+    ::com::facebook::GraphResponse getGraphResponse() const;
+    ::java::lang::String toString() const;
 
 };
 }

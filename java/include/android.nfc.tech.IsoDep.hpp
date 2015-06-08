@@ -37,16 +37,16 @@ public:
     ::android::nfc::tech::IsoDep& operator=(::android::nfc::tech::IsoDep&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::nfc::tech::IsoDep get(const ::android::nfc::Tag&);
-    void setTimeout(int32_t) const ;
-    int32_t getTimeout() const ;
-    std::vector< int8_t> getHistoricalBytes() const ;
-    std::vector< int8_t> getHiLayerResponse() const ;
-    std::vector< int8_t> transceive(const std::vector< int8_t>&) const ;
-    int32_t getMaxTransceiveLength() const ;
-    void close() const ;
-    void connect() const ;
-    bool isConnected() const ;
-    ::android::nfc::Tag getTag() const ;
+    void setTimeout(int32_t) const;
+    int32_t getTimeout() const;
+    std::vector< int8_t> getHistoricalBytes() const;
+    std::vector< int8_t> getHiLayerResponse() const;
+    std::vector< int8_t> transceive(const std::vector< int8_t>&) const;
+    int32_t getMaxTransceiveLength() const;
+    void close() const;
+    void connect() const;
+    bool isConnected() const;
+    ::android::nfc::Tag getTag() const;
 
 };
 }

@@ -38,7 +38,7 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat_AccessibilityNodeProviderJellyBeanImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat_AccessibilityNodeProviderJellyBeanImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat_AccessibilityNodeProviderJellyBeanImpl& operator=(::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat_AccessibilityNodeProviderJellyBeanImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object newAccessibilityNodeProviderBridge(const ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat&) const ;
+    ::java::lang::Object newAccessibilityNodeProviderBridge(const ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat&) const;
 
 };
 }

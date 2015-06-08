@@ -36,10 +36,10 @@ public:
     ::android::support::v4::view::GravityCompat_GravityCompatImplBase& operator=(const ::android::support::v4::view::GravityCompat_GravityCompatImplBase& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::GravityCompat_GravityCompatImplBase& operator=(::android::support::v4::view::GravityCompat_GravityCompatImplBase&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getAbsoluteGravity(int32_t, int32_t) const ;
-    void apply(int32_t, int32_t, int32_t, const ::android::graphics::Rect&, const ::android::graphics::Rect&, int32_t) const ;
-    void apply(int32_t, int32_t, int32_t, const ::android::graphics::Rect&, int32_t, int32_t, const ::android::graphics::Rect&, int32_t) const ;
-    void applyDisplay(int32_t, const ::android::graphics::Rect&, const ::android::graphics::Rect&, int32_t) const ;
+    int32_t getAbsoluteGravity(int32_t, int32_t) const;
+    void apply(int32_t, int32_t, int32_t, const ::android::graphics::Rect&, const ::android::graphics::Rect&, int32_t) const;
+    void apply(int32_t, int32_t, int32_t, const ::android::graphics::Rect&, int32_t, int32_t, const ::android::graphics::Rect&, int32_t) const;
+    void applyDisplay(int32_t, const ::android::graphics::Rect&, const ::android::graphics::Rect&, int32_t) const;
 
 };
 }

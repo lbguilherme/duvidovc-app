@@ -33,8 +33,8 @@ public:
     ::org::xml::sax::DTDHandler& operator=(const ::org::xml::sax::DTDHandler& x) {obj = x.obj; return *this;}
     ::org::xml::sax::DTDHandler& operator=(::org::xml::sax::DTDHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void notationDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void unparsedEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    void notationDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void unparsedEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

@@ -42,13 +42,13 @@ public:
     FileInputStream(const ::java::io::File&);
     FileInputStream(const ::java::io::FileDescriptor&);
     FileInputStream(const ::java::lang::String&);
-    int32_t available() const ;
-    void close() const ;
-    ::java::nio::channels::FileChannel getChannel() const ;
-    ::java::io::FileDescriptor getFD() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int64_t skip(int64_t) const ;
+    int32_t available() const;
+    void close() const;
+    ::java::nio::channels::FileChannel getChannel() const;
+    ::java::io::FileDescriptor getFD() const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int64_t skip(int64_t) const;
 
 };
 }

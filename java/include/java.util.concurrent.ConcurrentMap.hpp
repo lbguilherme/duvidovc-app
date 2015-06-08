@@ -35,10 +35,10 @@ public:
     ::java::util::concurrent::ConcurrentMap& operator=(const ::java::util::concurrent::ConcurrentMap& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::ConcurrentMap& operator=(::java::util::concurrent::ConcurrentMap&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object putIfAbsent(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    bool remove(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    bool replace(const ::java::lang::Object&, const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::Object replace(const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    ::java::lang::Object putIfAbsent(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    bool remove(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    bool replace(const ::java::lang::Object&, const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::Object replace(const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

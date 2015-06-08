@@ -52,7 +52,7 @@ public:
     ::org::apache::http::impl::client::DefaultRequestDirector& operator=(::org::apache::http::impl::client::DefaultRequestDirector&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultRequestDirector(const ::org::apache::http::protocol::HttpRequestExecutor&, const ::org::apache::http::conn::ClientConnectionManager&, const ::org::apache::http::ConnectionReuseStrategy&, const ::org::apache::http::conn::ConnectionKeepAliveStrategy&, const ::org::apache::http::conn::routing::HttpRoutePlanner&, const ::org::apache::http::protocol::HttpProcessor&, const ::org::apache::http::client::HttpRequestRetryHandler&, const ::org::apache::http::client::RedirectHandler&, const ::org::apache::http::client::AuthenticationHandler&, const ::org::apache::http::client::AuthenticationHandler&, const ::org::apache::http::client::UserTokenHandler&, const ::org::apache::http::params::HttpParams&);
-    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

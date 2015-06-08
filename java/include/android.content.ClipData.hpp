@@ -48,12 +48,12 @@ public:
     static ::android::content::ClipData newIntent(const ::java::lang::CharSequence&, const ::android::content::Intent&);
     static ::android::content::ClipData newUri(const ::android::content::ContentResolver&, const ::java::lang::CharSequence&, const ::android::net::Uri&);
     static ::android::content::ClipData newRawUri(const ::java::lang::CharSequence&, const ::android::net::Uri&);
-    ::android::content::ClipDescription getDescription() const ;
-    void addItem(const ::android::content::ClipData_Item&) const ;
-    int32_t getItemCount() const ;
-    ::android::content::ClipData_Item getItemAt(int32_t) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::content::ClipDescription getDescription() const;
+    void addItem(const ::android::content::ClipData_Item&) const;
+    int32_t getItemCount() const;
+    ::android::content::ClipData_Item getItemAt(int32_t) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

@@ -38,8 +38,8 @@ public:
     static void jniInitializeNative();
     static ::vc::duvido::DuvidoActivity getInstance();
     DuvidoActivity();
-    void fetchPhotoFromGallery() const ;
-    void onPhotoFetched(const ::java::lang::String&) const ;
+    void fetchPhotoFromGallery() const;
+    void onPhotoFetched(const ::java::lang::String&) const;
 
 };
 }

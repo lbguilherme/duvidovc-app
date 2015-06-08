@@ -34,8 +34,8 @@ public:
     ::java::security::interfaces::DSAKeyPairGenerator& operator=(const ::java::security::interfaces::DSAKeyPairGenerator& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::DSAKeyPairGenerator& operator=(::java::security::interfaces::DSAKeyPairGenerator&& x) {obj = std::move(x.obj); return *this;}
     
-    void initialize(const ::java::security::interfaces::DSAParams&, const ::java::security::SecureRandom&) const ;
-    void initialize(int32_t, bool, const ::java::security::SecureRandom&) const ;
+    void initialize(const ::java::security::interfaces::DSAParams&, const ::java::security::SecureRandom&) const;
+    void initialize(int32_t, bool, const ::java::security::SecureRandom&) const;
 
 };
 }

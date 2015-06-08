@@ -34,7 +34,7 @@ public:
     ::java::nio::ByteOrder& operator=(::java::nio::ByteOrder&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::nio::ByteOrder nativeOrder();
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

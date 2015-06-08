@@ -36,7 +36,7 @@ public:
     ::android::test::suitebuilder::TestSuiteBuilder_FailedToCreateTests& operator=(::android::test::suitebuilder::TestSuiteBuilder_FailedToCreateTests&& x) {obj = std::move(x.obj); return *this;}
     
     TestSuiteBuilder_FailedToCreateTests(const ::java::lang::Exception&);
-    void testSuiteConstructionFailed() const ;
+    void testSuiteConstructionFailed() const;
 
 };
 }

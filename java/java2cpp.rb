@@ -689,7 +689,7 @@ class JavaMethod
         end
         f << @return.cppname << " " << @name << "(" << @args.map(&:argtype).join(", ") << ")"
         unless @mods.include? :static
-            f << " const "
+            f << " const"
         end
         f << ";\n"
     end

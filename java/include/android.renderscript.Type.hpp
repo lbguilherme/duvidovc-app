@@ -34,13 +34,13 @@ public:
     ::android::renderscript::Type& operator=(const ::android::renderscript::Type& x) {obj = x.obj; return *this;}
     ::android::renderscript::Type& operator=(::android::renderscript::Type&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::renderscript::Element getElement() const ;
-    int32_t getX() const ;
-    int32_t getY() const ;
-    int32_t getZ() const ;
-    bool hasMipmaps() const ;
-    bool hasFaces() const ;
-    int32_t getCount() const ;
+    ::android::renderscript::Element getElement() const;
+    int32_t getX() const;
+    int32_t getY() const;
+    int32_t getZ() const;
+    bool hasMipmaps() const;
+    bool hasFaces() const;
+    int32_t getCount() const;
 
 };
 }

@@ -34,10 +34,10 @@ public:
     ::android::renderscript::Script_FieldBase& operator=(const ::android::renderscript::Script_FieldBase& x) {obj = x.obj; return *this;}
     ::android::renderscript::Script_FieldBase& operator=(::android::renderscript::Script_FieldBase&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::renderscript::Element getElement() const ;
-    ::android::renderscript::Type getType() const ;
-    ::android::renderscript::Allocation getAllocation() const ;
-    void updateAllocation() const ;
+    ::android::renderscript::Element getElement() const;
+    ::android::renderscript::Type getType() const;
+    ::android::renderscript::Allocation getAllocation() const;
+    void updateAllocation() const;
 
 };
 }

@@ -40,12 +40,12 @@ public:
     
     SAXResult();
     SAXResult(const ::org::xml::sax::ContentHandler&);
-    void setHandler(const ::org::xml::sax::ContentHandler&) const ;
-    ::org::xml::sax::ContentHandler getHandler() const ;
-    void setLexicalHandler(const ::org::xml::sax::ext::LexicalHandler&) const ;
-    ::org::xml::sax::ext::LexicalHandler getLexicalHandler() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
+    void setHandler(const ::org::xml::sax::ContentHandler&) const;
+    ::org::xml::sax::ContentHandler getHandler() const;
+    void setLexicalHandler(const ::org::xml::sax::ext::LexicalHandler&) const;
+    ::org::xml::sax::ext::LexicalHandler getLexicalHandler() const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
 
 };
 }

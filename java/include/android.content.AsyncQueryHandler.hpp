@@ -40,12 +40,12 @@ public:
     ::android::content::AsyncQueryHandler& operator=(::android::content::AsyncQueryHandler&& x) {obj = std::move(x.obj); return *this;}
     
     AsyncQueryHandler(const ::android::content::ContentResolver&);
-    void startQuery(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const ;
-    void cancelOperation(int32_t) const ;
-    void startInsert(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const ::android::content::ContentValues&) const ;
-    void startUpdate(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    void startDelete(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    void handleMessage(const ::android::os::Message&) const ;
+    void startQuery(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const;
+    void cancelOperation(int32_t) const;
+    void startInsert(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const ::android::content::ContentValues&) const;
+    void startUpdate(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    void startDelete(int32_t, const ::java::lang::Object&, const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    void handleMessage(const ::android::os::Message&) const;
 
 };
 }

@@ -35,11 +35,11 @@ public:
     ::android::text::method::KeyListener& operator=(const ::android::text::method::KeyListener& x) {obj = x.obj; return *this;}
     ::android::text::method::KeyListener& operator=(::android::text::method::KeyListener&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getInputType() const ;
-    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyUp(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyOther(const ::android::view::View&, const ::android::text::Editable&, const ::android::view::KeyEvent&) const ;
-    void clearMetaKeyState(const ::android::view::View&, const ::android::text::Editable&, int32_t) const ;
+    int32_t getInputType() const;
+    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyUp(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyOther(const ::android::view::View&, const ::android::text::Editable&, const ::android::view::KeyEvent&) const;
+    void clearMetaKeyState(const ::android::view::View&, const ::android::text::Editable&, int32_t) const;
 
 };
 }

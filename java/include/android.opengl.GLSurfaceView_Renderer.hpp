@@ -33,9 +33,9 @@ public:
     ::android::opengl::GLSurfaceView_Renderer& operator=(const ::android::opengl::GLSurfaceView_Renderer& x) {obj = x.obj; return *this;}
     ::android::opengl::GLSurfaceView_Renderer& operator=(::android::opengl::GLSurfaceView_Renderer&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSurfaceCreated(const ::javax::microedition::khronos::opengles::GL10&, const ::javax::microedition::khronos::egl::EGLConfig&) const ;
-    void onSurfaceChanged(const ::javax::microedition::khronos::opengles::GL10&, int32_t, int32_t) const ;
-    void onDrawFrame(const ::javax::microedition::khronos::opengles::GL10&) const ;
+    void onSurfaceCreated(const ::javax::microedition::khronos::opengles::GL10&, const ::javax::microedition::khronos::egl::EGLConfig&) const;
+    void onSurfaceChanged(const ::javax::microedition::khronos::opengles::GL10&, int32_t, int32_t) const;
+    void onDrawFrame(const ::javax::microedition::khronos::opengles::GL10&) const;
 
 };
 }

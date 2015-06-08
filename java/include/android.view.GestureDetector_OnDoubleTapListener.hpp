@@ -32,9 +32,9 @@ public:
     ::android::view::GestureDetector_OnDoubleTapListener& operator=(const ::android::view::GestureDetector_OnDoubleTapListener& x) {obj = x.obj; return *this;}
     ::android::view::GestureDetector_OnDoubleTapListener& operator=(::android::view::GestureDetector_OnDoubleTapListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onSingleTapConfirmed(const ::android::view::MotionEvent&) const ;
-    bool onDoubleTap(const ::android::view::MotionEvent&) const ;
-    bool onDoubleTapEvent(const ::android::view::MotionEvent&) const ;
+    bool onSingleTapConfirmed(const ::android::view::MotionEvent&) const;
+    bool onDoubleTap(const ::android::view::MotionEvent&) const;
+    bool onDoubleTapEvent(const ::android::view::MotionEvent&) const;
 
 };
 }

@@ -39,10 +39,10 @@ public:
     
     CookieManager();
     CookieManager(const ::java::net::CookieStore&, const ::java::net::CookiePolicy&);
-    ::java::util::Map get(const ::java::net::URI&, const ::java::util::Map&) const ;
-    void put(const ::java::net::URI&, const ::java::util::Map&) const ;
-    void setCookiePolicy(const ::java::net::CookiePolicy&) const ;
-    ::java::net::CookieStore getCookieStore() const ;
+    ::java::util::Map get(const ::java::net::URI&, const ::java::util::Map&) const;
+    void put(const ::java::net::URI&, const ::java::util::Map&) const;
+    void setCookiePolicy(const ::java::net::CookiePolicy&) const;
+    ::java::net::CookieStore getCookieStore() const;
 
 };
 }

@@ -42,8 +42,8 @@ public:
     ::android::support::v4::media::session::MediaControllerCompat_Callback_MessageHandler& operator=(::android::support::v4::media::session::MediaControllerCompat_Callback_MessageHandler&& x) {obj = std::move(x.obj); return *this;}
     
     MediaControllerCompat_Callback_MessageHandler(const ::android::support::v4::media::session::MediaControllerCompat_Callback&, const ::android::os::Looper&);
-    void handleMessage(const ::android::os::Message&) const ;
-    void post(int32_t, const ::java::lang::Object&, const ::android::os::Bundle&) const ;
+    void handleMessage(const ::android::os::Message&) const;
+    void post(int32_t, const ::java::lang::Object&, const ::android::os::Bundle&) const;
 
 };
 }

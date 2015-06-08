@@ -37,16 +37,16 @@ public:
     
     ByteArrayOutputStream();
     ByteArrayOutputStream(int32_t);
-    void close() const ;
-    void reset() const ;
-    int32_t size() const ;
-    std::vector< int8_t> toByteArray() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::String toString(int32_t) const ;
-    ::java::lang::String toString(const ::java::lang::String&) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
+    void close() const;
+    void reset() const;
+    int32_t size() const;
+    std::vector< int8_t> toByteArray() const;
+    ::java::lang::String toString() const;
+    ::java::lang::String toString(int32_t) const;
+    ::java::lang::String toString(const ::java::lang::String&) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void writeTo(const ::java::io::OutputStream&) const;
 
 };
 }

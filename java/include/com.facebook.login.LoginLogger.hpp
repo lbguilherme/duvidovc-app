@@ -37,13 +37,13 @@ public:
     ::com::facebook::login::LoginLogger& operator=(const ::com::facebook::login::LoginLogger& x) {obj = x.obj; return *this;}
     ::com::facebook::login::LoginLogger& operator=(::com::facebook::login::LoginLogger&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getApplicationId() const ;
-    void logStartLogin(const ::com::facebook::login::LoginClient_Request&) const ;
-    void logCompleteLogin(const ::java::lang::String&, const ::java::util::Map&, const ::com::facebook::login::LoginClient_Result_Code&, const ::java::util::Map&, const ::java::lang::Exception&) const ;
-    void logAuthorizationMethodStart(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void logAuthorizationMethodComplete(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::util::Map&) const ;
-    void logUnexpectedError(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void logUnexpectedError(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::lang::String getApplicationId() const;
+    void logStartLogin(const ::com::facebook::login::LoginClient_Request&) const;
+    void logCompleteLogin(const ::java::lang::String&, const ::java::util::Map&, const ::com::facebook::login::LoginClient_Result_Code&, const ::java::util::Map&, const ::java::lang::Exception&) const;
+    void logAuthorizationMethodStart(const ::java::lang::String&, const ::java::lang::String&) const;
+    void logAuthorizationMethodComplete(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::util::Map&) const;
+    void logUnexpectedError(const ::java::lang::String&, const ::java::lang::String&) const;
+    void logUnexpectedError(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

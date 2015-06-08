@@ -32,8 +32,8 @@ public:
     ::javax::security::auth::Destroyable& operator=(const ::javax::security::auth::Destroyable& x) {obj = x.obj; return *this;}
     ::javax::security::auth::Destroyable& operator=(::javax::security::auth::Destroyable&& x) {obj = std::move(x.obj); return *this;}
     
-    void destroy() const ;
-    bool isDestroyed() const ;
+    void destroy() const;
+    bool isDestroyed() const;
 
 };
 }

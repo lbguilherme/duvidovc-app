@@ -36,7 +36,7 @@ public:
     ::java::nio::charset::IllegalCharsetNameException& operator=(::java::nio::charset::IllegalCharsetNameException&& x) {obj = std::move(x.obj); return *this;}
     
     IllegalCharsetNameException(const ::java::lang::String&);
-    ::java::lang::String getCharsetName() const ;
+    ::java::lang::String getCharsetName() const;
 
 };
 }

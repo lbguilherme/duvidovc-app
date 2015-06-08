@@ -34,14 +34,14 @@ public:
     ::org::w3c::dom::NamedNodeMap& operator=(const ::org::w3c::dom::NamedNodeMap& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::NamedNodeMap& operator=(::org::w3c::dom::NamedNodeMap&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::Node getNamedItem(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Node setNamedItem(const ::org::w3c::dom::Node&) const ;
-    ::org::w3c::dom::Node removeNamedItem(const ::java::lang::String&) const ;
-    ::org::w3c::dom::Node item(int32_t) const ;
-    int32_t getLength() const ;
-    ::org::w3c::dom::Node getNamedItemNS(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::w3c::dom::Node setNamedItemNS(const ::org::w3c::dom::Node&) const ;
-    ::org::w3c::dom::Node removeNamedItemNS(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::org::w3c::dom::Node getNamedItem(const ::java::lang::String&) const;
+    ::org::w3c::dom::Node setNamedItem(const ::org::w3c::dom::Node&) const;
+    ::org::w3c::dom::Node removeNamedItem(const ::java::lang::String&) const;
+    ::org::w3c::dom::Node item(int32_t) const;
+    int32_t getLength() const;
+    ::org::w3c::dom::Node getNamedItemNS(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::w3c::dom::Node setNamedItemNS(const ::org::w3c::dom::Node&) const;
+    ::org::w3c::dom::Node removeNamedItemNS(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

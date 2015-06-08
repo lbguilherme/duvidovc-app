@@ -37,12 +37,12 @@ public:
     ::org::apache::http::HttpClientConnection& operator=(const ::org::apache::http::HttpClientConnection& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpClientConnection& operator=(::org::apache::http::HttpClientConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isResponseAvailable(int32_t) const ;
-    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const ;
-    void sendRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const ;
-    ::org::apache::http::HttpResponse receiveResponseHeader() const ;
-    void receiveResponseEntity(const ::org::apache::http::HttpResponse&) const ;
-    void flush() const ;
+    bool isResponseAvailable(int32_t) const;
+    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const;
+    void sendRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const;
+    ::org::apache::http::HttpResponse receiveResponseHeader() const;
+    void receiveResponseEntity(const ::org::apache::http::HttpResponse&) const;
+    void flush() const;
 
 };
 }

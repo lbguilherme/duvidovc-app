@@ -34,7 +34,7 @@ public:
     ::com::facebook::internal::CollectionMapper_ValueMapper& operator=(const ::com::facebook::internal::CollectionMapper_ValueMapper& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::CollectionMapper_ValueMapper& operator=(::com::facebook::internal::CollectionMapper_ValueMapper&& x) {obj = std::move(x.obj); return *this;}
     
-    void mapValue(const ::java::lang::Object&, const ::com::facebook::internal::CollectionMapper_OnMapValueCompleteListener&) const ;
+    void mapValue(const ::java::lang::Object&, const ::com::facebook::internal::CollectionMapper_OnMapValueCompleteListener&) const;
 
 };
 }

@@ -35,12 +35,12 @@ public:
     ::org::apache::http::message::ParserCursor& operator=(::org::apache::http::message::ParserCursor&& x) {obj = std::move(x.obj); return *this;}
     
     ParserCursor(int32_t, int32_t);
-    int32_t getLowerBound() const ;
-    int32_t getUpperBound() const ;
-    int32_t getPos() const ;
-    void updatePos(int32_t) const ;
-    bool atEnd() const ;
-    ::java::lang::String toString() const ;
+    int32_t getLowerBound() const;
+    int32_t getUpperBound() const;
+    int32_t getPos() const;
+    void updatePos(int32_t) const;
+    bool atEnd() const;
+    ::java::lang::String toString() const;
 
 };
 }

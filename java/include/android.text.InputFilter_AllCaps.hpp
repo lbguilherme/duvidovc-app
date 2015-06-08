@@ -36,7 +36,7 @@ public:
     ::android::text::InputFilter_AllCaps& operator=(::android::text::InputFilter_AllCaps&& x) {obj = std::move(x.obj); return *this;}
     
     InputFilter_AllCaps();
-    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const ;
+    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const;
 
 };
 }

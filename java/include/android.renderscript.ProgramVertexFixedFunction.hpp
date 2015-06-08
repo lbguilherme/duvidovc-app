@@ -34,7 +34,7 @@ public:
     ::android::renderscript::ProgramVertexFixedFunction& operator=(const ::android::renderscript::ProgramVertexFixedFunction& x) {obj = x.obj; return *this;}
     ::android::renderscript::ProgramVertexFixedFunction& operator=(::android::renderscript::ProgramVertexFixedFunction&& x) {obj = std::move(x.obj); return *this;}
     
-    void bindConstants(const ::android::renderscript::ProgramVertexFixedFunction_Constants&) const ;
+    void bindConstants(const ::android::renderscript::ProgramVertexFixedFunction_Constants&) const;
 
 };
 }

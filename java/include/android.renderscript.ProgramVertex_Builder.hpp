@@ -38,8 +38,8 @@ public:
     ::android::renderscript::ProgramVertex_Builder& operator=(::android::renderscript::ProgramVertex_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ProgramVertex_Builder(const ::android::renderscript::RenderScript&);
-    ::android::renderscript::ProgramVertex_Builder addInput(const ::android::renderscript::Element&) const ;
-    ::android::renderscript::ProgramVertex create() const ;
+    ::android::renderscript::ProgramVertex_Builder addInput(const ::android::renderscript::Element&) const;
+    ::android::renderscript::ProgramVertex create() const;
 
 };
 }

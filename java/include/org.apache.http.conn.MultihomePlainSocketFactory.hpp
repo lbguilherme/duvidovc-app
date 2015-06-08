@@ -42,11 +42,11 @@ public:
     ::org::apache::http::conn::MultihomePlainSocketFactory& operator=(::org::apache::http::conn::MultihomePlainSocketFactory&& x) {obj = std::move(x.obj); return *this;}
     
     static ::org::apache::http::conn::MultihomePlainSocketFactory getSocketFactory();
-    ::java::net::Socket createSocket() const ;
-    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const ;
-    bool isSecure(const ::java::net::Socket&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    ::java::net::Socket createSocket() const;
+    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const;
+    bool isSecure(const ::java::net::Socket&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

@@ -39,12 +39,12 @@ public:
     ::android::support::v4::app::RemoteInput_Builder& operator=(::android::support::v4::app::RemoteInput_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     RemoteInput_Builder(const ::java::lang::String&);
-    ::android::support::v4::app::RemoteInput_Builder setLabel(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::RemoteInput_Builder setChoices(const std::vector< ::java::lang::CharSequence>&) const ;
-    ::android::support::v4::app::RemoteInput_Builder setAllowFreeFormInput(bool) const ;
-    ::android::support::v4::app::RemoteInput_Builder addExtras(const ::android::os::Bundle&) const ;
-    ::android::os::Bundle getExtras() const ;
-    ::android::support::v4::app::RemoteInput build() const ;
+    ::android::support::v4::app::RemoteInput_Builder setLabel(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::RemoteInput_Builder setChoices(const std::vector< ::java::lang::CharSequence>&) const;
+    ::android::support::v4::app::RemoteInput_Builder setAllowFreeFormInput(bool) const;
+    ::android::support::v4::app::RemoteInput_Builder addExtras(const ::android::os::Bundle&) const;
+    ::android::os::Bundle getExtras() const;
+    ::android::support::v4::app::RemoteInput build() const;
 
 };
 }

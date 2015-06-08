@@ -33,10 +33,10 @@ public:
     ::java::lang::ref::Reference& operator=(const ::java::lang::ref::Reference& x) {obj = x.obj; return *this;}
     ::java::lang::ref::Reference& operator=(::java::lang::ref::Reference&& x) {obj = std::move(x.obj); return *this;}
     
-    void clear() const ;
-    bool enqueue() const ;
-    ::java::lang::Object get() const ;
-    bool isEnqueued() const ;
+    void clear() const;
+    bool enqueue() const;
+    ::java::lang::Object get() const;
+    bool isEnqueued() const;
 
 };
 }

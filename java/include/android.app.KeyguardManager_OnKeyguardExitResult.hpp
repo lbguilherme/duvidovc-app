@@ -31,7 +31,7 @@ public:
     ::android::app::KeyguardManager_OnKeyguardExitResult& operator=(const ::android::app::KeyguardManager_OnKeyguardExitResult& x) {obj = x.obj; return *this;}
     ::android::app::KeyguardManager_OnKeyguardExitResult& operator=(::android::app::KeyguardManager_OnKeyguardExitResult&& x) {obj = std::move(x.obj); return *this;}
     
-    void onKeyguardExitResult(bool) const ;
+    void onKeyguardExitResult(bool) const;
 
 };
 }

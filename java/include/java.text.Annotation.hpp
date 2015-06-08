@@ -34,8 +34,8 @@ public:
     ::java::text::Annotation& operator=(::java::text::Annotation&& x) {obj = std::move(x.obj); return *this;}
     
     Annotation(const ::java::lang::Object&);
-    ::java::lang::Object getValue() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Object getValue() const;
+    ::java::lang::String toString() const;
 
 };
 }

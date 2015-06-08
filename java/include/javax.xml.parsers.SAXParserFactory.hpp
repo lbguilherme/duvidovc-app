@@ -39,17 +39,17 @@ public:
     
     static ::javax::xml::parsers::SAXParserFactory newInstance();
     static ::javax::xml::parsers::SAXParserFactory newInstance(const ::java::lang::String&, const ::java::lang::ClassLoader&);
-    ::javax::xml::parsers::SAXParser newSAXParser() const ;
-    void setNamespaceAware(bool) const ;
-    void setValidating(bool) const ;
-    bool isNamespaceAware() const ;
-    bool isValidating() const ;
-    void setFeature(const ::java::lang::String&, bool) const ;
-    bool getFeature(const ::java::lang::String&) const ;
-    ::javax::xml::validation::Schema getSchema() const ;
-    void setSchema(const ::javax::xml::validation::Schema&) const ;
-    void setXIncludeAware(bool) const ;
-    bool isXIncludeAware() const ;
+    ::javax::xml::parsers::SAXParser newSAXParser() const;
+    void setNamespaceAware(bool) const;
+    void setValidating(bool) const;
+    bool isNamespaceAware() const;
+    bool isValidating() const;
+    void setFeature(const ::java::lang::String&, bool) const;
+    bool getFeature(const ::java::lang::String&) const;
+    ::javax::xml::validation::Schema getSchema() const;
+    void setSchema(const ::javax::xml::validation::Schema&) const;
+    void setXIncludeAware(bool) const;
+    bool isXIncludeAware() const;
 
 };
 }

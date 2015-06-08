@@ -36,16 +36,16 @@ public:
     ::android::view::animation::Transformation& operator=(::android::view::animation::Transformation&& x) {obj = std::move(x.obj); return *this;}
     
     Transformation();
-    void clear() const ;
-    int32_t getTransformationType() const ;
-    void setTransformationType(int32_t) const ;
-    void set(const ::android::view::animation::Transformation&) const ;
-    void compose(const ::android::view::animation::Transformation&) const ;
-    ::android::graphics::Matrix getMatrix() const ;
-    void setAlpha(float) const ;
-    float getAlpha() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::String toShortString() const ;
+    void clear() const;
+    int32_t getTransformationType() const;
+    void setTransformationType(int32_t) const;
+    void set(const ::android::view::animation::Transformation&) const;
+    void compose(const ::android::view::animation::Transformation&) const;
+    ::android::graphics::Matrix getMatrix() const;
+    void setAlpha(float) const;
+    float getAlpha() const;
+    ::java::lang::String toString() const;
+    ::java::lang::String toShortString() const;
 
 };
 }

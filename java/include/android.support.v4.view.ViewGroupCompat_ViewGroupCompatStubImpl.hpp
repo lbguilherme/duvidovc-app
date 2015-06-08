@@ -38,13 +38,13 @@ public:
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatStubImpl& operator=(const ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatStubImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewGroupCompat_ViewGroupCompatStubImpl& operator=(::android::support::v4::view::ViewGroupCompat_ViewGroupCompatStubImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void setMotionEventSplittingEnabled(const ::android::view::ViewGroup&, bool) const ;
-    int32_t getLayoutMode(const ::android::view::ViewGroup&) const ;
-    void setLayoutMode(const ::android::view::ViewGroup&, int32_t) const ;
-    void setTransitionGroup(const ::android::view::ViewGroup&, bool) const ;
-    bool isTransitionGroup(const ::android::view::ViewGroup&) const ;
-    int32_t getNestedScrollAxes(const ::android::view::ViewGroup&) const ;
+    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void setMotionEventSplittingEnabled(const ::android::view::ViewGroup&, bool) const;
+    int32_t getLayoutMode(const ::android::view::ViewGroup&) const;
+    void setLayoutMode(const ::android::view::ViewGroup&, int32_t) const;
+    void setTransitionGroup(const ::android::view::ViewGroup&, bool) const;
+    bool isTransitionGroup(const ::android::view::ViewGroup&) const;
+    int32_t getNestedScrollAxes(const ::android::view::ViewGroup&) const;
 
 };
 }

@@ -47,27 +47,27 @@ public:
     
     ShapeDrawable();
     ShapeDrawable(const ::android::graphics::drawable::shapes::Shape&);
-    ::android::graphics::drawable::shapes::Shape getShape() const ;
-    void setShape(const ::android::graphics::drawable::shapes::Shape&) const ;
-    void setShaderFactory(const ::android::graphics::drawable::ShapeDrawable_ShaderFactory&) const ;
-    ::android::graphics::drawable::ShapeDrawable_ShaderFactory getShaderFactory() const ;
-    ::android::graphics::Paint getPaint() const ;
-    void setPadding(int32_t, int32_t, int32_t, int32_t) const ;
-    void setPadding(const ::android::graphics::Rect&) const ;
-    void setIntrinsicWidth(int32_t) const ;
-    void setIntrinsicHeight(int32_t) const ;
-    int32_t getIntrinsicWidth() const ;
-    int32_t getIntrinsicHeight() const ;
-    bool getPadding(const ::android::graphics::Rect&) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    int32_t getChangingConfigurations() const ;
-    void setAlpha(int32_t) const ;
-    void setColorFilter(const ::android::graphics::ColorFilter&) const ;
-    int32_t getOpacity() const ;
-    void setDither(bool) const ;
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    ::android::graphics::drawable::shapes::Shape getShape() const;
+    void setShape(const ::android::graphics::drawable::shapes::Shape&) const;
+    void setShaderFactory(const ::android::graphics::drawable::ShapeDrawable_ShaderFactory&) const;
+    ::android::graphics::drawable::ShapeDrawable_ShaderFactory getShaderFactory() const;
+    ::android::graphics::Paint getPaint() const;
+    void setPadding(int32_t, int32_t, int32_t, int32_t) const;
+    void setPadding(const ::android::graphics::Rect&) const;
+    void setIntrinsicWidth(int32_t) const;
+    void setIntrinsicHeight(int32_t) const;
+    int32_t getIntrinsicWidth() const;
+    int32_t getIntrinsicHeight() const;
+    bool getPadding(const ::android::graphics::Rect&) const;
+    void draw(const ::android::graphics::Canvas&) const;
+    int32_t getChangingConfigurations() const;
+    void setAlpha(int32_t) const;
+    void setColorFilter(const ::android::graphics::ColorFilter&) const;
+    int32_t getOpacity() const;
+    void setDither(bool) const;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    ::android::graphics::drawable::Drawable_ConstantState getConstantState() const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::org::w3c::dom::DOMErrorHandler& operator=(const ::org::w3c::dom::DOMErrorHandler& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMErrorHandler& operator=(::org::w3c::dom::DOMErrorHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool handleError(const ::org::w3c::dom::DOMError&) const ;
+    bool handleError(const ::org::w3c::dom::DOMError&) const;
 
 };
 }

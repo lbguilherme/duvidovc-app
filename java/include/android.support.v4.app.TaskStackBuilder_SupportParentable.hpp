@@ -34,7 +34,7 @@ public:
     ::android::support::v4::app::TaskStackBuilder_SupportParentable& operator=(const ::android::support::v4::app::TaskStackBuilder_SupportParentable& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::TaskStackBuilder_SupportParentable& operator=(::android::support::v4::app::TaskStackBuilder_SupportParentable&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::Intent getSupportParentActivityIntent() const ;
+    ::android::content::Intent getSupportParentActivityIntent() const;
 
 };
 }

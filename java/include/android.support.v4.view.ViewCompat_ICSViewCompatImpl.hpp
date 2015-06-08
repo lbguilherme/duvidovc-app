@@ -40,15 +40,15 @@ public:
     ::android::support::v4::view::ViewCompat_ICSViewCompatImpl& operator=(const ::android::support::v4::view::ViewCompat_ICSViewCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewCompat_ICSViewCompatImpl& operator=(::android::support::v4::view::ViewCompat_ICSViewCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool canScrollHorizontally(const ::android::view::View&, int32_t) const ;
-    bool canScrollVertically(const ::android::view::View&, int32_t) const ;
-    void onPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const ;
-    void setAccessibilityDelegate(const ::android::view::View&, const ::android::support::v4::view::AccessibilityDelegateCompat&) const ;
-    bool hasAccessibilityDelegate(const ::android::view::View&) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat animate(const ::android::view::View&) const ;
-    void setFitsSystemWindows(const ::android::view::View&, bool) const ;
+    bool canScrollHorizontally(const ::android::view::View&, int32_t) const;
+    bool canScrollVertically(const ::android::view::View&, int32_t) const;
+    void onPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const;
+    void setAccessibilityDelegate(const ::android::view::View&, const ::android::support::v4::view::AccessibilityDelegateCompat&) const;
+    bool hasAccessibilityDelegate(const ::android::view::View&) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat animate(const ::android::view::View&) const;
+    void setFitsSystemWindows(const ::android::view::View&, bool) const;
 
 };
 }

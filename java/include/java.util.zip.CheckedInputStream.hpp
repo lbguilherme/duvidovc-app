@@ -37,10 +37,10 @@ public:
     ::java::util::zip::CheckedInputStream& operator=(::java::util::zip::CheckedInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     CheckedInputStream(const ::java::io::InputStream&, const ::java::util::zip::Checksum&);
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    ::java::util::zip::Checksum getChecksum() const ;
-    int64_t skip(int64_t) const ;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    ::java::util::zip::Checksum getChecksum() const;
+    int64_t skip(int64_t) const;
 
 };
 }

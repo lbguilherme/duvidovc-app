@@ -34,12 +34,12 @@ public:
     ::android::view::KeyEvent_DispatcherState& operator=(::android::view::KeyEvent_DispatcherState&& x) {obj = std::move(x.obj); return *this;}
     
     KeyEvent_DispatcherState();
-    void reset() const ;
-    void reset(const ::java::lang::Object&) const ;
-    void startTracking(const ::android::view::KeyEvent&, const ::java::lang::Object&) const ;
-    bool isTracking(const ::android::view::KeyEvent&) const ;
-    void performedLongPress(const ::android::view::KeyEvent&) const ;
-    void handleUpEvent(const ::android::view::KeyEvent&) const ;
+    void reset() const;
+    void reset(const ::java::lang::Object&) const;
+    void startTracking(const ::android::view::KeyEvent&, const ::java::lang::Object&) const;
+    bool isTracking(const ::android::view::KeyEvent&) const;
+    void performedLongPress(const ::android::view::KeyEvent&) const;
+    void handleUpEvent(const ::android::view::KeyEvent&) const;
 
 };
 }

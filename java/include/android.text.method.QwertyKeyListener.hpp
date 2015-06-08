@@ -44,8 +44,8 @@ public:
     QwertyKeyListener(const ::android::text::method::TextKeyListener_Capitalize&, bool);
     static ::android::text::method::QwertyKeyListener getInstance(bool, const ::android::text::method::TextKeyListener_Capitalize&);
     static ::android::text::method::QwertyKeyListener getInstanceForFullKeyboard();
-    int32_t getInputType() const ;
-    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
+    int32_t getInputType() const;
+    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
     static void markAsReplaced(const ::android::text::Spannable&, int32_t, int32_t, const ::java::lang::String&);
 
 };

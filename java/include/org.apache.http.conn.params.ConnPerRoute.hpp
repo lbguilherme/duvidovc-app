@@ -35,7 +35,7 @@ public:
     ::org::apache::http::conn::params::ConnPerRoute& operator=(const ::org::apache::http::conn::params::ConnPerRoute& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::params::ConnPerRoute& operator=(::org::apache::http::conn::params::ConnPerRoute&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getMaxForRoute(const ::org::apache::http::conn::routing::HttpRoute&) const ;
+    int32_t getMaxForRoute(const ::org::apache::http::conn::routing::HttpRoute&) const;
 
 };
 }

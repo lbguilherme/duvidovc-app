@@ -35,8 +35,8 @@ public:
     ::android::test::mock::MockDialogInterface& operator=(::android::test::mock::MockDialogInterface&& x) {obj = std::move(x.obj); return *this;}
     
     MockDialogInterface();
-    void cancel() const ;
-    void dismiss() const ;
+    void cancel() const;
+    void dismiss() const;
 
 };
 }

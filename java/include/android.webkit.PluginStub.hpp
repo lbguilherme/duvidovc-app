@@ -33,8 +33,8 @@ public:
     ::android::webkit::PluginStub& operator=(const ::android::webkit::PluginStub& x) {obj = x.obj; return *this;}
     ::android::webkit::PluginStub& operator=(::android::webkit::PluginStub&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View getEmbeddedView(int32_t, const ::android::content::Context&) const ;
-    ::android::view::View getFullScreenView(int32_t, const ::android::content::Context&) const ;
+    ::android::view::View getEmbeddedView(int32_t, const ::android::content::Context&) const;
+    ::android::view::View getFullScreenView(int32_t, const ::android::content::Context&) const;
 
 };
 }

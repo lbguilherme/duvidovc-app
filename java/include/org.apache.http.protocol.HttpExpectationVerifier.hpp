@@ -36,7 +36,7 @@ public:
     ::org::apache::http::protocol::HttpExpectationVerifier& operator=(const ::org::apache::http::protocol::HttpExpectationVerifier& x) {obj = x.obj; return *this;}
     ::org::apache::http::protocol::HttpExpectationVerifier& operator=(::org::apache::http::protocol::HttpExpectationVerifier&& x) {obj = std::move(x.obj); return *this;}
     
-    void verify(const ::org::apache::http::HttpRequest&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void verify(const ::org::apache::http::HttpRequest&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

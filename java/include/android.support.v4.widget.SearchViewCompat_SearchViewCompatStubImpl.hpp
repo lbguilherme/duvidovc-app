@@ -42,24 +42,24 @@ public:
     ::android::support::v4::widget::SearchViewCompat_SearchViewCompatStubImpl& operator=(const ::android::support::v4::widget::SearchViewCompat_SearchViewCompatStubImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SearchViewCompat_SearchViewCompatStubImpl& operator=(::android::support::v4::widget::SearchViewCompat_SearchViewCompatStubImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View newSearchView(const ::android::content::Context&) const ;
-    void setSearchableInfo(const ::android::view::View&, const ::android::content::ComponentName&) const ;
-    void setImeOptions(const ::android::view::View&, int32_t) const ;
-    void setInputType(const ::android::view::View&, int32_t) const ;
-    ::java::lang::Object newOnQueryTextListener(const ::android::support::v4::widget::SearchViewCompat_OnQueryTextListenerCompat&) const ;
-    void setOnQueryTextListener(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::Object newOnCloseListener(const ::android::support::v4::widget::SearchViewCompat_OnCloseListenerCompat&) const ;
-    void setOnCloseListener(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::CharSequence getQuery(const ::android::view::View&) const ;
-    void setQuery(const ::android::view::View&, const ::java::lang::CharSequence&, bool) const ;
-    void setQueryHint(const ::android::view::View&, const ::java::lang::CharSequence&) const ;
-    void setIconified(const ::android::view::View&, bool) const ;
-    bool isIconified(const ::android::view::View&) const ;
-    void setSubmitButtonEnabled(const ::android::view::View&, bool) const ;
-    bool isSubmitButtonEnabled(const ::android::view::View&) const ;
-    void setQueryRefinementEnabled(const ::android::view::View&, bool) const ;
-    bool isQueryRefinementEnabled(const ::android::view::View&) const ;
-    void setMaxWidth(const ::android::view::View&, int32_t) const ;
+    ::android::view::View newSearchView(const ::android::content::Context&) const;
+    void setSearchableInfo(const ::android::view::View&, const ::android::content::ComponentName&) const;
+    void setImeOptions(const ::android::view::View&, int32_t) const;
+    void setInputType(const ::android::view::View&, int32_t) const;
+    ::java::lang::Object newOnQueryTextListener(const ::android::support::v4::widget::SearchViewCompat_OnQueryTextListenerCompat&) const;
+    void setOnQueryTextListener(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::Object newOnCloseListener(const ::android::support::v4::widget::SearchViewCompat_OnCloseListenerCompat&) const;
+    void setOnCloseListener(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::CharSequence getQuery(const ::android::view::View&) const;
+    void setQuery(const ::android::view::View&, const ::java::lang::CharSequence&, bool) const;
+    void setQueryHint(const ::android::view::View&, const ::java::lang::CharSequence&) const;
+    void setIconified(const ::android::view::View&, bool) const;
+    bool isIconified(const ::android::view::View&) const;
+    void setSubmitButtonEnabled(const ::android::view::View&, bool) const;
+    bool isSubmitButtonEnabled(const ::android::view::View&) const;
+    void setQueryRefinementEnabled(const ::android::view::View&, bool) const;
+    bool isQueryRefinementEnabled(const ::android::view::View&) const;
+    void setMaxWidth(const ::android::view::View&, int32_t) const;
 
 };
 }

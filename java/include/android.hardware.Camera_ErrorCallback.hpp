@@ -32,7 +32,7 @@ public:
     ::android::hardware::Camera_ErrorCallback& operator=(const ::android::hardware::Camera_ErrorCallback& x) {obj = x.obj; return *this;}
     ::android::hardware::Camera_ErrorCallback& operator=(::android::hardware::Camera_ErrorCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onError(int32_t, const ::android::hardware::Camera&) const ;
+    void onError(int32_t, const ::android::hardware::Camera&) const;
 
 };
 }

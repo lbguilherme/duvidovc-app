@@ -38,19 +38,19 @@ public:
     StringCharacterIterator(const ::java::lang::String&);
     StringCharacterIterator(const ::java::lang::String&, int32_t);
     StringCharacterIterator(const ::java::lang::String&, int32_t, int32_t, int32_t);
-    ::java::lang::Object clone() const ;
-    uint16_t current() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    uint16_t first() const ;
-    int32_t getBeginIndex() const ;
-    int32_t getEndIndex() const ;
-    int32_t getIndex() const ;
-    int32_t hashCode() const ;
-    uint16_t last() const ;
-    uint16_t next() const ;
-    uint16_t previous() const ;
-    uint16_t setIndex(int32_t) const ;
-    void setText(const ::java::lang::String&) const ;
+    ::java::lang::Object clone() const;
+    uint16_t current() const;
+    bool equals(const ::java::lang::Object&) const;
+    uint16_t first() const;
+    int32_t getBeginIndex() const;
+    int32_t getEndIndex() const;
+    int32_t getIndex() const;
+    int32_t hashCode() const;
+    uint16_t last() const;
+    uint16_t next() const;
+    uint16_t previous() const;
+    uint16_t setIndex(int32_t) const;
+    void setText(const ::java::lang::String&) const;
 
 };
 }

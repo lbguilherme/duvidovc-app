@@ -36,8 +36,8 @@ public:
     ::java::nio::charset::UnmappableCharacterException& operator=(::java::nio::charset::UnmappableCharacterException&& x) {obj = std::move(x.obj); return *this;}
     
     UnmappableCharacterException(int32_t);
-    int32_t getInputLength() const ;
-    ::java::lang::String getMessage() const ;
+    int32_t getInputLength() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

@@ -40,9 +40,9 @@ public:
     
     DefaultHttpRequestRetryHandler(int32_t, bool);
     DefaultHttpRequestRetryHandler();
-    bool retryRequest(const ::java::io::IOException&, int32_t, const ::org::apache::http::protocol::HttpContext&) const ;
-    bool isRequestSentRetryEnabled() const ;
-    int32_t getRetryCount() const ;
+    bool retryRequest(const ::java::io::IOException&, int32_t, const ::org::apache::http::protocol::HttpContext&) const;
+    bool isRequestSentRetryEnabled() const;
+    int32_t getRetryCount() const;
 
 };
 }

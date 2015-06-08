@@ -40,16 +40,16 @@ public:
     ::android::view::inputmethod::InputMethodSession& operator=(const ::android::view::inputmethod::InputMethodSession& x) {obj = x.obj; return *this;}
     ::android::view::inputmethod::InputMethodSession& operator=(::android::view::inputmethod::InputMethodSession&& x) {obj = std::move(x.obj); return *this;}
     
-    void finishInput() const ;
-    void updateSelection(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    void viewClicked(bool) const ;
-    void updateCursor(const ::android::graphics::Rect&) const ;
-    void displayCompletions(const std::vector< ::android::view::inputmethod::CompletionInfo>&) const ;
-    void updateExtractedText(int32_t, const ::android::view::inputmethod::ExtractedText&) const ;
-    void dispatchKeyEvent(int32_t, const ::android::view::KeyEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const ;
-    void dispatchTrackballEvent(int32_t, const ::android::view::MotionEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const ;
-    void appPrivateCommand(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void toggleSoftInput(int32_t, int32_t) const ;
+    void finishInput() const;
+    void updateSelection(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    void viewClicked(bool) const;
+    void updateCursor(const ::android::graphics::Rect&) const;
+    void displayCompletions(const std::vector< ::android::view::inputmethod::CompletionInfo>&) const;
+    void updateExtractedText(int32_t, const ::android::view::inputmethod::ExtractedText&) const;
+    void dispatchKeyEvent(int32_t, const ::android::view::KeyEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const;
+    void dispatchTrackballEvent(int32_t, const ::android::view::MotionEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const;
+    void appPrivateCommand(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void toggleSoftInput(int32_t, int32_t) const;
 
 };
 }

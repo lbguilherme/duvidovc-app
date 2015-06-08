@@ -36,7 +36,7 @@ public:
     ::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImplBase_GestureHandler& operator=(const ::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImplBase_GestureHandler& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImplBase_GestureHandler& operator=(::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImplBase_GestureHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void handleMessage(const ::android::os::Message&) const ;
+    void handleMessage(const ::android::os::Message&) const;
 
 };
 }

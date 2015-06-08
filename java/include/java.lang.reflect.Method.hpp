@@ -44,29 +44,29 @@ public:
     ::java::lang::reflect::Method& operator=(const ::java::lang::reflect::Method& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::Method& operator=(::java::lang::reflect::Method&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::reflect::TypeVariable> getTypeParameters() const ;
-    ::java::lang::String toGenericString() const ;
-    std::vector< ::java::lang::reflect::Type> getGenericParameterTypes() const ;
-    std::vector< ::java::lang::reflect::Type> getGenericExceptionTypes() const ;
-    ::java::lang::reflect::Type getGenericReturnType() const ;
-    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const ;
-    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const ;
-    bool isAnnotationPresent(const ::java::lang::Class&) const ;
-    std::vector< ::java::lang::annotation::Annotation> getParameterAnnotations() const ;
-    bool isVarArgs() const ;
-    bool isBridge() const ;
-    bool isSynthetic() const ;
-    ::java::lang::Object getDefaultValue() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::Class getDeclaringClass() const ;
-    std::vector< ::java::lang::Class> getExceptionTypes() const ;
-    int32_t getModifiers() const ;
-    ::java::lang::String getName() const ;
-    std::vector< ::java::lang::Class> getParameterTypes() const ;
-    ::java::lang::Class getReturnType() const ;
-    int32_t hashCode() const ;
-    ::java::lang::Object invoke(const ::java::lang::Object&, const std::vector< ::java::lang::Object>&) const ;
-    ::java::lang::String toString() const ;
+    std::vector< ::java::lang::reflect::TypeVariable> getTypeParameters() const;
+    ::java::lang::String toGenericString() const;
+    std::vector< ::java::lang::reflect::Type> getGenericParameterTypes() const;
+    std::vector< ::java::lang::reflect::Type> getGenericExceptionTypes() const;
+    ::java::lang::reflect::Type getGenericReturnType() const;
+    std::vector< ::java::lang::annotation::Annotation> getDeclaredAnnotations() const;
+    ::java::lang::annotation::Annotation getAnnotation(const ::java::lang::Class&) const;
+    bool isAnnotationPresent(const ::java::lang::Class&) const;
+    std::vector< ::java::lang::annotation::Annotation> getParameterAnnotations() const;
+    bool isVarArgs() const;
+    bool isBridge() const;
+    bool isSynthetic() const;
+    ::java::lang::Object getDefaultValue() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::Class getDeclaringClass() const;
+    std::vector< ::java::lang::Class> getExceptionTypes() const;
+    int32_t getModifiers() const;
+    ::java::lang::String getName() const;
+    std::vector< ::java::lang::Class> getParameterTypes() const;
+    ::java::lang::Class getReturnType() const;
+    int32_t hashCode() const;
+    ::java::lang::Object invoke(const ::java::lang::Object&, const std::vector< ::java::lang::Object>&) const;
+    ::java::lang::String toString() const;
 
 };
 }

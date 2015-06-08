@@ -35,9 +35,9 @@ public:
     ::android::graphics::drawable::Drawable_ConstantState& operator=(::android::graphics::drawable::Drawable_ConstantState&& x) {obj = std::move(x.obj); return *this;}
     
     Drawable_ConstantState();
-    ::android::graphics::drawable::Drawable newDrawable() const ;
-    ::android::graphics::drawable::Drawable newDrawable(const ::android::content::res::Resources&) const ;
-    int32_t getChangingConfigurations() const ;
+    ::android::graphics::drawable::Drawable newDrawable() const;
+    ::android::graphics::drawable::Drawable newDrawable(const ::android::content::res::Resources&) const;
+    int32_t getChangingConfigurations() const;
 
 };
 }

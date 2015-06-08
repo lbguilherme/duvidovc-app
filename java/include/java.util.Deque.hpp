@@ -35,33 +35,33 @@ public:
     ::java::util::Deque& operator=(const ::java::util::Deque& x) {obj = x.obj; return *this;}
     ::java::util::Deque& operator=(::java::util::Deque&& x) {obj = std::move(x.obj); return *this;}
     
-    void addFirst(const ::java::lang::Object&) const ;
-    void addLast(const ::java::lang::Object&) const ;
-    bool offerFirst(const ::java::lang::Object&) const ;
-    bool offerLast(const ::java::lang::Object&) const ;
-    ::java::lang::Object removeFirst() const ;
-    ::java::lang::Object removeLast() const ;
-    ::java::lang::Object pollFirst() const ;
-    ::java::lang::Object pollLast() const ;
-    ::java::lang::Object getFirst() const ;
-    ::java::lang::Object getLast() const ;
-    ::java::lang::Object peekFirst() const ;
-    ::java::lang::Object peekLast() const ;
-    bool removeFirstOccurrence(const ::java::lang::Object&) const ;
-    bool removeLastOccurrence(const ::java::lang::Object&) const ;
-    bool add(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&) const ;
-    ::java::lang::Object remove() const ;
-    ::java::lang::Object poll() const ;
-    ::java::lang::Object element() const ;
-    ::java::lang::Object peek() const ;
-    void push(const ::java::lang::Object&) const ;
-    ::java::lang::Object pop() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool contains(const ::java::lang::Object&) const ;
-    int32_t size() const ;
-    ::java::util::Iterator iterator() const ;
-    ::java::util::Iterator descendingIterator() const ;
+    void addFirst(const ::java::lang::Object&) const;
+    void addLast(const ::java::lang::Object&) const;
+    bool offerFirst(const ::java::lang::Object&) const;
+    bool offerLast(const ::java::lang::Object&) const;
+    ::java::lang::Object removeFirst() const;
+    ::java::lang::Object removeLast() const;
+    ::java::lang::Object pollFirst() const;
+    ::java::lang::Object pollLast() const;
+    ::java::lang::Object getFirst() const;
+    ::java::lang::Object getLast() const;
+    ::java::lang::Object peekFirst() const;
+    ::java::lang::Object peekLast() const;
+    bool removeFirstOccurrence(const ::java::lang::Object&) const;
+    bool removeLastOccurrence(const ::java::lang::Object&) const;
+    bool add(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&) const;
+    ::java::lang::Object remove() const;
+    ::java::lang::Object poll() const;
+    ::java::lang::Object element() const;
+    ::java::lang::Object peek() const;
+    void push(const ::java::lang::Object&) const;
+    ::java::lang::Object pop() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool contains(const ::java::lang::Object&) const;
+    int32_t size() const;
+    ::java::util::Iterator iterator() const;
+    ::java::util::Iterator descendingIterator() const;
 
 };
 }

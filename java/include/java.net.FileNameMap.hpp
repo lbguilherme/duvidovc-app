@@ -32,7 +32,7 @@ public:
     ::java::net::FileNameMap& operator=(const ::java::net::FileNameMap& x) {obj = x.obj; return *this;}
     ::java::net::FileNameMap& operator=(::java::net::FileNameMap&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getContentTypeFor(const ::java::lang::String&) const ;
+    ::java::lang::String getContentTypeFor(const ::java::lang::String&) const;
 
 };
 }

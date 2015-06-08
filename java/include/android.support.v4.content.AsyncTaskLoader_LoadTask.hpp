@@ -37,7 +37,7 @@ public:
     ::android::support::v4::content::AsyncTaskLoader_LoadTask& operator=(const ::android::support::v4::content::AsyncTaskLoader_LoadTask& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::AsyncTaskLoader_LoadTask& operator=(::android::support::v4::content::AsyncTaskLoader_LoadTask&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

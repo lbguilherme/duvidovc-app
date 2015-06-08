@@ -32,7 +32,7 @@ public:
     ::com::facebook::RequestOutputStream& operator=(const ::com::facebook::RequestOutputStream& x) {obj = x.obj; return *this;}
     ::com::facebook::RequestOutputStream& operator=(::com::facebook::RequestOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
-    void setCurrentRequest(const ::com::facebook::GraphRequest&) const ;
+    void setCurrentRequest(const ::com::facebook::GraphRequest&) const;
 
 };
 }

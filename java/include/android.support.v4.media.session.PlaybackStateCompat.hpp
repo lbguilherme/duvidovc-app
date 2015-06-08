@@ -41,18 +41,18 @@ public:
     ::android::support::v4::media::session::PlaybackStateCompat& operator=(const ::android::support::v4::media::session::PlaybackStateCompat& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::PlaybackStateCompat& operator=(::android::support::v4::media::session::PlaybackStateCompat&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t getState() const ;
-    int64_t getPosition() const ;
-    int64_t getBufferedPosition() const ;
-    float getPlaybackSpeed() const ;
-    int64_t getActions() const ;
-    ::java::lang::CharSequence getErrorMessage() const ;
-    int64_t getLastPositionUpdateTime() const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t getState() const;
+    int64_t getPosition() const;
+    int64_t getBufferedPosition() const;
+    float getPlaybackSpeed() const;
+    int64_t getActions() const;
+    ::java::lang::CharSequence getErrorMessage() const;
+    int64_t getLastPositionUpdateTime() const;
     static ::android::support::v4::media::session::PlaybackStateCompat fromPlaybackState(const ::java::lang::Object&);
-    ::java::lang::Object getPlaybackState() const ;
+    ::java::lang::Object getPlaybackState() const;
 
 };
 }

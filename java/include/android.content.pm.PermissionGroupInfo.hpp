@@ -41,10 +41,10 @@ public:
     ::android::content::pm::PermissionGroupInfo& operator=(::android::content::pm::PermissionGroupInfo&& x) {obj = std::move(x.obj); return *this;}
     
     PermissionGroupInfo();
-    ::java::lang::CharSequence loadDescription(const ::android::content::pm::PackageManager&) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::CharSequence loadDescription(const ::android::content::pm::PackageManager&) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

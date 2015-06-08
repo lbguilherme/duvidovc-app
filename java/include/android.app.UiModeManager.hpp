@@ -31,11 +31,11 @@ public:
     ::android::app::UiModeManager& operator=(const ::android::app::UiModeManager& x) {obj = x.obj; return *this;}
     ::android::app::UiModeManager& operator=(::android::app::UiModeManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void enableCarMode(int32_t) const ;
-    void disableCarMode(int32_t) const ;
-    int32_t getCurrentModeType() const ;
-    void setNightMode(int32_t) const ;
-    int32_t getNightMode() const ;
+    void enableCarMode(int32_t) const;
+    void disableCarMode(int32_t) const;
+    int32_t getCurrentModeType() const;
+    void setNightMode(int32_t) const;
+    int32_t getNightMode() const;
 
 };
 }

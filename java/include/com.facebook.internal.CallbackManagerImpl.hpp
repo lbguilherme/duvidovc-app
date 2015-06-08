@@ -38,8 +38,8 @@ public:
     
     CallbackManagerImpl();
     static void registerStaticCallback(int32_t, const ::com::facebook::internal::CallbackManagerImpl_Callback&);
-    void registerCallback(int32_t, const ::com::facebook::internal::CallbackManagerImpl_Callback&) const ;
-    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const ;
+    void registerCallback(int32_t, const ::com::facebook::internal::CallbackManagerImpl_Callback&) const;
+    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const;
 
 };
 }

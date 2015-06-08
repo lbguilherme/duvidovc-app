@@ -37,8 +37,8 @@ public:
     ::android::support::v4::util::Pools_SimplePool& operator=(::android::support::v4::util::Pools_SimplePool&& x) {obj = std::move(x.obj); return *this;}
     
     Pools_SimplePool(int32_t);
-    ::java::lang::Object acquire() const ;
-    bool release(const ::java::lang::Object&) const ;
+    ::java::lang::Object acquire() const;
+    bool release(const ::java::lang::Object&) const;
 
 };
 }

@@ -43,17 +43,17 @@ public:
     ::android::renderscript::RenderScriptGL& operator=(::android::renderscript::RenderScriptGL&& x) {obj = std::move(x.obj); return *this;}
     
     RenderScriptGL(const ::android::content::Context&, const ::android::renderscript::RenderScriptGL_SurfaceConfig&);
-    void setSurface(const ::android::view::SurfaceHolder&, int32_t, int32_t) const ;
-    void setSurfaceTexture(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const ;
-    int32_t getHeight() const ;
-    int32_t getWidth() const ;
-    void pause() const ;
-    void resume() const ;
-    void bindRootScript(const ::android::renderscript::Script&) const ;
-    void bindProgramStore(const ::android::renderscript::ProgramStore&) const ;
-    void bindProgramFragment(const ::android::renderscript::ProgramFragment&) const ;
-    void bindProgramRaster(const ::android::renderscript::ProgramRaster&) const ;
-    void bindProgramVertex(const ::android::renderscript::ProgramVertex&) const ;
+    void setSurface(const ::android::view::SurfaceHolder&, int32_t, int32_t) const;
+    void setSurfaceTexture(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const;
+    int32_t getHeight() const;
+    int32_t getWidth() const;
+    void pause() const;
+    void resume() const;
+    void bindRootScript(const ::android::renderscript::Script&) const;
+    void bindProgramStore(const ::android::renderscript::ProgramStore&) const;
+    void bindProgramFragment(const ::android::renderscript::ProgramFragment&) const;
+    void bindProgramRaster(const ::android::renderscript::ProgramRaster&) const;
+    void bindProgramVertex(const ::android::renderscript::ProgramVertex&) const;
 
 };
 }

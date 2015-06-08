@@ -37,8 +37,8 @@ public:
     
     ActivityGroup();
     ActivityGroup(bool);
-    ::android::app::Activity getCurrentActivity() const ;
-    ::android::app::LocalActivityManager getLocalActivityManager() const ;
+    ::android::app::Activity getCurrentActivity() const;
+    ::android::app::LocalActivityManager getLocalActivityManager() const;
 
 };
 }

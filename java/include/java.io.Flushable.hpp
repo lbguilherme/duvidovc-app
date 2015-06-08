@@ -31,7 +31,7 @@ public:
     ::java::io::Flushable& operator=(const ::java::io::Flushable& x) {obj = x.obj; return *this;}
     ::java::io::Flushable& operator=(::java::io::Flushable&& x) {obj = std::move(x.obj); return *this;}
     
-    void flush() const ;
+    void flush() const;
 
 };
 }

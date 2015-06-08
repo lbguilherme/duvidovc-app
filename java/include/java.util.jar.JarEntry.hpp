@@ -41,9 +41,9 @@ public:
     
     JarEntry(const ::java::lang::String&);
     JarEntry(const ::java::util::zip::ZipEntry&);
-    ::java::util::jar::Attributes getAttributes() const ;
-    std::vector< ::java::security::cert::Certificate> getCertificates() const ;
-    std::vector< ::java::security::CodeSigner> getCodeSigners() const ;
+    ::java::util::jar::Attributes getAttributes() const;
+    std::vector< ::java::security::cert::Certificate> getCertificates() const;
+    std::vector< ::java::security::CodeSigner> getCodeSigners() const;
 
 };
 }

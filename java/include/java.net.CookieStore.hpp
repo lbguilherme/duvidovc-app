@@ -34,12 +34,12 @@ public:
     ::java::net::CookieStore& operator=(const ::java::net::CookieStore& x) {obj = x.obj; return *this;}
     ::java::net::CookieStore& operator=(::java::net::CookieStore&& x) {obj = std::move(x.obj); return *this;}
     
-    void add(const ::java::net::URI&, const ::java::net::HttpCookie&) const ;
-    ::java::util::List get(const ::java::net::URI&) const ;
-    ::java::util::List getCookies() const ;
-    ::java::util::List getURIs() const ;
-    bool remove(const ::java::net::URI&, const ::java::net::HttpCookie&) const ;
-    bool removeAll() const ;
+    void add(const ::java::net::URI&, const ::java::net::HttpCookie&) const;
+    ::java::util::List get(const ::java::net::URI&) const;
+    ::java::util::List getCookies() const;
+    ::java::util::List getURIs() const;
+    bool remove(const ::java::net::URI&, const ::java::net::HttpCookie&) const;
+    bool removeAll() const;
 
 };
 }

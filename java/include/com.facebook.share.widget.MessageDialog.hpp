@@ -46,8 +46,8 @@ public:
     static bool canShow(const ::java::lang::Class&);
     MessageDialog(const ::android::app::Activity&);
     MessageDialog(const ::android::support::v4::app::Fragment&);
-    bool getShouldFailOnDataError() const ;
-    void setShouldFailOnDataError(bool) const ;
+    bool getShouldFailOnDataError() const;
+    void setShouldFailOnDataError(bool) const;
 
 };
 }

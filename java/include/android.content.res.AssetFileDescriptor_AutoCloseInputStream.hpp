@@ -36,14 +36,14 @@ public:
     ::android::content::res::AssetFileDescriptor_AutoCloseInputStream& operator=(::android::content::res::AssetFileDescriptor_AutoCloseInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     AssetFileDescriptor_AutoCloseInputStream(const ::android::content::res::AssetFileDescriptor&);
-    int32_t available() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t read(const std::vector< int8_t>&) const ;
-    int64_t skip(int64_t) const ;
-    void mark(int32_t) const ;
-    bool markSupported() const ;
-    void reset() const ;
+    int32_t available() const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t read(const std::vector< int8_t>&) const;
+    int64_t skip(int64_t) const;
+    void mark(int32_t) const;
+    bool markSupported() const;
+    void reset() const;
 
 };
 }

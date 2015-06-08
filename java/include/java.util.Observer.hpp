@@ -33,7 +33,7 @@ public:
     ::java::util::Observer& operator=(const ::java::util::Observer& x) {obj = x.obj; return *this;}
     ::java::util::Observer& operator=(::java::util::Observer&& x) {obj = std::move(x.obj); return *this;}
     
-    void update(const ::java::util::Observable&, const ::java::lang::Object&) const ;
+    void update(const ::java::util::Observable&, const ::java::lang::Object&) const;
 
 };
 }

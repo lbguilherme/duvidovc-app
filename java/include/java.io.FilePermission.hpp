@@ -38,8 +38,8 @@ public:
     ::java::io::FilePermission& operator=(::java::io::FilePermission&& x) {obj = std::move(x.obj); return *this;}
     
     FilePermission(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getActions() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    ::java::lang::String getActions() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

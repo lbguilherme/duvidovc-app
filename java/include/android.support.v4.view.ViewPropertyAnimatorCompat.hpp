@@ -36,37 +36,37 @@ public:
     ::android::support::v4::view::ViewPropertyAnimatorCompat& operator=(const ::android::support::v4::view::ViewPropertyAnimatorCompat& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPropertyAnimatorCompat& operator=(::android::support::v4::view::ViewPropertyAnimatorCompat&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::support::v4::view::ViewPropertyAnimatorCompat setDuration(int64_t) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat alpha(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat alphaBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat translationX(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat translationY(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat withEndAction(const ::java::lang::Runnable&) const ;
-    int64_t getDuration() const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat setInterpolator(const ::android::view::animation::Interpolator&) const ;
-    ::android::view::animation::Interpolator getInterpolator() const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat setStartDelay(int64_t) const ;
-    int64_t getStartDelay() const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat rotation(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationX(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationXBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationY(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationYBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleX(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleXBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleY(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleYBy(float) const ;
-    void cancel() const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat x(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat xBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat y(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat yBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat translationXBy(float) const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat translationYBy(float) const ;
-    void start() const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat withLayer() const ;
-    ::android::support::v4::view::ViewPropertyAnimatorCompat withStartAction(const ::java::lang::Runnable&) const ;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat setDuration(int64_t) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat alpha(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat alphaBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat translationX(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat translationY(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat withEndAction(const ::java::lang::Runnable&) const;
+    int64_t getDuration() const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat setInterpolator(const ::android::view::animation::Interpolator&) const;
+    ::android::view::animation::Interpolator getInterpolator() const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat setStartDelay(int64_t) const;
+    int64_t getStartDelay() const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat rotation(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationX(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationXBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationY(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat rotationYBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleX(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleXBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleY(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat scaleYBy(float) const;
+    void cancel() const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat x(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat xBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat y(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat yBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat translationXBy(float) const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat translationYBy(float) const;
+    void start() const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat withLayer() const;
+    ::android::support::v4::view::ViewPropertyAnimatorCompat withStartAction(const ::java::lang::Runnable&) const;
 
 };
 }

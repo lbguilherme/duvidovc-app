@@ -33,7 +33,7 @@ public:
     ::android::widget::AdapterView_OnItemLongClickListener& operator=(const ::android::widget::AdapterView_OnItemLongClickListener& x) {obj = x.obj; return *this;}
     ::android::widget::AdapterView_OnItemLongClickListener& operator=(::android::widget::AdapterView_OnItemLongClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onItemLongClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const ;
+    bool onItemLongClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const;
 
 };
 }

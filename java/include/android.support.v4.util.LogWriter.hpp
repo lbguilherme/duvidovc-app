@@ -37,9 +37,9 @@ public:
     ::android::support::v4::util::LogWriter& operator=(::android::support::v4::util::LogWriter&& x) {obj = std::move(x.obj); return *this;}
     
     LogWriter(const ::java::lang::String&);
-    void close() const ;
-    void flush() const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
 
 };
 }

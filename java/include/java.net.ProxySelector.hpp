@@ -39,8 +39,8 @@ public:
     ProxySelector();
     static ::java::net::ProxySelector getDefault();
     static void setDefault(const ::java::net::ProxySelector&);
-    ::java::util::List select(const ::java::net::URI&) const ;
-    void connectFailed(const ::java::net::URI&, const ::java::net::SocketAddress&, const ::java::io::IOException&) const ;
+    ::java::util::List select(const ::java::net::URI&) const;
+    void connectFailed(const ::java::net::URI&, const ::java::net::SocketAddress&, const ::java::io::IOException&) const;
 
 };
 }

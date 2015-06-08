@@ -39,8 +39,8 @@ public:
     RadioButton(const ::android::content::Context&);
     RadioButton(const ::android::content::Context&, const ::android::util::AttributeSet&);
     RadioButton(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void toggle() const ;
-    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void toggle() const;
+    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

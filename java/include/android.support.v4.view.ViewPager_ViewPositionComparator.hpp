@@ -37,8 +37,8 @@ public:
     ::android::support::v4::view::ViewPager_ViewPositionComparator& operator=(const ::android::support::v4::view::ViewPager_ViewPositionComparator& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPager_ViewPositionComparator& operator=(::android::support::v4::view::ViewPager_ViewPositionComparator&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t compare(const ::android::view::View&, const ::android::view::View&) const ;
-    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    int32_t compare(const ::android::view::View&, const ::android::view::View&) const;
+    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

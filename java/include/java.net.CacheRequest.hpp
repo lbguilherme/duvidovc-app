@@ -33,8 +33,8 @@ public:
     ::java::net::CacheRequest& operator=(::java::net::CacheRequest&& x) {obj = std::move(x.obj); return *this;}
     
     CacheRequest();
-    void abort() const ;
-    ::java::io::OutputStream getBody() const ;
+    void abort() const;
+    ::java::io::OutputStream getBody() const;
 
 };
 }

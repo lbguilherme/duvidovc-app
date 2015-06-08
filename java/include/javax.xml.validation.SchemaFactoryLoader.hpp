@@ -34,7 +34,7 @@ public:
     ::javax::xml::validation::SchemaFactoryLoader& operator=(const ::javax::xml::validation::SchemaFactoryLoader& x) {obj = x.obj; return *this;}
     ::javax::xml::validation::SchemaFactoryLoader& operator=(::javax::xml::validation::SchemaFactoryLoader&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::xml::validation::SchemaFactory newFactory(const ::java::lang::String&) const ;
+    ::javax::xml::validation::SchemaFactory newFactory(const ::java::lang::String&) const;
 
 };
 }

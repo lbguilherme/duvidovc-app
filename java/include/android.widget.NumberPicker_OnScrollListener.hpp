@@ -32,7 +32,7 @@ public:
     ::android::widget::NumberPicker_OnScrollListener& operator=(const ::android::widget::NumberPicker_OnScrollListener& x) {obj = x.obj; return *this;}
     ::android::widget::NumberPicker_OnScrollListener& operator=(::android::widget::NumberPicker_OnScrollListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onScrollStateChange(const ::android::widget::NumberPicker&, int32_t) const ;
+    void onScrollStateChange(const ::android::widget::NumberPicker&, int32_t) const;
 
 };
 }

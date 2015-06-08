@@ -33,8 +33,8 @@ public:
     ::android::app::Instrumentation_ActivityResult& operator=(::android::app::Instrumentation_ActivityResult&& x) {obj = std::move(x.obj); return *this;}
     
     Instrumentation_ActivityResult(int32_t, const ::android::content::Intent&);
-    int32_t getResultCode() const ;
-    ::android::content::Intent getResultData() const ;
+    int32_t getResultCode() const;
+    ::android::content::Intent getResultData() const;
 
 };
 }

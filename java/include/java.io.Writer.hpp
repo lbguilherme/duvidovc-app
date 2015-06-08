@@ -40,16 +40,16 @@ public:
     ::java::io::Writer& operator=(const ::java::io::Writer& x) {obj = x.obj; return *this;}
     ::java::io::Writer& operator=(::java::io::Writer&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    void flush() const ;
-    void write(const std::vector< uint16_t>&) const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void write(const ::java::lang::String&) const ;
-    void write(const ::java::lang::String&, int32_t, int32_t) const ;
-    ::java::io::Writer append(uint16_t) const ;
-    ::java::io::Writer append(const ::java::lang::CharSequence&) const ;
-    ::java::io::Writer append(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    void write(const std::vector< uint16_t>&) const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void write(const ::java::lang::String&) const;
+    void write(const ::java::lang::String&, int32_t, int32_t) const;
+    ::java::io::Writer append(uint16_t) const;
+    ::java::io::Writer append(const ::java::lang::CharSequence&) const;
+    ::java::io::Writer append(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

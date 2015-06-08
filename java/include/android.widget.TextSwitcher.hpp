@@ -40,9 +40,9 @@ public:
     
     TextSwitcher(const ::android::content::Context&);
     TextSwitcher(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const ;
-    void setText(const ::java::lang::CharSequence&) const ;
-    void setCurrentText(const ::java::lang::CharSequence&) const ;
+    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const;
+    void setText(const ::java::lang::CharSequence&) const;
+    void setCurrentText(const ::java::lang::CharSequence&) const;
 
 };
 }

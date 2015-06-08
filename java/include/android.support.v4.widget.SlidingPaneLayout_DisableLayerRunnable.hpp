@@ -35,7 +35,7 @@ public:
     ::android::support::v4::widget::SlidingPaneLayout_DisableLayerRunnable& operator=(const ::android::support::v4::widget::SlidingPaneLayout_DisableLayerRunnable& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SlidingPaneLayout_DisableLayerRunnable& operator=(::android::support::v4::widget::SlidingPaneLayout_DisableLayerRunnable&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

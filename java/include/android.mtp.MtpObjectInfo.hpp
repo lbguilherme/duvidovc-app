@@ -32,26 +32,26 @@ public:
     ::android::mtp::MtpObjectInfo& operator=(const ::android::mtp::MtpObjectInfo& x) {obj = x.obj; return *this;}
     ::android::mtp::MtpObjectInfo& operator=(::android::mtp::MtpObjectInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getObjectHandle() const ;
-    int32_t getStorageId() const ;
-    int32_t getFormat() const ;
-    int32_t getProtectionStatus() const ;
-    int32_t getCompressedSize() const ;
-    int32_t getThumbFormat() const ;
-    int32_t getThumbCompressedSize() const ;
-    int32_t getThumbPixWidth() const ;
-    int32_t getThumbPixHeight() const ;
-    int32_t getImagePixWidth() const ;
-    int32_t getImagePixHeight() const ;
-    int32_t getImagePixDepth() const ;
-    int32_t getParent() const ;
-    int32_t getAssociationType() const ;
-    int32_t getAssociationDesc() const ;
-    int32_t getSequenceNumber() const ;
-    ::java::lang::String getName() const ;
-    int64_t getDateCreated() const ;
-    int64_t getDateModified() const ;
-    ::java::lang::String getKeywords() const ;
+    int32_t getObjectHandle() const;
+    int32_t getStorageId() const;
+    int32_t getFormat() const;
+    int32_t getProtectionStatus() const;
+    int32_t getCompressedSize() const;
+    int32_t getThumbFormat() const;
+    int32_t getThumbCompressedSize() const;
+    int32_t getThumbPixWidth() const;
+    int32_t getThumbPixHeight() const;
+    int32_t getImagePixWidth() const;
+    int32_t getImagePixHeight() const;
+    int32_t getImagePixDepth() const;
+    int32_t getParent() const;
+    int32_t getAssociationType() const;
+    int32_t getAssociationDesc() const;
+    int32_t getSequenceNumber() const;
+    ::java::lang::String getName() const;
+    int64_t getDateCreated() const;
+    int64_t getDateModified() const;
+    ::java::lang::String getKeywords() const;
 
 };
 }

@@ -34,8 +34,8 @@ public:
     ::android::support::v4::view::ViewConfigurationCompat_ViewConfigurationVersionImpl& operator=(const ::android::support::v4::view::ViewConfigurationCompat_ViewConfigurationVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewConfigurationCompat_ViewConfigurationVersionImpl& operator=(::android::support::v4::view::ViewConfigurationCompat_ViewConfigurationVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getScaledPagingTouchSlop(const ::android::view::ViewConfiguration&) const ;
-    bool hasPermanentMenuKey(const ::android::view::ViewConfiguration&) const ;
+    int32_t getScaledPagingTouchSlop(const ::android::view::ViewConfiguration&) const;
+    bool hasPermanentMenuKey(const ::android::view::ViewConfiguration&) const;
 
 };
 }

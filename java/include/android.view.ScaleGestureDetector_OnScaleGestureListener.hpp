@@ -32,9 +32,9 @@ public:
     ::android::view::ScaleGestureDetector_OnScaleGestureListener& operator=(const ::android::view::ScaleGestureDetector_OnScaleGestureListener& x) {obj = x.obj; return *this;}
     ::android::view::ScaleGestureDetector_OnScaleGestureListener& operator=(::android::view::ScaleGestureDetector_OnScaleGestureListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onScale(const ::android::view::ScaleGestureDetector&) const ;
-    bool onScaleBegin(const ::android::view::ScaleGestureDetector&) const ;
-    void onScaleEnd(const ::android::view::ScaleGestureDetector&) const ;
+    bool onScale(const ::android::view::ScaleGestureDetector&) const;
+    bool onScaleBegin(const ::android::view::ScaleGestureDetector&) const;
+    void onScaleEnd(const ::android::view::ScaleGestureDetector&) const;
 
 };
 }

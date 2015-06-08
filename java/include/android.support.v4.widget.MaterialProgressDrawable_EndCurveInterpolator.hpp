@@ -35,7 +35,7 @@ public:
     ::android::support::v4::widget::MaterialProgressDrawable_EndCurveInterpolator& operator=(const ::android::support::v4::widget::MaterialProgressDrawable_EndCurveInterpolator& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::MaterialProgressDrawable_EndCurveInterpolator& operator=(::android::support::v4::widget::MaterialProgressDrawable_EndCurveInterpolator&& x) {obj = std::move(x.obj); return *this;}
     
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

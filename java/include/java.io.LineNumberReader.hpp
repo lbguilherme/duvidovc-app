@@ -37,14 +37,14 @@ public:
     
     LineNumberReader(const ::java::io::Reader&);
     LineNumberReader(const ::java::io::Reader&, int32_t);
-    int32_t getLineNumber() const ;
-    void mark(int32_t) const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    ::java::lang::String readLine() const ;
-    void reset() const ;
-    void setLineNumber(int32_t) const ;
-    int64_t skip(int64_t) const ;
+    int32_t getLineNumber() const;
+    void mark(int32_t) const;
+    int32_t read() const;
+    int32_t read(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    ::java::lang::String readLine() const;
+    void reset() const;
+    void setLineNumber(int32_t) const;
+    int64_t skip(int64_t) const;
 
 };
 }

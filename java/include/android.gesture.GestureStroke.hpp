@@ -36,11 +36,11 @@ public:
     ::android::gesture::GestureStroke& operator=(::android::gesture::GestureStroke&& x) {obj = std::move(x.obj); return *this;}
     
     GestureStroke(const ::java::util::ArrayList&);
-    ::java::lang::Object clone() const ;
-    ::android::graphics::Path getPath() const ;
-    ::android::graphics::Path toPath(float, float, int32_t) const ;
-    void clearPath() const ;
-    ::android::gesture::OrientedBoundingBox computeOrientedBoundingBox() const ;
+    ::java::lang::Object clone() const;
+    ::android::graphics::Path getPath() const;
+    ::android::graphics::Path toPath(float, float, int32_t) const;
+    void clearPath() const;
+    ::android::gesture::OrientedBoundingBox computeOrientedBoundingBox() const;
 
 };
 }

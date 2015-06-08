@@ -36,8 +36,8 @@ public:
     ::java::security::spec::RSAKeyGenParameterSpec& operator=(::java::security::spec::RSAKeyGenParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     RSAKeyGenParameterSpec(int32_t, const ::java::math::BigInteger&);
-    int32_t getKeysize() const ;
-    ::java::math::BigInteger getPublicExponent() const ;
+    int32_t getKeysize() const;
+    ::java::math::BigInteger getPublicExponent() const;
 
 };
 }

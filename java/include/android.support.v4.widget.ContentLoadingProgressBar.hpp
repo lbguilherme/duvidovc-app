@@ -39,10 +39,10 @@ public:
     
     ContentLoadingProgressBar(const ::android::content::Context&);
     ContentLoadingProgressBar(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void onAttachedToWindow() const ;
-    void onDetachedFromWindow() const ;
-    void hide() const ;
-    void show() const ;
+    void onAttachedToWindow() const;
+    void onDetachedFromWindow() const;
+    void hide() const;
+    void show() const;
 
 };
 }

@@ -32,9 +32,9 @@ public:
     ::android::widget::SeekBar_OnSeekBarChangeListener& operator=(const ::android::widget::SeekBar_OnSeekBarChangeListener& x) {obj = x.obj; return *this;}
     ::android::widget::SeekBar_OnSeekBarChangeListener& operator=(::android::widget::SeekBar_OnSeekBarChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onProgressChanged(const ::android::widget::SeekBar&, int32_t, bool) const ;
-    void onStartTrackingTouch(const ::android::widget::SeekBar&) const ;
-    void onStopTrackingTouch(const ::android::widget::SeekBar&) const ;
+    void onProgressChanged(const ::android::widget::SeekBar&, int32_t, bool) const;
+    void onStartTrackingTouch(const ::android::widget::SeekBar&) const;
+    void onStopTrackingTouch(const ::android::widget::SeekBar&) const;
 
 };
 }

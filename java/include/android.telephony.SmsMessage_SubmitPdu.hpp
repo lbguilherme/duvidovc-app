@@ -32,7 +32,7 @@ public:
     ::android::telephony::SmsMessage_SubmitPdu& operator=(const ::android::telephony::SmsMessage_SubmitPdu& x) {obj = x.obj; return *this;}
     ::android::telephony::SmsMessage_SubmitPdu& operator=(::android::telephony::SmsMessage_SubmitPdu&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

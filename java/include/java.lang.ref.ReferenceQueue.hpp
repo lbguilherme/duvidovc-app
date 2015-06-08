@@ -34,9 +34,9 @@ public:
     ::java::lang::ref::ReferenceQueue& operator=(::java::lang::ref::ReferenceQueue&& x) {obj = std::move(x.obj); return *this;}
     
     ReferenceQueue();
-    ::java::lang::ref::Reference poll() const ;
-    ::java::lang::ref::Reference remove() const ;
-    ::java::lang::ref::Reference remove(int64_t) const ;
+    ::java::lang::ref::Reference poll() const;
+    ::java::lang::ref::Reference remove() const;
+    ::java::lang::ref::Reference remove(int64_t) const;
 
 };
 }

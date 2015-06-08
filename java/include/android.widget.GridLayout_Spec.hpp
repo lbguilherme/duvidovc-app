@@ -32,8 +32,8 @@ public:
     ::android::widget::GridLayout_Spec& operator=(const ::android::widget::GridLayout_Spec& x) {obj = x.obj; return *this;}
     ::android::widget::GridLayout_Spec& operator=(::android::widget::GridLayout_Spec&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

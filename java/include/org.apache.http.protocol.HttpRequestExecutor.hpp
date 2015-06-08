@@ -39,9 +39,9 @@ public:
     ::org::apache::http::protocol::HttpRequestExecutor& operator=(::org::apache::http::protocol::HttpRequestExecutor&& x) {obj = std::move(x.obj); return *this;}
     
     HttpRequestExecutor();
-    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpRequest&, const ::org::apache::http::HttpClientConnection&, const ::org::apache::http::protocol::HttpContext&) const ;
-    void preProcess(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpProcessor&, const ::org::apache::http::protocol::HttpContext&) const ;
-    void postProcess(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpProcessor&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpRequest&, const ::org::apache::http::HttpClientConnection&, const ::org::apache::http::protocol::HttpContext&) const;
+    void preProcess(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpProcessor&, const ::org::apache::http::protocol::HttpContext&) const;
+    void postProcess(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpProcessor&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

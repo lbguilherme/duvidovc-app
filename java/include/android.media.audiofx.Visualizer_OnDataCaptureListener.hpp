@@ -33,8 +33,8 @@ public:
     ::android::media::audiofx::Visualizer_OnDataCaptureListener& operator=(const ::android::media::audiofx::Visualizer_OnDataCaptureListener& x) {obj = x.obj; return *this;}
     ::android::media::audiofx::Visualizer_OnDataCaptureListener& operator=(::android::media::audiofx::Visualizer_OnDataCaptureListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onWaveFormDataCapture(const ::android::media::audiofx::Visualizer&, const std::vector< int8_t>&, int32_t) const ;
-    void onFftDataCapture(const ::android::media::audiofx::Visualizer&, const std::vector< int8_t>&, int32_t) const ;
+    void onWaveFormDataCapture(const ::android::media::audiofx::Visualizer&, const std::vector< int8_t>&, int32_t) const;
+    void onFftDataCapture(const ::android::media::audiofx::Visualizer&, const std::vector< int8_t>&, int32_t) const;
 
 };
 }

@@ -40,10 +40,10 @@ public:
     ::android::support::v4::app::NotificationCompatSideChannelService& operator=(::android::support::v4::app::NotificationCompatSideChannelService&& x) {obj = std::move(x.obj); return *this;}
     
     NotificationCompatSideChannelService();
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    void notify(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::android::app::Notification&) const ;
-    void cancel(const ::java::lang::String&, int32_t, const ::java::lang::String&) const ;
-    void cancelAll(const ::java::lang::String&) const ;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    void notify(const ::java::lang::String&, int32_t, const ::java::lang::String&, const ::android::app::Notification&) const;
+    void cancel(const ::java::lang::String&, int32_t, const ::java::lang::String&) const;
+    void cancelAll(const ::java::lang::String&) const;
 
 };
 }

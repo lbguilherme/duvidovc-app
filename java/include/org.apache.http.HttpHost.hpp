@@ -39,15 +39,15 @@ public:
     HttpHost(const ::java::lang::String&, int32_t, const ::java::lang::String&);
     HttpHost(const ::java::lang::String&, int32_t);
     HttpHost(const ::java::lang::String&);
-    ::java::lang::String getHostName() const ;
-    int32_t getPort() const ;
-    ::java::lang::String getSchemeName() const ;
-    ::java::lang::String toURI() const ;
-    ::java::lang::String toHostString() const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::Object clone() const ;
+    ::java::lang::String getHostName() const;
+    int32_t getPort() const;
+    ::java::lang::String getSchemeName() const;
+    ::java::lang::String toURI() const;
+    ::java::lang::String toHostString() const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::Object clone() const;
 
 };
 }

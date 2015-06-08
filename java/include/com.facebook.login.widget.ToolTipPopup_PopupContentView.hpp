@@ -38,8 +38,8 @@ public:
     ::com::facebook::login::widget::ToolTipPopup_PopupContentView& operator=(::com::facebook::login::widget::ToolTipPopup_PopupContentView&& x) {obj = std::move(x.obj); return *this;}
     
     ToolTipPopup_PopupContentView(const ::com::facebook::login::widget::ToolTipPopup&, const ::android::content::Context&);
-    void showTopArrow() const ;
-    void showBottomArrow() const ;
+    void showTopArrow() const;
+    void showBottomArrow() const;
 
 };
 }

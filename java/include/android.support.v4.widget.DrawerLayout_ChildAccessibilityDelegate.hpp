@@ -37,7 +37,7 @@ public:
     ::android::support::v4::widget::DrawerLayout_ChildAccessibilityDelegate& operator=(const ::android::support::v4::widget::DrawerLayout_ChildAccessibilityDelegate& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::DrawerLayout_ChildAccessibilityDelegate& operator=(::android::support::v4::widget::DrawerLayout_ChildAccessibilityDelegate&& x) {obj = std::move(x.obj); return *this;}
     
-    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const ;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat&) const;
 
 };
 }

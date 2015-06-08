@@ -36,13 +36,13 @@ public:
     ::javax::security::cert::Certificate& operator=(::javax::security::cert::Certificate&& x) {obj = std::move(x.obj); return *this;}
     
     Certificate();
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    std::vector< int8_t> getEncoded() const ;
-    void verify(const ::java::security::PublicKey&) const ;
-    void verify(const ::java::security::PublicKey&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    ::java::security::PublicKey getPublicKey() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    std::vector< int8_t> getEncoded() const;
+    void verify(const ::java::security::PublicKey&) const;
+    void verify(const ::java::security::PublicKey&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    ::java::security::PublicKey getPublicKey() const;
 
 };
 }

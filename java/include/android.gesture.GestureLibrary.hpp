@@ -35,19 +35,19 @@ public:
     ::android::gesture::GestureLibrary& operator=(const ::android::gesture::GestureLibrary& x) {obj = x.obj; return *this;}
     ::android::gesture::GestureLibrary& operator=(::android::gesture::GestureLibrary&& x) {obj = std::move(x.obj); return *this;}
     
-    bool save() const ;
-    bool load() const ;
-    bool isReadOnly() const ;
-    void setOrientationStyle(int32_t) const ;
-    int32_t getOrientationStyle() const ;
-    void setSequenceType(int32_t) const ;
-    int32_t getSequenceType() const ;
-    ::java::util::Set getGestureEntries() const ;
-    ::java::util::ArrayList recognize(const ::android::gesture::Gesture&) const ;
-    void addGesture(const ::java::lang::String&, const ::android::gesture::Gesture&) const ;
-    void removeGesture(const ::java::lang::String&, const ::android::gesture::Gesture&) const ;
-    void removeEntry(const ::java::lang::String&) const ;
-    ::java::util::ArrayList getGestures(const ::java::lang::String&) const ;
+    bool save() const;
+    bool load() const;
+    bool isReadOnly() const;
+    void setOrientationStyle(int32_t) const;
+    int32_t getOrientationStyle() const;
+    void setSequenceType(int32_t) const;
+    int32_t getSequenceType() const;
+    ::java::util::Set getGestureEntries() const;
+    ::java::util::ArrayList recognize(const ::android::gesture::Gesture&) const;
+    void addGesture(const ::java::lang::String&, const ::android::gesture::Gesture&) const;
+    void removeGesture(const ::java::lang::String&, const ::android::gesture::Gesture&) const;
+    void removeEntry(const ::java::lang::String&) const;
+    ::java::util::ArrayList getGestures(const ::java::lang::String&) const;
 
 };
 }

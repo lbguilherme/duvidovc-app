@@ -36,8 +36,8 @@ public:
     ::java::security::KeyStore_TrustedCertificateEntry& operator=(::java::security::KeyStore_TrustedCertificateEntry&& x) {obj = std::move(x.obj); return *this;}
     
     KeyStore_TrustedCertificateEntry(const ::java::security::cert::Certificate&);
-    ::java::security::cert::Certificate getTrustedCertificate() const ;
-    ::java::lang::String toString() const ;
+    ::java::security::cert::Certificate getTrustedCertificate() const;
+    ::java::lang::String toString() const;
 
 };
 }

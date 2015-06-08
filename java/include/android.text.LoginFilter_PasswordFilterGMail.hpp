@@ -35,7 +35,7 @@ public:
     
     LoginFilter_PasswordFilterGMail();
     LoginFilter_PasswordFilterGMail(bool);
-    bool isAllowed(uint16_t) const ;
+    bool isAllowed(uint16_t) const;
 
 };
 }

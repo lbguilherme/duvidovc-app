@@ -33,7 +33,7 @@ public:
     ::android::view::textservice::SpellCheckerSession_SpellCheckerSessionListener& operator=(const ::android::view::textservice::SpellCheckerSession_SpellCheckerSessionListener& x) {obj = x.obj; return *this;}
     ::android::view::textservice::SpellCheckerSession_SpellCheckerSessionListener& operator=(::android::view::textservice::SpellCheckerSession_SpellCheckerSessionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGetSuggestions(const std::vector< ::android::view::textservice::SuggestionsInfo>&) const ;
+    void onGetSuggestions(const std::vector< ::android::view::textservice::SuggestionsInfo>&) const;
 
 };
 }

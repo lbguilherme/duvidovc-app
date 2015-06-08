@@ -37,7 +37,7 @@ public:
     ::com::facebook::internal::FacebookWebFallbackDialog& operator=(::com::facebook::internal::FacebookWebFallbackDialog&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookWebFallbackDialog(const ::android::content::Context&, const ::java::lang::String&, const ::java::lang::String&);
-    void cancel() const ;
+    void cancel() const;
 
 };
 }

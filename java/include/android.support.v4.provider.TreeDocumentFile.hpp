@@ -38,21 +38,21 @@ public:
     ::android::support::v4::provider::TreeDocumentFile& operator=(const ::android::support::v4::provider::TreeDocumentFile& x) {obj = x.obj; return *this;}
     ::android::support::v4::provider::TreeDocumentFile& operator=(::android::support::v4::provider::TreeDocumentFile&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::support::v4::provider::DocumentFile createFile(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::support::v4::provider::DocumentFile createDirectory(const ::java::lang::String&) const ;
-    ::android::net::Uri getUri() const ;
-    ::java::lang::String getName() const ;
-    ::java::lang::String getType() const ;
-    bool isDirectory() const ;
-    bool isFile() const ;
-    int64_t lastModified() const ;
-    int64_t length() const ;
-    bool canRead() const ;
-    bool canWrite() const ;
-    bool delete_() const ;
-    bool exists() const ;
-    std::vector< ::android::support::v4::provider::DocumentFile> listFiles() const ;
-    bool renameTo(const ::java::lang::String&) const ;
+    ::android::support::v4::provider::DocumentFile createFile(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::support::v4::provider::DocumentFile createDirectory(const ::java::lang::String&) const;
+    ::android::net::Uri getUri() const;
+    ::java::lang::String getName() const;
+    ::java::lang::String getType() const;
+    bool isDirectory() const;
+    bool isFile() const;
+    int64_t lastModified() const;
+    int64_t length() const;
+    bool canRead() const;
+    bool canWrite() const;
+    bool delete_() const;
+    bool exists() const;
+    std::vector< ::android::support::v4::provider::DocumentFile> listFiles() const;
+    bool renameTo(const ::java::lang::String&) const;
 
 };
 }

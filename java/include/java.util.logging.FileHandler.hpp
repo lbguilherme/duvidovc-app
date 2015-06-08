@@ -41,8 +41,8 @@ public:
     FileHandler(const ::java::lang::String&, bool);
     FileHandler(const ::java::lang::String&, int32_t, int32_t);
     FileHandler(const ::java::lang::String&, int32_t, int32_t, bool);
-    void close() const ;
-    void publish(const ::java::util::logging::LogRecord&) const ;
+    void close() const;
+    void publish(const ::java::util::logging::LogRecord&) const;
 
 };
 }

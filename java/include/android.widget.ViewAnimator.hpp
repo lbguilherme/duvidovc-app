@@ -40,26 +40,26 @@ public:
     
     ViewAnimator(const ::android::content::Context&);
     ViewAnimator(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setDisplayedChild(int32_t) const ;
-    int32_t getDisplayedChild() const ;
-    void showNext() const ;
-    void showPrevious() const ;
-    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const ;
-    void removeAllViews() const ;
-    void removeView(const ::android::view::View&) const ;
-    void removeViewAt(int32_t) const ;
-    void removeViewInLayout(const ::android::view::View&) const ;
-    void removeViews(int32_t, int32_t) const ;
-    void removeViewsInLayout(int32_t, int32_t) const ;
-    ::android::view::View getCurrentView() const ;
-    ::android::view::animation::Animation getInAnimation() const ;
-    void setInAnimation(const ::android::view::animation::Animation&) const ;
-    ::android::view::animation::Animation getOutAnimation() const ;
-    void setOutAnimation(const ::android::view::animation::Animation&) const ;
-    void setInAnimation(const ::android::content::Context&, int32_t) const ;
-    void setOutAnimation(const ::android::content::Context&, int32_t) const ;
-    void setAnimateFirstView(bool) const ;
-    int32_t getBaseline() const ;
+    void setDisplayedChild(int32_t) const;
+    int32_t getDisplayedChild() const;
+    void showNext() const;
+    void showPrevious() const;
+    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const;
+    void removeAllViews() const;
+    void removeView(const ::android::view::View&) const;
+    void removeViewAt(int32_t) const;
+    void removeViewInLayout(const ::android::view::View&) const;
+    void removeViews(int32_t, int32_t) const;
+    void removeViewsInLayout(int32_t, int32_t) const;
+    ::android::view::View getCurrentView() const;
+    ::android::view::animation::Animation getInAnimation() const;
+    void setInAnimation(const ::android::view::animation::Animation&) const;
+    ::android::view::animation::Animation getOutAnimation() const;
+    void setOutAnimation(const ::android::view::animation::Animation&) const;
+    void setInAnimation(const ::android::content::Context&, int32_t) const;
+    void setOutAnimation(const ::android::content::Context&, int32_t) const;
+    void setAnimateFirstView(bool) const;
+    int32_t getBaseline() const;
 
 };
 }

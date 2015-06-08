@@ -34,10 +34,10 @@ public:
     ::android::os::storage::StorageManager& operator=(const ::android::os::storage::StorageManager& x) {obj = x.obj; return *this;}
     ::android::os::storage::StorageManager& operator=(::android::os::storage::StorageManager&& x) {obj = std::move(x.obj); return *this;}
     
-    bool mountObb(const ::java::lang::String&, const ::java::lang::String&, const ::android::os::storage::OnObbStateChangeListener&) const ;
-    bool unmountObb(const ::java::lang::String&, bool, const ::android::os::storage::OnObbStateChangeListener&) const ;
-    bool isObbMounted(const ::java::lang::String&) const ;
-    ::java::lang::String getMountedObbPath(const ::java::lang::String&) const ;
+    bool mountObb(const ::java::lang::String&, const ::java::lang::String&, const ::android::os::storage::OnObbStateChangeListener&) const;
+    bool unmountObb(const ::java::lang::String&, bool, const ::android::os::storage::OnObbStateChangeListener&) const;
+    bool isObbMounted(const ::java::lang::String&) const;
+    ::java::lang::String getMountedObbPath(const ::java::lang::String&) const;
 
 };
 }

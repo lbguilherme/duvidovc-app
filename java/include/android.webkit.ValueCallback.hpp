@@ -32,7 +32,7 @@ public:
     ::android::webkit::ValueCallback& operator=(const ::android::webkit::ValueCallback& x) {obj = x.obj; return *this;}
     ::android::webkit::ValueCallback& operator=(::android::webkit::ValueCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onReceiveValue(const ::java::lang::Object&) const ;
+    void onReceiveValue(const ::java::lang::Object&) const;
 
 };
 }

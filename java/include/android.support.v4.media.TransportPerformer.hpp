@@ -35,18 +35,18 @@ public:
     ::android::support::v4::media::TransportPerformer& operator=(::android::support::v4::media::TransportPerformer&& x) {obj = std::move(x.obj); return *this;}
     
     TransportPerformer();
-    void onStart() const ;
-    void onPause() const ;
-    void onStop() const ;
-    int64_t onGetDuration() const ;
-    int64_t onGetCurrentPosition() const ;
-    void onSeekTo(int64_t) const ;
-    bool onIsPlaying() const ;
-    int32_t onGetBufferPercentage() const ;
-    int32_t onGetTransportControlFlags() const ;
-    bool onMediaButtonDown(int32_t, const ::android::view::KeyEvent&) const ;
-    bool onMediaButtonUp(int32_t, const ::android::view::KeyEvent&) const ;
-    void onAudioFocusChange(int32_t) const ;
+    void onStart() const;
+    void onPause() const;
+    void onStop() const;
+    int64_t onGetDuration() const;
+    int64_t onGetCurrentPosition() const;
+    void onSeekTo(int64_t) const;
+    bool onIsPlaying() const;
+    int32_t onGetBufferPercentage() const;
+    int32_t onGetTransportControlFlags() const;
+    bool onMediaButtonDown(int32_t, const ::android::view::KeyEvent&) const;
+    bool onMediaButtonUp(int32_t, const ::android::view::KeyEvent&) const;
+    void onAudioFocusChange(int32_t) const;
 
 };
 }

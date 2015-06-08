@@ -43,15 +43,15 @@ public:
     CheckedTextView(const ::android::content::Context&);
     CheckedTextView(const ::android::content::Context&, const ::android::util::AttributeSet&);
     CheckedTextView(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void toggle() const ;
-    bool isChecked() const ;
-    void setChecked(bool) const ;
-    void setCheckMarkDrawable(int32_t) const ;
-    void setCheckMarkDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void setPadding(int32_t, int32_t, int32_t, int32_t) const ;
-    void onInitializeAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityNodeInfo(const ::android::view::accessibility::AccessibilityNodeInfo&) const ;
+    void toggle() const;
+    bool isChecked() const;
+    void setChecked(bool) const;
+    void setCheckMarkDrawable(int32_t) const;
+    void setCheckMarkDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void setPadding(int32_t, int32_t, int32_t, int32_t) const;
+    void onInitializeAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::accessibility::AccessibilityNodeInfo&) const;
 
 };
 }

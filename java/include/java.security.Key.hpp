@@ -34,9 +34,9 @@ public:
     ::java::security::Key& operator=(const ::java::security::Key& x) {obj = x.obj; return *this;}
     ::java::security::Key& operator=(::java::security::Key&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
-    ::java::lang::String getFormat() const ;
-    std::vector< int8_t> getEncoded() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::lang::String getFormat() const;
+    std::vector< int8_t> getEncoded() const;
 
 };
 }

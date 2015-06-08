@@ -33,15 +33,15 @@ public:
     ::android::media::ExifInterface& operator=(::android::media::ExifInterface&& x) {obj = std::move(x.obj); return *this;}
     
     ExifInterface(const ::java::lang::String&);
-    ::java::lang::String getAttribute(const ::java::lang::String&) const ;
-    int32_t getAttributeInt(const ::java::lang::String&, int32_t) const ;
-    double getAttributeDouble(const ::java::lang::String&, double) const ;
-    void setAttribute(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void saveAttributes() const ;
-    bool hasThumbnail() const ;
-    std::vector< int8_t> getThumbnail() const ;
-    bool getLatLong(const std::vector< float>&) const ;
-    double getAltitude(double) const ;
+    ::java::lang::String getAttribute(const ::java::lang::String&) const;
+    int32_t getAttributeInt(const ::java::lang::String&, int32_t) const;
+    double getAttributeDouble(const ::java::lang::String&, double) const;
+    void setAttribute(const ::java::lang::String&, const ::java::lang::String&) const;
+    void saveAttributes() const;
+    bool hasThumbnail() const;
+    std::vector< int8_t> getThumbnail() const;
+    bool getLatLong(const std::vector< float>&) const;
+    double getAltitude(double) const;
 
 };
 }

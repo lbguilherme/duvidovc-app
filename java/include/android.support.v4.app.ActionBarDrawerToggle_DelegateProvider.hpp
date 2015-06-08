@@ -34,7 +34,7 @@ public:
     ::android::support::v4::app::ActionBarDrawerToggle_DelegateProvider& operator=(const ::android::support::v4::app::ActionBarDrawerToggle_DelegateProvider& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ActionBarDrawerToggle_DelegateProvider& operator=(::android::support::v4::app::ActionBarDrawerToggle_DelegateProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::support::v4::app::ActionBarDrawerToggle_Delegate getDrawerToggleDelegate() const ;
+    ::android::support::v4::app::ActionBarDrawerToggle_Delegate getDrawerToggleDelegate() const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::android::widget::TextView_SavedState& operator=(const ::android::widget::TextView_SavedState& x) {obj = x.obj; return *this;}
     ::android::widget::TextView_SavedState& operator=(::android::widget::TextView_SavedState&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

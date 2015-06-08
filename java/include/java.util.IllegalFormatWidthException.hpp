@@ -35,8 +35,8 @@ public:
     ::java::util::IllegalFormatWidthException& operator=(::java::util::IllegalFormatWidthException&& x) {obj = std::move(x.obj); return *this;}
     
     IllegalFormatWidthException(int32_t);
-    int32_t getWidth() const ;
-    ::java::lang::String getMessage() const ;
+    int32_t getWidth() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

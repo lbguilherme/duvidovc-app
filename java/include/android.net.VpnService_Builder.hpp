@@ -38,17 +38,17 @@ public:
     ::android::net::VpnService_Builder& operator=(::android::net::VpnService_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     VpnService_Builder(const ::android::net::VpnService&);
-    ::android::net::VpnService_Builder setSession(const ::java::lang::String&) const ;
-    ::android::net::VpnService_Builder setConfigureIntent(const ::android::app::PendingIntent&) const ;
-    ::android::net::VpnService_Builder setMtu(int32_t) const ;
-    ::android::net::VpnService_Builder addAddress(const ::java::net::InetAddress&, int32_t) const ;
-    ::android::net::VpnService_Builder addAddress(const ::java::lang::String&, int32_t) const ;
-    ::android::net::VpnService_Builder addRoute(const ::java::net::InetAddress&, int32_t) const ;
-    ::android::net::VpnService_Builder addRoute(const ::java::lang::String&, int32_t) const ;
-    ::android::net::VpnService_Builder addDnsServer(const ::java::net::InetAddress&) const ;
-    ::android::net::VpnService_Builder addDnsServer(const ::java::lang::String&) const ;
-    ::android::net::VpnService_Builder addSearchDomain(const ::java::lang::String&) const ;
-    ::android::os::ParcelFileDescriptor establish() const ;
+    ::android::net::VpnService_Builder setSession(const ::java::lang::String&) const;
+    ::android::net::VpnService_Builder setConfigureIntent(const ::android::app::PendingIntent&) const;
+    ::android::net::VpnService_Builder setMtu(int32_t) const;
+    ::android::net::VpnService_Builder addAddress(const ::java::net::InetAddress&, int32_t) const;
+    ::android::net::VpnService_Builder addAddress(const ::java::lang::String&, int32_t) const;
+    ::android::net::VpnService_Builder addRoute(const ::java::net::InetAddress&, int32_t) const;
+    ::android::net::VpnService_Builder addRoute(const ::java::lang::String&, int32_t) const;
+    ::android::net::VpnService_Builder addDnsServer(const ::java::net::InetAddress&) const;
+    ::android::net::VpnService_Builder addDnsServer(const ::java::lang::String&) const;
+    ::android::net::VpnService_Builder addSearchDomain(const ::java::lang::String&) const;
+    ::android::os::ParcelFileDescriptor establish() const;
 
 };
 }

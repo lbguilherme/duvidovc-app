@@ -40,12 +40,12 @@ public:
     
     FutureTask(const ::java::util::concurrent::Callable&);
     FutureTask(const ::java::lang::Runnable&, const ::java::lang::Object&);
-    bool isCancelled() const ;
-    bool isDone() const ;
-    bool cancel(bool) const ;
-    ::java::lang::Object get() const ;
-    ::java::lang::Object get(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void run() const ;
+    bool isCancelled() const;
+    bool isDone() const;
+    bool cancel(bool) const;
+    ::java::lang::Object get() const;
+    ::java::lang::Object get(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void run() const;
 
 };
 }

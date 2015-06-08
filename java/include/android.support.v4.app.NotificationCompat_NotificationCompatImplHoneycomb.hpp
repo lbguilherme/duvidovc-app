@@ -37,7 +37,7 @@ public:
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplHoneycomb& operator=(const ::android::support::v4::app::NotificationCompat_NotificationCompatImplHoneycomb& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplHoneycomb& operator=(::android::support::v4::app::NotificationCompat_NotificationCompatImplHoneycomb&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const ;
+    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const;
 
 };
 }

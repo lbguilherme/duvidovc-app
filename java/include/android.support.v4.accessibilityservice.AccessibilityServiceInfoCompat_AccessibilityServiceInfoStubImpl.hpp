@@ -38,12 +38,12 @@ public:
     ::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoStubImpl& operator=(const ::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoStubImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoStubImpl& operator=(::android::support::v4::accessibilityservice::AccessibilityServiceInfoCompat_AccessibilityServiceInfoStubImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool getCanRetrieveWindowContent(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
-    ::java::lang::String getDescription(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
-    ::java::lang::String getId(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
-    ::android::content::pm::ResolveInfo getResolveInfo(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
-    ::java::lang::String getSettingsActivityName(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
-    int32_t getCapabilities(const ::android::accessibilityservice::AccessibilityServiceInfo&) const ;
+    bool getCanRetrieveWindowContent(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
+    ::java::lang::String getDescription(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
+    ::java::lang::String getId(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
+    ::android::content::pm::ResolveInfo getResolveInfo(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
+    ::java::lang::String getSettingsActivityName(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
+    int32_t getCapabilities(const ::android::accessibilityservice::AccessibilityServiceInfo&) const;
 
 };
 }

@@ -41,16 +41,16 @@ public:
     
     NotificationCompat_Action_WearableExtender();
     NotificationCompat_Action_WearableExtender(const ::android::support::v4::app::NotificationCompat_Action&);
-    ::android::support::v4::app::NotificationCompat_Action_Builder extend(const ::android::support::v4::app::NotificationCompat_Action_Builder&) const ;
-    ::android::support::v4::app::NotificationCompat_Action_WearableExtender clone() const ;
-    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setAvailableOffline(bool) const ;
-    bool isAvailableOffline() const ;
-    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setInProgressLabel(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence getInProgressLabel() const ;
-    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setConfirmLabel(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence getConfirmLabel() const ;
-    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setCancelLabel(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence getCancelLabel() const ;
+    ::android::support::v4::app::NotificationCompat_Action_Builder extend(const ::android::support::v4::app::NotificationCompat_Action_Builder&) const;
+    ::android::support::v4::app::NotificationCompat_Action_WearableExtender clone() const;
+    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setAvailableOffline(bool) const;
+    bool isAvailableOffline() const;
+    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setInProgressLabel(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence getInProgressLabel() const;
+    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setConfirmLabel(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence getConfirmLabel() const;
+    ::android::support::v4::app::NotificationCompat_Action_WearableExtender setCancelLabel(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence getCancelLabel() const;
 
 };
 }

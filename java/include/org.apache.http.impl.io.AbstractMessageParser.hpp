@@ -43,7 +43,7 @@ public:
     
     AbstractMessageParser(const ::org::apache::http::io::SessionInputBuffer&, const ::org::apache::http::message::LineParser&, const ::org::apache::http::params::HttpParams&);
     static std::vector< ::org::apache::http::Header> parseHeaders(const ::org::apache::http::io::SessionInputBuffer&, int32_t, int32_t, const ::org::apache::http::message::LineParser&);
-    ::org::apache::http::HttpMessage parse() const ;
+    ::org::apache::http::HttpMessage parse() const;
 
 };
 }

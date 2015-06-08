@@ -33,7 +33,7 @@ public:
     ::android::widget::AdapterView_OnItemClickListener& operator=(const ::android::widget::AdapterView_OnItemClickListener& x) {obj = x.obj; return *this;}
     ::android::widget::AdapterView_OnItemClickListener& operator=(::android::widget::AdapterView_OnItemClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onItemClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const ;
+    void onItemClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const;
 
 };
 }

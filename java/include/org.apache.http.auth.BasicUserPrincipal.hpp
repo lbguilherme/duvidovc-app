@@ -38,10 +38,10 @@ public:
     ::org::apache::http::auth::BasicUserPrincipal& operator=(::org::apache::http::auth::BasicUserPrincipal&& x) {obj = std::move(x.obj); return *this;}
     
     BasicUserPrincipal(const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getName() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

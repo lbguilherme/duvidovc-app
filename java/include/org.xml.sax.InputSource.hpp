@@ -39,16 +39,16 @@ public:
     InputSource(const ::java::lang::String&);
     InputSource(const ::java::io::InputStream&);
     InputSource(const ::java::io::Reader&);
-    void setPublicId(const ::java::lang::String&) const ;
-    ::java::lang::String getPublicId() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
-    void setByteStream(const ::java::io::InputStream&) const ;
-    ::java::io::InputStream getByteStream() const ;
-    void setEncoding(const ::java::lang::String&) const ;
-    ::java::lang::String getEncoding() const ;
-    void setCharacterStream(const ::java::io::Reader&) const ;
-    ::java::io::Reader getCharacterStream() const ;
+    void setPublicId(const ::java::lang::String&) const;
+    ::java::lang::String getPublicId() const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
+    void setByteStream(const ::java::io::InputStream&) const;
+    ::java::io::InputStream getByteStream() const;
+    void setEncoding(const ::java::lang::String&) const;
+    ::java::lang::String getEncoding() const;
+    void setCharacterStream(const ::java::io::Reader&) const;
+    ::java::io::Reader getCharacterStream() const;
 
 };
 }

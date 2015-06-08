@@ -31,7 +31,7 @@ public:
     ::android::app::SearchManager_OnDismissListener& operator=(const ::android::app::SearchManager_OnDismissListener& x) {obj = x.obj; return *this;}
     ::android::app::SearchManager_OnDismissListener& operator=(::android::app::SearchManager_OnDismissListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onDismiss() const ;
+    void onDismiss() const;
 
 };
 }

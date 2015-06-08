@@ -39,14 +39,14 @@ public:
     ::android::test::ActivityUnitTestCase& operator=(::android::test::ActivityUnitTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     ActivityUnitTestCase(const ::java::lang::Class&);
-    ::android::app::Activity getActivity() const ;
-    void setApplication(const ::android::app::Application&) const ;
-    void setActivityContext(const ::android::content::Context&) const ;
-    int32_t getRequestedOrientation() const ;
-    ::android::content::Intent getStartedActivityIntent() const ;
-    int32_t getStartedActivityRequest() const ;
-    bool isFinishCalled() const ;
-    int32_t getFinishedActivityRequest() const ;
+    ::android::app::Activity getActivity() const;
+    void setApplication(const ::android::app::Application&) const;
+    void setActivityContext(const ::android::content::Context&) const;
+    int32_t getRequestedOrientation() const;
+    ::android::content::Intent getStartedActivityIntent() const;
+    int32_t getStartedActivityRequest() const;
+    bool isFinishCalled() const;
+    int32_t getFinishedActivityRequest() const;
 
 };
 }

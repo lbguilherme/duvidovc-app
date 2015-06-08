@@ -48,17 +48,17 @@ public:
     static ::java::lang::Object doAsPrivileged(const ::javax::security::auth::Subject&, const ::java::security::PrivilegedAction&, const ::java::security::AccessControlContext&);
     static ::java::lang::Object doAs(const ::javax::security::auth::Subject&, const ::java::security::PrivilegedExceptionAction&);
     static ::java::lang::Object doAsPrivileged(const ::javax::security::auth::Subject&, const ::java::security::PrivilegedExceptionAction&, const ::java::security::AccessControlContext&);
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::util::Set getPrincipals() const ;
-    ::java::util::Set getPrincipals(const ::java::lang::Class&) const ;
-    ::java::util::Set getPrivateCredentials() const ;
-    ::java::util::Set getPrivateCredentials(const ::java::lang::Class&) const ;
-    ::java::util::Set getPublicCredentials() const ;
-    ::java::util::Set getPublicCredentials(const ::java::lang::Class&) const ;
-    int32_t hashCode() const ;
-    void setReadOnly() const ;
-    bool isReadOnly() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::util::Set getPrincipals() const;
+    ::java::util::Set getPrincipals(const ::java::lang::Class&) const;
+    ::java::util::Set getPrivateCredentials() const;
+    ::java::util::Set getPrivateCredentials(const ::java::lang::Class&) const;
+    ::java::util::Set getPublicCredentials() const;
+    ::java::util::Set getPublicCredentials(const ::java::lang::Class&) const;
+    int32_t hashCode() const;
+    void setReadOnly() const;
+    bool isReadOnly() const;
+    ::java::lang::String toString() const;
     static ::javax::security::auth::Subject getSubject(const ::java::security::AccessControlContext&);
 
 };

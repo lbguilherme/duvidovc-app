@@ -37,29 +37,29 @@ public:
     ::android::nfc::tech::MifareClassic& operator=(::android::nfc::tech::MifareClassic&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::nfc::tech::MifareClassic get(const ::android::nfc::Tag&);
-    int32_t getType() const ;
-    int32_t getSize() const ;
-    int32_t getSectorCount() const ;
-    int32_t getBlockCount() const ;
-    int32_t getBlockCountInSector(int32_t) const ;
-    int32_t blockToSector(int32_t) const ;
-    int32_t sectorToBlock(int32_t) const ;
-    bool authenticateSectorWithKeyA(int32_t, const std::vector< int8_t>&) const ;
-    bool authenticateSectorWithKeyB(int32_t, const std::vector< int8_t>&) const ;
-    std::vector< int8_t> readBlock(int32_t) const ;
-    void writeBlock(int32_t, const std::vector< int8_t>&) const ;
-    void increment(int32_t, int32_t) const ;
-    void decrement(int32_t, int32_t) const ;
-    void transfer(int32_t) const ;
-    void restore(int32_t) const ;
-    std::vector< int8_t> transceive(const std::vector< int8_t>&) const ;
-    int32_t getMaxTransceiveLength() const ;
-    void setTimeout(int32_t) const ;
-    int32_t getTimeout() const ;
-    void close() const ;
-    void connect() const ;
-    bool isConnected() const ;
-    ::android::nfc::Tag getTag() const ;
+    int32_t getType() const;
+    int32_t getSize() const;
+    int32_t getSectorCount() const;
+    int32_t getBlockCount() const;
+    int32_t getBlockCountInSector(int32_t) const;
+    int32_t blockToSector(int32_t) const;
+    int32_t sectorToBlock(int32_t) const;
+    bool authenticateSectorWithKeyA(int32_t, const std::vector< int8_t>&) const;
+    bool authenticateSectorWithKeyB(int32_t, const std::vector< int8_t>&) const;
+    std::vector< int8_t> readBlock(int32_t) const;
+    void writeBlock(int32_t, const std::vector< int8_t>&) const;
+    void increment(int32_t, int32_t) const;
+    void decrement(int32_t, int32_t) const;
+    void transfer(int32_t) const;
+    void restore(int32_t) const;
+    std::vector< int8_t> transceive(const std::vector< int8_t>&) const;
+    int32_t getMaxTransceiveLength() const;
+    void setTimeout(int32_t) const;
+    int32_t getTimeout() const;
+    void close() const;
+    void connect() const;
+    bool isConnected() const;
+    ::android::nfc::Tag getTag() const;
 
 };
 }

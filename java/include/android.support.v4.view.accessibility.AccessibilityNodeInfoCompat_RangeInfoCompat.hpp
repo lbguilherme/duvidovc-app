@@ -34,10 +34,10 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_RangeInfoCompat& operator=(const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_RangeInfoCompat& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_RangeInfoCompat& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_RangeInfoCompat&& x) {obj = std::move(x.obj); return *this;}
     
-    float getCurrent() const ;
-    float getMax() const ;
-    float getMin() const ;
-    int32_t getType() const ;
+    float getCurrent() const;
+    float getMax() const;
+    float getMin() const;
+    int32_t getType() const;
 
 };
 }

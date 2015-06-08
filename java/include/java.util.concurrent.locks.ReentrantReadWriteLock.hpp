@@ -44,20 +44,20 @@ public:
     
     ReentrantReadWriteLock();
     ReentrantReadWriteLock(bool);
-    ::java::util::concurrent::locks::ReentrantReadWriteLock_WriteLock writeLock() const ;
-    ::java::util::concurrent::locks::ReentrantReadWriteLock_ReadLock readLock() const ;
-    bool isFair() const ;
-    int32_t getReadLockCount() const ;
-    bool isWriteLocked() const ;
-    bool isWriteLockedByCurrentThread() const ;
-    int32_t getWriteHoldCount() const ;
-    int32_t getReadHoldCount() const ;
-    bool hasQueuedThreads() const ;
-    bool hasQueuedThread(const ::java::lang::Thread&) const ;
-    int32_t getQueueLength() const ;
-    bool hasWaiters(const ::java::util::concurrent::locks::Condition&) const ;
-    int32_t getWaitQueueLength(const ::java::util::concurrent::locks::Condition&) const ;
-    ::java::lang::String toString() const ;
+    ::java::util::concurrent::locks::ReentrantReadWriteLock_WriteLock writeLock() const;
+    ::java::util::concurrent::locks::ReentrantReadWriteLock_ReadLock readLock() const;
+    bool isFair() const;
+    int32_t getReadLockCount() const;
+    bool isWriteLocked() const;
+    bool isWriteLockedByCurrentThread() const;
+    int32_t getWriteHoldCount() const;
+    int32_t getReadHoldCount() const;
+    bool hasQueuedThreads() const;
+    bool hasQueuedThread(const ::java::lang::Thread&) const;
+    int32_t getQueueLength() const;
+    bool hasWaiters(const ::java::util::concurrent::locks::Condition&) const;
+    int32_t getWaitQueueLength(const ::java::util::concurrent::locks::Condition&) const;
+    ::java::lang::String toString() const;
 
 };
 }

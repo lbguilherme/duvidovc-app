@@ -37,21 +37,21 @@ public:
     ::java::util::NavigableSet& operator=(const ::java::util::NavigableSet& x) {obj = x.obj; return *this;}
     ::java::util::NavigableSet& operator=(::java::util::NavigableSet&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object lower(const ::java::lang::Object&) const ;
-    ::java::lang::Object floor(const ::java::lang::Object&) const ;
-    ::java::lang::Object ceiling(const ::java::lang::Object&) const ;
-    ::java::lang::Object higher(const ::java::lang::Object&) const ;
-    ::java::lang::Object pollFirst() const ;
-    ::java::lang::Object pollLast() const ;
-    ::java::util::Iterator iterator() const ;
-    ::java::util::NavigableSet descendingSet() const ;
-    ::java::util::Iterator descendingIterator() const ;
-    ::java::util::NavigableSet subSet(const ::java::lang::Object&, bool, const ::java::lang::Object&, bool) const ;
-    ::java::util::NavigableSet headSet(const ::java::lang::Object&, bool) const ;
-    ::java::util::NavigableSet tailSet(const ::java::lang::Object&, bool) const ;
-    ::java::util::SortedSet subSet(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::util::SortedSet headSet(const ::java::lang::Object&) const ;
-    ::java::util::SortedSet tailSet(const ::java::lang::Object&) const ;
+    ::java::lang::Object lower(const ::java::lang::Object&) const;
+    ::java::lang::Object floor(const ::java::lang::Object&) const;
+    ::java::lang::Object ceiling(const ::java::lang::Object&) const;
+    ::java::lang::Object higher(const ::java::lang::Object&) const;
+    ::java::lang::Object pollFirst() const;
+    ::java::lang::Object pollLast() const;
+    ::java::util::Iterator iterator() const;
+    ::java::util::NavigableSet descendingSet() const;
+    ::java::util::Iterator descendingIterator() const;
+    ::java::util::NavigableSet subSet(const ::java::lang::Object&, bool, const ::java::lang::Object&, bool) const;
+    ::java::util::NavigableSet headSet(const ::java::lang::Object&, bool) const;
+    ::java::util::NavigableSet tailSet(const ::java::lang::Object&, bool) const;
+    ::java::util::SortedSet subSet(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::util::SortedSet headSet(const ::java::lang::Object&) const;
+    ::java::util::SortedSet tailSet(const ::java::lang::Object&) const;
 
 };
 }

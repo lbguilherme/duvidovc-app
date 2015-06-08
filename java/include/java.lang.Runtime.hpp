@@ -38,30 +38,30 @@ public:
     ::java::lang::Runtime& operator=(const ::java::lang::Runtime& x) {obj = x.obj; return *this;}
     ::java::lang::Runtime& operator=(::java::lang::Runtime&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Process exec(const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::Process exec(const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::Process exec(const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&, const ::java::io::File&) const ;
-    ::java::lang::Process exec(const ::java::lang::String&) const ;
-    ::java::lang::Process exec(const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::Process exec(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::io::File&) const ;
-    void exit(int32_t) const ;
-    int64_t freeMemory() const ;
-    void gc() const ;
+    ::java::lang::Process exec(const std::vector< ::java::lang::String>&) const;
+    ::java::lang::Process exec(const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const;
+    ::java::lang::Process exec(const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&, const ::java::io::File&) const;
+    ::java::lang::Process exec(const ::java::lang::String&) const;
+    ::java::lang::Process exec(const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    ::java::lang::Process exec(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::io::File&) const;
+    void exit(int32_t) const;
+    int64_t freeMemory() const;
+    void gc() const;
     static ::java::lang::Runtime getRuntime();
-    void load(const ::java::lang::String&) const ;
-    void loadLibrary(const ::java::lang::String&) const ;
-    void runFinalization() const ;
+    void load(const ::java::lang::String&) const;
+    void loadLibrary(const ::java::lang::String&) const;
+    void runFinalization() const;
     static void runFinalizersOnExit(bool);
-    int64_t totalMemory() const ;
-    void traceInstructions(bool) const ;
-    void traceMethodCalls(bool) const ;
-    ::java::io::InputStream getLocalizedInputStream(const ::java::io::InputStream&) const ;
-    ::java::io::OutputStream getLocalizedOutputStream(const ::java::io::OutputStream&) const ;
-    void addShutdownHook(const ::java::lang::Thread&) const ;
-    bool removeShutdownHook(const ::java::lang::Thread&) const ;
-    void halt(int32_t) const ;
-    int32_t availableProcessors() const ;
-    int64_t maxMemory() const ;
+    int64_t totalMemory() const;
+    void traceInstructions(bool) const;
+    void traceMethodCalls(bool) const;
+    ::java::io::InputStream getLocalizedInputStream(const ::java::io::InputStream&) const;
+    ::java::io::OutputStream getLocalizedOutputStream(const ::java::io::OutputStream&) const;
+    void addShutdownHook(const ::java::lang::Thread&) const;
+    bool removeShutdownHook(const ::java::lang::Thread&) const;
+    void halt(int32_t) const;
+    int32_t availableProcessors() const;
+    int64_t maxMemory() const;
 
 };
 }

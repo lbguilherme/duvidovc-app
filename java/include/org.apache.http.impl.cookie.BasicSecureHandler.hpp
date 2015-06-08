@@ -41,8 +41,8 @@ public:
     ::org::apache::http::impl::cookie::BasicSecureHandler& operator=(::org::apache::http::impl::cookie::BasicSecureHandler&& x) {obj = std::move(x.obj); return *this;}
     
     BasicSecureHandler();
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
 
 };
 }

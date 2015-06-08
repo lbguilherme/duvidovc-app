@@ -33,10 +33,10 @@ public:
     ::android::animation::AnimatorSet_Builder& operator=(const ::android::animation::AnimatorSet_Builder& x) {obj = x.obj; return *this;}
     ::android::animation::AnimatorSet_Builder& operator=(::android::animation::AnimatorSet_Builder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::animation::AnimatorSet_Builder with(const ::android::animation::Animator&) const ;
-    ::android::animation::AnimatorSet_Builder before(const ::android::animation::Animator&) const ;
-    ::android::animation::AnimatorSet_Builder after(const ::android::animation::Animator&) const ;
-    ::android::animation::AnimatorSet_Builder after(int64_t) const ;
+    ::android::animation::AnimatorSet_Builder with(const ::android::animation::Animator&) const;
+    ::android::animation::AnimatorSet_Builder before(const ::android::animation::Animator&) const;
+    ::android::animation::AnimatorSet_Builder after(const ::android::animation::Animator&) const;
+    ::android::animation::AnimatorSet_Builder after(int64_t) const;
 
 };
 }

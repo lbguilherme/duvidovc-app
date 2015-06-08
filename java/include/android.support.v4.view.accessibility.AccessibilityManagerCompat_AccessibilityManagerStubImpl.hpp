@@ -40,12 +40,12 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityManagerStubImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityManagerStubImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityManagerStubImpl& operator=(::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityManagerStubImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object newAccessiblityStateChangeListener(const ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityStateChangeListenerCompat&) const ;
-    bool addAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager&, const ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityStateChangeListenerCompat&) const ;
-    bool removeAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager&, const ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityStateChangeListenerCompat&) const ;
-    ::java::util::List getEnabledAccessibilityServiceList(const ::android::view::accessibility::AccessibilityManager&, int32_t) const ;
-    ::java::util::List getInstalledAccessibilityServiceList(const ::android::view::accessibility::AccessibilityManager&) const ;
-    bool isTouchExplorationEnabled(const ::android::view::accessibility::AccessibilityManager&) const ;
+    ::java::lang::Object newAccessiblityStateChangeListener(const ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityStateChangeListenerCompat&) const;
+    bool addAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager&, const ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityStateChangeListenerCompat&) const;
+    bool removeAccessibilityStateChangeListener(const ::android::view::accessibility::AccessibilityManager&, const ::android::support::v4::view::accessibility::AccessibilityManagerCompat_AccessibilityStateChangeListenerCompat&) const;
+    ::java::util::List getEnabledAccessibilityServiceList(const ::android::view::accessibility::AccessibilityManager&, int32_t) const;
+    ::java::util::List getInstalledAccessibilityServiceList(const ::android::view::accessibility::AccessibilityManager&) const;
+    bool isTouchExplorationEnabled(const ::android::view::accessibility::AccessibilityManager&) const;
 
 };
 }

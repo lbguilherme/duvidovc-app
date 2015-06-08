@@ -37,7 +37,7 @@ public:
     ::android::support::v4::widget::CursorFilter& operator=(const ::android::support::v4::widget::CursorFilter& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::CursorFilter& operator=(::android::support::v4::widget::CursorFilter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::CharSequence convertResultToString(const ::java::lang::Object&) const ;
+    ::java::lang::CharSequence convertResultToString(const ::java::lang::Object&) const;
 
 };
 }

@@ -38,7 +38,7 @@ public:
     
     KeyStoreBuilderParameters(const ::java::security::KeyStore_Builder&);
     KeyStoreBuilderParameters(const ::java::util::List&);
-    ::java::util::List getParameters() const ;
+    ::java::util::List getParameters() const;
 
 };
 }

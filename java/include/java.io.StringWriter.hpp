@@ -39,17 +39,17 @@ public:
     
     StringWriter();
     StringWriter(int32_t);
-    void close() const ;
-    void flush() const ;
-    ::java::lang::StringBuffer getBuffer() const ;
-    ::java::lang::String toString() const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void write(const ::java::lang::String&) const ;
-    void write(const ::java::lang::String&, int32_t, int32_t) const ;
-    ::java::io::StringWriter append(uint16_t) const ;
-    ::java::io::StringWriter append(const ::java::lang::CharSequence&) const ;
-    ::java::io::StringWriter append(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    ::java::lang::StringBuffer getBuffer() const;
+    ::java::lang::String toString() const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void write(const ::java::lang::String&) const;
+    void write(const ::java::lang::String&, int32_t, int32_t) const;
+    ::java::io::StringWriter append(uint16_t) const;
+    ::java::io::StringWriter append(const ::java::lang::CharSequence&) const;
+    ::java::io::StringWriter append(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

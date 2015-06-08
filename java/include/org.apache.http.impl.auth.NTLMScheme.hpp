@@ -42,12 +42,12 @@ public:
     ::org::apache::http::impl::auth::NTLMScheme& operator=(::org::apache::http::impl::auth::NTLMScheme&& x) {obj = std::move(x.obj); return *this;}
     
     NTLMScheme(const ::org::apache::http::impl::auth::NTLMEngine&);
-    ::java::lang::String getSchemeName() const ;
-    ::java::lang::String getParameter(const ::java::lang::String&) const ;
-    ::java::lang::String getRealm() const ;
-    bool isConnectionBased() const ;
-    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const ;
-    bool isComplete() const ;
+    ::java::lang::String getSchemeName() const;
+    ::java::lang::String getParameter(const ::java::lang::String&) const;
+    ::java::lang::String getRealm() const;
+    bool isConnectionBased() const;
+    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const;
+    bool isComplete() const;
 
 };
 }

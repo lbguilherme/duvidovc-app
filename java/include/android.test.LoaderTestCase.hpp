@@ -36,7 +36,7 @@ public:
     ::android::test::LoaderTestCase& operator=(::android::test::LoaderTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     LoaderTestCase();
-    ::java::lang::Object getLoaderResultSynchronously(const ::android::content::Loader&) const ;
+    ::java::lang::Object getLoaderResultSynchronously(const ::android::content::Loader&) const;
 
 };
 }

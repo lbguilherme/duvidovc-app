@@ -32,7 +32,7 @@ public:
     ::android::preference::Preference_OnPreferenceClickListener& operator=(const ::android::preference::Preference_OnPreferenceClickListener& x) {obj = x.obj; return *this;}
     ::android::preference::Preference_OnPreferenceClickListener& operator=(::android::preference::Preference_OnPreferenceClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onPreferenceClick(const ::android::preference::Preference&) const ;
+    bool onPreferenceClick(const ::android::preference::Preference&) const;
 
 };
 }

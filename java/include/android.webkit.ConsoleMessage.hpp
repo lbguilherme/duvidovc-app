@@ -34,10 +34,10 @@ public:
     ::android::webkit::ConsoleMessage& operator=(::android::webkit::ConsoleMessage&& x) {obj = std::move(x.obj); return *this;}
     
     ConsoleMessage(const ::java::lang::String&, const ::java::lang::String&, int32_t, const ::android::webkit::ConsoleMessage_MessageLevel&);
-    ::android::webkit::ConsoleMessage_MessageLevel messageLevel() const ;
-    ::java::lang::String message() const ;
-    ::java::lang::String sourceId() const ;
-    int32_t lineNumber() const ;
+    ::android::webkit::ConsoleMessage_MessageLevel messageLevel() const;
+    ::java::lang::String message() const;
+    ::java::lang::String sourceId() const;
+    int32_t lineNumber() const;
 
 };
 }

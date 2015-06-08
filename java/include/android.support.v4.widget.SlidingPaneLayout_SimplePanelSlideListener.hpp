@@ -37,9 +37,9 @@ public:
     ::android::support::v4::widget::SlidingPaneLayout_SimplePanelSlideListener& operator=(::android::support::v4::widget::SlidingPaneLayout_SimplePanelSlideListener&& x) {obj = std::move(x.obj); return *this;}
     
     SlidingPaneLayout_SimplePanelSlideListener();
-    void onPanelSlide(const ::android::view::View&, float) const ;
-    void onPanelOpened(const ::android::view::View&) const ;
-    void onPanelClosed(const ::android::view::View&) const ;
+    void onPanelSlide(const ::android::view::View&, float) const;
+    void onPanelOpened(const ::android::view::View&) const;
+    void onPanelClosed(const ::android::view::View&) const;
 
 };
 }

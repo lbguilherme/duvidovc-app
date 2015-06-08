@@ -40,9 +40,9 @@ public:
     SAXException(const ::java::lang::String&);
     SAXException(const ::java::lang::Exception&);
     SAXException(const ::java::lang::String&, const ::java::lang::Exception&);
-    ::java::lang::String getMessage() const ;
-    ::java::lang::Exception getException() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getMessage() const;
+    ::java::lang::Exception getException() const;
+    ::java::lang::String toString() const;
 
 };
 }

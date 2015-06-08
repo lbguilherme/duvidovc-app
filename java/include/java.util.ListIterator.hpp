@@ -34,15 +34,15 @@ public:
     ::java::util::ListIterator& operator=(const ::java::util::ListIterator& x) {obj = x.obj; return *this;}
     ::java::util::ListIterator& operator=(::java::util::ListIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    void add(const ::java::lang::Object&) const ;
-    bool hasNext() const ;
-    bool hasPrevious() const ;
-    ::java::lang::Object next() const ;
-    int32_t nextIndex() const ;
-    ::java::lang::Object previous() const ;
-    int32_t previousIndex() const ;
-    void remove() const ;
-    void set(const ::java::lang::Object&) const ;
+    void add(const ::java::lang::Object&) const;
+    bool hasNext() const;
+    bool hasPrevious() const;
+    ::java::lang::Object next() const;
+    int32_t nextIndex() const;
+    ::java::lang::Object previous() const;
+    int32_t previousIndex() const;
+    void remove() const;
+    void set(const ::java::lang::Object&) const;
 
 };
 }

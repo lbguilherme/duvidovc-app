@@ -37,16 +37,16 @@ public:
     ::org::apache::http::params::AbstractHttpParams& operator=(const ::org::apache::http::params::AbstractHttpParams& x) {obj = x.obj; return *this;}
     ::org::apache::http::params::AbstractHttpParams& operator=(::org::apache::http::params::AbstractHttpParams&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t getLongParameter(const ::java::lang::String&, int64_t) const ;
-    ::org::apache::http::params::HttpParams setLongParameter(const ::java::lang::String&, int64_t) const ;
-    int32_t getIntParameter(const ::java::lang::String&, int32_t) const ;
-    ::org::apache::http::params::HttpParams setIntParameter(const ::java::lang::String&, int32_t) const ;
-    double getDoubleParameter(const ::java::lang::String&, double) const ;
-    ::org::apache::http::params::HttpParams setDoubleParameter(const ::java::lang::String&, double) const ;
-    bool getBooleanParameter(const ::java::lang::String&, bool) const ;
-    ::org::apache::http::params::HttpParams setBooleanParameter(const ::java::lang::String&, bool) const ;
-    bool isParameterTrue(const ::java::lang::String&) const ;
-    bool isParameterFalse(const ::java::lang::String&) const ;
+    int64_t getLongParameter(const ::java::lang::String&, int64_t) const;
+    ::org::apache::http::params::HttpParams setLongParameter(const ::java::lang::String&, int64_t) const;
+    int32_t getIntParameter(const ::java::lang::String&, int32_t) const;
+    ::org::apache::http::params::HttpParams setIntParameter(const ::java::lang::String&, int32_t) const;
+    double getDoubleParameter(const ::java::lang::String&, double) const;
+    ::org::apache::http::params::HttpParams setDoubleParameter(const ::java::lang::String&, double) const;
+    bool getBooleanParameter(const ::java::lang::String&, bool) const;
+    ::org::apache::http::params::HttpParams setBooleanParameter(const ::java::lang::String&, bool) const;
+    bool isParameterTrue(const ::java::lang::String&) const;
+    bool isParameterFalse(const ::java::lang::String&) const;
 
 };
 }

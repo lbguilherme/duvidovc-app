@@ -34,7 +34,7 @@ public:
     ::org::apache::http::ReasonPhraseCatalog& operator=(const ::org::apache::http::ReasonPhraseCatalog& x) {obj = x.obj; return *this;}
     ::org::apache::http::ReasonPhraseCatalog& operator=(::org::apache::http::ReasonPhraseCatalog&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getReason(int32_t, const ::java::util::Locale&) const ;
+    ::java::lang::String getReason(int32_t, const ::java::util::Locale&) const;
 
 };
 }

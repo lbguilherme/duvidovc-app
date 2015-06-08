@@ -36,16 +36,16 @@ public:
     ::android::telephony::PhoneStateListener& operator=(::android::telephony::PhoneStateListener&& x) {obj = std::move(x.obj); return *this;}
     
     PhoneStateListener();
-    void onServiceStateChanged(const ::android::telephony::ServiceState&) const ;
-    void onSignalStrengthChanged(int32_t) const ;
-    void onMessageWaitingIndicatorChanged(bool) const ;
-    void onCallForwardingIndicatorChanged(bool) const ;
-    void onCellLocationChanged(const ::android::telephony::CellLocation&) const ;
-    void onCallStateChanged(int32_t, const ::java::lang::String&) const ;
-    void onDataConnectionStateChanged(int32_t) const ;
-    void onDataConnectionStateChanged(int32_t, int32_t) const ;
-    void onDataActivity(int32_t) const ;
-    void onSignalStrengthsChanged(const ::android::telephony::SignalStrength&) const ;
+    void onServiceStateChanged(const ::android::telephony::ServiceState&) const;
+    void onSignalStrengthChanged(int32_t) const;
+    void onMessageWaitingIndicatorChanged(bool) const;
+    void onCallForwardingIndicatorChanged(bool) const;
+    void onCellLocationChanged(const ::android::telephony::CellLocation&) const;
+    void onCallStateChanged(int32_t, const ::java::lang::String&) const;
+    void onDataConnectionStateChanged(int32_t) const;
+    void onDataConnectionStateChanged(int32_t, int32_t) const;
+    void onDataActivity(int32_t) const;
+    void onSignalStrengthsChanged(const ::android::telephony::SignalStrength&) const;
 
 };
 }

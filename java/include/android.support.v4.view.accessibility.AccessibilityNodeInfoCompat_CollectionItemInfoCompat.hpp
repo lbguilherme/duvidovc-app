@@ -36,12 +36,12 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_CollectionItemInfoCompat& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_CollectionItemInfoCompat&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_CollectionItemInfoCompat obtain(int32_t, int32_t, int32_t, int32_t, bool, bool);
-    int32_t getColumnIndex() const ;
-    int32_t getColumnSpan() const ;
-    int32_t getRowIndex() const ;
-    int32_t getRowSpan() const ;
-    bool isHeading() const ;
-    bool isSelected() const ;
+    int32_t getColumnIndex() const;
+    int32_t getColumnSpan() const;
+    int32_t getRowIndex() const;
+    int32_t getRowSpan() const;
+    bool isHeading() const;
+    bool isSelected() const;
 
 };
 }

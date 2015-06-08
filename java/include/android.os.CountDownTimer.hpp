@@ -33,10 +33,10 @@ public:
     ::android::os::CountDownTimer& operator=(::android::os::CountDownTimer&& x) {obj = std::move(x.obj); return *this;}
     
     CountDownTimer(int64_t, int64_t);
-    void cancel() const ;
-    ::android::os::CountDownTimer start() const ;
-    void onTick(int64_t) const ;
-    void onFinish() const ;
+    void cancel() const;
+    ::android::os::CountDownTimer start() const;
+    void onTick(int64_t) const;
+    void onFinish() const;
 
 };
 }

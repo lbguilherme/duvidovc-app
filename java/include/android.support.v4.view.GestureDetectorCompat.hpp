@@ -40,10 +40,10 @@ public:
     
     GestureDetectorCompat(const ::android::content::Context&, const ::android::view::GestureDetector_OnGestureListener&);
     GestureDetectorCompat(const ::android::content::Context&, const ::android::view::GestureDetector_OnGestureListener&, const ::android::os::Handler&);
-    bool isLongpressEnabled() const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void setIsLongpressEnabled(bool) const ;
-    void setOnDoubleTapListener(const ::android::view::GestureDetector_OnDoubleTapListener&) const ;
+    bool isLongpressEnabled() const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void setIsLongpressEnabled(bool) const;
+    void setOnDoubleTapListener(const ::android::view::GestureDetector_OnDoubleTapListener&) const;
 
 };
 }

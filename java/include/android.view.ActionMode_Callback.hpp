@@ -34,10 +34,10 @@ public:
     ::android::view::ActionMode_Callback& operator=(const ::android::view::ActionMode_Callback& x) {obj = x.obj; return *this;}
     ::android::view::ActionMode_Callback& operator=(::android::view::ActionMode_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onCreateActionMode(const ::android::view::ActionMode&, const ::android::view::Menu&) const ;
-    bool onPrepareActionMode(const ::android::view::ActionMode&, const ::android::view::Menu&) const ;
-    bool onActionItemClicked(const ::android::view::ActionMode&, const ::android::view::MenuItem&) const ;
-    void onDestroyActionMode(const ::android::view::ActionMode&) const ;
+    bool onCreateActionMode(const ::android::view::ActionMode&, const ::android::view::Menu&) const;
+    bool onPrepareActionMode(const ::android::view::ActionMode&, const ::android::view::Menu&) const;
+    bool onActionItemClicked(const ::android::view::ActionMode&, const ::android::view::MenuItem&) const;
+    void onDestroyActionMode(const ::android::view::ActionMode&) const;
 
 };
 }

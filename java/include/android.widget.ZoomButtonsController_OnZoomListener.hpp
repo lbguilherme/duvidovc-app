@@ -31,8 +31,8 @@ public:
     ::android::widget::ZoomButtonsController_OnZoomListener& operator=(const ::android::widget::ZoomButtonsController_OnZoomListener& x) {obj = x.obj; return *this;}
     ::android::widget::ZoomButtonsController_OnZoomListener& operator=(::android::widget::ZoomButtonsController_OnZoomListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onVisibilityChanged(bool) const ;
-    void onZoom(bool) const ;
+    void onVisibilityChanged(bool) const;
+    void onZoom(bool) const;
 
 };
 }

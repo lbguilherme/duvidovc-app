@@ -48,37 +48,37 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImplBase_MediaSessionStub& operator=(const ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImplBase_MediaSessionStub& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImplBase_MediaSessionStub& operator=(::android::support::v4::media::session::MediaSessionCompat_MediaSessionImplBase_MediaSessionStub&& x) {obj = std::move(x.obj); return *this;}
     
-    void sendCommand(const ::java::lang::String&, const ::android::os::Bundle&, const ::android::support::v4::media::session::MediaSessionCompat_ResultReceiverWrapper&) const ;
-    bool sendMediaButton(const ::android::view::KeyEvent&) const ;
-    void registerCallbackListener(const ::android::support::v4::media::session::IMediaControllerCallback&) const ;
-    void unregisterCallbackListener(const ::android::support::v4::media::session::IMediaControllerCallback&) const ;
-    ::java::lang::String getPackageName() const ;
-    ::java::lang::String getTag() const ;
-    ::android::app::PendingIntent getLaunchPendingIntent() const ;
-    int64_t getFlags() const ;
-    ::android::support::v4::media::session::ParcelableVolumeInfo getVolumeAttributes() const ;
-    void adjustVolume(int32_t, int32_t, const ::java::lang::String&) const ;
-    void setVolumeTo(int32_t, int32_t, const ::java::lang::String&) const ;
-    void play() const ;
-    void playFromMediaId(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void playFromSearch(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void skipToQueueItem(int64_t) const ;
-    void pause() const ;
-    void stop() const ;
-    void next() const ;
-    void previous() const ;
-    void fastForward() const ;
-    void rewind() const ;
-    void seekTo(int64_t) const ;
-    void rate(const ::android::support::v4::media::RatingCompat&) const ;
-    void sendCustomAction(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    ::android::support::v4::media::MediaMetadataCompat getMetadata() const ;
-    ::android::support::v4::media::session::PlaybackStateCompat getPlaybackState() const ;
-    ::java::util::List getQueue() const ;
-    ::java::lang::CharSequence getQueueTitle() const ;
-    ::android::os::Bundle getExtras() const ;
-    int32_t getRatingType() const ;
-    bool isTransportControlEnabled() const ;
+    void sendCommand(const ::java::lang::String&, const ::android::os::Bundle&, const ::android::support::v4::media::session::MediaSessionCompat_ResultReceiverWrapper&) const;
+    bool sendMediaButton(const ::android::view::KeyEvent&) const;
+    void registerCallbackListener(const ::android::support::v4::media::session::IMediaControllerCallback&) const;
+    void unregisterCallbackListener(const ::android::support::v4::media::session::IMediaControllerCallback&) const;
+    ::java::lang::String getPackageName() const;
+    ::java::lang::String getTag() const;
+    ::android::app::PendingIntent getLaunchPendingIntent() const;
+    int64_t getFlags() const;
+    ::android::support::v4::media::session::ParcelableVolumeInfo getVolumeAttributes() const;
+    void adjustVolume(int32_t, int32_t, const ::java::lang::String&) const;
+    void setVolumeTo(int32_t, int32_t, const ::java::lang::String&) const;
+    void play() const;
+    void playFromMediaId(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void playFromSearch(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void skipToQueueItem(int64_t) const;
+    void pause() const;
+    void stop() const;
+    void next() const;
+    void previous() const;
+    void fastForward() const;
+    void rewind() const;
+    void seekTo(int64_t) const;
+    void rate(const ::android::support::v4::media::RatingCompat&) const;
+    void sendCustomAction(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    ::android::support::v4::media::MediaMetadataCompat getMetadata() const;
+    ::android::support::v4::media::session::PlaybackStateCompat getPlaybackState() const;
+    ::java::util::List getQueue() const;
+    ::java::lang::CharSequence getQueueTitle() const;
+    ::android::os::Bundle getExtras() const;
+    int32_t getRatingType() const;
+    bool isTransportControlEnabled() const;
 
 };
 }

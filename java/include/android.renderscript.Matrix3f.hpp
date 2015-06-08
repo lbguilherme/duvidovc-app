@@ -34,24 +34,24 @@ public:
     
     Matrix3f();
     Matrix3f(const std::vector< float>&);
-    std::vector< float> getArray() const ;
-    float get(int32_t, int32_t) const ;
-    void set(int32_t, int32_t, float) const ;
-    void loadIdentity() const ;
-    void load(const ::android::renderscript::Matrix3f&) const ;
-    void loadRotate(float, float, float, float) const ;
-    void loadRotate(float) const ;
-    void loadScale(float, float) const ;
-    void loadScale(float, float, float) const ;
-    void loadTranslate(float, float) const ;
-    void loadMultiply(const ::android::renderscript::Matrix3f&, const ::android::renderscript::Matrix3f&) const ;
-    void multiply(const ::android::renderscript::Matrix3f&) const ;
-    void rotate(float, float, float, float) const ;
-    void rotate(float) const ;
-    void scale(float, float) const ;
-    void scale(float, float, float) const ;
-    void translate(float, float) const ;
-    void transpose() const ;
+    std::vector< float> getArray() const;
+    float get(int32_t, int32_t) const;
+    void set(int32_t, int32_t, float) const;
+    void loadIdentity() const;
+    void load(const ::android::renderscript::Matrix3f&) const;
+    void loadRotate(float, float, float, float) const;
+    void loadRotate(float) const;
+    void loadScale(float, float) const;
+    void loadScale(float, float, float) const;
+    void loadTranslate(float, float) const;
+    void loadMultiply(const ::android::renderscript::Matrix3f&, const ::android::renderscript::Matrix3f&) const;
+    void multiply(const ::android::renderscript::Matrix3f&) const;
+    void rotate(float, float, float, float) const;
+    void rotate(float) const;
+    void scale(float, float) const;
+    void scale(float, float, float) const;
+    void translate(float, float) const;
+    void transpose() const;
 
 };
 }

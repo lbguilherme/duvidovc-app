@@ -32,7 +32,7 @@ public:
     ::android::view::View_OnLayoutChangeListener& operator=(const ::android::view::View_OnLayoutChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnLayoutChangeListener& operator=(::android::view::View_OnLayoutChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onLayoutChange(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const ;
+    void onLayoutChange(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

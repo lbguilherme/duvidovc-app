@@ -39,13 +39,13 @@ public:
     
     CompletionInfo(int64_t, int32_t, const ::java::lang::CharSequence&);
     CompletionInfo(int64_t, int32_t, const ::java::lang::CharSequence&, const ::java::lang::CharSequence&);
-    int64_t getId() const ;
-    int32_t getPosition() const ;
-    ::java::lang::CharSequence getText() const ;
-    ::java::lang::CharSequence getLabel() const ;
-    ::java::lang::String toString() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    int64_t getId() const;
+    int32_t getPosition() const;
+    ::java::lang::CharSequence getText() const;
+    ::java::lang::CharSequence getLabel() const;
+    ::java::lang::String toString() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

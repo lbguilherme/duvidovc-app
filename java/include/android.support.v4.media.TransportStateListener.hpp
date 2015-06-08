@@ -35,8 +35,8 @@ public:
     ::android::support::v4::media::TransportStateListener& operator=(::android::support::v4::media::TransportStateListener&& x) {obj = std::move(x.obj); return *this;}
     
     TransportStateListener();
-    void onPlayingChanged(const ::android::support::v4::media::TransportController&) const ;
-    void onTransportControlsChanged(const ::android::support::v4::media::TransportController&) const ;
+    void onPlayingChanged(const ::android::support::v4::media::TransportController&) const;
+    void onTransportControlsChanged(const ::android::support::v4::media::TransportController&) const;
 
 };
 }

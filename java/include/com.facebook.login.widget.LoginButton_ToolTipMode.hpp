@@ -40,8 +40,8 @@ public:
     static std::vector< ::com::facebook::login::widget::LoginButton_ToolTipMode> values();
     static ::com::facebook::login::widget::LoginButton_ToolTipMode valueOf(const ::java::lang::String&);
     static ::com::facebook::login::widget::LoginButton_ToolTipMode fromInt(int32_t);
-    ::java::lang::String toString() const ;
-    int32_t getValue() const ;
+    ::java::lang::String toString() const;
+    int32_t getValue() const;
 
 };
 }

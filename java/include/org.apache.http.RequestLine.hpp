@@ -34,9 +34,9 @@ public:
     ::org::apache::http::RequestLine& operator=(const ::org::apache::http::RequestLine& x) {obj = x.obj; return *this;}
     ::org::apache::http::RequestLine& operator=(::org::apache::http::RequestLine&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getMethod() const ;
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    ::java::lang::String getUri() const ;
+    ::java::lang::String getMethod() const;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    ::java::lang::String getUri() const;
 
 };
 }

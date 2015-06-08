@@ -33,8 +33,8 @@ public:
     ::org::apache::http::conn::ConnectionReleaseTrigger& operator=(const ::org::apache::http::conn::ConnectionReleaseTrigger& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::ConnectionReleaseTrigger& operator=(::org::apache::http::conn::ConnectionReleaseTrigger&& x) {obj = std::move(x.obj); return *this;}
     
-    void releaseConnection() const ;
-    void abortConnection() const ;
+    void releaseConnection() const;
+    void abortConnection() const;
 
 };
 }

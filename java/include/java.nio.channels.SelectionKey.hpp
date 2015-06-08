@@ -36,19 +36,19 @@ public:
     ::java::nio::channels::SelectionKey& operator=(const ::java::nio::channels::SelectionKey& x) {obj = x.obj; return *this;}
     ::java::nio::channels::SelectionKey& operator=(::java::nio::channels::SelectionKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object attach(const ::java::lang::Object&) const ;
-    ::java::lang::Object attachment() const ;
-    void cancel() const ;
-    ::java::nio::channels::SelectableChannel channel() const ;
-    int32_t interestOps() const ;
-    ::java::nio::channels::SelectionKey interestOps(int32_t) const ;
-    bool isAcceptable() const ;
-    bool isConnectable() const ;
-    bool isReadable() const ;
-    bool isValid() const ;
-    bool isWritable() const ;
-    int32_t readyOps() const ;
-    ::java::nio::channels::Selector selector() const ;
+    ::java::lang::Object attach(const ::java::lang::Object&) const;
+    ::java::lang::Object attachment() const;
+    void cancel() const;
+    ::java::nio::channels::SelectableChannel channel() const;
+    int32_t interestOps() const;
+    ::java::nio::channels::SelectionKey interestOps(int32_t) const;
+    bool isAcceptable() const;
+    bool isConnectable() const;
+    bool isReadable() const;
+    bool isValid() const;
+    bool isWritable() const;
+    int32_t readyOps() const;
+    ::java::nio::channels::Selector selector() const;
 
 };
 }

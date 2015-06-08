@@ -37,12 +37,12 @@ public:
     ::android::media::audiofx::BassBoost& operator=(::android::media::audiofx::BassBoost&& x) {obj = std::move(x.obj); return *this;}
     
     BassBoost(int32_t, int32_t);
-    bool getStrengthSupported() const ;
-    void setStrength(int16_t) const ;
-    int16_t getRoundedStrength() const ;
-    void setParameterListener(const ::android::media::audiofx::BassBoost_OnParameterChangeListener&) const ;
-    ::android::media::audiofx::BassBoost_Settings getProperties() const ;
-    void setProperties(const ::android::media::audiofx::BassBoost_Settings&) const ;
+    bool getStrengthSupported() const;
+    void setStrength(int16_t) const;
+    int16_t getRoundedStrength() const;
+    void setParameterListener(const ::android::media::audiofx::BassBoost_OnParameterChangeListener&) const;
+    ::android::media::audiofx::BassBoost_Settings getProperties() const;
+    void setProperties(const ::android::media::audiofx::BassBoost_Settings&) const;
 
 };
 }

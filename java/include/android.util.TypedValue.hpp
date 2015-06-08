@@ -36,20 +36,20 @@ public:
     ::android::util::TypedValue& operator=(::android::util::TypedValue&& x) {obj = std::move(x.obj); return *this;}
     
     TypedValue();
-    float getFloat() const ;
+    float getFloat() const;
     static float complexToFloat(int32_t);
     static float complexToDimension(int32_t, const ::android::util::DisplayMetrics&);
     static int32_t complexToDimensionPixelOffset(int32_t, const ::android::util::DisplayMetrics&);
     static int32_t complexToDimensionPixelSize(int32_t, const ::android::util::DisplayMetrics&);
     static float complexToDimensionNoisy(int32_t, const ::android::util::DisplayMetrics&);
     static float applyDimension(int32_t, float, const ::android::util::DisplayMetrics&);
-    float getDimension(const ::android::util::DisplayMetrics&) const ;
+    float getDimension(const ::android::util::DisplayMetrics&) const;
     static float complexToFraction(int32_t, float, float);
-    float getFraction(float, float) const ;
-    ::java::lang::CharSequence coerceToString() const ;
+    float getFraction(float, float) const;
+    ::java::lang::CharSequence coerceToString() const;
     static ::java::lang::String coerceToString(int32_t, int32_t);
-    void setTo(const ::android::util::TypedValue&) const ;
-    ::java::lang::String toString() const ;
+    void setTo(const ::android::util::TypedValue&) const;
+    ::java::lang::String toString() const;
 
 };
 }

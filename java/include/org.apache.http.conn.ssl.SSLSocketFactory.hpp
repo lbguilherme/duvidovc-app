@@ -50,12 +50,12 @@ public:
     SSLSocketFactory(const ::java::security::KeyStore&, const ::java::lang::String&);
     SSLSocketFactory(const ::java::security::KeyStore&);
     static ::org::apache::http::conn::ssl::SSLSocketFactory getSocketFactory();
-    ::java::net::Socket createSocket() const ;
-    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const ;
-    bool isSecure(const ::java::net::Socket&) const ;
-    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const ;
-    void setHostnameVerifier(const ::org::apache::http::conn::ssl::X509HostnameVerifier&) const ;
-    ::org::apache::http::conn::ssl::X509HostnameVerifier getHostnameVerifier() const ;
+    ::java::net::Socket createSocket() const;
+    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const;
+    bool isSecure(const ::java::net::Socket&) const;
+    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const;
+    void setHostnameVerifier(const ::org::apache::http::conn::ssl::X509HostnameVerifier&) const;
+    ::org::apache::http::conn::ssl::X509HostnameVerifier getHostnameVerifier() const;
 
 };
 }

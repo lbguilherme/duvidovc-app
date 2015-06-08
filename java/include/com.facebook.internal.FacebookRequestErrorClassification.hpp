@@ -37,11 +37,11 @@ public:
     ::com::facebook::internal::FacebookRequestErrorClassification& operator=(const ::com::facebook::internal::FacebookRequestErrorClassification& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::FacebookRequestErrorClassification& operator=(::com::facebook::internal::FacebookRequestErrorClassification&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Map getOtherErrors() const ;
-    ::java::util::Map getTransientErrors() const ;
-    ::java::util::Map getLoginRecoverableErrors() const ;
-    ::java::lang::String getRecoveryMessage(const ::com::facebook::FacebookRequestError_Category&) const ;
-    ::com::facebook::FacebookRequestError_Category classify(int32_t, int32_t, bool) const ;
+    ::java::util::Map getOtherErrors() const;
+    ::java::util::Map getTransientErrors() const;
+    ::java::util::Map getLoginRecoverableErrors() const;
+    ::java::lang::String getRecoveryMessage(const ::com::facebook::FacebookRequestError_Category&) const;
+    ::com::facebook::FacebookRequestError_Category classify(int32_t, int32_t, bool) const;
     static ::com::facebook::internal::FacebookRequestErrorClassification getDefaultErrorClassification();
     static ::com::facebook::internal::FacebookRequestErrorClassification createFromJSON(const ::org::json::JSONArray&);
 

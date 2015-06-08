@@ -39,7 +39,7 @@ public:
     OvershootInterpolator();
     OvershootInterpolator(float);
     OvershootInterpolator(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

@@ -40,15 +40,15 @@ public:
     ::android::net::wifi::p2p::WifiP2pGroup& operator=(::android::net::wifi::p2p::WifiP2pGroup&& x) {obj = std::move(x.obj); return *this;}
     
     WifiP2pGroup();
-    ::java::lang::String getNetworkName() const ;
-    bool isGroupOwner() const ;
-    ::android::net::wifi::p2p::WifiP2pDevice getOwner() const ;
-    ::java::util::Collection getClientList() const ;
-    ::java::lang::String getPassphrase() const ;
-    ::java::lang::String getInterface() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getNetworkName() const;
+    bool isGroupOwner() const;
+    ::android::net::wifi::p2p::WifiP2pDevice getOwner() const;
+    ::java::util::Collection getClientList() const;
+    ::java::lang::String getPassphrase() const;
+    ::java::lang::String getInterface() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

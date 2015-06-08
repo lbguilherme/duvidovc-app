@@ -43,11 +43,11 @@ public:
     ::org::apache::http::client::protocol::ClientContextConfigurer& operator=(::org::apache::http::client::protocol::ClientContextConfigurer&& x) {obj = std::move(x.obj); return *this;}
     
     ClientContextConfigurer(const ::org::apache::http::protocol::HttpContext&);
-    void setCookieSpecRegistry(const ::org::apache::http::cookie::CookieSpecRegistry&) const ;
-    void setAuthSchemeRegistry(const ::org::apache::http::auth::AuthSchemeRegistry&) const ;
-    void setCookieStore(const ::org::apache::http::client::CookieStore&) const ;
-    void setCredentialsProvider(const ::org::apache::http::client::CredentialsProvider&) const ;
-    void setAuthSchemePref(const ::java::util::List&) const ;
+    void setCookieSpecRegistry(const ::org::apache::http::cookie::CookieSpecRegistry&) const;
+    void setAuthSchemeRegistry(const ::org::apache::http::auth::AuthSchemeRegistry&) const;
+    void setCookieStore(const ::org::apache::http::client::CookieStore&) const;
+    void setCredentialsProvider(const ::org::apache::http::client::CredentialsProvider&) const;
+    void setAuthSchemePref(const ::java::util::List&) const;
 
 };
 }

@@ -38,12 +38,12 @@ public:
     ::java::util::concurrent::atomic::AtomicReferenceFieldUpdater& operator=(::java::util::concurrent::atomic::AtomicReferenceFieldUpdater&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::util::concurrent::atomic::AtomicReferenceFieldUpdater newUpdater(const ::java::lang::Class&, const ::java::lang::Class&, const ::java::lang::String&);
-    bool compareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    bool weakCompareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    void set(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    void lazySet(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    ::java::lang::Object getAndSet(const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    bool compareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, const ::java::lang::Object&) const;
+    bool weakCompareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, const ::java::lang::Object&) const;
+    void set(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    void lazySet(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    ::java::lang::Object getAndSet(const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

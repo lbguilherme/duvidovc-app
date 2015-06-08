@@ -36,8 +36,8 @@ public:
     ::android::support::v4::app::RemoteInput_Impl& operator=(const ::android::support::v4::app::RemoteInput_Impl& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::RemoteInput_Impl& operator=(::android::support::v4::app::RemoteInput_Impl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::Bundle getResultsFromIntent(const ::android::content::Intent&) const ;
-    void addResultsToIntent(const std::vector< ::android::support::v4::app::RemoteInput>&, const ::android::content::Intent&, const ::android::os::Bundle&) const ;
+    ::android::os::Bundle getResultsFromIntent(const ::android::content::Intent&) const;
+    void addResultsToIntent(const std::vector< ::android::support::v4::app::RemoteInput>&, const ::android::content::Intent&, const ::android::os::Bundle&) const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::android::accounts::AccountAuthenticatorActivity& operator=(::android::accounts::AccountAuthenticatorActivity&& x) {obj = std::move(x.obj); return *this;}
     
     AccountAuthenticatorActivity();
-    void setAccountAuthenticatorResult(const ::android::os::Bundle&) const ;
-    void finish() const ;
+    void setAccountAuthenticatorResult(const ::android::os::Bundle&) const;
+    void finish() const;
 
 };
 }

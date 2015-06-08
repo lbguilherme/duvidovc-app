@@ -36,10 +36,10 @@ public:
     ::org::apache::http::message::HeaderValueFormatter& operator=(const ::org::apache::http::message::HeaderValueFormatter& x) {obj = x.obj; return *this;}
     ::org::apache::http::message::HeaderValueFormatter& operator=(::org::apache::http::message::HeaderValueFormatter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::util::CharArrayBuffer formatElements(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::HeaderElement>&, bool) const ;
-    ::org::apache::http::util::CharArrayBuffer formatHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::HeaderElement&, bool) const ;
-    ::org::apache::http::util::CharArrayBuffer formatParameters(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::NameValuePair>&, bool) const ;
-    ::org::apache::http::util::CharArrayBuffer formatNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::NameValuePair&, bool) const ;
+    ::org::apache::http::util::CharArrayBuffer formatElements(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::HeaderElement>&, bool) const;
+    ::org::apache::http::util::CharArrayBuffer formatHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::HeaderElement&, bool) const;
+    ::org::apache::http::util::CharArrayBuffer formatParameters(const ::org::apache::http::util::CharArrayBuffer&, const std::vector< ::org::apache::http::NameValuePair>&, bool) const;
+    ::org::apache::http::util::CharArrayBuffer formatNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::NameValuePair&, bool) const;
 
 };
 }

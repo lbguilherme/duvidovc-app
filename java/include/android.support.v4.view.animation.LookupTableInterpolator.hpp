@@ -37,7 +37,7 @@ public:
     ::android::support::v4::view::animation::LookupTableInterpolator& operator=(::android::support::v4::view::animation::LookupTableInterpolator&& x) {obj = std::move(x.obj); return *this;}
     
     LookupTableInterpolator(const std::vector< float>&);
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

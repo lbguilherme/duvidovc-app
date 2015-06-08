@@ -35,17 +35,17 @@ public:
     ::android::view::KeyCharacterMap& operator=(::android::view::KeyCharacterMap&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::view::KeyCharacterMap load(int32_t);
-    int32_t get(int32_t, int32_t) const ;
-    uint16_t getNumber(int32_t) const ;
-    uint16_t getMatch(int32_t, const std::vector< uint16_t>&) const ;
-    uint16_t getMatch(int32_t, const std::vector< uint16_t>&, int32_t) const ;
-    uint16_t getDisplayLabel(int32_t) const ;
+    int32_t get(int32_t, int32_t) const;
+    uint16_t getNumber(int32_t) const;
+    uint16_t getMatch(int32_t, const std::vector< uint16_t>&) const;
+    uint16_t getMatch(int32_t, const std::vector< uint16_t>&, int32_t) const;
+    uint16_t getDisplayLabel(int32_t) const;
     static int32_t getDeadChar(int32_t, int32_t);
-    bool getKeyData(int32_t, const ::android::view::KeyCharacterMap_KeyData&) const ;
-    std::vector< ::android::view::KeyEvent> getEvents(const std::vector< uint16_t>&) const ;
-    bool isPrintingKey(int32_t) const ;
-    int32_t getKeyboardType() const ;
-    int32_t getModifierBehavior() const ;
+    bool getKeyData(int32_t, const ::android::view::KeyCharacterMap_KeyData&) const;
+    std::vector< ::android::view::KeyEvent> getEvents(const std::vector< uint16_t>&) const;
+    bool isPrintingKey(int32_t) const;
+    int32_t getKeyboardType() const;
+    int32_t getModifierBehavior() const;
     static bool deviceHasKey(int32_t);
     static std::vector< bool> deviceHasKeys(const std::vector< int32_t>&);
 

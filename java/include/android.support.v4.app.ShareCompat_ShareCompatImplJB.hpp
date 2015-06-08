@@ -37,7 +37,7 @@ public:
     ::android::support::v4::app::ShareCompat_ShareCompatImplJB& operator=(const ::android::support::v4::app::ShareCompat_ShareCompatImplJB& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ShareCompat_ShareCompatImplJB& operator=(::android::support::v4::app::ShareCompat_ShareCompatImplJB&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String escapeHtml(const ::java::lang::CharSequence&) const ;
+    ::java::lang::String escapeHtml(const ::java::lang::CharSequence&) const;
 
 };
 }

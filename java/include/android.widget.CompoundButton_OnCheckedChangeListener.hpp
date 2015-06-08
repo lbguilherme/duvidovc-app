@@ -32,7 +32,7 @@ public:
     ::android::widget::CompoundButton_OnCheckedChangeListener& operator=(const ::android::widget::CompoundButton_OnCheckedChangeListener& x) {obj = x.obj; return *this;}
     ::android::widget::CompoundButton_OnCheckedChangeListener& operator=(::android::widget::CompoundButton_OnCheckedChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCheckedChanged(const ::android::widget::CompoundButton&, bool) const ;
+    void onCheckedChanged(const ::android::widget::CompoundButton&, bool) const;
 
 };
 }

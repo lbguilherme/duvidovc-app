@@ -39,14 +39,14 @@ public:
     ::java::text::RuleBasedCollator& operator=(::java::text::RuleBasedCollator&& x) {obj = std::move(x.obj); return *this;}
     
     RuleBasedCollator(const ::java::lang::String&);
-    ::java::text::CollationElementIterator getCollationElementIterator(const ::java::text::CharacterIterator&) const ;
-    ::java::text::CollationElementIterator getCollationElementIterator(const ::java::lang::String&) const ;
-    ::java::lang::String getRules() const ;
-    ::java::lang::Object clone() const ;
-    int32_t compare(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::text::CollationKey getCollationKey(const ::java::lang::String&) const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    ::java::text::CollationElementIterator getCollationElementIterator(const ::java::text::CharacterIterator&) const;
+    ::java::text::CollationElementIterator getCollationElementIterator(const ::java::lang::String&) const;
+    ::java::lang::String getRules() const;
+    ::java::lang::Object clone() const;
+    int32_t compare(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::text::CollationKey getCollationKey(const ::java::lang::String&) const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

@@ -43,17 +43,17 @@ public:
     X509Certificate();
     static ::javax::security::cert::X509Certificate getInstance(const ::java::io::InputStream&);
     static ::javax::security::cert::X509Certificate getInstance(const std::vector< int8_t>&);
-    void checkValidity() const ;
-    void checkValidity(const ::java::util::Date&) const ;
-    int32_t getVersion() const ;
-    ::java::math::BigInteger getSerialNumber() const ;
-    ::java::security::Principal getIssuerDN() const ;
-    ::java::security::Principal getSubjectDN() const ;
-    ::java::util::Date getNotBefore() const ;
-    ::java::util::Date getNotAfter() const ;
-    ::java::lang::String getSigAlgName() const ;
-    ::java::lang::String getSigAlgOID() const ;
-    std::vector< int8_t> getSigAlgParams() const ;
+    void checkValidity() const;
+    void checkValidity(const ::java::util::Date&) const;
+    int32_t getVersion() const;
+    ::java::math::BigInteger getSerialNumber() const;
+    ::java::security::Principal getIssuerDN() const;
+    ::java::security::Principal getSubjectDN() const;
+    ::java::util::Date getNotBefore() const;
+    ::java::util::Date getNotAfter() const;
+    ::java::lang::String getSigAlgName() const;
+    ::java::lang::String getSigAlgOID() const;
+    std::vector< int8_t> getSigAlgParams() const;
 
 };
 }

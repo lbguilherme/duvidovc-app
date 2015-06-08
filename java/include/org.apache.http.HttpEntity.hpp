@@ -35,15 +35,15 @@ public:
     ::org::apache::http::HttpEntity& operator=(const ::org::apache::http::HttpEntity& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpEntity& operator=(::org::apache::http::HttpEntity&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isRepeatable() const ;
-    bool isChunked() const ;
-    int64_t getContentLength() const ;
-    ::org::apache::http::Header getContentType() const ;
-    ::org::apache::http::Header getContentEncoding() const ;
-    ::java::io::InputStream getContent() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    void consumeContent() const ;
+    bool isRepeatable() const;
+    bool isChunked() const;
+    int64_t getContentLength() const;
+    ::org::apache::http::Header getContentType() const;
+    ::org::apache::http::Header getContentEncoding() const;
+    ::java::io::InputStream getContent() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    void consumeContent() const;
 
 };
 }

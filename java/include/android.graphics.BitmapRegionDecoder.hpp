@@ -42,11 +42,11 @@ public:
     static ::android::graphics::BitmapRegionDecoder newInstance(const ::java::io::FileDescriptor&, bool);
     static ::android::graphics::BitmapRegionDecoder newInstance(const ::java::io::InputStream&, bool);
     static ::android::graphics::BitmapRegionDecoder newInstance(const ::java::lang::String&, bool);
-    ::android::graphics::Bitmap decodeRegion(const ::android::graphics::Rect&, const ::android::graphics::BitmapFactory_Options&) const ;
-    int32_t getWidth() const ;
-    int32_t getHeight() const ;
-    void recycle() const ;
-    bool isRecycled() const ;
+    ::android::graphics::Bitmap decodeRegion(const ::android::graphics::Rect&, const ::android::graphics::BitmapFactory_Options&) const;
+    int32_t getWidth() const;
+    int32_t getHeight() const;
+    void recycle() const;
+    bool isRecycled() const;
 
 };
 }

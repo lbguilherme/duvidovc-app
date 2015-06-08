@@ -35,7 +35,7 @@ public:
     ::java::security::cert::CertStoreParameters& operator=(const ::java::security::cert::CertStoreParameters& x) {obj = x.obj; return *this;}
     ::java::security::cert::CertStoreParameters& operator=(::java::security::cert::CertStoreParameters&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
+    ::java::lang::Object clone() const;
 
 };
 }

@@ -39,9 +39,9 @@ public:
     
     Signer(const ::java::lang::String&);
     Signer(const ::java::lang::String&, const ::java::security::IdentityScope&);
-    ::java::security::PrivateKey getPrivateKey() const ;
-    void setKeyPair(const ::java::security::KeyPair&) const ;
-    ::java::lang::String toString() const ;
+    ::java::security::PrivateKey getPrivateKey() const;
+    void setKeyPair(const ::java::security::KeyPair&) const;
+    ::java::lang::String toString() const;
 
 };
 }

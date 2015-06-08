@@ -39,10 +39,10 @@ public:
     ::com::facebook::internal::ImageRequest_Builder& operator=(::com::facebook::internal::ImageRequest_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ImageRequest_Builder(const ::android::content::Context&, const ::android::net::Uri&);
-    ::com::facebook::internal::ImageRequest_Builder setCallback(const ::com::facebook::internal::ImageRequest_Callback&) const ;
-    ::com::facebook::internal::ImageRequest_Builder setCallerTag(const ::java::lang::Object&) const ;
-    ::com::facebook::internal::ImageRequest_Builder setAllowCachedRedirects(bool) const ;
-    ::com::facebook::internal::ImageRequest build() const ;
+    ::com::facebook::internal::ImageRequest_Builder setCallback(const ::com::facebook::internal::ImageRequest_Callback&) const;
+    ::com::facebook::internal::ImageRequest_Builder setCallerTag(const ::java::lang::Object&) const;
+    ::com::facebook::internal::ImageRequest_Builder setAllowCachedRedirects(bool) const;
+    ::com::facebook::internal::ImageRequest build() const;
 
 };
 }

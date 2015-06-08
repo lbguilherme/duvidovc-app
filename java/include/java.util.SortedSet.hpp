@@ -36,12 +36,12 @@ public:
     ::java::util::SortedSet& operator=(const ::java::util::SortedSet& x) {obj = x.obj; return *this;}
     ::java::util::SortedSet& operator=(::java::util::SortedSet&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Comparator comparator() const ;
-    ::java::lang::Object first() const ;
-    ::java::util::SortedSet headSet(const ::java::lang::Object&) const ;
-    ::java::lang::Object last() const ;
-    ::java::util::SortedSet subSet(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::util::SortedSet tailSet(const ::java::lang::Object&) const ;
+    ::java::util::Comparator comparator() const;
+    ::java::lang::Object first() const;
+    ::java::util::SortedSet headSet(const ::java::lang::Object&) const;
+    ::java::lang::Object last() const;
+    ::java::util::SortedSet subSet(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::util::SortedSet tailSet(const ::java::lang::Object&) const;
 
 };
 }

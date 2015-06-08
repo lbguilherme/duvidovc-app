@@ -34,10 +34,10 @@ public:
     ::java::util::logging::LoggingMXBean& operator=(const ::java::util::logging::LoggingMXBean& x) {obj = x.obj; return *this;}
     ::java::util::logging::LoggingMXBean& operator=(::java::util::logging::LoggingMXBean&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getLoggerLevel(const ::java::lang::String&) const ;
-    ::java::util::List getLoggerNames() const ;
-    ::java::lang::String getParentLoggerName(const ::java::lang::String&) const ;
-    void setLoggerLevel(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::lang::String getLoggerLevel(const ::java::lang::String&) const;
+    ::java::util::List getLoggerNames() const;
+    ::java::lang::String getParentLoggerName(const ::java::lang::String&) const;
+    void setLoggerLevel(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

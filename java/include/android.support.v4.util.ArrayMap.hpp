@@ -44,13 +44,13 @@ public:
     ArrayMap();
     ArrayMap(int32_t);
     ArrayMap(const ::android::support::v4::util::SimpleArrayMap&);
-    bool containsAll(const ::java::util::Collection&) const ;
-    void putAll(const ::java::util::Map&) const ;
-    bool removeAll(const ::java::util::Collection&) const ;
-    bool retainAll(const ::java::util::Collection&) const ;
-    ::java::util::Set entrySet() const ;
-    ::java::util::Set keySet() const ;
-    ::java::util::Collection values() const ;
+    bool containsAll(const ::java::util::Collection&) const;
+    void putAll(const ::java::util::Map&) const;
+    bool removeAll(const ::java::util::Collection&) const;
+    bool retainAll(const ::java::util::Collection&) const;
+    ::java::util::Set entrySet() const;
+    ::java::util::Set keySet() const;
+    ::java::util::Collection values() const;
 
 };
 }

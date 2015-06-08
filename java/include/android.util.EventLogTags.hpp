@@ -36,8 +36,8 @@ public:
     
     EventLogTags();
     EventLogTags(const ::java::io::BufferedReader&);
-    ::android::util::EventLogTags_Description get(const ::java::lang::String&) const ;
-    ::android::util::EventLogTags_Description get(int32_t) const ;
+    ::android::util::EventLogTags_Description get(const ::java::lang::String&) const;
+    ::android::util::EventLogTags_Description get(int32_t) const;
 
 };
 }

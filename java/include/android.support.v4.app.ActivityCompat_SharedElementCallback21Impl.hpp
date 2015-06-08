@@ -42,12 +42,12 @@ public:
     ::android::support::v4::app::ActivityCompat_SharedElementCallback21Impl& operator=(::android::support::v4::app::ActivityCompat_SharedElementCallback21Impl&& x) {obj = std::move(x.obj); return *this;}
     
     ActivityCompat_SharedElementCallback21Impl(const ::android::support::v4::app::SharedElementCallback&);
-    void onSharedElementStart(const ::java::util::List&, const ::java::util::List&, const ::java::util::List&) const ;
-    void onSharedElementEnd(const ::java::util::List&, const ::java::util::List&, const ::java::util::List&) const ;
-    void onRejectSharedElements(const ::java::util::List&) const ;
-    void onMapSharedElements(const ::java::util::List&, const ::java::util::Map&) const ;
-    ::android::os::Parcelable onCaptureSharedElementSnapshot(const ::android::view::View&, const ::android::graphics::Matrix&, const ::android::graphics::RectF&) const ;
-    ::android::view::View onCreateSnapshotView(const ::android::content::Context&, const ::android::os::Parcelable&) const ;
+    void onSharedElementStart(const ::java::util::List&, const ::java::util::List&, const ::java::util::List&) const;
+    void onSharedElementEnd(const ::java::util::List&, const ::java::util::List&, const ::java::util::List&) const;
+    void onRejectSharedElements(const ::java::util::List&) const;
+    void onMapSharedElements(const ::java::util::List&, const ::java::util::Map&) const;
+    ::android::os::Parcelable onCaptureSharedElementSnapshot(const ::android::view::View&, const ::android::graphics::Matrix&, const ::android::graphics::RectF&) const;
+    ::android::view::View onCreateSnapshotView(const ::android::content::Context&, const ::android::os::Parcelable&) const;
 
 };
 }

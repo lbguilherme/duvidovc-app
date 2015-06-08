@@ -34,9 +34,9 @@ public:
     ::android::app::LoaderManager_LoaderCallbacks& operator=(const ::android::app::LoaderManager_LoaderCallbacks& x) {obj = x.obj; return *this;}
     ::android::app::LoaderManager_LoaderCallbacks& operator=(::android::app::LoaderManager_LoaderCallbacks&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::content::Loader onCreateLoader(int32_t, const ::android::os::Bundle&) const ;
-    void onLoadFinished(const ::android::content::Loader&, const ::java::lang::Object&) const ;
-    void onLoaderReset(const ::android::content::Loader&) const ;
+    ::android::content::Loader onCreateLoader(int32_t, const ::android::os::Bundle&) const;
+    void onLoadFinished(const ::android::content::Loader&, const ::java::lang::Object&) const;
+    void onLoaderReset(const ::android::content::Loader&) const;
 
 };
 }

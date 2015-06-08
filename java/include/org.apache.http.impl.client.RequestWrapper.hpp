@@ -44,20 +44,20 @@ public:
     ::org::apache::http::impl::client::RequestWrapper& operator=(::org::apache::http::impl::client::RequestWrapper&& x) {obj = std::move(x.obj); return *this;}
     
     RequestWrapper(const ::org::apache::http::HttpRequest&);
-    void resetHeaders() const ;
-    ::java::lang::String getMethod() const ;
-    void setMethod(const ::java::lang::String&) const ;
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    void setProtocolVersion(const ::org::apache::http::ProtocolVersion&) const ;
-    ::java::net::URI getURI() const ;
-    void setURI(const ::java::net::URI&) const ;
-    ::org::apache::http::RequestLine getRequestLine() const ;
-    void abort() const ;
-    bool isAborted() const ;
-    ::org::apache::http::HttpRequest getOriginal() const ;
-    bool isRepeatable() const ;
-    int32_t getExecCount() const ;
-    void incrementExecCount() const ;
+    void resetHeaders() const;
+    ::java::lang::String getMethod() const;
+    void setMethod(const ::java::lang::String&) const;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    void setProtocolVersion(const ::org::apache::http::ProtocolVersion&) const;
+    ::java::net::URI getURI() const;
+    void setURI(const ::java::net::URI&) const;
+    ::org::apache::http::RequestLine getRequestLine() const;
+    void abort() const;
+    bool isAborted() const;
+    ::org::apache::http::HttpRequest getOriginal() const;
+    bool isRepeatable() const;
+    int32_t getExecCount() const;
+    void incrementExecCount() const;
 
 };
 }

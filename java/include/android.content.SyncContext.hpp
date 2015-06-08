@@ -33,8 +33,8 @@ public:
     ::android::content::SyncContext& operator=(const ::android::content::SyncContext& x) {obj = x.obj; return *this;}
     ::android::content::SyncContext& operator=(::android::content::SyncContext&& x) {obj = std::move(x.obj); return *this;}
     
-    void onFinished(const ::android::content::SyncResult&) const ;
-    ::android::os::IBinder getSyncContextBinder() const ;
+    void onFinished(const ::android::content::SyncResult&) const;
+    ::android::os::IBinder getSyncContextBinder() const;
 
 };
 }

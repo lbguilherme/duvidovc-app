@@ -44,30 +44,30 @@ public:
     ::org::apache::http::impl::cookie::BasicClientCookie& operator=(::org::apache::http::impl::cookie::BasicClientCookie&& x) {obj = std::move(x.obj); return *this;}
     
     BasicClientCookie(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    void setValue(const ::java::lang::String&) const ;
-    ::java::lang::String getComment() const ;
-    void setComment(const ::java::lang::String&) const ;
-    ::java::lang::String getCommentURL() const ;
-    ::java::util::Date getExpiryDate() const ;
-    void setExpiryDate(const ::java::util::Date&) const ;
-    bool isPersistent() const ;
-    ::java::lang::String getDomain() const ;
-    void setDomain(const ::java::lang::String&) const ;
-    ::java::lang::String getPath() const ;
-    void setPath(const ::java::lang::String&) const ;
-    bool isSecure() const ;
-    void setSecure(bool) const ;
-    std::vector< int32_t> getPorts() const ;
-    int32_t getVersion() const ;
-    void setVersion(int32_t) const ;
-    bool isExpired(const ::java::util::Date&) const ;
-    void setAttribute(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String getAttribute(const ::java::lang::String&) const ;
-    bool containsAttribute(const ::java::lang::String&) const ;
-    ::java::lang::Object clone() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    void setValue(const ::java::lang::String&) const;
+    ::java::lang::String getComment() const;
+    void setComment(const ::java::lang::String&) const;
+    ::java::lang::String getCommentURL() const;
+    ::java::util::Date getExpiryDate() const;
+    void setExpiryDate(const ::java::util::Date&) const;
+    bool isPersistent() const;
+    ::java::lang::String getDomain() const;
+    void setDomain(const ::java::lang::String&) const;
+    ::java::lang::String getPath() const;
+    void setPath(const ::java::lang::String&) const;
+    bool isSecure() const;
+    void setSecure(bool) const;
+    std::vector< int32_t> getPorts() const;
+    int32_t getVersion() const;
+    void setVersion(int32_t) const;
+    bool isExpired(const ::java::util::Date&) const;
+    void setAttribute(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String getAttribute(const ::java::lang::String&) const;
+    bool containsAttribute(const ::java::lang::String&) const;
+    ::java::lang::Object clone() const;
+    ::java::lang::String toString() const;
 
 };
 }

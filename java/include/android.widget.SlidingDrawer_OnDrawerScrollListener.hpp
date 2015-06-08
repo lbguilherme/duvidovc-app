@@ -31,8 +31,8 @@ public:
     ::android::widget::SlidingDrawer_OnDrawerScrollListener& operator=(const ::android::widget::SlidingDrawer_OnDrawerScrollListener& x) {obj = x.obj; return *this;}
     ::android::widget::SlidingDrawer_OnDrawerScrollListener& operator=(::android::widget::SlidingDrawer_OnDrawerScrollListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onScrollStarted() const ;
-    void onScrollEnded() const ;
+    void onScrollStarted() const;
+    void onScrollEnded() const;
 
 };
 }

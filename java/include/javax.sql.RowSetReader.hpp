@@ -32,7 +32,7 @@ public:
     ::javax::sql::RowSetReader& operator=(const ::javax::sql::RowSetReader& x) {obj = x.obj; return *this;}
     ::javax::sql::RowSetReader& operator=(::javax::sql::RowSetReader&& x) {obj = std::move(x.obj); return *this;}
     
-    void readData(const ::javax::sql::RowSetInternal&) const ;
+    void readData(const ::javax::sql::RowSetInternal&) const;
 
 };
 }

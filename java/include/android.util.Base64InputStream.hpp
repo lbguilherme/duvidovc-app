@@ -35,14 +35,14 @@ public:
     ::android::util::Base64InputStream& operator=(::android::util::Base64InputStream&& x) {obj = std::move(x.obj); return *this;}
     
     Base64InputStream(const ::java::io::InputStream&, int32_t);
-    bool markSupported() const ;
-    void mark(int32_t) const ;
-    void reset() const ;
-    void close() const ;
-    int32_t available() const ;
-    int64_t skip(int64_t) const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    bool markSupported() const;
+    void mark(int32_t) const;
+    void reset() const;
+    void close() const;
+    int32_t available() const;
+    int64_t skip(int64_t) const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

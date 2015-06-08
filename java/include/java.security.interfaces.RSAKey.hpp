@@ -33,7 +33,7 @@ public:
     ::java::security::interfaces::RSAKey& operator=(const ::java::security::interfaces::RSAKey& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::RSAKey& operator=(::java::security::interfaces::RSAKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::math::BigInteger getModulus() const ;
+    ::java::math::BigInteger getModulus() const;
 
 };
 }

@@ -40,12 +40,12 @@ public:
     ::android::support::v4::util::MapCollections_MapIterator& operator=(const ::android::support::v4::util::MapCollections_MapIterator& x) {obj = x.obj; return *this;}
     ::android::support::v4::util::MapCollections_MapIterator& operator=(::android::support::v4::util::MapCollections_MapIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasNext() const ;
-    ::java::util::Map_Entry next() const ;
-    void remove() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool hasNext() const;
+    ::java::util::Map_Entry next() const;
+    void remove() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

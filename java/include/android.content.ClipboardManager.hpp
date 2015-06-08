@@ -37,15 +37,15 @@ public:
     ::android::content::ClipboardManager& operator=(const ::android::content::ClipboardManager& x) {obj = x.obj; return *this;}
     ::android::content::ClipboardManager& operator=(::android::content::ClipboardManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void setPrimaryClip(const ::android::content::ClipData&) const ;
-    ::android::content::ClipData getPrimaryClip() const ;
-    ::android::content::ClipDescription getPrimaryClipDescription() const ;
-    bool hasPrimaryClip() const ;
-    void addPrimaryClipChangedListener(const ::android::content::ClipboardManager_OnPrimaryClipChangedListener&) const ;
-    void removePrimaryClipChangedListener(const ::android::content::ClipboardManager_OnPrimaryClipChangedListener&) const ;
-    ::java::lang::CharSequence getText() const ;
-    void setText(const ::java::lang::CharSequence&) const ;
-    bool hasText() const ;
+    void setPrimaryClip(const ::android::content::ClipData&) const;
+    ::android::content::ClipData getPrimaryClip() const;
+    ::android::content::ClipDescription getPrimaryClipDescription() const;
+    bool hasPrimaryClip() const;
+    void addPrimaryClipChangedListener(const ::android::content::ClipboardManager_OnPrimaryClipChangedListener&) const;
+    void removePrimaryClipChangedListener(const ::android::content::ClipboardManager_OnPrimaryClipChangedListener&) const;
+    ::java::lang::CharSequence getText() const;
+    void setText(const ::java::lang::CharSequence&) const;
+    bool hasText() const;
 
 };
 }

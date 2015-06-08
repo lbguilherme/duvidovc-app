@@ -37,11 +37,11 @@ public:
     ::org::apache::http::HttpServerConnection& operator=(const ::org::apache::http::HttpServerConnection& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpServerConnection& operator=(::org::apache::http::HttpServerConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::HttpRequest receiveRequestHeader() const ;
-    void receiveRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const ;
-    void sendResponseHeader(const ::org::apache::http::HttpResponse&) const ;
-    void sendResponseEntity(const ::org::apache::http::HttpResponse&) const ;
-    void flush() const ;
+    ::org::apache::http::HttpRequest receiveRequestHeader() const;
+    void receiveRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const;
+    void sendResponseHeader(const ::org::apache::http::HttpResponse&) const;
+    void sendResponseEntity(const ::org::apache::http::HttpResponse&) const;
+    void flush() const;
 
 };
 }

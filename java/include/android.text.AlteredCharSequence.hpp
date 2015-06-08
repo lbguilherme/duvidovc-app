@@ -39,11 +39,11 @@ public:
     ::android::text::AlteredCharSequence& operator=(::android::text::AlteredCharSequence&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::text::AlteredCharSequence make(const ::java::lang::CharSequence&, const std::vector< uint16_t>&, int32_t, int32_t);
-    uint16_t charAt(int32_t) const ;
-    int32_t length() const ;
-    ::java::lang::CharSequence subSequence(int32_t, int32_t) const ;
-    void getChars(int32_t, int32_t, const std::vector< uint16_t>&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    uint16_t charAt(int32_t) const;
+    int32_t length() const;
+    ::java::lang::CharSequence subSequence(int32_t, int32_t) const;
+    void getChars(int32_t, int32_t, const std::vector< uint16_t>&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

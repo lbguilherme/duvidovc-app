@@ -38,20 +38,20 @@ public:
     ::android::hardware::usb::UsbDevice& operator=(const ::android::hardware::usb::UsbDevice& x) {obj = x.obj; return *this;}
     ::android::hardware::usb::UsbDevice& operator=(::android::hardware::usb::UsbDevice&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getDeviceName() const ;
-    int32_t getDeviceId() const ;
-    int32_t getVendorId() const ;
-    int32_t getProductId() const ;
-    int32_t getDeviceClass() const ;
-    int32_t getDeviceSubclass() const ;
-    int32_t getDeviceProtocol() const ;
-    int32_t getInterfaceCount() const ;
-    ::android::hardware::usb::UsbInterface getInterface(int32_t) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getDeviceName() const;
+    int32_t getDeviceId() const;
+    int32_t getVendorId() const;
+    int32_t getProductId() const;
+    int32_t getDeviceClass() const;
+    int32_t getDeviceSubclass() const;
+    int32_t getDeviceProtocol() const;
+    int32_t getInterfaceCount() const;
+    ::android::hardware::usb::UsbInterface getInterface(int32_t) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
     static int32_t getDeviceId(const ::java::lang::String&);
     static ::java::lang::String getDeviceName(int32_t);
 

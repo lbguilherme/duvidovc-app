@@ -33,7 +33,7 @@ public:
     ::android::view::View_OnTouchListener& operator=(const ::android::view::View_OnTouchListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnTouchListener& operator=(::android::view::View_OnTouchListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onTouch(const ::android::view::View&, const ::android::view::MotionEvent&) const ;
+    bool onTouch(const ::android::view::View&, const ::android::view::MotionEvent&) const;
 
 };
 }

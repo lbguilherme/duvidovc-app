@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::io::SocketInputBuffer& operator=(::org::apache::http::impl::io::SocketInputBuffer&& x) {obj = std::move(x.obj); return *this;}
     
     SocketInputBuffer(const ::java::net::Socket&, int32_t, const ::org::apache::http::params::HttpParams&);
-    bool isDataAvailable(int32_t) const ;
+    bool isDataAvailable(int32_t) const;
 
 };
 }

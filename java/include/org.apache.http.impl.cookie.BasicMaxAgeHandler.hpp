@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::BasicMaxAgeHandler& operator=(::org::apache::http::impl::cookie::BasicMaxAgeHandler&& x) {obj = std::move(x.obj); return *this;}
     
     BasicMaxAgeHandler();
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
 
 };
 }

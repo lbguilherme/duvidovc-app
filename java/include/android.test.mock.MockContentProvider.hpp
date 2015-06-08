@@ -47,17 +47,17 @@ public:
     
     MockContentProvider(const ::android::content::Context&);
     MockContentProvider(const ::android::content::Context&, const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::android::content::pm::PathPermission>&);
-    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::String getType(const ::android::net::Uri&) const ;
-    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const ;
-    bool onCreate() const ;
-    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const ;
-    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    int32_t bulkInsert(const ::android::net::Uri&, const std::vector< ::android::content::ContentValues>&) const ;
-    void attachInfo(const ::android::content::Context&, const ::android::content::pm::ProviderInfo&) const ;
-    std::vector< ::android::content::ContentProviderResult> applyBatch(const ::java::util::ArrayList&) const ;
-    std::vector< ::java::lang::String> getStreamTypes(const ::android::net::Uri&, const ::java::lang::String&) const ;
-    ::android::content::res::AssetFileDescriptor openTypedAssetFile(const ::android::net::Uri&, const ::java::lang::String&, const ::android::os::Bundle&) const ;
+    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    ::java::lang::String getType(const ::android::net::Uri&) const;
+    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const;
+    bool onCreate() const;
+    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const;
+    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    int32_t bulkInsert(const ::android::net::Uri&, const std::vector< ::android::content::ContentValues>&) const;
+    void attachInfo(const ::android::content::Context&, const ::android::content::pm::ProviderInfo&) const;
+    std::vector< ::android::content::ContentProviderResult> applyBatch(const ::java::util::ArrayList&) const;
+    std::vector< ::java::lang::String> getStreamTypes(const ::android::net::Uri&, const ::java::lang::String&) const;
+    ::android::content::res::AssetFileDescriptor openTypedAssetFile(const ::android::net::Uri&, const ::java::lang::String&, const ::android::os::Bundle&) const;
 
 };
 }

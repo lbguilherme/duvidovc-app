@@ -35,10 +35,10 @@ public:
     ::java::util::logging::Formatter& operator=(const ::java::util::logging::Formatter& x) {obj = x.obj; return *this;}
     ::java::util::logging::Formatter& operator=(::java::util::logging::Formatter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String format(const ::java::util::logging::LogRecord&) const ;
-    ::java::lang::String formatMessage(const ::java::util::logging::LogRecord&) const ;
-    ::java::lang::String getHead(const ::java::util::logging::Handler&) const ;
-    ::java::lang::String getTail(const ::java::util::logging::Handler&) const ;
+    ::java::lang::String format(const ::java::util::logging::LogRecord&) const;
+    ::java::lang::String formatMessage(const ::java::util::logging::LogRecord&) const;
+    ::java::lang::String getHead(const ::java::util::logging::Handler&) const;
+    ::java::lang::String getTail(const ::java::util::logging::Handler&) const;
 
 };
 }

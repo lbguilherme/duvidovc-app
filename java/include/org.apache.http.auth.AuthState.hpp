@@ -38,15 +38,15 @@ public:
     ::org::apache::http::auth::AuthState& operator=(::org::apache::http::auth::AuthState&& x) {obj = std::move(x.obj); return *this;}
     
     AuthState();
-    void invalidate() const ;
-    bool isValid() const ;
-    void setAuthScheme(const ::org::apache::http::auth::AuthScheme&) const ;
-    ::org::apache::http::auth::AuthScheme getAuthScheme() const ;
-    ::org::apache::http::auth::Credentials getCredentials() const ;
-    void setCredentials(const ::org::apache::http::auth::Credentials&) const ;
-    ::org::apache::http::auth::AuthScope getAuthScope() const ;
-    void setAuthScope(const ::org::apache::http::auth::AuthScope&) const ;
-    ::java::lang::String toString() const ;
+    void invalidate() const;
+    bool isValid() const;
+    void setAuthScheme(const ::org::apache::http::auth::AuthScheme&) const;
+    ::org::apache::http::auth::AuthScheme getAuthScheme() const;
+    ::org::apache::http::auth::Credentials getCredentials() const;
+    void setCredentials(const ::org::apache::http::auth::Credentials&) const;
+    ::org::apache::http::auth::AuthScope getAuthScope() const;
+    void setAuthScope(const ::org::apache::http::auth::AuthScope&) const;
+    ::java::lang::String toString() const;
 
 };
 }

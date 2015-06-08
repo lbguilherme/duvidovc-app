@@ -32,10 +32,10 @@ public:
     ::android::view::KeyEvent_Callback& operator=(const ::android::view::KeyEvent_Callback& x) {obj = x.obj; return *this;}
     ::android::view::KeyEvent_Callback& operator=(::android::view::KeyEvent_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyLongPress(int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyMultiple(int32_t, int32_t, const ::android::view::KeyEvent&) const ;
+    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyLongPress(int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyMultiple(int32_t, int32_t, const ::android::view::KeyEvent&) const;
 
 };
 }

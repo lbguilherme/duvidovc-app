@@ -41,27 +41,27 @@ public:
     ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer& operator=(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer& operator=(::java::util::concurrent::locks::AbstractQueuedLongSynchronizer&& x) {obj = std::move(x.obj); return *this;}
     
-    void acquire(int64_t) const ;
-    void acquireInterruptibly(int64_t) const ;
-    bool tryAcquireNanos(int64_t, int64_t) const ;
-    bool release(int64_t) const ;
-    void acquireShared(int64_t) const ;
-    void acquireSharedInterruptibly(int64_t) const ;
-    bool tryAcquireSharedNanos(int64_t, int64_t) const ;
-    bool releaseShared(int64_t) const ;
-    bool hasQueuedThreads() const ;
-    bool hasContended() const ;
-    ::java::lang::Thread getFirstQueuedThread() const ;
-    bool isQueued(const ::java::lang::Thread&) const ;
-    int32_t getQueueLength() const ;
-    ::java::util::Collection getQueuedThreads() const ;
-    ::java::util::Collection getExclusiveQueuedThreads() const ;
-    ::java::util::Collection getSharedQueuedThreads() const ;
-    ::java::lang::String toString() const ;
-    bool owns(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const ;
-    bool hasWaiters(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const ;
-    int32_t getWaitQueueLength(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const ;
-    ::java::util::Collection getWaitingThreads(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const ;
+    void acquire(int64_t) const;
+    void acquireInterruptibly(int64_t) const;
+    bool tryAcquireNanos(int64_t, int64_t) const;
+    bool release(int64_t) const;
+    void acquireShared(int64_t) const;
+    void acquireSharedInterruptibly(int64_t) const;
+    bool tryAcquireSharedNanos(int64_t, int64_t) const;
+    bool releaseShared(int64_t) const;
+    bool hasQueuedThreads() const;
+    bool hasContended() const;
+    ::java::lang::Thread getFirstQueuedThread() const;
+    bool isQueued(const ::java::lang::Thread&) const;
+    int32_t getQueueLength() const;
+    ::java::util::Collection getQueuedThreads() const;
+    ::java::util::Collection getExclusiveQueuedThreads() const;
+    ::java::util::Collection getSharedQueuedThreads() const;
+    ::java::lang::String toString() const;
+    bool owns(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const;
+    bool hasWaiters(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const;
+    int32_t getWaitQueueLength(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const;
+    ::java::util::Collection getWaitingThreads(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&) const;
 
 };
 }

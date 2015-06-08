@@ -32,7 +32,7 @@ public:
     ::android::nfc::NfcManager& operator=(const ::android::nfc::NfcManager& x) {obj = x.obj; return *this;}
     ::android::nfc::NfcManager& operator=(::android::nfc::NfcManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::nfc::NfcAdapter getDefaultAdapter() const ;
+    ::android::nfc::NfcAdapter getDefaultAdapter() const;
 
 };
 }

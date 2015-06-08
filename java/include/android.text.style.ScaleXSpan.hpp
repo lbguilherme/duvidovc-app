@@ -40,12 +40,12 @@ public:
     
     ScaleXSpan(float);
     ScaleXSpan(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    float getScaleX() const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
-    void updateMeasureState(const ::android::text::TextPaint&) const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    float getScaleX() const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
+    void updateMeasureState(const ::android::text::TextPaint&) const;
 
 };
 }

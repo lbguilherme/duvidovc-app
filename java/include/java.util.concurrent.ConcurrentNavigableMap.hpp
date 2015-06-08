@@ -39,16 +39,16 @@ public:
     ::java::util::concurrent::ConcurrentNavigableMap& operator=(const ::java::util::concurrent::ConcurrentNavigableMap& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::ConcurrentNavigableMap& operator=(::java::util::concurrent::ConcurrentNavigableMap&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::concurrent::ConcurrentNavigableMap subMap(const ::java::lang::Object&, bool, const ::java::lang::Object&, bool) const ;
-    ::java::util::concurrent::ConcurrentNavigableMap headMap(const ::java::lang::Object&, bool) const ;
-    ::java::util::concurrent::ConcurrentNavigableMap tailMap(const ::java::lang::Object&, bool) const ;
-    ::java::util::concurrent::ConcurrentNavigableMap subMap(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::util::concurrent::ConcurrentNavigableMap headMap(const ::java::lang::Object&) const ;
-    ::java::util::concurrent::ConcurrentNavigableMap tailMap(const ::java::lang::Object&) const ;
-    ::java::util::concurrent::ConcurrentNavigableMap descendingMap() const ;
-    ::java::util::NavigableSet navigableKeySet() const ;
-    ::java::util::NavigableSet keySet() const ;
-    ::java::util::NavigableSet descendingKeySet() const ;
+    ::java::util::concurrent::ConcurrentNavigableMap subMap(const ::java::lang::Object&, bool, const ::java::lang::Object&, bool) const;
+    ::java::util::concurrent::ConcurrentNavigableMap headMap(const ::java::lang::Object&, bool) const;
+    ::java::util::concurrent::ConcurrentNavigableMap tailMap(const ::java::lang::Object&, bool) const;
+    ::java::util::concurrent::ConcurrentNavigableMap subMap(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::util::concurrent::ConcurrentNavigableMap headMap(const ::java::lang::Object&) const;
+    ::java::util::concurrent::ConcurrentNavigableMap tailMap(const ::java::lang::Object&) const;
+    ::java::util::concurrent::ConcurrentNavigableMap descendingMap() const;
+    ::java::util::NavigableSet navigableKeySet() const;
+    ::java::util::NavigableSet keySet() const;
+    ::java::util::NavigableSet descendingKeySet() const;
 
 };
 }

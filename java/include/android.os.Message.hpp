@@ -49,19 +49,19 @@ public:
     static ::android::os::Message obtain(const ::android::os::Handler&, int32_t, const ::java::lang::Object&);
     static ::android::os::Message obtain(const ::android::os::Handler&, int32_t, int32_t, int32_t);
     static ::android::os::Message obtain(const ::android::os::Handler&, int32_t, int32_t, int32_t, const ::java::lang::Object&);
-    void recycle() const ;
-    void copyFrom(const ::android::os::Message&) const ;
-    int64_t getWhen() const ;
-    void setTarget(const ::android::os::Handler&) const ;
-    ::android::os::Handler getTarget() const ;
-    ::java::lang::Runnable getCallback() const ;
-    ::android::os::Bundle getData() const ;
-    ::android::os::Bundle peekData() const ;
-    void setData(const ::android::os::Bundle&) const ;
-    void sendToTarget() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void recycle() const;
+    void copyFrom(const ::android::os::Message&) const;
+    int64_t getWhen() const;
+    void setTarget(const ::android::os::Handler&) const;
+    ::android::os::Handler getTarget() const;
+    ::java::lang::Runnable getCallback() const;
+    ::android::os::Bundle getData() const;
+    ::android::os::Bundle peekData() const;
+    void setData(const ::android::os::Bundle&) const;
+    void sendToTarget() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

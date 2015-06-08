@@ -34,7 +34,7 @@ public:
     ::android::view::MenuInflater& operator=(::android::view::MenuInflater&& x) {obj = std::move(x.obj); return *this;}
     
     MenuInflater(const ::android::content::Context&);
-    void inflate(int32_t, const ::android::view::Menu&) const ;
+    void inflate(int32_t, const ::android::view::Menu&) const;
 
 };
 }

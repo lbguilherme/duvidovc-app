@@ -37,7 +37,7 @@ public:
     ::java::security::interfaces::DSAPublicKey& operator=(const ::java::security::interfaces::DSAPublicKey& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::DSAPublicKey& operator=(::java::security::interfaces::DSAPublicKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::math::BigInteger getY() const ;
+    ::java::math::BigInteger getY() const;
 
 };
 }

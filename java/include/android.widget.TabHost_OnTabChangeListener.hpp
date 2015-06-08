@@ -32,7 +32,7 @@ public:
     ::android::widget::TabHost_OnTabChangeListener& operator=(const ::android::widget::TabHost_OnTabChangeListener& x) {obj = x.obj; return *this;}
     ::android::widget::TabHost_OnTabChangeListener& operator=(::android::widget::TabHost_OnTabChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onTabChanged(const ::java::lang::String&) const ;
+    void onTabChanged(const ::java::lang::String&) const;
 
 };
 }

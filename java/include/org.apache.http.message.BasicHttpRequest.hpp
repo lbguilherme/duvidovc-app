@@ -43,8 +43,8 @@ public:
     BasicHttpRequest(const ::java::lang::String&, const ::java::lang::String&);
     BasicHttpRequest(const ::java::lang::String&, const ::java::lang::String&, const ::org::apache::http::ProtocolVersion&);
     BasicHttpRequest(const ::org::apache::http::RequestLine&);
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    ::org::apache::http::RequestLine getRequestLine() const ;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    ::org::apache::http::RequestLine getRequestLine() const;
 
 };
 }

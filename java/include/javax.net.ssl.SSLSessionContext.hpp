@@ -34,12 +34,12 @@ public:
     ::javax::net::ssl::SSLSessionContext& operator=(const ::javax::net::ssl::SSLSessionContext& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::SSLSessionContext& operator=(::javax::net::ssl::SSLSessionContext&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Enumeration getIds() const ;
-    ::javax::net::ssl::SSLSession getSession(const std::vector< int8_t>&) const ;
-    int32_t getSessionCacheSize() const ;
-    int32_t getSessionTimeout() const ;
-    void setSessionCacheSize(int32_t) const ;
-    void setSessionTimeout(int32_t) const ;
+    ::java::util::Enumeration getIds() const;
+    ::javax::net::ssl::SSLSession getSession(const std::vector< int8_t>&) const;
+    int32_t getSessionCacheSize() const;
+    int32_t getSessionTimeout() const;
+    void setSessionCacheSize(int32_t) const;
+    void setSessionTimeout(int32_t) const;
 
 };
 }

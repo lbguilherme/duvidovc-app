@@ -32,8 +32,8 @@ public:
     ::android::widget::AbsListView_OnScrollListener& operator=(const ::android::widget::AbsListView_OnScrollListener& x) {obj = x.obj; return *this;}
     ::android::widget::AbsListView_OnScrollListener& operator=(::android::widget::AbsListView_OnScrollListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onScrollStateChanged(const ::android::widget::AbsListView&, int32_t) const ;
-    void onScroll(const ::android::widget::AbsListView&, int32_t, int32_t, int32_t) const ;
+    void onScrollStateChanged(const ::android::widget::AbsListView&, int32_t) const;
+    void onScroll(const ::android::widget::AbsListView&, int32_t, int32_t, int32_t) const;
 
 };
 }

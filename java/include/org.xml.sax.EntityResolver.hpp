@@ -34,7 +34,7 @@ public:
     ::org::xml::sax::EntityResolver& operator=(const ::org::xml::sax::EntityResolver& x) {obj = x.obj; return *this;}
     ::org::xml::sax::EntityResolver& operator=(::org::xml::sax::EntityResolver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

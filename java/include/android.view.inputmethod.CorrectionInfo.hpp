@@ -38,12 +38,12 @@ public:
     ::android::view::inputmethod::CorrectionInfo& operator=(::android::view::inputmethod::CorrectionInfo&& x) {obj = std::move(x.obj); return *this;}
     
     CorrectionInfo(int32_t, const ::java::lang::CharSequence&, const ::java::lang::CharSequence&);
-    int32_t getOffset() const ;
-    ::java::lang::CharSequence getOldText() const ;
-    ::java::lang::CharSequence getNewText() const ;
-    ::java::lang::String toString() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    int32_t getOffset() const;
+    ::java::lang::CharSequence getOldText() const;
+    ::java::lang::CharSequence getNewText() const;
+    ::java::lang::String toString() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

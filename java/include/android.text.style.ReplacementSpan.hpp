@@ -40,10 +40,10 @@ public:
     ::android::text::style::ReplacementSpan& operator=(::android::text::style::ReplacementSpan&& x) {obj = std::move(x.obj); return *this;}
     
     ReplacementSpan();
-    int32_t getSize(const ::android::graphics::Paint&, const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const ;
-    void draw(const ::android::graphics::Canvas&, const ::java::lang::CharSequence&, int32_t, int32_t, float, int32_t, int32_t, int32_t, const ::android::graphics::Paint&) const ;
-    void updateMeasureState(const ::android::text::TextPaint&) const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    int32_t getSize(const ::android::graphics::Paint&, const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const;
+    void draw(const ::android::graphics::Canvas&, const ::java::lang::CharSequence&, int32_t, int32_t, float, int32_t, int32_t, int32_t, const ::android::graphics::Paint&) const;
+    void updateMeasureState(const ::android::text::TextPaint&) const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
 
 };
 }

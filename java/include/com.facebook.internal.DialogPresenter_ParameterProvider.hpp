@@ -33,8 +33,8 @@ public:
     ::com::facebook::internal::DialogPresenter_ParameterProvider& operator=(const ::com::facebook::internal::DialogPresenter_ParameterProvider& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::DialogPresenter_ParameterProvider& operator=(::com::facebook::internal::DialogPresenter_ParameterProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::Bundle getParameters() const ;
-    ::android::os::Bundle getLegacyParameters() const ;
+    ::android::os::Bundle getParameters() const;
+    ::android::os::Bundle getLegacyParameters() const;
 
 };
 }

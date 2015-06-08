@@ -39,9 +39,9 @@ public:
     MultiAutoCompleteTextView(const ::android::content::Context&);
     MultiAutoCompleteTextView(const ::android::content::Context&, const ::android::util::AttributeSet&);
     MultiAutoCompleteTextView(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setTokenizer(const ::android::widget::MultiAutoCompleteTextView_Tokenizer&) const ;
-    bool enoughToFilter() const ;
-    void performValidation() const ;
+    void setTokenizer(const ::android::widget::MultiAutoCompleteTextView_Tokenizer&) const;
+    bool enoughToFilter() const;
+    void performValidation() const;
 
 };
 }

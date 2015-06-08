@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::BasicExpiresHandler& operator=(::org::apache::http::impl::cookie::BasicExpiresHandler&& x) {obj = std::move(x.obj); return *this;}
     
     BasicExpiresHandler(const std::vector< ::java::lang::String>&);
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
 
 };
 }

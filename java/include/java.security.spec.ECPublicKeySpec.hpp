@@ -37,8 +37,8 @@ public:
     ::java::security::spec::ECPublicKeySpec& operator=(::java::security::spec::ECPublicKeySpec&& x) {obj = std::move(x.obj); return *this;}
     
     ECPublicKeySpec(const ::java::security::spec::ECPoint&, const ::java::security::spec::ECParameterSpec&);
-    ::java::security::spec::ECParameterSpec getParams() const ;
-    ::java::security::spec::ECPoint getW() const ;
+    ::java::security::spec::ECParameterSpec getParams() const;
+    ::java::security::spec::ECPoint getW() const;
 
 };
 }

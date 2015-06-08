@@ -31,7 +31,7 @@ public:
     ::android::view::ViewTreeObserver_OnGlobalLayoutListener& operator=(const ::android::view::ViewTreeObserver_OnGlobalLayoutListener& x) {obj = x.obj; return *this;}
     ::android::view::ViewTreeObserver_OnGlobalLayoutListener& operator=(::android::view::ViewTreeObserver_OnGlobalLayoutListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGlobalLayout() const ;
+    void onGlobalLayout() const;
 
 };
 }

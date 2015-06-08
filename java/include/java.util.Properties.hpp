@@ -44,21 +44,21 @@ public:
     ::java::util::Properties& operator=(::java::util::Properties&& x) {obj = std::move(x.obj); return *this;}
     
     Properties();
-    ::java::lang::String getProperty(const ::java::lang::String&) const ;
-    ::java::lang::String getProperty(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void list(const ::java::io::PrintStream&) const ;
-    void list(const ::java::io::PrintWriter&) const ;
-    void load(const ::java::io::InputStream&) const ;
-    void load(const ::java::io::Reader&) const ;
-    ::java::util::Enumeration propertyNames() const ;
-    ::java::util::Set stringPropertyNames() const ;
-    void save(const ::java::io::OutputStream&, const ::java::lang::String&) const ;
-    ::java::lang::Object setProperty(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void store(const ::java::io::OutputStream&, const ::java::lang::String&) const ;
-    void store(const ::java::io::Writer&, const ::java::lang::String&) const ;
-    void loadFromXML(const ::java::io::InputStream&) const ;
-    void storeToXML(const ::java::io::OutputStream&, const ::java::lang::String&) const ;
-    void storeToXML(const ::java::io::OutputStream&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::lang::String getProperty(const ::java::lang::String&) const;
+    ::java::lang::String getProperty(const ::java::lang::String&, const ::java::lang::String&) const;
+    void list(const ::java::io::PrintStream&) const;
+    void list(const ::java::io::PrintWriter&) const;
+    void load(const ::java::io::InputStream&) const;
+    void load(const ::java::io::Reader&) const;
+    ::java::util::Enumeration propertyNames() const;
+    ::java::util::Set stringPropertyNames() const;
+    void save(const ::java::io::OutputStream&, const ::java::lang::String&) const;
+    ::java::lang::Object setProperty(const ::java::lang::String&, const ::java::lang::String&) const;
+    void store(const ::java::io::OutputStream&, const ::java::lang::String&) const;
+    void store(const ::java::io::Writer&, const ::java::lang::String&) const;
+    void loadFromXML(const ::java::io::InputStream&) const;
+    void storeToXML(const ::java::io::OutputStream&, const ::java::lang::String&) const;
+    void storeToXML(const ::java::io::OutputStream&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

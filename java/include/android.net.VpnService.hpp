@@ -40,11 +40,11 @@ public:
     
     VpnService();
     static ::android::content::Intent prepare(const ::android::content::Context&);
-    bool protect(int32_t) const ;
-    bool protect(const ::java::net::Socket&) const ;
-    bool protect(const ::java::net::DatagramSocket&) const ;
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    void onRevoke() const ;
+    bool protect(int32_t) const;
+    bool protect(const ::java::net::Socket&) const;
+    bool protect(const ::java::net::DatagramSocket&) const;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    void onRevoke() const;
 
 };
 }

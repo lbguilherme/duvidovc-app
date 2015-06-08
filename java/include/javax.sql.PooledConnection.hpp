@@ -34,12 +34,12 @@ public:
     ::javax::sql::PooledConnection& operator=(const ::javax::sql::PooledConnection& x) {obj = x.obj; return *this;}
     ::javax::sql::PooledConnection& operator=(::javax::sql::PooledConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    void addConnectionEventListener(const ::javax::sql::ConnectionEventListener&) const ;
-    void close() const ;
-    ::java::sql::Connection getConnection() const ;
-    void removeConnectionEventListener(const ::javax::sql::ConnectionEventListener&) const ;
-    void addStatementEventListener(const ::javax::sql::StatementEventListener&) const ;
-    void removeStatementEventListener(const ::javax::sql::StatementEventListener&) const ;
+    void addConnectionEventListener(const ::javax::sql::ConnectionEventListener&) const;
+    void close() const;
+    ::java::sql::Connection getConnection() const;
+    void removeConnectionEventListener(const ::javax::sql::ConnectionEventListener&) const;
+    void addStatementEventListener(const ::javax::sql::StatementEventListener&) const;
+    void removeStatementEventListener(const ::javax::sql::StatementEventListener&) const;
 
 };
 }

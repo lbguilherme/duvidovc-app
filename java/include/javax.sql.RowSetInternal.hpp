@@ -35,11 +35,11 @@ public:
     ::javax::sql::RowSetInternal& operator=(const ::javax::sql::RowSetInternal& x) {obj = x.obj; return *this;}
     ::javax::sql::RowSetInternal& operator=(::javax::sql::RowSetInternal&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::sql::Connection getConnection() const ;
-    ::java::sql::ResultSet getOriginal() const ;
-    ::java::sql::ResultSet getOriginalRow() const ;
-    std::vector< ::java::lang::Object> getParams() const ;
-    void setMetaData(const ::javax::sql::RowSetMetaData&) const ;
+    ::java::sql::Connection getConnection() const;
+    ::java::sql::ResultSet getOriginal() const;
+    ::java::sql::ResultSet getOriginalRow() const;
+    std::vector< ::java::lang::Object> getParams() const;
+    void setMetaData(const ::javax::sql::RowSetMetaData&) const;
 
 };
 }

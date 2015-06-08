@@ -38,14 +38,14 @@ public:
     ::java::security::cert::CertPath& operator=(const ::java::security::cert::CertPath& x) {obj = x.obj; return *this;}
     ::java::security::cert::CertPath& operator=(::java::security::cert::CertPath&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getType() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    ::java::util::List getCertificates() const ;
-    std::vector< int8_t> getEncoded() const ;
-    std::vector< int8_t> getEncoded(const ::java::lang::String&) const ;
-    ::java::util::Iterator getEncodings() const ;
+    ::java::lang::String getType() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    ::java::util::List getCertificates() const;
+    std::vector< int8_t> getEncoded() const;
+    std::vector< int8_t> getEncoded(const ::java::lang::String&) const;
+    ::java::util::Iterator getEncodings() const;
 
 };
 }

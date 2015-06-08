@@ -46,19 +46,19 @@ public:
     ::org::apache::http::conn::ManagedClientConnection& operator=(const ::org::apache::http::conn::ManagedClientConnection& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::ManagedClientConnection& operator=(::org::apache::http::conn::ManagedClientConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isSecure() const ;
-    ::org::apache::http::conn::routing::HttpRoute getRoute() const ;
-    ::javax::net::ssl::SSLSession getSSLSession() const ;
-    void open(const ::org::apache::http::conn::routing::HttpRoute&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const ;
-    void tunnelTarget(bool, const ::org::apache::http::params::HttpParams&) const ;
-    void tunnelProxy(const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const ;
-    void layerProtocol(const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const ;
-    void markReusable() const ;
-    void unmarkReusable() const ;
-    bool isMarkedReusable() const ;
-    void setState(const ::java::lang::Object&) const ;
-    ::java::lang::Object getState() const ;
-    void setIdleDuration(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    bool isSecure() const;
+    ::org::apache::http::conn::routing::HttpRoute getRoute() const;
+    ::javax::net::ssl::SSLSession getSSLSession() const;
+    void open(const ::org::apache::http::conn::routing::HttpRoute&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const;
+    void tunnelTarget(bool, const ::org::apache::http::params::HttpParams&) const;
+    void tunnelProxy(const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const;
+    void layerProtocol(const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const;
+    void markReusable() const;
+    void unmarkReusable() const;
+    bool isMarkedReusable() const;
+    void setState(const ::java::lang::Object&) const;
+    ::java::lang::Object getState() const;
+    void setIdleDuration(int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

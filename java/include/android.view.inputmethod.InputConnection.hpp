@@ -40,27 +40,27 @@ public:
     ::android::view::inputmethod::InputConnection& operator=(const ::android::view::inputmethod::InputConnection& x) {obj = x.obj; return *this;}
     ::android::view::inputmethod::InputConnection& operator=(::android::view::inputmethod::InputConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::CharSequence getTextBeforeCursor(int32_t, int32_t) const ;
-    ::java::lang::CharSequence getTextAfterCursor(int32_t, int32_t) const ;
-    ::java::lang::CharSequence getSelectedText(int32_t) const ;
-    int32_t getCursorCapsMode(int32_t) const ;
-    ::android::view::inputmethod::ExtractedText getExtractedText(const ::android::view::inputmethod::ExtractedTextRequest&, int32_t) const ;
-    bool deleteSurroundingText(int32_t, int32_t) const ;
-    bool setComposingText(const ::java::lang::CharSequence&, int32_t) const ;
-    bool setComposingRegion(int32_t, int32_t) const ;
-    bool finishComposingText() const ;
-    bool commitText(const ::java::lang::CharSequence&, int32_t) const ;
-    bool commitCompletion(const ::android::view::inputmethod::CompletionInfo&) const ;
-    bool commitCorrection(const ::android::view::inputmethod::CorrectionInfo&) const ;
-    bool setSelection(int32_t, int32_t) const ;
-    bool performEditorAction(int32_t) const ;
-    bool performContextMenuAction(int32_t) const ;
-    bool beginBatchEdit() const ;
-    bool endBatchEdit() const ;
-    bool sendKeyEvent(const ::android::view::KeyEvent&) const ;
-    bool clearMetaKeyStates(int32_t) const ;
-    bool reportFullscreenMode(bool) const ;
-    bool performPrivateCommand(const ::java::lang::String&, const ::android::os::Bundle&) const ;
+    ::java::lang::CharSequence getTextBeforeCursor(int32_t, int32_t) const;
+    ::java::lang::CharSequence getTextAfterCursor(int32_t, int32_t) const;
+    ::java::lang::CharSequence getSelectedText(int32_t) const;
+    int32_t getCursorCapsMode(int32_t) const;
+    ::android::view::inputmethod::ExtractedText getExtractedText(const ::android::view::inputmethod::ExtractedTextRequest&, int32_t) const;
+    bool deleteSurroundingText(int32_t, int32_t) const;
+    bool setComposingText(const ::java::lang::CharSequence&, int32_t) const;
+    bool setComposingRegion(int32_t, int32_t) const;
+    bool finishComposingText() const;
+    bool commitText(const ::java::lang::CharSequence&, int32_t) const;
+    bool commitCompletion(const ::android::view::inputmethod::CompletionInfo&) const;
+    bool commitCorrection(const ::android::view::inputmethod::CorrectionInfo&) const;
+    bool setSelection(int32_t, int32_t) const;
+    bool performEditorAction(int32_t) const;
+    bool performContextMenuAction(int32_t) const;
+    bool beginBatchEdit() const;
+    bool endBatchEdit() const;
+    bool sendKeyEvent(const ::android::view::KeyEvent&) const;
+    bool clearMetaKeyStates(int32_t) const;
+    bool reportFullscreenMode(bool) const;
+    bool performPrivateCommand(const ::java::lang::String&, const ::android::os::Bundle&) const;
 
 };
 }

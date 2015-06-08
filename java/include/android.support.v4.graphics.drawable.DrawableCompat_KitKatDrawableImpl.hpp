@@ -37,9 +37,9 @@ public:
     ::android::support::v4::graphics::drawable::DrawableCompat_KitKatDrawableImpl& operator=(const ::android::support::v4::graphics::drawable::DrawableCompat_KitKatDrawableImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::drawable::DrawableCompat_KitKatDrawableImpl& operator=(::android::support::v4::graphics::drawable::DrawableCompat_KitKatDrawableImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setAutoMirrored(const ::android::graphics::drawable::Drawable&, bool) const ;
-    bool isAutoMirrored(const ::android::graphics::drawable::Drawable&) const ;
-    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const ;
+    void setAutoMirrored(const ::android::graphics::drawable::Drawable&, bool) const;
+    bool isAutoMirrored(const ::android::graphics::drawable::Drawable&) const;
+    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const;
 
 };
 }

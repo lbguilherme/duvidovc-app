@@ -39,18 +39,18 @@ public:
     DatagramPacket(const std::vector< int8_t>&, int32_t, const ::java::net::InetAddress&, int32_t);
     DatagramPacket(const std::vector< int8_t>&, int32_t, const ::java::net::SocketAddress&);
     DatagramPacket(const std::vector< int8_t>&, int32_t, int32_t, const ::java::net::SocketAddress&);
-    ::java::net::InetAddress getAddress() const ;
-    std::vector< int8_t> getData() const ;
-    int32_t getLength() const ;
-    int32_t getOffset() const ;
-    int32_t getPort() const ;
-    void setAddress(const ::java::net::InetAddress&) const ;
-    void setData(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void setData(const std::vector< int8_t>&) const ;
-    void setLength(int32_t) const ;
-    void setPort(int32_t) const ;
-    ::java::net::SocketAddress getSocketAddress() const ;
-    void setSocketAddress(const ::java::net::SocketAddress&) const ;
+    ::java::net::InetAddress getAddress() const;
+    std::vector< int8_t> getData() const;
+    int32_t getLength() const;
+    int32_t getOffset() const;
+    int32_t getPort() const;
+    void setAddress(const ::java::net::InetAddress&) const;
+    void setData(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void setData(const std::vector< int8_t>&) const;
+    void setLength(int32_t) const;
+    void setPort(int32_t) const;
+    ::java::net::SocketAddress getSocketAddress() const;
+    void setSocketAddress(const ::java::net::SocketAddress&) const;
 
 };
 }

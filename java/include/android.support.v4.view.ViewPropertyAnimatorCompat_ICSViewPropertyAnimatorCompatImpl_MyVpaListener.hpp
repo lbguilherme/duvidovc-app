@@ -34,9 +34,9 @@ public:
     ::android::support::v4::view::ViewPropertyAnimatorCompat_ICSViewPropertyAnimatorCompatImpl_MyVpaListener& operator=(const ::android::support::v4::view::ViewPropertyAnimatorCompat_ICSViewPropertyAnimatorCompatImpl_MyVpaListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPropertyAnimatorCompat_ICSViewPropertyAnimatorCompatImpl_MyVpaListener& operator=(::android::support::v4::view::ViewPropertyAnimatorCompat_ICSViewPropertyAnimatorCompatImpl_MyVpaListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAnimationStart(const ::android::view::View&) const ;
-    void onAnimationEnd(const ::android::view::View&) const ;
-    void onAnimationCancel(const ::android::view::View&) const ;
+    void onAnimationStart(const ::android::view::View&) const;
+    void onAnimationEnd(const ::android::view::View&) const;
+    void onAnimationCancel(const ::android::view::View&) const;
 
 };
 }

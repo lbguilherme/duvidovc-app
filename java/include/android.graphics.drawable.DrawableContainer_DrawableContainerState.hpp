@@ -36,26 +36,26 @@ public:
     ::android::graphics::drawable::DrawableContainer_DrawableContainerState& operator=(const ::android::graphics::drawable::DrawableContainer_DrawableContainerState& x) {obj = x.obj; return *this;}
     ::android::graphics::drawable::DrawableContainer_DrawableContainerState& operator=(::android::graphics::drawable::DrawableContainer_DrawableContainerState&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getChangingConfigurations() const ;
-    int32_t addChild(const ::android::graphics::drawable::Drawable&) const ;
-    int32_t getChildCount() const ;
-    std::vector< ::android::graphics::drawable::Drawable> getChildren() const ;
-    void setVariablePadding(bool) const ;
-    ::android::graphics::Rect getConstantPadding() const ;
-    void setConstantSize(bool) const ;
-    bool isConstantSize() const ;
-    int32_t getConstantWidth() const ;
-    int32_t getConstantHeight() const ;
-    int32_t getConstantMinimumWidth() const ;
-    int32_t getConstantMinimumHeight() const ;
-    void setEnterFadeDuration(int32_t) const ;
-    int32_t getEnterFadeDuration() const ;
-    void setExitFadeDuration(int32_t) const ;
-    int32_t getExitFadeDuration() const ;
-    int32_t getOpacity() const ;
-    bool isStateful() const ;
-    void growArray(int32_t, int32_t) const ;
-    bool canConstantState() const ;
+    int32_t getChangingConfigurations() const;
+    int32_t addChild(const ::android::graphics::drawable::Drawable&) const;
+    int32_t getChildCount() const;
+    std::vector< ::android::graphics::drawable::Drawable> getChildren() const;
+    void setVariablePadding(bool) const;
+    ::android::graphics::Rect getConstantPadding() const;
+    void setConstantSize(bool) const;
+    bool isConstantSize() const;
+    int32_t getConstantWidth() const;
+    int32_t getConstantHeight() const;
+    int32_t getConstantMinimumWidth() const;
+    int32_t getConstantMinimumHeight() const;
+    void setEnterFadeDuration(int32_t) const;
+    int32_t getEnterFadeDuration() const;
+    void setExitFadeDuration(int32_t) const;
+    int32_t getExitFadeDuration() const;
+    int32_t getOpacity() const;
+    bool isStateful() const;
+    void growArray(int32_t, int32_t) const;
+    bool canConstantState() const;
 
 };
 }

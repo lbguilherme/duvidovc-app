@@ -35,7 +35,7 @@ public:
     ::java::util::prefs::PreferenceChangeListener& operator=(const ::java::util::prefs::PreferenceChangeListener& x) {obj = x.obj; return *this;}
     ::java::util::prefs::PreferenceChangeListener& operator=(::java::util::prefs::PreferenceChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void preferenceChange(const ::java::util::prefs::PreferenceChangeEvent&) const ;
+    void preferenceChange(const ::java::util::prefs::PreferenceChangeEvent&) const;
 
 };
 }

@@ -51,17 +51,17 @@ public:
     static ::com::facebook::appevents::AppEventsLogger newLogger(const ::android::content::Context&, const ::java::lang::String&);
     static ::com::facebook::appevents::AppEventsLogger_FlushBehavior getFlushBehavior();
     static void setFlushBehavior(const ::com::facebook::appevents::AppEventsLogger_FlushBehavior&);
-    void logEvent(const ::java::lang::String&) const ;
-    void logEvent(const ::java::lang::String&, double) const ;
-    void logEvent(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void logEvent(const ::java::lang::String&, double, const ::android::os::Bundle&) const ;
-    void logPurchase(const ::java::math::BigDecimal&, const ::java::util::Currency&) const ;
-    void logPurchase(const ::java::math::BigDecimal&, const ::java::util::Currency&, const ::android::os::Bundle&) const ;
-    void flush() const ;
+    void logEvent(const ::java::lang::String&) const;
+    void logEvent(const ::java::lang::String&, double) const;
+    void logEvent(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void logEvent(const ::java::lang::String&, double, const ::android::os::Bundle&) const;
+    void logPurchase(const ::java::math::BigDecimal&, const ::java::util::Currency&) const;
+    void logPurchase(const ::java::math::BigDecimal&, const ::java::util::Currency&, const ::android::os::Bundle&) const;
+    void flush() const;
     static void onContextStop();
-    bool isValidForAccessToken(const ::com::facebook::AccessToken&) const ;
-    void logSdkEvent(const ::java::lang::String&, const ::java::lang::Double&, const ::android::os::Bundle&) const ;
-    ::java::lang::String getApplicationId() const ;
+    bool isValidForAccessToken(const ::com::facebook::AccessToken&) const;
+    void logSdkEvent(const ::java::lang::String&, const ::java::lang::Double&, const ::android::os::Bundle&) const;
+    ::java::lang::String getApplicationId() const;
     static ::java::lang::String getAnonymousAppDeviceGUID(const ::android::content::Context&);
 
 };

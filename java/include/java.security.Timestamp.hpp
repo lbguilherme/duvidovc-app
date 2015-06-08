@@ -38,11 +38,11 @@ public:
     ::java::security::Timestamp& operator=(::java::security::Timestamp&& x) {obj = std::move(x.obj); return *this;}
     
     Timestamp(const ::java::util::Date&, const ::java::security::cert::CertPath&);
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::security::cert::CertPath getSignerCertPath() const ;
-    ::java::util::Date getTimestamp() const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::security::cert::CertPath getSignerCertPath() const;
+    ::java::util::Date getTimestamp() const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     ::java::lang::EnumConstantNotPresentException& operator=(::java::lang::EnumConstantNotPresentException&& x) {obj = std::move(x.obj); return *this;}
     
     EnumConstantNotPresentException(const ::java::lang::Class&, const ::java::lang::String&);
-    ::java::lang::Class enumType() const ;
-    ::java::lang::String constantName() const ;
+    ::java::lang::Class enumType() const;
+    ::java::lang::String constantName() const;
 
 };
 }

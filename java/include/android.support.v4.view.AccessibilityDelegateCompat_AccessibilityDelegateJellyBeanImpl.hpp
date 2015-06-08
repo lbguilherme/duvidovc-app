@@ -40,9 +40,9 @@ public:
     ::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateJellyBeanImpl& operator=(const ::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateJellyBeanImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateJellyBeanImpl& operator=(::android::support::v4::view::AccessibilityDelegateCompat_AccessibilityDelegateJellyBeanImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object newAccessiblityDelegateBridge(const ::android::support::v4::view::AccessibilityDelegateCompat&) const ;
-    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::java::lang::Object&, const ::android::view::View&) const ;
-    bool performAccessibilityAction(const ::java::lang::Object&, const ::android::view::View&, int32_t, const ::android::os::Bundle&) const ;
+    ::java::lang::Object newAccessiblityDelegateBridge(const ::android::support::v4::view::AccessibilityDelegateCompat&) const;
+    ::android::support::v4::view::accessibility::AccessibilityNodeProviderCompat getAccessibilityNodeProvider(const ::java::lang::Object&, const ::android::view::View&) const;
+    bool performAccessibilityAction(const ::java::lang::Object&, const ::android::view::View&, int32_t, const ::android::os::Bundle&) const;
 
 };
 }

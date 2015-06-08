@@ -32,8 +32,8 @@ public:
     ::android::bluetooth::BluetoothProfile_ServiceListener& operator=(const ::android::bluetooth::BluetoothProfile_ServiceListener& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothProfile_ServiceListener& operator=(::android::bluetooth::BluetoothProfile_ServiceListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onServiceConnected(int32_t, const ::android::bluetooth::BluetoothProfile&) const ;
-    void onServiceDisconnected(int32_t) const ;
+    void onServiceConnected(int32_t, const ::android::bluetooth::BluetoothProfile&) const;
+    void onServiceDisconnected(int32_t) const;
 
 };
 }

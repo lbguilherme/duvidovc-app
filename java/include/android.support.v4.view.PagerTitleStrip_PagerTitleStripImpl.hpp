@@ -34,7 +34,7 @@ public:
     ::android::support::v4::view::PagerTitleStrip_PagerTitleStripImpl& operator=(const ::android::support::v4::view::PagerTitleStrip_PagerTitleStripImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::PagerTitleStrip_PagerTitleStripImpl& operator=(::android::support::v4::view::PagerTitleStrip_PagerTitleStripImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setSingleLineAllCaps(const ::android::widget::TextView&) const ;
+    void setSingleLineAllCaps(const ::android::widget::TextView&) const;
 
 };
 }

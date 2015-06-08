@@ -44,11 +44,11 @@ public:
     FileOutputStream(const ::java::io::FileDescriptor&);
     FileOutputStream(const ::java::lang::String&);
     FileOutputStream(const ::java::lang::String&, bool);
-    void close() const ;
-    ::java::nio::channels::FileChannel getChannel() const ;
-    ::java::io::FileDescriptor getFD() const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
+    void close() const;
+    ::java::nio::channels::FileChannel getChannel() const;
+    ::java::io::FileDescriptor getFD() const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
 
 };
 }

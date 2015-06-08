@@ -38,11 +38,11 @@ public:
     
     DataTruncation(int32_t, bool, bool, int32_t, int32_t);
     DataTruncation(int32_t, bool, bool, int32_t, int32_t, const ::java::lang::Throwable&);
-    int32_t getDataSize() const ;
-    int32_t getIndex() const ;
-    bool getParameter() const ;
-    bool getRead() const ;
-    int32_t getTransferSize() const ;
+    int32_t getDataSize() const;
+    int32_t getIndex() const;
+    bool getParameter() const;
+    bool getRead() const;
+    int32_t getTransferSize() const;
 
 };
 }

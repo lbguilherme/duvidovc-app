@@ -44,9 +44,9 @@ public:
     
     DrawableMarginSpan(const ::android::graphics::drawable::Drawable&);
     DrawableMarginSpan(const ::android::graphics::drawable::Drawable&, int32_t);
-    int32_t getLeadingMargin(bool) const ;
-    void drawLeadingMargin(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, bool, const ::android::text::Layout&) const ;
-    void chooseHeight(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const ;
+    int32_t getLeadingMargin(bool) const;
+    void drawLeadingMargin(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, bool, const ::android::text::Layout&) const;
+    void chooseHeight(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t, int32_t, const ::android::graphics::Paint_FontMetricsInt&) const;
 
 };
 }

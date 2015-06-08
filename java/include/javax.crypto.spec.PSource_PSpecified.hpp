@@ -35,7 +35,7 @@ public:
     ::javax::crypto::spec::PSource_PSpecified& operator=(::javax::crypto::spec::PSource_PSpecified&& x) {obj = std::move(x.obj); return *this;}
     
     PSource_PSpecified(const std::vector< int8_t>&);
-    std::vector< int8_t> getValue() const ;
+    std::vector< int8_t> getValue() const;
 
 };
 }

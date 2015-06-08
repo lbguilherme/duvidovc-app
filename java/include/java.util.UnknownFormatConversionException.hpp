@@ -35,8 +35,8 @@ public:
     ::java::util::UnknownFormatConversionException& operator=(::java::util::UnknownFormatConversionException&& x) {obj = std::move(x.obj); return *this;}
     
     UnknownFormatConversionException(const ::java::lang::String&);
-    ::java::lang::String getConversion() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getConversion() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

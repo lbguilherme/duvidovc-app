@@ -42,16 +42,16 @@ public:
     ::org::apache::http::client::HttpClient& operator=(const ::org::apache::http::client::HttpClient& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::HttpClient& operator=(::org::apache::http::client::HttpClient&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::params::HttpParams getParams() const ;
-    ::org::apache::http::conn::ClientConnectionManager getConnectionManager() const ;
-    ::org::apache::http::HttpResponse execute(const ::org::apache::http::client::methods::HttpUriRequest&) const ;
-    ::org::apache::http::HttpResponse execute(const ::org::apache::http::client::methods::HttpUriRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&) const ;
-    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::java::lang::Object execute(const ::org::apache::http::client::methods::HttpUriRequest&, const ::org::apache::http::client::ResponseHandler&) const ;
-    ::java::lang::Object execute(const ::org::apache::http::client::methods::HttpUriRequest&, const ::org::apache::http::client::ResponseHandler&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::java::lang::Object execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::client::ResponseHandler&) const ;
-    ::java::lang::Object execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::client::ResponseHandler&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::params::HttpParams getParams() const;
+    ::org::apache::http::conn::ClientConnectionManager getConnectionManager() const;
+    ::org::apache::http::HttpResponse execute(const ::org::apache::http::client::methods::HttpUriRequest&) const;
+    ::org::apache::http::HttpResponse execute(const ::org::apache::http::client::methods::HttpUriRequest&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&) const;
+    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::java::lang::Object execute(const ::org::apache::http::client::methods::HttpUriRequest&, const ::org::apache::http::client::ResponseHandler&) const;
+    ::java::lang::Object execute(const ::org::apache::http::client::methods::HttpUriRequest&, const ::org::apache::http::client::ResponseHandler&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::java::lang::Object execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::client::ResponseHandler&) const;
+    ::java::lang::Object execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::client::ResponseHandler&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

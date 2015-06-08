@@ -41,14 +41,14 @@ public:
     ::javax::net::ssl::HandshakeCompletedEvent& operator=(::javax::net::ssl::HandshakeCompletedEvent&& x) {obj = std::move(x.obj); return *this;}
     
     HandshakeCompletedEvent(const ::javax::net::ssl::SSLSocket&, const ::javax::net::ssl::SSLSession&);
-    ::javax::net::ssl::SSLSession getSession() const ;
-    ::java::lang::String getCipherSuite() const ;
-    std::vector< ::java::security::cert::Certificate> getLocalCertificates() const ;
-    std::vector< ::java::security::cert::Certificate> getPeerCertificates() const ;
-    std::vector< ::javax::security::cert::X509Certificate> getPeerCertificateChain() const ;
-    ::java::security::Principal getPeerPrincipal() const ;
-    ::java::security::Principal getLocalPrincipal() const ;
-    ::javax::net::ssl::SSLSocket getSocket() const ;
+    ::javax::net::ssl::SSLSession getSession() const;
+    ::java::lang::String getCipherSuite() const;
+    std::vector< ::java::security::cert::Certificate> getLocalCertificates() const;
+    std::vector< ::java::security::cert::Certificate> getPeerCertificates() const;
+    std::vector< ::javax::security::cert::X509Certificate> getPeerCertificateChain() const;
+    ::java::security::Principal getPeerPrincipal() const;
+    ::java::security::Principal getLocalPrincipal() const;
+    ::javax::net::ssl::SSLSocket getSocket() const;
 
 };
 }

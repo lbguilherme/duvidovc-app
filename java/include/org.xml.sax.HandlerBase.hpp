@@ -46,20 +46,20 @@ public:
     ::org::xml::sax::HandlerBase& operator=(::org::xml::sax::HandlerBase&& x) {obj = std::move(x.obj); return *this;}
     
     HandlerBase();
-    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void notationDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void unparsedEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setDocumentLocator(const ::org::xml::sax::Locator&) const ;
-    void startDocument() const ;
-    void endDocument() const ;
-    void startElement(const ::java::lang::String&, const ::org::xml::sax::AttributeList&) const ;
-    void endElement(const ::java::lang::String&) const ;
-    void characters(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void ignorableWhitespace(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void processingInstruction(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void warning(const ::org::xml::sax::SAXParseException&) const ;
-    void error(const ::org::xml::sax::SAXParseException&) const ;
-    void fatalError(const ::org::xml::sax::SAXParseException&) const ;
+    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&) const;
+    void notationDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void unparsedEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void setDocumentLocator(const ::org::xml::sax::Locator&) const;
+    void startDocument() const;
+    void endDocument() const;
+    void startElement(const ::java::lang::String&, const ::org::xml::sax::AttributeList&) const;
+    void endElement(const ::java::lang::String&) const;
+    void characters(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void ignorableWhitespace(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void processingInstruction(const ::java::lang::String&, const ::java::lang::String&) const;
+    void warning(const ::org::xml::sax::SAXParseException&) const;
+    void error(const ::org::xml::sax::SAXParseException&) const;
+    void fatalError(const ::org::xml::sax::SAXParseException&) const;
 
 };
 }

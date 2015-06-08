@@ -33,11 +33,11 @@ public:
     ::android::net::wifi::WifiManager_MulticastLock& operator=(const ::android::net::wifi::WifiManager_MulticastLock& x) {obj = x.obj; return *this;}
     ::android::net::wifi::WifiManager_MulticastLock& operator=(::android::net::wifi::WifiManager_MulticastLock&& x) {obj = std::move(x.obj); return *this;}
     
-    void acquire() const ;
-    void release() const ;
-    void setReferenceCounted(bool) const ;
-    bool isHeld() const ;
-    ::java::lang::String toString() const ;
+    void acquire() const;
+    void release() const;
+    void setReferenceCounted(bool) const;
+    bool isHeld() const;
+    ::java::lang::String toString() const;
 
 };
 }

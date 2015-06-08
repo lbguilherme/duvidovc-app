@@ -44,30 +44,30 @@ public:
     ::android::webkit::WebChromeClient& operator=(::android::webkit::WebChromeClient&& x) {obj = std::move(x.obj); return *this;}
     
     WebChromeClient();
-    void onProgressChanged(const ::android::webkit::WebView&, int32_t) const ;
-    void onReceivedTitle(const ::android::webkit::WebView&, const ::java::lang::String&) const ;
-    void onReceivedIcon(const ::android::webkit::WebView&, const ::android::graphics::Bitmap&) const ;
-    void onReceivedTouchIconUrl(const ::android::webkit::WebView&, const ::java::lang::String&, bool) const ;
-    void onShowCustomView(const ::android::view::View&, const ::android::webkit::WebChromeClient_CustomViewCallback&) const ;
-    void onShowCustomView(const ::android::view::View&, int32_t, const ::android::webkit::WebChromeClient_CustomViewCallback&) const ;
-    void onHideCustomView() const ;
-    bool onCreateWindow(const ::android::webkit::WebView&, bool, bool, const ::android::os::Message&) const ;
-    void onRequestFocus(const ::android::webkit::WebView&) const ;
-    void onCloseWindow(const ::android::webkit::WebView&) const ;
-    bool onJsAlert(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsResult&) const ;
-    bool onJsConfirm(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsResult&) const ;
-    bool onJsPrompt(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsPromptResult&) const ;
-    bool onJsBeforeUnload(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsResult&) const ;
-    void onExceededDatabaseQuota(const ::java::lang::String&, const ::java::lang::String&, int64_t, int64_t, int64_t, const ::android::webkit::WebStorage_QuotaUpdater&) const ;
-    void onReachedMaxAppCacheSize(int64_t, int64_t, const ::android::webkit::WebStorage_QuotaUpdater&) const ;
-    void onGeolocationPermissionsShowPrompt(const ::java::lang::String&, const ::android::webkit::GeolocationPermissions_Callback&) const ;
-    void onGeolocationPermissionsHidePrompt() const ;
-    bool onJsTimeout() const ;
-    void onConsoleMessage(const ::java::lang::String&, int32_t, const ::java::lang::String&) const ;
-    bool onConsoleMessage(const ::android::webkit::ConsoleMessage&) const ;
-    ::android::graphics::Bitmap getDefaultVideoPoster() const ;
-    ::android::view::View getVideoLoadingProgressView() const ;
-    void getVisitedHistory(const ::android::webkit::ValueCallback&) const ;
+    void onProgressChanged(const ::android::webkit::WebView&, int32_t) const;
+    void onReceivedTitle(const ::android::webkit::WebView&, const ::java::lang::String&) const;
+    void onReceivedIcon(const ::android::webkit::WebView&, const ::android::graphics::Bitmap&) const;
+    void onReceivedTouchIconUrl(const ::android::webkit::WebView&, const ::java::lang::String&, bool) const;
+    void onShowCustomView(const ::android::view::View&, const ::android::webkit::WebChromeClient_CustomViewCallback&) const;
+    void onShowCustomView(const ::android::view::View&, int32_t, const ::android::webkit::WebChromeClient_CustomViewCallback&) const;
+    void onHideCustomView() const;
+    bool onCreateWindow(const ::android::webkit::WebView&, bool, bool, const ::android::os::Message&) const;
+    void onRequestFocus(const ::android::webkit::WebView&) const;
+    void onCloseWindow(const ::android::webkit::WebView&) const;
+    bool onJsAlert(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsResult&) const;
+    bool onJsConfirm(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsResult&) const;
+    bool onJsPrompt(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsPromptResult&) const;
+    bool onJsBeforeUnload(const ::android::webkit::WebView&, const ::java::lang::String&, const ::java::lang::String&, const ::android::webkit::JsResult&) const;
+    void onExceededDatabaseQuota(const ::java::lang::String&, const ::java::lang::String&, int64_t, int64_t, int64_t, const ::android::webkit::WebStorage_QuotaUpdater&) const;
+    void onReachedMaxAppCacheSize(int64_t, int64_t, const ::android::webkit::WebStorage_QuotaUpdater&) const;
+    void onGeolocationPermissionsShowPrompt(const ::java::lang::String&, const ::android::webkit::GeolocationPermissions_Callback&) const;
+    void onGeolocationPermissionsHidePrompt() const;
+    bool onJsTimeout() const;
+    void onConsoleMessage(const ::java::lang::String&, int32_t, const ::java::lang::String&) const;
+    bool onConsoleMessage(const ::android::webkit::ConsoleMessage&) const;
+    ::android::graphics::Bitmap getDefaultVideoPoster() const;
+    ::android::view::View getVideoLoadingProgressView() const;
+    void getVisitedHistory(const ::android::webkit::ValueCallback&) const;
 
 };
 }

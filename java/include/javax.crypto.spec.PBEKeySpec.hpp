@@ -37,11 +37,11 @@ public:
     PBEKeySpec(const std::vector< uint16_t>&);
     PBEKeySpec(const std::vector< uint16_t>&, const std::vector< int8_t>&, int32_t, int32_t);
     PBEKeySpec(const std::vector< uint16_t>&, const std::vector< int8_t>&, int32_t);
-    void clearPassword() const ;
-    std::vector< uint16_t> getPassword() const ;
-    std::vector< int8_t> getSalt() const ;
-    int32_t getIterationCount() const ;
-    int32_t getKeyLength() const ;
+    void clearPassword() const;
+    std::vector< uint16_t> getPassword() const;
+    std::vector< int8_t> getSalt() const;
+    int32_t getIterationCount() const;
+    int32_t getKeyLength() const;
 
 };
 }

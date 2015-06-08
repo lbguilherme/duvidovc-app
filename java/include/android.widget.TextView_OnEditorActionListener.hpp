@@ -33,7 +33,7 @@ public:
     ::android::widget::TextView_OnEditorActionListener& operator=(const ::android::widget::TextView_OnEditorActionListener& x) {obj = x.obj; return *this;}
     ::android::widget::TextView_OnEditorActionListener& operator=(::android::widget::TextView_OnEditorActionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onEditorAction(const ::android::widget::TextView&, int32_t, const ::android::view::KeyEvent&) const ;
+    bool onEditorAction(const ::android::widget::TextView&, int32_t, const ::android::view::KeyEvent&) const;
 
 };
 }

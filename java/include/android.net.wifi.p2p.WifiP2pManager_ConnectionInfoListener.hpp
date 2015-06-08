@@ -34,7 +34,7 @@ public:
     ::android::net::wifi::p2p::WifiP2pManager_ConnectionInfoListener& operator=(const ::android::net::wifi::p2p::WifiP2pManager_ConnectionInfoListener& x) {obj = x.obj; return *this;}
     ::android::net::wifi::p2p::WifiP2pManager_ConnectionInfoListener& operator=(::android::net::wifi::p2p::WifiP2pManager_ConnectionInfoListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onConnectionInfoAvailable(const ::android::net::wifi::p2p::WifiP2pInfo&) const ;
+    void onConnectionInfoAvailable(const ::android::net::wifi::p2p::WifiP2pInfo&) const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::android::text::method::TransformationMethod& operator=(const ::android::text::method::TransformationMethod& x) {obj = x.obj; return *this;}
     ::android::text::method::TransformationMethod& operator=(::android::text::method::TransformationMethod&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::CharSequence getTransformation(const ::java::lang::CharSequence&, const ::android::view::View&) const ;
-    void onFocusChanged(const ::android::view::View&, const ::java::lang::CharSequence&, bool, int32_t, const ::android::graphics::Rect&) const ;
+    ::java::lang::CharSequence getTransformation(const ::java::lang::CharSequence&, const ::android::view::View&) const;
+    void onFocusChanged(const ::android::view::View&, const ::java::lang::CharSequence&, bool, int32_t, const ::android::graphics::Rect&) const;
 
 };
 }

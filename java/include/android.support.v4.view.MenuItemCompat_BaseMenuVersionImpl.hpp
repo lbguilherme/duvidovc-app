@@ -38,14 +38,14 @@ public:
     ::android::support::v4::view::MenuItemCompat_BaseMenuVersionImpl& operator=(const ::android::support::v4::view::MenuItemCompat_BaseMenuVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MenuItemCompat_BaseMenuVersionImpl& operator=(::android::support::v4::view::MenuItemCompat_BaseMenuVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setShowAsAction(const ::android::view::MenuItem&, int32_t) const ;
-    ::android::view::MenuItem setActionView(const ::android::view::MenuItem&, const ::android::view::View&) const ;
-    ::android::view::MenuItem setActionView(const ::android::view::MenuItem&, int32_t) const ;
-    ::android::view::View getActionView(const ::android::view::MenuItem&) const ;
-    bool expandActionView(const ::android::view::MenuItem&) const ;
-    bool collapseActionView(const ::android::view::MenuItem&) const ;
-    bool isActionViewExpanded(const ::android::view::MenuItem&) const ;
-    ::android::view::MenuItem setOnActionExpandListener(const ::android::view::MenuItem&, const ::android::support::v4::view::MenuItemCompat_OnActionExpandListener&) const ;
+    void setShowAsAction(const ::android::view::MenuItem&, int32_t) const;
+    ::android::view::MenuItem setActionView(const ::android::view::MenuItem&, const ::android::view::View&) const;
+    ::android::view::MenuItem setActionView(const ::android::view::MenuItem&, int32_t) const;
+    ::android::view::View getActionView(const ::android::view::MenuItem&) const;
+    bool expandActionView(const ::android::view::MenuItem&) const;
+    bool collapseActionView(const ::android::view::MenuItem&) const;
+    bool isActionViewExpanded(const ::android::view::MenuItem&) const;
+    ::android::view::MenuItem setOnActionExpandListener(const ::android::view::MenuItem&, const ::android::support::v4::view::MenuItemCompat_OnActionExpandListener&) const;
 
 };
 }

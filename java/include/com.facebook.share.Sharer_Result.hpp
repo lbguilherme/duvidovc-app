@@ -34,7 +34,7 @@ public:
     ::com::facebook::share::Sharer_Result& operator=(::com::facebook::share::Sharer_Result&& x) {obj = std::move(x.obj); return *this;}
     
     Sharer_Result(const ::java::lang::String&);
-    ::java::lang::String getPostId() const ;
+    ::java::lang::String getPostId() const;
 
 };
 }

@@ -39,8 +39,8 @@ public:
     ::org::apache::http::impl::DefaultHttpClientConnection& operator=(::org::apache::http::impl::DefaultHttpClientConnection&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultHttpClientConnection();
-    void bind(const ::java::net::Socket&, const ::org::apache::http::params::HttpParams&) const ;
-    ::java::lang::String toString() const ;
+    void bind(const ::java::net::Socket&, const ::org::apache::http::params::HttpParams&) const;
+    ::java::lang::String toString() const;
 
 };
 }

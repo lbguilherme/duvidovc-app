@@ -36,9 +36,9 @@ public:
     ::org::apache::http::cookie::SetCookie2& operator=(const ::org::apache::http::cookie::SetCookie2& x) {obj = x.obj; return *this;}
     ::org::apache::http::cookie::SetCookie2& operator=(::org::apache::http::cookie::SetCookie2&& x) {obj = std::move(x.obj); return *this;}
     
-    void setCommentURL(const ::java::lang::String&) const ;
-    void setPorts(const std::vector< int32_t>&) const ;
-    void setDiscard(bool) const ;
+    void setCommentURL(const ::java::lang::String&) const;
+    void setPorts(const std::vector< int32_t>&) const;
+    void setDiscard(bool) const;
 
 };
 }

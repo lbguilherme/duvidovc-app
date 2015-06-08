@@ -35,7 +35,7 @@ public:
     ::android::support::v4::widget::PopupMenuCompat_PopupMenuImpl& operator=(const ::android::support::v4::widget::PopupMenuCompat_PopupMenuImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::PopupMenuCompat_PopupMenuImpl& operator=(::android::support::v4::widget::PopupMenuCompat_PopupMenuImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View_OnTouchListener getDragToOpenListener(const ::java::lang::Object&) const ;
+    ::android::view::View_OnTouchListener getDragToOpenListener(const ::java::lang::Object&) const;
 
 };
 }

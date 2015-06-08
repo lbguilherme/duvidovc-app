@@ -45,14 +45,14 @@ public:
     
     SpannableString(const ::java::lang::CharSequence&);
     static ::android::text::SpannableString valueOf(const ::java::lang::CharSequence&);
-    void setSpan(const ::java::lang::Object&, int32_t, int32_t, int32_t) const ;
-    void removeSpan(const ::java::lang::Object&) const ;
-    ::java::lang::CharSequence subSequence(int32_t, int32_t) const ;
-    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const ;
-    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const ;
-    int32_t getSpanFlags(const ::java::lang::Object&) const ;
-    int32_t getSpanEnd(const ::java::lang::Object&) const ;
-    int32_t getSpanStart(const ::java::lang::Object&) const ;
+    void setSpan(const ::java::lang::Object&, int32_t, int32_t, int32_t) const;
+    void removeSpan(const ::java::lang::Object&) const;
+    ::java::lang::CharSequence subSequence(int32_t, int32_t) const;
+    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const;
+    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const;
+    int32_t getSpanFlags(const ::java::lang::Object&) const;
+    int32_t getSpanEnd(const ::java::lang::Object&) const;
+    int32_t getSpanStart(const ::java::lang::Object&) const;
 
 };
 }

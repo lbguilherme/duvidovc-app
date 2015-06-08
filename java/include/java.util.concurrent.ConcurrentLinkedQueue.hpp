@@ -43,18 +43,18 @@ public:
     
     ConcurrentLinkedQueue();
     ConcurrentLinkedQueue(const ::java::util::Collection&);
-    bool add(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&) const ;
-    ::java::lang::Object poll() const ;
-    ::java::lang::Object peek() const ;
-    bool isEmpty() const ;
-    int32_t size() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool addAll(const ::java::util::Collection&) const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
-    ::java::util::Iterator iterator() const ;
+    bool add(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&) const;
+    ::java::lang::Object poll() const;
+    ::java::lang::Object peek() const;
+    bool isEmpty() const;
+    int32_t size() const;
+    bool contains(const ::java::lang::Object&) const;
+    bool remove(const ::java::lang::Object&) const;
+    bool addAll(const ::java::util::Collection&) const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
+    ::java::util::Iterator iterator() const;
 
 };
 }

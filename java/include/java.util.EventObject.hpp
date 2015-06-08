@@ -36,8 +36,8 @@ public:
     ::java::util::EventObject& operator=(::java::util::EventObject&& x) {obj = std::move(x.obj); return *this;}
     
     EventObject(const ::java::lang::Object&);
-    ::java::lang::Object getSource() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Object getSource() const;
+    ::java::lang::String toString() const;
 
 };
 }

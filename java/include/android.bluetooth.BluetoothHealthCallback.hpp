@@ -35,8 +35,8 @@ public:
     ::android::bluetooth::BluetoothHealthCallback& operator=(::android::bluetooth::BluetoothHealthCallback&& x) {obj = std::move(x.obj); return *this;}
     
     BluetoothHealthCallback();
-    void onHealthAppConfigurationStatusChange(const ::android::bluetooth::BluetoothHealthAppConfiguration&, int32_t) const ;
-    void onHealthChannelStateChange(const ::android::bluetooth::BluetoothHealthAppConfiguration&, const ::android::bluetooth::BluetoothDevice&, int32_t, int32_t, const ::android::os::ParcelFileDescriptor&, int32_t) const ;
+    void onHealthAppConfigurationStatusChange(const ::android::bluetooth::BluetoothHealthAppConfiguration&, int32_t) const;
+    void onHealthChannelStateChange(const ::android::bluetooth::BluetoothHealthAppConfiguration&, const ::android::bluetooth::BluetoothDevice&, int32_t, int32_t, const ::android::os::ParcelFileDescriptor&, int32_t) const;
 
 };
 }

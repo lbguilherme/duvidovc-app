@@ -34,9 +34,9 @@ public:
     ::android::webkit::HttpAuthHandler& operator=(const ::android::webkit::HttpAuthHandler& x) {obj = x.obj; return *this;}
     ::android::webkit::HttpAuthHandler& operator=(::android::webkit::HttpAuthHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool useHttpAuthUsernamePassword() const ;
-    void cancel() const ;
-    void proceed(const ::java::lang::String&, const ::java::lang::String&) const ;
+    bool useHttpAuthUsernamePassword() const;
+    void cancel() const;
+    void proceed(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

@@ -32,9 +32,9 @@ public:
     ::com::facebook::AccessTokenTracker& operator=(::com::facebook::AccessTokenTracker&& x) {obj = std::move(x.obj); return *this;}
     
     AccessTokenTracker();
-    void startTracking() const ;
-    void stopTracking() const ;
-    bool isTracking() const ;
+    void startTracking() const;
+    void stopTracking() const;
+    bool isTracking() const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::bolts::AndroidExecutors_UIThreadExecutor& operator=(const ::bolts::AndroidExecutors_UIThreadExecutor& x) {obj = x.obj; return *this;}
     ::bolts::AndroidExecutors_UIThreadExecutor& operator=(::bolts::AndroidExecutors_UIThreadExecutor&& x) {obj = std::move(x.obj); return *this;}
     
-    void execute(const ::java::lang::Runnable&) const ;
+    void execute(const ::java::lang::Runnable&) const;
 
 };
 }

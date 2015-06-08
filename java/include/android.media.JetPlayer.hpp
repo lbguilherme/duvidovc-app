@@ -38,23 +38,23 @@ public:
     ::android::media::JetPlayer& operator=(::android::media::JetPlayer&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::media::JetPlayer getJetPlayer();
-    ::java::lang::Object clone() const ;
-    void release() const ;
+    ::java::lang::Object clone() const;
+    void release() const;
     static int32_t getMaxTracks();
-    bool loadJetFile(const ::java::lang::String&) const ;
-    bool loadJetFile(const ::android::content::res::AssetFileDescriptor&) const ;
-    bool closeJetFile() const ;
-    bool play() const ;
-    bool pause() const ;
-    bool queueJetSegment(int32_t, int32_t, int32_t, int32_t, int32_t, int8_t) const ;
-    bool queueJetSegmentMuteArray(int32_t, int32_t, int32_t, int32_t, const std::vector< bool>&, int8_t) const ;
-    bool setMuteFlags(int32_t, bool) const ;
-    bool setMuteArray(const std::vector< bool>&, bool) const ;
-    bool setMuteFlag(int32_t, bool, bool) const ;
-    bool triggerClip(int32_t) const ;
-    bool clearQueue() const ;
-    void setEventListener(const ::android::media::JetPlayer_OnJetEventListener&) const ;
-    void setEventListener(const ::android::media::JetPlayer_OnJetEventListener&, const ::android::os::Handler&) const ;
+    bool loadJetFile(const ::java::lang::String&) const;
+    bool loadJetFile(const ::android::content::res::AssetFileDescriptor&) const;
+    bool closeJetFile() const;
+    bool play() const;
+    bool pause() const;
+    bool queueJetSegment(int32_t, int32_t, int32_t, int32_t, int32_t, int8_t) const;
+    bool queueJetSegmentMuteArray(int32_t, int32_t, int32_t, int32_t, const std::vector< bool>&, int8_t) const;
+    bool setMuteFlags(int32_t, bool) const;
+    bool setMuteArray(const std::vector< bool>&, bool) const;
+    bool setMuteFlag(int32_t, bool, bool) const;
+    bool triggerClip(int32_t) const;
+    bool clearQueue() const;
+    void setEventListener(const ::android::media::JetPlayer_OnJetEventListener&) const;
+    void setEventListener(const ::android::media::JetPlayer_OnJetEventListener&, const ::android::os::Handler&) const;
 
 };
 }

@@ -38,7 +38,7 @@ public:
     ::org::apache::http::impl::cookie::NetscapeDraftHeaderParser& operator=(::org::apache::http::impl::cookie::NetscapeDraftHeaderParser&& x) {obj = std::move(x.obj); return *this;}
     
     NetscapeDraftHeaderParser();
-    ::org::apache::http::HeaderElement parseHeader(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    ::org::apache::http::HeaderElement parseHeader(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
 
 };
 }

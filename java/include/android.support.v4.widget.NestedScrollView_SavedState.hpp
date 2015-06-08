@@ -38,8 +38,8 @@ public:
     ::android::support::v4::widget::NestedScrollView_SavedState& operator=(::android::support::v4::widget::NestedScrollView_SavedState&& x) {obj = std::move(x.obj); return *this;}
     
     NestedScrollView_SavedState(const ::android::os::Parcel&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

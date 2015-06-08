@@ -38,14 +38,14 @@ public:
     ::com::facebook::GraphResponse& operator=(const ::com::facebook::GraphResponse& x) {obj = x.obj; return *this;}
     ::com::facebook::GraphResponse& operator=(::com::facebook::GraphResponse&& x) {obj = std::move(x.obj); return *this;}
     
-    ::com::facebook::FacebookRequestError getError() const ;
-    ::org::json::JSONObject getJSONObject() const ;
-    ::org::json::JSONArray getJSONArray() const ;
-    ::java::net::HttpURLConnection getConnection() const ;
-    ::com::facebook::GraphRequest getRequest() const ;
-    ::java::lang::String getRawResponse() const ;
-    ::com::facebook::GraphRequest getRequestForPagedResults(const ::com::facebook::GraphResponse_PagingDirection&) const ;
-    ::java::lang::String toString() const ;
+    ::com::facebook::FacebookRequestError getError() const;
+    ::org::json::JSONObject getJSONObject() const;
+    ::org::json::JSONArray getJSONArray() const;
+    ::java::net::HttpURLConnection getConnection() const;
+    ::com::facebook::GraphRequest getRequest() const;
+    ::java::lang::String getRawResponse() const;
+    ::com::facebook::GraphRequest getRequestForPagedResults(const ::com::facebook::GraphResponse_PagingDirection&) const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -43,14 +43,14 @@ public:
     ::android::support::v4::media::session::IMediaControllerCallback& operator=(const ::android::support::v4::media::session::IMediaControllerCallback& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::IMediaControllerCallback& operator=(::android::support::v4::media::session::IMediaControllerCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onEvent(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void onSessionDestroyed() const ;
-    void onPlaybackStateChanged(const ::android::support::v4::media::session::PlaybackStateCompat&) const ;
-    void onMetadataChanged(const ::android::support::v4::media::MediaMetadataCompat&) const ;
-    void onQueueChanged(const ::java::util::List&) const ;
-    void onQueueTitleChanged(const ::java::lang::CharSequence&) const ;
-    void onExtrasChanged(const ::android::os::Bundle&) const ;
-    void onVolumeInfoChanged(const ::android::support::v4::media::session::ParcelableVolumeInfo&) const ;
+    void onEvent(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void onSessionDestroyed() const;
+    void onPlaybackStateChanged(const ::android::support::v4::media::session::PlaybackStateCompat&) const;
+    void onMetadataChanged(const ::android::support::v4::media::MediaMetadataCompat&) const;
+    void onQueueChanged(const ::java::util::List&) const;
+    void onQueueTitleChanged(const ::java::lang::CharSequence&) const;
+    void onExtrasChanged(const ::android::os::Bundle&) const;
+    void onVolumeInfoChanged(const ::android::support::v4::media::session::ParcelableVolumeInfo&) const;
 
 };
 }

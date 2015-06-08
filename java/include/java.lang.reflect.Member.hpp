@@ -34,10 +34,10 @@ public:
     ::java::lang::reflect::Member& operator=(const ::java::lang::reflect::Member& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::Member& operator=(::java::lang::reflect::Member&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Class getDeclaringClass() const ;
-    int32_t getModifiers() const ;
-    ::java::lang::String getName() const ;
-    bool isSynthetic() const ;
+    ::java::lang::Class getDeclaringClass() const;
+    int32_t getModifiers() const;
+    ::java::lang::String getName() const;
+    bool isSynthetic() const;
 
 };
 }

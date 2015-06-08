@@ -39,29 +39,29 @@ public:
     ::android::net::wifi::WifiManager& operator=(const ::android::net::wifi::WifiManager& x) {obj = x.obj; return *this;}
     ::android::net::wifi::WifiManager& operator=(::android::net::wifi::WifiManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::List getConfiguredNetworks() const ;
-    int32_t addNetwork(const ::android::net::wifi::WifiConfiguration&) const ;
-    int32_t updateNetwork(const ::android::net::wifi::WifiConfiguration&) const ;
-    bool removeNetwork(int32_t) const ;
-    bool enableNetwork(int32_t, bool) const ;
-    bool disableNetwork(int32_t) const ;
-    bool disconnect() const ;
-    bool reconnect() const ;
-    bool reassociate() const ;
-    bool pingSupplicant() const ;
-    bool startScan() const ;
-    ::android::net::wifi::WifiInfo getConnectionInfo() const ;
-    ::java::util::List getScanResults() const ;
-    bool saveConfiguration() const ;
-    ::android::net::DhcpInfo getDhcpInfo() const ;
-    bool setWifiEnabled(bool) const ;
-    int32_t getWifiState() const ;
-    bool isWifiEnabled() const ;
+    ::java::util::List getConfiguredNetworks() const;
+    int32_t addNetwork(const ::android::net::wifi::WifiConfiguration&) const;
+    int32_t updateNetwork(const ::android::net::wifi::WifiConfiguration&) const;
+    bool removeNetwork(int32_t) const;
+    bool enableNetwork(int32_t, bool) const;
+    bool disableNetwork(int32_t) const;
+    bool disconnect() const;
+    bool reconnect() const;
+    bool reassociate() const;
+    bool pingSupplicant() const;
+    bool startScan() const;
+    ::android::net::wifi::WifiInfo getConnectionInfo() const;
+    ::java::util::List getScanResults() const;
+    bool saveConfiguration() const;
+    ::android::net::DhcpInfo getDhcpInfo() const;
+    bool setWifiEnabled(bool) const;
+    int32_t getWifiState() const;
+    bool isWifiEnabled() const;
     static int32_t calculateSignalLevel(int32_t, int32_t);
     static int32_t compareSignalLevel(int32_t, int32_t);
-    ::android::net::wifi::WifiManager_WifiLock createWifiLock(int32_t, const ::java::lang::String&) const ;
-    ::android::net::wifi::WifiManager_WifiLock createWifiLock(const ::java::lang::String&) const ;
-    ::android::net::wifi::WifiManager_MulticastLock createMulticastLock(const ::java::lang::String&) const ;
+    ::android::net::wifi::WifiManager_WifiLock createWifiLock(int32_t, const ::java::lang::String&) const;
+    ::android::net::wifi::WifiManager_WifiLock createWifiLock(const ::java::lang::String&) const;
+    ::android::net::wifi::WifiManager_MulticastLock createMulticastLock(const ::java::lang::String&) const;
 
 };
 }

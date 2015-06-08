@@ -33,7 +33,7 @@ public:
     ::android::view::inputmethod::InputMethod_SessionCallback& operator=(const ::android::view::inputmethod::InputMethod_SessionCallback& x) {obj = x.obj; return *this;}
     ::android::view::inputmethod::InputMethod_SessionCallback& operator=(::android::view::inputmethod::InputMethod_SessionCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void sessionCreated(const ::android::view::inputmethod::InputMethodSession&) const ;
+    void sessionCreated(const ::android::view::inputmethod::InputMethodSession&) const;
 
 };
 }

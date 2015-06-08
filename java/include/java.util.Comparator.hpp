@@ -32,8 +32,8 @@ public:
     ::java::util::Comparator& operator=(const ::java::util::Comparator& x) {obj = x.obj; return *this;}
     ::java::util::Comparator& operator=(::java::util::Comparator&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    bool equals(const ::java::lang::Object&) const ;
+    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

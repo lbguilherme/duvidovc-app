@@ -33,9 +33,9 @@ public:
     ::android::drm::DrmUtils_ExtendedMetadataParser& operator=(const ::android::drm::DrmUtils_ExtendedMetadataParser& x) {obj = x.obj; return *this;}
     ::android::drm::DrmUtils_ExtendedMetadataParser& operator=(::android::drm::DrmUtils_ExtendedMetadataParser&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Iterator iterator() const ;
-    ::java::util::Iterator keyIterator() const ;
-    ::java::lang::String get(const ::java::lang::String&) const ;
+    ::java::util::Iterator iterator() const;
+    ::java::util::Iterator keyIterator() const;
+    ::java::lang::String get(const ::java::lang::String&) const;
 
 };
 }

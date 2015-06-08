@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::auth::DigestSchemeFactory& operator=(::org::apache::http::impl::auth::DigestSchemeFactory&& x) {obj = std::move(x.obj); return *this;}
     
     DigestSchemeFactory();
-    ::org::apache::http::auth::AuthScheme newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::auth::AuthScheme newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

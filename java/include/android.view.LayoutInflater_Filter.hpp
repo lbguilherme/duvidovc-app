@@ -32,7 +32,7 @@ public:
     ::android::view::LayoutInflater_Filter& operator=(const ::android::view::LayoutInflater_Filter& x) {obj = x.obj; return *this;}
     ::android::view::LayoutInflater_Filter& operator=(::android::view::LayoutInflater_Filter&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onLoadClass(const ::java::lang::Class&) const ;
+    bool onLoadClass(const ::java::lang::Class&) const;
 
 };
 }

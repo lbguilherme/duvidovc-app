@@ -36,13 +36,13 @@ public:
     ::android::graphics::Movie& operator=(const ::android::graphics::Movie& x) {obj = x.obj; return *this;}
     ::android::graphics::Movie& operator=(::android::graphics::Movie&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t width() const ;
-    int32_t height() const ;
-    bool isOpaque() const ;
-    int32_t duration() const ;
-    bool setTime(int32_t) const ;
-    void draw(const ::android::graphics::Canvas&, float, float, const ::android::graphics::Paint&) const ;
-    void draw(const ::android::graphics::Canvas&, float, float) const ;
+    int32_t width() const;
+    int32_t height() const;
+    bool isOpaque() const;
+    int32_t duration() const;
+    bool setTime(int32_t) const;
+    void draw(const ::android::graphics::Canvas&, float, float, const ::android::graphics::Paint&) const;
+    void draw(const ::android::graphics::Canvas&, float, float) const;
     static ::android::graphics::Movie decodeStream(const ::java::io::InputStream&);
     static ::android::graphics::Movie decodeByteArray(const std::vector< int8_t>&, int32_t, int32_t);
     static ::android::graphics::Movie decodeFile(const ::java::lang::String&);

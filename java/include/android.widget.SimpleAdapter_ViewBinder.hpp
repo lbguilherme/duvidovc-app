@@ -34,7 +34,7 @@ public:
     ::android::widget::SimpleAdapter_ViewBinder& operator=(const ::android::widget::SimpleAdapter_ViewBinder& x) {obj = x.obj; return *this;}
     ::android::widget::SimpleAdapter_ViewBinder& operator=(::android::widget::SimpleAdapter_ViewBinder&& x) {obj = std::move(x.obj); return *this;}
     
-    bool setViewValue(const ::android::view::View&, const ::java::lang::Object&, const ::java::lang::String&) const ;
+    bool setViewValue(const ::android::view::View&, const ::java::lang::Object&, const ::java::lang::String&) const;
 
 };
 }

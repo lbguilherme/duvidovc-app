@@ -41,23 +41,23 @@ public:
     ::android::view::accessibility::AccessibilityEvent& operator=(const ::android::view::accessibility::AccessibilityEvent& x) {obj = x.obj; return *this;}
     ::android::view::accessibility::AccessibilityEvent& operator=(::android::view::accessibility::AccessibilityEvent&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getRecordCount() const ;
-    void appendRecord(const ::android::view::accessibility::AccessibilityRecord&) const ;
-    ::android::view::accessibility::AccessibilityRecord getRecord(int32_t) const ;
-    int32_t getEventType() const ;
-    void setEventType(int32_t) const ;
-    int64_t getEventTime() const ;
-    void setEventTime(int64_t) const ;
-    ::java::lang::CharSequence getPackageName() const ;
-    void setPackageName(const ::java::lang::CharSequence&) const ;
+    int32_t getRecordCount() const;
+    void appendRecord(const ::android::view::accessibility::AccessibilityRecord&) const;
+    ::android::view::accessibility::AccessibilityRecord getRecord(int32_t) const;
+    int32_t getEventType() const;
+    void setEventType(int32_t) const;
+    int64_t getEventTime() const;
+    void setEventTime(int64_t) const;
+    ::java::lang::CharSequence getPackageName() const;
+    void setPackageName(const ::java::lang::CharSequence&) const;
     static ::android::view::accessibility::AccessibilityEvent obtain(int32_t);
     static ::android::view::accessibility::AccessibilityEvent obtain(const ::android::view::accessibility::AccessibilityEvent&);
     static ::android::view::accessibility::AccessibilityEvent obtain();
-    void recycle() const ;
-    void initFromParcel(const ::android::os::Parcel&) const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    ::java::lang::String toString() const ;
+    void recycle() const;
+    void initFromParcel(const ::android::os::Parcel&) const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    ::java::lang::String toString() const;
     static ::java::lang::String eventTypeToString(int32_t);
 
 };

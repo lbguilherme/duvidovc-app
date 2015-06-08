@@ -36,22 +36,22 @@ public:
     
     StreamTokenizer(const ::java::io::InputStream&);
     StreamTokenizer(const ::java::io::Reader&);
-    void commentChar(int32_t) const ;
-    void eolIsSignificant(bool) const ;
-    int32_t lineno() const ;
-    void lowerCaseMode(bool) const ;
-    int32_t nextToken() const ;
-    void ordinaryChar(int32_t) const ;
-    void ordinaryChars(int32_t, int32_t) const ;
-    void parseNumbers() const ;
-    void pushBack() const ;
-    void quoteChar(int32_t) const ;
-    void resetSyntax() const ;
-    void slashSlashComments(bool) const ;
-    void slashStarComments(bool) const ;
-    ::java::lang::String toString() const ;
-    void whitespaceChars(int32_t, int32_t) const ;
-    void wordChars(int32_t, int32_t) const ;
+    void commentChar(int32_t) const;
+    void eolIsSignificant(bool) const;
+    int32_t lineno() const;
+    void lowerCaseMode(bool) const;
+    int32_t nextToken() const;
+    void ordinaryChar(int32_t) const;
+    void ordinaryChars(int32_t, int32_t) const;
+    void parseNumbers() const;
+    void pushBack() const;
+    void quoteChar(int32_t) const;
+    void resetSyntax() const;
+    void slashSlashComments(bool) const;
+    void slashStarComments(bool) const;
+    ::java::lang::String toString() const;
+    void whitespaceChars(int32_t, int32_t) const;
+    void wordChars(int32_t, int32_t) const;
 
 };
 }

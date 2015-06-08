@@ -31,7 +31,7 @@ public:
     ::android::preference::PreferenceManager_OnActivityStopListener& operator=(const ::android::preference::PreferenceManager_OnActivityStopListener& x) {obj = x.obj; return *this;}
     ::android::preference::PreferenceManager_OnActivityStopListener& operator=(::android::preference::PreferenceManager_OnActivityStopListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onActivityStop() const ;
+    void onActivityStop() const;
 
 };
 }

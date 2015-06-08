@@ -38,9 +38,9 @@ public:
     ::java::security::spec::DSAParameterSpec& operator=(::java::security::spec::DSAParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     DSAParameterSpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getG() const ;
-    ::java::math::BigInteger getP() const ;
-    ::java::math::BigInteger getQ() const ;
+    ::java::math::BigInteger getG() const;
+    ::java::math::BigInteger getP() const;
+    ::java::math::BigInteger getQ() const;
 
 };
 }

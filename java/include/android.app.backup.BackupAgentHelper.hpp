@@ -40,9 +40,9 @@ public:
     ::android::app::backup::BackupAgentHelper& operator=(::android::app::backup::BackupAgentHelper&& x) {obj = std::move(x.obj); return *this;}
     
     BackupAgentHelper();
-    void onBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const ;
-    void onRestore(const ::android::app::backup::BackupDataInput&, int32_t, const ::android::os::ParcelFileDescriptor&) const ;
-    void addHelper(const ::java::lang::String&, const ::android::app::backup::BackupHelper&) const ;
+    void onBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const;
+    void onRestore(const ::android::app::backup::BackupDataInput&, int32_t, const ::android::os::ParcelFileDescriptor&) const;
+    void addHelper(const ::java::lang::String&, const ::android::app::backup::BackupHelper&) const;
 
 };
 }

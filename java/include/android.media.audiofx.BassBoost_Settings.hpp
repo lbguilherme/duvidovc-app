@@ -35,7 +35,7 @@ public:
     
     BassBoost_Settings();
     BassBoost_Settings(const ::java::lang::String&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

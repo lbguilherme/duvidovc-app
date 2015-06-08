@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::FacebookDialogBase_ModeHandler& operator=(const ::com::facebook::internal::FacebookDialogBase_ModeHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::FacebookDialogBase_ModeHandler& operator=(::com::facebook::internal::FacebookDialogBase_ModeHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object getMode() const ;
+    ::java::lang::Object getMode() const;
 
 };
 }

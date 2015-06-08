@@ -33,7 +33,7 @@ public:
     ::android::support::v4::view::ActionProvider_SubUiVisibilityListener& operator=(const ::android::support::v4::view::ActionProvider_SubUiVisibilityListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ActionProvider_SubUiVisibilityListener& operator=(::android::support::v4::view::ActionProvider_SubUiVisibilityListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSubUiVisibilityChanged(bool) const ;
+    void onSubUiVisibilityChanged(bool) const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::org::apache::http::impl::EnglishReasonPhraseCatalog& operator=(const ::org::apache::http::impl::EnglishReasonPhraseCatalog& x) {obj = x.obj; return *this;}
     ::org::apache::http::impl::EnglishReasonPhraseCatalog& operator=(::org::apache::http::impl::EnglishReasonPhraseCatalog&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getReason(int32_t, const ::java::util::Locale&) const ;
+    ::java::lang::String getReason(int32_t, const ::java::util::Locale&) const;
 
 };
 }

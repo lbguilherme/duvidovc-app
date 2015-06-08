@@ -37,8 +37,8 @@ public:
     ::android::support::v4::view::ViewCompat_EclairMr1ViewCompatImpl& operator=(const ::android::support::v4::view::ViewCompat_EclairMr1ViewCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewCompat_EclairMr1ViewCompatImpl& operator=(::android::support::v4::view::ViewCompat_EclairMr1ViewCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isOpaque(const ::android::view::View&) const ;
-    void setChildrenDrawingOrderEnabled(const ::android::view::ViewGroup&, bool) const ;
+    bool isOpaque(const ::android::view::View&) const;
+    void setChildrenDrawingOrderEnabled(const ::android::view::ViewGroup&, bool) const;
 
 };
 }

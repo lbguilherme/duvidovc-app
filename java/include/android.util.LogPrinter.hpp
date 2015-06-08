@@ -35,7 +35,7 @@ public:
     ::android::util::LogPrinter& operator=(::android::util::LogPrinter&& x) {obj = std::move(x.obj); return *this;}
     
     LogPrinter(int32_t, const ::java::lang::String&);
-    void println(const ::java::lang::String&) const ;
+    void println(const ::java::lang::String&) const;
 
 };
 }

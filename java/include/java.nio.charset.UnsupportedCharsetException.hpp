@@ -36,7 +36,7 @@ public:
     ::java::nio::charset::UnsupportedCharsetException& operator=(::java::nio::charset::UnsupportedCharsetException&& x) {obj = std::move(x.obj); return *this;}
     
     UnsupportedCharsetException(const ::java::lang::String&);
-    ::java::lang::String getCharsetName() const ;
+    ::java::lang::String getCharsetName() const;
 
 };
 }

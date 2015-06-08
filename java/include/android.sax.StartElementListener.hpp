@@ -32,7 +32,7 @@ public:
     ::android::sax::StartElementListener& operator=(const ::android::sax::StartElementListener& x) {obj = x.obj; return *this;}
     ::android::sax::StartElementListener& operator=(::android::sax::StartElementListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void start(const ::org::xml::sax::Attributes&) const ;
+    void start(const ::org::xml::sax::Attributes&) const;
 
 };
 }

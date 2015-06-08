@@ -31,7 +31,7 @@ public:
     ::android::view::ViewTreeObserver_OnScrollChangedListener& operator=(const ::android::view::ViewTreeObserver_OnScrollChangedListener& x) {obj = x.obj; return *this;}
     ::android::view::ViewTreeObserver_OnScrollChangedListener& operator=(::android::view::ViewTreeObserver_OnScrollChangedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onScrollChanged() const ;
+    void onScrollChanged() const;
 
 };
 }

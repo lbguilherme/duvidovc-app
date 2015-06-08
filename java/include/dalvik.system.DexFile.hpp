@@ -40,10 +40,10 @@ public:
     DexFile(const ::java::io::File&);
     DexFile(const ::java::lang::String&);
     static ::dalvik::system::DexFile loadDex(const ::java::lang::String&, const ::java::lang::String&, int32_t);
-    ::java::lang::String getName() const ;
-    void close() const ;
-    ::java::lang::Class loadClass(const ::java::lang::String&, const ::java::lang::ClassLoader&) const ;
-    ::java::util::Enumeration entries() const ;
+    ::java::lang::String getName() const;
+    void close() const;
+    ::java::lang::Class loadClass(const ::java::lang::String&, const ::java::lang::ClassLoader&) const;
+    ::java::util::Enumeration entries() const;
     static bool isDexOptNeeded(const ::java::lang::String&);
 
 };

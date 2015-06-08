@@ -38,15 +38,15 @@ public:
     
     ObjectStreamField(const ::java::lang::String&, const ::java::lang::Class&);
     ObjectStreamField(const ::java::lang::String&, const ::java::lang::Class&, bool);
-    int32_t compareTo(const ::java::lang::Object&) const ;
-    ::java::lang::String getName() const ;
-    int32_t getOffset() const ;
-    ::java::lang::Class getType() const ;
-    uint16_t getTypeCode() const ;
-    ::java::lang::String getTypeString() const ;
-    bool isPrimitive() const ;
-    ::java::lang::String toString() const ;
-    bool isUnshared() const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
+    ::java::lang::String getName() const;
+    int32_t getOffset() const;
+    ::java::lang::Class getType() const;
+    uint16_t getTypeCode() const;
+    ::java::lang::String getTypeString() const;
+    bool isPrimitive() const;
+    ::java::lang::String toString() const;
+    bool isUnshared() const;
 
 };
 }

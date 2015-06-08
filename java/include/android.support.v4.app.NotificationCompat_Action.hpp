@@ -38,8 +38,8 @@ public:
     ::android::support::v4::app::NotificationCompat_Action& operator=(::android::support::v4::app::NotificationCompat_Action&& x) {obj = std::move(x.obj); return *this;}
     
     NotificationCompat_Action(int32_t, const ::java::lang::CharSequence&, const ::android::app::PendingIntent&);
-    ::android::os::Bundle getExtras() const ;
-    std::vector< ::android::support::v4::app::RemoteInput> getRemoteInputs() const ;
+    ::android::os::Bundle getExtras() const;
+    std::vector< ::android::support::v4::app::RemoteInput> getRemoteInputs() const;
 
 };
 }

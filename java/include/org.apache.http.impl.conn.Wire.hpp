@@ -38,17 +38,17 @@ public:
     ::org::apache::http::impl::conn::Wire& operator=(::org::apache::http::impl::conn::Wire&& x) {obj = std::move(x.obj); return *this;}
     
     Wire(const ::org::apache::commons::logging::Log&);
-    bool enabled() const ;
-    void output(const ::java::io::InputStream&) const ;
-    void input(const ::java::io::InputStream&) const ;
-    void output(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void input(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void output(const std::vector< int8_t>&) const ;
-    void input(const std::vector< int8_t>&) const ;
-    void output(int32_t) const ;
-    void input(int32_t) const ;
-    void output(const ::java::lang::String&) const ;
-    void input(const ::java::lang::String&) const ;
+    bool enabled() const;
+    void output(const ::java::io::InputStream&) const;
+    void input(const ::java::io::InputStream&) const;
+    void output(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void input(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void output(const std::vector< int8_t>&) const;
+    void input(const std::vector< int8_t>&) const;
+    void output(int32_t) const;
+    void input(int32_t) const;
+    void output(const ::java::lang::String&) const;
+    void input(const ::java::lang::String&) const;
 
 };
 }

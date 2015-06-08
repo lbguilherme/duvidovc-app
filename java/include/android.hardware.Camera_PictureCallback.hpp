@@ -32,7 +32,7 @@ public:
     ::android::hardware::Camera_PictureCallback& operator=(const ::android::hardware::Camera_PictureCallback& x) {obj = x.obj; return *this;}
     ::android::hardware::Camera_PictureCallback& operator=(::android::hardware::Camera_PictureCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onPictureTaken(const std::vector< int8_t>&, const ::android::hardware::Camera&) const ;
+    void onPictureTaken(const std::vector< int8_t>&, const ::android::hardware::Camera&) const;
 
 };
 }

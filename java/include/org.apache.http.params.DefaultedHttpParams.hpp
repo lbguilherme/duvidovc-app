@@ -39,11 +39,11 @@ public:
     ::org::apache::http::params::DefaultedHttpParams& operator=(::org::apache::http::params::DefaultedHttpParams&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultedHttpParams(const ::org::apache::http::params::HttpParams&, const ::org::apache::http::params::HttpParams&);
-    ::org::apache::http::params::HttpParams copy() const ;
-    ::java::lang::Object getParameter(const ::java::lang::String&) const ;
-    bool removeParameter(const ::java::lang::String&) const ;
-    ::org::apache::http::params::HttpParams setParameter(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::org::apache::http::params::HttpParams getDefaults() const ;
+    ::org::apache::http::params::HttpParams copy() const;
+    ::java::lang::Object getParameter(const ::java::lang::String&) const;
+    bool removeParameter(const ::java::lang::String&) const;
+    ::org::apache::http::params::HttpParams setParameter(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::org::apache::http::params::HttpParams getDefaults() const;
 
 };
 }

@@ -31,7 +31,7 @@ public:
     ::android::view::ViewTreeObserver_OnPreDrawListener& operator=(const ::android::view::ViewTreeObserver_OnPreDrawListener& x) {obj = x.obj; return *this;}
     ::android::view::ViewTreeObserver_OnPreDrawListener& operator=(::android::view::ViewTreeObserver_OnPreDrawListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onPreDraw() const ;
+    bool onPreDraw() const;
 
 };
 }

@@ -41,10 +41,10 @@ public:
     SAXParseException(const ::java::lang::String&, const ::org::xml::sax::Locator&, const ::java::lang::Exception&);
     SAXParseException(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, int32_t, int32_t);
     SAXParseException(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, int32_t, int32_t, const ::java::lang::Exception&);
-    ::java::lang::String getPublicId() const ;
-    ::java::lang::String getSystemId() const ;
-    int32_t getLineNumber() const ;
-    int32_t getColumnNumber() const ;
+    ::java::lang::String getPublicId() const;
+    ::java::lang::String getSystemId() const;
+    int32_t getLineNumber() const;
+    int32_t getColumnNumber() const;
 
 };
 }

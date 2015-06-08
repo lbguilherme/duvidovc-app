@@ -35,10 +35,10 @@ public:
     ::org::w3c::dom::DOMConfiguration& operator=(const ::org::w3c::dom::DOMConfiguration& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMConfiguration& operator=(::org::w3c::dom::DOMConfiguration&& x) {obj = std::move(x.obj); return *this;}
     
-    void setParameter(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getParameter(const ::java::lang::String&) const ;
-    bool canSetParameter(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::org::w3c::dom::DOMStringList getParameterNames() const ;
+    void setParameter(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object getParameter(const ::java::lang::String&) const;
+    bool canSetParameter(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::org::w3c::dom::DOMStringList getParameterNames() const;
 
 };
 }

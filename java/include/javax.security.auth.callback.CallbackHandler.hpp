@@ -34,7 +34,7 @@ public:
     ::javax::security::auth::callback::CallbackHandler& operator=(const ::javax::security::auth::callback::CallbackHandler& x) {obj = x.obj; return *this;}
     ::javax::security::auth::callback::CallbackHandler& operator=(::javax::security::auth::callback::CallbackHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void handle(const std::vector< ::javax::security::auth::callback::Callback>&) const ;
+    void handle(const std::vector< ::javax::security::auth::callback::Callback>&) const;
 
 };
 }

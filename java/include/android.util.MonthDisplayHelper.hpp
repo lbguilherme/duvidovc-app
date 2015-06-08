@@ -33,19 +33,19 @@ public:
     
     MonthDisplayHelper(int32_t, int32_t, int32_t);
     MonthDisplayHelper(int32_t, int32_t);
-    int32_t getYear() const ;
-    int32_t getMonth() const ;
-    int32_t getWeekStartDay() const ;
-    int32_t getFirstDayOfMonth() const ;
-    int32_t getNumberOfDaysInMonth() const ;
-    int32_t getOffset() const ;
-    std::vector< int32_t> getDigitsForRow(int32_t) const ;
-    int32_t getDayAt(int32_t, int32_t) const ;
-    int32_t getRowOf(int32_t) const ;
-    int32_t getColumnOf(int32_t) const ;
-    void previousMonth() const ;
-    void nextMonth() const ;
-    bool isWithinCurrentMonth(int32_t, int32_t) const ;
+    int32_t getYear() const;
+    int32_t getMonth() const;
+    int32_t getWeekStartDay() const;
+    int32_t getFirstDayOfMonth() const;
+    int32_t getNumberOfDaysInMonth() const;
+    int32_t getOffset() const;
+    std::vector< int32_t> getDigitsForRow(int32_t) const;
+    int32_t getDayAt(int32_t, int32_t) const;
+    int32_t getRowOf(int32_t) const;
+    int32_t getColumnOf(int32_t) const;
+    void previousMonth() const;
+    void nextMonth() const;
+    bool isWithinCurrentMonth(int32_t, int32_t) const;
 
 };
 }

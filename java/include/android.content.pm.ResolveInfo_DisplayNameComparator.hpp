@@ -38,8 +38,8 @@ public:
     ::android::content::pm::ResolveInfo_DisplayNameComparator& operator=(::android::content::pm::ResolveInfo_DisplayNameComparator&& x) {obj = std::move(x.obj); return *this;}
     
     ResolveInfo_DisplayNameComparator(const ::android::content::pm::PackageManager&);
-    int32_t compare(const ::android::content::pm::ResolveInfo&, const ::android::content::pm::ResolveInfo&) const ;
-    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    int32_t compare(const ::android::content::pm::ResolveInfo&, const ::android::content::pm::ResolveInfo&) const;
+    int32_t compare(const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

@@ -42,8 +42,8 @@ public:
     
     DefaultHttpResponseFactory(const ::org::apache::http::ReasonPhraseCatalog&);
     DefaultHttpResponseFactory();
-    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::ProtocolVersion&, int32_t, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::StatusLine&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::ProtocolVersion&, int32_t, const ::org::apache::http::protocol::HttpContext&) const;
+    ::org::apache::http::HttpResponse newHttpResponse(const ::org::apache::http::StatusLine&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

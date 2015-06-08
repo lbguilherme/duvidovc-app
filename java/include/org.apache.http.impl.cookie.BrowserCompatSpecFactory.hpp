@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::BrowserCompatSpecFactory& operator=(::org::apache::http::impl::cookie::BrowserCompatSpecFactory&& x) {obj = std::move(x.obj); return *this;}
     
     BrowserCompatSpecFactory();
-    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

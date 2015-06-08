@@ -34,9 +34,9 @@ public:
     ::android::content::IntentFilter_AuthorityEntry& operator=(::android::content::IntentFilter_AuthorityEntry&& x) {obj = std::move(x.obj); return *this;}
     
     IntentFilter_AuthorityEntry(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getHost() const ;
-    int32_t getPort() const ;
-    int32_t match(const ::android::net::Uri&) const ;
+    ::java::lang::String getHost() const;
+    int32_t getPort() const;
+    int32_t match(const ::android::net::Uri&) const;
 
 };
 }

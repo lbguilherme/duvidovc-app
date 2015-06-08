@@ -31,7 +31,7 @@ public:
     ::android::animation::TimeInterpolator& operator=(const ::android::animation::TimeInterpolator& x) {obj = x.obj; return *this;}
     ::android::animation::TimeInterpolator& operator=(::android::animation::TimeInterpolator&& x) {obj = std::move(x.obj); return *this;}
     
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

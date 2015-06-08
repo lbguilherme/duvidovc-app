@@ -37,11 +37,11 @@ public:
     ::java::util::AbstractQueue& operator=(const ::java::util::AbstractQueue& x) {obj = x.obj; return *this;}
     ::java::util::AbstractQueue& operator=(::java::util::AbstractQueue&& x) {obj = std::move(x.obj); return *this;}
     
-    bool add(const ::java::lang::Object&) const ;
-    ::java::lang::Object remove() const ;
-    ::java::lang::Object element() const ;
-    void clear() const ;
-    bool addAll(const ::java::util::Collection&) const ;
+    bool add(const ::java::lang::Object&) const;
+    ::java::lang::Object remove() const;
+    ::java::lang::Object element() const;
+    void clear() const;
+    bool addAll(const ::java::util::Collection&) const;
 
 };
 }

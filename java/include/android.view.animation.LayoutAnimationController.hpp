@@ -40,20 +40,20 @@ public:
     LayoutAnimationController(const ::android::content::Context&, const ::android::util::AttributeSet&);
     LayoutAnimationController(const ::android::view::animation::Animation&);
     LayoutAnimationController(const ::android::view::animation::Animation&, float);
-    int32_t getOrder() const ;
-    void setOrder(int32_t) const ;
-    void setAnimation(const ::android::content::Context&, int32_t) const ;
-    void setAnimation(const ::android::view::animation::Animation&) const ;
-    ::android::view::animation::Animation getAnimation() const ;
-    void setInterpolator(const ::android::content::Context&, int32_t) const ;
-    void setInterpolator(const ::android::view::animation::Interpolator&) const ;
-    ::android::view::animation::Interpolator getInterpolator() const ;
-    float getDelay() const ;
-    void setDelay(float) const ;
-    bool willOverlap() const ;
-    void start() const ;
-    ::android::view::animation::Animation getAnimationForView(const ::android::view::View&) const ;
-    bool isDone() const ;
+    int32_t getOrder() const;
+    void setOrder(int32_t) const;
+    void setAnimation(const ::android::content::Context&, int32_t) const;
+    void setAnimation(const ::android::view::animation::Animation&) const;
+    ::android::view::animation::Animation getAnimation() const;
+    void setInterpolator(const ::android::content::Context&, int32_t) const;
+    void setInterpolator(const ::android::view::animation::Interpolator&) const;
+    ::android::view::animation::Interpolator getInterpolator() const;
+    float getDelay() const;
+    void setDelay(float) const;
+    bool willOverlap() const;
+    void start() const;
+    ::android::view::animation::Animation getAnimationForView(const ::android::view::View&) const;
+    bool isDone() const;
 
 };
 }

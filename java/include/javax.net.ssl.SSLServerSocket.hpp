@@ -35,20 +35,20 @@ public:
     ::javax::net::ssl::SSLServerSocket& operator=(const ::javax::net::ssl::SSLServerSocket& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::SSLServerSocket& operator=(::javax::net::ssl::SSLServerSocket&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::String> getEnabledCipherSuites() const ;
-    void setEnabledCipherSuites(const std::vector< ::java::lang::String>&) const ;
-    std::vector< ::java::lang::String> getSupportedCipherSuites() const ;
-    std::vector< ::java::lang::String> getSupportedProtocols() const ;
-    std::vector< ::java::lang::String> getEnabledProtocols() const ;
-    void setEnabledProtocols(const std::vector< ::java::lang::String>&) const ;
-    void setNeedClientAuth(bool) const ;
-    bool getNeedClientAuth() const ;
-    void setWantClientAuth(bool) const ;
-    bool getWantClientAuth() const ;
-    void setUseClientMode(bool) const ;
-    bool getUseClientMode() const ;
-    void setEnableSessionCreation(bool) const ;
-    bool getEnableSessionCreation() const ;
+    std::vector< ::java::lang::String> getEnabledCipherSuites() const;
+    void setEnabledCipherSuites(const std::vector< ::java::lang::String>&) const;
+    std::vector< ::java::lang::String> getSupportedCipherSuites() const;
+    std::vector< ::java::lang::String> getSupportedProtocols() const;
+    std::vector< ::java::lang::String> getEnabledProtocols() const;
+    void setEnabledProtocols(const std::vector< ::java::lang::String>&) const;
+    void setNeedClientAuth(bool) const;
+    bool getNeedClientAuth() const;
+    void setWantClientAuth(bool) const;
+    bool getWantClientAuth() const;
+    void setUseClientMode(bool) const;
+    bool getUseClientMode() const;
+    void setEnableSessionCreation(bool) const;
+    bool getEnableSessionCreation() const;
 
 };
 }

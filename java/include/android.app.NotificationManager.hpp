@@ -33,11 +33,11 @@ public:
     ::android::app::NotificationManager& operator=(const ::android::app::NotificationManager& x) {obj = x.obj; return *this;}
     ::android::app::NotificationManager& operator=(::android::app::NotificationManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void notify(int32_t, const ::android::app::Notification&) const ;
-    void notify(const ::java::lang::String&, int32_t, const ::android::app::Notification&) const ;
-    void cancel(int32_t) const ;
-    void cancel(const ::java::lang::String&, int32_t) const ;
-    void cancelAll() const ;
+    void notify(int32_t, const ::android::app::Notification&) const;
+    void notify(const ::java::lang::String&, int32_t, const ::android::app::Notification&) const;
+    void cancel(int32_t) const;
+    void cancel(const ::java::lang::String&, int32_t) const;
+    void cancelAll() const;
 
 };
 }

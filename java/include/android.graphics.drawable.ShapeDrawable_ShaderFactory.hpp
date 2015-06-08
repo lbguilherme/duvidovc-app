@@ -34,7 +34,7 @@ public:
     ::android::graphics::drawable::ShapeDrawable_ShaderFactory& operator=(::android::graphics::drawable::ShapeDrawable_ShaderFactory&& x) {obj = std::move(x.obj); return *this;}
     
     ShapeDrawable_ShaderFactory();
-    ::android::graphics::Shader resize(int32_t, int32_t) const ;
+    ::android::graphics::Shader resize(int32_t, int32_t) const;
 
 };
 }

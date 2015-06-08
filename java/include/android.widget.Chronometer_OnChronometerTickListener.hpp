@@ -32,7 +32,7 @@ public:
     ::android::widget::Chronometer_OnChronometerTickListener& operator=(const ::android::widget::Chronometer_OnChronometerTickListener& x) {obj = x.obj; return *this;}
     ::android::widget::Chronometer_OnChronometerTickListener& operator=(::android::widget::Chronometer_OnChronometerTickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onChronometerTick(const ::android::widget::Chronometer&) const ;
+    void onChronometerTick(const ::android::widget::Chronometer&) const;
 
 };
 }

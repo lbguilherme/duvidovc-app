@@ -38,8 +38,8 @@ public:
     
     FragmentManagerState();
     FragmentManagerState(const ::android::os::Parcel&);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

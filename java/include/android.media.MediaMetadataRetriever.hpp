@@ -38,17 +38,17 @@ public:
     ::android::media::MediaMetadataRetriever& operator=(::android::media::MediaMetadataRetriever&& x) {obj = std::move(x.obj); return *this;}
     
     MediaMetadataRetriever();
-    void setDataSource(const ::java::lang::String&) const ;
-    void setDataSource(const ::java::lang::String&, const ::java::util::Map&) const ;
-    void setDataSource(const ::java::io::FileDescriptor&, int64_t, int64_t) const ;
-    void setDataSource(const ::java::io::FileDescriptor&) const ;
-    void setDataSource(const ::android::content::Context&, const ::android::net::Uri&) const ;
-    ::java::lang::String extractMetadata(int32_t) const ;
-    ::android::graphics::Bitmap getFrameAtTime(int64_t, int32_t) const ;
-    ::android::graphics::Bitmap getFrameAtTime(int64_t) const ;
-    ::android::graphics::Bitmap getFrameAtTime() const ;
-    std::vector< int8_t> getEmbeddedPicture() const ;
-    void release() const ;
+    void setDataSource(const ::java::lang::String&) const;
+    void setDataSource(const ::java::lang::String&, const ::java::util::Map&) const;
+    void setDataSource(const ::java::io::FileDescriptor&, int64_t, int64_t) const;
+    void setDataSource(const ::java::io::FileDescriptor&) const;
+    void setDataSource(const ::android::content::Context&, const ::android::net::Uri&) const;
+    ::java::lang::String extractMetadata(int32_t) const;
+    ::android::graphics::Bitmap getFrameAtTime(int64_t, int32_t) const;
+    ::android::graphics::Bitmap getFrameAtTime(int64_t) const;
+    ::android::graphics::Bitmap getFrameAtTime() const;
+    std::vector< int8_t> getEmbeddedPicture() const;
+    void release() const;
 
 };
 }

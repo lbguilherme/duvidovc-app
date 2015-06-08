@@ -37,8 +37,8 @@ public:
     ::java::util::IllegalFormatCodePointException& operator=(::java::util::IllegalFormatCodePointException&& x) {obj = std::move(x.obj); return *this;}
     
     IllegalFormatCodePointException(int32_t);
-    int32_t getCodePoint() const ;
-    ::java::lang::String getMessage() const ;
+    int32_t getCodePoint() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

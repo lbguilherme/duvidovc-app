@@ -49,20 +49,20 @@ public:
     HttpRoute(const ::org::apache::http::HttpHost&, const ::java::net::InetAddress&, bool);
     HttpRoute(const ::org::apache::http::HttpHost&);
     HttpRoute(const ::org::apache::http::HttpHost&, const ::java::net::InetAddress&, const ::org::apache::http::HttpHost&, bool);
-    ::org::apache::http::HttpHost getTargetHost() const ;
-    ::java::net::InetAddress getLocalAddress() const ;
-    int32_t getHopCount() const ;
-    ::org::apache::http::HttpHost getHopTarget(int32_t) const ;
-    ::org::apache::http::HttpHost getProxyHost() const ;
-    ::org::apache::http::conn::routing::RouteInfo_TunnelType getTunnelType() const ;
-    bool isTunnelled() const ;
-    ::org::apache::http::conn::routing::RouteInfo_LayerType getLayerType() const ;
-    bool isLayered() const ;
-    bool isSecure() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
+    ::org::apache::http::HttpHost getTargetHost() const;
+    ::java::net::InetAddress getLocalAddress() const;
+    int32_t getHopCount() const;
+    ::org::apache::http::HttpHost getHopTarget(int32_t) const;
+    ::org::apache::http::HttpHost getProxyHost() const;
+    ::org::apache::http::conn::routing::RouteInfo_TunnelType getTunnelType() const;
+    bool isTunnelled() const;
+    ::org::apache::http::conn::routing::RouteInfo_LayerType getLayerType() const;
+    bool isLayered() const;
+    bool isSecure() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
 
 };
 }

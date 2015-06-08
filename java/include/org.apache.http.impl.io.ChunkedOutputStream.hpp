@@ -39,12 +39,12 @@ public:
     
     ChunkedOutputStream(const ::org::apache::http::io::SessionOutputBuffer&, int32_t);
     ChunkedOutputStream(const ::org::apache::http::io::SessionOutputBuffer&);
-    void finish() const ;
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void flush() const ;
-    void close() const ;
+    void finish() const;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void flush() const;
+    void close() const;
 
 };
 }

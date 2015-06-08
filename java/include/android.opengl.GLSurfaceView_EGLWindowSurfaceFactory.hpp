@@ -36,8 +36,8 @@ public:
     ::android::opengl::GLSurfaceView_EGLWindowSurfaceFactory& operator=(const ::android::opengl::GLSurfaceView_EGLWindowSurfaceFactory& x) {obj = x.obj; return *this;}
     ::android::opengl::GLSurfaceView_EGLWindowSurfaceFactory& operator=(::android::opengl::GLSurfaceView_EGLWindowSurfaceFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::microedition::khronos::egl::EGLSurface createWindowSurface(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLConfig&, const ::java::lang::Object&) const ;
-    void destroySurface(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLSurface&) const ;
+    ::javax::microedition::khronos::egl::EGLSurface createWindowSurface(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLConfig&, const ::java::lang::Object&) const;
+    void destroySurface(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLSurface&) const;
 
 };
 }

@@ -41,12 +41,12 @@ public:
     
     Messenger(const ::android::os::Handler&);
     Messenger(const ::android::os::IBinder&);
-    void send(const ::android::os::Message&) const ;
-    ::android::os::IBinder getBinder() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void send(const ::android::os::Message&) const;
+    ::android::os::IBinder getBinder() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
     static void writeMessengerOrNullToParcel(const ::android::os::Messenger&, const ::android::os::Parcel&);
     static ::android::os::Messenger readMessengerOrNullFromParcel(const ::android::os::Parcel&);
 

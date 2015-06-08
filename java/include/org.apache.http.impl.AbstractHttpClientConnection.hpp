@@ -40,14 +40,14 @@ public:
     ::org::apache::http::impl::AbstractHttpClientConnection& operator=(::org::apache::http::impl::AbstractHttpClientConnection&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractHttpClientConnection();
-    bool isResponseAvailable(int32_t) const ;
-    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const ;
-    void sendRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const ;
-    void flush() const ;
-    ::org::apache::http::HttpResponse receiveResponseHeader() const ;
-    void receiveResponseEntity(const ::org::apache::http::HttpResponse&) const ;
-    bool isStale() const ;
-    ::org::apache::http::HttpConnectionMetrics getMetrics() const ;
+    bool isResponseAvailable(int32_t) const;
+    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const;
+    void sendRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const;
+    void flush() const;
+    ::org::apache::http::HttpResponse receiveResponseHeader() const;
+    void receiveResponseEntity(const ::org::apache::http::HttpResponse&) const;
+    bool isStale() const;
+    ::org::apache::http::HttpConnectionMetrics getMetrics() const;
 
 };
 }

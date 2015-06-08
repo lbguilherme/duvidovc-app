@@ -41,19 +41,19 @@ public:
     StaticLayout(const ::java::lang::CharSequence&, const ::android::text::TextPaint&, int32_t, const ::android::text::Layout_Alignment&, float, float, bool);
     StaticLayout(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::TextPaint&, int32_t, const ::android::text::Layout_Alignment&, float, float, bool);
     StaticLayout(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::TextPaint&, int32_t, const ::android::text::Layout_Alignment&, float, float, bool, const ::android::text::TextUtils_TruncateAt&, int32_t);
-    int32_t getLineForVertical(int32_t) const ;
-    int32_t getLineCount() const ;
-    int32_t getLineTop(int32_t) const ;
-    int32_t getLineDescent(int32_t) const ;
-    int32_t getLineStart(int32_t) const ;
-    int32_t getParagraphDirection(int32_t) const ;
-    bool getLineContainsTab(int32_t) const ;
-    ::android::text::Layout_Directions getLineDirections(int32_t) const ;
-    int32_t getTopPadding() const ;
-    int32_t getBottomPadding() const ;
-    int32_t getEllipsisCount(int32_t) const ;
-    int32_t getEllipsisStart(int32_t) const ;
-    int32_t getEllipsizedWidth() const ;
+    int32_t getLineForVertical(int32_t) const;
+    int32_t getLineCount() const;
+    int32_t getLineTop(int32_t) const;
+    int32_t getLineDescent(int32_t) const;
+    int32_t getLineStart(int32_t) const;
+    int32_t getParagraphDirection(int32_t) const;
+    bool getLineContainsTab(int32_t) const;
+    ::android::text::Layout_Directions getLineDirections(int32_t) const;
+    int32_t getTopPadding() const;
+    int32_t getBottomPadding() const;
+    int32_t getEllipsisCount(int32_t) const;
+    int32_t getEllipsisStart(int32_t) const;
+    int32_t getEllipsizedWidth() const;
 
 };
 }

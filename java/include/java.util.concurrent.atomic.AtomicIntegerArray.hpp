@@ -38,20 +38,20 @@ public:
     
     AtomicIntegerArray(int32_t);
     AtomicIntegerArray(const std::vector< int32_t>&);
-    int32_t length() const ;
-    int32_t get(int32_t) const ;
-    void set(int32_t, int32_t) const ;
-    void lazySet(int32_t, int32_t) const ;
-    int32_t getAndSet(int32_t, int32_t) const ;
-    bool compareAndSet(int32_t, int32_t, int32_t) const ;
-    bool weakCompareAndSet(int32_t, int32_t, int32_t) const ;
-    int32_t getAndIncrement(int32_t) const ;
-    int32_t getAndDecrement(int32_t) const ;
-    int32_t getAndAdd(int32_t, int32_t) const ;
-    int32_t incrementAndGet(int32_t) const ;
-    int32_t decrementAndGet(int32_t) const ;
-    int32_t addAndGet(int32_t, int32_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t length() const;
+    int32_t get(int32_t) const;
+    void set(int32_t, int32_t) const;
+    void lazySet(int32_t, int32_t) const;
+    int32_t getAndSet(int32_t, int32_t) const;
+    bool compareAndSet(int32_t, int32_t, int32_t) const;
+    bool weakCompareAndSet(int32_t, int32_t, int32_t) const;
+    int32_t getAndIncrement(int32_t) const;
+    int32_t getAndDecrement(int32_t) const;
+    int32_t getAndAdd(int32_t, int32_t) const;
+    int32_t incrementAndGet(int32_t) const;
+    int32_t decrementAndGet(int32_t) const;
+    int32_t addAndGet(int32_t, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

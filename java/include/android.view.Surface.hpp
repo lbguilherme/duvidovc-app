@@ -39,15 +39,15 @@ public:
     ::android::view::Surface& operator=(::android::view::Surface&& x) {obj = std::move(x.obj); return *this;}
     
     Surface(const ::android::graphics::SurfaceTexture&);
-    bool isValid() const ;
-    void release() const ;
-    ::android::graphics::Canvas lockCanvas(const ::android::graphics::Rect&) const ;
-    void unlockCanvasAndPost(const ::android::graphics::Canvas&) const ;
-    void unlockCanvas(const ::android::graphics::Canvas&) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    bool isValid() const;
+    void release() const;
+    ::android::graphics::Canvas lockCanvas(const ::android::graphics::Rect&) const;
+    void unlockCanvasAndPost(const ::android::graphics::Canvas&) const;
+    void unlockCanvas(const ::android::graphics::Canvas&) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void readFromParcel(const ::android::os::Parcel&) const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

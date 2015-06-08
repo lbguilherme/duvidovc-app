@@ -35,7 +35,7 @@ public:
     ::org::w3c::dom::UserDataHandler& operator=(const ::org::w3c::dom::UserDataHandler& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::UserDataHandler& operator=(::org::w3c::dom::UserDataHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void handle(int16_t, const ::java::lang::String&, const ::java::lang::Object&, const ::org::w3c::dom::Node&, const ::org::w3c::dom::Node&) const ;
+    void handle(int16_t, const ::java::lang::String&, const ::java::lang::Object&, const ::org::w3c::dom::Node&, const ::org::w3c::dom::Node&) const;
 
 };
 }

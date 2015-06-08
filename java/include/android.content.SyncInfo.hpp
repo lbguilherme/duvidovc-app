@@ -34,8 +34,8 @@ public:
     ::android::content::SyncInfo& operator=(const ::android::content::SyncInfo& x) {obj = x.obj; return *this;}
     ::android::content::SyncInfo& operator=(::android::content::SyncInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

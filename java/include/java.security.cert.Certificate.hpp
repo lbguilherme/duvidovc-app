@@ -37,14 +37,14 @@ public:
     ::java::security::cert::Certificate& operator=(const ::java::security::cert::Certificate& x) {obj = x.obj; return *this;}
     ::java::security::cert::Certificate& operator=(::java::security::cert::Certificate&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getType() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    std::vector< int8_t> getEncoded() const ;
-    void verify(const ::java::security::PublicKey&) const ;
-    void verify(const ::java::security::PublicKey&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    ::java::security::PublicKey getPublicKey() const ;
+    ::java::lang::String getType() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    std::vector< int8_t> getEncoded() const;
+    void verify(const ::java::security::PublicKey&) const;
+    void verify(const ::java::security::PublicKey&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    ::java::security::PublicKey getPublicKey() const;
 
 };
 }

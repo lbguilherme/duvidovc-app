@@ -32,15 +32,15 @@ public:
     ::android::speech::RecognitionListener& operator=(const ::android::speech::RecognitionListener& x) {obj = x.obj; return *this;}
     ::android::speech::RecognitionListener& operator=(::android::speech::RecognitionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onReadyForSpeech(const ::android::os::Bundle&) const ;
-    void onBeginningOfSpeech() const ;
-    void onRmsChanged(float) const ;
-    void onBufferReceived(const std::vector< int8_t>&) const ;
-    void onEndOfSpeech() const ;
-    void onError(int32_t) const ;
-    void onResults(const ::android::os::Bundle&) const ;
-    void onPartialResults(const ::android::os::Bundle&) const ;
-    void onEvent(int32_t, const ::android::os::Bundle&) const ;
+    void onReadyForSpeech(const ::android::os::Bundle&) const;
+    void onBeginningOfSpeech() const;
+    void onRmsChanged(float) const;
+    void onBufferReceived(const std::vector< int8_t>&) const;
+    void onEndOfSpeech() const;
+    void onError(int32_t) const;
+    void onResults(const ::android::os::Bundle&) const;
+    void onPartialResults(const ::android::os::Bundle&) const;
+    void onEvent(int32_t, const ::android::os::Bundle&) const;
 
 };
 }

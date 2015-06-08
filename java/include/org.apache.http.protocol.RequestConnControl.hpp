@@ -38,7 +38,7 @@ public:
     ::org::apache::http::protocol::RequestConnControl& operator=(::org::apache::http::protocol::RequestConnControl&& x) {obj = std::move(x.obj); return *this;}
     
     RequestConnControl();
-    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

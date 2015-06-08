@@ -32,7 +32,7 @@ public:
     ::com::facebook::AccessTokenCache_SharedPreferencesTokenCachingStrategyFactory& operator=(const ::com::facebook::AccessTokenCache_SharedPreferencesTokenCachingStrategyFactory& x) {obj = x.obj; return *this;}
     ::com::facebook::AccessTokenCache_SharedPreferencesTokenCachingStrategyFactory& operator=(::com::facebook::AccessTokenCache_SharedPreferencesTokenCachingStrategyFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::com::facebook::LegacyTokenHelper create() const ;
+    ::com::facebook::LegacyTokenHelper create() const;
 
 };
 }

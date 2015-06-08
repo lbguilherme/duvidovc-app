@@ -41,12 +41,12 @@ public:
     static ::android::os::Looper getMainLooper();
     static void loop();
     static ::android::os::Looper myLooper();
-    void setMessageLogging(const ::android::util::Printer&) const ;
+    void setMessageLogging(const ::android::util::Printer&) const;
     static ::android::os::MessageQueue myQueue();
-    void quit() const ;
-    ::java::lang::Thread getThread() const ;
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
+    void quit() const;
+    ::java::lang::Thread getThread() const;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
 
 };
 }

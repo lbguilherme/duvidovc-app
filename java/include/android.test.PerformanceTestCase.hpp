@@ -32,8 +32,8 @@ public:
     ::android::test::PerformanceTestCase& operator=(const ::android::test::PerformanceTestCase& x) {obj = x.obj; return *this;}
     ::android::test::PerformanceTestCase& operator=(::android::test::PerformanceTestCase&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t startPerformance(const ::android::test::PerformanceTestCase_Intermediates&) const ;
-    bool isPerformanceOnly() const ;
+    int32_t startPerformance(const ::android::test::PerformanceTestCase_Intermediates&) const;
+    bool isPerformanceOnly() const;
 
 };
 }

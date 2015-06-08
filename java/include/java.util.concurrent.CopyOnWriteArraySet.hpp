@@ -41,20 +41,20 @@ public:
     
     CopyOnWriteArraySet();
     CopyOnWriteArraySet(const ::java::util::Collection&);
-    int32_t size() const ;
-    bool isEmpty() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
-    void clear() const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool add(const ::java::lang::Object&) const ;
-    bool containsAll(const ::java::util::Collection&) const ;
-    bool addAll(const ::java::util::Collection&) const ;
-    bool removeAll(const ::java::util::Collection&) const ;
-    bool retainAll(const ::java::util::Collection&) const ;
-    ::java::util::Iterator iterator() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    int32_t size() const;
+    bool isEmpty() const;
+    bool contains(const ::java::lang::Object&) const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
+    void clear() const;
+    bool remove(const ::java::lang::Object&) const;
+    bool add(const ::java::lang::Object&) const;
+    bool containsAll(const ::java::util::Collection&) const;
+    bool addAll(const ::java::util::Collection&) const;
+    bool removeAll(const ::java::util::Collection&) const;
+    bool retainAll(const ::java::util::Collection&) const;
+    ::java::util::Iterator iterator() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

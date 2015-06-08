@@ -38,11 +38,11 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventStubImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventStubImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventStubImpl& operator=(::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventStubImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void appendRecord(const ::android::view::accessibility::AccessibilityEvent&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getRecord(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const ;
-    void setContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const ;
-    int32_t getRecordCount(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    int32_t getContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void appendRecord(const ::android::view::accessibility::AccessibilityEvent&, const ::java::lang::Object&) const;
+    ::java::lang::Object getRecord(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const;
+    void setContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const;
+    int32_t getRecordCount(const ::android::view::accessibility::AccessibilityEvent&) const;
+    int32_t getContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

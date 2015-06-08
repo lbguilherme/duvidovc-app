@@ -33,8 +33,8 @@ public:
     ::android::widget::ListAdapter& operator=(const ::android::widget::ListAdapter& x) {obj = x.obj; return *this;}
     ::android::widget::ListAdapter& operator=(::android::widget::ListAdapter&& x) {obj = std::move(x.obj); return *this;}
     
-    bool areAllItemsEnabled() const ;
-    bool isEnabled(int32_t) const ;
+    bool areAllItemsEnabled() const;
+    bool isEnabled(int32_t) const;
 
 };
 }

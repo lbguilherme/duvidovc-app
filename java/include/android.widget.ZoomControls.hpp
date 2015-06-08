@@ -39,15 +39,15 @@ public:
     
     ZoomControls(const ::android::content::Context&);
     ZoomControls(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setOnZoomInClickListener(const ::android::view::View_OnClickListener&) const ;
-    void setOnZoomOutClickListener(const ::android::view::View_OnClickListener&) const ;
-    void setZoomSpeed(int64_t) const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void show() const ;
-    void hide() const ;
-    void setIsZoomInEnabled(bool) const ;
-    void setIsZoomOutEnabled(bool) const ;
-    bool hasFocus() const ;
+    void setOnZoomInClickListener(const ::android::view::View_OnClickListener&) const;
+    void setOnZoomOutClickListener(const ::android::view::View_OnClickListener&) const;
+    void setZoomSpeed(int64_t) const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void show() const;
+    void hide() const;
+    void setIsZoomInEnabled(bool) const;
+    void setIsZoomOutEnabled(bool) const;
+    bool hasFocus() const;
 
 };
 }

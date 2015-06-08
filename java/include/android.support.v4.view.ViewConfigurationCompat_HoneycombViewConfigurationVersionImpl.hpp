@@ -36,7 +36,7 @@ public:
     ::android::support::v4::view::ViewConfigurationCompat_HoneycombViewConfigurationVersionImpl& operator=(const ::android::support::v4::view::ViewConfigurationCompat_HoneycombViewConfigurationVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewConfigurationCompat_HoneycombViewConfigurationVersionImpl& operator=(::android::support::v4::view::ViewConfigurationCompat_HoneycombViewConfigurationVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasPermanentMenuKey(const ::android::view::ViewConfiguration&) const ;
+    bool hasPermanentMenuKey(const ::android::view::ViewConfiguration&) const;
 
 };
 }

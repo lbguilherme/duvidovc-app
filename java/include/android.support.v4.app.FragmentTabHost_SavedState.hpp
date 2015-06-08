@@ -37,8 +37,8 @@ public:
     ::android::support::v4::app::FragmentTabHost_SavedState& operator=(const ::android::support::v4::app::FragmentTabHost_SavedState& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::FragmentTabHost_SavedState& operator=(::android::support::v4::app::FragmentTabHost_SavedState&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -41,11 +41,11 @@ public:
     ::org::apache::http::impl::auth::BasicScheme& operator=(::org::apache::http::impl::auth::BasicScheme&& x) {obj = std::move(x.obj); return *this;}
     
     BasicScheme();
-    ::java::lang::String getSchemeName() const ;
-    void processChallenge(const ::org::apache::http::Header&) const ;
-    bool isComplete() const ;
-    bool isConnectionBased() const ;
-    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const ;
+    ::java::lang::String getSchemeName() const;
+    void processChallenge(const ::org::apache::http::Header&) const;
+    bool isComplete() const;
+    bool isConnectionBased() const;
+    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const;
     static ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::java::lang::String&, bool);
 
 };

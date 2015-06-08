@@ -36,11 +36,11 @@ public:
     
     PipedWriter();
     PipedWriter(const ::java::io::PipedReader&);
-    void close() const ;
-    void connect(const ::java::io::PipedReader&) const ;
-    void flush() const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
+    void close() const;
+    void connect(const ::java::io::PipedReader&) const;
+    void flush() const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
 
 };
 }

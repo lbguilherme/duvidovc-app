@@ -34,9 +34,9 @@ public:
     
     FileObserver(const ::java::lang::String&);
     FileObserver(const ::java::lang::String&, int32_t);
-    void startWatching() const ;
-    void stopWatching() const ;
-    void onEvent(int32_t, const ::java::lang::String&) const ;
+    void startWatching() const;
+    void stopWatching() const;
+    void onEvent(int32_t, const ::java::lang::String&) const;
 
 };
 }

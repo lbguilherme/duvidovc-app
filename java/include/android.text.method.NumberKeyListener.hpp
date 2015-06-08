@@ -42,8 +42,8 @@ public:
     ::android::text::method::NumberKeyListener& operator=(::android::text::method::NumberKeyListener&& x) {obj = std::move(x.obj); return *this;}
     
     NumberKeyListener();
-    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const ;
-    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
+    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const;
+    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
 
 };
 }

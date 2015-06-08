@@ -36,14 +36,14 @@ public:
     ::android::bluetooth::BluetoothClass& operator=(const ::android::bluetooth::BluetoothClass& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothClass& operator=(::android::bluetooth::BluetoothClass&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    bool hasService(int32_t) const ;
-    int32_t getMajorDeviceClass() const ;
-    int32_t getDeviceClass() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    bool hasService(int32_t) const;
+    int32_t getMajorDeviceClass() const;
+    int32_t getDeviceClass() const;
 
 };
 }

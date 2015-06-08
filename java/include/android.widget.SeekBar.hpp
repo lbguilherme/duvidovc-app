@@ -39,7 +39,7 @@ public:
     SeekBar(const ::android::content::Context&);
     SeekBar(const ::android::content::Context&, const ::android::util::AttributeSet&);
     SeekBar(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setOnSeekBarChangeListener(const ::android::widget::SeekBar_OnSeekBarChangeListener&) const ;
+    void setOnSeekBarChangeListener(const ::android::widget::SeekBar_OnSeekBarChangeListener&) const;
 
 };
 }

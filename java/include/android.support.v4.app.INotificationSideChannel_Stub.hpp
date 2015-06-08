@@ -42,8 +42,8 @@ public:
     
     INotificationSideChannel_Stub();
     static ::android::support::v4::app::INotificationSideChannel asInterface(const ::android::os::IBinder&);
-    ::android::os::IBinder asBinder() const ;
-    bool onTransact(int32_t, const ::android::os::Parcel&, const ::android::os::Parcel&, int32_t) const ;
+    ::android::os::IBinder asBinder() const;
+    bool onTransact(int32_t, const ::android::os::Parcel&, const ::android::os::Parcel&, int32_t) const;
 
 };
 }

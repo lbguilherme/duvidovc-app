@@ -44,13 +44,13 @@ public:
     ::android::text::SpannedString& operator=(::android::text::SpannedString&& x) {obj = std::move(x.obj); return *this;}
     
     SpannedString(const ::java::lang::CharSequence&);
-    ::java::lang::CharSequence subSequence(int32_t, int32_t) const ;
+    ::java::lang::CharSequence subSequence(int32_t, int32_t) const;
     static ::android::text::SpannedString valueOf(const ::java::lang::CharSequence&);
-    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const ;
-    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const ;
-    int32_t getSpanFlags(const ::java::lang::Object&) const ;
-    int32_t getSpanEnd(const ::java::lang::Object&) const ;
-    int32_t getSpanStart(const ::java::lang::Object&) const ;
+    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const;
+    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const;
+    int32_t getSpanFlags(const ::java::lang::Object&) const;
+    int32_t getSpanEnd(const ::java::lang::Object&) const;
+    int32_t getSpanStart(const ::java::lang::Object&) const;
 
 };
 }

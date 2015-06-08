@@ -42,12 +42,12 @@ public:
     
     static bool handleOnActivityResult(int32_t, int32_t, const ::android::content::Intent&);
     static void getControllerForObjectId(const ::java::lang::String&, const ::com::facebook::share::widget::LikeView_ObjectType&, const ::com::facebook::share::internal::LikeActionController_CreationCallback&);
-    ::java::lang::String getObjectId() const ;
-    ::java::lang::String getLikeCountString() const ;
-    ::java::lang::String getSocialSentence() const ;
-    bool isObjectLiked() const ;
-    bool shouldEnableView() const ;
-    void toggleLike(const ::android::app::Activity&, const ::android::support::v4::app::Fragment&, const ::android::os::Bundle&) const ;
+    ::java::lang::String getObjectId() const;
+    ::java::lang::String getLikeCountString() const;
+    ::java::lang::String getSocialSentence() const;
+    bool isObjectLiked() const;
+    bool shouldEnableView() const;
+    void toggleLike(const ::android::app::Activity&, const ::android::support::v4::app::Fragment&, const ::android::os::Bundle&) const;
 
 };
 }

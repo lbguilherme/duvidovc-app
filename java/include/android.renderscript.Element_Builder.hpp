@@ -36,9 +36,9 @@ public:
     ::android::renderscript::Element_Builder& operator=(::android::renderscript::Element_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     Element_Builder(const ::android::renderscript::RenderScript&);
-    ::android::renderscript::Element_Builder add(const ::android::renderscript::Element&, const ::java::lang::String&, int32_t) const ;
-    ::android::renderscript::Element_Builder add(const ::android::renderscript::Element&, const ::java::lang::String&) const ;
-    ::android::renderscript::Element create() const ;
+    ::android::renderscript::Element_Builder add(const ::android::renderscript::Element&, const ::java::lang::String&, int32_t) const;
+    ::android::renderscript::Element_Builder add(const ::android::renderscript::Element&, const ::java::lang::String&) const;
+    ::android::renderscript::Element create() const;
 
 };
 }

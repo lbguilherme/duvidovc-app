@@ -40,15 +40,15 @@ public:
     ::org::apache::http::entity::HttpEntityWrapper& operator=(::org::apache::http::entity::HttpEntityWrapper&& x) {obj = std::move(x.obj); return *this;}
     
     HttpEntityWrapper(const ::org::apache::http::HttpEntity&);
-    bool isRepeatable() const ;
-    bool isChunked() const ;
-    int64_t getContentLength() const ;
-    ::org::apache::http::Header getContentType() const ;
-    ::org::apache::http::Header getContentEncoding() const ;
-    ::java::io::InputStream getContent() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    void consumeContent() const ;
+    bool isRepeatable() const;
+    bool isChunked() const;
+    int64_t getContentLength() const;
+    ::org::apache::http::Header getContentType() const;
+    ::org::apache::http::Header getContentEncoding() const;
+    ::java::io::InputStream getContent() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    void consumeContent() const;
 
 };
 }

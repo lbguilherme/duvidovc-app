@@ -39,17 +39,17 @@ public:
     ::android::widget::BaseAdapter& operator=(::android::widget::BaseAdapter&& x) {obj = std::move(x.obj); return *this;}
     
     BaseAdapter();
-    bool hasStableIds() const ;
-    void registerDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    void notifyDataSetChanged() const ;
-    void notifyDataSetInvalidated() const ;
-    bool areAllItemsEnabled() const ;
-    bool isEnabled(int32_t) const ;
-    ::android::view::View getDropDownView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
-    int32_t getItemViewType(int32_t) const ;
-    int32_t getViewTypeCount() const ;
-    bool isEmpty() const ;
+    bool hasStableIds() const;
+    void registerDataSetObserver(const ::android::database::DataSetObserver&) const;
+    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const;
+    void notifyDataSetChanged() const;
+    void notifyDataSetInvalidated() const;
+    bool areAllItemsEnabled() const;
+    bool isEnabled(int32_t) const;
+    ::android::view::View getDropDownView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const;
+    int32_t getItemViewType(int32_t) const;
+    int32_t getViewTypeCount() const;
+    bool isEmpty() const;
 
 };
 }

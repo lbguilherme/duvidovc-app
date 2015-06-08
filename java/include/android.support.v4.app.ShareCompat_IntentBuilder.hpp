@@ -40,26 +40,26 @@ public:
     ::android::support::v4::app::ShareCompat_IntentBuilder& operator=(::android::support::v4::app::ShareCompat_IntentBuilder&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::app::ShareCompat_IntentBuilder from(const ::android::app::Activity&);
-    ::android::content::Intent getIntent() const ;
-    ::android::content::Intent createChooserIntent() const ;
-    void startChooser() const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setChooserTitle(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setChooserTitle(int32_t) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setType(const ::java::lang::String&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setText(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setHtmlText(const ::java::lang::String&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setStream(const ::android::net::Uri&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder addStream(const ::android::net::Uri&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setEmailTo(const std::vector< ::java::lang::String>&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailTo(const ::java::lang::String&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailTo(const std::vector< ::java::lang::String>&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setEmailCc(const std::vector< ::java::lang::String>&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailCc(const ::java::lang::String&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailCc(const std::vector< ::java::lang::String>&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setEmailBcc(const std::vector< ::java::lang::String>&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailBcc(const ::java::lang::String&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailBcc(const std::vector< ::java::lang::String>&) const ;
-    ::android::support::v4::app::ShareCompat_IntentBuilder setSubject(const ::java::lang::String&) const ;
+    ::android::content::Intent getIntent() const;
+    ::android::content::Intent createChooserIntent() const;
+    void startChooser() const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setChooserTitle(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setChooserTitle(int32_t) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setType(const ::java::lang::String&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setText(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setHtmlText(const ::java::lang::String&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setStream(const ::android::net::Uri&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder addStream(const ::android::net::Uri&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setEmailTo(const std::vector< ::java::lang::String>&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailTo(const ::java::lang::String&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailTo(const std::vector< ::java::lang::String>&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setEmailCc(const std::vector< ::java::lang::String>&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailCc(const ::java::lang::String&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailCc(const std::vector< ::java::lang::String>&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setEmailBcc(const std::vector< ::java::lang::String>&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailBcc(const ::java::lang::String&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder addEmailBcc(const std::vector< ::java::lang::String>&) const;
+    ::android::support::v4::app::ShareCompat_IntentBuilder setSubject(const ::java::lang::String&) const;
 
 };
 }

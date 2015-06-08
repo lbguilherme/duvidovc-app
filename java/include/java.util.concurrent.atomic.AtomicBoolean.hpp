@@ -38,13 +38,13 @@ public:
     
     AtomicBoolean(bool);
     AtomicBoolean();
-    bool get() const ;
-    bool compareAndSet(bool, bool) const ;
-    bool weakCompareAndSet(bool, bool) const ;
-    void set(bool) const ;
-    void lazySet(bool) const ;
-    bool getAndSet(bool) const ;
-    ::java::lang::String toString() const ;
+    bool get() const;
+    bool compareAndSet(bool, bool) const;
+    bool weakCompareAndSet(bool, bool) const;
+    void set(bool) const;
+    void lazySet(bool) const;
+    bool getAndSet(bool) const;
+    ::java::lang::String toString() const;
 
 };
 }

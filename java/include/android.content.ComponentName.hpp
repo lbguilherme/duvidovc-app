@@ -47,23 +47,23 @@ public:
     ComponentName(const ::android::content::Context&, const ::java::lang::String&);
     ComponentName(const ::android::content::Context&, const ::java::lang::Class&);
     ComponentName(const ::android::os::Parcel&);
-    ::android::content::ComponentName clone() const ;
-    ::java::lang::String getPackageName() const ;
-    ::java::lang::String getClassName() const ;
-    ::java::lang::String getShortClassName() const ;
-    ::java::lang::String flattenToString() const ;
-    ::java::lang::String flattenToShortString() const ;
+    ::android::content::ComponentName clone() const;
+    ::java::lang::String getPackageName() const;
+    ::java::lang::String getClassName() const;
+    ::java::lang::String getShortClassName() const;
+    ::java::lang::String flattenToString() const;
+    ::java::lang::String flattenToShortString() const;
     static ::android::content::ComponentName unflattenFromString(const ::java::lang::String&);
-    ::java::lang::String toShortString() const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t compareTo(const ::android::content::ComponentName&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toShortString() const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t compareTo(const ::android::content::ComponentName&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
     static void writeToParcel(const ::android::content::ComponentName&, const ::android::os::Parcel&);
     static ::android::content::ComponentName readFromParcel(const ::android::os::Parcel&);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

@@ -44,20 +44,20 @@ public:
     ::org::xml::sax::ext::DefaultHandler2& operator=(::org::xml::sax::ext::DefaultHandler2&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultHandler2();
-    void startCDATA() const ;
-    void endCDATA() const ;
-    void startDTD(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void endDTD() const ;
-    void startEntity(const ::java::lang::String&) const ;
-    void endEntity(const ::java::lang::String&) const ;
-    void comment(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void attributeDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void elementDecl(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void externalEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void internalEntityDecl(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::xml::sax::InputSource getExternalSubset(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&) const ;
+    void startCDATA() const;
+    void endCDATA() const;
+    void startDTD(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void endDTD() const;
+    void startEntity(const ::java::lang::String&) const;
+    void endEntity(const ::java::lang::String&) const;
+    void comment(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void attributeDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void elementDecl(const ::java::lang::String&, const ::java::lang::String&) const;
+    void externalEntityDecl(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void internalEntityDecl(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::xml::sax::InputSource getExternalSubset(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::org::xml::sax::InputSource resolveEntity(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

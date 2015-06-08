@@ -34,9 +34,9 @@ public:
     ::com::facebook::internal::WorkQueue_WorkNode& operator=(const ::com::facebook::internal::WorkQueue_WorkNode& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::WorkQueue_WorkNode& operator=(::com::facebook::internal::WorkQueue_WorkNode&& x) {obj = std::move(x.obj); return *this;}
     
-    bool cancel() const ;
-    void moveToFront() const ;
-    bool isRunning() const ;
+    bool cancel() const;
+    void moveToFront() const;
+    bool isRunning() const;
 
 };
 }

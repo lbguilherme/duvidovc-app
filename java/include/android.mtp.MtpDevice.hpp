@@ -38,22 +38,22 @@ public:
     ::android::mtp::MtpDevice& operator=(::android::mtp::MtpDevice&& x) {obj = std::move(x.obj); return *this;}
     
     MtpDevice(const ::android::hardware::usb::UsbDevice&);
-    bool open(const ::android::hardware::usb::UsbDeviceConnection&) const ;
-    void close() const ;
-    ::java::lang::String getDeviceName() const ;
-    int32_t getDeviceId() const ;
-    ::java::lang::String toString() const ;
-    ::android::mtp::MtpDeviceInfo getDeviceInfo() const ;
-    std::vector< int32_t> getStorageIds() const ;
-    std::vector< int32_t> getObjectHandles(int32_t, int32_t, int32_t) const ;
-    std::vector< int8_t> getObject(int32_t, int32_t) const ;
-    std::vector< int8_t> getThumbnail(int32_t) const ;
-    ::android::mtp::MtpStorageInfo getStorageInfo(int32_t) const ;
-    ::android::mtp::MtpObjectInfo getObjectInfo(int32_t) const ;
-    bool deleteObject(int32_t) const ;
-    int64_t getParent(int32_t) const ;
-    int64_t getStorageId(int32_t) const ;
-    bool importFile(int32_t, const ::java::lang::String&) const ;
+    bool open(const ::android::hardware::usb::UsbDeviceConnection&) const;
+    void close() const;
+    ::java::lang::String getDeviceName() const;
+    int32_t getDeviceId() const;
+    ::java::lang::String toString() const;
+    ::android::mtp::MtpDeviceInfo getDeviceInfo() const;
+    std::vector< int32_t> getStorageIds() const;
+    std::vector< int32_t> getObjectHandles(int32_t, int32_t, int32_t) const;
+    std::vector< int8_t> getObject(int32_t, int32_t) const;
+    std::vector< int8_t> getThumbnail(int32_t) const;
+    ::android::mtp::MtpStorageInfo getStorageInfo(int32_t) const;
+    ::android::mtp::MtpObjectInfo getObjectInfo(int32_t) const;
+    bool deleteObject(int32_t) const;
+    int64_t getParent(int32_t) const;
+    int64_t getStorageId(int32_t) const;
+    bool importFile(int32_t, const ::java::lang::String&) const;
 
 };
 }

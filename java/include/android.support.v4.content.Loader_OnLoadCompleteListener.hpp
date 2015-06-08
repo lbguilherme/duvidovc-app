@@ -35,7 +35,7 @@ public:
     ::android::support::v4::content::Loader_OnLoadCompleteListener& operator=(const ::android::support::v4::content::Loader_OnLoadCompleteListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::content::Loader_OnLoadCompleteListener& operator=(::android::support::v4::content::Loader_OnLoadCompleteListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onLoadComplete(const ::android::support::v4::content::Loader&, const ::java::lang::Object&) const ;
+    void onLoadComplete(const ::android::support::v4::content::Loader&, const ::java::lang::Object&) const;
 
 };
 }

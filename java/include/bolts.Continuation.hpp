@@ -32,7 +32,7 @@ public:
     ::bolts::Continuation& operator=(const ::bolts::Continuation& x) {obj = x.obj; return *this;}
     ::bolts::Continuation& operator=(::bolts::Continuation&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object then(const ::bolts::Task&) const ;
+    ::java::lang::Object then(const ::bolts::Task&) const;
 
 };
 }

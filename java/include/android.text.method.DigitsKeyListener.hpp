@@ -43,8 +43,8 @@ public:
     static ::android::text::method::DigitsKeyListener getInstance();
     static ::android::text::method::DigitsKeyListener getInstance(bool, bool);
     static ::android::text::method::DigitsKeyListener getInstance(const ::java::lang::String&);
-    int32_t getInputType() const ;
-    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const ;
+    int32_t getInputType() const;
+    ::java::lang::CharSequence filter(const ::java::lang::CharSequence&, int32_t, int32_t, const ::android::text::Spanned&, int32_t, int32_t) const;
 
 };
 }

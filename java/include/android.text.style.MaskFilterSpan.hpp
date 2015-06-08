@@ -39,8 +39,8 @@ public:
     ::android::text::style::MaskFilterSpan& operator=(::android::text::style::MaskFilterSpan&& x) {obj = std::move(x.obj); return *this;}
     
     MaskFilterSpan(const ::android::graphics::MaskFilter&);
-    ::android::graphics::MaskFilter getMaskFilter() const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    ::android::graphics::MaskFilter getMaskFilter() const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
 
 };
 }

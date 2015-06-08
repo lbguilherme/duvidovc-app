@@ -35,8 +35,8 @@ public:
     ::java::util::MissingFormatArgumentException& operator=(::java::util::MissingFormatArgumentException&& x) {obj = std::move(x.obj); return *this;}
     
     MissingFormatArgumentException(const ::java::lang::String&);
-    ::java::lang::String getFormatSpecifier() const ;
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getFormatSpecifier() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

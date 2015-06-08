@@ -41,23 +41,23 @@ public:
     ::android::app::WallpaperManager& operator=(::android::app::WallpaperManager&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::app::WallpaperManager getInstance(const ::android::content::Context&);
-    ::android::graphics::drawable::Drawable getDrawable() const ;
-    ::android::graphics::drawable::Drawable peekDrawable() const ;
-    ::android::graphics::drawable::Drawable getFastDrawable() const ;
-    ::android::graphics::drawable::Drawable peekFastDrawable() const ;
-    void forgetLoadedWallpaper() const ;
-    ::android::app::WallpaperInfo getWallpaperInfo() const ;
-    void setResource(int32_t) const ;
-    void setBitmap(const ::android::graphics::Bitmap&) const ;
-    void setStream(const ::java::io::InputStream&) const ;
-    int32_t getDesiredMinimumWidth() const ;
-    int32_t getDesiredMinimumHeight() const ;
-    void suggestDesiredDimensions(int32_t, int32_t) const ;
-    void setWallpaperOffsets(const ::android::os::IBinder&, float, float) const ;
-    void setWallpaperOffsetSteps(float, float) const ;
-    void sendWallpaperCommand(const ::android::os::IBinder&, const ::java::lang::String&, int32_t, int32_t, int32_t, const ::android::os::Bundle&) const ;
-    void clearWallpaperOffsets(const ::android::os::IBinder&) const ;
-    void clear() const ;
+    ::android::graphics::drawable::Drawable getDrawable() const;
+    ::android::graphics::drawable::Drawable peekDrawable() const;
+    ::android::graphics::drawable::Drawable getFastDrawable() const;
+    ::android::graphics::drawable::Drawable peekFastDrawable() const;
+    void forgetLoadedWallpaper() const;
+    ::android::app::WallpaperInfo getWallpaperInfo() const;
+    void setResource(int32_t) const;
+    void setBitmap(const ::android::graphics::Bitmap&) const;
+    void setStream(const ::java::io::InputStream&) const;
+    int32_t getDesiredMinimumWidth() const;
+    int32_t getDesiredMinimumHeight() const;
+    void suggestDesiredDimensions(int32_t, int32_t) const;
+    void setWallpaperOffsets(const ::android::os::IBinder&, float, float) const;
+    void setWallpaperOffsetSteps(float, float) const;
+    void sendWallpaperCommand(const ::android::os::IBinder&, const ::java::lang::String&, int32_t, int32_t, int32_t, const ::android::os::Bundle&) const;
+    void clearWallpaperOffsets(const ::android::os::IBinder&) const;
+    void clear() const;
 
 };
 }

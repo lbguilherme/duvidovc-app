@@ -33,7 +33,7 @@ public:
     ::android::net::wifi::p2p::WifiP2pManager_ChannelListener& operator=(const ::android::net::wifi::p2p::WifiP2pManager_ChannelListener& x) {obj = x.obj; return *this;}
     ::android::net::wifi::p2p::WifiP2pManager_ChannelListener& operator=(::android::net::wifi::p2p::WifiP2pManager_ChannelListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onChannelDisconnected() const ;
+    void onChannelDisconnected() const;
 
 };
 }

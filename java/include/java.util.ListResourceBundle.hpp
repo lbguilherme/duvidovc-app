@@ -37,8 +37,8 @@ public:
     ::java::util::ListResourceBundle& operator=(::java::util::ListResourceBundle&& x) {obj = std::move(x.obj); return *this;}
     
     ListResourceBundle();
-    ::java::util::Enumeration getKeys() const ;
-    ::java::lang::Object handleGetObject(const ::java::lang::String&) const ;
+    ::java::util::Enumeration getKeys() const;
+    ::java::lang::Object handleGetObject(const ::java::lang::String&) const;
 
 };
 }

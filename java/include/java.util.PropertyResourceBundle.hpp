@@ -40,8 +40,8 @@ public:
     
     PropertyResourceBundle(const ::java::io::InputStream&);
     PropertyResourceBundle(const ::java::io::Reader&);
-    ::java::util::Enumeration getKeys() const ;
-    ::java::lang::Object handleGetObject(const ::java::lang::String&) const ;
+    ::java::util::Enumeration getKeys() const;
+    ::java::lang::Object handleGetObject(const ::java::lang::String&) const;
 
 };
 }

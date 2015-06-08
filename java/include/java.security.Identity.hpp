@@ -42,19 +42,19 @@ public:
     
     Identity(const ::java::lang::String&);
     Identity(const ::java::lang::String&, const ::java::security::IdentityScope&);
-    void addCertificate(const ::java::security::Certificate&) const ;
-    void removeCertificate(const ::java::security::Certificate&) const ;
-    std::vector< ::java::security::Certificate> certificates() const ;
-    ::java::lang::String toString(bool) const ;
-    ::java::security::IdentityScope getScope() const ;
-    void setPublicKey(const ::java::security::PublicKey&) const ;
-    ::java::security::PublicKey getPublicKey() const ;
-    void setInfo(const ::java::lang::String&) const ;
-    ::java::lang::String getInfo() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String getName() const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    void addCertificate(const ::java::security::Certificate&) const;
+    void removeCertificate(const ::java::security::Certificate&) const;
+    std::vector< ::java::security::Certificate> certificates() const;
+    ::java::lang::String toString(bool) const;
+    ::java::security::IdentityScope getScope() const;
+    void setPublicKey(const ::java::security::PublicKey&) const;
+    ::java::security::PublicKey getPublicKey() const;
+    void setInfo(const ::java::lang::String&) const;
+    ::java::lang::String getInfo() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String getName() const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

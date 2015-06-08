@@ -39,10 +39,10 @@ public:
     ::android::support::v4::content::LocalBroadcastManager& operator=(::android::support::v4::content::LocalBroadcastManager&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::content::LocalBroadcastManager getInstance(const ::android::content::Context&);
-    void registerReceiver(const ::android::content::BroadcastReceiver&, const ::android::content::IntentFilter&) const ;
-    void unregisterReceiver(const ::android::content::BroadcastReceiver&) const ;
-    bool sendBroadcast(const ::android::content::Intent&) const ;
-    void sendBroadcastSync(const ::android::content::Intent&) const ;
+    void registerReceiver(const ::android::content::BroadcastReceiver&, const ::android::content::IntentFilter&) const;
+    void unregisterReceiver(const ::android::content::BroadcastReceiver&) const;
+    bool sendBroadcast(const ::android::content::Intent&) const;
+    void sendBroadcastSync(const ::android::content::Intent&) const;
 
 };
 }

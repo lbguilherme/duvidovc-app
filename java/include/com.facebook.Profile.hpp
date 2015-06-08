@@ -42,17 +42,17 @@ public:
     static void setCurrentProfile(const ::com::facebook::Profile&);
     static void fetchProfileForCurrentAccessToken();
     Profile(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::android::net::Uri&);
-    ::android::net::Uri getProfilePictureUri(int32_t, int32_t) const ;
-    ::java::lang::String getId() const ;
-    ::java::lang::String getFirstName() const ;
-    ::java::lang::String getMiddleName() const ;
-    ::java::lang::String getLastName() const ;
-    ::java::lang::String getName() const ;
-    ::android::net::Uri getLinkUri() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::net::Uri getProfilePictureUri(int32_t, int32_t) const;
+    ::java::lang::String getId() const;
+    ::java::lang::String getFirstName() const;
+    ::java::lang::String getMiddleName() const;
+    ::java::lang::String getLastName() const;
+    ::java::lang::String getName() const;
+    ::android::net::Uri getLinkUri() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

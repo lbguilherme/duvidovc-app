@@ -35,9 +35,9 @@ public:
     ::android::widget::MultiAutoCompleteTextView_CommaTokenizer& operator=(::android::widget::MultiAutoCompleteTextView_CommaTokenizer&& x) {obj = std::move(x.obj); return *this;}
     
     MultiAutoCompleteTextView_CommaTokenizer();
-    int32_t findTokenStart(const ::java::lang::CharSequence&, int32_t) const ;
-    int32_t findTokenEnd(const ::java::lang::CharSequence&, int32_t) const ;
-    ::java::lang::CharSequence terminateToken(const ::java::lang::CharSequence&) const ;
+    int32_t findTokenStart(const ::java::lang::CharSequence&, int32_t) const;
+    int32_t findTokenEnd(const ::java::lang::CharSequence&, int32_t) const;
+    ::java::lang::CharSequence terminateToken(const ::java::lang::CharSequence&) const;
 
 };
 }

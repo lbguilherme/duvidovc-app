@@ -35,28 +35,28 @@ public:
     ::android::location::Criteria& operator=(::android::location::Criteria&& x) {obj = std::move(x.obj); return *this;}
     
     Criteria();
-    void setHorizontalAccuracy(int32_t) const ;
-    int32_t getHorizontalAccuracy() const ;
-    void setVerticalAccuracy(int32_t) const ;
-    int32_t getVerticalAccuracy() const ;
-    void setSpeedAccuracy(int32_t) const ;
-    int32_t getSpeedAccuracy() const ;
-    void setBearingAccuracy(int32_t) const ;
-    int32_t getBearingAccuracy() const ;
-    void setAccuracy(int32_t) const ;
-    int32_t getAccuracy() const ;
-    void setPowerRequirement(int32_t) const ;
-    int32_t getPowerRequirement() const ;
-    void setCostAllowed(bool) const ;
-    bool isCostAllowed() const ;
-    void setAltitudeRequired(bool) const ;
-    bool isAltitudeRequired() const ;
-    void setSpeedRequired(bool) const ;
-    bool isSpeedRequired() const ;
-    void setBearingRequired(bool) const ;
-    bool isBearingRequired() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void setHorizontalAccuracy(int32_t) const;
+    int32_t getHorizontalAccuracy() const;
+    void setVerticalAccuracy(int32_t) const;
+    int32_t getVerticalAccuracy() const;
+    void setSpeedAccuracy(int32_t) const;
+    int32_t getSpeedAccuracy() const;
+    void setBearingAccuracy(int32_t) const;
+    int32_t getBearingAccuracy() const;
+    void setAccuracy(int32_t) const;
+    int32_t getAccuracy() const;
+    void setPowerRequirement(int32_t) const;
+    int32_t getPowerRequirement() const;
+    void setCostAllowed(bool) const;
+    bool isCostAllowed() const;
+    void setAltitudeRequired(bool) const;
+    bool isAltitudeRequired() const;
+    void setSpeedRequired(bool) const;
+    bool isSpeedRequired() const;
+    void setBearingRequired(bool) const;
+    bool isBearingRequired() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

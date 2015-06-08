@@ -40,11 +40,11 @@ public:
     
     StreamHandler();
     StreamHandler(const ::java::io::OutputStream&, const ::java::util::logging::Formatter&);
-    void setEncoding(const ::java::lang::String&) const ;
-    void close() const ;
-    void flush() const ;
-    void publish(const ::java::util::logging::LogRecord&) const ;
-    bool isLoggable(const ::java::util::logging::LogRecord&) const ;
+    void setEncoding(const ::java::lang::String&) const;
+    void close() const;
+    void flush() const;
+    void publish(const ::java::util::logging::LogRecord&) const;
+    bool isLoggable(const ::java::util::logging::LogRecord&) const;
 
 };
 }

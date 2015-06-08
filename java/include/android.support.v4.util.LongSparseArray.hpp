@@ -40,22 +40,22 @@ public:
     
     LongSparseArray();
     LongSparseArray(int32_t);
-    ::android::support::v4::util::LongSparseArray clone() const ;
-    ::java::lang::Object get(int64_t) const ;
-    ::java::lang::Object get(int64_t, const ::java::lang::Object&) const ;
-    void delete_(int64_t) const ;
-    void remove(int64_t) const ;
-    void removeAt(int32_t) const ;
-    void put(int64_t, const ::java::lang::Object&) const ;
-    int32_t size() const ;
-    int64_t keyAt(int32_t) const ;
-    ::java::lang::Object valueAt(int32_t) const ;
-    void setValueAt(int32_t, const ::java::lang::Object&) const ;
-    int32_t indexOfKey(int64_t) const ;
-    int32_t indexOfValue(const ::java::lang::Object&) const ;
-    void clear() const ;
-    void append(int64_t, const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    ::android::support::v4::util::LongSparseArray clone() const;
+    ::java::lang::Object get(int64_t) const;
+    ::java::lang::Object get(int64_t, const ::java::lang::Object&) const;
+    void delete_(int64_t) const;
+    void remove(int64_t) const;
+    void removeAt(int32_t) const;
+    void put(int64_t, const ::java::lang::Object&) const;
+    int32_t size() const;
+    int64_t keyAt(int32_t) const;
+    ::java::lang::Object valueAt(int32_t) const;
+    void setValueAt(int32_t, const ::java::lang::Object&) const;
+    int32_t indexOfKey(int64_t) const;
+    int32_t indexOfValue(const ::java::lang::Object&) const;
+    void clear() const;
+    void append(int64_t, const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

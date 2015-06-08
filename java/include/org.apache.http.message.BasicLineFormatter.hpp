@@ -44,13 +44,13 @@ public:
     
     BasicLineFormatter();
     static ::java::lang::String formatProtocolVersion(const ::org::apache::http::ProtocolVersion&, const ::org::apache::http::message::LineFormatter&);
-    ::org::apache::http::util::CharArrayBuffer appendProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::ProtocolVersion&) const ;
+    ::org::apache::http::util::CharArrayBuffer appendProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::ProtocolVersion&) const;
     static ::java::lang::String formatRequestLine(const ::org::apache::http::RequestLine&, const ::org::apache::http::message::LineFormatter&);
-    ::org::apache::http::util::CharArrayBuffer formatRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::RequestLine&) const ;
+    ::org::apache::http::util::CharArrayBuffer formatRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::RequestLine&) const;
     static ::java::lang::String formatStatusLine(const ::org::apache::http::StatusLine&, const ::org::apache::http::message::LineFormatter&);
-    ::org::apache::http::util::CharArrayBuffer formatStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::StatusLine&) const ;
+    ::org::apache::http::util::CharArrayBuffer formatStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::StatusLine&) const;
     static ::java::lang::String formatHeader(const ::org::apache::http::Header&, const ::org::apache::http::message::LineFormatter&);
-    ::org::apache::http::util::CharArrayBuffer formatHeader(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::Header&) const ;
+    ::org::apache::http::util::CharArrayBuffer formatHeader(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::Header&) const;
 
 };
 }

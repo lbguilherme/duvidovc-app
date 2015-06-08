@@ -40,10 +40,10 @@ public:
     
     TableRow(const ::android::content::Context&);
     TableRow(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setOnHierarchyChangeListener(const ::android::view::ViewGroup_OnHierarchyChangeListener&) const ;
-    ::android::view::View getVirtualChildAt(int32_t) const ;
-    int32_t getVirtualChildCount() const ;
-    ::android::widget::TableRow_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const ;
+    void setOnHierarchyChangeListener(const ::android::view::ViewGroup_OnHierarchyChangeListener&) const;
+    ::android::view::View getVirtualChildAt(int32_t) const;
+    int32_t getVirtualChildCount() const;
+    ::android::widget::TableRow_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const;
 
 };
 }

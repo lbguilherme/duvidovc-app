@@ -42,8 +42,8 @@ public:
     ::java::security::cert::PKIXCertPathBuilderResult& operator=(::java::security::cert::PKIXCertPathBuilderResult&& x) {obj = std::move(x.obj); return *this;}
     
     PKIXCertPathBuilderResult(const ::java::security::cert::CertPath&, const ::java::security::cert::TrustAnchor&, const ::java::security::cert::PolicyNode&, const ::java::security::PublicKey&);
-    ::java::security::cert::CertPath getCertPath() const ;
-    ::java::lang::String toString() const ;
+    ::java::security::cert::CertPath getCertPath() const;
+    ::java::lang::String toString() const;
 
 };
 }

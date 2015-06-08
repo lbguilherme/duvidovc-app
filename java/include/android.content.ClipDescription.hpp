@@ -38,13 +38,13 @@ public:
     
     ClipDescription(const ::java::lang::CharSequence&, const std::vector< ::java::lang::String>&);
     static bool compareMimeTypes(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::CharSequence getLabel() const ;
-    bool hasMimeType(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> filterMimeTypes(const ::java::lang::String&) const ;
-    int32_t getMimeTypeCount() const ;
-    ::java::lang::String getMimeType(int32_t) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::CharSequence getLabel() const;
+    bool hasMimeType(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> filterMimeTypes(const ::java::lang::String&) const;
+    int32_t getMimeTypeCount() const;
+    ::java::lang::String getMimeType(int32_t) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

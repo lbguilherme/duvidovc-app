@@ -42,18 +42,18 @@ public:
     ::android::text::Editable& operator=(const ::android::text::Editable& x) {obj = x.obj; return *this;}
     ::android::text::Editable& operator=(::android::text::Editable&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::text::Editable replace(int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t) const ;
-    ::android::text::Editable replace(int32_t, int32_t, const ::java::lang::CharSequence&) const ;
-    ::android::text::Editable insert(int32_t, const ::java::lang::CharSequence&, int32_t, int32_t) const ;
-    ::android::text::Editable insert(int32_t, const ::java::lang::CharSequence&) const ;
-    ::android::text::Editable delete_(int32_t, int32_t) const ;
-    ::android::text::Editable append(const ::java::lang::CharSequence&) const ;
-    ::android::text::Editable append(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
-    ::android::text::Editable append(uint16_t) const ;
-    void clear() const ;
-    void clearSpans() const ;
-    void setFilters(const std::vector< ::android::text::InputFilter>&) const ;
-    std::vector< ::android::text::InputFilter> getFilters() const ;
+    ::android::text::Editable replace(int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t) const;
+    ::android::text::Editable replace(int32_t, int32_t, const ::java::lang::CharSequence&) const;
+    ::android::text::Editable insert(int32_t, const ::java::lang::CharSequence&, int32_t, int32_t) const;
+    ::android::text::Editable insert(int32_t, const ::java::lang::CharSequence&) const;
+    ::android::text::Editable delete_(int32_t, int32_t) const;
+    ::android::text::Editable append(const ::java::lang::CharSequence&) const;
+    ::android::text::Editable append(const ::java::lang::CharSequence&, int32_t, int32_t) const;
+    ::android::text::Editable append(uint16_t) const;
+    void clear() const;
+    void clearSpans() const;
+    void setFilters(const std::vector< ::android::text::InputFilter>&) const;
+    std::vector< ::android::text::InputFilter> getFilters() const;
 
 };
 }

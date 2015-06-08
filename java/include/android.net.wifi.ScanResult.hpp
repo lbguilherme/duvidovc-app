@@ -36,9 +36,9 @@ public:
     ::android::net::wifi::ScanResult& operator=(const ::android::net::wifi::ScanResult& x) {obj = x.obj; return *this;}
     ::android::net::wifi::ScanResult& operator=(::android::net::wifi::ScanResult&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

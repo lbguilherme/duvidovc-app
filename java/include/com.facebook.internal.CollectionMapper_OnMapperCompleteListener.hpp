@@ -34,7 +34,7 @@ public:
     ::com::facebook::internal::CollectionMapper_OnMapperCompleteListener& operator=(const ::com::facebook::internal::CollectionMapper_OnMapperCompleteListener& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::CollectionMapper_OnMapperCompleteListener& operator=(::com::facebook::internal::CollectionMapper_OnMapperCompleteListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onComplete() const ;
+    void onComplete() const;
 
 };
 }

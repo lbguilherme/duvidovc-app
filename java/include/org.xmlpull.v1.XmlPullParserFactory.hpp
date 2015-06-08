@@ -37,14 +37,14 @@ public:
     ::org::xmlpull::v1::XmlPullParserFactory& operator=(const ::org::xmlpull::v1::XmlPullParserFactory& x) {obj = x.obj; return *this;}
     ::org::xmlpull::v1::XmlPullParserFactory& operator=(::org::xmlpull::v1::XmlPullParserFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    void setFeature(const ::java::lang::String&, bool) const ;
-    bool getFeature(const ::java::lang::String&) const ;
-    void setNamespaceAware(bool) const ;
-    bool isNamespaceAware() const ;
-    void setValidating(bool) const ;
-    bool isValidating() const ;
-    ::org::xmlpull::v1::XmlPullParser newPullParser() const ;
-    ::org::xmlpull::v1::XmlSerializer newSerializer() const ;
+    void setFeature(const ::java::lang::String&, bool) const;
+    bool getFeature(const ::java::lang::String&) const;
+    void setNamespaceAware(bool) const;
+    bool isNamespaceAware() const;
+    void setValidating(bool) const;
+    bool isValidating() const;
+    ::org::xmlpull::v1::XmlPullParser newPullParser() const;
+    ::org::xmlpull::v1::XmlSerializer newSerializer() const;
     static ::org::xmlpull::v1::XmlPullParserFactory newInstance();
     static ::org::xmlpull::v1::XmlPullParserFactory newInstance(const ::java::lang::String&, const ::java::lang::Class&);
 

@@ -47,33 +47,33 @@ public:
     ::java::sql::SQLInput& operator=(const ::java::sql::SQLInput& x) {obj = x.obj; return *this;}
     ::java::sql::SQLInput& operator=(::java::sql::SQLInput&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String readString() const ;
-    bool readBoolean() const ;
-    int8_t readByte() const ;
-    int16_t readShort() const ;
-    int32_t readInt() const ;
-    int64_t readLong() const ;
-    float readFloat() const ;
-    double readDouble() const ;
-    ::java::math::BigDecimal readBigDecimal() const ;
-    std::vector< int8_t> readBytes() const ;
-    ::java::sql::Date readDate() const ;
-    ::java::sql::Time readTime() const ;
-    ::java::sql::Timestamp readTimestamp() const ;
-    ::java::io::Reader readCharacterStream() const ;
-    ::java::io::InputStream readAsciiStream() const ;
-    ::java::io::InputStream readBinaryStream() const ;
-    ::java::lang::Object readObject() const ;
-    ::java::sql::Ref readRef() const ;
-    ::java::sql::Blob readBlob() const ;
-    ::java::sql::Clob readClob() const ;
-    ::java::sql::Array readArray() const ;
-    bool wasNull() const ;
-    ::java::net::URL readURL() const ;
-    ::java::sql::NClob readNClob() const ;
-    ::java::lang::String readNString() const ;
-    ::java::sql::SQLXML readSQLXML() const ;
-    ::java::sql::RowId readRowId() const ;
+    ::java::lang::String readString() const;
+    bool readBoolean() const;
+    int8_t readByte() const;
+    int16_t readShort() const;
+    int32_t readInt() const;
+    int64_t readLong() const;
+    float readFloat() const;
+    double readDouble() const;
+    ::java::math::BigDecimal readBigDecimal() const;
+    std::vector< int8_t> readBytes() const;
+    ::java::sql::Date readDate() const;
+    ::java::sql::Time readTime() const;
+    ::java::sql::Timestamp readTimestamp() const;
+    ::java::io::Reader readCharacterStream() const;
+    ::java::io::InputStream readAsciiStream() const;
+    ::java::io::InputStream readBinaryStream() const;
+    ::java::lang::Object readObject() const;
+    ::java::sql::Ref readRef() const;
+    ::java::sql::Blob readBlob() const;
+    ::java::sql::Clob readClob() const;
+    ::java::sql::Array readArray() const;
+    bool wasNull() const;
+    ::java::net::URL readURL() const;
+    ::java::sql::NClob readNClob() const;
+    ::java::lang::String readNString() const;
+    ::java::sql::SQLXML readSQLXML() const;
+    ::java::sql::RowId readRowId() const;
 
 };
 }

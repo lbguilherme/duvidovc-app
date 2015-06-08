@@ -39,9 +39,9 @@ public:
     ::android::support::v4::hardware::display::DisplayManagerCompat& operator=(::android::support::v4::hardware::display::DisplayManagerCompat&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::hardware::display::DisplayManagerCompat getInstance(const ::android::content::Context&);
-    ::android::view::Display getDisplay(int32_t) const ;
-    std::vector< ::android::view::Display> getDisplays() const ;
-    std::vector< ::android::view::Display> getDisplays(const ::java::lang::String&) const ;
+    ::android::view::Display getDisplay(int32_t) const;
+    std::vector< ::android::view::Display> getDisplays() const;
+    std::vector< ::android::view::Display> getDisplays(const ::java::lang::String&) const;
 
 };
 }

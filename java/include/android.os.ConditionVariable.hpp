@@ -33,10 +33,10 @@ public:
     
     ConditionVariable();
     ConditionVariable(bool);
-    void open() const ;
-    void close() const ;
-    void block() const ;
-    bool block(int64_t) const ;
+    void open() const;
+    void close() const;
+    void block() const;
+    bool block(int64_t) const;
 
 };
 }

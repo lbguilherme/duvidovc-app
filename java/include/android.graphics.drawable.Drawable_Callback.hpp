@@ -34,9 +34,9 @@ public:
     ::android::graphics::drawable::Drawable_Callback& operator=(const ::android::graphics::drawable::Drawable_Callback& x) {obj = x.obj; return *this;}
     ::android::graphics::drawable::Drawable_Callback& operator=(::android::graphics::drawable::Drawable_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const ;
-    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const ;
+    void invalidateDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void scheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&, int64_t) const;
+    void unscheduleDrawable(const ::android::graphics::drawable::Drawable&, const ::java::lang::Runnable&) const;
 
 };
 }

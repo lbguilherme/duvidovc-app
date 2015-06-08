@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::client::TunnelRefusedException& operator=(::org::apache::http::impl::client::TunnelRefusedException&& x) {obj = std::move(x.obj); return *this;}
     
     TunnelRefusedException(const ::java::lang::String&, const ::org::apache::http::HttpResponse&);
-    ::org::apache::http::HttpResponse getResponse() const ;
+    ::org::apache::http::HttpResponse getResponse() const;
 
 };
 }

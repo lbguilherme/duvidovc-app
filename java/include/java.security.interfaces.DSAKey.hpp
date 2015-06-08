@@ -33,7 +33,7 @@ public:
     ::java::security::interfaces::DSAKey& operator=(const ::java::security::interfaces::DSAKey& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::DSAKey& operator=(::java::security::interfaces::DSAKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::security::interfaces::DSAParams getParams() const ;
+    ::java::security::interfaces::DSAParams getParams() const;
 
 };
 }

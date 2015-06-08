@@ -34,7 +34,7 @@ public:
     ::org::apache::http::ConnectionReuseStrategy& operator=(const ::org::apache::http::ConnectionReuseStrategy& x) {obj = x.obj; return *this;}
     ::org::apache::http::ConnectionReuseStrategy& operator=(::org::apache::http::ConnectionReuseStrategy&& x) {obj = std::move(x.obj); return *this;}
     
-    bool keepAlive(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool keepAlive(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

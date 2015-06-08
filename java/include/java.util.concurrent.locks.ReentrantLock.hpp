@@ -43,22 +43,22 @@ public:
     
     ReentrantLock();
     ReentrantLock(bool);
-    void lock() const ;
-    void lockInterruptibly() const ;
-    bool tryLock() const ;
-    bool tryLock(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void unlock() const ;
-    ::java::util::concurrent::locks::Condition newCondition() const ;
-    int32_t getHoldCount() const ;
-    bool isHeldByCurrentThread() const ;
-    bool isLocked() const ;
-    bool isFair() const ;
-    bool hasQueuedThreads() const ;
-    bool hasQueuedThread(const ::java::lang::Thread&) const ;
-    int32_t getQueueLength() const ;
-    bool hasWaiters(const ::java::util::concurrent::locks::Condition&) const ;
-    int32_t getWaitQueueLength(const ::java::util::concurrent::locks::Condition&) const ;
-    ::java::lang::String toString() const ;
+    void lock() const;
+    void lockInterruptibly() const;
+    bool tryLock() const;
+    bool tryLock(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void unlock() const;
+    ::java::util::concurrent::locks::Condition newCondition() const;
+    int32_t getHoldCount() const;
+    bool isHeldByCurrentThread() const;
+    bool isLocked() const;
+    bool isFair() const;
+    bool hasQueuedThreads() const;
+    bool hasQueuedThread(const ::java::lang::Thread&) const;
+    int32_t getQueueLength() const;
+    bool hasWaiters(const ::java::util::concurrent::locks::Condition&) const;
+    int32_t getWaitQueueLength(const ::java::util::concurrent::locks::Condition&) const;
+    ::java::lang::String toString() const;
 
 };
 }

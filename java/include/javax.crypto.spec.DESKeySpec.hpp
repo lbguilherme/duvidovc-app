@@ -36,7 +36,7 @@ public:
     
     DESKeySpec(const std::vector< int8_t>&);
     DESKeySpec(const std::vector< int8_t>&, int32_t);
-    std::vector< int8_t> getKey() const ;
+    std::vector< int8_t> getKey() const;
     static bool isParityAdjusted(const std::vector< int8_t>&, int32_t);
     static bool isWeak(const std::vector< int8_t>&, int32_t);
 

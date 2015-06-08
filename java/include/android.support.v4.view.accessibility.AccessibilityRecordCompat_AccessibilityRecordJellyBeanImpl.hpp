@@ -38,7 +38,7 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordJellyBeanImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordJellyBeanImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordJellyBeanImpl& operator=(::android::support::v4::view::accessibility::AccessibilityRecordCompat_AccessibilityRecordJellyBeanImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setSource(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
+    void setSource(const ::java::lang::Object&, const ::android::view::View&, int32_t) const;
 
 };
 }

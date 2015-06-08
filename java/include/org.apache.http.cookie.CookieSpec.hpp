@@ -37,12 +37,12 @@ public:
     ::org::apache::http::cookie::CookieSpec& operator=(const ::org::apache::http::cookie::CookieSpec& x) {obj = x.obj; return *this;}
     ::org::apache::http::cookie::CookieSpec& operator=(::org::apache::http::cookie::CookieSpec&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getVersion() const ;
-    ::java::util::List parse(const ::org::apache::http::Header&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    ::java::util::List formatCookies(const ::java::util::List&) const ;
-    ::org::apache::http::Header getVersionHeader() const ;
+    int32_t getVersion() const;
+    ::java::util::List parse(const ::org::apache::http::Header&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    ::java::util::List formatCookies(const ::java::util::List&) const;
+    ::org::apache::http::Header getVersionHeader() const;
 
 };
 }

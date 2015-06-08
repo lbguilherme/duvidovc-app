@@ -34,12 +34,12 @@ public:
     ::org::w3c::dom::DOMLocator& operator=(const ::org::w3c::dom::DOMLocator& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMLocator& operator=(::org::w3c::dom::DOMLocator&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLineNumber() const ;
-    int32_t getColumnNumber() const ;
-    int32_t getByteOffset() const ;
-    int32_t getUtf16Offset() const ;
-    ::org::w3c::dom::Node getRelatedNode() const ;
-    ::java::lang::String getUri() const ;
+    int32_t getLineNumber() const;
+    int32_t getColumnNumber() const;
+    int32_t getByteOffset() const;
+    int32_t getUtf16Offset() const;
+    ::org::w3c::dom::Node getRelatedNode() const;
+    ::java::lang::String getUri() const;
 
 };
 }

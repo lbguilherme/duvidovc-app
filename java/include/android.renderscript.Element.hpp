@@ -37,7 +37,7 @@ public:
     ::android::renderscript::Element& operator=(const ::android::renderscript::Element& x) {obj = x.obj; return *this;}
     ::android::renderscript::Element& operator=(::android::renderscript::Element&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isComplex() const ;
+    bool isComplex() const;
     static ::android::renderscript::Element BOOLEAN(const ::android::renderscript::RenderScript&);
     static ::android::renderscript::Element U8(const ::android::renderscript::RenderScript&);
     static ::android::renderscript::Element I8(const ::android::renderscript::RenderScript&);
@@ -101,7 +101,7 @@ public:
     static ::android::renderscript::Element MATRIX_2X2(const ::android::renderscript::RenderScript&);
     static ::android::renderscript::Element createVector(const ::android::renderscript::RenderScript&, const ::android::renderscript::Element_DataType&, int32_t);
     static ::android::renderscript::Element createPixel(const ::android::renderscript::RenderScript&, const ::android::renderscript::Element_DataType&, const ::android::renderscript::Element_DataKind&);
-    bool isCompatible(const ::android::renderscript::Element&) const ;
+    bool isCompatible(const ::android::renderscript::Element&) const;
 
 };
 }

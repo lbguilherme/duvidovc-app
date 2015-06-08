@@ -34,9 +34,9 @@ public:
     ::javax::crypto::interfaces::PBEKey& operator=(const ::javax::crypto::interfaces::PBEKey& x) {obj = x.obj; return *this;}
     ::javax::crypto::interfaces::PBEKey& operator=(::javax::crypto::interfaces::PBEKey&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getIterationCount() const ;
-    std::vector< int8_t> getSalt() const ;
-    std::vector< uint16_t> getPassword() const ;
+    int32_t getIterationCount() const;
+    std::vector< int8_t> getSalt() const;
+    std::vector< uint16_t> getPassword() const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     
     LocalSocketAddress(const ::java::lang::String&, const ::android::net::LocalSocketAddress_Namespace&);
     LocalSocketAddress(const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::android::net::LocalSocketAddress_Namespace getNamespace() const ;
+    ::java::lang::String getName() const;
+    ::android::net::LocalSocketAddress_Namespace getNamespace() const;
 
 };
 }

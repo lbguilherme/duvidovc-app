@@ -36,8 +36,8 @@ public:
     
     PaintDrawable();
     PaintDrawable(int32_t);
-    void setCornerRadius(float) const ;
-    void setCornerRadii(const std::vector< float>&) const ;
+    void setCornerRadius(float) const;
+    void setCornerRadii(const std::vector< float>&) const;
 
 };
 }

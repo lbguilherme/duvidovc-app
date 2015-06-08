@@ -37,11 +37,11 @@ public:
     
     Annotation(const ::java::lang::String&, const ::java::lang::String&);
     Annotation(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String getKey() const ;
-    ::java::lang::String getValue() const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String getKey() const;
+    ::java::lang::String getValue() const;
 
 };
 }

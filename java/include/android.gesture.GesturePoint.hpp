@@ -33,7 +33,7 @@ public:
     ::android::gesture::GesturePoint& operator=(::android::gesture::GesturePoint&& x) {obj = std::move(x.obj); return *this;}
     
     GesturePoint(float, float, int64_t);
-    ::java::lang::Object clone() const ;
+    ::java::lang::Object clone() const;
 
 };
 }

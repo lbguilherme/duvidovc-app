@@ -31,13 +31,13 @@ public:
     ::android::view::InputDevice_MotionRange& operator=(const ::android::view::InputDevice_MotionRange& x) {obj = x.obj; return *this;}
     ::android::view::InputDevice_MotionRange& operator=(::android::view::InputDevice_MotionRange&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getAxis() const ;
-    int32_t getSource() const ;
-    float getMin() const ;
-    float getMax() const ;
-    float getRange() const ;
-    float getFlat() const ;
-    float getFuzz() const ;
+    int32_t getAxis() const;
+    int32_t getSource() const;
+    float getMin() const;
+    float getMax() const;
+    float getRange() const;
+    float getFlat() const;
+    float getFuzz() const;
 
 };
 }

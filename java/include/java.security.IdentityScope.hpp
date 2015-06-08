@@ -42,14 +42,14 @@ public:
     IdentityScope(const ::java::lang::String&);
     IdentityScope(const ::java::lang::String&, const ::java::security::IdentityScope&);
     static ::java::security::IdentityScope getSystemScope();
-    int32_t size() const ;
-    ::java::security::Identity getIdentity(const ::java::lang::String&) const ;
-    ::java::security::Identity getIdentity(const ::java::security::Principal&) const ;
-    ::java::security::Identity getIdentity(const ::java::security::PublicKey&) const ;
-    void addIdentity(const ::java::security::Identity&) const ;
-    void removeIdentity(const ::java::security::Identity&) const ;
-    ::java::util::Enumeration identities() const ;
-    ::java::lang::String toString() const ;
+    int32_t size() const;
+    ::java::security::Identity getIdentity(const ::java::lang::String&) const;
+    ::java::security::Identity getIdentity(const ::java::security::Principal&) const;
+    ::java::security::Identity getIdentity(const ::java::security::PublicKey&) const;
+    void addIdentity(const ::java::security::Identity&) const;
+    void removeIdentity(const ::java::security::Identity&) const;
+    ::java::util::Enumeration identities() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -39,9 +39,9 @@ public:
     ::org::apache::http::conn::params::ConnManagerParamBean& operator=(::org::apache::http::conn::params::ConnManagerParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     ConnManagerParamBean(const ::org::apache::http::params::HttpParams&);
-    void setTimeout(int64_t) const ;
-    void setMaxTotalConnections(int32_t) const ;
-    void setConnectionsPerRoute(const ::org::apache::http::conn::params::ConnPerRouteBean&) const ;
+    void setTimeout(int64_t) const;
+    void setMaxTotalConnections(int32_t) const;
+    void setConnectionsPerRoute(const ::org::apache::http::conn::params::ConnPerRouteBean&) const;
 
 };
 }

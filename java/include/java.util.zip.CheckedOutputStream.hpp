@@ -37,9 +37,9 @@ public:
     ::java::util::zip::CheckedOutputStream& operator=(::java::util::zip::CheckedOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
     CheckedOutputStream(const ::java::io::OutputStream&, const ::java::util::zip::Checksum&);
-    ::java::util::zip::Checksum getChecksum() const ;
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    ::java::util::zip::Checksum getChecksum() const;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

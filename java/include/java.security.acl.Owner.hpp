@@ -33,9 +33,9 @@ public:
     ::java::security::acl::Owner& operator=(const ::java::security::acl::Owner& x) {obj = x.obj; return *this;}
     ::java::security::acl::Owner& operator=(::java::security::acl::Owner&& x) {obj = std::move(x.obj); return *this;}
     
-    bool addOwner(const ::java::security::Principal&, const ::java::security::Principal&) const ;
-    bool deleteOwner(const ::java::security::Principal&, const ::java::security::Principal&) const ;
-    bool isOwner(const ::java::security::Principal&) const ;
+    bool addOwner(const ::java::security::Principal&, const ::java::security::Principal&) const;
+    bool deleteOwner(const ::java::security::Principal&, const ::java::security::Principal&) const;
+    bool isOwner(const ::java::security::Principal&) const;
 
 };
 }

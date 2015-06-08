@@ -42,19 +42,19 @@ public:
     ::android::view::LayoutInflater& operator=(::android::view::LayoutInflater&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::view::LayoutInflater from(const ::android::content::Context&);
-    ::android::view::LayoutInflater cloneInContext(const ::android::content::Context&) const ;
-    ::android::content::Context getContext() const ;
-    ::android::view::LayoutInflater_Factory getFactory() const ;
-    ::android::view::LayoutInflater_Factory2 getFactory2() const ;
-    void setFactory(const ::android::view::LayoutInflater_Factory&) const ;
-    void setFactory2(const ::android::view::LayoutInflater_Factory2&) const ;
-    ::android::view::LayoutInflater_Filter getFilter() const ;
-    void setFilter(const ::android::view::LayoutInflater_Filter&) const ;
-    ::android::view::View inflate(int32_t, const ::android::view::ViewGroup&) const ;
-    ::android::view::View inflate(const ::org::xmlpull::v1::XmlPullParser&, const ::android::view::ViewGroup&) const ;
-    ::android::view::View inflate(int32_t, const ::android::view::ViewGroup&, bool) const ;
-    ::android::view::View inflate(const ::org::xmlpull::v1::XmlPullParser&, const ::android::view::ViewGroup&, bool) const ;
-    ::android::view::View createView(const ::java::lang::String&, const ::java::lang::String&, const ::android::util::AttributeSet&) const ;
+    ::android::view::LayoutInflater cloneInContext(const ::android::content::Context&) const;
+    ::android::content::Context getContext() const;
+    ::android::view::LayoutInflater_Factory getFactory() const;
+    ::android::view::LayoutInflater_Factory2 getFactory2() const;
+    void setFactory(const ::android::view::LayoutInflater_Factory&) const;
+    void setFactory2(const ::android::view::LayoutInflater_Factory2&) const;
+    ::android::view::LayoutInflater_Filter getFilter() const;
+    void setFilter(const ::android::view::LayoutInflater_Filter&) const;
+    ::android::view::View inflate(int32_t, const ::android::view::ViewGroup&) const;
+    ::android::view::View inflate(const ::org::xmlpull::v1::XmlPullParser&, const ::android::view::ViewGroup&) const;
+    ::android::view::View inflate(int32_t, const ::android::view::ViewGroup&, bool) const;
+    ::android::view::View inflate(const ::org::xmlpull::v1::XmlPullParser&, const ::android::view::ViewGroup&, bool) const;
+    ::android::view::View createView(const ::java::lang::String&, const ::java::lang::String&, const ::android::util::AttributeSet&) const;
 
 };
 }

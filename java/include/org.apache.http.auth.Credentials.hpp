@@ -35,8 +35,8 @@ public:
     ::org::apache::http::auth::Credentials& operator=(const ::org::apache::http::auth::Credentials& x) {obj = x.obj; return *this;}
     ::org::apache::http::auth::Credentials& operator=(::org::apache::http::auth::Credentials&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::security::Principal getUserPrincipal() const ;
-    ::java::lang::String getPassword() const ;
+    ::java::security::Principal getUserPrincipal() const;
+    ::java::lang::String getPassword() const;
 
 };
 }

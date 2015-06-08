@@ -36,13 +36,13 @@ public:
     ::com::facebook::login::widget::LoginButton_LoginButtonProperties& operator=(const ::com::facebook::login::widget::LoginButton_LoginButtonProperties& x) {obj = x.obj; return *this;}
     ::com::facebook::login::widget::LoginButton_LoginButtonProperties& operator=(::com::facebook::login::widget::LoginButton_LoginButtonProperties&& x) {obj = std::move(x.obj); return *this;}
     
-    void setDefaultAudience(const ::com::facebook::login::DefaultAudience&) const ;
-    ::com::facebook::login::DefaultAudience getDefaultAudience() const ;
-    void setReadPermissions(const ::java::util::List&) const ;
-    void setPublishPermissions(const ::java::util::List&) const ;
-    void clearPermissions() const ;
-    void setLoginBehavior(const ::com::facebook::login::LoginBehavior&) const ;
-    ::com::facebook::login::LoginBehavior getLoginBehavior() const ;
+    void setDefaultAudience(const ::com::facebook::login::DefaultAudience&) const;
+    ::com::facebook::login::DefaultAudience getDefaultAudience() const;
+    void setReadPermissions(const ::java::util::List&) const;
+    void setPublishPermissions(const ::java::util::List&) const;
+    void clearPermissions() const;
+    void setLoginBehavior(const ::com::facebook::login::LoginBehavior&) const;
+    ::com::facebook::login::LoginBehavior getLoginBehavior() const;
 
 };
 }

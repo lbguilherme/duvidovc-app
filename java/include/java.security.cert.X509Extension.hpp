@@ -34,10 +34,10 @@ public:
     ::java::security::cert::X509Extension& operator=(const ::java::security::cert::X509Extension& x) {obj = x.obj; return *this;}
     ::java::security::cert::X509Extension& operator=(::java::security::cert::X509Extension&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Set getCriticalExtensionOIDs() const ;
-    std::vector< int8_t> getExtensionValue(const ::java::lang::String&) const ;
-    ::java::util::Set getNonCriticalExtensionOIDs() const ;
-    bool hasUnsupportedCriticalExtension() const ;
+    ::java::util::Set getCriticalExtensionOIDs() const;
+    std::vector< int8_t> getExtensionValue(const ::java::lang::String&) const;
+    ::java::util::Set getNonCriticalExtensionOIDs() const;
+    bool hasUnsupportedCriticalExtension() const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     
     RootElement(const ::java::lang::String&, const ::java::lang::String&);
     RootElement(const ::java::lang::String&);
-    ::org::xml::sax::ContentHandler getContentHandler() const ;
+    ::org::xml::sax::ContentHandler getContentHandler() const;
 
 };
 }

@@ -43,15 +43,15 @@ public:
     ProfilePictureView(const ::android::content::Context&);
     ProfilePictureView(const ::android::content::Context&, const ::android::util::AttributeSet&);
     ProfilePictureView(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    int32_t getPresetSize() const ;
-    void setPresetSize(int32_t) const ;
-    bool isCropped() const ;
-    void setCropped(bool) const ;
-    ::java::lang::String getProfileId() const ;
-    void setProfileId(const ::java::lang::String&) const ;
-    ::com::facebook::login::widget::ProfilePictureView_OnErrorListener getOnErrorListener() const ;
-    void setOnErrorListener(const ::com::facebook::login::widget::ProfilePictureView_OnErrorListener&) const ;
-    void setDefaultProfilePicture(const ::android::graphics::Bitmap&) const ;
+    int32_t getPresetSize() const;
+    void setPresetSize(int32_t) const;
+    bool isCropped() const;
+    void setCropped(bool) const;
+    ::java::lang::String getProfileId() const;
+    void setProfileId(const ::java::lang::String&) const;
+    ::com::facebook::login::widget::ProfilePictureView_OnErrorListener getOnErrorListener() const;
+    void setOnErrorListener(const ::com::facebook::login::widget::ProfilePictureView_OnErrorListener&) const;
+    void setDefaultProfilePicture(const ::android::graphics::Bitmap&) const;
 
 };
 }

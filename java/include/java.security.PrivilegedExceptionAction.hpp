@@ -32,7 +32,7 @@ public:
     ::java::security::PrivilegedExceptionAction& operator=(const ::java::security::PrivilegedExceptionAction& x) {obj = x.obj; return *this;}
     ::java::security::PrivilegedExceptionAction& operator=(::java::security::PrivilegedExceptionAction&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object run() const ;
+    ::java::lang::Object run() const;
 
 };
 }

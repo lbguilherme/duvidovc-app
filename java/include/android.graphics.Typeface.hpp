@@ -35,9 +35,9 @@ public:
     ::android::graphics::Typeface& operator=(const ::android::graphics::Typeface& x) {obj = x.obj; return *this;}
     ::android::graphics::Typeface& operator=(::android::graphics::Typeface&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getStyle() const ;
-    bool isBold() const ;
-    bool isItalic() const ;
+    int32_t getStyle() const;
+    bool isBold() const;
+    bool isItalic() const;
     static ::android::graphics::Typeface create(const ::java::lang::String&, int32_t);
     static ::android::graphics::Typeface create(const ::android::graphics::Typeface&, int32_t);
     static ::android::graphics::Typeface defaultFromStyle(int32_t);

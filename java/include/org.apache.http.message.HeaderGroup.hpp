@@ -41,21 +41,21 @@ public:
     ::org::apache::http::message::HeaderGroup& operator=(::org::apache::http::message::HeaderGroup&& x) {obj = std::move(x.obj); return *this;}
     
     HeaderGroup();
-    void clear() const ;
-    void addHeader(const ::org::apache::http::Header&) const ;
-    void removeHeader(const ::org::apache::http::Header&) const ;
-    void updateHeader(const ::org::apache::http::Header&) const ;
-    void setHeaders(const std::vector< ::org::apache::http::Header>&) const ;
-    ::org::apache::http::Header getCondensedHeader(const ::java::lang::String&) const ;
-    std::vector< ::org::apache::http::Header> getHeaders(const ::java::lang::String&) const ;
-    ::org::apache::http::Header getFirstHeader(const ::java::lang::String&) const ;
-    ::org::apache::http::Header getLastHeader(const ::java::lang::String&) const ;
-    std::vector< ::org::apache::http::Header> getAllHeaders() const ;
-    bool containsHeader(const ::java::lang::String&) const ;
-    ::org::apache::http::HeaderIterator iterator() const ;
-    ::org::apache::http::HeaderIterator iterator(const ::java::lang::String&) const ;
-    ::org::apache::http::message::HeaderGroup copy() const ;
-    ::java::lang::Object clone() const ;
+    void clear() const;
+    void addHeader(const ::org::apache::http::Header&) const;
+    void removeHeader(const ::org::apache::http::Header&) const;
+    void updateHeader(const ::org::apache::http::Header&) const;
+    void setHeaders(const std::vector< ::org::apache::http::Header>&) const;
+    ::org::apache::http::Header getCondensedHeader(const ::java::lang::String&) const;
+    std::vector< ::org::apache::http::Header> getHeaders(const ::java::lang::String&) const;
+    ::org::apache::http::Header getFirstHeader(const ::java::lang::String&) const;
+    ::org::apache::http::Header getLastHeader(const ::java::lang::String&) const;
+    std::vector< ::org::apache::http::Header> getAllHeaders() const;
+    bool containsHeader(const ::java::lang::String&) const;
+    ::org::apache::http::HeaderIterator iterator() const;
+    ::org::apache::http::HeaderIterator iterator(const ::java::lang::String&) const;
+    ::org::apache::http::message::HeaderGroup copy() const;
+    ::java::lang::Object clone() const;
 
 };
 }

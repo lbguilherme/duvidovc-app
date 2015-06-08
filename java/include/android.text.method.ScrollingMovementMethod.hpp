@@ -41,8 +41,8 @@ public:
     ::android::text::method::ScrollingMovementMethod& operator=(::android::text::method::ScrollingMovementMethod&& x) {obj = std::move(x.obj); return *this;}
     
     ScrollingMovementMethod();
-    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const ;
-    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const ;
+    bool onTouchEvent(const ::android::widget::TextView&, const ::android::text::Spannable&, const ::android::view::MotionEvent&) const;
+    void onTakeFocus(const ::android::widget::TextView&, const ::android::text::Spannable&, int32_t) const;
     static ::android::text::method::MovementMethod getInstance();
 
 };

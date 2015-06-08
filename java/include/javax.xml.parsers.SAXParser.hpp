@@ -42,25 +42,25 @@ public:
     ::javax::xml::parsers::SAXParser& operator=(const ::javax::xml::parsers::SAXParser& x) {obj = x.obj; return *this;}
     ::javax::xml::parsers::SAXParser& operator=(::javax::xml::parsers::SAXParser&& x) {obj = std::move(x.obj); return *this;}
     
-    void reset() const ;
-    void parse(const ::java::io::InputStream&, const ::org::xml::sax::HandlerBase&) const ;
-    void parse(const ::java::io::InputStream&, const ::org::xml::sax::HandlerBase&, const ::java::lang::String&) const ;
-    void parse(const ::java::io::InputStream&, const ::org::xml::sax::helpers::DefaultHandler&) const ;
-    void parse(const ::java::io::InputStream&, const ::org::xml::sax::helpers::DefaultHandler&, const ::java::lang::String&) const ;
-    void parse(const ::java::lang::String&, const ::org::xml::sax::HandlerBase&) const ;
-    void parse(const ::java::lang::String&, const ::org::xml::sax::helpers::DefaultHandler&) const ;
-    void parse(const ::java::io::File&, const ::org::xml::sax::HandlerBase&) const ;
-    void parse(const ::java::io::File&, const ::org::xml::sax::helpers::DefaultHandler&) const ;
-    void parse(const ::org::xml::sax::InputSource&, const ::org::xml::sax::HandlerBase&) const ;
-    void parse(const ::org::xml::sax::InputSource&, const ::org::xml::sax::helpers::DefaultHandler&) const ;
-    ::org::xml::sax::Parser getParser() const ;
-    ::org::xml::sax::XMLReader getXMLReader() const ;
-    bool isNamespaceAware() const ;
-    bool isValidating() const ;
-    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getProperty(const ::java::lang::String&) const ;
-    ::javax::xml::validation::Schema getSchema() const ;
-    bool isXIncludeAware() const ;
+    void reset() const;
+    void parse(const ::java::io::InputStream&, const ::org::xml::sax::HandlerBase&) const;
+    void parse(const ::java::io::InputStream&, const ::org::xml::sax::HandlerBase&, const ::java::lang::String&) const;
+    void parse(const ::java::io::InputStream&, const ::org::xml::sax::helpers::DefaultHandler&) const;
+    void parse(const ::java::io::InputStream&, const ::org::xml::sax::helpers::DefaultHandler&, const ::java::lang::String&) const;
+    void parse(const ::java::lang::String&, const ::org::xml::sax::HandlerBase&) const;
+    void parse(const ::java::lang::String&, const ::org::xml::sax::helpers::DefaultHandler&) const;
+    void parse(const ::java::io::File&, const ::org::xml::sax::HandlerBase&) const;
+    void parse(const ::java::io::File&, const ::org::xml::sax::helpers::DefaultHandler&) const;
+    void parse(const ::org::xml::sax::InputSource&, const ::org::xml::sax::HandlerBase&) const;
+    void parse(const ::org::xml::sax::InputSource&, const ::org::xml::sax::helpers::DefaultHandler&) const;
+    ::org::xml::sax::Parser getParser() const;
+    ::org::xml::sax::XMLReader getXMLReader() const;
+    bool isNamespaceAware() const;
+    bool isValidating() const;
+    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object getProperty(const ::java::lang::String&) const;
+    ::javax::xml::validation::Schema getSchema() const;
+    bool isXIncludeAware() const;
 
 };
 }

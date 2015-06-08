@@ -40,7 +40,7 @@ public:
     AnticipateOvershootInterpolator(float);
     AnticipateOvershootInterpolator(float, float);
     AnticipateOvershootInterpolator(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

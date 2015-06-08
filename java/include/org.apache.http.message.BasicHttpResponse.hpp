@@ -46,17 +46,17 @@ public:
     BasicHttpResponse(const ::org::apache::http::StatusLine&, const ::org::apache::http::ReasonPhraseCatalog&, const ::java::util::Locale&);
     BasicHttpResponse(const ::org::apache::http::StatusLine&);
     BasicHttpResponse(const ::org::apache::http::ProtocolVersion&, int32_t, const ::java::lang::String&);
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    ::org::apache::http::StatusLine getStatusLine() const ;
-    ::org::apache::http::HttpEntity getEntity() const ;
-    ::java::util::Locale getLocale() const ;
-    void setStatusLine(const ::org::apache::http::StatusLine&) const ;
-    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t) const ;
-    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t, const ::java::lang::String&) const ;
-    void setStatusCode(int32_t) const ;
-    void setReasonPhrase(const ::java::lang::String&) const ;
-    void setEntity(const ::org::apache::http::HttpEntity&) const ;
-    void setLocale(const ::java::util::Locale&) const ;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    ::org::apache::http::StatusLine getStatusLine() const;
+    ::org::apache::http::HttpEntity getEntity() const;
+    ::java::util::Locale getLocale() const;
+    void setStatusLine(const ::org::apache::http::StatusLine&) const;
+    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t) const;
+    void setStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t, const ::java::lang::String&) const;
+    void setStatusCode(int32_t) const;
+    void setReasonPhrase(const ::java::lang::String&) const;
+    void setEntity(const ::org::apache::http::HttpEntity&) const;
+    void setLocale(const ::java::util::Locale&) const;
 
 };
 }

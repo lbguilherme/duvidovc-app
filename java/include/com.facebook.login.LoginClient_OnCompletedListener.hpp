@@ -33,7 +33,7 @@ public:
     ::com::facebook::login::LoginClient_OnCompletedListener& operator=(const ::com::facebook::login::LoginClient_OnCompletedListener& x) {obj = x.obj; return *this;}
     ::com::facebook::login::LoginClient_OnCompletedListener& operator=(::com::facebook::login::LoginClient_OnCompletedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCompleted(const ::com::facebook::login::LoginClient_Result&) const ;
+    void onCompleted(const ::com::facebook::login::LoginClient_Result&) const;
 
 };
 }

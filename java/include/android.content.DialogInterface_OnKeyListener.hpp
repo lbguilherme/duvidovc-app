@@ -33,7 +33,7 @@ public:
     ::android::content::DialogInterface_OnKeyListener& operator=(const ::android::content::DialogInterface_OnKeyListener& x) {obj = x.obj; return *this;}
     ::android::content::DialogInterface_OnKeyListener& operator=(::android::content::DialogInterface_OnKeyListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onKey(const ::android::content::DialogInterface&, int32_t, const ::android::view::KeyEvent&) const ;
+    bool onKey(const ::android::content::DialogInterface&, int32_t, const ::android::view::KeyEvent&) const;
 
 };
 }

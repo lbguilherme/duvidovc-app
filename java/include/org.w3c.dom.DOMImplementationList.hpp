@@ -33,8 +33,8 @@ public:
     ::org::w3c::dom::DOMImplementationList& operator=(const ::org::w3c::dom::DOMImplementationList& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMImplementationList& operator=(::org::w3c::dom::DOMImplementationList&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::DOMImplementation item(int32_t) const ;
-    int32_t getLength() const ;
+    ::org::w3c::dom::DOMImplementation item(int32_t) const;
+    int32_t getLength() const;
 
 };
 }

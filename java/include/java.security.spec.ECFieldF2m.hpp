@@ -39,12 +39,12 @@ public:
     ECFieldF2m(int32_t);
     ECFieldF2m(int32_t, const ::java::math::BigInteger&);
     ECFieldF2m(int32_t, const std::vector< int32_t>&);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t getFieldSize() const ;
-    int32_t getM() const ;
-    std::vector< int32_t> getMidTermsOfReductionPolynomial() const ;
-    ::java::math::BigInteger getReductionPolynomial() const ;
-    int32_t hashCode() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t getFieldSize() const;
+    int32_t getM() const;
+    std::vector< int32_t> getMidTermsOfReductionPolynomial() const;
+    ::java::math::BigInteger getReductionPolynomial() const;
+    int32_t hashCode() const;
 
 };
 }

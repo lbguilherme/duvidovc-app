@@ -36,15 +36,15 @@ public:
     ::java::nio::channels::Selector& operator=(::java::nio::channels::Selector&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::nio::channels::Selector open();
-    void close() const ;
-    bool isOpen() const ;
-    ::java::util::Set keys() const ;
-    ::java::nio::channels::spi::SelectorProvider provider() const ;
-    int32_t select() const ;
-    int32_t select(int64_t) const ;
-    ::java::util::Set selectedKeys() const ;
-    int32_t selectNow() const ;
-    ::java::nio::channels::Selector wakeup() const ;
+    void close() const;
+    bool isOpen() const;
+    ::java::util::Set keys() const;
+    ::java::nio::channels::spi::SelectorProvider provider() const;
+    int32_t select() const;
+    int32_t select(int64_t) const;
+    ::java::util::Set selectedKeys() const;
+    int32_t selectNow() const;
+    ::java::nio::channels::Selector wakeup() const;
 
 };
 }

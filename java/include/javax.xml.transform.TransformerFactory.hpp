@@ -43,18 +43,18 @@ public:
     
     static ::javax::xml::transform::TransformerFactory newInstance();
     static ::javax::xml::transform::TransformerFactory newInstance(const ::java::lang::String&, const ::java::lang::ClassLoader&);
-    ::javax::xml::transform::Transformer newTransformer(const ::javax::xml::transform::Source&) const ;
-    ::javax::xml::transform::Transformer newTransformer() const ;
-    ::javax::xml::transform::Templates newTemplates(const ::javax::xml::transform::Source&) const ;
-    ::javax::xml::transform::Source getAssociatedStylesheet(const ::javax::xml::transform::Source&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setURIResolver(const ::javax::xml::transform::URIResolver&) const ;
-    ::javax::xml::transform::URIResolver getURIResolver() const ;
-    void setFeature(const ::java::lang::String&, bool) const ;
-    bool getFeature(const ::java::lang::String&) const ;
-    void setAttribute(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getAttribute(const ::java::lang::String&) const ;
-    void setErrorListener(const ::javax::xml::transform::ErrorListener&) const ;
-    ::javax::xml::transform::ErrorListener getErrorListener() const ;
+    ::javax::xml::transform::Transformer newTransformer(const ::javax::xml::transform::Source&) const;
+    ::javax::xml::transform::Transformer newTransformer() const;
+    ::javax::xml::transform::Templates newTemplates(const ::javax::xml::transform::Source&) const;
+    ::javax::xml::transform::Source getAssociatedStylesheet(const ::javax::xml::transform::Source&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void setURIResolver(const ::javax::xml::transform::URIResolver&) const;
+    ::javax::xml::transform::URIResolver getURIResolver() const;
+    void setFeature(const ::java::lang::String&, bool) const;
+    bool getFeature(const ::java::lang::String&) const;
+    void setAttribute(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object getAttribute(const ::java::lang::String&) const;
+    void setErrorListener(const ::javax::xml::transform::ErrorListener&) const;
+    ::javax::xml::transform::ErrorListener getErrorListener() const;
 
 };
 }

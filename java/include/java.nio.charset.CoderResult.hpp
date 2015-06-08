@@ -36,14 +36,14 @@ public:
     
     static ::java::nio::charset::CoderResult malformedForLength(int32_t);
     static ::java::nio::charset::CoderResult unmappableForLength(int32_t);
-    bool isUnderflow() const ;
-    bool isError() const ;
-    bool isMalformed() const ;
-    bool isOverflow() const ;
-    bool isUnmappable() const ;
-    int32_t length() const ;
-    void throwException() const ;
-    ::java::lang::String toString() const ;
+    bool isUnderflow() const;
+    bool isError() const;
+    bool isMalformed() const;
+    bool isOverflow() const;
+    bool isUnmappable() const;
+    int32_t length() const;
+    void throwException() const;
+    ::java::lang::String toString() const;
 
 };
 }

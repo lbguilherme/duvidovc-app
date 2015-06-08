@@ -32,9 +32,9 @@ public:
     ::android::drm::ProcessedData& operator=(const ::android::drm::ProcessedData& x) {obj = x.obj; return *this;}
     ::android::drm::ProcessedData& operator=(::android::drm::ProcessedData&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< int8_t> getData() const ;
-    ::java::lang::String getAccountId() const ;
-    ::java::lang::String getSubscriptionId() const ;
+    std::vector< int8_t> getData() const;
+    ::java::lang::String getAccountId() const;
+    ::java::lang::String getSubscriptionId() const;
 
 };
 }

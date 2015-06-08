@@ -39,19 +39,19 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanImpl& operator=(::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat_AccessibilityNodeInfoJellybeanImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object obtain(const ::android::view::View&, int32_t) const ;
-    ::java::lang::Object findFocus(const ::java::lang::Object&, int32_t) const ;
-    ::java::lang::Object focusSearch(const ::java::lang::Object&, int32_t) const ;
-    void addChild(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
-    void setSource(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
-    bool isVisibleToUser(const ::java::lang::Object&) const ;
-    void setVisibleToUser(const ::java::lang::Object&, bool) const ;
-    bool isAccessibilityFocused(const ::java::lang::Object&) const ;
-    void setAccessibilityFocused(const ::java::lang::Object&, bool) const ;
-    bool performAction(const ::java::lang::Object&, int32_t, const ::android::os::Bundle&) const ;
-    void setMovementGranularities(const ::java::lang::Object&, int32_t) const ;
-    int32_t getMovementGranularities(const ::java::lang::Object&) const ;
-    void setParent(const ::java::lang::Object&, const ::android::view::View&, int32_t) const ;
+    ::java::lang::Object obtain(const ::android::view::View&, int32_t) const;
+    ::java::lang::Object findFocus(const ::java::lang::Object&, int32_t) const;
+    ::java::lang::Object focusSearch(const ::java::lang::Object&, int32_t) const;
+    void addChild(const ::java::lang::Object&, const ::android::view::View&, int32_t) const;
+    void setSource(const ::java::lang::Object&, const ::android::view::View&, int32_t) const;
+    bool isVisibleToUser(const ::java::lang::Object&) const;
+    void setVisibleToUser(const ::java::lang::Object&, bool) const;
+    bool isAccessibilityFocused(const ::java::lang::Object&) const;
+    void setAccessibilityFocused(const ::java::lang::Object&, bool) const;
+    bool performAction(const ::java::lang::Object&, int32_t, const ::android::os::Bundle&) const;
+    void setMovementGranularities(const ::java::lang::Object&, int32_t) const;
+    int32_t getMovementGranularities(const ::java::lang::Object&) const;
+    void setParent(const ::java::lang::Object&, const ::android::view::View&, int32_t) const;
 
 };
 }

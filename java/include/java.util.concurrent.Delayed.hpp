@@ -35,7 +35,7 @@ public:
     ::java::util::concurrent::Delayed& operator=(const ::java::util::concurrent::Delayed& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::Delayed& operator=(::java::util::concurrent::Delayed&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t getDelay(const ::java::util::concurrent::TimeUnit&) const ;
+    int64_t getDelay(const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

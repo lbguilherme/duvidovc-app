@@ -42,11 +42,11 @@ public:
     Notification();
     Notification(int32_t, const ::java::lang::CharSequence&, int64_t);
     Notification(const ::android::os::Parcel&);
-    ::android::app::Notification clone() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void setLatestEventInfo(const ::android::content::Context&, const ::java::lang::CharSequence&, const ::java::lang::CharSequence&, const ::android::app::PendingIntent&) const ;
-    ::java::lang::String toString() const ;
+    ::android::app::Notification clone() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void setLatestEventInfo(const ::android::content::Context&, const ::java::lang::CharSequence&, const ::java::lang::CharSequence&, const ::android::app::PendingIntent&) const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -36,13 +36,13 @@ public:
     ::android::support::v4::net::TrafficStatsCompat_BaseTrafficStatsCompatImpl& operator=(const ::android::support::v4::net::TrafficStatsCompat_BaseTrafficStatsCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::net::TrafficStatsCompat_BaseTrafficStatsCompatImpl& operator=(::android::support::v4::net::TrafficStatsCompat_BaseTrafficStatsCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void clearThreadStatsTag() const ;
-    int32_t getThreadStatsTag() const ;
-    void incrementOperationCount(int32_t) const ;
-    void incrementOperationCount(int32_t, int32_t) const ;
-    void setThreadStatsTag(int32_t) const ;
-    void tagSocket(const ::java::net::Socket&) const ;
-    void untagSocket(const ::java::net::Socket&) const ;
+    void clearThreadStatsTag() const;
+    int32_t getThreadStatsTag() const;
+    void incrementOperationCount(int32_t) const;
+    void incrementOperationCount(int32_t, int32_t) const;
+    void setThreadStatsTag(int32_t) const;
+    void tagSocket(const ::java::net::Socket&) const;
+    void untagSocket(const ::java::net::Socket&) const;
 
 };
 }

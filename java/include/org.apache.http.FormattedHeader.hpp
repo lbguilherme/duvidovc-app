@@ -35,8 +35,8 @@ public:
     ::org::apache::http::FormattedHeader& operator=(const ::org::apache::http::FormattedHeader& x) {obj = x.obj; return *this;}
     ::org::apache::http::FormattedHeader& operator=(::org::apache::http::FormattedHeader&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::util::CharArrayBuffer getBuffer() const ;
-    int32_t getValuePos() const ;
+    ::org::apache::http::util::CharArrayBuffer getBuffer() const;
+    int32_t getValuePos() const;
 
 };
 }

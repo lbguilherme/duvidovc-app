@@ -43,19 +43,19 @@ public:
     ::android::support::v4::app::ListFragment& operator=(::android::support::v4::app::ListFragment&& x) {obj = std::move(x.obj); return *this;}
     
     ListFragment();
-    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const ;
-    void onViewCreated(const ::android::view::View&, const ::android::os::Bundle&) const ;
-    void onDestroyView() const ;
-    void onListItemClick(const ::android::widget::ListView&, const ::android::view::View&, int32_t, int64_t) const ;
-    void setListAdapter(const ::android::widget::ListAdapter&) const ;
-    void setSelection(int32_t) const ;
-    int32_t getSelectedItemPosition() const ;
-    int64_t getSelectedItemId() const ;
-    ::android::widget::ListView getListView() const ;
-    void setEmptyText(const ::java::lang::CharSequence&) const ;
-    void setListShown(bool) const ;
-    void setListShownNoAnimation(bool) const ;
-    ::android::widget::ListAdapter getListAdapter() const ;
+    ::android::view::View onCreateView(const ::android::view::LayoutInflater&, const ::android::view::ViewGroup&, const ::android::os::Bundle&) const;
+    void onViewCreated(const ::android::view::View&, const ::android::os::Bundle&) const;
+    void onDestroyView() const;
+    void onListItemClick(const ::android::widget::ListView&, const ::android::view::View&, int32_t, int64_t) const;
+    void setListAdapter(const ::android::widget::ListAdapter&) const;
+    void setSelection(int32_t) const;
+    int32_t getSelectedItemPosition() const;
+    int64_t getSelectedItemId() const;
+    ::android::widget::ListView getListView() const;
+    void setEmptyText(const ::java::lang::CharSequence&) const;
+    void setListShown(bool) const;
+    void setListShownNoAnimation(bool) const;
+    ::android::widget::ListAdapter getListAdapter() const;
 
 };
 }

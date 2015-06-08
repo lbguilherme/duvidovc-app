@@ -39,13 +39,13 @@ public:
     
     MemoryHandler();
     MemoryHandler(const ::java::util::logging::Handler&, int32_t, const ::java::util::logging::Level&);
-    void close() const ;
-    void flush() const ;
-    void publish(const ::java::util::logging::LogRecord&) const ;
-    ::java::util::logging::Level getPushLevel() const ;
-    bool isLoggable(const ::java::util::logging::LogRecord&) const ;
-    void push() const ;
-    void setPushLevel(const ::java::util::logging::Level&) const ;
+    void close() const;
+    void flush() const;
+    void publish(const ::java::util::logging::LogRecord&) const;
+    ::java::util::logging::Level getPushLevel() const;
+    bool isLoggable(const ::java::util::logging::LogRecord&) const;
+    void push() const;
+    void setPushLevel(const ::java::util::logging::Level&) const;
 
 };
 }

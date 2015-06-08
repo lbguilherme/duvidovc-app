@@ -34,13 +34,13 @@ public:
     ::java::io::ObjectInput& operator=(const ::java::io::ObjectInput& x) {obj = x.obj; return *this;}
     ::java::io::ObjectInput& operator=(::java::io::ObjectInput&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t available() const ;
-    void close() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&) const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    ::java::lang::Object readObject() const ;
-    int64_t skip(int64_t) const ;
+    int32_t available() const;
+    void close() const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&) const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    ::java::lang::Object readObject() const;
+    int64_t skip(int64_t) const;
 
 };
 }

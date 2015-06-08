@@ -37,16 +37,16 @@ public:
     ::java::security::AlgorithmParameterGenerator& operator=(const ::java::security::AlgorithmParameterGenerator& x) {obj = x.obj; return *this;}
     ::java::security::AlgorithmParameterGenerator& operator=(::java::security::AlgorithmParameterGenerator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
+    ::java::lang::String getAlgorithm() const;
     static ::java::security::AlgorithmParameterGenerator getInstance(const ::java::lang::String&);
     static ::java::security::AlgorithmParameterGenerator getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::AlgorithmParameterGenerator getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::Provider getProvider() const ;
-    void init(int32_t) const ;
-    void init(int32_t, const ::java::security::SecureRandom&) const ;
-    void init(const ::java::security::spec::AlgorithmParameterSpec&) const ;
-    void init(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const ;
-    ::java::security::AlgorithmParameters generateParameters() const ;
+    ::java::security::Provider getProvider() const;
+    void init(int32_t) const;
+    void init(int32_t, const ::java::security::SecureRandom&) const;
+    void init(const ::java::security::spec::AlgorithmParameterSpec&) const;
+    void init(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const;
+    ::java::security::AlgorithmParameters generateParameters() const;
 
 };
 }

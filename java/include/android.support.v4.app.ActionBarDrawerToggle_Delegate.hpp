@@ -34,9 +34,9 @@ public:
     ::android::support::v4::app::ActionBarDrawerToggle_Delegate& operator=(const ::android::support::v4::app::ActionBarDrawerToggle_Delegate& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ActionBarDrawerToggle_Delegate& operator=(::android::support::v4::app::ActionBarDrawerToggle_Delegate&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::graphics::drawable::Drawable getThemeUpIndicator() const ;
-    void setActionBarUpIndicator(const ::android::graphics::drawable::Drawable&, int32_t) const ;
-    void setActionBarDescription(int32_t) const ;
+    ::android::graphics::drawable::Drawable getThemeUpIndicator() const;
+    void setActionBarUpIndicator(const ::android::graphics::drawable::Drawable&, int32_t) const;
+    void setActionBarDescription(int32_t) const;
 
 };
 }

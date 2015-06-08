@@ -35,12 +35,12 @@ public:
     ::android::drm::DrmInfoRequest& operator=(::android::drm::DrmInfoRequest&& x) {obj = std::move(x.obj); return *this;}
     
     DrmInfoRequest(int32_t, const ::java::lang::String&);
-    ::java::lang::String getMimeType() const ;
-    int32_t getInfoType() const ;
-    void put(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object get(const ::java::lang::String&) const ;
-    ::java::util::Iterator keyIterator() const ;
-    ::java::util::Iterator iterator() const ;
+    ::java::lang::String getMimeType() const;
+    int32_t getInfoType() const;
+    void put(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object get(const ::java::lang::String&) const;
+    ::java::util::Iterator keyIterator() const;
+    ::java::util::Iterator iterator() const;
 
 };
 }

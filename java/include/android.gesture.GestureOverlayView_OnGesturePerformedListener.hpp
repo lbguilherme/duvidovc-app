@@ -33,7 +33,7 @@ public:
     ::android::gesture::GestureOverlayView_OnGesturePerformedListener& operator=(const ::android::gesture::GestureOverlayView_OnGesturePerformedListener& x) {obj = x.obj; return *this;}
     ::android::gesture::GestureOverlayView_OnGesturePerformedListener& operator=(::android::gesture::GestureOverlayView_OnGesturePerformedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGesturePerformed(const ::android::gesture::GestureOverlayView&, const ::android::gesture::Gesture&) const ;
+    void onGesturePerformed(const ::android::gesture::GestureOverlayView&, const ::android::gesture::Gesture&) const;
 
 };
 }

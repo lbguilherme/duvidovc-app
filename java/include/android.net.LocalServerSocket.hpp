@@ -37,10 +37,10 @@ public:
     
     LocalServerSocket(const ::java::lang::String&);
     LocalServerSocket(const ::java::io::FileDescriptor&);
-    ::android::net::LocalSocketAddress getLocalSocketAddress() const ;
-    ::android::net::LocalSocket accept() const ;
-    ::java::io::FileDescriptor getFileDescriptor() const ;
-    void close() const ;
+    ::android::net::LocalSocketAddress getLocalSocketAddress() const;
+    ::android::net::LocalSocket accept() const;
+    ::java::io::FileDescriptor getFileDescriptor() const;
+    void close() const;
 
 };
 }

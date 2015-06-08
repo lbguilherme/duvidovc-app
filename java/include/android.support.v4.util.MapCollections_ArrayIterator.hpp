@@ -36,9 +36,9 @@ public:
     ::android::support::v4::util::MapCollections_ArrayIterator& operator=(const ::android::support::v4::util::MapCollections_ArrayIterator& x) {obj = x.obj; return *this;}
     ::android::support::v4::util::MapCollections_ArrayIterator& operator=(::android::support::v4::util::MapCollections_ArrayIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasNext() const ;
-    ::java::lang::Object next() const ;
-    void remove() const ;
+    bool hasNext() const;
+    ::java::lang::Object next() const;
+    void remove() const;
 
 };
 }

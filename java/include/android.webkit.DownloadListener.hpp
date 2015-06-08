@@ -32,7 +32,7 @@ public:
     ::android::webkit::DownloadListener& operator=(const ::android::webkit::DownloadListener& x) {obj = x.obj; return *this;}
     ::android::webkit::DownloadListener& operator=(::android::webkit::DownloadListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onDownloadStart(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, int64_t) const ;
+    void onDownloadStart(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, int64_t) const;
 
 };
 }

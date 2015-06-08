@@ -35,13 +35,13 @@ public:
     ::java::util::concurrent::atomic::AtomicStampedReference& operator=(::java::util::concurrent::atomic::AtomicStampedReference&& x) {obj = std::move(x.obj); return *this;}
     
     AtomicStampedReference(const ::java::lang::Object&, int32_t);
-    ::java::lang::Object getReference() const ;
-    int32_t getStamp() const ;
-    ::java::lang::Object get(const std::vector< int32_t>&) const ;
-    bool weakCompareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, int32_t, int32_t) const ;
-    bool compareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, int32_t, int32_t) const ;
-    void set(const ::java::lang::Object&, int32_t) const ;
-    bool attemptStamp(const ::java::lang::Object&, int32_t) const ;
+    ::java::lang::Object getReference() const;
+    int32_t getStamp() const;
+    ::java::lang::Object get(const std::vector< int32_t>&) const;
+    bool weakCompareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, int32_t, int32_t) const;
+    bool compareAndSet(const ::java::lang::Object&, const ::java::lang::Object&, int32_t, int32_t) const;
+    void set(const ::java::lang::Object&, int32_t) const;
+    bool attemptStamp(const ::java::lang::Object&, int32_t) const;
 
 };
 }

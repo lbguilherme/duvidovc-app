@@ -33,8 +33,8 @@ public:
     ::android::view::MotionEvent_PointerProperties& operator=(::android::view::MotionEvent_PointerProperties&& x) {obj = std::move(x.obj); return *this;}
     
     MotionEvent_PointerProperties();
-    void clear() const ;
-    void copyFrom(const ::android::view::MotionEvent_PointerProperties&) const ;
+    void clear() const;
+    void copyFrom(const ::android::view::MotionEvent_PointerProperties&) const;
 
 };
 }

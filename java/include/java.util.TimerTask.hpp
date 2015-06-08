@@ -33,9 +33,9 @@ public:
     ::java::util::TimerTask& operator=(const ::java::util::TimerTask& x) {obj = x.obj; return *this;}
     ::java::util::TimerTask& operator=(::java::util::TimerTask&& x) {obj = std::move(x.obj); return *this;}
     
-    bool cancel() const ;
-    int64_t scheduledExecutionTime() const ;
-    void run() const ;
+    bool cancel() const;
+    int64_t scheduledExecutionTime() const;
+    void run() const;
 
 };
 }

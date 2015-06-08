@@ -34,7 +34,7 @@ public:
     ::com::facebook::login::widget::ProfilePictureView_OnErrorListener& operator=(const ::com::facebook::login::widget::ProfilePictureView_OnErrorListener& x) {obj = x.obj; return *this;}
     ::com::facebook::login::widget::ProfilePictureView_OnErrorListener& operator=(::com::facebook::login::widget::ProfilePictureView_OnErrorListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onError(const ::com::facebook::FacebookException&) const ;
+    void onError(const ::com::facebook::FacebookException&) const;
 
 };
 }

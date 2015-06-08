@@ -43,12 +43,12 @@ public:
     ZoomButton(const ::android::content::Context&);
     ZoomButton(const ::android::content::Context&, const ::android::util::AttributeSet&);
     ZoomButton(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void setZoomSpeed(int64_t) const ;
-    bool onLongClick(const ::android::view::View&) const ;
-    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const ;
-    void setEnabled(bool) const ;
-    bool dispatchUnhandledMove(const ::android::view::View&, int32_t) const ;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void setZoomSpeed(int64_t) const;
+    bool onLongClick(const ::android::view::View&) const;
+    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const;
+    void setEnabled(bool) const;
+    bool dispatchUnhandledMove(const ::android::view::View&, int32_t) const;
 
 };
 }

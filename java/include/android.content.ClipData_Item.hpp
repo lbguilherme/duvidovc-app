@@ -39,10 +39,10 @@ public:
     ClipData_Item(const ::android::content::Intent&);
     ClipData_Item(const ::android::net::Uri&);
     ClipData_Item(const ::java::lang::CharSequence&, const ::android::content::Intent&, const ::android::net::Uri&);
-    ::java::lang::CharSequence getText() const ;
-    ::android::content::Intent getIntent() const ;
-    ::android::net::Uri getUri() const ;
-    ::java::lang::CharSequence coerceToText(const ::android::content::Context&) const ;
+    ::java::lang::CharSequence getText() const;
+    ::android::content::Intent getIntent() const;
+    ::android::net::Uri getUri() const;
+    ::java::lang::CharSequence coerceToText(const ::android::content::Context&) const;
 
 };
 }

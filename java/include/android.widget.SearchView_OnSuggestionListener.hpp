@@ -31,8 +31,8 @@ public:
     ::android::widget::SearchView_OnSuggestionListener& operator=(const ::android::widget::SearchView_OnSuggestionListener& x) {obj = x.obj; return *this;}
     ::android::widget::SearchView_OnSuggestionListener& operator=(::android::widget::SearchView_OnSuggestionListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onSuggestionSelect(int32_t) const ;
-    bool onSuggestionClick(int32_t) const ;
+    bool onSuggestionSelect(int32_t) const;
+    bool onSuggestionClick(int32_t) const;
 
 };
 }

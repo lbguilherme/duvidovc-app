@@ -35,7 +35,7 @@ public:
     ::com::facebook::share::internal::OpenGraphJSONUtility_PhotoJSONProcessor& operator=(const ::com::facebook::share::internal::OpenGraphJSONUtility_PhotoJSONProcessor& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::OpenGraphJSONUtility_PhotoJSONProcessor& operator=(::com::facebook::share::internal::OpenGraphJSONUtility_PhotoJSONProcessor&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::json::JSONObject toJSONObject(const ::com::facebook::share::model::SharePhoto&) const ;
+    ::org::json::JSONObject toJSONObject(const ::com::facebook::share::model::SharePhoto&) const;
 
 };
 }

@@ -37,13 +37,13 @@ public:
     
     Instrumentation_ActivityMonitor(const ::android::content::IntentFilter&, const ::android::app::Instrumentation_ActivityResult&, bool);
     Instrumentation_ActivityMonitor(const ::java::lang::String&, const ::android::app::Instrumentation_ActivityResult&, bool);
-    ::android::content::IntentFilter getFilter() const ;
-    ::android::app::Instrumentation_ActivityResult getResult() const ;
-    bool isBlocking() const ;
-    int32_t getHits() const ;
-    ::android::app::Activity getLastActivity() const ;
-    ::android::app::Activity waitForActivity() const ;
-    ::android::app::Activity waitForActivityWithTimeout(int64_t) const ;
+    ::android::content::IntentFilter getFilter() const;
+    ::android::app::Instrumentation_ActivityResult getResult() const;
+    bool isBlocking() const;
+    int32_t getHits() const;
+    ::android::app::Activity getLastActivity() const;
+    ::android::app::Activity waitForActivity() const;
+    ::android::app::Activity waitForActivityWithTimeout(int64_t) const;
 
 };
 }

@@ -36,11 +36,11 @@ public:
     ::java::security::PermissionCollection& operator=(::java::security::PermissionCollection&& x) {obj = std::move(x.obj); return *this;}
     
     PermissionCollection();
-    void add(const ::java::security::Permission&) const ;
-    ::java::util::Enumeration elements() const ;
-    bool implies(const ::java::security::Permission&) const ;
-    bool isReadOnly() const ;
-    void setReadOnly() const ;
+    void add(const ::java::security::Permission&) const;
+    ::java::util::Enumeration elements() const;
+    bool implies(const ::java::security::Permission&) const;
+    bool isReadOnly() const;
+    void setReadOnly() const;
 
 };
 }

@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::auth::BasicSchemeFactory& operator=(::org::apache::http::impl::auth::BasicSchemeFactory&& x) {obj = std::move(x.obj); return *this;}
     
     BasicSchemeFactory();
-    ::org::apache::http::auth::AuthScheme newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::auth::AuthScheme newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

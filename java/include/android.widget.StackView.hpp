@@ -39,12 +39,12 @@ public:
     StackView(const ::android::content::Context&);
     StackView(const ::android::content::Context&, const ::android::util::AttributeSet&);
     StackView(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void showNext() const ;
-    void showPrevious() const ;
-    bool onGenericMotionEvent(const ::android::view::MotionEvent&) const ;
-    bool onInterceptTouchEvent(const ::android::view::MotionEvent&) const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void advance() const ;
+    void showNext() const;
+    void showPrevious() const;
+    bool onGenericMotionEvent(const ::android::view::MotionEvent&) const;
+    bool onInterceptTouchEvent(const ::android::view::MotionEvent&) const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void advance() const;
 
 };
 }

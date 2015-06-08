@@ -34,8 +34,8 @@ public:
     ::android::support::v4::view::MenuItemCompat_OnActionExpandListener& operator=(const ::android::support::v4::view::MenuItemCompat_OnActionExpandListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MenuItemCompat_OnActionExpandListener& operator=(::android::support::v4::view::MenuItemCompat_OnActionExpandListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onMenuItemActionExpand(const ::android::view::MenuItem&) const ;
-    bool onMenuItemActionCollapse(const ::android::view::MenuItem&) const ;
+    bool onMenuItemActionExpand(const ::android::view::MenuItem&) const;
+    bool onMenuItemActionCollapse(const ::android::view::MenuItem&) const;
 
 };
 }

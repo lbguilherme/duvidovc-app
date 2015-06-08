@@ -37,24 +37,24 @@ public:
     ::android::util::JsonReader& operator=(::android::util::JsonReader&& x) {obj = std::move(x.obj); return *this;}
     
     JsonReader(const ::java::io::Reader&);
-    void setLenient(bool) const ;
-    bool isLenient() const ;
-    void beginArray() const ;
-    void endArray() const ;
-    void beginObject() const ;
-    void endObject() const ;
-    bool hasNext() const ;
-    ::android::util::JsonToken peek() const ;
-    ::java::lang::String nextName() const ;
-    ::java::lang::String nextString() const ;
-    bool nextBoolean() const ;
-    void nextNull() const ;
-    double nextDouble() const ;
-    int64_t nextLong() const ;
-    int32_t nextInt() const ;
-    void close() const ;
-    void skipValue() const ;
-    ::java::lang::String toString() const ;
+    void setLenient(bool) const;
+    bool isLenient() const;
+    void beginArray() const;
+    void endArray() const;
+    void beginObject() const;
+    void endObject() const;
+    bool hasNext() const;
+    ::android::util::JsonToken peek() const;
+    ::java::lang::String nextName() const;
+    ::java::lang::String nextString() const;
+    bool nextBoolean() const;
+    void nextNull() const;
+    double nextDouble() const;
+    int64_t nextLong() const;
+    int32_t nextInt() const;
+    void close() const;
+    void skipValue() const;
+    ::java::lang::String toString() const;
 
 };
 }

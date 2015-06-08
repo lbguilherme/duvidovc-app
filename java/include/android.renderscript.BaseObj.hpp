@@ -33,11 +33,11 @@ public:
     ::android::renderscript::BaseObj& operator=(const ::android::renderscript::BaseObj& x) {obj = x.obj; return *this;}
     ::android::renderscript::BaseObj& operator=(::android::renderscript::BaseObj&& x) {obj = std::move(x.obj); return *this;}
     
-    void setName(const ::java::lang::String&) const ;
-    ::java::lang::String getName() const ;
-    void destroy() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    void setName(const ::java::lang::String&) const;
+    ::java::lang::String getName() const;
+    void destroy() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

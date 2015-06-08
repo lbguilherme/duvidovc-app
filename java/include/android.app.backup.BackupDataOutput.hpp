@@ -33,8 +33,8 @@ public:
     ::android::app::backup::BackupDataOutput& operator=(const ::android::app::backup::BackupDataOutput& x) {obj = x.obj; return *this;}
     ::android::app::backup::BackupDataOutput& operator=(::android::app::backup::BackupDataOutput&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t writeEntityHeader(const ::java::lang::String&, int32_t) const ;
-    int32_t writeEntityData(const std::vector< int8_t>&, int32_t) const ;
+    int32_t writeEntityHeader(const ::java::lang::String&, int32_t) const;
+    int32_t writeEntityData(const std::vector< int8_t>&, int32_t) const;
 
 };
 }

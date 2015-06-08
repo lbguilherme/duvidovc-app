@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::BestMatchSpecFactory& operator=(::org::apache::http::impl::cookie::BestMatchSpecFactory&& x) {obj = std::move(x.obj); return *this;}
     
     BestMatchSpecFactory();
-    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::cookie::CookieSpec newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

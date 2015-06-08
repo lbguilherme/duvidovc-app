@@ -41,23 +41,23 @@ public:
     ::android::database::sqlite::SQLiteQueryBuilder& operator=(::android::database::sqlite::SQLiteQueryBuilder&& x) {obj = std::move(x.obj); return *this;}
     
     SQLiteQueryBuilder();
-    void setDistinct(bool) const ;
-    ::java::lang::String getTables() const ;
-    void setTables(const ::java::lang::String&) const ;
-    void appendWhere(const ::java::lang::CharSequence&) const ;
-    void appendWhereEscapeString(const ::java::lang::String&) const ;
-    void setProjectionMap(const ::java::util::Map&) const ;
-    void setCursorFactory(const ::android::database::sqlite::SQLiteDatabase_CursorFactory&) const ;
-    void setStrict(bool) const ;
+    void setDistinct(bool) const;
+    ::java::lang::String getTables() const;
+    void setTables(const ::java::lang::String&) const;
+    void appendWhere(const ::java::lang::CharSequence&) const;
+    void appendWhereEscapeString(const ::java::lang::String&) const;
+    void setProjectionMap(const ::java::util::Map&) const;
+    void setCursorFactory(const ::android::database::sqlite::SQLiteDatabase_CursorFactory&) const;
+    void setStrict(bool) const;
     static ::java::lang::String buildQueryString(bool, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&);
     static void appendColumns(const ::java::lang::StringBuilder&, const std::vector< ::java::lang::String>&);
-    ::android::database::Cursor query(const ::android::database::sqlite::SQLiteDatabase&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::database::Cursor query(const ::android::database::sqlite::SQLiteDatabase&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String buildQuery(const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String buildQuery(const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String buildUnionSubQuery(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::util::Set&, int32_t, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String buildUnionSubQuery(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::util::Set&, int32_t, const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String buildUnionQuery(const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::android::database::Cursor query(const ::android::database::sqlite::SQLiteDatabase&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::database::Cursor query(const ::android::database::sqlite::SQLiteDatabase&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String buildQuery(const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String buildQuery(const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String buildUnionSubQuery(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::util::Set&, int32_t, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String buildUnionSubQuery(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::util::Set&, int32_t, const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String buildUnionQuery(const std::vector< ::java::lang::String>&, const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

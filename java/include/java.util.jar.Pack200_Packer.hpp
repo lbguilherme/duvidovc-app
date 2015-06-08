@@ -37,11 +37,11 @@ public:
     ::java::util::jar::Pack200_Packer& operator=(const ::java::util::jar::Pack200_Packer& x) {obj = x.obj; return *this;}
     ::java::util::jar::Pack200_Packer& operator=(::java::util::jar::Pack200_Packer&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::SortedMap properties() const ;
-    void pack(const ::java::util::jar::JarFile&, const ::java::io::OutputStream&) const ;
-    void pack(const ::java::util::jar::JarInputStream&, const ::java::io::OutputStream&) const ;
-    void addPropertyChangeListener(const ::java::beans::PropertyChangeListener&) const ;
-    void removePropertyChangeListener(const ::java::beans::PropertyChangeListener&) const ;
+    ::java::util::SortedMap properties() const;
+    void pack(const ::java::util::jar::JarFile&, const ::java::io::OutputStream&) const;
+    void pack(const ::java::util::jar::JarInputStream&, const ::java::io::OutputStream&) const;
+    void addPropertyChangeListener(const ::java::beans::PropertyChangeListener&) const;
+    void removePropertyChangeListener(const ::java::beans::PropertyChangeListener&) const;
 
 };
 }

@@ -35,11 +35,11 @@ public:
     ::java::util::concurrent::CountDownLatch& operator=(::java::util::concurrent::CountDownLatch&& x) {obj = std::move(x.obj); return *this;}
     
     CountDownLatch(int32_t);
-    void await() const ;
-    bool await(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void countDown() const ;
-    int64_t getCount() const ;
-    ::java::lang::String toString() const ;
+    void await() const;
+    bool await(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void countDown() const;
+    int64_t getCount() const;
+    ::java::lang::String toString() const;
 
 };
 }

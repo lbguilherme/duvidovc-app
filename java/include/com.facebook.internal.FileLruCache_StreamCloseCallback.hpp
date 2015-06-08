@@ -32,7 +32,7 @@ public:
     ::com::facebook::internal::FileLruCache_StreamCloseCallback& operator=(const ::com::facebook::internal::FileLruCache_StreamCloseCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::FileLruCache_StreamCloseCallback& operator=(::com::facebook::internal::FileLruCache_StreamCloseCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onClose() const ;
+    void onClose() const;
 
 };
 }

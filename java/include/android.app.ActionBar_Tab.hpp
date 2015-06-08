@@ -38,23 +38,23 @@ public:
     ::android::app::ActionBar_Tab& operator=(::android::app::ActionBar_Tab&& x) {obj = std::move(x.obj); return *this;}
     
     ActionBar_Tab();
-    int32_t getPosition() const ;
-    ::android::graphics::drawable::Drawable getIcon() const ;
-    ::java::lang::CharSequence getText() const ;
-    ::android::app::ActionBar_Tab setIcon(const ::android::graphics::drawable::Drawable&) const ;
-    ::android::app::ActionBar_Tab setIcon(int32_t) const ;
-    ::android::app::ActionBar_Tab setText(const ::java::lang::CharSequence&) const ;
-    ::android::app::ActionBar_Tab setText(int32_t) const ;
-    ::android::app::ActionBar_Tab setCustomView(const ::android::view::View&) const ;
-    ::android::app::ActionBar_Tab setCustomView(int32_t) const ;
-    ::android::view::View getCustomView() const ;
-    ::android::app::ActionBar_Tab setTag(const ::java::lang::Object&) const ;
-    ::java::lang::Object getTag() const ;
-    ::android::app::ActionBar_Tab setTabListener(const ::android::app::ActionBar_TabListener&) const ;
-    void select() const ;
-    ::android::app::ActionBar_Tab setContentDescription(int32_t) const ;
-    ::android::app::ActionBar_Tab setContentDescription(const ::java::lang::CharSequence&) const ;
-    ::java::lang::CharSequence getContentDescription() const ;
+    int32_t getPosition() const;
+    ::android::graphics::drawable::Drawable getIcon() const;
+    ::java::lang::CharSequence getText() const;
+    ::android::app::ActionBar_Tab setIcon(const ::android::graphics::drawable::Drawable&) const;
+    ::android::app::ActionBar_Tab setIcon(int32_t) const;
+    ::android::app::ActionBar_Tab setText(const ::java::lang::CharSequence&) const;
+    ::android::app::ActionBar_Tab setText(int32_t) const;
+    ::android::app::ActionBar_Tab setCustomView(const ::android::view::View&) const;
+    ::android::app::ActionBar_Tab setCustomView(int32_t) const;
+    ::android::view::View getCustomView() const;
+    ::android::app::ActionBar_Tab setTag(const ::java::lang::Object&) const;
+    ::java::lang::Object getTag() const;
+    ::android::app::ActionBar_Tab setTabListener(const ::android::app::ActionBar_TabListener&) const;
+    void select() const;
+    ::android::app::ActionBar_Tab setContentDescription(int32_t) const;
+    ::android::app::ActionBar_Tab setContentDescription(const ::java::lang::CharSequence&) const;
+    ::java::lang::CharSequence getContentDescription() const;
 
 };
 }

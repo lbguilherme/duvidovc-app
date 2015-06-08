@@ -33,9 +33,9 @@ public:
     ::com::facebook::internal::DialogFeature& operator=(const ::com::facebook::internal::DialogFeature& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::DialogFeature& operator=(::com::facebook::internal::DialogFeature&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAction() const ;
-    int32_t getMinVersion() const ;
-    ::java::lang::String name() const ;
+    ::java::lang::String getAction() const;
+    int32_t getMinVersion() const;
+    ::java::lang::String name() const;
 
 };
 }

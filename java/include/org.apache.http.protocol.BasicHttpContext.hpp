@@ -40,9 +40,9 @@ public:
     
     BasicHttpContext();
     BasicHttpContext(const ::org::apache::http::protocol::HttpContext&);
-    ::java::lang::Object getAttribute(const ::java::lang::String&) const ;
-    void setAttribute(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object removeAttribute(const ::java::lang::String&) const ;
+    ::java::lang::Object getAttribute(const ::java::lang::String&) const;
+    void setAttribute(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object removeAttribute(const ::java::lang::String&) const;
 
 };
 }

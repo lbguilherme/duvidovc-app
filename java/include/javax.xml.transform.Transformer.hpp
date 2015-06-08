@@ -39,19 +39,19 @@ public:
     ::javax::xml::transform::Transformer& operator=(const ::javax::xml::transform::Transformer& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::Transformer& operator=(::javax::xml::transform::Transformer&& x) {obj = std::move(x.obj); return *this;}
     
-    void reset() const ;
-    void transform(const ::javax::xml::transform::Source&, const ::javax::xml::transform::Result&) const ;
-    void setParameter(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getParameter(const ::java::lang::String&) const ;
-    void clearParameters() const ;
-    void setURIResolver(const ::javax::xml::transform::URIResolver&) const ;
-    ::javax::xml::transform::URIResolver getURIResolver() const ;
-    void setOutputProperties(const ::java::util::Properties&) const ;
-    ::java::util::Properties getOutputProperties() const ;
-    void setOutputProperty(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String getOutputProperty(const ::java::lang::String&) const ;
-    void setErrorListener(const ::javax::xml::transform::ErrorListener&) const ;
-    ::javax::xml::transform::ErrorListener getErrorListener() const ;
+    void reset() const;
+    void transform(const ::javax::xml::transform::Source&, const ::javax::xml::transform::Result&) const;
+    void setParameter(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object getParameter(const ::java::lang::String&) const;
+    void clearParameters() const;
+    void setURIResolver(const ::javax::xml::transform::URIResolver&) const;
+    ::javax::xml::transform::URIResolver getURIResolver() const;
+    void setOutputProperties(const ::java::util::Properties&) const;
+    ::java::util::Properties getOutputProperties() const;
+    void setOutputProperty(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String getOutputProperty(const ::java::lang::String&) const;
+    void setErrorListener(const ::javax::xml::transform::ErrorListener&) const;
+    ::javax::xml::transform::ErrorListener getErrorListener() const;
 
 };
 }

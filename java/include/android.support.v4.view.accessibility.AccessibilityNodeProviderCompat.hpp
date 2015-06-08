@@ -41,11 +41,11 @@ public:
     
     AccessibilityNodeProviderCompat();
     AccessibilityNodeProviderCompat(const ::java::lang::Object&);
-    ::java::lang::Object getProvider() const ;
-    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat createAccessibilityNodeInfo(int32_t) const ;
-    bool performAction(int32_t, int32_t, const ::android::os::Bundle&) const ;
-    ::java::util::List findAccessibilityNodeInfosByText(const ::java::lang::String&, int32_t) const ;
-    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat findFocus(int32_t) const ;
+    ::java::lang::Object getProvider() const;
+    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat createAccessibilityNodeInfo(int32_t) const;
+    bool performAction(int32_t, int32_t, const ::android::os::Bundle&) const;
+    ::java::util::List findAccessibilityNodeInfosByText(const ::java::lang::String&, int32_t) const;
+    ::android::support::v4::view::accessibility::AccessibilityNodeInfoCompat findFocus(int32_t) const;
 
 };
 }

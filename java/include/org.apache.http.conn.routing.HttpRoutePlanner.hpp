@@ -38,7 +38,7 @@ public:
     ::org::apache::http::conn::routing::HttpRoutePlanner& operator=(const ::org::apache::http::conn::routing::HttpRoutePlanner& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::routing::HttpRoutePlanner& operator=(::org::apache::http::conn::routing::HttpRoutePlanner&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::conn::routing::HttpRoute determineRoute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::conn::routing::HttpRoute determineRoute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

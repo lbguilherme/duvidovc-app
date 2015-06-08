@@ -39,9 +39,9 @@ public:
     ::android::graphics::drawable::LevelListDrawable& operator=(::android::graphics::drawable::LevelListDrawable&& x) {obj = std::move(x.obj); return *this;}
     
     LevelListDrawable();
-    void addLevel(int32_t, int32_t, const ::android::graphics::drawable::Drawable&) const ;
-    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const ;
-    ::android::graphics::drawable::Drawable mutate() const ;
+    void addLevel(int32_t, int32_t, const ::android::graphics::drawable::Drawable&) const;
+    void inflate(const ::android::content::res::Resources&, const ::org::xmlpull::v1::XmlPullParser&, const ::android::util::AttributeSet&) const;
+    ::android::graphics::drawable::Drawable mutate() const;
 
 };
 }

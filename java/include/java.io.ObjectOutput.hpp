@@ -34,12 +34,12 @@ public:
     ::java::io::ObjectOutput& operator=(const ::java::io::ObjectOutput& x) {obj = x.obj; return *this;}
     ::java::io::ObjectOutput& operator=(::java::io::ObjectOutput&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    void flush() const ;
-    void write(const std::vector< int8_t>&) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void writeObject(const ::java::lang::Object&) const ;
+    void close() const;
+    void flush() const;
+    void write(const std::vector< int8_t>&) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void writeObject(const ::java::lang::Object&) const;
 
 };
 }

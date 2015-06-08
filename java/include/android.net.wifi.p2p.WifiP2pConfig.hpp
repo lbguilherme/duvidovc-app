@@ -38,9 +38,9 @@ public:
     ::android::net::wifi::p2p::WifiP2pConfig& operator=(::android::net::wifi::p2p::WifiP2pConfig&& x) {obj = std::move(x.obj); return *this;}
     
     WifiP2pConfig();
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

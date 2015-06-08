@@ -34,7 +34,7 @@ public:
     ::android::webkit::JsPromptResult& operator=(const ::android::webkit::JsPromptResult& x) {obj = x.obj; return *this;}
     ::android::webkit::JsPromptResult& operator=(::android::webkit::JsPromptResult&& x) {obj = std::move(x.obj); return *this;}
     
-    void confirm(const ::java::lang::String&) const ;
+    void confirm(const ::java::lang::String&) const;
 
 };
 }

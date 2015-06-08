@@ -39,8 +39,8 @@ public:
     ::org::apache::http::cookie::params::CookieSpecParamBean& operator=(::org::apache::http::cookie::params::CookieSpecParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     CookieSpecParamBean(const ::org::apache::http::params::HttpParams&);
-    void setDatePatterns(const ::java::util::Collection&) const ;
-    void setSingleHeader(bool) const ;
+    void setDatePatterns(const ::java::util::Collection&) const;
+    void setSingleHeader(bool) const;
 
 };
 }

@@ -40,15 +40,15 @@ public:
     GridLayoutAnimationController(const ::android::content::Context&, const ::android::util::AttributeSet&);
     GridLayoutAnimationController(const ::android::view::animation::Animation&);
     GridLayoutAnimationController(const ::android::view::animation::Animation&, float, float);
-    float getColumnDelay() const ;
-    void setColumnDelay(float) const ;
-    float getRowDelay() const ;
-    void setRowDelay(float) const ;
-    int32_t getDirection() const ;
-    void setDirection(int32_t) const ;
-    int32_t getDirectionPriority() const ;
-    void setDirectionPriority(int32_t) const ;
-    bool willOverlap() const ;
+    float getColumnDelay() const;
+    void setColumnDelay(float) const;
+    float getRowDelay() const;
+    void setRowDelay(float) const;
+    int32_t getDirection() const;
+    void setDirection(int32_t) const;
+    int32_t getDirectionPriority() const;
+    void setDirectionPriority(int32_t) const;
+    bool willOverlap() const;
 
 };
 }

@@ -35,7 +35,7 @@ public:
     ::junit::framework::ComparisonFailure& operator=(::junit::framework::ComparisonFailure&& x) {obj = std::move(x.obj); return *this;}
     
     ComparisonFailure(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getMessage() const ;
+    ::java::lang::String getMessage() const;
 
 };
 }

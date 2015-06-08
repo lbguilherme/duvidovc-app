@@ -34,7 +34,7 @@ public:
     ::android::speech::tts::TextToSpeech_EngineInfo& operator=(::android::speech::tts::TextToSpeech_EngineInfo&& x) {obj = std::move(x.obj); return *this;}
     
     TextToSpeech_EngineInfo();
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

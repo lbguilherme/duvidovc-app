@@ -34,7 +34,7 @@ public:
     ::android::media::effect::EffectFactory& operator=(const ::android::media::effect::EffectFactory& x) {obj = x.obj; return *this;}
     ::android::media::effect::EffectFactory& operator=(::android::media::effect::EffectFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::media::effect::Effect createEffect(const ::java::lang::String&) const ;
+    ::android::media::effect::Effect createEffect(const ::java::lang::String&) const;
     static bool isEffectSupported(const ::java::lang::String&);
 
 };

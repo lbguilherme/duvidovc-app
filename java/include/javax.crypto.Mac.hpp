@@ -40,23 +40,23 @@ public:
     ::javax::crypto::Mac& operator=(const ::javax::crypto::Mac& x) {obj = x.obj; return *this;}
     ::javax::crypto::Mac& operator=(::javax::crypto::Mac&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
     static ::javax::crypto::Mac getInstance(const ::java::lang::String&);
     static ::javax::crypto::Mac getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::javax::crypto::Mac getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    int32_t getMacLength() const ;
-    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&) const ;
-    void init(const ::java::security::Key&) const ;
-    void update(int8_t) const ;
-    void update(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void update(const std::vector< int8_t>&) const ;
-    void update(const ::java::nio::ByteBuffer&) const ;
-    std::vector< int8_t> doFinal() const ;
-    void doFinal(const std::vector< int8_t>&, int32_t) const ;
-    std::vector< int8_t> doFinal(const std::vector< int8_t>&) const ;
-    void reset() const ;
-    ::java::lang::Object clone() const ;
+    int32_t getMacLength() const;
+    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&) const;
+    void init(const ::java::security::Key&) const;
+    void update(int8_t) const;
+    void update(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void update(const std::vector< int8_t>&) const;
+    void update(const ::java::nio::ByteBuffer&) const;
+    std::vector< int8_t> doFinal() const;
+    void doFinal(const std::vector< int8_t>&, int32_t) const;
+    std::vector< int8_t> doFinal(const std::vector< int8_t>&) const;
+    void reset() const;
+    ::java::lang::Object clone() const;
 
 };
 }

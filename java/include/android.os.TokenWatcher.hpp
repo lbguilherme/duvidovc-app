@@ -35,13 +35,13 @@ public:
     ::android::os::TokenWatcher& operator=(::android::os::TokenWatcher&& x) {obj = std::move(x.obj); return *this;}
     
     TokenWatcher(const ::android::os::Handler&, const ::java::lang::String&);
-    void acquired() const ;
-    void released() const ;
-    void acquire(const ::android::os::IBinder&, const ::java::lang::String&) const ;
-    void cleanup(const ::android::os::IBinder&, bool) const ;
-    void release(const ::android::os::IBinder&) const ;
-    bool isAcquired() const ;
-    void dump() const ;
+    void acquired() const;
+    void released() const;
+    void acquire(const ::android::os::IBinder&, const ::java::lang::String&) const;
+    void cleanup(const ::android::os::IBinder&, bool) const;
+    void release(const ::android::os::IBinder&) const;
+    bool isAcquired() const;
+    void dump() const;
 
 };
 }

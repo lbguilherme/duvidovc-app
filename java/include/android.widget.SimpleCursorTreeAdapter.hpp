@@ -41,9 +41,9 @@ public:
     SimpleCursorTreeAdapter(const ::android::content::Context&, const ::android::database::Cursor&, int32_t, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&, int32_t, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
     SimpleCursorTreeAdapter(const ::android::content::Context&, const ::android::database::Cursor&, int32_t, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
     SimpleCursorTreeAdapter(const ::android::content::Context&, const ::android::database::Cursor&, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&, int32_t, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
-    ::android::widget::SimpleCursorTreeAdapter_ViewBinder getViewBinder() const ;
-    void setViewBinder(const ::android::widget::SimpleCursorTreeAdapter_ViewBinder&) const ;
-    void setViewText(const ::android::widget::TextView&, const ::java::lang::String&) const ;
+    ::android::widget::SimpleCursorTreeAdapter_ViewBinder getViewBinder() const;
+    void setViewBinder(const ::android::widget::SimpleCursorTreeAdapter_ViewBinder&) const;
+    void setViewText(const ::android::widget::TextView&, const ::java::lang::String&) const;
 
 };
 }

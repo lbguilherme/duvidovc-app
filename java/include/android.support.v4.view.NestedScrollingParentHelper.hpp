@@ -36,9 +36,9 @@ public:
     ::android::support::v4::view::NestedScrollingParentHelper& operator=(::android::support::v4::view::NestedScrollingParentHelper&& x) {obj = std::move(x.obj); return *this;}
     
     NestedScrollingParentHelper(const ::android::view::ViewGroup&);
-    void onNestedScrollAccepted(const ::android::view::View&, const ::android::view::View&, int32_t) const ;
-    int32_t getNestedScrollAxes() const ;
-    void onStopNestedScroll(const ::android::view::View&) const ;
+    void onNestedScrollAccepted(const ::android::view::View&, const ::android::view::View&, int32_t) const;
+    int32_t getNestedScrollAxes() const;
+    void onStopNestedScroll(const ::android::view::View&) const;
 
 };
 }

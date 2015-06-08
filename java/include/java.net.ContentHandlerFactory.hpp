@@ -33,7 +33,7 @@ public:
     ::java::net::ContentHandlerFactory& operator=(const ::java::net::ContentHandlerFactory& x) {obj = x.obj; return *this;}
     ::java::net::ContentHandlerFactory& operator=(::java::net::ContentHandlerFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::ContentHandler createContentHandler(const ::java::lang::String&) const ;
+    ::java::net::ContentHandler createContentHandler(const ::java::lang::String&) const;
 
 };
 }

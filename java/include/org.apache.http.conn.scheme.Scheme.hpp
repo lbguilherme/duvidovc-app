@@ -38,14 +38,14 @@ public:
     ::org::apache::http::conn::scheme::Scheme& operator=(::org::apache::http::conn::scheme::Scheme&& x) {obj = std::move(x.obj); return *this;}
     
     Scheme(const ::java::lang::String&, const ::org::apache::http::conn::scheme::SocketFactory&, int32_t);
-    int32_t getDefaultPort() const ;
-    ::org::apache::http::conn::scheme::SocketFactory getSocketFactory() const ;
-    ::java::lang::String getName() const ;
-    bool isLayered() const ;
-    int32_t resolvePort(int32_t) const ;
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    int32_t getDefaultPort() const;
+    ::org::apache::http::conn::scheme::SocketFactory getSocketFactory() const;
+    ::java::lang::String getName() const;
+    bool isLayered() const;
+    int32_t resolvePort(int32_t) const;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

@@ -37,9 +37,9 @@ public:
     ::javax::xml::transform::sax::TemplatesHandler& operator=(const ::javax::xml::transform::sax::TemplatesHandler& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::sax::TemplatesHandler& operator=(::javax::xml::transform::sax::TemplatesHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::xml::transform::Templates getTemplates() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
+    ::javax::xml::transform::Templates getTemplates() const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
 
 };
 }

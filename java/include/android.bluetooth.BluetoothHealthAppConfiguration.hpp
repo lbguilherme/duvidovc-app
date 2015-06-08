@@ -36,14 +36,14 @@ public:
     ::android::bluetooth::BluetoothHealthAppConfiguration& operator=(const ::android::bluetooth::BluetoothHealthAppConfiguration& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothHealthAppConfiguration& operator=(::android::bluetooth::BluetoothHealthAppConfiguration&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    int32_t getDataType() const ;
-    ::java::lang::String getName() const ;
-    int32_t getRole() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    int32_t getDataType() const;
+    ::java::lang::String getName() const;
+    int32_t getRole() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

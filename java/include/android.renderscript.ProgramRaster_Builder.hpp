@@ -36,9 +36,9 @@ public:
     ::android::renderscript::ProgramRaster_Builder& operator=(::android::renderscript::ProgramRaster_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ProgramRaster_Builder(const ::android::renderscript::RenderScript&);
-    ::android::renderscript::ProgramRaster_Builder setPointSpriteEnabled(bool) const ;
-    ::android::renderscript::ProgramRaster_Builder setCullMode(const ::android::renderscript::ProgramRaster_CullMode&) const ;
-    ::android::renderscript::ProgramRaster create() const ;
+    ::android::renderscript::ProgramRaster_Builder setPointSpriteEnabled(bool) const;
+    ::android::renderscript::ProgramRaster_Builder setCullMode(const ::android::renderscript::ProgramRaster_CullMode&) const;
+    ::android::renderscript::ProgramRaster create() const;
 
 };
 }

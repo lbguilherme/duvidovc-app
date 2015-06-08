@@ -39,14 +39,14 @@ public:
     
     AtomicReferenceArray(int32_t);
     AtomicReferenceArray(const std::vector< ::java::lang::Object>&);
-    int32_t length() const ;
-    ::java::lang::Object get(int32_t) const ;
-    void set(int32_t, const ::java::lang::Object&) const ;
-    void lazySet(int32_t, const ::java::lang::Object&) const ;
-    ::java::lang::Object getAndSet(int32_t, const ::java::lang::Object&) const ;
-    bool compareAndSet(int32_t, const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    bool weakCompareAndSet(int32_t, const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    int32_t length() const;
+    ::java::lang::Object get(int32_t) const;
+    void set(int32_t, const ::java::lang::Object&) const;
+    void lazySet(int32_t, const ::java::lang::Object&) const;
+    ::java::lang::Object getAndSet(int32_t, const ::java::lang::Object&) const;
+    bool compareAndSet(int32_t, const ::java::lang::Object&, const ::java::lang::Object&) const;
+    bool weakCompareAndSet(int32_t, const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

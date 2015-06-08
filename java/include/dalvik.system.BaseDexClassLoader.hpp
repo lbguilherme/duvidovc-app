@@ -37,8 +37,8 @@ public:
     ::dalvik::system::BaseDexClassLoader& operator=(::dalvik::system::BaseDexClassLoader&& x) {obj = std::move(x.obj); return *this;}
     
     BaseDexClassLoader(const ::java::lang::String&, const ::java::io::File&, const ::java::lang::String&, const ::java::lang::ClassLoader&);
-    ::java::lang::String findLibrary(const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String findLibrary(const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
 
 };
 }

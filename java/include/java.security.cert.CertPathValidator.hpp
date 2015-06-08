@@ -38,12 +38,12 @@ public:
     ::java::security::cert::CertPathValidator& operator=(const ::java::security::cert::CertPathValidator& x) {obj = x.obj; return *this;}
     ::java::security::cert::CertPathValidator& operator=(::java::security::cert::CertPathValidator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
     static ::java::security::cert::CertPathValidator getInstance(const ::java::lang::String&);
     static ::java::security::cert::CertPathValidator getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::cert::CertPathValidator getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::cert::CertPathValidatorResult validate(const ::java::security::cert::CertPath&, const ::java::security::cert::CertPathParameters&) const ;
+    ::java::security::cert::CertPathValidatorResult validate(const ::java::security::cert::CertPath&, const ::java::security::cert::CertPathParameters&) const;
     static ::java::lang::String getDefaultType();
 
 };

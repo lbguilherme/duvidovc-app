@@ -38,24 +38,24 @@ public:
     ::android::content::Loader& operator=(::android::content::Loader&& x) {obj = std::move(x.obj); return *this;}
     
     Loader(const ::android::content::Context&);
-    void deliverResult(const ::java::lang::Object&) const ;
-    ::android::content::Context getContext() const ;
-    int32_t getId() const ;
-    void registerListener(int32_t, const ::android::content::Loader_OnLoadCompleteListener&) const ;
-    void unregisterListener(const ::android::content::Loader_OnLoadCompleteListener&) const ;
-    bool isStarted() const ;
-    bool isAbandoned() const ;
-    bool isReset() const ;
-    void startLoading() const ;
-    void forceLoad() const ;
-    void stopLoading() const ;
-    void abandon() const ;
-    void reset() const ;
-    bool takeContentChanged() const ;
-    void onContentChanged() const ;
-    ::java::lang::String dataToString(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
+    void deliverResult(const ::java::lang::Object&) const;
+    ::android::content::Context getContext() const;
+    int32_t getId() const;
+    void registerListener(int32_t, const ::android::content::Loader_OnLoadCompleteListener&) const;
+    void unregisterListener(const ::android::content::Loader_OnLoadCompleteListener&) const;
+    bool isStarted() const;
+    bool isAbandoned() const;
+    bool isReset() const;
+    void startLoading() const;
+    void forceLoad() const;
+    void stopLoading() const;
+    void abandon() const;
+    void reset() const;
+    bool takeContentChanged() const;
+    void onContentChanged() const;
+    ::java::lang::String dataToString(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
 
 };
 }

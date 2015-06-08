@@ -35,10 +35,10 @@ public:
     ::javax::net::ServerSocketFactory& operator=(::javax::net::ServerSocketFactory&& x) {obj = std::move(x.obj); return *this;}
     
     static ::javax::net::ServerSocketFactory getDefault();
-    ::java::net::ServerSocket createServerSocket() const ;
-    ::java::net::ServerSocket createServerSocket(int32_t) const ;
-    ::java::net::ServerSocket createServerSocket(int32_t, int32_t) const ;
-    ::java::net::ServerSocket createServerSocket(int32_t, int32_t, const ::java::net::InetAddress&) const ;
+    ::java::net::ServerSocket createServerSocket() const;
+    ::java::net::ServerSocket createServerSocket(int32_t) const;
+    ::java::net::ServerSocket createServerSocket(int32_t, int32_t) const;
+    ::java::net::ServerSocket createServerSocket(int32_t, int32_t, const ::java::net::InetAddress&) const;
 
 };
 }

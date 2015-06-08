@@ -41,14 +41,14 @@ public:
     ::android::inputmethodservice::InputMethodService_InputMethodImpl& operator=(::android::inputmethodservice::InputMethodService_InputMethodImpl&& x) {obj = std::move(x.obj); return *this;}
     
     InputMethodService_InputMethodImpl(const ::android::inputmethodservice::InputMethodService&);
-    void attachToken(const ::android::os::IBinder&) const ;
-    void bindInput(const ::android::view::inputmethod::InputBinding&) const ;
-    void unbindInput() const ;
-    void startInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const ;
-    void restartInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const ;
-    void hideSoftInput(int32_t, const ::android::os::ResultReceiver&) const ;
-    void showSoftInput(int32_t, const ::android::os::ResultReceiver&) const ;
-    void changeInputMethodSubtype(const ::android::view::inputmethod::InputMethodSubtype&) const ;
+    void attachToken(const ::android::os::IBinder&) const;
+    void bindInput(const ::android::view::inputmethod::InputBinding&) const;
+    void unbindInput() const;
+    void startInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const;
+    void restartInput(const ::android::view::inputmethod::InputConnection&, const ::android::view::inputmethod::EditorInfo&) const;
+    void hideSoftInput(int32_t, const ::android::os::ResultReceiver&) const;
+    void showSoftInput(int32_t, const ::android::os::ResultReceiver&) const;
+    void changeInputMethodSubtype(const ::android::view::inputmethod::InputMethodSubtype&) const;
 
 };
 }

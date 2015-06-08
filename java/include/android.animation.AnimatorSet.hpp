@@ -42,26 +42,26 @@ public:
     ::android::animation::AnimatorSet& operator=(::android::animation::AnimatorSet&& x) {obj = std::move(x.obj); return *this;}
     
     AnimatorSet();
-    void playTogether(const std::vector< ::android::animation::Animator>&) const ;
-    void playTogether(const ::java::util::Collection&) const ;
-    void playSequentially(const std::vector< ::android::animation::Animator>&) const ;
-    void playSequentially(const ::java::util::List&) const ;
-    ::java::util::ArrayList getChildAnimations() const ;
-    void setTarget(const ::java::lang::Object&) const ;
-    void setInterpolator(const ::android::animation::TimeInterpolator&) const ;
-    ::android::animation::AnimatorSet_Builder play(const ::android::animation::Animator&) const ;
-    void cancel() const ;
-    void end() const ;
-    bool isRunning() const ;
-    bool isStarted() const ;
-    int64_t getStartDelay() const ;
-    void setStartDelay(int64_t) const ;
-    int64_t getDuration() const ;
-    ::android::animation::AnimatorSet setDuration(int64_t) const ;
-    void setupStartValues() const ;
-    void setupEndValues() const ;
-    void start() const ;
-    ::android::animation::AnimatorSet clone() const ;
+    void playTogether(const std::vector< ::android::animation::Animator>&) const;
+    void playTogether(const ::java::util::Collection&) const;
+    void playSequentially(const std::vector< ::android::animation::Animator>&) const;
+    void playSequentially(const ::java::util::List&) const;
+    ::java::util::ArrayList getChildAnimations() const;
+    void setTarget(const ::java::lang::Object&) const;
+    void setInterpolator(const ::android::animation::TimeInterpolator&) const;
+    ::android::animation::AnimatorSet_Builder play(const ::android::animation::Animator&) const;
+    void cancel() const;
+    void end() const;
+    bool isRunning() const;
+    bool isStarted() const;
+    int64_t getStartDelay() const;
+    void setStartDelay(int64_t) const;
+    int64_t getDuration() const;
+    ::android::animation::AnimatorSet setDuration(int64_t) const;
+    void setupStartValues() const;
+    void setupEndValues() const;
+    void start() const;
+    ::android::animation::AnimatorSet clone() const;
 
 };
 }

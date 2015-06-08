@@ -38,7 +38,7 @@ public:
     ::org::apache::http::conn::scheme::LayeredSocketFactory& operator=(const ::org::apache::http::conn::scheme::LayeredSocketFactory& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::scheme::LayeredSocketFactory& operator=(::org::apache::http::conn::scheme::LayeredSocketFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const ;
+    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const;
 
 };
 }

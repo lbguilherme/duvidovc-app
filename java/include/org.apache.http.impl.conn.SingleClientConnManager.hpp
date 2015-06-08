@@ -44,13 +44,13 @@ public:
     ::org::apache::http::impl::conn::SingleClientConnManager& operator=(::org::apache::http::impl::conn::SingleClientConnManager&& x) {obj = std::move(x.obj); return *this;}
     
     SingleClientConnManager(const ::org::apache::http::params::HttpParams&, const ::org::apache::http::conn::scheme::SchemeRegistry&);
-    ::org::apache::http::conn::scheme::SchemeRegistry getSchemeRegistry() const ;
-    ::org::apache::http::conn::ClientConnectionRequest requestConnection(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const ;
-    ::org::apache::http::conn::ManagedClientConnection getConnection(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const ;
-    void releaseConnection(const ::org::apache::http::conn::ManagedClientConnection&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void closeExpiredConnections() const ;
-    void closeIdleConnections(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void shutdown() const ;
+    ::org::apache::http::conn::scheme::SchemeRegistry getSchemeRegistry() const;
+    ::org::apache::http::conn::ClientConnectionRequest requestConnection(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const;
+    ::org::apache::http::conn::ManagedClientConnection getConnection(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const;
+    void releaseConnection(const ::org::apache::http::conn::ManagedClientConnection&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void closeExpiredConnections() const;
+    void closeIdleConnections(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void shutdown() const;
 
 };
 }

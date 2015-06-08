@@ -32,9 +32,9 @@ public:
     ::android::location::GpsStatus& operator=(const ::android::location::GpsStatus& x) {obj = x.obj; return *this;}
     ::android::location::GpsStatus& operator=(::android::location::GpsStatus&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getTimeToFirstFix() const ;
-    ::java::lang::Iterable getSatellites() const ;
-    int32_t getMaxSatellites() const ;
+    int32_t getTimeToFirstFix() const;
+    ::java::lang::Iterable getSatellites() const;
+    int32_t getMaxSatellites() const;
 
 };
 }

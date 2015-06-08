@@ -36,12 +36,12 @@ public:
     ::org::apache::http::util::VersionInfo& operator=(const ::org::apache::http::util::VersionInfo& x) {obj = x.obj; return *this;}
     ::org::apache::http::util::VersionInfo& operator=(::org::apache::http::util::VersionInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getPackage() const ;
-    ::java::lang::String getModule() const ;
-    ::java::lang::String getRelease() const ;
-    ::java::lang::String getTimestamp() const ;
-    ::java::lang::String getClassloader() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getPackage() const;
+    ::java::lang::String getModule() const;
+    ::java::lang::String getRelease() const;
+    ::java::lang::String getTimestamp() const;
+    ::java::lang::String getClassloader() const;
+    ::java::lang::String toString() const;
     static std::vector< ::org::apache::http::util::VersionInfo> loadVersionInfo(const std::vector< ::java::lang::String>&, const ::java::lang::ClassLoader&);
     static ::org::apache::http::util::VersionInfo loadVersionInfo(const ::java::lang::String&, const ::java::lang::ClassLoader&);
 

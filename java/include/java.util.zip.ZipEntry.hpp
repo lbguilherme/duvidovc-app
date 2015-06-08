@@ -37,25 +37,25 @@ public:
     ::java::util::zip::ZipEntry& operator=(::java::util::zip::ZipEntry&& x) {obj = std::move(x.obj); return *this;}
     
     ZipEntry(const ::java::lang::String&);
-    ::java::lang::String getComment() const ;
-    int64_t getCompressedSize() const ;
-    int64_t getCrc() const ;
-    std::vector< int8_t> getExtra() const ;
-    int32_t getMethod() const ;
-    ::java::lang::String getName() const ;
-    int64_t getSize() const ;
-    int64_t getTime() const ;
-    bool isDirectory() const ;
-    void setComment(const ::java::lang::String&) const ;
-    void setCompressedSize(int64_t) const ;
-    void setCrc(int64_t) const ;
-    void setExtra(const std::vector< int8_t>&) const ;
-    void setMethod(int32_t) const ;
-    void setSize(int64_t) const ;
-    void setTime(int64_t) const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
-    int32_t hashCode() const ;
+    ::java::lang::String getComment() const;
+    int64_t getCompressedSize() const;
+    int64_t getCrc() const;
+    std::vector< int8_t> getExtra() const;
+    int32_t getMethod() const;
+    ::java::lang::String getName() const;
+    int64_t getSize() const;
+    int64_t getTime() const;
+    bool isDirectory() const;
+    void setComment(const ::java::lang::String&) const;
+    void setCompressedSize(int64_t) const;
+    void setCrc(int64_t) const;
+    void setExtra(const std::vector< int8_t>&) const;
+    void setMethod(int32_t) const;
+    void setSize(int64_t) const;
+    void setTime(int64_t) const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
+    int32_t hashCode() const;
 
 };
 }

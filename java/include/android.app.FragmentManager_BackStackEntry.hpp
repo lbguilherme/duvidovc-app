@@ -33,12 +33,12 @@ public:
     ::android::app::FragmentManager_BackStackEntry& operator=(const ::android::app::FragmentManager_BackStackEntry& x) {obj = x.obj; return *this;}
     ::android::app::FragmentManager_BackStackEntry& operator=(::android::app::FragmentManager_BackStackEntry&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getId() const ;
-    ::java::lang::String getName() const ;
-    int32_t getBreadCrumbTitleRes() const ;
-    int32_t getBreadCrumbShortTitleRes() const ;
-    ::java::lang::CharSequence getBreadCrumbTitle() const ;
-    ::java::lang::CharSequence getBreadCrumbShortTitle() const ;
+    int32_t getId() const;
+    ::java::lang::String getName() const;
+    int32_t getBreadCrumbTitleRes() const;
+    int32_t getBreadCrumbShortTitleRes() const;
+    ::java::lang::CharSequence getBreadCrumbTitle() const;
+    ::java::lang::CharSequence getBreadCrumbShortTitle() const;
 
 };
 }

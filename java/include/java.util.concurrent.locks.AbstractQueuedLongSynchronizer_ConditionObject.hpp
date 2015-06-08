@@ -41,13 +41,13 @@ public:
     ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject& operator=(::java::util::concurrent::locks::AbstractQueuedLongSynchronizer_ConditionObject&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractQueuedLongSynchronizer_ConditionObject(const ::java::util::concurrent::locks::AbstractQueuedLongSynchronizer&);
-    void signal() const ;
-    void signalAll() const ;
-    void awaitUninterruptibly() const ;
-    void await() const ;
-    int64_t awaitNanos(int64_t) const ;
-    bool awaitUntil(const ::java::util::Date&) const ;
-    bool await(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    void signal() const;
+    void signalAll() const;
+    void awaitUninterruptibly() const;
+    void await() const;
+    int64_t awaitNanos(int64_t) const;
+    bool awaitUntil(const ::java::util::Date&) const;
+    bool await(int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

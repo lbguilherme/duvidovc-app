@@ -37,12 +37,12 @@ public:
     
     PatternMatcher(const ::java::lang::String&, int32_t);
     PatternMatcher(const ::android::os::Parcel&);
-    ::java::lang::String getPath() const ;
-    int32_t getType() const ;
-    bool match(const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getPath() const;
+    int32_t getType() const;
+    bool match(const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

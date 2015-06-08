@@ -39,14 +39,14 @@ public:
     InflaterInputStream(const ::java::io::InputStream&);
     InflaterInputStream(const ::java::io::InputStream&, const ::java::util::zip::Inflater&);
     InflaterInputStream(const ::java::io::InputStream&, const ::java::util::zip::Inflater&, int32_t);
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int64_t skip(int64_t) const ;
-    int32_t available() const ;
-    void close() const ;
-    void mark(int32_t) const ;
-    void reset() const ;
-    bool markSupported() const ;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    int64_t skip(int64_t) const;
+    int32_t available() const;
+    void close() const;
+    void mark(int32_t) const;
+    void reset() const;
+    bool markSupported() const;
 
 };
 }

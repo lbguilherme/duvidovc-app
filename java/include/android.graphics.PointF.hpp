@@ -39,16 +39,16 @@ public:
     PointF();
     PointF(float, float);
     PointF(const ::android::graphics::Point&);
-    void set(float, float) const ;
-    void set(const ::android::graphics::PointF&) const ;
-    void negate() const ;
-    void offset(float, float) const ;
-    bool equals(float, float) const ;
-    float length() const ;
+    void set(float, float) const;
+    void set(const ::android::graphics::PointF&) const;
+    void negate() const;
+    void offset(float, float) const;
+    bool equals(float, float) const;
+    float length() const;
     static float length(float, float);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

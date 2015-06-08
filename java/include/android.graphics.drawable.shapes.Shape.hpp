@@ -39,12 +39,12 @@ public:
     ::android::graphics::drawable::shapes::Shape& operator=(::android::graphics::drawable::shapes::Shape&& x) {obj = std::move(x.obj); return *this;}
     
     Shape();
-    float getWidth() const ;
-    float getHeight() const ;
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const ;
-    void resize(float, float) const ;
-    bool hasAlpha() const ;
-    ::android::graphics::drawable::shapes::Shape clone() const ;
+    float getWidth() const;
+    float getHeight() const;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const;
+    void resize(float, float) const;
+    bool hasAlpha() const;
+    ::android::graphics::drawable::shapes::Shape clone() const;
 
 };
 }

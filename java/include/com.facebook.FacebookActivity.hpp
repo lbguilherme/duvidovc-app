@@ -36,8 +36,8 @@ public:
     ::com::facebook::FacebookActivity& operator=(::com::facebook::FacebookActivity&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookActivity();
-    void onCreate(const ::android::os::Bundle&) const ;
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
+    void onCreate(const ::android::os::Bundle&) const;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
 
 };
 }

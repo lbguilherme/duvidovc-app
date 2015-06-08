@@ -39,11 +39,11 @@ public:
     ::android::support::v4::app::NotificationManagerCompat& operator=(::android::support::v4::app::NotificationManagerCompat&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::support::v4::app::NotificationManagerCompat from(const ::android::content::Context&);
-    void cancel(int32_t) const ;
-    void cancel(const ::java::lang::String&, int32_t) const ;
-    void cancelAll() const ;
-    void notify(int32_t, const ::android::app::Notification&) const ;
-    void notify(const ::java::lang::String&, int32_t, const ::android::app::Notification&) const ;
+    void cancel(int32_t) const;
+    void cancel(const ::java::lang::String&, int32_t) const;
+    void cancelAll() const;
+    void notify(int32_t, const ::android::app::Notification&) const;
+    void notify(const ::java::lang::String&, int32_t, const ::android::app::Notification&) const;
     static ::java::util::Set getEnabledListenerPackages(const ::android::content::Context&);
 
 };

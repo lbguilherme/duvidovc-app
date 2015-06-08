@@ -34,8 +34,8 @@ public:
     ::android::support::v4::app::FragmentContainer& operator=(const ::android::support::v4::app::FragmentContainer& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::FragmentContainer& operator=(::android::support::v4::app::FragmentContainer&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::View findViewById(int32_t) const ;
-    bool hasView() const ;
+    ::android::view::View findViewById(int32_t) const;
+    bool hasView() const;
 
 };
 }

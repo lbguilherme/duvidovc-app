@@ -35,10 +35,10 @@ public:
     ::android::support::v4::widget::CursorFilter_CursorFilterClient& operator=(const ::android::support::v4::widget::CursorFilter_CursorFilterClient& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::CursorFilter_CursorFilterClient& operator=(::android::support::v4::widget::CursorFilter_CursorFilterClient&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const ;
-    ::android::database::Cursor runQueryOnBackgroundThread(const ::java::lang::CharSequence&) const ;
-    ::android::database::Cursor getCursor() const ;
-    void changeCursor(const ::android::database::Cursor&) const ;
+    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const;
+    ::android::database::Cursor runQueryOnBackgroundThread(const ::java::lang::CharSequence&) const;
+    ::android::database::Cursor getCursor() const;
+    void changeCursor(const ::android::database::Cursor&) const;
 
 };
 }

@@ -39,14 +39,14 @@ public:
     
     static ::java::util::ResourceBundle_Control getControl(const ::java::util::List&);
     static ::java::util::ResourceBundle_Control getNoFallbackControl(const ::java::util::List&);
-    ::java::util::List getCandidateLocales(const ::java::lang::String&, const ::java::util::Locale&) const ;
-    ::java::util::List getFormats(const ::java::lang::String&) const ;
-    ::java::util::Locale getFallbackLocale(const ::java::lang::String&, const ::java::util::Locale&) const ;
-    ::java::util::ResourceBundle newBundle(const ::java::lang::String&, const ::java::util::Locale&, const ::java::lang::String&, const ::java::lang::ClassLoader&, bool) const ;
-    int64_t getTimeToLive(const ::java::lang::String&, const ::java::util::Locale&) const ;
-    bool needsReload(const ::java::lang::String&, const ::java::util::Locale&, const ::java::lang::String&, const ::java::lang::ClassLoader&, const ::java::util::ResourceBundle&, int64_t) const ;
-    ::java::lang::String toBundleName(const ::java::lang::String&, const ::java::util::Locale&) const ;
-    ::java::lang::String toResourceName(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::java::util::List getCandidateLocales(const ::java::lang::String&, const ::java::util::Locale&) const;
+    ::java::util::List getFormats(const ::java::lang::String&) const;
+    ::java::util::Locale getFallbackLocale(const ::java::lang::String&, const ::java::util::Locale&) const;
+    ::java::util::ResourceBundle newBundle(const ::java::lang::String&, const ::java::util::Locale&, const ::java::lang::String&, const ::java::lang::ClassLoader&, bool) const;
+    int64_t getTimeToLive(const ::java::lang::String&, const ::java::util::Locale&) const;
+    bool needsReload(const ::java::lang::String&, const ::java::util::Locale&, const ::java::lang::String&, const ::java::lang::ClassLoader&, const ::java::util::ResourceBundle&, int64_t) const;
+    ::java::lang::String toBundleName(const ::java::lang::String&, const ::java::util::Locale&) const;
+    ::java::lang::String toResourceName(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

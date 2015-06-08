@@ -35,9 +35,9 @@ public:
     ::org::apache::http::client::CredentialsProvider& operator=(const ::org::apache::http::client::CredentialsProvider& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::CredentialsProvider& operator=(::org::apache::http::client::CredentialsProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    void setCredentials(const ::org::apache::http::auth::AuthScope&, const ::org::apache::http::auth::Credentials&) const ;
-    ::org::apache::http::auth::Credentials getCredentials(const ::org::apache::http::auth::AuthScope&) const ;
-    void clear() const ;
+    void setCredentials(const ::org::apache::http::auth::AuthScope&, const ::org::apache::http::auth::Credentials&) const;
+    ::org::apache::http::auth::Credentials getCredentials(const ::org::apache::http::auth::AuthScope&) const;
+    void clear() const;
 
 };
 }

@@ -35,9 +35,9 @@ public:
     ::java::text::AttributedCharacterIterator_Attribute& operator=(const ::java::text::AttributedCharacterIterator_Attribute& x) {obj = x.obj; return *this;}
     ::java::text::AttributedCharacterIterator_Attribute& operator=(::java::text::AttributedCharacterIterator_Attribute&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

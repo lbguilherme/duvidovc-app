@@ -41,15 +41,15 @@ public:
     ::java::nio::channels::SelectableChannel& operator=(const ::java::nio::channels::SelectableChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::SelectableChannel& operator=(::java::nio::channels::SelectableChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object blockingLock() const ;
-    ::java::nio::channels::SelectableChannel configureBlocking(bool) const ;
-    bool isBlocking() const ;
-    bool isRegistered() const ;
-    ::java::nio::channels::SelectionKey keyFor(const ::java::nio::channels::Selector&) const ;
-    ::java::nio::channels::spi::SelectorProvider provider() const ;
-    ::java::nio::channels::SelectionKey register_(const ::java::nio::channels::Selector&, int32_t) const ;
-    ::java::nio::channels::SelectionKey register_(const ::java::nio::channels::Selector&, int32_t, const ::java::lang::Object&) const ;
-    int32_t validOps() const ;
+    ::java::lang::Object blockingLock() const;
+    ::java::nio::channels::SelectableChannel configureBlocking(bool) const;
+    bool isBlocking() const;
+    bool isRegistered() const;
+    ::java::nio::channels::SelectionKey keyFor(const ::java::nio::channels::Selector&) const;
+    ::java::nio::channels::spi::SelectorProvider provider() const;
+    ::java::nio::channels::SelectionKey register_(const ::java::nio::channels::Selector&, int32_t) const;
+    ::java::nio::channels::SelectionKey register_(const ::java::nio::channels::Selector&, int32_t, const ::java::lang::Object&) const;
+    int32_t validOps() const;
 
 };
 }

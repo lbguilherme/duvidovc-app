@@ -42,13 +42,13 @@ public:
     ::java::util::concurrent::AbstractExecutorService& operator=(::java::util::concurrent::AbstractExecutorService&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractExecutorService();
-    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&) const ;
-    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const ;
-    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const ;
-    ::java::lang::Object invokeAny(const ::java::util::Collection&) const ;
-    ::java::lang::Object invokeAny(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::util::List invokeAll(const ::java::util::Collection&) const ;
-    ::java::util::List invokeAll(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&) const;
+    ::java::util::concurrent::Future submit(const ::java::lang::Runnable&, const ::java::lang::Object&) const;
+    ::java::util::concurrent::Future submit(const ::java::util::concurrent::Callable&) const;
+    ::java::lang::Object invokeAny(const ::java::util::Collection&) const;
+    ::java::lang::Object invokeAny(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::util::List invokeAll(const ::java::util::Collection&) const;
+    ::java::util::List invokeAll(const ::java::util::Collection&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

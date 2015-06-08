@@ -35,11 +35,11 @@ public:
     ::java::util::zip::CRC32& operator=(::java::util::zip::CRC32&& x) {obj = std::move(x.obj); return *this;}
     
     CRC32();
-    int64_t getValue() const ;
-    void reset() const ;
-    void update(int32_t) const ;
-    void update(const std::vector< int8_t>&) const ;
-    void update(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    int64_t getValue() const;
+    void reset() const;
+    void update(int32_t) const;
+    void update(const std::vector< int8_t>&) const;
+    void update(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

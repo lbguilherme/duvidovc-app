@@ -41,7 +41,7 @@ public:
     HttpTrace();
     HttpTrace(const ::java::net::URI&);
     HttpTrace(const ::java::lang::String&);
-    ::java::lang::String getMethod() const ;
+    ::java::lang::String getMethod() const;
 
 };
 }

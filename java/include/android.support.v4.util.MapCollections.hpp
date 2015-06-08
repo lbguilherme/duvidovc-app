@@ -40,12 +40,12 @@ public:
     static bool containsAllHelper(const ::java::util::Map&, const ::java::util::Collection&);
     static bool removeAllHelper(const ::java::util::Map&, const ::java::util::Collection&);
     static bool retainAllHelper(const ::java::util::Map&, const ::java::util::Collection&);
-    std::vector< ::java::lang::Object> toArrayHelper(int32_t) const ;
-    std::vector< ::java::lang::Object> toArrayHelper(const std::vector< ::java::lang::Object>&, int32_t) const ;
+    std::vector< ::java::lang::Object> toArrayHelper(int32_t) const;
+    std::vector< ::java::lang::Object> toArrayHelper(const std::vector< ::java::lang::Object>&, int32_t) const;
     static bool equalsSetHelper(const ::java::util::Set&, const ::java::lang::Object&);
-    ::java::util::Set getEntrySet() const ;
-    ::java::util::Set getKeySet() const ;
-    ::java::util::Collection getValues() const ;
+    ::java::util::Set getEntrySet() const;
+    ::java::util::Set getKeySet() const;
+    ::java::util::Collection getValues() const;
 
 };
 }

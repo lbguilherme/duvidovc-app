@@ -32,7 +32,7 @@ public:
     ::java::security::KeyStore_LoadStoreParameter& operator=(const ::java::security::KeyStore_LoadStoreParameter& x) {obj = x.obj; return *this;}
     ::java::security::KeyStore_LoadStoreParameter& operator=(::java::security::KeyStore_LoadStoreParameter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::security::KeyStore_ProtectionParameter getProtectionParameter() const ;
+    ::java::security::KeyStore_ProtectionParameter getProtectionParameter() const;
 
 };
 }

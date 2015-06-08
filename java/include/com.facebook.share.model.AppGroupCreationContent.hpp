@@ -38,11 +38,11 @@ public:
     ::com::facebook::share::model::AppGroupCreationContent& operator=(const ::com::facebook::share::model::AppGroupCreationContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::AppGroupCreationContent& operator=(::com::facebook::share::model::AppGroupCreationContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::java::lang::String getDescription() const ;
-    ::com::facebook::share::model::AppGroupCreationContent_AppGroupPrivacy getAppGroupPrivacy() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getDescription() const;
+    ::com::facebook::share::model::AppGroupCreationContent_AppGroupPrivacy getAppGroupPrivacy() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

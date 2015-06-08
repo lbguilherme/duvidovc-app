@@ -46,20 +46,20 @@ public:
     SimpleDateFormat(const ::java::lang::String&);
     SimpleDateFormat(const ::java::lang::String&, const ::java::text::DateFormatSymbols&);
     SimpleDateFormat(const ::java::lang::String&, const ::java::util::Locale&);
-    void applyLocalizedPattern(const ::java::lang::String&) const ;
-    void applyPattern(const ::java::lang::String&) const ;
-    ::java::lang::Object clone() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::text::AttributedCharacterIterator formatToCharacterIterator(const ::java::lang::Object&) const ;
-    ::java::lang::StringBuffer format(const ::java::util::Date&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
-    ::java::util::Date get2DigitYearStart() const ;
-    ::java::text::DateFormatSymbols getDateFormatSymbols() const ;
-    int32_t hashCode() const ;
-    ::java::util::Date parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const ;
-    void set2DigitYearStart(const ::java::util::Date&) const ;
-    void setDateFormatSymbols(const ::java::text::DateFormatSymbols&) const ;
-    ::java::lang::String toLocalizedPattern() const ;
-    ::java::lang::String toPattern() const ;
+    void applyLocalizedPattern(const ::java::lang::String&) const;
+    void applyPattern(const ::java::lang::String&) const;
+    ::java::lang::Object clone() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::text::AttributedCharacterIterator formatToCharacterIterator(const ::java::lang::Object&) const;
+    ::java::lang::StringBuffer format(const ::java::util::Date&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
+    ::java::util::Date get2DigitYearStart() const;
+    ::java::text::DateFormatSymbols getDateFormatSymbols() const;
+    int32_t hashCode() const;
+    ::java::util::Date parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const;
+    void set2DigitYearStart(const ::java::util::Date&) const;
+    void setDateFormatSymbols(const ::java::text::DateFormatSymbols&) const;
+    ::java::lang::String toLocalizedPattern() const;
+    ::java::lang::String toPattern() const;
 
 };
 }

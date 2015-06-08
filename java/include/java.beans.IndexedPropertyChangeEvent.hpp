@@ -36,7 +36,7 @@ public:
     ::java::beans::IndexedPropertyChangeEvent& operator=(::java::beans::IndexedPropertyChangeEvent&& x) {obj = std::move(x.obj); return *this;}
     
     IndexedPropertyChangeEvent(const ::java::lang::Object&, const ::java::lang::String&, const ::java::lang::Object&, const ::java::lang::Object&, int32_t);
-    int32_t getIndex() const ;
+    int32_t getIndex() const;
 
 };
 }

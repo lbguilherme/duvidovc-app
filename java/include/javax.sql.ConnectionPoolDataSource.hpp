@@ -35,8 +35,8 @@ public:
     ::javax::sql::ConnectionPoolDataSource& operator=(const ::javax::sql::ConnectionPoolDataSource& x) {obj = x.obj; return *this;}
     ::javax::sql::ConnectionPoolDataSource& operator=(::javax::sql::ConnectionPoolDataSource&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::sql::PooledConnection getPooledConnection() const ;
-    ::javax::sql::PooledConnection getPooledConnection(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::javax::sql::PooledConnection getPooledConnection() const;
+    ::javax::sql::PooledConnection getPooledConnection(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

@@ -37,15 +37,15 @@ public:
     ::java::text::AttributedCharacterIterator& operator=(const ::java::text::AttributedCharacterIterator& x) {obj = x.obj; return *this;}
     ::java::text::AttributedCharacterIterator& operator=(::java::text::AttributedCharacterIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Set getAllAttributeKeys() const ;
-    ::java::lang::Object getAttribute(const ::java::text::AttributedCharacterIterator_Attribute&) const ;
-    ::java::util::Map getAttributes() const ;
-    int32_t getRunLimit() const ;
-    int32_t getRunLimit(const ::java::text::AttributedCharacterIterator_Attribute&) const ;
-    int32_t getRunLimit(const ::java::util::Set&) const ;
-    int32_t getRunStart() const ;
-    int32_t getRunStart(const ::java::text::AttributedCharacterIterator_Attribute&) const ;
-    int32_t getRunStart(const ::java::util::Set&) const ;
+    ::java::util::Set getAllAttributeKeys() const;
+    ::java::lang::Object getAttribute(const ::java::text::AttributedCharacterIterator_Attribute&) const;
+    ::java::util::Map getAttributes() const;
+    int32_t getRunLimit() const;
+    int32_t getRunLimit(const ::java::text::AttributedCharacterIterator_Attribute&) const;
+    int32_t getRunLimit(const ::java::util::Set&) const;
+    int32_t getRunStart() const;
+    int32_t getRunStart(const ::java::text::AttributedCharacterIterator_Attribute&) const;
+    int32_t getRunStart(const ::java::util::Set&) const;
 
 };
 }

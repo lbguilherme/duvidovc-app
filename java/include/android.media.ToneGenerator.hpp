@@ -32,10 +32,10 @@ public:
     ::android::media::ToneGenerator& operator=(::android::media::ToneGenerator&& x) {obj = std::move(x.obj); return *this;}
     
     ToneGenerator(int32_t, int32_t);
-    bool startTone(int32_t) const ;
-    bool startTone(int32_t, int32_t) const ;
-    void stopTone() const ;
-    void release() const ;
+    bool startTone(int32_t) const;
+    bool startTone(int32_t, int32_t) const;
+    void stopTone() const;
+    void release() const;
 
 };
 }

@@ -41,7 +41,7 @@ public:
     ::org::apache::http::impl::client::AbstractAuthenticationHandler& operator=(::org::apache::http::impl::client::AbstractAuthenticationHandler&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractAuthenticationHandler();
-    ::org::apache::http::auth::AuthScheme selectScheme(const ::java::util::Map&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::auth::AuthScheme selectScheme(const ::java::util::Map&, const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

@@ -38,17 +38,17 @@ public:
     
     RingtoneManager(const ::android::app::Activity&);
     RingtoneManager(const ::android::content::Context&);
-    void setType(int32_t) const ;
-    int32_t inferStreamType() const ;
-    void setStopPreviousRingtone(bool) const ;
-    bool getStopPreviousRingtone() const ;
-    void stopPreviousRingtone() const ;
-    bool getIncludeDrm() const ;
-    void setIncludeDrm(bool) const ;
-    ::android::database::Cursor getCursor() const ;
-    ::android::media::Ringtone getRingtone(int32_t) const ;
-    ::android::net::Uri getRingtoneUri(int32_t) const ;
-    int32_t getRingtonePosition(const ::android::net::Uri&) const ;
+    void setType(int32_t) const;
+    int32_t inferStreamType() const;
+    void setStopPreviousRingtone(bool) const;
+    bool getStopPreviousRingtone() const;
+    void stopPreviousRingtone() const;
+    bool getIncludeDrm() const;
+    void setIncludeDrm(bool) const;
+    ::android::database::Cursor getCursor() const;
+    ::android::media::Ringtone getRingtone(int32_t) const;
+    ::android::net::Uri getRingtoneUri(int32_t) const;
+    int32_t getRingtonePosition(const ::android::net::Uri&) const;
     static ::android::net::Uri getValidRingtoneUri(const ::android::content::Context&);
     static ::android::media::Ringtone getRingtone(const ::android::content::Context&, const ::android::net::Uri&);
     static ::android::net::Uri getActualDefaultRingtoneUri(const ::android::content::Context&, int32_t);

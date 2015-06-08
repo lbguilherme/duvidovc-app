@@ -37,8 +37,8 @@ public:
     ::android::animation::FloatEvaluator& operator=(::android::animation::FloatEvaluator&& x) {obj = std::move(x.obj); return *this;}
     
     FloatEvaluator();
-    ::java::lang::Float evaluate(float, const ::java::lang::Number&, const ::java::lang::Number&) const ;
-    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const ;
+    ::java::lang::Float evaluate(float, const ::java::lang::Number&, const ::java::lang::Number&) const;
+    ::java::lang::Object evaluate(float, const ::java::lang::Object&, const ::java::lang::Object&) const;
 
 };
 }

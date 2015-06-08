@@ -42,12 +42,12 @@ public:
     SAXSource();
     SAXSource(const ::org::xml::sax::XMLReader&, const ::org::xml::sax::InputSource&);
     SAXSource(const ::org::xml::sax::InputSource&);
-    void setXMLReader(const ::org::xml::sax::XMLReader&) const ;
-    ::org::xml::sax::XMLReader getXMLReader() const ;
-    void setInputSource(const ::org::xml::sax::InputSource&) const ;
-    ::org::xml::sax::InputSource getInputSource() const ;
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
+    void setXMLReader(const ::org::xml::sax::XMLReader&) const;
+    ::org::xml::sax::XMLReader getXMLReader() const;
+    void setInputSource(const ::org::xml::sax::InputSource&) const;
+    ::org::xml::sax::InputSource getInputSource() const;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
     static ::org::xml::sax::InputSource sourceToInputSource(const ::javax::xml::transform::Source&);
 
 };

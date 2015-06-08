@@ -33,7 +33,7 @@ public:
     ::android::view::View_OnKeyListener& operator=(const ::android::view::View_OnKeyListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnKeyListener& operator=(::android::view::View_OnKeyListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onKey(const ::android::view::View&, int32_t, const ::android::view::KeyEvent&) const ;
+    bool onKey(const ::android::view::View&, int32_t, const ::android::view::KeyEvent&) const;
 
 };
 }

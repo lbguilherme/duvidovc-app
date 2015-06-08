@@ -37,9 +37,9 @@ public:
     
     DHParameterSpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&);
     DHParameterSpec(const ::java::math::BigInteger&, const ::java::math::BigInteger&, int32_t);
-    ::java::math::BigInteger getP() const ;
-    ::java::math::BigInteger getG() const ;
-    int32_t getL() const ;
+    ::java::math::BigInteger getP() const;
+    ::java::math::BigInteger getG() const;
+    int32_t getL() const;
 
 };
 }

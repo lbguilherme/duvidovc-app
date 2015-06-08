@@ -36,9 +36,9 @@ public:
     
     View_DragShadowBuilder(const ::android::view::View&);
     View_DragShadowBuilder();
-    ::android::view::View getView() const ;
-    void onProvideShadowMetrics(const ::android::graphics::Point&, const ::android::graphics::Point&) const ;
-    void onDrawShadow(const ::android::graphics::Canvas&) const ;
+    ::android::view::View getView() const;
+    void onProvideShadowMetrics(const ::android::graphics::Point&, const ::android::graphics::Point&) const;
+    void onDrawShadow(const ::android::graphics::Canvas&) const;
 
 };
 }

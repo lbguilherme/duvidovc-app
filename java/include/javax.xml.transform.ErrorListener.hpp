@@ -33,9 +33,9 @@ public:
     ::javax::xml::transform::ErrorListener& operator=(const ::javax::xml::transform::ErrorListener& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::ErrorListener& operator=(::javax::xml::transform::ErrorListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void warning(const ::javax::xml::transform::TransformerException&) const ;
-    void error(const ::javax::xml::transform::TransformerException&) const ;
-    void fatalError(const ::javax::xml::transform::TransformerException&) const ;
+    void warning(const ::javax::xml::transform::TransformerException&) const;
+    void error(const ::javax::xml::transform::TransformerException&) const;
+    void fatalError(const ::javax::xml::transform::TransformerException&) const;
 
 };
 }

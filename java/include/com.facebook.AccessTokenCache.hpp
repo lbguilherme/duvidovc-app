@@ -33,9 +33,9 @@ public:
     ::com::facebook::AccessTokenCache& operator=(::com::facebook::AccessTokenCache&& x) {obj = std::move(x.obj); return *this;}
     
     AccessTokenCache();
-    ::com::facebook::AccessToken load() const ;
-    void save(const ::com::facebook::AccessToken&) const ;
-    void clear() const ;
+    ::com::facebook::AccessToken load() const;
+    void save(const ::com::facebook::AccessToken&) const;
+    void clear() const;
 
 };
 }

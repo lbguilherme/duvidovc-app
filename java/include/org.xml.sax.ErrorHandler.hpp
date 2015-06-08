@@ -33,9 +33,9 @@ public:
     ::org::xml::sax::ErrorHandler& operator=(const ::org::xml::sax::ErrorHandler& x) {obj = x.obj; return *this;}
     ::org::xml::sax::ErrorHandler& operator=(::org::xml::sax::ErrorHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void warning(const ::org::xml::sax::SAXParseException&) const ;
-    void error(const ::org::xml::sax::SAXParseException&) const ;
-    void fatalError(const ::org::xml::sax::SAXParseException&) const ;
+    void warning(const ::org::xml::sax::SAXParseException&) const;
+    void error(const ::org::xml::sax::SAXParseException&) const;
+    void fatalError(const ::org::xml::sax::SAXParseException&) const;
 
 };
 }

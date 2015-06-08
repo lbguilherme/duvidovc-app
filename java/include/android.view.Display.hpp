@@ -34,16 +34,16 @@ public:
     ::android::view::Display& operator=(const ::android::view::Display& x) {obj = x.obj; return *this;}
     ::android::view::Display& operator=(::android::view::Display&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getDisplayId() const ;
-    void getSize(const ::android::graphics::Point&) const ;
-    void getRectSize(const ::android::graphics::Rect&) const ;
-    int32_t getWidth() const ;
-    int32_t getHeight() const ;
-    int32_t getRotation() const ;
-    int32_t getOrientation() const ;
-    int32_t getPixelFormat() const ;
-    float getRefreshRate() const ;
-    void getMetrics(const ::android::util::DisplayMetrics&) const ;
+    int32_t getDisplayId() const;
+    void getSize(const ::android::graphics::Point&) const;
+    void getRectSize(const ::android::graphics::Rect&) const;
+    int32_t getWidth() const;
+    int32_t getHeight() const;
+    int32_t getRotation() const;
+    int32_t getOrientation() const;
+    int32_t getPixelFormat() const;
+    float getRefreshRate() const;
+    void getMetrics(const ::android::util::DisplayMetrics&) const;
 
 };
 }

@@ -32,11 +32,11 @@ public:
     ::android::util::EventLog_Event& operator=(const ::android::util::EventLog_Event& x) {obj = x.obj; return *this;}
     ::android::util::EventLog_Event& operator=(::android::util::EventLog_Event&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getProcessId() const ;
-    int32_t getThreadId() const ;
-    int64_t getTimeNanos() const ;
-    int32_t getTag() const ;
-    ::java::lang::Object getData() const ;
+    int32_t getProcessId() const;
+    int32_t getThreadId() const;
+    int64_t getTimeNanos() const;
+    int32_t getTag() const;
+    ::java::lang::Object getData() const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::java::net::ContentHandler& operator=(::java::net::ContentHandler&& x) {obj = std::move(x.obj); return *this;}
     
     ContentHandler();
-    ::java::lang::Object getContent(const ::java::net::URLConnection&) const ;
-    ::java::lang::Object getContent(const ::java::net::URLConnection&, const std::vector< ::java::lang::Class>&) const ;
+    ::java::lang::Object getContent(const ::java::net::URLConnection&) const;
+    ::java::lang::Object getContent(const ::java::net::URLConnection&, const std::vector< ::java::lang::Class>&) const;
 
 };
 }

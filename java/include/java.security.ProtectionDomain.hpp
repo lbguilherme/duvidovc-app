@@ -38,11 +38,11 @@ public:
     
     ProtectionDomain(const ::java::security::CodeSource&, const ::java::security::PermissionCollection&);
     ProtectionDomain(const ::java::security::CodeSource&, const ::java::security::PermissionCollection&, const ::java::lang::ClassLoader&, const std::vector< ::java::security::Principal>&);
-    ::java::lang::ClassLoader getClassLoader() const ;
-    ::java::security::CodeSource getCodeSource() const ;
-    ::java::security::PermissionCollection getPermissions() const ;
-    std::vector< ::java::security::Principal> getPrincipals() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    ::java::lang::ClassLoader getClassLoader() const;
+    ::java::security::CodeSource getCodeSource() const;
+    ::java::security::PermissionCollection getPermissions() const;
+    std::vector< ::java::security::Principal> getPrincipals() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

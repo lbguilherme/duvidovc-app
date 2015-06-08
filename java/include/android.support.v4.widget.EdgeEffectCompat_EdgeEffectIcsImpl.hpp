@@ -38,15 +38,15 @@ public:
     ::android::support::v4::widget::EdgeEffectCompat_EdgeEffectIcsImpl& operator=(const ::android::support::v4::widget::EdgeEffectCompat_EdgeEffectIcsImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::EdgeEffectCompat_EdgeEffectIcsImpl& operator=(::android::support::v4::widget::EdgeEffectCompat_EdgeEffectIcsImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object newEdgeEffect(const ::android::content::Context&) const ;
-    void setSize(const ::java::lang::Object&, int32_t, int32_t) const ;
-    bool isFinished(const ::java::lang::Object&) const ;
-    void finish(const ::java::lang::Object&) const ;
-    bool onPull(const ::java::lang::Object&, float) const ;
-    bool onRelease(const ::java::lang::Object&) const ;
-    bool onAbsorb(const ::java::lang::Object&, int32_t) const ;
-    bool draw(const ::java::lang::Object&, const ::android::graphics::Canvas&) const ;
-    bool onPull(const ::java::lang::Object&, float, float) const ;
+    ::java::lang::Object newEdgeEffect(const ::android::content::Context&) const;
+    void setSize(const ::java::lang::Object&, int32_t, int32_t) const;
+    bool isFinished(const ::java::lang::Object&) const;
+    void finish(const ::java::lang::Object&) const;
+    bool onPull(const ::java::lang::Object&, float) const;
+    bool onRelease(const ::java::lang::Object&) const;
+    bool onAbsorb(const ::java::lang::Object&, int32_t) const;
+    bool draw(const ::java::lang::Object&, const ::android::graphics::Canvas&) const;
+    bool onPull(const ::java::lang::Object&, float, float) const;
 
 };
 }

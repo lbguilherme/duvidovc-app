@@ -41,9 +41,9 @@ public:
     ::org::apache::http::conn::params::ConnRouteParamBean& operator=(::org::apache::http::conn::params::ConnRouteParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     ConnRouteParamBean(const ::org::apache::http::params::HttpParams&);
-    void setDefaultProxy(const ::org::apache::http::HttpHost&) const ;
-    void setLocalAddress(const ::java::net::InetAddress&) const ;
-    void setForcedRoute(const ::org::apache::http::conn::routing::HttpRoute&) const ;
+    void setDefaultProxy(const ::org::apache::http::HttpHost&) const;
+    void setLocalAddress(const ::java::net::InetAddress&) const;
+    void setForcedRoute(const ::org::apache::http::conn::routing::HttpRoute&) const;
 
 };
 }

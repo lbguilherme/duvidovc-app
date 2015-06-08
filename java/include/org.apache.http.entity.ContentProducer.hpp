@@ -34,7 +34,7 @@ public:
     ::org::apache::http::entity::ContentProducer& operator=(const ::org::apache::http::entity::ContentProducer& x) {obj = x.obj; return *this;}
     ::org::apache::http::entity::ContentProducer& operator=(::org::apache::http::entity::ContentProducer&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeTo(const ::java::io::OutputStream&) const ;
+    void writeTo(const ::java::io::OutputStream&) const;
 
 };
 }

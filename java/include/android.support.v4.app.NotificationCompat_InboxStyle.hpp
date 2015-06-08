@@ -40,9 +40,9 @@ public:
     
     NotificationCompat_InboxStyle();
     NotificationCompat_InboxStyle(const ::android::support::v4::app::NotificationCompat_Builder&);
-    ::android::support::v4::app::NotificationCompat_InboxStyle setBigContentTitle(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::NotificationCompat_InboxStyle setSummaryText(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::app::NotificationCompat_InboxStyle addLine(const ::java::lang::CharSequence&) const ;
+    ::android::support::v4::app::NotificationCompat_InboxStyle setBigContentTitle(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::NotificationCompat_InboxStyle setSummaryText(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::app::NotificationCompat_InboxStyle addLine(const ::java::lang::CharSequence&) const;
 
 };
 }

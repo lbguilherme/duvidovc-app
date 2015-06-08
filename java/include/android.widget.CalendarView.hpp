@@ -39,20 +39,20 @@ public:
     CalendarView(const ::android::content::Context&);
     CalendarView(const ::android::content::Context&, const ::android::util::AttributeSet&);
     CalendarView(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setEnabled(bool) const ;
-    bool isEnabled() const ;
-    int64_t getMinDate() const ;
-    void setMinDate(int64_t) const ;
-    int64_t getMaxDate() const ;
-    void setMaxDate(int64_t) const ;
-    void setShowWeekNumber(bool) const ;
-    bool getShowWeekNumber() const ;
-    int32_t getFirstDayOfWeek() const ;
-    void setFirstDayOfWeek(int32_t) const ;
-    void setOnDateChangeListener(const ::android::widget::CalendarView_OnDateChangeListener&) const ;
-    int64_t getDate() const ;
-    void setDate(int64_t) const ;
-    void setDate(int64_t, bool, bool) const ;
+    void setEnabled(bool) const;
+    bool isEnabled() const;
+    int64_t getMinDate() const;
+    void setMinDate(int64_t) const;
+    int64_t getMaxDate() const;
+    void setMaxDate(int64_t) const;
+    void setShowWeekNumber(bool) const;
+    bool getShowWeekNumber() const;
+    int32_t getFirstDayOfWeek() const;
+    void setFirstDayOfWeek(int32_t) const;
+    void setOnDateChangeListener(const ::android::widget::CalendarView_OnDateChangeListener&) const;
+    int64_t getDate() const;
+    void setDate(int64_t) const;
+    void setDate(int64_t, bool, bool) const;
 
 };
 }

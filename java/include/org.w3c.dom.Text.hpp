@@ -36,10 +36,10 @@ public:
     ::org::w3c::dom::Text& operator=(const ::org::w3c::dom::Text& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::Text& operator=(::org::w3c::dom::Text&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::Text splitText(int32_t) const ;
-    bool isElementContentWhitespace() const ;
-    ::java::lang::String getWholeText() const ;
-    ::org::w3c::dom::Text replaceWholeText(const ::java::lang::String&) const ;
+    ::org::w3c::dom::Text splitText(int32_t) const;
+    bool isElementContentWhitespace() const;
+    ::java::lang::String getWholeText() const;
+    ::org::w3c::dom::Text replaceWholeText(const ::java::lang::String&) const;
 
 };
 }

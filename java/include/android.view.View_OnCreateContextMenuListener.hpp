@@ -34,7 +34,7 @@ public:
     ::android::view::View_OnCreateContextMenuListener& operator=(const ::android::view::View_OnCreateContextMenuListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnCreateContextMenuListener& operator=(::android::view::View_OnCreateContextMenuListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCreateContextMenu(const ::android::view::ContextMenu&, const ::android::view::View&, const ::android::view::ContextMenu_ContextMenuInfo&) const ;
+    void onCreateContextMenu(const ::android::view::ContextMenu&, const ::android::view::View&, const ::android::view::ContextMenu_ContextMenuInfo&) const;
 
 };
 }

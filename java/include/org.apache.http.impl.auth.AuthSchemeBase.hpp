@@ -38,8 +38,8 @@ public:
     ::org::apache::http::impl::auth::AuthSchemeBase& operator=(::org::apache::http::impl::auth::AuthSchemeBase&& x) {obj = std::move(x.obj); return *this;}
     
     AuthSchemeBase();
-    void processChallenge(const ::org::apache::http::Header&) const ;
-    bool isProxy() const ;
+    void processChallenge(const ::org::apache::http::Header&) const;
+    bool isProxy() const;
 
 };
 }

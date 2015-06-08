@@ -36,15 +36,15 @@ public:
     ::android::hardware::usb::UsbDeviceConnection& operator=(const ::android::hardware::usb::UsbDeviceConnection& x) {obj = x.obj; return *this;}
     ::android::hardware::usb::UsbDeviceConnection& operator=(::android::hardware::usb::UsbDeviceConnection&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    int32_t getFileDescriptor() const ;
-    std::vector< int8_t> getRawDescriptors() const ;
-    bool claimInterface(const ::android::hardware::usb::UsbInterface&, bool) const ;
-    bool releaseInterface(const ::android::hardware::usb::UsbInterface&) const ;
-    int32_t controlTransfer(int32_t, int32_t, int32_t, int32_t, const std::vector< int8_t>&, int32_t, int32_t) const ;
-    int32_t bulkTransfer(const ::android::hardware::usb::UsbEndpoint&, const std::vector< int8_t>&, int32_t, int32_t) const ;
-    ::android::hardware::usb::UsbRequest requestWait() const ;
-    ::java::lang::String getSerial() const ;
+    void close() const;
+    int32_t getFileDescriptor() const;
+    std::vector< int8_t> getRawDescriptors() const;
+    bool claimInterface(const ::android::hardware::usb::UsbInterface&, bool) const;
+    bool releaseInterface(const ::android::hardware::usb::UsbInterface&) const;
+    int32_t controlTransfer(int32_t, int32_t, int32_t, int32_t, const std::vector< int8_t>&, int32_t, int32_t) const;
+    int32_t bulkTransfer(const ::android::hardware::usb::UsbEndpoint&, const std::vector< int8_t>&, int32_t, int32_t) const;
+    ::android::hardware::usb::UsbRequest requestWait() const;
+    ::java::lang::String getSerial() const;
 
 };
 }

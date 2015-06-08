@@ -34,14 +34,14 @@ public:
     ::android::webkit::CookieManager& operator=(::android::webkit::CookieManager&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::webkit::CookieManager getInstance();
-    void setAcceptCookie(bool) const ;
-    bool acceptCookie() const ;
-    void setCookie(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String getCookie(const ::java::lang::String&) const ;
-    void removeSessionCookie() const ;
-    void removeAllCookie() const ;
-    bool hasCookies() const ;
-    void removeExpiredCookie() const ;
+    void setAcceptCookie(bool) const;
+    bool acceptCookie() const;
+    void setCookie(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String getCookie(const ::java::lang::String&) const;
+    void removeSessionCookie() const;
+    void removeAllCookie() const;
+    bool hasCookies() const;
+    void removeExpiredCookie() const;
     static bool allowFileSchemeCookies();
     static void setAcceptFileSchemeCookies(bool);
 

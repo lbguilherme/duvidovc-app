@@ -43,18 +43,18 @@ public:
     MediaController(const ::android::content::Context&, const ::android::util::AttributeSet&);
     MediaController(const ::android::content::Context&, bool);
     MediaController(const ::android::content::Context&);
-    void onFinishInflate() const ;
-    void setMediaPlayer(const ::android::widget::MediaController_MediaPlayerControl&) const ;
-    void setAnchorView(const ::android::view::View&) const ;
-    void show() const ;
-    void show(int32_t) const ;
-    bool isShowing() const ;
-    void hide() const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    bool onTrackballEvent(const ::android::view::MotionEvent&) const ;
-    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const ;
-    void setEnabled(bool) const ;
-    void setPrevNextListeners(const ::android::view::View_OnClickListener&, const ::android::view::View_OnClickListener&) const ;
+    void onFinishInflate() const;
+    void setMediaPlayer(const ::android::widget::MediaController_MediaPlayerControl&) const;
+    void setAnchorView(const ::android::view::View&) const;
+    void show() const;
+    void show(int32_t) const;
+    bool isShowing() const;
+    void hide() const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    bool onTrackballEvent(const ::android::view::MotionEvent&) const;
+    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const;
+    void setEnabled(bool) const;
+    void setPrevNextListeners(const ::android::view::View_OnClickListener&, const ::android::view::View_OnClickListener&) const;
 
 };
 }

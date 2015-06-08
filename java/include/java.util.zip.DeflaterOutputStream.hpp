@@ -39,11 +39,11 @@ public:
     DeflaterOutputStream(const ::java::io::OutputStream&, const ::java::util::zip::Deflater&);
     DeflaterOutputStream(const ::java::io::OutputStream&);
     DeflaterOutputStream(const ::java::io::OutputStream&, const ::java::util::zip::Deflater&, int32_t);
-    void close() const ;
-    void finish() const ;
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void flush() const ;
+    void close() const;
+    void finish() const;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void flush() const;
 
 };
 }

@@ -38,9 +38,9 @@ public:
     ::org::apache::http::conn::scheme::SocketFactory& operator=(const ::org::apache::http::conn::scheme::SocketFactory& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::scheme::SocketFactory& operator=(::org::apache::http::conn::scheme::SocketFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::Socket createSocket() const ;
-    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const ;
-    bool isSecure(const ::java::net::Socket&) const ;
+    ::java::net::Socket createSocket() const;
+    ::java::net::Socket connectSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t, const ::org::apache::http::params::HttpParams&) const;
+    bool isSecure(const ::java::net::Socket&) const;
 
 };
 }

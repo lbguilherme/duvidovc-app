@@ -33,10 +33,10 @@ public:
     ::javax::xml::validation::TypeInfoProvider& operator=(const ::javax::xml::validation::TypeInfoProvider& x) {obj = x.obj; return *this;}
     ::javax::xml::validation::TypeInfoProvider& operator=(::javax::xml::validation::TypeInfoProvider&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::TypeInfo getElementTypeInfo() const ;
-    ::org::w3c::dom::TypeInfo getAttributeTypeInfo(int32_t) const ;
-    bool isIdAttribute(int32_t) const ;
-    bool isSpecified(int32_t) const ;
+    ::org::w3c::dom::TypeInfo getElementTypeInfo() const;
+    ::org::w3c::dom::TypeInfo getAttributeTypeInfo(int32_t) const;
+    bool isIdAttribute(int32_t) const;
+    bool isSpecified(int32_t) const;
 
 };
 }

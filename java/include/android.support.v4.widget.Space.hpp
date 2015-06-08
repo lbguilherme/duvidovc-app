@@ -41,7 +41,7 @@ public:
     Space(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     Space(const ::android::content::Context&, const ::android::util::AttributeSet&);
     Space(const ::android::content::Context&);
-    void draw(const ::android::graphics::Canvas&) const ;
+    void draw(const ::android::graphics::Canvas&) const;
 
 };
 }

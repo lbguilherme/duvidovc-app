@@ -38,8 +38,8 @@ public:
     ::android::service::textservice::SpellCheckerService& operator=(::android::service::textservice::SpellCheckerService&& x) {obj = std::move(x.obj); return *this;}
     
     SpellCheckerService();
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
-    ::android::service::textservice::SpellCheckerService_Session createSession() const ;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
+    ::android::service::textservice::SpellCheckerService_Session createSession() const;
 
 };
 }

@@ -37,9 +37,9 @@ public:
     
     ActivityManager_RunningAppProcessInfo();
     ActivityManager_RunningAppProcessInfo(const ::java::lang::String&, int32_t, const std::vector< ::java::lang::String>&);
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

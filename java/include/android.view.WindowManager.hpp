@@ -35,8 +35,8 @@ public:
     ::android::view::WindowManager& operator=(const ::android::view::WindowManager& x) {obj = x.obj; return *this;}
     ::android::view::WindowManager& operator=(::android::view::WindowManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::view::Display getDefaultDisplay() const ;
-    void removeViewImmediate(const ::android::view::View&) const ;
+    ::android::view::Display getDefaultDisplay() const;
+    void removeViewImmediate(const ::android::view::View&) const;
 
 };
 }

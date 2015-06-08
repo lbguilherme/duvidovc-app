@@ -36,13 +36,13 @@ public:
     ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation& operator=(const ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation& operator=(::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::String> getMessages() const ;
-    ::android::support::v4::app::RemoteInput getRemoteInput() const ;
-    ::android::app::PendingIntent getReplyPendingIntent() const ;
-    ::android::app::PendingIntent getReadPendingIntent() const ;
-    std::vector< ::java::lang::String> getParticipants() const ;
-    ::java::lang::String getParticipant() const ;
-    int64_t getLatestTimestamp() const ;
+    std::vector< ::java::lang::String> getMessages() const;
+    ::android::support::v4::app::RemoteInput getRemoteInput() const;
+    ::android::app::PendingIntent getReplyPendingIntent() const;
+    ::android::app::PendingIntent getReadPendingIntent() const;
+    std::vector< ::java::lang::String> getParticipants() const;
+    ::java::lang::String getParticipant() const;
+    int64_t getLatestTimestamp() const;
 
 };
 }

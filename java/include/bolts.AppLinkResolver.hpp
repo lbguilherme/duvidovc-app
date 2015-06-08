@@ -32,7 +32,7 @@ public:
     ::bolts::AppLinkResolver& operator=(const ::bolts::AppLinkResolver& x) {obj = x.obj; return *this;}
     ::bolts::AppLinkResolver& operator=(::bolts::AppLinkResolver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::bolts::Task getAppLinkFromUrlInBackground(const ::android::net::Uri&) const ;
+    ::bolts::Task getAppLinkFromUrlInBackground(const ::android::net::Uri&) const;
 
 };
 }

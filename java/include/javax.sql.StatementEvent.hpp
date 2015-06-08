@@ -38,8 +38,8 @@ public:
     
     StatementEvent(const ::javax::sql::PooledConnection&, const ::java::sql::PreparedStatement&, const ::java::sql::SQLException&);
     StatementEvent(const ::javax::sql::PooledConnection&, const ::java::sql::PreparedStatement&);
-    ::java::sql::PreparedStatement getStatement() const ;
-    ::java::sql::SQLException getSQLException() const ;
+    ::java::sql::PreparedStatement getStatement() const;
+    ::java::sql::SQLException getSQLException() const;
 
 };
 }

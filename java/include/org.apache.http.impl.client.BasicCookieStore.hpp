@@ -41,12 +41,12 @@ public:
     ::org::apache::http::impl::client::BasicCookieStore& operator=(::org::apache::http::impl::client::BasicCookieStore&& x) {obj = std::move(x.obj); return *this;}
     
     BasicCookieStore();
-    void addCookie(const ::org::apache::http::cookie::Cookie&) const ;
-    void addCookies(const std::vector< ::org::apache::http::cookie::Cookie>&) const ;
-    ::java::util::List getCookies() const ;
-    bool clearExpired(const ::java::util::Date&) const ;
-    ::java::lang::String toString() const ;
-    void clear() const ;
+    void addCookie(const ::org::apache::http::cookie::Cookie&) const;
+    void addCookies(const std::vector< ::org::apache::http::cookie::Cookie>&) const;
+    ::java::util::List getCookies() const;
+    bool clearExpired(const ::java::util::Date&) const;
+    ::java::lang::String toString() const;
+    void clear() const;
 
 };
 }

@@ -35,9 +35,9 @@ public:
     ::android::text::TextWatcher& operator=(const ::android::text::TextWatcher& x) {obj = x.obj; return *this;}
     ::android::text::TextWatcher& operator=(::android::text::TextWatcher&& x) {obj = std::move(x.obj); return *this;}
     
-    void beforeTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const ;
-    void onTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const ;
-    void afterTextChanged(const ::android::text::Editable&) const ;
+    void beforeTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const;
+    void onTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const;
+    void afterTextChanged(const ::android::text::Editable&) const;
 
 };
 }

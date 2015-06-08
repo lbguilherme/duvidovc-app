@@ -39,8 +39,8 @@ public:
     ::android::graphics::drawable::shapes::RectShape& operator=(::android::graphics::drawable::shapes::RectShape&& x) {obj = std::move(x.obj); return *this;}
     
     RectShape();
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const ;
-    ::android::graphics::drawable::shapes::RectShape clone() const ;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const;
+    ::android::graphics::drawable::shapes::RectShape clone() const;
 
 };
 }

@@ -36,18 +36,18 @@ public:
     ::org::xml::sax::helpers::NamespaceSupport& operator=(::org::xml::sax::helpers::NamespaceSupport&& x) {obj = std::move(x.obj); return *this;}
     
     NamespaceSupport();
-    void reset() const ;
-    void pushContext() const ;
-    void popContext() const ;
-    bool declarePrefix(const ::java::lang::String&, const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> processName(const ::java::lang::String&, const std::vector< ::java::lang::String>&, bool) const ;
-    ::java::lang::String getURI(const ::java::lang::String&) const ;
-    ::java::util::Enumeration getPrefixes() const ;
-    ::java::lang::String getPrefix(const ::java::lang::String&) const ;
-    ::java::util::Enumeration getPrefixes(const ::java::lang::String&) const ;
-    ::java::util::Enumeration getDeclaredPrefixes() const ;
-    void setNamespaceDeclUris(bool) const ;
-    bool isNamespaceDeclUris() const ;
+    void reset() const;
+    void pushContext() const;
+    void popContext() const;
+    bool declarePrefix(const ::java::lang::String&, const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> processName(const ::java::lang::String&, const std::vector< ::java::lang::String>&, bool) const;
+    ::java::lang::String getURI(const ::java::lang::String&) const;
+    ::java::util::Enumeration getPrefixes() const;
+    ::java::lang::String getPrefix(const ::java::lang::String&) const;
+    ::java::util::Enumeration getPrefixes(const ::java::lang::String&) const;
+    ::java::util::Enumeration getDeclaredPrefixes() const;
+    void setNamespaceDeclUris(bool) const;
+    bool isNamespaceDeclUris() const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::com::facebook::GraphRequestBatch_Callback& operator=(const ::com::facebook::GraphRequestBatch_Callback& x) {obj = x.obj; return *this;}
     ::com::facebook::GraphRequestBatch_Callback& operator=(::com::facebook::GraphRequestBatch_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onBatchCompleted(const ::com::facebook::GraphRequestBatch&) const ;
+    void onBatchCompleted(const ::com::facebook::GraphRequestBatch&) const;
 
 };
 }

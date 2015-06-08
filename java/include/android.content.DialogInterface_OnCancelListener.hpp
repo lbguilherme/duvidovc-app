@@ -32,7 +32,7 @@ public:
     ::android::content::DialogInterface_OnCancelListener& operator=(const ::android::content::DialogInterface_OnCancelListener& x) {obj = x.obj; return *this;}
     ::android::content::DialogInterface_OnCancelListener& operator=(::android::content::DialogInterface_OnCancelListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCancel(const ::android::content::DialogInterface&) const ;
+    void onCancel(const ::android::content::DialogInterface&) const;
 
 };
 }

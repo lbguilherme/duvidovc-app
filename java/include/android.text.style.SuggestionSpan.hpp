@@ -47,16 +47,16 @@ public:
     SuggestionSpan(const ::java::util::Locale&, const std::vector< ::java::lang::String>&, int32_t);
     SuggestionSpan(const ::android::content::Context&, const ::java::util::Locale&, const std::vector< ::java::lang::String>&, int32_t, const ::java::lang::Class&);
     SuggestionSpan(const ::android::os::Parcel&);
-    std::vector< ::java::lang::String> getSuggestions() const ;
-    ::java::lang::String getLocale() const ;
-    int32_t getFlags() const ;
-    void setFlags(int32_t) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t getSpanTypeId() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    std::vector< ::java::lang::String> getSuggestions() const;
+    ::java::lang::String getLocale() const;
+    int32_t getFlags() const;
+    void setFlags(int32_t) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t getSpanTypeId() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
 
 };
 }

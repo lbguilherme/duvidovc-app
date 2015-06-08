@@ -32,7 +32,7 @@ public:
     ::java::net::DatagramSocketImplFactory& operator=(const ::java::net::DatagramSocketImplFactory& x) {obj = x.obj; return *this;}
     ::java::net::DatagramSocketImplFactory& operator=(::java::net::DatagramSocketImplFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::net::DatagramSocketImpl createDatagramSocketImpl() const ;
+    ::java::net::DatagramSocketImpl createDatagramSocketImpl() const;
 
 };
 }

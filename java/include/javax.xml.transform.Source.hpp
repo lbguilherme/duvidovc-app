@@ -33,8 +33,8 @@ public:
     ::javax::xml::transform::Source& operator=(const ::javax::xml::transform::Source& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::Source& operator=(::javax::xml::transform::Source&& x) {obj = std::move(x.obj); return *this;}
     
-    void setSystemId(const ::java::lang::String&) const ;
-    ::java::lang::String getSystemId() const ;
+    void setSystemId(const ::java::lang::String&) const;
+    ::java::lang::String getSystemId() const;
 
 };
 }

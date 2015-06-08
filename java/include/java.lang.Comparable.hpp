@@ -32,7 +32,7 @@ public:
     ::java::lang::Comparable& operator=(const ::java::lang::Comparable& x) {obj = x.obj; return *this;}
     ::java::lang::Comparable& operator=(::java::lang::Comparable&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

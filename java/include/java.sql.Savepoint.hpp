@@ -32,8 +32,8 @@ public:
     ::java::sql::Savepoint& operator=(const ::java::sql::Savepoint& x) {obj = x.obj; return *this;}
     ::java::sql::Savepoint& operator=(::java::sql::Savepoint&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getSavepointId() const ;
-    ::java::lang::String getSavepointName() const ;
+    int32_t getSavepointId() const;
+    ::java::lang::String getSavepointName() const;
 
 };
 }

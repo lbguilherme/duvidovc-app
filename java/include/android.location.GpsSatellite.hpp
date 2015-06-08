@@ -31,13 +31,13 @@ public:
     ::android::location::GpsSatellite& operator=(const ::android::location::GpsSatellite& x) {obj = x.obj; return *this;}
     ::android::location::GpsSatellite& operator=(::android::location::GpsSatellite&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getPrn() const ;
-    float getSnr() const ;
-    float getElevation() const ;
-    float getAzimuth() const ;
-    bool hasEphemeris() const ;
-    bool hasAlmanac() const ;
-    bool usedInFix() const ;
+    int32_t getPrn() const;
+    float getSnr() const;
+    float getElevation() const;
+    float getAzimuth() const;
+    bool hasEphemeris() const;
+    bool hasAlmanac() const;
+    bool usedInFix() const;
 
 };
 }

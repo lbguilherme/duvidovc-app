@@ -38,12 +38,12 @@ public:
     ::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodSessionImpl& operator=(::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodSessionImpl&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractInputMethodService_AbstractInputMethodSessionImpl(const ::android::inputmethodservice::AbstractInputMethodService&);
-    bool isEnabled() const ;
-    bool isRevoked() const ;
-    void setEnabled(bool) const ;
-    void revokeSelf() const ;
-    void dispatchKeyEvent(int32_t, const ::android::view::KeyEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const ;
-    void dispatchTrackballEvent(int32_t, const ::android::view::MotionEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const ;
+    bool isEnabled() const;
+    bool isRevoked() const;
+    void setEnabled(bool) const;
+    void revokeSelf() const;
+    void dispatchKeyEvent(int32_t, const ::android::view::KeyEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const;
+    void dispatchTrackballEvent(int32_t, const ::android::view::MotionEvent&, const ::android::view::inputmethod::InputMethodSession_EventCallback&) const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::android::preference::PreferenceFragment_OnPreferenceStartFragmentCallback& operator=(const ::android::preference::PreferenceFragment_OnPreferenceStartFragmentCallback& x) {obj = x.obj; return *this;}
     ::android::preference::PreferenceFragment_OnPreferenceStartFragmentCallback& operator=(::android::preference::PreferenceFragment_OnPreferenceStartFragmentCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onPreferenceStartFragment(const ::android::preference::PreferenceFragment&, const ::android::preference::Preference&) const ;
+    bool onPreferenceStartFragment(const ::android::preference::PreferenceFragment&, const ::android::preference::Preference&) const;
 
 };
 }

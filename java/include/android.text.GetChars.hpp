@@ -33,7 +33,7 @@ public:
     ::android::text::GetChars& operator=(const ::android::text::GetChars& x) {obj = x.obj; return *this;}
     ::android::text::GetChars& operator=(::android::text::GetChars&& x) {obj = std::move(x.obj); return *this;}
     
-    void getChars(int32_t, int32_t, const std::vector< uint16_t>&, int32_t) const ;
+    void getChars(int32_t, int32_t, const std::vector< uint16_t>&, int32_t) const;
 
 };
 }

@@ -39,7 +39,7 @@ public:
     TranslateAnimation(const ::android::content::Context&, const ::android::util::AttributeSet&);
     TranslateAnimation(float, float, float, float);
     TranslateAnimation(int32_t, float, int32_t, float, int32_t, float, int32_t, float);
-    void initialize(int32_t, int32_t, int32_t, int32_t) const ;
+    void initialize(int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

@@ -38,18 +38,18 @@ public:
     ::android::widget::ZoomButtonsController& operator=(::android::widget::ZoomButtonsController&& x) {obj = std::move(x.obj); return *this;}
     
     ZoomButtonsController(const ::android::view::View&);
-    void setZoomInEnabled(bool) const ;
-    void setZoomOutEnabled(bool) const ;
-    void setZoomSpeed(int64_t) const ;
-    void setOnZoomListener(const ::android::widget::ZoomButtonsController_OnZoomListener&) const ;
-    void setFocusable(bool) const ;
-    bool isAutoDismissed() const ;
-    void setAutoDismissed(bool) const ;
-    bool isVisible() const ;
-    void setVisible(bool) const ;
-    ::android::view::ViewGroup getContainer() const ;
-    ::android::view::View getZoomControls() const ;
-    bool onTouch(const ::android::view::View&, const ::android::view::MotionEvent&) const ;
+    void setZoomInEnabled(bool) const;
+    void setZoomOutEnabled(bool) const;
+    void setZoomSpeed(int64_t) const;
+    void setOnZoomListener(const ::android::widget::ZoomButtonsController_OnZoomListener&) const;
+    void setFocusable(bool) const;
+    bool isAutoDismissed() const;
+    void setAutoDismissed(bool) const;
+    bool isVisible() const;
+    void setVisible(bool) const;
+    ::android::view::ViewGroup getContainer() const;
+    ::android::view::View getZoomControls() const;
+    bool onTouch(const ::android::view::View&, const ::android::view::MotionEvent&) const;
 
 };
 }

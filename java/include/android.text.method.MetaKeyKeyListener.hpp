@@ -45,9 +45,9 @@ public:
     static void adjustMetaAfterKeypress(const ::android::text::Spannable&);
     static bool isMetaTracker(const ::java::lang::CharSequence&, const ::java::lang::Object&);
     static bool isSelectingMetaTracker(const ::java::lang::CharSequence&, const ::java::lang::Object&);
-    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyUp(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const ;
-    void clearMetaKeyState(const ::android::view::View&, const ::android::text::Editable&, int32_t) const ;
+    bool onKeyDown(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyUp(const ::android::view::View&, const ::android::text::Editable&, int32_t, const ::android::view::KeyEvent&) const;
+    void clearMetaKeyState(const ::android::view::View&, const ::android::text::Editable&, int32_t) const;
     static void clearMetaKeyState(const ::android::text::Editable&, int32_t);
     static int64_t resetLockedMeta(int64_t);
     static int32_t getMetaState(int64_t);
@@ -55,7 +55,7 @@ public:
     static int64_t adjustMetaAfterKeypress(int64_t);
     static int64_t handleKeyDown(int64_t, int32_t, const ::android::view::KeyEvent&);
     static int64_t handleKeyUp(int64_t, int32_t, const ::android::view::KeyEvent&);
-    int64_t clearMetaKeyState(int64_t, int32_t) const ;
+    int64_t clearMetaKeyState(int64_t, int32_t) const;
 
 };
 }

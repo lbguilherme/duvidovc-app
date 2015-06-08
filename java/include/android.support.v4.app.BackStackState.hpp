@@ -40,9 +40,9 @@ public:
     
     BackStackState(const ::android::support::v4::app::FragmentManagerImpl&, const ::android::support::v4::app::BackStackRecord&);
     BackStackState(const ::android::os::Parcel&);
-    ::android::support::v4::app::BackStackRecord instantiate(const ::android::support::v4::app::FragmentManagerImpl&) const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::support::v4::app::BackStackRecord instantiate(const ::android::support::v4::app::FragmentManagerImpl&) const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

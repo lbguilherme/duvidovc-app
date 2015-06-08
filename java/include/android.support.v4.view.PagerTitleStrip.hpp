@@ -41,13 +41,13 @@ public:
     
     PagerTitleStrip(const ::android::content::Context&);
     PagerTitleStrip(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setTextSpacing(int32_t) const ;
-    int32_t getTextSpacing() const ;
-    void setNonPrimaryAlpha(float) const ;
-    void setTextColor(int32_t) const ;
-    void setTextSize(int32_t, float) const ;
-    void setGravity(int32_t) const ;
-    void requestLayout() const ;
+    void setTextSpacing(int32_t) const;
+    int32_t getTextSpacing() const;
+    void setNonPrimaryAlpha(float) const;
+    void setTextColor(int32_t) const;
+    void setTextSize(int32_t, float) const;
+    void setGravity(int32_t) const;
+    void requestLayout() const;
 
 };
 }

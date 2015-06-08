@@ -35,14 +35,14 @@ public:
     ::java::io::LineNumberInputStream& operator=(::java::io::LineNumberInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     LineNumberInputStream(const ::java::io::InputStream&);
-    int32_t available() const ;
-    int32_t getLineNumber() const ;
-    void mark(int32_t) const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void reset() const ;
-    void setLineNumber(int32_t) const ;
-    int64_t skip(int64_t) const ;
+    int32_t available() const;
+    int32_t getLineNumber() const;
+    void mark(int32_t) const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void reset() const;
+    void setLineNumber(int32_t) const;
+    int64_t skip(int64_t) const;
 
 };
 }

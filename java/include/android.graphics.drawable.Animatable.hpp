@@ -32,9 +32,9 @@ public:
     ::android::graphics::drawable::Animatable& operator=(const ::android::graphics::drawable::Animatable& x) {obj = x.obj; return *this;}
     ::android::graphics::drawable::Animatable& operator=(::android::graphics::drawable::Animatable&& x) {obj = std::move(x.obj); return *this;}
     
-    void start() const ;
-    void stop() const ;
-    bool isRunning() const ;
+    void start() const;
+    void stop() const;
+    bool isRunning() const;
 
 };
 }

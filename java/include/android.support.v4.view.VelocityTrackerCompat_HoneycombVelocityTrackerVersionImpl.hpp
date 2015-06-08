@@ -36,8 +36,8 @@ public:
     ::android::support::v4::view::VelocityTrackerCompat_HoneycombVelocityTrackerVersionImpl& operator=(const ::android::support::v4::view::VelocityTrackerCompat_HoneycombVelocityTrackerVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::VelocityTrackerCompat_HoneycombVelocityTrackerVersionImpl& operator=(::android::support::v4::view::VelocityTrackerCompat_HoneycombVelocityTrackerVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    float getXVelocity(const ::android::view::VelocityTracker&, int32_t) const ;
-    float getYVelocity(const ::android::view::VelocityTracker&, int32_t) const ;
+    float getXVelocity(const ::android::view::VelocityTracker&, int32_t) const;
+    float getYVelocity(const ::android::view::VelocityTracker&, int32_t) const;
 
 };
 }

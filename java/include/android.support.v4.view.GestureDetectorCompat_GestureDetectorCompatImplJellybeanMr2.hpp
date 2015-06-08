@@ -41,10 +41,10 @@ public:
     ::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImplJellybeanMr2& operator=(::android::support::v4::view::GestureDetectorCompat_GestureDetectorCompatImplJellybeanMr2&& x) {obj = std::move(x.obj); return *this;}
     
     GestureDetectorCompat_GestureDetectorCompatImplJellybeanMr2(const ::android::content::Context&, const ::android::view::GestureDetector_OnGestureListener&, const ::android::os::Handler&);
-    bool isLongpressEnabled() const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    void setIsLongpressEnabled(bool) const ;
-    void setOnDoubleTapListener(const ::android::view::GestureDetector_OnDoubleTapListener&) const ;
+    bool isLongpressEnabled() const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    void setIsLongpressEnabled(bool) const;
+    void setOnDoubleTapListener(const ::android::view::GestureDetector_OnDoubleTapListener&) const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::CollectionMapper_OnErrorListener& operator=(const ::com::facebook::internal::CollectionMapper_OnErrorListener& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::CollectionMapper_OnErrorListener& operator=(::com::facebook::internal::CollectionMapper_OnErrorListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onError(const ::com::facebook::FacebookException&) const ;
+    void onError(const ::com::facebook::FacebookException&) const;
 
 };
 }

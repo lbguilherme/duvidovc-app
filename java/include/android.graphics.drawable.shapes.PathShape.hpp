@@ -40,8 +40,8 @@ public:
     ::android::graphics::drawable::shapes::PathShape& operator=(::android::graphics::drawable::shapes::PathShape&& x) {obj = std::move(x.obj); return *this;}
     
     PathShape(const ::android::graphics::Path&, float, float);
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const ;
-    ::android::graphics::drawable::shapes::PathShape clone() const ;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Paint&) const;
+    ::android::graphics::drawable::shapes::PathShape clone() const;
 
 };
 }

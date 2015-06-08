@@ -32,7 +32,7 @@ public:
     ::android::view::inputmethod::InputMethodSession_EventCallback& operator=(const ::android::view::inputmethod::InputMethodSession_EventCallback& x) {obj = x.obj; return *this;}
     ::android::view::inputmethod::InputMethodSession_EventCallback& operator=(::android::view::inputmethod::InputMethodSession_EventCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void finishedEvent(int32_t, bool) const ;
+    void finishedEvent(int32_t, bool) const;
 
 };
 }

@@ -33,13 +33,13 @@ public:
     ::android::app::Application_ActivityLifecycleCallbacks& operator=(const ::android::app::Application_ActivityLifecycleCallbacks& x) {obj = x.obj; return *this;}
     ::android::app::Application_ActivityLifecycleCallbacks& operator=(::android::app::Application_ActivityLifecycleCallbacks&& x) {obj = std::move(x.obj); return *this;}
     
-    void onActivityCreated(const ::android::app::Activity&, const ::android::os::Bundle&) const ;
-    void onActivityStarted(const ::android::app::Activity&) const ;
-    void onActivityResumed(const ::android::app::Activity&) const ;
-    void onActivityPaused(const ::android::app::Activity&) const ;
-    void onActivityStopped(const ::android::app::Activity&) const ;
-    void onActivitySaveInstanceState(const ::android::app::Activity&, const ::android::os::Bundle&) const ;
-    void onActivityDestroyed(const ::android::app::Activity&) const ;
+    void onActivityCreated(const ::android::app::Activity&, const ::android::os::Bundle&) const;
+    void onActivityStarted(const ::android::app::Activity&) const;
+    void onActivityResumed(const ::android::app::Activity&) const;
+    void onActivityPaused(const ::android::app::Activity&) const;
+    void onActivityStopped(const ::android::app::Activity&) const;
+    void onActivitySaveInstanceState(const ::android::app::Activity&, const ::android::os::Bundle&) const;
+    void onActivityDestroyed(const ::android::app::Activity&) const;
 
 };
 }

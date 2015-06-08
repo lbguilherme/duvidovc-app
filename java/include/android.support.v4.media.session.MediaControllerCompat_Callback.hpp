@@ -44,15 +44,15 @@ public:
     ::android::support::v4::media::session::MediaControllerCompat_Callback& operator=(::android::support::v4::media::session::MediaControllerCompat_Callback&& x) {obj = std::move(x.obj); return *this;}
     
     MediaControllerCompat_Callback();
-    void onSessionDestroyed() const ;
-    void onSessionEvent(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void onPlaybackStateChanged(const ::android::support::v4::media::session::PlaybackStateCompat&) const ;
-    void onMetadataChanged(const ::android::support::v4::media::MediaMetadataCompat&) const ;
-    void onQueueChanged(const ::java::util::List&) const ;
-    void onQueueTitleChanged(const ::java::lang::CharSequence&) const ;
-    void onExtrasChanged(const ::android::os::Bundle&) const ;
-    void onAudioInfoChanged(const ::android::support::v4::media::session::MediaControllerCompat_PlaybackInfo&) const ;
-    void binderDied() const ;
+    void onSessionDestroyed() const;
+    void onSessionEvent(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void onPlaybackStateChanged(const ::android::support::v4::media::session::PlaybackStateCompat&) const;
+    void onMetadataChanged(const ::android::support::v4::media::MediaMetadataCompat&) const;
+    void onQueueChanged(const ::java::util::List&) const;
+    void onQueueTitleChanged(const ::java::lang::CharSequence&) const;
+    void onExtrasChanged(const ::android::os::Bundle&) const;
+    void onAudioInfoChanged(const ::android::support::v4::media::session::MediaControllerCompat_PlaybackInfo&) const;
+    void binderDied() const;
 
 };
 }

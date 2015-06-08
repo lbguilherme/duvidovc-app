@@ -33,7 +33,7 @@ public:
     ::java::nio::charset::CodingErrorAction& operator=(const ::java::nio::charset::CodingErrorAction& x) {obj = x.obj; return *this;}
     ::java::nio::charset::CodingErrorAction& operator=(::java::nio::charset::CodingErrorAction&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

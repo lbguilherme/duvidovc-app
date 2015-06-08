@@ -38,9 +38,9 @@ public:
     ::android::support::v4::view::ViewPropertyAnimatorCompat_JBViewPropertyAnimatorCompatImpl& operator=(const ::android::support::v4::view::ViewPropertyAnimatorCompat_JBViewPropertyAnimatorCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewPropertyAnimatorCompat_JBViewPropertyAnimatorCompatImpl& operator=(::android::support::v4::view::ViewPropertyAnimatorCompat_JBViewPropertyAnimatorCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void withStartAction(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&, const ::java::lang::Runnable&) const ;
-    void withEndAction(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&, const ::java::lang::Runnable&) const ;
-    void withLayer(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&) const ;
+    void withStartAction(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&, const ::java::lang::Runnable&) const;
+    void withEndAction(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&, const ::java::lang::Runnable&) const;
+    void withLayer(const ::android::support::v4::view::ViewPropertyAnimatorCompat&, const ::android::view::View&) const;
 
 };
 }

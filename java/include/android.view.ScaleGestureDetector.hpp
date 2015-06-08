@@ -35,19 +35,19 @@ public:
     ::android::view::ScaleGestureDetector& operator=(::android::view::ScaleGestureDetector&& x) {obj = std::move(x.obj); return *this;}
     
     ScaleGestureDetector(const ::android::content::Context&, const ::android::view::ScaleGestureDetector_OnScaleGestureListener&);
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    bool isInProgress() const ;
-    float getFocusX() const ;
-    float getFocusY() const ;
-    float getCurrentSpan() const ;
-    float getCurrentSpanX() const ;
-    float getCurrentSpanY() const ;
-    float getPreviousSpan() const ;
-    float getPreviousSpanX() const ;
-    float getPreviousSpanY() const ;
-    float getScaleFactor() const ;
-    int64_t getTimeDelta() const ;
-    int64_t getEventTime() const ;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    bool isInProgress() const;
+    float getFocusX() const;
+    float getFocusY() const;
+    float getCurrentSpan() const;
+    float getCurrentSpanX() const;
+    float getCurrentSpanY() const;
+    float getPreviousSpan() const;
+    float getPreviousSpanX() const;
+    float getPreviousSpanY() const;
+    float getScaleFactor() const;
+    int64_t getTimeDelta() const;
+    int64_t getEventTime() const;
 
 };
 }

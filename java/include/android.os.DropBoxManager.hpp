@@ -34,11 +34,11 @@ public:
     ::android::os::DropBoxManager& operator=(const ::android::os::DropBoxManager& x) {obj = x.obj; return *this;}
     ::android::os::DropBoxManager& operator=(::android::os::DropBoxManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void addText(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void addData(const ::java::lang::String&, const std::vector< int8_t>&, int32_t) const ;
-    void addFile(const ::java::lang::String&, const ::java::io::File&, int32_t) const ;
-    bool isTagEnabled(const ::java::lang::String&) const ;
-    ::android::os::DropBoxManager_Entry getNextEntry(const ::java::lang::String&, int64_t) const ;
+    void addText(const ::java::lang::String&, const ::java::lang::String&) const;
+    void addData(const ::java::lang::String&, const std::vector< int8_t>&, int32_t) const;
+    void addFile(const ::java::lang::String&, const ::java::io::File&, int32_t) const;
+    bool isTagEnabled(const ::java::lang::String&) const;
+    ::android::os::DropBoxManager_Entry getNextEntry(const ::java::lang::String&, int64_t) const;
 
 };
 }

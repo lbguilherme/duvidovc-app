@@ -35,10 +35,10 @@ public:
     ::android::nfc::tech::TagTechnology& operator=(const ::android::nfc::tech::TagTechnology& x) {obj = x.obj; return *this;}
     ::android::nfc::tech::TagTechnology& operator=(::android::nfc::tech::TagTechnology&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::nfc::Tag getTag() const ;
-    void connect() const ;
-    void close() const ;
-    bool isConnected() const ;
+    ::android::nfc::Tag getTag() const;
+    void connect() const;
+    void close() const;
+    bool isConnected() const;
 
 };
 }

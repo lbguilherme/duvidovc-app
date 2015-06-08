@@ -41,11 +41,11 @@ public:
     
     URLSpan(const ::java::lang::String&);
     URLSpan(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String getURL() const ;
-    void onClick(const ::android::view::View&) const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String getURL() const;
+    void onClick(const ::android::view::View&) const;
 
 };
 }

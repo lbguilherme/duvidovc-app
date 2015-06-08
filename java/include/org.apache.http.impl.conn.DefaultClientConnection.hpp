@@ -44,16 +44,16 @@ public:
     ::org::apache::http::impl::conn::DefaultClientConnection& operator=(::org::apache::http::impl::conn::DefaultClientConnection&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultClientConnection();
-    ::org::apache::http::HttpHost getTargetHost() const ;
-    bool isSecure() const ;
-    ::java::net::Socket getSocket() const ;
-    void opening(const ::java::net::Socket&, const ::org::apache::http::HttpHost&) const ;
-    void openCompleted(bool, const ::org::apache::http::params::HttpParams&) const ;
-    void shutdown() const ;
-    void close() const ;
-    void update(const ::java::net::Socket&, const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const ;
-    ::org::apache::http::HttpResponse receiveResponseHeader() const ;
-    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const ;
+    ::org::apache::http::HttpHost getTargetHost() const;
+    bool isSecure() const;
+    ::java::net::Socket getSocket() const;
+    void opening(const ::java::net::Socket&, const ::org::apache::http::HttpHost&) const;
+    void openCompleted(bool, const ::org::apache::http::params::HttpParams&) const;
+    void shutdown() const;
+    void close() const;
+    void update(const ::java::net::Socket&, const ::org::apache::http::HttpHost&, bool, const ::org::apache::http::params::HttpParams&) const;
+    ::org::apache::http::HttpResponse receiveResponseHeader() const;
+    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const;
 
 };
 }

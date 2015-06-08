@@ -41,7 +41,7 @@ public:
     ::org::apache::http::impl::io::AbstractMessageWriter& operator=(::org::apache::http::impl::io::AbstractMessageWriter&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractMessageWriter(const ::org::apache::http::io::SessionOutputBuffer&, const ::org::apache::http::message::LineFormatter&, const ::org::apache::http::params::HttpParams&);
-    void write(const ::org::apache::http::HttpMessage&) const ;
+    void write(const ::org::apache::http::HttpMessage&) const;
 
 };
 }

@@ -42,13 +42,13 @@ public:
     ::org::apache::http::impl::conn::LoggingSessionOutputBuffer& operator=(::org::apache::http::impl::conn::LoggingSessionOutputBuffer&& x) {obj = std::move(x.obj); return *this;}
     
     LoggingSessionOutputBuffer(const ::org::apache::http::io::SessionOutputBuffer&, const ::org::apache::http::impl::conn::Wire&);
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&) const ;
-    void flush() const ;
-    void writeLine(const ::org::apache::http::util::CharArrayBuffer&) const ;
-    void writeLine(const ::java::lang::String&) const ;
-    ::org::apache::http::io::HttpTransportMetrics getMetrics() const ;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&) const;
+    void flush() const;
+    void writeLine(const ::org::apache::http::util::CharArrayBuffer&) const;
+    void writeLine(const ::java::lang::String&) const;
+    ::org::apache::http::io::HttpTransportMetrics getMetrics() const;
 
 };
 }

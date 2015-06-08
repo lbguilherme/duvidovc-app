@@ -35,8 +35,8 @@ public:
     ::org::xml::sax::XMLFilter& operator=(const ::org::xml::sax::XMLFilter& x) {obj = x.obj; return *this;}
     ::org::xml::sax::XMLFilter& operator=(::org::xml::sax::XMLFilter&& x) {obj = std::move(x.obj); return *this;}
     
-    void setParent(const ::org::xml::sax::XMLReader&) const ;
-    ::org::xml::sax::XMLReader getParent() const ;
+    void setParent(const ::org::xml::sax::XMLReader&) const;
+    ::org::xml::sax::XMLReader getParent() const;
 
 };
 }

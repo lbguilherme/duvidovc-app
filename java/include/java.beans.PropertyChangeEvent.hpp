@@ -36,11 +36,11 @@ public:
     ::java::beans::PropertyChangeEvent& operator=(::java::beans::PropertyChangeEvent&& x) {obj = std::move(x.obj); return *this;}
     
     PropertyChangeEvent(const ::java::lang::Object&, const ::java::lang::String&, const ::java::lang::Object&, const ::java::lang::Object&);
-    ::java::lang::String getPropertyName() const ;
-    void setPropagationId(const ::java::lang::Object&) const ;
-    ::java::lang::Object getPropagationId() const ;
-    ::java::lang::Object getOldValue() const ;
-    ::java::lang::Object getNewValue() const ;
+    ::java::lang::String getPropertyName() const;
+    void setPropagationId(const ::java::lang::Object&) const;
+    ::java::lang::Object getPropagationId() const;
+    ::java::lang::Object getOldValue() const;
+    ::java::lang::Object getNewValue() const;
 
 };
 }

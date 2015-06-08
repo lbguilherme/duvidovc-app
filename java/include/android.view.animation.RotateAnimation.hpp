@@ -40,7 +40,7 @@ public:
     RotateAnimation(float, float);
     RotateAnimation(float, float, float, float);
     RotateAnimation(float, float, int32_t, float, int32_t, float);
-    void initialize(int32_t, int32_t, int32_t, int32_t) const ;
+    void initialize(int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

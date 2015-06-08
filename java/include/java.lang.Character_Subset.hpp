@@ -33,9 +33,9 @@ public:
     ::java::lang::Character_Subset& operator=(const ::java::lang::Character_Subset& x) {obj = x.obj; return *this;}
     ::java::lang::Character_Subset& operator=(::java::lang::Character_Subset&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

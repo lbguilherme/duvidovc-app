@@ -35,8 +35,8 @@ public:
     ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair& operator=(const ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair& x) {obj = x.obj; return *this;}
     ::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair& operator=(::com::facebook::appevents::AppEventsLogger_AccessTokenAppIdPair&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

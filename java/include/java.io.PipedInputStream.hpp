@@ -38,11 +38,11 @@ public:
     PipedInputStream(const ::java::io::PipedOutputStream&);
     PipedInputStream(int32_t);
     PipedInputStream(const ::java::io::PipedOutputStream&, int32_t);
-    int32_t available() const ;
-    void close() const ;
-    void connect(const ::java::io::PipedOutputStream&) const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    int32_t available() const;
+    void close() const;
+    void connect(const ::java::io::PipedOutputStream&) const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

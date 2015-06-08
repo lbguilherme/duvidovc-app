@@ -41,12 +41,12 @@ public:
     ::org::apache::http::entity::ByteArrayEntity& operator=(::org::apache::http::entity::ByteArrayEntity&& x) {obj = std::move(x.obj); return *this;}
     
     ByteArrayEntity(const std::vector< int8_t>&);
-    bool isRepeatable() const ;
-    int64_t getContentLength() const ;
-    ::java::io::InputStream getContent() const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    ::java::lang::Object clone() const ;
+    bool isRepeatable() const;
+    int64_t getContentLength() const;
+    ::java::io::InputStream getContent() const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    ::java::lang::Object clone() const;
 
 };
 }

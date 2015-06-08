@@ -38,20 +38,20 @@ public:
     ::java::util::logging::Handler& operator=(const ::java::util::logging::Handler& x) {obj = x.obj; return *this;}
     ::java::util::logging::Handler& operator=(::java::util::logging::Handler&& x) {obj = std::move(x.obj); return *this;}
     
-    void close() const ;
-    void flush() const ;
-    void publish(const ::java::util::logging::LogRecord&) const ;
-    ::java::lang::String getEncoding() const ;
-    ::java::util::logging::ErrorManager getErrorManager() const ;
-    ::java::util::logging::Filter getFilter() const ;
-    ::java::util::logging::Formatter getFormatter() const ;
-    ::java::util::logging::Level getLevel() const ;
-    bool isLoggable(const ::java::util::logging::LogRecord&) const ;
-    void setEncoding(const ::java::lang::String&) const ;
-    void setErrorManager(const ::java::util::logging::ErrorManager&) const ;
-    void setFilter(const ::java::util::logging::Filter&) const ;
-    void setFormatter(const ::java::util::logging::Formatter&) const ;
-    void setLevel(const ::java::util::logging::Level&) const ;
+    void close() const;
+    void flush() const;
+    void publish(const ::java::util::logging::LogRecord&) const;
+    ::java::lang::String getEncoding() const;
+    ::java::util::logging::ErrorManager getErrorManager() const;
+    ::java::util::logging::Filter getFilter() const;
+    ::java::util::logging::Formatter getFormatter() const;
+    ::java::util::logging::Level getLevel() const;
+    bool isLoggable(const ::java::util::logging::LogRecord&) const;
+    void setEncoding(const ::java::lang::String&) const;
+    void setErrorManager(const ::java::util::logging::ErrorManager&) const;
+    void setFilter(const ::java::util::logging::Filter&) const;
+    void setFormatter(const ::java::util::logging::Formatter&) const;
+    void setLevel(const ::java::util::logging::Level&) const;
 
 };
 }

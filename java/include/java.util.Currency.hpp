@@ -38,11 +38,11 @@ public:
     
     static ::java::util::Currency getInstance(const ::java::lang::String&);
     static ::java::util::Currency getInstance(const ::java::util::Locale&);
-    ::java::lang::String getCurrencyCode() const ;
-    ::java::lang::String getSymbol() const ;
-    ::java::lang::String getSymbol(const ::java::util::Locale&) const ;
-    int32_t getDefaultFractionDigits() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getCurrencyCode() const;
+    ::java::lang::String getSymbol() const;
+    ::java::lang::String getSymbol(const ::java::util::Locale&) const;
+    int32_t getDefaultFractionDigits() const;
+    ::java::lang::String toString() const;
 
 };
 }

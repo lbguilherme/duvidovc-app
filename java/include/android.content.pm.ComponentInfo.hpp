@@ -38,10 +38,10 @@ public:
     ::android::content::pm::ComponentInfo& operator=(::android::content::pm::ComponentInfo&& x) {obj = std::move(x.obj); return *this;}
     
     ComponentInfo();
-    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const ;
-    bool isEnabled() const ;
-    int32_t getIconResource() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const;
+    bool isEnabled() const;
+    int32_t getIconResource() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

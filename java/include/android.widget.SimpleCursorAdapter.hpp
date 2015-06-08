@@ -44,18 +44,18 @@ public:
     
     SimpleCursorAdapter(const ::android::content::Context&, int32_t, const ::android::database::Cursor&, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&);
     SimpleCursorAdapter(const ::android::content::Context&, int32_t, const ::android::database::Cursor&, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&, int32_t);
-    void bindView(const ::android::view::View&, const ::android::content::Context&, const ::android::database::Cursor&) const ;
-    ::android::widget::SimpleCursorAdapter_ViewBinder getViewBinder() const ;
-    void setViewBinder(const ::android::widget::SimpleCursorAdapter_ViewBinder&) const ;
-    void setViewImage(const ::android::widget::ImageView&, const ::java::lang::String&) const ;
-    void setViewText(const ::android::widget::TextView&, const ::java::lang::String&) const ;
-    int32_t getStringConversionColumn() const ;
-    void setStringConversionColumn(int32_t) const ;
-    ::android::widget::SimpleCursorAdapter_CursorToStringConverter getCursorToStringConverter() const ;
-    void setCursorToStringConverter(const ::android::widget::SimpleCursorAdapter_CursorToStringConverter&) const ;
-    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const ;
-    ::android::database::Cursor swapCursor(const ::android::database::Cursor&) const ;
-    void changeCursorAndColumns(const ::android::database::Cursor&, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&) const ;
+    void bindView(const ::android::view::View&, const ::android::content::Context&, const ::android::database::Cursor&) const;
+    ::android::widget::SimpleCursorAdapter_ViewBinder getViewBinder() const;
+    void setViewBinder(const ::android::widget::SimpleCursorAdapter_ViewBinder&) const;
+    void setViewImage(const ::android::widget::ImageView&, const ::java::lang::String&) const;
+    void setViewText(const ::android::widget::TextView&, const ::java::lang::String&) const;
+    int32_t getStringConversionColumn() const;
+    void setStringConversionColumn(int32_t) const;
+    ::android::widget::SimpleCursorAdapter_CursorToStringConverter getCursorToStringConverter() const;
+    void setCursorToStringConverter(const ::android::widget::SimpleCursorAdapter_CursorToStringConverter&) const;
+    ::java::lang::CharSequence convertToString(const ::android::database::Cursor&) const;
+    ::android::database::Cursor swapCursor(const ::android::database::Cursor&) const;
+    void changeCursorAndColumns(const ::android::database::Cursor&, const std::vector< ::java::lang::String>&, const std::vector< int32_t>&) const;
 
 };
 }

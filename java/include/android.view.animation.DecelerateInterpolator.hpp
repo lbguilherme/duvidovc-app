@@ -39,7 +39,7 @@ public:
     DecelerateInterpolator();
     DecelerateInterpolator(float);
     DecelerateInterpolator(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    float getInterpolation(float) const ;
+    float getInterpolation(float) const;
 
 };
 }

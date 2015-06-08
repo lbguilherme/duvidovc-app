@@ -33,7 +33,7 @@ public:
     ::android::preference::Preference_OnPreferenceChangeListener& operator=(const ::android::preference::Preference_OnPreferenceChangeListener& x) {obj = x.obj; return *this;}
     ::android::preference::Preference_OnPreferenceChangeListener& operator=(::android::preference::Preference_OnPreferenceChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onPreferenceChange(const ::android::preference::Preference&, const ::java::lang::Object&) const ;
+    bool onPreferenceChange(const ::android::preference::Preference&, const ::java::lang::Object&) const;
 
 };
 }

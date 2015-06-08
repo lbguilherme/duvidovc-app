@@ -36,9 +36,9 @@ public:
     ::android::content::res::AssetFileDescriptor_AutoCloseOutputStream& operator=(::android::content::res::AssetFileDescriptor_AutoCloseOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
     AssetFileDescriptor_AutoCloseOutputStream(const ::android::content::res::AssetFileDescriptor&);
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(const std::vector< int8_t>&) const ;
-    void write(int32_t) const ;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(const std::vector< int8_t>&) const;
+    void write(int32_t) const;
 
 };
 }

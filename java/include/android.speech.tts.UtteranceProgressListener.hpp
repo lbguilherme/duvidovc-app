@@ -34,9 +34,9 @@ public:
     ::android::speech::tts::UtteranceProgressListener& operator=(::android::speech::tts::UtteranceProgressListener&& x) {obj = std::move(x.obj); return *this;}
     
     UtteranceProgressListener();
-    void onStart(const ::java::lang::String&) const ;
-    void onDone(const ::java::lang::String&) const ;
-    void onError(const ::java::lang::String&) const ;
+    void onStart(const ::java::lang::String&) const;
+    void onDone(const ::java::lang::String&) const;
+    void onError(const ::java::lang::String&) const;
 
 };
 }

@@ -36,12 +36,12 @@ public:
     ::android::renderscript::Program_BaseProgramBuilder& operator=(const ::android::renderscript::Program_BaseProgramBuilder& x) {obj = x.obj; return *this;}
     ::android::renderscript::Program_BaseProgramBuilder& operator=(::android::renderscript::Program_BaseProgramBuilder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::renderscript::Program_BaseProgramBuilder setShader(const ::java::lang::String&) const ;
-    ::android::renderscript::Program_BaseProgramBuilder setShader(const ::android::content::res::Resources&, int32_t) const ;
-    int32_t getCurrentConstantIndex() const ;
-    int32_t getCurrentTextureIndex() const ;
-    ::android::renderscript::Program_BaseProgramBuilder addConstant(const ::android::renderscript::Type&) const ;
-    ::android::renderscript::Program_BaseProgramBuilder addTexture(const ::android::renderscript::Program_TextureType&) const ;
+    ::android::renderscript::Program_BaseProgramBuilder setShader(const ::java::lang::String&) const;
+    ::android::renderscript::Program_BaseProgramBuilder setShader(const ::android::content::res::Resources&, int32_t) const;
+    int32_t getCurrentConstantIndex() const;
+    int32_t getCurrentTextureIndex() const;
+    ::android::renderscript::Program_BaseProgramBuilder addConstant(const ::android::renderscript::Type&) const;
+    ::android::renderscript::Program_BaseProgramBuilder addTexture(const ::android::renderscript::Program_TextureType&) const;
 
 };
 }

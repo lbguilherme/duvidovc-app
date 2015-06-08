@@ -34,7 +34,7 @@ public:
     ::java::lang::reflect::InvocationHandler& operator=(const ::java::lang::reflect::InvocationHandler& x) {obj = x.obj; return *this;}
     ::java::lang::reflect::InvocationHandler& operator=(::java::lang::reflect::InvocationHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object invoke(const ::java::lang::Object&, const ::java::lang::reflect::Method&, const std::vector< ::java::lang::Object>&) const ;
+    ::java::lang::Object invoke(const ::java::lang::Object&, const ::java::lang::reflect::Method&, const std::vector< ::java::lang::Object>&) const;
 
 };
 }

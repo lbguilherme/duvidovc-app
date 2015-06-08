@@ -35,7 +35,7 @@ public:
     ::java::text::ParseException& operator=(::java::text::ParseException&& x) {obj = std::move(x.obj); return *this;}
     
     ParseException(const ::java::lang::String&, int32_t);
-    int32_t getErrorOffset() const ;
+    int32_t getErrorOffset() const;
 
 };
 }

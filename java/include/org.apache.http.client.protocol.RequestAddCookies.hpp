@@ -39,7 +39,7 @@ public:
     ::org::apache::http::client::protocol::RequestAddCookies& operator=(::org::apache::http::client::protocol::RequestAddCookies&& x) {obj = std::move(x.obj); return *this;}
     
     RequestAddCookies();
-    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

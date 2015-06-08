@@ -41,12 +41,12 @@ public:
     SurfaceView(const ::android::content::Context&);
     SurfaceView(const ::android::content::Context&, const ::android::util::AttributeSet&);
     SurfaceView(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    ::android::view::SurfaceHolder getHolder() const ;
-    void setVisibility(int32_t) const ;
-    bool gatherTransparentRegion(const ::android::graphics::Region&) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
-    void setZOrderMediaOverlay(bool) const ;
-    void setZOrderOnTop(bool) const ;
+    ::android::view::SurfaceHolder getHolder() const;
+    void setVisibility(int32_t) const;
+    bool gatherTransparentRegion(const ::android::graphics::Region&) const;
+    void draw(const ::android::graphics::Canvas&) const;
+    void setZOrderMediaOverlay(bool) const;
+    void setZOrderOnTop(bool) const;
 
 };
 }

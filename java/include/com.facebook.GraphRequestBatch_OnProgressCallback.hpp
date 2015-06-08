@@ -34,7 +34,7 @@ public:
     ::com::facebook::GraphRequestBatch_OnProgressCallback& operator=(const ::com::facebook::GraphRequestBatch_OnProgressCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::GraphRequestBatch_OnProgressCallback& operator=(::com::facebook::GraphRequestBatch_OnProgressCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onBatchProgress(const ::com::facebook::GraphRequestBatch&, int64_t, int64_t) const ;
+    void onBatchProgress(const ::com::facebook::GraphRequestBatch&, int64_t, int64_t) const;
 
 };
 }

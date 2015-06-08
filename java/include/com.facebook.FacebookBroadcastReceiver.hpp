@@ -36,7 +36,7 @@ public:
     ::com::facebook::FacebookBroadcastReceiver& operator=(::com::facebook::FacebookBroadcastReceiver&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookBroadcastReceiver();
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::java::lang::ref::PhantomReference& operator=(::java::lang::ref::PhantomReference&& x) {obj = std::move(x.obj); return *this;}
     
     PhantomReference(const ::java::lang::Object&, const ::java::lang::ref::ReferenceQueue&);
-    ::java::lang::Object get() const ;
+    ::java::lang::Object get() const;
 
 };
 }

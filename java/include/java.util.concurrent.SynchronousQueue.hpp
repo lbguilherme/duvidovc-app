@@ -44,27 +44,27 @@ public:
     
     SynchronousQueue();
     SynchronousQueue(bool);
-    void put(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    bool offer(const ::java::lang::Object&) const ;
-    ::java::lang::Object take() const ;
-    ::java::lang::Object poll(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    ::java::lang::Object poll() const ;
-    bool isEmpty() const ;
-    int32_t size() const ;
-    int32_t remainingCapacity() const ;
-    void clear() const ;
-    bool contains(const ::java::lang::Object&) const ;
-    bool remove(const ::java::lang::Object&) const ;
-    bool containsAll(const ::java::util::Collection&) const ;
-    bool removeAll(const ::java::util::Collection&) const ;
-    bool retainAll(const ::java::util::Collection&) const ;
-    ::java::lang::Object peek() const ;
-    ::java::util::Iterator iterator() const ;
-    std::vector< ::java::lang::Object> toArray() const ;
-    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const ;
-    int32_t drainTo(const ::java::util::Collection&) const ;
-    int32_t drainTo(const ::java::util::Collection&, int32_t) const ;
+    void put(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    bool offer(const ::java::lang::Object&) const;
+    ::java::lang::Object take() const;
+    ::java::lang::Object poll(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    ::java::lang::Object poll() const;
+    bool isEmpty() const;
+    int32_t size() const;
+    int32_t remainingCapacity() const;
+    void clear() const;
+    bool contains(const ::java::lang::Object&) const;
+    bool remove(const ::java::lang::Object&) const;
+    bool containsAll(const ::java::util::Collection&) const;
+    bool removeAll(const ::java::util::Collection&) const;
+    bool retainAll(const ::java::util::Collection&) const;
+    ::java::lang::Object peek() const;
+    ::java::util::Iterator iterator() const;
+    std::vector< ::java::lang::Object> toArray() const;
+    std::vector< ::java::lang::Object> toArray(const std::vector< ::java::lang::Object>&) const;
+    int32_t drainTo(const ::java::util::Collection&) const;
+    int32_t drainTo(const ::java::util::Collection&, int32_t) const;
 
 };
 }

@@ -34,15 +34,15 @@ public:
     ::android::text::SpannableStringInternal& operator=(const ::android::text::SpannableStringInternal& x) {obj = x.obj; return *this;}
     ::android::text::SpannableStringInternal& operator=(::android::text::SpannableStringInternal&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t length() const ;
-    uint16_t charAt(int32_t) const ;
-    ::java::lang::String toString() const ;
-    void getChars(int32_t, int32_t, const std::vector< uint16_t>&, int32_t) const ;
-    int32_t getSpanStart(const ::java::lang::Object&) const ;
-    int32_t getSpanEnd(const ::java::lang::Object&) const ;
-    int32_t getSpanFlags(const ::java::lang::Object&) const ;
-    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const ;
-    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const ;
+    int32_t length() const;
+    uint16_t charAt(int32_t) const;
+    ::java::lang::String toString() const;
+    void getChars(int32_t, int32_t, const std::vector< uint16_t>&, int32_t) const;
+    int32_t getSpanStart(const ::java::lang::Object&) const;
+    int32_t getSpanEnd(const ::java::lang::Object&) const;
+    int32_t getSpanFlags(const ::java::lang::Object&) const;
+    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const;
+    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const;
 
 };
 }

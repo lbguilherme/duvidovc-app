@@ -41,12 +41,12 @@ public:
     static ::javax::xml::xpath::XPathFactory newInstance();
     static ::javax::xml::xpath::XPathFactory newInstance(const ::java::lang::String&);
     static ::javax::xml::xpath::XPathFactory newInstance(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::ClassLoader&);
-    bool isObjectModelSupported(const ::java::lang::String&) const ;
-    void setFeature(const ::java::lang::String&, bool) const ;
-    bool getFeature(const ::java::lang::String&) const ;
-    void setXPathVariableResolver(const ::javax::xml::xpath::XPathVariableResolver&) const ;
-    void setXPathFunctionResolver(const ::javax::xml::xpath::XPathFunctionResolver&) const ;
-    ::javax::xml::xpath::XPath newXPath() const ;
+    bool isObjectModelSupported(const ::java::lang::String&) const;
+    void setFeature(const ::java::lang::String&, bool) const;
+    bool getFeature(const ::java::lang::String&) const;
+    void setXPathVariableResolver(const ::javax::xml::xpath::XPathVariableResolver&) const;
+    void setXPathFunctionResolver(const ::javax::xml::xpath::XPathFunctionResolver&) const;
+    ::javax::xml::xpath::XPath newXPath() const;
 
 };
 }

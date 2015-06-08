@@ -33,7 +33,7 @@ public:
     ::android::widget::ShareActionProvider_OnShareTargetSelectedListener& operator=(const ::android::widget::ShareActionProvider_OnShareTargetSelectedListener& x) {obj = x.obj; return *this;}
     ::android::widget::ShareActionProvider_OnShareTargetSelectedListener& operator=(::android::widget::ShareActionProvider_OnShareTargetSelectedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onShareTargetSelected(const ::android::widget::ShareActionProvider&, const ::android::content::Intent&) const ;
+    bool onShareTargetSelected(const ::android::widget::ShareActionProvider&, const ::android::content::Intent&) const;
 
 };
 }

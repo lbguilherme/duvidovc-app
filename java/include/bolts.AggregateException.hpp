@@ -40,11 +40,11 @@ public:
     AggregateException(const ::java::lang::String&, const std::vector< ::java::lang::Throwable>&);
     AggregateException(const ::java::lang::String&, const ::java::util::List&);
     AggregateException(const ::java::util::List&);
-    ::java::util::List getInnerThrowables() const ;
-    void printStackTrace(const ::java::io::PrintStream&) const ;
-    void printStackTrace(const ::java::io::PrintWriter&) const ;
-    ::java::util::List getErrors() const ;
-    std::vector< ::java::lang::Throwable> getCauses() const ;
+    ::java::util::List getInnerThrowables() const;
+    void printStackTrace(const ::java::io::PrintStream&) const;
+    void printStackTrace(const ::java::io::PrintWriter&) const;
+    ::java::util::List getErrors() const;
+    std::vector< ::java::lang::Throwable> getCauses() const;
 
 };
 }

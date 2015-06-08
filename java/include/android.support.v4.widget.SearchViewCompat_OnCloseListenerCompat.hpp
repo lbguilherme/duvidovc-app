@@ -34,7 +34,7 @@ public:
     ::android::support::v4::widget::SearchViewCompat_OnCloseListenerCompat& operator=(::android::support::v4::widget::SearchViewCompat_OnCloseListenerCompat&& x) {obj = std::move(x.obj); return *this;}
     
     SearchViewCompat_OnCloseListenerCompat();
-    bool onClose() const ;
+    bool onClose() const;
 
 };
 }

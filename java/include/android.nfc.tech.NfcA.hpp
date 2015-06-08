@@ -37,16 +37,16 @@ public:
     ::android::nfc::tech::NfcA& operator=(::android::nfc::tech::NfcA&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::nfc::tech::NfcA get(const ::android::nfc::Tag&);
-    std::vector< int8_t> getAtqa() const ;
-    int16_t getSak() const ;
-    std::vector< int8_t> transceive(const std::vector< int8_t>&) const ;
-    int32_t getMaxTransceiveLength() const ;
-    void setTimeout(int32_t) const ;
-    int32_t getTimeout() const ;
-    void close() const ;
-    void connect() const ;
-    bool isConnected() const ;
-    ::android::nfc::Tag getTag() const ;
+    std::vector< int8_t> getAtqa() const;
+    int16_t getSak() const;
+    std::vector< int8_t> transceive(const std::vector< int8_t>&) const;
+    int32_t getMaxTransceiveLength() const;
+    void setTimeout(int32_t) const;
+    int32_t getTimeout() const;
+    void close() const;
+    void connect() const;
+    bool isConnected() const;
+    ::android::nfc::Tag getTag() const;
 
 };
 }

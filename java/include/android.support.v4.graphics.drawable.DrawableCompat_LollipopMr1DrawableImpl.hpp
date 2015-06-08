@@ -37,7 +37,7 @@ public:
     ::android::support::v4::graphics::drawable::DrawableCompat_LollipopMr1DrawableImpl& operator=(const ::android::support::v4::graphics::drawable::DrawableCompat_LollipopMr1DrawableImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::drawable::DrawableCompat_LollipopMr1DrawableImpl& operator=(::android::support::v4::graphics::drawable::DrawableCompat_LollipopMr1DrawableImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const ;
+    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const;
 
 };
 }

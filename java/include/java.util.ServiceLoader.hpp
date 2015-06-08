@@ -38,12 +38,12 @@ public:
     ::java::util::ServiceLoader& operator=(const ::java::util::ServiceLoader& x) {obj = x.obj; return *this;}
     ::java::util::ServiceLoader& operator=(::java::util::ServiceLoader&& x) {obj = std::move(x.obj); return *this;}
     
-    void reload() const ;
-    ::java::util::Iterator iterator() const ;
+    void reload() const;
+    ::java::util::Iterator iterator() const;
     static ::java::util::ServiceLoader load(const ::java::lang::Class&, const ::java::lang::ClassLoader&);
     static ::java::util::ServiceLoader load(const ::java::lang::Class&);
     static ::java::util::ServiceLoader loadInstalled(const ::java::lang::Class&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

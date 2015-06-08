@@ -32,8 +32,8 @@ public:
     ::android::os::Parcelable& operator=(const ::android::os::Parcelable& x) {obj = x.obj; return *this;}
     ::android::os::Parcelable& operator=(::android::os::Parcelable&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

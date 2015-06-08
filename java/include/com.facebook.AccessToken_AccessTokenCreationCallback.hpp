@@ -33,8 +33,8 @@ public:
     ::com::facebook::AccessToken_AccessTokenCreationCallback& operator=(const ::com::facebook::AccessToken_AccessTokenCreationCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::AccessToken_AccessTokenCreationCallback& operator=(::com::facebook::AccessToken_AccessTokenCreationCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSuccess(const ::com::facebook::AccessToken&) const ;
-    void onError(const ::com::facebook::FacebookException&) const ;
+    void onSuccess(const ::com::facebook::AccessToken&) const;
+    void onError(const ::com::facebook::FacebookException&) const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::java::lang::Thread_UncaughtExceptionHandler& operator=(const ::java::lang::Thread_UncaughtExceptionHandler& x) {obj = x.obj; return *this;}
     ::java::lang::Thread_UncaughtExceptionHandler& operator=(::java::lang::Thread_UncaughtExceptionHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void uncaughtException(const ::java::lang::Thread&, const ::java::lang::Throwable&) const ;
+    void uncaughtException(const ::java::lang::Thread&, const ::java::lang::Throwable&) const;
 
 };
 }

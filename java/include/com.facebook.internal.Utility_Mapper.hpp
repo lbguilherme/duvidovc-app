@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::Utility_Mapper& operator=(const ::com::facebook::internal::Utility_Mapper& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::Utility_Mapper& operator=(::com::facebook::internal::Utility_Mapper&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object apply(const ::java::lang::Object&) const ;
+    ::java::lang::Object apply(const ::java::lang::Object&) const;
 
 };
 }

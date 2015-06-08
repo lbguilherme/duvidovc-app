@@ -43,14 +43,14 @@ public:
     
     BasicHeaderValueParser();
     static std::vector< ::org::apache::http::HeaderElement> parseElements(const ::java::lang::String&, const ::org::apache::http::message::HeaderValueParser&);
-    std::vector< ::org::apache::http::HeaderElement> parseElements(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    std::vector< ::org::apache::http::HeaderElement> parseElements(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
     static ::org::apache::http::HeaderElement parseHeaderElement(const ::java::lang::String&, const ::org::apache::http::message::HeaderValueParser&);
-    ::org::apache::http::HeaderElement parseHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    ::org::apache::http::HeaderElement parseHeaderElement(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
     static std::vector< ::org::apache::http::NameValuePair> parseParameters(const ::java::lang::String&, const ::org::apache::http::message::HeaderValueParser&);
-    std::vector< ::org::apache::http::NameValuePair> parseParameters(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    std::vector< ::org::apache::http::NameValuePair> parseParameters(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
     static ::org::apache::http::NameValuePair parseNameValuePair(const ::java::lang::String&, const ::org::apache::http::message::HeaderValueParser&);
-    ::org::apache::http::NameValuePair parseNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    ::org::apache::http::NameValuePair parseNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&, const std::vector< uint16_t>&) const ;
+    ::org::apache::http::NameValuePair parseNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    ::org::apache::http::NameValuePair parseNameValuePair(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&, const std::vector< uint16_t>&) const;
 
 };
 }

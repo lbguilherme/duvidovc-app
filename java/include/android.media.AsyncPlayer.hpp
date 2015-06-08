@@ -35,8 +35,8 @@ public:
     ::android::media::AsyncPlayer& operator=(::android::media::AsyncPlayer&& x) {obj = std::move(x.obj); return *this;}
     
     AsyncPlayer(const ::java::lang::String&);
-    void play(const ::android::content::Context&, const ::android::net::Uri&, bool, int32_t) const ;
-    void stop() const ;
+    void play(const ::android::content::Context&, const ::android::net::Uri&, bool, int32_t) const;
+    void stop() const;
 
 };
 }

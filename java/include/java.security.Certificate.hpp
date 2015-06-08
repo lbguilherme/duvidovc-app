@@ -36,13 +36,13 @@ public:
     ::java::security::Certificate& operator=(const ::java::security::Certificate& x) {obj = x.obj; return *this;}
     ::java::security::Certificate& operator=(::java::security::Certificate&& x) {obj = std::move(x.obj); return *this;}
     
-    void decode(const ::java::io::InputStream&) const ;
-    void encode(const ::java::io::OutputStream&) const ;
-    ::java::lang::String getFormat() const ;
-    ::java::security::Principal getGuarantor() const ;
-    ::java::security::Principal getPrincipal() const ;
-    ::java::security::PublicKey getPublicKey() const ;
-    ::java::lang::String toString(bool) const ;
+    void decode(const ::java::io::InputStream&) const;
+    void encode(const ::java::io::OutputStream&) const;
+    ::java::lang::String getFormat() const;
+    ::java::security::Principal getGuarantor() const;
+    ::java::security::Principal getPrincipal() const;
+    ::java::security::PublicKey getPublicKey() const;
+    ::java::lang::String toString(bool) const;
 
 };
 }

@@ -39,19 +39,19 @@ public:
     
     ListPreference(const ::android::content::Context&, const ::android::util::AttributeSet&);
     ListPreference(const ::android::content::Context&);
-    void setEntries(const std::vector< ::java::lang::CharSequence>&) const ;
-    void setEntries(int32_t) const ;
-    std::vector< ::java::lang::CharSequence> getEntries() const ;
-    void setEntryValues(const std::vector< ::java::lang::CharSequence>&) const ;
-    void setEntryValues(int32_t) const ;
-    std::vector< ::java::lang::CharSequence> getEntryValues() const ;
-    void setValue(const ::java::lang::String&) const ;
-    ::java::lang::CharSequence getSummary() const ;
-    void setSummary(const ::java::lang::CharSequence&) const ;
-    void setValueIndex(int32_t) const ;
-    ::java::lang::String getValue() const ;
-    ::java::lang::CharSequence getEntry() const ;
-    int32_t findIndexOfValue(const ::java::lang::String&) const ;
+    void setEntries(const std::vector< ::java::lang::CharSequence>&) const;
+    void setEntries(int32_t) const;
+    std::vector< ::java::lang::CharSequence> getEntries() const;
+    void setEntryValues(const std::vector< ::java::lang::CharSequence>&) const;
+    void setEntryValues(int32_t) const;
+    std::vector< ::java::lang::CharSequence> getEntryValues() const;
+    void setValue(const ::java::lang::String&) const;
+    ::java::lang::CharSequence getSummary() const;
+    void setSummary(const ::java::lang::CharSequence&) const;
+    void setValueIndex(int32_t) const;
+    ::java::lang::String getValue() const;
+    ::java::lang::CharSequence getEntry() const;
+    int32_t findIndexOfValue(const ::java::lang::String&) const;
 
 };
 }

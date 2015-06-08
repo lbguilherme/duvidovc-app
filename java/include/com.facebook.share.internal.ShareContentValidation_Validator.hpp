@@ -42,16 +42,16 @@ public:
     ::com::facebook::share::internal::ShareContentValidation_Validator& operator=(const ::com::facebook::share::internal::ShareContentValidation_Validator& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::ShareContentValidation_Validator& operator=(::com::facebook::share::internal::ShareContentValidation_Validator&& x) {obj = std::move(x.obj); return *this;}
     
-    void validate(const ::com::facebook::share::model::ShareLinkContent&) const ;
-    void validate(const ::com::facebook::share::model::SharePhotoContent&) const ;
-    void validate(const ::com::facebook::share::model::ShareVideoContent&) const ;
-    void validate(const ::com::facebook::share::model::ShareOpenGraphContent&) const ;
-    void validate(const ::com::facebook::share::model::ShareOpenGraphAction&) const ;
-    void validate(const ::com::facebook::share::model::ShareOpenGraphObject&) const ;
-    void validate(const ::com::facebook::share::model::ShareOpenGraphValueContainer&, bool) const ;
-    void validate(const ::com::facebook::share::model::SharePhoto&) const ;
-    void validate(const ::com::facebook::share::model::ShareVideo&) const ;
-    bool isOpenGraphContent() const ;
+    void validate(const ::com::facebook::share::model::ShareLinkContent&) const;
+    void validate(const ::com::facebook::share::model::SharePhotoContent&) const;
+    void validate(const ::com::facebook::share::model::ShareVideoContent&) const;
+    void validate(const ::com::facebook::share::model::ShareOpenGraphContent&) const;
+    void validate(const ::com::facebook::share::model::ShareOpenGraphAction&) const;
+    void validate(const ::com::facebook::share::model::ShareOpenGraphObject&) const;
+    void validate(const ::com::facebook::share::model::ShareOpenGraphValueContainer&, bool) const;
+    void validate(const ::com::facebook::share::model::SharePhoto&) const;
+    void validate(const ::com::facebook::share::model::ShareVideo&) const;
+    bool isOpenGraphContent() const;
 
 };
 }

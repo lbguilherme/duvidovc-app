@@ -38,9 +38,9 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventIcsImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventIcsImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventIcsImpl& operator=(::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventIcsImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void appendRecord(const ::android::view::accessibility::AccessibilityEvent&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getRecord(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const ;
-    int32_t getRecordCount(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void appendRecord(const ::android::view::accessibility::AccessibilityEvent&, const ::java::lang::Object&) const;
+    ::java::lang::Object getRecord(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const;
+    int32_t getRecordCount(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

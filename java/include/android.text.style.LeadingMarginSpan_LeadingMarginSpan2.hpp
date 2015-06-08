@@ -36,7 +36,7 @@ public:
     ::android::text::style::LeadingMarginSpan_LeadingMarginSpan2& operator=(const ::android::text::style::LeadingMarginSpan_LeadingMarginSpan2& x) {obj = x.obj; return *this;}
     ::android::text::style::LeadingMarginSpan_LeadingMarginSpan2& operator=(::android::text::style::LeadingMarginSpan_LeadingMarginSpan2&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLeadingMarginLineCount() const ;
+    int32_t getLeadingMarginLineCount() const;
 
 };
 }

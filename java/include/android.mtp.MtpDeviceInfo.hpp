@@ -32,10 +32,10 @@ public:
     ::android::mtp::MtpDeviceInfo& operator=(const ::android::mtp::MtpDeviceInfo& x) {obj = x.obj; return *this;}
     ::android::mtp::MtpDeviceInfo& operator=(::android::mtp::MtpDeviceInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getManufacturer() const ;
-    ::java::lang::String getModel() const ;
-    ::java::lang::String getVersion() const ;
-    ::java::lang::String getSerialNumber() const ;
+    ::java::lang::String getManufacturer() const;
+    ::java::lang::String getModel() const;
+    ::java::lang::String getVersion() const;
+    ::java::lang::String getSerialNumber() const;
 
 };
 }

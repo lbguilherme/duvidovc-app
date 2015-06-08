@@ -42,11 +42,11 @@ public:
     
     SecretKeySpec(const std::vector< int8_t>&, const ::java::lang::String&);
     SecretKeySpec(const std::vector< int8_t>&, int32_t, int32_t, const ::java::lang::String&);
-    ::java::lang::String getAlgorithm() const ;
-    ::java::lang::String getFormat() const ;
-    std::vector< int8_t> getEncoded() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::lang::String getFormat() const;
+    std::vector< int8_t> getEncoded() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

@@ -37,10 +37,10 @@ public:
     ::android::support::v4::widget::DrawerLayout_SimpleDrawerListener& operator=(::android::support::v4::widget::DrawerLayout_SimpleDrawerListener&& x) {obj = std::move(x.obj); return *this;}
     
     DrawerLayout_SimpleDrawerListener();
-    void onDrawerSlide(const ::android::view::View&, float) const ;
-    void onDrawerOpened(const ::android::view::View&) const ;
-    void onDrawerClosed(const ::android::view::View&) const ;
-    void onDrawerStateChanged(int32_t) const ;
+    void onDrawerSlide(const ::android::view::View&, float) const;
+    void onDrawerOpened(const ::android::view::View&) const;
+    void onDrawerClosed(const ::android::view::View&) const;
+    void onDrawerStateChanged(int32_t) const;
 
 };
 }

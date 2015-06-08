@@ -33,8 +33,8 @@ public:
     ::org::apache::http::io::HttpTransportMetrics& operator=(const ::org::apache::http::io::HttpTransportMetrics& x) {obj = x.obj; return *this;}
     ::org::apache::http::io::HttpTransportMetrics& operator=(::org::apache::http::io::HttpTransportMetrics&& x) {obj = std::move(x.obj); return *this;}
     
-    int64_t getBytesTransferred() const ;
-    void reset() const ;
+    int64_t getBytesTransferred() const;
+    void reset() const;
 
 };
 }

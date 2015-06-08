@@ -35,7 +35,7 @@ public:
     ::java::nio::channels::ReadableByteChannel& operator=(const ::java::nio::channels::ReadableByteChannel& x) {obj = x.obj; return *this;}
     ::java::nio::channels::ReadableByteChannel& operator=(::java::nio::channels::ReadableByteChannel&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t read(const ::java::nio::ByteBuffer&) const ;
+    int32_t read(const ::java::nio::ByteBuffer&) const;
 
 };
 }

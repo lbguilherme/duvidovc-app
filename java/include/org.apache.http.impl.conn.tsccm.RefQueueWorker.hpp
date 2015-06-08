@@ -41,9 +41,9 @@ public:
     ::org::apache::http::impl::conn::tsccm::RefQueueWorker& operator=(::org::apache::http::impl::conn::tsccm::RefQueueWorker&& x) {obj = std::move(x.obj); return *this;}
     
     RefQueueWorker(const ::java::lang::ref::ReferenceQueue&, const ::org::apache::http::impl::conn::tsccm::RefQueueHandler&);
-    void run() const ;
-    void shutdown() const ;
-    ::java::lang::String toString() const ;
+    void run() const;
+    void shutdown() const;
+    ::java::lang::String toString() const;
 
 };
 }

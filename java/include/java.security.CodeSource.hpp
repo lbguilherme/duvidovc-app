@@ -39,10 +39,10 @@ public:
     
     CodeSource(const ::java::net::URL&, const std::vector< ::java::security::cert::Certificate>&);
     CodeSource(const ::java::net::URL&, const std::vector< ::java::security::CodeSigner>&);
-    std::vector< ::java::security::cert::Certificate> getCertificates() const ;
-    std::vector< ::java::security::CodeSigner> getCodeSigners() const ;
-    ::java::net::URL getLocation() const ;
-    bool implies(const ::java::security::CodeSource&) const ;
+    std::vector< ::java::security::cert::Certificate> getCertificates() const;
+    std::vector< ::java::security::CodeSigner> getCodeSigners() const;
+    ::java::net::URL getLocation() const;
+    bool implies(const ::java::security::CodeSource&) const;
 
 };
 }

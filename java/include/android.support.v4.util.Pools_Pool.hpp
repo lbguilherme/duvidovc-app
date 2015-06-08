@@ -34,8 +34,8 @@ public:
     ::android::support::v4::util::Pools_Pool& operator=(const ::android::support::v4::util::Pools_Pool& x) {obj = x.obj; return *this;}
     ::android::support::v4::util::Pools_Pool& operator=(::android::support::v4::util::Pools_Pool&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object acquire() const ;
-    bool release(const ::java::lang::Object&) const ;
+    ::java::lang::Object acquire() const;
+    bool release(const ::java::lang::Object&) const;
 
 };
 }

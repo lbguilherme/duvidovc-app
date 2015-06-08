@@ -37,9 +37,9 @@ public:
     ::android::speech::tts::TextToSpeechService& operator=(::android::speech::tts::TextToSpeechService&& x) {obj = std::move(x.obj); return *this;}
     
     TextToSpeechService();
-    void onCreate() const ;
-    void onDestroy() const ;
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
+    void onCreate() const;
+    void onDestroy() const;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
 
 };
 }

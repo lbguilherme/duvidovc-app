@@ -34,8 +34,8 @@ public:
     ::com::facebook::GraphRequest_Attachment& operator=(::com::facebook::GraphRequest_Attachment&& x) {obj = std::move(x.obj); return *this;}
     
     GraphRequest_Attachment(const ::com::facebook::GraphRequest&, const ::java::lang::Object&);
-    ::com::facebook::GraphRequest getRequest() const ;
-    ::java::lang::Object getValue() const ;
+    ::com::facebook::GraphRequest getRequest() const;
+    ::java::lang::Object getValue() const;
 
 };
 }

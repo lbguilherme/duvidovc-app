@@ -38,10 +38,10 @@ public:
     ::org::apache::http::impl::io::IdentityInputStream& operator=(::org::apache::http::impl::io::IdentityInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     IdentityInputStream(const ::org::apache::http::io::SessionInputBuffer&);
-    int32_t available() const ;
-    void close() const ;
-    int32_t read() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    int32_t available() const;
+    void close() const;
+    int32_t read() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

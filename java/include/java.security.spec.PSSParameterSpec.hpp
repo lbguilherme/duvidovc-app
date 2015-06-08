@@ -38,11 +38,11 @@ public:
     
     PSSParameterSpec(int32_t);
     PSSParameterSpec(const ::java::lang::String&, const ::java::lang::String&, const ::java::security::spec::AlgorithmParameterSpec&, int32_t, int32_t);
-    int32_t getSaltLength() const ;
-    ::java::lang::String getDigestAlgorithm() const ;
-    ::java::lang::String getMGFAlgorithm() const ;
-    ::java::security::spec::AlgorithmParameterSpec getMGFParameters() const ;
-    int32_t getTrailerField() const ;
+    int32_t getSaltLength() const;
+    ::java::lang::String getDigestAlgorithm() const;
+    ::java::lang::String getMGFAlgorithm() const;
+    ::java::security::spec::AlgorithmParameterSpec getMGFParameters() const;
+    int32_t getTrailerField() const;
 
 };
 }

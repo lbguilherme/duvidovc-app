@@ -36,11 +36,11 @@ public:
     
     GeolocationPermissions();
     static ::android::webkit::GeolocationPermissions getInstance();
-    void getOrigins(const ::android::webkit::ValueCallback&) const ;
-    void getAllowed(const ::java::lang::String&, const ::android::webkit::ValueCallback&) const ;
-    void clear(const ::java::lang::String&) const ;
-    void allow(const ::java::lang::String&) const ;
-    void clearAll() const ;
+    void getOrigins(const ::android::webkit::ValueCallback&) const;
+    void getAllowed(const ::java::lang::String&, const ::android::webkit::ValueCallback&) const;
+    void clear(const ::java::lang::String&) const;
+    void allow(const ::java::lang::String&) const;
+    void clearAll() const;
 
 };
 }

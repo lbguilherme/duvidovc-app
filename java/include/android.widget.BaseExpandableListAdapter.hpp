@@ -37,20 +37,20 @@ public:
     ::android::widget::BaseExpandableListAdapter& operator=(::android::widget::BaseExpandableListAdapter&& x) {obj = std::move(x.obj); return *this;}
     
     BaseExpandableListAdapter();
-    void registerDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    void notifyDataSetInvalidated() const ;
-    void notifyDataSetChanged() const ;
-    bool areAllItemsEnabled() const ;
-    void onGroupCollapsed(int32_t) const ;
-    void onGroupExpanded(int32_t) const ;
-    int64_t getCombinedChildId(int64_t, int64_t) const ;
-    int64_t getCombinedGroupId(int64_t) const ;
-    bool isEmpty() const ;
-    int32_t getChildType(int32_t, int32_t) const ;
-    int32_t getChildTypeCount() const ;
-    int32_t getGroupType(int32_t) const ;
-    int32_t getGroupTypeCount() const ;
+    void registerDataSetObserver(const ::android::database::DataSetObserver&) const;
+    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const;
+    void notifyDataSetInvalidated() const;
+    void notifyDataSetChanged() const;
+    bool areAllItemsEnabled() const;
+    void onGroupCollapsed(int32_t) const;
+    void onGroupExpanded(int32_t) const;
+    int64_t getCombinedChildId(int64_t, int64_t) const;
+    int64_t getCombinedGroupId(int64_t) const;
+    bool isEmpty() const;
+    int32_t getChildType(int32_t, int32_t) const;
+    int32_t getChildTypeCount() const;
+    int32_t getGroupType(int32_t) const;
+    int32_t getGroupTypeCount() const;
 
 };
 }

@@ -41,8 +41,8 @@ public:
     ::java::util::logging::LoggingPermission& operator=(::java::util::logging::LoggingPermission&& x) {obj = std::move(x.obj); return *this;}
     
     LoggingPermission(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getActions() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    ::java::lang::String getActions() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

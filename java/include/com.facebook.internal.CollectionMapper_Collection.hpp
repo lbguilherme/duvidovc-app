@@ -35,9 +35,9 @@ public:
     ::com::facebook::internal::CollectionMapper_Collection& operator=(const ::com::facebook::internal::CollectionMapper_Collection& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::CollectionMapper_Collection& operator=(::com::facebook::internal::CollectionMapper_Collection&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::Iterator keyIterator() const ;
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    void set(const ::java::lang::Object&, const ::java::lang::Object&, const ::com::facebook::internal::CollectionMapper_OnErrorListener&) const ;
+    ::java::util::Iterator keyIterator() const;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    void set(const ::java::lang::Object&, const ::java::lang::Object&, const ::com::facebook::internal::CollectionMapper_OnErrorListener&) const;
 
 };
 }

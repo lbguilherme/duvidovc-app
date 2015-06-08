@@ -32,7 +32,7 @@ public:
     ::android::opengl::GLSurfaceView_GLWrapper& operator=(const ::android::opengl::GLSurfaceView_GLWrapper& x) {obj = x.obj; return *this;}
     ::android::opengl::GLSurfaceView_GLWrapper& operator=(::android::opengl::GLSurfaceView_GLWrapper&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::microedition::khronos::opengles::GL wrap(const ::javax::microedition::khronos::opengles::GL&) const ;
+    ::javax::microedition::khronos::opengles::GL wrap(const ::javax::microedition::khronos::opengles::GL&) const;
 
 };
 }

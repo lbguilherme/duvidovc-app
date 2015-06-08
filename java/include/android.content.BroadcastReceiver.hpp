@@ -38,24 +38,24 @@ public:
     ::android::content::BroadcastReceiver& operator=(::android::content::BroadcastReceiver&& x) {obj = std::move(x.obj); return *this;}
     
     BroadcastReceiver();
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    ::android::content::BroadcastReceiver_PendingResult goAsync() const ;
-    ::android::os::IBinder peekService(const ::android::content::Context&, const ::android::content::Intent&) const ;
-    void setResultCode(int32_t) const ;
-    int32_t getResultCode() const ;
-    void setResultData(const ::java::lang::String&) const ;
-    ::java::lang::String getResultData() const ;
-    void setResultExtras(const ::android::os::Bundle&) const ;
-    ::android::os::Bundle getResultExtras(bool) const ;
-    void setResult(int32_t, const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    bool getAbortBroadcast() const ;
-    void abortBroadcast() const ;
-    void clearAbortBroadcast() const ;
-    bool isOrderedBroadcast() const ;
-    bool isInitialStickyBroadcast() const ;
-    void setOrderedHint(bool) const ;
-    void setDebugUnregister(bool) const ;
-    bool getDebugUnregister() const ;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
+    ::android::content::BroadcastReceiver_PendingResult goAsync() const;
+    ::android::os::IBinder peekService(const ::android::content::Context&, const ::android::content::Intent&) const;
+    void setResultCode(int32_t) const;
+    int32_t getResultCode() const;
+    void setResultData(const ::java::lang::String&) const;
+    ::java::lang::String getResultData() const;
+    void setResultExtras(const ::android::os::Bundle&) const;
+    ::android::os::Bundle getResultExtras(bool) const;
+    void setResult(int32_t, const ::java::lang::String&, const ::android::os::Bundle&) const;
+    bool getAbortBroadcast() const;
+    void abortBroadcast() const;
+    void clearAbortBroadcast() const;
+    bool isOrderedBroadcast() const;
+    bool isInitialStickyBroadcast() const;
+    void setOrderedHint(bool) const;
+    void setDebugUnregister(bool) const;
+    bool getDebugUnregister() const;
 
 };
 }

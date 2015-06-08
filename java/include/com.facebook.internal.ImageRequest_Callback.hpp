@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::ImageRequest_Callback& operator=(const ::com::facebook::internal::ImageRequest_Callback& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::ImageRequest_Callback& operator=(::com::facebook::internal::ImageRequest_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCompleted(const ::com::facebook::internal::ImageResponse&) const ;
+    void onCompleted(const ::com::facebook::internal::ImageResponse&) const;
 
 };
 }

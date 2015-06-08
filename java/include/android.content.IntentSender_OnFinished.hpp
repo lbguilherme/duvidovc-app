@@ -35,7 +35,7 @@ public:
     ::android::content::IntentSender_OnFinished& operator=(const ::android::content::IntentSender_OnFinished& x) {obj = x.obj; return *this;}
     ::android::content::IntentSender_OnFinished& operator=(::android::content::IntentSender_OnFinished&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSendFinished(const ::android::content::IntentSender&, const ::android::content::Intent&, int32_t, const ::java::lang::String&, const ::android::os::Bundle&) const ;
+    void onSendFinished(const ::android::content::IntentSender&, const ::android::content::Intent&, int32_t, const ::java::lang::String&, const ::android::os::Bundle&) const;
 
 };
 }

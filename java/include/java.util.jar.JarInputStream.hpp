@@ -40,10 +40,10 @@ public:
     
     JarInputStream(const ::java::io::InputStream&, bool);
     JarInputStream(const ::java::io::InputStream&);
-    ::java::util::jar::Manifest getManifest() const ;
-    ::java::util::jar::JarEntry getNextJarEntry() const ;
-    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    ::java::util::zip::ZipEntry getNextEntry() const ;
+    ::java::util::jar::Manifest getManifest() const;
+    ::java::util::jar::JarEntry getNextJarEntry() const;
+    int32_t read(const std::vector< int8_t>&, int32_t, int32_t) const;
+    ::java::util::zip::ZipEntry getNextEntry() const;
 
 };
 }

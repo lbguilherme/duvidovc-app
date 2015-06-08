@@ -38,10 +38,10 @@ public:
     ::com::facebook::share::widget::GameRequestDialog_WebHandler& operator=(const ::com::facebook::share::widget::GameRequestDialog_WebHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::share::widget::GameRequestDialog_WebHandler& operator=(::com::facebook::share::widget::GameRequestDialog_WebHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    bool canShow(const ::com::facebook::share::model::GameRequestContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::model::GameRequestContent&) const ;
-    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const ;
-    bool canShow(const ::java::lang::Object&) const ;
+    bool canShow(const ::com::facebook::share::model::GameRequestContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::com::facebook::share::model::GameRequestContent&) const;
+    ::com::facebook::internal::AppCall createAppCall(const ::java::lang::Object&) const;
+    bool canShow(const ::java::lang::Object&) const;
 
 };
 }

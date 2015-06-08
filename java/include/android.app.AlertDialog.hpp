@@ -43,27 +43,27 @@ public:
     ::android::app::AlertDialog& operator=(const ::android::app::AlertDialog& x) {obj = x.obj; return *this;}
     ::android::app::AlertDialog& operator=(::android::app::AlertDialog&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::widget::Button getButton(int32_t) const ;
-    ::android::widget::ListView getListView() const ;
-    void setTitle(const ::java::lang::CharSequence&) const ;
-    void setCustomTitle(const ::android::view::View&) const ;
-    void setMessage(const ::java::lang::CharSequence&) const ;
-    void setView(const ::android::view::View&) const ;
-    void setView(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const ;
-    void setButton(int32_t, const ::java::lang::CharSequence&, const ::android::os::Message&) const ;
-    void setButton(int32_t, const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const ;
-    void setButton(const ::java::lang::CharSequence&, const ::android::os::Message&) const ;
-    void setButton2(const ::java::lang::CharSequence&, const ::android::os::Message&) const ;
-    void setButton3(const ::java::lang::CharSequence&, const ::android::os::Message&) const ;
-    void setButton(const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const ;
-    void setButton2(const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const ;
-    void setButton3(const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const ;
-    void setIcon(int32_t) const ;
-    void setIcon(const ::android::graphics::drawable::Drawable&) const ;
-    void setIconAttribute(int32_t) const ;
-    void setInverseBackgroundForced(bool) const ;
-    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const ;
-    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const ;
+    ::android::widget::Button getButton(int32_t) const;
+    ::android::widget::ListView getListView() const;
+    void setTitle(const ::java::lang::CharSequence&) const;
+    void setCustomTitle(const ::android::view::View&) const;
+    void setMessage(const ::java::lang::CharSequence&) const;
+    void setView(const ::android::view::View&) const;
+    void setView(const ::android::view::View&, int32_t, int32_t, int32_t, int32_t) const;
+    void setButton(int32_t, const ::java::lang::CharSequence&, const ::android::os::Message&) const;
+    void setButton(int32_t, const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const;
+    void setButton(const ::java::lang::CharSequence&, const ::android::os::Message&) const;
+    void setButton2(const ::java::lang::CharSequence&, const ::android::os::Message&) const;
+    void setButton3(const ::java::lang::CharSequence&, const ::android::os::Message&) const;
+    void setButton(const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const;
+    void setButton2(const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const;
+    void setButton3(const ::java::lang::CharSequence&, const ::android::content::DialogInterface_OnClickListener&) const;
+    void setIcon(int32_t) const;
+    void setIcon(const ::android::graphics::drawable::Drawable&) const;
+    void setIconAttribute(int32_t) const;
+    void setInverseBackgroundForced(bool) const;
+    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const;
+    bool onKeyUp(int32_t, const ::android::view::KeyEvent&) const;
 
 };
 }

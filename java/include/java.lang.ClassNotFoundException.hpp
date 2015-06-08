@@ -38,8 +38,8 @@ public:
     ClassNotFoundException();
     ClassNotFoundException(const ::java::lang::String&);
     ClassNotFoundException(const ::java::lang::String&, const ::java::lang::Throwable&);
-    ::java::lang::Throwable getException() const ;
-    ::java::lang::Throwable getCause() const ;
+    ::java::lang::Throwable getException() const;
+    ::java::lang::Throwable getCause() const;
 
 };
 }

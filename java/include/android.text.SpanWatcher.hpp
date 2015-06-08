@@ -35,9 +35,9 @@ public:
     ::android::text::SpanWatcher& operator=(const ::android::text::SpanWatcher& x) {obj = x.obj; return *this;}
     ::android::text::SpanWatcher& operator=(::android::text::SpanWatcher&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSpanAdded(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const ;
-    void onSpanRemoved(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const ;
-    void onSpanChanged(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t, int32_t, int32_t) const ;
+    void onSpanAdded(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const;
+    void onSpanRemoved(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t) const;
+    void onSpanChanged(const ::android::text::Spannable&, const ::java::lang::Object&, int32_t, int32_t, int32_t, int32_t) const;
 
 };
 }

@@ -45,18 +45,18 @@ public:
     ::com::facebook::share::model::GameRequestContent_Builder& operator=(::com::facebook::share::model::GameRequestContent_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     GameRequestContent_Builder();
-    ::com::facebook::share::model::GameRequestContent_Builder setMessage(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder setTo(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder setData(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder setTitle(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder setActionType(const ::com::facebook::share::model::GameRequestContent_ActionType&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder setObjectId(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder setFilters(const ::com::facebook::share::model::GameRequestContent_Filters&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder setSuggestions(const ::java::util::ArrayList&) const ;
-    ::com::facebook::share::model::GameRequestContent build() const ;
-    ::com::facebook::share::model::GameRequestContent_Builder readFrom(const ::com::facebook::share::model::GameRequestContent&) const ;
-    ::com::facebook::share::model::GameRequestContent_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::GameRequestContent_Builder setMessage(const ::java::lang::String&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder setTo(const ::java::lang::String&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder setData(const ::java::lang::String&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder setTitle(const ::java::lang::String&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder setActionType(const ::com::facebook::share::model::GameRequestContent_ActionType&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder setObjectId(const ::java::lang::String&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder setFilters(const ::com::facebook::share::model::GameRequestContent_Filters&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder setSuggestions(const ::java::util::ArrayList&) const;
+    ::com::facebook::share::model::GameRequestContent build() const;
+    ::com::facebook::share::model::GameRequestContent_Builder readFrom(const ::com::facebook::share::model::GameRequestContent&) const;
+    ::com::facebook::share::model::GameRequestContent_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

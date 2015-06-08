@@ -41,23 +41,23 @@ public:
     
     TableLayout(const ::android::content::Context&);
     TableLayout(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setOnHierarchyChangeListener(const ::android::view::ViewGroup_OnHierarchyChangeListener&) const ;
-    void requestLayout() const ;
-    bool isShrinkAllColumns() const ;
-    void setShrinkAllColumns(bool) const ;
-    bool isStretchAllColumns() const ;
-    void setStretchAllColumns(bool) const ;
-    void setColumnCollapsed(int32_t, bool) const ;
-    bool isColumnCollapsed(int32_t) const ;
-    void setColumnStretchable(int32_t, bool) const ;
-    bool isColumnStretchable(int32_t) const ;
-    void setColumnShrinkable(int32_t, bool) const ;
-    bool isColumnShrinkable(int32_t) const ;
-    void addView(const ::android::view::View&) const ;
-    void addView(const ::android::view::View&, int32_t) const ;
-    void addView(const ::android::view::View&, const ::android::view::ViewGroup_LayoutParams&) const ;
-    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const ;
-    ::android::widget::TableLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const ;
+    void setOnHierarchyChangeListener(const ::android::view::ViewGroup_OnHierarchyChangeListener&) const;
+    void requestLayout() const;
+    bool isShrinkAllColumns() const;
+    void setShrinkAllColumns(bool) const;
+    bool isStretchAllColumns() const;
+    void setStretchAllColumns(bool) const;
+    void setColumnCollapsed(int32_t, bool) const;
+    bool isColumnCollapsed(int32_t) const;
+    void setColumnStretchable(int32_t, bool) const;
+    bool isColumnStretchable(int32_t) const;
+    void setColumnShrinkable(int32_t, bool) const;
+    bool isColumnShrinkable(int32_t) const;
+    void addView(const ::android::view::View&) const;
+    void addView(const ::android::view::View&, int32_t) const;
+    void addView(const ::android::view::View&, const ::android::view::ViewGroup_LayoutParams&) const;
+    void addView(const ::android::view::View&, int32_t, const ::android::view::ViewGroup_LayoutParams&) const;
+    ::android::widget::TableLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const;
 
 };
 }

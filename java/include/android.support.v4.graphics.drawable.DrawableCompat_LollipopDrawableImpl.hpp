@@ -39,12 +39,12 @@ public:
     ::android::support::v4::graphics::drawable::DrawableCompat_LollipopDrawableImpl& operator=(const ::android::support::v4::graphics::drawable::DrawableCompat_LollipopDrawableImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::drawable::DrawableCompat_LollipopDrawableImpl& operator=(::android::support::v4::graphics::drawable::DrawableCompat_LollipopDrawableImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setHotspot(const ::android::graphics::drawable::Drawable&, float, float) const ;
-    void setHotspotBounds(const ::android::graphics::drawable::Drawable&, int32_t, int32_t, int32_t, int32_t) const ;
-    void setTint(const ::android::graphics::drawable::Drawable&, int32_t) const ;
-    void setTintList(const ::android::graphics::drawable::Drawable&, const ::android::content::res::ColorStateList&) const ;
-    void setTintMode(const ::android::graphics::drawable::Drawable&, const ::android::graphics::PorterDuff_Mode&) const ;
-    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const ;
+    void setHotspot(const ::android::graphics::drawable::Drawable&, float, float) const;
+    void setHotspotBounds(const ::android::graphics::drawable::Drawable&, int32_t, int32_t, int32_t, int32_t) const;
+    void setTint(const ::android::graphics::drawable::Drawable&, int32_t) const;
+    void setTintList(const ::android::graphics::drawable::Drawable&, const ::android::content::res::ColorStateList&) const;
+    void setTintMode(const ::android::graphics::drawable::Drawable&, const ::android::graphics::PorterDuff_Mode&) const;
+    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const;
 
 };
 }

@@ -33,10 +33,10 @@ public:
     ::java::sql::RowId& operator=(const ::java::sql::RowId& x) {obj = x.obj; return *this;}
     ::java::sql::RowId& operator=(::java::sql::RowId&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    std::vector< int8_t> getBytes() const ;
-    ::java::lang::String toString() const ;
-    int32_t hashCode() const ;
+    bool equals(const ::java::lang::Object&) const;
+    std::vector< int8_t> getBytes() const;
+    ::java::lang::String toString() const;
+    int32_t hashCode() const;
 
 };
 }

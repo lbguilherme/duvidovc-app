@@ -38,7 +38,7 @@ public:
     ::org::apache::http::protocol::RequestContent& operator=(::org::apache::http::protocol::RequestContent&& x) {obj = std::move(x.obj); return *this;}
     
     RequestContent();
-    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

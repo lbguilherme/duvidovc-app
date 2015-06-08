@@ -33,10 +33,10 @@ public:
     ::org::xml::sax::Locator& operator=(const ::org::xml::sax::Locator& x) {obj = x.obj; return *this;}
     ::org::xml::sax::Locator& operator=(::org::xml::sax::Locator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getPublicId() const ;
-    ::java::lang::String getSystemId() const ;
-    int32_t getLineNumber() const ;
-    int32_t getColumnNumber() const ;
+    ::java::lang::String getPublicId() const;
+    ::java::lang::String getSystemId() const;
+    int32_t getLineNumber() const;
+    int32_t getColumnNumber() const;
 
 };
 }

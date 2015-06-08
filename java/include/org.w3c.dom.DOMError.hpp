@@ -35,12 +35,12 @@ public:
     ::org::w3c::dom::DOMError& operator=(const ::org::w3c::dom::DOMError& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::DOMError& operator=(::org::w3c::dom::DOMError&& x) {obj = std::move(x.obj); return *this;}
     
-    int16_t getSeverity() const ;
-    ::java::lang::String getMessage() const ;
-    ::java::lang::String getType() const ;
-    ::java::lang::Object getRelatedException() const ;
-    ::java::lang::Object getRelatedData() const ;
-    ::org::w3c::dom::DOMLocator getLocation() const ;
+    int16_t getSeverity() const;
+    ::java::lang::String getMessage() const;
+    ::java::lang::String getType() const;
+    ::java::lang::Object getRelatedException() const;
+    ::java::lang::Object getRelatedData() const;
+    ::org::w3c::dom::DOMLocator getLocation() const;
 
 };
 }

@@ -39,10 +39,10 @@ public:
     ::org::apache::http::protocol::HttpRequestHandlerRegistry& operator=(::org::apache::http::protocol::HttpRequestHandlerRegistry&& x) {obj = std::move(x.obj); return *this;}
     
     HttpRequestHandlerRegistry();
-    void register_(const ::java::lang::String&, const ::org::apache::http::protocol::HttpRequestHandler&) const ;
-    void unregister(const ::java::lang::String&) const ;
-    void setHandlers(const ::java::util::Map&) const ;
-    ::org::apache::http::protocol::HttpRequestHandler lookup(const ::java::lang::String&) const ;
+    void register_(const ::java::lang::String&, const ::org::apache::http::protocol::HttpRequestHandler&) const;
+    void unregister(const ::java::lang::String&) const;
+    void setHandlers(const ::java::util::Map&) const;
+    ::org::apache::http::protocol::HttpRequestHandler lookup(const ::java::lang::String&) const;
 
 };
 }

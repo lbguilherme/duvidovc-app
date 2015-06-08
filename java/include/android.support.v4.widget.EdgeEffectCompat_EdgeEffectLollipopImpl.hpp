@@ -36,7 +36,7 @@ public:
     ::android::support::v4::widget::EdgeEffectCompat_EdgeEffectLollipopImpl& operator=(const ::android::support::v4::widget::EdgeEffectCompat_EdgeEffectLollipopImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::EdgeEffectCompat_EdgeEffectLollipopImpl& operator=(::android::support::v4::widget::EdgeEffectCompat_EdgeEffectLollipopImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onPull(const ::java::lang::Object&, float, float) const ;
+    bool onPull(const ::java::lang::Object&, float, float) const;
 
 };
 }

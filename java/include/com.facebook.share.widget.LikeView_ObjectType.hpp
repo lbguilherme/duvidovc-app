@@ -40,8 +40,8 @@ public:
     static std::vector< ::com::facebook::share::widget::LikeView_ObjectType> values();
     static ::com::facebook::share::widget::LikeView_ObjectType valueOf(const ::java::lang::String&);
     static ::com::facebook::share::widget::LikeView_ObjectType fromInt(int32_t);
-    ::java::lang::String toString() const ;
-    int32_t getValue() const ;
+    ::java::lang::String toString() const;
+    int32_t getValue() const;
 
 };
 }

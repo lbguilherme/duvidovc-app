@@ -32,8 +32,8 @@ public:
     ::android::content::ComponentCallbacks& operator=(const ::android::content::ComponentCallbacks& x) {obj = x.obj; return *this;}
     ::android::content::ComponentCallbacks& operator=(::android::content::ComponentCallbacks&& x) {obj = std::move(x.obj); return *this;}
     
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
-    void onLowMemory() const ;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
+    void onLowMemory() const;
 
 };
 }

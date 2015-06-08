@@ -38,18 +38,18 @@ public:
     ::java::util::concurrent::atomic::AtomicIntegerFieldUpdater& operator=(::java::util::concurrent::atomic::AtomicIntegerFieldUpdater&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::util::concurrent::atomic::AtomicIntegerFieldUpdater newUpdater(const ::java::lang::Class&, const ::java::lang::String&);
-    bool compareAndSet(const ::java::lang::Object&, int32_t, int32_t) const ;
-    bool weakCompareAndSet(const ::java::lang::Object&, int32_t, int32_t) const ;
-    void set(const ::java::lang::Object&, int32_t) const ;
-    void lazySet(const ::java::lang::Object&, int32_t) const ;
-    int32_t get(const ::java::lang::Object&) const ;
-    int32_t getAndSet(const ::java::lang::Object&, int32_t) const ;
-    int32_t getAndIncrement(const ::java::lang::Object&) const ;
-    int32_t getAndDecrement(const ::java::lang::Object&) const ;
-    int32_t getAndAdd(const ::java::lang::Object&, int32_t) const ;
-    int32_t incrementAndGet(const ::java::lang::Object&) const ;
-    int32_t decrementAndGet(const ::java::lang::Object&) const ;
-    int32_t addAndGet(const ::java::lang::Object&, int32_t) const ;
+    bool compareAndSet(const ::java::lang::Object&, int32_t, int32_t) const;
+    bool weakCompareAndSet(const ::java::lang::Object&, int32_t, int32_t) const;
+    void set(const ::java::lang::Object&, int32_t) const;
+    void lazySet(const ::java::lang::Object&, int32_t) const;
+    int32_t get(const ::java::lang::Object&) const;
+    int32_t getAndSet(const ::java::lang::Object&, int32_t) const;
+    int32_t getAndIncrement(const ::java::lang::Object&) const;
+    int32_t getAndDecrement(const ::java::lang::Object&) const;
+    int32_t getAndAdd(const ::java::lang::Object&, int32_t) const;
+    int32_t incrementAndGet(const ::java::lang::Object&) const;
+    int32_t decrementAndGet(const ::java::lang::Object&) const;
+    int32_t addAndGet(const ::java::lang::Object&, int32_t) const;
 
 };
 }

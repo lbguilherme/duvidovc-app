@@ -38,20 +38,20 @@ public:
     
     AtomicLongArray(int32_t);
     AtomicLongArray(const std::vector< int64_t>&);
-    int32_t length() const ;
-    int64_t get(int32_t) const ;
-    void set(int32_t, int64_t) const ;
-    void lazySet(int32_t, int64_t) const ;
-    int64_t getAndSet(int32_t, int64_t) const ;
-    bool compareAndSet(int32_t, int64_t, int64_t) const ;
-    bool weakCompareAndSet(int32_t, int64_t, int64_t) const ;
-    int64_t getAndIncrement(int32_t) const ;
-    int64_t getAndDecrement(int32_t) const ;
-    int64_t getAndAdd(int32_t, int64_t) const ;
-    int64_t incrementAndGet(int32_t) const ;
-    int64_t decrementAndGet(int32_t) const ;
-    int64_t addAndGet(int32_t, int64_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t length() const;
+    int64_t get(int32_t) const;
+    void set(int32_t, int64_t) const;
+    void lazySet(int32_t, int64_t) const;
+    int64_t getAndSet(int32_t, int64_t) const;
+    bool compareAndSet(int32_t, int64_t, int64_t) const;
+    bool weakCompareAndSet(int32_t, int64_t, int64_t) const;
+    int64_t getAndIncrement(int32_t) const;
+    int64_t getAndDecrement(int32_t) const;
+    int64_t getAndAdd(int32_t, int64_t) const;
+    int64_t incrementAndGet(int32_t) const;
+    int64_t decrementAndGet(int32_t) const;
+    int64_t addAndGet(int32_t, int64_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

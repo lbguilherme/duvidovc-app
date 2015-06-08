@@ -35,7 +35,7 @@ public:
     
     Virtualizer_Settings();
     Virtualizer_Settings(const ::java::lang::String&);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

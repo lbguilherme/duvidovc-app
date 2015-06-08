@@ -33,7 +33,7 @@ public:
     ::java::security::interfaces::ECKey& operator=(const ::java::security::interfaces::ECKey& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::ECKey& operator=(::java::security::interfaces::ECKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::security::spec::ECParameterSpec getParams() const ;
+    ::java::security::spec::ECParameterSpec getParams() const;
 
 };
 }

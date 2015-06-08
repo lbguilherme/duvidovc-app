@@ -36,10 +36,10 @@ public:
     ::android::webkit::WebBackForwardList& operator=(const ::android::webkit::WebBackForwardList& x) {obj = x.obj; return *this;}
     ::android::webkit::WebBackForwardList& operator=(::android::webkit::WebBackForwardList&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::webkit::WebHistoryItem getCurrentItem() const ;
-    int32_t getCurrentIndex() const ;
-    ::android::webkit::WebHistoryItem getItemAtIndex(int32_t) const ;
-    int32_t getSize() const ;
+    ::android::webkit::WebHistoryItem getCurrentItem() const;
+    int32_t getCurrentIndex() const;
+    ::android::webkit::WebHistoryItem getItemAtIndex(int32_t) const;
+    int32_t getSize() const;
 
 };
 }

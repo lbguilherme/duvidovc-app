@@ -33,7 +33,7 @@ public:
     ::android::support::v4::view::ActionProvider_VisibilityListener& operator=(const ::android::support::v4::view::ActionProvider_VisibilityListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ActionProvider_VisibilityListener& operator=(::android::support::v4::view::ActionProvider_VisibilityListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onActionProviderVisibilityChanged(bool) const ;
+    void onActionProviderVisibilityChanged(bool) const;
 
 };
 }

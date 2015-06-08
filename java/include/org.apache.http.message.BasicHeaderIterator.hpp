@@ -39,10 +39,10 @@ public:
     ::org::apache::http::message::BasicHeaderIterator& operator=(::org::apache::http::message::BasicHeaderIterator&& x) {obj = std::move(x.obj); return *this;}
     
     BasicHeaderIterator(const std::vector< ::org::apache::http::Header>&, const ::java::lang::String&);
-    bool hasNext() const ;
-    ::org::apache::http::Header nextHeader() const ;
-    ::java::lang::Object next() const ;
-    void remove() const ;
+    bool hasNext() const;
+    ::org::apache::http::Header nextHeader() const;
+    ::java::lang::Object next() const;
+    void remove() const;
 
 };
 }

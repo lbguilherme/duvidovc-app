@@ -39,15 +39,15 @@ public:
     ::android::net::wifi::p2p::WifiP2pDevice& operator=(::android::net::wifi::p2p::WifiP2pDevice&& x) {obj = std::move(x.obj); return *this;}
     
     WifiP2pDevice();
-    bool wpsPbcSupported() const ;
-    bool wpsKeypadSupported() const ;
-    bool wpsDisplaySupported() const ;
-    bool isServiceDiscoveryCapable() const ;
-    bool isGroupOwner() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    bool wpsPbcSupported() const;
+    bool wpsKeypadSupported() const;
+    bool wpsDisplaySupported() const;
+    bool isServiceDiscoveryCapable() const;
+    bool isGroupOwner() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

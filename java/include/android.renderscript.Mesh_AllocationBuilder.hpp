@@ -37,12 +37,12 @@ public:
     ::android::renderscript::Mesh_AllocationBuilder& operator=(::android::renderscript::Mesh_AllocationBuilder&& x) {obj = std::move(x.obj); return *this;}
     
     Mesh_AllocationBuilder(const ::android::renderscript::RenderScript&);
-    int32_t getCurrentVertexTypeIndex() const ;
-    int32_t getCurrentIndexSetIndex() const ;
-    ::android::renderscript::Mesh_AllocationBuilder addVertexAllocation(const ::android::renderscript::Allocation&) const ;
-    ::android::renderscript::Mesh_AllocationBuilder addIndexSetAllocation(const ::android::renderscript::Allocation&, const ::android::renderscript::Mesh_Primitive&) const ;
-    ::android::renderscript::Mesh_AllocationBuilder addIndexSetType(const ::android::renderscript::Mesh_Primitive&) const ;
-    ::android::renderscript::Mesh create() const ;
+    int32_t getCurrentVertexTypeIndex() const;
+    int32_t getCurrentIndexSetIndex() const;
+    ::android::renderscript::Mesh_AllocationBuilder addVertexAllocation(const ::android::renderscript::Allocation&) const;
+    ::android::renderscript::Mesh_AllocationBuilder addIndexSetAllocation(const ::android::renderscript::Allocation&, const ::android::renderscript::Mesh_Primitive&) const;
+    ::android::renderscript::Mesh_AllocationBuilder addIndexSetType(const ::android::renderscript::Mesh_Primitive&) const;
+    ::android::renderscript::Mesh create() const;
 
 };
 }

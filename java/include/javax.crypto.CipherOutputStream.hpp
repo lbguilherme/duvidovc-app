@@ -36,10 +36,10 @@ public:
     ::javax::crypto::CipherOutputStream& operator=(::javax::crypto::CipherOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
     CipherOutputStream(const ::java::io::OutputStream&, const ::javax::crypto::Cipher&);
-    void write(int32_t) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void flush() const ;
-    void close() const ;
+    void write(int32_t) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void flush() const;
+    void close() const;
 
 };
 }

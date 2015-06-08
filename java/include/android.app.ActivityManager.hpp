@@ -38,22 +38,22 @@ public:
     ::android::app::ActivityManager& operator=(const ::android::app::ActivityManager& x) {obj = x.obj; return *this;}
     ::android::app::ActivityManager& operator=(::android::app::ActivityManager&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getMemoryClass() const ;
-    int32_t getLargeMemoryClass() const ;
-    ::java::util::List getRecentTasks(int32_t, int32_t) const ;
-    ::java::util::List getRunningTasks(int32_t) const ;
-    void moveTaskToFront(int32_t, int32_t) const ;
-    ::java::util::List getRunningServices(int32_t) const ;
-    ::android::app::PendingIntent getRunningServiceControlPanel(const ::android::content::ComponentName&) const ;
-    void getMemoryInfo(const ::android::app::ActivityManager_MemoryInfo&) const ;
-    ::java::util::List getProcessesInErrorState() const ;
-    ::java::util::List getRunningAppProcesses() const ;
-    std::vector< ::android::os::Debug_MemoryInfo> getProcessMemoryInfo(const std::vector< int32_t>&) const ;
-    void restartPackage(const ::java::lang::String&) const ;
-    void killBackgroundProcesses(const ::java::lang::String&) const ;
-    ::android::content::pm::ConfigurationInfo getDeviceConfigurationInfo() const ;
-    int32_t getLauncherLargeIconDensity() const ;
-    int32_t getLauncherLargeIconSize() const ;
+    int32_t getMemoryClass() const;
+    int32_t getLargeMemoryClass() const;
+    ::java::util::List getRecentTasks(int32_t, int32_t) const;
+    ::java::util::List getRunningTasks(int32_t) const;
+    void moveTaskToFront(int32_t, int32_t) const;
+    ::java::util::List getRunningServices(int32_t) const;
+    ::android::app::PendingIntent getRunningServiceControlPanel(const ::android::content::ComponentName&) const;
+    void getMemoryInfo(const ::android::app::ActivityManager_MemoryInfo&) const;
+    ::java::util::List getProcessesInErrorState() const;
+    ::java::util::List getRunningAppProcesses() const;
+    std::vector< ::android::os::Debug_MemoryInfo> getProcessMemoryInfo(const std::vector< int32_t>&) const;
+    void restartPackage(const ::java::lang::String&) const;
+    void killBackgroundProcesses(const ::java::lang::String&) const;
+    ::android::content::pm::ConfigurationInfo getDeviceConfigurationInfo() const;
+    int32_t getLauncherLargeIconDensity() const;
+    int32_t getLauncherLargeIconSize() const;
     static bool isUserAMonkey();
     static bool isRunningInTestHarness();
 

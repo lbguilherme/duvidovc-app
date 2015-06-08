@@ -35,7 +35,7 @@ public:
     ::com::facebook::share::internal::LikeActionController_SerializeToDiskWorkItem& operator=(const ::com::facebook::share::internal::LikeActionController_SerializeToDiskWorkItem& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::LikeActionController_SerializeToDiskWorkItem& operator=(::com::facebook::share::internal::LikeActionController_SerializeToDiskWorkItem&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

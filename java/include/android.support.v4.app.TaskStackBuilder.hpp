@@ -46,20 +46,20 @@ public:
     
     static ::android::support::v4::app::TaskStackBuilder create(const ::android::content::Context&);
     static ::android::support::v4::app::TaskStackBuilder from(const ::android::content::Context&);
-    ::android::support::v4::app::TaskStackBuilder addNextIntent(const ::android::content::Intent&) const ;
-    ::android::support::v4::app::TaskStackBuilder addNextIntentWithParentStack(const ::android::content::Intent&) const ;
-    ::android::support::v4::app::TaskStackBuilder addParentStack(const ::android::app::Activity&) const ;
-    ::android::support::v4::app::TaskStackBuilder addParentStack(const ::java::lang::Class&) const ;
-    ::android::support::v4::app::TaskStackBuilder addParentStack(const ::android::content::ComponentName&) const ;
-    int32_t getIntentCount() const ;
-    ::android::content::Intent getIntent(int32_t) const ;
-    ::android::content::Intent editIntentAt(int32_t) const ;
-    ::java::util::Iterator iterator() const ;
-    void startActivities() const ;
-    void startActivities(const ::android::os::Bundle&) const ;
-    ::android::app::PendingIntent getPendingIntent(int32_t, int32_t) const ;
-    ::android::app::PendingIntent getPendingIntent(int32_t, int32_t, const ::android::os::Bundle&) const ;
-    std::vector< ::android::content::Intent> getIntents() const ;
+    ::android::support::v4::app::TaskStackBuilder addNextIntent(const ::android::content::Intent&) const;
+    ::android::support::v4::app::TaskStackBuilder addNextIntentWithParentStack(const ::android::content::Intent&) const;
+    ::android::support::v4::app::TaskStackBuilder addParentStack(const ::android::app::Activity&) const;
+    ::android::support::v4::app::TaskStackBuilder addParentStack(const ::java::lang::Class&) const;
+    ::android::support::v4::app::TaskStackBuilder addParentStack(const ::android::content::ComponentName&) const;
+    int32_t getIntentCount() const;
+    ::android::content::Intent getIntent(int32_t) const;
+    ::android::content::Intent editIntentAt(int32_t) const;
+    ::java::util::Iterator iterator() const;
+    void startActivities() const;
+    void startActivities(const ::android::os::Bundle&) const;
+    ::android::app::PendingIntent getPendingIntent(int32_t, int32_t) const;
+    ::android::app::PendingIntent getPendingIntent(int32_t, int32_t, const ::android::os::Bundle&) const;
+    std::vector< ::android::content::Intent> getIntents() const;
 
 };
 }

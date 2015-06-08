@@ -44,9 +44,9 @@ public:
     BasicHttpEntityEnclosingRequest(const ::java::lang::String&, const ::java::lang::String&);
     BasicHttpEntityEnclosingRequest(const ::java::lang::String&, const ::java::lang::String&, const ::org::apache::http::ProtocolVersion&);
     BasicHttpEntityEnclosingRequest(const ::org::apache::http::RequestLine&);
-    ::org::apache::http::HttpEntity getEntity() const ;
-    void setEntity(const ::org::apache::http::HttpEntity&) const ;
-    bool expectContinue() const ;
+    ::org::apache::http::HttpEntity getEntity() const;
+    void setEntity(const ::org::apache::http::HttpEntity&) const;
+    bool expectContinue() const;
 
 };
 }

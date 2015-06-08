@@ -33,8 +33,8 @@ public:
     ::junit::runner::TestSuiteLoader& operator=(const ::junit::runner::TestSuiteLoader& x) {obj = x.obj; return *this;}
     ::junit::runner::TestSuiteLoader& operator=(::junit::runner::TestSuiteLoader&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Class load(const ::java::lang::String&) const ;
-    ::java::lang::Class reload(const ::java::lang::Class&) const ;
+    ::java::lang::Class load(const ::java::lang::String&) const;
+    ::java::lang::Class reload(const ::java::lang::Class&) const;
 
 };
 }

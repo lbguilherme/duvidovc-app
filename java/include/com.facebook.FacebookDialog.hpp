@@ -34,10 +34,10 @@ public:
     ::com::facebook::FacebookDialog& operator=(const ::com::facebook::FacebookDialog& x) {obj = x.obj; return *this;}
     ::com::facebook::FacebookDialog& operator=(::com::facebook::FacebookDialog&& x) {obj = std::move(x.obj); return *this;}
     
-    bool canShow(const ::java::lang::Object&) const ;
-    void show(const ::java::lang::Object&) const ;
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const ;
-    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&, int32_t) const ;
+    bool canShow(const ::java::lang::Object&) const;
+    void show(const ::java::lang::Object&) const;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&) const;
+    void registerCallback(const ::com::facebook::CallbackManager&, const ::com::facebook::FacebookCallback&, int32_t) const;
 
 };
 }

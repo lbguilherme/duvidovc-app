@@ -32,7 +32,7 @@ public:
     ::android::view::View_OnClickListener& operator=(const ::android::view::View_OnClickListener& x) {obj = x.obj; return *this;}
     ::android::view::View_OnClickListener& operator=(::android::view::View_OnClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onClick(const ::android::view::View&) const ;
+    void onClick(const ::android::view::View&) const;
 
 };
 }

@@ -33,8 +33,8 @@ public:
     ::android::webkit::SslErrorHandler& operator=(const ::android::webkit::SslErrorHandler& x) {obj = x.obj; return *this;}
     ::android::webkit::SslErrorHandler& operator=(::android::webkit::SslErrorHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void proceed() const ;
-    void cancel() const ;
+    void proceed() const;
+    void cancel() const;
 
 };
 }

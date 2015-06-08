@@ -42,17 +42,17 @@ public:
     ::org::apache::http::client::params::ClientParamBean& operator=(::org::apache::http::client::params::ClientParamBean&& x) {obj = std::move(x.obj); return *this;}
     
     ClientParamBean(const ::org::apache::http::params::HttpParams&);
-    void setConnectionManagerFactoryClassName(const ::java::lang::String&) const ;
-    void setConnectionManagerFactory(const ::org::apache::http::conn::ClientConnectionManagerFactory&) const ;
-    void setHandleRedirects(bool) const ;
-    void setRejectRelativeRedirect(bool) const ;
-    void setMaxRedirects(int32_t) const ;
-    void setAllowCircularRedirects(bool) const ;
-    void setHandleAuthentication(bool) const ;
-    void setCookiePolicy(const ::java::lang::String&) const ;
-    void setVirtualHost(const ::org::apache::http::HttpHost&) const ;
-    void setDefaultHeaders(const ::java::util::Collection&) const ;
-    void setDefaultHost(const ::org::apache::http::HttpHost&) const ;
+    void setConnectionManagerFactoryClassName(const ::java::lang::String&) const;
+    void setConnectionManagerFactory(const ::org::apache::http::conn::ClientConnectionManagerFactory&) const;
+    void setHandleRedirects(bool) const;
+    void setRejectRelativeRedirect(bool) const;
+    void setMaxRedirects(int32_t) const;
+    void setAllowCircularRedirects(bool) const;
+    void setHandleAuthentication(bool) const;
+    void setCookiePolicy(const ::java::lang::String&) const;
+    void setVirtualHost(const ::org::apache::http::HttpHost&) const;
+    void setDefaultHeaders(const ::java::util::Collection&) const;
+    void setDefaultHost(const ::org::apache::http::HttpHost&) const;
 
 };
 }

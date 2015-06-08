@@ -32,7 +32,7 @@ public:
     ::android::widget::AbsListView_SelectionBoundsAdjuster& operator=(const ::android::widget::AbsListView_SelectionBoundsAdjuster& x) {obj = x.obj; return *this;}
     ::android::widget::AbsListView_SelectionBoundsAdjuster& operator=(::android::widget::AbsListView_SelectionBoundsAdjuster&& x) {obj = std::move(x.obj); return *this;}
     
-    void adjustListItemSelectionBounds(const ::android::graphics::Rect&) const ;
+    void adjustListItemSelectionBounds(const ::android::graphics::Rect&) const;
 
 };
 }

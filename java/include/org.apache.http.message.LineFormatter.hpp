@@ -38,10 +38,10 @@ public:
     ::org::apache::http::message::LineFormatter& operator=(const ::org::apache::http::message::LineFormatter& x) {obj = x.obj; return *this;}
     ::org::apache::http::message::LineFormatter& operator=(::org::apache::http::message::LineFormatter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::util::CharArrayBuffer appendProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::ProtocolVersion&) const ;
-    ::org::apache::http::util::CharArrayBuffer formatRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::RequestLine&) const ;
-    ::org::apache::http::util::CharArrayBuffer formatStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::StatusLine&) const ;
-    ::org::apache::http::util::CharArrayBuffer formatHeader(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::Header&) const ;
+    ::org::apache::http::util::CharArrayBuffer appendProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::ProtocolVersion&) const;
+    ::org::apache::http::util::CharArrayBuffer formatRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::RequestLine&) const;
+    ::org::apache::http::util::CharArrayBuffer formatStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::StatusLine&) const;
+    ::org::apache::http::util::CharArrayBuffer formatHeader(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::Header&) const;
 
 };
 }

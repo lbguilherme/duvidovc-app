@@ -35,8 +35,8 @@ public:
     ::java::util::IllegalFormatPrecisionException& operator=(::java::util::IllegalFormatPrecisionException&& x) {obj = std::move(x.obj); return *this;}
     
     IllegalFormatPrecisionException(int32_t);
-    int32_t getPrecision() const ;
-    ::java::lang::String getMessage() const ;
+    int32_t getPrecision() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

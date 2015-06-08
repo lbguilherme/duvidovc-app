@@ -36,7 +36,7 @@ public:
     ::org::apache::http::conn::ClientConnectionManagerFactory& operator=(const ::org::apache::http::conn::ClientConnectionManagerFactory& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::ClientConnectionManagerFactory& operator=(::org::apache::http::conn::ClientConnectionManagerFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::conn::ClientConnectionManager newInstance(const ::org::apache::http::params::HttpParams&, const ::org::apache::http::conn::scheme::SchemeRegistry&) const ;
+    ::org::apache::http::conn::ClientConnectionManager newInstance(const ::org::apache::http::params::HttpParams&, const ::org::apache::http::conn::scheme::SchemeRegistry&) const;
 
 };
 }

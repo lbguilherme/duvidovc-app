@@ -47,19 +47,19 @@ public:
     RenamingDelegatingContext(const ::android::content::Context&, const ::android::content::Context&, const ::java::lang::String&);
     static ::android::content::ContentProvider providerWithRenamedContext(const ::java::lang::Class&, const ::android::content::Context&, const ::java::lang::String&);
     static ::android::content::ContentProvider providerWithRenamedContext(const ::java::lang::Class&, const ::android::content::Context&, const ::java::lang::String&, bool);
-    void makeExistingFilesAndDbsAccessible() const ;
-    ::java::lang::String getDatabasePrefix() const ;
-    ::android::database::sqlite::SQLiteDatabase openOrCreateDatabase(const ::java::lang::String&, int32_t, const ::android::database::sqlite::SQLiteDatabase_CursorFactory&) const ;
-    ::android::database::sqlite::SQLiteDatabase openOrCreateDatabase(const ::java::lang::String&, int32_t, const ::android::database::sqlite::SQLiteDatabase_CursorFactory&, const ::android::database::DatabaseErrorHandler&) const ;
-    bool deleteDatabase(const ::java::lang::String&) const ;
-    ::java::io::File getDatabasePath(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> databaseList() const ;
-    ::java::io::FileInputStream openFileInput(const ::java::lang::String&) const ;
-    ::java::io::FileOutputStream openFileOutput(const ::java::lang::String&, int32_t) const ;
-    ::java::io::File getFileStreamPath(const ::java::lang::String&) const ;
-    bool deleteFile(const ::java::lang::String&) const ;
-    std::vector< ::java::lang::String> fileList() const ;
-    ::java::io::File getCacheDir() const ;
+    void makeExistingFilesAndDbsAccessible() const;
+    ::java::lang::String getDatabasePrefix() const;
+    ::android::database::sqlite::SQLiteDatabase openOrCreateDatabase(const ::java::lang::String&, int32_t, const ::android::database::sqlite::SQLiteDatabase_CursorFactory&) const;
+    ::android::database::sqlite::SQLiteDatabase openOrCreateDatabase(const ::java::lang::String&, int32_t, const ::android::database::sqlite::SQLiteDatabase_CursorFactory&, const ::android::database::DatabaseErrorHandler&) const;
+    bool deleteDatabase(const ::java::lang::String&) const;
+    ::java::io::File getDatabasePath(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> databaseList() const;
+    ::java::io::FileInputStream openFileInput(const ::java::lang::String&) const;
+    ::java::io::FileOutputStream openFileOutput(const ::java::lang::String&, int32_t) const;
+    ::java::io::File getFileStreamPath(const ::java::lang::String&) const;
+    bool deleteFile(const ::java::lang::String&) const;
+    std::vector< ::java::lang::String> fileList() const;
+    ::java::io::File getCacheDir() const;
 
 };
 }

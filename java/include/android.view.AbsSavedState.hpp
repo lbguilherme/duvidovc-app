@@ -35,9 +35,9 @@ public:
     ::android::view::AbsSavedState& operator=(const ::android::view::AbsSavedState& x) {obj = x.obj; return *this;}
     ::android::view::AbsSavedState& operator=(::android::view::AbsSavedState&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::Parcelable getSuperState() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::os::Parcelable getSuperState() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

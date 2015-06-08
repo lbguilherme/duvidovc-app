@@ -39,11 +39,11 @@ public:
     ::android::content::pm::PackageItemInfo& operator=(::android::content::pm::PackageItemInfo&& x) {obj = std::move(x.obj); return *this;}
     
     PackageItemInfo();
-    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const ;
-    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const ;
-    ::android::graphics::drawable::Drawable loadLogo(const ::android::content::pm::PackageManager&) const ;
-    ::android::content::res::XmlResourceParser loadXmlMetaData(const ::android::content::pm::PackageManager&, const ::java::lang::String&) const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::CharSequence loadLabel(const ::android::content::pm::PackageManager&) const;
+    ::android::graphics::drawable::Drawable loadIcon(const ::android::content::pm::PackageManager&) const;
+    ::android::graphics::drawable::Drawable loadLogo(const ::android::content::pm::PackageManager&) const;
+    ::android::content::res::XmlResourceParser loadXmlMetaData(const ::android::content::pm::PackageManager&, const ::java::lang::String&) const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

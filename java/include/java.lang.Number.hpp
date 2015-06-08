@@ -34,12 +34,12 @@ public:
     ::java::lang::Number& operator=(::java::lang::Number&& x) {obj = std::move(x.obj); return *this;}
     
     Number();
-    int8_t byteValue() const ;
-    double doubleValue() const ;
-    float floatValue() const ;
-    int32_t intValue() const ;
-    int64_t longValue() const ;
-    int16_t shortValue() const ;
+    int8_t byteValue() const;
+    double doubleValue() const;
+    float floatValue() const;
+    int32_t intValue() const;
+    int64_t longValue() const;
+    int16_t shortValue() const;
 
 };
 }

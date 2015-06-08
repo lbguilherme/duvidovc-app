@@ -41,13 +41,13 @@ public:
     RingtonePreference(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     RingtonePreference(const ::android::content::Context&, const ::android::util::AttributeSet&);
     RingtonePreference(const ::android::content::Context&);
-    int32_t getRingtoneType() const ;
-    void setRingtoneType(int32_t) const ;
-    bool getShowDefault() const ;
-    void setShowDefault(bool) const ;
-    bool getShowSilent() const ;
-    void setShowSilent(bool) const ;
-    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const ;
+    int32_t getRingtoneType() const;
+    void setRingtoneType(int32_t) const;
+    bool getShowDefault() const;
+    void setShowDefault(bool) const;
+    bool getShowSilent() const;
+    void setShowSilent(bool) const;
+    bool onActivityResult(int32_t, int32_t, const ::android::content::Intent&) const;
 
 };
 }

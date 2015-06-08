@@ -42,10 +42,10 @@ public:
     
     StrikethroughSpan();
     StrikethroughSpan(const ::android::os::Parcel&);
-    int32_t getSpanTypeId() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    int32_t getSpanTypeId() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
 
 };
 }

@@ -39,8 +39,8 @@ public:
     ::android::text::style::RasterizerSpan& operator=(::android::text::style::RasterizerSpan&& x) {obj = std::move(x.obj); return *this;}
     
     RasterizerSpan(const ::android::graphics::Rasterizer&);
-    ::android::graphics::Rasterizer getRasterizer() const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    ::android::graphics::Rasterizer getRasterizer() const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
 
 };
 }

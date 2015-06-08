@@ -35,16 +35,16 @@ public:
     ::java::io::ObjectOutputStream_PutField& operator=(::java::io::ObjectOutputStream_PutField&& x) {obj = std::move(x.obj); return *this;}
     
     ObjectOutputStream_PutField();
-    void put(const ::java::lang::String&, bool) const ;
-    void put(const ::java::lang::String&, uint16_t) const ;
-    void put(const ::java::lang::String&, int8_t) const ;
-    void put(const ::java::lang::String&, int16_t) const ;
-    void put(const ::java::lang::String&, int32_t) const ;
-    void put(const ::java::lang::String&, int64_t) const ;
-    void put(const ::java::lang::String&, float) const ;
-    void put(const ::java::lang::String&, double) const ;
-    void put(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    void write(const ::java::io::ObjectOutput&) const ;
+    void put(const ::java::lang::String&, bool) const;
+    void put(const ::java::lang::String&, uint16_t) const;
+    void put(const ::java::lang::String&, int8_t) const;
+    void put(const ::java::lang::String&, int16_t) const;
+    void put(const ::java::lang::String&, int32_t) const;
+    void put(const ::java::lang::String&, int64_t) const;
+    void put(const ::java::lang::String&, float) const;
+    void put(const ::java::lang::String&, double) const;
+    void put(const ::java::lang::String&, const ::java::lang::Object&) const;
+    void write(const ::java::io::ObjectOutput&) const;
 
 };
 }

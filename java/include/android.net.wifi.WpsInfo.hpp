@@ -37,9 +37,9 @@ public:
     ::android::net::wifi::WpsInfo& operator=(::android::net::wifi::WpsInfo&& x) {obj = std::move(x.obj); return *this;}
     
     WpsInfo();
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

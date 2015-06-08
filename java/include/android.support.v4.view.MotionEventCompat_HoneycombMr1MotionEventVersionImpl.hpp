@@ -36,8 +36,8 @@ public:
     ::android::support::v4::view::MotionEventCompat_HoneycombMr1MotionEventVersionImpl& operator=(const ::android::support::v4::view::MotionEventCompat_HoneycombMr1MotionEventVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MotionEventCompat_HoneycombMr1MotionEventVersionImpl& operator=(::android::support::v4::view::MotionEventCompat_HoneycombMr1MotionEventVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    float getAxisValue(const ::android::view::MotionEvent&, int32_t) const ;
-    float getAxisValue(const ::android::view::MotionEvent&, int32_t, int32_t) const ;
+    float getAxisValue(const ::android::view::MotionEvent&, int32_t) const;
+    float getAxisValue(const ::android::view::MotionEvent&, int32_t, int32_t) const;
 
 };
 }

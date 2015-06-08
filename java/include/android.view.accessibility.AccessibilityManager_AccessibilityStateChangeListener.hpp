@@ -32,7 +32,7 @@ public:
     ::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener& operator=(const ::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener& x) {obj = x.obj; return *this;}
     ::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener& operator=(::android::view::accessibility::AccessibilityManager_AccessibilityStateChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAccessibilityStateChanged(bool) const ;
+    void onAccessibilityStateChanged(bool) const;
 
 };
 }

@@ -40,10 +40,10 @@ public:
     ::org::apache::http::message::BasicListHeaderIterator& operator=(::org::apache::http::message::BasicListHeaderIterator&& x) {obj = std::move(x.obj); return *this;}
     
     BasicListHeaderIterator(const ::java::util::List&, const ::java::lang::String&);
-    bool hasNext() const ;
-    ::org::apache::http::Header nextHeader() const ;
-    ::java::lang::Object next() const ;
-    void remove() const ;
+    bool hasNext() const;
+    ::org::apache::http::Header nextHeader() const;
+    ::java::lang::Object next() const;
+    void remove() const;
 
 };
 }

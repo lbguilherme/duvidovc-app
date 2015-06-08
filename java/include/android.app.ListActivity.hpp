@@ -36,13 +36,13 @@ public:
     ::android::app::ListActivity& operator=(::android::app::ListActivity&& x) {obj = std::move(x.obj); return *this;}
     
     ListActivity();
-    void onContentChanged() const ;
-    void setListAdapter(const ::android::widget::ListAdapter&) const ;
-    void setSelection(int32_t) const ;
-    int32_t getSelectedItemPosition() const ;
-    int64_t getSelectedItemId() const ;
-    ::android::widget::ListView getListView() const ;
-    ::android::widget::ListAdapter getListAdapter() const ;
+    void onContentChanged() const;
+    void setListAdapter(const ::android::widget::ListAdapter&) const;
+    void setSelection(int32_t) const;
+    int32_t getSelectedItemPosition() const;
+    int64_t getSelectedItemId() const;
+    ::android::widget::ListView getListView() const;
+    ::android::widget::ListAdapter getListAdapter() const;
 
 };
 }

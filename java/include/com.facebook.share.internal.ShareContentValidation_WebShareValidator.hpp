@@ -38,9 +38,9 @@ public:
     ::com::facebook::share::internal::ShareContentValidation_WebShareValidator& operator=(const ::com::facebook::share::internal::ShareContentValidation_WebShareValidator& x) {obj = x.obj; return *this;}
     ::com::facebook::share::internal::ShareContentValidation_WebShareValidator& operator=(::com::facebook::share::internal::ShareContentValidation_WebShareValidator&& x) {obj = std::move(x.obj); return *this;}
     
-    void validate(const ::com::facebook::share::model::SharePhotoContent&) const ;
-    void validate(const ::com::facebook::share::model::ShareVideoContent&) const ;
-    void validate(const ::com::facebook::share::model::SharePhoto&) const ;
+    void validate(const ::com::facebook::share::model::SharePhotoContent&) const;
+    void validate(const ::com::facebook::share::model::ShareVideoContent&) const;
+    void validate(const ::com::facebook::share::model::SharePhoto&) const;
 
 };
 }

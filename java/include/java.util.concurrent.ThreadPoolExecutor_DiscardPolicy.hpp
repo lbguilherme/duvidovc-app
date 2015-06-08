@@ -37,7 +37,7 @@ public:
     ::java::util::concurrent::ThreadPoolExecutor_DiscardPolicy& operator=(::java::util::concurrent::ThreadPoolExecutor_DiscardPolicy&& x) {obj = std::move(x.obj); return *this;}
     
     ThreadPoolExecutor_DiscardPolicy();
-    void rejectedExecution(const ::java::lang::Runnable&, const ::java::util::concurrent::ThreadPoolExecutor&) const ;
+    void rejectedExecution(const ::java::lang::Runnable&, const ::java::util::concurrent::ThreadPoolExecutor&) const;
 
 };
 }

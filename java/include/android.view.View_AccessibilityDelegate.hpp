@@ -36,13 +36,13 @@ public:
     ::android::view::View_AccessibilityDelegate& operator=(::android::view::View_AccessibilityDelegate&& x) {obj = std::move(x.obj); return *this;}
     
     View_AccessibilityDelegate();
-    void sendAccessibilityEvent(const ::android::view::View&, int32_t) const ;
-    void sendAccessibilityEventUnchecked(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    bool dispatchPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::view::accessibility::AccessibilityNodeInfo&) const ;
-    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void sendAccessibilityEvent(const ::android::view::View&, int32_t) const;
+    void sendAccessibilityEventUnchecked(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    bool dispatchPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onPopulateAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityEvent(const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::View&, const ::android::view::accessibility::AccessibilityNodeInfo&) const;
+    bool onRequestSendAccessibilityEvent(const ::android::view::ViewGroup&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

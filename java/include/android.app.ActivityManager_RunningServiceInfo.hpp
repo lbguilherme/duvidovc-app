@@ -35,9 +35,9 @@ public:
     ::android::app::ActivityManager_RunningServiceInfo& operator=(::android::app::ActivityManager_RunningServiceInfo&& x) {obj = std::move(x.obj); return *this;}
     
     ActivityManager_RunningServiceInfo();
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

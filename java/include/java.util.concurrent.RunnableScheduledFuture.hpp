@@ -36,7 +36,7 @@ public:
     ::java::util::concurrent::RunnableScheduledFuture& operator=(const ::java::util::concurrent::RunnableScheduledFuture& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::RunnableScheduledFuture& operator=(::java::util::concurrent::RunnableScheduledFuture&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isPeriodic() const ;
+    bool isPeriodic() const;
 
 };
 }

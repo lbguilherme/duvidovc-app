@@ -43,10 +43,10 @@ public:
     ::android::support::v4::app::NotificationManagerCompat_SideChannelManager& operator=(::android::support::v4::app::NotificationManagerCompat_SideChannelManager&& x) {obj = std::move(x.obj); return *this;}
     
     NotificationManagerCompat_SideChannelManager(const ::android::content::Context&);
-    void queueTask(const ::android::support::v4::app::NotificationManagerCompat_Task&) const ;
-    bool handleMessage(const ::android::os::Message&) const ;
-    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const ;
-    void onServiceDisconnected(const ::android::content::ComponentName&) const ;
+    void queueTask(const ::android::support::v4::app::NotificationManagerCompat_Task&) const;
+    bool handleMessage(const ::android::os::Message&) const;
+    void onServiceConnected(const ::android::content::ComponentName&, const ::android::os::IBinder&) const;
+    void onServiceDisconnected(const ::android::content::ComponentName&) const;
 
 };
 }

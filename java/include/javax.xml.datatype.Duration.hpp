@@ -42,32 +42,32 @@ public:
     ::javax::xml::datatype::Duration& operator=(::javax::xml::datatype::Duration&& x) {obj = std::move(x.obj); return *this;}
     
     Duration();
-    ::javax::xml::namespace_::QName getXMLSchemaType() const ;
-    int32_t getSign() const ;
-    int32_t getYears() const ;
-    int32_t getMonths() const ;
-    int32_t getDays() const ;
-    int32_t getHours() const ;
-    int32_t getMinutes() const ;
-    int32_t getSeconds() const ;
-    int64_t getTimeInMillis(const ::java::util::Calendar&) const ;
-    int64_t getTimeInMillis(const ::java::util::Date&) const ;
-    ::java::lang::Number getField(const ::javax::xml::datatype::DatatypeConstants_Field&) const ;
-    bool isSet(const ::javax::xml::datatype::DatatypeConstants_Field&) const ;
-    ::javax::xml::datatype::Duration add(const ::javax::xml::datatype::Duration&) const ;
-    void addTo(const ::java::util::Calendar&) const ;
-    void addTo(const ::java::util::Date&) const ;
-    ::javax::xml::datatype::Duration subtract(const ::javax::xml::datatype::Duration&) const ;
-    ::javax::xml::datatype::Duration multiply(int32_t) const ;
-    ::javax::xml::datatype::Duration multiply(const ::java::math::BigDecimal&) const ;
-    ::javax::xml::datatype::Duration negate() const ;
-    ::javax::xml::datatype::Duration normalizeWith(const ::java::util::Calendar&) const ;
-    int32_t compare(const ::javax::xml::datatype::Duration&) const ;
-    bool isLongerThan(const ::javax::xml::datatype::Duration&) const ;
-    bool isShorterThan(const ::javax::xml::datatype::Duration&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
+    ::javax::xml::namespace_::QName getXMLSchemaType() const;
+    int32_t getSign() const;
+    int32_t getYears() const;
+    int32_t getMonths() const;
+    int32_t getDays() const;
+    int32_t getHours() const;
+    int32_t getMinutes() const;
+    int32_t getSeconds() const;
+    int64_t getTimeInMillis(const ::java::util::Calendar&) const;
+    int64_t getTimeInMillis(const ::java::util::Date&) const;
+    ::java::lang::Number getField(const ::javax::xml::datatype::DatatypeConstants_Field&) const;
+    bool isSet(const ::javax::xml::datatype::DatatypeConstants_Field&) const;
+    ::javax::xml::datatype::Duration add(const ::javax::xml::datatype::Duration&) const;
+    void addTo(const ::java::util::Calendar&) const;
+    void addTo(const ::java::util::Date&) const;
+    ::javax::xml::datatype::Duration subtract(const ::javax::xml::datatype::Duration&) const;
+    ::javax::xml::datatype::Duration multiply(int32_t) const;
+    ::javax::xml::datatype::Duration multiply(const ::java::math::BigDecimal&) const;
+    ::javax::xml::datatype::Duration negate() const;
+    ::javax::xml::datatype::Duration normalizeWith(const ::java::util::Calendar&) const;
+    int32_t compare(const ::javax::xml::datatype::Duration&) const;
+    bool isLongerThan(const ::javax::xml::datatype::Duration&) const;
+    bool isShorterThan(const ::javax::xml::datatype::Duration&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
 
 };
 }

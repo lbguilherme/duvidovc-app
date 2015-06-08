@@ -44,11 +44,11 @@ public:
     
     TimePickerDialog(const ::android::content::Context&, const ::android::app::TimePickerDialog_OnTimeSetListener&, int32_t, int32_t, bool);
     TimePickerDialog(const ::android::content::Context&, int32_t, const ::android::app::TimePickerDialog_OnTimeSetListener&, int32_t, int32_t, bool);
-    void onClick(const ::android::content::DialogInterface&, int32_t) const ;
-    void updateTime(int32_t, int32_t) const ;
-    void onTimeChanged(const ::android::widget::TimePicker&, int32_t, int32_t) const ;
-    ::android::os::Bundle onSaveInstanceState() const ;
-    void onRestoreInstanceState(const ::android::os::Bundle&) const ;
+    void onClick(const ::android::content::DialogInterface&, int32_t) const;
+    void updateTime(int32_t, int32_t) const;
+    void onTimeChanged(const ::android::widget::TimePicker&, int32_t, int32_t) const;
+    ::android::os::Bundle onSaveInstanceState() const;
+    void onRestoreInstanceState(const ::android::os::Bundle&) const;
 
 };
 }

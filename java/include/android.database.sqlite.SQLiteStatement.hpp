@@ -36,12 +36,12 @@ public:
     ::android::database::sqlite::SQLiteStatement& operator=(const ::android::database::sqlite::SQLiteStatement& x) {obj = x.obj; return *this;}
     ::android::database::sqlite::SQLiteStatement& operator=(::android::database::sqlite::SQLiteStatement&& x) {obj = std::move(x.obj); return *this;}
     
-    void execute() const ;
-    int32_t executeUpdateDelete() const ;
-    int64_t executeInsert() const ;
-    int64_t simpleQueryForLong() const ;
-    ::java::lang::String simpleQueryForString() const ;
-    ::android::os::ParcelFileDescriptor simpleQueryForBlobFileDescriptor() const ;
+    void execute() const;
+    int32_t executeUpdateDelete() const;
+    int64_t executeInsert() const;
+    int64_t simpleQueryForLong() const;
+    ::java::lang::String simpleQueryForString() const;
+    ::android::os::ParcelFileDescriptor simpleQueryForBlobFileDescriptor() const;
 
 };
 }

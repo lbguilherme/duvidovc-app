@@ -33,7 +33,7 @@ public:
     ::android::webkit::WebView_PictureListener& operator=(const ::android::webkit::WebView_PictureListener& x) {obj = x.obj; return *this;}
     ::android::webkit::WebView_PictureListener& operator=(::android::webkit::WebView_PictureListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onNewPicture(const ::android::webkit::WebView&, const ::android::graphics::Picture&) const ;
+    void onNewPicture(const ::android::webkit::WebView&, const ::android::graphics::Picture&) const;
 
 };
 }

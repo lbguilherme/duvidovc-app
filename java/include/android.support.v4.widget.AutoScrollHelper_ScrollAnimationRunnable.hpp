@@ -35,7 +35,7 @@ public:
     ::android::support::v4::widget::AutoScrollHelper_ScrollAnimationRunnable& operator=(const ::android::support::v4::widget::AutoScrollHelper_ScrollAnimationRunnable& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::AutoScrollHelper_ScrollAnimationRunnable& operator=(::android::support::v4::widget::AutoScrollHelper_ScrollAnimationRunnable&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

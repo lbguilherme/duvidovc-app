@@ -47,7 +47,7 @@ public:
     BatchUpdateException(const ::java::lang::String&, const std::vector< int32_t>&);
     BatchUpdateException(const ::java::lang::String&, const ::java::lang::String&, const std::vector< int32_t>&);
     BatchUpdateException(const ::java::lang::String&, const ::java::lang::String&, int32_t, const std::vector< int32_t>&);
-    std::vector< int32_t> getUpdateCounts() const ;
+    std::vector< int32_t> getUpdateCounts() const;
 
 };
 }

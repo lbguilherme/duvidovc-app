@@ -33,7 +33,7 @@ public:
     ::com::facebook::internal::CallbackManagerImpl_Callback& operator=(const ::com::facebook::internal::CallbackManagerImpl_Callback& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::CallbackManagerImpl_Callback& operator=(::com::facebook::internal::CallbackManagerImpl_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onActivityResult(int32_t, const ::android::content::Intent&) const ;
+    bool onActivityResult(int32_t, const ::android::content::Intent&) const;
 
 };
 }

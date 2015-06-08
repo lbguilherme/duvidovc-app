@@ -32,7 +32,7 @@ public:
     ::android::speech::tts::TextToSpeech_OnInitListener& operator=(const ::android::speech::tts::TextToSpeech_OnInitListener& x) {obj = x.obj; return *this;}
     ::android::speech::tts::TextToSpeech_OnInitListener& operator=(::android::speech::tts::TextToSpeech_OnInitListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onInit(int32_t) const ;
+    void onInit(int32_t) const;
 
 };
 }

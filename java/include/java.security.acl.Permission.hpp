@@ -34,8 +34,8 @@ public:
     ::java::security::acl::Permission& operator=(const ::java::security::acl::Permission& x) {obj = x.obj; return *this;}
     ::java::security::acl::Permission& operator=(::java::security::acl::Permission&& x) {obj = std::move(x.obj); return *this;}
     
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

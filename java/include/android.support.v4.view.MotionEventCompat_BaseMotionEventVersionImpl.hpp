@@ -36,14 +36,14 @@ public:
     ::android::support::v4::view::MotionEventCompat_BaseMotionEventVersionImpl& operator=(const ::android::support::v4::view::MotionEventCompat_BaseMotionEventVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MotionEventCompat_BaseMotionEventVersionImpl& operator=(::android::support::v4::view::MotionEventCompat_BaseMotionEventVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t findPointerIndex(const ::android::view::MotionEvent&, int32_t) const ;
-    int32_t getPointerId(const ::android::view::MotionEvent&, int32_t) const ;
-    float getX(const ::android::view::MotionEvent&, int32_t) const ;
-    float getY(const ::android::view::MotionEvent&, int32_t) const ;
-    int32_t getPointerCount(const ::android::view::MotionEvent&) const ;
-    int32_t getSource(const ::android::view::MotionEvent&) const ;
-    float getAxisValue(const ::android::view::MotionEvent&, int32_t) const ;
-    float getAxisValue(const ::android::view::MotionEvent&, int32_t, int32_t) const ;
+    int32_t findPointerIndex(const ::android::view::MotionEvent&, int32_t) const;
+    int32_t getPointerId(const ::android::view::MotionEvent&, int32_t) const;
+    float getX(const ::android::view::MotionEvent&, int32_t) const;
+    float getY(const ::android::view::MotionEvent&, int32_t) const;
+    int32_t getPointerCount(const ::android::view::MotionEvent&) const;
+    int32_t getSource(const ::android::view::MotionEvent&) const;
+    float getAxisValue(const ::android::view::MotionEvent&, int32_t) const;
+    float getAxisValue(const ::android::view::MotionEvent&, int32_t, int32_t) const;
 
 };
 }

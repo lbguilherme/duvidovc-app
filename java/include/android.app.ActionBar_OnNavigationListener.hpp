@@ -31,7 +31,7 @@ public:
     ::android::app::ActionBar_OnNavigationListener& operator=(const ::android::app::ActionBar_OnNavigationListener& x) {obj = x.obj; return *this;}
     ::android::app::ActionBar_OnNavigationListener& operator=(::android::app::ActionBar_OnNavigationListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onNavigationItemSelected(int32_t, int64_t) const ;
+    bool onNavigationItemSelected(int32_t, int64_t) const;
 
 };
 }

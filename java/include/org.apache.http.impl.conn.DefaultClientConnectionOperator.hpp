@@ -43,9 +43,9 @@ public:
     ::org::apache::http::impl::conn::DefaultClientConnectionOperator& operator=(::org::apache::http::impl::conn::DefaultClientConnectionOperator&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultClientConnectionOperator(const ::org::apache::http::conn::scheme::SchemeRegistry&);
-    ::org::apache::http::conn::OperatedClientConnection createConnection() const ;
-    void openConnection(const ::org::apache::http::conn::OperatedClientConnection&, const ::org::apache::http::HttpHost&, const ::java::net::InetAddress&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const ;
-    void updateSecureConnection(const ::org::apache::http::conn::OperatedClientConnection&, const ::org::apache::http::HttpHost&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::conn::OperatedClientConnection createConnection() const;
+    void openConnection(const ::org::apache::http::conn::OperatedClientConnection&, const ::org::apache::http::HttpHost&, const ::java::net::InetAddress&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const;
+    void updateSecureConnection(const ::org::apache::http::conn::OperatedClientConnection&, const ::org::apache::http::HttpHost&, const ::org::apache::http::protocol::HttpContext&, const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

@@ -43,9 +43,9 @@ public:
     ::org::apache::http::impl::conn::ProxySelectorRoutePlanner& operator=(::org::apache::http::impl::conn::ProxySelectorRoutePlanner&& x) {obj = std::move(x.obj); return *this;}
     
     ProxySelectorRoutePlanner(const ::org::apache::http::conn::scheme::SchemeRegistry&, const ::java::net::ProxySelector&);
-    ::java::net::ProxySelector getProxySelector() const ;
-    void setProxySelector(const ::java::net::ProxySelector&) const ;
-    ::org::apache::http::conn::routing::HttpRoute determineRoute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::java::net::ProxySelector getProxySelector() const;
+    void setProxySelector(const ::java::net::ProxySelector&) const;
+    ::org::apache::http::conn::routing::HttpRoute determineRoute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

@@ -36,8 +36,8 @@ public:
     ::java::security::cert::CRLSelector& operator=(const ::java::security::cert::CRLSelector& x) {obj = x.obj; return *this;}
     ::java::security::cert::CRLSelector& operator=(::java::security::cert::CRLSelector&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
-    bool match(const ::java::security::cert::CRL&) const ;
+    ::java::lang::Object clone() const;
+    bool match(const ::java::security::cert::CRL&) const;
 
 };
 }

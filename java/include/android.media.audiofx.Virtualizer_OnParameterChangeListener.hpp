@@ -33,7 +33,7 @@ public:
     ::android::media::audiofx::Virtualizer_OnParameterChangeListener& operator=(const ::android::media::audiofx::Virtualizer_OnParameterChangeListener& x) {obj = x.obj; return *this;}
     ::android::media::audiofx::Virtualizer_OnParameterChangeListener& operator=(::android::media::audiofx::Virtualizer_OnParameterChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onParameterChange(const ::android::media::audiofx::Virtualizer&, int32_t, int32_t, int16_t) const ;
+    void onParameterChange(const ::android::media::audiofx::Virtualizer&, int32_t, int32_t, int16_t) const;
 
 };
 }

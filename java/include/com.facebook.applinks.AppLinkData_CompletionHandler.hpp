@@ -33,7 +33,7 @@ public:
     ::com::facebook::applinks::AppLinkData_CompletionHandler& operator=(const ::com::facebook::applinks::AppLinkData_CompletionHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::applinks::AppLinkData_CompletionHandler& operator=(::com::facebook::applinks::AppLinkData_CompletionHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void onDeferredAppLinkDataFetched(const ::com::facebook::applinks::AppLinkData&) const ;
+    void onDeferredAppLinkDataFetched(const ::com::facebook::applinks::AppLinkData&) const;
 
 };
 }

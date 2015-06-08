@@ -32,8 +32,8 @@ public:
     ::junit::framework::Test& operator=(const ::junit::framework::Test& x) {obj = x.obj; return *this;}
     ::junit::framework::Test& operator=(::junit::framework::Test&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t countTestCases() const ;
-    void run(const ::junit::framework::TestResult&) const ;
+    int32_t countTestCases() const;
+    void run(const ::junit::framework::TestResult&) const;
 
 };
 }

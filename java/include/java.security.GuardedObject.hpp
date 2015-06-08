@@ -36,7 +36,7 @@ public:
     ::java::security::GuardedObject& operator=(::java::security::GuardedObject&& x) {obj = std::move(x.obj); return *this;}
     
     GuardedObject(const ::java::lang::Object&, const ::java::security::Guard&);
-    ::java::lang::Object getObject() const ;
+    ::java::lang::Object getObject() const;
 
 };
 }

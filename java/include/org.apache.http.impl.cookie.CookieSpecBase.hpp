@@ -39,8 +39,8 @@ public:
     ::org::apache::http::impl::cookie::CookieSpecBase& operator=(::org::apache::http::impl::cookie::CookieSpecBase&& x) {obj = std::move(x.obj); return *this;}
     
     CookieSpecBase();
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    bool match(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
 
 };
 }

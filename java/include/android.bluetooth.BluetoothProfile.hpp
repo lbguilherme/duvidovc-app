@@ -33,9 +33,9 @@ public:
     ::android::bluetooth::BluetoothProfile& operator=(const ::android::bluetooth::BluetoothProfile& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothProfile& operator=(::android::bluetooth::BluetoothProfile&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::List getConnectedDevices() const ;
-    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const ;
-    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const ;
+    ::java::util::List getConnectedDevices() const;
+    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const;
+    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const;
 
 };
 }

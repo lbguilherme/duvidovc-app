@@ -35,7 +35,7 @@ public:
     ::javax::net::ssl::HandshakeCompletedListener& operator=(const ::javax::net::ssl::HandshakeCompletedListener& x) {obj = x.obj; return *this;}
     ::javax::net::ssl::HandshakeCompletedListener& operator=(::javax::net::ssl::HandshakeCompletedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void handshakeCompleted(const ::javax::net::ssl::HandshakeCompletedEvent&) const ;
+    void handshakeCompleted(const ::javax::net::ssl::HandshakeCompletedEvent&) const;
 
 };
 }

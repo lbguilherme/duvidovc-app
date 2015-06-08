@@ -35,8 +35,8 @@ public:
     ::android::database::sqlite::SQLiteQuery& operator=(const ::android::database::sqlite::SQLiteQuery& x) {obj = x.obj; return *this;}
     ::android::database::sqlite::SQLiteQuery& operator=(::android::database::sqlite::SQLiteQuery&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
-    void close() const ;
+    ::java::lang::String toString() const;
+    void close() const;
 
 };
 }

@@ -41,7 +41,7 @@ public:
     HttpPost();
     HttpPost(const ::java::net::URI&);
     HttpPost(const ::java::lang::String&);
-    ::java::lang::String getMethod() const ;
+    ::java::lang::String getMethod() const;
 
 };
 }

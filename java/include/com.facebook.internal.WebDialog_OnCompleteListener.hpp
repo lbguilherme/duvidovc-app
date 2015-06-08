@@ -34,7 +34,7 @@ public:
     ::com::facebook::internal::WebDialog_OnCompleteListener& operator=(const ::com::facebook::internal::WebDialog_OnCompleteListener& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::WebDialog_OnCompleteListener& operator=(::com::facebook::internal::WebDialog_OnCompleteListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onComplete(const ::android::os::Bundle&, const ::com::facebook::FacebookException&) const ;
+    void onComplete(const ::android::os::Bundle&, const ::com::facebook::FacebookException&) const;
 
 };
 }

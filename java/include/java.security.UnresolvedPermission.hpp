@@ -39,12 +39,12 @@ public:
     ::java::security::UnresolvedPermission& operator=(::java::security::UnresolvedPermission&& x) {obj = std::move(x.obj); return *this;}
     
     UnresolvedPermission(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::java::security::cert::Certificate>&);
-    ::java::lang::String getUnresolvedName() const ;
-    ::java::lang::String getUnresolvedActions() const ;
-    ::java::lang::String getUnresolvedType() const ;
-    std::vector< ::java::security::cert::Certificate> getUnresolvedCerts() const ;
-    ::java::lang::String getActions() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    ::java::lang::String getUnresolvedName() const;
+    ::java::lang::String getUnresolvedActions() const;
+    ::java::lang::String getUnresolvedType() const;
+    std::vector< ::java::security::cert::Certificate> getUnresolvedCerts() const;
+    ::java::lang::String getActions() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

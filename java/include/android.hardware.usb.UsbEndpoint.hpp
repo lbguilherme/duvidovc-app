@@ -36,16 +36,16 @@ public:
     ::android::hardware::usb::UsbEndpoint& operator=(const ::android::hardware::usb::UsbEndpoint& x) {obj = x.obj; return *this;}
     ::android::hardware::usb::UsbEndpoint& operator=(::android::hardware::usb::UsbEndpoint&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getAddress() const ;
-    int32_t getEndpointNumber() const ;
-    int32_t getDirection() const ;
-    int32_t getAttributes() const ;
-    int32_t getType() const ;
-    int32_t getMaxPacketSize() const ;
-    int32_t getInterval() const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t getAddress() const;
+    int32_t getEndpointNumber() const;
+    int32_t getDirection() const;
+    int32_t getAttributes() const;
+    int32_t getType() const;
+    int32_t getMaxPacketSize() const;
+    int32_t getInterval() const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

@@ -32,8 +32,8 @@ public:
     ::java::net::SocketOptions& operator=(const ::java::net::SocketOptions& x) {obj = x.obj; return *this;}
     ::java::net::SocketOptions& operator=(::java::net::SocketOptions&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object getOption(int32_t) const ;
-    void setOption(int32_t, const ::java::lang::Object&) const ;
+    ::java::lang::Object getOption(int32_t) const;
+    void setOption(int32_t, const ::java::lang::Object&) const;
 
 };
 }

@@ -43,13 +43,13 @@ public:
     SslCertificate(const ::java::security::cert::X509Certificate&);
     static ::android::os::Bundle saveState(const ::android::net::http::SslCertificate&);
     static ::android::net::http::SslCertificate restoreState(const ::android::os::Bundle&);
-    ::java::util::Date getValidNotBeforeDate() const ;
-    ::java::lang::String getValidNotBefore() const ;
-    ::java::util::Date getValidNotAfterDate() const ;
-    ::java::lang::String getValidNotAfter() const ;
-    ::android::net::http::SslCertificate_DName getIssuedTo() const ;
-    ::android::net::http::SslCertificate_DName getIssuedBy() const ;
-    ::java::lang::String toString() const ;
+    ::java::util::Date getValidNotBeforeDate() const;
+    ::java::lang::String getValidNotBefore() const;
+    ::java::util::Date getValidNotAfterDate() const;
+    ::java::lang::String getValidNotAfter() const;
+    ::android::net::http::SslCertificate_DName getIssuedTo() const;
+    ::android::net::http::SslCertificate_DName getIssuedBy() const;
+    ::java::lang::String toString() const;
 
 };
 }

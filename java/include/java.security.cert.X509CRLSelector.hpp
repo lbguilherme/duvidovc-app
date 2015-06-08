@@ -43,24 +43,24 @@ public:
     ::java::security::cert::X509CRLSelector& operator=(::java::security::cert::X509CRLSelector&& x) {obj = std::move(x.obj); return *this;}
     
     X509CRLSelector();
-    void setIssuers(const ::java::util::Collection&) const ;
-    void setIssuerNames(const ::java::util::Collection&) const ;
-    void addIssuer(const ::javax::security::auth::x500::X500Principal&) const ;
-    void addIssuerName(const ::java::lang::String&) const ;
-    void addIssuerName(const std::vector< int8_t>&) const ;
-    void setMinCRLNumber(const ::java::math::BigInteger&) const ;
-    void setMaxCRLNumber(const ::java::math::BigInteger&) const ;
-    void setDateAndTime(const ::java::util::Date&) const ;
-    void setCertificateChecking(const ::java::security::cert::X509Certificate&) const ;
-    ::java::util::Collection getIssuers() const ;
-    ::java::util::Collection getIssuerNames() const ;
-    ::java::math::BigInteger getMinCRL() const ;
-    ::java::math::BigInteger getMaxCRL() const ;
-    ::java::util::Date getDateAndTime() const ;
-    ::java::security::cert::X509Certificate getCertificateChecking() const ;
-    ::java::lang::String toString() const ;
-    bool match(const ::java::security::cert::CRL&) const ;
-    ::java::lang::Object clone() const ;
+    void setIssuers(const ::java::util::Collection&) const;
+    void setIssuerNames(const ::java::util::Collection&) const;
+    void addIssuer(const ::javax::security::auth::x500::X500Principal&) const;
+    void addIssuerName(const ::java::lang::String&) const;
+    void addIssuerName(const std::vector< int8_t>&) const;
+    void setMinCRLNumber(const ::java::math::BigInteger&) const;
+    void setMaxCRLNumber(const ::java::math::BigInteger&) const;
+    void setDateAndTime(const ::java::util::Date&) const;
+    void setCertificateChecking(const ::java::security::cert::X509Certificate&) const;
+    ::java::util::Collection getIssuers() const;
+    ::java::util::Collection getIssuerNames() const;
+    ::java::math::BigInteger getMinCRL() const;
+    ::java::math::BigInteger getMaxCRL() const;
+    ::java::util::Date getDateAndTime() const;
+    ::java::security::cert::X509Certificate getCertificateChecking() const;
+    ::java::lang::String toString() const;
+    bool match(const ::java::security::cert::CRL&) const;
+    ::java::lang::Object clone() const;
 
 };
 }

@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::cookie::AbstractCookieSpec& operator=(::org::apache::http::impl::cookie::AbstractCookieSpec&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractCookieSpec();
-    void registerAttribHandler(const ::java::lang::String&, const ::org::apache::http::cookie::CookieAttributeHandler&) const ;
+    void registerAttribHandler(const ::java::lang::String&, const ::org::apache::http::cookie::CookieAttributeHandler&) const;
 
 };
 }

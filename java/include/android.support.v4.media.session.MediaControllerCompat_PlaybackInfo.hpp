@@ -34,11 +34,11 @@ public:
     ::android::support::v4::media::session::MediaControllerCompat_PlaybackInfo& operator=(const ::android::support::v4::media::session::MediaControllerCompat_PlaybackInfo& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::MediaControllerCompat_PlaybackInfo& operator=(::android::support::v4::media::session::MediaControllerCompat_PlaybackInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getPlaybackType() const ;
-    int32_t getAudioStream() const ;
-    int32_t getVolumeControl() const ;
-    int32_t getMaxVolume() const ;
-    int32_t getCurrentVolume() const ;
+    int32_t getPlaybackType() const;
+    int32_t getAudioStream() const;
+    int32_t getVolumeControl() const;
+    int32_t getMaxVolume() const;
+    int32_t getCurrentVolume() const;
 
 };
 }

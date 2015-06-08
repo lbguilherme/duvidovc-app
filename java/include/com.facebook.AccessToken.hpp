@@ -47,21 +47,21 @@ public:
     static ::com::facebook::AccessToken getCurrentAccessToken();
     static void setCurrentAccessToken(const ::com::facebook::AccessToken&);
     static void refreshCurrentAccessTokenAsync();
-    ::java::lang::String getToken() const ;
-    ::java::util::Date getExpires() const ;
-    ::java::util::Set getPermissions() const ;
-    ::java::util::Set getDeclinedPermissions() const ;
-    ::com::facebook::AccessTokenSource getSource() const ;
-    ::java::util::Date getLastRefresh() const ;
-    ::java::lang::String getApplicationId() const ;
-    ::java::lang::String getUserId() const ;
+    ::java::lang::String getToken() const;
+    ::java::util::Date getExpires() const;
+    ::java::util::Set getPermissions() const;
+    ::java::util::Set getDeclinedPermissions() const;
+    ::com::facebook::AccessTokenSource getSource() const;
+    ::java::util::Date getLastRefresh() const;
+    ::java::lang::String getApplicationId() const;
+    ::java::lang::String getUserId() const;
     static void createFromNativeLinkingIntent(const ::android::content::Intent&, const ::java::lang::String&, const ::com::facebook::AccessToken_AccessTokenCreationCallback&);
-    ::java::lang::String toString() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    bool isExpired() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    bool isExpired() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

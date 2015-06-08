@@ -34,12 +34,12 @@ public:
     ::java::util::Queue& operator=(const ::java::util::Queue& x) {obj = x.obj; return *this;}
     ::java::util::Queue& operator=(::java::util::Queue&& x) {obj = std::move(x.obj); return *this;}
     
-    bool add(const ::java::lang::Object&) const ;
-    bool offer(const ::java::lang::Object&) const ;
-    ::java::lang::Object remove() const ;
-    ::java::lang::Object poll() const ;
-    ::java::lang::Object element() const ;
-    ::java::lang::Object peek() const ;
+    bool add(const ::java::lang::Object&) const;
+    bool offer(const ::java::lang::Object&) const;
+    ::java::lang::Object remove() const;
+    ::java::lang::Object poll() const;
+    ::java::lang::Object element() const;
+    ::java::lang::Object peek() const;
 
 };
 }

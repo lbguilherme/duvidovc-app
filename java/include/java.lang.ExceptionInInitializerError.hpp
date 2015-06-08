@@ -38,8 +38,8 @@ public:
     ExceptionInInitializerError();
     ExceptionInInitializerError(const ::java::lang::String&);
     ExceptionInInitializerError(const ::java::lang::Throwable&);
-    ::java::lang::Throwable getException() const ;
-    ::java::lang::Throwable getCause() const ;
+    ::java::lang::Throwable getException() const;
+    ::java::lang::Throwable getCause() const;
 
 };
 }

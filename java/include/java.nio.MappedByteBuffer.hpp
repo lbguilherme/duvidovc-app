@@ -34,9 +34,9 @@ public:
     ::java::nio::MappedByteBuffer& operator=(const ::java::nio::MappedByteBuffer& x) {obj = x.obj; return *this;}
     ::java::nio::MappedByteBuffer& operator=(::java::nio::MappedByteBuffer&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isLoaded() const ;
-    ::java::nio::MappedByteBuffer load() const ;
-    ::java::nio::MappedByteBuffer force() const ;
+    bool isLoaded() const;
+    ::java::nio::MappedByteBuffer load() const;
+    ::java::nio::MappedByteBuffer force() const;
 
 };
 }

@@ -33,7 +33,7 @@ public:
     ::java::nio::channels::FileChannel_MapMode& operator=(const ::java::nio::channels::FileChannel_MapMode& x) {obj = x.obj; return *this;}
     ::java::nio::channels::FileChannel_MapMode& operator=(::java::nio::channels::FileChannel_MapMode&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

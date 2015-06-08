@@ -33,7 +33,7 @@ public:
     ::android::content::SharedPreferences_OnSharedPreferenceChangeListener& operator=(const ::android::content::SharedPreferences_OnSharedPreferenceChangeListener& x) {obj = x.obj; return *this;}
     ::android::content::SharedPreferences_OnSharedPreferenceChangeListener& operator=(::android::content::SharedPreferences_OnSharedPreferenceChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSharedPreferenceChanged(const ::android::content::SharedPreferences&, const ::java::lang::String&) const ;
+    void onSharedPreferenceChanged(const ::android::content::SharedPreferences&, const ::java::lang::String&) const;
 
 };
 }

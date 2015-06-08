@@ -36,9 +36,9 @@ public:
     ::android::support::v4::view::ViewPager_SimpleOnPageChangeListener& operator=(::android::support::v4::view::ViewPager_SimpleOnPageChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
     ViewPager_SimpleOnPageChangeListener();
-    void onPageScrolled(int32_t, float, int32_t) const ;
-    void onPageSelected(int32_t) const ;
-    void onPageScrollStateChanged(int32_t) const ;
+    void onPageScrolled(int32_t, float, int32_t) const;
+    void onPageSelected(int32_t) const;
+    void onPageScrollStateChanged(int32_t) const;
 
 };
 }

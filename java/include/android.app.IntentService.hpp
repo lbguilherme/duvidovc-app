@@ -37,12 +37,12 @@ public:
     ::android::app::IntentService& operator=(::android::app::IntentService&& x) {obj = std::move(x.obj); return *this;}
     
     IntentService(const ::java::lang::String&);
-    void setIntentRedelivery(bool) const ;
-    void onCreate() const ;
-    void onStart(const ::android::content::Intent&, int32_t) const ;
-    int32_t onStartCommand(const ::android::content::Intent&, int32_t, int32_t) const ;
-    void onDestroy() const ;
-    ::android::os::IBinder onBind(const ::android::content::Intent&) const ;
+    void setIntentRedelivery(bool) const;
+    void onCreate() const;
+    void onStart(const ::android::content::Intent&, int32_t) const;
+    int32_t onStartCommand(const ::android::content::Intent&, int32_t, int32_t) const;
+    void onDestroy() const;
+    ::android::os::IBinder onBind(const ::android::content::Intent&) const;
 
 };
 }

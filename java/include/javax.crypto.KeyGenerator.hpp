@@ -37,17 +37,17 @@ public:
     ::javax::crypto::KeyGenerator& operator=(const ::javax::crypto::KeyGenerator& x) {obj = x.obj; return *this;}
     ::javax::crypto::KeyGenerator& operator=(::javax::crypto::KeyGenerator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
     static ::javax::crypto::KeyGenerator getInstance(const ::java::lang::String&);
     static ::javax::crypto::KeyGenerator getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::javax::crypto::KeyGenerator getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::javax::crypto::SecretKey generateKey() const ;
-    void init(const ::java::security::spec::AlgorithmParameterSpec&) const ;
-    void init(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const ;
-    void init(int32_t) const ;
-    void init(int32_t, const ::java::security::SecureRandom&) const ;
-    void init(const ::java::security::SecureRandom&) const ;
+    ::javax::crypto::SecretKey generateKey() const;
+    void init(const ::java::security::spec::AlgorithmParameterSpec&) const;
+    void init(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const;
+    void init(int32_t) const;
+    void init(int32_t, const ::java::security::SecureRandom&) const;
+    void init(const ::java::security::SecureRandom&) const;
 
 };
 }

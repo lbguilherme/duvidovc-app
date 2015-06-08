@@ -35,8 +35,8 @@ public:
     ::android::renderscript::ProgramVertexFixedFunction_Builder& operator=(::android::renderscript::ProgramVertexFixedFunction_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ProgramVertexFixedFunction_Builder(const ::android::renderscript::RenderScript&);
-    ::android::renderscript::ProgramVertexFixedFunction_Builder setTextureMatrixEnable(bool) const ;
-    ::android::renderscript::ProgramVertexFixedFunction create() const ;
+    ::android::renderscript::ProgramVertexFixedFunction_Builder setTextureMatrixEnable(bool) const;
+    ::android::renderscript::ProgramVertexFixedFunction create() const;
 
 };
 }

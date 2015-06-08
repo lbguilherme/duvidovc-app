@@ -43,12 +43,12 @@ public:
     ::com::facebook::share::model::ShareContent_Builder& operator=(::com::facebook::share::model::ShareContent_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     ShareContent_Builder();
-    ::com::facebook::share::model::ShareContent_Builder setContentUrl(const ::android::net::Uri&) const ;
-    ::com::facebook::share::model::ShareContent_Builder setPeopleIds(const ::java::util::List&) const ;
-    ::com::facebook::share::model::ShareContent_Builder setPlaceId(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareContent_Builder setRef(const ::java::lang::String&) const ;
-    ::com::facebook::share::model::ShareContent_Builder readFrom(const ::com::facebook::share::model::ShareContent&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::model::ShareContent_Builder setContentUrl(const ::android::net::Uri&) const;
+    ::com::facebook::share::model::ShareContent_Builder setPeopleIds(const ::java::util::List&) const;
+    ::com::facebook::share::model::ShareContent_Builder setPlaceId(const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareContent_Builder setRef(const ::java::lang::String&) const;
+    ::com::facebook::share::model::ShareContent_Builder readFrom(const ::com::facebook::share::model::ShareContent&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

@@ -37,12 +37,12 @@ public:
     
     BufferedWriter(const ::java::io::Writer&);
     BufferedWriter(const ::java::io::Writer&, int32_t);
-    void close() const ;
-    void flush() const ;
-    void newLine() const ;
-    void write(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void write(const ::java::lang::String&, int32_t, int32_t) const ;
+    void close() const;
+    void flush() const;
+    void newLine() const;
+    void write(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void write(const ::java::lang::String&, int32_t, int32_t) const;
 
 };
 }

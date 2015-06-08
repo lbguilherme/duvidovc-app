@@ -38,9 +38,9 @@ public:
     ::com::facebook::share::internal::ResultProcessor& operator=(::com::facebook::share::internal::ResultProcessor&& x) {obj = std::move(x.obj); return *this;}
     
     ResultProcessor(const ::com::facebook::FacebookCallback&);
-    void onSuccess(const ::com::facebook::internal::AppCall&, const ::android::os::Bundle&) const ;
-    void onCancel(const ::com::facebook::internal::AppCall&) const ;
-    void onError(const ::com::facebook::internal::AppCall&, const ::com::facebook::FacebookException&) const ;
+    void onSuccess(const ::com::facebook::internal::AppCall&, const ::android::os::Bundle&) const;
+    void onCancel(const ::com::facebook::internal::AppCall&) const;
+    void onError(const ::com::facebook::internal::AppCall&, const ::com::facebook::FacebookException&) const;
 
 };
 }

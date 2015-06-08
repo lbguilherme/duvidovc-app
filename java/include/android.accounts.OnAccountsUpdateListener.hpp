@@ -32,7 +32,7 @@ public:
     ::android::accounts::OnAccountsUpdateListener& operator=(const ::android::accounts::OnAccountsUpdateListener& x) {obj = x.obj; return *this;}
     ::android::accounts::OnAccountsUpdateListener& operator=(::android::accounts::OnAccountsUpdateListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAccountsUpdated(const std::vector< ::android::accounts::Account>&) const ;
+    void onAccountsUpdated(const std::vector< ::android::accounts::Account>&) const;
 
 };
 }

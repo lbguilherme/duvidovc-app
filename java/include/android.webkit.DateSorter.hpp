@@ -34,9 +34,9 @@ public:
     ::android::webkit::DateSorter& operator=(::android::webkit::DateSorter&& x) {obj = std::move(x.obj); return *this;}
     
     DateSorter(const ::android::content::Context&);
-    int32_t getIndex(int64_t) const ;
-    ::java::lang::String getLabel(int32_t) const ;
-    int64_t getBoundary(int32_t) const ;
+    int32_t getIndex(int64_t) const;
+    ::java::lang::String getLabel(int32_t) const;
+    int64_t getBoundary(int32_t) const;
 
 };
 }

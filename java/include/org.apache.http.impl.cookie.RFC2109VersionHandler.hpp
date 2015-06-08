@@ -41,8 +41,8 @@ public:
     ::org::apache::http::impl::cookie::RFC2109VersionHandler& operator=(::org::apache::http::impl::cookie::RFC2109VersionHandler&& x) {obj = std::move(x.obj); return *this;}
     
     RFC2109VersionHandler();
-    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const ;
-    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const ;
+    void parse(const ::org::apache::http::cookie::SetCookie&, const ::java::lang::String&) const;
+    void validate(const ::org::apache::http::cookie::Cookie&, const ::org::apache::http::cookie::CookieOrigin&) const;
 
 };
 }

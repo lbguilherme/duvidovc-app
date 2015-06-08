@@ -38,9 +38,9 @@ public:
     ::java::security::Permissions& operator=(::java::security::Permissions&& x) {obj = std::move(x.obj); return *this;}
     
     Permissions();
-    void add(const ::java::security::Permission&) const ;
-    ::java::util::Enumeration elements() const ;
-    bool implies(const ::java::security::Permission&) const ;
+    void add(const ::java::security::Permission&) const;
+    ::java::util::Enumeration elements() const;
+    bool implies(const ::java::security::Permission&) const;
 
 };
 }

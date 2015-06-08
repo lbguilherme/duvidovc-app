@@ -43,21 +43,21 @@ public:
     
     TransportMediator(const ::android::app::Activity&, const ::android::support::v4::media::TransportPerformer&);
     TransportMediator(const ::android::view::View&, const ::android::support::v4::media::TransportPerformer&);
-    ::java::lang::Object getRemoteControlClient() const ;
-    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const ;
-    void registerStateListener(const ::android::support::v4::media::TransportStateListener&) const ;
-    void unregisterStateListener(const ::android::support::v4::media::TransportStateListener&) const ;
-    void refreshState() const ;
-    void startPlaying() const ;
-    void pausePlaying() const ;
-    void stopPlaying() const ;
-    int64_t getDuration() const ;
-    int64_t getCurrentPosition() const ;
-    void seekTo(int64_t) const ;
-    bool isPlaying() const ;
-    int32_t getBufferPercentage() const ;
-    int32_t getTransportControlFlags() const ;
-    void destroy() const ;
+    ::java::lang::Object getRemoteControlClient() const;
+    bool dispatchKeyEvent(const ::android::view::KeyEvent&) const;
+    void registerStateListener(const ::android::support::v4::media::TransportStateListener&) const;
+    void unregisterStateListener(const ::android::support::v4::media::TransportStateListener&) const;
+    void refreshState() const;
+    void startPlaying() const;
+    void pausePlaying() const;
+    void stopPlaying() const;
+    int64_t getDuration() const;
+    int64_t getCurrentPosition() const;
+    void seekTo(int64_t) const;
+    bool isPlaying() const;
+    int32_t getBufferPercentage() const;
+    int32_t getTransportControlFlags() const;
+    void destroy() const;
 
 };
 }

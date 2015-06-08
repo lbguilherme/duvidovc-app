@@ -38,21 +38,21 @@ public:
     
     static ::android::support::v4::widget::ScrollerCompat create(const ::android::content::Context&);
     static ::android::support::v4::widget::ScrollerCompat create(const ::android::content::Context&, const ::android::view::animation::Interpolator&);
-    bool isFinished() const ;
-    int32_t getCurrX() const ;
-    int32_t getCurrY() const ;
-    int32_t getFinalX() const ;
-    int32_t getFinalY() const ;
-    float getCurrVelocity() const ;
-    bool computeScrollOffset() const ;
-    void startScroll(int32_t, int32_t, int32_t, int32_t) const ;
-    void startScroll(int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    void fling(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    void fling(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const ;
-    void abortAnimation() const ;
-    void notifyHorizontalEdgeReached(int32_t, int32_t, int32_t) const ;
-    void notifyVerticalEdgeReached(int32_t, int32_t, int32_t) const ;
-    bool isOverScrolled() const ;
+    bool isFinished() const;
+    int32_t getCurrX() const;
+    int32_t getCurrY() const;
+    int32_t getFinalX() const;
+    int32_t getFinalY() const;
+    float getCurrVelocity() const;
+    bool computeScrollOffset() const;
+    void startScroll(int32_t, int32_t, int32_t, int32_t) const;
+    void startScroll(int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    void fling(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    void fling(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t) const;
+    void abortAnimation() const;
+    void notifyHorizontalEdgeReached(int32_t, int32_t, int32_t) const;
+    void notifyVerticalEdgeReached(int32_t, int32_t, int32_t) const;
+    bool isOverScrolled() const;
 
 };
 }

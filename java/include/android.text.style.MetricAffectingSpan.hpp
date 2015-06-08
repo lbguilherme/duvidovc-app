@@ -39,8 +39,8 @@ public:
     ::android::text::style::MetricAffectingSpan& operator=(::android::text::style::MetricAffectingSpan&& x) {obj = std::move(x.obj); return *this;}
     
     MetricAffectingSpan();
-    void updateMeasureState(const ::android::text::TextPaint&) const ;
-    ::android::text::style::MetricAffectingSpan getUnderlying() const ;
+    void updateMeasureState(const ::android::text::TextPaint&) const;
+    ::android::text::style::MetricAffectingSpan getUnderlying() const;
 
 };
 }

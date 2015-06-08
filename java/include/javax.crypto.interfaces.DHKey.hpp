@@ -33,7 +33,7 @@ public:
     ::javax::crypto::interfaces::DHKey& operator=(const ::javax::crypto::interfaces::DHKey& x) {obj = x.obj; return *this;}
     ::javax::crypto::interfaces::DHKey& operator=(::javax::crypto::interfaces::DHKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::crypto::spec::DHParameterSpec getParams() const ;
+    ::javax::crypto::spec::DHParameterSpec getParams() const;
 
 };
 }

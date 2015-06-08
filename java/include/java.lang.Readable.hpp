@@ -32,7 +32,7 @@ public:
     ::java::lang::Readable& operator=(const ::java::lang::Readable& x) {obj = x.obj; return *this;}
     ::java::lang::Readable& operator=(::java::lang::Readable&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t read(const ::java::nio::CharBuffer&) const ;
+    int32_t read(const ::java::nio::CharBuffer&) const;
 
 };
 }

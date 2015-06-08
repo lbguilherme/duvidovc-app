@@ -38,14 +38,14 @@ public:
     ::java::util::zip::ZipOutputStream& operator=(::java::util::zip::ZipOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
     ZipOutputStream(const ::java::io::OutputStream&);
-    void close() const ;
-    void closeEntry() const ;
-    void finish() const ;
-    void putNextEntry(const ::java::util::zip::ZipEntry&) const ;
-    void setComment(const ::java::lang::String&) const ;
-    void setLevel(int32_t) const ;
-    void setMethod(int32_t) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
+    void close() const;
+    void closeEntry() const;
+    void finish() const;
+    void putNextEntry(const ::java::util::zip::ZipEntry&) const;
+    void setComment(const ::java::lang::String&) const;
+    void setLevel(int32_t) const;
+    void setMethod(int32_t) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
 
 };
 }

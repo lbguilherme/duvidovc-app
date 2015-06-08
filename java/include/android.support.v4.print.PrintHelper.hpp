@@ -40,16 +40,16 @@ public:
     
     static bool systemSupportsPrint();
     PrintHelper(const ::android::content::Context&);
-    void setScaleMode(int32_t) const ;
-    int32_t getScaleMode() const ;
-    void setColorMode(int32_t) const ;
-    int32_t getColorMode() const ;
-    void setOrientation(int32_t) const ;
-    int32_t getOrientation() const ;
-    void printBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&) const ;
-    void printBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const ;
-    void printBitmap(const ::java::lang::String&, const ::android::net::Uri&) const ;
-    void printBitmap(const ::java::lang::String&, const ::android::net::Uri&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const ;
+    void setScaleMode(int32_t) const;
+    int32_t getScaleMode() const;
+    void setColorMode(int32_t) const;
+    int32_t getColorMode() const;
+    void setOrientation(int32_t) const;
+    int32_t getOrientation() const;
+    void printBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&) const;
+    void printBitmap(const ::java::lang::String&, const ::android::graphics::Bitmap&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const;
+    void printBitmap(const ::java::lang::String&, const ::android::net::Uri&) const;
+    void printBitmap(const ::java::lang::String&, const ::android::net::Uri&, const ::android::support::v4::print::PrintHelper_OnPrintFinishCallback&) const;
 
 };
 }

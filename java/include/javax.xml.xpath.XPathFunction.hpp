@@ -34,7 +34,7 @@ public:
     ::javax::xml::xpath::XPathFunction& operator=(const ::javax::xml::xpath::XPathFunction& x) {obj = x.obj; return *this;}
     ::javax::xml::xpath::XPathFunction& operator=(::javax::xml::xpath::XPathFunction&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object evaluate(const ::java::util::List&) const ;
+    ::java::lang::Object evaluate(const ::java::util::List&) const;
 
 };
 }

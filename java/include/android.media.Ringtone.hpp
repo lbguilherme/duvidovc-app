@@ -33,12 +33,12 @@ public:
     ::android::media::Ringtone& operator=(const ::android::media::Ringtone& x) {obj = x.obj; return *this;}
     ::android::media::Ringtone& operator=(::android::media::Ringtone&& x) {obj = std::move(x.obj); return *this;}
     
-    void setStreamType(int32_t) const ;
-    int32_t getStreamType() const ;
-    ::java::lang::String getTitle(const ::android::content::Context&) const ;
-    void play() const ;
-    void stop() const ;
-    bool isPlaying() const ;
+    void setStreamType(int32_t) const;
+    int32_t getStreamType() const;
+    ::java::lang::String getTitle(const ::android::content::Context&) const;
+    void play() const;
+    void stop() const;
+    bool isPlaying() const;
 
 };
 }

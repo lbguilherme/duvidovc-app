@@ -35,21 +35,21 @@ public:
     ::android::webkit::CacheManager_CacheResult& operator=(::android::webkit::CacheManager_CacheResult&& x) {obj = std::move(x.obj); return *this;}
     
     CacheManager_CacheResult();
-    int32_t getHttpStatusCode() const ;
-    int64_t getContentLength() const ;
-    ::java::lang::String getLocalPath() const ;
-    int64_t getExpires() const ;
-    ::java::lang::String getExpiresString() const ;
-    ::java::lang::String getLastModified() const ;
-    ::java::lang::String getETag() const ;
-    ::java::lang::String getMimeType() const ;
-    ::java::lang::String getLocation() const ;
-    ::java::lang::String getEncoding() const ;
-    ::java::lang::String getContentDisposition() const ;
-    ::java::io::InputStream getInputStream() const ;
-    ::java::io::OutputStream getOutputStream() const ;
-    void setInputStream(const ::java::io::InputStream&) const ;
-    void setEncoding(const ::java::lang::String&) const ;
+    int32_t getHttpStatusCode() const;
+    int64_t getContentLength() const;
+    ::java::lang::String getLocalPath() const;
+    int64_t getExpires() const;
+    ::java::lang::String getExpiresString() const;
+    ::java::lang::String getLastModified() const;
+    ::java::lang::String getETag() const;
+    ::java::lang::String getMimeType() const;
+    ::java::lang::String getLocation() const;
+    ::java::lang::String getEncoding() const;
+    ::java::lang::String getContentDisposition() const;
+    ::java::io::InputStream getInputStream() const;
+    ::java::io::OutputStream getOutputStream() const;
+    void setInputStream(const ::java::io::InputStream&) const;
+    void setEncoding(const ::java::lang::String&) const;
 
 };
 }

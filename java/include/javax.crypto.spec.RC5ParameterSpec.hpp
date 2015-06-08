@@ -38,12 +38,12 @@ public:
     RC5ParameterSpec(int32_t, int32_t, int32_t);
     RC5ParameterSpec(int32_t, int32_t, int32_t, const std::vector< int8_t>&);
     RC5ParameterSpec(int32_t, int32_t, int32_t, const std::vector< int8_t>&, int32_t);
-    int32_t getVersion() const ;
-    int32_t getRounds() const ;
-    int32_t getWordSize() const ;
-    std::vector< int8_t> getIV() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    int32_t getVersion() const;
+    int32_t getRounds() const;
+    int32_t getWordSize() const;
+    std::vector< int8_t> getIV() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

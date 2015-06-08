@@ -36,15 +36,15 @@ public:
     ::android::content::SyncResult& operator=(::android::content::SyncResult&& x) {obj = std::move(x.obj); return *this;}
     
     SyncResult();
-    bool hasHardError() const ;
-    bool hasSoftError() const ;
-    bool hasError() const ;
-    bool madeSomeProgress() const ;
-    void clear() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::String toDebugString() const ;
+    bool hasHardError() const;
+    bool hasSoftError() const;
+    bool hasError() const;
+    bool madeSomeProgress() const;
+    void clear() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
+    ::java::lang::String toDebugString() const;
 
 };
 }

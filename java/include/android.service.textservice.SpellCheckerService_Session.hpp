@@ -37,13 +37,13 @@ public:
     ::android::service::textservice::SpellCheckerService_Session& operator=(::android::service::textservice::SpellCheckerService_Session&& x) {obj = std::move(x.obj); return *this;}
     
     SpellCheckerService_Session();
-    void onCreate() const ;
-    ::android::view::textservice::SuggestionsInfo onGetSuggestions(const ::android::view::textservice::TextInfo&, int32_t) const ;
-    std::vector< ::android::view::textservice::SuggestionsInfo> onGetSuggestionsMultiple(const std::vector< ::android::view::textservice::TextInfo>&, int32_t, bool) const ;
-    void onCancel() const ;
-    void onClose() const ;
-    ::java::lang::String getLocale() const ;
-    ::android::os::Bundle getBundle() const ;
+    void onCreate() const;
+    ::android::view::textservice::SuggestionsInfo onGetSuggestions(const ::android::view::textservice::TextInfo&, int32_t) const;
+    std::vector< ::android::view::textservice::SuggestionsInfo> onGetSuggestionsMultiple(const std::vector< ::android::view::textservice::TextInfo>&, int32_t, bool) const;
+    void onCancel() const;
+    void onClose() const;
+    ::java::lang::String getLocale() const;
+    ::android::os::Bundle getBundle() const;
 
 };
 }

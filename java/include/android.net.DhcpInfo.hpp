@@ -36,9 +36,9 @@ public:
     ::android::net::DhcpInfo& operator=(::android::net::DhcpInfo&& x) {obj = std::move(x.obj); return *this;}
     
     DhcpInfo();
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

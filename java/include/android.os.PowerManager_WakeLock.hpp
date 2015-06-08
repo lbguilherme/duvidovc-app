@@ -33,13 +33,13 @@ public:
     ::android::os::PowerManager_WakeLock& operator=(const ::android::os::PowerManager_WakeLock& x) {obj = x.obj; return *this;}
     ::android::os::PowerManager_WakeLock& operator=(::android::os::PowerManager_WakeLock&& x) {obj = std::move(x.obj); return *this;}
     
-    void setReferenceCounted(bool) const ;
-    void acquire() const ;
-    void acquire(int64_t) const ;
-    void release() const ;
-    bool isHeld() const ;
-    void setWorkSource(const ::android::os::WorkSource&) const ;
-    ::java::lang::String toString() const ;
+    void setReferenceCounted(bool) const;
+    void acquire() const;
+    void acquire(int64_t) const;
+    void release() const;
+    bool isHeld() const;
+    void setWorkSource(const ::android::os::WorkSource&) const;
+    ::java::lang::String toString() const;
 
 };
 }

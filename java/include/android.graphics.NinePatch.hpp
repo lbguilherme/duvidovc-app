@@ -39,15 +39,15 @@ public:
     ::android::graphics::NinePatch& operator=(::android::graphics::NinePatch&& x) {obj = std::move(x.obj); return *this;}
     
     NinePatch(const ::android::graphics::Bitmap&, const std::vector< int8_t>&, const ::java::lang::String&);
-    void setPaint(const ::android::graphics::Paint&) const ;
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::RectF&) const ;
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Rect&) const ;
-    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Rect&, const ::android::graphics::Paint&) const ;
-    int32_t getDensity() const ;
-    int32_t getWidth() const ;
-    int32_t getHeight() const ;
-    bool hasAlpha() const ;
-    ::android::graphics::Region getTransparentRegion(const ::android::graphics::Rect&) const ;
+    void setPaint(const ::android::graphics::Paint&) const;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::RectF&) const;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Rect&) const;
+    void draw(const ::android::graphics::Canvas&, const ::android::graphics::Rect&, const ::android::graphics::Paint&) const;
+    int32_t getDensity() const;
+    int32_t getWidth() const;
+    int32_t getHeight() const;
+    bool hasAlpha() const;
+    ::android::graphics::Region getTransparentRegion(const ::android::graphics::Rect&) const;
     static bool isNinePatchChunk(const std::vector< int8_t>&);
 
 };

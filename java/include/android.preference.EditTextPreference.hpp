@@ -40,10 +40,10 @@ public:
     EditTextPreference(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     EditTextPreference(const ::android::content::Context&, const ::android::util::AttributeSet&);
     EditTextPreference(const ::android::content::Context&);
-    void setText(const ::java::lang::String&) const ;
-    ::java::lang::String getText() const ;
-    bool shouldDisableDependents() const ;
-    ::android::widget::EditText getEditText() const ;
+    void setText(const ::java::lang::String&) const;
+    ::java::lang::String getText() const;
+    bool shouldDisableDependents() const;
+    ::android::widget::EditText getEditText() const;
 
 };
 }

@@ -32,7 +32,7 @@ public:
     ::android::widget::RatingBar_OnRatingBarChangeListener& operator=(const ::android::widget::RatingBar_OnRatingBarChangeListener& x) {obj = x.obj; return *this;}
     ::android::widget::RatingBar_OnRatingBarChangeListener& operator=(::android::widget::RatingBar_OnRatingBarChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onRatingChanged(const ::android::widget::RatingBar&, float, bool) const ;
+    void onRatingChanged(const ::android::widget::RatingBar&, float, bool) const;
 
 };
 }

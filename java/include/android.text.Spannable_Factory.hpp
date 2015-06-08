@@ -36,7 +36,7 @@ public:
     
     Spannable_Factory();
     static ::android::text::Spannable_Factory getInstance();
-    ::android::text::Spannable newSpannable(const ::java::lang::CharSequence&) const ;
+    ::android::text::Spannable newSpannable(const ::java::lang::CharSequence&) const;
 
 };
 }

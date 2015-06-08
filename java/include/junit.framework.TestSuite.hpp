@@ -43,19 +43,19 @@ public:
     TestSuite(const ::java::lang::Class&, const ::java::lang::String&);
     TestSuite(const ::java::lang::Class&);
     TestSuite(const ::java::lang::String&);
-    void addTest(const ::junit::framework::Test&) const ;
-    void addTestSuite(const ::java::lang::Class&) const ;
+    void addTest(const ::junit::framework::Test&) const;
+    void addTestSuite(const ::java::lang::Class&) const;
     static ::junit::framework::Test createTest(const ::java::lang::Class&, const ::java::lang::String&);
-    int32_t countTestCases() const ;
+    int32_t countTestCases() const;
     static ::java::lang::reflect::Constructor getTestConstructor(const ::java::lang::Class&);
-    void run(const ::junit::framework::TestResult&) const ;
-    void runTest(const ::junit::framework::Test&, const ::junit::framework::TestResult&) const ;
-    ::junit::framework::Test testAt(int32_t) const ;
-    int32_t testCount() const ;
-    ::java::util::Enumeration tests() const ;
-    ::java::lang::String toString() const ;
-    void setName(const ::java::lang::String&) const ;
-    ::java::lang::String getName() const ;
+    void run(const ::junit::framework::TestResult&) const;
+    void runTest(const ::junit::framework::Test&, const ::junit::framework::TestResult&) const;
+    ::junit::framework::Test testAt(int32_t) const;
+    int32_t testCount() const;
+    ::java::util::Enumeration tests() const;
+    ::java::lang::String toString() const;
+    void setName(const ::java::lang::String&) const;
+    ::java::lang::String getName() const;
 
 };
 }

@@ -37,14 +37,14 @@ public:
     ::android::nfc::tech::NfcV& operator=(::android::nfc::tech::NfcV&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::nfc::tech::NfcV get(const ::android::nfc::Tag&);
-    int8_t getResponseFlags() const ;
-    int8_t getDsfId() const ;
-    std::vector< int8_t> transceive(const std::vector< int8_t>&) const ;
-    int32_t getMaxTransceiveLength() const ;
-    void close() const ;
-    void connect() const ;
-    bool isConnected() const ;
-    ::android::nfc::Tag getTag() const ;
+    int8_t getResponseFlags() const;
+    int8_t getDsfId() const;
+    std::vector< int8_t> transceive(const std::vector< int8_t>&) const;
+    int32_t getMaxTransceiveLength() const;
+    void close() const;
+    void connect() const;
+    bool isConnected() const;
+    ::android::nfc::Tag getTag() const;
 
 };
 }

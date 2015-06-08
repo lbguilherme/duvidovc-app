@@ -36,7 +36,7 @@ public:
     ::android::text::method::TimeKeyListener& operator=(::android::text::method::TimeKeyListener&& x) {obj = std::move(x.obj); return *this;}
     
     TimeKeyListener();
-    int32_t getInputType() const ;
+    int32_t getInputType() const;
     static ::android::text::method::TimeKeyListener getInstance();
 
 };

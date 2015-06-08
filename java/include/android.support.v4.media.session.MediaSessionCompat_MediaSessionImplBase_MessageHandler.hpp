@@ -42,11 +42,11 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImplBase_MessageHandler& operator=(::android::support::v4::media::session::MediaSessionCompat_MediaSessionImplBase_MessageHandler&& x) {obj = std::move(x.obj); return *this;}
     
     MediaSessionCompat_MediaSessionImplBase_MessageHandler(const ::android::support::v4::media::session::MediaSessionCompat_MediaSessionImplBase&, const ::android::os::Looper&);
-    void post(int32_t, const ::java::lang::Object&, const ::android::os::Bundle&) const ;
-    void post(int32_t, const ::java::lang::Object&) const ;
-    void post(int32_t) const ;
-    void post(int32_t, const ::java::lang::Object&, int32_t) const ;
-    void handleMessage(const ::android::os::Message&) const ;
+    void post(int32_t, const ::java::lang::Object&, const ::android::os::Bundle&) const;
+    void post(int32_t, const ::java::lang::Object&) const;
+    void post(int32_t) const;
+    void post(int32_t, const ::java::lang::Object&, int32_t) const;
+    void handleMessage(const ::android::os::Message&) const;
 
 };
 }

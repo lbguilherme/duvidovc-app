@@ -35,11 +35,11 @@ public:
     ::android::renderscript::Mesh& operator=(const ::android::renderscript::Mesh& x) {obj = x.obj; return *this;}
     ::android::renderscript::Mesh& operator=(::android::renderscript::Mesh&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getVertexAllocationCount() const ;
-    ::android::renderscript::Allocation getVertexAllocation(int32_t) const ;
-    int32_t getPrimitiveCount() const ;
-    ::android::renderscript::Allocation getIndexSetAllocation(int32_t) const ;
-    ::android::renderscript::Mesh_Primitive getPrimitive(int32_t) const ;
+    int32_t getVertexAllocationCount() const;
+    ::android::renderscript::Allocation getVertexAllocation(int32_t) const;
+    int32_t getPrimitiveCount() const;
+    ::android::renderscript::Allocation getIndexSetAllocation(int32_t) const;
+    ::android::renderscript::Mesh_Primitive getPrimitive(int32_t) const;
 
 };
 }

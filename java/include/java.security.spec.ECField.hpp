@@ -32,7 +32,7 @@ public:
     ::java::security::spec::ECField& operator=(const ::java::security::spec::ECField& x) {obj = x.obj; return *this;}
     ::java::security::spec::ECField& operator=(::java::security::spec::ECField&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getFieldSize() const ;
+    int32_t getFieldSize() const;
 
 };
 }

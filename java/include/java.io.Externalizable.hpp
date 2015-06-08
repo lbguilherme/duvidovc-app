@@ -35,8 +35,8 @@ public:
     ::java::io::Externalizable& operator=(const ::java::io::Externalizable& x) {obj = x.obj; return *this;}
     ::java::io::Externalizable& operator=(::java::io::Externalizable&& x) {obj = std::move(x.obj); return *this;}
     
-    void readExternal(const ::java::io::ObjectInput&) const ;
-    void writeExternal(const ::java::io::ObjectOutput&) const ;
+    void readExternal(const ::java::io::ObjectInput&) const;
+    void writeExternal(const ::java::io::ObjectOutput&) const;
 
 };
 }

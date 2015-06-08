@@ -35,12 +35,12 @@ public:
     ::com::facebook::FacebookButtonBase& operator=(const ::com::facebook::FacebookButtonBase& x) {obj = x.obj; return *this;}
     ::com::facebook::FacebookButtonBase& operator=(::com::facebook::FacebookButtonBase&& x) {obj = std::move(x.obj); return *this;}
     
-    void setFragment(const ::android::support::v4::app::Fragment&) const ;
-    ::android::support::v4::app::Fragment getFragment() const ;
-    void setOnClickListener(const ::android::view::View_OnClickListener&) const ;
-    int32_t getRequestCode() const ;
-    int32_t getCompoundPaddingLeft() const ;
-    int32_t getCompoundPaddingRight() const ;
+    void setFragment(const ::android::support::v4::app::Fragment&) const;
+    ::android::support::v4::app::Fragment getFragment() const;
+    void setOnClickListener(const ::android::view::View_OnClickListener&) const;
+    int32_t getRequestCode() const;
+    int32_t getCompoundPaddingLeft() const;
+    int32_t getCompoundPaddingRight() const;
 
 };
 }

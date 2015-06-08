@@ -41,20 +41,20 @@ public:
     
     ChoiceFormat(const std::vector< double>&, const std::vector< ::java::lang::String>&);
     ChoiceFormat(const ::java::lang::String&);
-    void applyPattern(const ::java::lang::String&) const ;
-    ::java::lang::Object clone() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::StringBuffer format(double, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
-    ::java::lang::StringBuffer format(int64_t, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
-    std::vector< ::java::lang::Object> getFormats() const ;
-    std::vector< double> getLimits() const ;
-    int32_t hashCode() const ;
+    void applyPattern(const ::java::lang::String&) const;
+    ::java::lang::Object clone() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::StringBuffer format(double, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
+    ::java::lang::StringBuffer format(int64_t, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
+    std::vector< ::java::lang::Object> getFormats() const;
+    std::vector< double> getLimits() const;
+    int32_t hashCode() const;
     static double nextDouble(double);
     static double nextDouble(double, bool);
-    ::java::lang::Number parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const ;
+    ::java::lang::Number parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const;
     static double previousDouble(double);
-    void setChoices(const std::vector< double>&, const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::String toPattern() const ;
+    void setChoices(const std::vector< double>&, const std::vector< ::java::lang::String>&) const;
+    ::java::lang::String toPattern() const;
 
 };
 }

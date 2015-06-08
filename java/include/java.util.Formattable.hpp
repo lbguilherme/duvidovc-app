@@ -32,7 +32,7 @@ public:
     ::java::util::Formattable& operator=(const ::java::util::Formattable& x) {obj = x.obj; return *this;}
     ::java::util::Formattable& operator=(::java::util::Formattable&& x) {obj = std::move(x.obj); return *this;}
     
-    void formatTo(const ::java::util::Formatter&, int32_t, int32_t, int32_t) const ;
+    void formatTo(const ::java::util::Formatter&, int32_t, int32_t, int32_t) const;
 
 };
 }

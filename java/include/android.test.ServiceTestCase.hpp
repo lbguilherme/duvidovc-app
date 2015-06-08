@@ -38,11 +38,11 @@ public:
     ::android::test::ServiceTestCase& operator=(::android::test::ServiceTestCase&& x) {obj = std::move(x.obj); return *this;}
     
     ServiceTestCase(const ::java::lang::Class&);
-    ::android::app::Service getService() const ;
-    void setApplication(const ::android::app::Application&) const ;
-    ::android::app::Application getApplication() const ;
-    ::android::content::Context getSystemContext() const ;
-    void testServiceTestCaseSetUpProperly() const ;
+    ::android::app::Service getService() const;
+    void setApplication(const ::android::app::Application&) const;
+    ::android::app::Application getApplication() const;
+    ::android::content::Context getSystemContext() const;
+    void testServiceTestCaseSetUpProperly() const;
 
 };
 }

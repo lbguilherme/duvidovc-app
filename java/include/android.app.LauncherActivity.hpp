@@ -36,9 +36,9 @@ public:
     ::android::app::LauncherActivity& operator=(::android::app::LauncherActivity&& x) {obj = std::move(x.obj); return *this;}
     
     LauncherActivity();
-    void setTitle(const ::java::lang::CharSequence&) const ;
-    void setTitle(int32_t) const ;
-    ::java::util::List makeListItems() const ;
+    void setTitle(const ::java::lang::CharSequence&) const;
+    void setTitle(int32_t) const;
+    ::java::util::List makeListItems() const;
 
 };
 }

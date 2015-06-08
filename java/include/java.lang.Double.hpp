@@ -40,30 +40,30 @@ public:
     
     Double(double);
     Double(const ::java::lang::String&);
-    int32_t compareTo(const ::java::lang::Double&) const ;
-    int8_t byteValue() const ;
+    int32_t compareTo(const ::java::lang::Double&) const;
+    int8_t byteValue() const;
     static int64_t doubleToLongBits(double);
     static int64_t doubleToRawLongBits(double);
-    double doubleValue() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    float floatValue() const ;
-    int32_t hashCode() const ;
-    int32_t intValue() const ;
-    bool isInfinite() const ;
+    double doubleValue() const;
+    bool equals(const ::java::lang::Object&) const;
+    float floatValue() const;
+    int32_t hashCode() const;
+    int32_t intValue() const;
+    bool isInfinite() const;
     static bool isInfinite(double);
-    bool isNaN() const ;
+    bool isNaN() const;
     static bool isNaN(double);
     static double longBitsToDouble(int64_t);
-    int64_t longValue() const ;
+    int64_t longValue() const;
     static double parseDouble(const ::java::lang::String&);
-    int16_t shortValue() const ;
-    ::java::lang::String toString() const ;
+    int16_t shortValue() const;
+    ::java::lang::String toString() const;
     static ::java::lang::String toString(double);
     static ::java::lang::Double valueOf(const ::java::lang::String&);
     static int32_t compare(double, double);
     static ::java::lang::Double valueOf(double);
     static ::java::lang::String toHexString(double);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

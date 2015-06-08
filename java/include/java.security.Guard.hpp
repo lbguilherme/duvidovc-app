@@ -32,7 +32,7 @@ public:
     ::java::security::Guard& operator=(const ::java::security::Guard& x) {obj = x.obj; return *this;}
     ::java::security::Guard& operator=(::java::security::Guard&& x) {obj = std::move(x.obj); return *this;}
     
-    void checkGuard(const ::java::lang::Object&) const ;
+    void checkGuard(const ::java::lang::Object&) const;
 
 };
 }

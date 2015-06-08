@@ -32,7 +32,7 @@ public:
     ::android::widget::NumberPicker_Formatter& operator=(const ::android::widget::NumberPicker_Formatter& x) {obj = x.obj; return *this;}
     ::android::widget::NumberPicker_Formatter& operator=(::android::widget::NumberPicker_Formatter&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String format(int32_t) const ;
+    ::java::lang::String format(int32_t) const;
 
 };
 }

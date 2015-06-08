@@ -38,7 +38,7 @@ public:
     ::org::apache::http::protocol::RequestExpectContinue& operator=(::org::apache::http::protocol::RequestExpectContinue&& x) {obj = std::move(x.obj); return *this;}
     
     RequestExpectContinue();
-    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

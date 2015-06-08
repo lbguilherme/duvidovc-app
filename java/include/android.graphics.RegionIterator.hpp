@@ -34,7 +34,7 @@ public:
     ::android::graphics::RegionIterator& operator=(::android::graphics::RegionIterator&& x) {obj = std::move(x.obj); return *this;}
     
     RegionIterator(const ::android::graphics::Region&);
-    bool next(const ::android::graphics::Rect&) const ;
+    bool next(const ::android::graphics::Rect&) const;
 
 };
 }

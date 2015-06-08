@@ -34,10 +34,10 @@ public:
     ::java::sql::Ref& operator=(const ::java::sql::Ref& x) {obj = x.obj; return *this;}
     ::java::sql::Ref& operator=(::java::sql::Ref&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getBaseTypeName() const ;
-    ::java::lang::Object getObject() const ;
-    ::java::lang::Object getObject(const ::java::util::Map&) const ;
-    void setObject(const ::java::lang::Object&) const ;
+    ::java::lang::String getBaseTypeName() const;
+    ::java::lang::Object getObject() const;
+    ::java::lang::Object getObject(const ::java::util::Map&) const;
+    void setObject(const ::java::lang::Object&) const;
 
 };
 }

@@ -33,8 +33,8 @@ public:
     ::org::w3c::dom::NodeList& operator=(const ::org::w3c::dom::NodeList& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::NodeList& operator=(::org::w3c::dom::NodeList&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::Node item(int32_t) const ;
-    int32_t getLength() const ;
+    ::org::w3c::dom::Node item(int32_t) const;
+    int32_t getLength() const;
 
 };
 }

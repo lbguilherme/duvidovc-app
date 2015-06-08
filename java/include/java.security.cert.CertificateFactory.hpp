@@ -45,16 +45,16 @@ public:
     static ::java::security::cert::CertificateFactory getInstance(const ::java::lang::String&);
     static ::java::security::cert::CertificateFactory getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::java::security::cert::CertificateFactory getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    ::java::security::Provider getProvider() const ;
-    ::java::lang::String getType() const ;
-    ::java::security::cert::Certificate generateCertificate(const ::java::io::InputStream&) const ;
-    ::java::util::Iterator getCertPathEncodings() const ;
-    ::java::security::cert::CertPath generateCertPath(const ::java::io::InputStream&) const ;
-    ::java::security::cert::CertPath generateCertPath(const ::java::io::InputStream&, const ::java::lang::String&) const ;
-    ::java::security::cert::CertPath generateCertPath(const ::java::util::List&) const ;
-    ::java::util::Collection generateCertificates(const ::java::io::InputStream&) const ;
-    ::java::security::cert::CRL generateCRL(const ::java::io::InputStream&) const ;
-    ::java::util::Collection generateCRLs(const ::java::io::InputStream&) const ;
+    ::java::security::Provider getProvider() const;
+    ::java::lang::String getType() const;
+    ::java::security::cert::Certificate generateCertificate(const ::java::io::InputStream&) const;
+    ::java::util::Iterator getCertPathEncodings() const;
+    ::java::security::cert::CertPath generateCertPath(const ::java::io::InputStream&) const;
+    ::java::security::cert::CertPath generateCertPath(const ::java::io::InputStream&, const ::java::lang::String&) const;
+    ::java::security::cert::CertPath generateCertPath(const ::java::util::List&) const;
+    ::java::util::Collection generateCertificates(const ::java::io::InputStream&) const;
+    ::java::security::cert::CRL generateCRL(const ::java::io::InputStream&) const;
+    ::java::util::Collection generateCRLs(const ::java::io::InputStream&) const;
 
 };
 }

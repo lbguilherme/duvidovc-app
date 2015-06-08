@@ -36,19 +36,19 @@ public:
     
     SparseIntArray();
     SparseIntArray(int32_t);
-    ::android::util::SparseIntArray clone() const ;
-    int32_t get(int32_t) const ;
-    int32_t get(int32_t, int32_t) const ;
-    void delete_(int32_t) const ;
-    void removeAt(int32_t) const ;
-    void put(int32_t, int32_t) const ;
-    int32_t size() const ;
-    int32_t keyAt(int32_t) const ;
-    int32_t valueAt(int32_t) const ;
-    int32_t indexOfKey(int32_t) const ;
-    int32_t indexOfValue(int32_t) const ;
-    void clear() const ;
-    void append(int32_t, int32_t) const ;
+    ::android::util::SparseIntArray clone() const;
+    int32_t get(int32_t) const;
+    int32_t get(int32_t, int32_t) const;
+    void delete_(int32_t) const;
+    void removeAt(int32_t) const;
+    void put(int32_t, int32_t) const;
+    int32_t size() const;
+    int32_t keyAt(int32_t) const;
+    int32_t valueAt(int32_t) const;
+    int32_t indexOfKey(int32_t) const;
+    int32_t indexOfValue(int32_t) const;
+    void clear() const;
+    void append(int32_t, int32_t) const;
 
 };
 }

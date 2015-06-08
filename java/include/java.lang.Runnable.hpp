@@ -31,7 +31,7 @@ public:
     ::java::lang::Runnable& operator=(const ::java::lang::Runnable& x) {obj = x.obj; return *this;}
     ::java::lang::Runnable& operator=(::java::lang::Runnable&& x) {obj = std::move(x.obj); return *this;}
     
-    void run() const ;
+    void run() const;
 
 };
 }

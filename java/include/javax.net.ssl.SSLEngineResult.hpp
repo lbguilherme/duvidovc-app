@@ -36,11 +36,11 @@ public:
     ::javax::net::ssl::SSLEngineResult& operator=(::javax::net::ssl::SSLEngineResult&& x) {obj = std::move(x.obj); return *this;}
     
     SSLEngineResult(const ::javax::net::ssl::SSLEngineResult_Status&, const ::javax::net::ssl::SSLEngineResult_HandshakeStatus&, int32_t, int32_t);
-    ::javax::net::ssl::SSLEngineResult_Status getStatus() const ;
-    ::javax::net::ssl::SSLEngineResult_HandshakeStatus getHandshakeStatus() const ;
-    int32_t bytesConsumed() const ;
-    int32_t bytesProduced() const ;
-    ::java::lang::String toString() const ;
+    ::javax::net::ssl::SSLEngineResult_Status getStatus() const;
+    ::javax::net::ssl::SSLEngineResult_HandshakeStatus getHandshakeStatus() const;
+    int32_t bytesConsumed() const;
+    int32_t bytesProduced() const;
+    ::java::lang::String toString() const;
 
 };
 }

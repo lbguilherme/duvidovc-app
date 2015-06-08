@@ -38,16 +38,16 @@ public:
     ::android::sax::Element& operator=(const ::android::sax::Element& x) {obj = x.obj; return *this;}
     ::android::sax::Element& operator=(::android::sax::Element&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::sax::Element getChild(const ::java::lang::String&) const ;
-    ::android::sax::Element getChild(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::android::sax::Element requireChild(const ::java::lang::String&) const ;
-    ::android::sax::Element requireChild(const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setElementListener(const ::android::sax::ElementListener&) const ;
-    void setTextElementListener(const ::android::sax::TextElementListener&) const ;
-    void setStartElementListener(const ::android::sax::StartElementListener&) const ;
-    void setEndElementListener(const ::android::sax::EndElementListener&) const ;
-    void setEndTextElementListener(const ::android::sax::EndTextElementListener&) const ;
-    ::java::lang::String toString() const ;
+    ::android::sax::Element getChild(const ::java::lang::String&) const;
+    ::android::sax::Element getChild(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::android::sax::Element requireChild(const ::java::lang::String&) const;
+    ::android::sax::Element requireChild(const ::java::lang::String&, const ::java::lang::String&) const;
+    void setElementListener(const ::android::sax::ElementListener&) const;
+    void setTextElementListener(const ::android::sax::TextElementListener&) const;
+    void setStartElementListener(const ::android::sax::StartElementListener&) const;
+    void setEndElementListener(const ::android::sax::EndElementListener&) const;
+    void setEndTextElementListener(const ::android::sax::EndTextElementListener&) const;
+    ::java::lang::String toString() const;
 
 };
 }

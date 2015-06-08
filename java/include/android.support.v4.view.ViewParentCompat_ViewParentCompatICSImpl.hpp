@@ -38,7 +38,7 @@ public:
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatICSImpl& operator=(const ::android::support::v4::view::ViewParentCompat_ViewParentCompatICSImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ViewParentCompat_ViewParentCompatICSImpl& operator=(::android::support::v4::view::ViewParentCompat_ViewParentCompatICSImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool requestSendAccessibilityEvent(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const ;
+    bool requestSendAccessibilityEvent(const ::android::view::ViewParent&, const ::android::view::View&, const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

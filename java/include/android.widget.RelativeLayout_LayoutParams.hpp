@@ -42,10 +42,10 @@ public:
     RelativeLayout_LayoutParams(int32_t, int32_t);
     RelativeLayout_LayoutParams(const ::android::view::ViewGroup_LayoutParams&);
     RelativeLayout_LayoutParams(const ::android::view::ViewGroup_MarginLayoutParams&);
-    ::java::lang::String debug(const ::java::lang::String&) const ;
-    void addRule(int32_t) const ;
-    void addRule(int32_t, int32_t) const ;
-    std::vector< int32_t> getRules() const ;
+    ::java::lang::String debug(const ::java::lang::String&) const;
+    void addRule(int32_t) const;
+    void addRule(int32_t, int32_t) const;
+    std::vector< int32_t> getRules() const;
 
 };
 }

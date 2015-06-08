@@ -35,7 +35,7 @@ public:
     ::android::support::v4::media::VolumeProviderCompat_Callback& operator=(::android::support::v4::media::VolumeProviderCompat_Callback&& x) {obj = std::move(x.obj); return *this;}
     
     VolumeProviderCompat_Callback();
-    void onVolumeChanged(const ::android::support::v4::media::VolumeProviderCompat&) const ;
+    void onVolumeChanged(const ::android::support::v4::media::VolumeProviderCompat&) const;
 
 };
 }

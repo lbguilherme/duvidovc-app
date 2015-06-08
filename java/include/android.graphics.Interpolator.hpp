@@ -34,15 +34,15 @@ public:
     
     Interpolator(int32_t);
     Interpolator(int32_t, int32_t);
-    void reset(int32_t) const ;
-    void reset(int32_t, int32_t) const ;
-    int32_t getKeyFrameCount() const ;
-    int32_t getValueCount() const ;
-    void setKeyFrame(int32_t, int32_t, const std::vector< float>&) const ;
-    void setKeyFrame(int32_t, int32_t, const std::vector< float>&, const std::vector< float>&) const ;
-    void setRepeatMirror(float, bool) const ;
-    ::android::graphics::Interpolator_Result timeToValues(const std::vector< float>&) const ;
-    ::android::graphics::Interpolator_Result timeToValues(int32_t, const std::vector< float>&) const ;
+    void reset(int32_t) const;
+    void reset(int32_t, int32_t) const;
+    int32_t getKeyFrameCount() const;
+    int32_t getValueCount() const;
+    void setKeyFrame(int32_t, int32_t, const std::vector< float>&) const;
+    void setKeyFrame(int32_t, int32_t, const std::vector< float>&, const std::vector< float>&) const;
+    void setRepeatMirror(float, bool) const;
+    ::android::graphics::Interpolator_Result timeToValues(const std::vector< float>&) const;
+    ::android::graphics::Interpolator_Result timeToValues(int32_t, const std::vector< float>&) const;
 
 };
 }

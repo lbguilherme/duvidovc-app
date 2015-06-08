@@ -45,11 +45,11 @@ public:
     ::org::apache::http::impl::conn::tsccm::ConnPoolByRoute& operator=(::org::apache::http::impl::conn::tsccm::ConnPoolByRoute&& x) {obj = std::move(x.obj); return *this;}
     
     ConnPoolByRoute(const ::org::apache::http::conn::ClientConnectionOperator&, const ::org::apache::http::params::HttpParams&);
-    int32_t getConnectionsInPool(const ::org::apache::http::conn::routing::HttpRoute&) const ;
-    ::org::apache::http::impl::conn::tsccm::PoolEntryRequest requestPoolEntry(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const ;
-    void freeEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&, bool, int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void deleteClosedConnections() const ;
-    void shutdown() const ;
+    int32_t getConnectionsInPool(const ::org::apache::http::conn::routing::HttpRoute&) const;
+    ::org::apache::http::impl::conn::tsccm::PoolEntryRequest requestPoolEntry(const ::org::apache::http::conn::routing::HttpRoute&, const ::java::lang::Object&) const;
+    void freeEntry(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&, bool, int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void deleteClosedConnections() const;
+    void shutdown() const;
 
 };
 }

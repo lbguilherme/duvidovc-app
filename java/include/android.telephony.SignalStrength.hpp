@@ -36,19 +36,19 @@ public:
     ::android::telephony::SignalStrength& operator=(const ::android::telephony::SignalStrength& x) {obj = x.obj; return *this;}
     ::android::telephony::SignalStrength& operator=(::android::telephony::SignalStrength&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    int32_t getGsmSignalStrength() const ;
-    int32_t getGsmBitErrorRate() const ;
-    int32_t getCdmaDbm() const ;
-    int32_t getCdmaEcio() const ;
-    int32_t getEvdoDbm() const ;
-    int32_t getEvdoEcio() const ;
-    int32_t getEvdoSnr() const ;
-    bool isGsm() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    int32_t getGsmSignalStrength() const;
+    int32_t getGsmBitErrorRate() const;
+    int32_t getCdmaDbm() const;
+    int32_t getCdmaEcio() const;
+    int32_t getEvdoDbm() const;
+    int32_t getEvdoEcio() const;
+    int32_t getEvdoSnr() const;
+    bool isGsm() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

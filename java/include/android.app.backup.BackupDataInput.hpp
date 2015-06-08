@@ -33,11 +33,11 @@ public:
     ::android::app::backup::BackupDataInput& operator=(const ::android::app::backup::BackupDataInput& x) {obj = x.obj; return *this;}
     ::android::app::backup::BackupDataInput& operator=(::android::app::backup::BackupDataInput&& x) {obj = std::move(x.obj); return *this;}
     
-    bool readNextHeader() const ;
-    ::java::lang::String getKey() const ;
-    int32_t getDataSize() const ;
-    int32_t readEntityData(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void skipEntityData() const ;
+    bool readNextHeader() const;
+    ::java::lang::String getKey() const;
+    int32_t getDataSize() const;
+    int32_t readEntityData(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void skipEntityData() const;
 
 };
 }

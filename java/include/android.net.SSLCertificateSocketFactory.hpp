@@ -47,16 +47,16 @@ public:
     static ::javax::net::ssl::SSLSocketFactory getDefault(int32_t, const ::android::net::SSLSessionCache&);
     static ::javax::net::ssl::SSLSocketFactory getInsecure(int32_t, const ::android::net::SSLSessionCache&);
     static ::org::apache::http::conn::ssl::SSLSocketFactory getHttpSocketFactory(int32_t, const ::android::net::SSLSessionCache&);
-    void setTrustManagers(const std::vector< ::javax::net::ssl::TrustManager>&) const ;
-    void setKeyManagers(const std::vector< ::javax::net::ssl::KeyManager>&) const ;
-    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const ;
-    ::java::net::Socket createSocket() const ;
-    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t, const ::java::net::InetAddress&, int32_t) const ;
-    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t) const ;
-    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t) const ;
-    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t) const ;
-    std::vector< ::java::lang::String> getDefaultCipherSuites() const ;
-    std::vector< ::java::lang::String> getSupportedCipherSuites() const ;
+    void setTrustManagers(const std::vector< ::javax::net::ssl::TrustManager>&) const;
+    void setKeyManagers(const std::vector< ::javax::net::ssl::KeyManager>&) const;
+    ::java::net::Socket createSocket(const ::java::net::Socket&, const ::java::lang::String&, int32_t, bool) const;
+    ::java::net::Socket createSocket() const;
+    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t, const ::java::net::InetAddress&, int32_t) const;
+    ::java::net::Socket createSocket(const ::java::net::InetAddress&, int32_t) const;
+    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t, const ::java::net::InetAddress&, int32_t) const;
+    ::java::net::Socket createSocket(const ::java::lang::String&, int32_t) const;
+    std::vector< ::java::lang::String> getDefaultCipherSuites() const;
+    std::vector< ::java::lang::String> getSupportedCipherSuites() const;
 
 };
 }

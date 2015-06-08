@@ -33,7 +33,7 @@ public:
     ::android::widget::ExpandableListView_OnChildClickListener& operator=(const ::android::widget::ExpandableListView_OnChildClickListener& x) {obj = x.obj; return *this;}
     ::android::widget::ExpandableListView_OnChildClickListener& operator=(::android::widget::ExpandableListView_OnChildClickListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onChildClick(const ::android::widget::ExpandableListView&, const ::android::view::View&, int32_t, int32_t, int64_t) const ;
+    bool onChildClick(const ::android::widget::ExpandableListView&, const ::android::view::View&, int32_t, int32_t, int64_t) const;
 
 };
 }

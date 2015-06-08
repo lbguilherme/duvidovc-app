@@ -32,7 +32,7 @@ public:
     ::android::hardware::Camera_PreviewCallback& operator=(const ::android::hardware::Camera_PreviewCallback& x) {obj = x.obj; return *this;}
     ::android::hardware::Camera_PreviewCallback& operator=(::android::hardware::Camera_PreviewCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onPreviewFrame(const std::vector< int8_t>&, const ::android::hardware::Camera&) const ;
+    void onPreviewFrame(const std::vector< int8_t>&, const ::android::hardware::Camera&) const;
 
 };
 }

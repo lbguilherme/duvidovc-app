@@ -40,11 +40,11 @@ public:
     ::android::content::pm::ActivityInfo& operator=(::android::content::pm::ActivityInfo&& x) {obj = std::move(x.obj); return *this;}
     
     ActivityInfo();
-    int32_t getThemeResource() const ;
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t getThemeResource() const;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

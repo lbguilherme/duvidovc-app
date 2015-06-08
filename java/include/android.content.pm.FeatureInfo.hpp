@@ -37,10 +37,10 @@ public:
     ::android::content::pm::FeatureInfo& operator=(::android::content::pm::FeatureInfo&& x) {obj = std::move(x.obj); return *this;}
     
     FeatureInfo();
-    ::java::lang::String toString() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String getGlEsVersion() const ;
+    ::java::lang::String toString() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String getGlEsVersion() const;
 
 };
 }

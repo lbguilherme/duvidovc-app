@@ -33,8 +33,8 @@ public:
     ::javax::xml::datatype::DatatypeConstants_Field& operator=(const ::javax::xml::datatype::DatatypeConstants_Field& x) {obj = x.obj; return *this;}
     ::javax::xml::datatype::DatatypeConstants_Field& operator=(::javax::xml::datatype::DatatypeConstants_Field&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
-    int32_t getId() const ;
+    ::java::lang::String toString() const;
+    int32_t getId() const;
 
 };
 }

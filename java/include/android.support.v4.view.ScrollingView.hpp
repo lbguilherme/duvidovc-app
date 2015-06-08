@@ -33,12 +33,12 @@ public:
     ::android::support::v4::view::ScrollingView& operator=(const ::android::support::v4::view::ScrollingView& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::ScrollingView& operator=(::android::support::v4::view::ScrollingView&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t computeHorizontalScrollRange() const ;
-    int32_t computeHorizontalScrollOffset() const ;
-    int32_t computeHorizontalScrollExtent() const ;
-    int32_t computeVerticalScrollRange() const ;
-    int32_t computeVerticalScrollOffset() const ;
-    int32_t computeVerticalScrollExtent() const ;
+    int32_t computeHorizontalScrollRange() const;
+    int32_t computeHorizontalScrollOffset() const;
+    int32_t computeHorizontalScrollExtent() const;
+    int32_t computeVerticalScrollRange() const;
+    int32_t computeVerticalScrollOffset() const;
+    int32_t computeVerticalScrollExtent() const;
 
 };
 }

@@ -39,17 +39,17 @@ public:
     RatingBar(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
     RatingBar(const ::android::content::Context&, const ::android::util::AttributeSet&);
     RatingBar(const ::android::content::Context&);
-    void setOnRatingBarChangeListener(const ::android::widget::RatingBar_OnRatingBarChangeListener&) const ;
-    ::android::widget::RatingBar_OnRatingBarChangeListener getOnRatingBarChangeListener() const ;
-    void setIsIndicator(bool) const ;
-    bool isIndicator() const ;
-    void setNumStars(int32_t) const ;
-    int32_t getNumStars() const ;
-    void setRating(float) const ;
-    float getRating() const ;
-    void setStepSize(float) const ;
-    float getStepSize() const ;
-    void setMax(int32_t) const ;
+    void setOnRatingBarChangeListener(const ::android::widget::RatingBar_OnRatingBarChangeListener&) const;
+    ::android::widget::RatingBar_OnRatingBarChangeListener getOnRatingBarChangeListener() const;
+    void setIsIndicator(bool) const;
+    bool isIndicator() const;
+    void setNumStars(int32_t) const;
+    int32_t getNumStars() const;
+    void setRating(float) const;
+    float getRating() const;
+    void setStepSize(float) const;
+    float getStepSize() const;
+    void setMax(int32_t) const;
 
 };
 }

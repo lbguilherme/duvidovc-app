@@ -39,21 +39,21 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_Callback_StubApi21& operator=(const ::android::support::v4::media::session::MediaSessionCompat_Callback_StubApi21& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::MediaSessionCompat_Callback_StubApi21& operator=(::android::support::v4::media::session::MediaSessionCompat_Callback_StubApi21&& x) {obj = std::move(x.obj); return *this;}
     
-    void onCommand(const ::java::lang::String&, const ::android::os::Bundle&, const ::android::os::ResultReceiver&) const ;
-    bool onMediaButtonEvent(const ::android::content::Intent&) const ;
-    void onPlay() const ;
-    void onPlayFromMediaId(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void onPlayFromSearch(const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    void onSkipToQueueItem(int64_t) const ;
-    void onPause() const ;
-    void onSkipToNext() const ;
-    void onSkipToPrevious() const ;
-    void onFastForward() const ;
-    void onRewind() const ;
-    void onStop() const ;
-    void onSeekTo(int64_t) const ;
-    void onSetRating(const ::java::lang::Object&) const ;
-    void onCustomAction(const ::java::lang::String&, const ::android::os::Bundle&) const ;
+    void onCommand(const ::java::lang::String&, const ::android::os::Bundle&, const ::android::os::ResultReceiver&) const;
+    bool onMediaButtonEvent(const ::android::content::Intent&) const;
+    void onPlay() const;
+    void onPlayFromMediaId(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void onPlayFromSearch(const ::java::lang::String&, const ::android::os::Bundle&) const;
+    void onSkipToQueueItem(int64_t) const;
+    void onPause() const;
+    void onSkipToNext() const;
+    void onSkipToPrevious() const;
+    void onFastForward() const;
+    void onRewind() const;
+    void onStop() const;
+    void onSeekTo(int64_t) const;
+    void onSetRating(const ::java::lang::Object&) const;
+    void onCustomAction(const ::java::lang::String&, const ::android::os::Bundle&) const;
 
 };
 }

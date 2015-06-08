@@ -36,8 +36,8 @@ public:
     ::com::facebook::FacebookServiceException& operator=(::com::facebook::FacebookServiceException&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookServiceException(const ::com::facebook::FacebookRequestError&, const ::java::lang::String&);
-    ::com::facebook::FacebookRequestError getRequestError() const ;
-    ::java::lang::String toString() const ;
+    ::com::facebook::FacebookRequestError getRequestError() const;
+    ::java::lang::String toString() const;
 
 };
 }

@@ -38,9 +38,9 @@ public:
     Geocoder(const ::android::content::Context&, const ::java::util::Locale&);
     Geocoder(const ::android::content::Context&);
     static bool isPresent();
-    ::java::util::List getFromLocation(double, double, int32_t) const ;
-    ::java::util::List getFromLocationName(const ::java::lang::String&, int32_t) const ;
-    ::java::util::List getFromLocationName(const ::java::lang::String&, int32_t, double, double, double, double) const ;
+    ::java::util::List getFromLocation(double, double, int32_t) const;
+    ::java::util::List getFromLocationName(const ::java::lang::String&, int32_t) const;
+    ::java::util::List getFromLocationName(const ::java::lang::String&, int32_t, double, double, double, double) const;
 
 };
 }

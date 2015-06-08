@@ -43,17 +43,17 @@ public:
     ::android::support::v4::media::MediaDescriptionCompat& operator=(const ::android::support::v4::media::MediaDescriptionCompat& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::MediaDescriptionCompat& operator=(::android::support::v4::media::MediaDescriptionCompat&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getMediaId() const ;
-    ::java::lang::CharSequence getTitle() const ;
-    ::java::lang::CharSequence getSubtitle() const ;
-    ::java::lang::CharSequence getDescription() const ;
-    ::android::graphics::Bitmap getIconBitmap() const ;
-    ::android::net::Uri getIconUri() const ;
-    ::android::os::Bundle getExtras() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object getMediaDescription() const ;
+    ::java::lang::String getMediaId() const;
+    ::java::lang::CharSequence getTitle() const;
+    ::java::lang::CharSequence getSubtitle() const;
+    ::java::lang::CharSequence getDescription() const;
+    ::android::graphics::Bitmap getIconBitmap() const;
+    ::android::net::Uri getIconUri() const;
+    ::android::os::Bundle getExtras() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object getMediaDescription() const;
     static ::android::support::v4::media::MediaDescriptionCompat fromMediaDescription(const ::java::lang::Object&);
 
 };

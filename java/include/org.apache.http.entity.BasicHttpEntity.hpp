@@ -38,14 +38,14 @@ public:
     ::org::apache::http::entity::BasicHttpEntity& operator=(::org::apache::http::entity::BasicHttpEntity&& x) {obj = std::move(x.obj); return *this;}
     
     BasicHttpEntity();
-    int64_t getContentLength() const ;
-    ::java::io::InputStream getContent() const ;
-    bool isRepeatable() const ;
-    void setContentLength(int64_t) const ;
-    void setContent(const ::java::io::InputStream&) const ;
-    void writeTo(const ::java::io::OutputStream&) const ;
-    bool isStreaming() const ;
-    void consumeContent() const ;
+    int64_t getContentLength() const;
+    ::java::io::InputStream getContent() const;
+    bool isRepeatable() const;
+    void setContentLength(int64_t) const;
+    void setContent(const ::java::io::InputStream&) const;
+    void writeTo(const ::java::io::OutputStream&) const;
+    bool isStreaming() const;
+    void consumeContent() const;
 
 };
 }

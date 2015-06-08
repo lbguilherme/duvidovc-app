@@ -31,10 +31,10 @@ public:
     ::android::os::Vibrator& operator=(const ::android::os::Vibrator& x) {obj = x.obj; return *this;}
     ::android::os::Vibrator& operator=(::android::os::Vibrator&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasVibrator() const ;
-    void vibrate(int64_t) const ;
-    void vibrate(const std::vector< int64_t>&, int32_t) const ;
-    void cancel() const ;
+    bool hasVibrator() const;
+    void vibrate(int64_t) const;
+    void vibrate(const std::vector< int64_t>&, int32_t) const;
+    void cancel() const;
 
 };
 }

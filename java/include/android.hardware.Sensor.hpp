@@ -32,14 +32,14 @@ public:
     ::android::hardware::Sensor& operator=(const ::android::hardware::Sensor& x) {obj = x.obj; return *this;}
     ::android::hardware::Sensor& operator=(::android::hardware::Sensor&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::java::lang::String getVendor() const ;
-    int32_t getType() const ;
-    int32_t getVersion() const ;
-    float getMaximumRange() const ;
-    float getResolution() const ;
-    float getPower() const ;
-    int32_t getMinDelay() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getVendor() const;
+    int32_t getType() const;
+    int32_t getVersion() const;
+    float getMaximumRange() const;
+    float getResolution() const;
+    float getPower() const;
+    int32_t getMinDelay() const;
 
 };
 }

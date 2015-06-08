@@ -47,27 +47,27 @@ public:
     
     RouteTracker(const ::org::apache::http::HttpHost&, const ::java::net::InetAddress&);
     RouteTracker(const ::org::apache::http::conn::routing::HttpRoute&);
-    void connectTarget(bool) const ;
-    void connectProxy(const ::org::apache::http::HttpHost&, bool) const ;
-    void tunnelTarget(bool) const ;
-    void tunnelProxy(const ::org::apache::http::HttpHost&, bool) const ;
-    void layerProtocol(bool) const ;
-    ::org::apache::http::HttpHost getTargetHost() const ;
-    ::java::net::InetAddress getLocalAddress() const ;
-    int32_t getHopCount() const ;
-    ::org::apache::http::HttpHost getHopTarget(int32_t) const ;
-    ::org::apache::http::HttpHost getProxyHost() const ;
-    bool isConnected() const ;
-    ::org::apache::http::conn::routing::RouteInfo_TunnelType getTunnelType() const ;
-    bool isTunnelled() const ;
-    ::org::apache::http::conn::routing::RouteInfo_LayerType getLayerType() const ;
-    bool isLayered() const ;
-    bool isSecure() const ;
-    ::org::apache::http::conn::routing::HttpRoute toRoute() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
+    void connectTarget(bool) const;
+    void connectProxy(const ::org::apache::http::HttpHost&, bool) const;
+    void tunnelTarget(bool) const;
+    void tunnelProxy(const ::org::apache::http::HttpHost&, bool) const;
+    void layerProtocol(bool) const;
+    ::org::apache::http::HttpHost getTargetHost() const;
+    ::java::net::InetAddress getLocalAddress() const;
+    int32_t getHopCount() const;
+    ::org::apache::http::HttpHost getHopTarget(int32_t) const;
+    ::org::apache::http::HttpHost getProxyHost() const;
+    bool isConnected() const;
+    ::org::apache::http::conn::routing::RouteInfo_TunnelType getTunnelType() const;
+    bool isTunnelled() const;
+    ::org::apache::http::conn::routing::RouteInfo_LayerType getLayerType() const;
+    bool isLayered() const;
+    bool isSecure() const;
+    ::org::apache::http::conn::routing::HttpRoute toRoute() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
 
 };
 }

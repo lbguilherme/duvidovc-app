@@ -38,8 +38,8 @@ public:
     ::org::apache::http::conn::ssl::StrictHostnameVerifier& operator=(::org::apache::http::conn::ssl::StrictHostnameVerifier&& x) {obj = std::move(x.obj); return *this;}
     
     StrictHostnameVerifier();
-    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const ;
-    ::java::lang::String toString() const ;
+    void verify(const ::java::lang::String&, const std::vector< ::java::lang::String>&, const std::vector< ::java::lang::String>&) const;
+    ::java::lang::String toString() const;
 
 };
 }

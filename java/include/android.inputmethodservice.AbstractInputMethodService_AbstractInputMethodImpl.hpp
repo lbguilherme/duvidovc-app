@@ -37,9 +37,9 @@ public:
     ::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodImpl& operator=(::android::inputmethodservice::AbstractInputMethodService_AbstractInputMethodImpl&& x) {obj = std::move(x.obj); return *this;}
     
     AbstractInputMethodService_AbstractInputMethodImpl(const ::android::inputmethodservice::AbstractInputMethodService&);
-    void createSession(const ::android::view::inputmethod::InputMethod_SessionCallback&) const ;
-    void setSessionEnabled(const ::android::view::inputmethod::InputMethodSession&, bool) const ;
-    void revokeSession(const ::android::view::inputmethod::InputMethodSession&) const ;
+    void createSession(const ::android::view::inputmethod::InputMethod_SessionCallback&) const;
+    void setSessionEnabled(const ::android::view::inputmethod::InputMethodSession&, bool) const;
+    void revokeSession(const ::android::view::inputmethod::InputMethodSession&) const;
 
 };
 }

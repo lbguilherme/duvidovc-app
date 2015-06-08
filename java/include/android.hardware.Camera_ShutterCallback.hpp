@@ -31,7 +31,7 @@ public:
     ::android::hardware::Camera_ShutterCallback& operator=(const ::android::hardware::Camera_ShutterCallback& x) {obj = x.obj; return *this;}
     ::android::hardware::Camera_ShutterCallback& operator=(::android::hardware::Camera_ShutterCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onShutter() const ;
+    void onShutter() const;
 
 };
 }

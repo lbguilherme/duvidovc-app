@@ -36,9 +36,9 @@ public:
     ::org::apache::http::impl::client::RedirectLocations& operator=(::org::apache::http::impl::client::RedirectLocations&& x) {obj = std::move(x.obj); return *this;}
     
     RedirectLocations();
-    bool contains(const ::java::net::URI&) const ;
-    void add(const ::java::net::URI&) const ;
-    bool remove(const ::java::net::URI&) const ;
+    bool contains(const ::java::net::URI&) const;
+    void add(const ::java::net::URI&) const;
+    bool remove(const ::java::net::URI&) const;
 
 };
 }

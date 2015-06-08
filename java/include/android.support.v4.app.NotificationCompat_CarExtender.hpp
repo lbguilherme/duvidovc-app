@@ -42,13 +42,13 @@ public:
     
     NotificationCompat_CarExtender();
     NotificationCompat_CarExtender(const ::android::app::Notification&);
-    ::android::support::v4::app::NotificationCompat_Builder extend(const ::android::support::v4::app::NotificationCompat_Builder&) const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender setColor(int32_t) const ;
-    int32_t getColor() const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender setLargeIcon(const ::android::graphics::Bitmap&) const ;
-    ::android::graphics::Bitmap getLargeIcon() const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender setUnreadConversation(const ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation&) const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation getUnreadConversation() const ;
+    ::android::support::v4::app::NotificationCompat_Builder extend(const ::android::support::v4::app::NotificationCompat_Builder&) const;
+    ::android::support::v4::app::NotificationCompat_CarExtender setColor(int32_t) const;
+    int32_t getColor() const;
+    ::android::support::v4::app::NotificationCompat_CarExtender setLargeIcon(const ::android::graphics::Bitmap&) const;
+    ::android::graphics::Bitmap getLargeIcon() const;
+    ::android::support::v4::app::NotificationCompat_CarExtender setUnreadConversation(const ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation&) const;
+    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation getUnreadConversation() const;
 
 };
 }

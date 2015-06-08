@@ -36,8 +36,8 @@ public:
     ::java::nio::channels::Pipe& operator=(::java::nio::channels::Pipe&& x) {obj = std::move(x.obj); return *this;}
     
     static ::java::nio::channels::Pipe open();
-    ::java::nio::channels::Pipe_SinkChannel sink() const ;
-    ::java::nio::channels::Pipe_SourceChannel source() const ;
+    ::java::nio::channels::Pipe_SinkChannel sink() const;
+    ::java::nio::channels::Pipe_SourceChannel source() const;
 
 };
 }

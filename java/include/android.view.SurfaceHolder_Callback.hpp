@@ -32,9 +32,9 @@ public:
     ::android::view::SurfaceHolder_Callback& operator=(const ::android::view::SurfaceHolder_Callback& x) {obj = x.obj; return *this;}
     ::android::view::SurfaceHolder_Callback& operator=(::android::view::SurfaceHolder_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    void surfaceCreated(const ::android::view::SurfaceHolder&) const ;
-    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const ;
-    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const ;
+    void surfaceCreated(const ::android::view::SurfaceHolder&) const;
+    void surfaceChanged(const ::android::view::SurfaceHolder&, int32_t, int32_t, int32_t) const;
+    void surfaceDestroyed(const ::android::view::SurfaceHolder&) const;
 
 };
 }

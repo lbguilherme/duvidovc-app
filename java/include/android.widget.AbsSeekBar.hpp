@@ -41,15 +41,15 @@ public:
     AbsSeekBar(const ::android::content::Context&);
     AbsSeekBar(const ::android::content::Context&, const ::android::util::AttributeSet&);
     AbsSeekBar(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void setThumb(const ::android::graphics::drawable::Drawable&) const ;
-    int32_t getThumbOffset() const ;
-    void setThumbOffset(int32_t) const ;
-    void setKeyProgressIncrement(int32_t) const ;
-    int32_t getKeyProgressIncrement() const ;
-    void setMax(int32_t) const ;
-    void jumpDrawablesToCurrentState() const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
-    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const ;
+    void setThumb(const ::android::graphics::drawable::Drawable&) const;
+    int32_t getThumbOffset() const;
+    void setThumbOffset(int32_t) const;
+    void setKeyProgressIncrement(int32_t) const;
+    int32_t getKeyProgressIncrement() const;
+    void setMax(int32_t) const;
+    void jumpDrawablesToCurrentState() const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
+    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const;
 
 };
 }

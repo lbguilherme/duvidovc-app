@@ -37,8 +37,8 @@ public:
     ::org::apache::http::impl::client::RoutedRequest& operator=(::org::apache::http::impl::client::RoutedRequest&& x) {obj = std::move(x.obj); return *this;}
     
     RoutedRequest(const ::org::apache::http::impl::client::RequestWrapper&, const ::org::apache::http::conn::routing::HttpRoute&);
-    ::org::apache::http::impl::client::RequestWrapper getRequest() const ;
-    ::org::apache::http::conn::routing::HttpRoute getRoute() const ;
+    ::org::apache::http::impl::client::RequestWrapper getRequest() const;
+    ::org::apache::http::conn::routing::HttpRoute getRoute() const;
 
 };
 }

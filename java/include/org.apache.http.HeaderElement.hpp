@@ -34,12 +34,12 @@ public:
     ::org::apache::http::HeaderElement& operator=(const ::org::apache::http::HeaderElement& x) {obj = x.obj; return *this;}
     ::org::apache::http::HeaderElement& operator=(::org::apache::http::HeaderElement&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
-    std::vector< ::org::apache::http::NameValuePair> getParameters() const ;
-    ::org::apache::http::NameValuePair getParameterByName(const ::java::lang::String&) const ;
-    int32_t getParameterCount() const ;
-    ::org::apache::http::NameValuePair getParameter(int32_t) const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
+    std::vector< ::org::apache::http::NameValuePair> getParameters() const;
+    ::org::apache::http::NameValuePair getParameterByName(const ::java::lang::String&) const;
+    int32_t getParameterCount() const;
+    ::org::apache::http::NameValuePair getParameter(int32_t) const;
 
 };
 }

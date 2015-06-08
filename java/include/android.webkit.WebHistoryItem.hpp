@@ -35,11 +35,11 @@ public:
     ::android::webkit::WebHistoryItem& operator=(const ::android::webkit::WebHistoryItem& x) {obj = x.obj; return *this;}
     ::android::webkit::WebHistoryItem& operator=(::android::webkit::WebHistoryItem&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getId() const ;
-    ::java::lang::String getUrl() const ;
-    ::java::lang::String getOriginalUrl() const ;
-    ::java::lang::String getTitle() const ;
-    ::android::graphics::Bitmap getFavicon() const ;
+    int32_t getId() const;
+    ::java::lang::String getUrl() const;
+    ::java::lang::String getOriginalUrl() const;
+    ::java::lang::String getTitle() const;
+    ::android::graphics::Bitmap getFavicon() const;
 
 };
 }

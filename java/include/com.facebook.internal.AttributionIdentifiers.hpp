@@ -37,9 +37,9 @@ public:
     
     AttributionIdentifiers();
     static ::com::facebook::internal::AttributionIdentifiers getAttributionIdentifiers(const ::android::content::Context&);
-    ::java::lang::String getAttributionId() const ;
-    ::java::lang::String getAndroidAdvertiserId() const ;
-    bool isTrackingLimited() const ;
+    ::java::lang::String getAttributionId() const;
+    ::java::lang::String getAndroidAdvertiserId() const;
+    bool isTrackingLimited() const;
 
 };
 }

@@ -35,7 +35,7 @@ public:
     ::java::lang::annotation::Retention& operator=(const ::java::lang::annotation::Retention& x) {obj = x.obj; return *this;}
     ::java::lang::annotation::Retention& operator=(::java::lang::annotation::Retention&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::annotation::RetentionPolicy value() const ;
+    ::java::lang::annotation::RetentionPolicy value() const;
 
 };
 }

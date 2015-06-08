@@ -35,8 +35,8 @@ public:
     ::org::apache::http::HeaderElementIterator& operator=(const ::org::apache::http::HeaderElementIterator& x) {obj = x.obj; return *this;}
     ::org::apache::http::HeaderElementIterator& operator=(::org::apache::http::HeaderElementIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    bool hasNext() const ;
-    ::org::apache::http::HeaderElement nextElement() const ;
+    bool hasNext() const;
+    ::org::apache::http::HeaderElement nextElement() const;
 
 };
 }

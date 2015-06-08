@@ -36,9 +36,9 @@ public:
     ::android::view::FocusFinder& operator=(::android::view::FocusFinder&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::view::FocusFinder getInstance();
-    ::android::view::View findNextFocus(const ::android::view::ViewGroup&, const ::android::view::View&, int32_t) const ;
-    ::android::view::View findNextFocusFromRect(const ::android::view::ViewGroup&, const ::android::graphics::Rect&, int32_t) const ;
-    ::android::view::View findNearestTouchable(const ::android::view::ViewGroup&, int32_t, int32_t, int32_t, const std::vector< int32_t>&) const ;
+    ::android::view::View findNextFocus(const ::android::view::ViewGroup&, const ::android::view::View&, int32_t) const;
+    ::android::view::View findNextFocusFromRect(const ::android::view::ViewGroup&, const ::android::graphics::Rect&, int32_t) const;
+    ::android::view::View findNearestTouchable(const ::android::view::ViewGroup&, int32_t, int32_t, int32_t, const std::vector< int32_t>&) const;
 
 };
 }

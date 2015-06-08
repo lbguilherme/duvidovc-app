@@ -36,9 +36,9 @@ public:
     ::android::support::v4::app::NotificationManagerCompat_Impl& operator=(const ::android::support::v4::app::NotificationManagerCompat_Impl& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationManagerCompat_Impl& operator=(::android::support::v4::app::NotificationManagerCompat_Impl&& x) {obj = std::move(x.obj); return *this;}
     
-    void cancelNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t) const ;
-    void postNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t, const ::android::app::Notification&) const ;
-    int32_t getSideChannelBindFlags() const ;
+    void cancelNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t) const;
+    void postNotification(const ::android::app::NotificationManager&, const ::java::lang::String&, int32_t, const ::android::app::Notification&) const;
+    int32_t getSideChannelBindFlags() const;
 
 };
 }

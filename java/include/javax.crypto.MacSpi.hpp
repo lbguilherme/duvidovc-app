@@ -33,7 +33,7 @@ public:
     ::javax::crypto::MacSpi& operator=(::javax::crypto::MacSpi&& x) {obj = std::move(x.obj); return *this;}
     
     MacSpi();
-    ::java::lang::Object clone() const ;
+    ::java::lang::Object clone() const;
 
 };
 }

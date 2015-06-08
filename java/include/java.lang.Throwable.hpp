@@ -41,17 +41,17 @@ public:
     Throwable();
     Throwable(const ::java::lang::String&);
     Throwable(const ::java::lang::String&, const ::java::lang::Throwable&);
-    ::java::lang::Throwable fillInStackTrace() const ;
-    ::java::lang::String getMessage() const ;
-    ::java::lang::String getLocalizedMessage() const ;
-    std::vector< ::java::lang::StackTraceElement> getStackTrace() const ;
-    void setStackTrace(const std::vector< ::java::lang::StackTraceElement>&) const ;
-    void printStackTrace() const ;
-    void printStackTrace(const ::java::io::PrintStream&) const ;
-    void printStackTrace(const ::java::io::PrintWriter&) const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Throwable initCause(const ::java::lang::Throwable&) const ;
-    ::java::lang::Throwable getCause() const ;
+    ::java::lang::Throwable fillInStackTrace() const;
+    ::java::lang::String getMessage() const;
+    ::java::lang::String getLocalizedMessage() const;
+    std::vector< ::java::lang::StackTraceElement> getStackTrace() const;
+    void setStackTrace(const std::vector< ::java::lang::StackTraceElement>&) const;
+    void printStackTrace() const;
+    void printStackTrace(const ::java::io::PrintStream&) const;
+    void printStackTrace(const ::java::io::PrintWriter&) const;
+    ::java::lang::String toString() const;
+    ::java::lang::Throwable initCause(const ::java::lang::Throwable&) const;
+    ::java::lang::Throwable getCause() const;
 
 };
 }

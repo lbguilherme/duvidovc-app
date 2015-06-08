@@ -37,13 +37,13 @@ public:
     ::org::apache::http::auth::AuthScheme& operator=(const ::org::apache::http::auth::AuthScheme& x) {obj = x.obj; return *this;}
     ::org::apache::http::auth::AuthScheme& operator=(::org::apache::http::auth::AuthScheme&& x) {obj = std::move(x.obj); return *this;}
     
-    void processChallenge(const ::org::apache::http::Header&) const ;
-    ::java::lang::String getSchemeName() const ;
-    ::java::lang::String getParameter(const ::java::lang::String&) const ;
-    ::java::lang::String getRealm() const ;
-    bool isConnectionBased() const ;
-    bool isComplete() const ;
-    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const ;
+    void processChallenge(const ::org::apache::http::Header&) const;
+    ::java::lang::String getSchemeName() const;
+    ::java::lang::String getParameter(const ::java::lang::String&) const;
+    ::java::lang::String getRealm() const;
+    bool isConnectionBased() const;
+    bool isComplete() const;
+    ::org::apache::http::Header authenticate(const ::org::apache::http::auth::Credentials&, const ::org::apache::http::HttpRequest&) const;
 
 };
 }

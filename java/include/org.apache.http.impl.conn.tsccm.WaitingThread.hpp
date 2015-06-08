@@ -40,12 +40,12 @@ public:
     ::org::apache::http::impl::conn::tsccm::WaitingThread& operator=(::org::apache::http::impl::conn::tsccm::WaitingThread&& x) {obj = std::move(x.obj); return *this;}
     
     WaitingThread(const ::java::util::concurrent::locks::Condition&, const ::org::apache::http::impl::conn::tsccm::RouteSpecificPool&);
-    ::java::util::concurrent::locks::Condition getCondition() const ;
-    ::org::apache::http::impl::conn::tsccm::RouteSpecificPool getPool() const ;
-    ::java::lang::Thread getThread() const ;
-    bool await(const ::java::util::Date&) const ;
-    void wakeup() const ;
-    void interrupt() const ;
+    ::java::util::concurrent::locks::Condition getCondition() const;
+    ::org::apache::http::impl::conn::tsccm::RouteSpecificPool getPool() const;
+    ::java::lang::Thread getThread() const;
+    bool await(const ::java::util::Date&) const;
+    void wakeup() const;
+    void interrupt() const;
 
 };
 }

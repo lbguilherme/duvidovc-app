@@ -38,23 +38,23 @@ public:
     
     ServiceState();
     ServiceState(const ::android::os::Parcel&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
-    int32_t getState() const ;
-    bool getRoaming() const ;
-    ::java::lang::String getOperatorAlphaLong() const ;
-    ::java::lang::String getOperatorAlphaShort() const ;
-    ::java::lang::String getOperatorNumeric() const ;
-    bool getIsManualSelection() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    void setStateOutOfService() const ;
-    void setStateOff() const ;
-    void setState(int32_t) const ;
-    void setRoaming(bool) const ;
-    void setOperatorName(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const ;
-    void setIsManualSelection(bool) const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
+    int32_t getState() const;
+    bool getRoaming() const;
+    ::java::lang::String getOperatorAlphaLong() const;
+    ::java::lang::String getOperatorAlphaShort() const;
+    ::java::lang::String getOperatorNumeric() const;
+    bool getIsManualSelection() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    void setStateOutOfService() const;
+    void setStateOff() const;
+    void setState(int32_t) const;
+    void setRoaming(bool) const;
+    void setOperatorName(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&) const;
+    void setIsManualSelection(bool) const;
 
 };
 }

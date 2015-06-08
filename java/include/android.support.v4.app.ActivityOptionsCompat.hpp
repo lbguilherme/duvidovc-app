@@ -46,8 +46,8 @@ public:
     static ::android::support::v4::app::ActivityOptionsCompat makeThumbnailScaleUpAnimation(const ::android::view::View&, const ::android::graphics::Bitmap&, int32_t, int32_t);
     static ::android::support::v4::app::ActivityOptionsCompat makeSceneTransitionAnimation(const ::android::app::Activity&, const ::android::view::View&, const ::java::lang::String&);
     static ::android::support::v4::app::ActivityOptionsCompat makeSceneTransitionAnimation(const ::android::app::Activity&, const std::vector< ::android::support::v4::util::Pair>&);
-    ::android::os::Bundle toBundle() const ;
-    void update(const ::android::support::v4::app::ActivityOptionsCompat&) const ;
+    ::android::os::Bundle toBundle() const;
+    void update(const ::android::support::v4::app::ActivityOptionsCompat&) const;
 
 };
 }

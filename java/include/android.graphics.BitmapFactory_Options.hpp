@@ -32,7 +32,7 @@ public:
     ::android::graphics::BitmapFactory_Options& operator=(::android::graphics::BitmapFactory_Options&& x) {obj = std::move(x.obj); return *this;}
     
     BitmapFactory_Options();
-    void requestCancelDecode() const ;
+    void requestCancelDecode() const;
 
 };
 }

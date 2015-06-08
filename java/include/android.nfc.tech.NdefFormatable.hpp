@@ -38,12 +38,12 @@ public:
     ::android::nfc::tech::NdefFormatable& operator=(::android::nfc::tech::NdefFormatable&& x) {obj = std::move(x.obj); return *this;}
     
     static ::android::nfc::tech::NdefFormatable get(const ::android::nfc::Tag&);
-    void format(const ::android::nfc::NdefMessage&) const ;
-    void formatReadOnly(const ::android::nfc::NdefMessage&) const ;
-    void close() const ;
-    void connect() const ;
-    bool isConnected() const ;
-    ::android::nfc::Tag getTag() const ;
+    void format(const ::android::nfc::NdefMessage&) const;
+    void formatReadOnly(const ::android::nfc::NdefMessage&) const;
+    void close() const;
+    void connect() const;
+    bool isConnected() const;
+    ::android::nfc::Tag getTag() const;
 
 };
 }

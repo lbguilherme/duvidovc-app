@@ -37,10 +37,10 @@ public:
     ::com::facebook::login::widget::ToolTipPopup& operator=(::com::facebook::login::widget::ToolTipPopup&& x) {obj = std::move(x.obj); return *this;}
     
     ToolTipPopup(const ::java::lang::String&, const ::android::view::View&);
-    void setStyle(const ::com::facebook::login::widget::ToolTipPopup_Style&) const ;
-    void show() const ;
-    void setNuxDisplayTime(int64_t) const ;
-    void dismiss() const ;
+    void setStyle(const ::com::facebook::login::widget::ToolTipPopup_Style&) const;
+    void show() const;
+    void setNuxDisplayTime(int64_t) const;
+    void dismiss() const;
 
 };
 }

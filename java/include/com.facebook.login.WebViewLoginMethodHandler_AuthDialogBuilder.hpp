@@ -40,9 +40,9 @@ public:
     ::com::facebook::login::WebViewLoginMethodHandler_AuthDialogBuilder& operator=(::com::facebook::login::WebViewLoginMethodHandler_AuthDialogBuilder&& x) {obj = std::move(x.obj); return *this;}
     
     WebViewLoginMethodHandler_AuthDialogBuilder(const ::android::content::Context&, const ::java::lang::String&, const ::android::os::Bundle&);
-    ::com::facebook::login::WebViewLoginMethodHandler_AuthDialogBuilder setE2E(const ::java::lang::String&) const ;
-    ::com::facebook::login::WebViewLoginMethodHandler_AuthDialogBuilder setIsRerequest(bool) const ;
-    ::com::facebook::internal::WebDialog build() const ;
+    ::com::facebook::login::WebViewLoginMethodHandler_AuthDialogBuilder setE2E(const ::java::lang::String&) const;
+    ::com::facebook::login::WebViewLoginMethodHandler_AuthDialogBuilder setIsRerequest(bool) const;
+    ::com::facebook::internal::WebDialog build() const;
 
 };
 }

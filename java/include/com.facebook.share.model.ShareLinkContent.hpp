@@ -38,11 +38,11 @@ public:
     ::com::facebook::share::model::ShareLinkContent& operator=(const ::com::facebook::share::model::ShareLinkContent& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareLinkContent& operator=(::com::facebook::share::model::ShareLinkContent&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getContentDescription() const ;
-    ::java::lang::String getContentTitle() const ;
-    ::android::net::Uri getImageUrl() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String getContentDescription() const;
+    ::java::lang::String getContentTitle() const;
+    ::android::net::Uri getImageUrl() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

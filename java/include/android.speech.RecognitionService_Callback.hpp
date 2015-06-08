@@ -32,14 +32,14 @@ public:
     ::android::speech::RecognitionService_Callback& operator=(const ::android::speech::RecognitionService_Callback& x) {obj = x.obj; return *this;}
     ::android::speech::RecognitionService_Callback& operator=(::android::speech::RecognitionService_Callback&& x) {obj = std::move(x.obj); return *this;}
     
-    void beginningOfSpeech() const ;
-    void bufferReceived(const std::vector< int8_t>&) const ;
-    void endOfSpeech() const ;
-    void error(int32_t) const ;
-    void partialResults(const ::android::os::Bundle&) const ;
-    void readyForSpeech(const ::android::os::Bundle&) const ;
-    void results(const ::android::os::Bundle&) const ;
-    void rmsChanged(float) const ;
+    void beginningOfSpeech() const;
+    void bufferReceived(const std::vector< int8_t>&) const;
+    void endOfSpeech() const;
+    void error(int32_t) const;
+    void partialResults(const ::android::os::Bundle&) const;
+    void readyForSpeech(const ::android::os::Bundle&) const;
+    void results(const ::android::os::Bundle&) const;
+    void rmsChanged(float) const;
 
 };
 }

@@ -38,9 +38,9 @@ public:
     ::android::support::v4::app::ActionBarDrawerToggle_ActionBarDrawerToggleImplBase& operator=(const ::android::support::v4::app::ActionBarDrawerToggle_ActionBarDrawerToggleImplBase& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ActionBarDrawerToggle_ActionBarDrawerToggleImplBase& operator=(::android::support::v4::app::ActionBarDrawerToggle_ActionBarDrawerToggleImplBase&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::graphics::drawable::Drawable getThemeUpIndicator(const ::android::app::Activity&) const ;
-    ::java::lang::Object setActionBarUpIndicator(const ::java::lang::Object&, const ::android::app::Activity&, const ::android::graphics::drawable::Drawable&, int32_t) const ;
-    ::java::lang::Object setActionBarDescription(const ::java::lang::Object&, const ::android::app::Activity&, int32_t) const ;
+    ::android::graphics::drawable::Drawable getThemeUpIndicator(const ::android::app::Activity&) const;
+    ::java::lang::Object setActionBarUpIndicator(const ::java::lang::Object&, const ::android::app::Activity&, const ::android::graphics::drawable::Drawable&, int32_t) const;
+    ::java::lang::Object setActionBarDescription(const ::java::lang::Object&, const ::android::app::Activity&, int32_t) const;
 
 };
 }

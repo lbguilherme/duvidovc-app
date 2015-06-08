@@ -36,13 +36,13 @@ public:
     ::com::facebook::messenger::ShareToMessengerParamsBuilder& operator=(const ::com::facebook::messenger::ShareToMessengerParamsBuilder& x) {obj = x.obj; return *this;}
     ::com::facebook::messenger::ShareToMessengerParamsBuilder& operator=(::com::facebook::messenger::ShareToMessengerParamsBuilder&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::net::Uri getUri() const ;
-    ::java::lang::String getMimeType() const ;
-    ::com::facebook::messenger::ShareToMessengerParamsBuilder setMetaData(const ::java::lang::String&) const ;
-    ::java::lang::String getMetaData() const ;
-    ::com::facebook::messenger::ShareToMessengerParamsBuilder setExternalUri(const ::android::net::Uri&) const ;
-    ::android::net::Uri getExternalUri() const ;
-    ::com::facebook::messenger::ShareToMessengerParams build() const ;
+    ::android::net::Uri getUri() const;
+    ::java::lang::String getMimeType() const;
+    ::com::facebook::messenger::ShareToMessengerParamsBuilder setMetaData(const ::java::lang::String&) const;
+    ::java::lang::String getMetaData() const;
+    ::com::facebook::messenger::ShareToMessengerParamsBuilder setExternalUri(const ::android::net::Uri&) const;
+    ::android::net::Uri getExternalUri() const;
+    ::com::facebook::messenger::ShareToMessengerParams build() const;
 
 };
 }

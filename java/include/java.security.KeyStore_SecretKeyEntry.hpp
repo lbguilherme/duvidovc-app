@@ -36,8 +36,8 @@ public:
     ::java::security::KeyStore_SecretKeyEntry& operator=(::java::security::KeyStore_SecretKeyEntry&& x) {obj = std::move(x.obj); return *this;}
     
     KeyStore_SecretKeyEntry(const ::javax::crypto::SecretKey&);
-    ::javax::crypto::SecretKey getSecretKey() const ;
-    ::java::lang::String toString() const ;
+    ::javax::crypto::SecretKey getSecretKey() const;
+    ::java::lang::String toString() const;
 
 };
 }

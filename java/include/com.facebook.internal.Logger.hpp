@@ -42,15 +42,15 @@ public:
     static void log(const ::com::facebook::LoggingBehavior&, const ::java::lang::String&, const ::java::lang::String&, const std::vector< ::java::lang::Object>&);
     static void log(const ::com::facebook::LoggingBehavior&, int32_t, const ::java::lang::String&, const ::java::lang::String&);
     Logger(const ::com::facebook::LoggingBehavior&, const ::java::lang::String&);
-    int32_t getPriority() const ;
-    void setPriority(int32_t) const ;
-    ::java::lang::String getContents() const ;
-    void log() const ;
-    void logString(const ::java::lang::String&) const ;
-    void append(const ::java::lang::StringBuilder&) const ;
-    void append(const ::java::lang::String&) const ;
-    void append(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const ;
-    void appendKeyValue(const ::java::lang::String&, const ::java::lang::Object&) const ;
+    int32_t getPriority() const;
+    void setPriority(int32_t) const;
+    ::java::lang::String getContents() const;
+    void log() const;
+    void logString(const ::java::lang::String&) const;
+    void append(const ::java::lang::StringBuilder&) const;
+    void append(const ::java::lang::String&) const;
+    void append(const ::java::lang::String&, const std::vector< ::java::lang::Object>&) const;
+    void appendKeyValue(const ::java::lang::String&, const ::java::lang::Object&) const;
 
 };
 }

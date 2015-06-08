@@ -43,29 +43,29 @@ public:
     ::org::apache::http::impl::conn::AbstractClientConnAdapter& operator=(const ::org::apache::http::impl::conn::AbstractClientConnAdapter& x) {obj = x.obj; return *this;}
     ::org::apache::http::impl::conn::AbstractClientConnAdapter& operator=(::org::apache::http::impl::conn::AbstractClientConnAdapter&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isOpen() const ;
-    bool isStale() const ;
-    void setSocketTimeout(int32_t) const ;
-    int32_t getSocketTimeout() const ;
-    ::org::apache::http::HttpConnectionMetrics getMetrics() const ;
-    void flush() const ;
-    bool isResponseAvailable(int32_t) const ;
-    void receiveResponseEntity(const ::org::apache::http::HttpResponse&) const ;
-    ::org::apache::http::HttpResponse receiveResponseHeader() const ;
-    void sendRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const ;
-    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const ;
-    ::java::net::InetAddress getLocalAddress() const ;
-    int32_t getLocalPort() const ;
-    ::java::net::InetAddress getRemoteAddress() const ;
-    int32_t getRemotePort() const ;
-    bool isSecure() const ;
-    ::javax::net::ssl::SSLSession getSSLSession() const ;
-    void markReusable() const ;
-    void unmarkReusable() const ;
-    bool isMarkedReusable() const ;
-    void setIdleDuration(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void releaseConnection() const ;
-    void abortConnection() const ;
+    bool isOpen() const;
+    bool isStale() const;
+    void setSocketTimeout(int32_t) const;
+    int32_t getSocketTimeout() const;
+    ::org::apache::http::HttpConnectionMetrics getMetrics() const;
+    void flush() const;
+    bool isResponseAvailable(int32_t) const;
+    void receiveResponseEntity(const ::org::apache::http::HttpResponse&) const;
+    ::org::apache::http::HttpResponse receiveResponseHeader() const;
+    void sendRequestEntity(const ::org::apache::http::HttpEntityEnclosingRequest&) const;
+    void sendRequestHeader(const ::org::apache::http::HttpRequest&) const;
+    ::java::net::InetAddress getLocalAddress() const;
+    int32_t getLocalPort() const;
+    ::java::net::InetAddress getRemoteAddress() const;
+    int32_t getRemotePort() const;
+    bool isSecure() const;
+    ::javax::net::ssl::SSLSession getSSLSession() const;
+    void markReusable() const;
+    void unmarkReusable() const;
+    bool isMarkedReusable() const;
+    void setIdleDuration(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void releaseConnection() const;
+    void abortConnection() const;
 
 };
 }

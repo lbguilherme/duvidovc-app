@@ -32,7 +32,7 @@ public:
     ::com::facebook::GraphRequest_KeyValueSerializer& operator=(const ::com::facebook::GraphRequest_KeyValueSerializer& x) {obj = x.obj; return *this;}
     ::com::facebook::GraphRequest_KeyValueSerializer& operator=(::com::facebook::GraphRequest_KeyValueSerializer&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeString(const ::java::lang::String&, const ::java::lang::String&) const ;
+    void writeString(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

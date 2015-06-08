@@ -35,7 +35,7 @@ public:
     ::android::os::ParcelFileDescriptor_AutoCloseInputStream& operator=(::android::os::ParcelFileDescriptor_AutoCloseInputStream&& x) {obj = std::move(x.obj); return *this;}
     
     ParcelFileDescriptor_AutoCloseInputStream(const ::android::os::ParcelFileDescriptor&);
-    void close() const ;
+    void close() const;
 
 };
 }

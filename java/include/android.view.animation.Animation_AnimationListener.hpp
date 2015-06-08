@@ -33,9 +33,9 @@ public:
     ::android::view::animation::Animation_AnimationListener& operator=(const ::android::view::animation::Animation_AnimationListener& x) {obj = x.obj; return *this;}
     ::android::view::animation::Animation_AnimationListener& operator=(::android::view::animation::Animation_AnimationListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onAnimationStart(const ::android::view::animation::Animation&) const ;
-    void onAnimationEnd(const ::android::view::animation::Animation&) const ;
-    void onAnimationRepeat(const ::android::view::animation::Animation&) const ;
+    void onAnimationStart(const ::android::view::animation::Animation&) const;
+    void onAnimationEnd(const ::android::view::animation::Animation&) const;
+    void onAnimationRepeat(const ::android::view::animation::Animation&) const;
 
 };
 }

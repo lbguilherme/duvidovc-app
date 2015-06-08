@@ -33,11 +33,11 @@ public:
     ::android::accounts::AccountManagerFuture& operator=(const ::android::accounts::AccountManagerFuture& x) {obj = x.obj; return *this;}
     ::android::accounts::AccountManagerFuture& operator=(::android::accounts::AccountManagerFuture&& x) {obj = std::move(x.obj); return *this;}
     
-    bool cancel(bool) const ;
-    bool isCancelled() const ;
-    bool isDone() const ;
-    ::java::lang::Object getResult() const ;
-    ::java::lang::Object getResult(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
+    bool cancel(bool) const;
+    bool isCancelled() const;
+    bool isDone() const;
+    ::java::lang::Object getResult() const;
+    ::java::lang::Object getResult(int64_t, const ::java::util::concurrent::TimeUnit&) const;
 
 };
 }

@@ -37,8 +37,8 @@ public:
     ::android::support::v4::graphics::drawable::DrawableCompat_HoneycombDrawableImpl& operator=(const ::android::support::v4::graphics::drawable::DrawableCompat_HoneycombDrawableImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::graphics::drawable::DrawableCompat_HoneycombDrawableImpl& operator=(::android::support::v4::graphics::drawable::DrawableCompat_HoneycombDrawableImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void jumpToCurrentState(const ::android::graphics::drawable::Drawable&) const ;
-    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const ;
+    void jumpToCurrentState(const ::android::graphics::drawable::Drawable&) const;
+    ::android::graphics::drawable::Drawable wrap(const ::android::graphics::drawable::Drawable&) const;
 
 };
 }

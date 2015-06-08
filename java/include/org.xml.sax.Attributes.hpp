@@ -33,18 +33,18 @@ public:
     ::org::xml::sax::Attributes& operator=(const ::org::xml::sax::Attributes& x) {obj = x.obj; return *this;}
     ::org::xml::sax::Attributes& operator=(::org::xml::sax::Attributes&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLength() const ;
-    ::java::lang::String getURI(int32_t) const ;
-    ::java::lang::String getLocalName(int32_t) const ;
-    ::java::lang::String getQName(int32_t) const ;
-    ::java::lang::String getType(int32_t) const ;
-    ::java::lang::String getValue(int32_t) const ;
-    int32_t getIndex(const ::java::lang::String&, const ::java::lang::String&) const ;
-    int32_t getIndex(const ::java::lang::String&) const ;
-    ::java::lang::String getType(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String getType(const ::java::lang::String&) const ;
-    ::java::lang::String getValue(const ::java::lang::String&, const ::java::lang::String&) const ;
-    ::java::lang::String getValue(const ::java::lang::String&) const ;
+    int32_t getLength() const;
+    ::java::lang::String getURI(int32_t) const;
+    ::java::lang::String getLocalName(int32_t) const;
+    ::java::lang::String getQName(int32_t) const;
+    ::java::lang::String getType(int32_t) const;
+    ::java::lang::String getValue(int32_t) const;
+    int32_t getIndex(const ::java::lang::String&, const ::java::lang::String&) const;
+    int32_t getIndex(const ::java::lang::String&) const;
+    ::java::lang::String getType(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String getType(const ::java::lang::String&) const;
+    ::java::lang::String getValue(const ::java::lang::String&, const ::java::lang::String&) const;
+    ::java::lang::String getValue(const ::java::lang::String&) const;
 
 };
 }

@@ -35,8 +35,8 @@ public:
     ::java::nio::channels::spi::AbstractSelectionKey& operator=(const ::java::nio::channels::spi::AbstractSelectionKey& x) {obj = x.obj; return *this;}
     ::java::nio::channels::spi::AbstractSelectionKey& operator=(::java::nio::channels::spi::AbstractSelectionKey&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isValid() const ;
-    void cancel() const ;
+    bool isValid() const;
+    void cancel() const;
 
 };
 }

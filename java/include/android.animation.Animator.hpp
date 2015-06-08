@@ -39,24 +39,24 @@ public:
     ::android::animation::Animator& operator=(::android::animation::Animator&& x) {obj = std::move(x.obj); return *this;}
     
     Animator();
-    void start() const ;
-    void cancel() const ;
-    void end() const ;
-    int64_t getStartDelay() const ;
-    void setStartDelay(int64_t) const ;
-    ::android::animation::Animator setDuration(int64_t) const ;
-    int64_t getDuration() const ;
-    void setInterpolator(const ::android::animation::TimeInterpolator&) const ;
-    bool isRunning() const ;
-    bool isStarted() const ;
-    void addListener(const ::android::animation::Animator_AnimatorListener&) const ;
-    void removeListener(const ::android::animation::Animator_AnimatorListener&) const ;
-    ::java::util::ArrayList getListeners() const ;
-    void removeAllListeners() const ;
-    ::android::animation::Animator clone() const ;
-    void setupStartValues() const ;
-    void setupEndValues() const ;
-    void setTarget(const ::java::lang::Object&) const ;
+    void start() const;
+    void cancel() const;
+    void end() const;
+    int64_t getStartDelay() const;
+    void setStartDelay(int64_t) const;
+    ::android::animation::Animator setDuration(int64_t) const;
+    int64_t getDuration() const;
+    void setInterpolator(const ::android::animation::TimeInterpolator&) const;
+    bool isRunning() const;
+    bool isStarted() const;
+    void addListener(const ::android::animation::Animator_AnimatorListener&) const;
+    void removeListener(const ::android::animation::Animator_AnimatorListener&) const;
+    ::java::util::ArrayList getListeners() const;
+    void removeAllListeners() const;
+    ::android::animation::Animator clone() const;
+    void setupStartValues() const;
+    void setupEndValues() const;
+    void setTarget(const ::java::lang::Object&) const;
 
 };
 }

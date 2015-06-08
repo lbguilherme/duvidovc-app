@@ -42,9 +42,9 @@ public:
     ::android::app::backup::SharedPreferencesBackupHelper& operator=(::android::app::backup::SharedPreferencesBackupHelper&& x) {obj = std::move(x.obj); return *this;}
     
     SharedPreferencesBackupHelper(const ::android::content::Context&, const std::vector< ::java::lang::String>&);
-    void performBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const ;
-    void restoreEntity(const ::android::app::backup::BackupDataInputStream&) const ;
-    void writeNewStateDescription(const ::android::os::ParcelFileDescriptor&) const ;
+    void performBackup(const ::android::os::ParcelFileDescriptor&, const ::android::app::backup::BackupDataOutput&, const ::android::os::ParcelFileDescriptor&) const;
+    void restoreEntity(const ::android::app::backup::BackupDataInputStream&) const;
+    void writeNewStateDescription(const ::android::os::ParcelFileDescriptor&) const;
 
 };
 }

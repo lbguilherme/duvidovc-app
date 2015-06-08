@@ -36,12 +36,12 @@ public:
     ::org::xml::sax::ext::Attributes2& operator=(const ::org::xml::sax::ext::Attributes2& x) {obj = x.obj; return *this;}
     ::org::xml::sax::ext::Attributes2& operator=(::org::xml::sax::ext::Attributes2&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isDeclared(int32_t) const ;
-    bool isDeclared(const ::java::lang::String&) const ;
-    bool isDeclared(const ::java::lang::String&, const ::java::lang::String&) const ;
-    bool isSpecified(int32_t) const ;
-    bool isSpecified(const ::java::lang::String&, const ::java::lang::String&) const ;
-    bool isSpecified(const ::java::lang::String&) const ;
+    bool isDeclared(int32_t) const;
+    bool isDeclared(const ::java::lang::String&) const;
+    bool isDeclared(const ::java::lang::String&, const ::java::lang::String&) const;
+    bool isSpecified(int32_t) const;
+    bool isSpecified(const ::java::lang::String&, const ::java::lang::String&) const;
+    bool isSpecified(const ::java::lang::String&) const;
 
 };
 }

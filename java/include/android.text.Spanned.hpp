@@ -35,11 +35,11 @@ public:
     ::android::text::Spanned& operator=(const ::android::text::Spanned& x) {obj = x.obj; return *this;}
     ::android::text::Spanned& operator=(::android::text::Spanned&& x) {obj = std::move(x.obj); return *this;}
     
-    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const ;
-    int32_t getSpanStart(const ::java::lang::Object&) const ;
-    int32_t getSpanEnd(const ::java::lang::Object&) const ;
-    int32_t getSpanFlags(const ::java::lang::Object&) const ;
-    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const ;
+    std::vector< ::java::lang::Object> getSpans(int32_t, int32_t, const ::java::lang::Class&) const;
+    int32_t getSpanStart(const ::java::lang::Object&) const;
+    int32_t getSpanEnd(const ::java::lang::Object&) const;
+    int32_t getSpanFlags(const ::java::lang::Object&) const;
+    int32_t nextSpanTransition(int32_t, int32_t, const ::java::lang::Class&) const;
 
 };
 }

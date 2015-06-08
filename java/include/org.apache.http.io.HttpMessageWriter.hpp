@@ -34,7 +34,7 @@ public:
     ::org::apache::http::io::HttpMessageWriter& operator=(const ::org::apache::http::io::HttpMessageWriter& x) {obj = x.obj; return *this;}
     ::org::apache::http::io::HttpMessageWriter& operator=(::org::apache::http::io::HttpMessageWriter&& x) {obj = std::move(x.obj); return *this;}
     
-    void write(const ::org::apache::http::HttpMessage&) const ;
+    void write(const ::org::apache::http::HttpMessage&) const;
 
 };
 }

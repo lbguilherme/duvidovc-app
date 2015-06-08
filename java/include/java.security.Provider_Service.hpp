@@ -37,14 +37,14 @@ public:
     ::java::security::Provider_Service& operator=(::java::security::Provider_Service&& x) {obj = std::move(x.obj); return *this;}
     
     Provider_Service(const ::java::security::Provider&, const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::String&, const ::java::util::List&, const ::java::util::Map&);
-    ::java::lang::String getType() const ;
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
-    ::java::lang::String getClassName() const ;
-    ::java::lang::String getAttribute(const ::java::lang::String&) const ;
-    ::java::lang::Object newInstance(const ::java::lang::Object&) const ;
-    bool supportsParameter(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getType() const;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
+    ::java::lang::String getClassName() const;
+    ::java::lang::String getAttribute(const ::java::lang::String&) const;
+    ::java::lang::Object newInstance(const ::java::lang::Object&) const;
+    bool supportsParameter(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

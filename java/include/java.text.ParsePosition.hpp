@@ -34,13 +34,13 @@ public:
     ::java::text::ParsePosition& operator=(::java::text::ParsePosition&& x) {obj = std::move(x.obj); return *this;}
     
     ParsePosition(int32_t);
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t getErrorIndex() const ;
-    int32_t getIndex() const ;
-    int32_t hashCode() const ;
-    void setErrorIndex(int32_t) const ;
-    void setIndex(int32_t) const ;
-    ::java::lang::String toString() const ;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t getErrorIndex() const;
+    int32_t getIndex() const;
+    int32_t hashCode() const;
+    void setErrorIndex(int32_t) const;
+    void setIndex(int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

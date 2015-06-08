@@ -38,21 +38,21 @@ public:
     Bidi(const ::java::text::AttributedCharacterIterator&);
     Bidi(const std::vector< uint16_t>&, int32_t, const std::vector< int8_t>&, int32_t, int32_t, int32_t);
     Bidi(const ::java::lang::String&, int32_t);
-    bool baseIsLeftToRight() const ;
-    ::java::text::Bidi createLineBidi(int32_t, int32_t) const ;
-    int32_t getBaseLevel() const ;
-    int32_t getLength() const ;
-    int32_t getLevelAt(int32_t) const ;
-    int32_t getRunCount() const ;
-    int32_t getRunLevel(int32_t) const ;
-    int32_t getRunLimit(int32_t) const ;
-    int32_t getRunStart(int32_t) const ;
-    bool isLeftToRight() const ;
-    bool isMixed() const ;
-    bool isRightToLeft() const ;
+    bool baseIsLeftToRight() const;
+    ::java::text::Bidi createLineBidi(int32_t, int32_t) const;
+    int32_t getBaseLevel() const;
+    int32_t getLength() const;
+    int32_t getLevelAt(int32_t) const;
+    int32_t getRunCount() const;
+    int32_t getRunLevel(int32_t) const;
+    int32_t getRunLimit(int32_t) const;
+    int32_t getRunStart(int32_t) const;
+    bool isLeftToRight() const;
+    bool isMixed() const;
+    bool isRightToLeft() const;
     static void reorderVisually(const std::vector< int8_t>&, int32_t, const std::vector< ::java::lang::Object>&, int32_t, int32_t);
     static bool requiresBidi(const std::vector< uint16_t>&, int32_t, int32_t);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

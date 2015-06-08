@@ -36,8 +36,8 @@ public:
     
     ApplicationErrorReport_RunningServiceInfo();
     ApplicationErrorReport_RunningServiceInfo(const ::android::os::Parcel&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
 
 };
 }

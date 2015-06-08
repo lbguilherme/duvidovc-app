@@ -39,8 +39,8 @@ public:
     ::android::text::style::ClickableSpan& operator=(::android::text::style::ClickableSpan&& x) {obj = std::move(x.obj); return *this;}
     
     ClickableSpan();
-    void onClick(const ::android::view::View&) const ;
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    void onClick(const ::android::view::View&) const;
+    void updateDrawState(const ::android::text::TextPaint&) const;
 
 };
 }

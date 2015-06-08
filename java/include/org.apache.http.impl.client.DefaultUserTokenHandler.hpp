@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::client::DefaultUserTokenHandler& operator=(::org::apache::http::impl::client::DefaultUserTokenHandler&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultUserTokenHandler();
-    ::java::lang::Object getUserToken(const ::org::apache::http::protocol::HttpContext&) const ;
+    ::java::lang::Object getUserToken(const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

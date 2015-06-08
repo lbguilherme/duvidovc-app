@@ -35,8 +35,8 @@ public:
     ::com::facebook::login::GetTokenLoginMethodHandler& operator=(const ::com::facebook::login::GetTokenLoginMethodHandler& x) {obj = x.obj; return *this;}
     ::com::facebook::login::GetTokenLoginMethodHandler& operator=(::com::facebook::login::GetTokenLoginMethodHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

@@ -31,7 +31,7 @@ public:
     ::android::location::GpsStatus_Listener& operator=(const ::android::location::GpsStatus_Listener& x) {obj = x.obj; return *this;}
     ::android::location::GpsStatus_Listener& operator=(::android::location::GpsStatus_Listener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGpsStatusChanged(int32_t) const ;
+    void onGpsStatusChanged(int32_t) const;
 
 };
 }

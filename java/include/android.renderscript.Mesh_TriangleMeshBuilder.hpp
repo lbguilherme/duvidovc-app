@@ -35,13 +35,13 @@ public:
     ::android::renderscript::Mesh_TriangleMeshBuilder& operator=(::android::renderscript::Mesh_TriangleMeshBuilder&& x) {obj = std::move(x.obj); return *this;}
     
     Mesh_TriangleMeshBuilder(const ::android::renderscript::RenderScript&, int32_t, int32_t);
-    ::android::renderscript::Mesh_TriangleMeshBuilder addVertex(float, float) const ;
-    ::android::renderscript::Mesh_TriangleMeshBuilder addVertex(float, float, float) const ;
-    ::android::renderscript::Mesh_TriangleMeshBuilder setTexture(float, float) const ;
-    ::android::renderscript::Mesh_TriangleMeshBuilder setNormal(float, float, float) const ;
-    ::android::renderscript::Mesh_TriangleMeshBuilder setColor(float, float, float, float) const ;
-    ::android::renderscript::Mesh_TriangleMeshBuilder addTriangle(int32_t, int32_t, int32_t) const ;
-    ::android::renderscript::Mesh create(bool) const ;
+    ::android::renderscript::Mesh_TriangleMeshBuilder addVertex(float, float) const;
+    ::android::renderscript::Mesh_TriangleMeshBuilder addVertex(float, float, float) const;
+    ::android::renderscript::Mesh_TriangleMeshBuilder setTexture(float, float) const;
+    ::android::renderscript::Mesh_TriangleMeshBuilder setNormal(float, float, float) const;
+    ::android::renderscript::Mesh_TriangleMeshBuilder setColor(float, float, float, float) const;
+    ::android::renderscript::Mesh_TriangleMeshBuilder addTriangle(int32_t, int32_t, int32_t) const;
+    ::android::renderscript::Mesh create(bool) const;
 
 };
 }

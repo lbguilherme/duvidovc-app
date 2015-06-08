@@ -36,17 +36,17 @@ public:
     ::android::hardware::SensorManager& operator=(const ::android::hardware::SensorManager& x) {obj = x.obj; return *this;}
     ::android::hardware::SensorManager& operator=(::android::hardware::SensorManager&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getSensors() const ;
-    ::java::util::List getSensorList(int32_t) const ;
-    ::android::hardware::Sensor getDefaultSensor(int32_t) const ;
-    bool registerListener(const ::android::hardware::SensorListener&, int32_t) const ;
-    bool registerListener(const ::android::hardware::SensorListener&, int32_t, int32_t) const ;
-    void unregisterListener(const ::android::hardware::SensorListener&, int32_t) const ;
-    void unregisterListener(const ::android::hardware::SensorListener&) const ;
-    void unregisterListener(const ::android::hardware::SensorEventListener&, const ::android::hardware::Sensor&) const ;
-    void unregisterListener(const ::android::hardware::SensorEventListener&) const ;
-    bool registerListener(const ::android::hardware::SensorEventListener&, const ::android::hardware::Sensor&, int32_t) const ;
-    bool registerListener(const ::android::hardware::SensorEventListener&, const ::android::hardware::Sensor&, int32_t, const ::android::os::Handler&) const ;
+    int32_t getSensors() const;
+    ::java::util::List getSensorList(int32_t) const;
+    ::android::hardware::Sensor getDefaultSensor(int32_t) const;
+    bool registerListener(const ::android::hardware::SensorListener&, int32_t) const;
+    bool registerListener(const ::android::hardware::SensorListener&, int32_t, int32_t) const;
+    void unregisterListener(const ::android::hardware::SensorListener&, int32_t) const;
+    void unregisterListener(const ::android::hardware::SensorListener&) const;
+    void unregisterListener(const ::android::hardware::SensorEventListener&, const ::android::hardware::Sensor&) const;
+    void unregisterListener(const ::android::hardware::SensorEventListener&) const;
+    bool registerListener(const ::android::hardware::SensorEventListener&, const ::android::hardware::Sensor&, int32_t) const;
+    bool registerListener(const ::android::hardware::SensorEventListener&, const ::android::hardware::Sensor&, int32_t, const ::android::os::Handler&) const;
     static bool getRotationMatrix(const std::vector< float>&, const std::vector< float>&, const std::vector< float>&, const std::vector< float>&);
     static float getInclination(const std::vector< float>&);
     static bool remapCoordinateSystem(const std::vector< float>&, int32_t, int32_t, const std::vector< float>&);

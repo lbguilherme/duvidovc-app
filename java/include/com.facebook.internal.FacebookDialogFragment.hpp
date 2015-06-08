@@ -38,11 +38,11 @@ public:
     ::com::facebook::internal::FacebookDialogFragment& operator=(::com::facebook::internal::FacebookDialogFragment&& x) {obj = std::move(x.obj); return *this;}
     
     FacebookDialogFragment();
-    void setDialog(const ::android::app::Dialog&) const ;
-    void onCreate(const ::android::os::Bundle&) const ;
-    ::android::app::Dialog onCreateDialog(const ::android::os::Bundle&) const ;
-    void onConfigurationChanged(const ::android::content::res::Configuration&) const ;
-    void onDestroyView() const ;
+    void setDialog(const ::android::app::Dialog&) const;
+    void onCreate(const ::android::os::Bundle&) const;
+    ::android::app::Dialog onCreateDialog(const ::android::os::Bundle&) const;
+    void onConfigurationChanged(const ::android::content::res::Configuration&) const;
+    void onDestroyView() const;
 
 };
 }

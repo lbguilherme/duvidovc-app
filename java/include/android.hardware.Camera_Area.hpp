@@ -34,7 +34,7 @@ public:
     ::android::hardware::Camera_Area& operator=(::android::hardware::Camera_Area&& x) {obj = std::move(x.obj); return *this;}
     
     Camera_Area(const ::android::graphics::Rect&, int32_t);
-    bool equals(const ::java::lang::Object&) const ;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

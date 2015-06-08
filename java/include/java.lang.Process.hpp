@@ -34,12 +34,12 @@ public:
     ::java::lang::Process& operator=(::java::lang::Process&& x) {obj = std::move(x.obj); return *this;}
     
     Process();
-    void destroy() const ;
-    int32_t exitValue() const ;
-    ::java::io::InputStream getErrorStream() const ;
-    ::java::io::InputStream getInputStream() const ;
-    ::java::io::OutputStream getOutputStream() const ;
-    int32_t waitFor() const ;
+    void destroy() const;
+    int32_t exitValue() const;
+    ::java::io::InputStream getErrorStream() const;
+    ::java::io::InputStream getInputStream() const;
+    ::java::io::OutputStream getOutputStream() const;
+    int32_t waitFor() const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::android::support::v4::widget::PopupWindowCompat_KitKatPopupWindowImpl& operator=(const ::android::support::v4::widget::PopupWindowCompat_KitKatPopupWindowImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::PopupWindowCompat_KitKatPopupWindowImpl& operator=(::android::support::v4::widget::PopupWindowCompat_KitKatPopupWindowImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void showAsDropDown(const ::android::widget::PopupWindow&, const ::android::view::View&, int32_t, int32_t, int32_t) const ;
+    void showAsDropDown(const ::android::widget::PopupWindow&, const ::android::view::View&, int32_t, int32_t, int32_t) const;
 
 };
 }

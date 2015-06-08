@@ -43,11 +43,11 @@ public:
     ::android::preference::PreferenceScreen& operator=(const ::android::preference::PreferenceScreen& x) {obj = x.obj; return *this;}
     ::android::preference::PreferenceScreen& operator=(::android::preference::PreferenceScreen&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::widget::ListAdapter getRootAdapter() const ;
-    void bind(const ::android::widget::ListView&) const ;
-    void onDismiss(const ::android::content::DialogInterface&) const ;
-    ::android::app::Dialog getDialog() const ;
-    void onItemClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const ;
+    ::android::widget::ListAdapter getRootAdapter() const;
+    void bind(const ::android::widget::ListView&) const;
+    void onDismiss(const ::android::content::DialogInterface&) const;
+    ::android::app::Dialog getDialog() const;
+    void onItemClick(const ::android::widget::AdapterView&, const ::android::view::View&, int32_t, int64_t) const;
 
 };
 }

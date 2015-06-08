@@ -39,11 +39,11 @@ public:
     ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder& operator=(::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     NotificationCompat_CarExtender_UnreadConversation_Builder(const ::java::lang::String&);
-    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder addMessage(const ::java::lang::String&) const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder setReplyAction(const ::android::app::PendingIntent&, const ::android::support::v4::app::RemoteInput&) const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder setReadPendingIntent(const ::android::app::PendingIntent&) const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder setLatestTimestamp(int64_t) const ;
-    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation build() const ;
+    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder addMessage(const ::java::lang::String&) const;
+    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder setReplyAction(const ::android::app::PendingIntent&, const ::android::support::v4::app::RemoteInput&) const;
+    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder setReadPendingIntent(const ::android::app::PendingIntent&) const;
+    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation_Builder setLatestTimestamp(int64_t) const;
+    ::android::support::v4::app::NotificationCompat_CarExtender_UnreadConversation build() const;
 
 };
 }

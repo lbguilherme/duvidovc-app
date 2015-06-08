@@ -45,18 +45,18 @@ public:
     CompoundButton(const ::android::content::Context&);
     CompoundButton(const ::android::content::Context&, const ::android::util::AttributeSet&);
     CompoundButton(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    void toggle() const ;
-    bool performClick() const ;
-    bool isChecked() const ;
-    void setChecked(bool) const ;
-    void setOnCheckedChangeListener(const ::android::widget::CompoundButton_OnCheckedChangeListener&) const ;
-    void setButtonDrawable(int32_t) const ;
-    void setButtonDrawable(const ::android::graphics::drawable::Drawable&) const ;
-    void onInitializeAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
-    void onInitializeAccessibilityNodeInfo(const ::android::view::accessibility::AccessibilityNodeInfo&) const ;
-    void jumpDrawablesToCurrentState() const ;
-    ::android::os::Parcelable onSaveInstanceState() const ;
-    void onRestoreInstanceState(const ::android::os::Parcelable&) const ;
+    void toggle() const;
+    bool performClick() const;
+    bool isChecked() const;
+    void setChecked(bool) const;
+    void setOnCheckedChangeListener(const ::android::widget::CompoundButton_OnCheckedChangeListener&) const;
+    void setButtonDrawable(int32_t) const;
+    void setButtonDrawable(const ::android::graphics::drawable::Drawable&) const;
+    void onInitializeAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
+    void onInitializeAccessibilityNodeInfo(const ::android::view::accessibility::AccessibilityNodeInfo&) const;
+    void jumpDrawablesToCurrentState() const;
+    ::android::os::Parcelable onSaveInstanceState() const;
+    void onRestoreInstanceState(const ::android::os::Parcelable&) const;
 
 };
 }

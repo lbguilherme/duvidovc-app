@@ -40,17 +40,17 @@ public:
     ::javax::xml::validation::ValidatorHandler& operator=(const ::javax::xml::validation::ValidatorHandler& x) {obj = x.obj; return *this;}
     ::javax::xml::validation::ValidatorHandler& operator=(::javax::xml::validation::ValidatorHandler&& x) {obj = std::move(x.obj); return *this;}
     
-    void setContentHandler(const ::org::xml::sax::ContentHandler&) const ;
-    ::org::xml::sax::ContentHandler getContentHandler() const ;
-    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const ;
-    ::org::xml::sax::ErrorHandler getErrorHandler() const ;
-    void setResourceResolver(const ::org::w3c::dom::ls::LSResourceResolver&) const ;
-    ::org::w3c::dom::ls::LSResourceResolver getResourceResolver() const ;
-    ::javax::xml::validation::TypeInfoProvider getTypeInfoProvider() const ;
-    bool getFeature(const ::java::lang::String&) const ;
-    void setFeature(const ::java::lang::String&, bool) const ;
-    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getProperty(const ::java::lang::String&) const ;
+    void setContentHandler(const ::org::xml::sax::ContentHandler&) const;
+    ::org::xml::sax::ContentHandler getContentHandler() const;
+    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const;
+    ::org::xml::sax::ErrorHandler getErrorHandler() const;
+    void setResourceResolver(const ::org::w3c::dom::ls::LSResourceResolver&) const;
+    ::org::w3c::dom::ls::LSResourceResolver getResourceResolver() const;
+    ::javax::xml::validation::TypeInfoProvider getTypeInfoProvider() const;
+    bool getFeature(const ::java::lang::String&) const;
+    void setFeature(const ::java::lang::String&, bool) const;
+    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object getProperty(const ::java::lang::String&) const;
 
 };
 }

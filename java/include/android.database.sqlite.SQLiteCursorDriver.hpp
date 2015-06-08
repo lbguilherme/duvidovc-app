@@ -35,11 +35,11 @@ public:
     ::android::database::sqlite::SQLiteCursorDriver& operator=(const ::android::database::sqlite::SQLiteCursorDriver& x) {obj = x.obj; return *this;}
     ::android::database::sqlite::SQLiteCursorDriver& operator=(::android::database::sqlite::SQLiteCursorDriver&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::database::Cursor query(const ::android::database::sqlite::SQLiteDatabase_CursorFactory&, const std::vector< ::java::lang::String>&) const ;
-    void cursorDeactivated() const ;
-    void cursorRequeried(const ::android::database::Cursor&) const ;
-    void cursorClosed() const ;
-    void setBindArguments(const std::vector< ::java::lang::String>&) const ;
+    ::android::database::Cursor query(const ::android::database::sqlite::SQLiteDatabase_CursorFactory&, const std::vector< ::java::lang::String>&) const;
+    void cursorDeactivated() const;
+    void cursorRequeried(const ::android::database::Cursor&) const;
+    void cursorClosed() const;
+    void setBindArguments(const std::vector< ::java::lang::String>&) const;
 
 };
 }

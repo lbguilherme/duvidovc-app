@@ -35,10 +35,10 @@ public:
     ::java::security::spec::ECPoint& operator=(::java::security::spec::ECPoint&& x) {obj = std::move(x.obj); return *this;}
     
     ECPoint(const ::java::math::BigInteger&, const ::java::math::BigInteger&);
-    ::java::math::BigInteger getAffineX() const ;
-    ::java::math::BigInteger getAffineY() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
+    ::java::math::BigInteger getAffineX() const;
+    ::java::math::BigInteger getAffineY() const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
 
 };
 }

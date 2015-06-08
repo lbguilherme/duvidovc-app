@@ -38,16 +38,16 @@ public:
     ::org::apache::http::conn::routing::RouteInfo& operator=(const ::org::apache::http::conn::routing::RouteInfo& x) {obj = x.obj; return *this;}
     ::org::apache::http::conn::routing::RouteInfo& operator=(::org::apache::http::conn::routing::RouteInfo&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::HttpHost getTargetHost() const ;
-    ::java::net::InetAddress getLocalAddress() const ;
-    int32_t getHopCount() const ;
-    ::org::apache::http::HttpHost getHopTarget(int32_t) const ;
-    ::org::apache::http::HttpHost getProxyHost() const ;
-    ::org::apache::http::conn::routing::RouteInfo_TunnelType getTunnelType() const ;
-    bool isTunnelled() const ;
-    ::org::apache::http::conn::routing::RouteInfo_LayerType getLayerType() const ;
-    bool isLayered() const ;
-    bool isSecure() const ;
+    ::org::apache::http::HttpHost getTargetHost() const;
+    ::java::net::InetAddress getLocalAddress() const;
+    int32_t getHopCount() const;
+    ::org::apache::http::HttpHost getHopTarget(int32_t) const;
+    ::org::apache::http::HttpHost getProxyHost() const;
+    ::org::apache::http::conn::routing::RouteInfo_TunnelType getTunnelType() const;
+    bool isTunnelled() const;
+    ::org::apache::http::conn::routing::RouteInfo_LayerType getLayerType() const;
+    bool isLayered() const;
+    bool isSecure() const;
 
 };
 }

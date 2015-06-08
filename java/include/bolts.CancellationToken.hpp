@@ -31,9 +31,9 @@ public:
     ::bolts::CancellationToken& operator=(const ::bolts::CancellationToken& x) {obj = x.obj; return *this;}
     ::bolts::CancellationToken& operator=(::bolts::CancellationToken&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isCancellationRequested() const ;
-    void throwIfCancellationRequested() const ;
-    ::java::lang::String toString() const ;
+    bool isCancellationRequested() const;
+    void throwIfCancellationRequested() const;
+    ::java::lang::String toString() const;
 
 };
 }

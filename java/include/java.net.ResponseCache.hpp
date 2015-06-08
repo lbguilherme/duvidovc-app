@@ -41,8 +41,8 @@ public:
     ResponseCache();
     static ::java::net::ResponseCache getDefault();
     static void setDefault(const ::java::net::ResponseCache&);
-    ::java::net::CacheResponse get(const ::java::net::URI&, const ::java::lang::String&, const ::java::util::Map&) const ;
-    ::java::net::CacheRequest put(const ::java::net::URI&, const ::java::net::URLConnection&) const ;
+    ::java::net::CacheResponse get(const ::java::net::URI&, const ::java::lang::String&, const ::java::util::Map&) const;
+    ::java::net::CacheRequest put(const ::java::net::URI&, const ::java::net::URLConnection&) const;
 
 };
 }

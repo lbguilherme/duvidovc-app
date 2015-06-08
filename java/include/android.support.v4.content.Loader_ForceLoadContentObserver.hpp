@@ -37,8 +37,8 @@ public:
     ::android::support::v4::content::Loader_ForceLoadContentObserver& operator=(::android::support::v4::content::Loader_ForceLoadContentObserver&& x) {obj = std::move(x.obj); return *this;}
     
     Loader_ForceLoadContentObserver(const ::android::support::v4::content::Loader&);
-    bool deliverSelfNotifications() const ;
-    void onChange(bool) const ;
+    bool deliverSelfNotifications() const;
+    void onChange(bool) const;
 
 };
 }

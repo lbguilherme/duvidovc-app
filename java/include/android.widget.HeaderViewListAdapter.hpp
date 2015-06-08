@@ -43,24 +43,24 @@ public:
     ::android::widget::HeaderViewListAdapter& operator=(::android::widget::HeaderViewListAdapter&& x) {obj = std::move(x.obj); return *this;}
     
     HeaderViewListAdapter(const ::java::util::ArrayList&, const ::java::util::ArrayList&, const ::android::widget::ListAdapter&);
-    int32_t getHeadersCount() const ;
-    int32_t getFootersCount() const ;
-    bool isEmpty() const ;
-    bool removeHeader(const ::android::view::View&) const ;
-    bool removeFooter(const ::android::view::View&) const ;
-    int32_t getCount() const ;
-    bool areAllItemsEnabled() const ;
-    bool isEnabled(int32_t) const ;
-    ::java::lang::Object getItem(int32_t) const ;
-    int64_t getItemId(int32_t) const ;
-    bool hasStableIds() const ;
-    ::android::view::View getView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const ;
-    int32_t getItemViewType(int32_t) const ;
-    int32_t getViewTypeCount() const ;
-    void registerDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const ;
-    ::android::widget::Filter getFilter() const ;
-    ::android::widget::ListAdapter getWrappedAdapter() const ;
+    int32_t getHeadersCount() const;
+    int32_t getFootersCount() const;
+    bool isEmpty() const;
+    bool removeHeader(const ::android::view::View&) const;
+    bool removeFooter(const ::android::view::View&) const;
+    int32_t getCount() const;
+    bool areAllItemsEnabled() const;
+    bool isEnabled(int32_t) const;
+    ::java::lang::Object getItem(int32_t) const;
+    int64_t getItemId(int32_t) const;
+    bool hasStableIds() const;
+    ::android::view::View getView(int32_t, const ::android::view::View&, const ::android::view::ViewGroup&) const;
+    int32_t getItemViewType(int32_t) const;
+    int32_t getViewTypeCount() const;
+    void registerDataSetObserver(const ::android::database::DataSetObserver&) const;
+    void unregisterDataSetObserver(const ::android::database::DataSetObserver&) const;
+    ::android::widget::Filter getFilter() const;
+    ::android::widget::ListAdapter getWrappedAdapter() const;
 
 };
 }

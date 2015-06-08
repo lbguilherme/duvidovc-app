@@ -51,28 +51,28 @@ public:
     ::org::apache::http::protocol::BasicHttpProcessor& operator=(::org::apache::http::protocol::BasicHttpProcessor&& x) {obj = std::move(x.obj); return *this;}
     
     BasicHttpProcessor();
-    void addRequestInterceptor(const ::org::apache::http::HttpRequestInterceptor&) const ;
-    void addRequestInterceptor(const ::org::apache::http::HttpRequestInterceptor&, int32_t) const ;
-    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&, int32_t) const ;
-    void removeRequestInterceptorByClass(const ::java::lang::Class&) const ;
-    void removeResponseInterceptorByClass(const ::java::lang::Class&) const ;
-    void addInterceptor(const ::org::apache::http::HttpRequestInterceptor&) const ;
-    void addInterceptor(const ::org::apache::http::HttpRequestInterceptor&, int32_t) const ;
-    int32_t getRequestInterceptorCount() const ;
-    ::org::apache::http::HttpRequestInterceptor getRequestInterceptor(int32_t) const ;
-    void clearRequestInterceptors() const ;
-    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&) const ;
-    void addInterceptor(const ::org::apache::http::HttpResponseInterceptor&) const ;
-    void addInterceptor(const ::org::apache::http::HttpResponseInterceptor&, int32_t) const ;
-    int32_t getResponseInterceptorCount() const ;
-    ::org::apache::http::HttpResponseInterceptor getResponseInterceptor(int32_t) const ;
-    void clearResponseInterceptors() const ;
-    void setInterceptors(const ::java::util::List&) const ;
-    void clearInterceptors() const ;
-    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
-    void process(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
-    ::org::apache::http::protocol::BasicHttpProcessor copy() const ;
-    ::java::lang::Object clone() const ;
+    void addRequestInterceptor(const ::org::apache::http::HttpRequestInterceptor&) const;
+    void addRequestInterceptor(const ::org::apache::http::HttpRequestInterceptor&, int32_t) const;
+    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&, int32_t) const;
+    void removeRequestInterceptorByClass(const ::java::lang::Class&) const;
+    void removeResponseInterceptorByClass(const ::java::lang::Class&) const;
+    void addInterceptor(const ::org::apache::http::HttpRequestInterceptor&) const;
+    void addInterceptor(const ::org::apache::http::HttpRequestInterceptor&, int32_t) const;
+    int32_t getRequestInterceptorCount() const;
+    ::org::apache::http::HttpRequestInterceptor getRequestInterceptor(int32_t) const;
+    void clearRequestInterceptors() const;
+    void addResponseInterceptor(const ::org::apache::http::HttpResponseInterceptor&) const;
+    void addInterceptor(const ::org::apache::http::HttpResponseInterceptor&) const;
+    void addInterceptor(const ::org::apache::http::HttpResponseInterceptor&, int32_t) const;
+    int32_t getResponseInterceptorCount() const;
+    ::org::apache::http::HttpResponseInterceptor getResponseInterceptor(int32_t) const;
+    void clearResponseInterceptors() const;
+    void setInterceptors(const ::java::util::List&) const;
+    void clearInterceptors() const;
+    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
+    void process(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
+    ::org::apache::http::protocol::BasicHttpProcessor copy() const;
+    ::java::lang::Object clone() const;
 
 };
 }

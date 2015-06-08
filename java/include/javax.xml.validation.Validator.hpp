@@ -38,17 +38,17 @@ public:
     ::javax::xml::validation::Validator& operator=(const ::javax::xml::validation::Validator& x) {obj = x.obj; return *this;}
     ::javax::xml::validation::Validator& operator=(::javax::xml::validation::Validator&& x) {obj = std::move(x.obj); return *this;}
     
-    void reset() const ;
-    void validate(const ::javax::xml::transform::Source&) const ;
-    void validate(const ::javax::xml::transform::Source&, const ::javax::xml::transform::Result&) const ;
-    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const ;
-    ::org::xml::sax::ErrorHandler getErrorHandler() const ;
-    void setResourceResolver(const ::org::w3c::dom::ls::LSResourceResolver&) const ;
-    ::org::w3c::dom::ls::LSResourceResolver getResourceResolver() const ;
-    bool getFeature(const ::java::lang::String&) const ;
-    void setFeature(const ::java::lang::String&, bool) const ;
-    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const ;
-    ::java::lang::Object getProperty(const ::java::lang::String&) const ;
+    void reset() const;
+    void validate(const ::javax::xml::transform::Source&) const;
+    void validate(const ::javax::xml::transform::Source&, const ::javax::xml::transform::Result&) const;
+    void setErrorHandler(const ::org::xml::sax::ErrorHandler&) const;
+    ::org::xml::sax::ErrorHandler getErrorHandler() const;
+    void setResourceResolver(const ::org::w3c::dom::ls::LSResourceResolver&) const;
+    ::org::w3c::dom::ls::LSResourceResolver getResourceResolver() const;
+    bool getFeature(const ::java::lang::String&) const;
+    void setFeature(const ::java::lang::String&, bool) const;
+    void setProperty(const ::java::lang::String&, const ::java::lang::Object&) const;
+    ::java::lang::Object getProperty(const ::java::lang::String&) const;
 
 };
 }

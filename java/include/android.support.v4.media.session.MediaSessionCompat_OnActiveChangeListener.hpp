@@ -34,7 +34,7 @@ public:
     ::android::support::v4::media::session::MediaSessionCompat_OnActiveChangeListener& operator=(const ::android::support::v4::media::session::MediaSessionCompat_OnActiveChangeListener& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::session::MediaSessionCompat_OnActiveChangeListener& operator=(::android::support::v4::media::session::MediaSessionCompat_OnActiveChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onActiveChanged() const ;
+    void onActiveChanged() const;
 
 };
 }

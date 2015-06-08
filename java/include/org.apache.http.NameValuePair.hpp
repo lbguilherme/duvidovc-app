@@ -33,8 +33,8 @@ public:
     ::org::apache::http::NameValuePair& operator=(const ::org::apache::http::NameValuePair& x) {obj = x.obj; return *this;}
     ::org::apache::http::NameValuePair& operator=(::org::apache::http::NameValuePair&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::java::lang::String getValue() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getValue() const;
 
 };
 }

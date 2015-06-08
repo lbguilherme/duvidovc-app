@@ -38,7 +38,7 @@ public:
     
     static std::vector< ::com::facebook::login::DefaultAudience> values();
     static ::com::facebook::login::DefaultAudience valueOf(const ::java::lang::String&);
-    ::java::lang::String getNativeProtocolAudience() const ;
+    ::java::lang::String getNativeProtocolAudience() const;
 
 };
 }

@@ -39,8 +39,8 @@ public:
     ::android::test::mock::MockContentResolver& operator=(::android::test::mock::MockContentResolver&& x) {obj = std::move(x.obj); return *this;}
     
     MockContentResolver();
-    void addProvider(const ::java::lang::String&, const ::android::content::ContentProvider&) const ;
-    void notifyChange(const ::android::net::Uri&, const ::android::database::ContentObserver&, bool) const ;
+    void addProvider(const ::java::lang::String&, const ::android::content::ContentProvider&) const;
+    void notifyChange(const ::android::net::Uri&, const ::android::database::ContentObserver&, bool) const;
 
 };
 }

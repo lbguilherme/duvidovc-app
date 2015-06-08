@@ -36,11 +36,11 @@ public:
     ::com::facebook::ProgressOutputStream& operator=(const ::com::facebook::ProgressOutputStream& x) {obj = x.obj; return *this;}
     ::com::facebook::ProgressOutputStream& operator=(::com::facebook::ProgressOutputStream&& x) {obj = std::move(x.obj); return *this;}
     
-    void setCurrentRequest(const ::com::facebook::GraphRequest&) const ;
-    void write(const std::vector< int8_t>&) const ;
-    void write(const std::vector< int8_t>&, int32_t, int32_t) const ;
-    void write(int32_t) const ;
-    void close() const ;
+    void setCurrentRequest(const ::com::facebook::GraphRequest&) const;
+    void write(const std::vector< int8_t>&) const;
+    void write(const std::vector< int8_t>&, int32_t, int32_t) const;
+    void write(int32_t) const;
+    void close() const;
 
 };
 }

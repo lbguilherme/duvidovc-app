@@ -38,11 +38,11 @@ public:
     ::android::app::LoaderManager& operator=(::android::app::LoaderManager&& x) {obj = std::move(x.obj); return *this;}
     
     LoaderManager();
-    ::android::content::Loader initLoader(int32_t, const ::android::os::Bundle&, const ::android::app::LoaderManager_LoaderCallbacks&) const ;
-    ::android::content::Loader restartLoader(int32_t, const ::android::os::Bundle&, const ::android::app::LoaderManager_LoaderCallbacks&) const ;
-    void destroyLoader(int32_t) const ;
-    ::android::content::Loader getLoader(int32_t) const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
+    ::android::content::Loader initLoader(int32_t, const ::android::os::Bundle&, const ::android::app::LoaderManager_LoaderCallbacks&) const;
+    ::android::content::Loader restartLoader(int32_t, const ::android::os::Bundle&, const ::android::app::LoaderManager_LoaderCallbacks&) const;
+    void destroyLoader(int32_t) const;
+    ::android::content::Loader getLoader(int32_t) const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
     static void enableDebugLogging(bool);
 
 };

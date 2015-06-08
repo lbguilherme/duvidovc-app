@@ -35,7 +35,7 @@ public:
     ::java::security::PrivilegedActionException& operator=(::java::security::PrivilegedActionException&& x) {obj = std::move(x.obj); return *this;}
     
     PrivilegedActionException(const ::java::lang::Exception&);
-    ::java::lang::Exception getException() const ;
+    ::java::lang::Exception getException() const;
 
 };
 }

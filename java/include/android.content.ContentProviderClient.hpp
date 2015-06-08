@@ -41,19 +41,19 @@ public:
     ::android::content::ContentProviderClient& operator=(const ::android::content::ContentProviderClient& x) {obj = x.obj; return *this;}
     ::android::content::ContentProviderClient& operator=(::android::content::ContentProviderClient&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const ;
-    ::java::lang::String getType(const ::android::net::Uri&) const ;
-    std::vector< ::java::lang::String> getStreamTypes(const ::android::net::Uri&, const ::java::lang::String&) const ;
-    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const ;
-    int32_t bulkInsert(const ::android::net::Uri&, const std::vector< ::android::content::ContentValues>&) const ;
-    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const ;
-    ::android::os::ParcelFileDescriptor openFile(const ::android::net::Uri&, const ::java::lang::String&) const ;
-    ::android::content::res::AssetFileDescriptor openAssetFile(const ::android::net::Uri&, const ::java::lang::String&) const ;
-    ::android::content::res::AssetFileDescriptor openTypedAssetFileDescriptor(const ::android::net::Uri&, const ::java::lang::String&, const ::android::os::Bundle&) const ;
-    std::vector< ::android::content::ContentProviderResult> applyBatch(const ::java::util::ArrayList&) const ;
-    bool release() const ;
-    ::android::content::ContentProvider getLocalContentProvider() const ;
+    ::android::database::Cursor query(const ::android::net::Uri&, const std::vector< ::java::lang::String>&, const ::java::lang::String&, const std::vector< ::java::lang::String>&, const ::java::lang::String&) const;
+    ::java::lang::String getType(const ::android::net::Uri&) const;
+    std::vector< ::java::lang::String> getStreamTypes(const ::android::net::Uri&, const ::java::lang::String&) const;
+    ::android::net::Uri insert(const ::android::net::Uri&, const ::android::content::ContentValues&) const;
+    int32_t bulkInsert(const ::android::net::Uri&, const std::vector< ::android::content::ContentValues>&) const;
+    int32_t delete_(const ::android::net::Uri&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    int32_t update(const ::android::net::Uri&, const ::android::content::ContentValues&, const ::java::lang::String&, const std::vector< ::java::lang::String>&) const;
+    ::android::os::ParcelFileDescriptor openFile(const ::android::net::Uri&, const ::java::lang::String&) const;
+    ::android::content::res::AssetFileDescriptor openAssetFile(const ::android::net::Uri&, const ::java::lang::String&) const;
+    ::android::content::res::AssetFileDescriptor openTypedAssetFileDescriptor(const ::android::net::Uri&, const ::java::lang::String&, const ::android::os::Bundle&) const;
+    std::vector< ::android::content::ContentProviderResult> applyBatch(const ::java::util::ArrayList&) const;
+    bool release() const;
+    ::android::content::ContentProvider getLocalContentProvider() const;
 
 };
 }

@@ -42,10 +42,10 @@ public:
     
     BrowserCompatSpec(const std::vector< ::java::lang::String>&);
     BrowserCompatSpec();
-    ::java::util::List parse(const ::org::apache::http::Header&, const ::org::apache::http::cookie::CookieOrigin&) const ;
-    ::java::util::List formatCookies(const ::java::util::List&) const ;
-    int32_t getVersion() const ;
-    ::org::apache::http::Header getVersionHeader() const ;
+    ::java::util::List parse(const ::org::apache::http::Header&, const ::org::apache::http::cookie::CookieOrigin&) const;
+    ::java::util::List formatCookies(const ::java::util::List&) const;
+    int32_t getVersion() const;
+    ::org::apache::http::Header getVersionHeader() const;
 
 };
 }

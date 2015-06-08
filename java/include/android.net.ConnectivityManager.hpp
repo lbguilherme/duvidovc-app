@@ -34,15 +34,15 @@ public:
     ::android::net::ConnectivityManager& operator=(::android::net::ConnectivityManager&& x) {obj = std::move(x.obj); return *this;}
     
     static bool isNetworkTypeValid(int32_t);
-    void setNetworkPreference(int32_t) const ;
-    int32_t getNetworkPreference() const ;
-    ::android::net::NetworkInfo getActiveNetworkInfo() const ;
-    ::android::net::NetworkInfo getNetworkInfo(int32_t) const ;
-    std::vector< ::android::net::NetworkInfo> getAllNetworkInfo() const ;
-    int32_t startUsingNetworkFeature(int32_t, const ::java::lang::String&) const ;
-    int32_t stopUsingNetworkFeature(int32_t, const ::java::lang::String&) const ;
-    bool requestRouteToHost(int32_t, int32_t) const ;
-    bool getBackgroundDataSetting() const ;
+    void setNetworkPreference(int32_t) const;
+    int32_t getNetworkPreference() const;
+    ::android::net::NetworkInfo getActiveNetworkInfo() const;
+    ::android::net::NetworkInfo getNetworkInfo(int32_t) const;
+    std::vector< ::android::net::NetworkInfo> getAllNetworkInfo() const;
+    int32_t startUsingNetworkFeature(int32_t, const ::java::lang::String&) const;
+    int32_t stopUsingNetworkFeature(int32_t, const ::java::lang::String&) const;
+    bool requestRouteToHost(int32_t, int32_t) const;
+    bool getBackgroundDataSetting() const;
 
 };
 }

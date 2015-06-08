@@ -32,8 +32,8 @@ public:
     ::com::facebook::login::LoginClient_BackgroundProcessingListener& operator=(const ::com::facebook::login::LoginClient_BackgroundProcessingListener& x) {obj = x.obj; return *this;}
     ::com::facebook::login::LoginClient_BackgroundProcessingListener& operator=(::com::facebook::login::LoginClient_BackgroundProcessingListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onBackgroundProcessingStarted() const ;
-    void onBackgroundProcessingStopped() const ;
+    void onBackgroundProcessingStarted() const;
+    void onBackgroundProcessingStopped() const;
 
 };
 }

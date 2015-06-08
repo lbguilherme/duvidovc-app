@@ -35,14 +35,14 @@ public:
     ::android::drm::DrmSupportInfo& operator=(::android::drm::DrmSupportInfo&& x) {obj = std::move(x.obj); return *this;}
     
     DrmSupportInfo();
-    void addMimeType(const ::java::lang::String&) const ;
-    void addFileSuffix(const ::java::lang::String&) const ;
-    ::java::util::Iterator getMimeTypeIterator() const ;
-    ::java::util::Iterator getFileSuffixIterator() const ;
-    void setDescription(const ::java::lang::String&) const ;
-    ::java::lang::String getDescriprition() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
+    void addMimeType(const ::java::lang::String&) const;
+    void addFileSuffix(const ::java::lang::String&) const;
+    ::java::util::Iterator getMimeTypeIterator() const;
+    ::java::util::Iterator getFileSuffixIterator() const;
+    void setDescription(const ::java::lang::String&) const;
+    ::java::lang::String getDescriprition() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
 
 };
 }

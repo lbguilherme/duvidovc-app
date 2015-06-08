@@ -36,11 +36,11 @@ public:
     ::android::renderscript::Type_Builder& operator=(::android::renderscript::Type_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     Type_Builder(const ::android::renderscript::RenderScript&, const ::android::renderscript::Element&);
-    ::android::renderscript::Type_Builder setX(int32_t) const ;
-    ::android::renderscript::Type_Builder setY(int32_t) const ;
-    ::android::renderscript::Type_Builder setMipmaps(bool) const ;
-    ::android::renderscript::Type_Builder setFaces(bool) const ;
-    ::android::renderscript::Type create() const ;
+    ::android::renderscript::Type_Builder setX(int32_t) const;
+    ::android::renderscript::Type_Builder setY(int32_t) const;
+    ::android::renderscript::Type_Builder setMipmaps(bool) const;
+    ::android::renderscript::Type_Builder setFaces(bool) const;
+    ::android::renderscript::Type create() const;
 
 };
 }

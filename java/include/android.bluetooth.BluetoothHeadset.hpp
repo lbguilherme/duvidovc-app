@@ -35,12 +35,12 @@ public:
     ::android::bluetooth::BluetoothHeadset& operator=(const ::android::bluetooth::BluetoothHeadset& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothHeadset& operator=(::android::bluetooth::BluetoothHeadset&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::List getConnectedDevices() const ;
-    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const ;
-    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const ;
-    bool startVoiceRecognition(const ::android::bluetooth::BluetoothDevice&) const ;
-    bool stopVoiceRecognition(const ::android::bluetooth::BluetoothDevice&) const ;
-    bool isAudioConnected(const ::android::bluetooth::BluetoothDevice&) const ;
+    ::java::util::List getConnectedDevices() const;
+    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const;
+    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const;
+    bool startVoiceRecognition(const ::android::bluetooth::BluetoothDevice&) const;
+    bool stopVoiceRecognition(const ::android::bluetooth::BluetoothDevice&) const;
+    bool isAudioConnected(const ::android::bluetooth::BluetoothDevice&) const;
 
 };
 }

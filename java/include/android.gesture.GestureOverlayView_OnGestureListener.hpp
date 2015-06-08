@@ -33,10 +33,10 @@ public:
     ::android::gesture::GestureOverlayView_OnGestureListener& operator=(const ::android::gesture::GestureOverlayView_OnGestureListener& x) {obj = x.obj; return *this;}
     ::android::gesture::GestureOverlayView_OnGestureListener& operator=(::android::gesture::GestureOverlayView_OnGestureListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGestureStarted(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const ;
-    void onGesture(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const ;
-    void onGestureEnded(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const ;
-    void onGestureCancelled(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const ;
+    void onGestureStarted(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const;
+    void onGesture(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const;
+    void onGestureEnded(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const;
+    void onGestureCancelled(const ::android::gesture::GestureOverlayView&, const ::android::view::MotionEvent&) const;
 
 };
 }

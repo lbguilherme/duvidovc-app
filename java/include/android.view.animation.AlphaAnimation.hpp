@@ -38,8 +38,8 @@ public:
     
     AlphaAnimation(const ::android::content::Context&, const ::android::util::AttributeSet&);
     AlphaAnimation(float, float);
-    bool willChangeTransformationMatrix() const ;
-    bool willChangeBounds() const ;
+    bool willChangeTransformationMatrix() const;
+    bool willChangeBounds() const;
 
 };
 }

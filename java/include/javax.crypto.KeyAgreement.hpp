@@ -38,19 +38,19 @@ public:
     ::javax::crypto::KeyAgreement& operator=(const ::javax::crypto::KeyAgreement& x) {obj = x.obj; return *this;}
     ::javax::crypto::KeyAgreement& operator=(::javax::crypto::KeyAgreement&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getAlgorithm() const ;
-    ::java::security::Provider getProvider() const ;
+    ::java::lang::String getAlgorithm() const;
+    ::java::security::Provider getProvider() const;
     static ::javax::crypto::KeyAgreement getInstance(const ::java::lang::String&);
     static ::javax::crypto::KeyAgreement getInstance(const ::java::lang::String&, const ::java::lang::String&);
     static ::javax::crypto::KeyAgreement getInstance(const ::java::lang::String&, const ::java::security::Provider&);
-    void init(const ::java::security::Key&) const ;
-    void init(const ::java::security::Key&, const ::java::security::SecureRandom&) const ;
-    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&) const ;
-    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const ;
-    ::java::security::Key doPhase(const ::java::security::Key&, bool) const ;
-    std::vector< int8_t> generateSecret() const ;
-    int32_t generateSecret(const std::vector< int8_t>&, int32_t) const ;
-    ::javax::crypto::SecretKey generateSecret(const ::java::lang::String&) const ;
+    void init(const ::java::security::Key&) const;
+    void init(const ::java::security::Key&, const ::java::security::SecureRandom&) const;
+    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&) const;
+    void init(const ::java::security::Key&, const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const;
+    ::java::security::Key doPhase(const ::java::security::Key&, bool) const;
+    std::vector< int8_t> generateSecret() const;
+    int32_t generateSecret(const std::vector< int8_t>&, int32_t) const;
+    ::javax::crypto::SecretKey generateSecret(const ::java::lang::String&) const;
 
 };
 }

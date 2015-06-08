@@ -42,12 +42,12 @@ public:
     ::com::facebook::share::internal::LikeContent_Builder& operator=(::com::facebook::share::internal::LikeContent_Builder&& x) {obj = std::move(x.obj); return *this;}
     
     LikeContent_Builder();
-    ::com::facebook::share::internal::LikeContent_Builder setObjectId(const ::java::lang::String&) const ;
-    ::com::facebook::share::internal::LikeContent_Builder setObjectType(const ::java::lang::String&) const ;
-    ::com::facebook::share::internal::LikeContent build() const ;
-    ::com::facebook::share::internal::LikeContent_Builder readFrom(const ::com::facebook::share::internal::LikeContent&) const ;
-    ::com::facebook::share::internal::LikeContent_Builder readFrom(const ::android::os::Parcel&) const ;
-    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const ;
+    ::com::facebook::share::internal::LikeContent_Builder setObjectId(const ::java::lang::String&) const;
+    ::com::facebook::share::internal::LikeContent_Builder setObjectType(const ::java::lang::String&) const;
+    ::com::facebook::share::internal::LikeContent build() const;
+    ::com::facebook::share::internal::LikeContent_Builder readFrom(const ::com::facebook::share::internal::LikeContent&) const;
+    ::com::facebook::share::internal::LikeContent_Builder readFrom(const ::android::os::Parcel&) const;
+    ::com::facebook::share::model::ShareModelBuilder readFrom(const ::com::facebook::share::model::ShareModel&) const;
 
 };
 }

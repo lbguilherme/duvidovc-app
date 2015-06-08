@@ -37,9 +37,9 @@ public:
     ::com::facebook::share::model::ShareMedia& operator=(const ::com::facebook::share::model::ShareMedia& x) {obj = x.obj; return *this;}
     ::com::facebook::share::model::ShareMedia& operator=(::com::facebook::share::model::ShareMedia&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::os::Bundle getParameters() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::android::os::Bundle getParameters() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

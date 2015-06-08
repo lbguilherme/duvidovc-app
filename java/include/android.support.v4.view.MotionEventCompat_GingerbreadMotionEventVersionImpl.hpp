@@ -36,7 +36,7 @@ public:
     ::android::support::v4::view::MotionEventCompat_GingerbreadMotionEventVersionImpl& operator=(const ::android::support::v4::view::MotionEventCompat_GingerbreadMotionEventVersionImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MotionEventCompat_GingerbreadMotionEventVersionImpl& operator=(::android::support::v4::view::MotionEventCompat_GingerbreadMotionEventVersionImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getSource(const ::android::view::MotionEvent&) const ;
+    int32_t getSource(const ::android::view::MotionEvent&) const;
 
 };
 }

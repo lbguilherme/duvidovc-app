@@ -38,10 +38,10 @@ public:
     ::org::apache::http::client::methods::HttpUriRequest& operator=(const ::org::apache::http::client::methods::HttpUriRequest& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::methods::HttpUriRequest& operator=(::org::apache::http::client::methods::HttpUriRequest&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getMethod() const ;
-    ::java::net::URI getURI() const ;
-    void abort() const ;
-    bool isAborted() const ;
+    ::java::lang::String getMethod() const;
+    ::java::net::URI getURI() const;
+    void abort() const;
+    bool isAborted() const;
 
 };
 }

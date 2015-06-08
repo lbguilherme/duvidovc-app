@@ -40,12 +40,12 @@ public:
     ::org::apache::http::cookie::CookieSpecRegistry& operator=(::org::apache::http::cookie::CookieSpecRegistry&& x) {obj = std::move(x.obj); return *this;}
     
     CookieSpecRegistry();
-    void register_(const ::java::lang::String&, const ::org::apache::http::cookie::CookieSpecFactory&) const ;
-    void unregister(const ::java::lang::String&) const ;
-    ::org::apache::http::cookie::CookieSpec getCookieSpec(const ::java::lang::String&, const ::org::apache::http::params::HttpParams&) const ;
-    ::org::apache::http::cookie::CookieSpec getCookieSpec(const ::java::lang::String&) const ;
-    ::java::util::List getSpecNames() const ;
-    void setItems(const ::java::util::Map&) const ;
+    void register_(const ::java::lang::String&, const ::org::apache::http::cookie::CookieSpecFactory&) const;
+    void unregister(const ::java::lang::String&) const;
+    ::org::apache::http::cookie::CookieSpec getCookieSpec(const ::java::lang::String&, const ::org::apache::http::params::HttpParams&) const;
+    ::org::apache::http::cookie::CookieSpec getCookieSpec(const ::java::lang::String&) const;
+    ::java::util::List getSpecNames() const;
+    void setItems(const ::java::util::Map&) const;
 
 };
 }

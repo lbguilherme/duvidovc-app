@@ -42,9 +42,9 @@ public:
     DatatypeConfigurationException(const ::java::lang::String&);
     DatatypeConfigurationException(const ::java::lang::String&, const ::java::lang::Throwable&);
     DatatypeConfigurationException(const ::java::lang::Throwable&);
-    void printStackTrace() const ;
-    void printStackTrace(const ::java::io::PrintStream&) const ;
-    void printStackTrace(const ::java::io::PrintWriter&) const ;
+    void printStackTrace() const;
+    void printStackTrace(const ::java::io::PrintStream&) const;
+    void printStackTrace(const ::java::io::PrintWriter&) const;
 
 };
 }

@@ -34,8 +34,8 @@ public:
     ::android::view::ViewDebug_IntToString& operator=(const ::android::view::ViewDebug_IntToString& x) {obj = x.obj; return *this;}
     ::android::view::ViewDebug_IntToString& operator=(::android::view::ViewDebug_IntToString&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t from() const ;
-    ::java::lang::String to() const ;
+    int32_t from() const;
+    ::java::lang::String to() const;
 
 };
 }

@@ -37,10 +37,10 @@ public:
     
     NdefMessage(const std::vector< int8_t>&);
     NdefMessage(const std::vector< ::android::nfc::NdefRecord>&);
-    std::vector< ::android::nfc::NdefRecord> getRecords() const ;
-    std::vector< int8_t> toByteArray() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    std::vector< ::android::nfc::NdefRecord> getRecords() const;
+    std::vector< int8_t> toByteArray() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

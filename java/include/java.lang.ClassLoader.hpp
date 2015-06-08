@@ -41,15 +41,15 @@ public:
     static ::java::net::URL getSystemResource(const ::java::lang::String&);
     static ::java::util::Enumeration getSystemResources(const ::java::lang::String&);
     static ::java::io::InputStream getSystemResourceAsStream(const ::java::lang::String&);
-    ::java::lang::ClassLoader getParent() const ;
-    ::java::net::URL getResource(const ::java::lang::String&) const ;
-    ::java::util::Enumeration getResources(const ::java::lang::String&) const ;
-    ::java::io::InputStream getResourceAsStream(const ::java::lang::String&) const ;
-    ::java::lang::Class loadClass(const ::java::lang::String&) const ;
-    void setClassAssertionStatus(const ::java::lang::String&, bool) const ;
-    void setPackageAssertionStatus(const ::java::lang::String&, bool) const ;
-    void setDefaultAssertionStatus(bool) const ;
-    void clearAssertionStatus() const ;
+    ::java::lang::ClassLoader getParent() const;
+    ::java::net::URL getResource(const ::java::lang::String&) const;
+    ::java::util::Enumeration getResources(const ::java::lang::String&) const;
+    ::java::io::InputStream getResourceAsStream(const ::java::lang::String&) const;
+    ::java::lang::Class loadClass(const ::java::lang::String&) const;
+    void setClassAssertionStatus(const ::java::lang::String&, bool) const;
+    void setPackageAssertionStatus(const ::java::lang::String&, bool) const;
+    void setDefaultAssertionStatus(bool) const;
+    void clearAssertionStatus() const;
 
 };
 }

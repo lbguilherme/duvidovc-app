@@ -36,18 +36,18 @@ public:
     
     CircularArray();
     CircularArray(int32_t);
-    void addFirst(const ::java::lang::Object&) const ;
-    void addLast(const ::java::lang::Object&) const ;
-    ::java::lang::Object popFirst() const ;
-    ::java::lang::Object popLast() const ;
-    void clear() const ;
-    void removeFromStart(int32_t) const ;
-    void removeFromEnd(int32_t) const ;
-    ::java::lang::Object getFirst() const ;
-    ::java::lang::Object getLast() const ;
-    ::java::lang::Object get(int32_t) const ;
-    int32_t size() const ;
-    bool isEmpty() const ;
+    void addFirst(const ::java::lang::Object&) const;
+    void addLast(const ::java::lang::Object&) const;
+    ::java::lang::Object popFirst() const;
+    ::java::lang::Object popLast() const;
+    void clear() const;
+    void removeFromStart(int32_t) const;
+    void removeFromEnd(int32_t) const;
+    ::java::lang::Object getFirst() const;
+    ::java::lang::Object getLast() const;
+    ::java::lang::Object get(int32_t) const;
+    int32_t size() const;
+    bool isEmpty() const;
 
 };
 }

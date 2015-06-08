@@ -33,7 +33,7 @@ public:
     ::android::media::MediaScannerConnection_OnScanCompletedListener& operator=(const ::android::media::MediaScannerConnection_OnScanCompletedListener& x) {obj = x.obj; return *this;}
     ::android::media::MediaScannerConnection_OnScanCompletedListener& operator=(::android::media::MediaScannerConnection_OnScanCompletedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onScanCompleted(const ::java::lang::String&, const ::android::net::Uri&) const ;
+    void onScanCompleted(const ::java::lang::String&, const ::android::net::Uri&) const;
 
 };
 }

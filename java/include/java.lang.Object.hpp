@@ -48,15 +48,15 @@ public:
     ::java::lang::Object& operator=(::java::lang::Object&& x) {obj = std::move(x.obj); return *this;}
     
     Object();
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::Class getClass() const ;
-    int32_t hashCode() const ;
-    void notify() const ;
-    void notifyAll() const ;
-    ::java::lang::String toString() const ;
-    void wait() const ;
-    void wait(int64_t) const ;
-    void wait(int64_t, int32_t) const ;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::Class getClass() const;
+    int32_t hashCode() const;
+    void notify() const;
+    void notifyAll() const;
+    ::java::lang::String toString() const;
+    void wait() const;
+    void wait(int64_t) const;
+    void wait(int64_t, int32_t) const;
 
 };
 }

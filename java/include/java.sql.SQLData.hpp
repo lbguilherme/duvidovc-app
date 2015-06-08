@@ -34,9 +34,9 @@ public:
     ::java::sql::SQLData& operator=(const ::java::sql::SQLData& x) {obj = x.obj; return *this;}
     ::java::sql::SQLData& operator=(::java::sql::SQLData&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getSQLTypeName() const ;
-    void readSQL(const ::java::sql::SQLInput&, const ::java::lang::String&) const ;
-    void writeSQL(const ::java::sql::SQLOutput&) const ;
+    ::java::lang::String getSQLTypeName() const;
+    void readSQL(const ::java::sql::SQLInput&, const ::java::lang::String&) const;
+    void writeSQL(const ::java::sql::SQLOutput&) const;
 
 };
 }

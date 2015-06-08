@@ -34,7 +34,7 @@ public:
     ::android::net::wifi::p2p::WifiP2pManager_GroupInfoListener& operator=(const ::android::net::wifi::p2p::WifiP2pManager_GroupInfoListener& x) {obj = x.obj; return *this;}
     ::android::net::wifi::p2p::WifiP2pManager_GroupInfoListener& operator=(::android::net::wifi::p2p::WifiP2pManager_GroupInfoListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onGroupInfoAvailable(const ::android::net::wifi::p2p::WifiP2pGroup&) const ;
+    void onGroupInfoAvailable(const ::android::net::wifi::p2p::WifiP2pGroup&) const;
 
 };
 }

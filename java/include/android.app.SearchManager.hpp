@@ -43,15 +43,15 @@ public:
     ::android::app::SearchManager& operator=(const ::android::app::SearchManager& x) {obj = x.obj; return *this;}
     ::android::app::SearchManager& operator=(::android::app::SearchManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void startSearch(const ::java::lang::String&, bool, const ::android::content::ComponentName&, const ::android::os::Bundle&, bool) const ;
-    void triggerSearch(const ::java::lang::String&, const ::android::content::ComponentName&, const ::android::os::Bundle&) const ;
-    void stopSearch() const ;
-    void setOnDismissListener(const ::android::app::SearchManager_OnDismissListener&) const ;
-    void setOnCancelListener(const ::android::app::SearchManager_OnCancelListener&) const ;
-    void onCancel(const ::android::content::DialogInterface&) const ;
-    void onDismiss(const ::android::content::DialogInterface&) const ;
-    ::android::app::SearchableInfo getSearchableInfo(const ::android::content::ComponentName&) const ;
-    ::java::util::List getSearchablesInGlobalSearch() const ;
+    void startSearch(const ::java::lang::String&, bool, const ::android::content::ComponentName&, const ::android::os::Bundle&, bool) const;
+    void triggerSearch(const ::java::lang::String&, const ::android::content::ComponentName&, const ::android::os::Bundle&) const;
+    void stopSearch() const;
+    void setOnDismissListener(const ::android::app::SearchManager_OnDismissListener&) const;
+    void setOnCancelListener(const ::android::app::SearchManager_OnCancelListener&) const;
+    void onCancel(const ::android::content::DialogInterface&) const;
+    void onDismiss(const ::android::content::DialogInterface&) const;
+    ::android::app::SearchableInfo getSearchableInfo(const ::android::content::ComponentName&) const;
+    ::java::util::List getSearchablesInGlobalSearch() const;
 
 };
 }

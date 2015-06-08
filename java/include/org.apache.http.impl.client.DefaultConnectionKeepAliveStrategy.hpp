@@ -39,7 +39,7 @@ public:
     ::org::apache::http::impl::client::DefaultConnectionKeepAliveStrategy& operator=(::org::apache::http::impl::client::DefaultConnectionKeepAliveStrategy&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultConnectionKeepAliveStrategy();
-    int64_t getKeepAliveDuration(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    int64_t getKeepAliveDuration(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

@@ -33,8 +33,8 @@ public:
     ::android::os::Parcelable_Creator& operator=(const ::android::os::Parcelable_Creator& x) {obj = x.obj; return *this;}
     ::android::os::Parcelable_Creator& operator=(::android::os::Parcelable_Creator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object createFromParcel(const ::android::os::Parcel&) const ;
-    std::vector< ::java::lang::Object> newArray(int32_t) const ;
+    ::java::lang::Object createFromParcel(const ::android::os::Parcel&) const;
+    std::vector< ::java::lang::Object> newArray(int32_t) const;
 
 };
 }

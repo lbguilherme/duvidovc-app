@@ -39,14 +39,14 @@ public:
     ::android::bluetooth::BluetoothHealth& operator=(const ::android::bluetooth::BluetoothHealth& x) {obj = x.obj; return *this;}
     ::android::bluetooth::BluetoothHealth& operator=(::android::bluetooth::BluetoothHealth&& x) {obj = std::move(x.obj); return *this;}
     
-    bool registerSinkAppConfiguration(const ::java::lang::String&, int32_t, const ::android::bluetooth::BluetoothHealthCallback&) const ;
-    bool unregisterAppConfiguration(const ::android::bluetooth::BluetoothHealthAppConfiguration&) const ;
-    bool connectChannelToSource(const ::android::bluetooth::BluetoothDevice&, const ::android::bluetooth::BluetoothHealthAppConfiguration&) const ;
-    bool disconnectChannel(const ::android::bluetooth::BluetoothDevice&, const ::android::bluetooth::BluetoothHealthAppConfiguration&, int32_t) const ;
-    ::android::os::ParcelFileDescriptor getMainChannelFd(const ::android::bluetooth::BluetoothDevice&, const ::android::bluetooth::BluetoothHealthAppConfiguration&) const ;
-    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const ;
-    ::java::util::List getConnectedDevices() const ;
-    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const ;
+    bool registerSinkAppConfiguration(const ::java::lang::String&, int32_t, const ::android::bluetooth::BluetoothHealthCallback&) const;
+    bool unregisterAppConfiguration(const ::android::bluetooth::BluetoothHealthAppConfiguration&) const;
+    bool connectChannelToSource(const ::android::bluetooth::BluetoothDevice&, const ::android::bluetooth::BluetoothHealthAppConfiguration&) const;
+    bool disconnectChannel(const ::android::bluetooth::BluetoothDevice&, const ::android::bluetooth::BluetoothHealthAppConfiguration&, int32_t) const;
+    ::android::os::ParcelFileDescriptor getMainChannelFd(const ::android::bluetooth::BluetoothDevice&, const ::android::bluetooth::BluetoothHealthAppConfiguration&) const;
+    int32_t getConnectionState(const ::android::bluetooth::BluetoothDevice&) const;
+    ::java::util::List getConnectedDevices() const;
+    ::java::util::List getDevicesMatchingConnectionStates(const std::vector< int32_t>&) const;
 
 };
 }

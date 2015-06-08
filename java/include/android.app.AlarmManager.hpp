@@ -33,12 +33,12 @@ public:
     ::android::app::AlarmManager& operator=(const ::android::app::AlarmManager& x) {obj = x.obj; return *this;}
     ::android::app::AlarmManager& operator=(::android::app::AlarmManager&& x) {obj = std::move(x.obj); return *this;}
     
-    void set(int32_t, int64_t, const ::android::app::PendingIntent&) const ;
-    void setRepeating(int32_t, int64_t, int64_t, const ::android::app::PendingIntent&) const ;
-    void setInexactRepeating(int32_t, int64_t, int64_t, const ::android::app::PendingIntent&) const ;
-    void cancel(const ::android::app::PendingIntent&) const ;
-    void setTime(int64_t) const ;
-    void setTimeZone(const ::java::lang::String&) const ;
+    void set(int32_t, int64_t, const ::android::app::PendingIntent&) const;
+    void setRepeating(int32_t, int64_t, int64_t, const ::android::app::PendingIntent&) const;
+    void setInexactRepeating(int32_t, int64_t, int64_t, const ::android::app::PendingIntent&) const;
+    void cancel(const ::android::app::PendingIntent&) const;
+    void setTime(int64_t) const;
+    void setTimeZone(const ::java::lang::String&) const;
 
 };
 }

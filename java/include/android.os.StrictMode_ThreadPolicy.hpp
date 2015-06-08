@@ -32,7 +32,7 @@ public:
     ::android::os::StrictMode_ThreadPolicy& operator=(const ::android::os::StrictMode_ThreadPolicy& x) {obj = x.obj; return *this;}
     ::android::os::StrictMode_ThreadPolicy& operator=(::android::os::StrictMode_ThreadPolicy&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

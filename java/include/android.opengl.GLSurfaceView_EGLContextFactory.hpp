@@ -35,8 +35,8 @@ public:
     ::android::opengl::GLSurfaceView_EGLContextFactory& operator=(const ::android::opengl::GLSurfaceView_EGLContextFactory& x) {obj = x.obj; return *this;}
     ::android::opengl::GLSurfaceView_EGLContextFactory& operator=(::android::opengl::GLSurfaceView_EGLContextFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::microedition::khronos::egl::EGLContext createContext(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLConfig&) const ;
-    void destroyContext(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLContext&) const ;
+    ::javax::microedition::khronos::egl::EGLContext createContext(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLConfig&) const;
+    void destroyContext(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&, const ::javax::microedition::khronos::egl::EGLContext&) const;
 
 };
 }

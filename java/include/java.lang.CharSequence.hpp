@@ -33,10 +33,10 @@ public:
     ::java::lang::CharSequence& operator=(const ::java::lang::CharSequence& x) {obj = x.obj; return *this;}
     ::java::lang::CharSequence& operator=(::java::lang::CharSequence&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t length() const ;
-    uint16_t charAt(int32_t) const ;
-    ::java::lang::CharSequence subSequence(int32_t, int32_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t length() const;
+    uint16_t charAt(int32_t) const;
+    ::java::lang::CharSequence subSequence(int32_t, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

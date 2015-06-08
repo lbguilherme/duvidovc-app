@@ -36,7 +36,7 @@ public:
     ::android::support::v4::net::ConnectivityManagerCompat_HoneycombMR2ConnectivityManagerCompatImpl& operator=(const ::android::support::v4::net::ConnectivityManagerCompat_HoneycombMR2ConnectivityManagerCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::net::ConnectivityManagerCompat_HoneycombMR2ConnectivityManagerCompatImpl& operator=(::android::support::v4::net::ConnectivityManagerCompat_HoneycombMR2ConnectivityManagerCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isActiveNetworkMetered(const ::android::net::ConnectivityManager&) const ;
+    bool isActiveNetworkMetered(const ::android::net::ConnectivityManager&) const;
 
 };
 }

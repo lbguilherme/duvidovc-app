@@ -39,7 +39,7 @@ public:
     
     DrawerLayout_SavedState(const ::android::os::Parcel&);
     DrawerLayout_SavedState(const ::android::os::Parcelable&);
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

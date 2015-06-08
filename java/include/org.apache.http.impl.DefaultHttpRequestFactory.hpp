@@ -39,8 +39,8 @@ public:
     ::org::apache::http::impl::DefaultHttpRequestFactory& operator=(::org::apache::http::impl::DefaultHttpRequestFactory&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultHttpRequestFactory();
-    ::org::apache::http::HttpRequest newHttpRequest(const ::org::apache::http::RequestLine&) const ;
-    ::org::apache::http::HttpRequest newHttpRequest(const ::java::lang::String&, const ::java::lang::String&) const ;
+    ::org::apache::http::HttpRequest newHttpRequest(const ::org::apache::http::RequestLine&) const;
+    ::org::apache::http::HttpRequest newHttpRequest(const ::java::lang::String&, const ::java::lang::String&) const;
 
 };
 }

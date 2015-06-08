@@ -35,11 +35,11 @@ public:
     ::java::util::Stack& operator=(::java::util::Stack&& x) {obj = std::move(x.obj); return *this;}
     
     Stack();
-    bool empty() const ;
-    ::java::lang::Object peek() const ;
-    ::java::lang::Object pop() const ;
-    ::java::lang::Object push(const ::java::lang::Object&) const ;
-    int32_t search(const ::java::lang::Object&) const ;
+    bool empty() const;
+    ::java::lang::Object peek() const;
+    ::java::lang::Object pop() const;
+    ::java::lang::Object push(const ::java::lang::Object&) const;
+    int32_t search(const ::java::lang::Object&) const;
 
 };
 }

@@ -38,11 +38,11 @@ public:
     ::android::text::TextUtils_SimpleStringSplitter& operator=(::android::text::TextUtils_SimpleStringSplitter&& x) {obj = std::move(x.obj); return *this;}
     
     TextUtils_SimpleStringSplitter(uint16_t);
-    void setString(const ::java::lang::String&) const ;
-    ::java::util::Iterator iterator() const ;
-    bool hasNext() const ;
-    ::java::lang::String next() const ;
-    void remove() const ;
+    void setString(const ::java::lang::String&) const;
+    ::java::util::Iterator iterator() const;
+    bool hasNext() const;
+    ::java::lang::String next() const;
+    void remove() const;
 
 };
 }

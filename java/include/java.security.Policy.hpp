@@ -43,13 +43,13 @@ public:
     static ::java::security::Policy getInstance(const ::java::lang::String&, const ::java::security::Policy_Parameters&);
     static ::java::security::Policy getInstance(const ::java::lang::String&, const ::java::security::Policy_Parameters&, const ::java::lang::String&);
     static ::java::security::Policy getInstance(const ::java::lang::String&, const ::java::security::Policy_Parameters&, const ::java::security::Provider&);
-    ::java::security::Policy_Parameters getParameters() const ;
-    ::java::security::Provider getProvider() const ;
-    ::java::lang::String getType() const ;
-    ::java::security::PermissionCollection getPermissions(const ::java::security::CodeSource&) const ;
-    void refresh() const ;
-    ::java::security::PermissionCollection getPermissions(const ::java::security::ProtectionDomain&) const ;
-    bool implies(const ::java::security::ProtectionDomain&, const ::java::security::Permission&) const ;
+    ::java::security::Policy_Parameters getParameters() const;
+    ::java::security::Provider getProvider() const;
+    ::java::lang::String getType() const;
+    ::java::security::PermissionCollection getPermissions(const ::java::security::CodeSource&) const;
+    void refresh() const;
+    ::java::security::PermissionCollection getPermissions(const ::java::security::ProtectionDomain&) const;
+    bool implies(const ::java::security::ProtectionDomain&, const ::java::security::Permission&) const;
     static ::java::security::Policy getPolicy();
     static void setPolicy(const ::java::security::Policy&);
 

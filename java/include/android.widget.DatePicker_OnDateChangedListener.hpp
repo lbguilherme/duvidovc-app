@@ -32,7 +32,7 @@ public:
     ::android::widget::DatePicker_OnDateChangedListener& operator=(const ::android::widget::DatePicker_OnDateChangedListener& x) {obj = x.obj; return *this;}
     ::android::widget::DatePicker_OnDateChangedListener& operator=(::android::widget::DatePicker_OnDateChangedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onDateChanged(const ::android::widget::DatePicker&, int32_t, int32_t, int32_t) const ;
+    void onDateChanged(const ::android::widget::DatePicker&, int32_t, int32_t, int32_t) const;
 
 };
 }

@@ -46,14 +46,14 @@ public:
     BasicLineParser(const ::org::apache::http::ProtocolVersion&);
     BasicLineParser();
     static ::org::apache::http::ProtocolVersion parseProtocolVersion(const ::java::lang::String&, const ::org::apache::http::message::LineParser&);
-    ::org::apache::http::ProtocolVersion parseProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
-    bool hasProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    ::org::apache::http::ProtocolVersion parseProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
+    bool hasProtocolVersion(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
     static ::org::apache::http::RequestLine parseRequestLine(const ::java::lang::String&, const ::org::apache::http::message::LineParser&);
-    ::org::apache::http::RequestLine parseRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    ::org::apache::http::RequestLine parseRequestLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
     static ::org::apache::http::StatusLine parseStatusLine(const ::java::lang::String&, const ::org::apache::http::message::LineParser&);
-    ::org::apache::http::StatusLine parseStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const ;
+    ::org::apache::http::StatusLine parseStatusLine(const ::org::apache::http::util::CharArrayBuffer&, const ::org::apache::http::message::ParserCursor&) const;
     static ::org::apache::http::Header parseHeader(const ::java::lang::String&, const ::org::apache::http::message::LineParser&);
-    ::org::apache::http::Header parseHeader(const ::org::apache::http::util::CharArrayBuffer&) const ;
+    ::org::apache::http::Header parseHeader(const ::org::apache::http::util::CharArrayBuffer&) const;
 
 };
 }

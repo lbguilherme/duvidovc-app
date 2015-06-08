@@ -36,10 +36,10 @@ public:
     
     URISyntaxException(const ::java::lang::String&, const ::java::lang::String&, int32_t);
     URISyntaxException(const ::java::lang::String&, const ::java::lang::String&);
-    int32_t getIndex() const ;
-    ::java::lang::String getReason() const ;
-    ::java::lang::String getInput() const ;
-    ::java::lang::String getMessage() const ;
+    int32_t getIndex() const;
+    ::java::lang::String getReason() const;
+    ::java::lang::String getInput() const;
+    ::java::lang::String getMessage() const;
 
 };
 }

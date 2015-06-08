@@ -36,7 +36,7 @@ public:
     ::javax::xml::transform::dom::DOMLocator& operator=(const ::javax::xml::transform::dom::DOMLocator& x) {obj = x.obj; return *this;}
     ::javax::xml::transform::dom::DOMLocator& operator=(::javax::xml::transform::dom::DOMLocator&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::w3c::dom::Node getOriginatingNode() const ;
+    ::org::w3c::dom::Node getOriginatingNode() const;
 
 };
 }

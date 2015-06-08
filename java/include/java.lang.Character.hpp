@@ -40,8 +40,8 @@ public:
     ::java::lang::Character& operator=(::java::lang::Character&& x) {obj = std::move(x.obj); return *this;}
     
     Character(uint16_t);
-    uint16_t charValue() const ;
-    int32_t compareTo(const ::java::lang::Character&) const ;
+    uint16_t charValue() const;
+    int32_t compareTo(const ::java::lang::Character&) const;
     static ::java::lang::Character valueOf(uint16_t);
     static bool isValidCodePoint(int32_t);
     static bool isSupplementaryCodePoint(int32_t);
@@ -64,7 +64,7 @@ public:
     static int32_t offsetByCodePoints(const std::vector< uint16_t>&, int32_t, int32_t, int32_t, int32_t);
     static int32_t digit(uint16_t, int32_t);
     static int32_t digit(int32_t, int32_t);
-    bool equals(const ::java::lang::Object&) const ;
+    bool equals(const ::java::lang::Object&) const;
     static uint16_t forDigit(int32_t, int32_t);
     static int32_t getNumericValue(uint16_t);
     static int32_t getNumericValue(int32_t);
@@ -74,7 +74,7 @@ public:
     static int8_t getDirectionality(int32_t);
     static bool isMirrored(uint16_t);
     static bool isMirrored(int32_t);
-    int32_t hashCode() const ;
+    int32_t hashCode() const;
     static bool isDefined(uint16_t);
     static bool isDefined(int32_t);
     static bool isDigit(uint16_t);
@@ -111,13 +111,13 @@ public:
     static uint16_t reverseBytes(uint16_t);
     static uint16_t toLowerCase(uint16_t);
     static int32_t toLowerCase(int32_t);
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
     static ::java::lang::String toString(uint16_t);
     static uint16_t toTitleCase(uint16_t);
     static int32_t toTitleCase(int32_t);
     static uint16_t toUpperCase(uint16_t);
     static int32_t toUpperCase(int32_t);
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

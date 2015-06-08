@@ -32,7 +32,7 @@ public:
     ::android::gesture::Prediction& operator=(const ::android::gesture::Prediction& x) {obj = x.obj; return *this;}
     ::android::gesture::Prediction& operator=(::android::gesture::Prediction&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String toString() const ;
+    ::java::lang::String toString() const;
 
 };
 }

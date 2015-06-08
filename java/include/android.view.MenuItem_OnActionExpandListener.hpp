@@ -32,8 +32,8 @@ public:
     ::android::view::MenuItem_OnActionExpandListener& operator=(const ::android::view::MenuItem_OnActionExpandListener& x) {obj = x.obj; return *this;}
     ::android::view::MenuItem_OnActionExpandListener& operator=(::android::view::MenuItem_OnActionExpandListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onMenuItemActionExpand(const ::android::view::MenuItem&) const ;
-    bool onMenuItemActionCollapse(const ::android::view::MenuItem&) const ;
+    bool onMenuItemActionExpand(const ::android::view::MenuItem&) const;
+    bool onMenuItemActionCollapse(const ::android::view::MenuItem&) const;
 
 };
 }

@@ -41,12 +41,12 @@ public:
     AttributedString(const ::java::text::AttributedCharacterIterator&, int32_t, int32_t, const std::vector< ::java::text::AttributedCharacterIterator_Attribute>&);
     AttributedString(const ::java::lang::String&);
     AttributedString(const ::java::lang::String&, const ::java::util::Map&);
-    void addAttribute(const ::java::text::AttributedCharacterIterator_Attribute&, const ::java::lang::Object&) const ;
-    void addAttribute(const ::java::text::AttributedCharacterIterator_Attribute&, const ::java::lang::Object&, int32_t, int32_t) const ;
-    void addAttributes(const ::java::util::Map&, int32_t, int32_t) const ;
-    ::java::text::AttributedCharacterIterator getIterator() const ;
-    ::java::text::AttributedCharacterIterator getIterator(const std::vector< ::java::text::AttributedCharacterIterator_Attribute>&) const ;
-    ::java::text::AttributedCharacterIterator getIterator(const std::vector< ::java::text::AttributedCharacterIterator_Attribute>&, int32_t, int32_t) const ;
+    void addAttribute(const ::java::text::AttributedCharacterIterator_Attribute&, const ::java::lang::Object&) const;
+    void addAttribute(const ::java::text::AttributedCharacterIterator_Attribute&, const ::java::lang::Object&, int32_t, int32_t) const;
+    void addAttributes(const ::java::util::Map&, int32_t, int32_t) const;
+    ::java::text::AttributedCharacterIterator getIterator() const;
+    ::java::text::AttributedCharacterIterator getIterator(const std::vector< ::java::text::AttributedCharacterIterator_Attribute>&) const;
+    ::java::text::AttributedCharacterIterator getIterator(const std::vector< ::java::text::AttributedCharacterIterator_Attribute>&, int32_t, int32_t) const;
 
 };
 }

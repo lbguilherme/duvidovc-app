@@ -40,8 +40,8 @@ public:
     TransformerFactoryConfigurationError(const ::java::lang::String&);
     TransformerFactoryConfigurationError(const ::java::lang::Exception&);
     TransformerFactoryConfigurationError(const ::java::lang::Exception&, const ::java::lang::String&);
-    ::java::lang::String getMessage() const ;
-    ::java::lang::Exception getException() const ;
+    ::java::lang::String getMessage() const;
+    ::java::lang::Exception getException() const;
 
 };
 }

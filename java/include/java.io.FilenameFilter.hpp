@@ -33,7 +33,7 @@ public:
     ::java::io::FilenameFilter& operator=(const ::java::io::FilenameFilter& x) {obj = x.obj; return *this;}
     ::java::io::FilenameFilter& operator=(::java::io::FilenameFilter&& x) {obj = std::move(x.obj); return *this;}
     
-    bool accept(const ::java::io::File&, const ::java::lang::String&) const ;
+    bool accept(const ::java::io::File&, const ::java::lang::String&) const;
 
 };
 }

@@ -35,7 +35,7 @@ public:
     ::org::apache::http::protocol::HttpDateGenerator& operator=(::org::apache::http::protocol::HttpDateGenerator&& x) {obj = std::move(x.obj); return *this;}
     
     HttpDateGenerator();
-    ::java::lang::String getCurrentDate() const ;
+    ::java::lang::String getCurrentDate() const;
 
 };
 }

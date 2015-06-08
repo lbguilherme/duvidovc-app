@@ -33,9 +33,9 @@ public:
     ::bolts::AppLink& operator=(::bolts::AppLink&& x) {obj = std::move(x.obj); return *this;}
     
     AppLink(const ::android::net::Uri&, const ::java::util::List&, const ::android::net::Uri&);
-    ::android::net::Uri getSourceUrl() const ;
-    ::java::util::List getTargets() const ;
-    ::android::net::Uri getWebUrl() const ;
+    ::android::net::Uri getSourceUrl() const;
+    ::java::util::List getTargets() const;
+    ::android::net::Uri getWebUrl() const;
 
 };
 }

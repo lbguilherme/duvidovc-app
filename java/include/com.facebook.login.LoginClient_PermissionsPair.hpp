@@ -34,8 +34,8 @@ public:
     ::com::facebook::login::LoginClient_PermissionsPair& operator=(::com::facebook::login::LoginClient_PermissionsPair&& x) {obj = std::move(x.obj); return *this;}
     
     LoginClient_PermissionsPair(const ::java::util::List&, const ::java::util::List&);
-    ::java::util::List getGrantedPermissions() const ;
-    ::java::util::List getDeclinedPermissions() const ;
+    ::java::util::List getGrantedPermissions() const;
+    ::java::util::List getDeclinedPermissions() const;
 
 };
 }

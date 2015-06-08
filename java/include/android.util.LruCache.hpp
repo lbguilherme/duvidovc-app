@@ -35,19 +35,19 @@ public:
     ::android::util::LruCache& operator=(::android::util::LruCache&& x) {obj = std::move(x.obj); return *this;}
     
     LruCache(int32_t);
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    ::java::lang::Object remove(const ::java::lang::Object&) const ;
-    void evictAll() const ;
-    int32_t size() const ;
-    int32_t maxSize() const ;
-    int32_t hitCount() const ;
-    int32_t missCount() const ;
-    int32_t createCount() const ;
-    int32_t putCount() const ;
-    int32_t evictionCount() const ;
-    ::java::util::Map snapshot() const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    ::java::lang::Object remove(const ::java::lang::Object&) const;
+    void evictAll() const;
+    int32_t size() const;
+    int32_t maxSize() const;
+    int32_t hitCount() const;
+    int32_t missCount() const;
+    int32_t createCount() const;
+    int32_t putCount() const;
+    int32_t evictionCount() const;
+    ::java::util::Map snapshot() const;
+    ::java::lang::String toString() const;
 
 };
 }

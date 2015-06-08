@@ -45,19 +45,19 @@ public:
     HashMap(int32_t);
     HashMap(int32_t, float);
     HashMap(const ::java::util::Map&);
-    ::java::lang::Object clone() const ;
-    bool isEmpty() const ;
-    int32_t size() const ;
-    ::java::lang::Object get(const ::java::lang::Object&) const ;
-    bool containsKey(const ::java::lang::Object&) const ;
-    bool containsValue(const ::java::lang::Object&) const ;
-    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const ;
-    void putAll(const ::java::util::Map&) const ;
-    ::java::lang::Object remove(const ::java::lang::Object&) const ;
-    void clear() const ;
-    ::java::util::Set keySet() const ;
-    ::java::util::Collection values() const ;
-    ::java::util::Set entrySet() const ;
+    ::java::lang::Object clone() const;
+    bool isEmpty() const;
+    int32_t size() const;
+    ::java::lang::Object get(const ::java::lang::Object&) const;
+    bool containsKey(const ::java::lang::Object&) const;
+    bool containsValue(const ::java::lang::Object&) const;
+    ::java::lang::Object put(const ::java::lang::Object&, const ::java::lang::Object&) const;
+    void putAll(const ::java::util::Map&) const;
+    ::java::lang::Object remove(const ::java::lang::Object&) const;
+    void clear() const;
+    ::java::util::Set keySet() const;
+    ::java::util::Collection values() const;
+    ::java::util::Set entrySet() const;
 
 };
 }

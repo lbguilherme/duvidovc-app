@@ -42,11 +42,11 @@ public:
     URLClassLoader(const std::vector< ::java::net::URL>&);
     URLClassLoader(const std::vector< ::java::net::URL>&, const ::java::lang::ClassLoader&);
     URLClassLoader(const std::vector< ::java::net::URL>&, const ::java::lang::ClassLoader&, const ::java::net::URLStreamHandlerFactory&);
-    ::java::util::Enumeration findResources(const ::java::lang::String&) const ;
-    std::vector< ::java::net::URL> getURLs() const ;
+    ::java::util::Enumeration findResources(const ::java::lang::String&) const;
+    std::vector< ::java::net::URL> getURLs() const;
     static ::java::net::URLClassLoader newInstance(const std::vector< ::java::net::URL>&);
     static ::java::net::URLClassLoader newInstance(const std::vector< ::java::net::URL>&, const ::java::lang::ClassLoader&);
-    ::java::net::URL findResource(const ::java::lang::String&) const ;
+    ::java::net::URL findResource(const ::java::lang::String&) const;
 
 };
 }

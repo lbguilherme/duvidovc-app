@@ -35,7 +35,7 @@ public:
     ::org::apache::http::auth::AuthSchemeFactory& operator=(const ::org::apache::http::auth::AuthSchemeFactory& x) {obj = x.obj; return *this;}
     ::org::apache::http::auth::AuthSchemeFactory& operator=(::org::apache::http::auth::AuthSchemeFactory&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::auth::AuthScheme newInstance(const ::org::apache::http::params::HttpParams&) const ;
+    ::org::apache::http::auth::AuthScheme newInstance(const ::org::apache::http::params::HttpParams&) const;
 
 };
 }

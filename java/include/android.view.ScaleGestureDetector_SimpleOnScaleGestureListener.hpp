@@ -35,9 +35,9 @@ public:
     ::android::view::ScaleGestureDetector_SimpleOnScaleGestureListener& operator=(::android::view::ScaleGestureDetector_SimpleOnScaleGestureListener&& x) {obj = std::move(x.obj); return *this;}
     
     ScaleGestureDetector_SimpleOnScaleGestureListener();
-    bool onScale(const ::android::view::ScaleGestureDetector&) const ;
-    bool onScaleBegin(const ::android::view::ScaleGestureDetector&) const ;
-    void onScaleEnd(const ::android::view::ScaleGestureDetector&) const ;
+    bool onScale(const ::android::view::ScaleGestureDetector&) const;
+    bool onScaleBegin(const ::android::view::ScaleGestureDetector&) const;
+    void onScaleEnd(const ::android::view::ScaleGestureDetector&) const;
 
 };
 }

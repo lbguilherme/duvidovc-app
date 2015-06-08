@@ -36,12 +36,12 @@ public:
     
     CyclicBarrier(int32_t, const ::java::lang::Runnable&);
     CyclicBarrier(int32_t);
-    int32_t getParties() const ;
-    int32_t await() const ;
-    int32_t await(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    bool isBroken() const ;
-    void reset() const ;
-    int32_t getNumberWaiting() const ;
+    int32_t getParties() const;
+    int32_t await() const;
+    int32_t await(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    bool isBroken() const;
+    void reset() const;
+    int32_t getNumberWaiting() const;
 
 };
 }

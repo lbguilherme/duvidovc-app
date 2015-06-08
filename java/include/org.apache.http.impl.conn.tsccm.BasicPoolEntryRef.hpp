@@ -41,7 +41,7 @@ public:
     ::org::apache::http::impl::conn::tsccm::BasicPoolEntryRef& operator=(::org::apache::http::impl::conn::tsccm::BasicPoolEntryRef&& x) {obj = std::move(x.obj); return *this;}
     
     BasicPoolEntryRef(const ::org::apache::http::impl::conn::tsccm::BasicPoolEntry&, const ::java::lang::ref::ReferenceQueue&);
-    ::org::apache::http::conn::routing::HttpRoute getRoute() const ;
+    ::org::apache::http::conn::routing::HttpRoute getRoute() const;
 
 };
 }

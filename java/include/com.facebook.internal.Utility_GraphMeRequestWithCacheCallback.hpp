@@ -34,8 +34,8 @@ public:
     ::com::facebook::internal::Utility_GraphMeRequestWithCacheCallback& operator=(const ::com::facebook::internal::Utility_GraphMeRequestWithCacheCallback& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::Utility_GraphMeRequestWithCacheCallback& operator=(::com::facebook::internal::Utility_GraphMeRequestWithCacheCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void onSuccess(const ::org::json::JSONObject&) const ;
-    void onFailure(const ::com::facebook::FacebookException&) const ;
+    void onSuccess(const ::org::json::JSONObject&) const;
+    void onFailure(const ::com::facebook::FacebookException&) const;
 
 };
 }

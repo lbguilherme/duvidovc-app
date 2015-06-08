@@ -38,10 +38,10 @@ public:
     ::android::support::v4::app::ActionBarDrawerToggle_SlideDrawable& operator=(const ::android::support::v4::app::ActionBarDrawerToggle_SlideDrawable& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::ActionBarDrawerToggle_SlideDrawable& operator=(::android::support::v4::app::ActionBarDrawerToggle_SlideDrawable&& x) {obj = std::move(x.obj); return *this;}
     
-    void setPosition(float) const ;
-    float getPosition() const ;
-    void setOffset(float) const ;
-    void draw(const ::android::graphics::Canvas&) const ;
+    void setPosition(float) const;
+    float getPosition() const;
+    void setOffset(float) const;
+    void draw(const ::android::graphics::Canvas&) const;
 
 };
 }

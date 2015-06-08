@@ -34,10 +34,10 @@ public:
     ::android::location::LocationListener& operator=(const ::android::location::LocationListener& x) {obj = x.obj; return *this;}
     ::android::location::LocationListener& operator=(::android::location::LocationListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onLocationChanged(const ::android::location::Location&) const ;
-    void onStatusChanged(const ::java::lang::String&, int32_t, const ::android::os::Bundle&) const ;
-    void onProviderEnabled(const ::java::lang::String&) const ;
-    void onProviderDisabled(const ::java::lang::String&) const ;
+    void onLocationChanged(const ::android::location::Location&) const;
+    void onStatusChanged(const ::java::lang::String&, int32_t, const ::android::os::Bundle&) const;
+    void onProviderEnabled(const ::java::lang::String&) const;
+    void onProviderDisabled(const ::java::lang::String&) const;
 
 };
 }

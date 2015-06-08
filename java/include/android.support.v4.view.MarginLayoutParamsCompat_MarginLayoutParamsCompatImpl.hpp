@@ -34,14 +34,14 @@ public:
     ::android::support::v4::view::MarginLayoutParamsCompat_MarginLayoutParamsCompatImpl& operator=(const ::android::support::v4::view::MarginLayoutParamsCompat_MarginLayoutParamsCompatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::MarginLayoutParamsCompat_MarginLayoutParamsCompatImpl& operator=(::android::support::v4::view::MarginLayoutParamsCompat_MarginLayoutParamsCompatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getMarginStart(const ::android::view::ViewGroup_MarginLayoutParams&) const ;
-    int32_t getMarginEnd(const ::android::view::ViewGroup_MarginLayoutParams&) const ;
-    void setMarginStart(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const ;
-    void setMarginEnd(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const ;
-    bool isMarginRelative(const ::android::view::ViewGroup_MarginLayoutParams&) const ;
-    int32_t getLayoutDirection(const ::android::view::ViewGroup_MarginLayoutParams&) const ;
-    void setLayoutDirection(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const ;
-    void resolveLayoutDirection(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const ;
+    int32_t getMarginStart(const ::android::view::ViewGroup_MarginLayoutParams&) const;
+    int32_t getMarginEnd(const ::android::view::ViewGroup_MarginLayoutParams&) const;
+    void setMarginStart(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const;
+    void setMarginEnd(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const;
+    bool isMarginRelative(const ::android::view::ViewGroup_MarginLayoutParams&) const;
+    int32_t getLayoutDirection(const ::android::view::ViewGroup_MarginLayoutParams&) const;
+    void setLayoutDirection(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const;
+    void resolveLayoutDirection(const ::android::view::ViewGroup_MarginLayoutParams&, int32_t) const;
 
 };
 }

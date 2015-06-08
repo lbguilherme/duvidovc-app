@@ -44,13 +44,13 @@ public:
     ::java::text::DateFormat& operator=(const ::java::text::DateFormat& x) {obj = x.obj; return *this;}
     ::java::text::DateFormat& operator=(::java::text::DateFormat&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::Object clone() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::StringBuffer format(const ::java::lang::Object&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
-    ::java::lang::String format(const ::java::util::Date&) const ;
-    ::java::lang::StringBuffer format(const ::java::util::Date&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const ;
+    ::java::lang::Object clone() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::StringBuffer format(const ::java::lang::Object&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
+    ::java::lang::String format(const ::java::util::Date&) const;
+    ::java::lang::StringBuffer format(const ::java::util::Date&, const ::java::lang::StringBuffer&, const ::java::text::FieldPosition&) const;
     static std::vector< ::java::util::Locale> getAvailableLocales();
-    ::java::util::Calendar getCalendar() const ;
+    ::java::util::Calendar getCalendar() const;
     static ::java::text::DateFormat getDateInstance();
     static ::java::text::DateFormat getDateInstance(int32_t);
     static ::java::text::DateFormat getDateInstance(int32_t, const ::java::util::Locale&);
@@ -58,20 +58,20 @@ public:
     static ::java::text::DateFormat getDateTimeInstance(int32_t, int32_t);
     static ::java::text::DateFormat getDateTimeInstance(int32_t, int32_t, const ::java::util::Locale&);
     static ::java::text::DateFormat getInstance();
-    ::java::text::NumberFormat getNumberFormat() const ;
+    ::java::text::NumberFormat getNumberFormat() const;
     static ::java::text::DateFormat getTimeInstance();
     static ::java::text::DateFormat getTimeInstance(int32_t);
     static ::java::text::DateFormat getTimeInstance(int32_t, const ::java::util::Locale&);
-    ::java::util::TimeZone getTimeZone() const ;
-    int32_t hashCode() const ;
-    bool isLenient() const ;
-    ::java::util::Date parse(const ::java::lang::String&) const ;
-    ::java::util::Date parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const ;
-    ::java::lang::Object parseObject(const ::java::lang::String&, const ::java::text::ParsePosition&) const ;
-    void setCalendar(const ::java::util::Calendar&) const ;
-    void setLenient(bool) const ;
-    void setNumberFormat(const ::java::text::NumberFormat&) const ;
-    void setTimeZone(const ::java::util::TimeZone&) const ;
+    ::java::util::TimeZone getTimeZone() const;
+    int32_t hashCode() const;
+    bool isLenient() const;
+    ::java::util::Date parse(const ::java::lang::String&) const;
+    ::java::util::Date parse(const ::java::lang::String&, const ::java::text::ParsePosition&) const;
+    ::java::lang::Object parseObject(const ::java::lang::String&, const ::java::text::ParsePosition&) const;
+    void setCalendar(const ::java::util::Calendar&) const;
+    void setLenient(bool) const;
+    void setNumberFormat(const ::java::text::NumberFormat&) const;
+    void setTimeZone(const ::java::util::TimeZone&) const;
 
 };
 }

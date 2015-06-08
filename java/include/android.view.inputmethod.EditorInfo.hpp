@@ -40,10 +40,10 @@ public:
     ::android::view::inputmethod::EditorInfo& operator=(::android::view::inputmethod::EditorInfo&& x) {obj = std::move(x.obj); return *this;}
     
     EditorInfo();
-    void makeCompatible(int32_t) const ;
-    void dump(const ::android::util::Printer&, const ::java::lang::String&) const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t describeContents() const ;
+    void makeCompatible(int32_t) const;
+    void dump(const ::android::util::Printer&, const ::java::lang::String&) const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t describeContents() const;
 
 };
 }

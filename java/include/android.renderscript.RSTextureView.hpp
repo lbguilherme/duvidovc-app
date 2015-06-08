@@ -42,16 +42,16 @@ public:
     
     RSTextureView(const ::android::content::Context&);
     RSTextureView(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void onSurfaceTextureAvailable(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const ;
-    void onSurfaceTextureSizeChanged(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const ;
-    bool onSurfaceTextureDestroyed(const ::android::graphics::SurfaceTexture&) const ;
-    void onSurfaceTextureUpdated(const ::android::graphics::SurfaceTexture&) const ;
-    void pause() const ;
-    void resume() const ;
-    ::android::renderscript::RenderScriptGL createRenderScriptGL(const ::android::renderscript::RenderScriptGL_SurfaceConfig&) const ;
-    void destroyRenderScriptGL() const ;
-    void setRenderScriptGL(const ::android::renderscript::RenderScriptGL&) const ;
-    ::android::renderscript::RenderScriptGL getRenderScriptGL() const ;
+    void onSurfaceTextureAvailable(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const;
+    void onSurfaceTextureSizeChanged(const ::android::graphics::SurfaceTexture&, int32_t, int32_t) const;
+    bool onSurfaceTextureDestroyed(const ::android::graphics::SurfaceTexture&) const;
+    void onSurfaceTextureUpdated(const ::android::graphics::SurfaceTexture&) const;
+    void pause() const;
+    void resume() const;
+    ::android::renderscript::RenderScriptGL createRenderScriptGL(const ::android::renderscript::RenderScriptGL_SurfaceConfig&) const;
+    void destroyRenderScriptGL() const;
+    void setRenderScriptGL(const ::android::renderscript::RenderScriptGL&) const;
+    ::android::renderscript::RenderScriptGL getRenderScriptGL() const;
 
 };
 }

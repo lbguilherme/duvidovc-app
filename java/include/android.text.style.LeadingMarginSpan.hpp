@@ -38,8 +38,8 @@ public:
     ::android::text::style::LeadingMarginSpan& operator=(const ::android::text::style::LeadingMarginSpan& x) {obj = x.obj; return *this;}
     ::android::text::style::LeadingMarginSpan& operator=(::android::text::style::LeadingMarginSpan&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getLeadingMargin(bool) const ;
-    void drawLeadingMargin(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, bool, const ::android::text::Layout&) const ;
+    int32_t getLeadingMargin(bool) const;
+    void drawLeadingMargin(const ::android::graphics::Canvas&, const ::android::graphics::Paint&, int32_t, int32_t, int32_t, int32_t, int32_t, const ::java::lang::CharSequence&, int32_t, int32_t, bool, const ::android::text::Layout&) const;
 
 };
 }

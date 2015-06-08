@@ -37,13 +37,13 @@ public:
     ::org::apache::http::cookie::SetCookie& operator=(const ::org::apache::http::cookie::SetCookie& x) {obj = x.obj; return *this;}
     ::org::apache::http::cookie::SetCookie& operator=(::org::apache::http::cookie::SetCookie&& x) {obj = std::move(x.obj); return *this;}
     
-    void setValue(const ::java::lang::String&) const ;
-    void setComment(const ::java::lang::String&) const ;
-    void setExpiryDate(const ::java::util::Date&) const ;
-    void setDomain(const ::java::lang::String&) const ;
-    void setPath(const ::java::lang::String&) const ;
-    void setSecure(bool) const ;
-    void setVersion(int32_t) const ;
+    void setValue(const ::java::lang::String&) const;
+    void setComment(const ::java::lang::String&) const;
+    void setExpiryDate(const ::java::util::Date&) const;
+    void setDomain(const ::java::lang::String&) const;
+    void setPath(const ::java::lang::String&) const;
+    void setSecure(bool) const;
+    void setVersion(int32_t) const;
 
 };
 }

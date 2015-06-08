@@ -35,9 +35,9 @@ public:
     ::com::facebook::login::LoginResult& operator=(::com::facebook::login::LoginResult&& x) {obj = std::move(x.obj); return *this;}
     
     LoginResult(const ::com::facebook::AccessToken&, const ::java::util::Set&, const ::java::util::Set&);
-    ::com::facebook::AccessToken getAccessToken() const ;
-    ::java::util::Set getRecentlyGrantedPermissions() const ;
-    ::java::util::Set getRecentlyDeniedPermissions() const ;
+    ::com::facebook::AccessToken getAccessToken() const;
+    ::java::util::Set getRecentlyGrantedPermissions() const;
+    ::java::util::Set getRecentlyDeniedPermissions() const;
 
 };
 }

@@ -39,9 +39,9 @@ public:
     ::android::content::pm::ProviderInfo& operator=(::android::content::pm::ProviderInfo&& x) {obj = std::move(x.obj); return *this;}
     
     ProviderInfo();
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    ::java::lang::String toString() const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    ::java::lang::String toString() const;
 
 };
 }

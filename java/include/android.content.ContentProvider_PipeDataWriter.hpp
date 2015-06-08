@@ -36,7 +36,7 @@ public:
     ::android::content::ContentProvider_PipeDataWriter& operator=(const ::android::content::ContentProvider_PipeDataWriter& x) {obj = x.obj; return *this;}
     ::android::content::ContentProvider_PipeDataWriter& operator=(::android::content::ContentProvider_PipeDataWriter&& x) {obj = std::move(x.obj); return *this;}
     
-    void writeDataToPipe(const ::android::os::ParcelFileDescriptor&, const ::android::net::Uri&, const ::java::lang::String&, const ::android::os::Bundle&, const ::java::lang::Object&) const ;
+    void writeDataToPipe(const ::android::os::ParcelFileDescriptor&, const ::android::net::Uri&, const ::java::lang::String&, const ::android::os::Bundle&, const ::java::lang::Object&) const;
 
 };
 }

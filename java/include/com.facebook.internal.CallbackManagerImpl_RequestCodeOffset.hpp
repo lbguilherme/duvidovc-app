@@ -38,7 +38,7 @@ public:
     
     static std::vector< ::com::facebook::internal::CallbackManagerImpl_RequestCodeOffset> values();
     static ::com::facebook::internal::CallbackManagerImpl_RequestCodeOffset valueOf(const ::java::lang::String&);
-    int32_t toRequestCode() const ;
+    int32_t toRequestCode() const;
 
 };
 }

@@ -39,12 +39,12 @@ public:
     
     PlaybackStateCompat_Builder();
     PlaybackStateCompat_Builder(const ::android::support::v4::media::session::PlaybackStateCompat&);
-    ::android::support::v4::media::session::PlaybackStateCompat_Builder setState(int32_t, int64_t, float) const ;
-    ::android::support::v4::media::session::PlaybackStateCompat_Builder setState(int32_t, int64_t, float, int64_t) const ;
-    ::android::support::v4::media::session::PlaybackStateCompat_Builder setBufferedPosition(int64_t) const ;
-    ::android::support::v4::media::session::PlaybackStateCompat_Builder setActions(int64_t) const ;
-    ::android::support::v4::media::session::PlaybackStateCompat_Builder setErrorMessage(const ::java::lang::CharSequence&) const ;
-    ::android::support::v4::media::session::PlaybackStateCompat build() const ;
+    ::android::support::v4::media::session::PlaybackStateCompat_Builder setState(int32_t, int64_t, float) const;
+    ::android::support::v4::media::session::PlaybackStateCompat_Builder setState(int32_t, int64_t, float, int64_t) const;
+    ::android::support::v4::media::session::PlaybackStateCompat_Builder setBufferedPosition(int64_t) const;
+    ::android::support::v4::media::session::PlaybackStateCompat_Builder setActions(int64_t) const;
+    ::android::support::v4::media::session::PlaybackStateCompat_Builder setErrorMessage(const ::java::lang::CharSequence&) const;
+    ::android::support::v4::media::session::PlaybackStateCompat build() const;
 
 };
 }

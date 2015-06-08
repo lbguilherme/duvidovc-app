@@ -33,7 +33,7 @@ public:
     ::android::speech::tts::TextToSpeech_OnUtteranceCompletedListener& operator=(const ::android::speech::tts::TextToSpeech_OnUtteranceCompletedListener& x) {obj = x.obj; return *this;}
     ::android::speech::tts::TextToSpeech_OnUtteranceCompletedListener& operator=(::android::speech::tts::TextToSpeech_OnUtteranceCompletedListener&& x) {obj = std::move(x.obj); return *this;}
     
-    void onUtteranceCompleted(const ::java::lang::String&) const ;
+    void onUtteranceCompleted(const ::java::lang::String&) const;
 
 };
 }

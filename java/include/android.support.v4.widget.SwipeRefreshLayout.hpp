@@ -39,27 +39,27 @@ public:
     ::android::support::v4::widget::SwipeRefreshLayout& operator=(const ::android::support::v4::widget::SwipeRefreshLayout& x) {obj = x.obj; return *this;}
     ::android::support::v4::widget::SwipeRefreshLayout& operator=(::android::support::v4::widget::SwipeRefreshLayout&& x) {obj = std::move(x.obj); return *this;}
     
-    void setProgressViewOffset(bool, int32_t, int32_t) const ;
-    void setProgressViewEndTarget(bool, int32_t) const ;
-    void setSize(int32_t) const ;
+    void setProgressViewOffset(bool, int32_t, int32_t) const;
+    void setProgressViewEndTarget(bool, int32_t) const;
+    void setSize(int32_t) const;
     SwipeRefreshLayout(const ::android::content::Context&);
     SwipeRefreshLayout(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setOnRefreshListener(const ::android::support::v4::widget::SwipeRefreshLayout_OnRefreshListener&) const ;
-    void setRefreshing(bool) const ;
-    void setProgressBackgroundColor(int32_t) const ;
-    void setProgressBackgroundColorSchemeResource(int32_t) const ;
-    void setProgressBackgroundColorSchemeColor(int32_t) const ;
-    void setColorScheme(const std::vector< int32_t>&) const ;
-    void setColorSchemeResources(const std::vector< int32_t>&) const ;
-    void setColorSchemeColors(const std::vector< int32_t>&) const ;
-    bool isRefreshing() const ;
-    void setDistanceToTriggerSync(int32_t) const ;
-    void onMeasure(int32_t, int32_t) const ;
-    int32_t getProgressCircleDiameter() const ;
-    bool canChildScrollUp() const ;
-    bool onInterceptTouchEvent(const ::android::view::MotionEvent&) const ;
-    void requestDisallowInterceptTouchEvent(bool) const ;
-    bool onTouchEvent(const ::android::view::MotionEvent&) const ;
+    void setOnRefreshListener(const ::android::support::v4::widget::SwipeRefreshLayout_OnRefreshListener&) const;
+    void setRefreshing(bool) const;
+    void setProgressBackgroundColor(int32_t) const;
+    void setProgressBackgroundColorSchemeResource(int32_t) const;
+    void setProgressBackgroundColorSchemeColor(int32_t) const;
+    void setColorScheme(const std::vector< int32_t>&) const;
+    void setColorSchemeResources(const std::vector< int32_t>&) const;
+    void setColorSchemeColors(const std::vector< int32_t>&) const;
+    bool isRefreshing() const;
+    void setDistanceToTriggerSync(int32_t) const;
+    void onMeasure(int32_t, int32_t) const;
+    int32_t getProgressCircleDiameter() const;
+    bool canChildScrollUp() const;
+    bool onInterceptTouchEvent(const ::android::view::MotionEvent&) const;
+    void requestDisallowInterceptTouchEvent(bool) const;
+    bool onTouchEvent(const ::android::view::MotionEvent&) const;
 
 };
 }

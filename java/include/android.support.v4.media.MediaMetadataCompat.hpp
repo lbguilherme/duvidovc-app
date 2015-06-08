@@ -45,20 +45,20 @@ public:
     ::android::support::v4::media::MediaMetadataCompat& operator=(const ::android::support::v4::media::MediaMetadataCompat& x) {obj = x.obj; return *this;}
     ::android::support::v4::media::MediaMetadataCompat& operator=(::android::support::v4::media::MediaMetadataCompat&& x) {obj = std::move(x.obj); return *this;}
     
-    bool containsKey(const ::java::lang::String&) const ;
-    ::java::lang::CharSequence getText(const ::java::lang::String&) const ;
-    ::java::lang::String getString(const ::java::lang::String&) const ;
-    int64_t getLong(const ::java::lang::String&) const ;
-    ::android::support::v4::media::RatingCompat getRating(const ::java::lang::String&) const ;
-    ::android::graphics::Bitmap getBitmap(const ::java::lang::String&) const ;
-    ::android::support::v4::media::MediaDescriptionCompat getDescription() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    int32_t size() const ;
-    ::java::util::Set keySet() const ;
-    ::android::os::Bundle getBundle() const ;
+    bool containsKey(const ::java::lang::String&) const;
+    ::java::lang::CharSequence getText(const ::java::lang::String&) const;
+    ::java::lang::String getString(const ::java::lang::String&) const;
+    int64_t getLong(const ::java::lang::String&) const;
+    ::android::support::v4::media::RatingCompat getRating(const ::java::lang::String&) const;
+    ::android::graphics::Bitmap getBitmap(const ::java::lang::String&) const;
+    ::android::support::v4::media::MediaDescriptionCompat getDescription() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    int32_t size() const;
+    ::java::util::Set keySet() const;
+    ::android::os::Bundle getBundle() const;
     static ::android::support::v4::media::MediaMetadataCompat fromMediaMetadata(const ::java::lang::Object&);
-    ::java::lang::Object getMediaMetadata() const ;
+    ::java::lang::Object getMediaMetadata() const;
 
 };
 }

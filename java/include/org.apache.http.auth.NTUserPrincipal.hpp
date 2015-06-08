@@ -38,12 +38,12 @@ public:
     ::org::apache::http::auth::NTUserPrincipal& operator=(::org::apache::http::auth::NTUserPrincipal&& x) {obj = std::move(x.obj); return *this;}
     
     NTUserPrincipal(const ::java::lang::String&, const ::java::lang::String&);
-    ::java::lang::String getName() const ;
-    ::java::lang::String getDomain() const ;
-    ::java::lang::String getUsername() const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
+    ::java::lang::String getName() const;
+    ::java::lang::String getDomain() const;
+    ::java::lang::String getUsername() const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
 
 };
 }

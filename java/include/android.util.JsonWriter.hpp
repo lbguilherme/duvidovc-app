@@ -38,22 +38,22 @@ public:
     ::android::util::JsonWriter& operator=(::android::util::JsonWriter&& x) {obj = std::move(x.obj); return *this;}
     
     JsonWriter(const ::java::io::Writer&);
-    void setIndent(const ::java::lang::String&) const ;
-    void setLenient(bool) const ;
-    bool isLenient() const ;
-    ::android::util::JsonWriter beginArray() const ;
-    ::android::util::JsonWriter endArray() const ;
-    ::android::util::JsonWriter beginObject() const ;
-    ::android::util::JsonWriter endObject() const ;
-    ::android::util::JsonWriter name(const ::java::lang::String&) const ;
-    ::android::util::JsonWriter value(const ::java::lang::String&) const ;
-    ::android::util::JsonWriter nullValue() const ;
-    ::android::util::JsonWriter value(bool) const ;
-    ::android::util::JsonWriter value(double) const ;
-    ::android::util::JsonWriter value(int64_t) const ;
-    ::android::util::JsonWriter value(const ::java::lang::Number&) const ;
-    void flush() const ;
-    void close() const ;
+    void setIndent(const ::java::lang::String&) const;
+    void setLenient(bool) const;
+    bool isLenient() const;
+    ::android::util::JsonWriter beginArray() const;
+    ::android::util::JsonWriter endArray() const;
+    ::android::util::JsonWriter beginObject() const;
+    ::android::util::JsonWriter endObject() const;
+    ::android::util::JsonWriter name(const ::java::lang::String&) const;
+    ::android::util::JsonWriter value(const ::java::lang::String&) const;
+    ::android::util::JsonWriter nullValue() const;
+    ::android::util::JsonWriter value(bool) const;
+    ::android::util::JsonWriter value(double) const;
+    ::android::util::JsonWriter value(int64_t) const;
+    ::android::util::JsonWriter value(const ::java::lang::Number&) const;
+    void flush() const;
+    void close() const;
 
 };
 }

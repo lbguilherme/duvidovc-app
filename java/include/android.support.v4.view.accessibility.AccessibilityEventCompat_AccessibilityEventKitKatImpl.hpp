@@ -37,8 +37,8 @@ public:
     ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventKitKatImpl& operator=(const ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventKitKatImpl& x) {obj = x.obj; return *this;}
     ::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventKitKatImpl& operator=(::android::support::v4::view::accessibility::AccessibilityEventCompat_AccessibilityEventKitKatImpl&& x) {obj = std::move(x.obj); return *this;}
     
-    void setContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const ;
-    int32_t getContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    void setContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&, int32_t) const;
+    int32_t getContentChangeTypes(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

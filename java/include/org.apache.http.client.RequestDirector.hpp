@@ -37,7 +37,7 @@ public:
     ::org::apache::http::client::RequestDirector& operator=(const ::org::apache::http::client::RequestDirector& x) {obj = x.obj; return *this;}
     ::org::apache::http::client::RequestDirector& operator=(::org::apache::http::client::RequestDirector&& x) {obj = std::move(x.obj); return *this;}
     
-    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    ::org::apache::http::HttpResponse execute(const ::org::apache::http::HttpHost&, const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

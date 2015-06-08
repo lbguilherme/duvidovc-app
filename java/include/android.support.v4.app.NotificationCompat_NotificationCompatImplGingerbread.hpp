@@ -37,7 +37,7 @@ public:
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplGingerbread& operator=(const ::android::support::v4::app::NotificationCompat_NotificationCompatImplGingerbread& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationCompat_NotificationCompatImplGingerbread& operator=(::android::support::v4::app::NotificationCompat_NotificationCompatImplGingerbread&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const ;
+    ::android::app::Notification build(const ::android::support::v4::app::NotificationCompat_Builder&) const;
 
 };
 }

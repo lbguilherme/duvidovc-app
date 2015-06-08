@@ -40,13 +40,13 @@ public:
     ::java::util::concurrent::locks::ReentrantReadWriteLock_ReadLock& operator=(const ::java::util::concurrent::locks::ReentrantReadWriteLock_ReadLock& x) {obj = x.obj; return *this;}
     ::java::util::concurrent::locks::ReentrantReadWriteLock_ReadLock& operator=(::java::util::concurrent::locks::ReentrantReadWriteLock_ReadLock&& x) {obj = std::move(x.obj); return *this;}
     
-    void lock() const ;
-    void lockInterruptibly() const ;
-    bool tryLock() const ;
-    bool tryLock(int64_t, const ::java::util::concurrent::TimeUnit&) const ;
-    void unlock() const ;
-    ::java::util::concurrent::locks::Condition newCondition() const ;
-    ::java::lang::String toString() const ;
+    void lock() const;
+    void lockInterruptibly() const;
+    bool tryLock() const;
+    bool tryLock(int64_t, const ::java::util::concurrent::TimeUnit&) const;
+    void unlock() const;
+    ::java::util::concurrent::locks::Condition newCondition() const;
+    ::java::lang::String toString() const;
 
 };
 }

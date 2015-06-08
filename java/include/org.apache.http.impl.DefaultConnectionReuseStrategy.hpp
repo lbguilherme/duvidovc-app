@@ -38,7 +38,7 @@ public:
     ::org::apache::http::impl::DefaultConnectionReuseStrategy& operator=(::org::apache::http::impl::DefaultConnectionReuseStrategy&& x) {obj = std::move(x.obj); return *this;}
     
     DefaultConnectionReuseStrategy();
-    bool keepAlive(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const ;
+    bool keepAlive(const ::org::apache::http::HttpResponse&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

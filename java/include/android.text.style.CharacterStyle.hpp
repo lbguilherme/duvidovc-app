@@ -35,9 +35,9 @@ public:
     ::android::text::style::CharacterStyle& operator=(::android::text::style::CharacterStyle&& x) {obj = std::move(x.obj); return *this;}
     
     CharacterStyle();
-    void updateDrawState(const ::android::text::TextPaint&) const ;
+    void updateDrawState(const ::android::text::TextPaint&) const;
     static ::android::text::style::CharacterStyle wrap(const ::android::text::style::CharacterStyle&);
-    ::android::text::style::CharacterStyle getUnderlying() const ;
+    ::android::text::style::CharacterStyle getUnderlying() const;
 
 };
 }

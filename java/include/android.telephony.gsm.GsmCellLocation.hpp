@@ -39,15 +39,15 @@ public:
     
     GsmCellLocation();
     GsmCellLocation(const ::android::os::Bundle&);
-    int32_t getLac() const ;
-    int32_t getCid() const ;
-    int32_t getPsc() const ;
-    void setStateInvalid() const ;
-    void setLacAndCid(int32_t, int32_t) const ;
-    int32_t hashCode() const ;
-    bool equals(const ::java::lang::Object&) const ;
-    ::java::lang::String toString() const ;
-    void fillInNotifierBundle(const ::android::os::Bundle&) const ;
+    int32_t getLac() const;
+    int32_t getCid() const;
+    int32_t getPsc() const;
+    void setStateInvalid() const;
+    void setLacAndCid(int32_t, int32_t) const;
+    int32_t hashCode() const;
+    bool equals(const ::java::lang::Object&) const;
+    ::java::lang::String toString() const;
+    void fillInNotifierBundle(const ::android::os::Bundle&) const;
 
 };
 }

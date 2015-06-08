@@ -35,10 +35,10 @@ public:
     ::android::renderscript::FileA3D_IndexEntry& operator=(const ::android::renderscript::FileA3D_IndexEntry& x) {obj = x.obj; return *this;}
     ::android::renderscript::FileA3D_IndexEntry& operator=(::android::renderscript::FileA3D_IndexEntry&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getName() const ;
-    ::android::renderscript::FileA3D_EntryType getEntryType() const ;
-    ::android::renderscript::BaseObj getObject() const ;
-    ::android::renderscript::Mesh getMesh() const ;
+    ::java::lang::String getName() const;
+    ::android::renderscript::FileA3D_EntryType getEntryType() const;
+    ::android::renderscript::BaseObj getObject() const;
+    ::android::renderscript::Mesh getMesh() const;
 
 };
 }

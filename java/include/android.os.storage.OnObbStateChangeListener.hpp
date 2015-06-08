@@ -34,7 +34,7 @@ public:
     ::android::os::storage::OnObbStateChangeListener& operator=(::android::os::storage::OnObbStateChangeListener&& x) {obj = std::move(x.obj); return *this;}
     
     OnObbStateChangeListener();
-    void onObbStateChange(const ::java::lang::String&, int32_t) const ;
+    void onObbStateChange(const ::java::lang::String&, int32_t) const;
 
 };
 }

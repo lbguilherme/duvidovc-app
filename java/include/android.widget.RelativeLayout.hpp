@@ -40,15 +40,15 @@ public:
     RelativeLayout(const ::android::content::Context&);
     RelativeLayout(const ::android::content::Context&, const ::android::util::AttributeSet&);
     RelativeLayout(const ::android::content::Context&, const ::android::util::AttributeSet&, int32_t);
-    bool shouldDelayChildPressedState() const ;
-    void setIgnoreGravity(int32_t) const ;
-    void setGravity(int32_t) const ;
-    void setHorizontalGravity(int32_t) const ;
-    void setVerticalGravity(int32_t) const ;
-    int32_t getBaseline() const ;
-    void requestLayout() const ;
-    ::android::widget::RelativeLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const ;
-    bool dispatchPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const ;
+    bool shouldDelayChildPressedState() const;
+    void setIgnoreGravity(int32_t) const;
+    void setGravity(int32_t) const;
+    void setHorizontalGravity(int32_t) const;
+    void setVerticalGravity(int32_t) const;
+    int32_t getBaseline() const;
+    void requestLayout() const;
+    ::android::widget::RelativeLayout_LayoutParams generateLayoutParams(const ::android::util::AttributeSet&) const;
+    bool dispatchPopulateAccessibilityEvent(const ::android::view::accessibility::AccessibilityEvent&) const;
 
 };
 }

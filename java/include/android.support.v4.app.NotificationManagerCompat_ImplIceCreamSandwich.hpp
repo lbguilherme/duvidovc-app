@@ -35,7 +35,7 @@ public:
     ::android::support::v4::app::NotificationManagerCompat_ImplIceCreamSandwich& operator=(const ::android::support::v4::app::NotificationManagerCompat_ImplIceCreamSandwich& x) {obj = x.obj; return *this;}
     ::android::support::v4::app::NotificationManagerCompat_ImplIceCreamSandwich& operator=(::android::support::v4::app::NotificationManagerCompat_ImplIceCreamSandwich&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t getSideChannelBindFlags() const ;
+    int32_t getSideChannelBindFlags() const;
 
 };
 }

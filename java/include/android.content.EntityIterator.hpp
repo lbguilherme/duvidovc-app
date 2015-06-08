@@ -33,8 +33,8 @@ public:
     ::android::content::EntityIterator& operator=(const ::android::content::EntityIterator& x) {obj = x.obj; return *this;}
     ::android::content::EntityIterator& operator=(::android::content::EntityIterator&& x) {obj = std::move(x.obj); return *this;}
     
-    void reset() const ;
-    void close() const ;
+    void reset() const;
+    void close() const;
 
 };
 }

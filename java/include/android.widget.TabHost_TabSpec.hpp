@@ -38,13 +38,13 @@ public:
     ::android::widget::TabHost_TabSpec& operator=(const ::android::widget::TabHost_TabSpec& x) {obj = x.obj; return *this;}
     ::android::widget::TabHost_TabSpec& operator=(::android::widget::TabHost_TabSpec&& x) {obj = std::move(x.obj); return *this;}
     
-    ::android::widget::TabHost_TabSpec setIndicator(const ::java::lang::CharSequence&) const ;
-    ::android::widget::TabHost_TabSpec setIndicator(const ::java::lang::CharSequence&, const ::android::graphics::drawable::Drawable&) const ;
-    ::android::widget::TabHost_TabSpec setIndicator(const ::android::view::View&) const ;
-    ::android::widget::TabHost_TabSpec setContent(int32_t) const ;
-    ::android::widget::TabHost_TabSpec setContent(const ::android::widget::TabHost_TabContentFactory&) const ;
-    ::android::widget::TabHost_TabSpec setContent(const ::android::content::Intent&) const ;
-    ::java::lang::String getTag() const ;
+    ::android::widget::TabHost_TabSpec setIndicator(const ::java::lang::CharSequence&) const;
+    ::android::widget::TabHost_TabSpec setIndicator(const ::java::lang::CharSequence&, const ::android::graphics::drawable::Drawable&) const;
+    ::android::widget::TabHost_TabSpec setIndicator(const ::android::view::View&) const;
+    ::android::widget::TabHost_TabSpec setContent(int32_t) const;
+    ::android::widget::TabHost_TabSpec setContent(const ::android::widget::TabHost_TabContentFactory&) const;
+    ::android::widget::TabHost_TabSpec setContent(const ::android::content::Intent&) const;
+    ::java::lang::String getTag() const;
 
 };
 }

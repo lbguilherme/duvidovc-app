@@ -36,7 +36,7 @@ public:
     
     IvParameterSpec(const std::vector< int8_t>&);
     IvParameterSpec(const std::vector< int8_t>&, int32_t, int32_t);
-    std::vector< int8_t> getIV() const ;
+    std::vector< int8_t> getIV() const;
 
 };
 }

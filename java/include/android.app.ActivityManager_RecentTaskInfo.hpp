@@ -35,9 +35,9 @@ public:
     ::android::app::ActivityManager_RecentTaskInfo& operator=(::android::app::ActivityManager_RecentTaskInfo&& x) {obj = std::move(x.obj); return *this;}
     
     ActivityManager_RecentTaskInfo();
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
-    void readFromParcel(const ::android::os::Parcel&) const ;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
+    void readFromParcel(const ::android::os::Parcel&) const;
 
 };
 }

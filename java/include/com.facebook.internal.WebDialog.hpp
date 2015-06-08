@@ -42,14 +42,14 @@ public:
     WebDialog(const ::android::content::Context&, const ::java::lang::String&);
     WebDialog(const ::android::content::Context&, const ::java::lang::String&, int32_t);
     WebDialog(const ::android::content::Context&, const ::java::lang::String&, const ::android::os::Bundle&, int32_t, const ::com::facebook::internal::WebDialog_OnCompleteListener&);
-    void setOnCompleteListener(const ::com::facebook::internal::WebDialog_OnCompleteListener&) const ;
-    ::com::facebook::internal::WebDialog_OnCompleteListener getOnCompleteListener() const ;
-    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const ;
-    void dismiss() const ;
-    void onDetachedFromWindow() const ;
-    void onAttachedToWindow() const ;
-    void resize() const ;
-    void cancel() const ;
+    void setOnCompleteListener(const ::com::facebook::internal::WebDialog_OnCompleteListener&) const;
+    ::com::facebook::internal::WebDialog_OnCompleteListener getOnCompleteListener() const;
+    bool onKeyDown(int32_t, const ::android::view::KeyEvent&) const;
+    void dismiss() const;
+    void onDetachedFromWindow() const;
+    void onAttachedToWindow() const;
+    void resize() const;
+    void cancel() const;
 
 };
 }

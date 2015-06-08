@@ -35,9 +35,9 @@ public:
     ::java::security::KeyPairGeneratorSpi& operator=(::java::security::KeyPairGeneratorSpi&& x) {obj = std::move(x.obj); return *this;}
     
     KeyPairGeneratorSpi();
-    ::java::security::KeyPair generateKeyPair() const ;
-    void initialize(int32_t, const ::java::security::SecureRandom&) const ;
-    void initialize(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const ;
+    ::java::security::KeyPair generateKeyPair() const;
+    void initialize(int32_t, const ::java::security::SecureRandom&) const;
+    void initialize(const ::java::security::spec::AlgorithmParameterSpec&, const ::java::security::SecureRandom&) const;
 
 };
 }

@@ -37,7 +37,7 @@ public:
     ::java::security::interfaces::ECPrivateKey& operator=(const ::java::security::interfaces::ECPrivateKey& x) {obj = x.obj; return *this;}
     ::java::security::interfaces::ECPrivateKey& operator=(::java::security::interfaces::ECPrivateKey&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::math::BigInteger getS() const ;
+    ::java::math::BigInteger getS() const;
 
 };
 }

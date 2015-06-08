@@ -36,10 +36,10 @@ public:
     ::com::facebook::internal::FileLruCache_ModifiedFile& operator=(const ::com::facebook::internal::FileLruCache_ModifiedFile& x) {obj = x.obj; return *this;}
     ::com::facebook::internal::FileLruCache_ModifiedFile& operator=(::com::facebook::internal::FileLruCache_ModifiedFile&& x) {obj = std::move(x.obj); return *this;}
     
-    int32_t compareTo(const ::com::facebook::internal::FileLruCache_ModifiedFile&) const ;
-    bool equals(const ::java::lang::Object&) const ;
-    int32_t hashCode() const ;
-    int32_t compareTo(const ::java::lang::Object&) const ;
+    int32_t compareTo(const ::com::facebook::internal::FileLruCache_ModifiedFile&) const;
+    bool equals(const ::java::lang::Object&) const;
+    int32_t hashCode() const;
+    int32_t compareTo(const ::java::lang::Object&) const;
 
 };
 }

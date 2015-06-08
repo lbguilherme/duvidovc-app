@@ -38,14 +38,14 @@ public:
     ::android::hardware::usb::UsbManager& operator=(const ::android::hardware::usb::UsbManager& x) {obj = x.obj; return *this;}
     ::android::hardware::usb::UsbManager& operator=(::android::hardware::usb::UsbManager&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::util::HashMap getDeviceList() const ;
-    ::android::hardware::usb::UsbDeviceConnection openDevice(const ::android::hardware::usb::UsbDevice&) const ;
-    std::vector< ::android::hardware::usb::UsbAccessory> getAccessoryList() const ;
-    ::android::os::ParcelFileDescriptor openAccessory(const ::android::hardware::usb::UsbAccessory&) const ;
-    bool hasPermission(const ::android::hardware::usb::UsbDevice&) const ;
-    bool hasPermission(const ::android::hardware::usb::UsbAccessory&) const ;
-    void requestPermission(const ::android::hardware::usb::UsbDevice&, const ::android::app::PendingIntent&) const ;
-    void requestPermission(const ::android::hardware::usb::UsbAccessory&, const ::android::app::PendingIntent&) const ;
+    ::java::util::HashMap getDeviceList() const;
+    ::android::hardware::usb::UsbDeviceConnection openDevice(const ::android::hardware::usb::UsbDevice&) const;
+    std::vector< ::android::hardware::usb::UsbAccessory> getAccessoryList() const;
+    ::android::os::ParcelFileDescriptor openAccessory(const ::android::hardware::usb::UsbAccessory&) const;
+    bool hasPermission(const ::android::hardware::usb::UsbDevice&) const;
+    bool hasPermission(const ::android::hardware::usb::UsbAccessory&) const;
+    void requestPermission(const ::android::hardware::usb::UsbDevice&, const ::android::app::PendingIntent&) const;
+    void requestPermission(const ::android::hardware::usb::UsbAccessory&, const ::android::app::PendingIntent&) const;
 
 };
 }

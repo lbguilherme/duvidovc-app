@@ -34,10 +34,10 @@ public:
     ::android::renderscript::ProgramVertexFixedFunction_Constants& operator=(::android::renderscript::ProgramVertexFixedFunction_Constants&& x) {obj = std::move(x.obj); return *this;}
     
     ProgramVertexFixedFunction_Constants(const ::android::renderscript::RenderScript&);
-    void destroy() const ;
-    void setModelview(const ::android::renderscript::Matrix4f&) const ;
-    void setProjection(const ::android::renderscript::Matrix4f&) const ;
-    void setTexture(const ::android::renderscript::Matrix4f&) const ;
+    void destroy() const;
+    void setModelview(const ::android::renderscript::Matrix4f&) const;
+    void setProjection(const ::android::renderscript::Matrix4f&) const;
+    void setTexture(const ::android::renderscript::Matrix4f&) const;
 
 };
 }

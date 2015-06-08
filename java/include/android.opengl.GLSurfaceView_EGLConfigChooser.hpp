@@ -34,7 +34,7 @@ public:
     ::android::opengl::GLSurfaceView_EGLConfigChooser& operator=(const ::android::opengl::GLSurfaceView_EGLConfigChooser& x) {obj = x.obj; return *this;}
     ::android::opengl::GLSurfaceView_EGLConfigChooser& operator=(::android::opengl::GLSurfaceView_EGLConfigChooser&& x) {obj = std::move(x.obj); return *this;}
     
-    ::javax::microedition::khronos::egl::EGLConfig chooseConfig(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&) const ;
+    ::javax::microedition::khronos::egl::EGLConfig chooseConfig(const ::javax::microedition::khronos::egl::EGL10&, const ::javax::microedition::khronos::egl::EGLDisplay&) const;
 
 };
 }

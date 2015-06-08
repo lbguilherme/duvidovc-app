@@ -32,7 +32,7 @@ public:
     ::android::accounts::AccountManagerCallback& operator=(const ::android::accounts::AccountManagerCallback& x) {obj = x.obj; return *this;}
     ::android::accounts::AccountManagerCallback& operator=(::android::accounts::AccountManagerCallback&& x) {obj = std::move(x.obj); return *this;}
     
-    void run(const ::android::accounts::AccountManagerFuture&) const ;
+    void run(const ::android::accounts::AccountManagerFuture&) const;
 
 };
 }

@@ -47,12 +47,12 @@ public:
     
     FragmentTabHost(const ::android::content::Context&);
     FragmentTabHost(const ::android::content::Context&, const ::android::util::AttributeSet&);
-    void setup() const ;
-    void setup(const ::android::content::Context&, const ::android::support::v4::app::FragmentManager&) const ;
-    void setup(const ::android::content::Context&, const ::android::support::v4::app::FragmentManager&, int32_t) const ;
-    void setOnTabChangedListener(const ::android::widget::TabHost_OnTabChangeListener&) const ;
-    void addTab(const ::android::widget::TabHost_TabSpec&, const ::java::lang::Class&, const ::android::os::Bundle&) const ;
-    void onTabChanged(const ::java::lang::String&) const ;
+    void setup() const;
+    void setup(const ::android::content::Context&, const ::android::support::v4::app::FragmentManager&) const;
+    void setup(const ::android::content::Context&, const ::android::support::v4::app::FragmentManager&, int32_t) const;
+    void setOnTabChangedListener(const ::android::widget::TabHost_OnTabChangeListener&) const;
+    void addTab(const ::android::widget::TabHost_TabSpec&, const ::java::lang::Class&, const ::android::os::Bundle&) const;
+    void onTabChanged(const ::java::lang::String&) const;
 
 };
 }

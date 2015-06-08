@@ -37,8 +37,8 @@ public:
     ::java::security::cert::CertStoreSpi& operator=(::java::security::cert::CertStoreSpi&& x) {obj = std::move(x.obj); return *this;}
     
     CertStoreSpi(const ::java::security::cert::CertStoreParameters&);
-    ::java::util::Collection engineGetCertificates(const ::java::security::cert::CertSelector&) const ;
-    ::java::util::Collection engineGetCRLs(const ::java::security::cert::CRLSelector&) const ;
+    ::java::util::Collection engineGetCertificates(const ::java::security::cert::CertSelector&) const;
+    ::java::util::Collection engineGetCRLs(const ::java::security::cert::CRLSelector&) const;
 
 };
 }

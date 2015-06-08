@@ -37,10 +37,10 @@ public:
     
     SyncStats();
     SyncStats(const ::android::os::Parcel&);
-    ::java::lang::String toString() const ;
-    void clear() const ;
-    int32_t describeContents() const ;
-    void writeToParcel(const ::android::os::Parcel&, int32_t) const ;
+    ::java::lang::String toString() const;
+    void clear() const;
+    int32_t describeContents() const;
+    void writeToParcel(const ::android::os::Parcel&, int32_t) const;
 
 };
 }

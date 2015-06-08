@@ -37,11 +37,11 @@ public:
     ::android::media::audiofx::PresetReverb& operator=(::android::media::audiofx::PresetReverb&& x) {obj = std::move(x.obj); return *this;}
     
     PresetReverb(int32_t, int32_t);
-    void setPreset(int16_t) const ;
-    int16_t getPreset() const ;
-    void setParameterListener(const ::android::media::audiofx::PresetReverb_OnParameterChangeListener&) const ;
-    ::android::media::audiofx::PresetReverb_Settings getProperties() const ;
-    void setProperties(const ::android::media::audiofx::PresetReverb_Settings&) const ;
+    void setPreset(int16_t) const;
+    int16_t getPreset() const;
+    void setParameterListener(const ::android::media::audiofx::PresetReverb_OnParameterChangeListener&) const;
+    ::android::media::audiofx::PresetReverb_Settings getProperties() const;
+    void setProperties(const ::android::media::audiofx::PresetReverb_Settings&) const;
 
 };
 }

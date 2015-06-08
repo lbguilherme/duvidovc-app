@@ -34,8 +34,8 @@ public:
     ::android::support::v4::text::TextDirectionHeuristicCompat& operator=(const ::android::support::v4::text::TextDirectionHeuristicCompat& x) {obj = x.obj; return *this;}
     ::android::support::v4::text::TextDirectionHeuristicCompat& operator=(::android::support::v4::text::TextDirectionHeuristicCompat&& x) {obj = std::move(x.obj); return *this;}
     
-    bool isRtl(const std::vector< uint16_t>&, int32_t, int32_t) const ;
-    bool isRtl(const ::java::lang::CharSequence&, int32_t, int32_t) const ;
+    bool isRtl(const std::vector< uint16_t>&, int32_t, int32_t) const;
+    bool isRtl(const ::java::lang::CharSequence&, int32_t, int32_t) const;
 
 };
 }

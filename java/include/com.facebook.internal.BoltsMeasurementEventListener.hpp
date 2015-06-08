@@ -38,7 +38,7 @@ public:
     ::com::facebook::internal::BoltsMeasurementEventListener& operator=(::com::facebook::internal::BoltsMeasurementEventListener&& x) {obj = std::move(x.obj); return *this;}
     
     static ::com::facebook::internal::BoltsMeasurementEventListener getInstance(const ::android::content::Context&);
-    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const ;
+    void onReceive(const ::android::content::Context&, const ::android::content::Intent&) const;
 
 };
 }

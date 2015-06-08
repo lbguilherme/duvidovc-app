@@ -31,7 +31,7 @@ public:
     ::android::widget::SearchView_OnCloseListener& operator=(const ::android::widget::SearchView_OnCloseListener& x) {obj = x.obj; return *this;}
     ::android::widget::SearchView_OnCloseListener& operator=(::android::widget::SearchView_OnCloseListener&& x) {obj = std::move(x.obj); return *this;}
     
-    bool onClose() const ;
+    bool onClose() const;
 
 };
 }

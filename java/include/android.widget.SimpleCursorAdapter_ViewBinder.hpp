@@ -33,7 +33,7 @@ public:
     ::android::widget::SimpleCursorAdapter_ViewBinder& operator=(const ::android::widget::SimpleCursorAdapter_ViewBinder& x) {obj = x.obj; return *this;}
     ::android::widget::SimpleCursorAdapter_ViewBinder& operator=(::android::widget::SimpleCursorAdapter_ViewBinder&& x) {obj = std::move(x.obj); return *this;}
     
-    bool setViewValue(const ::android::view::View&, const ::android::database::Cursor&, int32_t) const ;
+    bool setViewValue(const ::android::view::View&, const ::android::database::Cursor&, int32_t) const;
 
 };
 }

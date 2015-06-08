@@ -31,7 +31,7 @@ public:
     ::android::webkit::WebStorage_QuotaUpdater& operator=(const ::android::webkit::WebStorage_QuotaUpdater& x) {obj = x.obj; return *this;}
     ::android::webkit::WebStorage_QuotaUpdater& operator=(::android::webkit::WebStorage_QuotaUpdater&& x) {obj = std::move(x.obj); return *this;}
     
-    void updateQuota(int64_t) const ;
+    void updateQuota(int64_t) const;
 
 };
 }

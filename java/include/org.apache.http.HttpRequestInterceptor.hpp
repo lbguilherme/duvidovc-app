@@ -34,7 +34,7 @@ public:
     ::org::apache::http::HttpRequestInterceptor& operator=(const ::org::apache::http::HttpRequestInterceptor& x) {obj = x.obj; return *this;}
     ::org::apache::http::HttpRequestInterceptor& operator=(::org::apache::http::HttpRequestInterceptor&& x) {obj = std::move(x.obj); return *this;}
     
-    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const ;
+    void process(const ::org::apache::http::HttpRequest&, const ::org::apache::http::protocol::HttpContext&) const;
 
 };
 }

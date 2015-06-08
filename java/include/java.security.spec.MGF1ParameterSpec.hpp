@@ -36,7 +36,7 @@ public:
     ::java::security::spec::MGF1ParameterSpec& operator=(::java::security::spec::MGF1ParameterSpec&& x) {obj = std::move(x.obj); return *this;}
     
     MGF1ParameterSpec(const ::java::lang::String&);
-    ::java::lang::String getDigestAlgorithm() const ;
+    ::java::lang::String getDigestAlgorithm() const;
 
 };
 }

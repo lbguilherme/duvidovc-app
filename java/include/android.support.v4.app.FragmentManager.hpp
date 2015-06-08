@@ -44,27 +44,27 @@ public:
     ::android::support::v4::app::FragmentManager& operator=(::android::support::v4::app::FragmentManager&& x) {obj = std::move(x.obj); return *this;}
     
     FragmentManager();
-    ::android::support::v4::app::FragmentTransaction beginTransaction() const ;
-    ::android::support::v4::app::FragmentTransaction openTransaction() const ;
-    bool executePendingTransactions() const ;
-    ::android::support::v4::app::Fragment findFragmentById(int32_t) const ;
-    ::android::support::v4::app::Fragment findFragmentByTag(const ::java::lang::String&) const ;
-    void popBackStack() const ;
-    bool popBackStackImmediate() const ;
-    void popBackStack(const ::java::lang::String&, int32_t) const ;
-    bool popBackStackImmediate(const ::java::lang::String&, int32_t) const ;
-    void popBackStack(int32_t, int32_t) const ;
-    bool popBackStackImmediate(int32_t, int32_t) const ;
-    int32_t getBackStackEntryCount() const ;
-    ::android::support::v4::app::FragmentManager_BackStackEntry getBackStackEntryAt(int32_t) const ;
-    void addOnBackStackChangedListener(const ::android::support::v4::app::FragmentManager_OnBackStackChangedListener&) const ;
-    void removeOnBackStackChangedListener(const ::android::support::v4::app::FragmentManager_OnBackStackChangedListener&) const ;
-    void putFragment(const ::android::os::Bundle&, const ::java::lang::String&, const ::android::support::v4::app::Fragment&) const ;
-    ::android::support::v4::app::Fragment getFragment(const ::android::os::Bundle&, const ::java::lang::String&) const ;
-    ::java::util::List getFragments() const ;
-    ::android::support::v4::app::Fragment_SavedState saveFragmentInstanceState(const ::android::support::v4::app::Fragment&) const ;
-    bool isDestroyed() const ;
-    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const ;
+    ::android::support::v4::app::FragmentTransaction beginTransaction() const;
+    ::android::support::v4::app::FragmentTransaction openTransaction() const;
+    bool executePendingTransactions() const;
+    ::android::support::v4::app::Fragment findFragmentById(int32_t) const;
+    ::android::support::v4::app::Fragment findFragmentByTag(const ::java::lang::String&) const;
+    void popBackStack() const;
+    bool popBackStackImmediate() const;
+    void popBackStack(const ::java::lang::String&, int32_t) const;
+    bool popBackStackImmediate(const ::java::lang::String&, int32_t) const;
+    void popBackStack(int32_t, int32_t) const;
+    bool popBackStackImmediate(int32_t, int32_t) const;
+    int32_t getBackStackEntryCount() const;
+    ::android::support::v4::app::FragmentManager_BackStackEntry getBackStackEntryAt(int32_t) const;
+    void addOnBackStackChangedListener(const ::android::support::v4::app::FragmentManager_OnBackStackChangedListener&) const;
+    void removeOnBackStackChangedListener(const ::android::support::v4::app::FragmentManager_OnBackStackChangedListener&) const;
+    void putFragment(const ::android::os::Bundle&, const ::java::lang::String&, const ::android::support::v4::app::Fragment&) const;
+    ::android::support::v4::app::Fragment getFragment(const ::android::os::Bundle&, const ::java::lang::String&) const;
+    ::java::util::List getFragments() const;
+    ::android::support::v4::app::Fragment_SavedState saveFragmentInstanceState(const ::android::support::v4::app::Fragment&) const;
+    bool isDestroyed() const;
+    void dump(const ::java::lang::String&, const ::java::io::FileDescriptor&, const ::java::io::PrintWriter&, const std::vector< ::java::lang::String>&) const;
     static void enableDebugLogging(bool);
 
 };

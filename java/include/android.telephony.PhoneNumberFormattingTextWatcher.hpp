@@ -36,9 +36,9 @@ public:
     ::android::telephony::PhoneNumberFormattingTextWatcher& operator=(::android::telephony::PhoneNumberFormattingTextWatcher&& x) {obj = std::move(x.obj); return *this;}
     
     PhoneNumberFormattingTextWatcher();
-    void beforeTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const ;
-    void onTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const ;
-    void afterTextChanged(const ::android::text::Editable&) const ;
+    void beforeTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const;
+    void onTextChanged(const ::java::lang::CharSequence&, int32_t, int32_t, int32_t) const;
+    void afterTextChanged(const ::android::text::Editable&) const;
 
 };
 }

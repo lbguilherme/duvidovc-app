@@ -41,11 +41,11 @@ public:
     ::org::apache::http::message::BasicStatusLine& operator=(::org::apache::http::message::BasicStatusLine&& x) {obj = std::move(x.obj); return *this;}
     
     BasicStatusLine(const ::org::apache::http::ProtocolVersion&, int32_t, const ::java::lang::String&);
-    int32_t getStatusCode() const ;
-    ::org::apache::http::ProtocolVersion getProtocolVersion() const ;
-    ::java::lang::String getReasonPhrase() const ;
-    ::java::lang::String toString() const ;
-    ::java::lang::Object clone() const ;
+    int32_t getStatusCode() const;
+    ::org::apache::http::ProtocolVersion getProtocolVersion() const;
+    ::java::lang::String getReasonPhrase() const;
+    ::java::lang::String toString() const;
+    ::java::lang::Object clone() const;
 
 };
 }

@@ -35,9 +35,9 @@ public:
     ::org::w3c::dom::ProcessingInstruction& operator=(const ::org::w3c::dom::ProcessingInstruction& x) {obj = x.obj; return *this;}
     ::org::w3c::dom::ProcessingInstruction& operator=(::org::w3c::dom::ProcessingInstruction&& x) {obj = std::move(x.obj); return *this;}
     
-    ::java::lang::String getTarget() const ;
-    ::java::lang::String getData() const ;
-    void setData(const ::java::lang::String&) const ;
+    ::java::lang::String getTarget() const;
+    ::java::lang::String getData() const;
+    void setData(const ::java::lang::String&) const;
 
 };
 }

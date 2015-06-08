@@ -46,8 +46,8 @@ public:
     SQLWarning(const ::java::lang::String&, const ::java::lang::Throwable&);
     SQLWarning(const ::java::lang::String&, const ::java::lang::String&, const ::java::lang::Throwable&);
     SQLWarning(const ::java::lang::String&, const ::java::lang::String&, int32_t, const ::java::lang::Throwable&);
-    ::java::sql::SQLWarning getNextWarning() const ;
-    void setNextWarning(const ::java::sql::SQLWarning&) const ;
+    ::java::sql::SQLWarning getNextWarning() const;
+    void setNextWarning(const ::java::sql::SQLWarning&) const;
 
 };
 }
