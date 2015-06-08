@@ -33,19 +33,24 @@ public:
     Q_INVOKABLE void fetchPhotoFromGallery();
     Q_INVOKABLE void fetchPhotoFromCamera();
 
+    QImage tempPhoto();
+    Q_INVOKABLE void clearTempPhoto();
+    void setTempPhoto(QImage img);
+
     void setMe(User* me);
 
 signals:
 
     void meChanged();
     void backPressed();
-    void photoFetched(QImage img);
+    void photoFetched();
 
 private:
 
     DuvidoApi _api;
     Facebook* _facebook;
     User* _me;
+    QImage _tempPhoto;
 
 };
 

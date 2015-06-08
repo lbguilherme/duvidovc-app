@@ -63,3 +63,15 @@ void Duvido::fetchPhotoFromCamera() {
 void Duvido::fetchPhotoFromGallery() {
     DuvidoActivity::getInstance().fetchPhotoFromGallery();
 }
+
+QImage Duvido::tempPhoto() {
+    return _tempPhoto;
+}
+
+void Duvido::clearTempPhoto() {
+    setTempPhoto(QImage());
+}
+
+void Duvido::setTempPhoto(QImage img) {
+    _tempPhoto = img;
+}

@@ -40,5 +40,6 @@ void DuvidoActivity::onPhotoFetched(const Uri& uri) const {
     }
 
     QImage img((uchar*)data.data(), bitmap.getWidth(), bitmap.getHeight(), format);
-    emit ::duvido->photoFetched(img);
+    ::duvido->setTempPhoto(img.copy());
+    emit ::duvido->photoFetched();
 }
