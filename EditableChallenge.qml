@@ -62,7 +62,7 @@ Card {
     Connections {
         target: duvido
         onPhotoFetched: {
-            coverImg.source = "image://tempphoto/";
+            coverImg.source = path;
             coverPlaceholder.visible = false;
             coverPlaceholder.height = 0;
         }

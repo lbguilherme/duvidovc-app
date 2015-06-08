@@ -9,7 +9,7 @@
 #include "java.lang.Object.hpp"
 #include "org.qtproject.qt5.android.bindings.QtActivity.hpp"
 
-namespace android { namespace net { class Uri; } }
+namespace java { namespace lang { class String; } }
 namespace vc { namespace duvido { class DuvidoActivity; } }
 
 namespace vc {
@@ -39,7 +39,7 @@ public:
     static ::vc::duvido::DuvidoActivity getInstance();
     DuvidoActivity();
     void fetchPhotoFromGallery() const ;
-    void onPhotoFetched(const ::android::net::Uri&) const ;
+    void onPhotoFetched(const ::java::lang::String&) const ;
 
 };
 }

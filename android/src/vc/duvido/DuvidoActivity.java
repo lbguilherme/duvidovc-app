@@ -3,6 +3,7 @@ package vc.duvido;
 import org.qtproject.qt5.android.bindings.*;
 import java.lang.*;
 import java.util.*;
+import java.io.*;
 import android.net.*;
 import android.app.*;
 import android.content.*;
@@ -30,7 +31,15 @@ public class DuvidoActivity extends QtActivity {
 
         switch (requestCode) {
         case RESULT_GALLERY:
-            onPhotoFetched(data.getData());
+            Uri imageUri = data.getData();
+            try {
+                File photo = File.createTempFile("gallery_photo", null, getCacheDir());
+                copyInputStreamToFile(getContentResolver().openInputStream(imageUri), photo);
+                onPhotoFetched(photo.getAbsolutePath());
+            } catch (Exception e) {
+                onPhotoFetched(null);
+            }
+            break;
             break;
         default:
             FacebookBridge.submitActivityResult(requestCode, resultCode, data);
@@ -55,6 +64,17 @@ public class DuvidoActivity extends QtActivity {
         startActivityForResult(intent, RESULT_GALLERY);
     }
 
-    public native void onPhotoFetched(Uri uri);
 
+    public native void onPhotoFetched(String filePath);
+
+    private void copyInputStreamToFile(InputStream in, File file) throws IOException, FileNotFoundException {
+        OutputStream out = new FileOutputStream(file);
+        byte[] buf = new byte[4096];
+        int len;
+        while ((len = in.read(buf)) > 0) {
+            out.write(buf, 0, len);
+        }
+        out.close();
+        in.close();
+    }
 }

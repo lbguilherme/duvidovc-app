@@ -19,8 +19,7 @@ SOURCES += \
     duvidoapi.cpp \
     friend.cpp \
     globalbackdetector.cpp \
-    android/src/vc/duvido/DuvidoActivity.cpp \
-    duvidotempphotoprovider.cpp
+    android/src/vc/duvido/DuvidoActivity.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -29,8 +28,7 @@ HEADERS += \
     friendsmodel.hpp \
     duvidoapi.hpp \
     friend.hpp \
-    globalbackdetector.hpp \
-    duvidotempphotoprovider.hpp
+    globalbackdetector.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -70,13 +68,8 @@ HEADERS += \
 
 SOURCES += \
     android/src/vc/duvido/FacebookBridge.cpp \
-    java/src/android.net.cpp \
-    java/src/android.content.cpp \
-    java/src/android.graphics.cpp \
-    java/src/android.provider.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
-    java/src/java.nio.cpp \
     java/src/com.facebook.cpp \
     java/src/vc.duvido.cpp
 

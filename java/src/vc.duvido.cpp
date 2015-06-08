@@ -1,8 +1,8 @@
 #include "java-core.hpp"
 #include <memory>
 #include "android.content.Intent.hpp"
-#include "android.net.Uri.hpp"
 #include "com.facebook.AccessToken.hpp"
+#include "java.lang.String.hpp"
 #include "vc.duvido.BuildConfig.hpp"
 #include "vc.duvido.DuvidoActivity.hpp"
 #include "vc.duvido.FacebookBridge.hpp"
@@ -64,16 +64,16 @@ void vc::duvido::DuvidoActivity::fetchPhotoFromGallery() const {
     java::jni->CallVoidMethod(obj, mid);
 }
 
-static void JNICALL Java_vc_duvido_DuvidoActivity_onPhotoFetched__Landroid_net_Uri_2(JNIEnv*, jobject obj, jobject arg0) {
+static void JNICALL Java_vc_duvido_DuvidoActivity_onPhotoFetched__Ljava_lang_String_2(JNIEnv*, jobject obj, jobject arg0) {
     ::vc::duvido::DuvidoActivity _obj(obj);
-    ::android::net::Uri _arg0(arg0);
+    ::java::lang::String _arg0(arg0);
     _obj.onPhotoFetched(_arg0);
 }
 
 void ::vc::duvido::DuvidoActivity::jniInitializeNative() {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
     JNINativeMethod methods[] = {
-        {"onPhotoFetched", "(Landroid/net/Uri;)V", (void*)Java_vc_duvido_DuvidoActivity_onPhotoFetched__Landroid_net_Uri_2},
+        {"onPhotoFetched", "(Ljava/lang/String;)V", (void*)Java_vc_duvido_DuvidoActivity_onPhotoFetched__Ljava_lang_String_2},
     };
     java::jni->RegisterNatives(_class, methods, sizeof(methods)/sizeof(methods[0]));
 }
