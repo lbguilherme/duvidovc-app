@@ -56,6 +56,14 @@ void Duvido::setMe(User* me) {
     emit meChanged();
 }
 
+bool Duvido::hasCamera() {
+    return DuvidoActivity::getInstance().hasCamera();
+}
+
+bool Duvido::hasGallery() {
+    return DuvidoActivity::getInstance().hasGallery();
+}
+
 void Duvido::fetchPhotoFromCamera() {
     DuvidoActivity::getInstance().fetchPhotoFromCamera();
 }

@@ -73,6 +73,16 @@ public class DuvidoActivity extends QtActivity {
         AppEventsLogger.deactivateApp(this);
     }
 
+    public boolean hasGallery() {
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        return intent.resolveActivity(getPackageManager()) != null;
+    }
+
+    public boolean hasCamera() {
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        return intent.resolveActivity(getPackageManager()) != null;
+    }
+
     public void fetchPhotoFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, RESULT_GALLERY);

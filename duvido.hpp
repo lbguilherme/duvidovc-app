@@ -17,6 +17,8 @@ class Duvido : public QObject {
     Q_OBJECT
     Q_PROPERTY(User* me READ me NOTIFY meChanged)
     Q_PROPERTY(DuvidoApi* api READ api CONSTANT)
+    Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
+    Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
 
     friend class vc::duvido::FacebookBridge;
 
@@ -30,6 +32,8 @@ public:
     User* me();
     Q_INVOKABLE FriendsModel* friendsModel();
 
+    bool hasCamera();
+    bool hasGallery();
     Q_INVOKABLE void fetchPhotoFromGallery();
     Q_INVOKABLE void fetchPhotoFromCamera();
 

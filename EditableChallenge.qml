@@ -82,11 +82,13 @@ Card {
                 text: "Camera"
                 color: "#33a"
                 onClicked: duvido.fetchPhotoFromCamera()
+                enabled: duvido.hasCamera
             }
             Button {
                 text: "Galeria"
                 color: "#33a"
                 onClicked: duvido.fetchPhotoFromGallery()
+                enabled: duvido.hasGallery
             }
         }
     }

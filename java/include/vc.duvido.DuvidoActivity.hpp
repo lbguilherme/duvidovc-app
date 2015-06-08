@@ -38,6 +38,8 @@ public:
     static void jniInitializeNative();
     static ::vc::duvido::DuvidoActivity getInstance();
     DuvidoActivity();
+    bool hasGallery() const;
+    bool hasCamera() const;
     void fetchPhotoFromGallery() const;
     void fetchPhotoFromCamera() const;
     void onPhotoFetched(const ::java::lang::String&) const;
