@@ -39,6 +39,7 @@ public:
     static ::vc::duvido::DuvidoActivity getInstance();
     DuvidoActivity();
     void fetchPhotoFromGallery() const;
+    void fetchPhotoFromCamera() const;
     void onPhotoFetched(const ::java::lang::String&) const;
 
 };

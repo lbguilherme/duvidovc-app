@@ -57,7 +57,7 @@ void Duvido::setMe(User* me) {
 }
 
 void Duvido::fetchPhotoFromCamera() {
-    throw "not implemented";
+    DuvidoActivity::getInstance().fetchPhotoFromCamera();
 }
 
 void Duvido::fetchPhotoFromGallery() {

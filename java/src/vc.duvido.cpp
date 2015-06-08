@@ -64,6 +64,12 @@ void vc::duvido::DuvidoActivity::fetchPhotoFromGallery() const {
     java::jni->CallVoidMethod(obj, mid);
 }
 
+void vc::duvido::DuvidoActivity::fetchPhotoFromCamera() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "fetchPhotoFromCamera", "()V");
+    java::jni->CallVoidMethod(obj, mid);
+}
+
 static void JNICALL Java_vc_duvido_DuvidoActivity_onPhotoFetched__Ljava_lang_String_2(JNIEnv*, jobject obj, jobject arg0) {
     ::vc::duvido::DuvidoActivity _obj(obj);
     ::java::lang::String _arg0(arg0);

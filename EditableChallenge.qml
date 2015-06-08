@@ -81,11 +81,12 @@ Card {
             Button {
                 text: "Camera"
                 color: "#33a"
+                onClicked: duvido.fetchPhotoFromCamera()
             }
             Button {
                 text: "Galeria"
                 color: "#33a"
-                onClicked: duvido.fetchPhotoFromGallery();
+                onClicked: duvido.fetchPhotoFromGallery()
             }
         }
     }

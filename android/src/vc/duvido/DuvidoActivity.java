@@ -15,6 +15,9 @@ import com.facebook.appevents.*;
 public class DuvidoActivity extends QtActivity {
 
     public static final int RESULT_GALLERY = 0;
+    public static final int RESULT_CAMERA = 1;
+
+    private String cameraPhotoPath;
 
     private static DuvidoActivity instance;
     public static DuvidoActivity getInstance() {
@@ -31,15 +34,26 @@ public class DuvidoActivity extends QtActivity {
 
         switch (requestCode) {
         case RESULT_GALLERY:
-            Uri imageUri = data.getData();
-            try {
-                File photo = File.createTempFile("gallery_photo", null, getCacheDir());
-                copyInputStreamToFile(getContentResolver().openInputStream(imageUri), photo);
-                onPhotoFetched(photo.getAbsolutePath());
-            } catch (Exception e) {
+            if (resultCode == RESULT_OK) {
+                Uri imageUri = data.getData();
+                try {
+                    File photo = File.createTempFile("gallery", null, getCacheDir());
+                    photo.deleteOnExit();
+                    copyInputStreamToFile(getContentResolver().openInputStream(imageUri), photo);
+                    onPhotoFetched(photo.getAbsolutePath());
+                } catch (Exception e) {
+                    onPhotoFetched(null);
+                }
+            } else {
                 onPhotoFetched(null);
             }
             break;
+        case RESULT_CAMERA:
+            if (resultCode == RESULT_OK) {
+                 onPhotoFetched(cameraPhotoPath);
+             } else {
+                 onPhotoFetched(null);
+             }
             break;
         default:
             FacebookBridge.submitActivityResult(requestCode, resultCode, data);
@@ -64,6 +78,21 @@ public class DuvidoActivity extends QtActivity {
         startActivityForResult(intent, RESULT_GALLERY);
     }
 
+    public void fetchPhotoFromCamera() {
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        File dir = new File(Environment.getExternalStorageDirectory()+File.separator+"Pictures"+File.separator+"Duvido");
+        dir.mkdirs();
+        File photo;
+        try {
+            photo = File.createTempFile("photo", ".jpg", dir);
+        } catch (Exception e) {
+            onPhotoFetched(null);
+            return;
+        }
+        cameraPhotoPath = photo.getAbsolutePath();
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photo));
+        startActivityForResult(intent, RESULT_CAMERA);
+    }
 
     public native void onPhotoFetched(String filePath);
 
