@@ -49,7 +49,27 @@ Card {
 
     }
 
+    Item {
+        width: parent.width
+        height: width/coverImg.sourceSize.width*coverImg.sourceSize.height
+
+        Image {
+            id: coverImg
+            anchors.fill: parent
+        }
+    }
+
+    Connections {
+        target: duvido
+        onPhotoFetched: {
+            coverImg.source = "image://tempphoto/";
+            coverPlaceholder.visible = false;
+            coverPlaceholder.height = 0;
+        }
+    }
+
     Rectangle {
+        id: coverPlaceholder
         width: parent.width
         height: 180*dp
         color: "#aaa"
