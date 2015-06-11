@@ -9,6 +9,7 @@ class FriendsModel : public QAbstractListModel
 {
     Q_OBJECT
     Q_PROPERTY(QSortFilterProxyModel* selectedFriends READ selectedFriends CONSTANT)
+    Q_PROPERTY(int selectedCount READ selectedCount NOTIFY selectedCountChanged)
 
 public:
 
@@ -25,6 +26,11 @@ public:
     QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
     bool setData(const QModelIndex& index, const QVariant& value, int role = Qt::DisplayRole);
     QSortFilterProxyModel* selectedFriends() const;
+    int selectedCount() const;
+
+signals:
+
+    void selectedCountChanged();
 
 private:
 

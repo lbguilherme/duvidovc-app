@@ -88,8 +88,16 @@ bool FriendsModel::setData(const QModelIndex& index, const QVariant& value, int 
     case SelectedRole:
         _friends[i]->setSelected(value.toBool());
         emit dataChanged(index, index, {SelectedRole});
+        emit selectedCountChanged();
         return true;
     default:
         return false;
     }
+}
+
+int FriendsModel::selectedCount() const {
+    int count = 0;
+    for (auto f : _friends)
+        if (f->selected()) ++ count;
+    return count;
 }
