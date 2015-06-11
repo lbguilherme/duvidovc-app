@@ -130,30 +130,18 @@ Card {
 
             TextField {
                 label: "Recompensa"
-                width: parent.width - timeLeftZone.width - parent.spacing
-                fontSize: 12*dp
-            }
-
-            Row {
-                id: timeLeftZone
+                width: parent.width - timePicker.width - parent.spacing
+                fontSize: 14*dp
                 anchors.bottom: parent.bottom
-                spacing: 4*dp
-
-                Image {
-                    width: 16*dp
-                    height: width
-                    source: "qrc:/artwork/icons/clock.png"
-                    mipmap: true
-                    opacity: 0.5
-                }
-
-                Text {
-                    id: timeLeft
-                    text: "Tempo"
-                    color: "#999"
-                }
 
             }
+
+            TimePicker {
+                id: timePicker
+                anchors.bottom: parent.bottom
+
+            }
+
         }
     }
 }

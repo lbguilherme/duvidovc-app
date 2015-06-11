@@ -10,6 +10,7 @@
         <file>FullWidthFriendsInput.qml</file>
         <file>EditableChallenge.qml</file>
         <file>RemoveButton.qml</file>
+        <file>TimePicker.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
