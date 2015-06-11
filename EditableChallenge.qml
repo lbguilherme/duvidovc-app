@@ -34,19 +34,23 @@ Card {
             height: 5*dp
         }
 
-        TextField {
-            label: "Título"
-            width: parent.width
-            alignment: Text.AlignHCenter
-            fontSize: 16*dp
-        }
+        CardContentArea {
+            spacing: 18*dp
+            horizontalMargin: 5*dp
 
-        FullWidthFriendsInput {
-            id: targets
-            emptyLabel: "Desafiados"
-            filledLabel: "Desafiados:"
-        }
+            TextField {
+                label: "Título"
+                width: parent.width
+                alignment: Text.AlignHCenter
+                fontSize: 16*dp
+            }
 
+            FullWidthFriendsInput {
+                id: targets
+                emptyLabel: "Desafiados"
+                filledLabel: "Desafiados:"
+            }
+        }
     }
 
     Item {
