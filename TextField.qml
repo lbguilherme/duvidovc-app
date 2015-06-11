@@ -27,7 +27,7 @@ Item {
     Rectangle {
         id: editableLine
         width: parent.width
-        height: Math.ceil(1*dp)
+        height: Math.ceil(2*dp)
         color: editableInput.focus ? "#0f6464" : "#ddd"
         y: editableInput.height + 4*dp
 
