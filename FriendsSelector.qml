@@ -12,9 +12,22 @@ Dialog {
 
         ScrollableListView {
             anchors.fill: parent
+            anchors.bottomMargin: confirmFriends.height + 16*dp
             model: root.friendsModel
             delegate: friendDelegate
         }
+
+        Button {
+            id: confirmFriends
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 8*dp
+            text: root.friendsModel ? "Enviar para " + root.friendsModel.selectedCount + " amigo" + (root.friendsModel.selectedCount > 1 ? "s" : "") : ""
+            visible: root.friendsModel ? root.friendsModel.selectedCount > 0 : false
+            color: "#0f6464"
+            onClicked: dialogSource = "";
+        }
+
     }
 
     Component {
