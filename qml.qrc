@@ -9,6 +9,7 @@
         <file>NavigationDrawerOption.qml</file>
         <file>FullWidthFriendsInput.qml</file>
         <file>EditableChallenge.qml</file>
+        <file>RemoveButton.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
