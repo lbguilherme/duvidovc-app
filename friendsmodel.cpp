@@ -88,6 +88,7 @@ bool FriendsModel::setData(const QModelIndex& index, const QVariant& value, int 
     case SelectedRole:
         _friends[i]->setSelected(value.toBool());
         emit dataChanged(index, index, {SelectedRole});
+        return true;
     default:
         return false;
     }
