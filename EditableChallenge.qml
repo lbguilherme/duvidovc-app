@@ -52,20 +52,24 @@ Card {
     Item {
         width: parent.width
         height: width/coverImg.sourceSize.width*coverImg.sourceSize.height
+        visible: coverImg.source != ""
 
         Image {
             id: coverImg
             anchors.fill: parent
         }
+
+        RemoveButton {
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.margins: 8*dp
+            onClicked: coverImg.source = "";
+        }
     }
 
     Connections {
         target: duvido
-        onPhotoFetched: {
-            coverImg.source = path;
-            coverPlaceholder.visible = false;
-            coverPlaceholder.height = 0;
-        }
+        onPhotoFetched: coverImg.source = path;
     }
 
     Rectangle {
@@ -73,24 +77,36 @@ Card {
         width: parent.width
         height: 180*dp
         color: "#aaa"
+        visible: (duvido.hasCamera || duvido.hasGallery) && coverImg.source == "";
 
-        Row {
+        Column {
             anchors.centerIn: parent
             spacing: 8*dp
 
             Button {
-                text: "Camera"
-                color: "#33a"
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: "Tirar uma foto"
+                color: "#0f6464"
                 onClicked: duvido.fetchPhotoFromCamera()
-                enabled: duvido.hasCamera
+                visible: duvido.hasCamera
             }
+
+            Text {
+                visible: duvido.hasCamera && duvido.hasGallery
+                text: "ou"
+                color: "#000"
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+
             Button {
-                text: "Galeria"
-                color: "#33a"
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: "Escolher da galeria"
+                color: "#0f6464"
                 onClicked: duvido.fetchPhotoFromGallery()
-                enabled: duvido.hasGallery
+                visible: duvido.hasGallery
             }
         }
+
     }
 
     CardContentArea {
