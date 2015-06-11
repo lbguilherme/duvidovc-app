@@ -39,6 +39,15 @@ Item {
         }
     }
 
+    Rectangle {
+        id: editableLine
+        width: parent.width
+        height: Math.ceil(2*dp)
+        color: "#ddd"
+        y: root.height + 4*dp
+
+    }
+
     Component {
         id: selectedFriendDelegate
 
