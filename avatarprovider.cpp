@@ -14,7 +14,7 @@ AvatarProvider::AvatarProvider()
 
 QPixmap AvatarProvider::requestPixmap(const QString& id, QSize* size, const QSize& requestedSize) {
     QNetworkAccessManager http;
-    QNetworkRequest request(QUrl(duvido->api()->avatar(id)));
+    QNetworkRequest request(duvido->api()->avatarUrl(id));
     QNetworkReply* reply = http.get(request);
 
     QEventLoop loop;

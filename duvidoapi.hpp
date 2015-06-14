@@ -15,7 +15,8 @@ public:
     DuvidoApi();
 
     void login(QString token, std::function<void(User*)> callback);
-    QString avatar(QString id);
+    QUrl avatarUrl(QString id);
+    QUrl avatarsUrl(QStringList ids);
     void friends(QString id, std::function<void(QJsonArray)> callback);
 
 private:

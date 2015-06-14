@@ -16,8 +16,12 @@ DuvidoApi::DuvidoApi() : QObject(duvido) {
 
 }
 
-QString DuvidoApi::avatar(QString id) {
+QUrl DuvidoApi::avatarUrl(QString id) {
     return apiUrl + "/avatar?id=" + id;
+}
+
+QUrl DuvidoApi::avatarsUrl(QStringList ids) {
+    return apiUrl + "/avatar?id=" + ids.join(",");
 }
 
 void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
