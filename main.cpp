@@ -5,6 +5,7 @@
 #include <QScreen>
 
 #include "duvido.hpp"
+#include "avatarprovider.hpp"
 #include "globalbackdetector.hpp"
 
 #ifdef Q_OS_ANDROID
@@ -24,6 +25,7 @@ int main(int argc, char *argv[]) {
     Duvido d; (void)d;
 
     QQuickView view;
+    view.engine()->addImageProvider("avatar", new AvatarProvider);
     view.rootContext()->setContextProperty("duvido", duvido);
     view.rootContext()->setContextProperty("dp", qMax(1.0, dpi/160));
     view.rootContext()->setContextProperty("window", 0);

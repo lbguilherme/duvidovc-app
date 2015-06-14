@@ -18,7 +18,7 @@ Item {
 
             Image {
                 id: avatarBack
-                source: duvido.api.avatar(duvido.me.id)
+                source: "image://avatar/" + duvido.me.id
                 width: parent.width
                 height: width*sourceSize.height/sourceSize.width
                 anchors.verticalCenter: parent.verticalCenter

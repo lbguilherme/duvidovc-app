@@ -17,8 +17,7 @@ Item {
         Image {
             id: avatar
             anchors.fill: parent
-            source: duvido.api.avatar(root.userId)
-            mipmap: true
+            source: "image://avatar/" + root.userId
         }
 
         Image {
