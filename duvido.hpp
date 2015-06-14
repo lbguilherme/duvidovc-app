@@ -29,6 +29,8 @@ public:
 
     Duvido();
 
+    QNetworkAccessManager& http();
+
     DuvidoApi* api();
 
     Q_INVOKABLE void login();
@@ -55,6 +57,7 @@ private:
     User* _me;
     bool _hasCamera;
     bool _hasGallery;
+    QNetworkAccessManager _http;
 
 #ifdef Q_OS_ANDROID
     vc::duvido::DuvidoActivity _activity;

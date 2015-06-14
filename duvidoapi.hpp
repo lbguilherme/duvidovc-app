@@ -21,12 +21,8 @@ public:
 
 private:
 
-    void apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonObject)> callback);
-    void apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonArray)> callback);
-    void apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QByteArray)> callback);
-
-private:
-
-    QNetworkAccessManager _http;
+    void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonObject)> callback);
+    void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonArray)> callback);
+    void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QByteArray)> callback);
 
 };

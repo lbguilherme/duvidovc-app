@@ -2,6 +2,7 @@
 #include "facebook.hpp"
 #include "user.hpp"
 #include "duvidoeventfilter.hpp"
+#include "avatarloader.hpp"
 #include <QSortFilterProxyModel>
 #include <QGuiApplication>
 
@@ -21,6 +22,8 @@ Duvido::Duvido()
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
+
+    qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
 
     qApp->installEventFilter(new DuvidoEventFilter(qApp));
 
@@ -42,6 +45,10 @@ Duvido::Duvido()
     _hasCamera = false;
     _hasGallery = false;
 #endif
+}
+
+QNetworkAccessManager& Duvido::http() {
+    return _http;
 }
 
 DuvidoApi* Duvido::api() {
