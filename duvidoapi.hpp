@@ -14,9 +14,9 @@ public:
 
     DuvidoApi();
 
-    Q_INVOKABLE void login(QString token, std::function<void(User*)> callback);
-    Q_INVOKABLE QString avatar(QString id);
-    Q_INVOKABLE void friends(QString id, std::function<void(QJsonArray)> callback);
+    void login(QString token, std::function<void(User*)> callback);
+    QString avatar(QString id);
+    void friends(QString id, std::function<void(QJsonArray)> callback);
 
 private:
 

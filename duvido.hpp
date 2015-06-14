@@ -20,7 +20,6 @@ namespace vc { namespace duvido { class FacebookBridge; } }
 class Duvido : public QObject {
     Q_OBJECT
     Q_PROPERTY(User* me READ me NOTIFY meChanged)
-    Q_PROPERTY(DuvidoApi* api READ api CONSTANT)
     Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
 
@@ -30,9 +29,9 @@ public:
 
     Duvido();
 
-    Q_INVOKABLE DuvidoApi* api();
-    Q_INVOKABLE void login();
+    DuvidoApi* api();
 
+    Q_INVOKABLE void login();
     User* me();
     Q_INVOKABLE FriendsModel* friendsModel();
 
