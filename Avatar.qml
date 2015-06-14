@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
+import Duvido 1.0
 
 Item {
     id: root
@@ -17,7 +18,11 @@ Item {
         Image {
             id: avatar
             anchors.fill: parent
-            source: "image://avatar/" + root.userId
+        }
+
+        AvatarLoader {
+            target: avatar
+            userId: root.userId
         }
 
         Image {

@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
+import Duvido 1.0
 import "qrc:/components"
 import "qrc:/singletons"
 import "qrc:/material"
@@ -18,11 +19,15 @@ Item {
 
             Image {
                 id: avatarBack
-                source: "image://avatar/" + duvido.me.id
                 width: parent.width
                 height: width*sourceSize.height/sourceSize.width
                 anchors.verticalCenter: parent.verticalCenter
                 visible: false
+            }
+
+            AvatarLoader {
+                target: avatarBack
+                userId: duvido.me.id
             }
 
             GaussianBlur {
