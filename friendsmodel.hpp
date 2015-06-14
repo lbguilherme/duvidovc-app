@@ -1,6 +1,6 @@
 #pragma once
 
-#include "friend.hpp"
+#include "user.hpp"
 
 #include <QAbstractListModel>
 #include <QSortFilterProxyModel>
@@ -39,7 +39,8 @@ private:
 private:
 
     QString _userId;
-    QList<Friend*> _friends;
+    QList<User*> _friends;
+    QList<bool> _selected;
     QSortFilterProxyModel* _selectedFriends;
 
 };

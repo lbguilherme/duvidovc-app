@@ -17,7 +17,6 @@ SOURCES += \
     user.cpp \
     friendsmodel.cpp \
     duvidoapi.cpp \
-    friend.cpp \
     globalbackdetector.cpp
 
 HEADERS += \
@@ -26,7 +25,6 @@ HEADERS += \
     user.hpp \
     friendsmodel.hpp \
     duvidoapi.hpp \
-    friend.hpp \
     globalbackdetector.hpp
 
 DISTFILES += \
