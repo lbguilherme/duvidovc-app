@@ -26,6 +26,6 @@ private:
 
 private:
 
-    QNetworkAccessManager* _http;
+    QNetworkAccessManager _http;
 
 };

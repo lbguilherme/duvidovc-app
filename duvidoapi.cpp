@@ -12,7 +12,7 @@
 
 const QString DuvidoApi::apiUrl = "http://duvido.vc/api/v0";
 
-DuvidoApi::DuvidoApi() : QObject(duvido), _http(new QNetworkAccessManager(this)) {
+DuvidoApi::DuvidoApi() : QObject(duvido) {
 
 }
 
@@ -65,7 +65,7 @@ void DuvidoApi::apiCall(QString endpoint, QMap<QString, QVariant> args, std::fun
     url.setQuery(query);
     qDebug() << url;
     QNetworkRequest request(url);
-    QNetworkReply* reply = _http->get(request);
+    QNetworkReply* reply = _http.get(request);
     connect(reply, &QNetworkReply::finished, [callback, reply]{
         if (reply->error() != QNetworkReply::NoError)
             (void)0;// Connection error
