@@ -1,7 +1,9 @@
 #include "duvido.hpp"
 #include "facebook.hpp"
 #include "user.hpp"
+#include "duvidoeventfilter.hpp"
 #include <QSortFilterProxyModel>
+#include <QGuiApplication>
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.DuvidoActivity.hpp>
@@ -20,6 +22,8 @@ Duvido::Duvido()
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
+
+    qApp->installEventFilter(new DuvidoEventFilter(qApp));
 
     _facebook = new Facebook(this);
 

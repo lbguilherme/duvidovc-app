@@ -6,7 +6,6 @@
 
 #include "duvido.hpp"
 #include "avatarprovider.hpp"
-#include "globalbackdetector.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
@@ -19,7 +18,6 @@ int main(int argc, char *argv[]) {
 #endif
 
     QGuiApplication app(argc, argv);
-    app.installEventFilter(new GlobalBackDetector(&app));
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
     Duvido d; (void)d;

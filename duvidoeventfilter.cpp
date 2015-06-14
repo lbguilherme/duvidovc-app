@@ -1,10 +1,10 @@
-#include "globalbackdetector.hpp"
+#include "duvidoeventfilter.hpp"
 #include "duvido.hpp"
 
 #include <QEvent>
 #include <QKeyEvent>
 
-bool GlobalBackDetector::eventFilter(QObject* target, QEvent* event) {
+bool DuvidoEventFilter::eventFilter(QObject* target, QEvent* event) {
     if (event->type() == QEvent::KeyPress) {
         QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event);
         if (keyEvent->key() == Qt::Key_Back) {
