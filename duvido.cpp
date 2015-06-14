@@ -30,6 +30,15 @@ Duvido::Duvido()
     });
 
     _facebook->initialize();
+
+#ifdef Q_OS_ANDROID
+    _activity = DuvidoActivity::getInstance();
+    _hasCamera = _activity.hasCamera();
+    _hasGallery = _activity.hasGallery();
+#else
+    _hasCamera = false;
+    _hasGallery = false;
+#endif
 }
 
 DuvidoApi* Duvido::api() {
@@ -57,29 +66,21 @@ void Duvido::setMe(User* me) {
 }
 
 bool Duvido::hasCamera() {
-#ifdef Q_OS_ANDROID
-    return DuvidoActivity::getInstance().hasCamera();
-#else
-    return false;
-#endif
+    return _hasCamera;
 }
 
 bool Duvido::hasGallery() {
-#ifdef Q_OS_ANDROID
-    return DuvidoActivity::getInstance().hasGallery();
-#else
-    return false;
-#endif
+    return _hasGallery;
 }
 
 void Duvido::fetchPhotoFromCamera() {
 #ifdef Q_OS_ANDROID
-    DuvidoActivity::getInstance().fetchPhotoFromCamera();
+    _activity.fetchPhotoFromCamera();
 #endif
 }
 
 void Duvido::fetchPhotoFromGallery() {
 #ifdef Q_OS_ANDROID
-    DuvidoActivity::getInstance().fetchPhotoFromGallery();
+    _activity.fetchPhotoFromGallery();
 #endif
 }

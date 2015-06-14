@@ -11,6 +11,10 @@
 #include <QImage>
 #include <functional>
 
+#ifdef Q_OS_ANDROID
+#include <vc.duvido.DuvidoActivity.hpp>
+#endif
+
 namespace vc { namespace duvido { class FacebookBridge; } }
 
 class Duvido : public QObject {
@@ -50,6 +54,12 @@ private:
     DuvidoApi _api;
     Facebook* _facebook;
     User* _me;
+    bool _hasCamera;
+    bool _hasGallery;
+
+#ifdef Q_OS_ANDROID
+    vc::duvido::DuvidoActivity _activity;
+#endif
 
 };
 
