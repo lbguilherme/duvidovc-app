@@ -6,7 +6,6 @@
 #include <QGuiApplication>
 
 #ifdef Q_OS_ANDROID
-#include <vc.duvido.DuvidoActivity.hpp>
 using namespace vc::duvido;
 #endif
 
