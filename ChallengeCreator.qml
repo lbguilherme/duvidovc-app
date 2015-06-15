@@ -8,8 +8,9 @@ Item {
         icon: "qrc:/artwork/icons/send12.png"
         onClicked: {
             forceActiveFocus();
-            print("send clicked");
-            challenge.verify()
+            if (challenge.verify()) {
+                console.log("send!");
+            }
         }
     }
 

@@ -7,28 +7,22 @@ Card {
     function verify() {
         var error = false;
 
-        var errorMessages = {
-            title: "O titulo do desafio está vazio",
-            friends: "Você não selecionou ninguém para desafiar",
-            reward: "Não há recompensa para este desafio"
-        }
-
         if (!titleInput.text) {
-            titleInput.error = errorMessages.title;
+            titleInput.error = "O titulo do desafio está vazio";
             error = true;
         }
 
-        if (!targets.model.selectedCount) {
-            targets.error = errorMessages.friends;
+        if (!targetsInput.model.selectedCount) {
+            targetsInput.error = "Você não selecionou ninguém para desafiar";
             error = true;
         }
 
         if (!rewardInput.text) {
-            rewardInput.error = errorMessages.reward;
-            error = true
+            rewardInput.error = "Não há recompensa para este desafio";
+            error = true;
         }
 
-        return !error
+        return !error;
     }
 
     CardContentArea {
@@ -75,7 +69,7 @@ Card {
             }
 
             FullWidthFriendsInput {
-                id: targets
+                id: targetsInput
                 emptyLabel: "Desafiados"
                 filledLabel: "Desafiados:"
             }
