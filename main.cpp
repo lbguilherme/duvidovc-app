@@ -1,10 +1,9 @@
-#include <QGuiApplication>
+#include "duvido.hpp"
+
 #include <QQuickView>
 #include <QQmlContext>
 #include <QQmlEngine>
 #include <QScreen>
-
-#include "duvido.hpp"
 
 #ifdef Q_OS_ANDROID
 #include "java/src/java-core.hpp"
@@ -16,10 +15,8 @@ int main(int argc, char *argv[]) {
     java::initialize();
 #endif
 
-    QGuiApplication app(argc, argv);
+    Duvido app(argc, argv);
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
-
-    Duvido d; (void)d;
 
     QQuickView view;
     view.rootContext()->setContextProperty("duvido", duvido);

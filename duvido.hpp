@@ -2,7 +2,7 @@
 
 #include "duvidoapi.hpp"
 
-#include <QObject>
+#include <QGuiApplication>
 #include <QNetworkAccessManager>
 
 #ifdef Q_OS_ANDROID
@@ -12,7 +12,7 @@
 class Facebook;
 class FriendsModel;
 
-class Duvido : public QObject {
+class Duvido : public QGuiApplication {
     Q_OBJECT
     Q_PROPERTY(User* me READ me NOTIFY meChanged)
     Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
@@ -20,7 +20,7 @@ class Duvido : public QObject {
 
 public:
 
-    Duvido();
+    Duvido(int argc, char* argv[]);
 
     QNetworkAccessManager& http();
 

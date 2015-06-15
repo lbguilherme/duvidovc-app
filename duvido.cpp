@@ -6,7 +6,6 @@
 #include "friendsmodel.hpp"
 
 #include <QSortFilterProxyModel>
-#include <QGuiApplication>
 
 #ifdef Q_OS_ANDROID
 using namespace vc::duvido;
@@ -14,8 +13,8 @@ using namespace vc::duvido;
 
 Duvido* duvido;
 
-Duvido::Duvido()
-    : QObject(nullptr)
+Duvido::Duvido(int argc, char *argv[])
+    : QGuiApplication(argc, argv)
     , _me(nullptr)
     #ifdef Q_OS_ANDROID
     , _activity(DuvidoActivity::getInstance())
@@ -31,7 +30,7 @@ Duvido::Duvido()
 
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
 
-    qApp->installEventFilter(new DuvidoEventFilter(qApp));
+    installEventFilter(new DuvidoEventFilter(this));
 
     _facebook = new Facebook(this);
 
