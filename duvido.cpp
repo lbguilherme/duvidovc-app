@@ -7,6 +7,8 @@
 
 #include <QSortFilterProxyModel>
 
+#include <functional>
+
 #ifdef Q_OS_ANDROID
 using namespace vc::duvido;
 #endif
