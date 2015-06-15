@@ -54,6 +54,21 @@ void DuvidoApi::friends(QString id, std::function<void(QList<User*>)> callback) 
     });
 }
 
+void DuvidoApi::createChallenge(QString title, QString description, QString reward, QStringList targets,
+                                unsigned duration, QByteArray image, std::function<void(QString)> callback) {
+    QVariantMap args {
+        {"title", title},
+        {"description", description},
+        {"reward", reward},
+        {"targets", targets.join(",")},
+        {"duration", QString::number(duration)}
+    };
+
+    apiCall("post", "/challenge", args, image, [=](QJsonObject obj){
+        callback(obj["id"].toString());
+    });
+}
+
 void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonArray)> callback) {
     apiCall(method, endpoint, args, data, [=](QByteArray bytes){
         callback(QJsonDocument::fromJson(bytes).array());
