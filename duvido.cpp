@@ -6,6 +6,9 @@
 #include "friendsmodel.hpp"
 
 #include <QSortFilterProxyModel>
+#include <QQmlContext>
+#include <QQmlEngine>
+#include <QScreen>
 
 #include <functional>
 
@@ -29,6 +32,20 @@ Duvido::Duvido()
     Q_ASSERT(!duvido);
     duvido = this;
 
+    initInterfaces();
+    initFacebook();
+    initView();
+
+#ifdef Q_OS_ANDROID
+    _hasCamera = _activity.hasCamera();
+    _hasGallery = _activity.hasGallery();
+#else
+    _hasCamera = false;
+    _hasGallery = false;
+#endif
+}
+
+void Duvido::initInterfaces() {
     qRegisterMetaType<User*>("User");
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");
@@ -37,7 +54,9 @@ Duvido::Duvido()
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
 
     installEventFilter(new DuvidoEventFilter(this));
+}
 
+void Duvido::initFacebook() {
     _facebook = new Facebook(this);
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
@@ -47,14 +66,21 @@ Duvido::Duvido()
     });
 
     _facebook->initialize();
+}
 
-#ifdef Q_OS_ANDROID
-    _hasCamera = _activity.hasCamera();
-    _hasGallery = _activity.hasGallery();
-#else
-    _hasCamera = false;
-    _hasGallery = false;
-#endif
+void Duvido::initView() {
+    auto dpi = screens().at(0)->physicalDotsPerInch();
+
+    QQmlContext* root = _view.rootContext();
+
+    root->setContextProperty("duvido", duvido);
+    root->setContextProperty("dp", qMax(1.0, dpi/160));
+    root->setContextProperty("window", 0);
+    _view.setResizeMode(QQuickView::SizeRootObjectToView);
+    _view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+    _view.show();
+
+    connect(_view.engine(), &QQmlEngine::quit, this, &QCoreApplication::quit);
 }
 
 QNetworkAccessManager& Duvido::http() {

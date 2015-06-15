@@ -4,6 +4,7 @@
 
 #include <QGuiApplication>
 #include <QNetworkAccessManager>
+#include <QQuickView>
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.DuvidoActivity.hpp>
@@ -46,12 +47,19 @@ signals:
 
 private:
 
+    void initInterfaces();
+    void initFacebook();
+    void initView();
+
+private:
+
     DuvidoApi _api;
     Facebook* _facebook;
     User* _me;
     bool _hasCamera;
     bool _hasGallery;
     QNetworkAccessManager _http;
+    QQuickView _view;
 
 #ifdef Q_OS_ANDROID
     vc::duvido::DuvidoActivity _activity;
