@@ -6,6 +6,7 @@ class QString;
 class QVariant;
 class QStringList;
 template <typename A, typename B> class QMap;
+template <typename A> class QList;
 class QByteArray;
 class QJsonArray;
 class QJsonObject;
