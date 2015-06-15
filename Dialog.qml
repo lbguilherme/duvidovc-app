@@ -6,6 +6,7 @@ Item {
     property real shadowOpacity: 0.65
     property bool onCenter: true
     property real surfaceWidth: -1
+    property alias surfaceHeight: surface.height
     property real surfaceX: 0
     property real surfaceY: 0
     property alias spacing: contents.spacing
