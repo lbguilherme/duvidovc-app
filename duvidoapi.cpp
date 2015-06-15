@@ -12,7 +12,7 @@
 
 const QString DuvidoApi::apiUrl = "http://duvido.vc/api/v0";
 
-DuvidoApi::DuvidoApi() : QObject(duvido) {
+DuvidoApi::DuvidoApi() {
 
 }
 
@@ -79,7 +79,7 @@ void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant
     else
         return;
 
-    connect(reply, &QNetworkReply::finished, [callback, reply]{
+    QObject::connect(reply, &QNetworkReply::finished, [callback, reply]{
         if (reply->error() != QNetworkReply::NoError)
             (void)0;// Connection error
 

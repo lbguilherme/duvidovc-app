@@ -5,8 +5,7 @@
 
 class User;
 
-class DuvidoApi : public QObject {
-    Q_OBJECT
+class DuvidoApi {
 
     static const QString apiUrl;
 
