@@ -1,12 +1,19 @@
 #pragma once
 
-#include <functional>
-#include <QNetworkAccessManager>
-
 class User;
+class QUrl;
+class QString;
+class QVariant;
+class QStringList;
+template <typename A, typename B> class QMap;
+class QByteArray;
+class QJsonArray;
+class QJsonObject;
+namespace std {
+template <typename A> class function;
+}
 
-class DuvidoApi : public QObject {
-    Q_OBJECT
+class DuvidoApi {
 
     static const QString apiUrl;
 

@@ -3,7 +3,9 @@
 
 #include <QJsonObject>
 #include <QJsonArray>
+
 #include <algorithm>
+#include <functional>
 
 class SelectedFriendsModel : public QSortFilterProxyModel {
 public:

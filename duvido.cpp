@@ -3,8 +3,14 @@
 #include "user.hpp"
 #include "duvidoeventfilter.hpp"
 #include "avatarloader.hpp"
+#include "friendsmodel.hpp"
+
 #include <QSortFilterProxyModel>
-#include <QGuiApplication>
+#include <QQmlContext>
+#include <QQmlEngine>
+#include <QScreen>
+
+#include <functional>
 
 #ifdef Q_OS_ANDROID
 using namespace vc::duvido;
@@ -12,8 +18,12 @@ using namespace vc::duvido;
 
 Duvido* duvido;
 
+static int argc = 1;
+static char argv0[] = "duvido";
+static char* argv[] = {argv0, 0};
+
 Duvido::Duvido()
-    : QObject(nullptr)
+    : QGuiApplication(argc, argv)
     , _me(nullptr)
     #ifdef Q_OS_ANDROID
     , _activity(DuvidoActivity::getInstance())
@@ -22,24 +32,9 @@ Duvido::Duvido()
     Q_ASSERT(!duvido);
     duvido = this;
 
-    qRegisterMetaType<User*>("User");
-    qRegisterMetaType<FriendsModel*>("FriendsModel");
-    qRegisterMetaType<DuvidoApi*>("DuvidoApi");
-    qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
-
-    qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
-
-    qApp->installEventFilter(new DuvidoEventFilter(qApp));
-
-    _facebook = new Facebook(this);
-
-    connect(_facebook, &Facebook::accessTokenChanged, [this]{
-        _api.login(_facebook->accessToken(), [this](User* me){
-            setMe(me);
-        });
-    });
-
-    _facebook->initialize();
+    initInterfaces();
+    initFacebook();
+    initView();
 
 #ifdef Q_OS_ANDROID
     _hasCamera = _activity.hasCamera();
@@ -50,12 +45,54 @@ Duvido::Duvido()
 #endif
 }
 
+void Duvido::initInterfaces() {
+    qRegisterMetaType<User*>("User");
+    qRegisterMetaType<FriendsModel*>("FriendsModel");
+    qRegisterMetaType<DuvidoApi*>("DuvidoApi");
+    qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
+
+    qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
+
+    installEventFilter(new DuvidoEventFilter(this));
+}
+
+void Duvido::initFacebook() {
+    _facebook = new Facebook(this);
+
+    connect(_facebook, &Facebook::accessTokenChanged, [this]{
+        _api.login(_facebook->accessToken(), [this](User* me){
+            setMe(me);
+        });
+    });
+
+    _facebook->initialize();
+}
+
+void Duvido::initView() {
+    auto dpi = screens().at(0)->physicalDotsPerInch();
+
+    QQmlContext* root = _view.rootContext();
+
+    root->setContextProperty("duvido", duvido);
+    root->setContextProperty("dp", qMax(1.0, dpi/160));
+    root->setContextProperty("window", 0);
+    _view.setResizeMode(QQuickView::SizeRootObjectToView);
+    _view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+    _view.show();
+
+    connect(_view.engine(), &QQmlEngine::quit, this, &QCoreApplication::quit);
+}
+
 QNetworkAccessManager& Duvido::http() {
     return _http;
 }
 
 DuvidoApi* Duvido::api() {
     return &_api;
+}
+
+Facebook* Duvido::facebook() {
+    return _facebook;
 }
 
 void Duvido::login() {
