@@ -30,16 +30,16 @@ public:
     DuvidoApi* api();
     Facebook* facebook();
 
-    Q_INVOKABLE void login();
     User* me();
-    Q_INVOKABLE FriendsModel* friendsModel();
-
     bool hasCamera();
     bool hasGallery();
-    Q_INVOKABLE void fetchPhotoFromGallery();
-    Q_INVOKABLE void fetchPhotoFromCamera();
 
     void setMe(User* me);
+
+    Q_INVOKABLE void login();
+    Q_INVOKABLE FriendsModel* friendsModel();
+    Q_INVOKABLE void fetchPhotoFromGallery();
+    Q_INVOKABLE void fetchPhotoFromCamera();
 
 signals:
 
