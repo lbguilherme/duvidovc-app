@@ -3,6 +3,34 @@ import QtGraphicalEffects 1.0
 import "qrc:/material"
 
 Card {
+
+    function verify() {
+        var error = false;
+
+        var errorMessages = {
+            title: "O titulo do desafio está vazio",
+            friends: "Você não selecionou ninguém para desafiar",
+            reward: "Não há recompensa para este desafio"
+        }
+
+        if (!titleInput.text) {
+            titleInput.error = errorMessages.title;
+            error = true;
+        }
+
+        if (!targets.model.selectedCount) {
+            targets.error = errorMessages.friends;
+            error = true;
+        }
+
+        if (!rewardInput.text) {
+            rewardInput.error = errorMessages.reward;
+            error = true
+        }
+
+        return !error
+    }
+
     CardContentArea {
         spacing: 3*dp
         verticalMargin: 10*dp
@@ -39,6 +67,7 @@ Card {
             horizontalMargin: 5*dp
 
             TextField {
+                id: titleInput
                 label: "Título"
                 width: parent.width
                 alignment: Text.AlignHCenter
@@ -129,6 +158,7 @@ Card {
             spacing: 14*dp
 
             TextField {
+                id: rewardInput
                 label: "Recompensa"
                 width: parent.width - timePicker.width - parent.spacing
                 fontSize: 14*dp

@@ -9,6 +9,7 @@ Item {
         onClicked: {
             forceActiveFocus();
             print("send clicked");
+            challenge.verify()
         }
     }
 
@@ -16,7 +17,7 @@ Item {
         anchors.fill: parent
 
         EditableChallenge {
-
+            id: challenge
         }
     }
 }

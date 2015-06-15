@@ -9,6 +9,7 @@ Item {
     property var model: duvido.friendsModel()
     property string emptyLabel: ""
     property string filledLabel: ""
+    property string error: ""
 
     Text {
         id: label
@@ -36,6 +37,7 @@ Item {
             forceActiveFocus();
             window.dialogSource = "qrc:/frags/FriendsSelector.qml";
             window.dialog.friendsModel = root.model;
+            parent.error = ""
         }
     }
 
@@ -43,9 +45,17 @@ Item {
         id: editableLine
         width: parent.width
         height: Math.ceil(2*dp)
-        color: "#ddd"
+        color: error == "" ? "#ddd" : "#DD2C00"
         y: root.height + 4*dp
+    }
 
+    Text {
+        id: errorLabel
+        font.pixelSize: 12*dp
+        color: "#DD2C00"
+        text: error
+        visible: error
+        y: editableLine.y + 4*dp
     }
 
     Component {
