@@ -9,18 +9,18 @@ using namespace vc::duvido;
 using namespace com::facebook;
 
 void FacebookBridge::onLoginSuccess() {
-    emit ::duvido->_facebook->javaCallbackLoginSuccess();
+    emit ::duvido->facebook()->javaCallbackLoginSuccess();
 }
 
 void FacebookBridge::onLoginError() {
-    emit ::duvido->_facebook->javaCallbackLoginError();
+    emit ::duvido->facebook()->javaCallbackLoginError();
 }
 
 void FacebookBridge::onLoginCancel() {
-    emit ::duvido->_facebook->javaCallbackLoginCancel();
+    emit ::duvido->facebook()->javaCallbackLoginCancel();
 }
 
 void FacebookBridge::onAccessTokenReceived(const AccessToken& token) {
     if (token.isNull()) return;
-    emit ::duvido->_facebook->javaCallbackAccessToken(token.getToken());
+    emit ::duvido->facebook()->javaCallbackAccessToken(token.getToken());
 }

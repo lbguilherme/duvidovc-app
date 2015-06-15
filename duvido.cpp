@@ -58,6 +58,10 @@ DuvidoApi* Duvido::api() {
     return &_api;
 }
 
+Facebook* Duvido::facebook() {
+    return _facebook;
+}
+
 void Duvido::login() {
     _facebook->login();
 }

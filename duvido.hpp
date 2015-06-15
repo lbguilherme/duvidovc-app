@@ -15,15 +15,11 @@
 #include <vc.duvido.DuvidoActivity.hpp>
 #endif
 
-namespace vc { namespace duvido { class FacebookBridge; } }
-
 class Duvido : public QObject {
     Q_OBJECT
     Q_PROPERTY(User* me READ me NOTIFY meChanged)
     Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
-
-    friend class vc::duvido::FacebookBridge;
 
 public:
 
@@ -32,6 +28,7 @@ public:
     QNetworkAccessManager& http();
 
     DuvidoApi* api();
+    Facebook* facebook();
 
     Q_INVOKABLE void login();
     User* me();
