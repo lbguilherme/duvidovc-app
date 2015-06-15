@@ -24,7 +24,7 @@ public:
     void login(QString token, std::function<void(User*)> callback);
     QUrl avatarUrl(QString id);
     QUrl avatarsUrl(QStringList ids);
-    void friends(QString id, std::function<void(QJsonArray)> callback);
+    void friends(QString id, std::function<void(QList<User*>)> callback);
 
 private:
 

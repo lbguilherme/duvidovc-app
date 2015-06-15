@@ -41,14 +41,12 @@ void FriendsModel::refresh(QString userId) {
     _selected.clear();
     endRemoveRows();
 
-    duvido->api()->friends(_userId, [this, userId](QJsonArray resp){
+    duvido->api()->friends(_userId, [this, userId](QList<User*> friends){
         if (_userId != userId) return;
-        beginInsertRows(QModelIndex(), 0, resp.count()-1);
-        for (QJsonValue el : resp) {
-            QJsonObject obj = el.toObject();
-            _friends.append(new User(obj["id"].toString(), obj["name"].toString()));
+        beginInsertRows(QModelIndex(), 0, friends.size()-1);
+        _friends = friends;
+        for (int i = 0; i < friends.size(); ++i)
             _selected.append(false);
-        }
         endInsertRows();
     });
 }
