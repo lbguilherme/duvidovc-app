@@ -11,6 +11,7 @@
         <file>EditableChallenge.qml</file>
         <file>RemoveButton.qml</file>
         <file>TimePicker.qml</file>
+        <file>OptionsButton.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
@@ -21,6 +22,7 @@
         <file>FriendsSelector.qml</file>
         <file>NavigationDrawerContent.qml</file>
         <file>Feed.qml</file>
+        <file>OptionsDialog.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>

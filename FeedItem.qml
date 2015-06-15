@@ -3,10 +3,33 @@ import QtGraphicalEffects 1.0
 import "qrc:/material"
 
 Card {
+    id: card
+
+    Item {
+        OptionsButton {
+            x: card.width - width
+            model: ListModel {
+                ListElement {
+                    name: "Redesafiar"
+                }
+
+                ListElement {
+                    name: "Denunciar"
+                }
+
+                ListElement {
+                    name: "qualquer coisar"
+                }
+            }
+        }
+    }
+
     CardContentArea {
         spacing: 3*dp
         verticalMargin: 10*dp
         horizontalMargin: 10*dp
+
+
 
         Row {
             width: parent.width
@@ -27,6 +50,7 @@ Card {
                 font.pixelSize: 14*dp
                 anchors.verticalCenter: senderAvatar.verticalCenter
             }
+
         }
 
         Text {

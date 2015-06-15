@@ -7,12 +7,15 @@ Item {
     property alias spacing: list.spacing
     property alias model: list.model
     property alias delegate: list.delegate
+    property real topMargin: spacing
+    property real bottomMargin: spacing
+    property real count: list.count
 
     ListView {
         id: list
         anchors.fill: parent
-        topMargin: spacing
-        bottomMargin: spacing
+        topMargin: parent.topMargin
+        bottomMargin: parent.bottomMargin
         pixelAligned: true
         maximumFlickVelocity: 8000*dp
         flickDeceleration: 2000*dp
