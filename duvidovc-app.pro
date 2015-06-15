@@ -18,7 +18,8 @@ SOURCES += \
     friendsmodel.cpp \
     duvidoapi.cpp \
     duvidoeventfilter.cpp \
-    avatarloader.cpp
+    avatarloader.cpp \
+    challengecreationinfo.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -27,7 +28,8 @@ HEADERS += \
     friendsmodel.hpp \
     duvidoapi.hpp \
     duvidoeventfilter.hpp \
-    avatarloader.hpp
+    avatarloader.hpp \
+    challengecreationinfo.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
