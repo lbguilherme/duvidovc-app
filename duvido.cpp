@@ -13,8 +13,12 @@ using namespace vc::duvido;
 Duvido* duvido;
 
 Duvido::Duvido()
-    : QObject(nullptr), _me(nullptr) {
-
+    : QObject(nullptr)
+    , _me(nullptr)
+    #ifdef Q_OS_ANDROID
+    , _activity(DuvidoActivity::getInstance())
+    #endif
+{
     Q_ASSERT(!duvido);
     duvido = this;
 
@@ -38,7 +42,6 @@ Duvido::Duvido()
     _facebook->initialize();
 
 #ifdef Q_OS_ANDROID
-    _activity = DuvidoActivity::getInstance();
     _hasCamera = _activity.hasCamera();
     _hasGallery = _activity.hasGallery();
 #else
