@@ -23,6 +23,7 @@
         <file>NavigationDrawerContent.qml</file>
         <file>Feed.qml</file>
         <file>OptionsDialog.qml</file>
+        <file>ComplaintDialog.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>
