@@ -76,6 +76,8 @@ void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant
         reply = duvido->http().get(request);
     else if (method == "post")
         reply = duvido->http().post(request, data);
+    else
+        return;
 
     connect(reply, &QNetworkReply::finished, [callback, reply]{
         if (reply->error() != QNetworkReply::NoError)
