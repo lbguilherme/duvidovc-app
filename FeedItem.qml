@@ -11,14 +11,17 @@ Card {
             model: ListModel {
                 ListElement {
                     name: "Redesafiar"
+                    action: ""
                 }
 
                 ListElement {
                     name: "Denunciar"
+                    action: "qrc:/frags/ComplaintDialog.qml"
                 }
 
                 ListElement {
                     name: "qualquer coisar"
+                    action: ""
                 }
             }
         }
