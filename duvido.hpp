@@ -20,7 +20,7 @@ class Duvido : public QGuiApplication {
 
 public:
 
-    Duvido(int argc, char* argv[]);
+    Duvido();
 
     QNetworkAccessManager& http();
 

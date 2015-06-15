@@ -15,7 +15,11 @@ using namespace vc::duvido;
 
 Duvido* duvido;
 
-Duvido::Duvido(int argc, char *argv[])
+static int argc = 1;
+static char argv0[] = "duvido";
+static char* argv[] = {argv0, 0};
+
+Duvido::Duvido()
     : QGuiApplication(argc, argv)
     , _me(nullptr)
     #ifdef Q_OS_ANDROID

@@ -10,12 +10,12 @@
 #endif
 
 __attribute__((visibility("default")))
-int main(int argc, char *argv[]) {
+int main() {
 #ifdef Q_OS_ANDROID
     java::initialize();
 #endif
 
-    Duvido app(argc, argv);
+    Duvido app;
     auto dpi = app.screens().at(0)->physicalDotsPerInch();
 
     QQuickView view;
