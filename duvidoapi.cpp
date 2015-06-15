@@ -43,8 +43,30 @@ void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
     });
 }
 
-void DuvidoApi::friends(QString id, std::function<void(QJsonArray)> callback) {
-    apiCall("get", "/friends", QVariantMap{{"id", id}}, {}, callback);
+void DuvidoApi::friends(QString id, std::function<void(QList<User*>)> callback) {
+    apiCall("get", "/friends", QVariantMap{{"id", id}}, {}, [=](QJsonArray array){
+        QList<User*> friends;
+        for (QJsonValue el : array) {
+            QJsonObject obj = el.toObject();
+            friends.append(new User(obj["id"].toString(), obj["name"].toString()));
+        }
+        callback(friends);
+    });
+}
+
+void DuvidoApi::createChallenge(QString title, QString description, QString reward, QStringList targets,
+                                unsigned duration, QByteArray image, std::function<void(QString)> callback) {
+    QVariantMap args {
+        {"title", title},
+        {"description", description},
+        {"reward", reward},
+        {"targets", targets.join(",")},
+        {"duration", QString::number(duration)}
+    };
+
+    apiCall("post", "/challenge", args, image, [=](QJsonObject obj){
+        callback(obj["id"].toString());
+    });
 }
 
 void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonArray)> callback) {

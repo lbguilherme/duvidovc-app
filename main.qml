@@ -13,28 +13,23 @@ Item {
     property Item dialog: dialogLoader.item
     property alias dialogSource: dialogLoader.source
 
-    Item {
-        id: root
+    Rectangle {
+        anchors.fill: parent
+        color: "#0f6464"
+    }
+
+    Loader {
+        id: fragLoader
         anchors.fill: parent
 
-        Rectangle {
-            anchors.fill: parent
-            color: "#0f6464"
-        }
+        source: duvido.me
+            ? "qrc:/scenes/MainScene.qml"
+            : "qrc:/scenes/LoginScene.qml"
+    }
 
-        Loader {
-            id: fragLoader
-            anchors.fill: parent
-
-            source: duvido.me
-                ? "qrc:/scenes/MainScene.qml"
-                : "qrc:/scenes/LoginScene.qml"
-        }
-
-        Loader {
-            id: dialogLoader
-            anchors.fill: parent
-        }
+    Loader {
+        id: dialogLoader
+        anchors.fill: parent
     }
 
     property bool canBack: dialog || StackManager.canGoBack

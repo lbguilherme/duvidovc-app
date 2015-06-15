@@ -10,7 +10,7 @@ Dialog {
     property OptionsButton optionsButton
     surfaceWidth: 156*dp
     surfaceX: optionsButton ? optionsButton.mapToItem(optionsDialog, 0, 0).x + optionsButton.width - surfaceWidth-4*dp : 0
-    surfaceY: optionsButton ? optionsButton.mapToItem(optionsDialog, 0, 0).y+optionsButton.height : 0
+    surfaceY: optionsButton ? Math.min(optionsButton.mapToItem(optionsDialog, 0, 0).y + optionsButton.height, window.height - surfaceHeight - 4*dp) : 0
 
     Item {
         height: optionsList.count*48*dp + 16*dp
