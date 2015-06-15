@@ -5,7 +5,7 @@
 
 class FriendsModel;
 
-class ChallengeCreationInfo : public QObject {
+class ChallengeCreator : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
     Q_PROPERTY(QString description READ description WRITE setDescription NOTIFY descriptionChanged)
@@ -16,7 +16,7 @@ class ChallengeCreationInfo : public QObject {
 
 public:
 
-    ChallengeCreationInfo(QObject* parent = nullptr);
+    ChallengeCreator(QObject* parent = nullptr);
 
     QString title() const;
     void setTitle(const QString &title);
@@ -36,6 +36,8 @@ public:
     QUrl image() const;
     void setImage(const QUrl &image);
 
+    Q_INVOKABLE void submit();
+
 signals:
 
     void titleChanged();
@@ -44,6 +46,7 @@ signals:
     void targetsChanged();
     void durationChanged();
     void imageChanged();
+    void submited();
 
 private:
 

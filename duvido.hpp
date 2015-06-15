@@ -12,7 +12,6 @@
 
 class Facebook;
 class FriendsModel;
-class ChallengeCreationInfo;
 
 class Duvido : public QGuiApplication {
     Q_OBJECT
@@ -39,7 +38,6 @@ public:
     Q_INVOKABLE FriendsModel* friendsModel();
     Q_INVOKABLE void fetchPhotoFromGallery();
     Q_INVOKABLE void fetchPhotoFromCamera();
-    Q_INVOKABLE void createChallenge(ChallengeCreationInfo* info);
 
 signals:
 

@@ -4,7 +4,7 @@
 #include "duvidoeventfilter.hpp"
 #include "avatarloader.hpp"
 #include "friendsmodel.hpp"
-#include "challengecreationinfo.hpp"
+#include "challengecreator.hpp"
 
 #include <QSortFilterProxyModel>
 #include <QQmlContext>
@@ -53,7 +53,7 @@ void Duvido::initInterfaces() {
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
 
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
-    qmlRegisterType<ChallengeCreationInfo>("Duvido", 1, 0, "ChallengeCreationInfo");
+    qmlRegisterType<ChallengeCreator>("Duvido", 1, 0, "ChallengeCreator");
 
     installEventFilter(new DuvidoEventFilter(this));
 }
@@ -135,8 +135,4 @@ void Duvido::fetchPhotoFromGallery() {
 #ifdef Q_OS_ANDROID
     _activity.fetchPhotoFromGallery();
 #endif
-}
-
-void Duvido::createChallenge(ChallengeCreationInfo* info) {
-
 }

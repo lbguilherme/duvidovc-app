@@ -19,7 +19,7 @@ SOURCES += \
     duvidoapi.cpp \
     duvidoeventfilter.cpp \
     avatarloader.cpp \
-    challengecreationinfo.cpp
+    challengecreator.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -29,7 +29,7 @@ HEADERS += \
     duvidoapi.hpp \
     duvidoeventfilter.hpp \
     avatarloader.hpp \
-    challengecreationinfo.hpp
+    challengecreator.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
