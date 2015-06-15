@@ -1,18 +1,24 @@
 #include "duvido.hpp"
 #include "facebook.hpp"
 #include "user.hpp"
+#include "duvidoeventfilter.hpp"
+#include "avatarloader.hpp"
 #include <QSortFilterProxyModel>
+#include <QGuiApplication>
 
 #ifdef Q_OS_ANDROID
-#include <vc.duvido.DuvidoActivity.hpp>
 using namespace vc::duvido;
 #endif
 
 Duvido* duvido;
 
 Duvido::Duvido()
-    : QObject(nullptr), _me(nullptr) {
-
+    : QObject(nullptr)
+    , _me(nullptr)
+    #ifdef Q_OS_ANDROID
+    , _activity(DuvidoActivity::getInstance())
+    #endif
+{
     Q_ASSERT(!duvido);
     duvido = this;
 
@@ -20,6 +26,10 @@ Duvido::Duvido()
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<DuvidoApi*>("DuvidoApi");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
+
+    qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
+
+    qApp->installEventFilter(new DuvidoEventFilter(qApp));
 
     _facebook = new Facebook(this);
 
@@ -30,6 +40,18 @@ Duvido::Duvido()
     });
 
     _facebook->initialize();
+
+#ifdef Q_OS_ANDROID
+    _hasCamera = _activity.hasCamera();
+    _hasGallery = _activity.hasGallery();
+#else
+    _hasCamera = false;
+    _hasGallery = false;
+#endif
+}
+
+QNetworkAccessManager& Duvido::http() {
+    return _http;
 }
 
 DuvidoApi* Duvido::api() {
@@ -57,29 +79,21 @@ void Duvido::setMe(User* me) {
 }
 
 bool Duvido::hasCamera() {
-#ifdef Q_OS_ANDROID
-    return DuvidoActivity::getInstance().hasCamera();
-#else
-    return false;
-#endif
+    return _hasCamera;
 }
 
 bool Duvido::hasGallery() {
-#ifdef Q_OS_ANDROID
-    return DuvidoActivity::getInstance().hasGallery();
-#else
-    return false;
-#endif
+    return _hasGallery;
 }
 
 void Duvido::fetchPhotoFromCamera() {
 #ifdef Q_OS_ANDROID
-    DuvidoActivity::getInstance().fetchPhotoFromCamera();
+    _activity.fetchPhotoFromCamera();
 #endif
 }
 
 void Duvido::fetchPhotoFromGallery() {
 #ifdef Q_OS_ANDROID
-    DuvidoActivity::getInstance().fetchPhotoFromGallery();
+    _activity.fetchPhotoFromGallery();
 #endif
 }

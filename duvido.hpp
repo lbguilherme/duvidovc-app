@@ -11,12 +11,15 @@
 #include <QImage>
 #include <functional>
 
+#ifdef Q_OS_ANDROID
+#include <vc.duvido.DuvidoActivity.hpp>
+#endif
+
 namespace vc { namespace duvido { class FacebookBridge; } }
 
 class Duvido : public QObject {
     Q_OBJECT
     Q_PROPERTY(User* me READ me NOTIFY meChanged)
-    Q_PROPERTY(DuvidoApi* api READ api CONSTANT)
     Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
 
@@ -26,9 +29,11 @@ public:
 
     Duvido();
 
-    Q_INVOKABLE DuvidoApi* api();
-    Q_INVOKABLE void login();
+    QNetworkAccessManager& http();
 
+    DuvidoApi* api();
+
+    Q_INVOKABLE void login();
     User* me();
     Q_INVOKABLE FriendsModel* friendsModel();
 
@@ -50,6 +55,13 @@ private:
     DuvidoApi _api;
     Facebook* _facebook;
     User* _me;
+    bool _hasCamera;
+    bool _hasGallery;
+    QNetworkAccessManager _http;
+
+#ifdef Q_OS_ANDROID
+    vc::duvido::DuvidoActivity _activity;
+#endif
 
 };
 

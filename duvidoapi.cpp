@@ -12,12 +12,16 @@
 
 const QString DuvidoApi::apiUrl = "http://duvido.vc/api/v0";
 
-DuvidoApi::DuvidoApi() : QObject(duvido), _http(new QNetworkAccessManager(this)) {
+DuvidoApi::DuvidoApi() : QObject(duvido) {
 
 }
 
-QString DuvidoApi::avatar(QString id) {
+QUrl DuvidoApi::avatarUrl(QString id) {
     return apiUrl + "/avatar?id=" + id;
+}
+
+QUrl DuvidoApi::avatarsUrl(QStringList ids) {
+    return apiUrl + "/avatar?id=" + ids.join(",");
 }
 
 void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
@@ -27,7 +31,7 @@ void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
     if (!id.isEmpty()) {
         callback(new User(id, name));
     }
-    apiCall("/login", QVariantMap{{"token", token}}, [this, callback](QJsonObject resp){
+    apiCall("post", "/login", QVariantMap{{"token", token}}, {}, [this, callback](QJsonObject resp){
         QString id = resp["id"].toString();
         QString name = resp["name"].toString();
         QSettings settings;
@@ -39,22 +43,22 @@ void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
 }
 
 void DuvidoApi::friends(QString id, std::function<void(QJsonArray)> callback) {
-    apiCall("/friends", QVariantMap{{"id", id}}, callback);
+    apiCall("get", "/friends", QVariantMap{{"id", id}}, {}, callback);
 }
 
-void DuvidoApi::apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonArray)> callback) {
-    apiCall(endpoint, args, [=](QByteArray bytes){
+void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonArray)> callback) {
+    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
         callback(QJsonDocument::fromJson(bytes).array());
     });
 }
 
-void DuvidoApi::apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QJsonObject)> callback) {
-    apiCall(endpoint, args, [=](QByteArray bytes){
+void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonObject)> callback) {
+    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
         callback(QJsonDocument::fromJson(bytes).object());
     });
 }
 
-void DuvidoApi::apiCall(QString endpoint, QMap<QString, QVariant> args, std::function<void(QByteArray)> callback) {
+void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QByteArray)> callback) {
     QUrlQuery query;
     for (auto key : args.keys()) {
         query.addQueryItem(key, args[key].toString());
@@ -65,7 +69,16 @@ void DuvidoApi::apiCall(QString endpoint, QMap<QString, QVariant> args, std::fun
     url.setQuery(query);
     qDebug() << url;
     QNetworkRequest request(url);
-    QNetworkReply* reply = _http->get(request);
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/octet-stream");
+    QNetworkReply* reply;
+
+    if (method == "get")
+        reply = duvido->http().get(request);
+    else if (method == "post")
+        reply = duvido->http().post(request, data);
+    else
+        return;
+
     connect(reply, &QNetworkReply::finished, [callback, reply]{
         if (reply->error() != QNetworkReply::NoError)
             (void)0;// Connection error

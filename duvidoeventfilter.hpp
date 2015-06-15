@@ -2,7 +2,7 @@
 
 #include <QObject>
 
-class GlobalBackDetector : public QObject {
+class DuvidoEventFilter : public QObject {
     Q_OBJECT
 
 public:
