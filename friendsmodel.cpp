@@ -14,8 +14,7 @@ public:
 
 protected:
 
-    bool filterAcceptsRow(int row, const QModelIndex& parent) const {
-        (void)parent;
+    bool filterAcceptsRow(int row, const QModelIndex&) const {
         auto index = sourceModel()->index(row, 0);
         return sourceModel()->data(index, filterRole()).toBool();
     }
@@ -54,7 +53,6 @@ void FriendsModel::refresh(QString userId) {
 QSortFilterProxyModel* FriendsModel::selectedFriends() const {
     return _selectedFriends;
 }
-
 
 QHash<int, QByteArray> FriendsModel::roleNames() const {
     QHash<int, QByteArray> roles;
