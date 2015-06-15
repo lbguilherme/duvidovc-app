@@ -1,17 +1,26 @@
 import QtQuick 2.4
 
 Item {
+    id: textField
     height: editableLine.height + editableLine.y
     property real fontSize: 18*dp
     property string label: ""
     property int alignment: Text.AlignLeft
+    property real maxHeight: -1
 
-    TextInput {
-        id: editableInput
+    Scrollable {
+        id: scrollable
         width: parent.width
-        font.pixelSize: parent.fontSize
-        horizontalAlignment: parent.alignment
-        wrapMode: TextInput.Wrap
+        height: parent.maxHeight == -1 ? contentHeight: Math.min(contentHeight, maxHeight)
+        spacing: 0
+
+        TextInput {
+            id: editableInput
+            width: textField.width
+            font.pixelSize: textField.fontSize
+            horizontalAlignment: textField.alignment
+            wrapMode: TextInput.Wrap
+        }
     }
 
     Text {
@@ -29,7 +38,7 @@ Item {
         width: parent.width
         height: Math.ceil(2*dp)
         color: editableInput.focus ? "#0f6464" : "#ddd"
-        y: editableInput.height + 4*dp
+        y: scrollable.height + 4*dp
 
     }
 }

@@ -6,8 +6,10 @@ Item {
     property bool goingDown: false
     property alias spacing: items.spacing
     default property alias data: items.data
+    property alias contentHeight: flickable.contentHeight
 
     Flickable {
+        id: flickable
         anchors.fill: parent
         topMargin: items.spacing
         bottomMargin: items.spacing
