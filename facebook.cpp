@@ -5,7 +5,6 @@
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.FacebookBridge.hpp>
-
 using namespace vc::duvido;
 #endif
 

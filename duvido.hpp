@@ -1,19 +1,16 @@
 #pragma once
 
-#include "user.hpp"
-#include "friendsmodel.hpp"
-#include "facebook.hpp"
 #include "duvidoapi.hpp"
 
 #include <QObject>
-#include <QMap>
 #include <QNetworkAccessManager>
-#include <QImage>
-#include <functional>
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.DuvidoActivity.hpp>
 #endif
+
+class Facebook;
+class FriendsModel;
 
 class Duvido : public QObject {
     Q_OBJECT

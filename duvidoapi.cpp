@@ -9,6 +9,7 @@
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QSettings>
+#include <functional>
 
 const QString DuvidoApi::apiUrl = "http://duvido.vc/api/v0";
 

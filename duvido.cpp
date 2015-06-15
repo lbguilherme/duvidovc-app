@@ -3,6 +3,8 @@
 #include "user.hpp"
 #include "duvidoeventfilter.hpp"
 #include "avatarloader.hpp"
+#include "friendsmodel.hpp"
+
 #include <QSortFilterProxyModel>
 #include <QGuiApplication>
 

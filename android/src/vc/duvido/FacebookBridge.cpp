@@ -2,8 +2,7 @@
 #include <com.facebook.AccessToken.hpp>
 #include <java.lang.String.hpp>
 #include <duvido.hpp>
-
-#include <QDebug>
+#include <facebook.hpp>
 
 using namespace vc::duvido;
 using namespace com::facebook;

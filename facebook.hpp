@@ -2,8 +2,6 @@
 
 #include <QString>
 #include <QObject>
-#include <QNetworkAccessManager>
-#include <functional>
 
 class QUrlQuery;
 
