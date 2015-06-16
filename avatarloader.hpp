@@ -2,6 +2,7 @@
 
 #include <QObject>
 
+class QTimer;
 class QQuickItem;
 
 class AvatarLoader : public QObject {
@@ -21,11 +22,11 @@ public:
 
 private:
 
-    void fetch();
-    void setTargetSource();
-    QString cacheFilePath();
+    void clearTargetSource();
+    void refreshTargetSource();
 
     QString _userId;
     QQuickItem* _target;
 
+    static QTimer* sTimer;
 };
