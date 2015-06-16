@@ -4,8 +4,9 @@
 #include <QNetworkRequest>
 #include <QNetworkReply>
 #include <QDir>
+#include <QQuickItem>
 
-AvatarLoader::AvatarLoader(QObject* parent) : QObject(parent) {
+AvatarLoader::AvatarLoader(QObject* parent) : QObject(parent), _target(nullptr) {
 
 }
 

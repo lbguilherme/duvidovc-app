@@ -10,6 +10,8 @@
 #include <QQmlContext>
 #include <QQmlEngine>
 #include <QScreen>
+#include <QGuiApplication>
+#include <QtQml>
 
 #include <functional>
 

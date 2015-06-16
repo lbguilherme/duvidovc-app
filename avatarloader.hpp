@@ -1,8 +1,8 @@
 #pragma once
 
 #include <QObject>
-#include <QQuickItem>
-#include <QNetworkAccessManager>
+
+class QQuickItem;
 
 class AvatarLoader : public QObject {
     Q_OBJECT
@@ -11,7 +11,7 @@ class AvatarLoader : public QObject {
 
 public:
 
-    AvatarLoader(QObject* parent = 0);
+    AvatarLoader(QObject* parent = nullptr);
 
     QString userId() const;
     void setUserId(const QString& userId);
@@ -26,6 +26,6 @@ private:
     QString cacheFilePath();
 
     QString _userId;
-    QQuickItem* _target = nullptr;
+    QQuickItem* _target;
 
 };
