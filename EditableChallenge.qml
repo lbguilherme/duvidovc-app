@@ -3,6 +3,12 @@ import QtGraphicalEffects 1.0
 import "qrc:/material"
 
 Card {
+    property string title: titleInput.text
+    property string description: descriptionInput.text
+    property string reward: rewardInput.text
+    property var targets: targetsInput.model
+    property int duration: 100
+    property string image: coverImg.source
 
     function verify() {
         var error = false;
@@ -142,6 +148,7 @@ Card {
         horizontalMargin: 15*dp
 
         TextField {
+            id: descriptionInput
             label: "Descrição do desafio"
             width: parent.width
             fontSize: 16*dp

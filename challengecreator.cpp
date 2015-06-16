@@ -67,5 +67,5 @@ void ChallengeCreator::setImage(const QUrl& image) {
 }
 
 void ChallengeCreator::submit() {
-
+    emit submitted();
 }
