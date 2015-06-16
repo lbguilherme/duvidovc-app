@@ -40,6 +40,7 @@ DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.properties \
     android/gradlew \
     .gitignore \
+    .gitattributes \
     Readme.md \
     design.dot \
     android/res/values/strings.xml \
