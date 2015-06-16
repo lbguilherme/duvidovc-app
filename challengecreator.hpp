@@ -46,7 +46,7 @@ signals:
     void targetsChanged();
     void durationChanged();
     void imageChanged();
-    void submited();
+    void submitted();
 
 private:
 
