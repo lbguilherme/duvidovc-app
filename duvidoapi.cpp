@@ -22,7 +22,7 @@ QUrl DuvidoApi::avatarUrl(QString id) {
 }
 
 QUrl DuvidoApi::avatarsUrl(QStringList ids) {
-    return apiUrl + "/avatar?id=" + ids.join(",");
+    return apiUrl + "/avatars?id=" + ids.join(",");
 }
 
 void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
