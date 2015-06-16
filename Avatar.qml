@@ -28,7 +28,7 @@ Item {
         Image {
             anchors.fill: parent
             source: "qrc:/artwork/avatar-placeholder.png"
-            visible: avatar.status !== Image.Ready
+            visible: avatar.status !== Image.Ready || !avatar.source
         }
     }
 
