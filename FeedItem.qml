@@ -18,11 +18,6 @@ Card {
                     name: "Denunciar"
                     action: "qrc:/frags/ComplaintDialog.qml"
                 }
-
-                ListElement {
-                    name: "qualquer coisar"
-                    action: ""
-                }
             }
         }
     }
@@ -31,8 +26,6 @@ Card {
         spacing: 3*dp
         verticalMargin: 10*dp
         horizontalMargin: 10*dp
-
-
 
         Row {
             width: parent.width
