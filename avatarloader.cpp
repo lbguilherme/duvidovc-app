@@ -57,25 +57,15 @@ namespace {
         reply->getChar(&b3);
         const uint32_t size = (static_cast<uint8_t>(b0) << 24) | (static_cast<uint8_t>(b1) << 16) | (static_cast<uint8_t>(b2) << 8) | static_cast<uint8_t>(b3);
 
-        char* buffer = new char[size];
-        try {
-            reply->read(buffer, size);
+        QFile imageFile(retrieveAvatarImageFilePath(userId));
+        imageFile.open(QIODevice::WriteOnly);
+        imageFile.write(reply->read(size));
+        imageFile.close();
 
-            QFile imageFile(retrieveAvatarImageFilePath(userId));
-            imageFile.open(QIODevice::WriteOnly);
-            imageFile.write(buffer, size);
-            imageFile.close();
-
-            QFile dateFile(retrieveAvatarDateFilePath(userId));
-            dateFile.open(QIODevice::WriteOnly);
-            dateFile.write(QString::number(QDateTime::currentMSecsSinceEpoch()).toLatin1());
-            dateFile.close();
-
-            delete[] buffer;
-        } catch (...) {
-            delete[] buffer;
-            throw;
-        }
+        QFile dateFile(retrieveAvatarDateFilePath(userId));
+        dateFile.open(QIODevice::WriteOnly);
+        dateFile.write(QString::number(QDateTime::currentMSecsSinceEpoch()).toUtf8());
+        dateFile.close();
     }
 
     QTimer* createTimer() {
