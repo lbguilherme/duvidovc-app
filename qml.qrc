@@ -12,6 +12,7 @@
         <file>RemoveButton.qml</file>
         <file>TimePicker.qml</file>
         <file>OptionsButton.qml</file>
+        <file>ImageInput.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
