@@ -17,7 +17,7 @@ public:
     QUrl avatarUrl(QString id);
     QUrl avatarsUrl(QStringList ids);
     void friends(QString id, std::function<void(QList<User*>)> callback);
-    void upload(QString token, QByteArray data, std::function<void(QString)> callback);
+    void upload(QString token, QByteArray data, std::function<void(QString)> callback, std::function<void(double)> uploadProgress);
     void createChallenge(QString title, QString description, QString reward, QStringList targets,
                          unsigned duration, QString imageId, std::function<void()> callback);
 

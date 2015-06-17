@@ -14,7 +14,8 @@
 namespace {
 const QString apiUrl = "http://duvido.vc/api/v0";
 
-void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QByteArray)> callback) {
+void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data,
+             std::function<void(QByteArray)> callback, std::function<void(double)> uploadProgress = {}) {
     QUrlQuery query;
     for (auto key : args.keys()) {
         query.addQueryItem(key, args[key].toString());
@@ -34,6 +35,10 @@ void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QBy
         reply = duvido->http().post(request, data);
     else
         return;
+
+    QObject::connect(reply, &QNetworkReply::uploadProgress, [uploadProgress](qint64 current, qint64, total){
+        uploadProgress(1.0*current/total);
+    });
 
     QObject::connect(reply, &QNetworkReply::finished, [callback, reply]{
         if (reply->error() != QNetworkReply::NoError)
@@ -57,16 +62,18 @@ void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QBy
     });
 }
 
-void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonArray)> callback) {
+void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data,
+             std::function<void(QJsonArray)> callback, std::function<void(double)> uploadProgress = {}) {
     apiCall(method, endpoint, args, data, [=](QByteArray bytes){
         callback(QJsonDocument::fromJson(bytes).array());
-    });
+    }, uploadProgress);
 }
 
-void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonObject)> callback) {
+void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data,
+             std::function<void(QJsonObject)> callback, std::function<void(double)> uploadProgress = {}) {
     apiCall(method, endpoint, args, data, [=](QByteArray bytes){
         callback(QJsonDocument::fromJson(bytes).object());
-    });
+    }, uploadProgress);
 }
 }
 
@@ -110,7 +117,7 @@ void DuvidoApi::friends(QString id, std::function<void(QList<User*>)> callback) 
 void DuvidoApi::upload(QString token, QByteArray data, std::function<void(QString)> callback) {
     apiCall("post", "/upload", QVariantMap{{"token", token}}, data, [=](QByteArray bytes){
         callback(QString::fromUtf8(bytes));
-    });
+    }, uploadProgress);
 }
 
 void DuvidoApi::createChallenge(QString title, QString description, QString reward, QStringList targets,
