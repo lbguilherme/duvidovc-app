@@ -18,6 +18,7 @@ Item {
         Image {
             id: avatar
             anchors.fill: parent
+            mipmap: true
         }
 
         AvatarLoader {
