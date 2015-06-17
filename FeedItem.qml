@@ -67,6 +67,7 @@ Card {
     CardContentArea {
         verticalMargin: 10*dp
         horizontalMargin: 15*dp
+
         Text {
             text: "Me mostre o quanto você gosta de livros! Vale tudo."
             width: parent.width
@@ -111,6 +112,7 @@ Card {
         Row {
             width: parent.width
             spacing: 10*dp
+
             Button {
                 width: parent.width/2 - parent.spacing/2
                 color: Qt.darker("#FB5240", 1.1)

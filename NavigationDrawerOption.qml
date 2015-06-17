@@ -30,7 +30,6 @@ Item {
     MouseArea {
         id: mouseAreaOption
         anchors.fill: parent
-
         onClicked: {
             StackManager.go(model.action);
         }

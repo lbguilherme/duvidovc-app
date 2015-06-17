@@ -28,6 +28,3 @@ Column {
         color: "#ddd"
     }
 }
-
-
-

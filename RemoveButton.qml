@@ -33,6 +33,4 @@ Item {
             onClicked: removeButton.clicked();
         }
     }
-
 }
-

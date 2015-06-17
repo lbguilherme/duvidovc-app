@@ -4,9 +4,6 @@ import "qrc:/components"
 import "qrc:/material"
 
 Item {
-
-    Component.onCompleted: console.log("ok")
-
     ActionBarButton {
         icon: "qrc:/artwork/icons/send12.png"
         onClicked: {
@@ -25,7 +22,6 @@ Item {
         reward: challenge.reward
         targets: challenge.targets
         image: challenge.image
-
         onSubmitted: console.log("submited");
     }
 

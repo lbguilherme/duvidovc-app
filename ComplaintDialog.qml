@@ -5,7 +5,6 @@ Dialog {
     id: complaint
     spacing: 20*dp
 
-
     Text {
         id: complaintGreeting
         color: "#000"
@@ -17,7 +16,7 @@ Dialog {
     }
 
     TextField {
-        label: 'Qual o motivo da denúncia?'
+        label: "Qual o motivo da denúncia?"
         width: parent.width - 40*dp
         maxHeight: 120*dp
         anchors.horizontalCenter: parent.horizontalCenter
@@ -40,7 +39,6 @@ Dialog {
             text: "Denunciar"
             color: "#0f6464"
             onClicked: window.dialogSource = ""
-
         }
     }
 }

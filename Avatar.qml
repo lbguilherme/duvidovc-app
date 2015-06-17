@@ -4,11 +4,10 @@ import Duvido 1.0
 
 Item {
     id: root
-
-    property string userId
-    property real radius: Math.max(width, height)
     width: radius*2
     height: radius*2
+    property string userId
+    property real radius: Math.max(width, height)
 
     Item {
         id: img

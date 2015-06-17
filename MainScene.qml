@@ -5,7 +5,6 @@ import "qrc:/singletons"
 
 Item {
     id: scene
-
     property ActionBar actionBar: actionBar
 
     Rectangle {
@@ -18,9 +17,7 @@ Item {
         width: parent.width
         height: parent.height - actionBar.height
         source: StackManager.currentScene
-        onLoaded: {
-            actionBar.burger.arrowness = 0;
-        }
+        onLoaded: actionBar.burger.arrowness = 0;
     }
 
     ActionBar {

@@ -55,9 +55,9 @@ Item {
             Text {
                 text: duvido.me.name
                 x: 0
+                y: 2*avatar.radius+25*dp
                 width: parent.width
                 horizontalAlignment: Text.AlignHCenter
-                y: 2*avatar.radius+25*dp
                 font.pixelSize: 22*dp
                 font.weight: Font.Bold
             }

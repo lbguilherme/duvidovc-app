@@ -5,7 +5,6 @@ Item {
     id: root
     width: parent.width
     height: Math.max(grid.contentHeight, 56*dp)
-
     property var model: duvido.friendsModel()
     property string emptyLabel: ""
     property string filledLabel: ""
@@ -73,4 +72,3 @@ Item {
         }
     }
 }
-

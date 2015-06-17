@@ -27,7 +27,6 @@ Dialog {
             color: "#0f6464"
             onClicked: dialogSource = "";
         }
-
     }
 
     Component {
@@ -65,4 +64,3 @@ Dialog {
         }
     }
 }
-

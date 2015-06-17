@@ -51,7 +51,7 @@ Card {
             Text {
                 id: senderName
                 color: "#333"
-                text: "<i>"+duvido.me.name+"</i> duvida que..."
+                text: "<i>" + duvido.me.name + "</i> duvida que..."
                 font.pixelSize: 14*dp
                 anchors.verticalCenter: senderAvatar.verticalCenter
             }
@@ -115,9 +115,7 @@ Card {
             TimePicker {
                 id: timePicker
                 anchors.bottom: parent.bottom
-
             }
-
         }
     }
 }
