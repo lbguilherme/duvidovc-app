@@ -36,9 +36,10 @@ void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QBy
     else
         return;
 
-    QObject::connect(reply, &QNetworkReply::uploadProgress, [uploadProgress](qint64 current, qint64, total){
-        uploadProgress(1.0*current/total);
-    });
+    if (uploadProgress)
+        QObject::connect(reply, &QNetworkReply::uploadProgress, [uploadProgress](qint64 current, qint64 total){
+            uploadProgress(1.0*current/total);
+        });
 
     QObject::connect(reply, &QNetworkReply::finished, [callback, reply]{
         if (reply->error() != QNetworkReply::NoError)
@@ -114,7 +115,7 @@ void DuvidoApi::friends(QString id, std::function<void(QList<User*>)> callback) 
     });
 }
 
-void DuvidoApi::upload(QString token, QByteArray data, std::function<void(QString)> callback) {
+void DuvidoApi::upload(QString token, QByteArray data, std::function<void(QString)> callback, std::function<void(double)> uploadProgress) {
     apiCall("post", "/upload", QVariantMap{{"token", token}}, data, [=](QByteArray bytes){
         callback(QString::fromUtf8(bytes));
     }, uploadProgress);
