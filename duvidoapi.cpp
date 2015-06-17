@@ -11,77 +11,10 @@
 #include <QSettings>
 #include <functional>
 
-const QString DuvidoApi::apiUrl = "http://duvido.vc/api/v0";
+namespace {
+const QString apiUrl = "http://duvido.vc/api/v0";
 
-DuvidoApi::DuvidoApi() {
-
-}
-
-QUrl DuvidoApi::avatarUrl(QString id) {
-    return apiUrl + "/avatar?id=" + id;
-}
-
-QUrl DuvidoApi::avatarsUrl(QStringList ids) {
-    return apiUrl + "/avatars?id=" + ids.join(",");
-}
-
-void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
-    QSettings settings;
-    QString id = settings.value("myId").toString();
-    QString name = settings.value("myName").toString();
-    if (!id.isEmpty()) {
-        callback(new User(id, name));
-    }
-    apiCall("post", "/login", QVariantMap{{"token", token}}, {}, [this, callback](QJsonObject resp){
-        QString id = resp["id"].toString();
-        QString name = resp["name"].toString();
-        QSettings settings;
-        if (settings.value("myId").toString() == id && settings.value("myName").toString() == name) return;
-        settings.setValue("myId", id);
-        settings.setValue("myName", name);
-        callback(new User(id, name));
-    });
-}
-
-void DuvidoApi::friends(QString id, std::function<void(QList<User*>)> callback) {
-    apiCall("get", "/friends", QVariantMap{{"id", id}}, {}, [=](QJsonArray array){
-        QList<User*> friends;
-        for (QJsonValue el : array) {
-            QJsonObject obj = el.toObject();
-            friends.append(new User(obj["id"].toString(), obj["name"].toString()));
-        }
-        callback(friends);
-    });
-}
-
-void DuvidoApi::createChallenge(QString title, QString description, QString reward, QStringList targets,
-                                unsigned duration, QByteArray image, std::function<void(QString)> callback) {
-    QVariantMap args {
-        {"title", title},
-        {"description", description},
-        {"reward", reward},
-        {"targets", targets.join(",")},
-        {"duration", QString::number(duration)}
-    };
-
-    apiCall("post", "/challenge", args, image, [=](QJsonObject obj){
-        callback(obj["id"].toString());
-    });
-}
-
-void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonArray)> callback) {
-    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
-        callback(QJsonDocument::fromJson(bytes).array());
-    });
-}
-
-void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonObject)> callback) {
-    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
-        callback(QJsonDocument::fromJson(bytes).object());
-    });
-}
-
-void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QByteArray)> callback) {
+void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QByteArray)> callback) {
     QUrlQuery query;
     for (auto key : args.keys()) {
         query.addQueryItem(key, args[key].toString());
@@ -121,5 +54,77 @@ void DuvidoApi::apiCall(QString method, QString endpoint, QMap<QString, QVariant
         callback(data);
 
         reply->deleteLater();
+    });
+}
+
+void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonArray)> callback) {
+    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
+        callback(QJsonDocument::fromJson(bytes).array());
+    });
+}
+
+void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data, std::function<void(QJsonObject)> callback) {
+    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
+        callback(QJsonDocument::fromJson(bytes).object());
+    });
+}
+}
+
+QUrl DuvidoApi::avatarUrl(QString id) {
+    return apiUrl + "/avatar?id=" + id;
+}
+
+QUrl DuvidoApi::avatarsUrl(QStringList ids) {
+    return apiUrl + "/avatars?id=" + ids.join(",");
+}
+
+void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
+    QSettings settings;
+    QString id = settings.value("myId").toString();
+    QString name = settings.value("myName").toString();
+    if (!id.isEmpty()) {
+        callback(new User(id, name));
+    }
+    apiCall("post", "/login", QVariantMap{{"token", token}}, {}, [this, callback](QJsonObject resp){
+        QString id = resp["id"].toString();
+        QString name = resp["name"].toString();
+        QSettings settings;
+        if (settings.value("myId").toString() == id && settings.value("myName").toString() == name) return;
+        settings.setValue("myId", id);
+        settings.setValue("myName", name);
+        callback(new User(id, name));
+    });
+}
+
+void DuvidoApi::friends(QString id, std::function<void(QList<User*>)> callback) {
+    apiCall("get", "/friends", QVariantMap{{"id", id}}, {}, [=](QJsonArray array){
+        QList<User*> friends;
+        for (QJsonValue el : array) {
+            QJsonObject obj = el.toObject();
+            friends.append(new User(obj["id"].toString(), obj["name"].toString()));
+        }
+        callback(friends);
+    });
+}
+
+void DuvidoApi::upload(QString token, QByteArray data, std::function<void(QString)> callback) {
+    apiCall("post", "/upload", QVariantMap{{"token", token}}, data, [=](QByteArray bytes){
+        callback(QString::fromUtf8(bytes));
+    });
+}
+
+void DuvidoApi::createChallenge(QString title, QString description, QString reward, QStringList targets,
+                                unsigned duration, QString imageId, std::function<void()> callback) {
+    QVariantMap args {
+        {"title", title},
+        {"description", description},
+        {"reward", reward},
+        {"targets", targets.join(",")},
+        {"duration", QString::number(duration)},
+        {"image", imageId}
+    };
+
+    apiCall("post", "/challenge", args, {}, [=](QByteArray){
+        callback();
     });
 }
