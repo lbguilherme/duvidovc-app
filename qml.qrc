@@ -27,6 +27,7 @@
         <file>ComplaintDialog.qml</file>
         <file>ConfigPanel.qml</file>
         <file>ConfigOption.qml</file>
+        <file>TimePickerDialog.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>
