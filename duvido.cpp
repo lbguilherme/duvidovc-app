@@ -65,11 +65,15 @@ void Duvido::initFacebook() {
     _facebook = new Facebook(this);
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
-        auto result = new ApiLogin(_facebook->accessToken());
-        connect(result, &Api::finished, [this, result]{
-            result->deleteLater();
-            setMe(result->user());
-        });
+        if (_facebook->accessToken().isEmpty()) {
+            setMe(nullptr);
+        } else {
+            auto result = new ApiLogin();
+            connect(result, &Api::finished, [this, result]{
+                result->deleteLater();
+                setMe(result->user());
+            });
+        }
     });
 
     _facebook->initialize();
@@ -100,6 +104,10 @@ DuvidoApi* Duvido::api() {
 
 Facebook* Duvido::facebook() {
     return _facebook;
+}
+
+QString Duvido::token() {
+    return _facebook->accessToken();
 }
 
 void Duvido::login() {

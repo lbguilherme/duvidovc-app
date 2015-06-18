@@ -9,7 +9,7 @@ class ApiLogin : public Api {
 
 public:
 
-    explicit ApiLogin(QString token, QObject* parent = nullptr);
+    explicit ApiLogin(QObject* parent = nullptr);
 
     User* user() const;
 
