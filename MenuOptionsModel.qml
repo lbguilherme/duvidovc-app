@@ -26,6 +26,6 @@ ListModel {
     ListElement {
         icon: "qrc:/artwork/icons/settings48.png"
         name: "Opções"
-        action: ""
+        action: "qrc:/frags/ConfigPanel.qml"
     }
 }
