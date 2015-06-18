@@ -4,22 +4,28 @@ ListModel {
     id: configOptionsModel
 
     ListElement {
+        name: "Logout"
+        action: ""
+        group: 'Geral'
+    }
+
+    ListElement {
         name: "Versão"
         action: ""
+        group: 'Sobre'
     }
 
     ListElement {
         name: "Licença"
         action: ""
+        group: 'Sobre'
     }
 
     ListElement {
         name: "Termos de Uso"
         action: ""
+        group: 'Sobre'
     }
 
-    ListElement {
-        name: "Logout"
-        action: ""
-    }
+
 }
