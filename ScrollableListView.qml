@@ -10,6 +10,7 @@ Item {
     property real topMargin: spacing
     property real bottomMargin: spacing
     property real count: list.count
+    property alias section: list.section
 
     ListView {
         id: list

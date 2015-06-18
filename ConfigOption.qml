@@ -4,19 +4,19 @@ import "qrc:/singletons"
 
 Item {
     id: root
-    width: parent.width - x*2
-    height: 48*dp
-    x: 16*dp
+    width: parent.width
+    height: 56*dp
 
     Rectangle {
         anchors.fill: parent
-        color: mouseAreaOption.containsPress ? "#999" : "transparent"
+        color: mouseAreaOption.containsPress ? "#f2f2e3" : "transparent"
     }
 
     Text {
         x: 8*dp
         text: model.name
         anchors.verticalCenter: parent.verticalCenter
+        font.pixelSize: 18*dp
     }
 
     MouseArea {
@@ -28,7 +28,7 @@ Item {
     }
 
     Rectangle {
-        height: 1*dp
+        height: Math.ceil(1*dp)
         width: parent.width
         color: "#ddd"
         y: parent.height - 1*dp
