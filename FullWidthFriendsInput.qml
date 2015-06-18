@@ -1,11 +1,12 @@
 import QtQuick 2.4
+import Duvido 1.0
 import "qrc:/material"
 
 Item {
     id: root
     width: parent.width
     height: Math.max(grid.contentHeight, 56*dp)
-    property var model: duvido.friendsModel()
+    property var model: FriendsModel {}
     property string emptyLabel: ""
     property string filledLabel: ""
     property string error: ""

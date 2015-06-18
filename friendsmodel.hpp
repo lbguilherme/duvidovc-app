@@ -19,7 +19,7 @@ public:
         SelectedRole
     };
 
-    FriendsModel(QString userId, QObject* parent = 0);
+    FriendsModel(QObject* parent = 0);
 
     QHash<int, QByteArray> roleNames() const;
     int rowCount(const QModelIndex& parent = QModelIndex()) const;

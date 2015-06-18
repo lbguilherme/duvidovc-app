@@ -55,6 +55,7 @@ void Duvido::initInterfaces() {
 
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
     qmlRegisterType<ChallengeCreator>("Duvido", 1, 0, "ChallengeCreator");
+    qmlRegisterType<FriendsModel>("Duvido", 1, 0, "FriendsModel");
 
     installEventFilter(new DuvidoEventFilter(this));
 }
@@ -100,11 +101,6 @@ Facebook* Duvido::facebook() {
 
 void Duvido::login() {
     _facebook->login();
-}
-
-FriendsModel* Duvido::friendsModel() {
-    Q_ASSERT(_me);
-    return new FriendsModel(_me->id(), this);
 }
 
 User* Duvido::me() {

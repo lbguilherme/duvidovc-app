@@ -21,8 +21,8 @@ protected:
 
 };
 
-FriendsModel::FriendsModel(QString userId, QObject* parent) : QAbstractListModel(parent) {
-    refresh(userId);
+FriendsModel::FriendsModel(QObject* parent) : QAbstractListModel(parent) {
+    refresh(duvido->me()->id());
 
     _selectedFriends = new SelectedFriendsModel(this);
     _selectedFriends->setSourceModel(this);

@@ -11,7 +11,6 @@
 #endif
 
 class Facebook;
-class FriendsModel;
 
 class Duvido : public QGuiApplication {
     Q_OBJECT
@@ -35,7 +34,6 @@ public:
     void setMe(User* me);
 
     Q_INVOKABLE void login();
-    Q_INVOKABLE FriendsModel* friendsModel();
     Q_INVOKABLE void fetchPhotoFromGallery();
     Q_INVOKABLE void fetchPhotoFromCamera();
 
