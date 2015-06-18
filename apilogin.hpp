@@ -15,7 +15,6 @@ public:
 
 protected:
 
-    QNetworkReply* sendRequest();
     void processReply();
 
 private:
