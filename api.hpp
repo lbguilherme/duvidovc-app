@@ -14,6 +14,7 @@ class Api : public QObject {
 public:
 
     explicit Api(QObject* parent = nullptr);
+    ~Api();
 
     double progress() const;
     bool isFinished() const;
