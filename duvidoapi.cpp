@@ -1,21 +1,17 @@
 #include "duvidoapi.hpp"
-#include "user.hpp"
 #include "duvido.hpp"
+#include "apiloginresult.hpp"
+#include "apifriendsresult.hpp"
 
 #include <QNetworkRequest>
 #include <QNetworkReply>
 #include <QUrlQuery>
-#include <QJsonDocument>
-#include <QJsonObject>
-#include <QJsonArray>
-#include <QSettings>
-#include <functional>
 
 namespace {
+
 const QString apiUrl = "http://duvido.vc/api/v0";
 
-void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data,
-             std::function<void(QByteArray)> callback, std::function<void(double)> uploadProgress = {}) {
+QNetworkReply* apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data) {
     QUrlQuery query;
     for (auto key : args.keys()) {
         query.addQueryItem(key, args[key].toString());
@@ -24,58 +20,26 @@ void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QBy
     QUrl url;
     url.setUrl(apiUrl + endpoint);
     url.setQuery(query);
-    qDebug() << url;
+
     QNetworkRequest request(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/octet-stream");
-    QNetworkReply* reply;
 
     if (method == "get")
-        reply = duvido->http().get(request);
+        return duvido->http().get(request);
     else if (method == "post")
-        reply = duvido->http().post(request, data);
+        return duvido->http().post(request, data);
     else
-        return;
-
-    if (uploadProgress)
-        QObject::connect(reply, &QNetworkReply::uploadProgress, [uploadProgress](qint64 current, qint64 total){
-            uploadProgress(1.0*current/total);
-        });
-
-    QObject::connect(reply, &QNetworkReply::finished, [callback, reply]{
-        if (reply->error() != QNetworkReply::NoError)
-            (void)0;// Connection error
-
-        int status = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-        if (status == 401) {
-            QSettings().clear();
-            duvido->setMe(nullptr);
-            return;
-        }
-        if (status != 200)
-            (void)0;// Server error?
-
-        QByteArray data = reply->readAll();
-        qDebug() << data;
-
-        callback(data);
-
-        reply->deleteLater();
-    });
+        throw "not implemented";
 }
 
-void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data,
-             std::function<void(QJsonArray)> callback, std::function<void(double)> uploadProgress = {}) {
-    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
-        callback(QJsonDocument::fromJson(bytes).array());
-    }, uploadProgress);
 }
 
-void apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data,
-             std::function<void(QJsonObject)> callback, std::function<void(double)> uploadProgress = {}) {
-    apiCall(method, endpoint, args, data, [=](QByteArray bytes){
-        callback(QJsonDocument::fromJson(bytes).object());
-    }, uploadProgress);
+ApiLoginResult* DuvidoApi::login(QString token) {
+    return new ApiLoginResult(apiCall("post", "/login", QVariantMap{{"token", token}}, {}));
 }
+
+ApiFriendsResult* DuvidoApi::friends(QString id) {
+    return new ApiFriendsResult(apiCall("get", "/friends", QVariantMap{{"id", id}}, {}));
 }
 
 QUrl DuvidoApi::avatarUrl(QString id) {
@@ -86,35 +50,7 @@ QUrl DuvidoApi::avatarsUrl(QStringList ids) {
     return apiUrl + "/avatars?id=" + ids.join(",");
 }
 
-void DuvidoApi::login(QString token, std::function<void(User*)> callback) {
-    QSettings settings;
-    QString id = settings.value("myId").toString();
-    QString name = settings.value("myName").toString();
-    if (!id.isEmpty()) {
-        callback(new User(id, name));
-    }
-    apiCall("post", "/login", QVariantMap{{"token", token}}, {}, [this, callback](QJsonObject resp){
-        QString id = resp["id"].toString();
-        QString name = resp["name"].toString();
-        QSettings settings;
-        if (settings.value("myId").toString() == id && settings.value("myName").toString() == name) return;
-        settings.setValue("myId", id);
-        settings.setValue("myName", name);
-        callback(new User(id, name));
-    });
-}
-
-void DuvidoApi::friends(QString id, std::function<void(QList<User*>)> callback) {
-    apiCall("get", "/friends", QVariantMap{{"id", id}}, {}, [=](QJsonArray array){
-        QList<User*> friends;
-        for (QJsonValue el : array) {
-            QJsonObject obj = el.toObject();
-            friends.append(new User(obj["id"].toString(), obj["name"].toString()));
-        }
-        callback(friends);
-    });
-}
-
+/*
 void DuvidoApi::upload(QString token, QByteArray data, std::function<void(QString)> callback, std::function<void(double)> uploadProgress) {
     apiCall("post", "/upload", QVariantMap{{"token", token}}, data, [=](QByteArray bytes){
         callback(QString::fromUtf8(bytes));
@@ -136,3 +72,4 @@ void DuvidoApi::createChallenge(QString title, QString description, QString rewa
         callback();
     });
 }
+*/

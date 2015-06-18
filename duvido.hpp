@@ -11,6 +11,7 @@
 #endif
 
 class Facebook;
+class User;
 
 class Duvido : public QGuiApplication {
     Q_OBJECT

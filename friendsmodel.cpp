@@ -1,5 +1,6 @@
 #include "friendsmodel.hpp"
 #include "duvido.hpp"
+#include "apifriendsresult.hpp"
 
 #include <QJsonObject>
 #include <QJsonArray>
@@ -40,11 +41,12 @@ void FriendsModel::refresh(QString userId) {
     _selected.clear();
     endRemoveRows();
 
-    duvido->api()->friends(_userId, [this, userId](QList<User*> friends){
+    auto result = duvido->api()->friends(_userId);
+    connect(result, &ApiResult::finished, [this, userId, result]{
         if (_userId != userId) return;
-        beginInsertRows(QModelIndex(), 0, friends.size()-1);
-        _friends = friends;
-        for (int i = 0; i < friends.size(); ++i)
+        beginInsertRows(QModelIndex(), 0, result->count()-1);
+        _friends = result->friends();
+        for (int i = 0; i < _friends.size(); ++i)
             _selected.append(false);
         endInsertRows();
     });

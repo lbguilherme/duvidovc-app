@@ -5,6 +5,7 @@
 #include "avatarloader.hpp"
 #include "friendsmodel.hpp"
 #include "challengecreator.hpp"
+#include "apiloginresult.hpp"
 
 #include <QSortFilterProxyModel>
 #include <QQmlContext>
@@ -64,8 +65,9 @@ void Duvido::initFacebook() {
     _facebook = new Facebook(this);
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
-        _api.login(_facebook->accessToken(), [this](User* me){
-            setMe(me);
+        auto result = _api.login(_facebook->accessToken());
+        connect(result, &ApiResult::finished, [this, result]{
+            setMe(result->user());
         });
     });
 
