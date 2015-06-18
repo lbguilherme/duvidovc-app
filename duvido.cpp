@@ -125,11 +125,17 @@ void Duvido::setMe(User* me) {
     emit meChanged();
 }
 
-bool Duvido::hasCamera() {
+QString Duvido::terms() const {
+    QFile file(":/terms.htm");
+    file.open(QIODevice::ReadOnly);
+    return QString::fromUtf8(file.readAll());
+}
+
+bool Duvido::hasCamera() const {
     return _hasCamera;
 }
 
-bool Duvido::hasGallery() {
+bool Duvido::hasGallery() const {
     return _hasGallery;
 }
 

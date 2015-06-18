@@ -16,6 +16,7 @@ class User;
 class Duvido : public QGuiApplication {
     Q_OBJECT
     Q_PROPERTY(User* me READ me NOTIFY meChanged)
+    Q_PROPERTY(QString terms READ terms CONSTANT)
     Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
 
@@ -30,8 +31,9 @@ public:
     QString token();
 
     User* me();
-    bool hasCamera();
-    bool hasGallery();
+    bool hasCamera() const;
+    bool hasGallery() const;
+    QString terms() const;
 
     void setMe(User* me);
 
