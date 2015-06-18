@@ -27,6 +27,7 @@ public:
 
     DuvidoApi* api();
     Facebook* facebook();
+    QString token();
 
     User* me();
     bool hasCamera();

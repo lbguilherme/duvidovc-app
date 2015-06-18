@@ -6,8 +6,8 @@
 #include <QJsonDocument>
 #include <QNetworkReply>
 
-ApiLogin::ApiLogin(QString token, QObject* parent) : Api(parent) {
-    _reply = duvido->http().post(request("/login", QVariantMap{{"token", token}}), QByteArray());
+ApiLogin::ApiLogin(QObject* parent) : Api(parent) {
+    _reply = duvido->http().post(request("/login", QVariantMap{{"token", duvido->token()}}), QByteArray());
     setupReply();
 }
 

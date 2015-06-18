@@ -10,6 +10,10 @@ Api::Api(QObject* parent) : QObject(parent), _reply(nullptr) {
 
 }
 
+Api::~Api() {
+    cancel();
+}
+
 void Api::setupReply() {
     Q_ASSERT(_reply);
     _reply->setParent(this);
