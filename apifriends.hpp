@@ -1,15 +1,15 @@
 #pragma once
 
-#include "apiresult.hpp"
+#include "api.hpp"
 
 class User;
 
-class ApiFriendsResult : public ApiResult {
+class ApiFriends : public Api {
     Q_OBJECT
 
 public:
 
-    using ApiResult::ApiResult;
+    explicit ApiFriends(QObject* parent = nullptr);
 
     QList<User*> friends() const;
     int count() const;

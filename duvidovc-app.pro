@@ -20,9 +20,9 @@ SOURCES += \
     duvidoeventfilter.cpp \
     avatarloader.cpp \
     challengecreator.cpp \
-    apiresult.cpp \
-    apiloginresult.cpp \
-    apifriendsresult.cpp
+    api.cpp \
+    apifriends.cpp \
+    apilogin.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -33,9 +33,9 @@ HEADERS += \
     duvidoeventfilter.hpp \
     avatarloader.hpp \
     challengecreator.hpp \
-    apiresult.hpp \
-    apiloginresult.hpp \
-    apifriendsresult.hpp
+    apifriends.hpp \
+    apilogin.hpp \
+    api.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

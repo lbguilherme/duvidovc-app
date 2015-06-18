@@ -34,7 +34,7 @@ signals:
 
 private:
 
-    void refresh(QString userId);
+    void refresh();
 
 private:
 

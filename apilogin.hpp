@@ -1,20 +1,21 @@
 #pragma once
 
-#include "apiresult.hpp"
+#include "api.hpp"
 
 class User;
 
-class ApiLoginResult : public ApiResult {
+class ApiLogin : public Api {
     Q_OBJECT
 
 public:
 
-    using ApiResult::ApiResult;
+    explicit ApiLogin(QString token, QObject* parent = nullptr);
 
     User* user() const;
 
 protected:
 
+    QNetworkReply* sendRequest();
     void processReply();
 
 private:

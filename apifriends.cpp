@@ -1,12 +1,18 @@
-#include "apifriendsresult.hpp"
+#include "apifriends.hpp"
 #include "user.hpp"
+#include "duvido.hpp"
 
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QNetworkReply>
 
-void ApiFriendsResult::processReply() {
+ApiFriends::ApiFriends(QObject* parent) : Api(parent) {
+    _reply = duvido->http().get(request("/friends", QVariantMap{{"id", duvido->me()->id()}}));
+    setupReply();
+}
+
+void ApiFriends::processReply() {
     QJsonArray array = QJsonDocument::fromJson(_reply->readAll()).array();
     for (QJsonValue el : array) {
         QJsonObject obj = el.toObject();
@@ -17,7 +23,7 @@ void ApiFriendsResult::processReply() {
     }
 }
 
-QList<User*> ApiFriendsResult::friends() const {
+QList<User*> ApiFriends::friends() const {
     QList<User*> users;
     for (FriendInfo info : _friends) {
         users.append(new User(info.id, info.name));
@@ -25,6 +31,6 @@ QList<User*> ApiFriendsResult::friends() const {
     return users;
 }
 
-int ApiFriendsResult::count() const {
+int ApiFriends::count() const {
     return _friends.size();
 }

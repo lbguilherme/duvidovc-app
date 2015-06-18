@@ -3,8 +3,9 @@
 #include <QObject>
 
 class QNetworkReply;
+class QNetworkRequest;
 
-class ApiResult : public QObject {
+class Api : public QObject {
     Q_OBJECT
     Q_PROPERTY(double progress READ progress NOTIFY progressChanged)
     Q_PROPERTY(bool isFinished READ isFinished NOTIFY finished)
@@ -12,7 +13,7 @@ class ApiResult : public QObject {
 
 public:
 
-    explicit ApiResult(QNetworkReply* reply, QObject* parent = nullptr);
+    explicit Api(QObject* parent = nullptr);
 
     double progress() const;
     bool isFinished() const;
@@ -28,6 +29,8 @@ signals:
 
 protected:
 
+    QNetworkRequest request(QString endpoint, QVariantMap args);
+    void setupReply();
     virtual void processReply() = 0;
 
 protected:

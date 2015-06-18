@@ -1,46 +1,10 @@
 #include "duvidoapi.hpp"
-#include "duvido.hpp"
-#include "apiloginresult.hpp"
-#include "apifriendsresult.hpp"
 
-#include <QNetworkRequest>
-#include <QNetworkReply>
-#include <QUrlQuery>
+#include <QStringList>
+#include <QString>
+#include <QUrl>
 
-namespace {
-
-const QString apiUrl = "http://duvido.vc/api/v0";
-
-QNetworkReply* apiCall(QString method, QString endpoint, QMap<QString, QVariant> args, QByteArray data) {
-    QUrlQuery query;
-    for (auto key : args.keys()) {
-        query.addQueryItem(key, args[key].toString());
-    }
-
-    QUrl url;
-    url.setUrl(apiUrl + endpoint);
-    url.setQuery(query);
-
-    QNetworkRequest request(url);
-    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/octet-stream");
-
-    if (method == "get")
-        return duvido->http().get(request);
-    else if (method == "post")
-        return duvido->http().post(request, data);
-    else
-        throw "not implemented";
-}
-
-}
-
-ApiLoginResult* DuvidoApi::login(QString token) {
-    return new ApiLoginResult(apiCall("post", "/login", QVariantMap{{"token", token}}, {}));
-}
-
-ApiFriendsResult* DuvidoApi::friends(QString id) {
-    return new ApiFriendsResult(apiCall("get", "/friends", QVariantMap{{"id", id}}, {}));
-}
+static const QString apiUrl = "http://duvido.vc/api/v0";
 
 QUrl DuvidoApi::avatarUrl(QString id) {
     return apiUrl + "/avatar?id=" + id;

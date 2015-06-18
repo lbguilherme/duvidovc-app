@@ -1,6 +1,6 @@
 #include "friendsmodel.hpp"
 #include "duvido.hpp"
-#include "apifriendsresult.hpp"
+#include "apifriends.hpp"
 
 #include <QJsonObject>
 #include <QJsonArray>
@@ -23,16 +23,13 @@ protected:
 };
 
 FriendsModel::FriendsModel(QObject* parent) : QAbstractListModel(parent) {
-    refresh(duvido->me()->id());
-
     _selectedFriends = new SelectedFriendsModel(this);
     _selectedFriends->setSourceModel(this);
     _selectedFriends->setFilterRole(SelectedRole);
+    refresh();
 }
 
-void FriendsModel::refresh(QString userId) {
-    _userId = userId;
-
+void FriendsModel::refresh() {
     beginRemoveRows(QModelIndex(), 0, _friends.count()-1);
     for (User* user : _friends) {
         user->deleteLater();
@@ -41,9 +38,9 @@ void FriendsModel::refresh(QString userId) {
     _selected.clear();
     endRemoveRows();
 
-    auto result = duvido->api()->friends(_userId);
-    connect(result, &ApiResult::finished, [this, userId, result]{
-        if (_userId != userId) return;
+    auto result = new ApiFriends();
+    connect(result, &Api::finished, [this, result]{
+        result->deleteLater();
         beginInsertRows(QModelIndex(), 0, result->count()-1);
         _friends = result->friends();
         for (int i = 0; i < _friends.size(); ++i)
