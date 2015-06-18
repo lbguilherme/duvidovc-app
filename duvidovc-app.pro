@@ -22,7 +22,8 @@ SOURCES += \
     challengecreator.cpp \
     api.cpp \
     apifriends.cpp \
-    apilogin.cpp
+    apilogin.cpp \
+    apiupload.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -35,7 +36,8 @@ HEADERS += \
     challengecreator.hpp \
     apifriends.hpp \
     apilogin.hpp \
-    api.hpp
+    api.hpp \
+    apiupload.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
