@@ -2,7 +2,6 @@
 
 #include <QObject>
 
-class QTimer;
 class QQuickItem;
 
 class AvatarLoader : public QObject {
@@ -22,11 +21,11 @@ public:
 
 private:
 
-    void clearTargetSource();
-    void refreshTargetSource();
+    void checkFetchedAvatar(QString id, QUrl url);
+
+private:
 
     QString _userId;
     QQuickItem* _target;
 
-    static QTimer* sTimer;
 };
