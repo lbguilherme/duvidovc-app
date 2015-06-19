@@ -1,14 +1,14 @@
 import QtQuick 2.4
 
 Item {
-    id: textField
-    height: editableLine.height + editableLine.y + (error ? 16*dp : 0)
+    height: line.height + line.y + (error ? 16*dp : 0)
+
     property real fontSize: 18*dp
     property string label: ""
     property int alignment: Text.AlignLeft
     property real maxHeight: -1
     property string error: ""
-    property alias text: editableInput.text
+    property alias text: input.text
 
     Scrollable {
         id: scrollable
@@ -17,12 +17,12 @@ Item {
         spacing: 0
 
         TextInput {
-            id: editableInput
-            width: textField.width
-            font.pixelSize: textField.fontSize
-            horizontalAlignment: textField.alignment
+            id: input
+            width: parent.width
+            font.pixelSize: fontSize
+            horizontalAlignment: alignment
             wrapMode: TextInput.Wrap
-            onTextChanged: textField.error = ""
+            onTextChanged: error = ""
         }
     }
 
@@ -31,16 +31,16 @@ Item {
         font.pixelSize: parent.fontSize
         text: parent.label
         color: "#aaa"
-        visible: editableInput.displayText == ""
+        visible: input.displayText == ""
         horizontalAlignment: parent.alignment
         width: parent.width
     }
 
     Rectangle {
-        id: editableLine
+        id: line
         width: parent.width
         height: Math.ceil(2*dp)
-        color: editableInput.focus ? "#0f6464" : (error == "") ? "#ddd" : "#DD2C00"
+        color: input.focus ? "#0f6464" : error == "" ? "#ddd" : "#dd2c00"
         y: scrollable.height + 4*dp
     }
 
@@ -50,6 +50,6 @@ Item {
         color: "#DD2C00"
         text: error
         visible: error
-        y: editableLine.y + 4*dp
+        y: line.y + 4*dp
     }
 }

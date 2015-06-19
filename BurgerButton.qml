@@ -9,11 +9,10 @@ Item {
     property bool wasArrow: false
     property bool animationEnabled: true
     property bool backMode: window.canBack
-
     property real _arrowness: backMode ? 1 : arrowness;
 
     Behavior on arrowness {
-        enabled: root.animationEnabled
+        enabled: animationEnabled
         NumberAnimation {
             duration: 400
             easing.type: Easing.OutQuint
@@ -26,27 +25,28 @@ Item {
     Column {
         id: column
         anchors.centerIn: parent
-        spacing: Math.ceil(parent.height/5) - root._arrowness*(Math.ceil(root.height/8)+Math.ceil(root.height/5))
+        width: parent.width
+        spacing: Math.ceil(parent.height/5) - _arrowness*(Math.ceil(parent.height/8)+Math.ceil(parent.height/5))
 
         Rectangle {
-            width: root.width - root._arrowness*root.width/3
+            width: parent.width - _arrowness * parent.width/3
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
-            rotation: root._arrowness*45
+            rotation: _arrowness*45
         }
 
         Rectangle {
-            width: root.width
+            width: parent.width
             height: Math.ceil(root.height/10)
         }
 
         Rectangle {
-            width: root.width - root._arrowness*root.width/3
+            width: parent.width - _arrowness * parent.width/3
             height: Math.ceil(root.height/10)
             anchors.right: column.right
             transformOrigin: Item.Right
-            rotation: -root._arrowness*45
+            rotation: -_arrowness*45
         }
     }
 

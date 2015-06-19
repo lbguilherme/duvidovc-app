@@ -1,7 +1,8 @@
 import QtQuick 2.4
 
 Item {
-    id: root
+    width: parent.width
+    height: 56*dp
 
     property color color: "white"
     property string title
@@ -9,12 +10,9 @@ Item {
     property BurgerButton burger: burgerButton
     property Row buttonRow: buttonRow
 
-    width: parent.width
-    height: 56*dp
-
     Surface {
         anchors.fill: parent
-        backgroundColor: parent.color
+        backgroundColor: color
         elevation: 1.2
         radius: 0
 
@@ -28,7 +26,7 @@ Item {
             x: 68*dp
             anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: 20*dp
-            text: root.title
+            text: title
             color: "white"
         }
 

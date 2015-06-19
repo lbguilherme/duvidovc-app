@@ -1,7 +1,6 @@
 import QtQuick 2.4
 
 Item {
-    id: root
     y: parent.height
     width: window.width
     height: window.height-parent.height
@@ -12,7 +11,7 @@ Item {
     Rectangle {
         anchors.fill: parent
         color: Qt.rgba(0, 0, 0, 0.7)
-        opacity: root.burger.arrowness
+        opacity: burger.arrowness
     }
 
     MouseArea {
@@ -32,7 +31,7 @@ Item {
 
             if (draging) {
                 mouse.accepted = true;
-                root.burger.arrowness = Math.max(0, Math.min(1, startV+(mouse.x-pressX)/drawer.width));
+                burger.arrowness = Math.max(0, Math.min(1, startV+(mouse.x-pressX)/drawer.width));
                 lastX = tempX;
                 tempX = mouse.x;
             } else {
@@ -40,13 +39,13 @@ Item {
                     holding = false;
                 } else if (Math.abs(mouse.x-pressX) > 15*dp) {
                     draging = true;
-                    root.burger.animationEnabled = false;
+                    burger.animationEnabled = false;
                 }
             }
         }
 
         onPressed: {
-            if (root.burger.arrowness == 0 && mouse.x > 20*dp) {
+            if (burger.arrowness == 0 && mouse.x > 20*dp) {
                 mouse.accepted = false;
                 return;
             }
@@ -55,22 +54,22 @@ Item {
             pressX = mouse.x;
             pressY = mouse.y;
             lastX = mouse.x;
-            startV = root.burger.arrowness;
+            startV = burger.arrowness;
         }
 
         onReleased: {
-            root.burger.animationEnabled = true;
+            burger.animationEnabled = true;
             if (holding) {
                 holding = false;
                 if (draging) {
                     draging = false;
                     if (mouse.x > lastX)
-                        root.burger.arrowness = 1;
+                        burger.arrowness = 1;
                     else
-                        root.burger.arrowness = 0;
+                        burger.arrowness = 0;
                 } else {
                     if (pressX > drawer.width)
-                        root.burger.arrowness = 0;
+                        burger.arrowness = 0;
                 }
             }
             mouse.accepted = false;
@@ -81,8 +80,8 @@ Item {
         id: drawer
         width: Math.min(360*dp, window.width - 60*dp)
         height: parent.height
-        x: (root.burger.arrowness - 1) * width
-        elevation: root.burger.arrowness > 0 ? 4 : 0
+        x: (burger.arrowness - 1) * width
+        elevation: burger.arrowness > 0 ? 4 : 0
         backgroundColor: "#FAFAFA"
     }
 }

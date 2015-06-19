@@ -1,7 +1,6 @@
 import QtQuick 2.4
 
 Item {
-    id: root
     width: 25*dp
     height: width
 
@@ -17,7 +16,7 @@ Item {
     Rectangle {
         radius: width/2
         anchors.fill: parent
-        color: root.color
+        color: parent.color
         visible: parent.ticked
 
         Rectangle {

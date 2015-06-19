@@ -1,8 +1,6 @@
 import QtQuick 2.4
 
 Item {
-    id: root
-
     property bool goingDown: false
     property alias spacing: items.spacing
     default property alias data: items.data
@@ -22,7 +20,7 @@ Item {
 
         property real lastContentY: 0
         visibleArea.onYPositionChanged: {
-            root.goingDown = (lastContentY < visibleArea.yPosition && visibleArea.yPosition > 0);
+            goingDown = (lastContentY < visibleArea.yPosition && visibleArea.yPosition > 0);
             lastContentY = visibleArea.yPosition;
         }
 

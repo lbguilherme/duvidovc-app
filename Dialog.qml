@@ -1,7 +1,6 @@
 import QtQuick 2.4
 
 Item {
-    id: dialog
     default property alias data: contents.data
     property real shadowOpacity: 0.65
     property bool onCenter: true
@@ -30,7 +29,7 @@ Item {
     Surface {
         id: surface
         anchors.centerIn: onCenter ? parent : null
-        width: dialog.surfaceWidth < 0 ? parent.width - 50*dp : dialog.surfaceWidth
+        width: surfaceWidth < 0 ? parent.width - 50*dp : surfaceWidth
         height: contents.height + parent.topMargin + parent.bottomMargin
         x: surfaceX
         y: surfaceY
@@ -41,7 +40,7 @@ Item {
         Column {
             id: contents
             width: parent.width
-            y: dialog.topMargin
+            y: topMargin
         }
     }
 }

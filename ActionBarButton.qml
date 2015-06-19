@@ -20,7 +20,7 @@ Item {
             Image {
                 anchors.fill: parent
                 anchors.margins: 14*dp
-                source: root.icon
+                source: icon
                 mipmap: true
             }
 
@@ -41,10 +41,10 @@ Item {
     }
 
     Component.onCompleted: {
-        root.button = buttonComponent.createObject(actionBar.buttonRow);
+        button = buttonComponent.createObject(actionBar.buttonRow);
     }
 
     Component.onDestruction: {
-        root.button.destroy();
+        button.destroy();
     }
 }
