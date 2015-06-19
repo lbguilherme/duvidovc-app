@@ -28,6 +28,11 @@ Card {
             error = true;
         }
 
+        if(!timePickerControl.time) {
+            timePickerControl.error = true;
+            error = true;
+        }
+
         return !error;
     }
 
@@ -106,16 +111,18 @@ Card {
             TextField {
                 id: rewardInput
                 label: "Recompensa"
-                width: parent.width - timePicker.width - parent.spacing
+                width: parent.width - timePickerControl.width - parent.spacing
                 fontSize: 14*dp
                 anchors.bottom: parent.bottom
 
             }
 
             TimePicker {
-                id: timePicker
+                id: timePickerControl
                 anchors.bottom: parent.bottom
             }
+
         }
+
     }
 }
