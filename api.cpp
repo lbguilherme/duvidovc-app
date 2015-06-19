@@ -53,6 +53,8 @@ QNetworkRequest Api::request(QString endpoint, QVariantMap args) {
     url.setUrl(apiUrl + endpoint);
     url.setQuery(query);
 
+    qDebug() << metaObject()->className() << url.toString();
+
     QNetworkRequest request(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/octet-stream");
     return request;
