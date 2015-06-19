@@ -10,11 +10,12 @@ ApiUpload::ApiUpload(QString sourcePath, QObject* parent) : Api(parent) {
     file->open(QIODevice::ReadOnly);
     _reply = duvido->http().post(request("/upload", QVariantMap{{"token", duvido->token()}}), file);
     setupReply();
-
+    qDebug() << "Uploading" << file->size() << "bytes from" << sourcePath;
 }
 
 void ApiUpload::processReply() {
     _id = QString::fromUtf8(_reply->readAll());
+    qDebug() << "Upload finished. Result id:" << _id;
 }
 
 QString ApiUpload::id() const {
