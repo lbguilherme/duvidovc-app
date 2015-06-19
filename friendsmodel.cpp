@@ -38,7 +38,7 @@ void FriendsModel::refresh() {
     _selected.clear();
     endRemoveRows();
 
-    auto result = new ApiFriends();
+    auto result = new ApiFriends(this);
     connect(result, &Api::finished, [this, result]{
         result->deleteLater();
         beginInsertRows(QModelIndex(), 0, result->count()-1);

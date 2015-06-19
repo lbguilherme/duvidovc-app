@@ -68,7 +68,7 @@ void Duvido::initFacebook() {
         if (_facebook->accessToken().isEmpty()) {
             setMe(nullptr);
         } else {
-            auto result = new ApiLogin();
+            auto result = new ApiLogin(this);
             connect(result, &Api::finished, [this, result]{
                 result->deleteLater();
                 setMe(result->user());
