@@ -5,8 +5,7 @@
 #include <QAbstractListModel>
 #include <QSortFilterProxyModel>
 
-class FriendsModel : public QAbstractListModel
-{
+class FriendsModel : public QAbstractListModel {
     Q_OBJECT
     Q_PROPERTY(QSortFilterProxyModel* selectedFriends READ selectedFriends CONSTANT)
     Q_PROPERTY(int selectedCount READ selectedCount NOTIFY selectedCountChanged)
