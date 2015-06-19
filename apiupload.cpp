@@ -17,6 +17,6 @@ void ApiUpload::processReply() {
     _id = QString::fromUtf8(_reply->readAll());
 }
 
-QString ApiUpload::id() {
+QString ApiUpload::id() const {
     return _id;
 }
