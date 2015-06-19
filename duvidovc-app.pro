@@ -24,7 +24,8 @@ SOURCES += \
     apifriends.cpp \
     apilogin.cpp \
     apiupload.cpp \
-    apicreatechallenge.cpp
+    apicreatechallenge.cpp \
+    apiavatars.cpp \
 
 HEADERS += \
     facebook.hpp \
@@ -39,7 +40,8 @@ HEADERS += \
     apilogin.hpp \
     api.hpp \
     apiupload.hpp \
-    apicreatechallenge.hpp
+    apicreatechallenge.hpp \
+    apiavatars.hpp \
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
