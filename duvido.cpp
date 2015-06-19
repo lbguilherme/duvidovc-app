@@ -6,6 +6,7 @@
 #include "friendsmodel.hpp"
 #include "challengecreator.hpp"
 #include "apilogin.hpp"
+#include "avatarmanager.hpp"
 
 #include <QSortFilterProxyModel>
 #include <QQmlContext>
@@ -28,6 +29,7 @@ static char* argv[] = {argv0, 0};
 Duvido::Duvido()
     : QGuiApplication(argc, argv)
     , _me(nullptr)
+    , _avatarManager(new AvatarManager(this))
     #ifdef Q_OS_ANDROID
     , _activity(DuvidoActivity::getInstance())
     #endif
@@ -108,6 +110,10 @@ Facebook* Duvido::facebook() {
 
 QString Duvido::token() {
     return _facebook->accessToken();
+}
+
+AvatarManager* Duvido::avatarManager() {
+    return _avatarManager;
 }
 
 void Duvido::login() {

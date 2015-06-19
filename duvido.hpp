@@ -12,6 +12,7 @@
 
 class Facebook;
 class User;
+class AvatarManager;
 
 class Duvido : public QGuiApplication {
     Q_OBJECT
@@ -29,6 +30,7 @@ public:
     DuvidoApi* api();
     Facebook* facebook();
     QString token();
+    AvatarManager* avatarManager();
 
     User* me();
     bool hasCamera() const;
@@ -58,6 +60,7 @@ private:
     DuvidoApi _api;
     Facebook* _facebook;
     User* _me;
+    AvatarManager* _avatarManager;
     bool _hasCamera;
     bool _hasGallery;
     QNetworkAccessManager _http;

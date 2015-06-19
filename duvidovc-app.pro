@@ -26,6 +26,7 @@ SOURCES += \
     apiupload.cpp \
     apicreatechallenge.cpp \
     apiavatars.cpp \
+    avatarmanager.cpp
 
 HEADERS += \
     facebook.hpp \
@@ -42,6 +43,7 @@ HEADERS += \
     apiupload.hpp \
     apicreatechallenge.hpp \
     apiavatars.hpp \
+    avatarmanager.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
