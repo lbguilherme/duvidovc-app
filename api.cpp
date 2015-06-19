@@ -1,4 +1,5 @@
 #include "api.hpp"
+#include "duvido.hpp"
 
 #include <QNetworkReply>
 #include <QUrlQuery>
@@ -53,7 +54,7 @@ QNetworkRequest Api::request(QString endpoint, QVariantMap args) {
     url.setUrl(apiUrl + endpoint);
     url.setQuery(query);
 
-    qDebug() << metaObject()->className() << url.toString();
+    qDebug() << metaObject()->className() << url.toString().replace(duvido->token(), "<token>");
 
     QNetworkRequest request(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/octet-stream");

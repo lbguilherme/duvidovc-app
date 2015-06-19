@@ -66,9 +66,10 @@ void Duvido::initFacebook() {
     _facebook = new Facebook(this);
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
-        if (_facebook->accessToken().isEmpty()) {
+        if (token().isEmpty()) {
             setMe(nullptr);
         } else {
+            qDebug() << "Your access token:" << token();
             auto result = new ApiLogin(this);
             connect(result, &Api::finished, [this, result]{
                 result->deleteLater();
