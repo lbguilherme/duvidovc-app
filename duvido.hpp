@@ -1,7 +1,5 @@
 #pragma once
 
-#include "duvidoapi.hpp"
-
 #include <QGuiApplication>
 #include <QNetworkAccessManager>
 #include <QQuickView>
@@ -27,7 +25,6 @@ public:
 
     QNetworkAccessManager& http();
 
-    DuvidoApi* api();
     Facebook* facebook();
     QString token();
     AvatarManager* avatarManager();
@@ -57,7 +54,6 @@ private:
 
 private:
 
-    DuvidoApi _api;
     Facebook* _facebook;
     User* _me;
     AvatarManager* _avatarManager;

@@ -16,7 +16,6 @@ SOURCES += \
     duvido.cpp \
     user.cpp \
     friendsmodel.cpp \
-    duvidoapi.cpp \
     duvidoeventfilter.cpp \
     avatarloader.cpp \
     challengecreator.cpp \
@@ -33,7 +32,6 @@ HEADERS += \
     duvido.hpp \
     user.hpp \
     friendsmodel.hpp \
-    duvidoapi.hpp \
     duvidoeventfilter.hpp \
     avatarloader.hpp \
     challengecreator.hpp \

@@ -53,7 +53,6 @@ Duvido::Duvido()
 void Duvido::initInterfaces() {
     qRegisterMetaType<User*>("User");
     qRegisterMetaType<FriendsModel*>("FriendsModel");
-    qRegisterMetaType<DuvidoApi*>("DuvidoApi");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
 
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
@@ -98,10 +97,6 @@ void Duvido::initView() {
 
 QNetworkAccessManager& Duvido::http() {
     return _http;
-}
-
-DuvidoApi* Duvido::api() {
-    return &_api;
 }
 
 Facebook* Duvido::facebook() {
