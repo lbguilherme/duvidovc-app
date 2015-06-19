@@ -4,6 +4,7 @@
 #include <QUrl>
 
 class FriendsModel;
+class ApiUpload;
 
 class ChallengeCreator : public QObject {
     Q_OBJECT
@@ -56,5 +57,6 @@ private:
     FriendsModel* _targets;
     unsigned _duration;
     QUrl _image;
+    ApiUpload* _imageUpload;
 
 };

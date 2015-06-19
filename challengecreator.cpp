@@ -1,8 +1,10 @@
 #include "challengecreator.hpp"
+#include "apiupload.hpp"
 
 ChallengeCreator::ChallengeCreator(QObject* parent)
     : QObject(parent)
-    , _targets(nullptr){
+    , _targets(nullptr)
+    , _imageUpload(nullptr) {
 
 }
 
@@ -63,6 +65,16 @@ QUrl ChallengeCreator::image() const {
 void ChallengeCreator::setImage(const QUrl& image) {
     if (_image == image) return;
     _image = image;
+
+    if (_imageUpload)
+        _imageUpload->deleteLater();
+
+    if (_image.isEmpty())
+        _imageUpload = nullptr;
+    else {
+        Q_ASSERT(image.isLocalFile());
+        _imageUpload = new ApiUpload(image.toLocalFile(), this);
+    }
     emit imageChanged();
 }
 
