@@ -1,4 +1,5 @@
 import QtQuick 2.4
+import "qrc:/singletons"
 
 Item {
     id: root
@@ -8,7 +9,7 @@ Item {
     property real arrowness: 0
     property bool wasArrow: false
     property bool animationEnabled: true
-    property bool backMode: window.canBack
+    property bool backMode: StackManager.canGoBack
     property real _arrowness: backMode ? 1 : arrowness;
 
     Behavior on arrowness {
