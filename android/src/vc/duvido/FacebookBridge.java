@@ -20,10 +20,10 @@ public class FacebookBridge {
         accessTokenTracker = new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken newAccessToken) {
-                onAccessTokenReceived(newAccessToken);
+                if (newAccessToken != null)
+                    onAccessTokenReceived(newAccessToken.getToken());
             }
         };
-        onAccessTokenReceived(AccessToken.getCurrentAccessToken());
 
         callbackManager = CallbackManager.Factory.create();
 
@@ -59,6 +59,6 @@ public class FacebookBridge {
     public native static void onLoginSuccess();
     public native static void onLoginCancel();
     public native static void onLoginError();
-    public native static void onAccessTokenReceived(AccessToken token);
+    public native static void onAccessTokenReceived(String token);
 
 }

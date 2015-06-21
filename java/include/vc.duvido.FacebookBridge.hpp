@@ -9,7 +9,7 @@
 #include "java.lang.Object.hpp"
 
 namespace android { namespace content { class Intent; } }
-namespace com { namespace facebook { class AccessToken; } }
+namespace java { namespace lang { class String; } }
 
 namespace vc {
 namespace duvido {
@@ -41,7 +41,7 @@ public:
     static void onLoginSuccess();
     static void onLoginCancel();
     static void onLoginError();
-    static void onAccessTokenReceived(const ::com::facebook::AccessToken&);
+    static void onAccessTokenReceived(const ::java::lang::String&);
 
 };
 }

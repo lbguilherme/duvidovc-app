@@ -1,7 +1,6 @@
 #include "java-core.hpp"
 #include <memory>
 #include "android.content.Intent.hpp"
-#include "com.facebook.AccessToken.hpp"
 #include "java.lang.String.hpp"
 #include "vc.duvido.BuildConfig.hpp"
 #include "vc.duvido.DuvidoActivity.hpp"
@@ -173,8 +172,8 @@ static void JNICALL Java_vc_duvido_FacebookBridge_onLoginError__(JNIEnv*, jclass
     ::vc::duvido::FacebookBridge::onLoginError();
 }
 
-static void JNICALL Java_vc_duvido_FacebookBridge_onAccessTokenReceived__Lcom_facebook_AccessToken_2(JNIEnv*, jclass, jobject arg0) {
-    ::com::facebook::AccessToken _arg0(arg0);
+static void JNICALL Java_vc_duvido_FacebookBridge_onAccessTokenReceived__Ljava_lang_String_2(JNIEnv*, jclass, jobject arg0) {
+    ::java::lang::String _arg0(arg0);
     ::vc::duvido::FacebookBridge::onAccessTokenReceived(_arg0);
 }
 
@@ -184,7 +183,7 @@ void ::vc::duvido::FacebookBridge::jniInitializeNative() {
         {"onLoginSuccess", "()V", (void*)Java_vc_duvido_FacebookBridge_onLoginSuccess__},
         {"onLoginCancel", "()V", (void*)Java_vc_duvido_FacebookBridge_onLoginCancel__},
         {"onLoginError", "()V", (void*)Java_vc_duvido_FacebookBridge_onLoginError__},
-        {"onAccessTokenReceived", "(Lcom/facebook/AccessToken;)V", (void*)Java_vc_duvido_FacebookBridge_onAccessTokenReceived__Lcom_facebook_AccessToken_2},
+        {"onAccessTokenReceived", "(Ljava/lang/String;)V", (void*)Java_vc_duvido_FacebookBridge_onAccessTokenReceived__Ljava_lang_String_2},
     };
     java::jni->RegisterNatives(_class, methods, sizeof(methods)/sizeof(methods[0]));
 }

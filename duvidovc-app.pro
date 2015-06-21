@@ -86,7 +86,6 @@ SOURCES += \
     android/src/vc/duvido/FacebookBridge.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
-    java/src/com.facebook.cpp \
     java/src/vc.duvido.cpp
 
 }

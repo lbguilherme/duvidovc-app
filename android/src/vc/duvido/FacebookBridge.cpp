@@ -5,7 +5,7 @@
 #include <facebook.hpp>
 
 using namespace vc::duvido;
-using namespace com::facebook;
+using namespace java::lang;
 
 void FacebookBridge::onLoginSuccess() {
     emit ::duvido->facebook()->javaCallbackLoginSuccess();
@@ -19,7 +19,7 @@ void FacebookBridge::onLoginCancel() {
     emit ::duvido->facebook()->javaCallbackLoginCancel();
 }
 
-void FacebookBridge::onAccessTokenReceived(const AccessToken& token) {
+void FacebookBridge::onAccessTokenReceived(const String& token) {
     if (token.isNull()) return;
-    emit ::duvido->facebook()->javaCallbackAccessToken(token.getToken());
+    emit ::duvido->facebook()->javaCallbackAccessToken(token);
 }
