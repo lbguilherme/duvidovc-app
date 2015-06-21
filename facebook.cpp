@@ -17,8 +17,7 @@ void Facebook::initialize() {
     FacebookBridge::initialize();
     connect(this, &Facebook::javaCallbackAccessToken, this, &Facebook::setAccessToken, Qt::QueuedConnection);
 #endif
-    QSettings settings;
-    setAccessToken(settings.value("token").toString());
+    setAccessToken(QSettings().value("token").toString());
 }
 
 void Facebook::login() {
@@ -38,7 +37,8 @@ QString Facebook::accessToken() const {
 void Facebook::setAccessToken(const QString& value) {
     if (_accessToken == value) return;
     _accessToken = value;
-    QSettings settings;
-    settings.setValue("token", _accessToken);
     emit accessTokenChanged();
+
+    if (!_accessToken.isEmpty())
+        QSettings().setValue("token", _accessToken);
 }
