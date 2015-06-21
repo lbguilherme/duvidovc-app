@@ -7,6 +7,7 @@ import java.io.*;
 import android.net.*;
 import android.app.*;
 import android.content.*;
+import android.content.pm.*;
 import android.util.*;
 import android.os.*;
 import android.provider.*;
@@ -105,6 +106,20 @@ public class DuvidoActivity extends QtActivity {
     }
 
     public native void onPhotoFetched(String filePath);
+
+    public boolean hasFacebookApp() {
+        try {
+            getPackageManager().getApplicationInfo("com.facebook.katana", 0);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
+    public void startWebLogin() {
+        Intent intent = new Intent(this, WebLoginActivity.class);
+        startActivityForResult(intent, FacebookBridge.RESULT_WEBLOGIN);
+    }
 
     private void copyInputStreamToFile(InputStream in, File file) throws IOException, FileNotFoundException {
         OutputStream out = new FileOutputStream(file);

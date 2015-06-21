@@ -43,6 +43,8 @@ public:
     void fetchPhotoFromGallery() const;
     void fetchPhotoFromCamera() const;
     void onPhotoFetched(const ::java::lang::String&) const;
+    bool hasFacebookApp() const;
+    void startWebLogin() const;
 
 };
 }

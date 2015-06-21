@@ -10,6 +10,8 @@ import android.content.*;
 
 public class FacebookBridge {
 
+    public static final int RESULT_WEBLOGIN = 10;
+
     private static CallbackManager callbackManager;
     private static AccessTokenTracker accessTokenTracker;
 
@@ -46,14 +48,30 @@ public class FacebookBridge {
     }
 
     public static void submitActivityResult(int requestCode, int resultCode, Intent data) {
-        callbackManager.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+        case RESULT_WEBLOGIN:
+            if (resultCode == Activity.RESULT_OK) {
+                onAccessTokenReceived(data.getStringExtra("token"));
+            }
+            break;
+        default:
+            callbackManager.onActivityResult(requestCode, resultCode, data);
+        }
     }
 
     public static void login() {
-        ArrayList<String> perms = new ArrayList<String>();
-        perms.add("user_friends");
-        perms.add("public_profile");
-        LoginManager.getInstance().logInWithReadPermissions(DuvidoActivity.getInstance(), perms);
+
+        if (DuvidoActivity.getInstance().hasFacebookApp()) {
+            Log.i("login", "app");
+            ArrayList<String> perms = new ArrayList<String>();
+            perms.add("user_friends");
+            perms.add("public_profile");
+            LoginManager.getInstance().logInWithReadPermissions(DuvidoActivity.getInstance(), perms);
+        }
+        else {
+            Log.i("login", "web");
+            DuvidoActivity.getInstance().startWebLogin();
+        }
     }
 
     public native static void onLoginSuccess();

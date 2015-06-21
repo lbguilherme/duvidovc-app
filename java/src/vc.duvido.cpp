@@ -1,11 +1,14 @@
 #include "java-core.hpp"
 #include <memory>
 #include "android.content.Intent.hpp"
+#include "android.os.Bundle.hpp"
+#include "android.view.KeyEvent.hpp"
 #include "java.lang.String.hpp"
 #include "vc.duvido.BuildConfig.hpp"
 #include "vc.duvido.DuvidoActivity.hpp"
 #include "vc.duvido.FacebookBridge.hpp"
 #include "vc.duvido.R.hpp"
+#include "vc.duvido.WebLoginActivity.hpp"
 
 jclass vc::duvido::R_string::_class = nullptr;
 jclass vc::duvido::BuildConfig::_class = nullptr;
@@ -19,6 +22,7 @@ jclass vc::duvido::R_styleable::_class = nullptr;
 jclass vc::duvido::R_style::_class = nullptr;
 jclass vc::duvido::R::_class = nullptr;
 jclass vc::duvido::R_drawable::_class = nullptr;
+jclass vc::duvido::WebLoginActivity::_class = nullptr;
 jclass vc::duvido::R_color::_class = nullptr;
 jclass vc::duvido::R_attr::_class = nullptr;
 
@@ -85,6 +89,18 @@ static void JNICALL Java_vc_duvido_DuvidoActivity_onPhotoFetched__Ljava_lang_Str
     ::vc::duvido::DuvidoActivity _obj(obj);
     ::java::lang::String _arg0(arg0);
     _obj.onPhotoFetched(_arg0);
+}
+
+bool vc::duvido::DuvidoActivity::hasFacebookApp() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "hasFacebookApp", "()Z");
+    return java::jni->CallBooleanMethod(obj, mid);
+}
+
+void vc::duvido::DuvidoActivity::startWebLogin() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "startWebLogin", "()V");
+    java::jni->CallVoidMethod(obj, mid);
 }
 
 void ::vc::duvido::DuvidoActivity::jniInitializeNative() {
@@ -222,6 +238,30 @@ void ::vc::duvido::FacebookBridge::jniInitializeNative() {
     obj = java::jni->NewObject(_class, mid);
 }
 #pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::WebLoginActivity::WebLoginActivity() : ::java::lang::Object((jobject)0), ::android::app::Activity((jobject)0), ::android::content::ComponentCallbacks((jobject)0), ::android::content::ComponentCallbacks2((jobject)0), ::android::content::Context((jobject)0), ::android::content::ContextWrapper((jobject)0), ::android::view::ContextThemeWrapper((jobject)0), ::android::view::KeyEvent_Callback((jobject)0), ::android::view::LayoutInflater_Factory((jobject)0), ::android::view::LayoutInflater_Factory2((jobject)0), ::android::view::View_OnCreateContextMenuListener((jobject)0), ::android::view::Window_Callback((jobject)0) {
+    if (!::vc::duvido::WebLoginActivity::_class) ::vc::duvido::WebLoginActivity::_class = java::fetch_class("vc/duvido/WebLoginActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+void vc::duvido::WebLoginActivity::onCreate(const ::android::os::Bundle& arg0) const {
+    if (!::vc::duvido::WebLoginActivity::_class) ::vc::duvido::WebLoginActivity::_class = java::fetch_class("vc/duvido/WebLoginActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "onCreate", "(Landroid/os/Bundle;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallVoidMethod(obj, mid, _arg0);
+}
+
+bool vc::duvido::WebLoginActivity::onKeyDown(int32_t arg0, const ::android::view::KeyEvent& arg1) const {
+    if (!::vc::duvido::WebLoginActivity::_class) ::vc::duvido::WebLoginActivity::_class = java::fetch_class("vc/duvido/WebLoginActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
+    int32_t _arg0 = arg0;
+    jobject _arg1 = arg1.obj;
+    return java::jni->CallBooleanMethod(obj, mid, _arg0, _arg1);
+}
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
