@@ -66,6 +66,7 @@ void Duvido::initFacebook() {
     _facebook = new Facebook(this);
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
+        emit tokenChanged();
         if (token().isEmpty()) {
             setMe(nullptr);
         } else {

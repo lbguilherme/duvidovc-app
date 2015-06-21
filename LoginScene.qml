@@ -17,9 +17,9 @@ Item {
         anchors.bottom: scene.bottom
         anchors.left: scene.left
         anchors.right: scene.right
+        enabled: !duvido.token
 
         onClicked: {
-            enabled = false;
             duvido.login();
         }
     }

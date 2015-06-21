@@ -18,6 +18,7 @@ class Duvido : public QGuiApplication {
     Q_PROPERTY(QString terms READ terms CONSTANT)
     Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
+    Q_PROPERTY(QString token READ token NOTIFY tokenChanged)
 
 public:
 
@@ -45,6 +46,7 @@ signals:
     void meChanged();
     void backPressed();
     void photoFetched(QString path);
+    void tokenChanged();
 
 private:
 
