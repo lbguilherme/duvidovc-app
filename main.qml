@@ -8,8 +8,8 @@ Item {
     height: 650
 
     property Item window: window
-    property Item frag: fragLoader.item
-    property alias fragSource: fragLoader.source
+    property Item scene: sceneLoader.item
+    property alias sceneSource: sceneLoader.source
     property Item dialog: dialogLoader.item
     property alias dialogSource: dialogLoader.source
 
@@ -19,7 +19,7 @@ Item {
     }
 
     Loader {
-        id: fragLoader
+        id: sceneLoader
         anchors.fill: parent
 
         source: duvido.me

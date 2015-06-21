@@ -3,7 +3,7 @@ import QtQuick 2.4
 Item {
     id: root
 
-    property ActionBar actionBar: window.frag.actionBar
+    property ActionBar actionBar: window.scene.actionBar
     property string icon: ""
     property Item button
     property bool enabled: true
