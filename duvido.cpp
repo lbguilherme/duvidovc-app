@@ -72,9 +72,12 @@ void Duvido::initFacebook() {
         } else {
             qDebug() << "Your access token:" << token();
             auto result = new ApiLogin(this);
+            if (result->hasCache())
+                setMe(result->user());
             connect(result, &Api::finished, [this, result]{
                 result->deleteLater();
-                setMe(result->user());
+                if (result->changedFromCache())
+                    setMe(result->user());
             });
         }
     });

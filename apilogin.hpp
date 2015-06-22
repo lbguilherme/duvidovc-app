@@ -11,6 +11,8 @@ public:
 
     explicit ApiLogin(QObject* parent = nullptr);
 
+    bool hasCache() const;
+    bool changedFromCache() const;
     User* user() const;
 
 protected:
@@ -19,6 +21,8 @@ protected:
 
 private:
 
+    bool _cache;
+    bool _changed;
     QString _id;
     QString _name;
 
