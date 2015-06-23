@@ -12,7 +12,6 @@ include(deployment.pri)
 
 SOURCES += \
     core/main.cpp \
-    core/facebook.cpp \
     core/duvido.cpp \
     core/duvidoeventfilter.cpp \
     core/avatarmanager.cpp \
@@ -27,7 +26,6 @@ SOURCES += \
     api/apiavatars.cpp
 
 HEADERS += \
-    core/facebook.hpp \
     core/duvido.hpp \
     core/duvidoeventfilter.hpp \
     core/avatarmanager.hpp \

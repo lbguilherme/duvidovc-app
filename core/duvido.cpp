@@ -1,5 +1,4 @@
 #include <core/duvido.hpp>
-#include <core/facebook.hpp>
 #include <core/duvidoeventfilter.hpp>
 #include <qml/avatarloader.hpp>
 #include <qml/friendsmodel.hpp>
@@ -11,11 +10,13 @@
 #include <QQmlContext>
 #include <QQmlEngine>
 #include <QScreen>
+#include <QSettings>
 #include <QtQml>
 
 #include <functional>
 
 #ifdef Q_OS_ANDROID
+#include <vc.duvido.FacebookBridge.hpp>
 using namespace vc::duvido;
 #endif
 
@@ -60,6 +61,12 @@ void Duvido::initInterfaces() {
 }
 
 void Duvido::initFacebook() {
+#ifdef Q_OS_ANDROID
+    FacebookBridge::initialize();
+#endif
+    setToken(QSettings().value("token").toString());
+
+    /*
     _facebook = new Facebook(this);
 
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
@@ -80,6 +87,7 @@ void Duvido::initFacebook() {
     });
 
     _facebook->initialize();
+    */
 }
 
 void Duvido::initView() {
@@ -101,12 +109,29 @@ QNetworkAccessManager& Duvido::http() {
     return _http;
 }
 
-Facebook* Duvido::facebook() {
-    return _facebook;
+QString Duvido::token() const {
+    return _token;
 }
 
-QString Duvido::token() {
-    return _facebook->accessToken();
+void Duvido::setToken(QString token) {
+    if (_token == token) return;
+    _token = token;
+    emit tokenChanged();
+
+    if (_token.isEmpty())
+        setMe("", "");
+    else {
+        qDebug() << "Your access token:" << _token;
+        QSettings().setValue("token", _token);
+        auto result = new ApiLogin(this);
+        if (result->hasCache())
+            setMe(result->id(), result->name());
+        connect(result, &Api::finished, [this, result]{
+            result->deleteLater();
+            if (result->changedFromCache())
+                setMe(result->id(), result->name());
+        });
+    }
 }
 
 AvatarManager* Duvido::avatarManager() {
@@ -114,14 +139,20 @@ AvatarManager* Duvido::avatarManager() {
 }
 
 void Duvido::login() {
-    _facebook->login();
+    if (!_token.isEmpty()) return;
+
+#ifdef Q_OS_ANDROID
+    FacebookBridge::login();
+#else
+    _token = "dummy";
+#endif
 }
 
-QString Duvido::myId() {
+QString Duvido::myId() const {
     return _myId;
 }
 
-QString Duvido::myName() {
+QString Duvido::myName() const {
     return _myName;
 }
 

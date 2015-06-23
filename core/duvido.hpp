@@ -8,7 +8,6 @@
 #include <vc.duvido.DuvidoActivity.hpp>
 #endif
 
-class Facebook;
 class AvatarManager;
 
 class Duvido : public QGuiApplication {
@@ -25,18 +24,17 @@ public:
     Duvido();
 
     QNetworkAccessManager& http();
-
-    Facebook* facebook();
-    QString token();
     AvatarManager* avatarManager();
 
-    QString myId();
-    QString myName();
+    QString myId() const;
+    QString myName() const;
     bool hasCamera() const;
     bool hasGallery() const;
     QString terms() const;
+    QString token() const;
 
     void setMe(QString id, QString name);
+    Q_INVOKABLE void setToken(QString token);
 
     Q_INVOKABLE void login();
     Q_INVOKABLE void fetchPhotoFromGallery();
@@ -57,9 +55,9 @@ private:
 
 private:
 
-    Facebook* _facebook;
     AvatarManager* _avatarManager;
 
+    QString _token;
     QString _myId;
     QString _myName;
     bool _hasCamera;

@@ -8,18 +8,19 @@ using namespace vc::duvido;
 using namespace java::lang;
 
 void FacebookBridge::onLoginSuccess() {
-    emit ::duvido->facebook()->javaCallbackLoginSuccess();
+    // TODO
 }
 
 void FacebookBridge::onLoginError() {
-    emit ::duvido->facebook()->javaCallbackLoginError();
+    // TODO
 }
 
 void FacebookBridge::onLoginCancel() {
-    emit ::duvido->facebook()->javaCallbackLoginCancel();
+    // TODO
 }
 
 void FacebookBridge::onAccessTokenReceived(const String& token) {
     if (token.isNull()) return;
-    emit ::duvido->facebook()->javaCallbackAccessToken(token);
+    // This method must be invoked on duvido's thread. QueuedConnection will launch a QEvent on the right thread.
+    Duvido::staticMetaObject.invokeMethod(::duvido, "setToken", Qt::QueuedConnection, Q_ARG(QString, token));
 }
