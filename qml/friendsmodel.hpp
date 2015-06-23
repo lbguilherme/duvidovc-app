@@ -1,9 +1,8 @@
 #pragma once
 
-#include <core/user.hpp>
-
 #include <QAbstractListModel>
-#include <QSortFilterProxyModel>
+
+class QSortFilterProxyModel;
 
 class FriendsModel : public QAbstractListModel {
     Q_OBJECT
@@ -37,8 +36,13 @@ private:
 
 private:
 
-    QList<User*> _friends;
-    QList<bool> _selected;
+    struct FriendInfo {
+        QString id;
+        QString name;
+        bool selected;
+    };
+
+    QList<FriendInfo> _friends;
     QSortFilterProxyModel* _selectedFriends;
 
 };

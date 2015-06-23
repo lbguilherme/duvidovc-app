@@ -2,8 +2,6 @@
 
 #include <api/api.hpp>
 
-class User;
-
 class ApiFriends : public Api {
     Q_OBJECT
 
@@ -11,7 +9,8 @@ public:
 
     explicit ApiFriends(QObject* parent = nullptr);
 
-    QList<User*> friends() const;
+    QString id(int index) const;
+    QString name(int index) const;
     int count() const;
 
 protected:

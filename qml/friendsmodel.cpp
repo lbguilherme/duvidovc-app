@@ -4,6 +4,7 @@
 
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QSortFilterProxyModel>
 
 #include <algorithm>
 #include <functional>
@@ -30,21 +31,17 @@ FriendsModel::FriendsModel(QObject* parent) : QAbstractListModel(parent) {
 }
 
 void FriendsModel::refresh() {
-    beginRemoveRows(QModelIndex(), 0, _friends.count()-1);
-    for (User* user : _friends) {
-        user->deleteLater();
-    }
-    _friends.clear();
-    _selected.clear();
-    endRemoveRows();
-
     auto result = new ApiFriends(this);
     connect(result, &Api::finished, [this, result]{
         result->deleteLater();
+
+        beginRemoveRows(QModelIndex(), 0, _friends.count()-1);
+        _friends.clear();
+        endRemoveRows();
+
         beginInsertRows(QModelIndex(), 0, result->count()-1);
-        _friends = result->friends();
-        for (int i = 0; i < _friends.size(); ++i)
-            _selected.append(false);
+        for (int i = 0; i < result->count(); ++i)
+            _friends.append({result->id(i), result->name(i), false});
         endInsertRows();
     });
 }
@@ -72,11 +69,11 @@ QVariant FriendsModel::data(const QModelIndex& index, int role) const {
     int i = index.row();
     switch (role) {
     case IdRole:
-        return _friends[i]->id();
+        return _friends[i].id;
     case NameRole:
-        return _friends[i]->name();
+        return _friends[i].name;
     case SelectedRole:
-        return _selected[i];
+        return _friends[i].selected;
     default:
         return QVariant();
     }
@@ -86,7 +83,7 @@ bool FriendsModel::setData(const QModelIndex& index, const QVariant& value, int 
     int i = index.row();
     switch (role) {
     case SelectedRole:
-        _selected[i] = value.toBool();
+        _friends[i].selected = value.toBool();
         emit dataChanged(index, index, {SelectedRole});
         emit selectedCountChanged();
         return true;
@@ -96,5 +93,5 @@ bool FriendsModel::setData(const QModelIndex& index, const QVariant& value, int 
 }
 
 int FriendsModel::selectedCount() const {
-    return std::count(_selected.begin(), _selected.end(), true);
+    return std::count_if(_friends.begin(), _friends.end(), [](const auto& f){return f.selected;});
 }

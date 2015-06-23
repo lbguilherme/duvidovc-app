@@ -1,6 +1,6 @@
 #include <api/apifriends.hpp>
-#include <core/user.hpp>
 #include <core/duvido.hpp>
+#include <core/user.hpp>
 
 #include <QJsonObject>
 #include <QJsonArray>
@@ -23,12 +23,12 @@ void ApiFriends::processReply() {
     }
 }
 
-QList<User*> ApiFriends::friends() const {
-    QList<User*> users;
-    for (FriendInfo info : _friends) {
-        users.append(new User(info.id, info.name));
-    }
-    return users;
+QString ApiFriends::id(int index) const {
+    return _friends[index].id;
+}
+
+QString ApiFriends::name(int index) const {
+    return _friends[index].name;
 }
 
 int ApiFriends::count() const {
