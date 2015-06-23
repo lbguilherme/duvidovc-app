@@ -37,7 +37,6 @@ private:
 
 private:
 
-    QString _userId;
     QList<User*> _friends;
     QList<bool> _selected;
     QSortFilterProxyModel* _selectedFriends;
