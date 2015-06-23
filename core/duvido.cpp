@@ -65,29 +65,6 @@ void Duvido::initFacebook() {
     FacebookBridge::initialize();
 #endif
     setToken(QSettings().value("token").toString());
-
-    /*
-    _facebook = new Facebook(this);
-
-    connect(_facebook, &Facebook::accessTokenChanged, [this]{
-        emit tokenChanged();
-        if (token().isEmpty()) {
-            setMe("", "");
-        } else {
-            qDebug() << "Your access token:" << token();
-            auto result = new ApiLogin(this);
-            if (result->hasCache())
-                setMe(result->id(), result->name());
-            connect(result, &Api::finished, [this, result]{
-                result->deleteLater();
-                if (result->changedFromCache())
-                    setMe(result->id(), result->name());
-            });
-        }
-    });
-
-    _facebook->initialize();
-    */
 }
 
 void Duvido::initView() {
