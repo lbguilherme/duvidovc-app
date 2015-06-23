@@ -42,17 +42,17 @@ Item {
 
     property bool canBack: dialog || StackManager.canGoBack
 
-    function back() {
+    function goBack() {
         if (dialog)
             closeDialog();
         else if (StackManager.canGoBack)
-            StackManager.back();
+            StackManager.goBack();
         else
             Qt.quit();
     }
 
     Connections {
         target: duvido
-        onBackPressed: window.back()
+        onBackPressed: goBack()
     }
 }

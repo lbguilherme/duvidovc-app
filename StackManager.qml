@@ -14,7 +14,7 @@ QtObject {
         canGoBack = true;
     }
 
-    function back() {
+    function goBack() {
         currentScene = sceneStack.pop();
         canGoBack = sceneStack.length > 0;
     }

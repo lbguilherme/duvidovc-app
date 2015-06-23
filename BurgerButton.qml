@@ -56,8 +56,8 @@ Item {
         anchors.margins: -20*dp
         onPressed: {
             forceActiveFocus();
-            if (window.canBack)
-                window.back();
+            if (canBack)
+                goBack();
             else
                 parent.arrowness = parent.arrowness == 1 ? 0 : 1;
         }
