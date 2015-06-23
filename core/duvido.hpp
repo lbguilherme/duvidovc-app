@@ -9,12 +9,12 @@
 #endif
 
 class Facebook;
-class User;
 class AvatarManager;
 
 class Duvido : public QGuiApplication {
     Q_OBJECT
-    Q_PROPERTY(User* me READ me NOTIFY meChanged)
+    Q_PROPERTY(QString myId READ myId NOTIFY meChanged)
+    Q_PROPERTY(QString myName READ myName NOTIFY meChanged)
     Q_PROPERTY(QString terms READ terms CONSTANT)
     Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
@@ -30,12 +30,13 @@ public:
     QString token();
     AvatarManager* avatarManager();
 
-    User* me();
+    QString myId();
+    QString myName();
     bool hasCamera() const;
     bool hasGallery() const;
     QString terms() const;
 
-    void setMe(User* me);
+    void setMe(QString id, QString name);
 
     Q_INVOKABLE void login();
     Q_INVOKABLE void fetchPhotoFromGallery();
@@ -57,10 +58,13 @@ private:
 private:
 
     Facebook* _facebook;
-    User* _me;
     AvatarManager* _avatarManager;
+
+    QString _myId;
+    QString _myName;
     bool _hasCamera;
     bool _hasGallery;
+
     QNetworkAccessManager _http;
     QQuickView _view;
 

@@ -1,5 +1,4 @@
 #include <api/apilogin.hpp>
-#include <core/user.hpp>
 #include <core/duvido.hpp>
 
 #include <QJsonObject>
@@ -48,6 +47,10 @@ bool ApiLogin::changedFromCache() const {
     return _changed;
 }
 
-User* ApiLogin::user() const {
-    return new User(_id, _name);
+QString ApiLogin::id() const {
+    return _id;
+}
+
+QString ApiLogin::name() const {
+    return _name;
 }

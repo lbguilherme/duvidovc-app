@@ -8,7 +8,7 @@ Dialog {
     Text {
         id: complaintGreeting
         color: "#000"
-        text: "Você está denunciando o desafio <i>desafio</i> de <i>"+duvido.me.name+"</i>"
+        text: "Você está denunciando o desafio <i>desafio</i> de <i>"+duvido.myName+"</i>"
         font.pixelSize: 14*dp
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width - 40*dp

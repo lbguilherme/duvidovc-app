@@ -22,7 +22,7 @@ Item {
         id: sceneLoader
         anchors.fill: parent
 
-        source: duvido.me
+        source: duvido.myId !== ""
             ? "qrc:/scenes/MainScene.qml"
             : "qrc:/scenes/LoginScene.qml"
     }

@@ -34,7 +34,7 @@ Card {
 
             Avatar {
                 id: senderAvatar
-                userId: duvido.me.id
+                userId: duvido.myId
                 radius: 16*dp
                 anchors.verticalCenter: senderName.verticalCenter
             }
@@ -42,7 +42,7 @@ Card {
             Text {
                 id: senderName
                 color: "#333"
-                text: "<i>"+duvido.me.name+"</i> duvida que..."
+                text: "<i>"+duvido.myName+"</i> duvida que..."
                 font.pixelSize: 14*dp
                 anchors.verticalCenter: senderAvatar.verticalCenter
             }

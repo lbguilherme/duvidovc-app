@@ -1,6 +1,5 @@
 #include <core/duvido.hpp>
 #include <core/facebook.hpp>
-#include <core/user.hpp>
 #include <core/duvidoeventfilter.hpp>
 #include <qml/avatarloader.hpp>
 #include <qml/friendsmodel.hpp>
@@ -28,7 +27,6 @@ static char* argv[] = {argv0, 0};
 
 Duvido::Duvido()
     : QGuiApplication(argc, argv)
-    , _me(nullptr)
     , _avatarManager(new AvatarManager(this))
     #ifdef Q_OS_ANDROID
     , _activity(DuvidoActivity::getInstance())
@@ -51,7 +49,6 @@ Duvido::Duvido()
 }
 
 void Duvido::initInterfaces() {
-    qRegisterMetaType<User*>("User");
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
 
@@ -68,16 +65,16 @@ void Duvido::initFacebook() {
     connect(_facebook, &Facebook::accessTokenChanged, [this]{
         emit tokenChanged();
         if (token().isEmpty()) {
-            setMe(nullptr);
+            setMe("", "");
         } else {
             qDebug() << "Your access token:" << token();
             auto result = new ApiLogin(this);
             if (result->hasCache())
-                setMe(result->user());
+                setMe(result->id(), result->name());
             connect(result, &Api::finished, [this, result]{
                 result->deleteLater();
                 if (result->changedFromCache())
-                    setMe(result->user());
+                    setMe(result->id(), result->name());
             });
         }
     });
@@ -120,14 +117,18 @@ void Duvido::login() {
     _facebook->login();
 }
 
-User* Duvido::me() {
-    return _me;
+QString Duvido::myId() {
+    return _myId;
 }
 
-void Duvido::setMe(User* me) {
-    if (_me == me) return;
-    if (_me) _me->deleteLater();
-    _me = me;
+QString Duvido::myName() {
+    return _myName;
+}
+
+void Duvido::setMe(QString id, QString name) {
+    if (_myId == id && _myName == name) return;
+    _myId = id;
+    _myName = name;
     emit meChanged();
 }
 

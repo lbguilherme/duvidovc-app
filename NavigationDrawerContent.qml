@@ -27,7 +27,7 @@ Item {
 
             AvatarLoader {
                 target: avatarBack
-                userId: duvido.me.id
+                userId: duvido.myId
             }
 
             GaussianBlur {
@@ -46,14 +46,14 @@ Item {
 
             Avatar {
                 id: avatar
-                userId: duvido.me.id
+                userId: duvido.myId
                 radius: 65*dp
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: -15*dp
             }
 
             Text {
-                text: duvido.me.name
+                text: duvido.myName
                 x: 0
                 y: 2*avatar.radius+25*dp
                 width: parent.width

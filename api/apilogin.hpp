@@ -2,8 +2,6 @@
 
 #include <api/api.hpp>
 
-class User;
-
 class ApiLogin : public Api {
     Q_OBJECT
 
@@ -13,7 +11,8 @@ public:
 
     bool hasCache() const;
     bool changedFromCache() const;
-    User* user() const;
+    QString id() const;
+    QString name() const;
 
 protected:
 

@@ -1,6 +1,5 @@
 #include <api/apifriends.hpp>
 #include <core/duvido.hpp>
-#include <core/user.hpp>
 
 #include <QJsonObject>
 #include <QJsonArray>
@@ -8,7 +7,7 @@
 #include <QNetworkReply>
 
 ApiFriends::ApiFriends(QObject* parent) : Api(parent) {
-    _reply = duvido->http().get(request("/friends", QVariantMap{{"id", duvido->me()->id()}}));
+    _reply = duvido->http().get(request("/friends", QVariantMap{{"id", duvido->myId()}}));
     setupReply();
 }
 

@@ -15,7 +15,6 @@ SOURCES += \
     core/facebook.cpp \
     core/duvido.cpp \
     core/duvidoeventfilter.cpp \
-    core/user.cpp \
     core/avatarmanager.cpp \
     qml/friendsmodel.cpp \
     qml/avatarloader.cpp \
@@ -31,7 +30,6 @@ HEADERS += \
     core/facebook.hpp \
     core/duvido.hpp \
     core/duvidoeventfilter.hpp \
-    core/user.hpp \
     core/avatarmanager.hpp \
     qml/friendsmodel.hpp \
     qml/avatarloader.hpp \
