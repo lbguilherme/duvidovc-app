@@ -1,5 +1,5 @@
-#include "avatarmanager.hpp"
-#include "apiavatars.hpp"
+#include <core/avatarmanager.hpp>
+#include <api/apiavatars.hpp>
 
 #include <QFile>
 #include <QDir>

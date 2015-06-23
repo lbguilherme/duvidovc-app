@@ -11,37 +11,37 @@ QMAKE_CXXFLAGS += -Wextra -fvisibility=hidden -ffunction-sections
 include(deployment.pri)
 
 SOURCES += \
-    main.cpp \
-    facebook.cpp \
-    duvido.cpp \
-    user.cpp \
-    friendsmodel.cpp \
-    duvidoeventfilter.cpp \
-    avatarloader.cpp \
-    challengecreator.cpp \
-    api.cpp \
-    apifriends.cpp \
-    apilogin.cpp \
-    apiupload.cpp \
-    apicreatechallenge.cpp \
-    apiavatars.cpp \
-    avatarmanager.cpp
+    core/main.cpp \
+    core/facebook.cpp \
+    core/duvido.cpp \
+    core/duvidoeventfilter.cpp \
+    core/user.cpp \
+    core/avatarmanager.cpp \
+    qml/friendsmodel.cpp \
+    qml/avatarloader.cpp \
+    qml/challengecreator.cpp \
+    api/api.cpp \
+    api/apifriends.cpp \
+    api/apilogin.cpp \
+    api/apiupload.cpp \
+    api/apicreatechallenge.cpp \
+    api/apiavatars.cpp
 
 HEADERS += \
-    facebook.hpp \
-    duvido.hpp \
-    user.hpp \
-    friendsmodel.hpp \
-    duvidoeventfilter.hpp \
-    avatarloader.hpp \
-    challengecreator.hpp \
-    apifriends.hpp \
-    apilogin.hpp \
-    api.hpp \
-    apiupload.hpp \
-    apicreatechallenge.hpp \
-    apiavatars.hpp \
-    avatarmanager.hpp
+    core/facebook.hpp \
+    core/duvido.hpp \
+    core/duvidoeventfilter.hpp \
+    core/user.hpp \
+    core/avatarmanager.hpp \
+    qml/friendsmodel.hpp \
+    qml/avatarloader.hpp \
+    qml/challengecreator.hpp \
+    api/apifriends.hpp \
+    api/apilogin.hpp \
+    api/api.hpp \
+    api/apiupload.hpp \
+    api/apicreatechallenge.hpp \
+    api/apiavatars.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

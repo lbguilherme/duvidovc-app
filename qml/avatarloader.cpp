@@ -1,6 +1,6 @@
-#include "avatarloader.hpp"
-#include "duvido.hpp"
-#include "avatarmanager.hpp"
+#include <qml/avatarloader.hpp>
+#include <core/duvido.hpp>
+#include <core/avatarmanager.hpp>
 
 #include <QQuickItem>
 

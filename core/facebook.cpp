@@ -1,4 +1,4 @@
-#include "facebook.hpp"
+#include <core/facebook.hpp>
 
 #include <Qt>
 #include <QSettings>

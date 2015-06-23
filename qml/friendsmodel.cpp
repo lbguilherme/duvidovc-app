@@ -1,6 +1,6 @@
-#include "friendsmodel.hpp"
-#include "duvido.hpp"
-#include "apifriends.hpp"
+#include <qml/friendsmodel.hpp>
+#include <core/duvido.hpp>
+#include <api/apifriends.hpp>
 
 #include <QJsonObject>
 #include <QJsonArray>

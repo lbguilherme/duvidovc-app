@@ -1,5 +1,5 @@
-#include "duvidoeventfilter.hpp"
-#include "duvido.hpp"
+#include <core/duvidoeventfilter.hpp>
+#include <core/duvido.hpp>
 
 #include <QEvent>
 #include <QKeyEvent>

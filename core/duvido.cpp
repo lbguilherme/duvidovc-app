@@ -1,12 +1,12 @@
-#include "duvido.hpp"
-#include "facebook.hpp"
-#include "user.hpp"
-#include "duvidoeventfilter.hpp"
-#include "avatarloader.hpp"
-#include "friendsmodel.hpp"
-#include "challengecreator.hpp"
-#include "apilogin.hpp"
-#include "avatarmanager.hpp"
+#include <core/duvido.hpp>
+#include <core/facebook.hpp>
+#include <core/user.hpp>
+#include <core/duvidoeventfilter.hpp>
+#include <qml/avatarloader.hpp>
+#include <qml/friendsmodel.hpp>
+#include <qml/challengecreator.hpp>
+#include <api/apilogin.hpp>
+#include <core/avatarmanager.hpp>
 
 #include <QSortFilterProxyModel>
 #include <QQmlContext>

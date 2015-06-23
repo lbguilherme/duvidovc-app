@@ -1,7 +1,7 @@
-#include "duvido.hpp"
+#include <core/duvido.hpp>
 
 #ifdef Q_OS_ANDROID
-#include "java/src/java-core.hpp"
+#include "java/src/java-core.hpp>
 #endif
 
 __attribute__((visibility("default")))

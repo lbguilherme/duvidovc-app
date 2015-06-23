@@ -1,5 +1,5 @@
-#include "apiupload.hpp"
-#include "duvido.hpp"
+#include <api/apiupload.hpp>
+#include <core/duvido.hpp>
 
 #include <QByteArray>
 #include <QNetworkReply>

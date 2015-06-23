@@ -1,6 +1,6 @@
 #pragma once
 
-#include "api.hpp"
+#include <api/api.hpp>
 
 class ApiCreateChallenge : public Api {
     Q_OBJECT

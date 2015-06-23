@@ -1,5 +1,5 @@
-#include "api.hpp"
-#include "duvido.hpp"
+#include <api/api.hpp>
+#include <core/duvido.hpp>
 
 #include <QNetworkReply>
 #include <QUrlQuery>

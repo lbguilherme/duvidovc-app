@@ -1,6 +1,6 @@
-#include "apilogin.hpp"
-#include "user.hpp"
-#include "duvido.hpp"
+#include <api/apilogin.hpp>
+#include <core/user.hpp>
+#include <core/duvido.hpp>
 
 #include <QJsonObject>
 #include <QJsonDocument>

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "user.hpp"
+#include <core/user.hpp>
 
 #include <QAbstractListModel>
 #include <QSortFilterProxyModel>

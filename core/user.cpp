@@ -1,6 +1,6 @@
-#include "user.hpp"
-#include "friendsmodel.hpp"
-#include "duvido.hpp"
+#include <core/user.hpp>
+#include <qml/friendsmodel.hpp>
+#include <core/duvido.hpp>
 
 User::User(QString id, QString name) : QObject(duvido) {
     _id = id;

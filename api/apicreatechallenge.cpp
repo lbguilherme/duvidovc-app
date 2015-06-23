@@ -1,5 +1,5 @@
-#include "apicreatechallenge.hpp"
-#include "duvido.hpp"
+#include <api/apicreatechallenge.hpp>
+#include <core/duvido.hpp>
 
 #include <QJsonObject>
 #include <QJsonDocument>

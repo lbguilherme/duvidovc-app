@@ -1,5 +1,5 @@
-#include "challengecreator.hpp"
-#include "apiupload.hpp"
+#include <qml/challengecreator.hpp>
+#include <api/apiupload.hpp>
 
 ChallengeCreator::ChallengeCreator(QObject* parent)
     : QObject(parent)

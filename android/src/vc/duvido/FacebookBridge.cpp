@@ -1,7 +1,7 @@
 #include <vc.duvido.FacebookBridge.hpp>
 #include <com.facebook.AccessToken.hpp>
 #include <java.lang.String.hpp>
-#include <duvido.hpp>
+#include <core/duvido.hpp>
 #include <facebook.hpp>
 
 using namespace vc::duvido;

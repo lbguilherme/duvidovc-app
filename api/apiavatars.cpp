@@ -1,5 +1,5 @@
-#include "apiavatars.hpp"
-#include "duvido.hpp"
+#include <api/apiavatars.hpp>
+#include <core/duvido.hpp>
 
 #include <QNetworkReply>
 
