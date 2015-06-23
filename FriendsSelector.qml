@@ -25,7 +25,7 @@ Dialog {
             text: root.friendsModel ? "Enviar para " + root.friendsModel.selectedCount + " amigo" + (root.friendsModel.selectedCount > 1 ? "s" : "") : ""
             visible: root.friendsModel ? root.friendsModel.selectedCount > 0 : false
             color: "#0f6464"
-            onClicked: dialogSource = "";
+            onClicked: closeDialog();
         }
     }
 

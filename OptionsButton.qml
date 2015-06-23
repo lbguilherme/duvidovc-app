@@ -11,9 +11,9 @@ Item {
         anchors.fill: parent
         onClicked: {
             forceActiveFocus();
-            window.dialogSource = "qrc:/frags/OptionsDialog.qml";
-            window.dialog.optionsModel = parent.model;
-            window.dialog.optionsButton = optionsButton;
+            openDialog("qrc:/frags/OptionsDialog.qml");
+            dialog.optionsModel = parent.model;
+            dialog.optionsButton = optionsButton;
         }
     }
 

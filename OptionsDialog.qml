@@ -37,7 +37,7 @@ Dialog {
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
-                onClicked: window.dialogSource = action
+                onClicked: openDialog(action);
             }
 
             Rectangle {

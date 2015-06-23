@@ -31,14 +31,14 @@ Dialog {
             flat: true
             text: "Cancelar"
             color: "#999"
-            onClicked: window.dialogSource = ""
+            onClicked: closeDialog();
         }
 
         Button {
             flat: true
             text: "Denunciar"
             color: "#0f6464"
-            onClicked: window.dialogSource = ""
+            onClicked: closeDialog();
         }
     }
 }

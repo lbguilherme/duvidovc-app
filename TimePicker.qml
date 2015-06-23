@@ -45,9 +45,9 @@ Item {
         anchors.fill: parent
         onClicked: {
             forceActiveFocus();
-            window.dialogSource = "qrc:/frags/TimePickerDialog.qml";
-            window.dialog.timePicker = parent;
-            window.dialog.set (parent.days, parent.hours, parent.minutes);
+            openDialog("qrc:/frags/TimePickerDialog.qml");
+            dialog.timePicker = parent;
+            dialog.set(parent.days, parent.hours, parent.minutes);
         }
     }
 }

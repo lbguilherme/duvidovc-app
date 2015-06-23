@@ -35,8 +35,8 @@ Item {
         anchors.fill: parent
         onClicked: {
             forceActiveFocus();
-            window.dialogSource = "qrc:/frags/FriendsSelector.qml";
-            window.dialog.friendsModel = root.model;
+            openDialog("qrc:/frags/FriendsSelector.qml");
+            dialog.friendsModel = root.model;
             parent.error = ""
         }
     }

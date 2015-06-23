@@ -32,11 +32,19 @@ Item {
         anchors.fill: parent
     }
 
+    function openDialog(source) {
+        dialogSource = source;
+    }
+
+    function closeDialog() {
+        dialogSource = "";
+    }
+
     property bool canBack: dialog || StackManager.canGoBack
 
     function back() {
         if (dialog)
-            dialogSource = "";
+            closeDialog();
         else if (StackManager.canGoBack)
             StackManager.back();
         else

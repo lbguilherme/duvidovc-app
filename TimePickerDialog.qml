@@ -69,7 +69,7 @@ Dialog {
                     timePicker.days = days;
                     timePicker.hours = hours;
                     timePicker.minutes = minutes;
-                    window.dialogSource = "";
+                    closeDialog();
                 }
             }
         }

@@ -20,7 +20,7 @@ Item {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: window.dialogSource = ""
+        onClicked: closeDialog();
     }
 
     MouseArea {
