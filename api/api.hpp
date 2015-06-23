@@ -7,9 +7,6 @@ class QNetworkRequest;
 
 class Api : public QObject {
     Q_OBJECT
-    Q_PROPERTY(double progress READ progress NOTIFY progressChanged)
-    Q_PROPERTY(bool isFinished READ isFinished NOTIFY finished)
-    Q_PROPERTY(int status READ status NOTIFY finished)
 
 public:
 
