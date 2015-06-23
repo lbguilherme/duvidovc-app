@@ -5,62 +5,52 @@ import "qrc:/material"
 import "qrc:/components"
 
 Dialog {
-    id: dialog
     shadowOpacity: 0.5
     surfaceWidth: window.width - 48*dp
     property alias days: daysColumn.currentIndex
     property alias hours: hoursColumn.currentIndex
     property alias minutes: minutesColumn.currentIndex
     property TimePicker timePicker
-    function set (days, hours, minutes) {
+
+    function set(days, hours, minutes) {
         tumbler.setCurrentIndexAt(0, days);
         tumbler.setCurrentIndexAt(1, hours);
         tumbler.setCurrentIndexAt(2, minutes);
     }
 
+    function generateSequenceModel(from, to, postfix) {
+        var result = [];
+        for (var i = from; i <= to; i++) {
+            result.push(i + postfix)
+        }
+        return result;
+    }
+
     Item {
         height: 300*dp
-        width: dialog.surfaceWidth
+        width: surfaceWidth
 
         Tumbler {
             id: tumbler
-            anchors.horizontalCenter: parent.horizontalCenter
             y: 16*dp
-
+            anchors.horizontalCenter: parent.horizontalCenter
             style: TumblerStyle {
                 frame: Item {}
             }
 
             TumblerColumn {
                 id: daysColumn
-                model: (function() {
-                    var result = [];
-
-                    for (var i=0; i<=7; i++) {
-                        result.push(i+"d")
-                    }
-                    return result; // 0d - 7d
-                })()
+                model: generateSequenceModel(0, 7, "d");
             }
+
             TumblerColumn {
                 id: hoursColumn
-                model: (function() {
-                    var result = [];
-                    for (var i=0; i<=23; i++) {
-                        result.push(i+"h")
-                    }
-                    return result;
-                })()
+                model: generateSequenceModel(0, 23, "h");
             }
+
             TumblerColumn {
                 id: minutesColumn
-                model: (function() {
-                    var result = [];
-                    for (var i=0; i<=59; i++) {
-                        result.push(i+"min")
-                    }
-                    return result;
-                })()
+                model: generateSequenceModel(0, 59, "min");
             }
         }
 
@@ -76,14 +66,12 @@ Dialog {
                 text: "Ok"
                 color: "#0f6464"
                 onClicked: {
-                    timePicker.days = dialog.days;
-                    timePicker.hours = dialog.hours;
-                    timePicker.minutes = dialog.minutes;
+                    timePicker.days = days;
+                    timePicker.hours = hours;
+                    timePicker.minutes = minutes;
                     window.dialogSource = "";
-
                 }
             }
         }
     }
-
 }
