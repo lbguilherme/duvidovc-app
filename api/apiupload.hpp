@@ -13,10 +13,12 @@ public:
 
 protected:
 
-    void processReply();
+    void sendRequest() override;
+    void processReply() override;
 
 private:
 
+    QString _sourcePath;
     QString _id;
 
 };

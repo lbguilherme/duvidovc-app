@@ -7,11 +7,24 @@ class ApiCreateChallenge : public Api {
 
 public:
 
-    explicit ApiCreateChallenge(QString title, QString description, QString reward, QStringList targets,
-                                unsigned duration, QString imageId, QObject* parent = nullptr);
+    struct Info {
+        QString title;
+        QString description;
+        QString reward;
+        QStringList targets;
+        unsigned duration;
+        QString imageId;
+    };
+
+    explicit ApiCreateChallenge(Info info, QObject* parent = nullptr);
 
 protected:
 
-    void processReply();
+    void sendRequest() override;
+    void processReply() override;
+
+private:
+
+    Info _info;
 
 };

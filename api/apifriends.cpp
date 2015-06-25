@@ -7,6 +7,10 @@
 #include <QNetworkReply>
 
 ApiFriends::ApiFriends(QObject* parent) : Api(parent) {
+    sendRequest();
+}
+
+void ApiFriends::sendRequest() {
     _reply = duvido->http().get(request("/friends", QVariantMap{{"id", duvido->myId()}}));
     setupReply();
 }

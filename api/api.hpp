@@ -31,6 +31,7 @@ protected:
 
     QNetworkRequest request(QString endpoint, QVariantMap args);
     void setupReply();
+    virtual void sendRequest() = 0;
     virtual void processReply() = 0;
 
 protected:

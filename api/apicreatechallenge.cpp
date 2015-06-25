@@ -5,16 +5,19 @@
 #include <QJsonDocument>
 #include <QNetworkReply>
 
-ApiCreateChallenge::ApiCreateChallenge(QString title, QString description, QString reward, QStringList targets,
-                                       unsigned duration, QString imageId, QObject* parent) : Api(parent) {
+ApiCreateChallenge::ApiCreateChallenge(Info info, QObject* parent) : Api(parent), _info(info) {
+    sendRequest();
+}
+
+void ApiCreateChallenge::sendRequest() {
     QVariantMap args {
         {"token", duvido->token()},
-        {"title", title},
-        {"description", description},
-        {"reward", reward},
-        {"targets", targets.join(",")},
-        {"duration", QString::number(duration)},
-        {"image", imageId}
+        {"title", _info.title},
+        {"description", _info.description},
+        {"reward", _info.reward},
+        {"targets", _info.targets.join(",")},
+        {"duration", QString::number(_info.duration)},
+        {"image", _info.imageId}
     };
 
     _reply = duvido->http().post(request("/challenge", args), QByteArray());

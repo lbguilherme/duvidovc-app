@@ -4,7 +4,11 @@
 #include <QNetworkReply>
 
 ApiAvatars::ApiAvatars(QStringList ids, QObject* parent) : Api(parent), _ids(ids) {
-    _reply = duvido->http().get(request("/avatars", QVariantMap{{"id", ids.join(",")}}));
+    sendRequest();
+}
+
+void ApiAvatars::sendRequest() {
+    _reply = duvido->http().get(request("/avatars", QVariantMap{{"id", _ids.join(",")}}));
     setupReply();
 }
 

@@ -16,7 +16,8 @@ public:
 
 protected:
 
-    void processReply();
+    void sendRequest() override;
+    void processReply() override;
 
 private:
 

@@ -19,8 +19,18 @@ void Api::setupReply() {
     Q_ASSERT(_reply);
     _reply->setParent(this);
     connect(_reply, &QNetworkReply::finished, [this]{
-        if (isSuccessful()) processReply();
-        emit finished();
+        if (isSuccessful()) {
+            processReply();
+            emit finished();
+        } else {
+            // TODO: wait before retry
+            // TODO: limit max number of retries
+            sendRequest();
+            _uploadProgress = 0;
+            _downloadProgress = 0;
+            emit uploadProgressChanged();
+            emit downloadProgressChanged();
+        }
     });
 
     connect(_reply, &QNetworkReply::uploadProgress, [this](qint64 sent, qint64 total){

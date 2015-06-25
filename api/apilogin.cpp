@@ -8,8 +8,7 @@
 #include <QFile>
 
 ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true) {
-    _reply = duvido->http().post(request("/login", QVariantMap{{"token", duvido->token()}}), QByteArray());
-    setupReply();
+    sendRequest();
 
     QFile cache(QDir::temp().filePath("duvido_last_login"));
     if (cache.exists()) {
@@ -19,6 +18,11 @@ ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true)
         _name = obj["name"].toString();
         _cache = true;
     }
+}
+
+void ApiLogin::sendRequest() {
+    _reply = duvido->http().post(request("/login", QVariantMap{{"token", duvido->token()}}), QByteArray());
+    setupReply();
 }
 
 void ApiLogin::processReply() {

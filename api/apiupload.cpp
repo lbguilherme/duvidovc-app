@@ -5,12 +5,16 @@
 #include <QNetworkReply>
 #include <QFile>
 
-ApiUpload::ApiUpload(QString sourcePath, QObject* parent) : Api(parent) {
-    QFile* file = new QFile(sourcePath, this);
+ApiUpload::ApiUpload(QString sourcePath, QObject* parent) : Api(parent), _sourcePath(sourcePath) {
+    sendRequest();
+}
+
+void ApiUpload::sendRequest() {
+    QFile* file = new QFile(_sourcePath, this);
     file->open(QIODevice::ReadOnly);
     _reply = duvido->http().post(request("/upload", QVariantMap{{"token", duvido->token()}}), file);
     setupReply();
-    qDebug() << "Uploading" << file->size() << "bytes from" << sourcePath;
+    qDebug() << "Uploading" << file->size() << "bytes from" << _sourcePath;
 }
 
 void ApiUpload::processReply() {
