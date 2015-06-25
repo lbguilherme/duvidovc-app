@@ -11,6 +11,7 @@ Item {
             console.log(challenge.verify());
             if (challenge.verify()) {
                 creator.submit();
+                goBack();
             }
         }
     }
@@ -22,7 +23,6 @@ Item {
         reward: challenge.reward
         targets: challenge.targets
         image: challenge.image
-        onSubmitted: console.log("submited");
     }
 
     Scrollable {
