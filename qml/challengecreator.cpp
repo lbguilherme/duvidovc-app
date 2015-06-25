@@ -1,5 +1,8 @@
 #include <qml/challengecreator.hpp>
+#include <qml/friendsmodel.hpp>
 #include <api/apiupload.hpp>
+#include <core/postingchallenge.hpp>
+#include <core/duvido.hpp>
 
 ChallengeCreator::ChallengeCreator(QObject* parent)
     : QObject(parent)
@@ -79,5 +82,12 @@ void ChallengeCreator::setImage(const QUrl& image) {
 }
 
 void ChallengeCreator::submit() {
+    ApiCreateChallenge::Info info;
+    info.title = _title;
+    info.description = _description;
+    info.reward = _reward;
+    info.duration = _duration;
+    info.targets = _targets->selectedIds();
+    duvido->addPostingChallenge(new PostingChallenge(info, _imageUpload));
     emit submitted();
 }
