@@ -13,7 +13,8 @@ public:
     explicit Api(QObject* parent = nullptr);
     ~Api();
 
-    double progress() const;
+    float uploadProgress() const;
+    float downloadProgress() const;
     bool isFinished() const;
     int status() const;
     bool isSuccessful() const;
@@ -22,7 +23,8 @@ public:
 
 signals:
 
-    void progressChanged();
+    void uploadProgressChanged();
+    void downloadProgressChanged();
     void finished();
 
 protected:
@@ -34,5 +36,7 @@ protected:
 protected:
 
     QNetworkReply* _reply;
+    float _uploadProgress;
+    float _downloadProgress;
 
 };

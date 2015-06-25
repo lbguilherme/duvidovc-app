@@ -7,7 +7,7 @@
 
 static const QString apiUrl = "http://duvido.vc/api/v0";
 
-Api::Api(QObject* parent) : QObject(parent), _reply(nullptr) {
+Api::Api(QObject* parent) : QObject(parent), _reply(nullptr), _uploadProgress(0), _downloadProgress(0) {
 
 }
 
@@ -22,10 +22,24 @@ void Api::setupReply() {
         if (isSuccessful()) processReply();
         emit finished();
     });
+
+    connect(_reply, &QNetworkReply::uploadProgress, [this](qint64 sent, qint64 total){
+        _uploadProgress = 1.0 * sent / total;
+        emit uploadProgressChanged();
+    });
+
+    connect(_reply, &QNetworkReply::downloadProgress, [this](qint64 received, qint64 total){
+        _downloadProgress = 1.0 * received / total;
+        emit downloadProgressChanged();
+    });
 }
 
-double Api::progress() const {
-    throw "not implemented";
+float Api::uploadProgress() const {
+    return _uploadProgress;
+}
+
+float Api::downloadProgress() const {
+    return _downloadProgress;
 }
 
 bool Api::isFinished() const {
