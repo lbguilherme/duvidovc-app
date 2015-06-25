@@ -5,6 +5,7 @@
 #include <qml/challengecreator.hpp>
 #include <api/apilogin.hpp>
 #include <core/avatarmanager.hpp>
+#include <core/postingchallenge.hpp>
 
 #include <QSortFilterProxyModel>
 #include <QQmlContext>
@@ -164,4 +165,22 @@ void Duvido::fetchPhotoFromGallery() {
 #ifdef Q_OS_ANDROID
     _activity.fetchPhotoFromGallery();
 #endif
+}
+
+QList<PostingChallenge*> Duvido::postingChallenges() const {
+    return _postingChallenges;
+}
+
+void Duvido::addPostingChallenge(PostingChallenge* postingChallenge) {
+    if (postingChallenge->isFinished()) {
+        postingChallenge->deleteLater();
+        return;
+    }
+
+    postingChallenge->setParent(this);
+    _postingChallenges.append(postingChallenge);
+
+    connect(postingChallenge, &PostingChallenge::finished, [this, postingChallenge]{
+        _postingChallenges.removeOne(postingChallenge);
+    });
 }

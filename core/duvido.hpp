@@ -9,6 +9,7 @@
 #endif
 
 class AvatarManager;
+class PostingChallenge;
 
 class Duvido : public QGuiApplication {
     Q_OBJECT
@@ -32,6 +33,9 @@ public:
     bool hasGallery() const;
     QString terms() const;
     QString token() const;
+
+    QList<PostingChallenge*> postingChallenges() const;
+    void addPostingChallenge(PostingChallenge* postingChallenge);
 
     void setMe(QString id, QString name);
     Q_INVOKABLE void setToken(QString token);
@@ -62,6 +66,8 @@ private:
     QString _myName;
     bool _hasCamera;
     bool _hasGallery;
+
+    QList<PostingChallenge*> _postingChallenges;
 
     QNetworkAccessManager _http;
     QQuickView _view;
