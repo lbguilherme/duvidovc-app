@@ -95,3 +95,12 @@ bool FriendsModel::setData(const QModelIndex& index, const QVariant& value, int 
 int FriendsModel::selectedCount() const {
     return std::count_if(_friends.begin(), _friends.end(), [](const auto& f){return f.selected;});
 }
+
+QStringList FriendsModel::selectedIds() const {
+    QStringList list;
+    for (auto& f : _friends) {
+        if (f.selected)
+            list.append(f.id);
+    }
+    return list;
+}

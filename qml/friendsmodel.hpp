@@ -26,6 +26,8 @@ public:
     QSortFilterProxyModel* selectedFriends() const;
     int selectedCount() const;
 
+    QStringList selectedIds() const;
+
 signals:
 
     void selectedCountChanged();
