@@ -88,6 +88,11 @@ void ChallengeCreator::submit() {
     info.reward = _reward;
     info.duration = _duration;
     info.targets = _targets->selectedIds();
-    duvido->addPostingChallenge(new PostingChallenge(info, _imageUpload));
+
+    if (_imageUpload)
+        duvido->addPostingChallenge(new PostingChallenge(info, _imageUpload));
+    else
+        duvido->addPostingChallenge(new PostingChallenge(info));
+
     emit submitted();
 }

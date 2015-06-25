@@ -12,6 +12,7 @@ PostingChallenge::PostingChallenge(ApiCreateChallenge::Info info, ApiUpload* upl
     : QObject(parent), _info(info), _upload(upload), _create(nullptr) {
 
     Q_ASSERT(info.imageId.isEmpty());
+    Q_ASSERT(_upload);
 
     _upload->setParent(this);
     if (_upload->isFinished()) {
