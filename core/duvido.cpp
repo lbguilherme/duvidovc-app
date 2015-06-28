@@ -95,12 +95,12 @@ void Duvido::setToken(QString token) {
     if (_token == token) return;
     _token = token;
     emit tokenChanged();
+    QSettings().setValue("token", _token);
 
-    if (_token.isEmpty())
+    if (_token.isEmpty()) {
         setMe("", "");
-    else {
+    } else {
         qDebug() << "Your access token:" << _token;
-        QSettings().setValue("token", _token);
         auto result = new ApiLogin(this);
         if (result->hasCache())
             setMe(result->id(), result->name());
@@ -135,6 +135,7 @@ QString Duvido::myName() const {
 }
 
 void Duvido::setMe(QString id, QString name) {
+    if (id.isEmpty()) setToken("");
     if (_myId == id && _myName == name) return;
     _myId = id;
     _myName = name;

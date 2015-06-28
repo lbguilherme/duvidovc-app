@@ -19,7 +19,7 @@ void Api::setupReply() {
     Q_ASSERT(_reply);
     _reply->setParent(this);
     connect(_reply, &QNetworkReply::finished, [this]{
-        if (isSuccessful()) {
+        if (isSuccessful() || canHandleError()) {
             processReply();
             emit finished();
         } else {
@@ -83,4 +83,8 @@ QNetworkRequest Api::request(QString endpoint, QVariantMap args) {
     QNetworkRequest request(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/octet-stream");
     return request;
+}
+
+bool Api::canHandleError() {
+    return false;
 }

@@ -26,21 +26,32 @@ void ApiLogin::sendRequest() {
 }
 
 void ApiLogin::processReply() {
-    QJsonObject obj = QJsonDocument::fromJson(_reply->readAll()).object();
-    QString id = obj["id"].toString();
-    QString name = obj["name"].toString();
-
-    if (_cache && _id == id && _name == name) {
-        _changed = false;
-        return;
-    }
-
-    _id = id;
-    _name = name;
-
     QFile cache(QDir::temp().filePath("duvido_last_login"));
-    cache.open(QIODevice::WriteOnly);
-    cache.write(QJsonDocument(obj).toJson());
+
+    if (status() == 401) {
+        _id = "";
+        _name = "";
+        cache.remove();
+    } else {
+        QJsonObject obj = QJsonDocument::fromJson(_reply->readAll()).object();
+        QString id = obj["id"].toString();
+        QString name = obj["name"].toString();
+
+        if (_cache && _id == id && _name == name) {
+            _changed = false;
+            return;
+        }
+
+        _id = id;
+        _name = name;
+
+        cache.open(QIODevice::WriteOnly);
+        cache.write(QJsonDocument(obj).toJson());
+    }
+}
+
+bool ApiLogin::canHandleError() {
+    return status() == 401;
 }
 
 bool ApiLogin::hasCache() const {

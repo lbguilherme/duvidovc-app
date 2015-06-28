@@ -33,6 +33,7 @@ protected:
     void setupReply();
     virtual void sendRequest() = 0;
     virtual void processReply() = 0;
+    virtual bool canHandleError();
 
 protected:
 
