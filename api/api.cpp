@@ -23,6 +23,7 @@ void Api::setupReply() {
             processReply();
             emit finished();
         } else {
+            _reply->deleteLater();
             // TODO: wait before retry
             // TODO: limit max number of retries
             sendRequest();
