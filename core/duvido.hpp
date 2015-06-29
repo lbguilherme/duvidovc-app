@@ -50,6 +50,8 @@ signals:
     void backPressed();
     void photoFetched(QString path);
     void tokenChanged();
+    void postingChallengeAdded(PostingChallenge* postingChallenge);
+    void postingChallengeRemoved(PostingChallenge* postingChallenge);
 
 private:
 

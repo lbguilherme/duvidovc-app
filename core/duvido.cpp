@@ -180,8 +180,10 @@ void Duvido::addPostingChallenge(PostingChallenge* postingChallenge) {
 
     postingChallenge->setParent(this);
     _postingChallenges.append(postingChallenge);
+    emit postingChallengeAdded(postingChallenge);
 
     connect(postingChallenge, &PostingChallenge::finished, [this, postingChallenge]{
         _postingChallenges.removeOne(postingChallenge);
+        emit postingChallengeRemoved(postingChallenge);
     });
 }
