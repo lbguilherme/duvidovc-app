@@ -40,8 +40,10 @@ void FriendsModel::refresh() {
         endRemoveRows();
 
         beginInsertRows(QModelIndex(), 0, result->count()-1);
-        for (int i = 0; i < result->count(); ++i)
-            _friends.append({result->id(i), result->name(i), false});
+        for (int i = 0; i < result->count(); ++i) {
+            const auto& info = (*result)[i];
+            _friends.append({info.id, info.name, false});
+        }
         endInsertRows();
     });
 }

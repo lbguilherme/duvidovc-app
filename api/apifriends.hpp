@@ -7,10 +7,14 @@ class ApiFriends : public Api {
 
 public:
 
+    struct Info {
+        QString id;
+        QString name;
+    };
+
     explicit ApiFriends(QObject* parent = nullptr);
 
-    QString id(int index) const;
-    QString name(int index) const;
+    const Info& operator[](int index) const;
     int count() const;
 
 protected:
@@ -20,11 +24,6 @@ protected:
 
 private:
 
-    struct FriendInfo {
-        QString id;
-        QString name;
-    };
-
-    QList<FriendInfo> _friends;
+    QList<Info> _friends;
 
 };

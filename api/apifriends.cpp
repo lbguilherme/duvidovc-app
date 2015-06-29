@@ -19,19 +19,15 @@ void ApiFriends::processReply() {
     QJsonArray array = QJsonDocument::fromJson(_reply->readAll()).array();
     for (QJsonValue el : array) {
         QJsonObject obj = el.toObject();
-        FriendInfo info;
+        Info info;
         info.id = obj["id"].toString();
         info.name = obj["name"].toString();
         _friends.append(info);
     }
 }
 
-QString ApiFriends::id(int index) const {
-    return _friends[index].id;
-}
-
-QString ApiFriends::name(int index) const {
-    return _friends[index].name;
+const ApiFriends::Info& ApiFriends::operator[](int index) const {
+    return _friends[index];
 }
 
 int ApiFriends::count() const {
