@@ -11,7 +11,7 @@ ApiFriends::ApiFriends(QObject* parent) : Api(parent) {
 }
 
 void ApiFriends::sendRequest() {
-    _reply = duvido->http().get(request("/friends", QVariantMap{{"id", duvido->myId()}}));
+    _reply = duvido->http().get(request("/friends", QVariantMap{{"token", duvido->token()}}));
     setupReply();
 }
 
