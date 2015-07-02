@@ -1,5 +1,6 @@
 #include <api/apifriends.hpp>
 #include <core/duvido.hpp>
+#include <core/avatarmanager.hpp>
 
 #include <QJsonObject>
 #include <QJsonArray>
@@ -23,6 +24,7 @@ void ApiFriends::processReply() {
         info.id = obj["id"].toString();
         info.name = obj["name"].toString();
         _friends.append(info);
+        duvido->avatarManager()->fetchAvatar(info.id);
     }
 }
 
