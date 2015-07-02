@@ -7,7 +7,7 @@
 
 static const QString apiUrl = "http://api.duvido.vc/v0";
 
-Api::Api(QObject* parent) : QObject(parent), _reply(nullptr), _uploadProgress(0), _downloadProgress(0) {
+Api::Api(QObject* parent) : QObject(parent), _reply(nullptr), _cancelling(false), _uploadProgress(0), _downloadProgress(0) {
 
 }
 
@@ -22,7 +22,7 @@ void Api::setupReply() {
         if (isSuccessful() || canHandleError()) {
             processReply();
             emit finished();
-        } else {
+        } else if (!_cancelling) {
             _reply->deleteLater();
             // TODO: wait before retry
             // TODO: limit max number of retries
@@ -66,6 +66,7 @@ bool Api::isSuccessful() const {
 }
 
 void Api::cancel() {
+    _cancelling = true;
     _reply->abort();
 }
 

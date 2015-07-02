@@ -38,6 +38,10 @@ protected:
 protected:
 
     QNetworkReply* _reply;
+
+private:
+
+    bool _cancelling;
     float _uploadProgress;
     float _downloadProgress;
 
