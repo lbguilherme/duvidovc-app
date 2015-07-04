@@ -24,7 +24,8 @@ SOURCES += \
     api/apiupload.cpp \
     api/apicreatechallenge.cpp \
     api/apiavatars.cpp \
-    core/postingchallenge.cpp
+    core/postingchallenge.cpp \
+    api/apimychallenges.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -39,7 +40,8 @@ HEADERS += \
     api/apiupload.hpp \
     api/apicreatechallenge.hpp \
     api/apiavatars.hpp \
-    core/postingchallenge.hpp
+    core/postingchallenge.hpp \
+    api/apimychallenges.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
