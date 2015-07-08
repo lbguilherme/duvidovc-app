@@ -5,7 +5,7 @@ ListModel {
 
     ListElement {
         name: "Logout"
-        action: ""
+        action: "duvido.logout()"
         group: 'Geral'
     }
 
