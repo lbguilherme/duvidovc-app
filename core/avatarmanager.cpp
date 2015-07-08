@@ -15,6 +15,7 @@ AvatarManager::AvatarManager(QObject* parent) : QObject(parent) {
     _timer.setInterval(100);
     _timer.setSingleShot(true);
     connect(&_timer, &QTimer::timeout, [this]{
+        if (_waitingIds.isEmpty()) return;
         auto result = new ApiAvatars(_waitingIds.toList(), this);
         _waitingIds.clear();
         connect(result, &Api::finished, [this, result]{
