@@ -41,6 +41,7 @@ public:
     Q_INVOKABLE void setToken(QString token);
 
     Q_INVOKABLE void login();
+    Q_INVOKABLE void logout();
     Q_INVOKABLE void fetchPhotoFromGallery();
     Q_INVOKABLE void fetchPhotoFromCamera();
 

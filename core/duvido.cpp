@@ -126,6 +126,10 @@ void Duvido::login() {
 #endif
 }
 
+void Duvido::logout() {
+    setToken("");
+}
+
 QString Duvido::myId() const {
     return _myId;
 }
