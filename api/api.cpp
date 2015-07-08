@@ -80,7 +80,11 @@ QNetworkRequest Api::request(QString endpoint, QVariantMap args) {
     url.setUrl(apiUrl + endpoint);
     url.setQuery(query);
 
-    qDebug() << metaObject()->className() << url.toString().replace(duvido->token(), "<token>");
+    QString apiCall = url.toString();
+    if (!duvido->token().isEmpty())
+        apiCall = apiCall.replace(duvido->token(), "<token>")
+
+    qDebug() << metaObject()->className() << apiCall;
 
     QNetworkRequest request(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/octet-stream");
