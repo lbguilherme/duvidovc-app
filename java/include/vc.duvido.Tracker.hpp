@@ -38,6 +38,7 @@ public:
     static void flush();
     static void event(const ::java::lang::String&);
     static void event(const ::java::lang::String&, const ::java::lang::String&);
+    static void identify(const ::java::lang::String&);
 
 };
 }

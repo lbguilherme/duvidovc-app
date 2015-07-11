@@ -339,6 +339,13 @@ void vc::duvido::Tracker::event(const ::java::lang::String& arg0, const ::java::
     java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
 }
 
+void vc::duvido::Tracker::identify(const ::java::lang::String& arg0){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "identify", "(Ljava/lang/String;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::R_attr::R_attr() : ::java::lang::Object((jobject)0) {

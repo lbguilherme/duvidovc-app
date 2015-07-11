@@ -28,5 +28,8 @@ public class Tracker {
             mixpanel.track(event);
         }
     }
-}
 
+    static public void identify(String userId) {
+        mixpanel.getPeople().identify(userId);
+    }
+}
