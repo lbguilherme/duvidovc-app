@@ -1,5 +1,6 @@
 #include "java-core.hpp"
 #include <memory>
+#include "android.content.Context.hpp"
 #include "android.content.Intent.hpp"
 #include "android.os.Bundle.hpp"
 #include "android.view.KeyEvent.hpp"
@@ -8,6 +9,7 @@
 #include "vc.duvido.DuvidoActivity.hpp"
 #include "vc.duvido.FacebookBridge.hpp"
 #include "vc.duvido.R.hpp"
+#include "vc.duvido.Tracker.hpp"
 #include "vc.duvido.WebLoginActivity.hpp"
 
 jclass vc::duvido::R_string::_class = nullptr;
@@ -23,7 +25,10 @@ jclass vc::duvido::R_style::_class = nullptr;
 jclass vc::duvido::R::_class = nullptr;
 jclass vc::duvido::R_drawable::_class = nullptr;
 jclass vc::duvido::WebLoginActivity::_class = nullptr;
+jclass vc::duvido::R_integer::_class = nullptr;
 jclass vc::duvido::R_color::_class = nullptr;
+jclass vc::duvido::R_anim::_class = nullptr;
+jclass vc::duvido::Tracker::_class = nullptr;
 jclass vc::duvido::R_attr::_class = nullptr;
 
 #pragma GCC diagnostic push
@@ -60,6 +65,13 @@ jclass vc::duvido::R_attr::_class = nullptr;
     obj = java::jni->NewObject(_class, mid);
 }
 #pragma GCC diagnostic pop
+
+void vc::duvido::DuvidoActivity::onCreate(const ::android::os::Bundle& arg0) const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "onCreate", "(Landroid/os/Bundle;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallVoidMethod(obj, mid, _arg0);
+}
 
 bool vc::duvido::DuvidoActivity::hasGallery() const {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
@@ -265,12 +277,67 @@ bool vc::duvido::WebLoginActivity::onKeyDown(int32_t arg0, const ::android::view
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::R_integer::R_integer() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_integer::_class) ::vc::duvido::R_integer::_class = java::fetch_class("vc/duvido/R$integer");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::R_color::R_color() : ::java::lang::Object((jobject)0) {
     if (!::vc::duvido::R_color::_class) ::vc::duvido::R_color::_class = java::fetch_class("vc/duvido/R$color");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }
 #pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::R_anim::R_anim() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::R_anim::_class) ::vc::duvido::R_anim::_class = java::fetch_class("vc/duvido/R$anim");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::Tracker::Tracker() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+void vc::duvido::Tracker::initialize(const ::android::content::Context& arg0){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "initialize", "(Landroid/content/Context;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
+void vc::duvido::Tracker::flush(){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "flush", "()V");
+    java::jni->CallStaticVoidMethod(_class, mid);
+}
+
+void vc::duvido::Tracker::event(const ::java::lang::String& arg0){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "event", "(Ljava/lang/String;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0);
+}
+
+void vc::duvido::Tracker::event(const ::java::lang::String& arg0, const ::java::lang::String& arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "event", "(Ljava/lang/String;Ljava/lang/String;)V");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"

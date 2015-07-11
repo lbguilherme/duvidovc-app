@@ -46,10 +46,13 @@
                         <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
                 </activity>
                 <activity android:name="vc.duvido.WebLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="duvido.vc">
-                </activity>
+                <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
+        </activity>
         </application>
         <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/>
         <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
     <!-- %%INSERT_PERMISSIONS -->
     <!-- %%INSERT_FEATURES -->
+
+
 </manifest>

@@ -9,6 +9,7 @@
 #include "java.lang.Object.hpp"
 #include "org.qtproject.qt5.android.bindings.QtActivity.hpp"
 
+namespace android { namespace os { class Bundle; } }
 namespace java { namespace lang { class String; } }
 namespace vc { namespace duvido { class DuvidoActivity; } }
 
@@ -38,6 +39,7 @@ public:
     static void jniInitializeNative();
     static ::vc::duvido::DuvidoActivity getInstance();
     DuvidoActivity();
+    void onCreate(const ::android::os::Bundle&) const;
     bool hasGallery() const;
     bool hasCamera() const;
     void fetchPhotoFromGallery() const;

@@ -30,6 +30,19 @@ public class DuvidoActivity extends QtActivity {
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        Tracker.initialize(this);
+        super.onCreate(savedInstanceState);
+        Tracker.event("Opened App");
+    }
+
+    @Override
+    protected void onDestroy() {
+        Tracker.flush();
+        super.onDestroy();
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 

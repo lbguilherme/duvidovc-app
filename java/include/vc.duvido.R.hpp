@@ -37,12 +37,14 @@ public:
 }
 }
 
+#include "vc.duvido.R_anim.hpp"
 #include "vc.duvido.R_array.hpp"
 #include "vc.duvido.R_attr.hpp"
 #include "vc.duvido.R_color.hpp"
 #include "vc.duvido.R_dimen.hpp"
 #include "vc.duvido.R_drawable.hpp"
 #include "vc.duvido.R_id.hpp"
+#include "vc.duvido.R_integer.hpp"
 #include "vc.duvido.R_layout.hpp"
 #include "vc.duvido.R_string.hpp"
 #include "vc.duvido.R_style.hpp"

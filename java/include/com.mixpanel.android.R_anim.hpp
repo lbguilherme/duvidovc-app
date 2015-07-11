@@ -1,0 +1,42 @@
+#pragma once
+
+#include "../src/java-core.hpp"
+#include <jni.h>
+#include <cstdint>
+#include <memory>
+#include <vector>
+
+#include "java.lang.Object.hpp"
+
+
+namespace com {
+namespace mixpanel {
+namespace android {
+class R_anim : public virtual ::java::lang::Object {
+public:
+
+    
+    static jclass _class;
+    
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wreorder"
+    explicit R_anim(jobject _obj) : ::java::lang::Object(_obj) {}
+    #pragma GCC diagnostic pop
+    
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wreorder"
+    R_anim(const ::com::mixpanel::android::R_anim& x) : ::java::lang::Object((jobject)0) {obj = x.obj;}
+    R_anim(::com::mixpanel::android::R_anim&& x) : ::java::lang::Object((jobject)0) {obj = x.obj; x.obj = JavaObjectHolder((jobject)0);}
+    #pragma GCC diagnostic pop
+    
+    ::com::mixpanel::android::R_anim& operator=(const ::com::mixpanel::android::R_anim& x) {obj = x.obj; return *this;}
+    ::com::mixpanel::android::R_anim& operator=(::com::mixpanel::android::R_anim&& x) {obj = std::move(x.obj); return *this;}
+    
+    R_anim();
+
+};
+}
+}
+}
+
+
