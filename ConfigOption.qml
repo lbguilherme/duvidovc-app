@@ -23,7 +23,7 @@ Item {
         id: mouseAreaOption
         anchors.fill: parent
         onClicked: {
-            if (model.action) StackManager.go(model.action);
+            if (model.action) eval(model.action);
         }
     }
 
