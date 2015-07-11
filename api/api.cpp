@@ -82,7 +82,7 @@ QNetworkRequest Api::request(QString endpoint, QVariantMap args) {
 
     QString apiCall = url.toString();
     if (!duvido->token().isEmpty())
-        apiCall = apiCall.replace(duvido->token(), "<token>")
+        apiCall = apiCall.replace(duvido->token(), "<token>");
 
     qDebug() << metaObject()->className() << apiCall;
 
