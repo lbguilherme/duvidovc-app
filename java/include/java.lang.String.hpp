@@ -41,6 +41,8 @@ public:
     String(const ::java::lang::String& x) : ::java::lang::Object((jobject)0), ::java::io::Serializable((jobject)0), ::java::lang::CharSequence((jobject)0), ::java::lang::Comparable((jobject)0) {obj = x.obj;}
     String(::java::lang::String&& x) : ::java::lang::Object((jobject)0), ::java::io::Serializable((jobject)0), ::java::lang::CharSequence((jobject)0), ::java::lang::Comparable((jobject)0) {obj = x.obj; x.obj = JavaObjectHolder((jobject)0);}
     String(const char* utf) : ::java::lang::Object((jobject)0), ::java::io::Serializable((jobject)0), ::java::lang::CharSequence((jobject)0), ::java::lang::Comparable((jobject)0) {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(utf));}
+    String(const QString& qstr) : ::java::lang::Object((jobject)0), ::java::io::Serializable((jobject)0), ::java::lang::CharSequence((jobject)0), ::java::lang::Comparable((jobject)0) {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(qstr.toUtf8().data()));}
+    String(const QByteArray& qarr) : ::java::lang::Object((jobject)0), ::java::io::Serializable((jobject)0), ::java::lang::CharSequence((jobject)0), ::java::lang::Comparable((jobject)0) {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(qarr.data()));}
     operator QString() const {auto bytes = getBytes(); bytes.push_back(0); return QString::fromUtf8((const char*)bytes.data());}
     #pragma GCC diagnostic pop
     

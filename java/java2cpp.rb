@@ -590,6 +590,8 @@ class JavaClass
         f << "#{@name}(#{cppname}&& x) : #{all_inherits.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = x.obj; x.obj = JavaObjectHolder((jobject)0);}\n"
         if self == @java.find_class("java.lang.String")
             f << "String(const char* utf) : #{inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(utf));}\n"
+            f << "String(const QString& qstr) : #{inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(qstr.toUtf8().data()));}\n"
+            f << "String(const QByteArray& qarr) : #{inherit.map{|c|c.cppname+"((jobject)0)"}.join(", ")} {obj = java::jni->NewGlobalRef(java::jni->NewStringUTF(qarr.data()));}\n"
             f << "operator QString() const {auto bytes = getBytes(); bytes.push_back(0); return QString::fromUtf8((const char*)bytes.data());}\n"
         end
         f << "#pragma GCC diagnostic pop\n"
