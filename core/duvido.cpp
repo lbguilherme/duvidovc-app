@@ -98,16 +98,16 @@ void Duvido::setToken(QString token) {
     QSettings().setValue("token", _token);
 
     if (_token.isEmpty()) {
-        setMe("", "");
+        setMe("", "", "", "");
     } else {
         qDebug() << "Your access token:" << _token;
         auto result = new ApiLogin(this);
         if (result->hasCache())
-            setMe(result->id(), result->name());
+            setMe(result->id(), result->name(), result->firstName(), result->lastName());
         connect(result, &Api::finished, [this, result]{
             result->deleteLater();
             if (result->changedFromCache())
-                setMe(result->id(), result->name());
+                setMe(result->id(), result->name(), result->firstName(), result->lastName());
         });
     }
 }
@@ -138,7 +138,7 @@ QString Duvido::myName() const {
     return _myName;
 }
 
-void Duvido::setMe(QString id, QString name) {
+void Duvido::setMe(QString id, QString name, QString firstName, QString lastName) {
     if (id.isEmpty()) setToken("");
     if (_myId == id && _myName == name) return;
     _myId = id;

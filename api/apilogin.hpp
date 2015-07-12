@@ -13,6 +13,8 @@ public:
     bool changedFromCache() const;
     QString id() const;
     QString name() const;
+    QString firstName() const;
+    QString lastName() const;
 
 protected:
 
@@ -26,5 +28,7 @@ private:
     bool _changed;
     QString _id;
     QString _name;
+    QString _firstName;
+    QString _lastName;
 
 };

@@ -16,6 +16,8 @@ ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true)
         QJsonObject obj = QJsonDocument::fromJson(cache.readAll()).object();
         _id = obj["id"].toString();
         _name = obj["name"].toString();
+        _firstName = obj["firstName"].toString();
+        _lastName = obj["lastName"].toString();
         _cache = true;
     }
 }
@@ -31,19 +33,25 @@ void ApiLogin::processReply() {
     if (status() == 401) {
         _id = "";
         _name = "";
+        _firstName = "";
+        _lastName = "";
         cache.remove();
     } else {
         QJsonObject obj = QJsonDocument::fromJson(_reply->readAll()).object();
         QString id = obj["id"].toString();
         QString name = obj["name"].toString();
+        QString firstName = obj["firstName"].toString();
+        QString lastName = obj["lastName"].toString();
 
-        if (_cache && _id == id && _name == name) {
+        if (_cache && _id == id && _name == name && _firstName == name && _lastName == name) {
             _changed = false;
             return;
         }
 
         _id = id;
         _name = name;
+        _firstName = firstName;
+        _lastName = lastName;
 
         cache.open(QIODevice::WriteOnly);
         cache.write(QJsonDocument(obj).toJson());
@@ -68,4 +76,12 @@ QString ApiLogin::id() const {
 
 QString ApiLogin::name() const {
     return _name;
+}
+
+QString ApiLogin::firstName() const {
+    return _firstName;
+}
+
+QString ApiLogin::lastName() const {
+    return _lastName;
 }
