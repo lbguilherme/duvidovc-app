@@ -39,6 +39,13 @@ public:
     static void event(const ::java::lang::String&);
     static void event(const ::java::lang::String&, const ::java::lang::String&);
     static void identify(const ::java::lang::String&);
+    static void setUserProperty(const ::java::lang::String&, int64_t);
+    static void setUserProperty(const ::java::lang::String&, const ::java::lang::String&);
+    static void setUserProperty(const ::java::lang::String&, double);
+    static void setUserPropertyOnce(const ::java::lang::String&, int64_t);
+    static void setUserPropertyOnce(const ::java::lang::String&, const ::java::lang::String&);
+    static void setUserPropertyOnce(const ::java::lang::String&, double);
+    static void incrementUserProperty(const ::java::lang::String&, int32_t);
 
 };
 }

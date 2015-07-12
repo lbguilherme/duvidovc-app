@@ -30,6 +30,35 @@ public class Tracker {
     }
 
     static public void identify(String userId) {
+        mixpanel.identify(userId);
         mixpanel.getPeople().identify(userId);
+    }
+
+    static public void setUserProperty(String property, long value) {
+        mixpanel.getPeople().set(property, value);
+    }
+
+    static public void setUserProperty(String property, String value) {
+        mixpanel.getPeople().set(property, value);
+    }
+
+    static public void setUserProperty(String property, double value) {
+        mixpanel.getPeople().set(property, value);
+    }
+
+    static public void setUserPropertyOnce(String property, long value) {
+        mixpanel.getPeople().setOnce(property, value);
+    }
+
+    static public void setUserPropertyOnce(String property, String value) {
+        mixpanel.getPeople().setOnce(property, value);
+    }
+
+    static public void setUserPropertyOnce(String property, double value) {
+        mixpanel.getPeople().setOnce(property, value);
+    }
+
+    static public void incrementUserProperty(String property, int value) {
+        mixpanel.getPeople().increment(property, value);
     }
 }

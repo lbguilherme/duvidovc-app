@@ -346,6 +346,62 @@ void vc::duvido::Tracker::identify(const ::java::lang::String& arg0){
     java::jni->CallStaticVoidMethod(_class, mid, _arg0);
 }
 
+void vc::duvido::Tracker::setUserProperty(const ::java::lang::String& arg0, int64_t arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setUserProperty", "(Ljava/lang/String;J)V");
+    jobject _arg0 = arg0.obj;
+    int64_t _arg1 = arg1;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void vc::duvido::Tracker::setUserProperty(const ::java::lang::String& arg0, const ::java::lang::String& arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setUserProperty", "(Ljava/lang/String;Ljava/lang/String;)V");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void vc::duvido::Tracker::setUserProperty(const ::java::lang::String& arg0, double arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setUserProperty", "(Ljava/lang/String;D)V");
+    jobject _arg0 = arg0.obj;
+    double _arg1 = arg1;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void vc::duvido::Tracker::setUserPropertyOnce(const ::java::lang::String& arg0, int64_t arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setUserPropertyOnce", "(Ljava/lang/String;J)V");
+    jobject _arg0 = arg0.obj;
+    int64_t _arg1 = arg1;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void vc::duvido::Tracker::setUserPropertyOnce(const ::java::lang::String& arg0, const ::java::lang::String& arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setUserPropertyOnce", "(Ljava/lang/String;Ljava/lang/String;)V");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void vc::duvido::Tracker::setUserPropertyOnce(const ::java::lang::String& arg0, double arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "setUserPropertyOnce", "(Ljava/lang/String;D)V");
+    jobject _arg0 = arg0.obj;
+    double _arg1 = arg1;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
+void vc::duvido::Tracker::incrementUserProperty(const ::java::lang::String& arg0, int32_t arg1){
+    if (!::vc::duvido::Tracker::_class) ::vc::duvido::Tracker::_class = java::fetch_class("vc/duvido/Tracker");
+    static jmethodID mid = java::jni->GetStaticMethodID(_class, "incrementUserProperty", "(Ljava/lang/String;I)V");
+    jobject _arg0 = arg0.obj;
+    int32_t _arg1 = arg1;
+    java::jni->CallStaticVoidMethod(_class, mid, _arg0, _arg1);
+}
+
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::R_attr::R_attr() : ::java::lang::Object((jobject)0) {
