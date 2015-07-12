@@ -5,7 +5,8 @@
 #include <QUrlQuery>
 #include <QDebug>
 
-static const QString apiUrl = "http://api.duvido.vc/v0";
+const QString Api::version = "v0";
+static const QString apiUrl = "http://api.duvido.vc/" + Api::version;
 
 Api::Api(QObject* parent) : QObject(parent), _reply(nullptr), _cancelling(false), _uploadProgress(0), _downloadProgress(0) {
 

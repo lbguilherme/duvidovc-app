@@ -10,6 +10,8 @@ class Api : public QObject {
 
 public:
 
+    static const QString version;
+
     explicit Api(QObject* parent = nullptr);
     ~Api();
 
