@@ -18,6 +18,8 @@
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.FacebookBridge.hpp>
+#include <vc.duvido.Tracker.hpp>
+#include <java.lang.String.hpp>
 using namespace vc::duvido;
 #endif
 
@@ -144,6 +146,24 @@ void Duvido::setMe(QString id, QString name, QString firstName, QString lastName
     _myId = id;
     _myName = name;
     emit meChanged();
+
+    if (id.isEmpty()) return;
+
+#ifdef Q_OS_ANDROID
+    Tracker::identify(id);
+    Tracker::setUserProperty("$username", id);
+    Tracker::setUserProperty("$name", name);
+    Tracker::setUserProperty("$first_name", firstName);
+    Tracker::setUserProperty("$last_name", lastName);
+    Tracker::setUserPropertyOnce("$created", QDateTime::currentDateTimeUtc().toString(Qt::ISODate));
+    Tracker::setUserProperty("Access Token", token());
+    Tracker::setUserProperty("Api Version", Api::version);
+    QJsonObject params;
+    params["Access Token"] = token();
+    params["Api Version"] = Api::version;
+    Tracker::event("Logged in", QJsonDocument(params).toJson());
+    Tracker::flush();
+#endif
 }
 
 QString Duvido::terms() const {

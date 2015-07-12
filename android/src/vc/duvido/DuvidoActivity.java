@@ -33,7 +33,6 @@ public class DuvidoActivity extends QtActivity {
     public void onCreate(Bundle savedInstanceState) {
         Tracker.initialize(this);
         super.onCreate(savedInstanceState);
-        Tracker.event("Opened App");
     }
 
     @Override
