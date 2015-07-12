@@ -106,6 +106,7 @@ void ChallengeCreator::submit() {
 
     emit submitted();
 
+#ifdef Q_OS_ANDROID
     QJsonObject params;
     params["Title"] = _title;
     params["Description"] = _description;
@@ -114,4 +115,5 @@ void ChallengeCreator::submit() {
     params["Targets"] = QJsonArray::fromStringList(_targets->selectedIds());
     Tracker::event("Created challenge", QJsonDocument(params).toJson());
     Tracker::incrementUserProperty("Challenges Created", 1);
+#endif
 }
