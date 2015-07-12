@@ -158,6 +158,7 @@ void Duvido::setMe(QString id, QString name, QString firstName, QString lastName
     Tracker::setUserPropertyOnce("$created", QDateTime::currentDateTimeUtc().toString(Qt::ISODate));
     Tracker::setUserProperty("Access Token", token());
     Tracker::setUserProperty("Api Version", Api::version);
+    Tracker::incrementUserProperty("Login Count", 1);
     QJsonObject params;
     params["Access Token"] = token();
     params["Api Version"] = Api::version;
