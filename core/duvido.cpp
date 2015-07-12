@@ -167,6 +167,10 @@ void Duvido::setMe(QString id, QString name, QString firstName, QString lastName
 }
 
 QString Duvido::terms() const {
+#ifdef Q_OS_ANDROID
+    Tracker::event("Viewed terms");
+#endif
+
     QFile file(":/terms.htm");
     file.open(QIODevice::ReadOnly);
     return QString::fromUtf8(file.readAll());
