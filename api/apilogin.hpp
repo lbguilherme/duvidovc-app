@@ -2,6 +2,8 @@
 
 #include <api/api.hpp>
 
+#include <QDate>
+
 class ApiLogin : public Api {
     Q_OBJECT
 
@@ -15,6 +17,8 @@ public:
     QString name() const;
     QString firstName() const;
     QString lastName() const;
+    QString gender() const;
+    QDate birthday() const;
 
 protected:
 
@@ -30,5 +34,7 @@ private:
     QString _name;
     QString _firstName;
     QString _lastName;
+    QString _gender;
+    QDate _birthday;
 
 };

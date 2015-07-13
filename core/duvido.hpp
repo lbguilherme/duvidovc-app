@@ -10,6 +10,7 @@
 
 class AvatarManager;
 class PostingChallenge;
+class ApiLogin;
 
 class Duvido : public QGuiApplication {
     Q_OBJECT
@@ -37,7 +38,8 @@ public:
     QList<PostingChallenge*> postingChallenges() const;
     void addPostingChallenge(PostingChallenge* postingChallenge);
 
-    void setMe(QString id, QString name, QString firstName, QString lastName);
+    void unsetMe();
+    void setMe(const ApiLogin* apiLogin);
     Q_INVOKABLE void setToken(QString token);
 
     Q_INVOKABLE void login();

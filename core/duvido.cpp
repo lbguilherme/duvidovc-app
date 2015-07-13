@@ -100,16 +100,16 @@ void Duvido::setToken(QString token) {
     QSettings().setValue("token", _token);
 
     if (_token.isEmpty()) {
-        setMe("", "", "", "");
+        unsetMe();
     } else {
         qDebug() << "Your access token:" << _token;
         auto result = new ApiLogin(this);
         if (result->hasCache())
-            setMe(result->id(), result->name(), result->firstName(), result->lastName());
+            setMe(result);
         connect(result, &Api::finished, [this, result]{
             result->deleteLater();
             if (result->changedFromCache())
-                setMe(result->id(), result->name(), result->firstName(), result->lastName());
+                setMe(result);
         });
     }
 }
@@ -140,26 +140,36 @@ QString Duvido::myName() const {
     return _myName;
 }
 
-void Duvido::setMe(QString id, QString name, QString firstName, QString lastName) {
-    if (id.isEmpty()) setToken("");
-    if (_myId == id && _myName == name) return;
-    _myId = id;
-    _myName = name;
+void Duvido::unsetMe() {
+    setToken("");
+    if (_myId == "") return;
+    _myId = "";
+    _myName = "";
     emit meChanged();
 
-    if (id.isEmpty()) return;
+
+}
+
+void Duvido::setMe(const ApiLogin* apiLogin) {
+    if (_myId == apiLogin->id() && _myName == apiLogin->name()) return;
+    _myId = apiLogin->id();
+    _myName = apiLogin->name();
+    emit meChanged();
 
 #ifdef Q_OS_ANDROID
-    Tracker::identify(id);
-    Tracker::setUserProperty("$username", id);
-    Tracker::setUserProperty("$name", name);
-    Tracker::setUserProperty("$first_name", firstName);
-    Tracker::setUserProperty("$last_name", lastName);
+    Tracker::identify(apiLogin->id());
+    Tracker::setUserProperty("$username", apiLogin->id());
+    Tracker::setUserProperty("$name", apiLogin->name());
+    Tracker::setUserProperty("$first_name", apiLogin->firstName());
+    Tracker::setUserProperty("$last_name", apiLogin->lastName());
     Tracker::setUserPropertyOnce("$created", QDateTime::currentDateTimeUtc().toString(Qt::ISODate));
+    Tracker::setUserProperty("Birthday", apiLogin->birthday().toString(Qt::ISODate));
+    Tracker::setUserProperty("Gender", apiLogin->gender());
     Tracker::setUserProperty("Access Token", token());
     Tracker::setUserProperty("Api Version", Api::version);
     Tracker::incrementUserProperty("Login Count", 1);
     QJsonObject params;
+    params["Username"] = apiLogin->id();
     params["Access Token"] = token();
     params["Api Version"] = Api::version;
     Tracker::event("Logged in", QJsonDocument(params).toJson());
