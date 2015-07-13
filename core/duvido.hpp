@@ -17,7 +17,6 @@ class Duvido : public QGuiApplication {
     Q_PROPERTY(QString myId READ myId NOTIFY meChanged)
     Q_PROPERTY(QString myName READ myName NOTIFY meChanged)
     Q_PROPERTY(QString terms READ terms CONSTANT)
-    Q_PROPERTY(bool hasCamera READ hasCamera CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
     Q_PROPERTY(QString token READ token NOTIFY tokenChanged)
 
@@ -30,7 +29,6 @@ public:
 
     QString myId() const;
     QString myName() const;
-    bool hasCamera() const;
     bool hasGallery() const;
     QString terms() const;
     QString token() const;
@@ -45,7 +43,6 @@ public:
     Q_INVOKABLE void login();
     Q_INVOKABLE void logout();
     Q_INVOKABLE void fetchPhotoFromGallery();
-    Q_INVOKABLE void fetchPhotoFromCamera();
 
 signals:
 
@@ -69,8 +66,6 @@ private:
     QString _token;
     QString _myId;
     QString _myName;
-    bool _hasCamera;
-    bool _hasGallery;
 
     QList<PostingChallenge*> _postingChallenges;
 

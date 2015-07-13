@@ -42,14 +42,6 @@ Duvido::Duvido()
     initInterfaces();
     initFacebook();
     initView();
-
-#ifdef Q_OS_ANDROID
-    _hasCamera = _activity.hasCamera();
-    _hasGallery = _activity.hasGallery();
-#else
-    _hasCamera = false;
-    _hasGallery = false;
-#endif
 }
 
 void Duvido::initInterfaces() {
@@ -187,17 +179,11 @@ QString Duvido::terms() const {
     return QString::fromUtf8(file.readAll());
 }
 
-bool Duvido::hasCamera() const {
-    return _hasCamera;
-}
-
 bool Duvido::hasGallery() const {
-    return _hasGallery;
-}
-
-void Duvido::fetchPhotoFromCamera() {
 #ifdef Q_OS_ANDROID
-    _activity.fetchPhotoFromCamera();
+    return _activity.hasGallery();
+#else
+    return false;
 #endif
 }
 

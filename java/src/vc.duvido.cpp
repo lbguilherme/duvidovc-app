@@ -79,21 +79,9 @@ bool vc::duvido::DuvidoActivity::hasGallery() const {
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-bool vc::duvido::DuvidoActivity::hasCamera() const {
-    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
-    static jmethodID mid = java::jni->GetMethodID(_class, "hasCamera", "()Z");
-    return java::jni->CallBooleanMethod(obj, mid);
-}
-
 void vc::duvido::DuvidoActivity::fetchPhotoFromGallery() const {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
     static jmethodID mid = java::jni->GetMethodID(_class, "fetchPhotoFromGallery", "()V");
-    java::jni->CallVoidMethod(obj, mid);
-}
-
-void vc::duvido::DuvidoActivity::fetchPhotoFromCamera() const {
-    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
-    static jmethodID mid = java::jni->GetMethodID(_class, "fetchPhotoFromCamera", "()V");
     java::jni->CallVoidMethod(obj, mid);
 }
 
