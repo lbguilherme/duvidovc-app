@@ -13,6 +13,7 @@
         <file>TimePicker.qml</file>
         <file>OptionsButton.qml</file>
         <file>ImageInput.qml</file>
+        <file>PhotoTaker.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
