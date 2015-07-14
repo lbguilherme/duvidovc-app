@@ -100,7 +100,9 @@ void Duvido::setToken(QString token) {
             setMe(result);
         connect(result, &Api::finished, [this, result]{
             result->deleteLater();
-            if (result->changedFromCache())
+            if (result->status() == 401)
+                unsetMe();
+            else if (result->changedFromCache())
                 setMe(result);
         });
     }
