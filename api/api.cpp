@@ -19,6 +19,7 @@ Api::~Api() {
 void Api::setupReply() {
     Q_ASSERT(_reply);
     _reply->setParent(this);
+
     connect(_reply, &QNetworkReply::finished, [this]{
         if (isSuccessful() || canHandleError()) {
             processReply();
