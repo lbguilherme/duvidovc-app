@@ -121,7 +121,7 @@ void Duvido::login() {
 #ifdef Q_OS_ANDROID
     FacebookBridge::login();
 #else
-    _token = "dummy";
+    setToken("dummy");
 #endif
 }
 
