@@ -11,7 +11,7 @@ ApiMyChallenges::ApiMyChallenges(QObject* parent) : Api(parent) {
 }
 
 void ApiMyChallenges::sendRequest() {
-    _reply = duvido->http().get(request("/friends", QVariantMap{{"token", duvido->token()}}));
+    _reply = duvido->http().get(request("/challenges", QVariantMap{{"token", duvido->token()}}));
     setupReply();
 }
 
