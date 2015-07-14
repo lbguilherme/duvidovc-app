@@ -41,7 +41,7 @@ void FriendsModel::refresh() {
 
         beginInsertRows(QModelIndex(), 0, result->count()-1);
         for (int i = 0; i < result->count(); ++i) {
-            const auto& info = (*result)[i];
+            const ApiFriends::Info& info = (*result)[i];
             _friends.append({info.id, info.name, false});
         }
         endInsertRows();
