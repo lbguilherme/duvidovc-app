@@ -17,7 +17,8 @@ void AvatarLoader::setUserId(const QString& userId) {
     if (_target)
         _target->setProperty("source", "");
 
-    duvido->avatarManager()->fetchAvatar(userId);
+    if (!userId.isEmpty())
+        duvido->avatarManager()->fetchAvatar(userId);
 }
 
 QQuickItem* AvatarLoader::target() const {
