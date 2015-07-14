@@ -2,6 +2,7 @@
 #include <core/duvidoeventfilter.hpp>
 #include <qml/avatarloader.hpp>
 #include <qml/friendsmodel.hpp>
+#include <qml/mychallengesmodel.hpp>
 #include <qml/challengecreator.hpp>
 #include <api/apilogin.hpp>
 #include <core/avatarmanager.hpp>
@@ -46,11 +47,13 @@ Duvido::Duvido()
 
 void Duvido::initInterfaces() {
     qRegisterMetaType<FriendsModel*>("FriendsModel");
+    qRegisterMetaType<MyChallengesModel*>("MyChallengesModel");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
 
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
     qmlRegisterType<ChallengeCreator>("Duvido", 1, 0, "ChallengeCreator");
     qmlRegisterType<FriendsModel>("Duvido", 1, 0, "FriendsModel");
+    qmlRegisterType<MyChallengesModel>("Duvido", 1, 0, "MyChallengesModel");
 
     installEventFilter(new DuvidoEventFilter(this));
 }

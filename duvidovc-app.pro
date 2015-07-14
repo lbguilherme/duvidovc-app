@@ -25,6 +25,7 @@ SOURCES += \
     api/apicreatechallenge.cpp \
     api/apiavatars.cpp \
     core/postingchallenge.cpp \
+    qml/mychallengesmodel.cpp \
     api/apimychallenges.cpp
 
 HEADERS += \
@@ -41,6 +42,7 @@ HEADERS += \
     api/apicreatechallenge.hpp \
     api/apiavatars.hpp \
     core/postingchallenge.hpp \
+    qml/mychallengesmodel.hpp \
     api/apimychallenges.hpp
 
 DISTFILES += \
