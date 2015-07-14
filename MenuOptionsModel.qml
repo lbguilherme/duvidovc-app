@@ -14,7 +14,7 @@ ListModel {
     ListElement {
         icon: "qrc:/artwork/icons/swing1.png"
         name: "Meus desafios"
-        action: ""
+        action: "qrc:/frags/MyChallenges.qml"
     }
 
     ListElement {
