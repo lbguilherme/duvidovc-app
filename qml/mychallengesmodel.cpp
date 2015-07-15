@@ -1,7 +1,6 @@
 #include <qml/mychallengesmodel.hpp>
 #include <core/postingchallenge.hpp>
 #include <api/apimychallenges.hpp>
-#include <QDebug>
 
 MyChallengesModel::MyChallengesModel(QObject* parent) : QAbstractListModel(parent) {
     refresh();
@@ -20,7 +19,6 @@ void MyChallengesModel::refresh() {
         for (int i = 0; i < result->count(); ++i) {
             MyChallenge challenge;
             const ApiMyChallenges::Info& info = (*result)[i];
-            qDebug() << info.id;
             challenge.id = info.id;
             challenge.title = info.title;
             challenge.description = info.description;
