@@ -17,6 +17,7 @@ using namespace vc::duvido;
 ChallengeCreator::ChallengeCreator(QObject* parent)
     : QObject(parent)
     , _targets(nullptr)
+    , _duration(0)
     , _imageUpload(nullptr) {
 
 }
