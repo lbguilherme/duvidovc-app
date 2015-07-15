@@ -57,7 +57,7 @@ Column {
             }
 
             Text {
-                visible: duvido.hasCamera && duvido.hasGallery
+                visible: hasCamera && hasGallery
                 text: "ou"
                 color: "#000"
                 anchors.horizontalCenter: parent.horizontalCenter
