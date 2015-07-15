@@ -1,12 +1,9 @@
 import QtQuick 2.4
+import Duvido 1.0
 import "qrc:/material"
 import "qrc:/components"
 
-Scrollable {
-    FeedItem {}
-    FeedItem {}
-    FeedItem {}
-    FeedItem {}
-    FeedItem {}
-    FeedItem {}
+ScrollableListView {
+    model: FeedModel {}
+    delegate: FeedItem {}
 }
