@@ -7,7 +7,7 @@ Card {
     property string description: descriptionInput.text
     property string reward: rewardInput.text
     property var targets: targetsInput.model
-    property int duration: 100
+    property int duration: timePickerControl.time
     property string image: imageInput.source
 
     function verify() {
@@ -121,8 +121,6 @@ Card {
                 id: timePickerControl
                 anchors.bottom: parent.bottom
             }
-
         }
-
     }
 }
