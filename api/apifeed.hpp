@@ -10,6 +10,7 @@ public:
     struct Info {
         QString id;
         QString owner;
+        QString ownerName;
         QString title;
         QString description;
         QString reward;

@@ -22,6 +22,7 @@ void ApiFeed::processReply() {
         Info info;
         info.id = obj["id"].toString();
         info.owner = obj["owner"].toString();
+        info.ownerName = obj["ownerName"].toString();
         info.title = obj["title"].toString();
         info.description = obj["description"].toString();
         info.reward = obj["reward"].toString();
