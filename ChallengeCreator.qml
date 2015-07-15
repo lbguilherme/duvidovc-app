@@ -23,6 +23,7 @@ Item {
         reward: challenge.reward
         targets: challenge.targets
         image: challenge.image
+        duration: challenge.duration
     }
 
     Scrollable {
