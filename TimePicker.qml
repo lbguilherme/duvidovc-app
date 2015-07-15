@@ -26,8 +26,8 @@ Item {
 
             Text {
                 id: timeLeft
-                text: time !=0 ? (days!=0 ? days+"d " : "") + (hours!=0 ? +hours+"h " : "") + (minutes!=0 ? +minutes+"min": "") : "Tempo"
-                color: time!=0 ? "000": "#999"
+                text: time != 0 ? formatTime(time) : "Tempo"
+                color: time != 0 ? "000" : "#999"
                 onTextChanged: error = false
             }
         }
@@ -51,4 +51,3 @@ Item {
         }
     }
 }
-
