@@ -27,7 +27,8 @@ SOURCES += \
     core/postingchallenge.cpp \
     qml/mychallengesmodel.cpp \
     api/apimychallenges.cpp \
-    api/apifeed.cpp
+    api/apifeed.cpp \
+    qml/feedmodel.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -45,7 +46,8 @@ HEADERS += \
     core/postingchallenge.hpp \
     qml/mychallengesmodel.hpp \
     api/apimychallenges.hpp \
-    api/apifeed.hpp
+    api/apifeed.hpp \
+    qml/feedmodel.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
