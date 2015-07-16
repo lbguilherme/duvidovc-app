@@ -106,15 +106,4 @@ void ChallengeCreator::submit() {
         duvido->addPostingChallenge(new PostingChallenge(info));
 
     emit submitted();
-
-#ifdef Q_OS_ANDROID
-    QJsonObject params;
-    params["Title"] = _title;
-    params["Description"] = _description;
-    params["Reward"] = _reward;
-    params["Duration (s)"] = (double)_duration;
-    params["Targets"] = QJsonArray::fromStringList(_targets->selectedIds());
-    Tracker::event("Created challenge", QJsonDocument(params).toJson());
-    Tracker::incrementUserProperty("Challenges Created", 1);
-#endif
 }

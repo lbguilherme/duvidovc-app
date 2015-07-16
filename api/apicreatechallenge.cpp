@@ -22,6 +22,21 @@ void ApiCreateChallenge::sendRequest() {
 
     _reply = duvido->http().post(request("/challenge", args), QByteArray());
     setupReply();
+
+#ifdef Q_OS_ANDROID
+    connect(_reply, &QNetworkReply::finished, [&]{
+        QJsonObject params;
+        params["Owner"] = duvido->myId();
+        params["Title"] = _info.title;
+        params["Description"] = _info.description;
+        params["Reward"] = _info.reward;
+        params["Duration (s)"] = (double)QString::number(_info.duration);
+        params["Targets"] = QJsonArray::fromStringList(_info.targets);
+        params["Image"] = _info.imageId;
+        Tracker::event("Created challenge", QJsonDocument(params).toJson());
+        Tracker::incrementUserProperty("Challenges Created", 1);
+    });
+#endif
 }
 
 void ApiCreateChallenge::processReply() {
