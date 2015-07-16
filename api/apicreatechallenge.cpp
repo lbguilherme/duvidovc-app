@@ -2,8 +2,15 @@
 #include <core/duvido.hpp>
 
 #include <QJsonObject>
+#include <QJsonArray>
 #include <QJsonDocument>
 #include <QNetworkReply>
+
+#ifdef Q_OS_ANDROID
+#include <vc.duvido.Tracker.hpp>
+#include <java.lang.String.hpp>
+using namespace vc::duvido;
+#endif
 
 ApiCreateChallenge::ApiCreateChallenge(Info info, QObject* parent) : Api(parent), _info(info) {
     sendRequest();
@@ -30,7 +37,7 @@ void ApiCreateChallenge::sendRequest() {
         params["Title"] = _info.title;
         params["Description"] = _info.description;
         params["Reward"] = _info.reward;
-        params["Duration (s)"] = (double)QString::number(_info.duration);
+        params["Duration (s)"] = (double)_info.duration;
         params["Targets"] = QJsonArray::fromStringList(_info.targets);
         params["Image"] = _info.imageId;
         Tracker::event("Created challenge", QJsonDocument(params).toJson());
