@@ -4,16 +4,6 @@
 #include <core/postingchallenge.hpp>
 #include <core/duvido.hpp>
 
-#include <QJsonArray>
-#include <QJsonObject>
-#include <QJsonDocument>
-
-#ifdef Q_OS_ANDROID
-#include <vc.duvido.Tracker.hpp>
-#include <java.lang.String.hpp>
-using namespace vc::duvido;
-#endif
-
 ChallengeCreator::ChallengeCreator(QObject* parent)
     : QObject(parent)
     , _targets(nullptr)
