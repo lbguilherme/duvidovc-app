@@ -1,11 +1,12 @@
 import QtQuick 2.4
+import QtMultimedia 5.4
 import "qrc:/material"
 
 Column {
     property string source: coverImg.source
     property string mode: hasGallery || hasCamera ? "methods" : "none"
     property bool hasGallery: duvido.hasGallery
-    property bool hasCamera: photoTaker.hasCamera
+    property bool hasCamera: QtMultimedia.availableCameras.length > 0
 
     Item {
         width: parent.width
@@ -30,10 +31,15 @@ Column {
         onPhotoFetched: coverImg.source = path;
     }
 
-    PhotoTaker {
+    Loader {
+        active: mode == "camera"
+        source: "qrc:/components/PhotoTaker.qml"
         id: photoTaker
         width: parent.width
-        visible: mode == "camera"
+    }
+
+    Connections {
+        target: photoTaker.item
         onCancel: mode = "methods"
     }
 
