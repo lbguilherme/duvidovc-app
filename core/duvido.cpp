@@ -170,11 +170,13 @@ void Duvido::setMe(const ApiLogin* apiLogin) {
     Tracker::setUserProperty("Gender", apiLogin->gender());
     Tracker::setUserProperty("Access Token", token());
     Tracker::setUserProperty("Api Version", Api::version);
+    Tracker::setUserProperty("Have Facebook App", _activity.hasFacebookApp() ? "Yes" : "No");
     Tracker::incrementUserProperty("Login Count", 1);
     QJsonObject params;
     params["Username"] = apiLogin->id();
     params["Access Token"] = token();
     params["Api Version"] = Api::version;
+    params["Facebook Login Method"] = _activity.hasFacebookApp() ? "app" : "web";
     Tracker::event("Logged in", QJsonDocument(params).toJson());
     Tracker::flush();
 #endif
