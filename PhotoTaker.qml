@@ -32,4 +32,16 @@ Item {
         anchors.top: removeButton.bottom
         anchors.margins: 8*dp
     }
+
+    Rectangle {
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 8*dp
+        radius: width
+        width: 40*dp
+        height: width
+        border.color: "white"
+        border.width: 2*dp
+        color: "#88ffffff"
+    }
 }
