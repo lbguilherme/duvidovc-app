@@ -164,6 +164,7 @@ void Duvido::setMe(const ApiLogin* apiLogin) {
     Tracker::setUserProperty("$last_name", apiLogin->lastName());
     Tracker::setUserPropertyOnce("$created", QDateTime::currentDateTimeUtc().toString(Qt::ISODate));
     Tracker::setUserProperty("Birthday", apiLogin->birthday().toString(Qt::ISODate));
+    Tracker::setUserProperty("Age", int64_t(apiLogin->birthday().daysTo(QDate::currentDate())/365.25));
     Tracker::setUserProperty("Gender", apiLogin->gender());
     Tracker::setUserProperty("Access Token", token());
     Tracker::setUserProperty("Api Version", Api::version);
