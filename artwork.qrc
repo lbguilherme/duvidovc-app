@@ -14,5 +14,6 @@
         <file>artwork/icons/images10.png</file>
         <file>artwork/icons/camera3.png</file>
         <file>artwork/icons/surprised3.png</file>
+        <file>artwork/icons/phone353.png</file>
     </qresource>
 </RCC>

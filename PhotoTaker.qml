@@ -20,9 +20,16 @@ Item {
     }
 
     RemoveButton {
+        id: removeButton
         anchors.right: parent.right
         anchors.top: parent.top
         anchors.margins: 8*dp
         onClicked: cancel();
+    }
+
+    CameraRotateButton {
+        anchors.right: parent.right
+        anchors.top: removeButton.bottom
+        anchors.margins: 8*dp
     }
 }
