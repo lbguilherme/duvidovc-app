@@ -19,6 +19,7 @@ public:
     QString lastName() const;
     QString gender() const;
     QDate birthday() const;
+    QString email() const;
 
 protected:
 
@@ -36,5 +37,6 @@ private:
     QString _lastName;
     QString _gender;
     QDate _birthday;
+    QString _email;
 
 };

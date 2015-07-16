@@ -20,6 +20,7 @@ ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true)
         _lastName = obj["lastName"].toString();
         _birthday = QDate::fromString(obj["birthday"].toString(), "MM/dd/yyyy");
         _gender = obj["gender"].toString();
+        _email = obj["email"].toString();
         _cache = true;
     }
 }
@@ -39,6 +40,7 @@ void ApiLogin::processReply() {
         _lastName = "";
         _birthday = QDate();
         _gender = "";
+        _email = "";
         cache.remove();
     } else {
         QJsonObject obj = QJsonDocument::fromJson(_reply->readAll()).object();
@@ -48,9 +50,10 @@ void ApiLogin::processReply() {
         QString lastName = obj["lastName"].toString();
         QDate birthday = QDate::fromString(obj["birthday"].toString(), "MM/dd/yyyy");
         QString gender = obj["gender"].toString();
+        QString email = obj["email"].toString();
 
-        if (_cache && _id == id && _name == name && _firstName == firstName &&
-                _lastName == lastName && _birthday == birthday && _gender == gender) {
+        if (_cache && _id == id && _name == name && _firstName == firstName && _lastName == lastName
+                && _birthday == birthday && _gender == gender && _email == email) {
             _changed = false;
             return;
         }
@@ -61,6 +64,7 @@ void ApiLogin::processReply() {
         _lastName = lastName;
         _birthday = birthday;
         _gender = gender;
+        _email = email;
 
         cache.open(QIODevice::WriteOnly);
         cache.write(QJsonDocument(obj).toJson());
@@ -101,4 +105,8 @@ QString ApiLogin::gender() const {
 
 QDate ApiLogin::birthday() const {
     return _birthday;
+}
+
+QString ApiLogin::email() const {
+    return _email;
 }
