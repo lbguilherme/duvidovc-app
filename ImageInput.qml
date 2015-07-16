@@ -56,7 +56,7 @@ Column {
 
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Tirar uma foto"
+                text: "Câmera"
                 color: "#0f6464"
                 onClicked: mode = "camera";
                 visible: hasCamera
@@ -71,7 +71,7 @@ Column {
 
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Escolher da galeria"
+                text: "Galeria"
                 color: "#0f6464"
                 onClicked: duvido.fetchPhotoFromGallery();
                 visible: hasGallery
