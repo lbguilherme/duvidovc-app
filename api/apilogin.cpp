@@ -71,10 +71,6 @@ void ApiLogin::processReply() {
     }
 }
 
-bool ApiLogin::canHandleError() {
-    return status() == 401;
-}
-
 bool ApiLogin::hasCache() const {
     return _cache;
 }

@@ -25,7 +25,6 @@ protected:
 
     void sendRequest() override;
     void processReply() override;
-    bool canHandleError() override;
 
 private:
 

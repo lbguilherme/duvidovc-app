@@ -21,6 +21,10 @@ void Api::setupReply() {
     _reply->setParent(this);
 
     connect(_reply, &QNetworkReply::finished, [this]{
+        if (status() == 401) {
+            duvido->unsetMe();
+            return;
+        }
         if (isSuccessful() || canHandleError()) {
             processReply();
             emit finished();
