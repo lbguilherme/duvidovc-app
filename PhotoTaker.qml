@@ -2,8 +2,9 @@ import QtQuick 2.4
 import QtMultimedia 5.4
 
 Item {
-    height: width * output.sourceRect.height / output.sourceRect.width
-    property bool hasCamera: QtMultimedia.availableCameras.length > 0
+    height: width * ratio
+    property real sourceRatio: output.sourceRect.height / output.sourceRect.width
+    property real ratio: output.orientation % 180 == 0 ? sourceRatio : 1/sourceRatio
     signal cancel()
 
     Camera {
