@@ -31,6 +31,17 @@ Item {
         anchors.right: parent.right
         anchors.top: removeButton.bottom
         anchors.margins: 8*dp
+        visible: QtMultimedia.availableCameras.length >= 2
+        onClicked: {
+            var list = QtMultimedia.availableCameras;
+            for (var i = 0; i < list.length; ++i) {
+                if (list[i].deviceId == camera.deviceId) {
+                    camera.deviceId = list[(i+1)%list.length].deviceId
+                    return;
+                }
+            }
+            camera.deviceId = list[0].deviceId;
+        }
     }
 
     Rectangle {
