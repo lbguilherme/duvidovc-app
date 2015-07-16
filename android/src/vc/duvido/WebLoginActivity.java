@@ -21,7 +21,7 @@ public class WebLoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         webView = new WebView(this);
-        webView.loadUrl("http://www.facebook.com/dialog/oauth?client_id=1497042670584041&redirect_uri=http://duvido.vc/oauth&response_type=token&scope=user_friends,public_profile,user_birthday");
+        webView.loadUrl("http://www.facebook.com/dialog/oauth?client_id=1497042670584041&redirect_uri=http://duvido.vc/oauth&response_type=token&scope=user_friends,public_profile,user_birthday,email");
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
