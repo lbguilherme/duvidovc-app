@@ -28,7 +28,10 @@ Column {
 
     Connections {
         target: duvido
-        onPhotoFetched: coverImg.source = path;
+        onPhotoFetched: {
+            mode = "none";
+            coverImg.source = path;
+        }
     }
 
     Loader {
@@ -42,6 +45,14 @@ Column {
     Connections {
         target: photoTaker.item
         onCancel: mode = "methods"
+        onOutputUrlChanged: {
+            var output = photoTaker.item.outputUrl;
+            console.log(output);
+            if (output !== "") {
+                mode = "none";
+                coverImg.source = output;
+            }
+        }
     }
 
     Rectangle {

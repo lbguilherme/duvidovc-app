@@ -3,6 +3,7 @@ import QtMultimedia 5.4
 
 Item {
     height: width * ratio
+    property string outputUrl
     property real sourceRatio: output.sourceRect.height / output.sourceRect.width
     property real ratio: output.orientation % 180 == 0 ? sourceRatio : 1/sourceRatio
     signal cancel()
@@ -10,6 +11,12 @@ Item {
     Camera {
         id: camera
         deviceId: QtMultimedia.defaultCamera.deviceId
+        imageCapture {
+            id: capture
+            onImageSaved: {
+                outputUrl = "file:/" + path;
+            }
+        }
     }
 
     VideoOutput {
@@ -54,5 +61,14 @@ Item {
         border.color: "white"
         border.width: 2*dp
         color: "#88ffffff"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                parent.visible = false;
+                enabled = false;
+                capture.capture();
+            }
+        }
     }
 }
