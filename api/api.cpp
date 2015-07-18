@@ -22,6 +22,7 @@ void Api::setupReply() {
 
     connect(_reply, &QNetworkReply::finished, [this]{
         if (status() == 401) {
+            qDebug() << "Logged out:" << _reply->readAll();
             duvido->unsetMe();
             return;
         }
