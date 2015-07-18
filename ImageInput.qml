@@ -33,6 +33,7 @@ Column {
 
     Loader {
         active: mode == "camera"
+        visible: active
         source: "qrc:/components/PhotoTaker.qml"
         id: photoTaker
         width: parent.width
