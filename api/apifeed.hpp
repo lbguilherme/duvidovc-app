@@ -1,6 +1,7 @@
 #pragma once
 
 #include <api/api.hpp>
+#include <QDateTime>
 
 class ApiFeed : public Api {
     Q_OBJECT
