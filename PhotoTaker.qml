@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import QtMultimedia 5.4
+import Duvido 1.0
 
 Item {
     height: width * ratio
@@ -8,12 +9,17 @@ Item {
     property real ratio: output.orientation % 180 == 0 ? sourceRatio : 1/sourceRatio
     signal cancel()
 
+    PhotoRotator {
+        id: rotator
+    }
+
     Camera {
         id: camera
         deviceId: QtMultimedia.defaultCamera.deviceId
         imageCapture {
             id: capture
             onImageSaved: {
+                rotator.rotate(path, -output.orientation);
                 outputUrl = "file:/" + path;
             }
         }
