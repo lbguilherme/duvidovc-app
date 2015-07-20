@@ -22,6 +22,10 @@ void ApiUpload::processReply() {
     qDebug() << "Upload finished. Result id:" << _id;
 }
 
+QString ApiUpload::sourcePath() const {
+    return _sourcePath;
+}
+
 QString ApiUpload::id() const {
     return _id;
 }
