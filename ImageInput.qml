@@ -22,7 +22,10 @@ Column {
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.margins: 8*dp
-            onClicked: coverImg.source = "";
+            onClicked: {
+                mode = "methods";
+                coverImg.source = "";
+            }
         }
     }
 
