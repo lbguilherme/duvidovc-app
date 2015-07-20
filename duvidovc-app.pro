@@ -28,7 +28,8 @@ SOURCES += \
     qml/mychallengesmodel.cpp \
     api/apimychallenges.cpp \
     api/apifeed.cpp \
-    qml/feedmodel.cpp
+    qml/feedmodel.cpp \
+    qml/photorotator.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -47,7 +48,8 @@ HEADERS += \
     qml/mychallengesmodel.hpp \
     api/apimychallenges.hpp \
     api/apifeed.hpp \
-    qml/feedmodel.hpp
+    qml/feedmodel.hpp \
+    qml/photorotator.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
