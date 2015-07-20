@@ -9,6 +9,7 @@ public:
 
     struct Info {
         QString id;
+        QDateTime creationTime;
         QString owner;
         QString ownerName;
         QString title;

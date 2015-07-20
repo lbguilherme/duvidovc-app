@@ -21,6 +21,7 @@ void ApiFeed::processReply() {
         QJsonObject obj = el.toObject();
         Info info;
         info.id = obj["id"].toString();
+        info.creationTime = QDateTime::fromMSecsSinceEpoch(obj["creationTime"].toString().toULongLong());
         info.owner = obj["owner"].toString();
         info.ownerName = obj["ownerName"].toString();
         info.title = obj["title"].toString();

@@ -26,6 +26,7 @@ public:
 
     struct Info {
         QString id;
+        QDateTime creationTime;
         QString title;
         QString description;
         QString reward;

@@ -21,6 +21,7 @@ void ApiMyChallenges::processReply() {
         QJsonObject obj = el.toObject();
         Info info;
         info.id = obj["id"].toString();
+        info.creationTime = QDateTime::fromMSecsSinceEpoch(obj["creationTime"].toString().toULongLong());
         info.title = obj["title"].toString();
         info.description = obj["description"].toString();
         info.reward = obj["reward"].toString();
