@@ -1,7 +1,8 @@
 #pragma once
 
-#include <QObject>
+#include <data/prechallenge.hpp>
 #include <api/apicreatechallenge.hpp>
+#include <QObject>
 
 class ApiUpload;
 
@@ -10,8 +11,8 @@ class PostingChallenge : public QObject {
 
 public:
 
-    PostingChallenge(ApiCreateChallenge::Info info, QObject* parent = nullptr);
-    PostingChallenge(ApiCreateChallenge::Info info, ApiUpload* upload, QObject* parent = nullptr);
+    PostingChallenge(PreChallenge info, QObject* parent = nullptr);
+    PostingChallenge(PreChallenge info, ApiUpload* upload, QObject* parent = nullptr);
 
     float progress() const;
     bool isFinished() const;
@@ -27,7 +28,7 @@ private:
 
 private:
 
-    ApiCreateChallenge::Info _info;
+    PreChallenge _info;
     ApiUpload* _upload;
     ApiCreateChallenge* _create;
 

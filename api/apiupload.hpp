@@ -9,6 +9,7 @@ public:
 
     explicit ApiUpload(QString sourcePath, QObject* parent = nullptr);
 
+    QString sourcePath() const;
     QString id() const;
 
 protected:

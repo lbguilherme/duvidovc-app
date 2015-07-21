@@ -1,17 +1,17 @@
 #include <core/postingchallenge.hpp>
 #include <api/apiupload.hpp>
 
-PostingChallenge::PostingChallenge(ApiCreateChallenge::Info info, QObject* parent)
+PostingChallenge::PostingChallenge(PreChallenge info, QObject* parent)
     : QObject(parent), _info(info), _upload(nullptr), _create(nullptr) {
 
-    Q_ASSERT(info.imageId.isEmpty());
+    Q_ASSERT(info.image.isEmpty());
     createChallenge();
 }
 
-PostingChallenge::PostingChallenge(ApiCreateChallenge::Info info, ApiUpload* upload, QObject* parent)
+PostingChallenge::PostingChallenge(PreChallenge info, ApiUpload* upload, QObject* parent)
     : QObject(parent), _info(info), _upload(upload), _create(nullptr) {
 
-    Q_ASSERT(info.imageId.isEmpty());
+    Q_ASSERT(info.image.isEmpty());
     Q_ASSERT(_upload);
 
     _upload->setParent(this);
@@ -40,7 +40,7 @@ bool PostingChallenge::isFinished() const {
 
 void PostingChallenge::createChallenge() {
     if (_upload)
-        _info.imageId = _upload->id();
+        _info.image = _upload->id();
 
     _create = new ApiCreateChallenge(_info, this);
     connect(_create, &Api::finished, [this]{

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <data/user.hpp>
 #include <QAbstractListModel>
 
 class QSortFilterProxyModel;
@@ -39,8 +40,7 @@ private:
 private:
 
     struct FriendInfo {
-        QString id;
-        QString name;
+        User user;
         bool selected;
     };
 

@@ -1,21 +1,16 @@
 #pragma once
 
 #include <api/api.hpp>
+#include <data/user.hpp>
 
 class ApiFriends : public Api {
     Q_OBJECT
 
 public:
 
-    struct Info {
-        QString id;
-        QString name;
-    };
-
     explicit ApiFriends(QObject* parent = nullptr);
 
-    const Info& operator[](int index) const;
-    int count() const;
+    const QList<User>& friends() const { return _friends; }
 
 protected:
 
@@ -24,6 +19,6 @@ protected:
 
 private:
 
-    QList<Info> _friends;
+    QList<User> _friends;
 
 };

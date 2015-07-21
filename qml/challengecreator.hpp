@@ -1,5 +1,6 @@
 #pragma once
 
+#include <data/prechallenge.hpp>
 #include <QObject>
 #include <QUrl>
 
@@ -51,12 +52,8 @@ signals:
 
 private:
 
-    QString _title;
-    QString _description;
-    QString _reward;
+    PreChallenge _info;
     FriendsModel* _targets;
-    unsigned _duration;
-    QUrl _image;
     ApiUpload* _imageUpload;
 
 };

@@ -39,10 +39,9 @@ void FriendsModel::refresh() {
         _friends.clear();
         endRemoveRows();
 
-        beginInsertRows(QModelIndex(), 0, result->count()-1);
-        for (int i = 0; i < result->count(); ++i) {
-            const ApiFriends::Info& info = (*result)[i];
-            _friends.append({info.id, info.name, false});
+        beginInsertRows(QModelIndex(), 0, result->friends().size()-1);
+        for (const User& user : result->friends()) {
+            _friends.append({user, false});
         }
         endInsertRows();
     });
@@ -71,9 +70,9 @@ QVariant FriendsModel::data(const QModelIndex& index, int role) const {
     int i = index.row();
     switch (role) {
     case IdRole:
-        return _friends[i].id;
+        return _friends[i].user.id;
     case NameRole:
-        return _friends[i].name;
+        return _friends[i].user.name;
     case SelectedRole:
         return _friends[i].selected;
     default:
@@ -102,7 +101,7 @@ QStringList FriendsModel::selectedIds() const {
     QStringList list;
     for (auto& f : _friends) {
         if (f.selected)
-            list.append(f.id);
+            list.append(f.user.id);
     }
     return list;
 }

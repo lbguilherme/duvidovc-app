@@ -1,6 +1,7 @@
 #include <api/apifriends.hpp>
 #include <core/duvido.hpp>
 #include <core/avatarmanager.hpp>
+#include <data/list.hpp>
 
 #include <QJsonObject>
 #include <QJsonArray>
@@ -18,20 +19,9 @@ void ApiFriends::sendRequest() {
 
 void ApiFriends::processReply() {
     QJsonArray array = QJsonDocument::fromJson(_reply->readAll()).array();
-    for (QJsonValue el : array) {
-        QJsonObject obj = el.toObject();
-        Info info;
-        info.id = obj["id"].toString();
-        info.name = obj["name"].toString();
-        _friends.append(info);
-        duvido->avatarManager()->fetchAvatar(info.id);
+    _friends = fromJson<User>(array);
+
+    for (const User& user : _friends) {
+        duvido->avatarManager()->fetchAvatar(user.id);
     }
-}
-
-const ApiFriends::Info& ApiFriends::operator[](int index) const {
-    return _friends[index];
-}
-
-int ApiFriends::count() const {
-    return _friends.size();
 }

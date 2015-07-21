@@ -1,8 +1,7 @@
 #pragma once
 
 #include <api/api.hpp>
-
-#include <QDate>
+#include <data/me.hpp>
 
 class ApiLogin : public Api {
     Q_OBJECT
@@ -13,13 +12,8 @@ public:
 
     bool hasCache() const;
     bool changedFromCache() const;
-    QString id() const;
-    QString name() const;
-    QString firstName() const;
-    QString lastName() const;
-    QString gender() const;
-    QDate birthday() const;
-    QString email() const;
+
+    const Me& me() const { return _me; }
 
 protected:
 
@@ -30,12 +24,6 @@ private:
 
     bool _cache;
     bool _changed;
-    QString _id;
-    QString _name;
-    QString _firstName;
-    QString _lastName;
-    QString _gender;
-    QDate _birthday;
-    QString _email;
+    Me _me;
 
 };
