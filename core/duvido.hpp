@@ -3,6 +3,7 @@
 #include <QGuiApplication>
 #include <QNetworkAccessManager>
 #include <QQuickView>
+#include <data/me.hpp>
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.DuvidoActivity.hpp>
@@ -37,7 +38,7 @@ public:
     void addPostingChallenge(PostingChallenge* postingChallenge);
 
     void unsetMe();
-    void setMe(const ApiLogin* apiLogin);
+    void setMe(const Me& me);
     Q_INVOKABLE void setToken(QString token);
 
     Q_INVOKABLE void login();
@@ -64,8 +65,7 @@ private:
     AvatarManager* _avatarManager;
 
     QString _token;
-    QString _myId;
-    QString _myName;
+    Me _me;
 
     QList<PostingChallenge*> _postingChallenges;
 

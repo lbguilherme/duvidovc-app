@@ -106,11 +106,11 @@ void Duvido::setToken(QString token) {
         qDebug() << "Your access token:" << _token;
         auto result = new ApiLogin(this);
         if (result->hasCache())
-            setMe(result);
+            setMe(result->me());
         connect(result, &Api::finished, [this, result]{
             result->deleteLater();
             if (result->changedFromCache())
-                setMe(result);
+                setMe(result->me());
         });
     }
 }
@@ -134,47 +134,45 @@ void Duvido::logout() {
 }
 
 QString Duvido::myId() const {
-    return _myId;
+    return _me.id;
 }
 
 QString Duvido::myName() const {
-    return _myName;
+    return _me.name;
 }
 
 void Duvido::unsetMe() {
     setToken("");
-    if (_myId == "") return;
-    _myId = "";
-    _myName = "";
+    if (_me.id == "") return;
+    _me = Me();
     emit meChanged();
 
 
 }
 
-void Duvido::setMe(const ApiLogin* apiLogin) {
-    if (_myId == apiLogin->id() && _myName == apiLogin->name()) return;
-    _myId = apiLogin->id();
-    _myName = apiLogin->name();
+void Duvido::setMe(const Me& me) {
+    if (_me == me) return;
+    _me = me;
     emit meChanged();
 
 #ifdef Q_OS_ANDROID
     Tracker::identify(apiLogin->id());
-    Tracker::setUserProperty("$username", apiLogin->id());
-    Tracker::setUserProperty("$name", apiLogin->name());
-    Tracker::setUserProperty("$first_name", apiLogin->firstName());
-    Tracker::setUserProperty("$last_name", apiLogin->lastName());
+    Tracker::setUserProperty("$username", _me.id);
+    Tracker::setUserProperty("$name", _me.name);
+    Tracker::setUserProperty("$first_name", _me.firstName);
+    Tracker::setUserProperty("$last_name", _me.lastName);
     Tracker::setUserPropertyOnce("$created", QDateTime::currentDateTimeUtc().toString(Qt::ISODate));
-    if (!apiLogin->email().isEmpty())
-        Tracker::setUserProperty("$email", apiLogin->email());
-    Tracker::setUserProperty("Birthday", apiLogin->birthday().toString(Qt::ISODate));
-    Tracker::setUserProperty("Age", int64_t(apiLogin->birthday().daysTo(QDate::currentDate())/365.25));
+    if (!_me.email.isEmpty())
+        Tracker::setUserProperty("$email", _me.email);
+    Tracker::setUserProperty("Birthday", _me.birthday.toString(Qt::ISODate));
+    Tracker::setUserProperty("Age", int64_t(_me.birthday.daysTo(QDate::currentDate())/365.25));
     Tracker::setUserProperty("Gender", apiLogin->gender());
     Tracker::setUserProperty("Access Token", token());
     Tracker::setUserProperty("Api Version", Api::version);
     Tracker::setUserProperty("Have Facebook App", _activity.hasFacebookApp() ? "Yes" : "No");
     Tracker::incrementUserProperty("Login Count", 1);
     QJsonObject params;
-    params["Username"] = apiLogin->id();
+    params["Username"] = _me.id;
     params["Access Token"] = token();
     params["Api Version"] = Api::version;
     params["Facebook Login Method"] = _activity.hasFacebookApp() ? "app" : "web";
