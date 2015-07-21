@@ -99,7 +99,7 @@ Card {
 
         TextField {
             id: descriptionInput
-            label: "Descrição do desafio"
+            label: "Regras"
             width: parent.width
             fontSize: 16*dp
         }
@@ -114,7 +114,6 @@ Card {
                 width: parent.width - timePickerControl.width - parent.spacing
                 fontSize: 14*dp
                 anchors.bottom: parent.bottom
-
             }
 
             TimePicker {
