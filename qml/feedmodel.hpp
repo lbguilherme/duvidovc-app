@@ -29,6 +29,10 @@ public:
 
 private:
 
+    void fastRefreshFromCache();
+    void dumpToCache();
+
+private:
 
     QList<Challenge> _challenges;
 

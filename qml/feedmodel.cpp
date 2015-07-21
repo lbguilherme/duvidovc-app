@@ -1,7 +1,14 @@
 #include <qml/feedmodel.hpp>
 #include <api/apifeed.hpp>
+#include <data/list.hpp>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QFile>
+#include <QDir>
 
 FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
+    fastRefreshFromCache();
     refresh();
 }
 
@@ -17,7 +24,25 @@ void FeedModel::refresh() {
         beginInsertRows(QModelIndex(), 0, result->challenges().size()-1);
         _challenges = result->challenges();
         endInsertRows();
+
+        dumpToCache();
     });
+}
+
+void FeedModel::fastRefreshFromCache() {
+    QFile cacheFile(QDir::temp().filePath("duvido_feed"));
+    if (cacheFile.exists()) {
+        cacheFile.open(QIODevice::ReadOnly);
+        QJsonArray arr = QJsonDocument::fromJson(cacheFile.readAll()).array();
+        _challenges = fromJson<Challenge>(arr);
+    }
+}
+
+void FeedModel::dumpToCache() {
+    QJsonArray arr = toJson(_challenges);
+    QFile cacheFile(QDir::temp().filePath("duvido_feed"));
+    cacheFile.open(QIODevice::WriteOnly);
+    cacheFile.write(QJsonDocument(arr).toJson());
 }
 
 QHash<int, QByteArray> FeedModel::roleNames() const {
