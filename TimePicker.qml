@@ -26,7 +26,7 @@ Item {
 
             Text {
                 id: timeLeft
-                text: time != 0 ? formatTime(time) : "Tempo"
+                text: time != 0 ? formatTime(time) : "Validade"
                 color: time != 0 ? "000" : "#999"
                 onTextChanged: error = false
             }
