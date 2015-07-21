@@ -1,4 +1,4 @@
-#include "me.hpp"
+#include <data/me.hpp>
 
 QJsonObject Me::toJson() const {
     QJsonObject obj = User::toJson();
