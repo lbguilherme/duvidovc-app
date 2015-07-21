@@ -14,20 +14,8 @@ void FeedModel::refresh() {
         _challenges.clear();
         endRemoveRows();
 
-        beginInsertRows(QModelIndex(), 0, result->count()-1);
-        for (int i = 0; i < result->count(); ++i) {
-            Challenge challenge;
-            const ApiFeed::Info& info = (*result)[i];
-            challenge.id = info.id;
-            challenge.owner = info.owner;
-            challenge.ownerName = info.ownerName;
-            challenge.title = info.title;
-            challenge.description = info.description;
-            challenge.reward = info.reward;
-            challenge.duration = info.duration;
-            challenge.imageId = info.image;
-            _challenges.append(challenge);
-        }
+        beginInsertRows(QModelIndex(), 0, result->challenges().size()-1);
+        _challenges = result->challenges();
         endInsertRows();
     });
 }
@@ -41,7 +29,7 @@ QHash<int, QByteArray> FeedModel::roleNames() const {
     roles[DescriptionRole] = "description";
     roles[RewardRole] = "reward";
     roles[DurationRole] = "duration";
-    roles[ImageIdRole] = "imageId";
+    roles[ImageRole] = "image";
     return roles;
 }
 
@@ -58,9 +46,9 @@ QVariant FeedModel::data(const QModelIndex& index, int role) const {
     case IdRole:
         return _challenges[i].id;
     case OwnerRole:
-        return _challenges[i].owner;
+        return _challenges[i].owner.id;
     case OwnerNameRole:
-        return _challenges[i].ownerName;
+        return _challenges[i].owner.name;
     case TitleRole:
         return _challenges[i].title;
     case DescriptionRole:
@@ -69,8 +57,8 @@ QVariant FeedModel::data(const QModelIndex& index, int role) const {
         return _challenges[i].reward;
     case DurationRole:
         return _challenges[i].duration;
-    case ImageIdRole:
-        return _challenges[i].imageId;
+    case ImageRole:
+        return _challenges[i].image;
     default:
         return QVariant();
     }

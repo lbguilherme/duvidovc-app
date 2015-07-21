@@ -1,5 +1,6 @@
 #include <api/apifeed.hpp>
 #include <core/duvido.hpp>
+#include <data/list.hpp>
 
 #include <QJsonObject>
 #include <QJsonArray>
@@ -17,26 +18,5 @@ void ApiFeed::sendRequest() {
 
 void ApiFeed::processReply() {
     QJsonArray array = QJsonDocument::fromJson(_reply->readAll()).array();
-    for (QJsonValue el : array) {
-        QJsonObject obj = el.toObject();
-        Info info;
-        info.id = obj["id"].toString();
-        info.creationTime = QDateTime::fromMSecsSinceEpoch(obj["creationTime"].toString().toULongLong());
-        info.owner = obj["owner"].toString();
-        info.ownerName = obj["ownerName"].toString();
-        info.title = obj["title"].toString();
-        info.description = obj["description"].toString();
-        info.reward = obj["reward"].toString();
-        info.duration = obj["duration"].toInt();
-        info.image = obj["image"].toString();
-        _challenges.append(info);
-    }
-}
-
-const ApiFeed::Info& ApiFeed::operator[](int index) const {
-    return _challenges[index];
-}
-
-int ApiFeed::count() const {
-    return _challenges.size();
+    _challenges = fromJson<Challenge>(array);
 }

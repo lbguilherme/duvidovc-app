@@ -32,7 +32,8 @@ SOURCES += \
     qml/photorotator.cpp \
     data/user.cpp \
     data/me.cpp \
-    data/prechallenge.cpp
+    data/prechallenge.cpp \
+    data/challenge.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -56,7 +57,8 @@ HEADERS += \
     data/user.hpp \
     data/me.hpp \
     data/list.hpp \
-    data/prechallenge.hpp
+    data/prechallenge.hpp \
+    data/challenge.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

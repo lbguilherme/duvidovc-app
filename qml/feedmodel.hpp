@@ -1,5 +1,6 @@
 #pragma once
 
+#include <data/challenge.hpp>
 #include <QAbstractListModel>
 
 class FeedModel : public QAbstractListModel {
@@ -15,7 +16,7 @@ public:
         DescriptionRole,
         RewardRole,
         DurationRole,
-        ImageIdRole
+        ImageRole
     };
 
     FeedModel(QObject* parent = 0);
@@ -28,16 +29,6 @@ public:
 
 private:
 
-    struct Challenge {
-        QString id;
-        QString owner;
-        QString ownerName;
-        QString title;
-        QString description;
-        QString reward;
-        unsigned duration;
-        QString imageId;
-    };
 
     QList<Challenge> _challenges;
 
