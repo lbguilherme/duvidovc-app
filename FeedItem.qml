@@ -62,7 +62,7 @@ Component {
         }
 
         CardImageArea {
-            source: imageId
+            //source: image
         }
 
         CardContentArea {
