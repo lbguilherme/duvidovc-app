@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<manifest package="vc.duvido" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="1" android:installLocation="auto">
-        <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="duvido.vc" android:icon="@drawable/icon">
+<manifest package="vc.duvido" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="0" android:installLocation="auto">
+        <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Duvido.vc" android:icon="@drawable/icon">
                 <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-                <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation" android:name="vc.duvido.DuvidoActivity" android:label="duvido.vc" android:screenOrientation="unspecified" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize">
+                <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation" android:name="vc.duvido.DuvidoActivity" android:label="Duvido.vc" android:screenOrientation="unspecified" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize">
                         <intent-filter>
                                 <action android:name="android.intent.action.MAIN"/>
                                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -42,10 +42,10 @@
                         <meta-data android:name="android.app.background_running" android:value="false"/>
                         <!-- Background running -->
                 </activity>
-                <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="duvido.vc">
+                <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="Duvido.vc">
                         <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
                 </activity>
-                <activity android:name="vc.duvido.WebLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="duvido.vc">
+                <activity android:name="vc.duvido.WebLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="Duvido.vc">
                 <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
         </activity>
         </application>
