@@ -1,22 +1,14 @@
 #pragma once
 
 #include <api/api.hpp>
+#include <data/prechallenge.hpp>
 
 class ApiCreateChallenge : public Api {
     Q_OBJECT
 
 public:
 
-    struct Info {
-        QString title;
-        QString description;
-        QString reward;
-        QStringList targets;
-        unsigned duration;
-        QString imageId;
-    };
-
-    explicit ApiCreateChallenge(Info info, QObject* parent = nullptr);
+    explicit ApiCreateChallenge(PreChallenge info, QObject* parent = nullptr);
 
 protected:
 
@@ -25,6 +17,6 @@ protected:
 
 private:
 
-    Info _info;
+    PreChallenge _info;
 
 };

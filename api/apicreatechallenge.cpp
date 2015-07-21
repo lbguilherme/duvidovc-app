@@ -12,7 +12,7 @@
 using namespace vc::duvido;
 #endif
 
-ApiCreateChallenge::ApiCreateChallenge(Info info, QObject* parent) : Api(parent), _info(info) {
+ApiCreateChallenge::ApiCreateChallenge(PreChallenge info, QObject* parent) : Api(parent), _info(info) {
     sendRequest();
 }
 
@@ -22,9 +22,9 @@ void ApiCreateChallenge::sendRequest() {
         {"title", _info.title},
         {"description", _info.description},
         {"reward", _info.reward},
-        {"targets", _info.targets.join(",")},
+        {"targets", _info.targetIds.join(",")},
         {"duration", QString::number(_info.duration)},
-        {"image", _info.imageId}
+        {"image", _info.image}
     };
 
     _reply = duvido->http().post(request("/challenge", args), QByteArray());
@@ -38,8 +38,8 @@ void ApiCreateChallenge::sendRequest() {
         params["Description"] = _info.description;
         params["Reward"] = _info.reward;
         params["Duration (s)"] = (double)_info.duration;
-        params["Targets"] = QJsonArray::fromStringList(_info.targets);
-        params["Image"] = _info.imageId;
+        params["Targets"] = _info.targetIds.join(",");
+        params["Image"] = _info.image;
         Tracker::event("Created challenge", QJsonDocument(params).toJson());
         Tracker::incrementUserProperty("Challenges Created", 1);
     });

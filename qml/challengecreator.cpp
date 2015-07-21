@@ -7,42 +7,41 @@
 ChallengeCreator::ChallengeCreator(QObject* parent)
     : QObject(parent)
     , _targets(nullptr)
-    , _duration(0)
     , _imageUpload(nullptr) {
 
 }
 
 QString ChallengeCreator::title() const {
-    return _title;
+    return _info.title;
 }
 
 void ChallengeCreator::setTitle(const QString& title) {
-    if (_title == title) return;
-    _title = title;
+    if (_info.title == title) return;
+    _info.title = title;
     emit titleChanged();
 }
 
 QString ChallengeCreator::description() const {
-    return _description;
+    return _info.description;
 }
 
 void ChallengeCreator::setDescription(const QString& description) {
-    if (_description == description) return;
-    _description = description;
+    if (_info.description == description) return;
+    _info.description = description;
     emit descriptionChanged();
 }
 
 QString ChallengeCreator::reward() const {
-    return _reward;
+    return _info.reward;
 }
 
 void ChallengeCreator::setReward(const QString& reward) {
-    if (_reward == reward) return;
-    _reward = reward;
+    if (_info.reward == reward) return;
+    _info.reward = reward;
     emit rewardChanged();
 }
 
-FriendsModel *ChallengeCreator::targets() const {
+FriendsModel* ChallengeCreator::targets() const {
     return _targets;
 }
 
@@ -53,47 +52,42 @@ void ChallengeCreator::setTargets(FriendsModel* targets) {
 }
 
 unsigned ChallengeCreator::duration() const {
-    return _duration;
+    return _info.duration;
 }
 
 void ChallengeCreator::setDuration(unsigned duration) {
-    if (_duration == duration) return;
-    _duration = duration;
+    if (_info.duration == duration) return;
+    _info.duration = duration;
     emit durationChanged();
 }
 
 QUrl ChallengeCreator::image() const {
-    return _image;
+    return _imageUpload ? _imageUpload->sourcePath() : "";
 }
 
 void ChallengeCreator::setImage(const QUrl& image) {
-    if (_image == image) return;
-    _image = image;
+    if (_imageUpload &&
+            QUrl::fromLocalFile(_imageUpload->sourcePath()) == image)
+        return;
 
     if (_imageUpload)
         _imageUpload->deleteLater();
 
-    if (_image.isEmpty())
+    if (image.isEmpty())
         _imageUpload = nullptr;
     else {
         Q_ASSERT(image.isLocalFile());
         _imageUpload = new ApiUpload(image.toLocalFile(), this);
     }
+
     emit imageChanged();
 }
 
 void ChallengeCreator::submit() {
-    ApiCreateChallenge::Info info;
-    info.title = _title;
-    info.description = _description;
-    info.reward = _reward;
-    info.duration = _duration;
-    info.targets = _targets->selectedIds();
-
     if (_imageUpload)
-        duvido->addPostingChallenge(new PostingChallenge(info, _imageUpload));
+        duvido->addPostingChallenge(new PostingChallenge(_info, _imageUpload));
     else
-        duvido->addPostingChallenge(new PostingChallenge(info));
+        duvido->addPostingChallenge(new PostingChallenge(_info));
 
     emit submitted();
 }
