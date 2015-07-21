@@ -43,7 +43,7 @@ Component {
                 Text {
                     id: senderName
                     color: "#333"
-                    text: "<i>"+ownerName+"</i> duvida que..."
+                    text: "<i>"+ownerName+"</i> duvida"
                     font.pixelSize: 14*dp
                     anchors.verticalCenter: senderAvatar.verticalCenter
                 }

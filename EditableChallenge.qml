@@ -56,7 +56,7 @@ Card {
             Text {
                 id: senderName
                 color: "#333"
-                text: "<i>" + duvido.myName + "</i> duvida que..."
+                text: "<i>" + duvido.myName + "</i> duvida"
                 font.pixelSize: 14*dp
                 anchors.verticalCenter: senderAvatar.verticalCenter
             }
