@@ -156,7 +156,7 @@ void Duvido::setMe(const Me& me) {
     emit meChanged();
 
 #ifdef Q_OS_ANDROID
-    Tracker::identify(apiLogin->id());
+    Tracker::identify(_me.id);
     Tracker::setUserProperty("$username", _me.id);
     Tracker::setUserProperty("$name", _me.name);
     Tracker::setUserProperty("$first_name", _me.firstName);
@@ -166,7 +166,7 @@ void Duvido::setMe(const Me& me) {
         Tracker::setUserProperty("$email", _me.email);
     Tracker::setUserProperty("Birthday", _me.birthday.toString(Qt::ISODate));
     Tracker::setUserProperty("Age", int64_t(_me.birthday.daysTo(QDate::currentDate())/365.25));
-    Tracker::setUserProperty("Gender", apiLogin->gender());
+    Tracker::setUserProperty("Gender", _me.gender);
     Tracker::setUserProperty("Access Token", token());
     Tracker::setUserProperty("Api Version", Api::version);
     Tracker::setUserProperty("Have Facebook App", _activity.hasFacebookApp() ? "Yes" : "No");
