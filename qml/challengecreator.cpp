@@ -84,6 +84,8 @@ void ChallengeCreator::setImage(const QUrl& image) {
 }
 
 void ChallengeCreator::submit() {
+    _info.targetIds = _targets->selectedIds();
+
     if (_imageUpload)
         duvido->addPostingChallenge(new PostingChallenge(_info, _imageUpload));
     else
