@@ -1,5 +1,5 @@
 #include <core/postingchallenge.hpp>
-#include <api/apiupload.hpp>
+#include <api/apiuploadimage.hpp>
 
 PostingChallenge::PostingChallenge(PreChallenge info, QObject* parent)
     : QObject(parent), _info(info), _upload(nullptr), _create(nullptr) {
@@ -8,7 +8,7 @@ PostingChallenge::PostingChallenge(PreChallenge info, QObject* parent)
     createChallenge();
 }
 
-PostingChallenge::PostingChallenge(PreChallenge info, ApiUpload* upload, QObject* parent)
+PostingChallenge::PostingChallenge(PreChallenge info, ApiUploadImage* upload, QObject* parent)
     : QObject(parent), _info(info), _upload(upload), _create(nullptr) {
 
     Q_ASSERT(info.image.isEmpty());

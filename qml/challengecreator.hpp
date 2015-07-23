@@ -5,7 +5,7 @@
 #include <QUrl>
 
 class FriendsModel;
-class ApiUpload;
+class ApiUploadImage;
 
 class ChallengeCreator : public QObject {
     Q_OBJECT
@@ -54,6 +54,6 @@ private:
 
     PreChallenge _info;
     FriendsModel* _targets;
-    ApiUpload* _imageUpload;
+    ApiUploadImage* _imageUpload;
 
 };

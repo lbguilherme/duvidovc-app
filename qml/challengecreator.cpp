@@ -1,6 +1,6 @@
 #include <qml/challengecreator.hpp>
 #include <qml/friendsmodel.hpp>
-#include <api/apiupload.hpp>
+#include <api/apiuploadimage.hpp>
 #include <core/postingchallenge.hpp>
 #include <core/duvido.hpp>
 
@@ -77,7 +77,7 @@ void ChallengeCreator::setImage(const QUrl& image) {
         _imageUpload = nullptr;
     else {
         Q_ASSERT(image.isLocalFile());
-        _imageUpload = new ApiUpload(image.toLocalFile(), this);
+        _imageUpload = new ApiUploadImage(image.toLocalFile(), this);
     }
 
     emit imageChanged();

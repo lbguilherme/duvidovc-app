@@ -21,7 +21,6 @@ SOURCES += \
     api/api.cpp \
     api/apifriends.cpp \
     api/apilogin.cpp \
-    api/apiupload.cpp \
     api/apicreatechallenge.cpp \
     api/apiavatars.cpp \
     core/postingchallenge.cpp \
@@ -33,7 +32,8 @@ SOURCES += \
     data/user.cpp \
     data/me.cpp \
     data/prechallenge.cpp \
-    data/challenge.cpp
+    data/challenge.cpp \
+    api/apiuploadimage.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -45,7 +45,6 @@ HEADERS += \
     api/apifriends.hpp \
     api/apilogin.hpp \
     api/api.hpp \
-    api/apiupload.hpp \
     api/apicreatechallenge.hpp \
     api/apiavatars.hpp \
     core/postingchallenge.hpp \
@@ -58,7 +57,8 @@ HEADERS += \
     data/me.hpp \
     data/list.hpp \
     data/prechallenge.hpp \
-    data/challenge.hpp
+    data/challenge.hpp \
+    api/apiuploadimage.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

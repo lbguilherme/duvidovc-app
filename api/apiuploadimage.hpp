@@ -2,12 +2,12 @@
 
 #include <api/api.hpp>
 
-class ApiUpload : public Api {
+class ApiUploadImage : public Api {
     Q_OBJECT
 
 public:
 
-    explicit ApiUpload(QString sourcePath, QObject* parent = nullptr);
+    explicit ApiUploadImage(QString sourcePath, QObject* parent = nullptr);
 
     QString sourcePath() const;
     QString id() const;

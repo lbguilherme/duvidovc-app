@@ -4,7 +4,7 @@
 #include <api/apicreatechallenge.hpp>
 #include <QObject>
 
-class ApiUpload;
+class ApiUploadImage;
 
 class PostingChallenge : public QObject {
     Q_OBJECT
@@ -12,7 +12,7 @@ class PostingChallenge : public QObject {
 public:
 
     PostingChallenge(PreChallenge info, QObject* parent = nullptr);
-    PostingChallenge(PreChallenge info, ApiUpload* upload, QObject* parent = nullptr);
+    PostingChallenge(PreChallenge info, ApiUploadImage* upload, QObject* parent = nullptr);
 
     float progress() const;
     bool isFinished() const;
@@ -29,7 +29,7 @@ private:
 private:
 
     PreChallenge _info;
-    ApiUpload* _upload;
+    ApiUploadImage* _upload;
     ApiCreateChallenge* _create;
 
 };
