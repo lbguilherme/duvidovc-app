@@ -7,10 +7,11 @@ class ApiUploadImage : public Api {
 
 public:
 
-    explicit ApiUploadImage(QString sourcePath, QObject* parent = nullptr);
+    explicit ApiUploadImage(QString sourcePath, int orientation, QObject* parent = nullptr);
 
-    QString sourcePath() const;
-    QString id() const;
+    const QString& sourcePath() const { return _sourcePath; }
+    int orientation() const { return _orientation; }
+    const QString& id() const { return _id; }
 
 protected:
 
@@ -20,6 +21,7 @@ protected:
 private:
 
     QString _sourcePath;
+    int _orientation;
     QString _id;
 
 };

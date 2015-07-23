@@ -36,7 +36,10 @@ public:
     void setDuration(unsigned duration);
 
     QUrl image() const;
-    void setImage(const QUrl &image);
+    void setImage(const QUrl& image);
+
+    int orientation() const;
+    void setOrientation(int orientation);
 
     Q_INVOKABLE void submit();
 
@@ -54,6 +57,7 @@ private:
 
     PreChallenge _info;
     FriendsModel* _targets;
-    ApiUploadImage* _imageUpload;
+    int _orientation;
+    QString _imageSource;
 
 };

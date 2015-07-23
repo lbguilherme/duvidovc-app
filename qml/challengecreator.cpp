@@ -7,7 +7,7 @@
 ChallengeCreator::ChallengeCreator(QObject* parent)
     : QObject(parent)
     , _targets(nullptr)
-    , _imageUpload(nullptr) {
+    , _orientation(0) {
 
 }
 
@@ -62,32 +62,25 @@ void ChallengeCreator::setDuration(unsigned duration) {
 }
 
 QUrl ChallengeCreator::image() const {
-    return _imageUpload ? _imageUpload->sourcePath() : "";
+    return QUrl::fromLocalFile(_imageSource);
 }
 
 void ChallengeCreator::setImage(const QUrl& image) {
-    if (_imageUpload &&
-            QUrl::fromLocalFile(_imageUpload->sourcePath()) == image)
-        return;
-
-    if (_imageUpload)
-        _imageUpload->deleteLater();
-
-    if (image.isEmpty())
-        _imageUpload = nullptr;
-    else {
+    QString imageSource;
+    if (!image.isEmpty()) {
         Q_ASSERT(image.isLocalFile());
-        _imageUpload = new ApiUploadImage(image.toLocalFile(), this);
+        imageSource = image.toLocalFile();
     }
-
+    if (_imageSource == imageSource) return;
+    _imageSource = imageSource;
     emit imageChanged();
 }
 
 void ChallengeCreator::submit() {
     _info.targetIds = _targets->selectedIds();
 
-    if (_imageUpload)
-        duvido->addPostingChallenge(new PostingChallenge(_info, _imageUpload));
+    if (!_imageSource.isEmpty())
+        duvido->addPostingChallenge(new PostingChallenge(_info, new ApiUploadImage(_imageSource, _orientation)));
     else
         duvido->addPostingChallenge(new PostingChallenge(_info));
 
