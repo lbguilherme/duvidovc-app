@@ -30,6 +30,7 @@ void Api::setupReply() {
             processReply();
             emit finished();
         } else if (!_cancelling) {
+            qDebug() << "Api Error:" << status() << _reply->readAll();
             _reply->deleteLater();
             // TODO: wait before retry
             // TODO: limit max number of retries
