@@ -80,16 +80,56 @@ static void JNICALL Java_vc_duvido_DuvidoActivity_onPhotoFetched__Ljava_lang_Str
     _obj.onPhotoFetched(_arg0);
 }
 
+void vc::duvido::DuvidoActivity::startWebLogin() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "startWebLogin", "()V");
+    java::jni->CallVoidMethod(obj, mid);
+}
+
 bool vc::duvido::DuvidoActivity::hasFacebookApp() const {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
     static jmethodID mid = java::jni->GetMethodID(_class, "hasFacebookApp", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
-void vc::duvido::DuvidoActivity::startWebLogin() const {
+::java::lang::String vc::duvido::DuvidoActivity::getPhoneNumber() const {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
-    static jmethodID mid = java::jni->GetMethodID(_class, "startWebLogin", "()V");
-    java::jni->CallVoidMethod(obj, mid);
+    static jmethodID mid = java::jni->GetMethodID(_class, "getPhoneNumber", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+::java::lang::String vc::duvido::DuvidoActivity::getAndroidVersion() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getAndroidVersion", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+::java::lang::String vc::duvido::DuvidoActivity::getDeviceName() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getDeviceName", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+::java::lang::String vc::duvido::DuvidoActivity::getDeviceBrand() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getDeviceBrand", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
+}
+
+::java::lang::String vc::duvido::DuvidoActivity::getDeviceModel() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "getDeviceModel", "()Ljava/lang/String;");
+    jobject ret = java::jni->CallObjectMethod(obj, mid);
+    ::java::lang::String _ret(ret);
+    return _ret;
 }
 
 void ::vc::duvido::DuvidoActivity::jniInitializeNative() {

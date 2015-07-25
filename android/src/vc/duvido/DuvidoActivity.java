@@ -11,6 +11,7 @@ import android.content.pm.*;
 import android.util.*;
 import android.os.*;
 import android.provider.*;
+import android.telephony.*;
 import com.facebook.appevents.*;
 
 public class DuvidoActivity extends QtActivity {
@@ -76,15 +77,6 @@ public class DuvidoActivity extends QtActivity {
 
     public native void onPhotoFetched(String filePath);
 
-    public boolean hasFacebookApp() {
-        try {
-            getPackageManager().getApplicationInfo("com.facebook.katana", 0);
-            return true;
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
-    }
-
     public void startWebLogin() {
         Intent intent = new Intent(this, WebLoginActivity.class);
         startActivityForResult(intent, FacebookBridge.RESULT_WEBLOGIN);
@@ -99,5 +91,36 @@ public class DuvidoActivity extends QtActivity {
         }
         out.close();
         in.close();
+    }
+
+    public boolean hasFacebookApp() {
+        try {
+            getPackageManager().getApplicationInfo("com.facebook.katana", 0);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
+    public String getPhoneNumber() {
+        return ((TelephonyManager)getSystemService(TELEPHONY_SERVICE)).getLine1Number();
+    }
+
+    public String getAndroidVersion() {
+         String release = Build.VERSION.RELEASE;
+         int sdkVersion = Build.VERSION.SDK_INT;
+         return sdkVersion + " (" + release +")";
+    }
+
+    public String getDeviceName() {
+        return Build.DEVICE;
+    }
+
+    public String getDeviceBrand() {
+        return Build.MANUFACTURER;
+    }
+
+    public String getDeviceModel() {
+        return Build.MODEL;
     }
 }

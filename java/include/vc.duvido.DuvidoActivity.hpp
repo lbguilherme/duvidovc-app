@@ -41,8 +41,13 @@ public:
     bool hasGallery() const;
     void fetchPhotoFromGallery() const;
     void onPhotoFetched(const ::java::lang::String&) const;
-    bool hasFacebookApp() const;
     void startWebLogin() const;
+    bool hasFacebookApp() const;
+    ::java::lang::String getPhoneNumber() const;
+    ::java::lang::String getAndroidVersion() const;
+    ::java::lang::String getDeviceName() const;
+    ::java::lang::String getDeviceBrand() const;
+    ::java::lang::String getDeviceModel() const;
 
 };
 }
