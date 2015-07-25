@@ -21,8 +21,6 @@
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.FacebookBridge.hpp>
-#include <vc.duvido.Tracker.hpp>
-#include <java.lang.String.hpp>
 using namespace vc::duvido;
 #endif
 
@@ -154,38 +152,9 @@ void Duvido::setMe(const Me& me) {
     if (_me == me) return;
     _me = me;
     emit meChanged();
-
-#ifdef Q_OS_ANDROID
-    Tracker::identify(_me.id);
-    Tracker::setUserProperty("$username", _me.id);
-    Tracker::setUserProperty("$name", _me.name);
-    Tracker::setUserProperty("$first_name", _me.firstName);
-    Tracker::setUserProperty("$last_name", _me.lastName);
-    Tracker::setUserPropertyOnce("$created", QDateTime::currentDateTimeUtc().toString(Qt::ISODate));
-    if (!_me.email.isEmpty())
-        Tracker::setUserProperty("$email", _me.email);
-    Tracker::setUserProperty("Birthday", _me.birthday.toString(Qt::ISODate));
-    Tracker::setUserProperty("Age", int64_t(_me.birthday.daysTo(QDate::currentDate())/365.25));
-    Tracker::setUserProperty("Gender", _me.gender);
-    Tracker::setUserProperty("Access Token", token());
-    Tracker::setUserProperty("Api Version", Api::version);
-    Tracker::setUserProperty("Have Facebook App", _activity.hasFacebookApp() ? "Yes" : "No");
-    Tracker::incrementUserProperty("Login Count", 1);
-    QJsonObject params;
-    params["Username"] = _me.id;
-    params["Access Token"] = token();
-    params["Api Version"] = Api::version;
-    params["Facebook Login Method"] = _activity.hasFacebookApp() ? "app" : "web";
-    Tracker::event("Logged in", QJsonDocument(params).toJson());
-    Tracker::flush();
-#endif
 }
 
 QString Duvido::terms() const {
-#ifdef Q_OS_ANDROID
-    Tracker::event("Viewed terms");
-#endif
-
     QFile file(":/terms.htm");
     file.open(QIODevice::ReadOnly);
     return QString::fromUtf8(file.readAll());

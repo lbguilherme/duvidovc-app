@@ -75,8 +75,7 @@ DISTFILES += \
     android/res/values/strings.xml \
     android/src/vc/duvido/FacebookBridge.java \
     android/src/vc/duvido/DuvidoActivity.java \
-    android/src/vc/duvido/WebLoginActivity.java \
-    android/src/vc/duvido/Tracker.java
+    android/src/vc/duvido/WebLoginActivity.java
 
 RESOURCES += \
     qml.qrc \
