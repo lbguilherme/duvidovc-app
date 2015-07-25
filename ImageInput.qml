@@ -3,19 +3,24 @@ import QtMultimedia 5.4
 import "qrc:/material"
 
 Column {
-    property string source: coverImg.source
+    property string source: preview.source
     property string mode: hasGallery || hasCamera ? "methods" : "none"
     property bool hasGallery: duvido.hasGallery
     property bool hasCamera: QtMultimedia.availableCameras.length > 0
 
     Item {
+        property real sourceRatio: preview.sourceSize.height / preview.sourceSize.width
+        property real ratio: preview.rotation % 180 == 0 ? sourceRatio : 1/sourceRatio
         width: parent.width
-        height: width/coverImg.sourceSize.width*coverImg.sourceSize.height
-        visible: coverImg.source != ""
+        height: width * ratio
+        visible: preview.source != ""
 
         Image {
-            id: coverImg
-            anchors.fill: parent
+            id: preview
+            rotation: 90
+            width: rotation % 180 == 0 ? parent.width : parent.height
+            height: rotation % 180 == 0 ? parent.height : parent.width
+            anchors.centerIn: parent
         }
 
         RemoveButton {
@@ -54,7 +59,8 @@ Column {
             var output = photoTaker.item.outputUrl;
             if (output !== "") {
                 mode = "none";
-                coverImg.source = output;
+                preview.source = output;
+                preview.rotation = photoTaker.item.orientation;
             }
         }
     }

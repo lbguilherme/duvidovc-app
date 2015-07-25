@@ -6,20 +6,18 @@ Item {
     height: width * ratio
     property string outputUrl
     property real sourceRatio: output.sourceRect.height / output.sourceRect.width
-    property real ratio: output.orientation % 180 == 0 ? sourceRatio : 1/sourceRatio
+    property real ratio: orientation % 180 == 0 ? sourceRatio : 1/sourceRatio
+    property int orientation: output.orientation
     signal cancel()
-
-    PhotoRotator {
-        id: rotator
-    }
 
     Camera {
         id: camera
         deviceId: QtMultimedia.defaultCamera.deviceId
         imageCapture {
             id: capture
+            resolution.width: 1600
+            resolution.height: 1200
             onImageSaved: {
-                rotator.rotate(path, -output.orientation);
                 outputUrl = "file:/" + path;
             }
         }
