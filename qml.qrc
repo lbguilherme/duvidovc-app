@@ -31,6 +31,7 @@
         <file>ConfigOption.qml</file>
         <file>TimePickerDialog.qml</file>
         <file>MyChallenges.qml</file>
+        <file>Terms.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>

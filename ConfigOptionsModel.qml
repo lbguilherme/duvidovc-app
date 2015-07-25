@@ -1,4 +1,5 @@
 import QtQuick 2.4
+import "qrc:/singletons"
 
 pragma Singleton
 
@@ -22,6 +23,9 @@ QtObject {
         QtObject {
             property string name: "Termos de Uso"
             property string group: "Sobre"
+            function action() {
+                StackManager.go("qrc:/frags/Terms.qml");
+            }
         }
     ]
 
