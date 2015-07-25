@@ -32,8 +32,10 @@ Column {
     Connections {
         target: duvido
         onPhotoFetched: {
-            mode = "none";
-            coverImg.source = path;
+            if (path) {
+                mode = "none";
+                preview.source = path;
+            }
         }
     }
 
