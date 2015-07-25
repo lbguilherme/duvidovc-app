@@ -26,7 +26,9 @@ ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true)
 }
 
 void ApiLogin::sendRequest() {
+#ifdef Q_OS_ANDROID
     DuvidoActivity activity = DuvidoActivity::getInstance();
+#endif
 
     QVariantMap args{
         {"token", duvido->token()},
