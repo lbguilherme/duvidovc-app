@@ -5,7 +5,6 @@
 #include <qml/mychallengesmodel.hpp>
 #include <qml/feedmodel.hpp>
 #include <qml/challengecreator.hpp>
-#include <qml/photorotator.hpp>
 #include <api/apilogin.hpp>
 #include <core/avatarmanager.hpp>
 #include <core/postingchallenge.hpp>
@@ -50,14 +49,12 @@ void Duvido::initInterfaces() {
     qRegisterMetaType<MyChallengesModel*>("MyChallengesModel");
     qRegisterMetaType<FeedModel*>("FeedModel");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
-    qRegisterMetaType<PhotoRotator*>("PhotoRotator");
 
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
     qmlRegisterType<ChallengeCreator>("Duvido", 1, 0, "ChallengeCreator");
     qmlRegisterType<FriendsModel>("Duvido", 1, 0, "FriendsModel");
     qmlRegisterType<MyChallengesModel>("Duvido", 1, 0, "MyChallengesModel");
     qmlRegisterType<FeedModel>("Duvido", 1, 0, "FeedModel");
-    qmlRegisterType<PhotoRotator>("Duvido", 1, 0, "PhotoRotator");
 
     installEventFilter(new DuvidoEventFilter(this));
 }
