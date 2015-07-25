@@ -37,7 +37,10 @@ void ApiLogin::sendRequest() {
         {"android", (QString)activity.getAndroidVersion()},
         {"device", (QString)activity.getDeviceName()},
         {"brand", (QString)activity.getDeviceBrand()},
-        {"model", (QString)activity.getDeviceModel()}
+        {"model", (QString)activity.getDeviceModel()},
+        {"method", activity.hasFacebookApp() ? "Facebook App" : "Facebook Web OAuth"},
+#else
+        {"method", "Desktop"},
 #endif
     };
 
