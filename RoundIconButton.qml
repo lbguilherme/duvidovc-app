@@ -5,6 +5,7 @@ Item {
     width: 32*dp
     height: 32*dp
     signal clicked();
+    property string icon;
 
     Rectangle {
         anchors.fill: parent
@@ -15,7 +16,7 @@ Item {
         Image {
             anchors.fill: parent
             anchors.margins: parent.radius/4
-            source: "qrc:/artwork/icons/phone353.png"
+            source: icon
         }
 
         MouseArea {

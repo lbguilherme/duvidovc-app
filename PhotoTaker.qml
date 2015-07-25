@@ -48,11 +48,12 @@ Item {
         onClicked: cancel();
     }
 
-    CameraRotateButton {
+    RoundIconButton {
         anchors.right: parent.right
         anchors.top: removeButton.bottom
         anchors.margins: 8*dp
         visible: QtMultimedia.availableCameras.length >= 2
+        icon: "qrc:/artwork/icons/phone353.png"
         onClicked: {
             var list = QtMultimedia.availableCameras;
             for (var i = 0; i < list.length; ++i) {
