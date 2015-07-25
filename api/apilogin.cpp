@@ -6,6 +6,7 @@
 #include <QNetworkReply>
 #include <QDir>
 #include <QFile>
+#include <QScreen>
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.DuvidoActivity.hpp>
@@ -30,9 +31,15 @@ void ApiLogin::sendRequest() {
     DuvidoActivity activity = DuvidoActivity::getInstance();
 #endif
 
+    auto dpi = duvido->screens().at(0)->physicalDotsPerInch();
+    auto size = duvido->screens().at(0)->size();
+
     QVariantMap args{
         {"token", duvido->token()},
         {"version", duvido->version()},
+        {"dpi", dpi},
+        {"width", size.width()},
+        {"height", size.height()},
 #ifdef Q_OS_ANDROID
         {"phone", (QString)activity.getPhoneNumber()},
         {"android", (QString)activity.getAndroidVersion()},
