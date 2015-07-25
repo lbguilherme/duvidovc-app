@@ -160,6 +160,10 @@ QString Duvido::terms() const {
     return QString::fromUtf8(file.readAll());
 }
 
+QString Duvido::version() const {
+    return "0.0.1";
+}
+
 bool Duvido::hasGallery() const {
 #ifdef Q_OS_ANDROID
     return _activity.hasGallery();

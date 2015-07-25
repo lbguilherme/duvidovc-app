@@ -20,6 +20,7 @@ class Duvido : public QGuiApplication {
     Q_PROPERTY(QString terms READ terms CONSTANT)
     Q_PROPERTY(bool hasGallery READ hasGallery CONSTANT)
     Q_PROPERTY(QString token READ token NOTIFY tokenChanged)
+    Q_PROPERTY(QString version READ version CONSTANT)
 
 public:
 
@@ -33,6 +34,7 @@ public:
     bool hasGallery() const;
     QString terms() const;
     QString token() const;
+    QString version() const;
 
     QList<PostingChallenge*> postingChallenges() const;
     void addPostingChallenge(PostingChallenge* postingChallenge);

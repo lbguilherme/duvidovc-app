@@ -32,6 +32,7 @@ void ApiLogin::sendRequest() {
 
     QVariantMap args{
         {"token", duvido->token()},
+        {"version", duvido->version()},
 #ifdef Q_OS_ANDROID
         {"phone", (QString)activity.getPhoneNumber()},
         {"android", (QString)activity.getAndroidVersion()},
