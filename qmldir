@@ -1,2 +1,3 @@
 singleton StackManager StackManager.qml
 singleton MenuOptionsModel MenuOptionsModel.qml
+singleton ConfigOptionsModel ConfigOptionsModel.qml

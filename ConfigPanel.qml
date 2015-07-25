@@ -21,7 +21,7 @@ Item {
         ScrollableListView {
             id: configOptions
             anchors.fill: parent
-            model: ConfigOptionsModel {}
+            model: ConfigOptionsModel.model
             delegate: ConfigOption {}
             section.property: "group"
             section.criteria: ViewSection.FullString
@@ -53,8 +53,6 @@ Item {
                     y: parent.height - height
                 }
             }
-
         }
     }
 }
-

@@ -1,31 +1,28 @@
 import QtQuick 2.4
 
-ListModel {
-    id: configOptionsModel
+pragma Singleton
 
-    ListElement {
-        name: "Logout"
-        action: "duvido.logout()"
-        group: 'Geral'
-    }
+QtObject {
 
-    ListElement {
-        name: "Versão"
-        action: ""
-        group: 'Sobre'
-    }
+    property list<QtObject> model: [
+        QtObject {
+            property string name: "Logout"
+            property string group: "Geral"
+            function action() {
+                duvido.logout();
+            }
+        },
 
-    ListElement {
-        name: "Licença"
-        action: ""
-        group: 'Sobre'
-    }
+        QtObject {
+            property string name: "Versão"
+            property string group: "Sobre"
+            property string subtext: duvido.version
+        },
 
-    ListElement {
-        name: "Termos de Uso"
-        action: ""
-        group: 'Sobre'
-    }
-
+        QtObject {
+            property string name: "Termos de Uso"
+            property string group: "Sobre"
+        }
+    ]
 
 }
