@@ -7,6 +7,12 @@
 #include <QDir>
 #include <QFile>
 
+#ifdef Q_OS_ANDROID
+#include <vc.duvido.DuvidoActivity.hpp>
+#include <java.lang.String.hpp>
+using namespace vc::duvido;
+#endif
+
 ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true) {
     sendRequest();
 
@@ -20,7 +26,20 @@ ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true)
 }
 
 void ApiLogin::sendRequest() {
-    _reply = duvido->http().post(request("/login", QVariantMap{{"token", duvido->token()}}), QByteArray());
+    DuvidoActivity activity = DuvidoActivity::getInstance();
+
+    QVariantMap args{
+        {"token", duvido->token()},
+#ifdef Q_OS_ANDROID
+        {"phone", (QString)activity.getPhoneNumber()},
+        {"android", (QString)activity.getAndroidVersion()},
+        {"device", (QString)activity.getDeviceName()},
+        {"brand", (QString)activity.getDeviceBrand()},
+        {"model", (QString)activity.getDeviceModel()}
+#endif
+    };
+
+    _reply = duvido->http().post(request("/login", args), QByteArray());
     setupReply();
 }
 
