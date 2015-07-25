@@ -24,12 +24,24 @@ Column {
         }
 
         RemoveButton {
+            id: removeButton
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.margins: 8*dp
             onClicked: {
                 mode = "methods";
-                coverImg.source = "";
+                preview.source = "";
+            }
+        }
+
+        RoundIconButton {
+            anchors.right: parent.right
+            anchors.top: removeButton.bottom
+            anchors.margins: 8*dp
+            visible: QtMultimedia.availableCameras.length >= 2
+            icon: "qrc:/artwork/icons/refresh57.png"
+            onClicked: {
+                preview.rotation += 90;
             }
         }
     }
