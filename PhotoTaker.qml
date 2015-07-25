@@ -32,6 +32,14 @@ Item {
         autoOrientation: true
     }
 
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            enabled = false;
+            capture.capture();
+        }
+    }
+
     RemoveButton {
         id: removeButton
         anchors.right: parent.right
@@ -54,27 +62,6 @@ Item {
                 }
             }
             camera.deviceId = list[0].deviceId;
-        }
-    }
-
-    Rectangle {
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 8*dp
-        radius: width
-        width: 40*dp
-        height: width
-        border.color: "white"
-        border.width: 2*dp
-        color: "#88ffffff"
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                parent.visible = false;
-                enabled = false;
-                capture.capture();
-            }
         }
     }
 }
