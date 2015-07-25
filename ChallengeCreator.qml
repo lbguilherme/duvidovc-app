@@ -2,6 +2,7 @@ import QtQuick 2.4
 import Duvido 1.0
 import "qrc:/components"
 import "qrc:/material"
+import "qrc:/singletons"
 
 Item {
     ActionBarButton {
@@ -12,6 +13,7 @@ Item {
             if (challenge.verify()) {
                 creator.submit();
                 goBack();
+                StackManager.go("qrc:/frags/MyChallenges.qml");
             }
         }
     }
