@@ -52,7 +52,6 @@ Column {
         onCancel: mode = "methods"
         onOutputUrlChanged: {
             var output = photoTaker.item.outputUrl;
-            console.log(output);
             if (output !== "") {
                 mode = "none";
                 coverImg.source = output;
