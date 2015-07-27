@@ -62,7 +62,7 @@ Component {
         }
 
         CardImageArea {
-            //source: image
+            source: imageId ? apiUrl+"/image?id="+imageId+"&size="+width : ""
         }
 
         CardContentArea {
