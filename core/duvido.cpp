@@ -74,6 +74,7 @@ void Duvido::initView() {
     root->setContextProperty("duvido", duvido);
     root->setContextProperty("dp", qMax(1.0, dpi/160));
     root->setContextProperty("window", 0);
+    root->setContextProperty("apiUrl", Api::url);
     _view.setResizeMode(QQuickView::SizeRootObjectToView);
     _view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
     _view.show();
