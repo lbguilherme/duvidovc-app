@@ -12,6 +12,6 @@ struct PreChallenge {
     QString description;
     QString reward;
     unsigned duration = 0;
-    QString image;
+    QString imageId;
     QStringList targetIds;
 };

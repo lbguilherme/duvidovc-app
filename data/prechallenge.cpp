@@ -6,7 +6,7 @@ QJsonObject PreChallenge::toJson() const {
     obj["description"] = description;
     obj["reward"] = reward;
     obj["duration"] = (double)duration;
-    obj["image"] = image;
+    obj["imageId"] = imageId;
     obj["targetIds"] = targetIds.join(",");
     return obj;
 }
@@ -16,7 +16,7 @@ PreChallenge& PreChallenge::fromJson(const QJsonObject& obj) {
     description = obj["description"].toString();
     reward = obj["reward"].toString();
     duration = obj["duration"].toDouble();
-    image = obj["image"].toString();
+    imageId = obj["imageId"].toString();
     targetIds = obj["targetIds"].toString().split(",");
     return *this;
 }
@@ -24,5 +24,5 @@ PreChallenge& PreChallenge::fromJson(const QJsonObject& obj) {
 bool PreChallenge::operator==(const PreChallenge& other) {
     return title == other.title && description == other.description &&
             reward == other.reward && duration == other.duration &&
-            image == other.image && targetIds == other.targetIds;
+            imageId == other.imageId && targetIds == other.targetIds;
 }

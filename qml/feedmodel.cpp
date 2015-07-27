@@ -54,7 +54,7 @@ QHash<int, QByteArray> FeedModel::roleNames() const {
     roles[DescriptionRole] = "description";
     roles[RewardRole] = "reward";
     roles[DurationRole] = "duration";
-    roles[ImageRole] = "image";
+    roles[ImageIdRole] = "imageId";
     return roles;
 }
 
@@ -82,8 +82,8 @@ QVariant FeedModel::data(const QModelIndex& index, int role) const {
         return _challenges[i].reward;
     case DurationRole:
         return _challenges[i].duration;
-    case ImageRole:
-        return _challenges[i].image;
+    case ImageIdRole:
+        return _challenges[i].imageId;
     default:
         return QVariant();
     }
