@@ -32,7 +32,10 @@ SOURCES += \
     data/me.cpp \
     data/prechallenge.cpp \
     data/challenge.cpp \
-    api/apiuploadimage.cpp
+    api/apiuploadimage.cpp \
+    data/mychallenge.cpp \
+    data/submission.cpp \
+    data/target.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -56,7 +59,10 @@ HEADERS += \
     data/list.hpp \
     data/prechallenge.hpp \
     data/challenge.hpp \
-    api/apiuploadimage.hpp
+    api/apiuploadimage.hpp \
+    data/mychallenge.hpp \
+    data/submission.hpp \
+    data/target.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
