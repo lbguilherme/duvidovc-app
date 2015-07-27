@@ -20,4 +20,3 @@ QList<T> fromJson(const QJsonArray& arr) {
     }
     return list;
 }
-
