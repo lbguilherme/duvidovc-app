@@ -12,4 +12,5 @@ struct Challenge : PreChallenge {
     QString id;
     QDateTime creationTime;
     User owner;
+    double ratio;
 };

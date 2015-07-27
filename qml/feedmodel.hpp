@@ -16,7 +16,8 @@ public:
         DescriptionRole,
         RewardRole,
         DurationRole,
-        ImageIdRole
+        ImageIdRole,
+        RatioRole
     };
 
     FeedModel(QObject* parent = 0);
