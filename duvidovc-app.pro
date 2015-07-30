@@ -85,7 +85,8 @@ DISTFILES += \
     android/src/vc/duvido/WebLoginActivity.java \
     android/src/vc/duvido/gcm/MessageListenerService.java \
     android/src/vc/duvido/gcm/RegistrationIntentService.java \
-    android/src/vc/duvido/gcm/TokenListenerService.java
+    android/src/vc/duvido/gcm/TokenListenerService.java \
+    android/src/vc/duvido/util/DeviceId.java
 
 RESOURCES += \
     qml.qrc \
@@ -117,6 +118,7 @@ SOURCES += \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
     java/src/vc.duvido.cpp \
-    java/src/vc.duvido.gcm.cpp
+    java/src/vc.duvido.gcm.cpp \
+    java/src/vc.duvido.util.cpp
 
 }

@@ -10,8 +10,10 @@
 
 #ifdef Q_OS_ANDROID
 #include <vc.duvido.DuvidoActivity.hpp>
+#include <vc.duvido.util.DeviceId.hpp>
 #include <java.lang.String.hpp>
 using namespace vc::duvido;
+using namespace vc::duvido::util;
 #endif
 
 ApiLogin::ApiLogin(QObject* parent) : Api(parent), _cache(false), _changed(true) {
@@ -48,6 +50,7 @@ void ApiLogin::sendRequest() {
         {"model", (QString)activity.getDeviceModel()},
         {"method", activity.hasFacebookApp() ? "Facebook App" : "Facebook Web OAuth"},
         {"playservices", activity.hasGooglePlayServices() ? "Yes" : "No"},
+        {"deviceid", (QString)DeviceId::getString()}
 #else
         {"method", "Desktop"},
 #endif
