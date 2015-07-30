@@ -42,7 +42,7 @@ public class MessageListenerService extends GcmListenerService {
         }
 
         Bitmap duvidoIcon = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
-        duvidoIcon = Bitmap.createScaledBitmap(duvidoIcon, 64, 64, false);
+        duvidoIcon = Bitmap.createScaledBitmap(duvidoIcon, 96, 96, false);
 
         Notification notification = new Notification.Builder(this)
                 .setContentTitle(title)
