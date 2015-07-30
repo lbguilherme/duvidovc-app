@@ -730,6 +730,7 @@ class JavaMethod
                 f << "static #{jnireturn} JNICALL #{@nativename}(JNIEnv*, jobject obj#{argparams}) {\n"
             end
             f.ident(1)
+            f << "java::initialize();\n"
             unless @mods.include? :static
                 @javaclass.prepare_return(f, "obj", "_obj")
             end
