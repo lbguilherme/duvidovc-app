@@ -104,8 +104,8 @@ HEADERS += \
     java/src/java-core.hpp
 
 SOURCES += \
-    android/src/vc/duvido/DuvidoActivity.cpp \
-    android/src/vc/duvido/FacebookBridge.cpp \
+    android/vc.duvido.DuvidoActivity.cpp \
+    android/vc.duvido.FacebookBridge.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
     java/src/vc.duvido.cpp

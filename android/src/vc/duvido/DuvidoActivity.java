@@ -1,18 +1,23 @@
 package vc.duvido;
 
-import org.qtproject.qt5.android.bindings.*;
-import java.lang.*;
-import java.util.*;
-import java.io.*;
-import android.net.*;
-import android.app.*;
-import android.content.*;
-import android.content.pm.*;
-import android.util.*;
-import android.os.*;
-import android.provider.*;
-import android.telephony.*;
-import com.facebook.appevents.*;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
+import android.provider.MediaStore;
+import android.telephony.TelephonyManager;
+
+import com.facebook.appevents.AppEventsLogger;
+
+import org.qtproject.qt5.android.bindings.QtActivity;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
 
 public class DuvidoActivity extends QtActivity {
 
@@ -36,7 +41,8 @@ public class DuvidoActivity extends QtActivity {
             if (resultCode == RESULT_OK) {
                 Uri imageUri = data.getData();
                 try {
-                    File photo = File.createTempFile("gallery", null, getCacheDir());
+                    File photo;
+                    photo = File.createTempFile("gallery", null, getCacheDir());
                     photo.deleteOnExit();
                     copyInputStreamToFile(getContentResolver().openInputStream(imageUri), photo);
                     onPhotoFetched(photo.getAbsolutePath());
@@ -50,7 +56,6 @@ public class DuvidoActivity extends QtActivity {
         default:
             FacebookBridge.submitActivityResult(requestCode, resultCode, data);
         }
-
     }
 
     @Override

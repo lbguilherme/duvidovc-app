@@ -1,20 +1,16 @@
 package vc.duvido;
 
-import android.app.*;
-import android.os.*;
-import android.view.*;
-import android.webkit.*;
-import android.content.*;
-import android.net.*;
-import android.util.*;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.view.KeyEvent;
+import android.view.Window;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class WebLoginActivity extends Activity {
     private WebView webView;
-
-    public WebLoginActivity() {
-        Log.i("weblogin", "construct");
-    }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,7 +44,7 @@ public class WebLoginActivity extends Activity {
     }
 
     @Override
-    public boolean onKeyDown(final int keyCode, final KeyEvent event) {
+    public boolean onKeyDown(final int keyCode, @NonNull final KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK) && webView.canGoBack()) {
             webView.goBack();
             return true;

@@ -1,25 +1,30 @@
 package vc.duvido;
 
-import java.lang.*;
-import java.util.*;
-import com.facebook.*;
-import com.facebook.login.*;
-import android.app.*;
-import android.util.*;
-import android.content.*;
+import android.app.Activity;
+import android.content.Intent;
+
+import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+
+import java.util.ArrayList;
 
 public class FacebookBridge {
 
     public static final int RESULT_WEBLOGIN = 10;
 
     private static CallbackManager callbackManager;
-    private static AccessTokenTracker accessTokenTracker;
 
     public static void initialize() {
         FacebookSdk.sdkInitialize(DuvidoActivity.getInstance());
         FacebookSdk.setIsDebugEnabled(true);
 
-        accessTokenTracker = new AccessTokenTracker() {
+        new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken newAccessToken) {
                 if (newAccessToken != null)
@@ -62,7 +67,6 @@ public class FacebookBridge {
     public static void login() {
 
         if (DuvidoActivity.getInstance().hasFacebookApp()) {
-            Log.i("login", "app");
             ArrayList<String> perms = new ArrayList<String>();
             perms.add("user_friends");
             perms.add("public_profile");
@@ -71,7 +75,6 @@ public class FacebookBridge {
             LoginManager.getInstance().logInWithReadPermissions(DuvidoActivity.getInstance(), perms);
         }
         else {
-            Log.i("login", "web");
             DuvidoActivity.getInstance().startWebLogin();
         }
     }
