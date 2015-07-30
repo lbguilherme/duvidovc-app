@@ -115,7 +115,6 @@ SOURCES += \
     android/vc.duvido.DuvidoActivity.cpp \
     android/vc.duvido.FacebookBridge.cpp \
     android/vc.duvido.gcm.RegistrationIntentService.cpp \
-    android/vc.duvido.gcm.MessageListenerService.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
     java/src/vc.duvido.cpp \
