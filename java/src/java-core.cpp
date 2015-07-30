@@ -7,7 +7,6 @@
 #include "vc.duvido.DuvidoActivity.hpp"
 #include "vc.duvido.FacebookBridge.hpp"
 #include "vc.duvido.gcm.RegistrationIntentService.hpp"
-#include "vc.duvido.gcm.MessageListenerService.hpp"
 
 #include <QFile>
 
@@ -42,7 +41,6 @@ JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
     ::vc::duvido::DuvidoActivity::jniInitializeNative();
     ::vc::duvido::FacebookBridge::jniInitializeNative();
     ::vc::duvido::gcm::RegistrationIntentService::jniInitializeNative();
-    ::vc::duvido::gcm::MessageListenerService::jniInitializeNative();
 
     return JNI_VERSION_1_6;
 }

@@ -34,7 +34,6 @@ public:
     ::vc::duvido::gcm::MessageListenerService& operator=(const ::vc::duvido::gcm::MessageListenerService& x) {obj = x.obj; return *this;}
     ::vc::duvido::gcm::MessageListenerService& operator=(::vc::duvido::gcm::MessageListenerService&& x) {obj = std::move(x.obj); return *this;}
     
-    static void jniInitializeNative();
     MessageListenerService();
     void onMessageReceived(const ::java::lang::String&, const ::android::os::Bundle&) const;
 

@@ -57,18 +57,11 @@ void vc::duvido::gcm::TokenListenerService::onTokenRefresh() const {
 }
 #pragma GCC diagnostic pop
 
-static void JNICALL Java_vc_duvido_gcm_MessageListenerService_onMessageReceived__Ljava_lang_String_2Landroid_os_Bundle_2(JNIEnv*, jobject obj, jobject arg0, jobject arg1) {
-    java::initialize();
-    ::vc::duvido::gcm::MessageListenerService _obj(obj);
-    ::java::lang::String _arg0(arg0);
-    ::android::os::Bundle _arg1(arg1);
-    _obj.onMessageReceived(_arg0, _arg1);
+void vc::duvido::gcm::MessageListenerService::onMessageReceived(const ::java::lang::String& arg0, const ::android::os::Bundle& arg1) const {
+    if (!::vc::duvido::gcm::MessageListenerService::_class) ::vc::duvido::gcm::MessageListenerService::_class = java::fetch_class("vc/duvido/gcm/MessageListenerService");
+    static jmethodID mid = java::jni->GetMethodID(_class, "onMessageReceived", "(Ljava/lang/String;Landroid/os/Bundle;)V");
+    jobject _arg0 = arg0.obj;
+    jobject _arg1 = arg1.obj;
+    java::jni->CallVoidMethod(obj, mid, _arg0, _arg1);
 }
 
-void ::vc::duvido::gcm::MessageListenerService::jniInitializeNative() {
-    if (!::vc::duvido::gcm::MessageListenerService::_class) ::vc::duvido::gcm::MessageListenerService::_class = java::fetch_class("vc/duvido/gcm/MessageListenerService");
-    JNINativeMethod methods[] = {
-        {"onMessageReceived", "(Ljava/lang/String;Landroid/os/Bundle;)V", (void*)Java_vc_duvido_gcm_MessageListenerService_onMessageReceived__Ljava_lang_String_2Landroid_os_Bundle_2},
-    };
-    java::jni->RegisterNatives(_class, methods, sizeof(methods)/sizeof(methods[0]));
-}

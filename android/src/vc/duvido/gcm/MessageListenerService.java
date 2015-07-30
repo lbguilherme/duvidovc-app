@@ -6,5 +6,7 @@ import com.google.android.gms.gcm.GcmListenerService;
 
 public class MessageListenerService extends GcmListenerService {
     @Override
-    public native void onMessageReceived(String from, Bundle data);
+    public void onMessageReceived(String from, Bundle data) {
+
+    }
 }
