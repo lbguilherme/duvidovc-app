@@ -18,7 +18,7 @@ void ApiCreateChallenge::sendRequest() {
         {"reward", _info.reward},
         {"targets", _info.targetIds.join(",")},
         {"duration", QString::number(_info.duration)},
-        {"image", _info.imageId}
+        {"imageId", _info.imageId}
     };
 
     _reply = duvido->http().post(request("/challenge", args), QByteArray());
