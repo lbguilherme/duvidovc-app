@@ -3,6 +3,7 @@
 *.autosave
 *.pro.user*
 *.class
+*.iml
 java/tmp/
 android/gradle.properties
 android/local.properties
