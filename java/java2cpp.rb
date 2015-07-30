@@ -17,6 +17,8 @@ END {
     Library.new(java, "../../build-android-x86-debug/android-build/build/intermediates/classes/debug/")
     #java.cheat
     java.find_package("vc.duvido").native = true
+    java.find_package("vc.duvido.gcm").native = true
+    java.find_package("vc.duvido.util").native = true
     puts "Requested #{java.classes.size} classes."
 
     puts "Extracting classes..."

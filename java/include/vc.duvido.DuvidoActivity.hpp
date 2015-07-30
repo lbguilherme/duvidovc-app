@@ -38,11 +38,13 @@ public:
     static void jniInitializeNative();
     static ::vc::duvido::DuvidoActivity getInstance();
     DuvidoActivity();
+    void requestGcmToken() const;
     bool hasGallery() const;
     void fetchPhotoFromGallery() const;
     void onPhotoFetched(const ::java::lang::String&) const;
     void startWebLogin() const;
     bool hasFacebookApp() const;
+    bool hasGooglePlayServices() const;
     ::java::lang::String getPhoneNumber() const;
     ::java::lang::String getAndroidVersion() const;
     ::java::lang::String getDeviceName() const;

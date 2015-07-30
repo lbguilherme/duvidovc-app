@@ -43,6 +43,9 @@ public:
     void setMe(const Me& me);
     Q_INVOKABLE void setToken(QString token);
 
+    Q_INVOKABLE void setGcmToken(QString token);
+    void sendGcmToken();
+
     Q_INVOKABLE void login();
     Q_INVOKABLE void logout();
     Q_INVOKABLE void fetchPhotoFromGallery();
@@ -66,6 +69,7 @@ private:
 
     AvatarManager* _avatarManager;
 
+    QString _gcmToken;
     QString _token;
     Me _me;
 

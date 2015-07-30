@@ -6,6 +6,7 @@
 #include <qml/feedmodel.hpp>
 #include <qml/challengecreator.hpp>
 #include <api/apilogin.hpp>
+#include <api/apisendgcmtoken.hpp>
 #include <core/avatarmanager.hpp>
 #include <core/postingchallenge.hpp>
 
@@ -111,6 +112,21 @@ void Duvido::setToken(QString token) {
     }
 }
 
+void Duvido::setGcmToken(QString token) {
+    _gcmToken = token;
+    if (!_me.id.isEmpty())
+        sendGcmToken();
+}
+
+void Duvido::sendGcmToken() {
+    Q_ASSERT(!_gcmToken.isEmpty());
+    Q_ASSERT(!_me.id.isEmpty());
+    auto sender = new ApiSendGcmToken(_gcmToken, this);
+    connect(sender, &Api::finished, [sender]{
+        sender->deleteLater();
+    });
+}
+
 AvatarManager* Duvido::avatarManager() {
     return _avatarManager;
 }
@@ -142,14 +158,18 @@ void Duvido::unsetMe() {
     if (_me.id == "") return;
     _me = Me();
     emit meChanged();
-
-
 }
 
 void Duvido::setMe(const Me& me) {
     if (_me == me) return;
     _me = me;
     emit meChanged();
+#ifdef Q_OS_ANDROID
+    if (!_gcmToken.isEmpty())
+        sendGcmToken();
+    else if (_activity.hasGooglePlayServices())
+        _activity.requestGcmToken();
+#endif
 }
 
 QString Duvido::terms() const {

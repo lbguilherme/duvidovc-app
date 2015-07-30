@@ -3,4 +3,7 @@
     <string name="facebook_app_id">
         1497042670584041
     </string>
+    <string name="gcm_sender_id">
+        531938886808
+    </string>
 </resources>

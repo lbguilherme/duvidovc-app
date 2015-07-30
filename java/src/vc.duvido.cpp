@@ -7,6 +7,7 @@
 #include "vc.duvido.BuildConfig.hpp"
 #include "vc.duvido.DuvidoActivity.hpp"
 #include "vc.duvido.FacebookBridge.hpp"
+#include "vc.duvido.Manifest.hpp"
 #include "vc.duvido.R.hpp"
 #include "vc.duvido.WebLoginActivity.hpp"
 
@@ -14,12 +15,14 @@ jclass vc::duvido::R_string::_class = nullptr;
 jclass vc::duvido::BuildConfig::_class = nullptr;
 jclass vc::duvido::DuvidoActivity::_class = nullptr;
 jclass vc::duvido::R_dimen::_class = nullptr;
+jclass vc::duvido::Manifest_permission::_class = nullptr;
 jclass vc::duvido::R_array::_class = nullptr;
 jclass vc::duvido::R_id::_class = nullptr;
 jclass vc::duvido::R_layout::_class = nullptr;
 jclass vc::duvido::FacebookBridge::_class = nullptr;
 jclass vc::duvido::R_styleable::_class = nullptr;
 jclass vc::duvido::R_style::_class = nullptr;
+jclass vc::duvido::Manifest::_class = nullptr;
 jclass vc::duvido::R::_class = nullptr;
 jclass vc::duvido::R_drawable::_class = nullptr;
 jclass vc::duvido::WebLoginActivity::_class = nullptr;
@@ -62,6 +65,12 @@ jclass vc::duvido::R_attr::_class = nullptr;
 }
 #pragma GCC diagnostic pop
 
+void vc::duvido::DuvidoActivity::requestGcmToken() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "requestGcmToken", "()V");
+    java::jni->CallVoidMethod(obj, mid);
+}
+
 bool vc::duvido::DuvidoActivity::hasGallery() const {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
     static jmethodID mid = java::jni->GetMethodID(_class, "hasGallery", "()Z");
@@ -75,6 +84,7 @@ void vc::duvido::DuvidoActivity::fetchPhotoFromGallery() const {
 }
 
 static void JNICALL Java_vc_duvido_DuvidoActivity_onPhotoFetched__Ljava_lang_String_2(JNIEnv*, jobject obj, jobject arg0) {
+    java::initialize();
     ::vc::duvido::DuvidoActivity _obj(obj);
     ::java::lang::String _arg0(arg0);
     _obj.onPhotoFetched(_arg0);
@@ -89,6 +99,12 @@ void vc::duvido::DuvidoActivity::startWebLogin() const {
 bool vc::duvido::DuvidoActivity::hasFacebookApp() const {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
     static jmethodID mid = java::jni->GetMethodID(_class, "hasFacebookApp", "()Z");
+    return java::jni->CallBooleanMethod(obj, mid);
+}
+
+bool vc::duvido::DuvidoActivity::hasGooglePlayServices() const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "hasGooglePlayServices", "()Z");
     return java::jni->CallBooleanMethod(obj, mid);
 }
 
@@ -143,6 +159,15 @@ void ::vc::duvido::DuvidoActivity::jniInitializeNative() {
 #pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::R_dimen::R_dimen() : ::java::lang::Object((jobject)0) {
     if (!::vc::duvido::R_dimen::_class) ::vc::duvido::R_dimen::_class = java::fetch_class("vc/duvido/R$dimen");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::Manifest_permission::Manifest_permission() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::Manifest_permission::_class) ::vc::duvido::Manifest_permission::_class = java::fetch_class("vc/duvido/Manifest$permission");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }
@@ -206,18 +231,22 @@ void vc::duvido::FacebookBridge::login(){
 }
 
 static void JNICALL Java_vc_duvido_FacebookBridge_onLoginSuccess__(JNIEnv*, jclass) {
+    java::initialize();
     ::vc::duvido::FacebookBridge::onLoginSuccess();
 }
 
 static void JNICALL Java_vc_duvido_FacebookBridge_onLoginCancel__(JNIEnv*, jclass) {
+    java::initialize();
     ::vc::duvido::FacebookBridge::onLoginCancel();
 }
 
 static void JNICALL Java_vc_duvido_FacebookBridge_onLoginError__(JNIEnv*, jclass) {
+    java::initialize();
     ::vc::duvido::FacebookBridge::onLoginError();
 }
 
 static void JNICALL Java_vc_duvido_FacebookBridge_onAccessTokenReceived__Ljava_lang_String_2(JNIEnv*, jclass, jobject arg0) {
+    java::initialize();
     ::java::lang::String _arg0(arg0);
     ::vc::duvido::FacebookBridge::onAccessTokenReceived(_arg0);
 }
@@ -245,6 +274,15 @@ void ::vc::duvido::FacebookBridge::jniInitializeNative() {
 #pragma GCC diagnostic ignored "-Wreorder"
 ::vc::duvido::R_style::R_style() : ::java::lang::Object((jobject)0) {
     if (!::vc::duvido::R_style::_class) ::vc::duvido::R_style::_class = java::fetch_class("vc/duvido/R$style");
+    static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
+    obj = java::jni->NewObject(_class, mid);
+}
+#pragma GCC diagnostic pop
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreorder"
+::vc::duvido::Manifest::Manifest() : ::java::lang::Object((jobject)0) {
+    if (!::vc::duvido::Manifest::_class) ::vc::duvido::Manifest::_class = java::fetch_class("vc/duvido/Manifest");
     static jmethodID mid = java::jni->GetMethodID(_class, "<init>", "()V");
     obj = java::jni->NewObject(_class, mid);
 }

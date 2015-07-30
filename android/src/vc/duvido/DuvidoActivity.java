@@ -8,6 +8,8 @@ import android.provider.MediaStore;
 import android.telephony.TelephonyManager;
 
 import com.facebook.appevents.AppEventsLogger;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
 
 import org.qtproject.qt5.android.bindings.QtActivity;
 
@@ -18,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import vc.duvido.gcm.RegistrationIntentService;
 
 public class DuvidoActivity extends QtActivity {
 
@@ -70,6 +73,10 @@ public class DuvidoActivity extends QtActivity {
         AppEventsLogger.deactivateApp(this);
     }
 
+    public void requestGcmToken() {
+        startService(new Intent(this, RegistrationIntentService.class));
+    }
+
     public boolean hasGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         return intent.resolveActivity(getPackageManager()) != null;
@@ -105,6 +112,10 @@ public class DuvidoActivity extends QtActivity {
         } catch (PackageManager.NameNotFoundException e) {
             return false;
         }
+    }
+
+    public boolean hasGooglePlayServices() {
+        return GooglePlayServicesUtil.isGooglePlayServicesAvailable(this) == ConnectionResult.SUCCESS;
     }
 
     public String getPhoneNumber() {

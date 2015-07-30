@@ -35,7 +35,8 @@ SOURCES += \
     api/apiuploadimage.cpp \
     data/mychallenge.cpp \
     data/submission.cpp \
-    data/target.cpp
+    data/target.cpp \
+    api/apisendgcmtoken.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -62,7 +63,8 @@ HEADERS += \
     api/apiuploadimage.hpp \
     data/mychallenge.hpp \
     data/submission.hpp \
-    data/target.hpp
+    data/target.hpp \
+    api/apisendgcmtoken.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -77,9 +79,13 @@ DISTFILES += \
     Readme.md \
     design.dot \
     android/res/values/strings.xml \
+    android/google-services.json \
     android/src/vc/duvido/FacebookBridge.java \
     android/src/vc/duvido/DuvidoActivity.java \
-    android/src/vc/duvido/WebLoginActivity.java
+    android/src/vc/duvido/WebLoginActivity.java \
+    android/src/vc/duvido/gcm/MessageListenerService.java \
+    android/src/vc/duvido/gcm/RegistrationIntentService.java \
+    android/src/vc/duvido/gcm/TokenListenerService.java
 
 RESOURCES += \
     qml.qrc \
@@ -106,8 +112,11 @@ HEADERS += \
 SOURCES += \
     android/vc.duvido.DuvidoActivity.cpp \
     android/vc.duvido.FacebookBridge.cpp \
+    android/vc.duvido.gcm.RegistrationIntentService.cpp \
+    android/vc.duvido.gcm.MessageListenerService.cpp \
     java/src/java-core.cpp \
     java/src/java.lang.cpp \
-    java/src/vc.duvido.cpp
+    java/src/vc.duvido.cpp \
+    java/src/vc.duvido.gcm.cpp
 
 }
