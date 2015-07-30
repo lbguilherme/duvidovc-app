@@ -65,6 +65,13 @@ jclass vc::duvido::R_attr::_class = nullptr;
 }
 #pragma GCC diagnostic pop
 
+void vc::duvido::DuvidoActivity::onCreate(const ::android::os::Bundle& arg0) const {
+    if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
+    static jmethodID mid = java::jni->GetMethodID(_class, "onCreate", "(Landroid/os/Bundle;)V");
+    jobject _arg0 = arg0.obj;
+    java::jni->CallVoidMethod(obj, mid, _arg0);
+}
+
 void vc::duvido::DuvidoActivity::requestGcmToken() const {
     if (!::vc::duvido::DuvidoActivity::_class) ::vc::duvido::DuvidoActivity::_class = java::fetch_class("vc/duvido/DuvidoActivity");
     static jmethodID mid = java::jni->GetMethodID(_class, "requestGcmToken", "()V");

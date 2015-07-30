@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.provider.MediaStore;
 import android.telephony.TelephonyManager;
 
 import com.facebook.appevents.AppEventsLogger;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.newrelic.agent.android.NewRelic;
 
 import org.qtproject.qt5.android.bindings.QtActivity;
 
@@ -33,6 +35,12 @@ public class DuvidoActivity extends QtActivity {
 
     public DuvidoActivity() {
         instance = this;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        NewRelic.withApplicationToken("AAbc46e51d64e3843aad6ebedde21a624ade821eee").start(this.getApplication());
     }
 
     @Override

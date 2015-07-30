@@ -86,7 +86,8 @@ DISTFILES += \
     android/src/vc/duvido/gcm/MessageListenerService.java \
     android/src/vc/duvido/gcm/RegistrationIntentService.java \
     android/src/vc/duvido/gcm/TokenListenerService.java \
-    android/src/vc/duvido/util/DeviceId.java
+    android/src/vc/duvido/util/DeviceId.java \
+    android/newrelic.properties
 
 RESOURCES += \
     qml.qrc \
