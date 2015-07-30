@@ -179,7 +179,7 @@ QString Duvido::terms() const {
 }
 
 QString Duvido::version() const {
-    return "0.0.1";
+    return "0.0.2";
 }
 
 bool Duvido::hasGallery() const {
