@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<manifest package="vc.duvido" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="0" android:installLocation="auto">
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="22"/>
+<manifest package="vc.duvido" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="0.0.2" android:versionCode="0" android:installLocation="auto">
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
     <!-- %%INSERT_PERMISSIONS -->
     <!-- %%INSERT_FEATURES -->
