@@ -17,6 +17,8 @@ public:
         RewardRole,
         DurationRole,
         ImageIdRole,
+        CreationTimeRole,
+        TargetsRole,
         IsSendingRole
     };
 

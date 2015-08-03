@@ -29,6 +29,8 @@ QHash<int, QByteArray> MyChallengesModel::roleNames() const {
     roles[RewardRole] = "reward";
     roles[DurationRole] = "duration";
     roles[ImageIdRole] = "imageId";
+    roles[CreationTimeRole] = "creationTime";
+    roles[TargetsRole] = "targets";
     roles[IsSendingRole] = "isSending";
     return roles;
 }
@@ -75,6 +77,16 @@ QVariant MyChallengesModel::data(const QModelIndex& index, int role) const {
             return QVariant();
         else
             return _myChallenges[i].imageId;
+    case CreationTimeRole:
+        if (isPostingId)
+            return QDateTime::currentDateTime();
+        else
+            return _myChallenges[i].creationTime;
+    case TargetsRole:
+        if (isPostingId)
+            return QVariant();
+        else
+            return QVariant::fromValue(_myChallenges[i].targets);
     case IsSendingRole:
         return isPostingId;
     default:
