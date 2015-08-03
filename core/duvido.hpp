@@ -65,6 +65,9 @@ private:
     void initFacebook();
     void initView();
 
+    void updatePostingChallengeQueue();
+    void startPostingChallengesFromQueue();
+
 private:
 
     AvatarManager* _avatarManager;

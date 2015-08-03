@@ -17,6 +17,9 @@ public:
     float progress() const;
     bool isFinished() const;
 
+    QJsonObject toJson() const;
+    static PostingChallenge* fromJson(const QJsonObject& obj);
+
     const PreChallenge& info() const { return _info; }
 
 signals:

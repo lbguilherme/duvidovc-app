@@ -43,6 +43,7 @@ Duvido::Duvido()
     initInterfaces();
     initFacebook();
     initView();
+    startPostingChallengesFromQueue();
 }
 
 void Duvido::initInterfaces() {
@@ -208,10 +209,38 @@ void Duvido::addPostingChallenge(PostingChallenge* postingChallenge) {
 
     postingChallenge->setParent(this);
     _postingChallenges.append(postingChallenge);
+    updatePostingChallengeQueue();
     emit postingChallengeAdded(postingChallenge);
 
     connect(postingChallenge, &PostingChallenge::finished, [this, postingChallenge]{
         _postingChallenges.removeOne(postingChallenge);
+        updatePostingChallengeQueue();
         emit postingChallengeRemoved(postingChallenge);
     });
+}
+
+void Duvido::updatePostingChallengeQueue() {
+    QString queuePath = QDir::home().filePath("duvido_postingchallenge_queue");
+    QFile queueFile(queuePath);
+    queueFile.open(QIODevice::WriteOnly);
+
+    QJsonArray arr;
+    for (auto postingChallenge : _postingChallenges) {
+        arr.append(postingChallenge->toJson());
+    }
+
+    queueFile.write(QJsonDocument(arr).toJson());
+}
+
+void Duvido::startPostingChallengesFromQueue() {
+    Q_ASSERT(_postingChallenges.isEmpty());
+
+    QString queuePath = QDir::home().filePath("duvido_postingchallenge_queue");
+    QFile queueFile(queuePath);
+    queueFile.open(QIODevice::ReadOnly);
+
+    QJsonArray arr = QJsonDocument::fromJson(queueFile.readAll()).array();
+    for (auto value : arr) {
+        PostingChallenge::fromJson(value.toObject());
+    }
 }
