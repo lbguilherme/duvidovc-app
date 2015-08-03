@@ -20,19 +20,7 @@ PostingChallenge::PostingChallenge(PreChallenge info, ApiUploadImage* upload, QO
         createChallenge();
     } else {
         connect(_upload, &Api::finished, this, &PostingChallenge::createChallenge);
-        connect(_upload, &Api::uploadProgressChanged, [this]{
-            emit progressChanged();
-        });
     }
-}
-
-float PostingChallenge::progress() const {
-    if (_create && _create->isFinished())
-        return 1.0;
-    else if (!_upload || _upload->isFinished())
-        return 0;
-    else
-        return _upload->uploadProgress() * 0.95;
 }
 
 bool PostingChallenge::isFinished() const {

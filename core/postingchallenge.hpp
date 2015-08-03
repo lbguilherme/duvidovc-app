@@ -14,7 +14,6 @@ public:
     PostingChallenge(PreChallenge info, QObject* parent = nullptr);
     PostingChallenge(PreChallenge info, ApiUploadImage* upload, QObject* parent = nullptr);
 
-    float progress() const;
     bool isFinished() const;
 
     QJsonObject toJson() const;
@@ -25,7 +24,6 @@ public:
 signals:
 
     void finished();
-    void progressChanged();
 
 private:
 

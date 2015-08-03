@@ -17,8 +17,7 @@ public:
         RewardRole,
         DurationRole,
         ImageIdRole,
-        IsSendingRole,
-        SendingProgressRole
+        IsSendingRole
     };
 
     MyChallengesModel(QObject* parent = 0);

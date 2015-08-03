@@ -30,7 +30,6 @@ QHash<int, QByteArray> MyChallengesModel::roleNames() const {
     roles[DurationRole] = "duration";
     roles[ImageIdRole] = "imageId";
     roles[IsSendingRole] = "isSending";
-    roles[SendingProgressRole] = "sendingProgress";
     return roles;
 }
 
@@ -78,11 +77,6 @@ QVariant MyChallengesModel::data(const QModelIndex& index, int role) const {
             return _myChallenges[i].imageId;
     case IsSendingRole:
         return isPostingId;
-    case SendingProgressRole:
-        if (isPostingId)
-            return _postings[i]->progress();
-        else
-            return 1;
     default:
         return QVariant();
     }
