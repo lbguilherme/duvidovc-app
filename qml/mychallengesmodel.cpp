@@ -85,8 +85,12 @@ QVariant MyChallengesModel::data(const QModelIndex& index, int role) const {
     case TargetsRole:
         if (isPostingId)
             return QVariant();
-        else
-            return QVariant::fromValue(_myChallenges[i].targets);
+        else {
+            QVariantList targets;
+            for (auto& target : _myChallenges[i].targets)
+                targets.append(QVariant::fromValue(target));
+            return targets;
+        }
     case IsSendingRole:
         return isPostingId;
     default:
