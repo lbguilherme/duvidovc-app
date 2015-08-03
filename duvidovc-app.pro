@@ -36,7 +36,8 @@ SOURCES += \
     data/mychallenge.cpp \
     data/submission.cpp \
     data/target.cpp \
-    api/apisendgcmtoken.cpp
+    api/apisendgcmtoken.cpp \
+    api/apirefuse.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -64,7 +65,8 @@ HEADERS += \
     data/mychallenge.hpp \
     data/submission.hpp \
     data/target.hpp \
-    api/apisendgcmtoken.hpp
+    api/apisendgcmtoken.hpp \
+    api/apirefuse.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
