@@ -36,7 +36,6 @@ void PostingChallenge::createChallenge() {
 
     _create = new ApiCreateChallenge(_info, this);
     connect(_create, &Api::finished, [this]{
-        emit progressChanged();
         emit finished();
     });
 }
