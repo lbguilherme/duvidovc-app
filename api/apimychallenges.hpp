@@ -1,44 +1,16 @@
 #pragma once
 
 #include <api/api.hpp>
-
-#include <QDateTime>
+#include <data/mychallenge.hpp>
 
 class ApiMyChallenges : public Api {
     Q_OBJECT
 
 public:
 
-    struct SubmissionInfo {
-        QString status;
-        QString text;
-        QString image;
-        QDateTime sentTime;
-        QDateTime judgedTime;
-    };
-
-    struct TargetInfo {
-        QString id;
-        QString name;
-        QString status;
-        QList<SubmissionInfo> submissions;
-    };
-
-    struct Info {
-        QString id;
-        QDateTime creationTime;
-        QString title;
-        QString description;
-        QString reward;
-        unsigned duration;
-        QString image;
-        QList<TargetInfo> targets;
-    };
-
     explicit ApiMyChallenges(QObject* parent = nullptr);
 
-    const Info& operator[](int index) const;
-    int count() const;
+    const QList<MyChallenge>& challenges() const { return _challenges; }
 
 protected:
 
@@ -47,6 +19,6 @@ protected:
 
 private:
 
-    QList<Info> _challenges;
+    QList<MyChallenge> _challenges;
 
 };

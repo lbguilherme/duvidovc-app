@@ -1,5 +1,6 @@
 #pragma once
 
+#include <data/mychallenge.hpp>
 #include <QAbstractListModel>
 
 class PostingChallenge;
@@ -30,16 +31,7 @@ public:
 
 private:
 
-    struct MyChallenge {
-        QString id;
-        QString title;
-        QString description;
-        QString reward;
-        unsigned duration;
-        QString imageId;
-        PostingChallenge* pending;
-    };
-
+    QList<PostingChallenge*> _postings;
     QList<MyChallenge> _myChallenges;
 
 };

@@ -15,19 +15,8 @@ void MyChallengesModel::refresh() {
         _myChallenges.clear();
         endRemoveRows();
 
-        beginInsertRows(QModelIndex(), 0, result->count()-1);
-        for (int i = 0; i < result->count(); ++i) {
-            MyChallenge challenge;
-            const ApiMyChallenges::Info& info = (*result)[i];
-            challenge.id = info.id;
-            challenge.title = info.title;
-            challenge.description = info.description;
-            challenge.reward = info.reward;
-            challenge.duration = info.duration;
-            challenge.imageId = info.image;
-            challenge.pending = nullptr;
-            _myChallenges.append(challenge);
-        }
+        beginInsertRows(QModelIndex(), 0, result->challenges().size()-1);
+        _myChallenges = result->challenges();
         endInsertRows();
     });
 }
@@ -54,23 +43,46 @@ int MyChallengesModel::rowCount(const QModelIndex& parent) const {
 
 QVariant MyChallengesModel::data(const QModelIndex& index, int role) const {
     int i = index.row();
+    bool isPostingId = i < _postings.size();
+    if (!isPostingId) i -= _postings.size();
     switch (role) {
     case IdRole:
-        return _myChallenges[i].id;
+        if (isPostingId)
+            return QVariant();
+        else
+            return _myChallenges[i].id;
     case TitleRole:
-        return _myChallenges[i].title;
+        if (isPostingId)
+            return _postings[i]->info().title;
+        else
+            return _myChallenges[i].title;
     case DescriptionRole:
-        return _myChallenges[i].description;
+        if (isPostingId)
+            return _postings[i]->info().description;
+        else
+            return _myChallenges[i].description;
     case RewardRole:
-        return _myChallenges[i].reward;
+        if (isPostingId)
+            return _postings[i]->info().reward;
+        else
+            return _myChallenges[i].reward;
     case DurationRole:
-        return _myChallenges[i].duration;
+        if (isPostingId)
+            return _postings[i]->info().duration;
+        else
+            return _myChallenges[i].duration;
     case ImageIdRole:
-        return _myChallenges[i].imageId;
+        if (isPostingId)
+            return QVariant();
+        else
+            return _myChallenges[i].imageId;
     case IsSendingRole:
-        return _myChallenges[i].pending != nullptr;
+        return isPostingId;
     case SendingProgressRole:
-        return _myChallenges[i].pending ? _myChallenges[i].pending->progress() : 0;
+        if (isPostingId)
+            return _postings[i]->progress();
+        else
+            return 1;
     default:
         return QVariant();
     }

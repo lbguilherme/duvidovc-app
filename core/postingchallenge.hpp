@@ -17,6 +17,8 @@ public:
     float progress() const;
     bool isFinished() const;
 
+    const PreChallenge& info() const { return _info; }
+
 signals:
 
     void finished();
