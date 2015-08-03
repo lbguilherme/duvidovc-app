@@ -63,7 +63,7 @@ Component {
 
         CardImageArea {
             source: imageId && width > 0 ? apiUrl+"/image?id="+imageId+"&size="+width : ""
-            height: imageId ? Math.ceil(width / ratio) : 0
+            height: imageId ? Math.ceil(width / imageRatio) : 0
         }
 
         CardContentArea {
