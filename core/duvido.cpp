@@ -237,6 +237,7 @@ void Duvido::startPostingChallengesFromQueue() {
 
     QString queuePath = QDir::home().filePath("duvido_postingchallenge_queue");
     QFile queueFile(queuePath);
+    if (!queueFile.exists()) return;
     queueFile.open(QIODevice::ReadOnly);
 
     QJsonArray arr = QJsonDocument::fromJson(queueFile.readAll()).array();
