@@ -50,6 +50,8 @@ public:
     Q_INVOKABLE void logout();
     Q_INVOKABLE void fetchPhotoFromGallery();
 
+    Q_INVOKABLE void refuseChallenge(QString id);
+
 signals:
 
     void meChanged();
@@ -58,6 +60,7 @@ signals:
     void tokenChanged();
     void postingChallengeAdded(PostingChallenge* postingChallenge);
     void postingChallengeRemoved(PostingChallenge* postingChallenge);
+    void challengeRefused(QString id);
 
 private:
 

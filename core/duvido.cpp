@@ -7,6 +7,7 @@
 #include <qml/challengecreator.hpp>
 #include <api/apilogin.hpp>
 #include <api/apisendgcmtoken.hpp>
+#include <api/apirefuse.hpp>
 #include <core/avatarmanager.hpp>
 #include <core/postingchallenge.hpp>
 
@@ -244,4 +245,12 @@ void Duvido::startPostingChallengesFromQueue() {
     for (auto value : arr) {
         PostingChallenge::fromJson(value.toObject());
     }
+}
+
+void Duvido::refuseChallenge(QString id) {
+    emit challengeRefused(id);
+    auto api = new ApiRefuse(id, this);
+    connect(api, &Api::finished, [api]{
+        api->deleteLater();
+    });
 }

@@ -1,6 +1,7 @@
 #include <qml/feedmodel.hpp>
 #include <api/apifeed.hpp>
 #include <data/list.hpp>
+#include <core/duvido.hpp>
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QJsonDocument>
@@ -10,6 +11,18 @@
 FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
     fastRefreshFromCache();
     refresh();
+
+    connect(duvido, &Duvido::challengeRefused, [this](QString id){
+        for (int i = 0; i < _challenges.size(); ++i) {
+            if (_challenges[i].id == id) {
+                beginRemoveRows(QModelIndex(), i, i);
+                _challenges.removeAt(i);
+                endRemoveRows();
+                --i;
+            }
+        }
+        dumpToCache();
+    });
 }
 
 void FeedModel::refresh() {

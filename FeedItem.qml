@@ -119,6 +119,7 @@ Component {
                     width: parent.width/2 - parent.spacing/2
                     color: Qt.darker("#FB5240", 1.1)
                     text: "Tô Fora"
+                    onClicked: duvido.refuseChallenge(id)
                 }
                 Button {
                     width: parent.width/2 - parent.spacing/2
