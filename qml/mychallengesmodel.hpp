@@ -23,6 +23,7 @@ public:
     };
 
     MyChallengesModel(QObject* parent = 0);
+    virtual ~MyChallengesModel();
 
     void refresh();
 
@@ -32,6 +33,7 @@ public:
 
 private:
 
+    QList<QMetaObject::Connection> _connections;
     QList<PostingChallenge*> _postings;
     QList<MyChallenge> _myChallenges;
 

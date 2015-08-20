@@ -1,9 +1,36 @@
 #include <qml/mychallengesmodel.hpp>
 #include <core/postingchallenge.hpp>
+#include <core/duvido.hpp>
 #include <api/apimychallenges.hpp>
 
 MyChallengesModel::MyChallengesModel(QObject* parent) : QAbstractListModel(parent) {
+
+    _connections << connect(duvido, &Duvido::postingChallengeAdded, [this](PostingChallenge* postingChallenge){
+        beginInsertRows(QModelIndex(), _postings.size(), _postings.size());
+        _postings.append(postingChallenge);
+        endInsertRows();
+    });
+
+    _connections << connect(duvido, &Duvido::postingChallengeRemoved, [this](PostingChallenge* postingChallenge){
+        refresh();
+        int i = _postings.indexOf(postingChallenge);
+        if (i < 0) return;
+        beginRemoveRows(QModelIndex(), i, i);
+        _postings.removeAt(i);
+        endRemoveRows();
+    });
+
+    const auto& postingChallenges = duvido->postingChallenges();
+    beginInsertRows(QModelIndex(), 0, postingChallenges.size()-1);
+    _postings = postingChallenges;
+    endInsertRows();
+
     refresh();
+}
+
+MyChallengesModel::~MyChallengesModel() {
+    for (auto&& connection : _connections)
+        disconnect(connection);
 }
 
 void MyChallengesModel::refresh() {
