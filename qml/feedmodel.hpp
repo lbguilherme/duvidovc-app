@@ -21,6 +21,7 @@ public:
     };
 
     FeedModel(QObject* parent = 0);
+    virtual ~FeedModel();
 
     void refresh();
 
@@ -35,6 +36,7 @@ private:
 
 private:
 
+    QList<QMetaObject::Connection> _connections;
     QList<Challenge> _challenges;
 
 };

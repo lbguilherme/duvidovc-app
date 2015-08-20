@@ -12,7 +12,7 @@ FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
     fastRefreshFromCache();
     refresh();
 
-    connect(duvido, &Duvido::challengeRefused, [this](QString id){
+    _connections << connect(duvido, &Duvido::challengeRefused, [this](QString id){
         for (int i = 0; i < _challenges.size(); ++i) {
             if (_challenges[i].id == id) {
                 beginRemoveRows(QModelIndex(), i, i);
@@ -23,6 +23,11 @@ FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
         }
         dumpToCache();
     });
+}
+
+FeedModel::~FeedModel() {
+    for (auto&& connection : _connections)
+        disconnect(connection);
 }
 
 void FeedModel::refresh() {
