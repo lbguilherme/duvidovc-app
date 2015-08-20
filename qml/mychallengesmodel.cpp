@@ -11,11 +11,13 @@ void MyChallengesModel::refresh() {
     connect(result, &Api::finished, [this, result]{
         result->deleteLater();
 
-        beginRemoveRows(QModelIndex(), 0, _myChallenges.count()-1);
+        int base = _postings.size();
+
+        beginRemoveRows(QModelIndex(), base, base+_myChallenges.count()-1);
         _myChallenges.clear();
         endRemoveRows();
 
-        beginInsertRows(QModelIndex(), 0, result->challenges().size()-1);
+        beginInsertRows(QModelIndex(), base, base+result->challenges().size()-1);
         _myChallenges = result->challenges();
         endInsertRows();
     });
