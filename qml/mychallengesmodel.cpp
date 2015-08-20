@@ -39,7 +39,7 @@ int MyChallengesModel::rowCount(const QModelIndex& parent) const {
     if (parent.isValid())
         return 0;
     else
-        return _myChallenges.count();
+        return _postings.count() + _myChallenges.count();
 }
 
 QVariant MyChallengesModel::data(const QModelIndex& index, int role) const {
