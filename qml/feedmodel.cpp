@@ -18,7 +18,7 @@ FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
                 beginRemoveRows(QModelIndex(), i, i);
                 _challenges.removeAt(i);
                 endRemoveRows();
-                --i;
+                break;
             }
         }
         dumpToCache();
