@@ -10,6 +10,7 @@ QtObject {
             property string name: "Logout"
             property string group: "Geral"
             function action() {
+                StackManager.clear();
                 duvido.logout();
             }
         },

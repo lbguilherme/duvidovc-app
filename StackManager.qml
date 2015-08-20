@@ -17,4 +17,8 @@ QtObject {
         currentScene = sceneStack.pop();
         canGoBack = sceneStack.length > 0;
     }
+
+    function clear() {
+        while (canGoBack) goBack();
+    }
 }
