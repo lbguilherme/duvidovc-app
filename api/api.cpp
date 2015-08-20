@@ -3,6 +3,7 @@
 
 #include <QNetworkReply>
 #include <QUrlQuery>
+#include <QTimer>
 #include <QDebug>
 
 const QString Api::version = "v0";
@@ -34,11 +35,11 @@ void Api::setupReply() {
             _reply->deleteLater();
             // TODO: wait before retry
             // TODO: limit max number of retries
-            sendRequest();
             _uploadProgress = 0;
             _downloadProgress = 0;
             emit uploadProgressChanged();
             emit downloadProgressChanged();
+            QTimer::singleShot(800, this, &Api::sendRequest);
         }
     });
 
