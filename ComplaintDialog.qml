@@ -29,7 +29,7 @@ Dialog {
         Button {
             flat: true
             text: "Cancelar"
-            color: "#999"
+            color: "#977"
             onClicked: closeDialog();
         }
 
