@@ -15,6 +15,7 @@
         <file>ImageInput.qml</file>
         <file>PhotoTaker.qml</file>
         <file>RoundIconButton.qml</file>
+        <file>MyChallengeItem.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
