@@ -71,7 +71,7 @@ Component {
             horizontalMargin: 15*dp
 
             Text {
-                text: description
+                text: details
                 width: parent.width
                 wrapMode: Text.WordWrap
                 font.pixelSize: 16*dp

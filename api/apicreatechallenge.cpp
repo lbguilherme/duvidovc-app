@@ -14,7 +14,7 @@ void ApiCreateChallenge::sendRequest() {
     QVariantMap args {
         {"token", duvido->token()},
         {"title", _info.title},
-        {"description", _info.description},
+        {"details", _info.details},
         {"reward", _info.reward},
         {"targets", _info.targetIds.join(",")},
         {"duration", QString::number(_info.duration)},

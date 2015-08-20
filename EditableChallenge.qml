@@ -4,7 +4,7 @@ import "qrc:/material"
 
 Card {
     property string title: titleInput.text
-    property string description: descriptionInput.text
+    property string details: detailsInput.text
     property string reward: rewardInput.text
     property var targets: targetsInput.model
     property int duration: timePickerControl.time
@@ -98,7 +98,7 @@ Card {
         horizontalMargin: 15*dp
 
         TextField {
-            id: descriptionInput
+            id: detailsInput
             label: "Regras"
             width: parent.width
             fontSize: 16*dp

@@ -21,14 +21,14 @@ void ChallengeCreator::setTitle(const QString& title) {
     emit titleChanged();
 }
 
-QString ChallengeCreator::description() const {
-    return _info.description;
+QString ChallengeCreator::details() const {
+    return _info.details;
 }
 
-void ChallengeCreator::setDescription(const QString& description) {
-    if (_info.description == description) return;
-    _info.description = description;
-    emit descriptionChanged();
+void ChallengeCreator::setdetails(const QString& details) {
+    if (_info.details == details) return;
+    _info.details = details;
+    emit detailsChanged();
 }
 
 QString ChallengeCreator::reward() const {

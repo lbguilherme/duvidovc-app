@@ -21,7 +21,7 @@ Item {
     ChallengeCreator {
         id: creator
         title: challenge.title
-        description: challenge.description
+        details: challenge.details
         reward: challenge.reward
         targets: challenge.targets
         image: challenge.image

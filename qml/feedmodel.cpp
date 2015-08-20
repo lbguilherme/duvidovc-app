@@ -64,7 +64,7 @@ QHash<int, QByteArray> FeedModel::roleNames() const {
     roles[OwnerRole] = "owner";
     roles[OwnerNameRole] = "ownerName";
     roles[TitleRole] = "title";
-    roles[DescriptionRole] = "description";
+    roles[DetailsRole] = "details";
     roles[RewardRole] = "reward";
     roles[DurationRole] = "duration";
     roles[ImageIdRole] = "imageId";
@@ -90,8 +90,8 @@ QVariant FeedModel::data(const QModelIndex& index, int role) const {
         return _challenges[i].owner.name;
     case TitleRole:
         return _challenges[i].title;
-    case DescriptionRole:
-        return _challenges[i].description;
+    case DetailsRole:
+        return _challenges[i].details;
     case RewardRole:
         return _challenges[i].reward;
     case DurationRole:

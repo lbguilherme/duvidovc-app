@@ -7,7 +7,7 @@
 struct PreChallenge {
     Q_GADGET
     Q_PROPERTY(QString title MEMBER title CONSTANT)
-    Q_PROPERTY(QString description MEMBER description CONSTANT)
+    Q_PROPERTY(QString details MEMBER details CONSTANT)
     Q_PROPERTY(QString reward MEMBER reward CONSTANT)
     Q_PROPERTY(unsigned duration MEMBER duration CONSTANT)
     Q_PROPERTY(QString imageId MEMBER imageId CONSTANT)
@@ -19,7 +19,7 @@ public:
     bool operator==(const PreChallenge& other);
 
     QString title;
-    QString description;
+    QString details;
     QString reward;
     unsigned duration = 0;
     QString imageId;

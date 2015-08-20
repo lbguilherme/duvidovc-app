@@ -25,7 +25,7 @@ QHash<int, QByteArray> MyChallengesModel::roleNames() const {
     QHash<int, QByteArray> roles;
     roles[IdRole] = "id";
     roles[TitleRole] = "title";
-    roles[DescriptionRole] = "description";
+    roles[DetailsRole] = "details";
     roles[RewardRole] = "reward";
     roles[DurationRole] = "duration";
     roles[ImageIdRole] = "imageId";
@@ -57,11 +57,11 @@ QVariant MyChallengesModel::data(const QModelIndex& index, int role) const {
             return _postings[i]->info().title;
         else
             return _myChallenges[i].title;
-    case DescriptionRole:
+    case DetailsRole:
         if (isPostingId)
-            return _postings[i]->info().description;
+            return _postings[i]->info().details;
         else
-            return _myChallenges[i].description;
+            return _myChallenges[i].details;
     case RewardRole:
         if (isPostingId)
             return _postings[i]->info().reward;

@@ -13,7 +13,7 @@ public:
         OwnerRole,
         OwnerNameRole,
         TitleRole,
-        DescriptionRole,
+        DetailsRole,
         RewardRole,
         DurationRole,
         ImageIdRole,
