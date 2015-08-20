@@ -25,7 +25,7 @@ Item {
     }
 
     Column {
-        spacing: 2*dp
+        spacing: 2.5*dp
         anchors.centerIn: parent
 
         Repeater {
@@ -33,6 +33,7 @@ Item {
             Rectangle {
                 width: 4*dp
                 height: 4*dp
+                radius: 2*dp
                 color: "#bbb"
             }
         }
