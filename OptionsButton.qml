@@ -34,7 +34,7 @@ Item {
                 width: 4*dp
                 height: 4*dp
                 radius: 2*dp
-                color: "#bbb"
+                color: "#999"
             }
         }
     }
