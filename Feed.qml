@@ -3,7 +3,19 @@ import Duvido 1.0
 import "qrc:/material"
 import "qrc:/components"
 
-ScrollableListView {
-    model: FeedModel {}
-    delegate: FeedItem {}
+Item {
+    ScrollableListView {
+        id: list
+        anchors.fill: parent
+        model: FeedModel {}
+        delegate: FeedItem {}
+    }
+
+    Text {
+        anchors.centerIn: parent
+        visible: list.model.rowCount === 0
+        color: "white"
+        font.weight: Font.Bold
+        text: "Você não foi desafiado ainda :("
+    }
 }
