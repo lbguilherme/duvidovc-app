@@ -20,7 +20,7 @@ ListModel {
     ListElement {
         icon: "qrc:/artwork/icons/celebration11.png"
         name: "Participando"
-        action: ""
+        action: "qrc:/frags/Participating.qml"
     }
 
     ListElement {

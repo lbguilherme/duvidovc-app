@@ -139,7 +139,8 @@ void Duvido::login() {
 #ifdef Q_OS_ANDROID
     FacebookBridge::login();
 #else
-    setToken("dummy");
+    setToken("CAAVRjWiYAOkBAP6ICuuOz1aPZBisNDSYvEB13y6oQfZCF1gFXIW2bjcNdpw66M4uLKB0wJC1Pba4nejnFZCe6hrEu4UiPgsuk8CKYcfVSrlV2YGVWZCINQxZCatSCMZCrju9kDaZCBAWkFoYfHt5I4vmvQdQdeRaqSrqZBnk1JdMeh7jETqpuf5U7oVopjvTvVhKeUIEvRRzlXsrl2960MVIFPOVhLyHM10M7mAbylcdEQZDZD");
+    //setToken("CAAVRjWiYAOkBAJ0TLspCVnr8fWT7i0yeEf7ozWkpYiZARPdyxqqPEaHzMdbFoRfZCDm12HpZCknIuPH8nHtjHGfHYxiR5X85GtkTxKhdELs768DNKM7klVSHsDFg559nfRxt11rIQg1rWsX09HU0KU6zs8bOqlPSqxIY4LfFNM1uVhxyPwgvYE3TtA8BytBokB3ud26KdmljpzGtJscHNQYbdyy5ZChZB7RyHFDrKZAdqimaIubJsE");
 #endif
 }
 

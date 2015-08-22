@@ -34,6 +34,7 @@
         <file>MyChallenges.qml</file>
         <file>Terms.qml</file>
         <file>SubmitDialog.qml</file>
+        <file>Participating.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>
