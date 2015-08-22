@@ -18,6 +18,7 @@ FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
                 beginRemoveRows(QModelIndex(), i, i);
                 _challenges.removeAt(i);
                 endRemoveRows();
+                emit rowCountChanged();
                 break;
             }
         }
@@ -42,6 +43,8 @@ void FeedModel::refresh() {
         beginInsertRows(QModelIndex(), 0, result->challenges().size()-1);
         _challenges = result->challenges();
         endInsertRows();
+
+        emit rowCountChanged();
 
         dumpToCache();
     });

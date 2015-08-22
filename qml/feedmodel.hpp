@@ -5,6 +5,7 @@
 
 class FeedModel : public QAbstractListModel {
     Q_OBJECT
+    Q_PROPERTY(int rowCount READ rowCount NOTIFY rowCountChanged)
 
 public:
 
@@ -33,6 +34,10 @@ private:
 
     void fastRefreshFromCache();
     void dumpToCache();
+
+signals:
+
+    void rowCountChanged();
 
 private:
 
