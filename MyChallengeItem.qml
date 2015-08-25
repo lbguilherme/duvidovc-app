@@ -94,6 +94,7 @@ Component {
             Item {
                 height: openess * targetsColumn.height
                 width: parent.width
+                visible: height > 0
                 clip: true
 
                 Column {
