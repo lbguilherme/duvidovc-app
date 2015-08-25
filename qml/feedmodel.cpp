@@ -46,13 +46,48 @@ void FeedModel::refresh() {
     connect(result, &Api::finished, [this, result]{
         result->deleteLater();
 
-        beginRemoveRows(QModelIndex(), 0, _challenges.count()-1);
-        _challenges.clear();
-        endRemoveRows();
-
-        beginInsertRows(QModelIndex(), 0, result->challenges().size()-1);
-        _challenges = result->challenges();
-        endInsertRows();
+        int i=0, j=0;
+        while (i < _challenges.size() || j < result->challenges().size()) {
+            if (i == _challenges.size()) {
+                beginInsertRows(QModelIndex(), j, result->challenges().size()-1);
+                for (; j < result->challenges().size(); ++j)
+                    _challenges.append(result->challenges()[j]);
+                endInsertRows();
+                break;
+            }
+            if (j == result->challenges().size()) {
+                beginRemoveRows(QModelIndex(), i, _challenges.size()-1);
+                for (; i < _challenges.size(); ++i)
+                    _challenges.removeLast();
+                endRemoveRows();
+                break;
+            }
+            if (_challenges[i].id == result->challenges()[j].id) {
+                _challenges[i] = result->challenges()[j];
+                emit dataChanged(index(i), index(i));
+                ++i; ++j;
+            } else {
+                int k = j;
+                bool found = false;
+                for (;k < result->challenges().size(); ++k) {
+                    if (result->challenges()[k].id == _challenges[i].id) {
+                        found = true;
+                        break;
+                    }
+                }
+                if (found) {
+                    beginInsertRows(QModelIndex(), j, k);
+                    for (; j <= k; ++j)
+                        _challenges.insert(++i, result->challenges()[j]);
+                    endInsertRows();
+                } else {
+                    beginRemoveRows(QModelIndex(), i, i);
+                    for (; i < _challenges.size(); ++i)
+                        _challenges.removeAt(i);
+                    endRemoveRows();
+                }
+            }
+        }
 
         checkExpired();
         emit rowCountChanged();
