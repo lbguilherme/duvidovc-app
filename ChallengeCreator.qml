@@ -9,7 +9,6 @@ Item {
         icon: "qrc:/artwork/icons/send12.png"
         onClicked: {
             forceActiveFocus();
-            console.log(challenge.verify());
             if (challenge.verify()) {
                 creator.submit();
                 goBack();
