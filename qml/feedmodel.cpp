@@ -118,7 +118,9 @@ void FeedModel::fastRefreshFromCache() {
     if (cacheFile.exists()) {
         cacheFile.open(QIODevice::ReadOnly);
         QJsonArray arr = QJsonDocument::fromJson(cacheFile.readAll()).array();
+        beginInsertRows(QModelIndex(), 0, arr.size()-1);
         _challenges = fromJson<Challenge>(arr);
+        endInsertRows();
     }
 }
 
