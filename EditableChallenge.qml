@@ -23,11 +23,6 @@ Card {
             error = true;
         }
 
-        if (!rewardInput.text) {
-            rewardInput.error = "Não há recompensa para este desafio";
-            error = true;
-        }
-
         if(!timePickerControl.time) {
             timePickerControl.error = true;
             error = true;
