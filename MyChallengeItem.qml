@@ -130,7 +130,10 @@ Component {
                                 color: { return {
                                         sent: "#eee",
                                         received: "#ddd5d5",
-                                        refused: "#dbb"
+                                        refused: "#dbb",
+                                        expired: "#eee",
+                                        submitted: "#eee",
+                                        accepted: "#eee"
                                     }[modelData.status]; }
                                 border.width: Math.ceil(1*dp)
                                 border.color: Qt.darker(color, 1.1)
@@ -138,9 +141,12 @@ Component {
                                 Text {
                                     anchors.centerIn: parent
                                     text: { return {
-                                            sent: "...",
-                                            received: "Recebeu",
-                                            refused: "Caiu fora"
+                                            sent: "Não viu",
+                                            received: "Viu",
+                                            refused: "Caiu fora",
+                                            expired: "Já era",
+                                            submitted: "Respondeu",
+                                            accepted: "Aprovado"
                                         }[modelData.status]; }
                                     opacity: 0.9
                                 }
