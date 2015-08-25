@@ -7,6 +7,7 @@
 #include <QJsonDocument>
 #include <QFile>
 #include <QDir>
+#include <QTimer>
 
 FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
     fastRefreshFromCache();
@@ -23,6 +24,15 @@ FeedModel::FeedModel(QObject* parent) : QAbstractListModel(parent) {
             }
         }
         dumpToCache();
+    });
+
+    QTimer* timer = new QTimer(this);
+    timer->setInterval(1000);
+    timer->setSingleShot(false);
+    timer->start();
+    connect(timer, &QTimer::timeout, [this](){
+        checkExpired();
+        emit dataChanged(index(0), index(rowCount()-1), {TimeLeftRole});
     });
 }
 
@@ -44,10 +54,28 @@ void FeedModel::refresh() {
         _challenges = result->challenges();
         endInsertRows();
 
+        checkExpired();
         emit rowCountChanged();
 
         dumpToCache();
     });
+}
+
+void FeedModel::checkExpired() {
+    bool anyRemoved = false;
+    for (int i = 0; i < _challenges.size(); ++i) {
+        if (_challenges[i].timeLeft() < 0) {
+
+            beginRemoveRows(QModelIndex(), i, i);
+            _challenges.removeAt(i);
+            endRemoveRows();
+            anyRemoved = true;
+            --i;
+        }
+    }
+
+    if (anyRemoved)
+        emit rowCountChanged();
 }
 
 void FeedModel::fastRefreshFromCache() {
@@ -74,7 +102,7 @@ QHash<int, QByteArray> FeedModel::roleNames() const {
     roles[TitleRole] = "title";
     roles[DetailsRole] = "details";
     roles[RewardRole] = "reward";
-    roles[DurationRole] = "duration";
+    roles[TimeLeftRole] = "timeLeft";
     roles[ImageIdRole] = "imageId";
     roles[ImageRatioRole] = "imageRatio";
     return roles;
@@ -102,8 +130,8 @@ QVariant FeedModel::data(const QModelIndex& index, int role) const {
         return _challenges[i].details;
     case RewardRole:
         return _challenges[i].reward;
-    case DurationRole:
-        return _challenges[i].duration;
+    case TimeLeftRole:
+        return _challenges[i].timeLeft();
     case ImageIdRole:
         return _challenges[i].imageId;
     case ImageRatioRole:

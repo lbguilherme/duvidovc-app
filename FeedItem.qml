@@ -101,8 +101,7 @@ Component {
                     }
 
                     Text {
-                        id: timeLeft
-                        text: formatTime(duration)
+                        text: formatTime(timeLeft)
                     }
                 }
             }

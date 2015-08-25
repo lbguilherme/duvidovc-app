@@ -16,7 +16,7 @@ public:
         TitleRole,
         DetailsRole,
         RewardRole,
-        DurationRole,
+        TimeLeftRole,
         ImageIdRole,
         ImageRatioRole
     };
@@ -25,6 +25,7 @@ public:
     virtual ~FeedModel();
 
     void refresh();
+    void checkExpired();
 
     QHash<int, QByteArray> roleNames() const;
     int rowCount(const QModelIndex& parent = QModelIndex()) const;

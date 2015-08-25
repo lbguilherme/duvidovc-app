@@ -17,6 +17,8 @@ public:
     Challenge& fromJson(const QJsonObject& obj);
     bool operator==(const Challenge& other);
 
+    int timeLeft() const;
+
     QString id;
     QDateTime creationTime;
     User owner;

@@ -12,7 +12,7 @@ QJsonObject Challenge::toJson() const {
 Challenge& Challenge::fromJson(const QJsonObject& obj) {
     PreChallenge::fromJson(obj);
     id = obj["id"].toString();
-    creationTime = QDateTime::fromString(obj["creationTime"].toString(), Qt::ISODate);
+    creationTime = QDateTime::fromMSecsSinceEpoch( obj["creationTime"].toString().toLongLong());
     owner.fromJson(obj["owner"].toObject());
     ratio = obj["ratio"].toDouble();
     return *this;
@@ -22,4 +22,8 @@ bool Challenge::operator==(const Challenge& other) {
     return PreChallenge::operator==(other) &&
             id == other.id && creationTime == other.creationTime &&
             owner == other.owner && ratio == other.ratio;
+}
+
+int Challenge::timeLeft() const {
+    return duration - (QDateTime::currentMSecsSinceEpoch() - creationTime.toMSecsSinceEpoch())/1000;
 }
