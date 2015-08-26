@@ -78,11 +78,11 @@ void FeedModel::refresh() {
                 if (found) {
                     beginInsertRows(QModelIndex(), j, k);
                     for (; j <= k; ++j)
-                        _challenges.insert(++i, result->challenges()[j]);
+                        _challenges.insert(i++, result->challenges()[j]);
                     endInsertRows();
                 } else {
-                    beginRemoveRows(QModelIndex(), i, i);
-                    for (; i < _challenges.size(); ++i)
+                    beginRemoveRows(QModelIndex(), i, _challenges.size()-1);
+                    for (; i < _challenges.size();)
                         _challenges.removeAt(i);
                     endRemoveRows();
                 }
