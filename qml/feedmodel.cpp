@@ -93,6 +93,8 @@ void FeedModel::refresh() {
         emit rowCountChanged();
 
         dumpToCache();
+
+        QTimer::singleShot(4000, this, &FeedModel::refresh);
     });
 }
 
