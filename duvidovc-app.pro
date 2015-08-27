@@ -37,7 +37,8 @@ SOURCES += \
     data/submission.cpp \
     data/target.cpp \
     api/apisendgcmtoken.cpp \
-    api/apirefuse.cpp
+    api/apirefuse.cpp \
+    data/presubmission.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -66,7 +67,8 @@ HEADERS += \
     data/submission.hpp \
     data/target.hpp \
     api/apisendgcmtoken.hpp \
-    api/apirefuse.hpp
+    api/apirefuse.hpp \
+    data/presubmission.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

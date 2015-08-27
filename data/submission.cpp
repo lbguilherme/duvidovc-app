@@ -1,25 +1,22 @@
 #include <data/submission.hpp>
 
 QJsonObject Submission::toJson() const {
-    QJsonObject obj;
+    QJsonObject obj = PreSubmission::toJson();
     obj["status"] = status;
-    obj["text"] = text;
-    obj["imageId"] = imageId;
-    obj["sentTime"] = sentTime.toString(Qt::ISODate);
-    obj["judgedTime"] = judgedTime.toString(Qt::ISODate);
+    obj["sentTime"] = QString::number(sentTime.toMSecsSinceEpoch());
+    obj["judgedTime"] = QString::number(judgedTime.toMSecsSinceEpoch());
     return obj;
 }
 
 Submission& Submission::fromJson(const QJsonObject& obj) {
+    PreSubmission::fromJson(obj);
     status = obj["status"].toString();
-    text = obj["text"].toString();
-    imageId = obj["imageId"].toString();
-    sentTime = QDateTime::fromString(obj["sentTime"].toString(), Qt::ISODate);
-    judgedTime = QDateTime::fromString(obj["judgedTime"].toString(), Qt::ISODate);
+    sentTime = QDateTime::fromMSecsSinceEpoch(obj["sentTime"].toString().toLongLong());
+    judgedTime = QDateTime::fromMSecsSinceEpoch(obj["judgedTime"].toString().toLongLong());
     return *this;
 }
 
 bool Submission::operator==(const Submission& other) {
-    return status == other.status && text == other.text && imageId == other.imageId &&
+    return PreSubmission::operator==(other) && status == other.status &&
             sentTime == other.sentTime && judgedTime == other.judgedTime;
 }
