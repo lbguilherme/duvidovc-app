@@ -3,7 +3,7 @@
 QJsonObject Challenge::toJson() const {
     QJsonObject obj = PreChallenge::toJson();
     obj["id"] = id;
-    obj["creationTime"] = creationTime.toString(Qt::ISODate);
+    obj["creationTime"] = QString::number(creationTime.toMSecsSinceEpoch());
     obj["owner"] = owner.toJson();
     obj["ratio"] = ratio;
     return obj;
@@ -12,7 +12,7 @@ QJsonObject Challenge::toJson() const {
 Challenge& Challenge::fromJson(const QJsonObject& obj) {
     PreChallenge::fromJson(obj);
     id = obj["id"].toString();
-    creationTime = QDateTime::fromMSecsSinceEpoch( obj["creationTime"].toString().toLongLong());
+    creationTime = QDateTime::fromMSecsSinceEpoch(obj["creationTime"].toString().toLongLong());
     owner.fromJson(obj["owner"].toObject());
     ratio = obj["ratio"].toDouble();
     return *this;
