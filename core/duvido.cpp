@@ -5,11 +5,13 @@
 #include <qml/mychallengesmodel.hpp>
 #include <qml/feedmodel.hpp>
 #include <qml/challengecreator.hpp>
+#include <qml/submissionsender.hpp>
 #include <api/apilogin.hpp>
 #include <api/apisendgcmtoken.hpp>
 #include <api/apirefuse.hpp>
 #include <core/avatarmanager.hpp>
 #include <core/postingchallenge.hpp>
+#include <core/postingsubmission.hpp>
 
 #include <QSortFilterProxyModel>
 #include <QQmlContext>
@@ -45,6 +47,7 @@ Duvido::Duvido()
     initFacebook();
     initView();
     startPostingChallengesFromQueue();
+    startPostingSubmissionsFromQueue();
 }
 
 void Duvido::initInterfaces() {
@@ -55,6 +58,7 @@ void Duvido::initInterfaces() {
 
     qmlRegisterType<AvatarLoader>("Duvido", 1, 0, "AvatarLoader");
     qmlRegisterType<ChallengeCreator>("Duvido", 1, 0, "ChallengeCreator");
+    qmlRegisterType<SubmissionSender>("Duvido", 1, 0, "SubmissionSender");
     qmlRegisterType<FriendsModel>("Duvido", 1, 0, "FriendsModel");
     qmlRegisterType<MyChallengesModel>("Duvido", 1, 0, "MyChallengesModel");
     qmlRegisterType<FeedModel>("Duvido", 1, 0, "FeedModel");
@@ -244,7 +248,68 @@ void Duvido::startPostingChallengesFromQueue() {
 
     QJsonArray arr = QJsonDocument::fromJson(queueFile.readAll()).array();
     for (auto value : arr) {
-        PostingChallenge::fromJson(value.toObject());
+        auto postingChallenge = PostingChallenge::fromJson(value.toObject());
+        _postingChallenges.append(postingChallenge);
+        emit postingChallengeAdded(postingChallenge);
+
+        connect(postingChallenge, &PostingChallenge::finished, [this, postingChallenge]{
+            _postingChallenges.removeOne(postingChallenge);
+            updatePostingChallengeQueue();
+            emit postingChallengeRemoved(postingChallenge);
+        });
+    }
+}
+
+QList<PostingSubmission*> Duvido::postingSubmissions() const {
+    return _postingSubmissions;
+}
+
+void Duvido::addPostingSubmission(PostingSubmission* postingSubmission) {
+    if (postingSubmission->isFinished()) {
+        postingSubmission->deleteLater();
+        return;
+    }
+
+    postingSubmission->setParent(this);
+    _postingSubmissions.append(postingSubmission);
+    updatePostingSubmissionQueue();
+
+    connect(postingSubmission, &PostingSubmission::finished, [this, postingSubmission]{
+        _postingSubmissions.removeOne(postingSubmission);
+        updatePostingSubmissionQueue();
+    });
+}
+
+void Duvido::updatePostingSubmissionQueue() {
+    QString queuePath = QDir::home().filePath("duvido_postingsubmission_queue");
+    QFile queueFile(queuePath);
+    queueFile.open(QIODevice::WriteOnly);
+
+    QJsonArray arr;
+    for (auto postingSubmission : _postingSubmissions) {
+        arr.append(postingSubmission->toJson());
+    }
+
+    queueFile.write(QJsonDocument(arr).toJson());
+}
+
+void Duvido::startPostingSubmissionsFromQueue() {
+    Q_ASSERT(_postingSubmissions.isEmpty());
+
+    QString queuePath = QDir::home().filePath("duvido_postingsubmission_queue");
+    QFile queueFile(queuePath);
+    if (!queueFile.exists()) return;
+    queueFile.open(QIODevice::ReadOnly);
+
+    QJsonArray arr = QJsonDocument::fromJson(queueFile.readAll()).array();
+    for (auto value : arr) {
+        auto postingSubmission = PostingSubmission::fromJson(value.toObject());
+        _postingSubmissions.append(postingSubmission);
+
+        connect(postingSubmission, &PostingSubmission::finished, [this, postingSubmission]{
+            _postingSubmissions.removeOne(postingSubmission);
+            updatePostingChallengeQueue();
+        });
     }
 }
 

@@ -1,15 +1,18 @@
-#ifndef PRESUBMISSION_H
-#define PRESUBMISSION_H
+#pragma once
 
+#include <QJsonObject>
+#include <QObject>
 
-class PreSubmission
-{
+struct PreSubmission {
+    Q_GADGET
+    Q_PROPERTY(QString text MEMBER text CONSTANT)
+    Q_PROPERTY(QString imageId MEMBER imageId CONSTANT)
 public:
-    PreSubmission();
 
-signals:
+    QJsonObject toJson() const;
+    PreSubmission& fromJson(const QJsonObject& obj);
+    bool operator==(const PreSubmission& other);
 
-public slots:
+    QString text;
+    QString imageId;
 };
-
-#endif // PRESUBMISSION_H

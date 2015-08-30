@@ -38,7 +38,10 @@ SOURCES += \
     data/target.cpp \
     api/apisendgcmtoken.cpp \
     api/apirefuse.cpp \
-    data/presubmission.cpp
+    api/apisendsubmission.cpp \
+    data/presubmission.cpp \
+    core/postingsubmission.cpp \
+    qml/submissionsender.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -68,7 +71,10 @@ HEADERS += \
     data/target.hpp \
     api/apisendgcmtoken.hpp \
     api/apirefuse.hpp \
-    data/presubmission.hpp
+    api/apisendsubmission.hpp \
+    data/presubmission.hpp \
+    core/postingsubmission.hpp \
+    qml/submissionsender.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

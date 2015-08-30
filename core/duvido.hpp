@@ -11,6 +11,7 @@
 
 class AvatarManager;
 class PostingChallenge;
+class PostingSubmission;
 class ApiLogin;
 
 class Duvido : public QGuiApplication {
@@ -38,6 +39,9 @@ public:
 
     QList<PostingChallenge*> postingChallenges() const;
     void addPostingChallenge(PostingChallenge* postingChallenge);
+
+    QList<PostingSubmission*> postingSubmissions() const;
+    void addPostingSubmission(PostingSubmission* postingSubmission);
 
     void unsetMe();
     void setMe(const Me& me);
@@ -71,6 +75,9 @@ private:
     void updatePostingChallengeQueue();
     void startPostingChallengesFromQueue();
 
+    void updatePostingSubmissionQueue();
+    void startPostingSubmissionsFromQueue();
+
 private:
 
     AvatarManager* _avatarManager;
@@ -80,6 +87,7 @@ private:
     Me _me;
 
     QList<PostingChallenge*> _postingChallenges;
+    QList<PostingSubmission*> _postingSubmissions;
 
     QNetworkAccessManager _http;
     QQuickView _view;

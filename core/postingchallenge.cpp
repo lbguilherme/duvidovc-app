@@ -1,7 +1,5 @@
 #include <core/postingchallenge.hpp>
 #include <api/apiuploadimage.hpp>
-#include <QFile>
-#include <QDir>
 #include <QJsonObject>
 
 PostingChallenge::PostingChallenge(PreChallenge info, QObject* parent)
