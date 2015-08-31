@@ -1,9 +1,12 @@
 import QtQuick 2.4
 import "qrc:/material"
 import "qrc:/components"
+import Duvido 1.0
 
 Dialog {
+    id: root
     spacing: 20*dp
+    property string challenge
 
     Text {
         text: imageInput.mode == "none" && !imageInput.source
@@ -20,6 +23,12 @@ Dialog {
         width: parent.width
     }
 
+    SubmissionSender {
+        id: sender
+        challenge: root.challenge
+        image: imageInput.source
+    }
+
     Row {
         anchors.right: parent.right
         anchors.rightMargin: 20*dp
@@ -33,11 +42,14 @@ Dialog {
         }
 
         Button {
-            visible: imageInput.source
+            visible: !!imageInput.source
             flat: true
             text: "Enviar"
             color: "#0f6464"
-            onClicked: closeDialog();
+            onClicked: {
+                sender.submit();
+                closeDialog();
+            }
         }
     }
 }
