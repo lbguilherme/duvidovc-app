@@ -13,6 +13,7 @@ ApiSendSubmission::ApiSendSubmission(PreSubmission info, QObject* parent) : Api(
 void ApiSendSubmission::sendRequest() {
     QVariantMap args {
         {"token", duvido->token()},
+        {"challenge", _info.challenge},
         {"title", _info.text},
         {"imageId", _info.imageId}
     };

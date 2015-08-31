@@ -9,6 +9,16 @@ SubmissionSender::SubmissionSender(QObject* parent)
 
 }
 
+QString SubmissionSender::challenge() const {
+    return _info.challenge;
+}
+
+void SubmissionSender::setChallenge(const QString& challenge) {
+    if (_info.text == challenge) return;
+    _info.challenge = challenge;
+    emit challengeChanged();
+}
+
 QString SubmissionSender::text() const {
     return _info.text;
 }
