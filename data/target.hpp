@@ -1,14 +1,14 @@
 #pragma once
 
 #include <data/user.hpp>
-#include <data/submission.hpp>
-#include <QDateTime>
 #include <QObject>
 
 struct Target : User {
     Q_GADGET
     Q_PROPERTY(QString status MEMBER status CONSTANT)
-    Q_PROPERTY(QList<Submission> submissions MEMBER submissions CONSTANT)
+    Q_PROPERTY(QString lastSubmissionId MEMBER lastSubmissionId CONSTANT)
+    Q_PROPERTY(QString imageId MEMBER imageId CONSTANT)
+    Q_PROPERTY(double imageRatio MEMBER imageRatio CONSTANT)
 public:
 
     QJsonObject toJson() const;
@@ -16,5 +16,7 @@ public:
     bool operator==(const Target& other);
 
     QString status;
-    QList<Submission> submissions;
+    QString lastSubmissionId;
+    QString imageId;
+    double imageRatio;
 };
