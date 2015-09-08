@@ -60,7 +60,8 @@ public class FacebookBridge {
             }
             break;
         default:
-            callbackManager.onActivityResult(requestCode, resultCode, data);
+            if (callbackManager != null)
+                callbackManager.onActivityResult(requestCode, resultCode, data);
         }
     }
 
