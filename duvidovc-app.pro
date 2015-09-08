@@ -43,6 +43,7 @@ SOURCES += \
     core/postingsubmission.cpp \
     qml/submissionsender.cpp \
     api/apiplaying.cpp \
+    qml/playingmodel.cpp \
 
 HEADERS += \
     core/duvido.hpp \
@@ -77,6 +78,7 @@ HEADERS += \
     core/postingsubmission.hpp \
     qml/submissionsender.hpp \
     api/apiplaying.hpp \
+    qml/playingmodel.hpp \
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

@@ -3,6 +3,7 @@
 #include <qml/avatarloader.hpp>
 #include <qml/friendsmodel.hpp>
 #include <qml/mychallengesmodel.hpp>
+#include <qml/playingmodel.hpp>
 #include <qml/feedmodel.hpp>
 #include <qml/challengecreator.hpp>
 #include <qml/submissionsender.hpp>
@@ -49,6 +50,7 @@ Duvido::Duvido()
 void Duvido::initInterfaces() {
     qRegisterMetaType<FriendsModel*>("FriendsModel");
     qRegisterMetaType<MyChallengesModel*>("MyChallengesModel");
+    qRegisterMetaType<PlayingModel*>("PlayingModel");
     qRegisterMetaType<FeedModel*>("FeedModel");
     qRegisterMetaType<QSortFilterProxyModel*>("QSortFilterProxyModel");
 
@@ -57,6 +59,7 @@ void Duvido::initInterfaces() {
     qmlRegisterType<SubmissionSender>("Duvido", 1, 0, "SubmissionSender");
     qmlRegisterType<FriendsModel>("Duvido", 1, 0, "FriendsModel");
     qmlRegisterType<MyChallengesModel>("Duvido", 1, 0, "MyChallengesModel");
+    qmlRegisterType<PlayingModel>("Duvido", 1, 0, "PlayingModel");
     qmlRegisterType<FeedModel>("Duvido", 1, 0, "FeedModel");
 
     installEventFilter(new DuvidoEventFilter(this));
