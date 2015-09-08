@@ -7,6 +7,7 @@ Component {
         id: card
 
         Item {
+            visible: false
             OptionsButton {
                 x: card.width - width
                 model: ListModel {
