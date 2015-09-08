@@ -16,6 +16,7 @@
         <file>PhotoTaker.qml</file>
         <file>RoundIconButton.qml</file>
         <file>MyChallengeItem.qml</file>
+        <file>PlayingItem.qml</file>
     </qresource>
     <qresource prefix="/scenes">
         <file>LoginScene.qml</file>
@@ -34,7 +35,7 @@
         <file>MyChallenges.qml</file>
         <file>Terms.qml</file>
         <file>SubmitDialog.qml</file>
-        <file>Participating.qml</file>
+        <file>Playing.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>
