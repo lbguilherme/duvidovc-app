@@ -94,7 +94,7 @@ void FeedModel::refresh() {
 
         dumpToCache();
 
-        QTimer::singleShot(4000, this, &FeedModel::refresh);
+        QTimer::singleShot(10000, this, &FeedModel::refresh);
     });
 }
 
