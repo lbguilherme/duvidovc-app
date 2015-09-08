@@ -13,8 +13,11 @@ ApiUploadImage::ApiUploadImage(QString sourcePath, int orientation, QObject* par
 }
 
 void ApiUploadImage::sendRequest() {
+    if (_sourcePath.isEmpty())
+        return;
     QFile* file = new QFile(_sourcePath, this);
-    file->open(QIODevice::ReadOnly);
+    if (!file->open(QIODevice::ReadOnly))
+        return;
     _reply = duvido->http().post(request("/image", QVariantMap{{"token", duvido->token()}, {"orientation", _orientation}}), file);
     setupReply();
     qDebug() << "Uploading" << file->size() << "bytes from" << _sourcePath;
