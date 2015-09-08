@@ -44,6 +44,7 @@ SOURCES += \
     qml/submissionsender.cpp \
     api/apiplaying.cpp \
     qml/playingmodel.cpp \
+    api/apijudge.cpp
 
 HEADERS += \
     core/duvido.hpp \
@@ -79,6 +80,7 @@ HEADERS += \
     qml/submissionsender.hpp \
     api/apiplaying.hpp \
     qml/playingmodel.hpp \
+    api/apijudge.hpp
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \

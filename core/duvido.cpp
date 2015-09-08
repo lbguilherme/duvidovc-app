@@ -10,6 +10,7 @@
 #include <api/apilogin.hpp>
 #include <api/apisendgcmtoken.hpp>
 #include <api/apirefuse.hpp>
+#include <api/apijudge.hpp>
 #include <core/avatarmanager.hpp>
 #include <core/postingchallenge.hpp>
 #include <core/postingsubmission.hpp>
@@ -322,6 +323,13 @@ void Duvido::startPostingSubmissionsFromQueue() {
 void Duvido::refuseChallenge(QString id) {
     emit challengeRefused(id);
     auto api = new ApiRefuse(id, this);
+    connect(api, &Api::finished, [api]{
+        api->deleteLater();
+    });
+}
+
+void Duvido::judgeSubmission(QString id, bool accepted) {
+    auto api = new ApiJudge(id, accepted, this);
     connect(api, &Api::finished, [api]{
         api->deleteLater();
     });

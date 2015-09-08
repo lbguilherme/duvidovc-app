@@ -56,6 +56,8 @@ public:
 
     Q_INVOKABLE void refuseChallenge(QString id);
 
+    Q_INVOKABLE void judgeSubmission(QString id, bool accepted);
+
 signals:
 
     void meChanged();
