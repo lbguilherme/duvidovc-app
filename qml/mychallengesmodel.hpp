@@ -33,6 +33,11 @@ public:
 
 private:
 
+    void fastRefreshFromCache();
+    void dumpToCache();
+
+private:
+
     QList<QMetaObject::Connection> _connections;
     QList<PostingChallenge*> _postings;
     QList<MyChallenge> _myChallenges;

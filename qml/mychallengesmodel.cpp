@@ -2,8 +2,16 @@
 #include <core/postingchallenge.hpp>
 #include <core/duvido.hpp>
 #include <api/apimychallenges.hpp>
+#include <data/list.hpp>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QFile>
+#include <QDir>
+#include <QTimer>
 
 MyChallengesModel::MyChallengesModel(QObject* parent) : QAbstractListModel(parent) {
+    fastRefreshFromCache();
 
     _connections << connect(duvido, &Duvido::postingChallengeAdded, [this](PostingChallenge* postingChallenge){
         beginInsertRows(QModelIndex(), _postings.size(), _postings.size());
@@ -33,21 +41,78 @@ MyChallengesModel::~MyChallengesModel() {
         disconnect(connection);
 }
 
+
 void MyChallengesModel::refresh() {
     auto result = new ApiMyChallenges(this);
     connect(result, &Api::finished, [this, result]{
         result->deleteLater();
 
-        int base = _postings.size();
+        int p = _postings.size();
+        int i=0, j=0;
+        while (i < _myChallenges.size() || j < result->challenges().size()) {
+            if (i == _myChallenges.size()) {
+                beginInsertRows(QModelIndex(), p+j, p+result->challenges().size()-1);
+                for (; j < result->challenges().size(); ++j)
+                    _myChallenges.append(result->challenges()[j]);
+                endInsertRows();
+                break;
+            }
+            if (j == result->challenges().size()) {
+                beginRemoveRows(QModelIndex(), p+i, p+_myChallenges.size()-1);
+                for (; i < _myChallenges.size(); ++i)
+                    _myChallenges.removeLast();
+                endRemoveRows();
+                break;
+            }
+            if (_myChallenges[i].id == result->challenges()[j].id) {
+                _myChallenges[i] = result->challenges()[j];
+                emit dataChanged(index(p+i), index(p+i));
+                ++i; ++j;
+            } else {
+                int k = j;
+                bool found = false;
+                for (;k < result->challenges().size(); ++k) {
+                    if (result->challenges()[k].id == _myChallenges[i].id) {
+                        found = true;
+                        break;
+                    }
+                }
+                if (found) {
+                    beginInsertRows(QModelIndex(), p+j, p+k);
+                    for (; j <= k; ++j)
+                        _myChallenges.insert(i++, result->challenges()[j]);
+                    endInsertRows();
+                } else {
+                    beginRemoveRows(QModelIndex(), p+i, p+_myChallenges.size()-1);
+                    for (; i < _myChallenges.size();)
+                        _myChallenges.removeAt(i);
+                    endRemoveRows();
+                }
+            }
+        }
 
-        beginRemoveRows(QModelIndex(), base, base+_myChallenges.count()-1);
-        _myChallenges.clear();
-        endRemoveRows();
+        dumpToCache();
 
-        beginInsertRows(QModelIndex(), base, base+result->challenges().size()-1);
-        _myChallenges = result->challenges();
-        endInsertRows();
+        QTimer::singleShot(10000, this, &MyChallengesModel::refresh);
     });
+}
+
+void MyChallengesModel::fastRefreshFromCache() {
+    QFile cacheFile(QDir::temp().filePath("duvido_mychallenges"));
+    if (cacheFile.exists()) {
+        cacheFile.open(QIODevice::ReadOnly);
+        QJsonArray arr = QJsonDocument::fromJson(cacheFile.readAll()).array();
+        beginInsertRows(QModelIndex(), 0, arr.size()-1);
+        _myChallenges = fromJson<MyChallenge>(arr);
+        endInsertRows();
+    }
+}
+
+void MyChallengesModel::dumpToCache() {
+    QJsonArray arr = toJson(_myChallenges);
+    QFile cacheFile(QDir::temp().filePath("duvido_mychallenges"));
+    cacheFile.open(QIODevice::WriteOnly);
+    cacheFile.write(QJsonDocument(arr).toJson());
 }
 
 QHash<int, QByteArray> MyChallengesModel::roleNames() const {
