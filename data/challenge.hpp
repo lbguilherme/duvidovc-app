@@ -22,5 +22,5 @@ public:
     QString id;
     QDateTime creationTime;
     User owner;
-    double ratio;
+    double ratio = 0;
 };
