@@ -10,7 +10,7 @@ class ApiUploadImage;
 class ChallengeCreator : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
-    Q_PROPERTY(QString details READ details WRITE setdetails NOTIFY detailsChanged)
+    Q_PROPERTY(QString details READ details WRITE setDetails NOTIFY detailsChanged)
     Q_PROPERTY(QString reward READ reward WRITE setReward NOTIFY rewardChanged)
     Q_PROPERTY(FriendsModel* targets READ targets WRITE setTargets NOTIFY targetsChanged)
     Q_PROPERTY(unsigned duration READ duration WRITE setDuration NOTIFY durationChanged)
@@ -25,7 +25,7 @@ public:
     void setTitle(const QString &title);
 
     QString details() const;
-    void setdetails(const QString &details);
+    void setDetails(const QString &details);
 
     QString reward() const;
     void setReward(const QString &reward);

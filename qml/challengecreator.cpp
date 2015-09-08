@@ -25,7 +25,7 @@ QString ChallengeCreator::details() const {
     return _info.details;
 }
 
-void ChallengeCreator::setdetails(const QString& details) {
+void ChallengeCreator::setDetails(const QString& details) {
     if (_info.details == details) return;
     _info.details = details;
     emit detailsChanged();
