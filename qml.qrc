@@ -36,6 +36,7 @@
         <file>Terms.qml</file>
         <file>SubmitDialog.qml</file>
         <file>Playing.qml</file>
+        <file>JudgeDialog.qml</file>
     </qresource>
     <qresource prefix="/singletons">
         <file>StackManager.qml</file>
