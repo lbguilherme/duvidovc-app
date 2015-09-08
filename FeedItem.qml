@@ -125,7 +125,10 @@ Component {
                     width: parent.width/2 - parent.spacing/2
                     color: Qt.darker("#36C77B", 1.1)
                     text: "Tô Dentro"
-                    onClicked: openDialog("qrc:/frags/SubmitDialog.qml");
+                    onClicked: {
+                        openDialog("qrc:/frags/SubmitDialog.qml");
+                        dialog.challenge = challengeId;
+                    }
                 }
             }
         }

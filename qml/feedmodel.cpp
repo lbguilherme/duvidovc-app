@@ -135,7 +135,7 @@ void FeedModel::dumpToCache() {
 
 QHash<int, QByteArray> FeedModel::roleNames() const {
     QHash<int, QByteArray> roles;
-    roles[IdRole] = "id";
+    roles[IdRole] = "challengeId";
     roles[OwnerRole] = "owner";
     roles[OwnerNameRole] = "ownerName";
     roles[TitleRole] = "title";
