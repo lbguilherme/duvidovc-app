@@ -7,11 +7,12 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: "#fafafa"
+        color: Qt.lighter("#10A8A1", 0.2)
     }
 
     ScrollableListView {
         anchors.fill: parent
+        spacing: 0
         model: MyChallengesModel {}
         delegate: MyChallengeItem {}
     }
