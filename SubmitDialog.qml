@@ -27,6 +27,7 @@ Dialog {
         id: sender
         challenge: root.challenge
         image: imageInput.source
+        orientation: imageInput.orientation
     }
 
     Row {

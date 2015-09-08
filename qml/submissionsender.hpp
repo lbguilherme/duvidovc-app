@@ -11,6 +11,7 @@ class SubmissionSender : public QObject {
     Q_PROPERTY(QString challenge READ challenge WRITE setChallenge NOTIFY challengeChanged)
     Q_PROPERTY(QString text READ text WRITE setText NOTIFY textChanged)
     Q_PROPERTY(QUrl image READ image WRITE setImage NOTIFY imageChanged)
+    Q_PROPERTY(int orientation READ orientation WRITE setOrientation NOTIFY orientationChanged)
 
 public:
 
@@ -35,6 +36,7 @@ signals:
     void challengeChanged();
     void textChanged();
     void imageChanged();
+    void orientationChanged();
     void submitted();
 
 private:

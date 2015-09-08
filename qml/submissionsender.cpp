@@ -44,6 +44,16 @@ void SubmissionSender::setImage(const QUrl& image) {
     emit imageChanged();
 }
 
+int SubmissionSender::orientation() const {
+    return _orientation;
+}
+
+void SubmissionSender::setOrientation(int orientation) {
+    if (_orientation == orientation) return;
+    _orientation = orientation;
+    emit orientationChanged();
+}
+
 void SubmissionSender::submit() {
     Q_ASSERT(!_imageSource.isEmpty());
     duvido->addPostingSubmission(new PostingSubmission(_info, new ApiUploadImage(_imageSource, _orientation)));
