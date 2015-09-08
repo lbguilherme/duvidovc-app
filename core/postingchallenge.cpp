@@ -45,7 +45,7 @@ QJsonObject PostingChallenge::toJson() const {
         obj["imageOrientation"] = _upload->orientation();
     }
 
-    return _info.toJson();
+    return obj;
 }
 
 PostingChallenge* PostingChallenge::fromJson(const QJsonObject& obj) {

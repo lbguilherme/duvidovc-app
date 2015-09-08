@@ -36,7 +36,7 @@ QJsonObject PostingSubmission::toJson() const {
     obj["imageSourcePath"] = _upload->sourcePath();
     obj["imageOrientation"] = _upload->orientation();
 
-    return _info.toJson();
+    return obj;
 }
 
 PostingSubmission* PostingSubmission::fromJson(const QJsonObject& obj) {
