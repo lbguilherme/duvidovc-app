@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<manifest package="vc.duvido" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="0.0.2" android:versionCode="0" android:installLocation="auto">
+<manifest package="vc.duvido" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="0.1" android:versionCode="30002" android:installLocation="auto">
     <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="22"/>
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
     <!-- %%INSERT_PERMISSIONS -->
     <!-- %%INSERT_FEATURES -->
-    <permission android:name="vc.duvido.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <permission android:name="vc.duvido.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="vc.duvido.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="vc.duvido.gcm.permission.C2D_MESSAGE"/>
     <application android:allowBackup="true" android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Duvido.vc" android:icon="@drawable/icon">
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
         <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation" android:name="vc.duvido.DuvidoActivity" android:label="Duvido.vc" android:screenOrientation="unspecified" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize">
@@ -56,33 +56,24 @@
         <activity android:name="vc.duvido.WebLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="Duvido.vc">
             <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
         </activity>
-        <receiver
-            android:name="com.google.android.gms.gcm.GcmReceiver"
-            android:exported="true"
-            android:permission="com.google.android.c2dm.permission.SEND" >
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-                <category android:name="vc.duvido.gcm" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="vc.duvido.gcm"/>
             </intent-filter>
         </receiver>
-        <service
-            android:name="vc.duvido.gcm.MessageListenerService"
-            android:exported="false" >
+        <service android:name="vc.duvido.gcm.MessageListenerService" android:exported="false">
             <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
             </intent-filter>
         </service>
-        <service
-            android:name="vc.duvido.gcm.TokenListenerService"
-            android:exported="false">
+        <service android:name="vc.duvido.gcm.TokenListenerService" android:exported="false">
             <intent-filter>
                 <action android:name="com.google.android.gms.iid.InstanceID"/>
             </intent-filter>
         </service>
-        <service
-            android:name="vc.duvido.gcm.RegistrationIntentService"
-            android:exported="false">
+        <service android:name="vc.duvido.gcm.RegistrationIntentService" android:exported="false">
         </service>
     </application>
 </manifest>
