@@ -44,8 +44,6 @@ Duvido::Duvido()
     initInterfaces();
     initFacebook();
     initView();
-    startPostingChallengesFromQueue();
-    startPostingSubmissionsFromQueue();
 }
 
 void Duvido::initInterfaces() {
@@ -175,6 +173,9 @@ void Duvido::setMe(const Me& me) {
     else if (_activity.hasGooglePlayServices())
         _activity.requestGcmToken();
 #endif
+
+    startPostingChallengesFromQueue();
+    startPostingSubmissionsFromQueue();
 }
 
 QString Duvido::terms() const {
@@ -271,10 +272,12 @@ void Duvido::addPostingSubmission(PostingSubmission* postingSubmission) {
     postingSubmission->setParent(this);
     _postingSubmissions.append(postingSubmission);
     updatePostingSubmissionQueue();
+    emit postingSubmissionAdded(postingSubmission);
 
     connect(postingSubmission, &PostingSubmission::finished, [this, postingSubmission]{
         _postingSubmissions.removeOne(postingSubmission);
         updatePostingSubmissionQueue();
+        emit postingSubmissionRemoved(postingSubmission);
     });
 }
 
@@ -303,10 +306,12 @@ void Duvido::startPostingSubmissionsFromQueue() {
     for (auto value : arr) {
         auto postingSubmission = PostingSubmission::fromJson(value.toObject());
         _postingSubmissions.append(postingSubmission);
+        emit postingSubmissionAdded(postingSubmission);
 
         connect(postingSubmission, &PostingSubmission::finished, [this, postingSubmission]{
             _postingSubmissions.removeOne(postingSubmission);
             updatePostingChallengeQueue();
+            emit postingSubmissionRemoved(postingSubmission);
         });
     }
 }

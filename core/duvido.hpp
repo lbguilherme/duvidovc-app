@@ -64,6 +64,8 @@ signals:
     void tokenChanged();
     void postingChallengeAdded(PostingChallenge* postingChallenge);
     void postingChallengeRemoved(PostingChallenge* postingChallenge);
+    void postingSubmissionAdded(PostingSubmission* postingSubmission);
+    void postingSubmissionRemoved(PostingSubmission* postingSubmission);
     void challengeRefused(QString id);
 
 private:
