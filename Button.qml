@@ -8,6 +8,7 @@ Item {
     property bool flat: false
     property color color: flat ? "black" : "white"    // Text color if flat. Background color if raised.
     property string text: "Button"
+    property color textColor: flat ? color : "white"
     signal clicked()
 
     MouseArea {
@@ -33,7 +34,7 @@ Item {
             font.capitalization: Font.AllUppercase
             font.family: "Roboto"
             text: button.text
-            color: flat ? button.color : "white"
+            color: textColor
             font.pixelSize: 16*dp
         }
     }
