@@ -25,6 +25,7 @@ Item {
         targets: challenge.targets
         image: challenge.image
         duration: challenge.duration
+        orientation: challenge.orientation
     }
 
     Scrollable {

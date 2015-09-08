@@ -9,6 +9,7 @@ Card {
     property var targets: targetsInput.model
     property int duration: timePickerControl.time
     property string image: imageInput.source
+    property int orientation: imageInput.orientation
 
     function verify() {
         var error = false;

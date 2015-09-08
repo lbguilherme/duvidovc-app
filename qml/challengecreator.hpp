@@ -15,6 +15,7 @@ class ChallengeCreator : public QObject {
     Q_PROPERTY(FriendsModel* targets READ targets WRITE setTargets NOTIFY targetsChanged)
     Q_PROPERTY(unsigned duration READ duration WRITE setDuration NOTIFY durationChanged)
     Q_PROPERTY(QUrl image READ image WRITE setImage NOTIFY imageChanged)
+    Q_PROPERTY(int orientation READ orientation WRITE setOrientation NOTIFY orientationChanged)
 
 public:
 
@@ -51,6 +52,7 @@ signals:
     void targetsChanged();
     void durationChanged();
     void imageChanged();
+    void orientationChanged();
     void submitted();
 
 private:

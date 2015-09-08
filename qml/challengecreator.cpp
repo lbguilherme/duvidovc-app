@@ -76,6 +76,16 @@ void ChallengeCreator::setImage(const QUrl& image) {
     emit imageChanged();
 }
 
+int ChallengeCreator::orientation() const {
+    return _orientation;
+}
+
+void ChallengeCreator::setOrientation(int orientation) {
+    if (_orientation == orientation) return;
+    _orientation = orientation;
+    emit orientationChanged();
+}
+
 void ChallengeCreator::submit() {
     _info.targetIds = _targets->selectedIds();
 

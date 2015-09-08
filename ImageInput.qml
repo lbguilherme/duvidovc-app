@@ -4,6 +4,7 @@ import "qrc:/material"
 
 Column {
     property string source: preview.source
+    property int orientation: preview.rotation
     property string mode: hasGallery || hasCamera ? "methods" : "none"
     property bool hasGallery: duvido.hasGallery
     property bool hasCamera: QtMultimedia.availableCameras.length > 0
